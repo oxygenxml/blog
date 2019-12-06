@@ -11,63 +11,63 @@
     </topicmeta>
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">
-            <topicref href="learnDita.dita"/>
-            <topicref href="exampleOfADITAImplementationFortech.dita"/>
-            <topicref href="guidedAuthoring.dita"/>
-            <topicref href="maintain-healthy-dita-project.dita"/>
-            <topicref href="DitaReuseStrategies.dita"/>
-            <topicref href="dita_linking_stretegies.dita"/>
+            <topicref href="topics/learnDita.dita"/>
+            <topicref href="topics/exampleOfADITAImplementationFortech.dita"/>
+            <topicref href="topics/guidedAuthoring.dita"/>
+            <topicref href="topics/maintain-healthy-dita-project.dita"/>
+            <topicref href="topics/DitaReuseStrategies.dita"/>
+            <topicref href="topics/dita_linking_stretegies.dita"/>
             <topicref href="branchFilters/branchFilter.dita"/>
             <topicref href="keyscopes/keyscopesBlog.dita"/>
         </topichead>
         <topichead navtitle="Publishing">
-            <topicref href="migrating-pdf-customizations.dita"/>
-            <topicref href="dita_publishing_customization_overview.dita"/>
-            <topicref href="ditaOTFAQ.dita"/>
-            <topicref href="enhanving_dita_publishing_with_plugins.dita"/>
-            <topicref href="ditaToPDF.dita"/>
-            <topicref href="pageBreakPlugin.dita"/>
-            <topicref href="adding-latex-equation-support-dita.dita"/>
+            <topicref href="topics/migrating-pdf-customizations.dita"/>
+            <topicref href="topics/dita_publishing_customization_overview.dita"/>
+            <topicref href="topics/ditaOTFAQ.dita"/>
+            <topicref href="topics/enhancing_dita_publishing_with_plugins.dita"/>
+            <topicref href="topics/ditaToPDF.dita"/>
+            <topicref href="topics/pageBreakPlugin.dita"/>
+            <topicref href="topics/adding-latex-equation-support-dita.dita"/>
         </topichead>
         <topichead navtitle="Customizing">
-            <topicref href="customizeDITACSS.dita"/>
-            <topicref href="controlledAttributeValues.dita"/>
-            <topicref href="convertingSubjectSchemeMapToDITAVAL.dita"/>
+            <topicref href="topics/customizeDITACSS.dita"/>
+            <topicref href="topics/controlledAttributeValues.dita"/>
+            <topicref href="topics/convertingSubjectSchemeMapToDITAVAL.dita"/>
         </topichead>
         <topichead navtitle="Other">
-            <topicref href="oxygen-dita-strong-points.dita"/>
-            <topicref href="dita_1_3_support_o17.1.dita"/>
-            <topicref href="dita_oriented_tips_and_tricks.dita"/>
-            <topicref href="dita_project_enhancements.dita"/>
-            <topicref href="dita-standard-problems.dita"/>
-            <topicref href="linkSurvey.dita"/>
-            <topicref href="dita_inheritance_hierarchy.dita"/>
-            <topicref href="ditaUsage.dita"/>
-            <topicref href="replace-image-href-keyref.dita"/>
+            <topicref href="topics/oxygen-dita-strong-points.dita"/>
+            <topicref href="topics/dita_1_3_support_o17.1.dita"/>
+            <topicref href="topics/dita_oriented_tips_and_tricks.dita"/>
+            <topicref href="topics/dita_project_enhancements.dita"/>
+            <topicref href="topics/dita-standard-problems.dita"/>
+            <topicref href="topics/linkSurvey.dita"/>
+            <topicref href="topics/dita_inheritance_hierarchy.dita"/>
+            <topicref href="topics/ditaUsage.dita"/>
+            <topicref href="topics/replace-image-href-keyref.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">
-        <topicref href="migratingToDITA.dita"/>
-        <topicref href="migrating_to_dita.dita"/>
-        <topicref href="migrateWordToDita.dita"/>
-        <topicref href="migratingToDITAPractical.dita"/>
-        <topicref href="batch_converting_html_to_xhtml.dita"/>
+        <topicref href="topics/migratingToDITA.dita"/>
+        <topicref href="topics/migrating_to_dita.dita"/>
+        <topicref href="topics/migrateWordToDita.dita"/>
+        <topicref href="topics/migratingToDITAPractical.dita"/>
+        <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
     </topichead>
     <topichead navtitle="SDK Development (Plugins, Frameworks)">
-        <topicref href="customizing_oxygen.dita"/>
-        <topicref href="author-document-type-extension-sharing.dita"/>
-        <topicref href="Oxygen%20plugins%20and%20frameworks.xml"/>
-        <topicref href="author-document-type-extension-sharing-custom-new-file-templates.dita"/>
-        <topicref href="composing-author-actions.dita"/>
-        <topicref href="custom-author-action-js-based.dita"/>
-        <topicref href="howSpecialPasteWorksInOxygen.dita"/>
-        <topicref href="oxygenFrameworks.dita"/>
-        <topicref href="packing-add-ons.dita"/>
+        <topicref href="topics/customizing_oxygen.dita"/>
+        <topicref href="topics/author-document-type-extension-sharing.dita"/>
+        <topicref href="topics/Oxygen%20plugins%20and%20frameworks.xml"/>
+        <topicref href="topics/author-document-type-extension-sharing-custom-new-file-templates.dita"/>
+        <topicref href="topics/composing-author-actions.dita"/>
+        <topicref href="topics/custom-author-action-js-based.dita"/>
+        <topicref href="topics/howSpecialPasteWorksInOxygen.dita"/>
+        <topicref href="topics/oxygenFrameworks.dita"/>
+        <topicref href="topics/packing-add-ons.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
-        <topicref href="checking_terminology_with_oxygen_xml_editor.dita"/>
-        <topicref href="opinions%20on%20Oxygen.dita"/>
-        <topicref href="greattechsupport.dita"/>
-        <topicref href="hostWebinar.dita"/>
+        <topicref href="topics/checking_terminology_with_oxygen_xml_editor.dita"/>
+        <topicref href="topics/opinions%20on%20Oxygen.dita"/>
+        <topicref href="topics/greattechsupport.dita"/>
+        <topicref href="topics/hostWebinar.dita"/>
     </topichead>
 </map>

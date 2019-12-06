@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://www.dita-ot.org/project">
+  <context name="Oxygen XML Blog" id="blog">
+    <input href="oxygen_xml_blog.ditamap"/>
+  </context>
+  
+  <deliverable name="Oxygen XML Blog to WebHelp Responsive">
+    <context idref="blog"/>
+    <output href="webhelp-output"/>
+    <publication transtype="webhelp-responsive"/>
+  </deliverable>
+</project>
