@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="collaboration_teams">
+    <title>Collaboration (Teams working on a common XML project)</title>
+    <body>
+        <p>Sometimes I get the feeling that there are still many users who collaborate on XML
+            projects using <b>shared network drives</b>. We got this question yesterday from one of
+            our users:<lq> I am just curious if housing and working off a network drive is possible,
+                and if so, what are the risks involved?</lq> In my opinion having multiple writers
+            edit documents from a common <b>shared network location</b> is dangerous because you may
+            end up overwriting the content that someone else has been writing on. You also have <b>
+                no history </b>of who made what modification and <b>no redundancy </b>of content. If
+            somehow the network drive fails because of a hardware problem or files get corrupted you
+            have <b>no copy of your repository</b> to start over. My advice is to start using a free
+            and <b>open source version system</b> like <b>Subversion (SVN)</b>, <b>CVS </b>or
+                <b>GIT</b>. For example <b>Oxygen </b>comes with an embedded <b>SVN Client</b> and
+            for writing our user manual which is DITA-based we collaborate using a <b>subversion
+                server</b> installed on a Linux machine. We made a small video demonstration showing
+            how this colaboration is done:<xref
+                href="http://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html"
+                format="html" scope="external"
+                >http://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html</xref>
+            The advantage to using version systems is immense:<ol id="ol_kk3_p2r_yjb">
+                <li>We know the history of each resource.</li>
+                <li>We know who made what change.</li>
+                <li>We can create tags and branches for marking certain versions of the
+                    documentation.</li>
+                <li>Each user has his own local copy of the repository and if the server fails we
+                    have the same content duplicated in many other places.</li>
+            </ol> Other approaches: Use a <b>WebDav </b>repository. When Oxygen opens an XML
+            document from a <b>WebDav</b> repository, it locks the <b>XML </b>document and thus
+            prevents other users from saving changes to it while still allowing them to open the
+            document. Use a <b>Commercial CMS</b> which in addition to an open source version system
+            will bring more workflow related tools and lots of ways to keep your content valid. And
+            there are quite a few CMSs which have an integration with Oxygen:<xref
+                href="http://www.oxygenxml.com/partners.html#solutionpartners%28cms%29"
+                format="html" scope="external"
+                >http://www.oxygenxml.com/partners.html#solutionpartners%28cms%29</xref>
+        </p>
+        <p>Here's a very nice post by Eliot Kimber about implementing DITA without a CSM:<xref
+                href="http://drmacros-xml-rants.blogspot.com/#4627052924135934849" format="html"
+                scope="external">http://drmacros-xml-rants.blogspot.com#4627052924135934849</xref>
+        </p>
+    </body>
+</topic>

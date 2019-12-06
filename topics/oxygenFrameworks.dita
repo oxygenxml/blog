@@ -5,8 +5,7 @@
   <body>
     <p>This is the second part of a blog post I started some time ago:</p>
     <p>
-      <xref href="http://blog.oxygenxml.com/2013/11/the-oxygen-sdk-part-1-plugins.html"
-        format="html" scope="external"/>.</p>
+      <xref href="the_oxygen_sdk_part_1_plugins.dita"/>.</p>
     <p>There are two ways of customizing the application, by implementing a plugin or by
       implementing a framework:</p>
     <p><xref

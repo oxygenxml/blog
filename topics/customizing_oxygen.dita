@@ -50,8 +50,7 @@
             and so on.</li>
           <li>Use the existing API to make changes to the opened documents.</li>
         </ul>A more detailed overview of Oxygen plugins can be found here: <xref
-          href="http://blog.oxygenxml.com/2013/11/the-oxygen-sdk-part-1-plugins.html" format="html"
-          scope="external"/>.</p>
+            href="the_oxygen_sdk_part_1_plugins.dita"/>.</p>
       <p>The most popular plugin extension is the Workspace Access plugin extension: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin.html"
           format="html" scope="external"/>. This extension is notified when the application starts

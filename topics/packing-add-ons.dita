@@ -61,8 +61,7 @@ Everybody's welcomed to use this
         href="https://www.oxygenxml.com/doc/ug-editor/topics/installing-and-updating-add-ons.html"
         format="html" scope="external"/></p>
     <p>The add-ons support can also be used to <xref
-        href="http://blog.oxygenxml.com/2013/11/the-oxygen-sdk-part-1-plugins.html" format="html"
-        scope="external">install Oxygen plugins</xref>. Some of the public hosted Oxygen plugins and
+        href="the_oxygen_sdk_part_1_plugins.dita">install Oxygen plugins</xref>. Some of the public hosted Oxygen plugins and
       frameworks are also available as add-ons: <xref
         href="Oxygen%20plugins%20and%20frameworks.xml"/>.</p>
     <p>In conclusion, if you want to share Oxygen customizations with others, you should try the

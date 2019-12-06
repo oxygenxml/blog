@@ -49,8 +49,7 @@
             affecting the publishing system.</li>
           <li>Share that external <b>DITA OT</b> copy with the rest of the team. If you are using a
             repository like Subversion or Git for <xref
-              href="http://blog.oxygenxml.com/2014/11/collaboration-for-documenting-software.html"
-              format="html" scope="external">collaboration</xref>, you can commit the entire
+              href="collaboration-for-documenting-software.dita">collaboration</xref>, you can commit the entire
             modified DITA OT publishing engine as part of your project. This will allow everybody
             else in your team to use the official changes that you made. This will also allow you to
             set up some kind of automatic publishing system using an open-source integration server

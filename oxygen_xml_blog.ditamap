@@ -67,6 +67,7 @@
         <topicref href="topics/composing-author-actions.dita"/>
         <topicref href="topics/custom-author-action-js-based.dita"/>
         <topicref href="topics/howSpecialPasteWorksInOxygen.dita"/>
+        <topicref href="topics/the_oxygen_sdk_part_1_plugins.dita"/>
         <topicref href="topics/oxygenFrameworks.dita"/>
         <topicref href="topics/packing-add-ons.dita"/>
     </topichead>

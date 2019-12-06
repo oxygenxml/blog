@@ -96,14 +96,10 @@
       <p>Even if you lack the funds to buy a commercial CMS, there are still plenty of open source
         version tracking solutions that provide the possibility of collaboration on a single DITA
         project: <xref
-          href="http://blog.oxygenxml.com/2013/12/collaboration-teams-working-on-common.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2013/12/collaboration-teams-working-on-common.html</xref>. For
+          href="collaboration-teams.dita"/>. For
         example, the Oxygen User's Manual is written in <b>DITA</b> and we use a <b>GitHub</b>
         private repository to collaborate on it: <xref
-          href="http://blog.oxygenxml.com/2014/11/collaboration-for-documenting-software.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2014/11/collaboration-for-documenting-software.html</xref>.</p>
+          href="collaboration-for-documenting-software.dita"/>.</p>
     </section>
     <section id="section_wql_wyh_kw">
       <title>Allowing Subject Matter Experts to Review Content</title>

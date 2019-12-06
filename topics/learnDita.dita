@@ -47,8 +47,7 @@
         layout. The <xref href="http://xmlpress.net/publications/dita/dita-for-print/" format="html"
           scope="external">DITA For Print</xref> book also covers quite a lot of many customization
         possibilities. There are also a number of different alternatives to obtain PDF from DITA:
-          <xref href="http://blog.oxygenxml.com/2015/11/possibilities-to-obtain-pdf-from-dita.html"
-          format="html" scope="external"/>.</p>
+        <xref href="ditaToPDF.dita"/>.</p>
     </section>
     <section id="section_rqq_nhj_4jb">
       <title>Courses for learning DITA with Oxygen XML Editor</title>

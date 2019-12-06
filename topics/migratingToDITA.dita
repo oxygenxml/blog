@@ -86,8 +86,7 @@
         <li>Money. You need to spend more money to get new tools, possibly a new <b>CMS</b>.
           Although I consider that starters, for a pilot project <b>DITA</b> does not need to be
           expensive. Here's how we're using <b>DITA</b> internally for our user's manual: <xref
-            href="http://blog.oxygenxml.com/2014/11/collaboration-for-documenting-software.html"
-            format="html" scope="external"/>.</li>
+            href="collaboration-for-documenting-software.dita"/>.</li>
         <li>Sometimes you might need to control the styling of your obtained output so much and it
           would be impossible to separate the styling information from the content.</li>
       </ul></p>

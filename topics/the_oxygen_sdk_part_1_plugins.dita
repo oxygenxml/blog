@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="the_oxygen_sdk_part_1_plugins">
+    <title>The Oxygen SDK (Part 1: Plugins)</title>
+    <body>
+        <p>During the last years we added a lot of <b>API</b> and extension points to Oxygen in
+            order to allow for different customizations to the application. But our documentation is
+            sometimes lacking. We mostly rely on <b>Javadoc </b>documentation and on <b>Java
+                samples</b>. Here's some feedback we got at the last <b>Oxygen Users Meetup</b> in
+                <b>Munich </b>this year:<lq><i>Too less information about frameworks, plugins,
+                    everything is spread over certain documents, webinars, etc . Please centralize
+                    these information in one form.</i></lq> I will try to centralize these resources
+            and add some useful links for people who want to start customizing Oxygen. First the
+            difference between a <b>framework</b> and a <b>plugin</b>:<ul id="ul_ixh_lfr_yjb">
+                <li>A <b>plugin </b>can be used to customize the behavior of the entire application
+                    no matter what XML document is currently being edited. </li>
+            </ul><ul id="ul_jxh_lfr_yjb">
+                <li>A <b>framework </b>configuration provides validation, content completion and
+                    editing support for a specific XML vocabulary. </li>
+            </ul></p>
+        <section id="section_ns5_mfr_yjb">
+            <title> Plugins:</title>
+            <p> A plugin is a folder containing a descriptor <b>plugin.xml</b> file and various
+                other <b>JAR</b> libraries and resources.<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/preferences-plugins.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/preferences-plugins.html</xref>
+            </p>
+            <p>Only the <b>standalone </b>version of Oxygen supports plugins. The <b>Eclipse
+                    Plugin</b> version of Oxygen is itself a plugin and can be customized by adding
+                a plugin in the Eclipse workbench which depends on the <b>Oxygen Eclipse plugin</b>.
+                Despite of this, most of the API is common.</p>
+            <p>The plugin can be deployed either by copying it to the <b>plugins</b> folder of an
+                Oxygen installation:<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/tasks/howto-install-plugin.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/tasks/howto-install-plugin.html</xref>
+                or by deploying it as an <b>add-on</b>:<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#tasks/deploying-addons.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/index.html#tasks/deploying-addons.html</xref></p>
+            <p>The <b>Oxygen Plugins SDK</b>:<xref
+                    href="http://www.oxygenxml.com/oxygen_sdk.html#Developer_Plugins" format="html"
+                    scope="external"
+                    >http://www.oxygenxml.com/oxygen_sdk.html#Developer_Plugins</xref> contains Java
+                sources and Javadoc for all the API accessible from a plugin. The Plugins SDK also
+                contains sample plugins and their Java code. This Java code should be very helpful
+                to get you started and to show how various API can be used.</p>
+            <p>Although there are many types of plugins:<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/pluginTypes.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/pluginTypes.html</xref>
+                the most useful plugin extension type is the "<b>Workspace Access</b>" extension
+                    type:<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#concepts/workspace-access-plugin.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/index.html#concepts/workspace-access-plugin.html</xref>
+                This kind of plugin allows you to use the API and add or remove toolbar and main
+                menu buttons, add custom views and toolbars. It also allows you to access and
+                control/make changes to the XML documents opened in the workbench.</p>
+            <p>As an example, all full-featured integrations which have been created to connect
+                Oxygen with a specific <b>CMS </b>or remote repository use a combination of
+                "Workspace Access" and "Custom Protocol" plugin:<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/howto-cms-plugin.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/howto-cms-plugin.html</xref>
+            </p>
+            <p>You can create <b>automated tests</b> for your plugins:<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/automated-tests.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/index.html#topics/automated-tests.html</xref>
+                and even <b>debug their functionality</b>:<xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/index.html?q=/doc/ug-oxygen/topics/debug-plugin.html"
+                    format="html" scope="external"
+                    >http://www.oxygenxml.com/doc/ug-oxygen/index.html?q=/doc/ug-oxygen/topics/debug-plugin.html</xref></p>
+        </section>
+    </body>
+</topic>
