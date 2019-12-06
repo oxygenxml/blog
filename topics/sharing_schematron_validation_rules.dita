@@ -15,8 +15,7 @@
           href="SchematronBCs.dita"/>.</p>
         <p>Once you define the <b>Schematron</b> rules, they can be shared with the other members of
             your team via a document type <b>framework configuration</b>: <xref
-                href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html"
-                format="html" scope="external"/>.</p>
+                href="oxygenFrameworks.dita"/>.</p>
         <p>In this post, I'm going to provide some precise steps to share a set of <b>Schematron</b>
       rules with a <b>DITA</b> framework extension.</p>
         <p>Instead of making changes directly to the <b>DITA</b> framework configuration folder
@@ -61,7 +60,7 @@
         edit the default <b>DITA</b> validation scenario, and add an extra validation stage to it (a
         stage that uses your custom <b>Schematron</b> schema). More details about validation
         scenarios can be found here: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/tasks/dg-validation-scenarios.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-validation-scenarios.html"
           format="html" scope="external"/>.</li>
             <li>Click <b>OK</b> to close the dialog box and then either <b>OK</b> or <b>Apply</b> to
         save the preferences changes.</li>

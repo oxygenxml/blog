@@ -48,6 +48,7 @@
             <topicref href="topics/translating_your_dita_project.dita"/>
             <topicref href="topics/validateCheckForCompletness.dita"/>
             <topicref href="topics/SchematronBCs.dita"/>
+            <topicref href="topics/styleguide.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">

@@ -50,7 +50,6 @@
     </example>
     <p>You can find a more detailed example and download samples for reuse based on key scopes in
       this blog post: <xref
-        href="http://blog.oxygenxml.com/2015/08/dita-13-key-scopes-next-generation-of.html"
-        format="html" scope="external"/>.</p>
+        href="../keyscopes/keyscopesBlog.dita"/>.</p>
   </body>
 </topic>

@@ -16,8 +16,7 @@
           <li>Provide custom toolbar, menu, and contextual menu actions to be used in the
               <b>Author</b> visual editing mode.</li>
         </ul>Such support is done using a document type/framework configuration: <xref
-          href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html"
-          format="html" scope="external"/>.</p>
+            href="oxygenFrameworks.dita"/>.</p>
         </section>
         <section id="section_w13_gvy_xy">
             <title>Customize the existing support for a specific XML vocabulary</title>

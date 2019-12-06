@@ -27,7 +27,6 @@
     </example>
     <p>You can find a more detailed example and download samples for reuse based on branch filtering
       in this blog post: <xref
-        href="http://blog.oxygenxml.com/2015/09/dita-13-branch-filtering-next.html" format="html"
-        scope="external"/></p>
+        href="../branchFilters/branchFilter.dita"/></p>
   </body>
 </topic>

@@ -247,8 +247,7 @@
   &lt;topicref href="slicing_vegetables_for_novices.dita" keys="slicing"/>
  &lt;/topichead></codeblock><p>This
         previous <xref
-          href="http://blog.oxygenxml.com/2015/08/dita-13-key-scopes-next-generation-of.html"
-          format="html" scope="external">blog post</xref> contains more details about key
+          href="../keyscopes/keyscopesBlog.dita">blog post</xref> contains more details about key
         scopes.</p></section>
         <section id="section_ct2_qg1_k1b">
             <title>Link Text</title>

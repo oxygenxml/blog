@@ -14,8 +14,7 @@
       is clean up that HTML, make it wellformed XHTML and apply conversion XSLT stylesheets over
       it.</p>
     <p>This support is not hardcoded and anybody who is developing an <xref
-        href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html" format="html"
-        scope="external">Oxygen framework customization</xref> for a certain XML vocabulary can
+      href="oxygenFrameworks.dita">Oxygen framework customization</xref> for a certain XML vocabulary can
       provide conversion stylesheets for external pasted HTML content.</p>
     <p>I will describe how this works for the <b>DITA</b> framework and you can do the same for
       yours. You can also use this information to modify the way in which smart paste works for the

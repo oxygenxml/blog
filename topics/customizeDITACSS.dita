@@ -8,8 +8,7 @@
       layout.</p>
     <p>All the validation, editing and publishing support Oxygen has for a specific XML vocabulary
       is defined in a <xref
-        href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html" format="html"
-        scope="external">framework configuration</xref>.</p>
+        href="oxygenFrameworks.dita">framework configuration</xref>.</p>
     <p>
       <div><p>Instead of copying an entire framework configuration folder (such as <b>DITA</b> or
             <b>Docbook</b>), modify and distribute it, you can choose to extend that framework and

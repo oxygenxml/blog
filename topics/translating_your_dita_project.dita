@@ -36,9 +36,7 @@
               href="https://lists.oasis-open.org/archives/dita/201301/msg00029.html" format="html"
               scope="external"/>.</li>
           <li>Avoid profiling/filtering content at inline level. For the same reasons as (2).</li>
-        </ol>You can read more about this in the following article: <xref
-          href="https://www.infomanagementcenter.com/publications/best-practices-newsletter/2010-best-practices-newsletter/successful-localization-in-dita/"
-          format="html" scope="external"/>.</p>
+        </ol></p>
     </section>
     <section id="section_hlq_cmp_rdb">
       <title>General DITA Project Structure</title>
