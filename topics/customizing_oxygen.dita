@@ -59,13 +59,13 @@
           href="http://blog.oxygenxml.com/2013/11/the-oxygen-sdk-part-1-plugins.html" format="html"
           scope="external"/>.</p>
       <p>The most popular plugin extension is the Workspace Access plugin extension: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/concepts/workspace-access-plugin.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin.html"
           format="html" scope="external"/>. This extension is notified when the application starts
         and can contribute custom views, custom main menu items, custom main toolbar actions, or add
         listeners for various document-related changes.</p>
       <p>There is also a JavaScript-based workspace access plugin extension that can use JavaScript
         to call our Java API: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/concepts/workspace-access-plugin-js.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin-js.html"
           format="html" scope="external"/>.</p>
       <p>A set of sample plugins built with the JavaScript-based extension can be found here: <xref
           href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins" format="html"

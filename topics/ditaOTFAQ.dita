@@ -18,7 +18,7 @@
           >download</xref>, <xref
           href="http://www.dita-ot.org/dev/getting-started/installing-client.html" format="html"
           scope="external">install</xref> and <xref
-          href="http://www.dita-ot.org/dev/getting-started/first-build-using-dita-command.html"
+            href="https://www.dita-ot.org/dev/topics/first-build-using-dita-command.html#ariaid-title1"
           format="html" scope="external">build output</xref> from <b>DITA</b> content using the
         command line.</p>
       <p>Besides this, there are applications which come with the <b>DITA Open Toolkit</b> bundled.
@@ -43,7 +43,7 @@
     <section id="section_f4p_dqs_qv">
       <title>What outputs can I obtain using the DITA Open Toolkit?</title>
       <p>The entire set of default available output formats is available here: <xref
-          href="http://www.dita-ot.org/dev/user-guide/AvailableTransforms.html" format="html"
+        href="https://www.dita-ot.org/dev/topics/output-formats.html" format="html"
           scope="external"/>. But the <b>DITA Open Toolkit</b> can be enhanced by installing plugins
         to provide additional output formats.</p>
     </section>
@@ -53,7 +53,7 @@
           href="http://ant.apache.org/" format="html" scope="external">ANT</xref> build scripts,
         Java libraries and <xref href="https://www.w3.org/TR/2007/REC-xslt20-20070123/"
           format="html" scope="external">XSLT scripts</xref>. It has a <xref
-          href="http://www.dita-ot.org/dev/dev_ref/processing-structure.html" format="html"
+            href="https://www.dita-ot.org/dev/reference/architecture.html" format="html"
           scope="external">pipeline-based architecture</xref> which uses plugins to publish DITA
         content to various output formats. Most of the DITA Open Toolkit customizations that you
         want to make in order to add new publishing capabilities or to customize existing publishing
@@ -62,21 +62,21 @@
     <section id="section_jrd_kts_qv">
       <title>What is a DITA Open Toolkit plugin?</title>
       <p>A <b>DITA Open Toolkit</b> plugin can either provide a <xref
-          href="http://www.dita-ot.org/dev/dev_ref/plugin-newtranstype.html" format="html"
+        href="https://www.dita-ot.org/dev/topics/plugin-newtranstype.html" format="html"
           scope="external">new publishing format</xref>, <xref
-          href="http://www.dita-ot.org/dev/dev_ref/plugin-overridestyle.html" format="html"
+            href="https://www.dita-ot.org/dev/topics/plugin-applications.html" format="html"
           scope="external">customize an existing publishing stage</xref> or provide a <b>DITA</b>
-        <xref href="http://www.dita-ot.org/dev/dev_ref/plugin-xmlcatalog.html" format="html"
+        <xref href="https://www.dita-ot.org/dev/topics/plugin-xmlcatalog.html" format="html"
           scope="external">specialization vocabulary</xref>. The plugin can use one of the numerous
         extension points available in the <b>DITA Open Toolkit</b>: <xref
-          href="http://www.dita-ot.org/dev/dev_ref/plugin-extension-points.html" format="html"
+          href="https://www.dita-ot.org/dev/extension-points/plugin-extension-points.html" format="html"
           scope="external"/>.</p>
-      <p>Once you have <xref href="http://www.dita-ot.org/dev/dev_ref/plugin-creating.html"
+      <p>Once you have <xref href="https://www.dita-ot.org/dev/topics/plugin-newtranstype.html#ariaid-title1"
           format="html" scope="external">created</xref> a plugin you can install it in the <b>DITA
           Open Toolkit</b> either by <xref
           href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-ot-install-plugin.html"
           format="html" scope="external">manual installation</xref> or using the new <xref
-          href="http://www.dita-ot.org/dev/dev_ref/plugins-installing.html" format="html"
+            href="https://www.dita-ot.org/dev/topics/plugins-installing.html" format="html"
           scope="external">automated installation procedure</xref>.</p>
     </section>
     <section id="section_p33_l5s_qv">

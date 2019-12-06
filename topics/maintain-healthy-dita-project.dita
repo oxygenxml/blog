@@ -476,15 +476,13 @@
                </p>
             </li>
             <li>
-               <p>Avoid profiling/filtering content at inline level. <xref
-                     href="https://www.infomanagementcenter.com/publications/best-practices-newsletter/2010-best-practices-newsletter/successful-localization-in-dita/"
-                     format="html" scope="external"/></p>
+               <p>Avoid profiling/filtering content at inline level. </p>
             </li>
          </ul>
       </section>
       <section id="section_tf5_5hf_rhb">
          <title>Publishing</title>
-         <p><image scope="external" href="healthy-images/publish.png" id="image_hh3_vhf_rhb"
+         <p><image href="../healthy-images/publish.png" id="image_hh3_vhf_rhb"
                scale="80"/></p>
       </section>
       <p>

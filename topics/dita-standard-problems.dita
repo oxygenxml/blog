@@ -50,7 +50,7 @@
             <b>&lt;simpletable></b> element in the <b>DITA</b> standard at all, since a <b>CALS</b>
           table without cells spanning is simple enough? The <b>LightWeight DITA</b> Project is an
           alternative to <b>DITA</b> and it tries to simplify the standard and eliminate such
-          problems: <xref href="http://dita.xml.org/blog/lightweight-dita" format="html"
+          problems: <xref href="http://docs.oasis-open.org/dita/LwDITA/v1.0/LwDITA-v1.0.html" format="html"
             scope="external"/>.</li>
         <li><b>DITA</b> elements that have <b>conrefs</b> or <b>conkeyrefs</b> need to also have the
           required content specified in them. So I cannot simply do

@@ -35,9 +35,9 @@
           various outputs like PDF and EPUB from XML content. The application also has a visual PDF
           layout formatter, it comes also with a DITA OT plugin and has installation instructions
           for Oxygen:<xref
-            href="http://www.turnkey.com.au/tksweb/xmtp/webhelp_out/oxygen/install.html"
+            href="https://www.turnkey.com.au/oxygen_plugin.html"
             format="html" scope="external"/>.</li>
-        <li><xref href="http://www.ovidius.com/en/miramo/" format="html" scope="external"
+        <li><xref href="https://www.miramo.com/download/documentation/Miramo_DITA-OT_GettingStarted.pdf" format="html" scope="external"
             >Miramo</xref>, again a commercial solution which recently started developing support
           for DITA using a DITA OT plugin. Possibly user based DITA to PDF publishing will be free
           and server based production will require buying a license. Like TopLeaf, it also has a

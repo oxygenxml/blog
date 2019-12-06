@@ -184,11 +184,9 @@
             referenced via indirect links, only the link defined in the DITA Map will break, making
             it easier to fix broken links.</li>
                 </ul></p>
-            <p>There is an overview about indirect addressing on the <xref
-                    href="http://dita.xml.org/resource/keyref-overview-dita-12" format="html"
-                    scope="external">DITA XML Org</xref> website. The <xref
+            <p>The <xref
                     href="https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/key-based-addressing.html"
-                    format="html" scope="external">DITA 1.3 specification</xref> also has a chapter
+                    format="html" scope="external">DITA 1.3 specification</xref> has a chapter
                 about indirect links.</p>
         </section>
         <section id="section_bnr_nf1_k1b">

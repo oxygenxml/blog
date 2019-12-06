@@ -36,9 +36,7 @@
             output formats from it. For example for obtaining the <b>PDF</b> you have about 5-6
             distinct possible solutions:<xref
               href="http://blog.oxygenxml.com/2015/11/possibilities-to-obtain-pdf-from-dita.html"
-              format="html" scope="external"/>. And for Mobile Friendly WebHelp you have 3-4
-            possible solutions:<xref href="http://mobiledita.com/" format="html" scope="external"
-            />.</p>
+              format="html" scope="external"/>.</p>
         </li>
         <li>
           <p>Enforce certain internal rules on the documents.</p>

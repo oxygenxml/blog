@@ -21,7 +21,7 @@
       can copy it from inside the old <b>Oxygen</b> installation to an external location and in
         <b>Oxygen 18</b>, the same <b>Preferences->DITA</b> page allows you to choose an external
         <b>DITA OT</b> distribution to use:</p>
-    <p><xref href="https://www.oxygenxml.com/doc/ug-editor/tasks/use-new-dita-ot.html"
+    <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/use-new-dita-ot.html"
         format="html" scope="external"/></p>
     <p>If you still want to migrate:</p>
     <p>No proper implemented customization should modify the base "<b>org.dita.pdf2</b>" plugin

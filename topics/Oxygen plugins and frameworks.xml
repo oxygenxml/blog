@@ -57,10 +57,10 @@
       <li>Automatic builder for <b>Oxygen</b> frameworks which allows user to describe framework's
         behaviour by using only <b>XQuery</b>, <b>HTML</b>, and <b>CSS</b>, and automatically
         generate the framework archive ready to be deployed (developed by Claudius Teodorescu):<xref
-          href="https://github.com/claudius108/oxygen-addon-builder" format="html" scope="external"/></li>
+          href="https://github.com/claudius108/oxygen-addon-builder-plugin" format="html" scope="external"/></li>
       <li>Plugin developed by Clausius Teodorescu which allows opening a JavaFX-based web browser in
         Oxygen: <xref
-          href="https://github.com/claudius108/oxygen-addons/tree/master/oxygen-webview-plugin"
+          href="https://github.com/claudius108/oxygen-webview-plugin"
           format="html" scope="external"/>.</li>
       <li><b>LanguageTool</b> plugin for <b>Oxygen</b>: <xref
           href="https://github.com/danielnaber/oxygen-languagetool-plugin" format="html"
