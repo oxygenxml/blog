@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map chunk="to-content">
+<map>
  <title>DITA Reuse Strategies</title>
  <topicref href="dita_reuse_strategies.dita">
   <topicref href="introduction.dita"/>
