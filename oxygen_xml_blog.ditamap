@@ -78,5 +78,7 @@
         <topicref href="topics/hostWebinar.dita"/>
         <topicref href="reuse/short_story_reuse.dita"/>
         <topicref href="topics/sharingSettings.dita"/>
+        <topicref href="topics/collaboration-for-documenting-software.dita"/>
+        <topicref href="topics/collaboration-teams.dita"/>
     </topichead>
 </map>
