@@ -18,8 +18,7 @@
                 server</b> installed on a Linux machine. We made a small video demonstration showing
             how this colaboration is done:<xref
                 href="http://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html"
-                format="html" scope="external"
-                >http://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html</xref>
+                format="html" scope="external"/>
             The advantage to using version systems is immense:<ol id="ol_kk3_p2r_yjb">
                 <li>We know the history of each resource.</li>
                 <li>We know who made what change.</li>
@@ -34,12 +33,11 @@
             will bring more workflow related tools and lots of ways to keep your content valid. And
             there are quite a few CMSs which have an integration with Oxygen:<xref
                 href="http://www.oxygenxml.com/partners.html#solutionpartners%28cms%29"
-                format="html" scope="external"
-                >http://www.oxygenxml.com/partners.html#solutionpartners%28cms%29</xref>
+                format="html" scope="external"/>
         </p>
         <p>Here's a very nice post by Eliot Kimber about implementing DITA without a CSM:<xref
                 href="http://drmacros-xml-rants.blogspot.com/#4627052924135934849" format="html"
-                scope="external">http://drmacros-xml-rants.blogspot.com#4627052924135934849</xref>
+                scope="external"/>
         </p>
     </body>
 </topic>

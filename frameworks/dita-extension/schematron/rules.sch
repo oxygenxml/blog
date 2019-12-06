@@ -2,6 +2,11 @@
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <sch:pattern>
+        <sch:rule context="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][@href]">
+            <sch:report test="@href = text()">
+                Should have link text different than link target.
+            </sch:report>
+        </sch:rule>
         <sch:rule context="*[contains(@class, ' topic/xref ') or contains(@class, ' topic/link ')][contains(@href, 'blog.oxygenxml.com')]">
             <sch:assert test="@href = 'https://blog.oxygenxml.com/'">
                 There should be no direct links to blog posts, link directly to DITA topics.

@@ -526,15 +526,13 @@
                <p>DITA Style Guide (by dr. Tony Self): </p>
                <p>
                   <xref href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/"
-                     format="html" scope="external"
-                     >https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/</xref>
+                     format="html" scope="external"/>
                </p>
             </li>
             <li>
                <p>Intelligent Style Guide (by George Bina): </p>
                <p>
-                  <xref href="https://github.com/oxygenxml/dim" format="html" scope="external"
-                     >https://github.com/oxygenxml/dim</xref>
+                  <xref href="https://github.com/oxygenxml/dim" format="html" scope="external"/>
                </p>
             </li>
             <li>

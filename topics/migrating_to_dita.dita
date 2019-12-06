@@ -55,8 +55,7 @@
             transformation scenario shipped in Oxygen to convert DocBook to DITA. </li>
           <li>Save the Google document as HTML then use the Oxygen batch converter add-on to convert
             it to DITA: <xref href="https://github.com/oxygenxml/oxygen-resources-converter"
-              format="html" scope="external"
-              >https://github.com/oxygenxml/oxygen-resources-converter</xref></li>
+              format="html" scope="external"/></li>
         </ul></p>
     </section>
     <section id="section_gdg_tv4_4gb">

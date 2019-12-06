@@ -33,8 +33,7 @@
         project partly maintained by the <b>TEI</b> community: <xref
           href="https://code.google.com/p/oxygen-tei/" format="html" scope="external"/><p>HisTEI: An
             <b>Oxygen</b> framework for historical documents encoded in TEI. </p><p>More details:
-            <xref href="https://github.com/odaata/HisTEI" format="html" scope="external"
-            >https://github.com/odaata/HisTEI</xref>, <xref
+            <xref href="https://github.com/odaata/HisTEI" format="html" scope="external"/>, <xref
             href="http://www.oxygenxml.com/pipermail/oxygen-sdk/2014-November/000182.html"
             format="html" scope="external"/></p></li>
       <li>
@@ -110,8 +109,7 @@
           href="https://cranesoftwrights.github.io/resources/ubl/#oxygenubl" format="html"
           scope="external"/></li>
       <li>Framework for validating OASIS genericode 1.0 documents developed by G. Ken Holman: <xref
-          href="https://cranesoftwrights.github.io/resources/ubl/#oxygengc" format="html"
-          scope="external">https://cranesoftwrights.github.io/resources/ubl/#oxygengc</xref>.</li>
+          href="https://cranesoftwrights.github.io/resources/ubl/#oxygengc" format="html" scope="external"/>.</li>
     </ol>
     <p>If anyone else wants to add something else to the list, just drop us an email.</p>
   </body>

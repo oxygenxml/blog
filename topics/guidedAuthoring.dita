@@ -92,7 +92,7 @@
       <p>All major Content Management Systems (CMSs) have plugins that can be installed in Oxygen to
         provide access to the CMS: <xref
           href="https://www.oxygenxml.com/partners.html#cmssolutionpartners" format="html"
-          scope="external">https://www.oxygenxml.com/partners.html#cmssolutionpartners</xref>.</p>
+          scope="external"/>.</p>
       <p>Even if you lack the funds to buy a commercial CMS, there are still plenty of open source
         version tracking solutions that provide the possibility of collaboration on a single DITA
         project: <xref
@@ -110,7 +110,7 @@
         Author is an online editing and reviewing solution that allows them to add comments and
         propose changes directly in the DITA content by using any device with a web browser (laptop,
         tablet, phone): <xref href="https://www.oxygenxml.com/xml_web_author.html" format="html"
-           scope="external">https://www.oxygenxml.com/xml_web_author.html</xref>.</p>
+           scope="external"/>.</p>
     </section>
     <p>I hope this overview will help you to implement a complete guided authoring experience using
       Oxygen. As usual, if you have any questions or suggestions, they are welcome.</p>

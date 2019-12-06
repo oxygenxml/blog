@@ -63,7 +63,7 @@
                     our DITA content to a private <b>GitHub</b> repository and we also made a public
                         <b>GitHub</b> repository containing a copy of our user manual's DITA
                         content:<xref href="https://github.com/oxygenxml/userguide" format="html"
-                        scope="external">https://github.com/oxygenxml/userguide</xref>. We use the
+                        scope="external"/>. We use the
                         <b>SourceTree</b> application to work with <b>Git</b> and we are quite happy
                     with it.</p>
             </section><section id="section_hch_w2r_yjb">
@@ -76,13 +76,11 @@
                 <p>More details about how with work with <b>DITA</b> can be found in these slides I
                     presented at <b>DITA Europe 2014</b>:<xref
                         href="http://www.oxygenxml.com/forum/files/usingDitaForOxygenUsersManual.odp"
-                        format="html" scope="external"
-                        >http://www.oxygenxml.com/forum/files/usingDitaForOxygenUsersManual.odp</xref>.</p>
+                        format="html" scope="external"/>.</p>
                 <p>Video demonstration showing how collaboration on a technical publication with
                     Subversion can be achieved: <xref
                         href="http://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html"
-                        format="html" scope="external"
-                        >http://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html</xref>.</p>
+                        format="html" scope="external"/>.</p>
             </section></bodydiv>
     </body>
 </topic>
