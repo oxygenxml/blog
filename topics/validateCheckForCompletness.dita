@@ -18,8 +18,7 @@
         <li>Validate each <b>DITA</b> resource with an additional <b>Schematron</b> resource which
           you can provide. <b>Schematron</b> is quite handy when it comes to enforcing internal
           rules on the DITA content and we use it quite a lot for checking our <xref
-            href="http://blog.oxygenxml.com/2015/05/schematron-checks-to-help-technical.html"
-            format="html" scope="external">user's manual</xref>.</li>
+            href="SchematronBCs.dita">user's manual</xref>.</li>
         <li>Batch validate referenced DITA resources. This setting validates each <b>DITA</b>
           resource according to the validation scenario associated with it in <b>Oxygen</b>. This
           will decrease the validation speed quite a bit but if you have <b>DITA</b> 1.3 resources
@@ -35,8 +34,7 @@
         <li>Report profiling attributes or values which are not valid according to the <b>Subject
             Scheme Map</b> associated with your project. You can read more about controlling
           profiling attributes and values here:<xref
-            href="http://blog.oxygenxml.com/2015/07/controlled-attribute-values-for-your.html"
-            format="html" scope="external"/>.</li>
+            href="controlledAttributeValues.dita"/>.</li>
         <li>Identify possible conflicts in profile attribute values. When the profiling attributes
           of a topic contain values that are not found in parent topic profiling attributes, the
           content of the topic is overshadowed when generating profiled output.</li>
@@ -49,7 +47,7 @@
           included in the table of contents.</li>
         <li>Check for duplicate topic IDs within the DITA map context. By default the topic ID can
           be used in the WebHelp output for <xref
-            href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/index.html#topics/context-sensitive-help-system.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/index.html#topics/context-sensitive-help-system.html"
             format="html" scope="external">context sensitive help</xref>. Also certain CMSs require
           that a certain topic ID would be unique in the entire DITA Map.</li>
         <li>Report elements with the same ID placed in the same DITA Topic according to the

@@ -449,7 +449,7 @@ UASCPbZrixUrtsDYW+D/A7aMNrd0LAk3AAAAAElFTkSuQmCC"
     <p>If you have problems getting images to appear the same size when published to PDF and
       XHTML-based outputs you should make sure they do not have the dots-per-inch information saved
       inside them: <xref
-        href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/stretched-images-pdf-output.html"
+        href="https://www.oxygenxml.com/doc/ug-editor/#topics/stretched-images-pdf-output.html"
         format="html" scope="external"/>.</p>
   </body>
 </topic>

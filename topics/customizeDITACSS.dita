@@ -49,8 +49,7 @@ dt, dd {
             save the changes to the preferences.</li>
         </ol><p>After you perform these steps, you will have a fully functioning framework in the
             <b>dita-extension</b> folder that can be shared with others: <xref
-            href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html"
-            format="html" scope="external"/>.</p><p>To check that your framework extension works,
+              href="author-document-type-extension-sharing.dita"/>.</p><p>To check that your framework extension works,
           you can create a new <b>DITA</b> topic and insert a <b>dl</b> element inside it. It should
           now be presented in a table-like layout. </p><p>In order to know which <b>CSS</b> styles
           to override for a specific <b>DITA</b> element, you can right click inside that element in

@@ -19,8 +19,7 @@
           <li>In the Oxygen <b>Preferences->Document Type Association</b> page edit the <b>DITA</b>
             framework. Instead of editing the DITA framework directly you may choose to extend it in
             order to share the extension more easily:<xref
-              href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html"
-              format="html" scope="external"/>.</li>
+              href="author-document-type-extension-sharing.dita"/>.</li>
           <li>In the <b>Author</b> tab go to the <b>Actions</b> tab and there is an action with the
             ID <b>styleguide</b>. If you edit the action, it invokes an operation with a parameter
             called <b>resourcePath</b>. You can edit that parameter to point to your internal (or
@@ -293,7 +292,7 @@ AnXSGPSTIAUliGCGFJQgAggqoQTqpDHoJ0EKShDBDCkoQQQQVEIJ1Elj0E+CFJQggpcLF/5/iGQLeMPy
         that documentation can be customized, for example you could add links for each element to a
         specific section in your style guide. This topic should tell you more about how this can be
           achieved:<xref
-          href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#tasks/author-styleguide-annotations.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/#tasks/author-styleguide-annotations.html"
           format="html" scope="external"/></p><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2wAAADJCAIAAADQNybGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAADwcSURB
 VHhe7Z1tkKXFdd+3UnxLVT6kUv5A5WO+5aW0RZWcSclW7HLsOI5UODjCYzsrv+0FFJSSF62IQCNE4ZKjSXZUWZcsrLW1EAmUlR1LYBgjW4IdWKOEBUksGJa1
 vYtdu9gCWziEEFllaXO6+3T36e7Tz9t9mefO/f/q2ZnTp885/fI8997/Pndm7r7/962/wYEDBw4cOHDgwIGj1wERiQMHDhw4cODAgaP3ARGJAwcOHDhw4MCB
@@ -472,8 +471,7 @@ siMaAAAAAElFTkSuQmCC"/></section>
       <p>For certain attributes (for example profiling attributes, <b>@outputclass</b> attributes)
         you may want to impose a set of controlled attribute values. This blog post will tell you
         how: <xref
-          href="http://blog.oxygenxml.com/2015/07/controlled-attribute-values-for-your.html"
-          format="html" scope="external"/>.</p>
+          href="controlledAttributeValues.dita"/>.</p>
     </section>
     <section id="section_wf2_cxr_2v">
       <title>Show validation errors or warning when guidelines are breached</title>
@@ -481,8 +479,7 @@ siMaAAAAAElFTkSuQmCC"/></section>
         signal to the writer when a rule is not obeyed. You can also add quick fixes to show writers
         various ways to rectify the problem. This blog post should give you more details about
           this:<xref
-          href="http://blog.oxygenxml.com/2015/05/schematron-checks-to-help-technical.html"
-          format="html" scope="external"/>.</p>
+            href="SchematronBCs.dita"/>.</p>
     </section>
     <section id="section_cgt_gyr_2v">
       <title>Bringing all of this together</title>

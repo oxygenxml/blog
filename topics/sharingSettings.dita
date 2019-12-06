@@ -20,7 +20,7 @@
             automatic spell checking):<xref href="https://github.com/oxygenxml/userguide"
               format="html" scope="external"/></p>
           <p>You can find out more details about sharing projects here: <xref
-              href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/sharing-projects.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/#topics/sharing-projects.html"
               format="html" scope="external"/>.</p>
         </li>
         <li>
@@ -29,12 +29,12 @@
             application startup script, this default options XML document will be used by the
             application to provide default values for certain settings. You can find out more about
             how default options work here:<xref
-              href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/default-options.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/#topics/default-options.html"
               format="html" scope="external"/>.</p>
         </li>
         <li>Have others manually <b>import</b> an options XML document which you <b>exported</b>
           from Oxygen:<xref
-            href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/import-export-preferences.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/#topics/import-export-preferences.html"
             format="html" scope="external"/>.</li>
         <li>
           <p>An Oxygen plugin could use our <b>Java API</b> to impose fixed options when the
@@ -48,7 +48,6 @@
       </ul></p>
     <p>If you want to share <b>document type configurations</b> (for editing certain XML vocabulary)
       you can find more details in this older blog post: <xref
-        href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html" format="html"
-        scope="external"/>.</p>
+        href="author-document-type-extension-sharing.dita"/>.</p>
   </body>
 </topic>

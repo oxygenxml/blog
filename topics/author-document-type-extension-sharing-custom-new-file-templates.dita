@@ -88,7 +88,6 @@
     <p>You can use the framework extension mechanism to customize lots of aspects of the <b>DITA</b>
       functionality in Oxygen. For example you can remove various elements from the content
       completion list: <xref
-        href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html" format="html"
-        scope="external"/>.</p>
+        href="author-document-type-extension-sharing.dita"/>.</p>
   </body>
 </topic>

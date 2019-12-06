@@ -29,7 +29,7 @@
     </example>
     <p>The usual dialog from Oxygen used to insert reusable content can also be used to select the
       range of elements to insert: <xref
-        href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/insert-dita-content-reference.html"
+        href="https://www.oxygenxml.com/doc/ug-editor/#topics/insert-dita-content-reference.html"
         format="html" scope="external"/>.</p>
   </body>
 </topic>

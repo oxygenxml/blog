@@ -51,8 +51,7 @@
           <li>PDF Customization difficulties. This in my opinion wins the cake in this category.
             Customizations for the standard PDF output are hard, they required knowledge of XSLT,
             XSL-FO and of the PDF plugin architecture. But alternatives do exist:<xref
-              href="http://blog.oxygenxml.com/2015/11/possibilities-to-obtain-pdf-from-dita.html"
-              format="html" scope="external"/></li>
+              href="ditaToPDF.dita"/></li>
           <li>"DITA is perceived as too complex for casual users." This quote says it all, the entry
             level is high. There are also complains about linking, filtering and reuse. All these
             come from the DITA flexibility and the fact that each new version adds new elements and

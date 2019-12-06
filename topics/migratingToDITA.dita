@@ -19,8 +19,7 @@
           <p>With structured <b>XML</b> authoring in general and with <b>DITA</b> in particular you
             have so many ways of reusing content. In a previous blog post I tried to come up with an
             overview about all the ways in which you can reuse content using <b>DITA</b>: <xref
-              href="http://blog.oxygenxml.com/2015/11/dita-reuse-strategies-short-tutorial.html"
-              format="html" scope="external"/></p>
+              href="../presentation-reuse/dita_reuse_strategies.dita"/></p>
         </li>
         <li>Produce multiple outputs from the same content using some complex profiling conditions
           which are not supported in the current work flow.</li>
@@ -35,16 +34,14 @@
             means having access to a variety of commercial and open source tools to generate various
             output formats from it. For example for obtaining the <b>PDF</b> you have about 5-6
             distinct possible solutions:<xref
-              href="http://blog.oxygenxml.com/2015/11/possibilities-to-obtain-pdf-from-dita.html"
-              format="html" scope="external"/>.</p>
+              href="ditaToPDF.dita"/>.</p>
         </li>
         <li>
           <p>Enforce certain internal rules on the documents.</p>
           <p> It's hard to impose best practices in unstructured documents. But with structured XML
             content, you can use Schematron to easily cover this aspect and even to provide quick
             fixes for your authors: <xref
-              href="http://blog.oxygenxml.com/2015/05/schematron-checks-to-help-technical.html"
-              format="html" scope="external"/>.</p>
+              href="SchematronBCs.dita"/>.</p>
         </li>
         <li>
           <p>Benefit of advice and help from a larger community of writers and developers.</p>

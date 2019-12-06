@@ -26,25 +26,20 @@
         to customize the existing configuration for one of these vocabularies and share the
         customization with others. Such customizations may include:<ul id="ul_mvw_lvy_xy">
           <li>Provide custom file templates: <xref
-              href="http://blog.oxygenxml.com/2015/12/sharing-new-custom-file-templates-for.html"
-              format="html" scope="external"/>.</li>
+              href="author-document-type-extension-sharing-custom-new-file-templates.dita"/>.</li>
           <li>Provide a custom CSS layer: <xref
-              href="http://blog.oxygenxml.com/2016/10/customizing-dita-visual-editing.html"
-              format="html" scope="external"/>.</li>
+              href="customizeDITACSS.dita"/>.</li>
           <li>Provide custom Schematron validation rules: <xref
-              href="http://blog.oxygenxml.com/2017/02/sharing-schematron-validation-rules.html"
-              format="html" scope="external"/>.</li>
+              href="sharing_schematron_validation_rules.dita"/>.</li>
           <li>Provide custom actions or modify the existing actions.</li>
         </ul>All of these customizations can be done by extending the existing framework
         configuration and then sharing the extension: <xref
-          href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html"
-          format="html" scope="external"/>.</p>
+            href="author-document-type-extension-sharing.dita"/>.</p>
         </section>
         <section id="section_iqn_vvy_xy">
             <title>Provide custom settings</title>
             <p>You may want to provide all members of the team with a fixed set of options: <xref
-                    href="http://blog.oxygenxml.com/2015/11/sharing-application-settings.html"
-                    format="html" scope="external"/>.</p>
+                href="sharingSettings.dita"/>.</p>
         </section>
         <section id="section_x45_fwy_xy">
       <title>Modify the application appearance or behavior using plugins</title>

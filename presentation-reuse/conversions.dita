@@ -901,7 +901,6 @@ ERABCSQqAyIgAiIgAiIgAiIgAiIgAiIgAiIgAhVPQAJJxRcBARABERABERABERABERABERABERABEfj/
       format which contains all your data will contain more semantic meaning than any of the
       published outputs.</p>
     <p>You can read more about the selling points of using XML in this older blog post: <xref
-        href="http://blog.oxygenxml.com/2015/09/a-short-story-of-reuse.html" format="html"
-        scope="external"/>.</p>
+      href="../reuse/short_story_reuse.dita"/>.</p>
   </body>
 </topic>

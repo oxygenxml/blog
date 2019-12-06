@@ -15,10 +15,10 @@
             <topicref href="topics/exampleOfADITAImplementationFortech.dita"/>
             <topicref href="topics/guidedAuthoring.dita"/>
             <topicref href="topics/maintain-healthy-dita-project.dita"/>
-            <topicref href="topics/DitaReuseStrategies.dita"/>
             <topicref href="topics/dita_linking_stretegies.dita"/>
             <topicref href="branchFilters/branchFilter.dita"/>
             <topicref href="keyscopes/keyscopesBlog.dita"/>
+            <topicref href="presentation-reuse/presentation.ditamap" format="ditamap"/>
         </topichead>
         <topichead navtitle="Publishing">
             <topicref href="topics/migrating-pdf-customizations.dita"/>

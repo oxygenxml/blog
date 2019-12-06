@@ -6,8 +6,7 @@
         <p>This small tutorial is based on the "DITA Linking Strategies" presentations I made for
       the DITA Europe 2016 and DITA North America 2017 conferences. It's a general overview about
       DITA linking possibilities and best practices. Also, it's meant as a continuation of the <xref
-        href="http://blog.oxygenxml.com/2015/11/dita-reuse-strategies-short-tutorial.html"
-        format="html" scope="external">DITA Reuse Strategies</xref> blog post.</p>
+          href="../presentation-reuse/dita_reuse_strategies.dita"/> blog post.</p>
         <p>According to <xref href="https://en.wikipedia.org/wiki/Hyperlink" format="html"
                 scope="external">Wikipedia</xref>: <lq>"A link, is a reference to data that the
                 reader can directly follow either by clicking, tapping, or hovering."</lq></p>

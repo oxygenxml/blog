@@ -23,7 +23,7 @@
     <p>In Oxygen you can create key definitions in the <b>DITA Map</b> by right clicking in the
         <b>DITA Maps Manager</b> and choosing <b>Append Child->Key definition with keyword...</b>.
       After this, in the topic you can use Oxygen's regular <xref
-        href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/insert-dita-content-reference.html"
+        href="https://www.oxygenxml.com/doc/ug-editor/#topics/insert-dita-content-reference.html"
         format="html" scope="external"><b>Reuse Content</b></xref> action to insert the
         <b>keyref</b>.</p>
   </body>

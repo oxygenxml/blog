@@ -12,8 +12,7 @@
       give the technical writer proposed solutions for the reported problem. In a previous blog
       post, I described how we use <b>Schematron</b> rules for our <b>Oxygen User's Manual</b> to
       impose restrictions when editing DITA content: <xref
-        href="http://blog.oxygenxml.com/2015/05/schematron-checks-to-help-technical.html"
-        format="html" scope="external"/>.</p>
+          href="SchematronBCs.dita"/>.</p>
         <p>Once you define the <b>Schematron</b> rules, they can be shared with the other members of
             your team via a document type <b>framework configuration</b>: <xref
                 href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html"
@@ -62,7 +61,7 @@
         edit the default <b>DITA</b> validation scenario, and add an extra validation stage to it (a
         stage that uses your custom <b>Schematron</b> schema). More details about validation
         scenarios can be found here: <xref
-          href="https://www.oxygenxml.com/doc/versions/18.1/ug-editor/tasks/dg-validation-scenarios.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/tasks/dg-validation-scenarios.html"
           format="html" scope="external"/>.</li>
             <li>Click <b>OK</b> to close the dialog box and then either <b>OK</b> or <b>Apply</b> to
         save the preferences changes.</li>
@@ -71,7 +70,7 @@
       fully functioning framework extension that can be shared with others.</p>
         <p>There are several methods for sharing the framework and you can read about them here:
         <xref
-        href="https://www.oxygenxml.com/doc/versions/18.1/ug-editor/topics/author-document-type-extension-sharing.html"
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/author-document-type-extension-sharing.html"
         format="html" scope="external"/>.</p>
         <p>After your team members install the framework, they can check the <i>Document Type
         Association</i> preferences page to make sure the framework is present in the list of
@@ -80,11 +79,8 @@
         <p>You can use the framework extension mechanism to customize numerous aspects of the
         <b>DITA</b> functionality in Oxygen. For example, you can remove various elements from the
       content completion list: <xref
-        href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html" format="html"
-        scope="external"
-        >http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html</xref>. Or you can
+          href="author-document-type-extension-sharing.dita"/>. Or you can
       distribute custom new file templates: <xref
-        href="http://blog.oxygenxml.com/2015/12/sharing-new-custom-file-templates-for.html"
-        format="html" scope="external"/>.</p>
+          href="author-document-type-extension-sharing-custom-new-file-templates.dita"/>.</p>
     </body>
 </topic>

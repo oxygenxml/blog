@@ -17,8 +17,7 @@
         <li>Open the Word document in MS Office, select all the content, and copy it.</li>
         <li>Open <b>Oxygen</b> and create a new <b>DITA</b> topic in the Author visual editing mode. </li>
         <li>Paste the selected content. Oxygen's <xref
-            href="http://blog.oxygenxml.com/2015/10/how-special-paste-works-in-oxygen.html"
-            format="html" scope="external">smart paste functionality</xref> will attempt to convert
+          href="howSpecialPasteWorksInOxygen.dita">smart paste functionality</xref> will attempt to convert
           the content to DITA.</li>
       </ol>
     </section>
@@ -35,8 +34,7 @@
               <li>Open the HTML file in any Web browser, select all of its content, and copy it.
                 Then open <b>Oxygen</b>, create a new <b>DITA</b> topic in the Author visual editing
                 mode, and paste the selected content. Oxygen's <xref
-                  href="http://blog.oxygenxml.com/2015/10/how-special-paste-works-in-oxygen.html"
-                  format="html" scope="external">smart paste functionality</xref> will attempt to
+                  href="howSpecialPasteWorksInOxygen.dita">smart paste functionality</xref> will attempt to
                 convert the HTML to DITA. </li>
             </ul>
           </p></li>

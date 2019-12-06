@@ -10,21 +10,16 @@
       <title>Learning to Work with DITA and Oxygen</title>
       <p>You can find useful links for learning how to edit DITA using Oxygen in this previous blog
         post: <xref
-          href="http://blog.oxygenxml.com/2016/03/resources-for-learning-dita-with-oxygen.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2016/03/resources-for-learning-dita-with-oxygen.html</xref>.</p>
+          href="learnDita.dita"
+          />.</p>
     </section>
     <section id="section_ohc_55f_kw">
       <title>Migrating to DITA</title>
       <p>There are multiple reasons why you would want to migrate from unstructured content to
         structured: <xref
-          href="http://blog.oxygenxml.com/2015/12/migrating-to-structured-standards-based.html"
-          format="html"
-           scope="external">http://blog.oxygenxml.com/2015/12/migrating-to-structured-standards-based.html</xref>. </p>
+          href="migratingToDITA.dita"/>. </p>
       <p>This older blog post details some possibilities of migrating Word documents to DITA: <xref
-          href="http://blog.oxygenxml.com/2016/05/how-to-migrate-from-word-to-dita.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2016/05/how-to-migrate-from-word-to-dita.html</xref>.</p>
+        href="migratingToDITAPractical.dita"/>.</p>
       <p>You also have ways to migrate from XML-based standards (like DocBook or XHTML to DITA)
         using a set of predefined transformation scenarios.</p>
     </section>
@@ -37,8 +32,7 @@
         form controls designed to assist and guide the author. The following blog post details how a
         custom CSS that will be used to enhance the visual editing experience can be created and
         shared with others: <xref
-          href="http://blog.oxygenxml.com/2016/10/customizing-dita-visual-editing.html"
-          format="html" scope="external"/>.</p>
+          href="customizeDITACSS.dita"/>.</p>
     </section>
     <section id="section_lgg_mvf_kw">
       <title>Implementing Your own Style Guide</title>
@@ -48,17 +42,12 @@
         elements should be used, you store them on an internal server, and you want all your team
         members to have access to that set of HTML resources directly from Oxygen. This blog post
         provides more details and useful links to help you get started: <xref
-          href="http://blog.oxygenxml.com/2016/03/implementing-your-own-style-guide.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2016/03/implementing-your-own-style-guide.html</xref>.</p>
+          href="styleguide.dita"/>.</p>
     </section>
     <section id="section_n4s_jwf_kw">
       <title>Imposing Controlled Attribute Values</title>
       <p>If you want to impose DITA attribute values that need to be set for profiling or general
-        use, this blog post should cover all you need to know about this: <xref
-          href="http://blog.oxygenxml.com/2015/07/controlled-attribute-values-for-your.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2015/07/controlled-attribute-values-for-your.html</xref>.</p>
+        use, this blog post should cover all you need to know about this: <xref href="controlledAttributeValues.dita"/>.</p>
     </section>
     <section id="section_rwd_4wf_kw">
       <title>Imposing Business Rules and Structure Restrictions to the DITA Content</title>
@@ -67,39 +56,28 @@
         automatically signal the content author when a rule is violated. You can also add quick
         fixes to provide authors various ways to rectify the problem. This blog post contains more
         details about this: <xref
-          href="http://blog.oxygenxml.com/2015/05/schematron-checks-to-help-technical.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2015/05/schematron-checks-to-help-technical.html</xref>.</p>
+          href="SchematronBCs.dita"/>.</p>
       <p>The DITA framework can be extended to add new Schematron rules: <xref
-          href="http://blog.oxygenxml.com/2017/02/sharing-schematron-validation-rules.html"
-          format="html" scope="external"/>.</p>
+        href="sharing_schematron_validation_rules.dita"/>.</p>
     </section>
     <section id="section_xpf_cyf_kw">
       <title>Running Batch Validation Checks on all of Your DITA Content</title>
       <p>The <b>Validate and Check For Completeness</b> tool available in the <b>DITA Maps
           Manager</b> view performs a lot of different consistency checks on all your DITA topics.
         It can also be used to apply <b>Schematron</b> business rules on all of your topics: <xref
-          href="http://blog.oxygenxml.com/2015/12/dita-map-validate-and-check-for.html"
-          format="html"
-           scope="external">http://blog.oxygenxml.com/2015/12/dita-map-validate-and-check-for.html</xref>.</p>
+          href="validateCheckForCompletness.dita"/>.</p>
     </section>
     <section id="section_av5_zwf_kw">
       <title>Sharing DITA Editing Customizations with Your Team</title>
       <p>Most of the custom editing behaviors, toolbar, and menu buttons that are available when
         editing DITA content are defined in the <b>DITA</b> framework configuration. A framework
         configuration's general anatomy is described here: <xref
-          href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html</xref>.</p>
+          href="oxygenFrameworks.dita"/>.</p>
       <p>The framework configuration can be shared with all of your team members. For example, here
         is a way to restrict team members from using certain DITA elements: <xref
-          href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html</xref>. </p>
+          href="author-document-type-extension-sharing.dita"/>. </p>
       <p>Furthermore, here is a way to distribute new DITA file templates to your team: <xref
-          href="http://blog.oxygenxml.com/2015/12/sharing-new-custom-file-templates-for.html"
-          format="html" scope="external"
-          >http://blog.oxygenxml.com/2015/12/sharing-new-custom-file-templates-for.html</xref>.</p>
+        href="author-document-type-extension-sharing-custom-new-file-templates.dita"/>.</p>
     </section>
     <section id="section_lqh_fxf_kw">
       <title>Sharing Global Application Settings with Your Team</title>
@@ -107,9 +85,7 @@
         writing documentation, or you want all of them to use a custom term dictionary or a custom
         set of learned words. This older blog post offers some hints about how global Oxygen
         settings can be distributed to your team members: <xref
-          href="http://blog.oxygenxml.com/2015/11/sharing-application-settings.html" format="html"
-          scope="external"
-          >http://blog.oxygenxml.com/2015/11/sharing-application-settings.html</xref>.</p>
+          href="sharingSettings.dita"/>.</p>
     </section>
     <section id="section_hhl_scg_kw">
       <title>Collaboration, Content Management, and Version Tracking</title>

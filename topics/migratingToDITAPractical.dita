@@ -11,8 +11,7 @@
         <li>Open the Word document in MS Office, select all the content and copy it. Then open
             <b>Oxygen</b>, create a new <b>DITA</b> topic in the Author visual editing mode and
           paste in it. Oxygen's <xref
-            href="http://blog.oxygenxml.com/2015/10/how-special-paste-works-in-oxygen.html"
-            format="html" scope="external">smart paste functionality</xref> will attempt to convert
+            href="howSpecialPasteWorksInOxygen.dita">smart paste functionality</xref> will attempt to convert
           the HTML to DITA.</li>
         <li>MS Office has the potential to save Word documents to HTML. Once you obtain that HTML
           you have two possibilities:<ul id="ul_sfh_2zv_bw">
@@ -23,8 +22,7 @@
             <li>Open the <b>HTML</b> file in any <b>Web browser</b>, select all its content and copy
               it. Then open <b>Oxygen</b>, create a new <b>DITA</b> topic in the Author visual
               editing mode and paste in it. Oxygen's <xref
-                href="http://blog.oxygenxml.com/2015/10/how-special-paste-works-in-oxygen.html"
-                format="html" scope="external">smart paste functionality</xref> will attempt to
+                href="howSpecialPasteWorksInOxygen.dita">smart paste functionality</xref> will attempt to
               convert the HTML to DITA.</li>
           </ul></li>
         <li> Open the Word document in the free <b>Libre Office</b> application, then save it to

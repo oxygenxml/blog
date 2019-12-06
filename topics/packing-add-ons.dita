@@ -3,15 +3,13 @@
 <topic id="topic_xk5_gqk_qy">
   <title>Your First Oxygen Add-on</title>
   <body>
-    <p> A <xref href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html"
-        format="html" scope="external">framework configuration</xref> provides validation, content
+    <p> A <xref href="author-document-type-extension-sharing.dita">framework configuration</xref> provides validation, content
       completion, and visual editing support for a certain XML vocabulary. </p>
     <p>Existing framework configurations that come bundled with <b>Oxygen</b> can be extended and
       modified. For example, the <b>DITA</b> framework configuration that adds support for editing
         <b>DITA</b> documents can be modified to remove existing actions, add custom actions, or
       modify many other behaviors: <xref
-        href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html" format="html"
-        scope="external"/>.</p>
+        href="author-document-type-extension-sharing.dita"/>.</p>
     <p>One way of distributing framework configurations is by using Oxygen's <b>add-on</b> support:
         <xref href="https://www.oxygenxml.com/addons.html" format="html" scope="external"/>. An
       add-on configuration is usually composed of only two files:<ol id="ol_qb1_zvk_qy">
@@ -66,8 +64,7 @@ Everybody's welcomed to use this
         href="http://blog.oxygenxml.com/2013/11/the-oxygen-sdk-part-1-plugins.html" format="html"
         scope="external">install Oxygen plugins</xref>. Some of the public hosted Oxygen plugins and
       frameworks are also available as add-ons: <xref
-        href="http://blog.oxygenxml.com/2014/11/public-hosted-oxygen-plugin-and.html" format="html"
-        scope="external"/>.</p>
+        href="Oxygen%20plugins%20and%20frameworks.xml"/>.</p>
     <p>In conclusion, if you want to share Oxygen customizations with others, you should try the
       add-on approach, it is a better approach to manually distributing frameworks and plugins.</p>
   </body>

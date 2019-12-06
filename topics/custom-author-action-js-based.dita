@@ -12,8 +12,7 @@
         <li>
           <p>Follow the steps 1,3, 4 and 5 listed in this older blog post to create an extension of
             the <b>DITA</b> framework: <xref
-              href="http://blog.oxygenxml.com/2016/10/customizing-dita-visual-editing.html"
-              format="html" scope="external"/>.</p>
+              href="customizeDITACSS.dita"/>.</p>
         </li>
         <li>
           <p>In the <b>Document Type Association</b> preferences page, edit the <b>DITA</b>

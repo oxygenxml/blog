@@ -28,8 +28,7 @@
           OT</b> that can be downloaded from the DITA OT official web site. For example, it contains
         pre-installed plugins for converting DITA content to Word, EPUB, Oxygen WebHelp, or to
         publish to PDF using CSS to customize the output: <xref
-          href="http://blog.oxygenxml.com/2017/03/useful-dita-ot-plugins.html" format="html"
-          scope="external"/>.</p>
+          href="useful-dita-ot-plugins.dita"/>.</p>
     </section>
     <section id="section_bzh_wjn_hdb">
       <title>Publishing Customizations (Before you begin)</title>

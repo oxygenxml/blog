@@ -6,7 +6,7 @@
    <body>
       <section id="section_llj_mbf_rhb">
          <title>How should a Happy and Healthy Documentation Project Look Like?</title>
-         <p><image scope="external" href="healthy-images/brocolli.png" id="image_mck_nbf_rhb"
+         <p><image href="../healthy-images/brocolli.png" id="image_mck_nbf_rhb"
                scale="30"/>
          </p>
       </section>
@@ -91,7 +91,7 @@
       </section>
       <section id="section_qq1_vbf_rhb">
          <title>Storage</title>
-         <p><image scope="external" href="healthy-images/storage.png" id="image_ykv_wbf_rhb"
+         <p><image href="../healthy-images/storage.png" id="image_ykv_wbf_rhb"
                scale="40"/></p>
          <p>
             <ul>
@@ -106,7 +106,7 @@
       </section>
       <section id="section_wcj_xbf_rhb">
          <title>Version Control</title>
-         <p><image scope="external" href="healthy-images/history.png" id="image_vy1_zbf_rhb"
+         <p><image href="../healthy-images/history.png" id="image_vy1_zbf_rhb"
                scale="50"/></p>
          <p>
             <ul id="ul_pqn_ybf_rhb">
@@ -135,7 +135,7 @@
       </section>
       <section id="section_c4b_ccf_rhb">
          <title>Collaboration and Workflow</title>
-         <p><image scope="external" href="healthy-images/colaboration.png" id="image_wqr_ccf_rhb"
+         <p><image href="../healthy-images/colaboration.png" id="image_wqr_ccf_rhb"
                scale="40"/></p>
          <ul>
             <li>
@@ -150,7 +150,7 @@
       <section id="section_y3f_2cf_rhb">
          <title>Workflow</title>
          <p>
-            <image scope="external" href="healthy-images/workflow.png" id="image_qdb_fcf_rhb"
+            <image href="../healthy-images/workflow.png" id="image_qdb_fcf_rhb"
                scale="80"/>
          </p>
       </section>
@@ -183,12 +183,12 @@
       </section>
       <section id="section_atk_mcf_rhb">
          <title>Issue tracking – Simple Documentation Workflow</title>
-         <p><image scope="external" href="healthy-images/docworkflow.png" id="image_esw_ncf_rhb"
+         <p><image href="../healthy-images/docworkflow.png" id="image_esw_ncf_rhb"
                scale="80"/></p>
       </section>
       <section id="section_rnm_4cf_rhb">
          <title>Issue tracking – Development and Documentation Workflow</title>
-         <p><image scope="external" href="healthy-images/issueworkflow.png" id="image_dhm_pcf_rhb"
+         <p><image href="../healthy-images/issueworkflow.png" id="image_dhm_pcf_rhb"
                scale="80"/>
          </p>
       </section>
@@ -259,7 +259,7 @@
       </section>
       <section id="section_lzf_ycf_rhb">
          <title>Contribution Consistency</title>
-         <p><image scope="external" href="healthy-images/contrib.png" id="image_vzt_ycf_rhb"
+         <p><image href="../healthy-images/contrib.png" id="image_vzt_ycf_rhb"
                scale="80"/>
          </p>
       </section>
@@ -303,8 +303,7 @@
       </section>
       <section id="section_msy_ddf_rhb">
          <title>Automating Style Guide Rules</title>
-         <p><xref href="https://blog.oxygenxml.com/2015/05/schematron-checks-to-help-technical.html"
-               format="html" scope="external"/></p>
+         <p><xref href="SchematronBCs.dita"/></p>
          <p>
             <ul>
                <li>
@@ -319,8 +318,7 @@
       </section>
       <section id="section_gds_gdf_rhb">
          <title>Using the same terminology rules</title>
-         <p><xref href="http://blog.oxygenxml.com/2017/06/checking-terminology-when-editing-in.html"
-               format="html" scope="external"/></p>
+         <p><xref href="checking_terminology_with_oxygen_xml_editor.dita"/></p>
       </section>
       <p>
          <ul>
@@ -340,7 +338,7 @@
       </p>
       <section id="section_cxn_3df_rhb">
          <title>DITA Project Structure</title>
-         <p><image scope="external" href="healthy-images/projstruct.png" id="image_m41_jdf_rhb"
+         <p><image href="../healthy-images/projstruct.png" id="image_m41_jdf_rhb"
                scale="60"/></p>
          <ul>
             <li>
@@ -383,9 +381,8 @@
       </section>
       <section id="section_vkc_hhf_rhb">
          <title>Managing Content Reuse</title>
-         <p><xref href="http://blog.oxygenxml.com/2015/11/dita-reuse-strategies-short-tutorial.html"
-               format="html" scope="external"/></p>
-         <p><image scope="external" href="healthy-images/reuse.png" id="image_cvg_3hf_rhb"
+         <p><xref href="../presentation-reuse/dita_reuse_strategies.dita"/></p>
+         <p><image href="../healthy-images/reuse.png" id="image_cvg_3hf_rhb"
                scale="60"/></p>
          <ul>
             <li>
@@ -401,9 +398,8 @@
       </section>
       <section id="section_ydt_jhf_rhb">
          <title>Managing Links</title>
-         <p><xref href="http://blog.oxygenxml.com/2017/06/dita-linking-strategies.html"
-               format="html" scope="external"/></p>
-         <p><image scope="external" href="healthy-images/link.png" id="image_rj2_lhf_rhb" scale="60"
+         <p><xref href="dita_linking_stretegies.dita"/></p>
+         <p><image href="../healthy-images/link.png" id="image_rj2_lhf_rhb" scale="60"
             /></p>
          <ul id="ul_nvs_lhf_rhb">
             <li>
@@ -443,10 +439,9 @@
       </section>
       <section id="section_bwk_4hf_rhb">
          <title>Translation</title>
-         <p><image scope="external" href="healthy-images/translate.png" id="image_hxg_phf_rhb"
+         <p><image href="../healthy-images/translate.png" id="image_hxg_phf_rhb"
                scale="60"/></p>
-         <p><xref href="http://blog.oxygenxml.com/2018/05/translating-your-dita-project.html"
-               format="html" scope="external"/></p>
+         <p><xref href="translating_your_dita_project.dita"/></p>
          <p>
             <ul>
                <li>
@@ -544,7 +539,7 @@
             </li>
             <li>
                <p>Oxygen XML Blog (Reuse, Linking, custom validation, sharing settings): </p>
-               <p><xref href="http://blog.oxygenxml.com/" format="html" scope="external"/>
+               <p><xref href="https://blog.oxygenxml.com/" format="html" scope="external"/>
                </p>
             </li>
          </ul>
@@ -573,7 +568,7 @@
       </section>
       <p>But don’t panic if you do not have all the aspects of a project covered, your project does
          not need to be perfect, it needs to be perfectible.</p>
-      <p><image scope="external" href="healthy-images/nopanic.png" id="image_vrb_23f_rhb" scale="60"
+      <p><image href="../healthy-images/nopanic.png" id="image_vrb_23f_rhb" scale="60"
          />
       </p>
    </body>

@@ -226,8 +226,7 @@
               that first asks the end user for their name and then inserts it in the
               document:<codeblock>&lt;author>${ask('Author Name', generic, 'John Doe')}&lt;/author></codeblock>Code
               templates can also be used when creating <xref
-                href="http://blog.oxygenxml.com/2015/12/sharing-new-custom-file-templates-for.html"
-                format="html" scope="external">new file templates</xref>.</p>
+                href="author-document-type-extension-sharing-custom-new-file-templates.dita">new file templates</xref>.</p>
           </li>
           <li>Outline Quick find filter - The Outline view contains a filter that can be used to
             reduce the number of elements displayed in it (for example, display only the contained
@@ -287,8 +286,7 @@
           <li>The <b>Styles</b> drop-down toolbar menu allows you to choose between various CSS
             styles to apply while editing. The <b>Hints</b> and <b>Inline actions</b> layers should
             be interesting for you to experiment with. Or you can <xref
-              href="http://blog.oxygenxml.com/2016/10/customizing-dita-visual-editing.html"
-              format="html" scope="external">add your own</xref>.</li>
+              href="customizeDITACSS.dita">add your own</xref>.</li>
         </ul>
       </p>
     </section>
