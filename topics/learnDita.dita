@@ -8,9 +8,9 @@
     <section id="section_wyk_5fj_2v">
       <title>Resources for editing DITA with Oxygen:</title>
       <p>We have a getting started section in our user's manual: <xref
-          href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/eppo-first-dita-topic.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/#topics/eppo-first-dita-topic.html"
           format="html" scope="external"/> and a larger section on DITA authoring: <xref
-          href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/author-dita.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/#topics/author-dita.html"
           format="html" scope="external"/>.</p>
       <p>There are two past webinars about DITA support in Oxygen, you can follow them on our Oxygen
         YouTube channel: <xref href="https://www.youtube.com/watch?v=j7LMcO_euJU" format="html"
@@ -36,11 +36,11 @@
       <p>Usually customizing the XHTML based outputs means creating your custom CSS selectors. If
         you generate WebHelp output using Oxygen, we have a section explaining basic WebHelp
         customizations: <xref
-          href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/customize_webhelp.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/#topics/customize_webhelp.html"
           format="html" scope="external"/>.</p>
       <p>For PDF-based outputs if you publish via the <b>DITA Open Toolkit</b> we have a section in
         our user's manual about PDF customizations: <xref
-          href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita-pdf-output.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-pdf-output.html"
           format="html" scope="external"/>. There is also a <xref
           href="http://dita-generator.elovirta.com/" format="html" scope="external">PDF plugin
           generator</xref> created by Jarno Elovirta which can be used in order to customize the PDF

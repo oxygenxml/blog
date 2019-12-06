@@ -13,7 +13,7 @@
         <li>Default DITA to PDF solution embedded in the DITA Open Toolkit distribution. Besides
           Apache FOP you can also use RenderX XEP or Antenna House for publishing. It's
           customization can be done either via a plugin or via a PDF customization folder: <xref
-            href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/index.html#topics/dita_pdf_output_customization.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/index.html#topics/dita_pdf_output_customization.html"
             format="html" scope="external"/>.</li>
         <li>DITA to PDF using CSS. This <xref href="https://github.com/oxygenxml/dita-css"
             format="html" scope="external">open source DITA OT plugin</xref> was developed by Oxygen

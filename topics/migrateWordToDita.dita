@@ -6,11 +6,11 @@
     <author>Radu Coravu</author>
   </prolog>
   <body>
-    <p>The need for migrating Microsoft Office® Word documents to XML formats, and particularly to
-      DITA, is quite a frequently encountered situation. As usual, migration from proprietary
-      formats to XML is never perfect and manual changes need to be made to the converted content.
-      However, the methods below should help you find the best approach for your particular
-      case:</p>
+    <p>The need for migrating Microsoft Office<tm tmtype="reg"/> Word documents to XML formats, and
+      particularly to DITA, is quite a frequently encountered situation. As usual, migration from
+      proprietary formats to XML is never perfect and manual changes need to be made to the
+      converted content. However, the methods below should help you find the best approach for your
+      particular case:</p>
     <section id="method_1">
       <title>Method 1</title>
       <ol>

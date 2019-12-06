@@ -14,7 +14,7 @@
           installations. Also for the <b>Oxygen Eclipse Plugin</b> we need to generate <b>Eclipse
             Help</b>.</li>
         <li><b>Online Help</b> which is available as <xref
-            href="http://www.oxygenxml.com/doc/ug-oxygen/" format="html" scope="external"><b>WebHelp
+            href="https://www.oxygenxml.com/doc/ug-oxygen/" format="html" scope="external"><b>WebHelp
               with Feedback</b></xref> on our web site and allows users to add comments to each
           topic. Those comments can then be used by us to rephrase and improve our
           documentation.</li>

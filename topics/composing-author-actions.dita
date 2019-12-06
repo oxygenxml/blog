@@ -19,7 +19,7 @@
           <p>In the <b>Document Type Association</b> preferences page, edit the <b>DITA</b>
             framework extension you just created. Go to the <b>Author->Actions</b> tab and create a
             new action with the ID <b>change.table.colsep</b>.  Use the predefined <xref
-              href="https://www.oxygenxml.com/doc/versions/19.1/ug-editor/topics/dg-default-author-operations.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html"
               format="html" scope="external"><b>ChangeAttributeOperation</b></xref> to set the
             (colsep="1" attribute) on the closest table element. The custom action would look like
             this:</p>
@@ -34,7 +34,7 @@
         <li>
           <p>Create a new action with the ID <b>insert.table.fixed.attributes</b> and use the
             predefined <xref
-              href="https://www.oxygenxml.com/doc/versions/19.1/ug-editor/topics/dg-default-author-operations.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html"
               format="html" scope="external"><b>ExecuteMultipleActionsOperation</b></xref> to call 4
             actions in a row, the original <b>insert.table</b> action ID that inserts the table,
             followed by the three action IDs that set various attribute values to the inserted

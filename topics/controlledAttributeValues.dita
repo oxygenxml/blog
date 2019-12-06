@@ -22,11 +22,11 @@
 &lt;/match></codeblock>Besides
           providing a hard-coded list of values the content completion configuration file is
           flexible enough to allow <xref
-            href="http://www.oxygenxml.com/doc/versions/17.0/ug-editor/#topics/configuring-content-completion-proposals.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/#topics/configuring-content-completion-proposals.html"
             format="html" scope="external">calling an XSLT stylesheet</xref> which could retrieve
           those values from other sources (for example via HTTP from an Exist database). </li>
         <li>Provide those controlled values via a <xref
-            href="http://www.oxygenxml.com/doc/versions/17.0/ug-editor/#topics/subject-scheme-map.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/#topics/subject-scheme-map.html"
             format="html" scope="external">Subject Scheme Map</xref> (my favorite). Coming back to
           our example, you can create a small Subject Scheme map with the file name
             <filepath>controlledValues.ditamap</filepath> and the

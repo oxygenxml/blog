@@ -51,7 +51,7 @@ Everybody's welcomed to use this
       install the new add-on. Therefore, you can modify the framework customization in a common
       location and change the add-on version to signal all end-users who have installed the add-on
       that a new version is available. More details about packing an add-on can be found here:<xref
-        href="https://www.oxygenxml.com/doc/versions/18.1/ug-editor/topics/packing-and-deploying-addons.html#packing-and-deploying-addons"
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/packing-and-deploying-addons.html#packing-and-deploying-addons"
         format="html" scope="external"/>.</p>
     <p>If you want to test the small add-on I exemplified, you can find the sample add-on resources
         here:<xref href="https://www.oxygenxml.com/forum/files/sample-add-on.zip" format="zip"
@@ -60,7 +60,7 @@ Everybody's welcomed to use this
       the Oxygen <b>Help</b> menu. You can add a reference to the add-on <b>XML descriptor</b> file
       that can reside either on the local hard drive or on a web server, and Oxygen will present all
       available add-ons: <xref
-        href="https://www.oxygenxml.com/doc/versions/18.1/ug-editor/topics/installing-and-updating-add-ons.html"
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/installing-and-updating-add-ons.html"
         format="html" scope="external"/></p>
     <p>The add-ons support can also be used to <xref
         href="http://blog.oxygenxml.com/2013/11/the-oxygen-sdk-part-1-plugins.html" format="html"

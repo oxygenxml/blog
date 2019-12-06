@@ -26,7 +26,7 @@
             <b>DITAExtensionsBundle</b> which resides in the <b>DITA</b> Java extensions archive
             <b>dita.jar</b>.</li>
         <li>The <b>DITAExtensionsBundle</b> is an extension of the <xref
-            href="https://www.oxygenxml.com/doc/versions/17.0/ug-editor/index.html#tasks/dg-extensions-bundle.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/index.html#tasks/dg-extensions-bundle.html"
             format="html" scope="external"><b>ExtensionsBundle</b></xref> API and it provides its
           own external object extension
           handler:<codeblock outputclass="language-java">  /**

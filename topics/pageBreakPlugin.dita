@@ -41,7 +41,7 @@
             integrator task. </p>
           <p>If you are running the publishing from <b>Oxygen XML Editor</b> you can use the
             predefined transformation scenario: <xref
-              href="http://www.oxygenxml.com/doc/ug-oxygen/#topics/dita-ot-install-plugin.html"
+              href="https://www.oxygenxml.com/doc/ug-oxygen/#topics/dita-ot-install-plugin.html"
               format="html" scope="external"/>. </p>
           <p>If you run DITA OT from the command line please follow these guidelines: <xref
               href="http://www.dita-ot.org/2.0/dev_ref/plugins-installing.html" format="html"

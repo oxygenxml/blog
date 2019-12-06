@@ -2,11 +2,11 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="dita_oriented_tips_and_tricks">
   <title>Oxygen XML Editor - DITA Oriented Tips And Tricks</title>
-  <shortdesc>Oxygen XML Editor has about 18 years of development under its wings. During these
-    years, we added lots of functionality and many of our users usually do not know more than 20-30%
-    of Oxygen's features. So this presentation is intended for technical writers using Oxygen to
-    write DITA content and who may want to find out more about their tool.</shortdesc>
   <body>
+    <p>Oxygen XML Editor has about 18 years of development under its wings. During these
+      years, we added lots of functionality and many of our users usually do not know more than 20-30%
+      of Oxygen's features. So this presentation is intended for technical writers using Oxygen to
+      write DITA content and who may want to find out more about their tool.</p>
     <section id="section_gld_tbs_gfb">
       <title>Add-ons</title>
       <p>There are lots of free add-ons provided by the Oxygen team that can be installed in an
@@ -198,25 +198,25 @@
             useful actions to count the number of words in the entire document (or in the selected
             text), convert the selection to upper, lowercase, or sentence case</li>
           <li><xref
-              href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/author-navigate-document-content-x-editing2.html?hl=bookmark#author-navigate-document-content__navigating_with_bookmarks"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html?hl=bookmark#author-navigate-document-content__navigating_with_bookmarks"
               format="html" scope="external">Bookmarks</xref> - Click the vertical left side bar in
             the editing area to add a bookmark. Navigate to that bookmark even after the file has
             been closed using the <b>Ctrl/CMD + number</b> shortcut.</li>
           <li><xref
-              href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/folding-author-mode-x-modes2.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode-x-modes2.html"
               format="html" scope="external">Collapse other folds</xref> - Click a fold triangle in
             the Author visual editing mode and you can choose to close all other folds, useful when
             working with multiple sections in the same file.</li>
           <li>
             <p><xref
-                href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/code-templates-x-editing2.html"
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html"
                 format="html" scope="external">Code templates</xref> - Define small fragments of XML
               content that can be inserted either by defining a shortcut key or by pressing
                 <b>ENTER</b> in the editing area.</p>
           </li>
           <li>
             <p><xref
-                href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/editor-variables.html"
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html"
                 format="html" scope="external">Editor variables</xref> - Certain Oxygen-specific
               macros can be automatically expanded. For example, a code template that inserts the
               current author name can use this editor
@@ -240,7 +240,7 @@
       <p>
         <ul id="ul_vvc_4h3_ffb">
           <li><xref
-              href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/dita-reusable-components-view.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-reusable-components-view.html"
               format="html" scope="external">DITA Reusable Components</xref> view. You can use this
             side view to quickly search for and insert references to keys or to reusable
             components.</li>
@@ -276,7 +276,7 @@
                 row by clicking to the left of it.</li>
             </ul></li>
           <li><xref
-              href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/image-map-dita-x-dita2.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/image-map-dita-x-dita2.html"
               format="html" scope="external">Add hotspots to images</xref> - You can right-click any
             image reference and use the <b>Image Map Editor</b> to configure target links for
             various parts of the image.</li>
@@ -297,31 +297,31 @@
       <p>Oxygen has a lot of global settings that can be configured, I will just list what I
         consider to be the most important ones:</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/preferences-menu-shortcut-keys.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-menu-shortcut-keys.html"
           format="html" scope="external">Menu shortcut keys</xref> - You can use this preferences
         page to assign or to see the shortcut for any action available in Oxygen.</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/preferences-fonts.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-fonts.html"
           format="html" scope="external">Fonts</xref> - This page allows you to change the default
         fonts used in the application.</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/preferences-appearance.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-appearance.html"
           format="html" scope="external">Appearance</xref> - Change the default color theme in
         Oxygen (the <b>Graphyte</b> theme is quite popular).</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/preferences-editor-spell-check.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-spell-check.html"
           format="html" scope="external">Spell check</xref> - Customize the spell checker settings,
         use custom spell check dictionaries.</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/preferences-editor-save.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html"
           format="html" scope="external">Save</xref> - Settings to automatically save or to check
         for errors before saving the file.</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/preferences-external-tools.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-external-tools.html"
           format="html" scope="external">External tools</xref> - Define various command line tools
         that you can launch from Oxygen.</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/preferences-content-completion-annotations.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-content-completion-annotations.html"
           format="html" scope="external">Annotations</xref> - Disable the tooltips which appear when
         hovering over various elements (useful if you have a small screen).</p>
     </section>

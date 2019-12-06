@@ -97,7 +97,7 @@
       <li>Sample Oxygen plugin demo by Tobias Fisher: <xref
           href="https://github.com/tofi86/oxygen_PluginDemo" format="html" scope="external"/>.</li>
       <li>A <xref
-          href="http://www.oxygenxml.com/doc/ug-oxygen/index.html#concepts/workspace-access-plugin.html"
+          href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#concepts/workspace-access-plugin.html"
           format="html" scope="external">Workspace Access Plugin</xref> for Oxygen XML Editor that
         creates TEI-conform UUIDs starting with a letter: <xref
           href="https://github.com/digicademy/CustomUUID" format="html" scope="external"/></li>

@@ -24,13 +24,13 @@
       <title>Migrating Microsoft Word content to DITA</title>
       <p>The Oxygen XML User Manual has a detailed topic enumerating the possibilities to convert
         Microsoft Word content to DITA: <xref
-          href="https://www.oxygenxml.com/doc/versions/20.1/ug-editor/topics/ooxml-to-dita.html?hl=migrate%2Cdita"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/ooxml-to-dita.html?hl=migrate%2Cdita"
           format="html" scope="external"/></p>
     </section>
     <section id="section_yx1_hv4_4gb">
       <title>Migrating Excel content to DITA</title>
       <p>You can use Oxygen's <xref
-          href="https://www.oxygenxml.com/doc/versions/20.1/ug-editor/topics/smart-paste-support.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support.html"
           format="html" scope="external"><i>Smart Paste</i></xref> functionality to copy content
         from an Excel spreadsheet and paste it inside an opened DITA topic. Also, as an alternate
         possibility, the <b>Oxygen Resources Converter</b> add-on was updated to be able to batch
@@ -64,7 +64,7 @@
       <p>The DITA Open Toolkit publishing engine bundled with Oxygen allows you to reference
         Markdown files directly in a DITA map and either publish them directly or export the
         Markdown files to DITA one by one: <xref
-          href="https://www.oxygenxml.com/doc/versions/20.1/ug-editor/topics/markdown-dita-x-dita2.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/markdown-dita-x-dita2.html"
           format="html" scope="external"/>. If you want to convert multiple Markdown documents at
         once, you can use the <b>Oxygen Resources Converter</b> add-on: <xref
           href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
@@ -73,7 +73,7 @@
     <section id="section_ss1_gw4_4gb">
       <title>Migrating HTML content to DITA</title>
       <p>Using Oxygen's <xref
-          href="https://www.oxygenxml.com/doc/versions/20.1/ug-editor/topics/smart-paste-support.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support.html"
           format="html" scope="external"><i>Smart Paste</i></xref> functionality, you can open the
         HTML documents in a web browser, then copy the contents and paste it in a DITA topic opened
         in Oxygen's <b>Author</b> visual editing mode. If you want to convert multiple HTML files,

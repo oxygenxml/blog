@@ -21,14 +21,14 @@
       can copy it from inside the old <b>Oxygen</b> installation to an external location and in
         <b>Oxygen 18</b>, the same <b>Preferences->DITA</b> page allows you to choose an external
         <b>DITA OT</b> distribution to use:</p>
-    <p><xref href="https://www.oxygenxml.com/doc/versions/18.0/ug-editor/tasks/use-new-dita-ot.html"
+    <p><xref href="https://www.oxygenxml.com/doc/ug-editor/tasks/use-new-dita-ot.html"
         format="html" scope="external"/></p>
     <p>If you still want to migrate:</p>
     <p>No proper implemented customization should modify the base "<b>org.dita.pdf2</b>" plugin
       contents. The customization folder should be either kept external to the DITA Open Toolkit
       distribution:</p>
     <p><xref
-        href="https://www.oxygenxml.com/doc/versions/18.0/ug-editor/topics/dita_pdf_output_customization.html"
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_pdf_output_customization.html"
         format="html" scope="external"/></p>
     <p> or it should be provided via a PDF customization plugin:</p>
     <p><xref href="http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html" format="html"

@@ -42,7 +42,7 @@
                 project files and a <filepath>custom_frameworks</filepath> folder that contains your
                   <filepath>dita-extension</filepath>.</li>
               <li>Start the application, go to the <xref
-                  href="http://www.oxygenxml.com/doc/versions/17.0/ug-editor/#topics/using-the-project-view.html"
+                  href="https://www.oxygenxml.com/doc/ug-editor/#topics/using-the-project-view.html"
                   format="html" scope="external"><b>Project</b> view</xref>, and create a project.
                 Save it in the newly created directory.</li>
               <li>In the <b>Document Type Association / Locations</b> preferences page, select
@@ -54,13 +54,13 @@
               <li>You can then share the new project directory with other users. For example, you
                 can commit it to your version control system and have them update their working
                 copy. When they open the customized project file in the <xref
-                  href="http://www.oxygenxml.com/doc/versions/17.0/ug-editor/#topics/using-the-project-view.html"
+                  href="https://www.oxygenxml.com/doc/ug-editor/#topics/using-the-project-view.html"
                   format="html" scope="external"><b>Project</b> view</xref>, the new document type
                 becomes available in the list of Document Types.</li>
             </ol>
         </li>
         <li product="author developer editor">Deploy the framework/document type configuration <xref
-            href="http://www.oxygenxml.com/doc/versions/17.0/ug-editor/#topics/packing-and-deploying-addons.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/#topics/packing-and-deploying-addons.html"
             format="html" scope="external">as an add-on</xref>.</li>
       </ul></p>
     <p>After your team members install the framework, they can check in the <b>Document Type

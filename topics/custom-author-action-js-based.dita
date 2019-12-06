@@ -19,7 +19,7 @@
           <p>In the <b>Document Type Association</b> preferences page, edit the <b>DITA</b>
             framework extension you just created. Go to the <b>Author->Actions</b> tab and create a
             new action with the ID <b>split.table</b>. Use the predefined <xref
-              href="https://www.oxygenxml.com/doc/versions/21.1/ug-editor/topics/dg-default-author-operations.html#dg-default-author-operations__jsoperation"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html#dg-default-author-operations__jsoperation"
               format="html" scope="external"><b>JSOperation</b></xref> to invoke a custom Javascript
             code. The custom action definition would look like this:</p>
           <p><image href="https://www.oxygenxml.com/forum/files/splitTableCustomAction.png"

@@ -25,17 +25,17 @@
                     <li>Lots of pre-defined actions to insert reusable content, images, links,
                         videos.</li>
                     <li>DITA-specific helper views (<xref
-                            href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/dita-maps-manager.html"
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-maps-manager.html"
                             format="html" scope="external">DITA Maps Manager</xref>, <xref
-                            href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/dita-reusable-components-view.html"
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-reusable-components-view.html"
                             format="html" scope="external">DITA Reusable Components</xref>)</li>
                     <li>Support to customize the editing environment: add custom actions, remove
                         current actions, customize content completion items, create custom
                         validation or transformation scenarios.</li>
                     <li>Powerful publishing solution for producing <xref
-                            href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/whr-html5-pages.html"
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/whr-html5-pages.html"
                             format="html" scope="external">responsive WebHelp</xref> and <xref
-                            href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/pdf-css-customization.html"
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/pdf-css-customization.html"
                             format="html" scope="external">PDF</xref> using CSS to style the
                         output.</li>
                     <li>Publishing to output formats like Windows Help (CHM), Ms Word, EPUB, Eclipse
@@ -47,7 +47,7 @@
                 </ul></li>
             <li>Support for change tracking and for adding comments in the editor along with a
                 special <b>Review</b> view to review changes: <xref
-                    href="https://www.oxygenxml.com/doc/versions/21.0/ug-editor/topics/author-managing-changes.html"
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/author-managing-changes.html"
                     format="html" scope="external"/></li>
             <li>Support to add third party plugins and enhance Oxygen's functionality. And <xref
                     href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;type=Repositories"
