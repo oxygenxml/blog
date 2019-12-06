@@ -18,7 +18,7 @@
         <p>One option for this is to create a PDF customization that automatically sorts the
       glossary entries no matter what order they were originally specified in the DITA Map.</p>
         <p>The other option is to create a <xref
-        href="https://www.oxygenxml.com/doc/versions/19.1/ug-editor/topics/custom-refactoring-operations.html"
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations.html"
         format="html" scope="external">custom Oxygen XML Refactoring</xref> operation that, when
       applied on the DITA Bookmap containing the "glossarylist", will sort the glossentries in
       alphabetical order according to the title of each glossentry.</p>

@@ -70,8 +70,7 @@
           scope="external"/>.</p>
       <p>You can also create plugins to customize the XHTML-based outputs by adding an extra XSLT
         stylesheet: for example, <xref
-          href="http://blog.oxygenxml.com/2013/12/creating-simple-dita-open-toolkit.html"
-          format="html" scope="external"/>. A list with all DITA OT XSLT extension points can be
+          href="creating-simple-dita-open-toolkit.dita"/>. A list with all DITA OT XSLT extension points can be
         found here: <xref
           href="http://www.dita-ot.org/dev/extension-points/plugin-extension-points-xslt-import.html"
           format="html" scope="external"/>.</p>

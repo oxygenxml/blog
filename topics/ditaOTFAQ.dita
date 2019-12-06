@@ -87,8 +87,7 @@
         with  the generated HTML output.</p>
       <p>You can also create a plugin to customize the HTML outputs by adding a custom XSLT
         stylesheet: <xref
-          href="http://blog.oxygenxml.com/2013/12/creating-simple-dita-open-toolkit.html"
-          format="html" scope="external"/>.</p>
+          href="creating-simple-dita-open-toolkit.dita"/>.</p>
     </section>
     <section id="section_tcx_v5s_qv">
       <title>How do I customize the PDF output?</title>
@@ -102,8 +101,7 @@
       <p>You can customize the <b>PDF</b> output either using a <xref
           href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita_pdf_output_customization.html"
           format="html" scope="external">PDF customization folder</xref> or by creating a <xref
-          href="http://blog.oxygenxml.com/2013/12/creating-simple-dita-open-toolkit.html"
-          format="html" scope="external">PDF customization plugin</xref>.</p>
+          href="creating-simple-dita-open-toolkit.dita">PDF customization plugin</xref>.</p>
       <p>There are a number of other solutions for obtaining <b>PDF</b> from <b>DITA</b>: <xref
         href="ditaToPDF.dita"/>.</p>
     </section>

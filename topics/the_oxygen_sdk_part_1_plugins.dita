@@ -32,7 +32,7 @@
                 Despite of this, most of the API is common.</p>
             <p>The plugin can be deployed either by copying it to the <b>plugins</b> folder of an
                 Oxygen installation:<xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/howto-install-plugins.html" format="html" scope="html"/>
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/howto-install-plugins.html" format="html" scope="external"/>
                 or by deploying it as an <b>add-on</b>:<xref
                     href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#tasks/deploying-addons.html"
                     format="html" scope="external"

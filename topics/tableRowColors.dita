@@ -49,6 +49,6 @@
       <li>Edit your PDF transformation scenario and set the parameter <b>customization.dir</b> to point to your customization folder.</li>
       <li>Publish and enjoy :)</li>
     </ol>
-        <p>If you want to create a <b>DITA Open Toolkit</b> plugin to achieve the same result you can use the <b>dita.xsl.xslfo</b> plugin extension to contribute your own XSLT stylesheet to the publishing process: <xref href="http://blog.oxygenxml.com/2013/12/creating-simple-dita-open-toolkit.html" format="html" scope="external"/></p>
+        <p>If you want to create a <b>DITA Open Toolkit</b> plugin to achieve the same result you can use the <b>dita.xsl.xslfo</b> plugin extension to contribute your own XSLT stylesheet to the publishing process: <xref href="creating-simple-dita-open-toolkit.dita"/></p>
   </body>
 </topic>

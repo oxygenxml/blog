@@ -29,6 +29,7 @@
             <topicref href="topics/pageBreakPlugin.dita"/>
             <topicref href="topics/adding-latex-equation-support-dita.dita"/>
             <topicref href="topics/useful-dita-ot-plugins.dita"/>
+            <topicref href="topics/tableRowColors.dita"/>
         </topichead>
         <topichead navtitle="Customizing">
             <topicref href="topics/customizeDITACSS.dita"/>
@@ -49,6 +50,7 @@
             <topicref href="topics/validateCheckForCompletness.dita"/>
             <topicref href="topics/SchematronBCs.dita"/>
             <topicref href="topics/styleguide.dita"/>
+            <topicref href="topics/sort_glossentries.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">
@@ -80,5 +82,6 @@
         <topicref href="topics/sharingSettings.dita"/>
         <topicref href="topics/collaboration-for-documenting-software.dita"/>
         <topicref href="topics/collaboration-teams.dita"/>
+        <topicref href="george/enable-massive-contributions.dita"/>
     </topichead>
 </map>
