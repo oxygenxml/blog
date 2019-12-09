@@ -52,13 +52,24 @@
             &lt;xsl:apply-templates select="node() | @*"/>
         &lt;/xsl:copy>
     &lt;/xsl:template>
-    &lt;xsl:template match="glossarylist">
+    &lt;xsl:template match="glossarylist | topicgroup[@outputclass='glossarylist']">
         &lt;xsl:copy>
             &lt;xsl:apply-templates select="@*"/>
-            &lt;xsl:for-each select="*" >
-                &lt;xsl:sort select="document(@href, .)/*/glossterm/text()"/>
-                &lt;xsl:apply-templates select="."/>
-            &lt;/xsl:for-each>
+            &lt;xsl:variable name="closestXMLLang" select="ancestor-or-self::*[attribute::xml:lang][1]/@xml:lang"/>
+            &lt;xsl:choose>
+                &lt;xsl:when test="exists($closestXMLLang)">
+                    &lt;xsl:for-each select="*" >
+                        &lt;xsl:sort select="document(@href, .)/*/glossterm/text()" lang="{$closestXMLLang}" case-order="lower-first"/>
+                        &lt;xsl:apply-templates select="."/>
+                    &lt;/xsl:for-each>
+                &lt;/xsl:when>
+                &lt;xsl:otherwise>
+                    &lt;xsl:for-each select="*" >
+                        &lt;xsl:sort select="document(@href, .)/*/glossterm/text()" case-order="lower-first"/>
+                        &lt;xsl:apply-templates select="."/>
+                    &lt;/xsl:for-each>
+                &lt;/xsl:otherwise>
+            &lt;/xsl:choose>
         &lt;/xsl:copy>
     &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock>
