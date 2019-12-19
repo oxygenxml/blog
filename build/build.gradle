@@ -16,7 +16,8 @@ task runTransformation(type:Exec) {
 
   //on windows:
   //commandLine "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita.bat", "-f", "webhelp-responsive", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-o", "${projectDir}/../site", "-d"
-    commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "-f", "webhelp-responsive", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-o", "${projectDir}/../site", "-v"
+   // commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "-f", "webhelp-responsive", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-o", "${projectDir}/../site", "-v"
+    commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--project", "${projectDir}/blog-project.xml", "-v"
 }
 
 /*
