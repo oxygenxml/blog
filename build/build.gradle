@@ -14,22 +14,16 @@ task runTransformation(type:Exec) {
   workingDir "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin"
 
   //on windows:
-  commandLine "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita.bat", "-f", "html", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-o", "${projectDir}/../site"
-
-  //store the output instead of printing to the console:
-  standardOutput = new ByteArrayOutputStream()
-
-  //extension method stopTomcat.output() can be used to obtain the output:
-  ext.output = {
-    return standardOutput.toString()
-  }
+  commandLine "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita.bat", "-f", "html5", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-o", "${projectDir}/../site", "-d"
 }
 
+/*
 task cleanUp {
-   ant.delete(dir: "${projectDir}/dita-ot")
+   ant.delete(dir: "${projectDir}/dita-ot/")
+   ant.delete(dir: "${projectDir}/dita-ot.zip")
    ant.delete(dir: "${projectDir}/../site")
 }
-
+*/
 task dist(dependsOn: [initDOT, runTransformation])
 
 defaultTasks 'dist'
