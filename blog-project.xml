@@ -7,6 +7,8 @@
   <deliverable name="Oxygen XML Blog to WebHelp Responsive">
     <context idref="blog"/>
     <output href="site"/>
-    <publication transtype="webhelp-responsive"/>
+    <publication transtype="webhelp-responsive">
+      <param name="webhelp.fragment.feedback" href="build/feedback_footer.xml"/>
+    </publication>
   </deliverable>
 </project>
