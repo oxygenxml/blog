@@ -6,7 +6,7 @@
   
   <deliverable name="Oxygen XML Blog to WebHelp Responsive">
     <context idref="blog"/>
-    <output href="webhelp-output"/>
+    <output href="site"/>
     <publication transtype="webhelp-responsive"/>
   </deliverable>
 </project>
