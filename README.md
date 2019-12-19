@@ -4,6 +4,7 @@ The Oxygen XML Blog project contains all the resources used to publish the Oxyge
 XML Blog in DITA format.
 You can contribute with pull requests extra topics to the Oxygen XML Blog and if accepted
 the topics will appear as blog posts.
+The blog contents are automatically published using Netlify: https://oxygenxmlblog.netlify.com/
 
 Copyright and License
 ---------------------
