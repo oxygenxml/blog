@@ -52,6 +52,7 @@
             <topicref href="topics/SchematronBCs.dita"/>
             <topicref href="topics/styleguide.dita"/>
             <topicref href="topics/sort_glossentries.dita"/>
+            <topicref href="embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">
