@@ -9,6 +9,8 @@
     <output href="site"/>
     <publication transtype="webhelp-responsive">
       <param name="webhelp.fragment.feedback" href="build/feedback_footer.xml"/>
+      <param name="editlink.remote.ditamap.url" href="gitgh://https%3A%2F%2Fgithub.com%2Foxygenxml%2Fblog/oxygen_xml_blog.ditamap"/>
+      <param name="editlink.web.author.url" href="https://www.oxygenxml.com/oxygen-xml-web-author/"/>
     </publication>
   </deliverable>
 </project>
