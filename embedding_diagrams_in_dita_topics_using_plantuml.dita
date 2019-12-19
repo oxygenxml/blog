@@ -8,8 +8,9 @@
             from them. </p>
         <p>Suppose you have a DITA topic which embeds such a textual description of a diagram: <xref
                 href="https://github.com/oxygenxml/dita-plant-uml/blob/master/com.oxygenxml.plantuml.svg/samples/testDiagram.dita"
-                format="html" scope="external"/>.<image id="image_lmd_jzh_ckb"
-                    href="https://raw.githubusercontent.com/oxygenxml/dita-plant-uml/master/previewPlantUML.png"
+                format="html" scope="external"/>.</p>
+        <p><image id="image_lmd_jzh_ckb"
+                href="https://raw.githubusercontent.com/oxygenxml/dita-plant-uml/master/previewPlantUML.png"
                 scope="external"/></p>
         <p>In order to provide support in Oxygen for using such diagrams in DITA topics you need to
             install the following components:<ul id="ul_s2r_yyh_ckb">
