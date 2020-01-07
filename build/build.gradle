@@ -2,7 +2,7 @@ import org.gradle.api.tasks.Exec
 
 task initDOT {
   String projectDir = "."
-  ant.get(src: 'https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine-3.x.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
+  ant.get(src: 'https://www.oxygenxml.com/InstData/WebHelp/oxygen-webhelp-dot-3.x.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
   ant.unzip(src: "${projectDir}/dita-ot.zip", dest: 'dita-ot')
   new File("${projectDir}/dita-ot/oxygen-publishing-engine-3.x/licensekey.txt").write(System.getenv( 'LICENSE_KEY' ).replaceAll("  ", "\n"))
 }
