@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="welcome">
+    <title>Welcome</title>
+    <body>
+        <p>Welcome to the <ph keyref="oxygen"/> blog !</p>
+        <p>Our blog contains various useful articles and tutorials covering various aspects of
+            editing, developing and publishing using <ph keyref="oxygen"/> with various XML
+            technologies. </p>
+        <p>Sometimes (quite often actually) articles originally written for the blog are curated by
+            our technical writers and end up being part of our official documentation: <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/" format="html" scope="external"/>.
+            But overall the blog allows us to deploy various small articles faster, without the need
+            to wait for documentation updates.</p>
+        <section id="section_fqq_tr3_jkb">
+            <title>History of the <ph keyref="oxygen"/> Blog</title>
+            <p>The blog was originally hosted by Google Blogs and the first articles on the blog
+                appeated about 2007. As Google Blogs did not allow enough flexibility in creating
+                the published content (for example the inability to create a table of contents) the
+                blog was migrated to XML content and is now hosted on the Netlify platform: <xref
+                    href="https://oxygenxmlblog.netlify.com/" format="html" scope="external"/>.</p>
+        </section>
+        <section id="section_pv2_1q3_jkb">
+            <title>How the <ph keyref="oxygen"/> Blog Works</title>
+            <p>The entire source code of the <ph keyref="oxygen"/> blog is stored in DITA content on
+                a public GitHub repository: <xref href="https://github.com/oxygenxml/blog"
+                    format="html" scope="external"/>.</p>
+            <p>There is a <xref
+                    href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle"
+                    format="html" scope="external">Gragle build file</xref> which uses a special
+                DITA Open Toolkit to produce from the DITA content <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_generate_output.html"
+                    format="html" scope="external">WebHelp Responsive</xref> output. The following
+                features are available in the published output: <ul id="ul_ayd_kr3_jkb">
+                    <li>Color themes can be easily changed to modify the way in which the output
+                        looks like.</li>
+                    <li>Search functionality.</li>
+                    <li>Each page has an <b>Edit online</b> link allowing it to be edited in the
+                        Oxygen Web Author.</li>
+                    <li>Each page has a comments section build using the <xref
+                            href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
+                            scope="external">Oxygen Feedback</xref> platform.</li>
+                </ul></p>
+        </section>
+        <section id="section_tnr_rr3_jkb">
+            <title>How You can Contribute to the <ph keyref="oxygen"/> Blog.</title>
+            <p>We want to encourage our end users and collaborators to start creating small
+                Oxygen-related articles for our blog. Below you can find a set of steps which should
+                allow you to post your own articles.</p>
+            <ol id="ol_o1c_cs3_jkb">
+                <li>Create your own GitHub account if you do not already have one.</li>
+                <li>Fork the contents of the <ph keyref="oxygen"/> GitHub project in your own GitHub
+                    Repository: <xref href="https://github.com/oxygenxml/blog" format="html"
+                        scope="external"/>.</li>
+                <li>Make changes to your forked project. <ul id="ul_gkd_4s3_jkb">
+                        <li>If you have the <ph keyref="oxygen"/> application installed, you can
+                            download our <xref href="https://github.com/oxygenxml/oxygen-git-plugin"
+                                format="html" scope="external">Git add-on</xref> which should allow
+                            you to clone the fork, make changes and then commit and push them to
+                            your repository.</li>
+                        <li>As an alternative you can use the Oxygen WebAuthor in browser editing
+                            tool which has its own Git connector: <xref
+                                href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
+                                format="html" scope="external"/></li>
+                        <li>Please remember to add as last paragraph in the new topic the name of
+                            the author and the date when the content was added.</li>
+                    </ul></li>
+                <li>After all changes have been made to your fork of the project you can create a
+                    pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
+                <li>We go over your changes and if your pull requests is accepted the blog web site
+                    will automatically update with the new changes.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

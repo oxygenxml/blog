@@ -9,14 +9,14 @@
         href="https://github.com/search?q=topic%3Adita-ot-plugin+org%3Aoxygenxml&amp;type=Repositories"
         format="html" scope="external">lots of useful plugins</xref> in the <b>Oxygen XML GitHub</b>
       account that enhance the publishing and in this blog post, I will enumerate some of them. For
-      the plugins that are already installed within <b>Oxygen XML Editor's</b> DITA Open Toolkit
+      the plugins that are already installed within <b><ph keyref="oxygen"/>'s</b> DITA Open Toolkit
       engine, I added the <b>[Bundled]</b> marker.</p>
     <section id="section_xf3_zjh_jhb">
       <title>Plugin that Converts DITA Maps to PDF Using CSS 3 [Bundled]</title>
       <p>Maybe our most important work so far, <xref
           href="https://github.com/oxygenxml/dita-ot-css-pdf" format="html" scope="external">this
           plugin</xref> can publish DITA to PDF using CSS. As a publishing engine, it can use either
-        our <b>Oxygen XML Chemistry</b> processor (freely bundled with <b>Oxygen XML Editor</b>) or
+        our <b>Oxygen XML Chemistry</b> processor (freely bundled with <b><ph keyref="oxygen"/></b>) or
         the Antenna House and Prince XML engines.</p>
     </section>
     <section id="section_nnd_lkh_jhb">
@@ -118,7 +118,7 @@
     <section id="section_hmk_glh_jhb">
       <title>Show Oxygen Change Tracking Information in the PDF Output [Bundled]</title>
       <p>This <xref href="https://github.com/oxygenxml/dita-classic-pdf-review" format="html"
-          scope="external">plugin</xref> allows you to see <b>Oxygen XML Editor</b> track changes
+          scope="external">plugin</xref> allows you to see <b><ph keyref="oxygen"/></b> track changes
         (insertions, deletions, or comments) in the PDF output.</p>
     </section>
     <section id="section_azk_tlh_jhb">

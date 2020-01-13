@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="dita_oriented_tips_and_tricks">
-  <title>Oxygen XML Editor - DITA Oriented Tips And Tricks</title>
+  <title><ph keyref="oxygen"/> - DITA Oriented Tips And Tricks</title>
   <body>
-    <p>Oxygen XML Editor has about 18 years of development under its wings. During these
+    <p><ph keyref="oxygen"/> has about 18 years of development under its wings. During these
       years, we added lots of functionality and many of our users usually do not know more than 20-30%
       of Oxygen's features. So this presentation is intended for technical writers using Oxygen to
       write DITA content and who may want to find out more about their tool.</p>

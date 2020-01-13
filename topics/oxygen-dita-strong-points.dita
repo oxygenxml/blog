@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_twx_tyf_2hb">
-    <title>Oxygen XML Editor DITA Editing solution strong points.</title>
+    <title><ph keyref="oxygen"/> DITA Editing solution strong points.</title>
     <body>
-        <p>We are sometimes asked which are the differentiating features between Oxygen XML Editor
+        <p>We are sometimes asked which are the differentiating features between <ph keyref="oxygen"/>
             and its competitors when it comes to DITA Editing. So below I tried to list some
             differentiating features (strong points) that Oxygen has:</p>
         <ul id="ul_jvs_1zf_2hb">

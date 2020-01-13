@@ -7,8 +7,11 @@
         <critdates>
             <!--radu_coravu-->
             <revised modified="2019/05/29"/>
+            <!--radu_coravu-->
+            <revised modified="2020/01/13"/>
         </critdates>
     </topicmeta>
+    <topicref href="welcome.dita"/>
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">
             <topicref href="topics/learnDita.dita"/>
@@ -86,4 +89,5 @@
         <topicref href="topics/collaboration-teams.dita"/>
         <topicref href="george/enable-massive-contributions.dita"/>
     </topichead>
+    <topicref href="key_definitions.ditamap" format="ditamap"/>
 </map>

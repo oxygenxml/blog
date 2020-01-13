@@ -52,10 +52,6 @@
                             </mediaWorkingSetPO>
                         </mediaWorkingSetPO-array>
                     </entry>
-                    <entry>
-                        <String>keys.context</String>
-                        <String>${pdu}/oxygen_xml_blog.ditamap</String>
-                    </entry>
                 </serializableOrderedMap>
             </serialized>
         </options>

@@ -6,7 +6,7 @@
         <p>Don't get me wrong, I think that <b>DITA</b> is a great standard for writing technical
       documentation, it has lots of reuse possibilities and linking potential, and in general, it's
       well thought out and comprehensive. </p>
-        <p>Over the years, many of our <b>Oxygen XML Editor</b> clients (or me, personally) have
+        <p>Over the years, many of our <b><ph keyref="oxygen"/></b> clients (or me, personally) have
       encountered various limitations/quirks in the <b>DITA</b> standard and I will share them
       below. These complaints are not related at all to the publishing part and I think that some of
       them will probably be resolved as the <b>DITA</b> standard evolves from one version to

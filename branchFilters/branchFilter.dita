@@ -86,7 +86,7 @@
         href="http://www.oxygenxml.com/forum/files/branchFilteringBlogSamples.zip" format="zip"
         scope="external"/>.</p>
     <p>As usual any feedback is welcomed.</p>
-    <p>If you would like to beta test <b>Oxygen XML Editor 17.1</b> with experimental DITA 1.3
+    <p>If you would like to beta test <b><ph keyref="oxygen"/> 17.1</b> with experimental DITA 1.3
       support please contact us: <b>support@oxygenxml.com</b>.</p>
   </body>
 </topic>

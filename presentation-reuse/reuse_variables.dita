@@ -13,7 +13,7 @@
   &lt;keydef keys="product" product="editor">
     &lt;topicmeta>
       &lt;keywords>
-        &lt;keyword>Oxygen XML Editor&lt;/keyword>
+        &lt;keyword><ph keyref="oxygen"/>&lt;/keyword>
       &lt;/keywords>
     &lt;/topicmeta>
   &lt;/keydef></codeblock>

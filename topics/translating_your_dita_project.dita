@@ -51,7 +51,7 @@
       <p>When translating <b>DITA</b> content, the most common process involves these steps:<ol
           id="ol_rwf_sz4_rdb">
           <li>You create your content in the primary language using a <b>DITA</b> authoring tool
-              (<b>Oxygen XML Editor</b>).</li>
+              (<b><ph keyref="oxygen"/></b>).</li>
           <li>Before each release, you gather all the <b>DITA</b> topics that have been changed and
             need to be translated. The Oxygen <xref
               href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"

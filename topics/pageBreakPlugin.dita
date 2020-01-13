@@ -39,7 +39,7 @@
         <li>
           <p>Install your plugin in the <b>DITA Open Toolkit</b> by running the DITA OT ANT
             integrator task. </p>
-          <p>If you are running the publishing from <b>Oxygen XML Editor</b> you can use the
+          <p>If you are running the publishing from <b><ph keyref="oxygen"/></b> you can use the
             predefined transformation scenario: <xref
               href="https://www.oxygenxml.com/doc/ug-oxygen/#topics/dita-ot-install-plugin.html"
               format="html" scope="external"/>. </p>

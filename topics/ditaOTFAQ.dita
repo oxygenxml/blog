@@ -22,7 +22,7 @@
           format="html" scope="external">build output</xref> from <b>DITA</b> content using the
         command line.</p>
       <p>Besides this, there are applications which come with the <b>DITA Open Toolkit</b> bundled.
-        For example Oxygen XML Editor comes bundled with both <b>DITA Open Toolkit</b>
+        For example <ph keyref="oxygen"/> comes bundled with both <b>DITA Open Toolkit</b>
         <b>1.8</b> and <b>2.x</b>. Oxygen provides visual means to run the bundled DITA Open Toolkit
         using a concept called <xref
           href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-ot-transformation.html"

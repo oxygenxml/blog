@@ -3,7 +3,7 @@
 <topic id="dita_publishing_customization_overview">
   <title>DITA Publishing Customization Overview</title>
   <body>
-    <p><b>Oxygen XML Editor</b> publishes <b>DITA</b> content to various output sources using a
+    <p><b><ph keyref="oxygen"/></b> publishes <b>DITA</b> content to various output sources using a
       bundled version of the <xref href="https://www.dita-ot.org/" format="html" scope="external"
         >DITA Open Toolkit</xref> (short name: <b>DITA OT</b>) publishing engine. Oxygen versions
       prior to version 20 come with two <b>DITA OT</b> versions:<ul id="ul_yvl_f3n_hdb">

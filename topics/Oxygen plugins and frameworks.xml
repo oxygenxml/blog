@@ -97,7 +97,7 @@
           href="https://github.com/tofi86/oxygen_PluginDemo" format="html" scope="external"/>.</li>
       <li>A <xref
           href="https://www.oxygenxml.com/doc/ug-oxygen/index.html#concepts/workspace-access-plugin.html"
-          format="html" scope="external">Workspace Access Plugin</xref> for Oxygen XML Editor that
+          format="html" scope="external">Workspace Access Plugin</xref> for <ph keyref="oxygen"/> that
         creates TEI-conform UUIDs starting with a letter: <xref
           href="https://github.com/digicademy/CustomUUID" format="html" scope="external"/></li>
       <li>TEI Authorizer is a plugin for Oxygen which lets you query remote authority files via HTTP

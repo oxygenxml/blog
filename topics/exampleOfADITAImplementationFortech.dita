@@ -29,7 +29,7 @@
       product.</p>
     <p>And here's an overview of the tools we use:</p>
     <section>
-      <title>Oxygen XML Editor</title>
+      <title><ph keyref="oxygen"/></title>
       <p>This may not come as a surprise but we use our own product to edit <b>DITA</b> content,
         partly because it's ours and partly because it is a very good tool. During the last couple
         of years this has been a good opportunity to improve our product based on our own feedback

@@ -3,7 +3,7 @@
 <topic id="topic_hkx_gzc_cs">
   <title>Schematron Checks to help Technical Writing</title>
   <body>
-  <p>The Oxygen XML Editor User's Manual is written in DITA. In an older post I described <xref
+  <p>The <ph keyref="oxygen"/> User's Manual is written in DITA. In an older post I described <xref
         href="collaboration-for-documenting-software.dita">in more detail </xref> how we collaborate internally on our
       User's Guide Project. And we also made available a copy of our User's Manual as a <xref
         href="https://github.com/oxygenxml/userguide" format="html" scope="external">project on
