@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="welcome">
-    <title>Welcome</title>
+    <title>Welcome to the <ph keyref="oxygen"/> blog !</title>
     <body>
-        <p>Welcome to the <ph keyref="oxygen"/> blog !</p>
         <p>Our blog contains various useful articles and tutorials covering various aspects of
             editing, developing and publishing using <ph keyref="oxygen"/> with various XML
             technologies. </p>

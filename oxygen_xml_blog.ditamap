@@ -11,7 +11,7 @@
             <revised modified="2020/01/13"/>
         </critdates>
     </topicmeta>
-    <topicref href="welcome.dita"/>
+    <topicref href="topics/welcome.dita"/>
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">
             <topicref href="topics/learnDita.dita"/>
