@@ -35,7 +35,9 @@
                     format="html" scope="external"/>.</p>
             <p>There is a <xref
                     href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle"
-                    format="html" scope="external">Gragle build file</xref>
+                    format="html" scope="external"
+                    >Gra<?oxy_delete author="Mihai Coanda" timestamp="20200113T144837+0000" content="g"?><?oxy_insert_start author="Mihai Coanda" timestamp="20200113T144837+0000"?>d<?oxy_insert_end?>le
+                    build file</xref>
                 <?oxy_delete author="Steven Higgs" timestamp="20200113T142342+0000" content="which"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142342+0000"?>that<?oxy_insert_end?>
                 uses a special DITA Open Toolkit to produce
                     <?oxy_delete author="Steven Higgs" timestamp="20200113T142412+0000" content="from the DITA content "?><xref
