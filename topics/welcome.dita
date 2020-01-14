@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="welcome">
-    <title>Welcome to the <ph keyref="oxygen"/>
-        <?oxy_delete author="Steven Higgs" timestamp="20200113T142102+0000" content="b"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142102+0000"?>B<?oxy_insert_end?>log
-        !</title>
+    <title>Welcome to the <ph keyref="oxygen"/> Blog !</title>
     <body>
         <p>Our blog contains various useful articles and tutorials covering various aspects of
-            editing,
-            developing<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142109+0000"?>,<?oxy_insert_end?>
-            and publishing using <ph keyref="oxygen"/> with various XML technologies. </p>
+            editing, developing, and publishing using <ph keyref="oxygen"/> with various XML
+            technologies. </p>
         <p>Sometimes (quite often actually) articles originally written for the blog are curated by
             our technical writers and end up being part of our official documentation: <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/" format="html" scope="external"/>.
-            <?oxy_delete author="Steven Higgs" timestamp="20200113T142225+0000" content="But overall"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142225+0000"?>However,<?oxy_insert_end?>
-            the blog allows us to deploy various small articles faster, without the need to wait for
-            documentation updates.</p>
+            However, the blog allows us to deploy various small articles faster, without the need to
+            wait for documentation updates.</p>
         <section id="section_fqq_tr3_jkb">
             <title>History of the <ph keyref="oxygen"/> Blog</title>
             <p>The blog was originally hosted by Google Blogs and the first articles on the blog
-                appea<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142247+0000"?>r<?oxy_insert_end?><?oxy_delete author="Steven Higgs" timestamp="20200113T142247+0000" content="t"?>ed
-                <?oxy_delete author="Steven Higgs" timestamp="20200113T142259+0000" content="about"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142259+0000"?>around<?oxy_insert_end?>
-                2007.
-                <?oxy_delete author="Steven Higgs" timestamp="20200113T142307+0000" content="As"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142307+0000"?>Since<?oxy_insert_end?>
-                Google Blogs did not allow enough flexibility in creating the published content (for
-                example<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142319+0000"?>,<?oxy_insert_end?>
-                the inability to create a table of contents) the blog was migrated to XML content
-                and is now hosted on the Netlify platform: <xref
-                    href="https://oxygenxmlblog.netlify.com/" format="html" scope="external"/>.</p>
+                appeared around 2007. Since Google Blogs did not allow enough flexibility in
+                creating the published content (for example, the inability to create a table of
+                contents) the blog was migrated to XML content and is now hosted on the Netlify
+                platform: <xref href="https://oxygenxmlblog.netlify.com/" format="html"
+                    scope="external"/>.</p>
         </section>
         <section id="section_pv2_1q3_jkb">
             <title>How the <ph keyref="oxygen"/> Blog Works</title>
@@ -35,26 +27,16 @@
                     format="html" scope="external"/>.</p>
             <p>There is a <xref
                     href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle"
-                    format="html" scope="external"
-                    >Gra<?oxy_delete author="Mihai Coanda" timestamp="20200113T144837+0000" content="g"?><?oxy_insert_start author="Mihai Coanda" timestamp="20200113T144837+0000"?>d<?oxy_insert_end?>le
-                    build file</xref>
-                <?oxy_delete author="Steven Higgs" timestamp="20200113T142342+0000" content="which"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142342+0000"?>that<?oxy_insert_end?>
-                uses a special DITA Open Toolkit to produce
-                    <?oxy_delete author="Steven Higgs" timestamp="20200113T142412+0000" content="from the DITA content "?><xref
+                    format="html" scope="external">Gradle build file</xref> that uses a special DITA
+                Open Toolkit to produce <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_generate_output.html"
-                    format="html" scope="external">WebHelp Responsive</xref>
-                output<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142416+0000"?>
-                from the DITA content<?oxy_insert_end?>. The following features are available in the
-                published output: <ul id="ul_ayd_kr3_jkb">
-                    <li>Color themes can be easily changed to modify
-                        <?oxy_delete author="Steven Higgs" timestamp="20200113T142433+0000" content="the way in which "?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142453+0000"?>how
-                        <?oxy_insert_end?>the output
-                        looks<?oxy_delete author="Steven Higgs" timestamp="20200113T142500+0000" content=" like"?>.</li>
+                    format="html" scope="external">WebHelp Responsive</xref> output from the DITA
+                content. The following features are available in the published output: <ul
+                    id="ul_ayd_kr3_jkb">
+                    <li>Color themes can be easily changed to modify how the output looks.</li>
                     <li>Search functionality.</li>
                     <li>Each page has an <b>Edit online</b> link allowing it to be edited in the
-                        Oxygen
-                        <?oxy_insert_start author="Steven Higgs" timestamp="20200113T142514+0000"?>XML
-                        <?oxy_insert_end?>Web Author.</li>
+                        Oxygen XML Web Author.</li>
                     <li>Each page has a comments section build using the <xref
                             href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
                             scope="external">Oxygen Feedback</xref> platform.</li>
@@ -63,59 +45,30 @@
         <section id="section_tnr_rr3_jkb">
             <title>How You can Contribute to the <ph keyref="oxygen"/> Blog.</title>
             <p>We want to encourage our end users and collaborators to start creating small
-                Oxygen-related articles for our blog.
-                <?oxy_delete author="Steven Higgs" timestamp="20200113T142717+0000" content="Below you can find a set of steps which should allow you t"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142718+0000"?>T<?oxy_insert_end?>o
-                post your own
-                articles<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142721+0000"?>,
-                follow these
-                steps<?oxy_insert_end?><?oxy_delete author="Steven Higgs" timestamp="20200113T142726+0000" content="."?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142726+0000"?>:<?oxy_insert_end?></p>
+                Oxygen-related articles for our blog. To post your own articles, follow these
+                steps:</p>
             <ol id="ol_o1c_cs3_jkb">
-                <li>Create your own GitHub
-                    account<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142734+0000"?>,<?oxy_insert_end?>
-                    if you do not already have one.</li>
+                <li>Create your own GitHub account, if you do not already have one.</li>
                 <li>Fork the contents of the <ph keyref="oxygen"/> GitHub project in your own GitHub
                     Repository: <xref href="https://github.com/oxygenxml/blog" format="html"
                         scope="external"/>.</li>
                 <li>Make changes to your forked project. <ul id="ul_gkd_4s3_jkb">
                         <li>If you have the <ph keyref="oxygen"/> application installed, you can
                             download our <xref href="https://github.com/oxygenxml/oxygen-git-plugin"
-                                format="html" scope="external">Git add-on</xref>
-                            <?oxy_insert_start author="Steven Higgs" timestamp="20200113T142751+0000"?>that<?oxy_insert_end?><?oxy_delete author="Steven Higgs" timestamp="20200113T142750+0000" content="which"?>
-                            should allow you to clone the fork, make
-                            changes<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142759+0000"?>,<?oxy_insert_end?>
-                            and then commit and push them to your repository.</li>
-                        <li>As an
-                            alternative<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142804+0000"?>,<?oxy_insert_end?>
-                            you can use the Oxygen
-                            <?oxy_insert_start author="Steven Higgs" timestamp="20200113T142811+0000"?>XML <?oxy_insert_end?>Web<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142814+0000"?>
-                            <?oxy_insert_end?>Author
-                            <?oxy_delete author="Steven Higgs" timestamp="20200113T142821+0000" content="in "?>browser
-                            editing tool
-                            <?oxy_delete author="Steven Higgs" timestamp="20200113T142827+0000" content="which"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142830+0000"?>that<?oxy_insert_end?>
-                            has its own Git connector: <xref
+                                format="html" scope="external">Git add-on</xref> that should allow
+                            you to clone the fork, make changes, and then commit and push them to
+                            your repository.</li>
+                        <li>As an alternative, you can use the Oxygen XML Web Author browser editing
+                            tool that has its own Git connector: <xref
                                 href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
-                                format="html" scope="external"
-                            /><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142839+0000"?>.<?oxy_insert_end?></li>
-                        <li>Please remember to add
-                            <?oxy_delete author="Steven Higgs" timestamp="20200113T142858+0000" content="as last paragraph in the new topic "?>the
-                            name of the author and the date when the content was
-                            added<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142906+0000"?>
-                            as the last paragraph in the new topic<?oxy_insert_end?>.</li>
+                                format="html" scope="external"/>.</li>
+                        <li>Please remember to add the name of the author and the date when the
+                            content was added as the last paragraph in the new topic.</li>
                     </ul></li>
-                <li>After all changes have been made to your fork of the
-                    project<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142922+0000"?>,<?oxy_insert_end?>
-                    you can create a pull request to the <ph keyref="oxygen"/> original GitHub
-                    project.</li>
-                <li>We
-                    <?oxy_insert_start author="Steven Higgs" timestamp="20200113T142933+0000"?>will
-                    <?oxy_insert_end?><?oxy_delete author="Steven Higgs" timestamp="20200113T142946+0000" content="go over"?><?oxy_insert_start author="Steven Higgs" timestamp="20200113T142946+0000"?>review<?oxy_insert_end?>
-                    your changes and if your pull requests is
-                    accepted<?oxy_insert_start author="Steven Higgs" timestamp="20200113T142940+0000"?>,<?oxy_insert_end?>
-                    the blog web site will
-                    <?oxy_insert_start author="Steven Higgs" timestamp="20200113T143000+0000"?>be
-                    <?oxy_insert_end?>automatically
-                    update<?oxy_insert_start author="Steven Higgs" timestamp="20200113T143003+0000"?>d<?oxy_insert_end?>
-                    with the new changes.</li>
+                <li>After all changes have been made to your fork of the project, you can create a
+                    pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
+                <li>We will review your changes and if your pull requests is accepted, the blog web
+                    site will be automatically updated with the new changes.</li>
             </ol>
         </section>
     </body>
