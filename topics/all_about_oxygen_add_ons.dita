@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="all_about_oxygen_add_ons">
+    <title>Oxygen Add-ons</title>
+    <body>
+        <p><ph keyref="oxygen"/> can be extended to support new functionalities and vocabularies.
+            These extensions can be either plugins or frameworks: <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/dev_guide/introduction-dev-guide.html"
+                format="html" scope="external"/>.</p>
+        <section id="section_ryq_zqp_jkb">
+            <title>Short History of Plugin Support</title>
+            <p>The initial support for plugins was primitive, it allowed adding a contextual menu
+                action in the Text editing mode for manipulating the selected content: <xref
+                    href="https://www.oxygenxml.com/doc/versions/21.1/ug-editor/topics/text-editing-mode-plugins.html"
+                    format="html" scope="external"/>.</p>
+            <p>In version 11.2 the Workspace Access plugin type was added: <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin.html"
+                    format="html" scope="external"/>.</p>
+            <p>Workspace Access plugins allow you to add custom toolbar and menu actions, custom
+                side views and add various behaviors depending on various events which occur in the
+                application (documents are opened, closed, saved, the application is started or
+                closed). They can be implemented either in Java or Javascript.</p>
+            <p>Originally plugins could be manually installed by being copied to the
+                    <filepath>OXYGEN_INSTALL_DIR\plugins</filepath>. Around version 14 we added
+                support to pack plugins and frameworks as <xref href="packing-add-ons.dita"
+                    >add-ons</xref>and thus automate the installation process.</p>
+        </section>
+        <section id="section_en5_nrp_jkb">
+            <title>Short History of Frameworks Support</title>
+            <p>The concept of framework appeared around <ph keyref="oxygen"/> version 9.</p>
+            <p>A framework is a means to group together resources for editing and validating a
+                specific XML vocabulary: <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/glossary/framework.html"
+                    format="html" scope="external"/>.</p>
+            <p>In version 16 we added support to extend a base framework, extension which can
+                afterwards be bundled as an add-on.</p>
+        </section>
+        <section id="section_eqq_lxp_jkb">
+            <title>Private Hosted Plugins and Frameworks</title>
+            <p>Content Management Systems like Astoria, Bluestream, Ixiasoft, SDL have implemented
+                plugins which allow <ph keyref="oxygen"/> to connect to their servers.</p>
+            <p>There are also probably lots of privately owned frameworks used for editing various
+                varieties of XML documents inside companies.</p>
+        </section>
+        <section id="section_z4s_kxp_jkb">
+            <title>Public Hosted Plugins and Frameworks</title>
+            <p>There is an older blog post with an up to date list of <xref
+                    href="Oxygen%20plugins%20and%20frameworks.xml"/>.</p>
+        </section>
+        <section id="section_b52_vwp_jkb">
+            <title>Why are we (the <ph keyref="oxygen"/> team) working on add-ons?</title>
+            <p>Open source add-ons are useful as samples for third parties.</p>
+            <p>Add-ons can be released at a much faster pace.</p>
+            <p>Interns who work for us for a couple of months are not allowed to work on the main
+                    <ph keyref="oxygen"/> code.</p>
+            <p>We can work on add-ons before <ph keyref="oxygen"/> releases when we enter a code
+                freeze stage.</p>
+        </section>
+    </body>
+</topic>

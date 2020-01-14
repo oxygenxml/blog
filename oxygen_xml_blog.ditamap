@@ -77,6 +77,7 @@
         <topicref href="topics/the_oxygen_sdk_part_1_plugins.dita"/>
         <topicref href="topics/oxygenFrameworks.dita"/>
         <topicref href="topics/packing-add-ons.dita"/>
+        <topicref href="topics/all_about_oxygen_add_ons.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
         <topicref href="topics/checking_terminology_with_oxygen_xml_editor.dita"/>
