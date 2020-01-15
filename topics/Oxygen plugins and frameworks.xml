@@ -110,6 +110,10 @@
           scope="external"/></li>
       <li>Framework for validating OASIS genericode 1.0 documents developed by G. Ken Holman: <xref
           href="https://cranesoftwrights.github.io/resources/ubl/#oxygengc" format="html" scope="external"/>.</li>
+      <li>The latest version of <b>XSpec</b> framework is available as an external framework or an
+        add-on. See <xref
+          href="https://github.com/xspec/xspec/wiki/Running-with-Oxygen#running-the-latest-version-of-xspec-with-oxygen"
+          format="html" scope="external">XSpec Wiki</xref> for more details.</li>
     </ol>
     <p>If anyone else wants to add something else to the list, just drop us an email.</p>
   </body>
