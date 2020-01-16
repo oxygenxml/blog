@@ -2,15 +2,6 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Oxygen XML Blog</title>
-    <topicmeta>
-        <author type="contributor">radu_coravu</author>
-        <critdates>
-            <!--radu_coravu-->
-            <revised modified="2019/05/29"/>
-            <!--radu_coravu-->
-            <revised modified="2020/01/13"/>
-        </critdates>
-    </topicmeta>
     <topicref href="topics/welcome.dita"/>
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">

@@ -2,6 +2,12 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="welcome">
     <title>Welcome to the <ph keyref="oxygen"/> Blog !</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2020-01-14" class="- topic/created "/>
+        </critdates>
+    </prolog>
     <body>
         <p>Our blog contains various useful articles and tutorials covering various aspects of
             editing, developing, and publishing using <ph keyref="oxygen"/> with various XML
@@ -62,8 +68,16 @@
                             tool that has its own Git connector: <xref
                                 href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
                                 format="html" scope="external"/>.</li>
-                        <li>Please remember to add the name of the author and the date when the
-                            content was added as the last paragraph in the new topic.</li>
+                        <li>Please remember to add the name of the author and the created date for
+                            the topic in the DITA topic prolog section
+                            like:<codeblock outputclass="language-xml">&lt;prolog>
+    &lt;author>Radu Coravu&lt;/author>
+    &lt;critdates>
+        &lt;created date="2020-01-14" class="- topic/created "/>
+    &lt;/critdates>
+&lt;/prolog></codeblock>This
+                            prolog section will be used to add in the published HTML output the
+                            author information after the topic title.</li>
                     </ul></li>
                 <li>After all changes have been made to your fork of the project, you can create a
                     pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
@@ -73,4 +87,3 @@
         </section>
     </body>
 </topic>
-<?oxy_options track_changes="on"?>
