@@ -7,6 +7,9 @@
             These extensions can be either plugins or frameworks: <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/dev_guide/introduction-dev-guide.html"
                 format="html" scope="external"/>.</p>
+                <p>This blog post is intended as a small overview of <ph keyref="oxygen"/> add-ons,
+                        what they are, sample add-ons implemented by third parties, sample add-ons
+                        implemented by us and where we want to go from here.</p>
         <section id="section_ryq_zqp_jkb">
             <title>Short History of Plugin Support in <ph keyref="oxygen"/></title>
             <p>The initial support for plugins was primitive, it allowed adding a contextual menu
@@ -144,6 +147,9 @@
                                         <li>Add support for a plugin to contribute a custom editing
                                                 perspective (toolbars/views arrangement).</li>
                                 </ul></p>
+                        <p>Besides the possible enhancements listed below, we want your feedback. So
+                                are you using Oxygen add-ons? Are you developing such add-ons? What
+                                do you need from us to better support your use cases?</p>
                 </section>
     </body>
 </topic>
