@@ -27,9 +27,10 @@
                         or closed)</li>
                 </ul>Such plugins can be implemented either in Java or Javascript.</p>
             <p>Originally plugins could be manually installed by being copied to the
-                    <filepath>OXYGEN_INSTALL_DIR\plugins</filepath>. Around version 14 we added
-                support to pack plugins and frameworks as <xref href="packing-add-ons.dita"
-                    >add-ons</xref>and thus automate the installation process.</p>
+                                        <filepath>OXYGEN_INSTALL_DIR\plugins</filepath>. Around
+                                version 14 we added support to pack plugins and frameworks as <xref
+                                        href="packing-add-ons.dita">add-ons</xref> and thus automate
+                                the installation process.</p>
         </section>
         <section id="section_en5_nrp_jkb">
             <title>Short History of Frameworks Support in <ph keyref="oxygen"/></title>
