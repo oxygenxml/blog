@@ -85,49 +85,56 @@
                             href="https://github.com/oxygenxml/oxygen-components-filter-plugin"
                             format="html" scope="external"/></li>
                 </ul></p>
-            <p>Useful add-ons: <ul id="ul_ub2_ywg_lkb">
-                                        <li>Content Fusion Oxygen add-on - bundled with Oxygen.</li>
-                                        <li>WebHelp Feedback Oxygen add-on.</li>
-                    <li>Git support add-on: <xref
-                            href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
-                            scope="external"/></li>
+            <p>Useful add-ons with public sources: <ul id="ul_ub2_ywg_lkb">
+                                        <li>Git support add-on: <xref
+                                                  href="https://github.com/oxygenxml/oxygen-git-plugin"
+                                                  format="html" scope="external"/></li>
                                         <li>Add-on for connecting to any CMIS-enabled storage server
                                                 (like Alfresco): <xref
                                                   href="https://github.com/oxygenxml/oxygen-cmis-plugin"
                                                   format="html" scope="external"/>.</li>
-                    <li>Batch Resources Convertor add-on: <xref
-                            href="https://github.com/oxygenxml/oxygen-resources-converter"
-                            format="html" scope="external"/></li>
-                    <li>DocBook Validation add-on: <xref
-                            href="https://github.com/oxygenxml/oxygen-docbook-validate-check-completeness"
-                            format="html" scope="external"/></li>
-                    <li>DITA-specific add-ons:<ul id="ul_ugb_bxg_lkb">
-                            <li>Translation helper: <xref
-                                    href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
-                                    format="html" scope="external"/></li>
-                            <li>Prolog updater: <xref
-                                    href="https://github.com/oxygenxml/oxygen-dita-prolog-updater"
-                                    format="html" scope="external"/></li>
-                            <li>Outgoing References View: <xref
-                                    href="https://github.com/oxygenxml/oxygen-dita-outgoing-references-view"
-                                    format="html" scope="external"/></li>
-                        </ul></li>
-                    <li>Support for rendering various image formats in the Author visual editing
-                            mode:<ul id="ul_jvm_2bh_lkb">
-                            <li>EMF: <xref href="https://github.com/oxygenxml/oxygenxml.emf.support"
-                                    format="support" scope="external"/></li>
-                            <li>CGM: <xref href="https://github.com/oxygenxml/oxygenxml.cgm.support"
-                                    format="support" scope="external"/></li>
-                            <li>PDF: <xref href="https://github.com/oxygenxml/oxygen-pdf-image"
-                                    format="html" scope="external"/></li>
-                            <li>LaTex: <xref
-                                    href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/latex-images-support"
-                                    format="html" scope="external"/></li>
-                            <li>PlantUML: <xref
-                                    href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/plantuml-images-support"
-                                    format="html" scope="external"/></li>
-                        </ul></li>
-                </ul></p>
+                                        <li>Batch Resources Convertor add-on: <xref
+                                                  href="https://github.com/oxygenxml/oxygen-resources-converter"
+                                                  format="html" scope="external"/></li>
+                                        <li>DocBook Validation add-on: <xref
+                                                  href="https://github.com/oxygenxml/oxygen-docbook-validate-check-completeness"
+                                                  format="html" scope="external"/></li>
+                                        <li>DITA-specific add-ons:<ul id="ul_ugb_bxg_lkb">
+                                                  <li>Translation helper: <xref
+                                                  href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
+                                                  format="html" scope="external"/></li>
+                                                  <li>Prolog updater: <xref
+                                                  href="https://github.com/oxygenxml/oxygen-dita-prolog-updater"
+                                                  format="html" scope="external"/></li>
+                                                  <li>Outgoing References View: <xref
+                                                  href="https://github.com/oxygenxml/oxygen-dita-outgoing-references-view"
+                                                  format="html" scope="external"/></li>
+                                                </ul></li>
+                                        <li>Support for rendering various image formats in the
+                                                Author visual editing mode:<ul id="ul_jvm_2bh_lkb">
+                                                  <li>EMF: <xref
+                                                  href="https://github.com/oxygenxml/oxygenxml.emf.support"
+                                                  format="support" scope="external"/></li>
+                                                  <li>CGM: <xref
+                                                  href="https://github.com/oxygenxml/oxygenxml.cgm.support"
+                                                  format="support" scope="external"/></li>
+                                                  <li>PDF: <xref
+                                                  href="https://github.com/oxygenxml/oxygen-pdf-image"
+                                                  format="html" scope="external"/></li>
+                                                  <li>LaTex: <xref
+                                                  href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/latex-images-support"
+                                                  format="html" scope="external"/></li>
+                                                  <li>PlantUML: <xref
+                                                  href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/plantuml-images-support"
+                                                  format="html" scope="external"/></li>
+                                                </ul></li>
+                                </ul></p>
+                        <p>Useful add-ons with private repositories (can be installed from
+                                application default add-on update site):<ul>
+                                        <li>Content Fusion Oxygen add-on - bundled with Oxygen.</li>
+                                        <li>WebHelp Feedback Oxygen add-on.</li>
+                                        <li>Emmet plugin for Oxygen.</li>
+                                </ul></p>
         </section>
                 <section id="section_cny_ddh_lkb">
                         <title>Where can we go from here?</title>
