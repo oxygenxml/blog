@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="all_about_oxygen_add_ons">
-    <title>Oxygen Add-ons</title>
+    <title>Oxygen Add-ons Overview</title>
     <body>
         <p><ph keyref="oxygen"/> can be extended to support new functionalities and vocabularies.
             These extensions can be either plugins or frameworks: <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/dev_guide/introduction-dev-guide.html"
                 format="html" scope="external"/>.</p>
         <section id="section_ryq_zqp_jkb">
-            <title>Short History of Plugin Support</title>
+            <title>Short History of Plugin Support in <ph keyref="oxygen"/></title>
             <p>The initial support for plugins was primitive, it allowed adding a contextual menu
                 action in the Text editing mode for manipulating the selected content: <xref
                     href="https://www.oxygenxml.com/doc/versions/21.1/ug-editor/topics/text-editing-mode-plugins.html"
@@ -16,36 +16,39 @@
             <p>In version 11.2 the Workspace Access plugin type was added: <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin.html"
                     format="html" scope="external"/>.</p>
-            <p>Workspace Access plugins allow you to add custom toolbar and menu actions, custom
-                side views and add various behaviors depending on various events which occur in the
-                application (documents are opened, closed, saved, the application is started or
-                closed). They can be implemented either in Java or Javascript.</p>
+            <p>Workspace Access plugins allow you to:<ul id="ul_v2n_nwg_lkb">
+                    <li>Add custom toolbar and menu actions</li>
+                    <li>Add custom side views</li>
+                    <li>Add various behaviors depending on various events which occur in the
+                        application (documents are opened, closed, saved, the application is started
+                        or closed)</li>
+                </ul>Such plugins can be implemented either in Java or Javascript.</p>
             <p>Originally plugins could be manually installed by being copied to the
                     <filepath>OXYGEN_INSTALL_DIR\plugins</filepath>. Around version 14 we added
                 support to pack plugins and frameworks as <xref href="packing-add-ons.dita"
                     >add-ons</xref>and thus automate the installation process.</p>
         </section>
         <section id="section_en5_nrp_jkb">
-            <title>Short History of Frameworks Support</title>
+            <title>Short History of Frameworks Support in <ph keyref="oxygen"/></title>
             <p>The concept of framework appeared around <ph keyref="oxygen"/> version 9.</p>
             <p>A framework is a means to group together resources for editing and validating a
                 specific XML vocabulary: <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/glossary/framework.html"
                     format="html" scope="external"/>.</p>
-            <p>In version 16 we added support to extend a base framework, extension which can
-                afterwards be bundled as an add-on.</p>
-        </section>
-        <section id="section_eqq_lxp_jkb">
-            <title>Private Hosted Plugins and Frameworks</title>
-            <p>Content Management Systems like Astoria, Bluestream, Ixiasoft, SDL have implemented
-                plugins which allow <ph keyref="oxygen"/> to connect to their servers.</p>
-            <p>There are also probably lots of privately owned frameworks used for editing various
-                varieties of XML documents inside companies.</p>
+            <p>In version 16 we added support to extend a base framework. Such an extension can be
+                                afterwards be bundled as an add-on.</p>
         </section>
         <section id="section_z4s_kxp_jkb">
             <title>Public Hosted Plugins and Frameworks</title>
             <p>There is an older blog post with an up to date list of <xref
                     href="Oxygen%20plugins%20and%20frameworks.xml"/>.</p>
+        </section>
+        <section id="section_eqq_lxp_jkb">
+            <title>Private Hosted Plugins and Frameworks</title>
+            <p>Content Management Systems like Astoria, Bluestream, Ixiasoft, SDL have implemented
+                plugins which allow <ph keyref="oxygen"/> to connect to their servers.</p>
+            <p>There are also lots of privately owned frameworks used for editing various varieties
+                of XML documents inside companies.</p>
         </section>
         <section id="section_b52_vwp_jkb">
             <title>Why are we (the <ph keyref="oxygen"/> team) working on add-ons?</title>
@@ -55,6 +58,92 @@
                     <ph keyref="oxygen"/> code.</p>
             <p>We can work on add-ons before <ph keyref="oxygen"/> releases when we enter a code
                 freeze stage.</p>
+            <p>We can use our own API and stop regarding the main application as a monolith.</p>
         </section>
+        <section id="section_h14_jwg_lkb">
+            <title>Plugins and Frameworks Developed by <ph keyref="oxygen"/></title>
+            <p>Samples: <ul id="ul_tdc_nxg_lkb">
+                    <li>Sample Javascript-based plugins: <xref
+                                                  href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins"
+                                                  format="html" scope="external"/>.<ul
+                                                  id="ul_shs_wch_lkb">
+                                                  <li>Apply XSLT filter on open/save</li>
+                                                  <li>Add custom editor variable resolver</li>
+                                                  <li>Impose options</li>
+                                                  <li>Add custom image renderer for Author visual
+                                                  editing mode.</li>
+                                                  <li>Add custom validation problems filter.</li>
+                                                </ul></li>
+                    <li>Sample Workspace-access plugin Maven based: <xref
+                            href="https://github.com/oxygenxml/sample-plugin-workspace-access"
+                            format="html" scope="external"/></li>
+                    <li>User interface filter plugin: <xref
+                            href="https://github.com/oxygenxml/oxygen-components-filter-plugin"
+                            format="html" scope="external"/></li>
+                </ul></p>
+            <p>Useful add-ons: <ul id="ul_ub2_ywg_lkb">
+                                        <li>Content Fusion Oxygen add-on - bundled with Oxygen.</li>
+                                        <li>WebHelp Feedback Oxygen add-on.</li>
+                    <li>Git support add-on: <xref
+                            href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
+                            scope="external"/></li>
+                                        <li>Add-on for connecting to any CMIS-enabled storage server
+                                                (like Alfresco): <xref
+                                                  href="https://github.com/oxygenxml/oxygen-cmis-plugin"
+                                                  format="html" scope="external"/>.</li>
+                    <li>Batch Resources Convertor add-on: <xref
+                            href="https://github.com/oxygenxml/oxygen-resources-converter"
+                            format="html" scope="external"/></li>
+                    <li>DocBook Validation add-on: <xref
+                            href="https://github.com/oxygenxml/oxygen-docbook-validate-check-completeness"
+                            format="html" scope="external"/></li>
+                    <li>DITA-specific add-ons:<ul id="ul_ugb_bxg_lkb">
+                            <li>Translation helper: <xref
+                                    href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
+                                    format="html" scope="external"/></li>
+                            <li>Prolog updater: <xref
+                                    href="https://github.com/oxygenxml/oxygen-dita-prolog-updater"
+                                    format="html" scope="external"/></li>
+                            <li>Outgoing References View: <xref
+                                    href="https://github.com/oxygenxml/oxygen-dita-outgoing-references-view"
+                                    format="html" scope="external"/></li>
+                        </ul></li>
+                    <li>Support for rendering various image formats in the Author visual editing
+                            mode:<ul id="ul_jvm_2bh_lkb">
+                            <li>EMF: <xref href="https://github.com/oxygenxml/oxygenxml.emf.support"
+                                    format="support" scope="external"/></li>
+                            <li>CGM: <xref href="https://github.com/oxygenxml/oxygenxml.cgm.support"
+                                    format="support" scope="external"/></li>
+                            <li>PDF: <xref href="https://github.com/oxygenxml/oxygen-pdf-image"
+                                    format="html" scope="external"/></li>
+                            <li>LaTex: <xref
+                                    href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/latex-images-support"
+                                    format="html" scope="external"/></li>
+                            <li>PlantUML: <xref
+                                    href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/plantuml-images-support"
+                                    format="html" scope="external"/></li>
+                        </ul></li>
+                </ul></p>
+        </section>
+                <section id="section_cny_ddh_lkb">
+                        <title>Where can we go from here?</title>
+                        <p>Possible future plugins we can work on:<ul id="ul_mf5_jdh_lkb">
+                                        <li>Support for Google Drive (already available in
+                                                WebAuthor)</li>
+                                        <li>Support for Perforce (already available in
+                                                WebAuthor)</li>
+                                        <li>Amazon S3 connector plugin</li>
+                                        <li>Use Grammarly for spell check (no API available on
+                                                Grammarly side)</li>
+                                        <li>Presentation mode plugin (increase fonts, disable
+                                                certain settings).</li>
+                                        <li>Context side view plugin using XPath with support for
+                                                favorite expressions.</li>
+                                </ul></p>
+                        <p>Possible new API enhancements:<ul id="ul_ucd_f2h_lkb">
+                                        <li>Add support for a plugin to contribute a custom editing
+                                                perspective (toolbars/views arrangement).</li>
+                                </ul></p>
+                </section>
     </body>
 </topic>
