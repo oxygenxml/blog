@@ -4,28 +4,28 @@
     <title>Embedding Diagrams in DITA topics using PlantUML</title>
     <body>
         <p><xref href="https://plantuml.com/" format="html" scope="external">PlantUML</xref> is a
-            neat library which takes textual descriptions of diagrams and produces visual diagrams
+            neat library that takes textual descriptions of diagrams and produces visual diagrams
             from them. </p>
-        <p>Suppose you have a DITA topic which embeds such a textual description of a diagram: <xref
+        <p>Suppose you have a DITA topic that embeds such a textual description of a diagram: <xref
                 href="https://github.com/oxygenxml/dita-plant-uml/blob/master/com.oxygenxml.plantuml.svg/samples/testDiagram.dita"
                 format="html" scope="external"/>.</p>
         <p><image id="image_lmd_jzh_ckb"
                 href="https://raw.githubusercontent.com/oxygenxml/dita-plant-uml/master/previewPlantUML.png"
                 scope="external"/></p>
-        <p>In order to provide support in Oxygen for using such diagrams in DITA topics you need to
-            install the following components:<ul id="ul_s2r_yyh_ckb">
-                <li>An Oxygen plugin which presents PlantUML textual descriptions as images when
+        <p>To provide support in Oxygen for using such diagrams in DITA topics, you need to install
+            the following components:<ul id="ul_s2r_yyh_ckb">
+                <li>An Oxygen plugin that presents PlantUML textual descriptions as images when
                     editing the content in the <b>Author</b> visual editing mode: <xref
                         href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/plantuml-images-support"
                         format="html" scope="external"/>. </li>
-                <li>A DITA Open Toolkit publishing plugin which once installed in the DITA Open
-                    Toolkit will convert the textual descriptions to diagrams both for the
-                    HTML-based and for the PDF outputs: <xref
+                <li>A DITA Open Toolkit publishing plugin that, once installed in the DITA Open
+                    Toolkit, will convert the textual descriptions to diagrams for both the
+                    HTML-based and PDF outputs: <xref
                         href="https://github.com/oxygenxml/dita-plant-uml" format="html"
                         scope="external"/>.</li>
             </ul></p>
-        <p>Once you have this setup you can both visualize the diagrams when editing and you can
-            publish and have the diagram representations dynamically converted to SVG in the
+        <p>Once you have this setup, you can both visualize the diagrams when editing and publish
+            them while having the diagram representations dynamically converted to SVG in the
             published output.</p>
     </body>
 </topic>
