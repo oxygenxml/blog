@@ -2,6 +2,12 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="all_about_oxygen_add_ons">
     <title>Oxygen Add-ons Overview</title>
+        <prolog>
+                <author>Radu Coravu</author>
+                <critdates>
+                        <created date="2020-01-18" class="- topic/created "/>
+                </critdates>
+        </prolog>
     <body>
         <p><ph keyref="oxygen"/> can be extended to support new functionalities and vocabularies.
             These extensions can be either plugins or frameworks: <xref
