@@ -46,6 +46,7 @@
                     <li>Each page has a comments section build using the <xref
                             href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
                             scope="external">Oxygen Feedback</xref> platform.</li>
+                    <li>RSS Feed is automatically generated from the entire list of topics.</li>
                 </ul></p>
         </section>
         <section id="section_tnr_rr3_jkb">
