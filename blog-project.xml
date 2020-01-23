@@ -4,11 +4,25 @@
     <input href="oxygen_xml_blog.ditamap"/>
   </context>
   
-  <deliverable name="Oxygen XML Blog to WebHelp Responsive">
+  <deliverable name="Oxygen XML Blog to WebHelp Responsive" id="wh-responsive">
     <context idref="blog"/>
     <output href="site"/>
     <publication transtype="webhelp-responsive">
       <param name="webhelp.publishing.template" href="publishing/webhelpBlogTemplate.zip"/>
     </publication>
+  </deliverable>
+  
+  <deliverable name="Oxygen XML Blog to PDF" id="pdf">
+    <context idref="blog"/>
+    <output href="site"/>
+    <publication transtype="pdf-css-html5">
+      <param name="pdf.publishing.template" href="publishing/webhelpBlogTemplate.zip"/>
+    </publication>
+  </deliverable>
+  
+  <deliverable name="Oxygen XML Blog to EPUB" id="epub">
+    <context idref="blog"/>
+    <output href="site"/>
+    <publication transtype="epub"/>
   </deliverable>
 </project>
