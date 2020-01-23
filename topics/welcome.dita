@@ -5,7 +5,7 @@
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
-            <created date="2020-01-14" class="- topic/created "/>
+            <created date="2020-01-14"/>
         </critdates>
     </prolog>
     <body>
@@ -47,6 +47,9 @@
                             href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
                             scope="external">Oxygen Feedback</xref> platform.</li>
                     <li>RSS Feed is automatically generated from the entire list of topics.</li>
+                    <li>PDF version is automatically generated using Oxygen Chemistry Engine</li>
+                    <li>EPUB version is automatically generated using DITA For Publishers
+                        plugins.</li>
                 </ul></p>
         </section>
         <section id="section_tnr_rr3_jkb">
@@ -74,7 +77,7 @@
                             like:<codeblock outputclass="language-xml">&lt;prolog>
     &lt;author>Radu Coravu&lt;/author>
     &lt;critdates>
-        &lt;created date="2020-01-14" class="- topic/created "/>
+        &lt;created date="2020-01-14"/>
     &lt;/critdates>
 &lt;/prolog></codeblock>This
                             prolog section will be used to add in the published HTML output the
