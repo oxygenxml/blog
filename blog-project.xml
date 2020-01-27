@@ -12,13 +12,13 @@
     </publication>
   </deliverable>
   
-  <!--<deliverable name="Oxygen XML Blog to PDF" id="pdf">
+  <deliverable name="Oxygen XML Blog to PDF" id="pdf">
     <context idref="blog"/>
     <output href="site"/>
     <publication transtype="pdf-css-html5">
       <param name="pdf.publishing.template" href="publishing/webhelpBlogTemplate.zip"/>
     </publication>
-  </deliverable>-->
+  </deliverable>
   
   <deliverable name="Oxygen XML Blog to EPUB" id="epub">
     <context idref="blog"/>
