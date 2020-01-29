@@ -350,12 +350,15 @@
     </section>
     <section id="section_jdt_dk3_ffb">
       <title>Keeping in Touch</title>
-      <p>Oxygen's <b>Help</b> menu allows you to use the <b>Report problem</b> action to contact us
-        directly. The <b>Support Tools->Randomize XML Content</b> action allows you to randomize the
-        content of an XML project before sending it to us for tests.</p>
-      <p>And there are a lot of other ways to get in touch with us or to find various videos or
-        tutorials to read: <xref href="https://www.oxygenxml.com/technical_support.html"
-          format="html" scope="external"/>.</p>
+      <ul id="ul_dlb_qbv_nkb">
+        <li>Oxygen's <b>Help</b> menu allows you to use the <b>Report problem</b> action to contact
+          us directly. </li>
+        <li>The <b>Support Tools->Randomize XML Content</b> action allows you to randomize the
+          content of an XML project before sending it to us for tests.</li>
+        <li>And there are a lot of other ways to get in touch with us or to find various videos or
+          tutorials to read: <xref href="https://www.oxygenxml.com/technical_support.html"
+            format="html" scope="external"/>.</li>
+      </ul>
     </section>
   </body>
 </topic>

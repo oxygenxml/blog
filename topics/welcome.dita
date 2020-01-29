@@ -4,6 +4,10 @@
     <title>Welcome to the <ph keyref="oxygen"/> Blog !</title>
     <prolog>
         <author>Radu Coravu</author>
+        <copyright>
+            <copyryear year="2020"/>
+            <copyrholder>Syncro Soft</copyrholder>
+        </copyright>
         <critdates>
             <created date="2020-01-14"/>
         </critdates>
@@ -19,8 +23,9 @@
             wait for documentation updates.</p>
         <section id="section_fqq_tr3_jkb">
             <title>History of the <ph keyref="oxygen"/> Blog</title>
-            <p>The blog was originally hosted by Google Blogs and the first articles on the blog
-                appeared around 2007. Since Google Blogs did not allow enough flexibility in
+            <p>The blog was originally hosted by <xref href="https://aboutxml.blogspot.com"
+                    format="html" scope="external">Google Blogs</xref> and the first articles on the
+                blog appeared around 2007. Since Google Blogs did not allow enough flexibility in
                 creating the published content (for example, the inability to create a table of
                 contents) the blog was migrated to XML content and is now hosted on the Netlify
                 platform: <xref href="https://oxygenxmlblog.netlify.com/" format="html"
