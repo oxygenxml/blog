@@ -22,12 +22,6 @@
           next section.</li>
         <li>When using conkeyrefs you should create a special map with key definitions. This keeps
           the reused content and the keys for it separate from the live content.</li>
-        <li>A topic can have multiple reusable elements inside it. In this way it will act like a
-          dictionary of reused components. In such a topic you can keep a table with two columns. On
-          the first table column in each cell you can have a reused element. On the second table
-          column you can keep a small description for each element. The description is metadata, it
-          is not meant for the published output. It is just a good way to inform technical writers
-          about how that particular element should be reused.</li>
       </ul></p>
   </body>
 </topic>
