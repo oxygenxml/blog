@@ -32,6 +32,7 @@
             <topicref href="topics/convertingSubjectSchemeMapToDITAVAL.dita"/>
         </topichead>
         <topichead navtitle="Other">
+            <topicref href="topics/dita_for_small_teams.dita"/>
             <topicref href="topics/oxygen-dita-strong-points.dita"/>
             <topicref href="topics/dita_1_3_support_o17.1.dita"/>
             <topicref href="topics/dita_oriented_tips_and_tricks.dita"/>
@@ -71,6 +72,7 @@
         <topicref href="topics/all_about_oxygen_add_ons.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
+        <topicref href="topics/general_tips_and_tricks.dita"/>
         <topicref href="topics/checking_terminology_with_oxygen_xml_editor.dita"/>
         <topicref href="topics/opinions%20on%20Oxygen.dita"/>
         <topicref href="topics/greattechsupport.dita"/>
@@ -80,7 +82,6 @@
         <topicref href="topics/collaboration-for-documenting-software.dita"/>
         <topicref href="topics/collaboration-teams.dita"/>
         <topicref href="george/enable-massive-contributions.dita"/>
-        <topicref href="topics/dita_for_small_teams.dita"/>
     </topichead>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
 </map>
