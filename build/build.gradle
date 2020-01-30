@@ -29,7 +29,7 @@ task initValidation {
 task runValidation(type:Exec) {
   workingDir "${projectDir}/extracted/oxygen"
   ignoreExitValue true
-  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/report.xml"
+  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
 }
 
 task dist(dependsOn: [initDOT, runTransformation, zCopySite, initValidation, runValidation])
