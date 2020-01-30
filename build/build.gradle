@@ -11,8 +11,8 @@ task initDOT {
 }
 
 task runTransformation(type:Exec) {
+ workingDir "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin"
  doLast {
-   workingDir "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin"
    commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--project", "${projectDir}/../blog-project.xml", "-v"
   }
 }
@@ -34,9 +34,9 @@ task initValidation {
 }
 
 task runValidation(type:Exec) {
+ workingDir "${projectDir}/extracted/oxygen"
+ ignoreExitValue true
  doLast {
-  workingDir "${projectDir}/extracted/oxygen"
-  ignoreExitValue true
   commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
  }
 }
