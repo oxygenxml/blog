@@ -1,6 +1,6 @@
 import org.gradle.api.tasks.Exec
 
-task initDOT {
+task AinitDOT {
   String projectDir = "."
   doLast {
   //https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine-3.x.zip
@@ -10,19 +10,19 @@ task initDOT {
  }
 }
 
-task runTransformation(type:Exec) {
+task BrunTransformation(type:Exec) {
  workingDir "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin"
  commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--project", "${projectDir}/../blog-project.xml", "-v"
 }
 
-task copySite(type: Copy) {
+task CcopySite(type: Copy) {
  doLast {
     from "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/out/site"
     into "${projectDir}/../site"
   }
 }
 
-task initValidation {
+task DinitValidation {
  String projectDir = "."
  doLast {
   ant.get(src: 'https://www.oxygenxml.com/InstData/Editor/All/oxygen.tar.gz', dest: "${projectDir}/oxygen.tar.gz", skipexisting: 'true')
@@ -31,12 +31,12 @@ task initValidation {
  }
 }
 
-task runValidation(type:Exec) {
+task ErunValidation(type:Exec) {
  workingDir "${projectDir}/extracted/oxygen"
  ignoreExitValue true
  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
 }
 
-task dist(dependsOn: [initDOT, runTransformation, copySite, initValidation, runValidation])
+task dist(dependsOn: [AinitDOT, BrunTransformation, CcopySite, DinitValidation, ErunValidation])
 
 defaultTasks 'dist'
