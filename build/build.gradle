@@ -12,9 +12,7 @@ task initDOT {
 
 task runTransformation(type:Exec) {
  workingDir "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin"
- doLast {
-   commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--project", "${projectDir}/../blog-project.xml", "-v"
-  }
+ commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--project", "${projectDir}/../blog-project.xml", "-v"
 }
 
 task copySite(type: Copy) {
@@ -36,9 +34,7 @@ task initValidation {
 task runValidation(type:Exec) {
  workingDir "${projectDir}/extracted/oxygen"
  ignoreExitValue true
- doLast {
-  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
- }
+ commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
 }
 
 task dist(dependsOn: [initDOT, runTransformation, copySite, initValidation, runValidation])
