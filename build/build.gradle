@@ -19,6 +19,19 @@ task zCopySite(type: Copy) {
     into "${projectDir}/../site"
 }
 
-task dist(dependsOn: [initDOT, runTransformation, zCopySite])
+task initValidation {
+  String projectDir = "."
+  ant.get(src: 'https://www.oxygenxml.com/InstData/Editor/All/oxygen.tar.gz', dest: "${projectDir}/oxygen.tar.gz", skipexisting: 'true')
+  ant.untar(src: "${projectDir}/oxygen.tar.gz", dest: "${projectDir}/extracted", compression: 'gzip')
+  new File("${projectDir}/extracted/oxygen/scriptinglicensekey.txt").write(System.getenv( 'SCRIPTING_LICENSE_KEY' ).replaceAll("  ", "\n"))
+}
+
+task runValidation(type:Exec) {
+  workingDir "${projectDir}/extracted/oxygen"
+  ignoreExitValue true
+  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/report.xml"
+}
+
+task dist(dependsOn: [initDOT, runTransformation, zCopySite, initValidation, runValidation])
 
 defaultTasks 'dist'
