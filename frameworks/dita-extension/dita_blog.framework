@@ -28,6 +28,109 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>86</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>oxygenProduct</String>
+												</field>
+												<field name="name">
+													<String>oxygen</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;ph keyref="oxygen"/></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/contextualItems/items</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<contextItem>
+												<field name="targets">
+													<list>
+														<Integer>0</Integer>
+													</list>
+												</field>
+												<field name="actionID">
+													<String>oxygenProduct</String>
+												</field>
+												<field name="alias">
+													<String>oxygen</String>
+												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<String></String>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
+												</field>
+											</contextItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>validationScenarios/[0]/pairs</String>
 										</field>
 										<field name="index">
@@ -333,10 +436,10 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css/webauthor/distraction-free-mode.css</String>
+											<String>${framework}/css/webauthor/inline-insertion-actions.css</String>
 										</field>
 										<field name="title">
-											<String>+ Distraction Free Mode</String>
+											<String>+ Inline insertion actions</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -383,13 +486,13 @@
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
-																<String>text</String>
-																<String>&amp;#160;</String>
+																<String>element</String>
+																<String>&lt;b/></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertOrReplaceTextOperation</String>
+														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
@@ -1038,6 +1141,74 @@
 									</action>
 									<action>
 										<field name="id">
+											<String>orderedList</String>
+										</field>
+										<field name="name">
+											<String>${i18n(orderedList)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(orderedList_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String>/images/OrderedList24.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>/images/OrderedList16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<String>M1 M2 7</String>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " topic/ol ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap/>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " topic/sl ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>listType</String>
+																<String>simplelist</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap/>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
 											<String>unorderedList</String>
 										</field>
 										<field name="name">
@@ -1056,7 +1227,7 @@
 											<String></String>
 										</field>
 										<field name="accelerator">
-											<null/>
+											<String>M1 M2 8</String>
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
@@ -1103,74 +1274,6 @@
 																<String>unorderedlist</String>
 															</entry>
 														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
-													</field>
-												</actionMode>
-											</actionMode-array>
-										</field>
-										<field name="enabledInReadOnlyContext">
-											<Boolean>false</Boolean>
-										</field>
-									</action>
-									<action>
-										<field name="id">
-											<String>orderedList</String>
-										</field>
-										<field name="name">
-											<String>${i18n(orderedList)}</String>
-										</field>
-										<field name="description">
-											<String>${i18n(orderedList_description)}</String>
-										</field>
-										<field name="largeIconPath">
-											<String>/images/OrderedList24.png</String>
-										</field>
-										<field name="smallIconPath">
-											<String>/images/OrderedList16.png</String>
-										</field>
-										<field name="accessKey">
-											<String></String>
-										</field>
-										<field name="accelerator">
-											<null/>
-										</field>
-										<field name="actionModes">
-											<actionMode-array>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>oxy:allows-child-element("*", "class", " topic/ol ")</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap/>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>oxy:allows-child-element("*", "class", " topic/sl ")</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>listType</String>
-																<String>simplelist</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String></String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap/>
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
@@ -5603,6 +5706,207 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>insert.code.block</String>
+										</field>
+										<field name="name">
+											<String>${i18n(insert_code_block)}</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String>/images/CodeBlock16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;codeblock/></String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.note</String>
+										</field>
+										<field name="name">
+											<String>${i18n(insert_note)}</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String>/images/Note16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;note/></String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.definition.list</String>
+										</field>
+										<field name="name">
+											<String>${i18n(insert_definition_list)}</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String>/images/DefinitionList16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;dl>
+    &lt;dlentry>
+        &lt;dt>${caret}&lt;/dt>
+        &lt;dd/>
+    &lt;/dlentry>
+&lt;/dl></String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.code.phrase</String>
+										</field>
+										<field name="name">
+											<String>${i18n(code)}</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String>/images/CodeBlock16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>element</String>
+																<String>&lt;codeph/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -6180,6 +6484,22 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 														<menuSeparator/>
 														<menuItem>
 															<field name="actionID">
+																<String>insert.note</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.code.block</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.definition.list</String>
+															</field>
+														</menuItem>
+														<menuSeparator/>
+														<menuItem>
+															<field name="actionID">
 																<String>paragraph</String>
 															</field>
 														</menuItem>
@@ -6249,6 +6569,11 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 														<menuItem>
 															<field name="actionID">
 																<String>superscript</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.code.phrase</String>
 															</field>
 														</menuItem>
 													</menuEntry-array>
@@ -6582,12 +6907,12 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											</toolbarItem>
 											<toolbarItem>
 												<field name="actionID">
-													<String>unorderedList</String>
+													<String>orderedList</String>
 												</field>
 											</toolbarItem>
 											<toolbarItem>
 												<field name="actionID">
-													<String>orderedList</String>
+													<String>unorderedList</String>
 												</field>
 											</toolbarItem>
 											<toolbarSeparator/>
@@ -6660,7 +6985,19 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 													<String>insert.properties.table</String>
 												</field>
 												<field name="alias">
-													<String>${i18n(props.table.wizard)}</String>
+													<String></String>
+												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -6673,7 +7010,19 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 													<String>insert.simpletable</String>
 												</field>
 												<field name="alias">
-													<String>${i18n(simpletable.wizard)}</String>
+													<String></String>
+												</field>
+												<field name="replacementFor">
+													<String>simpletable</String>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>true</Boolean>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -6686,7 +7035,19 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 													<String>insert.table.wizard</String>
 												</field>
 												<field name="alias">
-													<String>${i18n(table.wizard)}</String>
+													<String></String>
+												</field>
+												<field name="replacementFor">
+													<String>table</String>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>true</Boolean>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -6699,7 +7060,19 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 													<String>insert.table.row.below</String>
 												</field>
 												<field name="alias">
-													<String>${i18n(row.wizard)}</String>
+													<String></String>
+												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -6712,7 +7085,19 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 													<String>insert.choicetable</String>
 												</field>
 												<field name="alias">
-													<String>${i18n(choicetable.wizard)}</String>
+													<String></String>
+												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -6725,7 +7110,19 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 													<String>insert.image</String>
 												</field>
 												<field name="alias">
-													<String>${i18n(image.wizard)}</String>
+													<String></String>
+												</field>
+												<field name="replacementFor">
+													<String>image</String>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>true</Boolean>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -6740,6 +7137,18 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 												<field name="alias">
 													<String>${i18n(xref.cross.reference)}</String>
 												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
+												</field>
 											</contextItem>
 											<contextItem>
 												<field name="targets">
@@ -6752,6 +7161,18 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 												</field>
 												<field name="alias">
 													<String>${i18n(xref.web.link)}</String>
+												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -6766,6 +7187,18 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 												<field name="alias">
 													<String>${i18n(link.cross.reference)}</String>
 												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
+												</field>
 											</contextItem>
 											<contextItem>
 												<field name="targets">
@@ -6779,41 +7212,23 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 												<field name="alias">
 													<String>${i18n(link.web.link)}</String>
 												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<null/>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
+												</field>
 											</contextItem>
 										</contextItem-array>
 									</field>
 									<field name="removeItems">
 										<contextRemoveItem-array>
-											<contextRemoveItem>
-												<field name="targets">
-													<list>
-														<Integer>0</Integer>
-													</list>
-												</field>
-												<field name="renderName">
-													<String>table</String>
-												</field>
-											</contextRemoveItem>
-											<contextRemoveItem>
-												<field name="targets">
-													<list>
-														<Integer>0</Integer>
-													</list>
-												</field>
-												<field name="renderName">
-													<String>simpletable</String>
-												</field>
-											</contextRemoveItem>
-											<contextRemoveItem>
-												<field name="targets">
-													<list>
-														<Integer>0</Integer>
-													</list>
-												</field>
-												<field name="renderName">
-													<String>choicetable</String>
-												</field>
-											</contextRemoveItem>
 											<contextRemoveItem>
 												<field name="targets">
 													<list>
@@ -6842,6 +7257,16 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 												</field>
 												<field name="renderName">
 													<String>row</String>
+												</field>
+											</contextRemoveItem>
+											<contextRemoveItem>
+												<field name="targets">
+													<list>
+														<Integer>0</Integer>
+													</list>
+												</field>
+												<field name="renderName">
+													<String>choicetable</String>
 												</field>
 											</contextRemoveItem>
 										</contextRemoveItem-array>
@@ -7931,16 +8356,55 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 												<String>chemistry</String>
 											</field>
 											<field name="defaultValue">
-												<null/>
+												<String>chemistry</String>
 											</field>
 											<field name="type">
-												<Integer>0</Integer>
+												<Integer>4</Integer>
 											</field>
 											<field name="possibleValues">
-												<null/>
+												<String-array>
+													<String>chemistry</String>
+													<String>prince</String>
+													<String>antenna-house</String>
+													<null/>
+												</String-array>
 											</field>
 											<field name="possibleValuesDescriptions">
+												<String-array>
+													<String></String>
+													<String></String>
+													<String></String>
+												</String-array>
+											</field>
+										</ditaParameter>
+										<ditaParameter>
+											<field name="name">
+												<String>fix.external.refs.com.oxygenxml</String>
+											</field>
+											<field name="description">
 												<null/>
+											</field>
+											<field name="value">
+												<String>true</String>
+											</field>
+											<field name="defaultValue">
+												<String>true</String>
+											</field>
+											<field name="type">
+												<Integer>4</Integer>
+											</field>
+											<field name="possibleValues">
+												<String-array>
+													<String>true</String>
+													<String>false</String>
+													<null/>
+												</String-array>
+											</field>
+											<field name="possibleValuesDescriptions">
+												<String-array>
+													<String></String>
+													<String></String>
+												</String-array>
 											</field>
 										</ditaParameter>
 									</list>
