@@ -40,11 +40,14 @@ task runValidation(type:Exec, dependsOn: [initValidation]) {
 }
 
 task postProcessValidation(dependsOn: [runValidation]) {
+ String projectDir = "."
+ doLast {
     ant.replace(
       file: '${projectDir}/../site/validationReport.xml',
       token: '<?xml version="1.0" encoding="UTF-8"?>',
       value: '<?xml-stylesheet type="text/css" href="report.css"?>'
- )
+  )
+ }
 }
 
 task dist(dependsOn: [copySite, postProcessValidation])
