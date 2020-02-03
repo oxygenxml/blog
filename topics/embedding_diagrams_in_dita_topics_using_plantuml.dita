@@ -10,8 +10,7 @@
                 href="https://github.com/oxygenxml/dita-plant-uml/blob/master/com.oxygenxml.plantuml.svg/samples/testDiagram.dita"
                 format="html" scope="external"/>.</p>
         <p><image id="image_lmd_jzh_ckb"
-                href="https://raw.githubusercontent.com/oxygenxml/dita-plant-uml/master/previewPlantUML.png"
-                scope="external"/></p>
+                href="../images/previewPlantUML.png"/></p>
         <p>To provide support in Oxygen for using such diagrams in DITA topics, you need to install
             the following components:<ul id="ul_s2r_yyh_ckb">
                 <li>An Oxygen plugin that presents PlantUML textual descriptions as images when
