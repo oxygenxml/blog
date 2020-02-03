@@ -39,6 +39,14 @@ task runValidation(type:Exec, dependsOn: [initValidation]) {
  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
 }
 
-task dist(dependsOn: [copySite, runValidation])
+task postProcessValidation(dependsOn: [runValidation]) {
+    ant.replace(
+      file: '${projectDir}/../site/validationReport.xml',
+      token: '<?xml version="1.0" encoding="UTF-8"?>',
+      value: '<?xml-stylesheet type="text/css" href="report.css"?>'
+ )
+}
+
+task dist(dependsOn: [copySite, postProcessValidation])
 
 defaultTasks 'dist'
