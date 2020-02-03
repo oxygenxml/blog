@@ -20,7 +20,7 @@
             <title>Short History of Plugin Support in <ph keyref="oxygen"/></title>
             <p>The initial support for plugins was primitive, it allowed adding a contextual menu
                 action in the Text editing mode for manipulating the selected content: <xref
-                    href="https://www.oxygenxml.com/doc/versions/21.1/ug-editor/topics/text-editing-mode-plugins.html"
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/text-editing-mode-plugins.html"
                     format="html" scope="external"/>.</p>
             <p>In version 11.2 the Workspace Access plugin type was added: <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin.html"

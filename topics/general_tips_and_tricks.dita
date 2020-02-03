@@ -135,7 +135,7 @@
         </li>
         <li>Triple click an element tag to select the entire element.</li>
         <li><xref
-            href="https://www.oxygenxml.com/doc/versions/ug-editor/topics/text-navigate-document-content-x-editing2.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/text-navigate-document-content-x-editing2.html"
             format="html" scope="external">Various navigation shortcuts</xref>: Go after next tag.
           Select parent. Use the top level breadcrump.</li>
         <li>Move lines up and down (<b>Alt-Up/Down</b>).</li>

@@ -3,7 +3,7 @@
 <topic id="topic_kqb_nb3_ls">
   <title>DITA OT PDF Customization - Table with Alternate Row Background Colors</title>
   <body>
-    <p>Based on this <xref href="http://www.oxygenxml.com/forum/topic11623.html" format="html" scope="external">forum thread</xref> I will try to give some steps in which you can create your own DITA Open Toolkit PDF customization folder for customizing a table to have alternate row background colors.</p>
+    <p>Based on this <xref href="https://www.oxygenxml.com/forum/topic11623.html" format="html" scope="external">forum thread</xref> I will try to give some steps in which you can create your own DITA Open Toolkit PDF customization folder for customizing a table to have alternate row background colors.</p>
     <ol id="ol_ygl_kc3_ls">
       <li>First of all you need to know the XSLT template that you need to override. <ul id="ul_rgm_lc3_ls">
           <li>You can open a DITA topic which has a table inside it and select in the <b>Outline</b> view the table row. The <b>Attributes</b> view will show you its <b>@class</b> attribute value which is <b>- topic/row</b> .</li>

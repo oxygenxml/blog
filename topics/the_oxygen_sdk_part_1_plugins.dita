@@ -38,7 +38,7 @@
                     format="html" scope="external"
                     >http://www.oxygenxml.com/doc/ug-oxygen/index.html#tasks/deploying-addons.html</xref></p>
             <p>The <b>Oxygen Plugins SDK</b>:<xref
-                    href="http://www.oxygenxml.com/oxygen_sdk.html#Developer_Plugins" format="html"
+                    href="https://www.oxygenxml.com/oxygen_sdk.html#Developer_Plugins" format="html"
                     scope="external"/> contains Java
                 sources and Javadoc for all the API accessible from a plugin. The Plugins SDK also
                 contains sample plugins and their Java code. This Java code should be very helpful

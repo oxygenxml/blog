@@ -21,7 +21,7 @@
                                 <Boolean>true</Boolean>
                             </field>
                             <field name="includeRemoteResourcesSelected">
-                                <Boolean>false</Boolean>
+                                <Boolean>true</Boolean>
                             </field>
                             <field name="useDitavalFileSeletcted">
                                 <Boolean>true</Boolean>

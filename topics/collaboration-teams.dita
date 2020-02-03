@@ -17,7 +17,7 @@
             for writing our user manual which is DITA-based we collaborate using a <b>subversion
                 server</b> installed on a Linux machine. We made a small video demonstration showing
             how this colaboration is done:<xref
-                href="http://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html"
+                href="https://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html"
                 format="html" scope="external"/>
             The advantage to using version systems is immense:<ol id="ol_kk3_p2r_yjb">
                 <li>We know the history of each resource.</li>
@@ -32,7 +32,7 @@
             document. Use a <b>Commercial CMS</b> which in addition to an open source version system
             will bring more workflow related tools and lots of ways to keep your content valid. And
             there are quite a few CMSs which have an integration with Oxygen:<xref
-                href="http://www.oxygenxml.com/partners.html#solutionpartners%28cms%29"
+                href="https://www.oxygenxml.com/partners.html#solutionpartners%28cms%29"
                 format="html" scope="external"/>
         </p>
         <p>Here's a very nice post by Eliot Kimber about implementing DITA without a CSM:<xref

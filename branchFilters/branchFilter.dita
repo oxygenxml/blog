@@ -15,7 +15,7 @@
     <p>In this blog post I'm going to give you a small example of how branch filtering can benefit
       two cases of reuse which could not be done previously. You can read more about branch
       filtering in the <xref
-        href="http://www.oxygenxml.com/dita/1.3/specs/index.html#archSpec/base/branch-filtering.html"
+        href="https://www.oxygenxml.com/dita/1.3/specs/index.html#archSpec/base/branch-filtering.html"
         format="html" scope="external">DITA 1.3 specs</xref>.</p>
     <section>
       <title>Case 1 - Combine Two Profiles in the Same Publication</title>
@@ -83,7 +83,7 @@
     <p>This kind of usage will produce in the HTML output folder two topic HTML files from the
       single <filepath>peeling.dita</filepath>, one for each filter context.</p>
     <p>The DITA samples for this post can be downloaded from <xref
-        href="http://www.oxygenxml.com/forum/files/branchFilteringBlogSamples.zip" format="zip"
+        href="https://www.oxygenxml.com/forum/files/branchFilteringBlogSamples.zip" format="zip"
         scope="external"/>.</p>
     <p>As usual any feedback is welcomed.</p>
     <p>If you would like to beta test <b><ph keyref="oxygen"/> 17.1</b> with experimental DITA 1.3

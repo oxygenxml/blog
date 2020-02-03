@@ -34,7 +34,7 @@
           href="https://code.google.com/p/oxygen-tei/" format="html" scope="external"/><p>HisTEI: An
             <b>Oxygen</b> framework for historical documents encoded in TEI. </p><p>More details:
             <xref href="https://github.com/odaata/HisTEI" format="html" scope="external"/>, <xref
-            href="http://www.oxygenxml.com/pipermail/oxygen-sdk/2014-November/000182.html"
+            href="https://www.oxygenxml.com/pipermail/oxygen-sdk/2014-November/000182.html"
             format="html" scope="external"/></p></li>
       <li>
         <p>Ediarium is an extension package for TEI editing within Oxygen.</p>
