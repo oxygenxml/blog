@@ -55,6 +55,10 @@
                     <li>PDF version is automatically generated using Oxygen Chemistry Engine</li>
                     <li>EPUB version is automatically generated using DITA For Publishers
                         plugins.</li>
+                    <li>A validation report of the DITA content (reporting for example broken links)
+                        is available alond with the published output: <xref
+                            href="https://oxygenxmlblog.netlify.com/validationReport.xml"
+                            scope="external" format="xml"/>.</li>
                 </ul></p>
         </section>
         <section id="section_tnr_rr3_jkb">

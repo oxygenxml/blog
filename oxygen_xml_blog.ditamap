@@ -81,6 +81,7 @@
         <topicref href="topics/collaboration-for-documenting-software.dita"/>
         <topicref href="topics/collaboration-teams.dita"/>
         <topicref href="george/enable-massive-contributions.dita"/>
+        <topicref href="topics/all_about_editor_variables.dita"/>
     </topichead>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
 </map>

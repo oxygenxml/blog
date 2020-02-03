@@ -129,9 +129,9 @@
               <li><codeph>${ask('Author Name', generic, 'John Doe')}</codeph></li>
               <li><codeph>${xpath_eval(upper-case(substring('${cfn}', 1, 4)))}</codeph></li>
           </ul>
-          <p>Code
-            templates can also be saved at project level or exported in order to share them with
-            others.</p>
+          <p>Code templates can also be saved at project level or exported in order to share them
+            with others. You can read more about the contexts in which editor variables can appear
+            in this blog post: <xref href="all_about_editor_variables.dita"/>.</p>
         </li>
         <li>Triple click an element tag to select the entire element.</li>
         <li><xref
@@ -227,14 +227,16 @@
                 format="html" scope="external">Editor variables</xref> - Certain Oxygen-specific
               macros can be automatically expanded. For example, a code template that inserts the
               current author name can use this editor
-              variable:<codeblock>&lt;author>${author.name}&lt;/author></codeblock>or a code
-              template that surrounds the selection inside a <xmlelement>keyword</xmlelement>
-              element:<codeblock>&lt;keyword>${selection}&lt;/keyword></codeblock>or a code template
-              that first asks the end user for their name and then inserts it in the
-              document:<codeblock>&lt;author>${ask('Author Name', generic, 'John Doe')}&lt;/author></codeblock>Editor
+              variable:<codeblock outputclass="language-xml">&lt;author>${author.name}&lt;/author></codeblock>or
+              a code template that surrounds the selection inside a <xmlelement>keyword</xmlelement>
+              element:<codeblock outputclass="language-xml">&lt;keyword>${selection}&lt;/keyword></codeblock>or
+              a code template that first asks the end user for their name and then inserts it in the
+              document:<codeblock outputclass="language-xml">&lt;author>${ask('Author Name', generic, 'John Doe')}&lt;/author></codeblock>Editor
               variables can also be used when creating <xref
                 href="author-document-type-extension-sharing-custom-new-file-templates.dita">new
-                file templates</xref>.</p>
+                file templates</xref>. You can read more about the contexts in which editor
+              variables can appear in this blog post: <xref href="all_about_editor_variables.dita"
+              />.</p>
           </li>
           <li>Outline Quick find filter - The Outline view contains a filter that can be used to
             reduce the number of elements displayed in it (for example, display only the contained

@@ -41,12 +41,17 @@
         <section id="section_en5_nrp_jkb">
             <title>Short History of Frameworks Support in <ph keyref="oxygen"/></title>
             <p>The concept of framework appeared around <ph keyref="oxygen"/> version 9.</p>
-            <p>A framework is a means to group together resources for editing and validating a
-                specific XML vocabulary: <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/glossary/framework.html"
-                    format="html" scope="external"/>.</p>
+            <p>A framework is a means to group together resources for editing, rendering and
+                                validating a specific XML vocabulary: <xref
+                                        href="https://www.oxygenxml.com/doc/ug-editor/glossary/framework.html"
+                                        format="html" scope="external"/>.</p>
             <p>In version 16 we added support to extend a base framework. Such an extension can be
                                 afterwards be bundled as an add-on.</p>
+                        <p>A sample framework extension add-on which adds custom visual display
+                                support can be found here: <xref
+                                        href="https://github.com/oxygenxml/dita-author-slides"
+                                        format="html" scope="external">DITA Topics as
+                                Slides</xref>.</p>
         </section>
         <section id="section_z4s_kxp_jkb">
             <title>Public Hosted Plugins and Frameworks</title>

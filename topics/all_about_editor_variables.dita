@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="all_about_editor_variables">
+    <title>All About Editor Variables</title>
+    <body>
+        <p>In various places in the <ph keyref="oxygen"/> application there is support for expanding
+            variables. These variables/macros usually take the form <b>${variableName}</b> and are
+            expanded by the application dynamically when necessary. A list with all supported editor
+            variables can be found in the user's manual: <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html"
+                format="html" scope="external"/>. I will enumerate below all major contexts in which
+            using such editor variables may prove useful:</p>
+        <section id="section_qtg_f43_4kb">
+            <title>Transformation Scenarios</title>
+            <p>Most transformation scenario types have lists of parameters and fields where you can
+                configure the place where the output should be saved. You can use editor variables
+                in these places to make the transformation scenario portable and thus to be able to
+                share it with your colleagues. Here are some examples:<dl>
+                    <dlentry>
+                        <dt>XML with XSLT based transformation scenario types</dt>
+                        <dd>If you edit such a scenario and go to the <b>Output</b> tab you can
+                            specify the <uicontrol>Save as</uicontrol> field to use editor variables
+                            like this <codeph>${cfd}/${cfn}.html</codeph> which will get expanded to
+                            use the current XML document folder and file name but with a different
+                            extension when the output of the transformation gets saved on disk. You
+                            can also use editor variables like <b>${date()}</b> to save the output
+                            file name using the current date:
+                                    <codeph>${cfd}/${cfn}-${date(<i>yyyy-MM-dd</i>)}.html</codeph>.</dd>
+                        <dd>The <b>XSLT</b> tab already uses the <b>${currentFileURL}</b> editor
+                            variable in order to be applied on any XML document opened in the editor
+                            area. The <b>Parameters</b> list allows you to specify XSLT parameters
+                            with values which may contain editor variables which will be expanded by
+                            the application before the transformation is run. For example as value
+                            for a parameter you can use an <b>${ask()}</b> editor variable which
+                            will end up requesting the value from the end user when the
+                            transformation is started: <codeph>${ask('New Parameter Value', generic,
+                                'default')}</codeph>.</dd>
+                    </dlentry>
+                </dl><dl>
+                    <dlentry>
+                        <dt>ANT based transformation scenario types</dt>
+                        <dd>In the <b>Parameters</b> tab you can add new parameters which will be
+                            passed to the ANT build file. Values for such parameters can also
+                            contain editor variables. You can add for example a parameter called
+                                <b>currentXMLDocument</b> with value
+                                <b>${pd}/specificFileName.xml</b> if you want a path to a specific
+                            XML file in the current XML project to be passed to the ANT build file
+                            as a variable. Again you can use <b>${ask()}</b> editor variable which
+                            will end up requesting the value from the end user when the
+                            transformation is started.</dd>
+                    </dlentry>
+                </dl><dl>
+                    <dlentry>
+                        <dt>DITA Open Toolkit transformation scenario types</dt>
+                        <dd>DITA Open Toolkit transformation scenarios are based on ANT so the
+                            previous tips apply. In addition you can use the <b>${rootMapFile}</b>
+                            related editor variables which gets expanded to the current root map.
+                            For example in the <b>Filters</b> tab I can specify the reference to the
+                            DITAVAL file like this: <codeph>${rootMapDir}\filter.ditaval</codeph> to
+                            refer to the filter relative to the folder where the current root map is
+                            published.</dd>
+                        <dd>You can also extract the root DITA Map file name using the
+                                <b>${xpath_eval()}</b> editor variable:
+                                <codeph>${xpath_eval(tokenize('${rootMapURL}',
+                                '/')[last()])}</codeph>.</dd>
+                    </dlentry>
+                </dl></p>
+        </section>
+        <section id="section_pd4_4vd_pkb">
+            <title>New File Templates</title>
+            <p>You can create your own new file templates and have them use when the <ph
+                    keyref="oxygen"/>
+                <uicontrol>File->New</uicontrol> dialog wizard is used to create new documents:
+                    <xref
+                    href="author-document-type-extension-sharing-custom-new-file-templates.dita"
+                />.</p>
+            <p>The content of these new file templates can have inside editor variables which are
+                automatically expanded when a new XML document is created. For example a new file
+                template like
+                this:<codeblock outputclass="language-xml">&lt;topic id="topic_${id}">
+    &lt;title>${caret}&lt;/title>
+    &lt;prolog>
+        &lt;author>${ask('Author Name?', generic, 'default')}&lt;/author>
+    &lt;/prolog>
+    &lt;body>
+        &lt;p>&lt;/p>
+    &lt;/body>
+&lt;/topic></codeblock>makes
+                use of multiple editor variables:<ul id="ul_yxw_nwd_pkb">
+                    <li>The <b>${id}</b> editor variable expands to an unique short ID value
+                        containing alphanumerical characters. You can also use the <b>${uuid}</b>
+                        editor variable to generate a truly unique but longer ID value.</li>
+                    <li>The <b>${caret}</b> editor variable marks the position where the caret will
+                        be placed after the XML document created from the new file template is
+                        initially opened.</li>
+                    <li>The <b>${ask}</b> editor variable will ask the end user to provide the name
+                        of the author and will get expanded in the XML content. You can also use
+                            <b>${answer}</b> editor variables to use the same answer to the
+                            <b>${ask}</b> editor variable in multiple places.</li>
+                </ul></p>
+        </section>
+        <section id="section_s43_h5d_pkb">
+            <title>Code Templates</title>
+            <p><ph keyref="oxygen"/>'s <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html"
+                    format="html" scope="external">code templates support</xref> allows you to
+                define small pieces of XML content which can later be inserted by pressing the
+                    <uicontrol>Ctrl-Space</uicontrol> keyboard shortcut (or <b>ENTER</b> in the
+                Author visual editing mode). Code templates can also contain editor variables which
+                get expanded when the code template is used. Examples:<ul id="ul_umw_txd_pkb">
+                    <li>You can use the <b>${selection}</b> editor variable to surround the current
+                        selected content in the main editing area inside the code
+                        template:<codeblock outputclass="language-xml">&lt;em>${selection}&lt;/em></codeblock></li>
+                    <li>The <b>${caret}</b> editor variable allows you to precisely choose a place
+                        for the caret after the code template is
+                        inserted:<codeblock outputclass="language-xml">&lt;ph keyref="oxygen"/>${caret}</codeblock>In
+                        the example above the caret will be placed after the inserted element when
+                        the code template is chosed.</li>
+                    <li>The <b>${ask}</b> editor variable will trigger the application to ask for a
+                        value to insert in a particular place of the code
+                        template:<codeblock outputclass="language-xml">&lt;problem reason="${ask('Reason?', radio, ('lost':'lost';'illegible':'illegible';'omitted':'omitted';), 'lost')}"/></codeblock>In
+                        the example above when the code template is chosed, the end user will need
+                        to choose the reason in a dialog showing a combo box of possible choices and
+                        the chosen reason will be expanded in the code template before being
+                        inserted in the XML content.</li>
+                </ul></p>
+        </section>
+        <section id="section_y35_g5d_pkb">
+            <title>Custom Author Actions</title>
+            <p><ph keyref="oxygen"/> framework configurations allow defining custom actions for the
+                Author visual editing mode and then contributing these actions to framework-specific
+                toolbars and menus. An example of implementing such a custom action can be found
+                here: <xref href="custom-author-action-js-based.dita"/>.</p>
+            <p>In some of the default operations that you can use in a custom Author action (for
+                example in the <b><b>InsertFragmentOperation</b></b>) you can use <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html"
+                    format="html" scope="external">editor variables</xref>.</p>
+        </section>
+        <section id="section_yzl_g5d_pkb">
+            <title>External Tools</title>
+            <p>You can run external command line scripts from <ph keyref="oxygen"/> by configuring
+                    <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-external-tools.html"
+                    format="html" scope="external">external tools</xref> in the
+                    <uicontrol>Preferences</uicontrol> page. The defined external tools allow using
+                editor variables like <b>${pd}</b> to access the current project folder and the
+                editor variables will be automatically expanded before the external tool is
+                invoked.</p>
+        </section>
+        <section id="section_ofr_bf2_pkb">
+            <title>Custom Editor Variables</title>
+            <p>You can define your custom editor variables in the application <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-custom-editor-variables.html"
+                    format="html" scope="external">Custom Editor Variables</xref> preferences page.
+                A custom editor variable can contain as values other editor variables and can be
+                used in all places where a predefined editor variable is.</p>
+            <p>You can use <ph keyref="oxygen"/>'s API to provide custom editor variables and their
+                expanded values using custom Java or Javascript code. For example this <xref
+                    href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/customEditorVariables"
+                    format="html" scope="external">plugin</xref> adds support for a new
+                    <b>${clipboard}</b> editor variable.</p>
+        </section>
+    </body>
+</topic>
