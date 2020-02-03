@@ -56,7 +56,7 @@
                             previous tips apply. In addition you can use the <b>${rootMapFile}</b>
                             related editor variables which gets expanded to the current root map.
                             For example in the <b>Filters</b> tab I can specify the reference to the
-                            DITAVAL file like this: <codeph>${rootMapDir}\filter.ditaval</codeph> to
+                            DITAVAL file like this: <codeph>${rootMapDir}/filter.ditaval</codeph> to
                             refer to the filter relative to the folder where the current root map is
                             published.</dd>
                         <dd>You can also extract the root DITA Map file name using the
