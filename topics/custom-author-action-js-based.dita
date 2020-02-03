@@ -21,8 +21,8 @@
               href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html#dg-default-author-operations__jsoperation"
               format="html" scope="external"><b>JSOperation</b></xref> to invoke a custom Javascript
             code. The custom action definition would look like this:</p>
-          <p><image href="https://www.oxygenxml.com/forum/files/splitTableCustomAction.png"
-              id="image_xvz_mrn_qcb" width="600" scope="external" scale="50"/></p>
+          <p><image href="../images/splitTableCustomAction.png"
+              id="image_xvz_mrn_qcb" width="600" scale="50"/></p>
         </li>
         <li>Set as value to the <b>script</b> parameter of the operation the following
             <b>Javascript</b>
