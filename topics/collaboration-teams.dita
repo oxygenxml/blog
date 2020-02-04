@@ -16,7 +16,7 @@
                 <b>GIT</b>. For example <b>Oxygen </b>comes with an embedded <b>SVN Client</b> and
             for writing our user manual which is DITA-based we collaborate using a <b>subversion
                 server</b> installed on a Linux machine. We made a small video demonstration showing
-            how this colaboration is done:<xref
+            how this collaboration is done:<xref
                 href="https://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html"
                 format="html" scope="external"/>
             The advantage to using version systems is immense:<ol id="ol_kk3_p2r_yjb">

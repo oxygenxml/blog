@@ -4,7 +4,7 @@
   <title>Content Reference Ranges</title>
   <body>
     <p>Instead of reusing a series of consecutive elements (for example steps, list items) one by
-      one you can reuse an entire range of sibling elements. For this to work, both the intial and
+      one you can reuse an entire range of sibling elements. For this to work, both the initial and
       the final elements need to have IDs defined on them.</p>
     <example>
       <title>Small example of content key reference with ranges</title>

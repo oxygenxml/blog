@@ -115,11 +115,11 @@
                         for the caret after the code template is
                         inserted:<codeblock outputclass="language-xml">&lt;ph keyref="oxygen"/>${caret}</codeblock>In
                         the example above the caret will be placed after the inserted element when
-                        the code template is chosed.</li>
+                        the code template is chosen.</li>
                     <li>The <b>${ask}</b> editor variable will trigger the application to ask for a
                         value to insert in a particular place of the code
                         template:<codeblock outputclass="language-xml">&lt;problem reason="${ask('Reason?', radio, ('lost':'lost';'illegible':'illegible';'omitted':'omitted';), 'lost')}"/></codeblock>In
-                        the example above when the code template is chosed, the end user will need
+                        the example above when the code template is chosen, the end user will need
                         to choose the reason in a dialog showing a combo box of possible choices and
                         the chosen reason will be expanded in the code template before being
                         inserted in the XML content.</li>

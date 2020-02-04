@@ -82,6 +82,10 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>key.dictionaries.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.editor.document.type.association.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -113,6 +117,10 @@
                                 </field>
                             </mediaWorkingSetPO>
                         </mediaWorkingSetPO-array>
+                    </entry>
+                    <entry>
+                        <String>key.spellcheck.option.pane</String>
+                        <Boolean>true</Boolean>
                     </entry>
                     <entry>
                         <String>scenario.associations</String>
@@ -419,6 +427,91 @@
                                 </field>
                             </ditaScenario>
                         </scenario-array>
+                    </entry>
+                    <entry>
+                        <String>spell.check.options</String>
+                        <spellCheckOptions>
+                            <field name="automaticSpellCheck">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="automaticSpellCheckContentTypes">
+                                <String-array>
+                                    <String>application/xhtml+xml</String>
+                                    <String>text/html</String>
+                                    <String>text/markdown</String>
+                                    <String>text/nvdl</String>
+                                    <String>text/plain</String>
+                                    <String>text/properties</String>
+                                    <String>text/rng</String>
+                                    <String>text/sch</String>
+                                    <String>text/wsdl</String>
+                                    <String>text/xml</String>
+                                    <String>text/xproc</String>
+                                    <String>text/xsd</String>
+                                    <String>text/xsl</String>
+                                    <String>text/xspec</String>
+                                </String-array>
+                            </field>
+                            <field name="spellCheckInComments">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="spellCheckInAttributeValues">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="spellCheckInText">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="spellCheckInCDATA">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="language">
+                                <String>en</String>
+                            </field>
+                            <field name="caseSensitive">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="ignoreMixedCase">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="ignoreAcronyms">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="ignoreDigits">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="ignoreDuplicates">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="ignoreURL">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="checkPunctuation">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="allowCompound">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="allowFileExtensions">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="obeyLangAttributes">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="langAttrMissingUseDefault">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="ignoreSpellCheckElements">
+                                <String-array>
+                                    <String>codeblock</String>
+                                    <String>codeph</String>
+                                    <String>filepath</String>
+                                    <String>screen</String>
+                                </String-array>
+                            </field>
+                            <field name="preferredChecker">
+                                <Integer>1</Integer>
+                            </field>
+                        </spellCheckOptions>
                     </entry>
                     <entry>
                         <String>storage.level.of.check.completeness.options</String>

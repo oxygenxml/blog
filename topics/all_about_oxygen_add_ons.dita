@@ -26,12 +26,14 @@
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin.html"
                     format="html" scope="external"/>.</p>
             <p>Workspace Access plugins allow you to:<ul id="ul_v2n_nwg_lkb">
-                    <li>Add custom toolbar and menu actions</li>
-                    <li>Add custom side views</li>
-                    <li>Add various behaviors depending on various events which occur in the
-                        application (documents are opened, closed, saved, the application is started
-                        or closed)</li>
-                </ul>Such plugins can be implemented either in Java or Javascript.</p>
+                                        <li>Add custom toolbar and menu actions</li>
+                                        <li>Add custom side views</li>
+                                        <li>Add various behaviors depending on various events which
+                                                occur in the application (documents are opened,
+                                                closed, saved, the application is started or
+                                                closed)</li>
+                                </ul>Such plugins can be implemented either in Java or Javascript
+                                (since version 17.1).</p>
             <p>Originally plugins could be manually installed by being copied to the
                                         <filepath>OXYGEN_INSTALL_DIR\plugins</filepath>. Around
                                 version 14 we added support to pack plugins and frameworks as <xref

@@ -61,7 +61,7 @@
     <p>The task works and at some point in your <b>Vegetables Soup</b> publication you realise you
       need to write a similar task about peeling <b>cucumbers</b>. The task is exactly the same,
       except the product name. So naturally you want to reuse the existing written task. For this we
-      re-write the task so that instead of of the product <b>potatoes</b> it contains two
+      re-write the task so that instead of the product <b>potatoes</b> it contains two
       consecutive profiled product
       names:<codeblock outputclass="language-xml">Peeling &lt;ph product="potatoes">potatoes&lt;/ph>&lt;ph product="cucumbers">cucumbers&lt;/ph></codeblock>and
       include the task in the main DITA Map in two places with different ditaval filters

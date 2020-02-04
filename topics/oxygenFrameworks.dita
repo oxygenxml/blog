@@ -63,7 +63,7 @@
                 format="html" scope="external"><b>Actions</b></xref> - a list of actions specific
               for modifying the edited content. An action has a name, description, icons and
               shortcut key. It also has one or more activation contexts which depending on an XPath
-              expression enable a certain operation be be executed. A fair amount of basic
+              expression enable a certain operation be executed. A fair amount of basic
               operations are already available but you can create your <xref
                 href="https://www.oxygenxml.com/doc/ug-oxygen/#topics/dg-java-api.html" format="html"
                 scope="external">custom operations</xref>.</li>

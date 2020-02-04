@@ -22,7 +22,7 @@
     <p>The task works and at some point in your <b>Vegetables Soup</b> publication you realise you
       need to write a similar task about peeling <b>cucumbers</b>. The task is exactly the same,
       except the product name. So naturally you want to reuse the existing written task. For this we
-      re-write the task so that instead of of the product <b>potatoes</b> it contains a key
+      re-write the task so that instead of the product <b>potatoes</b> it contains a key
       reference:<codeblock outputclass="language-xml">&lt;ph keyref="vegetable"/></codeblock></p>
     <p>Next we need to define in our DITA Map the <b>vegetable</b> key and bind it to a specific
       value in the potatoes

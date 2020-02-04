@@ -55,6 +55,8 @@
           hide various file types.</li>
         <li>The <b>Image Preview</b> view will show the image current selected in the <b>Project</b>
           view.</li>
+        <li>Open command prompt in a certain folder (right click on a folder, <uicontrol>Show
+            in->Terminal</uicontrol>.</li>
       </ul>
     </section>
     <section id="section_uf1_ncs_gfb">
