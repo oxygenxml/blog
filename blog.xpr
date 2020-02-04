@@ -429,6 +429,14 @@
                         </scenario-array>
                     </entry>
                     <entry>
+                        <String>spell.check.dictionaries.additional.folder</String>
+                        <String>${pd}/frameworks/dita-extension/dicts/</String>
+                    </entry>
+                    <entry>
+                        <String>spell.check.load.dictionaries.from.additional.folder</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>spell.check.options</String>
                         <spellCheckOptions>
                             <field name="automaticSpellCheck">
