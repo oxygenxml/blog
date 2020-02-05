@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="translating_your_dita_project">
   <title>Translating your DITA Project</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>Usually when working with a <b>DITA</b>-based project you can either store the project
       contents using a <b>Content Management System (CMS)</b> or some open-source version control

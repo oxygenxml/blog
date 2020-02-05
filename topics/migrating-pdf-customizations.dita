@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="migrating-pdf-customizations">
   <title>Migrating DITA Open Toolkit PDF Customizations</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>We encounter clients on a daily basis who have <b>PDF</b> customizations created for older
         <b>DITA Open Toolkit</b> versions and they want to migrate to a new <b>Oxygen</b> version

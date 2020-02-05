@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="checking_terminology_with_oxygen_xml_editor">
     <title>Checking terminology with <ph keyref="oxygen"/></title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
     <body>
         <section>In this blog post I will offer a general overview about the current possibilities
       you have available to impose your own language checking rules when working with Oxygen XML

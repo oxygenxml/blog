@@ -3,6 +3,9 @@
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topicID">
    <title>Maintaining a Healthy DITA Project</title>
+   <prolog>
+      <author>Radu Coravu</author>
+   </prolog>
    <body>
       <section id="section_llj_mbf_rhb">
          <title>How should a Happy and Healthy Documentation Project Look Like?</title>

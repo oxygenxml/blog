@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_z4t_jhz_yp">
   <title>Public hosted Oxygen Plugin and Framework Projects</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>All resources, Frameworks and Plugins which we make publicly available to contributors can be
       found on the <b>oxygenxml</b> GitHub group:<xref href="https://github.com/oxygenxml/"

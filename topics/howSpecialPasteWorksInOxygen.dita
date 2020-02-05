@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_c3q_lqd_vt">
   <title>How Special Paste works in Oxygen</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>If you've worked with one of the <b>XML</b> vocabularies for which Oxygen has out of the box
       support like <b>DITA</b>, <b>Docbook</b>, <b>TEI</b>, <b>XHTML</b> you've probably already

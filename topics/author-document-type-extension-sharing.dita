@@ -3,6 +3,9 @@
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd">
 <topic id="author-document-type-sharing">
   <title>Document Type Extension Sharing</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>Instead of copying an entire framework configuration folder (like <b>DITA</b> or
         <b>Docbook</b>), then modifying and distributing it, you can choose to extend that framework

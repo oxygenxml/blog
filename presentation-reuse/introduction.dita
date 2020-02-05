@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="introduction">
   <title>Introduction</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>This small tutorial is based on a presentation called <b>DITA Reuse Strategies</b> I made at
       DITA Europe 2015. It's main purpose is to explore the numerous possibilities of reusing

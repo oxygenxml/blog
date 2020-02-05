@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_r53_55s_nv">
   <title>DITA Usage Survey</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>A week or two ago I opened a survey about various ways in which people are using DITA. The
       survey was taken by more than 50 distinct DITA users and I think it indicated quite clearly

@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_h1m_54n_qcb">
   <title>Composing Author Actions</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
         <p>Suppose that each time you insert a <b>DITA</b> table in the <b>Author</b> visual editing
       mode, you want to always have the attributes <b><codeph>colsep="1" rowsep="1"

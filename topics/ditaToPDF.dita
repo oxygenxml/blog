@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_z4r_21p_15">
   <title>Possibilities to obtain PDF from DITA</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>Lately while attending Tekom 2015 and <xref
         href="https://www.oxygenxml.com/events/2015/dita-ot_day.html" format="html" scope="external"

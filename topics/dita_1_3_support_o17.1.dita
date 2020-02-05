@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_lqn_dkt_dt">
   <title>DITA 1.3 Support in Upcoming <ph keyref="oxygen"/> 17.1</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>We plan to release Oxygen 17.1 in about a month or two, probably at the beginning of October
       this year. Starting with version 17.1, Oxygen includes experimental support for editing and

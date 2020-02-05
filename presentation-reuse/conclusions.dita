@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="conclusions">
   <title>Conclusions</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>The <b>DITA</b> standard can provide for you quite a large toolbox for reuse scenarios. </p>
     <p>Besides the tips which are spread during this tutorial here is some additional advice for

@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="dita_oriented_tips_and_tricks">
   <title><ph keyref="oxygen"/> - DITA Oriented Tips And Tricks</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p><ph keyref="oxygen"/> has about 18 years of development under its wings. During these
       years, we added lots of functionality and many of our users usually do not know more than 20-30%

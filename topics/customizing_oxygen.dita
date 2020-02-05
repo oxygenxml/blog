@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="customizing_oxygen">
     <title>Customizing <ph keyref="oxygen"/> (Overview)</title>
+    <prolog>
+        <author>Radu Coravu</author>
+    </prolog>
     <body>
         <p>Let's assume you just bought Oxygen and want to customize it in order to better suit your
       team's workflow or to add support for your custom XML vocabulary. I will attempt to provide a

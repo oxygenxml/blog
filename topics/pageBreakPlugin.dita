@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_ih3_fkg_wr">
   <title>DITA PDF publishing - Force page breaks between two block elements</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>Let's say that at some point in your DITA content you have two block level elements, like for
       example two

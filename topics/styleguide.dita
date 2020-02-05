@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_n3v_s5r_2v">
   <title>Implementing your own Style Guide</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>Let's say you are a team of tech writers collaborating on a DITA-based project and doing
       things your way, maybe you have various best practices about what elements to use and when to

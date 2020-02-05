@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_dfc_z23_fbb">
     <title>Small Problems with the DITA Standard</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
     <body>
         <p>Don't get me wrong, I think that <b>DITA</b> is a great standard for writing technical
       documentation, it has lots of reuse possibilities and linking potential, and in general, it's

@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="the_oxygen_sdk_part_1_plugins">
     <title>The Oxygen SDK (Part 1: Plugins)</title>
+    <prolog>
+        <author>Radu Coravu</author>
+    </prolog>
     <body>
         <p>During the last years we added a lot of <b>API</b> and extension points to Oxygen in
             order to allow for different customizations to the application. But our documentation is

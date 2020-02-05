@@ -19,14 +19,14 @@
             see how we can solve this dependency. </p>
         <p><b>Note:</b> Starting with Oxygen 17.1 there is a simpler way to achieve the use case
             presented in this post. The <xref
-                href="https://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/configuring-content-completion-proposals.html#configuring-content-completion-proposals__configuring_proposed_values_in_context"
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/configuring-content-completion-proposals.html#configuring-content-completion-proposals__configuring_proposed_values_in_context"
                 format="html" scope="external">contextElementXPathExpression</xref> parameter will
             be bound to an XPath expression that identifies the element in the context of which the
             content completion was invoked. </p>
         <section id="section_sw2_pxr_pkb">
             <title> The configuration file</title>
             <p> The configuration file (<b>cc_value_config.xml</b>) allows <xref
-                    href="http://www.oxygenxml.com/doc/ug-editor/#topics/configuring-content-completion-proposals.html"
+                    href="https://www.oxygenxml.com/doc/ug-editor/#topics/configuring-content-completion-proposals.html"
                     format="html" scope="external">calling an XSLT stylesheet</xref> and that's just
                 what we will do:</p>
             <pre outputclass="language-xml">&lt;match elementName="othermeta" attributeName="content">

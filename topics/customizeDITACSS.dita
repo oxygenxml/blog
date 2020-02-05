@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_hg5_fpc_nx">
   <title>Customizing the DITA Visual Editing Experience</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
   <body>
     <p>The Author visual editing experience in Oxygen is <b>CSS</b> driven. Let's say I have a team
       of writers using Oxygen and they want to visually edit DITA <b>dl</b> elements in a table-like

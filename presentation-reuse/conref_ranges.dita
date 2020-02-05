@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="conref_ranges">
-  <title>Content Reference Ranges</title>
+  <title>Content Reference Ranges</title><prolog><author>Radu Coravu</author></prolog>
   <body>
     <p>Instead of reusing a series of consecutive elements (for example steps, list items) one by
       one you can reuse an entire range of sibling elements. For this to work, both the initial and
