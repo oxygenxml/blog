@@ -2,6 +2,12 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="all_about_editor_variables">
     <title>All About Editor Variables</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2020-02-03"/>
+        </critdates>
+    </prolog>
     <body>
         <p>In various places in the <ph keyref="oxygen"/> application there is support for expanding
             variables. These variables/macros usually take the form <b>${variableName}</b> and are

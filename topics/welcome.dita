@@ -41,20 +41,22 @@
                     format="html" scope="external">Gradle build file</xref> that uses a special DITA
                 Open Toolkit to produce <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_generate_output.html"
-                    format="html" scope="external">WebHelp Responsive</xref> output from the DITA
-                content. The following features are available in the published output: <ul
-                    id="ul_ayd_kr3_jkb">
-                    <li>Color themes can be easily changed to modify how the output looks.</li>
-                    <li>Search functionality.</li>
+                    format="html" scope="external">WebHelp Responsive</xref>, EPUB and PDF outputs
+                from the DITA content. The following features are available in the published output:
+                    <ul id="ul_ayd_kr3_jkb">
+                    <li>Color themes can be easily changed with CSS to modify how the output
+                        looks.</li>
+                    <li>Search functionality. Possibility to add index terms.</li>
+                    <li>RSS Feed is automatically generated from the entire list of topics.</li>
+                    <li>PDF output is automatically generated using Oxygen Chemistry Engine and can
+                        be customized with CSS.</li>
+                    <li>EPUB output is automatically generated using DITA For Publishers
+                        plugins.</li>
                     <li>Each page has an <b>Edit online</b> link allowing it to be edited in the
                         Oxygen XML Web Author.</li>
                     <li>Each page has a comments section build using the <xref
                             href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
                             scope="external">Oxygen Feedback</xref> platform.</li>
-                    <li>RSS Feed is automatically generated from the entire list of topics.</li>
-                    <li>PDF version is automatically generated using Oxygen Chemistry Engine</li>
-                    <li>EPUB version is automatically generated using DITA For Publishers
-                        plugins.</li>
                     <li>A validation report of the DITA content (reporting for example broken links)
                         is available along with the published output: <xref
                             href="https://oxygenxmlblog.netlify.com/validationReport.xml"
