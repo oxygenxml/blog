@@ -29,7 +29,9 @@
                     href="http://www.oxygenxml.com/doc/ug-editor/#topics/configuring-content-completion-proposals.html"
                     format="html" scope="external">calling an XSLT stylesheet</xref> and that's just
                 what we will do:</p>
-            <pre outputclass="language-xml">&lt;match elementName="othermeta" attributeName="content">&lt;xslt href="meta.xsl" useCache="false"/>&lt;/match></pre>
+            <pre outputclass="language-xml">&lt;match elementName="othermeta" attributeName="content">
+ &lt;xslt href="meta.xsl" useCache="false"/>
+&lt;/match></pre>
             <p> As you can see, we can't express the dependency between <xmlatt>@content</xmlatt>
                 and <xmlatt>@name</xmlatt> inside the configuration file . I also want to mention
                 that because the values for <xmlatt>@content</xmlatt> are dynamic, we want the XSLT
