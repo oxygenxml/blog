@@ -28,7 +28,9 @@
         </topichead>
         <topichead navtitle="Customizing">
             <topicref href="topics/customizeDITACSS.dita"/>
-            <topicref href="topics/controlledAttributeValues.dita"/>
+            <topicref href="topics/controlledAttributeValues.dita">
+                <topicref href="topics/controlledAttributeValues2.dita"/>
+            </topicref>
             <topicref href="topics/convertingSubjectSchemeMapToDITAVAL.dita"/>
         </topichead>
         <topichead navtitle="Other">

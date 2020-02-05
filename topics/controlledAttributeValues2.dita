@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_exv_hwt_rs">
+  <title><b>Controlled Attribute Values (Part 2 - Advanced)</b></title>
+    <prolog>
+        <author>Alex Jitianu</author>
+    </prolog>
+  <body>
+        <p> As already presented in <xref href="controlledAttributeValues.dita">Controlled Attribute
+                Values for your DITA Project</xref>, Oxygen allows you to add or replace possible
+            values for attributes or elements based on a simple configuration file. A more complex
+            scenario is one in which in order to decide which values to provide, you need more
+            context information. Let's take this DITA fragment: </p>
+        <pre outputclass="language-xml">&lt;metadata>
+  &lt;othermeta name="name" content="value"/>
+&lt;/metadata></pre>
+        <p> What we want is to offer proposals for <xmlatt>@content</xmlatt> but the possible values
+            for <xmlatt>@content</xmlatt> depend on the value of  <xmlatt>@name</xmlatt>. We will
+            see how we can solve this dependency. </p>
+        <p><b>Note:</b> Starting with Oxygen 17.1 there is a simpler way to achieve the use case
+            presented in this post. The <xref
+                href="https://www.oxygenxml.com/doc/versions/19.0/ug-editor/topics/configuring-content-completion-proposals.html#configuring-content-completion-proposals__configuring_proposed_values_in_context"
+                format="html" scope="external">contextElementXPathExpression</xref> parameter will
+            be bound to an XPath expression that identifies the element in the context of which the
+            content completion was invoked. </p>
+        <section id="section_sw2_pxr_pkb">
+            <title> The configuration file</title>
+            <p> The configuration file (<b>cc_value_config.xml</b>) allows <xref
+                    href="http://www.oxygenxml.com/doc/ug-editor/#topics/configuring-content-completion-proposals.html"
+                    format="html" scope="external">calling an XSLT stylesheet</xref> and that's just
+                what we will do:</p>
+            <pre outputclass="language-xml">&lt;match elementName="othermeta" attributeName="content">&lt;xslt href="meta.xsl" useCache="false"/>&lt;/match></pre>
+            <p> As you can see, we can't express the dependency between <xmlatt>@content</xmlatt>
+                and <xmlatt>@name</xmlatt> inside the configuration file . I also want to mention
+                that because the values for <xmlatt>@content</xmlatt> are dynamic, we want the XSLT
+                script to execute every time the values are requested (we shouldn't cache the
+                results). We enforce this by setting <xmlatt>@useCache</xmlatt> to <b>false</b>.
+            </p>
+        </section>
+        <section id="section_tw2_pxr_pkb">
+            <title> The XSLT script</title>
+            <p> The XSLT script has access to the XML document (through the <b>documentSystemID</b>
+                parameter) but it lacks any context information, we can't really tell for which
+                    <xmlelement>othermeta</xmlelement> element was the script invoked. To counter
+                this limitation, we will use Java extension functions and we will call Oxygen's
+                Java-based API from the XSLT. Here how it looks:</p>
+            <pre outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+    xmlns:tei="http://www.oxygenxml.com/ns/doc/xsl"
+    xmlns:prov="java:ro.sync.exml.workspace.api.PluginWorkspaceProvider"
+    xmlns:work="java:ro.sync.exml.workspace.api.PluginWorkspace"
+    xmlns:editorAccess="java:ro.sync.exml.workspace.api.editor.WSEditor"
+    xmlns:saxon="http://saxon.sf.net/"
+    xmlns:textpage="java:ro.sync.exml.workspace.api.editor.page.text.xml.WSXMLTextEditorPage"
+    xmlns:authorPage="java:ro.sync.exml.workspace.api.editor.page.author.WSAuthorEditorPage"
+    xmlns:ctrl="java:ro.sync.ecss.extensions.api.AuthorDocumentController"
+    exclude-result-prefixes="xs xd"
+    version="2.0">
+ &lt;xsl:param name="documentSystemID" as="xs:string"/>
+ &lt;xsl:template name="start">
+   &lt;xsl:variable name="workspace" select="prov:getPluginWorkspace()"/>
+   &lt;xsl:variable name="editorAccess" select="work:getEditorAccess($workspace, xs:anyURI($documentSystemID), 0)"/>
+   &lt;xsl:variable name="pageID" as="xs:string" select="editorAccess:getCurrentPageID($editorAccess)"/>
+   &lt;xsl:variable name="name" as="xs:string">
+   &lt;xsl:choose>
+       &lt;xsl:when test="$pageID='Text'">
+          &lt;xsl:variable name="textpage" select="editorAccess:getCurrentPage($editorAccess)"/>
+          &lt;!-- In the text page, the context is the @content attribute -->
+          &lt;xsl:value-of select="textpage:evaluateXPath($textpage, 'xs:string(./parent::node()/@name)')"/>
+      &lt;/xsl:when>
+      &lt;xsl:when test="$pageID='Author'">
+         &lt;xsl:variable name="authorPage" select="editorAccess:getCurrentPage($editorAccess)"/>
+         &lt;xsl:variable name="caretOffset" select="authorPage:getCaretOffset($authorPage)"/>
+         &lt;xsl:variable name="ctrl" select="authorPage:getDocumentController($authorPage)"/>
+         &lt;xsl:variable name="contextNode" select="ctrl:getNodeAtOffset($ctrl, $caretOffset)"/>
+         &lt;!-- In the author page, the context is the "othermeta" element -->
+         &lt;xsl:value-of select="ctrl:evaluateXPath($ctrl, 'xs:string(@name)', $contextNode, false(), false(), false(), false())[1]"/>
+     &lt;/xsl:when>
+   &lt;/xsl:choose>
+  &lt;/xsl:variable>
+  &lt;items>
+   &lt;xsl:choose>
+      &lt;xsl:when test="$name = 'temperatureScale'">
+        &lt;item value="Celsius" annotation="(symbol C)"/>
+        &lt;item value="Fahrenheit" annotation="(symbol F)"/>
+     &lt;/xsl:when>
+     &lt;xsl:when test="$name = 'measurement'">
+        &lt;item value="Metric" annotation="Metric system"/>
+        &lt;item value="Imperial" annotation="Also known as British Imperial"/>
+     &lt;/xsl:when>
+   &lt;/xsl:choose>
+  &lt;/items>
+ &lt;/xsl:template>
+&lt;/xsl:stylesheet></pre>
+        </section>
+    </body>
+</topic>
