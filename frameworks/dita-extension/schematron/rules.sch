@@ -6,7 +6,7 @@
     <sch:ns uri="java:ro.sync.exml.workspace.api.PluginWorkspace" prefix="work"/>
     <sch:pattern>
         <sch:rule context="/*">
-            <sch:assert test="*[contains(@class, ' topic/prolog ')]" sqf:fix="addProlog">
+            <sch:assert test="prolog" sqf:fix="addProlog">
                 Should contain prolog with the author name and critical dates.
             </sch:assert>
             
