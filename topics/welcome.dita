@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="welcome">
-    <title>Welcome XML Prague to the <ph keyref="oxygen"/> Blog !</title>
+    <title>Welcome to the <ph keyref="oxygen"/> Blog !</title>
     <prolog>
         <author>Radu Coravu</author>
         <copyright>
@@ -69,11 +69,13 @@
                 Oxygen-related articles for our blog. To post your own articles, follow these
                 steps:</p>
             <ol id="ol_o1c_cs3_jkb">
-                <li>Create your own GitHub account, if you do not already have one.</li>
+                <li>Create your own <xref href="https://github.com/" format="html" scope="external"
+                        >GitHub</xref> account, if you do not already have one.</li>
                 <li>Fork the contents of the <ph keyref="oxygen"/> GitHub project in your own GitHub
                     Repository: <xref href="https://github.com/oxygenxml/blog" format="html"
                         scope="external"/>.</li>
-                <li>Make changes to your forked project. <ul id="ul_gkd_4s3_jkb">
+                <li>Make changes to your forked project or to a branch from it. <ul
+                        id="ul_gkd_4s3_jkb">
                         <li>If you have the <ph keyref="oxygen"/> application installed, you can
                             download our <xref href="https://github.com/oxygenxml/oxygen-git-plugin"
                                 format="html" scope="external">Git add-on</xref> that should allow
@@ -99,6 +101,52 @@
                 <li>We will review your changes and if your pull requests is accepted, the blog web
                     site will be automatically updated with the new changes.</li>
             </ol>
+        </section>
+        <section id="section_cbc_g11_qkb">
+            <title>Technologies Used to Store, Build and Publish the Oxygen XML Blog</title>
+            <ul id="ul_wdy_h11_qkb">
+                <li>The blog content is stored on a public <xref
+                        href="https://github.com/oxygenxml/blog" format="html" scope="external"
+                        >GitHub</xref> repository. </li>
+                <li><xref href="https://github.com/oxygenxml/blog/issues" format="html"
+                        scope="external">GitHub's issues list</xref> is used to organize the work
+                    and add new improvement ideas.</li>
+                <li>Offline editing the blog is done using <xref href="https://www.oxygenxml.com/"
+                        format="html" scope="external">Oxygen XML Editor</xref> with its Git add-on
+                    installed.</li>
+                <li>Online editing is done using <xref
+                        href="https://www.oxygenxml.com/xml_web_author.html" format="html"
+                        scope="external">Oxygen Web Author</xref>.</li>
+                <li>A <xref href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle"
+                        format="html" scope="external">Gradle build file</xref> is used to download
+                    a custom DITA Open Toolkit which contains the Oxygen WebHelp Responsive and PDF
+                    CSS plugins pre-installed, then run the publishing and validation stages.</li>
+                <li>The <xref href="https://www.dita-ot.org/" format="html" scope="external">DITA
+                        Open Toolkit</xref> is used along with custom plugins to publish the DITA
+                        content.<ul id="ul_ekl_2b1_qkb">
+                        <li><xref href="https://www.oxygenxml.com/xml_editor/webhelp.html"
+                                format="html" scope="external">Oxygen WebHelp</xref> is used to
+                            publish the DITA content to HTML output. Publishing templates are used
+                            to customize the published output.</li>
+                        <li>The <xref href="https://www.oxygenxml.com/oxygen_feedback.html"
+                                format="html" scope="external">Oxygen Feedback system</xref> is used
+                            for adding feedback forms to each page.</li>
+                        <li><xref
+                                href="https://www.oxygenxml.com/chemistry-html-to-pdf-converter.html"
+                                format="html" scope="external">Oxygen PDF Chemistry</xref> is used
+                            to produce PDF for the publishing platform.</li>
+                        <li>The <xref href="https://www.dita4publishers.org/" format="html"
+                                scope="external">DITA For Publishers</xref> plugins are used to
+                            produce the EPUB output.</li>
+                    </ul></li>
+                <li> Oxygen DITA <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-validate-completeness-check-command-line.html"
+                        format="html" scope="external">Validate and Check for Completeness</xref> is
+                    run on the server side with the help of a special scripting license.</li>
+                <li><xref href="https://www.netlify.com/" format="html" scope="external"
+                        >Netlify</xref> is used to connect to the repository, run Gradle and publish
+                    the WebSite.</li>
+            </ul>
         </section>
     </body>
 </topic>
