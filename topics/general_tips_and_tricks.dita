@@ -46,15 +46,20 @@
             format="html" scope="external">Store options at project level.</xref> Almost all of
           Oxygen's preferences pages can be saved at project level. Once you do that, you can share
           the <b>project.xpr</b> file with somebody else and when they open it, they will also get
-          the settings set inside the project.</li>
-        <li>Compare files/folders.</li>
-        <li>Refer to multiple folders and organize your work.</li>
+          the settings set inside the project. Transformation and validation scenarios can also be
+          saved at project level.</li>
+        <li>Compare files/folders by selecting them in the <b>Project</b> view, right click and
+          using the <b>Compare...</b> popup menu action.</li>
+        <li>Add references to multiple folders from various parts of your current file system and
+          organize your work in one place.</li>
         <li><xref
             href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
-            format="html" scope="external">Batch operations</xref>: Select a folder in the project
-          and use the "Transform", "Validate", "Format and Indent", "Find/Replace in Files", or
-          "Spell Check in Files". Or use the "XML Refactoring" action to apply a refactoring
-          stylesheet over all the selected files.</li>
+            format="html" scope="external">Batch operations</xref>: Select a folder in the project,
+          right click and use the <uicontrol>Transform</uicontrol>, <uicontrol>Validate</uicontrol>,
+            <uicontrol>Format and Indent</uicontrol>, <uicontrol>Find/Replace in Files</uicontrol>,
+          or <uicontrol>Spell Check in Files</uicontrol>. Or use the <uicontrol>XML
+            Refactoring</uicontrol> action to apply a refactoring stylesheet over all the selected
+          files.</li>
         <li><xref
             href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
             format="html" scope="external">Filter files</xref>. You can instruct the Project view to
@@ -63,6 +68,8 @@
           view.</li>
         <li>Open command prompt in a certain folder (right click on a folder, <uicontrol>Show
             in->Terminal</uicontrol>.</li>
+        <li>Open the current selected file or folder in the system file browser (right click and
+          choose <uicontrol>Show in->Finder</uicontrol>).</li>
       </ul>
     </section>
     <section id="section_uf1_ncs_gfb">
@@ -113,7 +120,7 @@
           to find elements or attributes containing a sequence of words.</li>
         <li>The <b>Find</b> menu → <b>Quick find toolbar</b> is a compact toolbar giving you access
           to search functionality.</li>
-        <li>The <b>XPath</b> allows you to use <b>XPath</b> expressions (i.e.
+        <li>The <b>XPath</b> toolbar allows you to use <b>XPath</b> expressions (i.e.
             <codeph>//comment()[contains(., 'TODO')]</codeph>) to search the current topic or a set
           of topics for elements, attributes, or comments matching a set of conditions.</li>
       </ul>
@@ -123,6 +130,8 @@
       <ul id="ul_s45_tn5_nkb">
         <li>You can use the mouse wheel or the <b>Ctrl + and Ctrl -</b> shortcuts to increase or
           decrease the font in the current opened XML document.</li>
+        <li>The <b>Preferences->Editor / Edit Modes / Text</b> page allows you to wrap the visual
+          line and show a print margin.</li>
         <li>
           <p><xref
               href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html"
@@ -159,7 +168,9 @@
         <li>Use <xref
             href="https://www.oxygenxml.com/doc/ug-editor/topics/text-mode-actions-x-modes2.html"
             format="html" scope="external">contextual menu</xref> to: <ul id="ul_pvt_bp5_nkb">
-            <li>Apply base 64/32 encoding or decoding to various parts of the XML document.</li>
+              <li>Apply base 64/32 encoding or decoding to various parts of the XML document. (for
+              example insert base 64 encoded images using the <b>data:image/png;base64,</b>
+              protocol.</li>
             <li>Escape/unescape selection.</li>
             <li>Toggle comment.</li>
             <li>Indent selection.</li>
@@ -171,10 +182,17 @@
           where that XML element is defined.</li>
       </ul>
     </section>
+    <section id="section_ify_v12_rkb">
+      <title>Huge File Editing</title>
+      <p>Huge XML and Text documents (Gigabytes) can be <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/huge-file-editor.html" format="html"
+          scope="external">opened and edited</xref> in the application.</p>
+    </section>
     <section id="section_zjm_4lt_nkb">
       <title>Grid editing mode:</title>
       <ul id="ul_tdt_fp5_nkb">
-        <li>The Grid editing mode is useful for looking at XML documents exported from data bases. </li>
+        <li>The <uicontrol>Grid</uicontrol> editing mode is useful for looking at XML documents
+          exported from data bases. </li>
         <li>You can use this mode to sort tables or to copy table data to Excel spreadsheets.</li>
         <li>The JSON editor also has a Grid editing mode.</li>
       </ul>
@@ -253,6 +271,8 @@
           <li>Outline Quick find filter - The Outline view contains a filter that can be used to
             reduce the number of elements displayed in it (for example, display only the contained
             topics).</li>
+          <li>The <uicontrol>Author</uicontrol> editing mode is best for editing bidirectional text
+            with Arabic or Hebrew content.</li>
         </ul>
       </p>
     </section>
@@ -283,9 +303,6 @@
             href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-spell-check.html"
             format="html" scope="external">Spell check</xref> - Customize the spell checker
           settings, use custom spell check dictionaries.</li>
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html"
-            format="html" scope="external">Save</xref> - Settings to automatically save or to check
-          for errors before saving the file.</li>
         <li><xref
             href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-external-tools.html"
             format="html" scope="external">External tools</xref> - Define various command line tools
@@ -296,8 +313,8 @@
           Disable the tooltips which appear when hovering over various elements (useful if you have
           a small screen).</li>
         <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html"
-            format="html" scope="external">Editor / Save</xref> - Automatically save the edited
-          content, validate the XML documents before save.</li>
+            format="html" scope="external">Editor / Save</xref> - Settings to automatically save,
+          recover content data on computer crash or to check for errors before saving the file.</li>
       </ul>
     </section>
     <section id="section_edt_dk3_ffb">
