@@ -206,13 +206,17 @@
             word.</li>
           <li>Move elements (especially paragraphs, list items) up or down (<b>ALT-UP/DOWN</b>),
             indent or unindent list items (<b>Tab</b>, <b>Shift-Tab</b>).</li>
+          <li>Easily insert lists using framework specific auto correct support. Insert for example
+              <b>1.</b> at the beginning of a paragraph, press the <b>Space</b> key and the inserted
+            content becomes an ordered list. Or in a DITA topic at the beginning of a paragraph type
+              <b>```java</b> and press space to insert a <xmlelement>codeblock</xmlelement>.</li>
           <li>Select content and then use the <b>Toggle comment</b> action (contextual menu
               <b>Refactoring</b> submenu) to quickly add an XML comment around it.</li>
           <li>In the <xref
               href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu-x-modes2.html"
               format="html" scope="external">contextual menu</xref> the <b>Text</b> submenu contains
             useful actions to count the number of words in the entire document (or in the selected
-            text), convert the selection to upper, lowercase, or sentence case</li>
+            text), convert the selection to upper, lowercase, or sentence case).</li>
           <li><xref
               href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html?hl=bookmark#author-navigate-document-content__navigating_with_bookmarks"
               format="html" scope="external">Bookmarks</xref> - Click the vertical left side bar in
@@ -262,7 +266,7 @@
           memory status.</li>
         <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-appearance.html"
             format="html" scope="external">Appearance</xref> - Change the default color theme in
-          Oxygen (the <b>Graphyte</b> theme is quite popular).</li>
+          Oxygen (the <b>Graphite</b> theme is quite popular).</li>
         <li><xref
             href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-application-layout.html"
             format="html" scope="external">Application Layout</xref> - impose custom layout or
@@ -305,7 +309,7 @@
         </ul></p>
     </section>
     <section id="section_fdt_dk3_ffb">
-      <title>Import</title>
+      <title>Import - Convert</title>
       <ul id="ul_nn3_nq5_nkb">
         <li>The <b>File</b> menu offers the possibility to import HTML, CSV, Excel files, or
           database content as XML. </li>
