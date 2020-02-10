@@ -317,6 +317,13 @@
           recover content data on computer crash or to check for errors before saving the file.</li>
       </ul>
     </section>
+    <section id="section_ism_qh2_rkb">
+      <title>CSS-based PDF Publishing</title>
+      <p>The embedded <uicontrol>Chemistry</uicontrol> engine can be used to publish any XML
+        document to PDF using CSS to style the published output. There is a new transformation type
+          <b>XML to PDF transformation using CSS</b> which can be used for this. The <uicontrol>CSS
+          Inspector</uicontrol> view can be used to see what CSS styles get applied.</p>
+    </section>
     <section id="section_edt_dk3_ffb">
       <title>Tools</title>
       <p>The <b>Tools</b> main menu is worth exploring. You can:<ul id="ul_thn_hq5_nkb">

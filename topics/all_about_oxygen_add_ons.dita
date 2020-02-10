@@ -89,6 +89,7 @@
                         <ul id="ul_nxz_h21_qkb">
                                 <li>Open source add-ons are useful as samples for third
                                         parties.</li>
+                                <li>We can work with external collaborators on add-ons.</li>
                                 <li>Add-ons can be released at a much faster pace.</li>
                                 <li>Interns who work for us for a couple of months can implement
                                         useful functionality without making changes to the
@@ -186,6 +187,8 @@
                                                 certain settings).</li>
                                         <li>Context side view plugin using XPath with support for
                                                 favorite expressions.</li>
+                                        <li>Plugin which highlights various characters or ­text
+                                                fragments in the content.</li>
                                 </ul></p>
                         <p>Possible new API enhancements:<ul id="ul_ucd_f2h_lkb">
                                         <li>Add support for a plugin to contribute a custom editing
