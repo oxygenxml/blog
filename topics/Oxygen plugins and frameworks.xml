@@ -38,8 +38,9 @@
       <li>Project <b>Argon</b> by German company <xref href="https://axxepta.com/" format="html"
           scope="external">Axxepta</xref> provides a plugin which can connect Oxygen to a BaseX
         server: <xref href="https://github.com/axxepta/project-argon" format="html" scope="external"
-        />. The integration also provides CMS-like capabilities for searching and version
-        control.</li>
+        />. The integration also provides CMS-like capabilities for searching and version control.
+        The plugin is available as an add-on: <xref href="http://argon-author.com/" format="html"
+          scope="external"/>.</li>
       <li><b>LanguageTool</b> plugin for <b>Oxygen</b>: <xref
           href="https://github.com/danielnaber/oxygen-languagetool-plugin" format="html"
           scope="external"/></li>
@@ -54,12 +55,15 @@
       <li>Framework which adds JATS/NLM support for <b>Oxygen</b> developed by Wendell Piez: <xref
           href="https://github.com/wendellpiez/oXygenJATSframework" format="html" scope="external"
         />.</li>
-      <li>Three open-source frameworks for editing ATA-2300, S1000D and RIF XML documents in Oxygen
-        developed by Amplexor: <xref href="https://github.com/Amplexor" format="html"
+      <li>Framework for validating <b>XSL-FO</b> with <b>Antenna House</b> extensions developed by
+        Antenna House: <xref href="https://github.com/AntennaHouse/focheck" format="html"
           scope="external"/>.</li>
       <li>Fork of the <b>JATS</b> framework which adds Schematron checks and Literatum package
         building: <xref href="https://github.com/le-tex/oXygenJATSframework_Literatum" format="html"
           scope="external"/></li>
+      <li>Three open-source frameworks for editing ATA-2300, S1000D and RIF XML documents in Oxygen
+        developed by Amplexor: <xref href="https://github.com/Amplexor" format="html"
+          scope="external"/>.</li>
       <li>Besides being bundled with <b>Oxygen</b> the <b>TEI</b> framework is also available as a
         project partly maintained by the <b>TEI</b> community: <xref
           href="https://code.google.com/p/oxygen-tei/" format="html" scope="external"/><p>HisTEI: An
@@ -101,9 +105,6 @@
           scope="external"/></li>
       <li>Plugin developed by Clausius Teodorescu which allows opening a JavaFX-based web browser in
         Oxygen: <xref href="https://github.com/claudius108/oxygen-webview-plugin" format="html"
-          scope="external"/>.</li>
-      <li>Framework for validating <b>XSL-FO</b> with <b>Antenna House</b> extensions developed by
-        Antenna House: <xref href="https://github.com/AntennaHouse/focheck" format="html"
           scope="external"/>.</li>
       <li><b>OpenDocs</b> Plugin allows you to focus on specific file types opened in the editor in
         order to perform various actions on them: <xref

@@ -80,9 +80,10 @@
         <section id="section_eqq_lxp_jkb">
             <title>Private Hosted Plugins and Frameworks</title>
             <p>Content Management Systems like Astoria, Bluestream, Ixiasoft, SDL have implemented
-                plugins which allow <ph keyref="oxygen"/> to connect to their servers.</p>
-            <p>There are also lots of privately owned frameworks used for editing various varieties
-                of XML documents inside companies.</p>
+                                plugins which allow <ph keyref="oxygen"/> to connect to their remote
+                                storage servers.</p>
+            <p>There are also lots of privately used frameworks used for editing various varieties
+                                of XML documents inside companies.</p>
         </section>
         <section id="section_b52_vwp_jkb">
             <title>Why are we (the <ph keyref="oxygen"/> team) working on add-ons?</title>
@@ -173,13 +174,34 @@
                                         <li>Emmet plugin for Oxygen.</li>
                                 </ul></p>
         </section>
+                <section id="section_hrm_2yj_rkb">
+                        <title>Using Frameworks and Plugins in the <ph keyref="webauthor"/> in-browser
+                                editor</title>
+                        <p>The <ph keyref="webauthor"/> in-browser editing tool reuses on the server most of the
+                                internal architecture of an <ph keyref="oxygen"/> standalone
+                                version:</p>
+                        <ul id="ul_ars_xzj_rkb">
+                                <li>The <xref
+                                                href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
+                                                format="html" scope="external"><ph keyref="webauthor"/></xref> can
+                                        use for editing XML vocabularies the same framework
+                                        configurations used in <ph keyref="oxygen"/>: <xref
+                                                href="https://www.oxygenxml.com/doc/ug-waCustom/topics/customizing_frameworks.html"
+                                                format="html" scope="external"/></li>
+                                <li><xref
+                                                href="https://www.oxygenxml.com/doc/ug-waCustom/topics/customizing_plugins.html?hl=plugins"
+                                                format="html" scope="external">Plugins</xref> can be
+                                        implemented to connect the <ph keyref="webauthor"/> to various
+                                        servers.</li>
+                        </ul>
+                </section>
                 <section id="section_cny_ddh_lkb">
                         <title>Where can we go from here?</title>
                         <p>Possible future plugins we can work on:<ul id="ul_mf5_jdh_lkb">
                                         <li>Support for Google Drive (already available in
-                                                WebAuthor)</li>
+                                                <ph keyref="webauthor"/>)</li>
                                         <li>Support for Perforce (already available in
-                                                WebAuthor)</li>
+                                                <ph keyref="webauthor"/>)</li>
                                         <li>Amazon S3 connector plugin</li>
                                         <li>Use Grammarly for spell check (no API available on
                                                 Grammarly side)</li>
