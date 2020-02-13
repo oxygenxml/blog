@@ -1,410 +1,399 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="general_tips_and_tricks">
-  <title>Tips And Tricks</title>
-  <prolog>
-    <author>Radu Coravu</author>
-    <critdates>
-      <created date="2020-02-04"/>
-    </critdates>
-  </prolog>
-  <body>
-    <p><ph keyref="oxygen"/> has about 18 years of development under its wings. During these years,
-      we added lots of functionality and many of our users usually do not know more than 20-30% of
-      Oxygen's features. So this presentation is intended for people using Oxygen and who may want
-      to find out more about their tool.</p>
-    <section id="section_gdt_dk3_ffb">
-      <title>General Layout - Views and Toolbars:</title>
-      <ul id="ul_gmy_rn5_nkb">
-        <li>Side views and toolbars can be arranged by drag and drop. Views can be switched to the
-          auto-hide move to gain screen size.</li>
-        <li>To hide all side views you can use the main menu <uicontrol>Window->Maximize Editing
-            Area</uicontrol> action. Or you can maximize the editing area by double clicking on the
-          tab of an opened XML document.</li>
-        <li>To hide all toolbars you can use the main menu <uicontrol>Window->Hide all
-            toolbars</uicontrol> action.</li>
-        <li>You can also right-click in the toolbar area and use the <b>Configure Toolbars</b>
-          action to see what toolbars are available or what toolbars can be removed.</li>
-        <li>The <b>Symbols</b> toolbar is quite interesting if you often want to insert symbols that
-          are not on the current keyboard.</li>
-        <li>The entire layout of the views and toolbars can be saved (<uicontrol>Window->Export
-            Layout</uicontrol>) and then shared with others (<uicontrol>Window->Load
-            Layout</uicontrol>).</li>
-      </ul>
-    </section>
-    <section id="section_bpy_jdz_rkb">
-      <title>Side Views You Probably Never Used</title>
-      <ul id="ul_nyz_ldz_rkb">
-        <li>The <b>Information</b> view.</li>
-        <li>The <b>Properties</b> view.</li>
-        <li>The <b>Scratch Buffer</b> view.</li>
-      </ul>
-    </section>
-    <section id="section_pwy_nd4_mfb">
-      <title>Project-related Functionality:</title>
-      <p>The Oxygen Project view is the place where you can organize and apply batch changes to all
-        your resources:</p>
-      <ul id="ul_shb_qd4_mfb">
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html"
-            format="html" scope="external">Master files support</xref>. Enable master files support
-          in the project, add your top level XML documents as master files and any structure
-          changes, renaming or moving files will automatically update all links in the Project. Also
-          works for renaming/moving image resources.</li>
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-storing.html"
-            format="html" scope="external">Store options at project level.</xref> Almost all of
-          Oxygen's preferences pages can be saved at project level. Once you do that, you can share
-          the <b>project.xpr</b> file with somebody else and when they open it, they will also get
-          the settings set inside the project. Transformation and validation scenarios can also be
-          saved at project level.</li>
-        <li>Compare files/folders by selecting them in the <b>Project</b> view, right click and
-          using the <b>Compare...</b> popup menu action.</li>
-        <li>Add references to multiple folders from various parts of your current file system and
-          organize your work in one place.</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
-            format="html" scope="external">Batch operations</xref>: Select a folder in the project,
-          right click and use the <uicontrol>Transform</uicontrol>, <uicontrol>Validate</uicontrol>,
-            <uicontrol>Format and Indent</uicontrol>, <uicontrol>Find/Replace in Files</uicontrol>,
-          or <uicontrol>Spell Check in Files</uicontrol>. Or use the <uicontrol>XML
-            Refactoring</uicontrol> action to apply a refactoring stylesheet over all the selected
-          files.</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
-            format="html" scope="external">Filter files</xref>. You can instruct the Project view to
-          hide various file types.</li>
-        <li>The <b>Image Preview</b> view will show the image current selected in the <b>Project</b>
-          view.</li>
-        <li>Open command prompt in a certain folder (right click on a folder, <uicontrol>Show
-            in->Terminal</uicontrol>.</li>
-        <li>Open the current selected file or folder in the system file browser (right click and
-          choose <uicontrol>Show in->Finder</uicontrol>).</li>
-      </ul>
-    </section>
-    <section id="section_uf1_ncs_gfb">
-      <title>Navigation:</title>
-      <p>Actions to find opened files, find files containing a certain content or navigate between
-        files.</p>
-      <ul id="ul_uwk_nnb_hhb">
-        <li>In the main <uicontrol>Window</uicontrol> menu, you can find the <b>Next/Previous
-            Editor</b> actions and their shortcuts. Together with the <b>Switch editor tab</b>
-          action, these help you navigate between opened XML documents.</li>
-        <li>The <b><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-view-x-editing2.html"
-              format="html" scope="external">Open/Find Resource</xref></b> view (main menu
-            <b>Window->Show View</b>) allows you to search for file names, search in file contents,
-          or search for files containing comments or change tracking.</li>
-        <li>Right-click the tab of an opened XML document and use the <b>Copy location</b> action.
-          Or use the <b>Show in Explorer/Finder</b> action to locate the file.</li>
-        <li>Use the main menu <b>File->Reopen last closed editor</b> action to re-open the last
-          closed file.</li>
-        <li>Use the <b>Navigation</b> toolbar to <b>Go back/forward/last modification</b>.</li>
-        <li>
-          <p>The main <b>Window</b> menu has actions to tile all opened XML documents and also to
-            enable synchronous scrolling in them (useful if you want to look at similar XML
-            documents and maybe to copy/paste between them).</p>
-        </li>
-      </ul>
-    </section>
-    <section id="section_d3n_xg3_ffb">
-      <title>Find/Replace Functionality</title>
-      <p>The Find/Replace functionality is the bread and butter of any editing application and
-        Oxygen has lots of functionality in this regard:</p>
-      <ul id="ul_xk3_zg3_ffb">
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/find-and-replace-text-in-files.html"
-            format="html" scope="external">Find/Replace in Files</xref>. <ul id="ul_fx2_fvz_3hb">
-            <li>Restrict to XPath - If you want to make replacements only in certain parts of the
-              XML document, the XPath restriction can be used to focus only on certain attributes or
-              element content.</li>
-            <li>Ignore Whitespaces - You should usually check this checkbox as there is always there
-              is a possibility what the words you are searching for may be split on multiple lines
-              in the XML content.</li>
-          </ul></li>
-        <li>The <b>Find</b> menu → <b>Find Next/Previous</b> actions allow you to find the
-          next/previous occurrence of the current selected word(s). Or you can use the <b>Find
-            All</b> action to find and highlight all occurrences of a word or a sequence of
-          words.</li>
-        <li>The <b>Find</b> menu → <b>Find all Elements</b> action shows a dialog box allowing you
-          to find elements or attributes containing a sequence of words.</li>
-        <li>The <b>Find</b> menu → <b>Quick find toolbar</b> is a compact toolbar giving you access
-          to search functionality.</li>
-        <li>The <b>XPath</b> toolbar allows you to use <b>XPath</b> expressions (i.e.
-            <codeph>//comment()[contains(., 'TODO')]</codeph>) to search the current topic or a set
-          of topics for elements, attributes, or comments matching a set of conditions.</li>
-      </ul>
-    </section>
-    <section>
-      <title>Text Editing:</title>
-      <ul id="ul_s45_tn5_nkb">
-        <li>You can use the mouse wheel or the <b>Ctrl + and Ctrl -</b> shortcuts to increase or
-          decrease the font in the current opened XML document.</li>
-        <li>The <b>Preferences->Editor / Edit Modes / Text</b> page allows you to wrap the visual
-          line and show a print margin.</li>
-        <li>
-          <p><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html"
-              format="html" scope="external">Code templates</xref> can be used in order to define
-            small code snippets which are often inserted. <xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html"
-              format="html" scope="external">Editor variables</xref> can be used inside those code
-            templates and they will get expanded on insertion. Various useful editor variables:</p>
-          <ul id="ul_anc_5n5_nkb">
-              <li><codeph>${author.name}</codeph></li>
-              <li><codeph>${selection}</codeph></li>
-              <li><codeph>${ask('Author Name', generic, 'John Doe')}</codeph></li>
-              <li><codeph>${xpath_eval(upper-case(substring('${cfn}', 1, 4)))}</codeph></li>
-          </ul>
-          <p>Code templates can also be saved at project level or exported in order to share them
-            with others. You can read more about the contexts in which editor variables can appear
-            in this blog post: <xref href="all_about_editor_variables.dita"/>.</p>
-        </li>
-        <li>Triple click an element tag to select the entire element.</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/text-navigate-document-content-x-editing2.html"
-            format="html" scope="external">Various navigation shortcuts</xref>: Go after next tag.
-          Select parent. Use the top level breadcrump.</li>
-        <li>Move lines up and down (<b>Alt-Up/Down</b>).</li>
-        <li>Click line number to select the entire line. </li>
-        <li>Go to line/column (main menu <b>Find->Go to...</b>). </li>
-        <li>Open file at cursor on references to navigate to referenced file or create new file
-            (<b>Ctrl-ENTER</b>).</li>
-        <li>Bookmarks (main menu <b>Edit->Bookmarks</b>).</li>
-        <li>Quick find filter for side views (Outline, Entities, Transformation Scenarios).</li>
-        <li>Drag/drop resources from a file browser or copy/paste to create links to the
-          resources.</li>
-        <li>Remove results of XPath execution.</li>
-        <li>Use <xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/text-mode-actions-x-modes2.html"
-            format="html" scope="external">contextual menu</xref> to: <ul id="ul_pvt_bp5_nkb">
-              <li>Apply base 64/32 encoding or decoding to various parts of the XML document. (for
-              example insert base 64 encoded images using the <b>data:image/png;base64,</b>
-              protocol.</li>
-            <li>Escape/unescape selection.</li>
-            <li>Toggle comment.</li>
-            <li>Indent selection.</li>
-          </ul></li>
-        <li>Split editor (main menu <b>Window->Split</b> actions) to copy paste between different
-          parts of the XML document.</li>
-        <li>Open an XML document in the <b>Text</b> editing mode, right click, choose <b>Go to
-            definition</b> to open the DTD, XML Schema or RelaxNG Schema at the precise location
-          where that XML element is defined.</li>
-      </ul>
-    </section>
-    <section id="section_ify_v12_rkb">
-      <title>Huge File Editing</title>
-      <p>Huge XML and Text documents (Gigabytes) can be <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/huge-file-editor.html" format="html"
-          scope="external">opened and edited</xref> in the application.</p>
-    </section>
-    <section id="section_zjm_4lt_nkb">
-      <title>Grid editing mode:</title>
-      <ul id="ul_tdt_fp5_nkb">
-        <li>The <uicontrol>Grid</uicontrol> editing mode is useful for looking at XML documents
-          exported from data bases. </li>
-        <li>You can use this mode to sort tables or to copy table data to Excel spreadsheets.</li>
-        <li>The JSON editor also has a Grid editing mode.</li>
-      </ul>
-    </section>
-    <section id="section_l1g_sg3_ffb">
-      <title>Editing in the Author Visual Editing Mode</title>
-      <p>
-        <ul id="ul_idm_ch3_ffb">
-          <li>Increase/decrease editor font - Use <b>Ctrl/CMD +/-</b> to increase or decrease the
-            font in the current edited document.</li>
-          <li>Inserting elements - Pressing ENTER in the Author visual editing mode will show you a
-            list with all possible elements that can be inserted. If you choose an invalid element,
-            Oxygen will find a place for it. You can also add <xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/the-content-completion-tab.html"
-              format="html" scope="external">custom actions</xref> or code templates to the content
-            completion list.</li>
-          <li>Select content then press <b>ENTER</b> to surround the content in a new element.</li>
-          <li>Select start tag of element, press <b>ENTER</b> to rename the element.</li>
-          <li>Select multiple intervals - Press the <b>Ctrl/CMD</b> button when selecting text to
-            select multiple text intervals. Once you do that, you can use toolbar actions like
-              <b>Bold</b>, <b>Italic</b>, or <b>Underline</b> or you can use the <b>Edit Profiling
-              Attributes</b> action to set profiling attributes on all the selected items.</li>
-          <li>In-place attributes editor - Instead of using the <b>Attributes</b> view, you can
-            press <b>Alt-Enter</b> to edit attributes for the current element in a small pop-up
-            dialog box.</li>
-          <li>Select an entire element - Triple-click inside an element's contents to select the
-            entire element. After this, you can move the element to a new place.</li>
-          <li>Double-click to select by word, then drag the mouse to select the content word by
-            word.</li>
-          <li>Move elements (especially paragraphs, list items) up or down (<b>ALT-UP/DOWN</b>),
-            indent or unindent list items (<b>Tab</b>, <b>Shift-Tab</b>).</li>
-          <li>Easily insert lists using framework specific auto correct support. Insert for example
-              <b>1.</b> at the beginning of a paragraph, press the <b>Space</b> key and the inserted
-            content becomes an ordered list. Or in a DITA topic at the beginning of a paragraph type
-              <b>```java</b> and press space to insert a <xmlelement>codeblock</xmlelement>.</li>
-          <li>Select content and then use the <b>Toggle comment</b> action (contextual menu
-              <b>Refactoring</b> submenu) to quickly add an XML comment around it.</li>
-          <li>In the <xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu-x-modes2.html"
-              format="html" scope="external">contextual menu</xref> the <b>Text</b> submenu contains
-            useful actions to count the number of words in the entire document (or in the selected
-            text), convert the selection to upper, lowercase, or sentence case).</li>
-          <li><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html?hl=bookmark#author-navigate-document-content__navigating_with_bookmarks"
-              format="html" scope="external">Bookmarks</xref> - Click the vertical left side bar in
-            the editing area to add a bookmark. Navigate to that bookmark even after the file has
-            been closed using the <b>Ctrl/CMD + number</b> shortcut.</li>
-          <li><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode-x-modes2.html"
-              format="html" scope="external">Collapse other folds</xref> - Click a fold triangle in
-            the Author visual editing mode and you can choose to close all other folds, useful when
-            working with multiple sections in the same file.</li>
-          <li>
-            <p><xref
-                href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html"
-                format="html" scope="external">Code templates</xref> - Define small fragments of XML
-              content that can be inserted either by defining a shortcut key or by pressing
-                <b>ENTER</b> in the editing area.</p>
-          </li>
-          <li>
-            <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html"
-                format="html" scope="external">Editor variables</xref> - Certain Oxygen-specific
-              macros can be automatically expanded. For example, a code template that inserts the
-              current author name can use this editor
-              variable:<codeblock outputclass="language-xml">&lt;author>${author.name}&lt;/author></codeblock>or
-              a code template that surrounds the selection inside a <xmlelement>keyword</xmlelement>
-              element:<codeblock outputclass="language-xml">&lt;keyword>${selection}&lt;/keyword></codeblock>or
-              a code template that first asks the end user for their name and then inserts it in the
-              document:<codeblock outputclass="language-xml">&lt;author>${ask('Author Name', generic, 'John Doe')}&lt;/author></codeblock>Editor
-              variables can also be used when creating <xref
-                href="author-document-type-extension-sharing-custom-new-file-templates.dita">new
-                file templates</xref>. You can read more about the contexts in which editor
-              variables can appear in this blog post: <xref href="all_about_editor_variables.dita"
-              />.</p>
-          </li>
-          <li>Outline Quick find filter - The Outline view contains a filter that can be used to
-            reduce the number of elements displayed in it (for example, display only the contained
-            topics).</li>
-          <li>The <uicontrol>Author</uicontrol> editing mode is best for editing bidirectional text
-            with Arabic or Hebrew content.</li>
-        </ul>
-      </p>
-    </section>
-    <section id="section_ecn_2k3_ffb">
-      <title>Preferences:</title>
-      <p>Oxygen has a lot of global settings that can be configured, I will just list what I
-        consider to be the most important ones:</p>
-      <ul id="ul_a1d_rp5_nkb">
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-global.html"
-            format="html" scope="external">Global</xref> - Change application language or show
-          memory status.</li>
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-appearance.html"
-            format="html" scope="external">Appearance</xref> - Change the default color theme in
-          Oxygen (the <b>Graphite</b> theme is quite popular).</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-application-layout.html"
-            format="html" scope="external">Application Layout</xref> - impose custom layout or
-          change editor tabs placement.</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-menu-shortcut-keys.html"
-            format="html" scope="external">Menu shortcut keys</xref> - You can use this preferences
-          page to assign or to see the shortcut for any action available in Oxygen.</li>
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-fonts.html"
-            format="html" scope="external">Fonts</xref> - This page allows you to change the default
-          fonts used in the application. You can also see what font can be used for a certain set of
-          characters.</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-spell-check.html"
-            format="html" scope="external">Spell check</xref> - Customize the spell checker
-          settings, use custom spell check dictionaries.</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-external-tools.html"
-            format="html" scope="external">External tools</xref> - Define various command line tools
-          that you can launch from Oxygen.</li>
-        <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-content-completion-annotations.html"
-            format="html" scope="external">Editor / Content Completion / Annotations</xref> -
-          Disable the tooltips which appear when hovering over various elements (useful if you have
-          a small screen).</li>
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html"
-            format="html" scope="external">Editor / Save</xref> - Settings to automatically save,
-          recover content data on computer crash or to check for errors before saving the file.</li>
-      </ul>
-    </section>
-    <section id="section_ism_qh2_rkb">
-      <title>CSS-based PDF Publishing</title>
-      <p>The embedded <uicontrol>Chemistry</uicontrol> engine can be used to publish any XML
-        document to PDF using CSS to style the published output. There is a new transformation type
-          <b>XML to PDF transformation using CSS</b> which can be used for this. The <uicontrol>CSS
-          Inspector</uicontrol> view can be used to see what CSS styles get applied.</p>
-    </section>
-    <section id="section_edt_dk3_ffb">
-      <title>Tools</title>
-      <p>The <b>Tools</b> main menu is worth exploring. You can:<ul id="ul_thn_hq5_nkb">
-          <li>Invoke XML refactoring actions.</li>
-          <li>Open the SVG Viewer.</li>
-          <li>Find various JSON-related tools.</li>
-        </ul></p>
-    </section>
-    <section id="section_fdt_dk3_ffb">
-      <title>Import - Convert</title>
-      <ul id="ul_nn3_nq5_nkb">
-        <li>The <b>File</b> menu offers the possibility to import HTML, CSV, Excel files, or
-          database content as XML. </li>
-        <li>For some XML frameworks like DITA, TEI, DocBook and XHTML you can use the <xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support-x-modes2.html"
-            format="html" scope="external">smart paste</xref> functionality.</li>
-        <li>The <xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
-            format="html" scope="external">Batch convertor add-on</xref> allows you to convert
-          multiple HTML, Markdown, Excel files to DITA.</li>
-      </ul>
-    </section>
-    <section>
-      <title>Connectivity</title>
-      <p>Oxygen comes bundled with an SVN client.</p>
-      <p>You can also work with resources directly from <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/webdav-connection.html" format="html"
-          scope="external">WebDav repositories</xref>, <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/configure-exist.html" format="html"
-          scope="external">Exist</xref> and various other databases.</p>
-      <p>There are also a couple of add-ons which add extra connectivity: <ul id="ul_pbj_lh5_nkb">
-          <li><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
-              scope="external">Git add-on</xref> for Oxygen.</li>
-          <li><xref href="https://github.com/oxygenxml/oxygen-cmis-plugin" format="html"
-              scope="external">CMIS add-on</xref> for Oxygen.</li>
-          <li><xref href="https://github.com/axxepta/project-argon" format="html" scope="external"
-              >BaseX add-on</xref> for Oxygen.</li>
-        </ul></p>
-    </section>
-    <section id="section_gld_tbs_gfb">
-      <title>Add-ons</title>
-      <p>In the application main menu you can go to the main menu <uicontrol>Help->Install new
-          Add-ons</uicontrol> and our official add-ons update site contains a couple of available
-        add-ons. There are also other free add-ons provided by the Oxygen team that can be installed
-        in an <xref
-          href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;type=Repositories"
-          format="html" scope="external">Oxygen standalone version</xref>. </p>
-      <p>I will enumerate some of the most popular interesting add-ons below:</p>
-      <ul id="ul_xbw_ccs_gfb">
-        <li><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
-            scope="external">Git add-on</xref>. This plugin adds a side view allowing you to do some
-          common Git operations like pull, commit, push (mostly 90% of what a regular Git user would
-          do).</li>
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
-            format="html" scope="external">Content Fusion Connector add-on</xref>. Collaborate with
-          your peers by sending them links that allow them to give you feedback on your work using a
-          web browser without the need to pre-install anything on their side. </li>
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
-            format="html" scope="external">Batch convertor add-on</xref>. Converts multiple HTML,
-          Markdown, Excel files to DITA.</li>
-      </ul>
-    </section>
-    <section id="section_jdt_dk3_ffb">
-      <title>Keeping in Touch</title>
-      <ul id="ul_dlb_qbv_nkb">
-        <li>Oxygen's <b>Help</b> menu allows you to use the <b>Report problem</b> action to contact
-          us directly. </li>
-        <li>The <b>Support Tools->Randomize XML Content</b> action allows you to randomize the
-          content of an XML project before sending it to us for tests.</li>
-        <li>And there are a lot of other ways to get in touch with us or to find various videos or
-          tutorials to read: <xref href="https://www.oxygenxml.com/technical_support.html"
-            format="html" scope="external"/>.</li>
-      </ul>
-    </section>
-  </body>
+ <title>Tips And Tricks</title>
+ <prolog>
+  <author>Radu Coravu</author>
+  <critdates>
+   <created date="2020-02-04"/>
+  </critdates>
+ </prolog>
+ <body>
+  <p><ph keyref="oxygen"/> has about 18 years of development under its wings. During these years, we
+   added lots of functionality and many of our users usually do not know more than 20-30% of
+   Oxygen's features. So this presentation is intended for people using Oxygen and who may want to
+   find out more about their tool.</p>
+  <section id="section_gdt_dk3_ffb">
+   <title>General Layout - Views and Toolbars:</title>
+   <ul id="ul_gmy_rn5_nkb">
+    <li>Side views and toolbars can be arranged by drag and drop. Views can be switched to the
+     auto-hide mode to gain screen size.</li>
+    <li>To hide all side views you can use the main menu <uicontrol>Window->Maximize Editing
+      Area</uicontrol> action. Or you can maximize the editing area by double clicking on the tab of
+     an opened XML document.</li>
+    <li>To hide all toolbars you can use the main menu <uicontrol>Window->Hide all
+      toolbars</uicontrol> action.</li>
+    <li>You can also right-click in the toolbar area and use the <b>Configure Toolbars</b> action to
+     see what toolbars are available or what toolbars can be removed.</li>
+    <li>The <b>Symbols</b> toolbar is quite interesting if you often want to insert symbols that are
+     not on the current keyboard.</li>
+    <li>The entire layout of the views and toolbars can be saved (<uicontrol>Window->Export
+      Layout</uicontrol>) and then shared with others (<uicontrol>Window->Load
+     Layout</uicontrol>).</li>
+   </ul>
+  </section>
+  <section id="section_bpy_jdz_rkb">
+   <title>Side Views You Probably Never Used</title>
+   <ul id="ul_nyz_ldz_rkb">
+    <li>The <b>Information</b> view.</li>
+    <li>The <b>Properties</b> view.</li>
+    <li>The <b>Scratch Buffer</b> view.</li>
+   </ul>
+  </section>
+  <section id="section_pwy_nd4_mfb">
+   <title>Project-related Functionality:</title>
+   <p>The Oxygen Project view is the place where you can organize and apply batch changes to all
+    your resources:</p>
+   <ul id="ul_shb_qd4_mfb">
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html"
+      format="html" scope="external">Master files support</xref>. Enable master files support in the
+     project, add your top level XML documents as master files and any structure changes, renaming
+     or moving files will automatically update all links in the Project. Also works for
+     renaming/moving image resources.</li>
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-storing.html"
+      format="html" scope="external">Store options at project level.</xref> Almost all of Oxygen's
+     preferences pages can be saved at project level. Once you do that, you can share the
+      <b>project.xpr</b> file with somebody else and when they open it, they will also get the
+     settings set inside the project. Transformation and validation scenarios can also be saved at
+     project level.</li>
+    <li>Compare files/folders by selecting them in the <b>Project</b> view, right click and using
+     the <b>Compare...</b> popup menu action.</li>
+    <li>Add references to multiple folders from various parts of your current file system and
+     organize your work in one place.</li>
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
+      format="html" scope="external">Batch operations</xref>: Select a folder in the project, right
+     click and use the <uicontrol>Transform</uicontrol>, <uicontrol>Validate</uicontrol>,
+      <uicontrol>Format and Indent</uicontrol>, <uicontrol>Find/Replace in Files</uicontrol>, or
+      <uicontrol>Spell Check in Files</uicontrol>. Or use the <uicontrol>XML Refactoring</uicontrol>
+     action to apply a refactoring stylesheet over all the selected files.</li>
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
+      format="html" scope="external">Filter files</xref>. You can instruct the Project view to hide
+     various file types.</li>
+    <li>The <b>Image Preview</b> view will show the image current selected in the <b>Project</b>
+     view.</li>
+    <li>Open command prompt in a certain folder (right click on a folder, <uicontrol>Show
+      in->Terminal</uicontrol>.</li>
+    <li>Open the current selected file or folder in the system file browser (right click and choose
+      <uicontrol>Show in->Finder</uicontrol>).</li>
+   </ul>
+  </section>
+  <section id="section_uf1_ncs_gfb">
+   <title>Navigation:</title>
+   <p>Actions to find opened files, find files containing a certain content or navigate between
+    files.</p>
+   <ul id="ul_uwk_nnb_hhb">
+    <li>In the main <uicontrol>Window</uicontrol> menu, you can find the <b>Next/Previous Editor</b>
+     actions and their shortcuts. Together with the <b>Switch editor tab</b> action, these help you
+     navigate between opened XML documents.</li>
+    <li>The <b><xref
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-view-x-editing2.html"
+       format="html" scope="external">Open/Find Resource</xref></b> view (main menu <b>Window->Show
+      View</b>) allows you to search for file names, search in file contents, or search for files
+     containing comments or change tracking.</li>
+    <li>Right-click the tab of an opened XML document and use the <b>Copy location</b> action. Or
+     use the <b>Show in Explorer/Finder</b> action to locate the file.</li>
+    <li>Use the main menu <b>File->Reopen last closed editor</b> action to re-open the last closed
+     file.</li>
+    <li>Use the <b>Navigation</b> toolbar to <b>Go back/forward/last modification</b>.</li>
+    <li>
+     <p>The main <b>Window</b> menu has actions to tile all opened XML documents and also to enable
+      synchronous scrolling in them (useful if you want to look at similar XML documents and maybe
+      to copy/paste between them).</p>
+    </li>
+   </ul>
+  </section>
+  <section id="section_d3n_xg3_ffb">
+   <title>Find/Replace Functionality</title>
+   <p>The Find/Replace functionality is the bread and butter of any editing application and Oxygen
+    has lots of functionality in this regard:</p>
+   <ul id="ul_xk3_zg3_ffb">
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/find-and-replace-text-in-files.html"
+      format="html" scope="external">Find/Replace in Files</xref>. <ul id="ul_fx2_fvz_3hb">
+      <li>Restrict to XPath - If you want to make replacements only in certain parts of the XML
+       document, the XPath restriction can be used to focus only on certain attributes or element
+       content.</li>
+      <li>Ignore Whitespaces - You should usually check this checkbox as there is always there is a
+       possibility what the words you are searching for may be split on multiple lines in the XML
+       content.</li>
+     </ul></li>
+    <li>The <b>Find</b> menu → <b>Find Next/Previous</b> actions allow you to find the next/previous
+     occurrence of the current selected word(s). Or you can use the <b>Find All</b> action to find
+     and highlight all occurrences of a word or a sequence of words.</li>
+    <li>The <b>Find</b> menu → <b>Find all Elements</b> action shows a dialog box allowing you to
+     find elements or attributes containing a sequence of words.</li>
+    <li>The <b>Find</b> menu → <b>Quick find toolbar</b> is a compact toolbar giving you access to
+     search functionality.</li>
+    <li>The <b>XPath</b> toolbar allows you to use <b>XPath</b> expressions (i.e.
+      <codeph>//comment()[contains(., 'TODO')]</codeph>) to search the current topic or a set of
+     topics for elements, attributes, or comments matching a set of conditions.</li>
+   </ul>
+  </section>
+  <section>
+   <title>Text Editing:</title>
+   <ul id="ul_s45_tn5_nkb">
+    <li>You can use the mouse wheel or the <b>Ctrl + and Ctrl -</b> shortcuts to increase or
+     decrease the font in the current opened XML document.</li>
+    <li>The <b>Preferences->Editor / Edit Modes / Text</b> page allows you to wrap the visual line
+     and show a print margin.</li>
+    <li>
+     <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html"
+       format="html" scope="external">Code templates</xref> can be used in order to define small
+      code snippets which are often inserted. <xref
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html" format="html"
+       scope="external">Editor variables</xref> can be used inside those code templates and they
+      will get expanded on insertion. Various useful editor variables:</p>
+     <ul id="ul_anc_5n5_nkb">
+      <li><codeph>${author.name}</codeph></li>
+      <li><codeph>${selection}</codeph></li>
+      <li><codeph>${ask('Author Name', generic, 'John Doe')}</codeph></li>
+      <li><codeph>${xpath_eval(upper-case(substring('${cfn}', 1, 4)))}</codeph></li>
+     </ul>
+     <p>Code templates can also be saved at project level or exported in order to share them with
+      others. You can read more about the contexts in which editor variables can appear in this blog
+      post: <xref href="all_about_editor_variables.dita"/>.</p>
+    </li>
+    <li>Triple click an element tag to select the entire element.</li>
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/text-navigate-document-content-x-editing2.html"
+      format="html" scope="external">Various navigation shortcuts</xref>: Go after next tag. Select
+     parent. Use the top level breadcrump.</li>
+    <li>Move lines up and down (<b>Alt-Up/Down</b>).</li>
+    <li>Click line number to select the entire line. </li>
+    <li>Go to line/column (main menu <b>Find->Go to...</b>). </li>
+    <li>Open file at cursor on references to navigate to referenced file or create new file
+      (<b>Ctrl-ENTER</b>).</li>
+    <li>Bookmarks (main menu <b>Edit->Bookmarks</b>).</li>
+    <li>Quick find filter for side views (Outline, Entities, Transformation Scenarios).</li>
+    <li>Drag/drop resources from a file browser or copy/paste to create links to the resources.</li>
+    <li>Remove results of XPath execution.</li>
+    <li>Use <xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/text-mode-actions-x-modes2.html"
+      format="html" scope="external">contextual menu</xref> to: <ul id="ul_pvt_bp5_nkb">
+      <li>Apply base 64/32 encoding or decoding to various parts of the XML document. (for example
+       insert base 64 encoded images using the <b>data:image/png;base64,</b> protocol.</li>
+      <li>Escape/unescape selection.</li>
+      <li>Toggle comment.</li>
+      <li>Indent selection.</li>
+     </ul></li>
+    <li>Split editor (main menu <b>Window->Split</b> actions) to copy paste between different parts
+     of the XML document.</li>
+    <li>Open an XML document in the <b>Text</b> editing mode, right click, choose <b>Go to
+      definition</b> to open the DTD, XML Schema or RelaxNG Schema at the precise location where
+     that XML element is defined.</li>
+   </ul>
+  </section>
+  <section id="section_ify_v12_rkb">
+   <title>Huge File Editing</title>
+   <p>Huge XML and Text documents (Gigabytes) can be <xref
+     href="https://www.oxygenxml.com/doc/ug-editor/topics/huge-file-editor.html" format="html"
+     scope="external">opened and edited</xref> in the application.</p>
+  </section>
+  <section id="section_zjm_4lt_nkb">
+   <title>Grid editing mode:</title>
+   <ul id="ul_tdt_fp5_nkb">
+    <li>The <uicontrol>Grid</uicontrol> editing mode is useful for looking at XML documents exported
+     from data bases. </li>
+    <li>You can use this mode to sort tables or to copy table data to Excel spreadsheets.</li>
+    <li>The JSON editor also has a Grid editing mode.</li>
+   </ul>
+  </section>
+  <section id="section_l1g_sg3_ffb">
+   <title>Editing in the Author Visual Editing Mode</title>
+   <p>
+    <ul id="ul_idm_ch3_ffb">
+     <li>Increase/decrease editor font - Use <b>Ctrl/CMD +/-</b> to increase or decrease the font in
+      the current edited document.</li>
+     <li>Inserting elements - Pressing ENTER in the Author visual editing mode will show you a list
+      with all possible elements that can be inserted. If you choose an invalid element, Oxygen will
+      find a place for it. You can also add <xref
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/the-content-completion-tab.html"
+       format="html" scope="external">custom actions</xref> or code templates to the content
+      completion list.</li>
+     <li>Select content then press <b>ENTER</b> to surround the content in a new element.</li>
+     <li>Select start tag of element, press <b>ENTER</b> to rename the element.</li>
+     <li>Select multiple intervals - Press the <b>Ctrl/CMD</b> button when selecting text to select
+      multiple text intervals. Once you do that, you can use toolbar actions like <b>Bold</b>,
+       <b>Italic</b>, or <b>Underline</b> or you can use the <b>Edit Profiling Attributes</b> action
+      to set profiling attributes on all the selected items.</li>
+     <li>In-place attributes editor - Instead of using the <b>Attributes</b> view, you can press
+       <b>Alt-Enter</b> to edit attributes for the current element in a small pop-up dialog
+      box.</li>
+     <li>Select an entire element - Triple-click inside an element's contents to select the entire
+      element. After this, you can move the element to a new place.</li>
+     <li>Double-click to select by word, then drag the mouse to select the content word by
+      word.</li>
+     <li>Move elements (especially paragraphs, list items) up or down (<b>ALT-UP/DOWN</b>), indent
+      or unindent list items (<b>Tab</b>, <b>Shift-Tab</b>).</li>
+     <li>Easily insert lists using framework specific auto correct support. Insert for example
+       <b>1.</b> at the beginning of a paragraph, press the <b>Space</b> key and the inserted
+      content becomes an ordered list. Or in a DITA topic at the beginning of a paragraph type
+       <b>```java</b> and press space to insert a <xmlelement>codeblock</xmlelement>.</li>
+     <li>Select content and then use the <b>Toggle comment</b> action (contextual menu
+       <b>Refactoring</b> submenu) to quickly add an XML comment around it.</li>
+     <li>In the <xref
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu-x-modes2.html"
+       format="html" scope="external">contextual menu</xref> the <b>Text</b> submenu contains useful
+      actions to count the number of words in the entire document (or in the selected text), convert
+      the selection to upper, lowercase, or sentence case).</li>
+     <li><xref
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html?hl=bookmark#author-navigate-document-content__navigating_with_bookmarks"
+       format="html" scope="external">Bookmarks</xref> - Click the vertical left side bar in the
+      editing area to add a bookmark. Navigate to that bookmark even after the file has been closed
+      using the <b>Ctrl/CMD + number</b> shortcut.</li>
+     <li><xref
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode-x-modes2.html"
+       format="html" scope="external">Collapse other folds</xref> - Click a fold triangle in the
+      Author visual editing mode and you can choose to close all other folds, useful when working
+      with multiple sections in the same file.</li>
+     <li>
+      <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html"
+        format="html" scope="external">Code templates</xref> - Define small fragments of XML content
+       that can be inserted either by defining a shortcut key or by pressing <b>ENTER</b> in the
+       editing area.</p>
+     </li>
+     <li>
+      <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html"
+        format="html" scope="external">Editor variables</xref> - Certain Oxygen-specific macros can
+       be automatically expanded. For example, a code template that inserts the current author name
+       can use this editor
+       variable:<codeblock outputclass="language-xml">&lt;author>${author.name}&lt;/author></codeblock>or
+       a code template that surrounds the selection inside a <xmlelement>keyword</xmlelement>
+       element:<codeblock outputclass="language-xml">&lt;keyword>${selection}&lt;/keyword></codeblock>or
+       a code template that first asks the end user for their name and then inserts it in the
+       document:<codeblock outputclass="language-xml">&lt;author>${ask('Author Name', generic, 'John Doe')}&lt;/author></codeblock>Editor
+       variables can also be used when creating <xref
+        href="author-document-type-extension-sharing-custom-new-file-templates.dita">new file
+        templates</xref>. You can read more about the contexts in which editor variables can appear
+       in this blog post: <xref href="all_about_editor_variables.dita"/>.</p>
+     </li>
+     <li>Outline Quick find filter - The Outline view contains a filter that can be used to reduce
+      the number of elements displayed in it (for example, display only the contained topics).</li>
+     <li>The <uicontrol>Author</uicontrol> editing mode is best for editing bidirectional text with
+      Arabic or Hebrew content.</li>
+     <li>Editing MS Word and LibreOffice documents in the Author mode.</li>
+    </ul>
+   </p>
+  </section>
+  <section id="section_ecn_2k3_ffb">
+   <title>Preferences:</title>
+   <p>Oxygen has a lot of global settings that can be configured, I will just list what I consider
+    to be the most important ones:</p>
+   <ul id="ul_a1d_rp5_nkb">
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-global.html"
+      format="html" scope="external">Global</xref> - Change application language or show memory
+     status.</li>
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-appearance.html"
+      format="html" scope="external">Appearance</xref> - Change the default color theme in Oxygen
+     (the <b>Graphite</b> theme is quite popular).</li>
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-application-layout.html"
+      format="html" scope="external">Application Layout</xref> - impose custom layout or change
+     editor tabs placement.</li>
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-menu-shortcut-keys.html"
+      format="html" scope="external">Menu shortcut keys</xref> - You can use this preferences page
+     to assign or to see the shortcut for any action available in Oxygen.</li>
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-fonts.html"
+      format="html" scope="external">Fonts</xref> - This page allows you to change the default fonts
+     used in the application. You can also see what font can be used for a certain set of
+     characters.</li>
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-spell-check.html"
+      format="html" scope="external">Spell check</xref> - Customize the spell checker settings, use
+     custom spell check dictionaries.</li>
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-external-tools.html"
+      format="html" scope="external">External tools</xref> - Define various command line tools that
+     you can launch from Oxygen.</li>
+    <li><xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-content-completion-annotations.html"
+      format="html" scope="external">Editor / Content Completion / Annotations</xref> - Disable the
+     tooltips which appear when hovering over various elements (useful if you have a small
+     screen).</li>
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html"
+      format="html" scope="external">Editor / Save</xref> - Settings to automatically save, recover
+     content data on computer crash or to check for errors before saving the file.</li>
+   </ul>
+  </section>
+  <section id="section_ism_qh2_rkb">
+   <title>CSS-based PDF Publishing</title>
+   <p>The embedded <uicontrol>Chemistry</uicontrol> engine can be used to publish any XML document
+    to PDF using CSS to style the published output. There is a new transformation type <b>XML to PDF
+     transformation using CSS</b> which can be used for this. The <uicontrol>CSS
+     Inspector</uicontrol> view can be used to see what CSS styles get applied.</p>
+  </section>
+  <section id="section_edt_dk3_ffb">
+   <title>Tools</title>
+   <p>The <b>Tools</b> main menu is worth exploring. You can:<ul id="ul_thn_hq5_nkb">
+     <li>Invoke XML refactoring actions.</li>
+     <li>Open the SVG Viewer.</li>
+     <li>Find various JSON-related tools.</li>
+    </ul></p>
+  </section>
+  <section id="section_fdt_dk3_ffb">
+   <title>Import - Convert</title>
+   <ul id="ul_nn3_nq5_nkb">
+    <li>The <b>File</b> menu offers the possibility to import HTML, CSV, Excel files, or database
+     content as XML. </li>
+    <li>For some XML frameworks like DITA, TEI, DocBook and XHTML you can use the <xref
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support-x-modes2.html"
+      format="html" scope="external">smart paste</xref> functionality.</li>
+    <li>The <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
+      format="html" scope="external">Batch convertor add-on</xref> allows you to convert multiple
+     HTML, Markdown, Excel files to DITA.</li>
+   </ul>
+  </section>
+  <section>
+   <title>Connectivity</title>
+   <p>Oxygen comes bundled with an SVN client.</p>
+   <p>You can also work with resources directly from <xref
+     href="https://www.oxygenxml.com/doc/ug-editor/topics/webdav-connection.html" format="html"
+     scope="external">WebDav repositories</xref>, <xref
+     href="https://www.oxygenxml.com/doc/ug-editor/topics/configure-exist.html" format="html"
+     scope="external">Exist</xref> and various other databases.</p>
+   <p>There are also a couple of add-ons which add extra connectivity: <ul id="ul_pbj_lh5_nkb">
+     <li><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external"
+       >Git add-on</xref> for Oxygen.</li>
+     <li><xref href="https://github.com/oxygenxml/oxygen-cmis-plugin" format="html" scope="external"
+       >CMIS add-on</xref> for Oxygen.</li>
+     <li><xref href="https://github.com/axxepta/project-argon" format="html" scope="external">BaseX
+       add-on</xref> for Oxygen.</li>
+    </ul></p>
+  </section>
+  <section id="section_gld_tbs_gfb">
+   <title>Add-ons</title>
+   <p>In the application main menu you can go to the main menu <uicontrol>Help->Install new
+     Add-ons</uicontrol> and our official add-ons update site contains a couple of available
+    add-ons. There are also other free add-ons provided by the Oxygen team that can be installed in
+    an <xref href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;type=Repositories"
+     format="html" scope="external">Oxygen standalone version</xref>. </p>
+   <p>I will enumerate some of the most popular interesting add-ons below:</p>
+   <ul id="ul_xbw_ccs_gfb">
+    <li><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external"
+      >Git add-on</xref>. This plugin adds a side view allowing you to do some common Git operations
+     like pull, commit, push (mostly 90% of what a regular Git user would do).</li>
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+      format="html" scope="external">Content Fusion Connector add-on</xref>. Collaborate with your
+     peers by sending them links that allow them to give you feedback on your work using a web
+     browser without the need to pre-install anything on their side. </li>
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
+      format="html" scope="external">Batch convertor add-on</xref>. Converts multiple HTML,
+     Markdown, Excel files to DITA.</li>
+   </ul>
+  </section>
+  <section id="section_jdt_dk3_ffb">
+   <title>Keeping in Touch</title>
+   <ul id="ul_dlb_qbv_nkb">
+    <li>Oxygen's <b>Help</b> menu allows you to use the <b>Report problem</b> action to contact us
+     directly. </li>
+    <li>The <b>Support Tools->Randomize XML Content</b> action allows you to randomize the content
+     of an XML project before sending it to us for tests.</li>
+    <li>And there are a lot of other ways to get in touch with us or to find various videos or
+     tutorials to read: <xref href="https://www.oxygenxml.com/technical_support.html" format="html"
+      scope="external"/>.</li>
+   </ul>
+  </section>
+ </body>
 </topic>
