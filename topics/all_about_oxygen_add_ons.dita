@@ -127,16 +127,16 @@
                                         <li>Git support add-on: <xref
                                                   href="https://github.com/oxygenxml/oxygen-git-plugin"
                                                   format="html" scope="external"/></li>
-                                        <li>Add-on for connecting to any CMIS-enabled storage server
-                                                (like Alfresco): <xref
-                                                  href="https://github.com/oxygenxml/oxygen-cmis-plugin"
-                                                  format="html" scope="external"/>.</li>
                                         <li>Batch Resources Convertor add-on: <xref
                                                   href="https://github.com/oxygenxml/oxygen-resources-converter"
                                                   format="html" scope="external"/></li>
                                         <li>DocBook Validation add-on: <xref
                                                   href="https://github.com/oxygenxml/oxygen-docbook-validate-check-completeness"
                                                   format="html" scope="external"/></li>
+                                        <li>Add-on for connecting to any CMIS-enabled storage server
+                                                (like Alfresco): <xref
+                                                  href="https://github.com/oxygenxml/oxygen-cmis-plugin"
+                                                  format="html" scope="external"/>.</li>
                                         <li>DITA-specific add-ons:<ul id="ul_ugb_bxg_lkb">
                                                   <li>Translation helper: <xref
                                                   href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
@@ -202,7 +202,6 @@
                                                 <ph keyref="webauthor"/>)</li>
                                         <li>Support for Perforce (already available in
                                                 <ph keyref="webauthor"/>)</li>
-                                        <li>Amazon S3 connector plugin</li>
                                         <li>Use Grammarly for spell check (no API available on
                                                 Grammarly side)</li>
                                         <li>Presentation mode plugin (increase fonts, disable
