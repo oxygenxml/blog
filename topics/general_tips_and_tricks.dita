@@ -32,6 +32,14 @@
             Layout</uicontrol>).</li>
       </ul>
     </section>
+    <section id="section_bpy_jdz_rkb">
+      <title>Side Views You Probably Never Used</title>
+      <ul id="ul_nyz_ldz_rkb">
+        <li>The <b>Information</b> view.</li>
+        <li>The <b>Properties</b> view.</li>
+        <li>The <b>Scratch Buffer</b> view.</li>
+      </ul>
+    </section>
     <section id="section_pwy_nd4_mfb">
       <title>Project-related Functionality:</title>
       <p>The Oxygen Project view is the place where you can organize and apply batch changes to all
