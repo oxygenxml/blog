@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="dita_for_small_teams">
-    <title>DITA For Small Teams</title>
+    <title>DITA For Small Technical Documentation Teams</title>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
@@ -9,6 +9,229 @@
         </critdates>
     </prolog>
     <body>
-        <p></p>
+        <p>There are many cases in which a handful of technical writers in a company need to
+            collaborate on a DITA project and they may not have the resources to invest in an open
+            source content management system. So this blog post is about setting up a viable, cost
+            efficient DITA documentation editing and publishing solution which can scale up (both in
+            number of writers and content) using Oxygen XML Author and <xref
+                href="https://github.com/" format="html" scope="external">Github</xref>. As a
+            showcase for the proposed solution we will have the <xref href="welcome.dita">Oxygen XML
+                Blog</xref>.</p>
+        <section id="section_zdt_gbq_tkb">
+            <title>Overview of Tools Proposed for the Solution</title>
+            <ul id="ul_nlr_lbq_tkb">
+                <li><xref href="https://www.oxygenxml.com/xml_author.html" format="html"
+                        scope="external">Oxygen XML Author</xref> for editing the DITA content and
+                    for offline publishing.</li>
+                <li><xref href="https://github.com/" format="html" scope="external">Github</xref>
+                    for storing the DITA content.</li>
+                <li>[Optional] <xref href="https://www.oxygenxml.com/xml_web_author.html"
+                        format="html" scope="external">Oxygen Web Author</xref> for online
+                    editing/reviewing of DITA content.</li>
+                <li>[Optional] <xref href="https://www.oxygenxml.com/content_fusion.html"
+                        format="html" scope="external">Oxygen Content Fusion</xref> for creating
+                    review tasks for subject matter experts.</li>
+                <li>[Optional] <xref href="https://gradle.org/" format="html" scope="external"
+                        >Gradle</xref> to script the publishing in preparation for an integration
+                    server.</li>
+                <li>[Optional] <xref href="https://www.netlify.com/" format="html" scope="external"
+                        >Netlify</xref> to build and host a web site for the DITA content.</li>
+                <li>[Optional] <xref href="https://www.oxygenxml.com/publishing_engine.html"
+                        format="html" scope="external">Oxygen Publishing Engine</xref> for
+                    publishing to PDF and WebHelp DITA content on an integration server.</li>
+                <li>[Optional] <xref href="https://www.oxygenxml.com/oxygen_feedback.html"
+                        format="html" scope="external">Oxygen WebHelp Feedback</xref> engine for
+                    embedding feedback forms in the HTML pages.</li>
+                <li>[Optional] <xref href="https://www.oxygenxml.com/oxygen_scripting.html"
+                        format="html" scope="external">Oxygen Validate and Check for
+                        Completeness</xref> used with a scripting license to check for validation
+                    problems on an integration server.</li>
+            </ul>
+            <p>The same set of tools has been used for editing and publishing the Oxygen XML Blog:
+                    <xref href="welcome.dita"/>.</p>
+        </section>
+        <section id="section_or5_j2q_tkb">
+            <title>Learning DITA</title>
+            <p>There are various online resources for learning DITA, there are also learning DITA
+                courses held by consulting companies. This older blog post has some useful links:
+                    <xref href="learnDita.dita"/>.</p>
+        </section>
+        <section id="section_v4f_32q_tkb">
+            <title>Project Storage - Using GitHub</title>
+            <p>You need a system to:<ul id="ul_ycj_r2q_tkb">
+                    <li>Store your DITA content. </li>
+                    <li>Collaborate with your colleagues on writing content in the same project. </li>
+                    <li>Allow for reviewers to propose changes without having the right to commit
+                        changes.</li>
+                    <li>Have a history of changes on each DITA resource, being able to revert to
+                        previous versions of topics.</li>
+                    <li>See who changed what content in each DITA topic and map.</li>
+                    <li>Be able to tag releases so you can build manuals for older releases with
+                        some changes applied to them.</li>
+                    <li>Maintain a list of issues which are closed as your work progresses.</li>
+                </ul></p>
+            <p>Some small teams instead of using a version control system resort to shared network
+                drives. Shared network drives do not address all the features above and they are
+                dangerous in the fact that you can overwrite other people's work and there is no way
+                to revert changes.</p>
+            <p>A free <xref href="https://github.com/" format="html" scope="external">Github</xref>
+                account can cover all these use cases listed above. GitHub exposes through a web
+                interface access to a Git repository. This blog post is not about learning Git, it's
+                about having minimum Git skills to get you started. There is a good book about
+                learning Git Here: <xref
+                    href="https://www.manning.com/books/learn-git-in-a-month-of-lunches"
+                    format="html" scope="external"/>.</p>
+            <p>We'll outline below some steps to get you started with a GitHub project:<ol
+                    id="ol_q1t_5hr_tkb">
+                    <li>Create a GitHub account: <xref href="https://github.com/join" format="html"
+                            scope="external"/>.</li>
+                    <li>Create an organization: <xref
+                            href="https://github.com/settings/organizations" format="html"
+                            scope="external"/>. The organization will be useful to group
+                        work-related projects.</li>
+                    <li>Add your team members to the organization. Using the team member GitHub user
+                        names you can send them invitations to be contributors to the project.</li>
+                    <li>Create a new repository in the organization for your project. For creating
+                        private repositories you will need to switch to a paid plan. The alternative
+                        is to create a new private repository in your own account.</li>
+                </ol></p>
+        </section>
+        <section id="section_kdx_3wy_tkb">
+            <title>Creating and Modifying Content in the Repository</title>
+            <p>You can create and edit DITA topics in a number of ways:<ul id="ul_l2s_kwy_tkb">
+                    <li>Edit topics offline and use GitHub's user interface to upload it, or modify
+                        existing topics using GitHub's web interface.</li>
+                    <li>Use the <xref
+                            href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
+                            format="html" scope="external">Oxygen Web Author</xref> to connect to
+                        the Git Repository and create a new topic or modify an existing one.</li>
+                    <li>Clone the repository to the local file system using Oxygen XML Author with
+                        the <xref href="https://github.com/oxygenxml/Oxygen-Git-Plugin"
+                            format="html" scope="external">Git Add-on</xref> installed.</li>
+                </ul></p>
+        </section>
+        <section id="section_khz_rxy_tkb">
+            <title>Using Oxygen XML Author to Create/Modify Content in the Repository</title>
+            <p>
+                <ul id="ul_cf2_5xy_tkb">
+                    <li>Install the <xref href="https://github.com/oxygenxml/Oxygen-Git-Plugin"
+                            format="html" scope="external">Git Add-on</xref> in Oxygen XML
+                        Author.</li>
+                    <li>Open the <uicontrol>Git Staging</uicontrol> view and use the
+                            <uicontrol>+</uicontrol> toolbar button to paste the reference to the
+                        reference to your project, for example
+                            <codeph>https://github.com/oxygenxml/blog</codeph>. </li>
+                    <li>Choose a location on the local drive where the project will be cloned.</li>
+                    <li>The <uicontrol>Git Staging</uicontrol> view does not show all existing
+                        resources in the project, it will just show the modified resources, so go to
+                        the <uicontrol>Project</uicontrol> menu and create a new Oxygen project in
+                        the folder where the project was cloned.</li>
+                    <li>In the <uicontrol>Git Staging</uicontrol> view the newly created
+                            <filepath>project.xpr</filepath> should now appear. Select it, use the
+                            <uicontrol>Stage Selected</uicontrol> button to stage it, then write a
+                        commit message and use the <uicontrol>Commit</uicontrol> message to commit
+                        it. Now the file is committed in your local repository. You can use the
+                        toolbar <uicontrol>Push</uicontrol> button to push it to the GitHub
+                        account.</li>
+                    <li>Create a <xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-first-dita-topic-2.html"
+                            format="html" scope="external">DITA Map and a couple of topics</xref>
+                        using Oxygen's <uicontrol>Project</uicontrol> view.</li>
+                    <li>Using the same <uicontrol>Git Staging</uicontrol> view you can see the newly
+                        added files, stage, commit and push them to the remote GitHub repository.
+                        You can check on the remote <b>GitHub</b> repository that the files were
+                        updated.</li>
+                    <li>If changes are made by someone else using the same technique or if changes
+                        to maps and topics are made directly from the <b>GitHub</b> web interface or
+                        from the Oxygen WebAuthor, the <uicontrol>Git Staging</uicontrol> view has a
+                            <uicontrol>Pull</uicontrol> toolbar button allowing you to obtain those
+                        changes locally.</li>
+                    <li>On resources which have been modified a number of times you can right click
+                        in the staging area and choose <b>Show in history</b> to see a history of
+                        changes. You can also choose <b>Show blame</b> to see who modified each of
+                        the lines in the document.</li>
+                </ul>
+            </p>
+            <p>Here's a simplified overview of how you could work with Oxygen and Git:<ul
+                    id="ul_jgp_f1z_tkb">
+                    <li>Every time you start Oxygen or every time before you commit use the
+                            <uicontrol>Pull</uicontrol> toolbar button from the <uicontrol>Git
+                            Staging</uicontrol> view to get changes locally.</li>
+                    <li>Stage and commit your changes, then push them to the remote repository.</li>
+                    <li>If you attempt to pull changes including a file which is already modified
+                        locally by you, the pull operation will not succeed. You will need to copy
+                        that file separately, pull the content from the server and then compare your
+                        changes to the ones coming from the server and merge your changes.</li>
+                    <li>If you have already committed to your local repository a resource modified
+                        also on the remote repository, you have a conflict, the <b>Git Staging</b>
+                        view allows you to edit the conflict, merge the changes locally and then
+                        commit to the local repository and push changes to the server.</li>
+                    <li>You do not have to pull and push changes from and to the remote repository
+                        very often, you can continue working with your local repository for days and
+                        push all changes at the end but not pulling changes from the server often
+                        might result in various conflicts if the same resources are modified both on
+                        the server and in your local repository.</li>
+                </ul></p>
+        </section>
+        <section id="section_eq5_kbz_tkb">
+            <title>Working with Branches</title>
+            <p>You may need to mark releases of your product and also to be able to contribute small
+                fixes to those releases. So here's how you work with branches:<ul
+                    id="ul_brd_4bz_tkb">
+                    <li>The default branch in the project is called <b>master</b> and this is the
+                        branch we've been working until now.</li>
+                    <li>Using <b>GitHub</b>'s web interface you can create your own branch.</li>
+                    <li>Check out again in the <uicontrol>Git Staging</uicontrol> view the project,
+                        this time with the separate branch in a separate folder. </li>
+                    <li>Open the <filepath>project.xpr</filepath> from that branch's checkout, make
+                        changes to the content there, stage, commit and push as usual.</li>
+                </ul></p>
+        </section>
+        <section id="section_o51_yfz_tkb">
+            <title>Organizing Your Project Structure using the Master Files Support</title>
+            <p>You can now start to <xref
+                    href="https://github.com/oxygenxml/dita-project-best-practices" format="html"
+                    scope="external">organize your content</xref>. </p>
+            <p>You can right click the <uicontrol>Project</uicontrol> root and <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html"
+                    format="html" scope="external">enable master files</xref>, then in the
+                    <uicontrol>Master Files</uicontrol> folder add a reference to the main DITA map
+                (or maps). All refactoring operations (move resources to subfolders, rename topics
+                or resources) will properly update references in the entire DITA project
+                hierarchy.</p>
+        </section>
+        <section id="section_kdj_3cz_tkb">
+            <title>Sharing Common Settings using the Project</title>
+            <p>The Oxygen project configuration can save various sets of global options at project
+                level. As an example:<ul id="ul_ovy_kcz_tkb">
+                    <li>Go to the Oxygen <uicontrol>Preferences->Editor / Spell Check</uicontrol>
+                        page and change the radio button at the bottom to <uicontrol>Project
+                            Options</uicontrol>. Then check the <uicontrol>Automatic spell
+                            check</uicontrol> checkbox.</li>
+                    <li>The <uicontrol>Git Staging</uicontrol> view should have a modified version
+                        of the XPR showing as modified, stage, commit and push it.</li>
+                    <li>Now everybody using the same <filepath>project.xpr</filepath> project file
+                        loaded in Oxygen will have spell check enabled.</li>
+                </ul></p>
+            <p>Other useful settings you could switch to <uicontrol>Project Options</uicontrol>:<ul
+                    id="ul_h3t_tcz_tkb">
+                    <li>The <uicontrol>Project Level Settings</uicontrol> preferences dialog allows
+                        you to control if various settings are saved at project or global level. For
+                        example you can save the <uicontrol>Validate and check for
+                            completeness</uicontrol> settings at project level and share them with
+                        others.</li>
+                    <li>The <uicontrol>Editor / Spell Check / Dictionaries</uicontrol> preferences
+                        page can contain your own <xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/spell-dictionary-Hunspell.html"
+                            format="html" scope="external">set of dictionary terms</xref>.</li>
+                    <li>The <uicontrol>Document Templates</uicontrol> preferences page allows you to
+                        use your own custom new file templates.</li>
+                    <li>In the <uicontrol>Editor / Save</uicontrol> preferences you can save at
+                        project level various save options.</li>
+                    <li>Switching the <uicontrol>Menu Shortcut Keys</uicontrol> preferences page to
+                        project level allows you to share with others custom menu shortcut
+                        keys.</li>
+                </ul></p>
+        </section>
     </body>
 </topic>
