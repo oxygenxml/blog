@@ -197,8 +197,14 @@
                     format="html" scope="external">enable master files</xref>, then in the
                     <uicontrol>Master Files</uicontrol> folder add a reference to the main DITA map
                 (or maps). All refactoring operations (move resources to subfolders, rename topics
-                or resources) will properly update references in the entire DITA project
-                hierarchy.</p>
+                or resources) will properly update references in the entire DITA project hierarchy.
+                A minimal DITA project would probably contain:<ul id="ul_xl4_sqb_vkb">
+                    <li>One or more main DITA Maps.</li>
+                    <li>One or more DITA submaps, defining keys for reusable content.</li>
+                    <li>One or more folders containing reusable DITA elements.</li>
+                    <li>A folder containing one or more DITAVAL filter files.</li>
+                    <li>A folder containing images or binary resources.</li>
+                </ul></p>
         </section>
         <section id="section_kdj_3cz_tkb">
             <title>Sharing Common Settings using the Project</title>
@@ -231,7 +237,9 @@
                     <li>Switching the <uicontrol>Menu Shortcut Keys</uicontrol> preferences page to
                         project level allows you to share with others custom menu shortcut
                         keys.</li>
-                </ul></p>
+                </ul>You can use the <b>${pd}</b> editor variable to refer to resources located in
+                the current project folder. You can read more about editor variables <xref
+                    href="all_about_editor_variables.dita">here</xref>.</p>
         </section>
         <section id="section_yxk_mhz_tkb">
             <title>Establishing a Workflow</title>
@@ -250,6 +258,56 @@
                     scope="external">Oxygen Content Fusion</xref> add-on allows you to create review
                 tasks and to allow subject matter experts to give you feedback on DITA content
                 directly from a web browser.</p>
+        </section>
+        <section id="section_dr1_4qb_vkb">
+            <title>Adding Custom Validation Checks to the Project</title>
+            <p>There are a couple of ways in which you can add custom validation checks to your
+                    project:<ul id="ul_gfy_lrb_vkb">
+                    <li>You can create a custom Schematron schema containing custom validation
+                        rules: <xref href="sharing_schematron_validation_rules.dita"/>.</li>
+                    <li>The <b>Validate and Check For Completion</b> action from the <b>DITA Maps
+                            Manager</b> view contains various settings which can be saved at project
+                        level. In the <b>Preferences->Project Level Settings</b> page there is a
+                            <b>Save DITA Map validate and check for completeness settings at project
+                            level</b> checkbox.</li>
+                    <li>You can also add terminology checking in the application: <xref
+                            href="checking_terminology_with_oxygen_xml_editor.dita"/>.</li>
+                </ul></p>
+        </section>
+        <section id="section_wtj_vvb_vkb">
+            <title>Adding Custom Actions</title>
+            <p>You can use a framework customization saved at project level to add custom actions
+                which can be used in the <b>Author</b> visual editing mode and can be mounted in the
+                toolbar, menus and the content completion window: <xref
+                    href="custom-author-action-js-based.dita"/>.</p>
+        </section>
+        <section id="section_evr_2wb_vkb">
+            <title>Manual Publishing</title>
+            <p>You can open DITA Maps in the application <b>DITA Maps Manager</b> view and publish
+                them to various outputs using the <b>Configure Transformation Scenarios</b> toolbar
+                button. A transformation scenario can also specify a DITAVAL filter, parameters and
+                can be saved at project level. The published content can be later uploaded to a web
+                server.</p>
+            <p>For <b>WebHelp</b> output you can create a <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/whr-create-publishing-template-x.html"
+                    format="html" scope="external">publishing template</xref> containing custom
+                CSSs, headers, footers and logos. The publishing template can be saved in the
+                project and referenced from the transformation scenario.</p>
+            <p>For the <b>PDF</b> output the same publishing template can be used.</p>
+            <p>If you are publishing multiple DITA Maps or you have multiple filters or multiple
+                deliverable formats you may want to create a DITA Open Toolkit project file: <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_open_toolkit_project.html"
+                    format="html" scope="external"/>. A sample DITA OT project file can be found in
+                the <xref href="https://github.com/oxygenxml/blog/blob/master/blog-project.xml"
+                    format="html" scope="external">Oxygen XML Blog project on GitHub</xref>.</p>
+        </section>
+        <section id="section_jt4_t1c_vkb">
+            <title>Dynamic Publishing using an Integration Server</title>
+            <p>Using a bit of scripting you can publish the modified content on the fly with either
+                using free online services like Netlify or Travis or using an internal Jenkins
+                server. The <xref href="welcome.dita">Oxygen XML Blog</xref> is an example for this.
+                It has a Gradle script which is run as part of a Netlify account whenever changes
+                are made to the topics.</p>
         </section>
     </body>
 </topic>
