@@ -233,5 +233,23 @@
                         keys.</li>
                 </ul></p>
         </section>
+        <section id="section_yxk_mhz_tkb">
+            <title>Establishing a Workflow</title>
+            <p>You can use the <b>GitHub</b> issues list for your project to create new issues. You
+                can attach files to the issue, assign the issue, discuss with other participants,
+                register to watch particular issues. Once a commit is made with a particular
+                    <b>#issue_number</b>, the issue will get an automatic link pointing to the
+                commit.</p>
+            <p>Oxygen's <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/author-managing-changes-x-modes2.html"
+                    format="html" scope="external">change tracking support</xref> allows you to
+                insert or delete content with change tracking or to make comments on content. The
+                Web Author online editing tool allows you to also make changes with change
+                tracking.</p>
+            <p>The <xref href="https://www.oxygenxml.com/content_fusion.html" format="html"
+                    scope="external">Oxygen Content Fusion</xref> add-on allows you to create review
+                tasks and to allow subject matter experts to give you feedback on DITA content
+                directly from a web browser.</p>
+        </section>
     </body>
 </topic>
