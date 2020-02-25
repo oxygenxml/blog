@@ -90,5 +90,8 @@
             the <b>Preview</b> button to check if the sorting is properly done.</p>
         </li>
       </ol></p>
+        <p>The XML Refactoring XML descriptor and XSLT stylesheet can also be found here: <xref
+                href="https://github.com/oxygenxml/dita-refactoring-examples/tree/master/18.%20Sort%20Glossentries"
+                format="html" scope="external"/>.</p>
     </body>
 </topic>
