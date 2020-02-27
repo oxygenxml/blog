@@ -50,6 +50,7 @@
             <topicref href="topics/styleguide.dita"/>
             <topicref href="topics/sort_glossentries.dita"/>
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
+            <topicref href="dita_to_confluence.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">
