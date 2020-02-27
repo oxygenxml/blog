@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita_to_confluence">
+    <title>DITA to Confluence</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2020-02-27"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p><xref href="https://confluence.atlassian.com/" format="html" scope="external">Atlassian
+                Confluence</xref> is a content collaboration tool used to help teams collaborate and
+            share knowledge efficiently. Based on my limited knowledge of Confluence I've identified
+            these two ways in which you can write technical documentation in DITA and then make it
+            available on the Confluence platform:</p>
+        <section id="section_o1v_ywx_vkb">
+            <title>Publish DITA to Microsoft Word and import in Confluence</title>
+            <p><ph keyref="oxygen"/> comes bundled with support to publish DITA content to Microsoft
+                Word using the <xref href="https://github.com/jelovirt/com.elovirta.ooxml"
+                    format="html" scope="external">DITA to Word</xref> plugin: <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/ditamap-ms-word.html"
+                    format="html" scope="external"/>.</p>
+            <p>Once you publish the DITA project to Word, you can use the <uicontrol>Import Word
+                    Document</uicontrol> action from Confluence to import the Word document.<image
+                    placement="break" href="images/wordConfluence.png" id="image_xyv_nxx_vkb"
+                />During the import process you will be able to choose to split the document in
+                multiple pages depending on the headings.<image placement="break"
+                    href="images/ditaWordSplitHeading.png" id="image_vpw_txx_vkb"/></p>
+        </section>
+        <section id="section_ahs_xxx_vkb">
+            <title>Publish DITA to HTML5 and import in Confluence</title>
+            <p>Although Confluence supports out of the box import only from Microsoft Word, there is
+                a commercial file importer plugin for Confluence: <xref
+                    href="https://marketplace.atlassian.com/apps/1221333/all-in-one-file-importer-for-confluence"
+                    format="html" scope="external"/>. This plugin can import a number of file
+                formats to Confluence, including Markdown and HTML.</p>
+            <p>The plugin contributes an import action which can be used to either import individual
+                HTML or Markdown files or entire folders. The plugin might now want to import
+                various file formats like CSS and JPEG so these types of files need to be manually
+                deleted before the import.<image placement="break"
+                    href="images/htmlToConfluence.png" id="image_v5w_myx_vkb"/></p>
+        </section>
+        <section id="section_i1w_pcy_vkb">
+            <title>Publish DITA to HTML5 and paste from Web Browser to Confluence</title>
+            <p>If you just want to update a couple of pages you can publish DITA to HTML, open the
+                published HTML content in a web browser, select and copy the contents, then paste in
+                a Confluence page. Confluence seems capable to convert the pasted HTML content to
+                its own HTML-like format.</p>
+        </section>
+    </body>
+</topic>
