@@ -37,8 +37,9 @@
                 formats to Confluence, including Markdown and HTML.</p>
             <p>The plugin contributes an import action which can be used to either import individual
                 HTML or Markdown files or entire folders. The plugin might now want to import
-                various file formats like CSS and JPEG so these types of files need to be manually
-                deleted before the import.<image placement="break"
+                various file formats like CSS and image files so these types of files need to be
+                manually deleted before the import. Also the plugin does not seem to properly
+                resolve links between the imported HTML files.<image placement="break"
                     href="images/htmlToConfluence.png" id="image_v5w_myx_vkb"/></p>
         </section>
         <section id="section_i1w_pcy_vkb">
@@ -47,6 +48,19 @@
                 published HTML content in a web browser, select and copy the contents, then paste in
                 a Confluence page. Confluence seems capable to convert the pasted HTML content to
                 its own HTML-like format.</p>
+        </section>
+        <section id="section_oq4_g2d_wkb">
+            <title>Creating a special DITA to Confluence-like HTML publishing flow</title>
+            <p>The internal storage format Confluence uses is a kind of HTML mixed with XML content:
+                    <xref
+                    href="https://confluence.atlassian.com/doc/confluence-storage-format-790796544.html"
+                    format="html" scope="external"/>.</p>
+            <p>If a DITA OT plugin were to implement special DITA to Confluence-like HTML output it
+                would probably need special handling for:<ul id="ul_mj3_v2d_wkb">
+                    <li>Internal links.</li>
+                    <li>Links to binary resources.</li>
+                    <li>Images.</li>
+                </ul></p>
         </section>
     </body>
 </topic>
