@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita_generate_changes_list">
+    <title>Generating a list of changes between releases</title>
+ <prolog>
+  <author>Radu Coravu</author>
+  <critdates>
+   <created date="2020-03-06"/>
+  </critdates>
+ </prolog>
+    <body>
+  <p>Sometimes you may had PDFs or HTML content with the documentation to reviewers and instead of
+   them having to read again the entire user's manual you may want to give them also a list of
+   changed topics. Such a list can be manually maintained in a separate DITA topic but if your
+   project uses version control and you tag your releases you may also want to try and manually
+   build this list of changes.</p>
+        <p>For DITA projects which use Git for source control you can use a modified version of the
+   DITA Open Toolkit <xref
+    href="https://github.com/oxygenxml/dita-custom-ant-parser/tree/generate-changes-list"
+    format="html" scope="external">custom ANT parser plugin</xref> to automatically generate a list
+   of changes between two versions in the published output. I will enumerate the steps to do this
+    below:<ul id="ul_e14_hjd_ykb">
+    <li>Check out your Git project. If all your releases are tagged as branches, running a command
+     line like this:<codeblock>git diff --name-only tagName</codeblock>will show in the console a
+     set of changed topics between the current changes and the <codeph>tagName</codeph> branch. For
+     example for the <ph keyref="oxygen"/> user's manual I can run <codeph>git diff --name-only
+      oxygen22.0</codeph> to see all changes between the current contents in the repository and the
+     Oxygen 22.0 branch in the repository.</li>
+    <li>In the main DITA Map add a reference to a topic which will be the recipient of the generated
+     content at publishing
+     time:<codeblock outputclass="language-xml">&lt;topicref href="dynamicChangeHistory.gen" format="ant-parser"/></codeblock>Create
+     this <filepath>dynamicChangeHistory.gen</filepath> topic next to the DITA Map but leave it with
+     empty contents, the publishing plugin will be responsible of updating its contents.</li>
+    <li>Download the <filepath>com.oxygenxml.ant.parser.dita</filepath> plugin from here: <xref
+      href="https://github.com/oxygenxml/dita-custom-ant-parser/tree/generate-changes-list"
+      format="html" scope="external"/>.</li>
+    <li><xref href="https://www.dita-ot.org/dev/topics/plugins-installing.html" format="html"
+      scope="external">Integrate/install</xref> the plugin in your DITA Open Toolkit
+      <filepath>plugins</filepath> folder.</li>
+    <li>Open the build file <filepath>com.oxygenxml.ant.parser.dita/resources/build.xml</filepath>
+     in <ph keyref="oxygen"/>. The build file has three stages which may need to be slightly changed
+     to fit your project's structure:<ul id="ul_qzp_3qd_ykb">
+      <li>Run the <codeph>git</codeph> command in your project's folder and find all differences
+       related to a certain branch. In my case the branch is called <codeph>oxygen22.0</codeph> so
+       it needs to be changed to your particular branch name.</li>
+      <li>Apply the XSLT stylesheet <filepath>createChangesTopic.xsl</filepath> on the changes list
+       and generate a DITA topic. You will need to make changes to the stylesheet so that the
+       generated paths to the changed topics are relative to the place where the generated DITA
+       topic is located.</li>
+      <li>Run an XSLT stylesheet on the DITA topic to add the <xmlatt>class</xmlatt>
+       attributes.</li>
+     </ul></li>
+    <li>Once the plugin is properly configured, an extra topic will be produced in the output
+     (either PDF or HTML) containing links to the changes list.</li>
+   </ul></p>
+    </body>
+</topic>
