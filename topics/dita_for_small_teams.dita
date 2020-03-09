@@ -206,6 +206,30 @@
                     <li>A folder containing images or binary resources.</li>
                 </ul></p>
         </section>
+  <section id="section_g2k_yjz_ykb">
+   <title>Overall management of the DITA project</title>
+   <p>
+    <ul id="ul_l51_zjz_ykb">
+     <li>The <uicontrol>Search References</uicontrol> contextual menu actions from the DITA Maps
+      Manager and from the main editor allow you to check where a topic, map or image is being
+      used.</li>
+     <li>The <uicontrol>Remove from disk</uicontrol> action in the DITA Maps Manager view will warn
+      if the removed topic is used in multiple places.</li>
+     <li>Validation errors are issued for references to missing topics or images.</li>
+     <li><uicontrol>Move/Rename</uicontrol> actions located both in the Oxygen Project and DITA Maps
+      Manager view allow you to move topics/maps or images and have references to them automatically
+      updated.</li>
+     <li>The <uicontrol>Find unreferenced resources</uicontrol> contextual menu action in the DITA
+      Maps Manager allows you to find orphan topics or other resources (images, etc).</li>
+     <li>You can define profiling condition sets and use them to see in the editing area what
+      content is filtered, then use the same profiling condition sets for publishing.</li>
+     <li>The <uicontrol>Open/Find Resource</uicontrol> side view allows you to locate files by
+      content.</li>
+     <li>The change tracking support in Oxygen allows you to make changes with change tracking or to
+      add or reply to existing comments.</li>
+    </ul>
+   </p>
+  </section>
         <section id="section_kdj_3cz_tkb">
             <title>Sharing Common Settings using the Project</title>
             <p>The Oxygen project configuration can save various sets of global options at project
@@ -309,5 +333,12 @@
                 It has a Gradle script which is run as part of a Netlify account whenever changes
                 are made to the topics.</p>
         </section>
+  <section id="section_lfz_wkz_ykb">
+   <title>Translating your content</title>
+   <p>The Oxygen <xref href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
+     format="html" scope="external">Translation Package Builder</xref> add-on allows you to find the
+    changed resources in a DITA project and then to pack those changed resources and send them for
+    translation. It also helps with integrating the received translation in the project.</p>
+  </section>
     </body>
 </topic>
