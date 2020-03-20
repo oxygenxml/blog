@@ -140,9 +140,11 @@
                             produce the EPUB output.</li>
                     </ul></li>
                 <li> Oxygen DITA <xref
-                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-validate-completeness-check-command-line.html"
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-map-validate.html"
                         format="html" scope="external">Validate and Check for Completeness</xref> is
-                    run on the server side with the help of a special scripting license.</li>
+                    run on the server side with the help of a <xref
+                        href="https://www.oxygenxml.com/oxygen_scripting.html" format="html"
+                        scope="external">special scripting license</xref>.</li>
                 <li><xref href="https://www.netlify.com/" format="html" scope="external"
                         >Netlify</xref> is used to connect to the repository, run Gradle and publish
                     the WebSite.</li>
