@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="custom_author_action_content_completion">
+  <title>Adding a Custom Author Action to the Content Completion Window</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <copyright>
+      <copyryear year="2020"/>
+      <copyrholder>Syncro Soft</copyrholder>
+    </copyright>
+    <critdates>
+      <created date="2020-03-26"/>
+    </critdates>
+  </prolog>
+  <body>
+        <p>Let's say you are editing XML documents belonging to a certain vocabulary (like
+        <b>DITA</b>) for which there is a framework configuration available. The content completion
+      window appears in the <uicontrol>Author</uicontrol> visual editing mode when you press the
+        <uicontrol>ENTER</uicontrol> key and usually presents the set of XML elements allowed at the
+      caret position. The same list of elements is present in the <uicontrol>Elements</uicontrol>
+      view. These elements are usually proposed based on the DTD, XML or Relax NG vocabulary used to
+      validate the XML document. </p>
+    <p>But there may be cases in which you want to customize the content completion items. There is
+      a <xref
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/configure-elements-attr-cc-individually.html"
+        format="html" scope="external">content completion configuration</xref> file which can be
+      changed to allow for various use cases:<ul id="ul_hlx_y4t_dlb">
+        <li>Disallow a certain set of elements to appear in the content completion window.  </li>
+        <li>Declare a set of required child elements which should be inserted automatically when the
+          parent element is inserted.</li>
+        <li>Declare a set of required attributes which should be inserted when a certain element is
+          inserted.</li>
+      </ul></p>
+    <p>There are also a number of use cases not covered by the content completion filter file:<ul
+        id="ul_ysd_5pt_dlb">
+        <li>You want to add a new item in the content completion filter which triggers a complex
+          action. For example when the item is selected you show a dialog and ask the end user from
+          some data, then insert a custom XML fragment based on that data the end user filled
+          out.</li>
+        <li>You want to replace an existing item in the content completion window with an item with
+          the same name but which again triggers a more complex action.</li>
+      </ul>Further in the blog post we'll go through the steps necessary to replace an item from the
+      content completion window with a complex action. As an example for the
+        <uicontrol>DITA</uicontrol> vocabulary when the <uicontrol>created</uicontrol> item is
+      selected in the content completion window we want the inserted XML content to contain the
+      current date
+      like:<codeblock outputclass="language-xml">&lt;created date="2020-03-26"/></codeblock></p>
+    <p>Here are some steps to follow:<ol id="ol_p5g_jpn_qcb">
+        <li>
+          <p>Follow the steps 1,3, 4 and 5 listed in this older blog post to create an extension of
+            the <b>DITA</b> framework: <xref href="customizeDITACSS.dita"/>.</p>
+        </li>
+        <li>
+          <p>In the <b>Document Type Association</b> preferences page, edit the <b>DITA</b>
+            framework extension you just created. Go to the <b>Author->Actions</b> tab and create a
+            new action with the ID <codeph>created.current.date</codeph>. Use the predefined <xref
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html#dg-default-author-operations__insertfragmentoperation"
+              format="html" scope="external"><b>InsertFragmentOperation</b></xref> to insert a small
+            XML fragment. The XML fragment uses an editor variable which will be expanded to the
+            current date. There are plenty of other <xref href="all_about_editor_variables.dita"
+              type="topic">editor variables</xref> to choose from.</p>
+          <p>The custom action definition would look like this:</p>
+          <p><image href="../images/customAuthorActionCreated.png" id="image_crf_5rt_dlb" scale="60"
+            /></p>
+          <p>There are plenty of other <xref
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html"
+              format="html" scope="external">pre-defined operations</xref> which can be used from an
+            Author action. For example a <xref href="custom-author-action-js-based.dita"
+              >Javascript-based operation</xref>, there are some other examples of what such
+            operations can do in a <xref
+              href="https://github.com/oxygenxml/javascript-sample-operations" format="html"
+              scope="external">separate GitHub project</xref>.</p>
+        </li>
+        <li>
+          <p>Go to the <b>Author->Content Completion</b> tab, find the new action in the
+              <uicontrol>Available Actions</uicontrol> list and add it to the  <b>Current
+              actions</b> list. You will be able to add it both in the content completion list and
+            the <uicontrol>Elements</uicontrol> view. In the <uicontrol>Filter - Remove content
+              completion items</uicontrol> list add an entry for <codeph>created</codeph> because we
+            want to remove the original item and replace it with the action.</p>
+        </li>
+        <li>Save all your changes by using the <uicontrol>Ok</uicontrol> button both in the document
+          type configuration dialog and in the <uicontrol>Preferences</uicontrol> dialog.</li>
+        <li>
+          <p>When editing a DITA topic in the <uicontrol>Author</uicontrol> visual editing mode you
+            can press <uicontrol>ENTER</uicontrol> to show the content completion window, choose
+              <codeph>created</codeph> and your custom Author action will be called instead of the
+            original item.</p>
+        </li>
+      </ol></p>
+    </body>
+</topic>
