@@ -11,8 +11,17 @@
       proprietary formats to XML is never perfect and manual changes need to be made to the
       converted content. However, the methods below should help you find the best approach for your
       particular case:</p>
+  <section id="section_uzn_zry_dlb">
+   <title>Batch Convertor add-on </title>
+   <p>The <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
+     scope="external">Resources Converter add-on</xref> can be installed in Oxygen and allows
+    converting one or multiple Word documents (with either doc or docx formats) to DITA topics. </p>
+   <p>If the generated DITA topics have multiple sections that you want to convert to individual
+    topic files, you can refer to a DITA topic in the <uicontrol>DITA Maps Manager</uicontrol> view,
+    then right click <uicontrol>Refactoring->Convert sections to new topics</uicontrol>.</p>
+  </section>
     <section id="method_1">
-      <title>Method 1</title>
+      <title>Smart Paste</title>
       <ol>
         <li>Open the Word document in MS Office, select all the content, and copy it.</li>
         <li>Open <b>Oxygen</b> and create a new <b>DITA</b> topic in the Author visual editing mode. </li>
@@ -22,7 +31,7 @@
       </ol>
     </section>
     <section id="method_2">
-      <title>Method 2</title>
+      <title>Word to HTML to DITA</title>
       <ol>
         <li>Save your MS Office Word document as HTML.</li>
         <li>Once you obtain that HTML, you have two possibilities:<p>
@@ -41,7 +50,7 @@
       </ol>
     </section>
     <section id="method_3">
-      <title>Method 3</title>
+      <title>Word to DocBook to DITA</title>
       <p>
         <ol>
           <li>Open the Word document in the free <b>Libre Office</b> application and save it as
@@ -52,7 +61,7 @@
       </p>
     </section>
     <section id="method_4">
-      <title>Method 4</title>
+      <title>Word to DITA using DITA For Publishers</title>
       <p><ol>
           <li>If the Word document is in the new DOCX format you can open it in <b>Oxygen</b>'s
               <b>Archive Browser</b> view and then open the <b>document.xml</b> file contained in

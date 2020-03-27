@@ -58,7 +58,6 @@
         <topicref href="topics/migratingToDITA.dita"/>
         <topicref href="topics/migrating_to_dita.dita"/>
         <topicref href="topics/migrateWordToDita.dita"/>
-        <topicref href="topics/migratingToDITAPractical.dita"/>
         <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
     </topichead>
     <topichead navtitle="SDK Development (Plugins, Frameworks)">
