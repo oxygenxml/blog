@@ -189,7 +189,7 @@
                                                 href="https://www.oxygenxml.com/doc/ug-waCustom/topics/customizing_frameworks.html"
                                                 format="html" scope="external"/></li>
                                 <li><xref
-                                                href="https://www.oxygenxml.com/doc/ug-waCustom/topics/customizing_plugins.html?hl=plugins"
+                                                href="https://www.oxygenxml.com/doc/ug-waCustom/topics/customizing_plugins.html"
                                                 format="html" scope="external">Plugins</xref> can be
                                         implemented to connect the <ph keyref="webauthor"/> to various
                                         servers.</li>

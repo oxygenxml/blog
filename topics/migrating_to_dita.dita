@@ -27,7 +27,7 @@
       <title>Migrating Microsoft Word content to DITA</title>
       <p>The Oxygen XML User Manual has a detailed topic enumerating the possibilities to convert
         Microsoft Word content to DITA: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/ooxml-to-dita.html?hl=migrate%2Cdita"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/ooxml-to-dita.html"
           format="html" scope="external"/></p>
     </section>
     <section id="section_yx1_hv4_4gb">

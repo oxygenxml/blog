@@ -239,7 +239,7 @@
       actions to count the number of words in the entire document (or in the selected text), convert
       the selection to upper, lowercase, or sentence case).</li>
      <li><xref
-       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html?hl=bookmark#author-navigate-document-content__navigating_with_bookmarks"
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html#author-navigate-document-content__navigating_with_bookmarks"
        format="html" scope="external">Bookmarks</xref> - Click the vertical left side bar in the
       editing area to add a bookmark. Navigate to that bookmark even after the file has been closed
       using the <b>Ctrl/CMD + number</b> shortcut.</li>
