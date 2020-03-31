@@ -272,6 +272,12 @@
                 register to watch particular issues. Once a commit is made with a particular
                     <b>#issue_number</b>, the issue will get an automatic link pointing to the
                 commit.</p>
+            <p>Inside an organization or inside a repository you can create <xref
+                    href="https://help.github.com/en/github/managing-your-work-on-github/about-project-boards"
+                    format="html" scope="external">project boards</xref>. A project board can define
+                states for your issues. When an issue is opened it can be assigned to a certain
+                project board. It can also be assigned various labels. Issues can also be assigned
+                to various people in your team.</p>
             <p>Oxygen's <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/author-managing-changes-x-modes2.html"
                     format="html" scope="external">change tracking support</xref> allows you to
