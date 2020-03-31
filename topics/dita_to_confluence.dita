@@ -23,10 +23,10 @@
                     format="html" scope="external"/>.</p>
             <p>Once you publish the DITA project to Word, you can use the <uicontrol>Import Word
                     Document</uicontrol> action in Confluence to import the Word document.<image
-                    placement="break" href="images/wordConfluence.png" id="image_xyv_nxx_vkb"
+                    placement="break" href="../images/wordConfluence.png" id="image_xyv_nxx_vkb"
                 />During the import process, you will be able to choose to split the document into
                 multiple pages depending on the headings.<image placement="break"
-                    href="images/ditaWordSplitHeading.png" id="image_vpw_txx_vkb"/></p>
+                    href="../images/ditaWordSplitHeading.png" id="image_vpw_txx_vkb"/></p>
         </section>
         <section id="section_ahs_xxx_vkb">
             <title>Publish DITA to HTML5 and import in Confluence</title>
@@ -40,7 +40,7 @@
                 unwanted file formats (such as CSS and image files) so these types of files need to
                 be manually deleted before the import process. Also, the plugin does not seem to
                 properly resolve links between the imported HTML files.<image placement="break"
-                    href="images/htmlToConfluence.png" id="image_v5w_myx_vkb"/></p>
+                    href="../images/htmlToConfluence.png" id="image_v5w_myx_vkb"/></p>
         </section>
         <section id="section_i1w_pcy_vkb">
             <title>Publish DITA to HTML5 and paste from Web Browser to Confluence</title>

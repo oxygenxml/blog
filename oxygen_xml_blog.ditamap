@@ -15,7 +15,7 @@
             <topicref href="presentation-reuse/presentation.ditamap" format="ditamap"/>
         </topichead>
         <topichead navtitle="Publishing">
-   <topicref href="dita_to_confluence.dita"/>
+   <topicref href="topics/dita_to_confluence.dita"/>
    <topicref href="topics/dita-generate-changes-list.dita"/>
             <topicref href="topics/migrating-pdf-customizations.dita"/>
             <topicref href="topics/dita_publishing_customization_overview.dita"/>
