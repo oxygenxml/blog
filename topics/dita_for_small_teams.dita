@@ -317,7 +317,9 @@
                     format="html" scope="external">publishing template</xref> containing custom
                 CSSs, headers, footers and logos. The publishing template can be saved in the
                 project and referenced from the transformation scenario.</p>
-            <p>For the <b>PDF</b> output the same publishing template can be used.</p>
+            <p>For the <b>PDF</b> output the same publishing template can be used. To build your
+                custom CSS you can use the <xref href="https://styles.oxygenxml.com/" format="html"
+                    scope="external">Oxygen Styles Basket</xref> online CSS-builder.</p>
             <p>If you are publishing multiple DITA Maps or you have multiple filters or multiple
                 deliverable formats you may want to create a DITA Open Toolkit project file: <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_open_toolkit_project.html"
