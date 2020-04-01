@@ -196,7 +196,11 @@
             <title>Organizing Your Project Structure using the Master Files Support</title>
             <p>You can now start to <xref
                     href="https://github.com/oxygenxml/dita-project-best-practices" format="html"
-                    scope="external">organize your content</xref>. </p>
+                    scope="external">organize your content</xref>. The Oxygen user's manual contains
+                a <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-first-dita-topic-2.html"
+                    format="html" scope="external">Getting Started</xref> guide for DITA
+                editing.</p>
             <p>You can right click the <uicontrol>Project</uicontrol> root and <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html"
                     format="html" scope="external">enable master files</xref>, then in the
