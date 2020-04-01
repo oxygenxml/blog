@@ -371,9 +371,12 @@
   <section id="section_lfz_wkz_ykb">
    <title>Translating your content</title>
    <p>The Oxygen <xref href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
-     format="html" scope="external">Translation Package Builder</xref> add-on allows you to find the
-    changed resources in a DITA project and then to pack those changed resources and send them for
-    translation. It also helps with integrating the received translation in the project.</p>
+                    format="html" scope="external">Translation Package Builder</xref> add-on allows
+                you to find the changed resources in a DITA project and then to pack those changed
+                resources and send them for translation. It also helps with integrating the received
+                translation in the project. This <xref href="translating_your_dita_project.dita"
+                    >blog post</xref> has more details and useful links about translating DITA
+                projects.</p>
   </section>
     </body>
 </topic>
