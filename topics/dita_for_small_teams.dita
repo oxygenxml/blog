@@ -278,6 +278,28 @@
                 the current project folder. You can read more about editor variables <xref
                     href="all_about_editor_variables.dita">here</xref>.</p>
         </section>
+        <section id="section_evr_2wb_vkb">
+            <title>Manual Publishing</title>
+            <p>You can open DITA Maps in the application <b>DITA Maps Manager</b> view and publish
+                them to various outputs using the <b>Configure Transformation Scenarios</b> toolbar
+                button. A transformation scenario can also specify a DITAVAL filter, parameters and
+                can be saved at project level. The published content can be later uploaded to a web
+                server.</p>
+            <p>For <b>WebHelp</b> output you can create a <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/whr-create-publishing-template-x.html"
+                    format="html" scope="external">publishing template</xref> containing custom
+                CSSs, headers, footers and logos. The publishing template can be saved in the
+                project and referenced from the transformation scenario.</p>
+            <p>For the <b>PDF</b> output the same publishing template can be used. To build your
+                custom CSS you can use the <xref href="https://styles.oxygenxml.com/" format="html"
+                    scope="external">Oxygen Styles Basket</xref> online CSS-builder.</p>
+            <p>If you are publishing multiple DITA Maps or you have multiple filters or multiple
+                deliverable formats you may want to create a DITA Open Toolkit project file: <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_open_toolkit_project.html"
+                    format="html" scope="external"/>. A sample DITA OT project file can be found in
+                the <xref href="https://github.com/oxygenxml/blog/blob/master/blog-project.xml"
+                    format="html" scope="external">Oxygen XML Blog project on GitHub</xref>.</p>
+        </section>
         <section id="section_eq5_kbz_tkb">
             <title>Working with Branches</title>
             <p>You may need to mark releases of your product and also to be able to contribute small
@@ -337,28 +359,6 @@
                 which can be used in the <b>Author</b> visual editing mode and can be mounted in the
                 toolbar, menus and the content completion window: <xref
                     href="custom-author-action-js-based.dita"/>.</p>
-        </section>
-        <section id="section_evr_2wb_vkb">
-            <title>Manual Publishing</title>
-            <p>You can open DITA Maps in the application <b>DITA Maps Manager</b> view and publish
-                them to various outputs using the <b>Configure Transformation Scenarios</b> toolbar
-                button. A transformation scenario can also specify a DITAVAL filter, parameters and
-                can be saved at project level. The published content can be later uploaded to a web
-                server.</p>
-            <p>For <b>WebHelp</b> output you can create a <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/whr-create-publishing-template-x.html"
-                    format="html" scope="external">publishing template</xref> containing custom
-                CSSs, headers, footers and logos. The publishing template can be saved in the
-                project and referenced from the transformation scenario.</p>
-            <p>For the <b>PDF</b> output the same publishing template can be used. To build your
-                custom CSS you can use the <xref href="https://styles.oxygenxml.com/" format="html"
-                    scope="external">Oxygen Styles Basket</xref> online CSS-builder.</p>
-            <p>If you are publishing multiple DITA Maps or you have multiple filters or multiple
-                deliverable formats you may want to create a DITA Open Toolkit project file: <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_open_toolkit_project.html"
-                    format="html" scope="external"/>. A sample DITA OT project file can be found in
-                the <xref href="https://github.com/oxygenxml/blog/blob/master/blog-project.xml"
-                    format="html" scope="external">Oxygen XML Blog project on GitHub</xref>.</p>
         </section>
         <section id="section_jt4_t1c_vkb">
             <title>Dynamic Publishing using an Integration Server</title>
