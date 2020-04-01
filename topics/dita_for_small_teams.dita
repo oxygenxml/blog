@@ -19,34 +19,52 @@
                 Blog</xref>.</p>
         <section id="section_zdt_gbq_tkb">
             <title>Overview of Tools Proposed for the Solution</title>
-            <ul id="ul_nlr_lbq_tkb">
-                <li><xref href="https://www.oxygenxml.com/xml_author.html" format="html"
-                        scope="external">Oxygen XML Author</xref> for editing the DITA content and
-                    for offline publishing.</li>
-                <li><xref href="https://github.com/" format="html" scope="external">Github</xref>
-                    for storing the DITA content.</li>
-                <li>[Optional] <xref href="https://www.oxygenxml.com/xml_web_author.html"
-                        format="html" scope="external">Oxygen Web Author</xref> for online
-                    editing/reviewing of DITA content.</li>
-                <li>[Optional] <xref href="https://www.oxygenxml.com/content_fusion.html"
-                        format="html" scope="external">Oxygen Content Fusion</xref> for creating
-                    review tasks for subject matter experts.</li>
-                <li>[Optional] <xref href="https://gradle.org/" format="html" scope="external"
-                        >Gradle</xref> to script the publishing in preparation for an integration
-                    server.</li>
-                <li>[Optional] <xref href="https://www.netlify.com/" format="html" scope="external"
-                        >Netlify</xref> to build and host a web site for the DITA content.</li>
-                <li>[Optional] <xref href="https://www.oxygenxml.com/publishing_engine.html"
-                        format="html" scope="external">Oxygen Publishing Engine</xref> for
-                    publishing to PDF and WebHelp DITA content on an integration server.</li>
-                <li>[Optional] <xref href="https://www.oxygenxml.com/oxygen_feedback.html"
-                        format="html" scope="external">Oxygen WebHelp Feedback</xref> engine for
-                    embedding feedback forms in the HTML pages.</li>
-                <li>[Optional] <xref href="https://www.oxygenxml.com/oxygen_scripting.html"
-                        format="html" scope="external">Oxygen Validate and Check for
-                        Completeness</xref> used with a scripting license to check for validation
-                    problems on an integration server.</li>
-            </ul>
+            <dl>
+                <dlentry>
+                    <dt>Content Management and Workflow</dt>
+                    <dd><xref href="https://github.com/" format="html" scope="external"
+                            >Github</xref> for storing the DITA content.</dd>
+                    <dd><xref href="https://github.com/" format="html" scope="external"
+                            >Github</xref> for creating issues.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Editing</dt>
+                    <dd><xref href="https://www.oxygenxml.com/xml_author.html" format="html"
+                            scope="external">Oxygen XML Author</xref> for editing the DITA content
+                        and for offline publishing.</dd>
+                    <dd>[Optional] <xref href="https://www.oxygenxml.com/xml_web_author.html"
+                            format="html" scope="external">Oxygen Web Author</xref> for online
+                        editing/reviewing of DITA content.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Review</dt>
+                    <dd>[Optional] <xref href="https://www.oxygenxml.com/content_fusion.html"
+                            format="html" scope="external">Oxygen Content Fusion</xref> for creating
+                        review tasks for subject matter experts.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Publishing</dt>
+                    <dd><xref href="https://www.oxygenxml.com/xml_author.html" format="html"
+                            scope="external">Oxygen XML Author</xref> for publishing from inside the
+                        application.</dd>
+                    <dd>[Optional] <xref href="https://www.oxygenxml.com/publishing_engine.html"
+                            format="html" scope="external">Oxygen Publishing Engine</xref> for
+                        publishing to PDF and WebHelp DITA content on an integration server.</dd>
+                    <dd>[Optional] <xref href="https://www.oxygenxml.com/oxygen_feedback.html"
+                            format="html" scope="external">Oxygen WebHelp Feedback</xref> engine for
+                        embedding feedback forms in the HTML pages.</dd>
+                    <dd>[Optional] <xref href="https://gradle.org/" format="html" scope="external"
+                            >Gradle</xref> to script the publishing in preparation for an
+                        integration server.</dd>
+                    <dd>[Optional] <xref href="https://www.netlify.com/" format="html"
+                            scope="external">Netlify</xref> to build and host a web site for the
+                        DITA content.</dd>
+                    <dd>[Optional] <xref href="https://www.oxygenxml.com/oxygen_scripting.html"
+                            format="html" scope="external">Oxygen Validate and Check for
+                            Completeness</xref> used with a scripting license to check for
+                        validation problems on an integration server.</dd>
+                </dlentry>
+            </dl>
             <p>The same set of tools has been used for editing and publishing the Oxygen XML Blog:
                     <xref href="welcome.dita"/>.</p>
         </section>
