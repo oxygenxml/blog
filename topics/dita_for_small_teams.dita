@@ -104,15 +104,15 @@
                     id="ol_q1t_5hr_tkb">
                     <li>Create a GitHub account: <xref href="https://github.com/join" format="html"
                             scope="external"/>.</li>
+                    <li>Create a new public or private repository in the organization for your
+                        project. </li>
                     <li>Create an organization: <xref
                             href="https://github.com/settings/organizations" format="html"
                             scope="external"/>. The organization will be useful to group
-                        work-related projects.</li>
+                        work-related projects. For adding private repositories in an organization
+                        you will need to switch to a paid plan.</li>
                     <li>Add your team members to the organization. Using the team member GitHub user
                         names you can send them invitations to be contributors to the project.</li>
-                    <li>Create a new repository in the organization for your project. For creating
-                        private repositories you will need to switch to a paid plan. The alternative
-                        is to create a new private repository in your own account.</li>
                 </ol></p>
         </section>
         <section id="section_kdx_3wy_tkb">
