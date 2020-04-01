@@ -192,20 +192,6 @@
                         the server and in your local repository.</li>
                 </ul></p>
         </section>
-        <section id="section_eq5_kbz_tkb">
-            <title>Working with Branches</title>
-            <p>You may need to mark releases of your product and also to be able to contribute small
-                fixes to those releases. So here's how you work with branches:<ul
-                    id="ul_brd_4bz_tkb">
-                    <li>The default branch in the project is called <b>master</b> and this is the
-                        branch we've been working until now.</li>
-                    <li>Using <b>GitHub</b>'s web interface you can create your own branch.</li>
-                    <li>Check out again in the <uicontrol>Git Staging</uicontrol> view the project,
-                        this time with the separate branch in a separate folder. </li>
-                    <li>Open the <filepath>project.xpr</filepath> from that branch's checkout, make
-                        changes to the content there, stage, commit and push as usual.</li>
-                </ul></p>
-        </section>
         <section id="section_o51_yfz_tkb">
             <title>Organizing Your Project Structure using the Master Files Support</title>
             <p>You can now start to <xref
@@ -287,6 +273,20 @@
                 </ul>You can use the <b>${pd}</b> editor variable to refer to resources located in
                 the current project folder. You can read more about editor variables <xref
                     href="all_about_editor_variables.dita">here</xref>.</p>
+        </section>
+        <section id="section_eq5_kbz_tkb">
+            <title>Working with Branches</title>
+            <p>You may need to mark releases of your product and also to be able to contribute small
+                fixes to those releases. So here's how you work with branches:<ul
+                    id="ul_brd_4bz_tkb">
+                    <li>The default branch in the project is called <b>master</b> and this is the
+                        branch we've been working until now.</li>
+                    <li>Using <b>GitHub</b>'s web interface you can create your own branch.</li>
+                    <li>Check out again in the <uicontrol>Git Staging</uicontrol> view the project,
+                        this time with the separate branch in a separate folder. </li>
+                    <li>Open the <filepath>project.xpr</filepath> from that branch's checkout, make
+                        changes to the content there, stage, commit and push as usual.</li>
+                </ul></p>
         </section>
         <section id="section_yxk_mhz_tkb">
             <title>Establishing a Workflow</title>
