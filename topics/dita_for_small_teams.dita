@@ -117,8 +117,8 @@
         <section id="section_kdx_3wy_tkb">
             <title>Creating and Modifying Content in the Repository</title>
             <p>You can create and edit DITA topics in a number of ways:<ul id="ul_l2s_kwy_tkb">
-                    <li>Edit topics offline and use GitHub's user interface to upload it, or modify
-                        existing topics using GitHub's web interface.</li>
+                    <li>Edit topics offline and use GitHub's user interface to upload them, or
+                        modify existing topics using GitHub's web interface.</li>
                     <li>Use the <xref
                             href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
                             format="html" scope="external">Oxygen Web Author</xref> to connect to
@@ -237,6 +237,7 @@
      <li><uicontrol>Move/Rename</uicontrol> actions located both in the Oxygen Project and DITA Maps
       Manager view allow you to move topics/maps or images and have references to them automatically
       updated.</li>
+                    <li>Search for references to IDs or rename IDs in the entire project.</li>
      <li>The <uicontrol>Find unreferenced resources</uicontrol> contextual menu action in the DITA
       Maps Manager allows you to find orphan topics or other resources (images, etc).</li>
      <li>You can define profiling condition sets and use them to see in the editing area what
@@ -247,6 +248,9 @@
       add or reply to existing comments.</li>
     </ul>
    </p>
+            <p>You can find out more DITA editing tips in the <xref
+                    href="dita_oriented_tips_and_tricks.dita">DITA Editing Tips And Tricks
+                    blog</xref>.</p>
   </section>
         <section id="section_kdj_3cz_tkb">
             <title>Sharing Common Settings using the Project</title>
