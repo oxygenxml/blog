@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="customizing_the_dita_editing_experience_using_oxygen_xml_editor" outputclass="custom">
+    <title>Customizing the DITA Editing Experience using Oxygen XML Editor</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2020-03-31"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Resource: <xref
+                href="http://blog.oxygenxml.com/2018/03/guided-dita-authoring-solution-overview.html"
+                format="html" scope="external"/><ul id="ul_zbc_jxy_dhb">
+                <li>Go a little bit over the existing DITA editing support:<ul id="ul_ofq_txy_dhb">
+                        <li>New File Templates </li>
+                        <li>Visual editing - CSS styles. CSS inspector?</li>
+                        <li>Content completion. Documentation tips.</li>
+                        <li>Controlled attribute values.</li>
+                        <li>Actions - toolbars, menus.</li>
+                        <li>Validation.</li>
+                        <li>Publishing.</li>
+                    </ul></li>
+                <li>What is a framework configuration? Schemas, actions, CSSs, transformation
+                    scenarios, validation scenarios.</li>
+                <li>Creating an extension for the DITA framework: <xref
+                        href="http://blog.oxygenxml.com/2015/08/document-type-extension-sharing.html"
+                        format="html" scope="external"/></li>
+                <li>Association rules</li>
+                <li>New file
+                    templates<codeblock>&lt;title>&lt;?oxy-placeholder content="Select a title"?>&lt;/title>
+&lt;author>${author.name}&lt;/author>
+${ask('Author Name', generic, 'John Doe')}</codeblock></li>
+                <li>Customizing the CSS used for visual editing: <xref
+                        href="http://blog.oxygenxml.com/2016/10/customizing-dita-visual-editing.html"
+                        format="html" scope="external"/> (CSS
+                    inspector?)<codeblock>li:after {
+    content: oxy_button(actionID, 'listitem', showIcon, true);
+}</codeblock></li>
+                <li>Remove existing Author actions. Maybe b/i/u.</li>
+                <li>Remove existing content completion
+                    proposals.<codeblock>&lt;elementProposals rejectElements="b i u" /></codeblock></li>
+                <li>Add content completion actions to content completion list.
+                        <codeph>reuse.content</codeph></li>
+                                <li>Customizing the content completion proposals: <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/configure-elements-attr-cc-individually.html?hl=cc_config"
+                        format="html" scope="external"
+                    /><codeblock>&lt;elementProposals path="section" insertElements="title p"/>
+&lt;elementProposals path="li" insertElements="p"/></codeblock></li>
+                                <li>Imposing control attribute values: <xref
+                        href="http://blog.oxygenxml.com/2015/07/controlled-attribute-values-for-your.html"
+                        format="html" scope="external"
+                    /><codeblock>&lt;match elementName="data" attributeName="name">
+	&lt;items action="addIfEmpty">
+           &lt;item value="internal"
+                annotation="For internal use only. "/>
+           &lt;item value="classified"
+                annotation="For a certain group, only. "/>
+	&lt;/items>
+&lt;/match></codeblock></li>
+                <li>Add custom author actions:<ul id="ul_i45_vxy_dhb">
+                        <li>Tool<note type="warning"/>bar. <xref
+                                href="https://blog.oxygenxml.com/2019/08/implementing-custom-author-action-to.html"
+                                format="html" scope="external"/></li>
+                        <li>Embedded in Author mode (hover, focus).</li>
+                    </ul></li>
+                <li>Add custom validation scenarios or stages. Schematron, quick fixes.<xref
+                        href="https://blog.oxygenxml.com/2017/02/sharing-schematron-validation-rules.html"
+                        format="html" scope="external"
+                    /><codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
+    xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
+    &lt;sch:pattern>
+        &lt;sch:rule context="title">
+            &lt;sch:assert test="string-length() &amp;lt; 20">Titles should be reasonably small&lt;/sch:assert>
+        &lt;/sch:rule>
+    &lt;/sch:pattern>
+&lt;/sch:schema></codeblock></li>
+                <li>Form
+                    controls.<codeblock>title {
+    content: oxy_textfield(
+          edit, '#text',
+          columns, 40);
+     visibility:-oxy-collapse-text;
+}</codeblock></li>
+                                <li>Add custom XML refactoring actions. <xref
+                        href="https://www.oxygenxml.com/doc/versions/21.1/ug-editor/topics/custom-refactoring-operations-x-tools.html"
+                        format="html" scope="external"/></li>
+                <li>Implementing your own style guide: <xref
+                        href="http://blog.oxygenxml.com/2016/03/implementing-your-own-style-guide.html"
+                        format="html" scope="external"/></li>
+                <li>Smart paste behavior (Word, Web) based on XSLT stylesheets. <xref
+                        href="https://www.oxygenxml.com/doc/versions/21.1/ug-editor/topics/author-customize-smart-paste.html"
+                        format="html" scope="external"/></li>
+                <li>Add custom publishing scenarios or remove the existing ones. Maybe discuss about
+                    publishing template. CSS-based publishing for HTML and PDF output.</li>
+                <li>Customize the DITA Open Toolkit publishing engine used by Oxygen.
+                                                <uicontrol>Preferences->DITA</uicontrol>.<ul
+                                                id="ul_dbd_ymz_3jb">
+                                                <li>Discuss a little bit about DITA specialization
+                                                  integration.</li>
+                                        </ul></li>
+                <li>Spell check, custom dictionaries. Auto-correct. Integration with Acrolinx and
+                    Etteplan.</li>
+                <li>Useful plugins: Git plugin, Batch Converter plugin, DITA Translation Helper
+                    plugin.</li>
+            </ul></p>
+    </body>
+</topic>
