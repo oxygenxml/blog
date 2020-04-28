@@ -74,6 +74,10 @@
         <topicref href="topics/oxygenFrameworks.dita"/>
         <topicref href="topics/packing-add-ons.dita"/>
         <topicref href="topics/all_about_oxygen_add_ons.dita"/>
+        <topicref href="topics/framework-customization-project-level.dita"/>
+        <topicref
+            href="topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.dita"
+            keys="adding_cals_table_related_functionality_to_your_custom_oxygen_framework"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
         <topicref href="topics/general_tips_and_tricks.dita"/>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="adding_cals_table_related_functionality_to_your_custom_oxygen_framework">
+    <title>Adding CALS-table related functionality to your custom Oxygen framework</title>
+    <prolog>
+        <author>Mihaela Calotescu</author>
+    </prolog>
+    <body>
+        <p>Oxygen comes with full support for <b>CALS</b> tables in <b>DITA</b> and <b>Docbook</b>
+            documents, meaning that you can easily make selections, resize columns, and invoke
+            special actions like insert or delete rows and columns, join, or split cells. You can
+            also easily customize tables properties such as alignments, separators, and table
+            borders. But what if you are editing documents from other vocabularies, containing
+            tables with <b>CALS</b> structure? What you can do to obtain the same table editing
+            features?</p>
+        <p>Let's suppose that you already created an Oxygen framework for your documents vocabulary
+            (if you need further information about frameworks, see <xref
+                href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html"
+                format="html" scope="external"
+                >http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html</xref>).
+            What we want to obtain next is to extract all the CALS tables related support from
+                <b>Docbook</b> framework and add it to your custom framework. Why <b>Docbook</b> and
+            not <b>DITA</b> as reference? Because the <b>DITA</b> customization is based on the
+            "class" attribute checking while the <b>Docbook</b> one is more general (element-name
+            oriented).</p>
+        <ol id="ol_mkm_3cy_mlb">
+            <li><b>Table rendering</b><ol id="ol_nkm_3cy_mlb">
+                    <li>copy
+                            <systemoutput>[oXygen_install_dir]\frameworks\docbook\css\cals_table.css</systemoutput>
+                        in your framework css directory</li>
+                    <li> in the <systemoutput>Document Type</systemoutput> edit dialog,
+                            <systemoutput>Author</systemoutput> tab,
+                            <systemoutput>CSS</systemoutput> sub-tab, add the
+                            <systemoutput>${framework}/css/cals_table.css</systemoutput> entry to
+                        the list of the CSSs </li>
+                </ol><p>In this way the table will be rendered properly in Author mode and the
+                    following features will be available: </p><ul id="ul_okm_3cy_mlb">
+                    <li>select cells (<systemoutput>CTRL+click</systemoutput>), rows (click before
+                        the row), columns (click on top of the row), tables (click in the left-up
+                        corner of the table)</li>
+                    <li>resize table column</li>
+                </ul></li>
+            <li><b>Create table actions</b><p>Here are the table-related actions implemented in
+                    Docbook that you can implement also in you framework:</p><ul id="ul_pkm_3cy_mlb">
+                    <li>Expand colspecs</li>
+                    <li>Insert/Delete Rows</li>
+                    <li>Insert/Delete Columns</li>
+                    <li>Table Properties</li>
+                    <li>Join cells</li>
+                    <li>Split cell</li>
+                </ul><ol id="ol_qkm_3cy_mlb">
+                    <li>Copy<systemoutput>
+                            [oXygen_installation_dir]\frameworks\docbook\docbook.jar</systemoutput>
+                        in your framework directory (this jar contains all the table operations
+                        classes needed to create table actions). In <systemoutput>Document
+                            type</systemoutput> edit dialog go to
+                            <systemoutput>Classpath</systemoutput> tab and add the docbook.jar from
+                        your framework directory to the list of paths. In this way you have access
+                        to all table operations from your framework.</li>
+                    <li> For every table action you have to define a corresponding action in the
+                            <systemoutput>Document type</systemoutput> configuration dialog. Here
+                        are the details: <xref
+                            href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/the-action-dialog.html"
+                            format="html" scope="external"
+                            >https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/the-action-dialog.html</xref>.
+                        You can look at the corresponding Docbook action to see the properties (id,
+                        name, icons, the conditions that enables it, the specific operation for CALS
+                        tables). <p>Once you created these actions you can add them to the UI.
+                        </p></li>
+                </ol></li>
+            <li><b>Add table actions to menu, toolbar and contextual menu</b><ol id="ol_rkm_3cy_mlb">
+                    <li>To add an action to the menu go to <systemoutput>Document
+                            Type</systemoutput> configuration dialog,
+                            <systemoutput>Author</systemoutput> tab,
+                            <systemoutput>Menu</systemoutput> sub-tab, select the action from
+                            <systemoutput>Available actions</systemoutput> section and add it to the
+                            <systemoutput>Current action</systemoutput> section.</li>
+                    <li> To add an action to the contextual menu go to <systemoutput>Document
+                            Type</systemoutput> configuration dialog,
+                            <systemoutput>Author</systemoutput> tab, <systemoutput>Contextual
+                            menu</systemoutput> sub-tab, select the action from
+                            <systemoutput>Available actions</systemoutput> section and add it to the
+                            <systemoutput>Current action</systemoutput> section. </li>
+                    <li> To add an action to the toolbar go to <systemoutput>Document
+                            Type</systemoutput> configuration dialog,
+                            <systemoutput>Author</systemoutput> tab,
+                            <systemoutput>Toolbar</systemoutput> sub-tab, select the action from
+                            <systemoutput>Available actions</systemoutput> section and add it to the
+                            <systemoutput>Current action</systemoutput> section. </li>
+                </ol></li>
+        </ol>
+        <p>If all goes well, your custom framework which uses the standard CALS table naming
+            mechanism will properly handle tables, both for display and for table-related
+            operations.</p>
+    </body>
+</topic>
