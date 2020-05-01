@@ -27,6 +27,7 @@
             <topicref href="topics/useful-dita-ot-plugins.dita"/>
             <topicref href="topics/tableRowColors.dita"/>
             <topicref href="topics/creating-simple-dita-open-toolkit.dita"/>
+            <topicref href="topics/using_git_hooks_with_dita.dita"/>
         </topichead>
         <topichead navtitle="Customizing">
             <topicref href="topics/customizeDITACSS.dita"/>
