@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_zxr_233_vkb">
-    <title>Using Git client-side hooks to run  DITA publishing pipelines</title>
+    <title>Using Git client-side hooks to run DITA publishing pipelines</title>
     <shortdesc>This topic describes how to use Git client-side hooks to execute DITA commands and
-        publishing workflows, with a emphasis on using <xref
+        publishing workflows, with
+        a<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000327+0000"?>n<?oxy_insert_end?>
+        emphasis on using
+        <?oxy_insert_start author="Steven Higgs" timestamp="20200511T000331+0000"?>the
+            <?oxy_insert_end?><xref
             href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html" format="html"
             scope="external">Oxygen's Git Client</xref>.</shortdesc>
     <prolog>
@@ -16,87 +20,124 @@
         <section id="section_itq_3r4_nlb">
             <title>Prerequisites</title>
             <ol id="ol_lhp_pvs_nlb">
-                <li>Oxygen's Git client is based on <xref href="https://www.eclipse.org/jgit/"
-                        format="html" scope="external">JGit library</xref>. When running on Windows,
-                    this library relies on <xref href="https://www.cygwin.com/" format="html"
-                        scope="external">CYGWIN</xref> to run the Git hooks. <xref
+                <li>Oxygen's Git client is based
+                    on<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000358+0000"?> the<?oxy_insert_end?>
+                    <xref href="https://www.eclipse.org/jgit/" format="html" scope="external">JGit
+                        library</xref>. When running on Windows, this library relies on <xref
                         href="https://www.cygwin.com/" format="html" scope="external">CYGWIN</xref>
-                    must be installed and added to the path.</li>
+                    to run the Git hooks. <xref href="https://www.cygwin.com/" format="html"
+                        scope="external">CYGWIN</xref> must be installed and added to the path.</li>
                 <li>If you are running on Windows, you either need an <xref
                         href="https://github.com/oxygenxml/oxygen-git-plugin/releases/download/2.0.0/git.support-2.0.0-plugin.jar"
                         format="jar" scope="external">Oxygen Git client version 2.0.0</xref> or one
-                    newer than 2.1.1 (I know that at the time this post is written 2.1.1 is the
-                    latest version, but soon a new one will be released). We are basically avoiding
-                    versions that come bundled with JGit 5.6.0 which has this <xref
-                        href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=558577" format="html"
-                        scope="external">known issue</xref>.<p>If you need to install version 2.0.0
-                        of the plugin, since this  version is no longer available in the add-on, you
-                        have to install it manually like this:<ul id="ul_kkb_1ct_nlb">
+                    newer than 2.1.1
+                    (<?oxy_delete author="Steven Higgs" timestamp="20200511T000439+0000" content="I know that "?>at
+                    the time this post is
+                    written<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000444+0000"?>,<?oxy_insert_end?>
+                    2.1.1
+                    <?oxy_delete author="Steven Higgs" timestamp="20200511T000450+0000" content="i"?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T000452+0000"?>wa<?oxy_insert_end?>s
+                    the latest version, but
+                    <?oxy_delete author="Steven Higgs" timestamp="20200511T000507+0000" content="soon "?>a
+                    new one
+                    will<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000500+0000"?>
+                    soon<?oxy_insert_end?> be released). We are basically avoiding versions that
+                    come bundled with JGit
+                    5.6.0<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000521+0000"?>,<?oxy_insert_end?>
+                    which has this <xref href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=558577"
+                        format="html" scope="external">known issue</xref>.<p>If you need to install
+                        version 2.0.0 of the plugin, since this version is no longer available in
+                        the add-on, you have to install it
+                            manually<?oxy_delete author="Steven Higgs" timestamp="20200511T000607+0000" content=" like this"?>:<ol
+                            id="ul_kkb_1ct_nlb">
                             <li>Uninstall the current Oxygen Git client version, if one is
-                                present</li>
+                                present<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000613+0000"?>.<?oxy_insert_end?></li>
                             <li>Download <xref
                                     href="https://github.com/oxygenxml/oxygen-git-plugin/releases/download/2.0.0/git.support-2.0.0-plugin.jar"
                                     format="html" scope="external">Oxygen Git client version
-                                    2.0.0</xref></li>
-                            <li>unzip it inside <filepath>{oxygenInstallDir}/plugins</filepath>.
-                                Make sure you don't create any intermediate folders. The path should
-                                be like this:
-                                    <filepath>{oxygenInstallDir}/git.support-2.0.0/plugin.xml</filepath></li>
-                        </ul></p></li>
+                                    2.0.0</xref><?oxy_insert_start author="Steven Higgs" timestamp="20200511T000616+0000"?>.<?oxy_insert_end?></li>
+                            <li><?oxy_delete author="Steven Higgs" timestamp="20200511T000621+0000" content="u"?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T000621+0000"?>U<?oxy_insert_end?>nzip
+                                it inside <filepath>{oxygenInstallDir}/plugins</filepath>. Make sure
+                                you don't create any intermediate folders. The path should be like
+                                this:
+                                    <filepath>{oxygenInstallDir}/git.support-2.0.0/plugin.xml</filepath><?oxy_insert_start author="Steven Higgs" timestamp="20200511T000636+0000"?>.<?oxy_insert_end?></li>
+                        </ol></p></li>
                 <li>The DITA-OT command utility needs to be added to the path so that the presented
                     script will work.</li>
             </ol>
         </section>
         <section id="section_ift_n33_vkb">
-            <title>What is a Git hook</title>
+            <title>What is a Git
+                hook<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000649+0000"?>?<?oxy_insert_end?></title>
             <p>Git has a way to fire off custom scripts when certain important actions occur. There
                 are two groups of these hooks: <term>client-side</term> and
                 <term>server-side</term>. <term>Client-side</term> hooks are triggered by operations
                 such as committing and merging, while<term> server-side</term> hooks run on network
                 operations such as receiving pushed commits. You can read more about what types of
-                hooks are available on <xref
-                    href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" format="html"
+                hooks are available <?oxy_delete author="Steven Higgs" timestamp="20200511T000722+0000" content="on"?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T000722+0000"?>at<?oxy_insert_end?>
+                <xref href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" format="html"
                     scope="external">Customizing Git - Git Hooks</xref>.</p>
         </section>
         <section id="section_frm_gk3_vkb">
             <title>Using a client side hook with a DITA project</title>
-            <p>The main scenario we are focusing in this topic is about using client-side hooks
-                while working with DITA and storing it in a Git repository and how to enable
-                Oxygen’s built-in <xref
+            <p>The main scenario we are
+                focusing<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000743+0000"?>
+                on<?oxy_insert_end?> in this topic is about using client-side hooks while working
+                with DITA and storing it in a Git
+                repository<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000756+0000"?>,<?oxy_insert_end?>
+                and how to enable Oxygen’s built-in <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
                     format="html" scope="external">Git Client </xref> to execute these hooks.</p>
         </section>
         <section id="section_sjm_nj3_vkb">
             <p>The hooks are all stored in the <codeph>hooks</codeph> subdirectory of the Git
-                directory which is by default <codeph>.git/hooks</codeph>. An useful client-side
-                hook is the <term>pre-commit</term> hook. It’s used to inspect the snapshot that’s
-                about to be committed, to see if you’ve forgotten something, to make sure tests like
-                Oxygen's <xref href="https://www.oxygenxml.com/oxygen_scripting.html" format="html"
-                    scope="external">Validate and Check for completeness</xref> run, or to examine
-                whatever you need to inspect in the code. </p>
+                directory<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000808+0000"?>,<?oxy_insert_end?>
+                which is
+                    <?oxy_delete author="Steven Higgs" timestamp="20200511T000825+0000" content="by default "?><codeph>.git/hooks</codeph><?oxy_insert_start author="Steven Higgs" timestamp="20200511T000832+0000"?>
+                by default<?oxy_insert_end?>.
+                A<?oxy_delete author="Steven Higgs" timestamp="20200511T000838+0000" content="n"?>
+                useful client-side hook is the <term>pre-commit</term> hook. It’s used to inspect
+                the snapshot that’s about to be committed, to see if you’ve forgotten something, to
+                make sure tests like Oxygen's <xref
+                    href="https://www.oxygenxml.com/oxygen_scripting.html" format="html"
+                    scope="external">Validate and Check for completeness</xref>
+                run<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000858+0000"?>
+                properly<?oxy_insert_end?>, or to examine whatever you need to inspect in the
+                code.<?oxy_delete author="Steven Higgs" timestamp="20200511T000906+0000" content=" "?></p>
             <p>To make it easier to follow, though, we will use a use case reported by one of
-                Oxygen's users: generate a Markdown version of our documentation whenever you commit
-                something. When I tried to do the same thing myself, I to encountered a number of
-                challenges and I think it will help others read how I managed to solve it.</p>
+                Oxygen's
+                users<?oxy_insert_start author="Steven Higgs" timestamp="20200511T000931+0000"?>.<?oxy_insert_end?><?oxy_delete author="Steven Higgs" timestamp="20200511T000930+0000" content=":"?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T000933+0000"?>
+                That is to<?oxy_insert_end?> generate a Markdown version of
+                <?oxy_insert_start author="Steven Higgs" timestamp="20200511T000948+0000"?>the<?oxy_insert_end?><?oxy_delete author="Steven Higgs" timestamp="20200511T000947+0000" content="our"?>
+                documentation whenever you commit something. When I tried to do the same thing
+                myself, I
+                <?oxy_delete author="Steven Higgs" timestamp="20200511T001000+0000" content="to "?>encountered
+                <?oxy_delete author="Steven Higgs" timestamp="20200511T001006+0000" content="a number of"?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T001006+0000"?>some<?oxy_insert_end?>
+                challenges and I think it will help
+                others<?oxy_insert_start author="Steven Higgs" timestamp="20200511T001019+0000"?> if
+                they<?oxy_insert_end?> read how I managed to solve it.</p>
         </section>
         <section id="section_jfj_nm3_vkb">
             <title>Installing a <term>pre-commit</term> hook</title>
             <p>Git automatically populates the <codeph>.git/hooks</codeph> directory with example
-                scripts when you initialize a repository. All we need to do is rename<term>
-                    pre-commit.sample </term>to simply <term>pre-commit</term> and put in it the
-                script we are interested in.</p>
+                scripts when you initialize a repository. All we need to do is rename<?oxy_insert_start author="Steven Higgs" timestamp="20200511T001042+0000"?>
+                <?oxy_insert_end?><term><?oxy_delete author="Steven Higgs" timestamp="20200511T001041+0000" content=" "?>pre-commit.sample<?oxy_delete author="Steven Higgs" timestamp="20200511T001049+0000" content=" "?></term><?oxy_insert_start author="Steven Higgs" timestamp="20200511T001051+0000"?>
+                <?oxy_insert_end?>to simply <term>pre-commit</term> and put in it the script we are
+                interested in.</p>
             <note>The DITA-OT command utility needs to be added to the path in order for the
                 following script to work.</note>
-            <p>The content of the <term>pre-commit</term> file is something like this. We assume
-                that the map to publish is called <filepath>README.ditamap</filepath> and it is
-                located inside the project root directory.</p>
+            <p>The content of the <term>pre-commit</term> file is something like this<?oxy_delete author="Steven Higgs" timestamp="20200511T001114+0000" content="."?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T001114+0000"?>:<?oxy_insert_end?>
+                <?oxy_delete author="Steven Higgs" timestamp="20200511T001117+0000" content="W"?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T001118+0000"?>w<?oxy_insert_end?>e
+                assume that the map to publish is called <filepath>README.ditamap</filepath> and it
+                is located inside the project root directory.</p>
             <p>
-                <note>Oxygen's Git client is based on <xref href="https://www.eclipse.org/jgit/"
-                        format="html" scope="external">JGit library</xref>. When running on Windows,
-                    this library relies on <xref href="https://www.cygwin.com/" format="html"
-                        scope="external">CYGWIN</xref> to run these Git scripts. <xref
+                <note>Oxygen's Git client is based
+                    on<?oxy_insert_start author="Steven Higgs" timestamp="20200511T001131+0000"?> the<?oxy_insert_end?>
+                    <xref href="https://www.eclipse.org/jgit/" format="html" scope="external">JGit
+                        library</xref>. When running on Windows, this library relies on <xref
                         href="https://www.cygwin.com/" format="html" scope="external">CYGWIN</xref>
-                    must be installed and added to the path.</note>
+                    to run these Git scripts. <xref href="https://www.cygwin.com/" format="html"
+                        scope="external">CYGWIN</xref> must be installed and added to the
+                    path.</note>
             </p>
             <pre>#!/bin/sh
 set -x
@@ -127,9 +168,13 @@ dita --input=$ROOT_DIR/README.ditamap --format=markdown --output=$ROOT_DIR/docs/
 
 # Exit with status of last command
 exit </pre>
-            <p>The first challenge in the script above. If I don't pass the ditamap path through
-                    <codeph>ROOT_DIR=`cygpath --mixed "$ROOT_DIR"`</codeph> the DITA publishing
-                pipeline fails
+            <p>The first challenge in the script
+                above<?oxy_delete author="Steven Higgs" timestamp="20200511T001150+0000" content="."?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T001150+0000"?>
+                is that<?oxy_insert_end?>
+                <?oxy_delete author="Steven Higgs" timestamp="20200511T001154+0000" content="I"?><?oxy_insert_start author="Steven Higgs" timestamp="20200511T001154+0000"?>i<?oxy_insert_end?>f
+                I don't pass the ditamap path through <codeph>ROOT_DIR=`cygpath --mixed
+                    "$ROOT_DIR"`</codeph><?oxy_insert_start author="Steven Higgs" timestamp="20200511T001201+0000"?>,<?oxy_insert_end?>
+                the DITA publishing pipeline fails
                 with:<codeblock>Error: Failed to run pipeline: [DOTA069F][FATAL] Input file 'file:/cygdrive/c/Users/.../git-hooks-sample/.git/hooks/../../README.ditamap' cannot be located or read. Ensure that file was specified properly and that you have permission to access it.</codeblock></p>
             <p>Having done that, running this hook on Windows will still fail, inside the DITA
                 pipeline,
@@ -153,3 +198,4 @@ ant_exec_args="$ant_exec_args \"-buildfile\" \"$BUILD_FILE\" \"-main\" \"org.dit
         </section>
     </body>
 </topic>
+<?oxy_options track_changes="on"?>
