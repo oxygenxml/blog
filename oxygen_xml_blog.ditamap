@@ -26,7 +26,6 @@
             <topicref href="topics/adding-latex-equation-support-dita.dita"/>
             <topicref href="topics/useful-dita-ot-plugins.dita"/>
             <topicref href="topics/tableRowColors.dita"/>
-            <topicref href="topics/b.dita"/>
             <topicref href="topics/creating-simple-dita-open-toolkit.dita"/>
             <topicref href="topics/using_git_hooks_with_dita.dita"/>
         </topichead>
