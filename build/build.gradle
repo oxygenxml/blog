@@ -40,8 +40,7 @@ task runValidation(type:Exec, dependsOn: [initValidation]) {
   doLast {
         if(execResult) {
             println new File("${projectDir}/../../site/validationReport.xml").text
-            throw new TaskExecutionException( it,
-                new Exception( "Validation failed. See task output for details." )
+            throw new TaskExecutionException("Validation failed. See task output for details." )
         }
     }
 }
