@@ -14,7 +14,7 @@ jobs:
           java-version: 1.8
       - name: Make gradlew executable
         run: chmod +x ./build/gradlewCustom
-      - name: License
-        run: setenv SCRIPTING_LICENSE_KEY "${{secrets.SCRIPTING_LICENSE_KEY}}"
       - name: Build with Gradle
+        env: # Or as an environment variable
+         SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
         run: cd ./build;./gradlewCustom runValidation
