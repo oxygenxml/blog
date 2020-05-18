@@ -22,7 +22,7 @@
         structured: <xref
           href="migratingToDITA.dita"/>. </p>
       <p>This older blog post details some possibilities of migrating Word documents to DITA: <xref
-        href="migratingToDITAPractical.dita"/>.</p>
+        href="migrateWordToDita.dita"/>.</p>
       <p>You also have ways to migrate from XML-based standards (like DocBook or XHTML to DITA)
         using a set of predefined transformation scenarios.</p>
     </section>
