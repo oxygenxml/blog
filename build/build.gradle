@@ -35,7 +35,6 @@ task initValidation {
 
 task runValidation(type:Exec, dependsOn: [initValidation]) {
  workingDir "${projectDir}/extracted/oxygen"
- ignoreExitValue true
  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
 }
 
@@ -50,6 +49,6 @@ task postProcessValidation(dependsOn: [runValidation]) {
  }
 }
 
-task dist(dependsOn: [copySite, postProcessValidation])
+task dist(dependsOn: [copySite])
 
 defaultTasks 'dist'
