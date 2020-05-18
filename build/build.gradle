@@ -38,7 +38,7 @@ task runValidation(type:Exec, dependsOn: [initValidation]) {
  commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/extracted/oxygen/validationReport.xml"
  ignoreExitValue true
   doLast {
-        if(execResult != 0) {
+        if(execResult.getExitValue() != 0) {
             println new File("${projectDir}/extracted/oxygen/validationReport.xml").text
             throw new TaskExecutionException("Validation failed. See task output for details." )
         }
