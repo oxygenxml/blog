@@ -15,4 +15,4 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./build/gradlewCustom
       - name: Build with Gradle
-        run: ./build/gradlewCustom runValidation
+        run: cd ./build;./gradlewCustom runValidation
