@@ -13,8 +13,8 @@ jobs:
         with:
           java-version: 1.8
       - name: Make gradlew executable
-        run: chmod +x ./build/gradlewCustom --info --stacktrace
+        run: chmod +x ./build/gradlewCustom
       - name: Build with Gradle
         env: # Or as an environment variable
          SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
-        run: cd ./build;./gradlewCustom runValidation
+        run: cd ./build;./gradlewCustom --info --stacktrace runValidation
