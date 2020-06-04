@@ -18,7 +18,7 @@ task runTransformation(type:Exec, dependsOn: [initDOT]) {
 }
 
 task copySite(type: Copy, dependsOn: [runTransformation]) {
-    from "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/out/site"
+    from "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/site"
     into "${projectDir}/../site"
 }
 
