@@ -14,7 +14,7 @@ task initDOT {
 
 task runTransformation(type:Exec, dependsOn: [initDOT]) {
  workingDir "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin"
- commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--project", "${projectDir}/../blog-project.xml"
+ commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--o=.", "--project", "${projectDir}/../blog-project.xml"
 }
 
 task copySite(type: Copy, dependsOn: [runTransformation]) {
