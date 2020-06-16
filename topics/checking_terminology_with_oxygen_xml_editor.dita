@@ -10,7 +10,7 @@
       you have available to impose your own language checking rules when working with Oxygen XML
       Editor.</section>
         <section id="section_ps4_mrb_g1b">
-            <title>Built-in support</title>
+            <title>Built-in spell checker</title>
             <p>Oxygen comes bundled with the popular <xref href="http://hunspell.github.io/"
           format="html" scope="external">Hunspell</xref> spell checker and along with the regular
         bundled dictionaries for English, German, Spanish, and French, it allows you to install new
@@ -19,10 +19,39 @@
           href="https://www.oxygenxml.com/doc/ug-editor/topics/spell-dictionary-Hunspell.html"
           format="html" scope="external"/>.</p>
             <p>Besides the spell checker, Oxygen also has support for <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/autocorrect.html"
-                    format="html" scope="external">Auto-correct</xref> and you can add your own
-                Auto-correct pairs to Oxygen.</p>
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/autocorrect.html" format="html"
+          scope="external">Auto-correct</xref> and you can add your own Auto-correct pairs to
+        Oxygen. But the spell checker is limited to checking individual words.</p>
         </section>
+    <section id="section_tdl_pbr_1mb">
+      <title>Oxygen Terminology Checker</title>
+      <p>In the main application menu <uicontrol>Help->Install new add-ons</uicontrol> you can
+        choose to browse the <uicontrol>Default update site</uicontrol> and install the add-on named
+          <uicontrol>Terminology Checker</uicontrol>. </p>
+      <p>Once the add-on is installed it will allow you to highlight matched terms (words or
+        sequences of words) in the Author visual editing mode.</p>
+      <p>First you need to use the <uicontrol>File->New</uicontrol> dialog wizard to create a new
+          <uicontrol>Terminology File</uicontrol>, edit that file and add mappings between matched
+        terms and their suggested replacements, like for
+        example:<codeblock outputclass="language-xml">&lt;incorrect-terms>
+    ....
+    &lt;incorrect-term ignorecase="true">
+        &lt;match>virtual assistant&lt;/match>
+        &lt;suggestion>personal digital assistant&lt;/suggestion>
+        &lt;message>Prefer 'pda' over 'va'&lt;/message>
+    &lt;/incorrect-term>
+   ......
+&lt;/incorrect-terms></codeblock></p>
+      <p>Then go to the <uicontrol>Preferences->Plugins / Oxygen Terminology Checker</uicontrol>
+        page and refer in the <uicontrol>Terminology Folder</uicontrol> text field to that folder
+        where your terminology files are located. The incorrect terms which have been previously
+        configured should now be highlighted in current editor in the Author visual editing
+        mode.</p>
+      <p>You can right click the highlights to access various actions allowing you to replace each
+        individual highlight with suggestions or to apply the same suggestion in multiple places in
+        the opened document.<image href="../images/term-checker-sample.png" id="image_sll_g2r_1mb"
+          scale="50"/></p>
+    </section>
         <section id="section_ild_5rb_g1b">
             <title>Commercial alternatives</title>
             <p><xref href="https://support.acrolinx.com/hc/en-us" format="html" scope="external"
