@@ -66,7 +66,7 @@
         <section id="section_h1h_msb_g1b">
             <title>Open-source alternatives</title>
             <p><xref href="https://www.languagetool.org/" format="html" scope="external"
-          >LanguageTools</xref> is an open-source proof­reading program for English, French, German,
+          >LanguageTool</xref> is an open-source proof­reading program for English, French, German,
         Polish, and more than 20 other languages . There is an open-source plugin for Oxygen
         available on <xref href="https://github.com/danielnaber/oxygen-languagetool-plugin"
           format="html" scope="external">GitHub</xref>.</p>
@@ -86,8 +86,8 @@
           href="https://www.oxygenxml.com/oxygen_sdk.html" format="html" scope="external">Author
           SDK</xref> to build your own Oxygen plugin, which can use our API to check the content and
         then add highlights. The <xref href="https://www.languagetool.org/" format="html"
-          scope="external">LanguageTools</xref> open-source plugin may be a good starting example
-        for this.</p>
+          scope="external">LanguageTool</xref> open-source plugin may be a good starting example for
+        this.</p>
         </section>
     </body>
 </topic>
