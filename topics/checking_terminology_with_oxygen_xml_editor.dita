@@ -27,7 +27,8 @@
       <title>Oxygen Terminology Checker</title>
       <p>In the main application menu <uicontrol>Help->Install new add-ons</uicontrol> you can
         choose to browse the <uicontrol>Default update site</uicontrol> and install the add-on named
-          <uicontrol>Terminology Checker</uicontrol>. </p>
+          <uicontrol>Terminology Checker</uicontrol>. The terminology checker add-on is available
+        for Oxygen version 20.0 or newer.</p>
       <p>Once the add-on is installed it will allow you to highlight matched terms (words or
         sequences of words) in the Author visual editing mode.</p>
       <p>First you need to use the <uicontrol>File->New</uicontrol> dialog wizard to create a new
