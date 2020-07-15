@@ -98,6 +98,11 @@
                     </ul></li>
                 <li>After all changes have been made to your fork of the project, you can create a
                     pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
+                <li>There is a <xref
+                        href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/workflow.yml"
+                        format="html" scope="external">GitHub action</xref> implemented in the
+                    project which will automatically run DITA validation on the entire project
+                    branch and will report on the pull request if the validation is successful. </li>
                 <li>We will review your changes and if your pull requests is accepted, the blog web
                     site will be automatically updated with the new changes.</li>
             </ol>
