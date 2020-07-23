@@ -5,7 +5,7 @@ task initDOT {
    doLast {
    if(! new File("${projectDir}/dita-ot/oxygen-publishing-engine-3.x/").exists()){
        //https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine-3.x.zip
-       ant.get(src: 'http://mirror.oxygenxml.com/maven-nightly/com/oxygenxml/oxygen-publishing-engine-3.x/22.1-SNAPSHOT/oxygen-publishing-engine-3.x-22.1-SNAPSHOT-package-full.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
+       ant.get(src: 'https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine-3.x.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
        ant.unzip(src: "${projectDir}/dita-ot.zip", dest: 'dita-ot')
        new File("${projectDir}/dita-ot/oxygen-publishing-engine-3.x/licensekey.txt").write(System.getenv( 'LICENSE_KEY' ).replaceAll("  ", "\n"))
     }
@@ -14,11 +14,11 @@ task initDOT {
 
 task runTransformation(type:Exec, dependsOn: [initDOT]) {
  workingDir "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin"
- commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--project", "${projectDir}/../blog-project.xml"
+ commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/dita", "--output=.", "--project", "${projectDir}/../blog-project.xml"
 }
 
 task copySite(type: Copy, dependsOn: [runTransformation]) {
-    from "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/out/site"
+    from "${projectDir}/dita-ot/oxygen-publishing-engine-3.x/bin/site"
     into "${projectDir}/../site"
 }
 
@@ -35,8 +35,17 @@ task initValidation {
 
 task runValidation(type:Exec, dependsOn: [initValidation]) {
  workingDir "${projectDir}/extracted/oxygen"
+ commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/extracted/oxygen/validationReport.xml"
  ignoreExitValue true
- commandLine "sh", "${projectDir}/extracted/oxygen/validateCheckDITA.sh", "-i", "${projectDir}/../oxygen_xml_blog.ditamap", "-r", "${projectDir}/../site/validationReport.xml"
+  doLast {
+        if(execResult.getExitValue() != 0) {
+            println new File("${projectDir}/extracted/oxygen/validationReport.xml").text
+            throw new TaskExecutionException( it,
+                new Exception( "Validation failed; "
+                              + "see task output for details." )
+            )
+        }
+    }
 }
 
 task postProcessValidation(dependsOn: [runValidation]) {
@@ -50,6 +59,6 @@ task postProcessValidation(dependsOn: [runValidation]) {
  }
 }
 
-task dist(dependsOn: [copySite, postProcessValidation])
+task dist(dependsOn: [copySite])
 
 defaultTasks 'dist'

@@ -8,6 +8,6 @@ The blog contents are automatically published using Netlify: https://oxygenxmlbl
 
 Copyright and License
 ---------------------
-Copyright 2019 Syncro Soft SRL.
+Copyright 2020 Syncro Soft SRL.
 
 The materials in this repository are licensed under [Creative Commons Attribution Share Alike 4.0 (CC BY SA)](https://creativecommons.org/licenses/by-sa/4.0/legalcode)

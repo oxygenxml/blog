@@ -1,34 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="checking_terminology_with_oxygen_xml_editor">
-    <title>Checking terminology with <ph keyref="oxygen"/></title>
+    <title>Checking Terminology with <ph keyref="oxygen"/></title>
   <prolog>
     <author>Radu Coravu</author>
   </prolog>
     <body>
-        <section>In this blog post I will offer a general overview about the current possibilities
+        <section>In this blog post, I will offer a general overview about the current possibilities
       you have available to impose your own language checking rules when working with Oxygen XML
       Editor.</section>
         <section id="section_ps4_mrb_g1b">
-            <title>Built-in support</title>
+            <title>Built-in spell checker</title>
             <p>Oxygen comes bundled with the popular <xref href="http://hunspell.github.io/"
-          format="html" scope="external">Hunspell</xref> spell checker and along with the regular
+          format="html" scope="external">Hunspell</xref> spell checker and, along with the regular
         bundled dictionaries for English, German, Spanish, and French, it allows you to install new
         dictionaries, either for other languages or custom dictionaries (for example, dictionaries
         for medical terms) that you can build separately: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/spell-dictionary-Hunspell.html"
           format="html" scope="external"/>.</p>
-            <p>Besides the spell checker, Oxygen also has support for <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/autocorrect.html"
-                    format="html" scope="external">Auto-correct</xref> and you can add your own
-                Auto-correct pairs to Oxygen.</p>
+            <p>Aside from the spell checker, Oxygen also has support for <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/autocorrect.html" format="html"
+          scope="external">Auto-correct</xref> and you can add your own Auto-correct pairs to
+        Oxygen, but the spell checker is limited to checking individual words.</p>
         </section>
+    <section id="section_tdl_pbr_1mb">
+      <title>Oxygen Terminology Checker</title>
+      <p>In the main application, you can select <uicontrol>Install new add-ons</uicontrol> from the
+          <uicontrol>Help</uicontrol> menu, browse the <uicontrol>Default update site</uicontrol>,
+        and install the add-on named <uicontrol>Terminology Checker</uicontrol>. The terminology
+        checker add-on is available for Oxygen version 20.0 or newer.</p>
+      <p>Once the add-on is installed, it will allow you to highlight matched terms (words or
+        sequences of words) in the <uicontrol>Author</uicontrol> visual editing mode.</p>
+      <p>First, you need to use the <uicontrol>File->New</uicontrol> dialog wizard to create a new
+          <uicontrol>Terminology File</uicontrol>, edit that file, and add mappings between matched
+        terms and their suggested replacements, as in the following
+        example:<codeblock outputclass="language-xml">&lt;incorrect-terms>
+    ....
+    &lt;incorrect-term ignorecase="true">
+        &lt;match>virtual assistant&lt;/match>
+        &lt;suggestion>personal digital assistant&lt;/suggestion>
+        &lt;message>Prefer 'pda' over 'va'&lt;/message>
+    &lt;/incorrect-term>
+   ......
+&lt;/incorrect-terms></codeblock></p>
+      <p>Then go to the <uicontrol>Preferences->Plugins / Oxygen Terminology Checker</uicontrol>
+        page and in the <uicontrol>Terminology Folder</uicontrol> text field, reference that folder
+        where your terminology files are located. The incorrect terms that have been previously
+        configured should now be highlighted in current editor in <uicontrol>Author</uicontrol>
+        mode.</p>
+      <p>You can right-click the highlights to access various actions that allow you to replace each
+        individual highlight with suggestions or to apply the same suggestion in multiple places in
+        the currently open document.<image href="../images/term-checker-sample.png"
+          id="image_sll_g2r_1mb" scale="50"/></p>
+    </section>
         <section id="section_ild_5rb_g1b">
             <title>Commercial alternatives</title>
             <p><xref href="https://support.acrolinx.com/hc/en-us" format="html" scope="external"
           >Acrolinx</xref> is a very popular commercial tool for checking content for consistency
         and terminology. The plugins that Acrolinx developed for Oxygen standalone, Oxygen Eclipse
-        plugin and Oxygen Web Author allow you to run the Acrolinx checker directly from inside the
+        plugin, and Oxygen Web Author allow you to run the Acrolinx checker directly from inside the
         application.</p>
             <p><xref href="https://www.simplifiedenglish.net/hyperste/" format="html"
           scope="external">HyperSTE</xref> is another popular commercial tool for checking content
@@ -37,7 +67,7 @@
         <section id="section_h1h_msb_g1b">
             <title>Open-source alternatives</title>
             <p><xref href="https://www.languagetool.org/" format="html" scope="external"
-          >LanguageTools</xref> is an open-source proof­reading program for English, French, German,
+          >LanguageTool</xref> is an open-source proof­reading program for English, French, German,
         Polish, and more than 20 other languages . There is an open-source plugin for Oxygen
         available on <xref href="https://github.com/danielnaber/oxygen-languagetool-plugin"
           format="html" scope="external">GitHub</xref>.</p>
@@ -52,13 +82,13 @@
         Schematron rules. The <xref href="https://github.com/doctales/org.doctales.terminology"
           format="html" scope="external">Doctales</xref> plugin is a good example for this. </p>
             <p>At some point, as the terminology dictionary keeps growing, you may encounter delays
-        and slow downs when editing the documents and validating it using the custom Schematron
-        rules. So an alternative to this is by using our <xref
+        and slow-downs when editing the document and validating it using the custom Schematron
+        rules. So, an alternative to this is by using our <xref
           href="https://www.oxygenxml.com/oxygen_sdk.html" format="html" scope="external">Author
           SDK</xref> to build your own Oxygen plugin, which can use our API to check the content and
         then add highlights. The <xref href="https://www.languagetool.org/" format="html"
-          scope="external">LanguageTools</xref> open-source plugin may be a good starting example
-        for this.</p>
+          scope="external">LanguageTool</xref> open-source plugin may be a good starting example for
+        this.</p>
         </section>
     </body>
 </topic>

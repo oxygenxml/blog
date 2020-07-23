@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="welcome">
-    <title>Welcome to the <ph keyref="oxygen"/> Blog Test !</title>
+    <title>Welcome to the <ph keyref="oxygen"/> Blog !</title>
     <prolog>
         <author>Radu Coravu</author>
         <copyright>
@@ -57,10 +57,10 @@
                     <li>Each page has a comments section build using the <xref
                             href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
                             scope="external">Oxygen Feedback</xref> platform.</li>
-                    <li>A validation report of the DITA content (reporting for example broken links)
-                        is available along with the published output: <xref
-                            href="https://oxygenxmlblog.netlify.com/validationReport.xml"
-                            scope="external" format="xml"/>.</li>
+                    <li>Each time content is added to the project there is a <xref
+                            href="https://github.com/oxygenxml/blog/actions" format="html"
+                            scope="external">configured GitHub action</xref> which runs a validation
+                        report of the DITA content (reporting for example broken links).</li>
                 </ul></p>
         </section>
         <section id="section_tnr_rr3_jkb">
@@ -98,6 +98,11 @@
                     </ul></li>
                 <li>After all changes have been made to your fork of the project, you can create a
                     pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
+                <li>There is a <xref
+                        href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/workflow.yml"
+                        format="html" scope="external">GitHub action</xref> implemented in the
+                    project which will automatically run DITA validation on the entire project
+                    branch and will report on the pull request if the validation is successful. </li>
                 <li>We will review your changes and if your pull requests is accepted, the blog web
                     site will be automatically updated with the new changes.</li>
             </ol>
@@ -142,7 +147,7 @@
                 <li> Oxygen DITA <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-map-validate.html"
                         format="html" scope="external">Validate and Check for Completeness</xref> is
-                    run on the server side with the help of a <xref
+                    run as a GitHub action with the help of a <xref
                         href="https://www.oxygenxml.com/oxygen_scripting.html" format="html"
                         scope="external">special scripting license</xref>.</li>
                 <li><xref href="https://www.netlify.com/" format="html" scope="external"
