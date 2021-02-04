@@ -63,6 +63,9 @@
             <p><xref href="https://www.simplifiedenglish.net/hyperste/" format="html"
           scope="external">HyperSTE</xref> is another popular commercial tool for checking content
         and terminology. They also have a plugin for Oxygen standalone.</p>
+      <p>The <xref href="https://documentation.congree.com/display/EDV/Supported+Editors+1"
+          format="html" scope="external">Congree</xref> Language Checker also has an integration for
+        Oxygen standalone.</p>
         </section>
         <section id="section_h1h_msb_g1b">
             <title>Open-source alternatives</title>
