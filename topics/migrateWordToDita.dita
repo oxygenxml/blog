@@ -11,15 +11,16 @@
       proprietary formats to XML is never perfect and manual changes need to be made to the
       converted content. However, the methods below should help you find the best approach for your
       particular case:</p>
-  <section id="section_uzn_zry_dlb">
-   <title>Batch Convertor add-on </title>
-   <p>The <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
-     scope="external">Resources Converter add-on</xref> can be installed in Oxygen and allows
-    converting one or multiple Word documents (with either doc or docx formats) to DITA topics. </p>
-   <p>If the generated DITA topics have multiple sections that you want to convert to individual
-    topic files, you can refer to a DITA topic in the <uicontrol>DITA Maps Manager</uicontrol> view,
-    then right click <uicontrol>Refactoring->Convert sections to new topics</uicontrol>.</p>
-  </section>
+    <section id="section_uzn_zry_dlb">
+      <title>Oxygen Batch Documents Converter add-on</title>
+      <p>The <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
+        scope="external">Oxygen Batch Documents Converter add-on</xref> can be installed in Oxygen and allows
+        converting one or multiple documents.</p>
+      <p>The provided Word to DITA conversion of the add-on contains
+        an option named <b>Create DITA maps from Word documents containing multiple sections</b>. 
+        When this option is selected, all sections from your Word document marked by titles or headings will be separated 
+        into individual DITA topics and referenced in a DITA map.</p>
+    </section>
     <section id="method_1">
       <title>Smart Paste</title>
       <ol>
