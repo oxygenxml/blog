@@ -14,8 +14,8 @@
     <section id="section_uzn_zry_dlb">
       <title>Oxygen Batch Documents Converter add-on</title>
       <p>The <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
-        scope="external">Oxygen Batch Documents Converter add-on</xref> can be installed in Oxygen and allows
-        converting one or multiple documents.</p>
+        scope="external">Oxygen Batch Documents Converter add-on</xref> can be installed in Oxygen and it allows
+        you to convert one or more documents to various formats.</p>
       <p>The provided Word to DITA conversion of the add-on contains
         an option named <b>Create DITA maps from Word documents containing multiple sections</b>. 
         When this option is selected, all sections from your Word document marked by titles or headings will be separated 
