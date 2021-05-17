@@ -30,6 +30,7 @@
             <topicref href="topics/using_git_hooks_with_dita.dita"/>
         </topichead>
         <topichead navtitle="Customizing">
+            <topicref href="topics/startup_dita_project.dita"/>
             <topicref href="topics/customizeDITACSS.dita"/>
             <topicref href="topics/controlledAttributeValues.dita">
                 <topicref href="topics/controlledAttributeValues2.dita"/>
