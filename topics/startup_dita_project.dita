@@ -12,9 +12,9 @@
         <section id="section_bvx_ghj_qpb">
             <p>The <xref href="https://github.com/oxygenxml/DITA-Startup-Project" format="html"
                     scope="external">Startup DITA Project</xref> contents are useful for starting a
-                new DITA project with <ph keyref="oxygen"/> using for collaboration version control
-                systems like <b>Git</b> or <b>Subversion</b>. </p>
-            <p>When the <filepath>project.xpr</filepath> is opened in the
+                new DITA project with <ph keyref="oxygen"/> using collaboration version control
+                systems such as <b>Git</b> or <b>Subversion</b>. </p>
+            <p>When the <filepath>project.xpr</filepath> is open in the
                     <uicontrol>Project</uicontrol> view, it imposes a custom set of options, as well
                 as an imposed custom DITA framework extension.</p>
         </section>
@@ -52,8 +52,8 @@
             </ul>
         </section>
         <section id="section_evx_ghj_qpb">
-            <title>Settings Saved At Project Level</title>
-            <p>Most of the preference pages in the <b>Preferences</b> folder can be saved at <xref
+            <title>Settings Saved at Project Level</title>
+            <p>Most of the preference pages in <menucascade><uicontrol>Options</uicontrol><uicontrol>Preferences</uicontrol></menucascade> can be saved at <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/sharing-projects.html"
                     format="html" scope="external">project level</xref>. When the project is open in
                 the Project view, the following options are imposed:</p>
@@ -145,21 +145,20 @@
                         <i>publishing</i> subfolder and two predefined publishing scenarios become
                     available. You can read more about DITA-OT project files <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_open_toolkit_project.html"
-                        format="html" scope="external">here in the user's manual</xref>.</li>
+                        format="html" scope="external">in the user manual</xref>.</li>
                 <li>You can also open the <i>project.ditamap</i> file in the DITA Maps Manager view,
                     invoke the "Configure Transformation Scenario(s)" dialog box, and in the Project
                     section, there are two predefined transformation scenarios (one for WebHelp, the
-                    other for PDF) that use the publishing template archived in the zip file. This
-                        <xref
+                    other for PDF) that use the publishing template archived in the zip file. <xref
                         href="https://www.oxygenxml.com/events/2018/webinar_creating_custom_publishing_templates_for_webhelp_and_pdf_output.html"
-                        format="html" scope="external">past webinar</xref> shows more details about
+                        format="html" scope="external">This past webinar</xref> shows more details about
                     creating and customizing a publishing template. </li>
             </ul>
         </section>
-        <p>Starting with <ph keyref="oxygen"/> version 24 the <uicontrol>Startup DITA
-                Project</uicontrol> will be available as a new project template in the main menu <menucascade>
+        <p>Starting with <ph keyref="oxygen"/> version 24, the <uicontrol>Startup DITA
+                Project</uicontrol> will be available as a new project template in the <menucascade>
                 <uicontrol>Project</uicontrol>
                 <uicontrol>New Project</uicontrol>
-            </menucascade> dialog.</p>
+            </menucascade> dialog box.</p>
     </body>
 </topic>
