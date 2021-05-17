@@ -78,7 +78,8 @@
                 environment for DITA <b>Maps</b> and <b>Topics</b> can be customized by extending
                 their current frameworks. </p><p>The framework extension for editing <b>DITA
                     Topics</b> is defined in the
-                    <i>custom-settings/frameworks/dita-extension/dita-extension.exf</i><xref
+                    <i>custom-settings/frameworks/dita-extension/dita-extension.exf</i>
+                <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
                     format="html" scope="external">framework script file</xref>. You can add your
                 own custom actions to the toolbars, menus, or contextual menus, and add, change, or
@@ -99,15 +100,14 @@
                         content completion feature. </p>
                 </li>
                 <li>
-                    <p>You can add <xref href="SchematronBCs.dita">custom Schematron validation rules</xref>
-                        in the
+                    <p>You can add <xref href="SchematronBCs.dita">custom Schematron validation
+                            rules</xref> in the
                             <i>custom-settings/frameworks/dita-extension/resources/customRules.sch</i>
                         Schematron file.</p>
                 </li>
                 <li>
-                    <p>You can also <xref
-                            href="customizeDITACSS.dita">customize the visual editing</xref> by
-                        modifying the CSS
+                    <p>You can also <xref href="customizeDITACSS.dita">customize the visual
+                            editing</xref> by modifying the CSS
                             <i>custom-settings/frameworks/dita-extension/css/custom.css</i>.</p>
                 </li>
             </ul>The framework extension for editing <b>DITA Maps</b> is defined in the
