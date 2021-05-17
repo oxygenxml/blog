@@ -12,9 +12,9 @@
         <section id="section_bvx_ghj_qpb">
             <p>The <xref href="https://github.com/oxygenxml/DITA-Startup-Project" format="html"
                     scope="external">Startup DITA Project</xref> contents are useful for starting a
-                new DITA project with <uicontrol>Oxygen XML Editor</uicontrol> using for
-                collaboration version control systems like <b>Git</b> or <b>Subversion</b>. </p>
-            <p>When the <filepath>project.xpr</filepath> is opened in the Oxygen
+                new DITA project with <ph keyref="oxygen"/> using for collaboration version control
+                systems like <b>Git</b> or <b>Subversion</b>. </p>
+            <p>When the <filepath>project.xpr</filepath> is opened in the
                     <uicontrol>Project</uicontrol> view, it imposes a custom set of options, as well
                 as an imposed custom DITA framework extension.</p>
         </section>
@@ -156,5 +156,10 @@
                     creating and customizing a publishing template. </li>
             </ul>
         </section>
+        <p>Starting with <ph keyref="oxygen"/> version 24 the <uicontrol>Startup DITA
+                Project</uicontrol> will be available as a new project template in the main menu <menucascade>
+                <uicontrol>Project</uicontrol>
+                <uicontrol>New Project</uicontrol>
+            </menucascade> dialog.</p>
     </body>
 </topic>
