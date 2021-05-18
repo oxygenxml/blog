@@ -111,7 +111,7 @@
                             <i>custom-settings/frameworks/dita-extension/css/custom.css</i>.</p>
                 </li>
             </ul>The framework extension for editing <b>DITA Maps</b> is defined in the
-                <i>custom-settings/frameworks/dita-map-extension/dita-map-extension.exf</i><xref
+                <i>custom-settings/frameworks/dita-map-extension/dita-map-extension.exf </i><xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
                 format="html" scope="external">framework script file</xref> and can me customized in
             a similar way. You can customize the existing <xref
