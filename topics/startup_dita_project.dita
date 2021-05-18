@@ -159,6 +159,11 @@
                 Project</uicontrol> will be available as a new project template in the <menucascade>
                 <uicontrol>Project</uicontrol>
                 <uicontrol>New Project</uicontrol>
-            </menucascade> dialog box.</p>
+            </menucascade> dialog box. If you want to try it with <ph keyref="oxygen"/> version 23
+            you should download the project template (<codeph>.zxpr</codeph> file) from the project
+                <xref href="https://github.com/oxygenxml/DITA-Startup-Project/releases"
+                format="html" scope="external">releases page</xref> and <xref
+                href="https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/create-your-own-templates.html#create-your-own-templates"
+                format="html" scope="external">set it as a new document template</xref>.</p>
     </body>
 </topic>
