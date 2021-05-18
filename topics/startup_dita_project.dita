@@ -12,8 +12,8 @@
         <section id="section_bvx_ghj_qpb">
             <p>The <xref href="https://github.com/oxygenxml/DITA-Startup-Project" format="html"
                     scope="external">Startup DITA Project</xref> contents are useful for starting a
-                new DITA project with <ph keyref="oxygen"/> using collaboration version control
-                systems such as <b>Git</b> or <b>Subversion</b>. </p>
+                new DITA project with <ph keyref="oxygen"/> version 23.0 or newer, using
+                collaboration version control systems such as <b>Git</b> or <b>Subversion</b>. </p>
             <p>When the <filepath>project.xpr</filepath> is open in the
                     <uicontrol>Project</uicontrol> view, it imposes a custom set of options, as well
                 as an imposed custom DITA framework extension.</p>
