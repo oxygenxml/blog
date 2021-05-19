@@ -14,7 +14,7 @@
                     scope="external">Startup DITA Project</xref> contents are useful for starting a
                 new DITA project with <ph keyref="oxygen"/> version 23.0 or newer, using
                 collaboration version control systems such as <b>Git</b> or <b>Subversion</b>. </p>
-            <p>When the <codeph>project.xpr</codeph> is open in the <uicontrol>Project</uicontrol>
+            <p>When the <filepath>project.xpr</filepath> is open in the <uicontrol>Project</uicontrol>
                 view, it imposes a custom set of options, as well as an imposed custom DITA
                 framework extension.</p>
         </section>
@@ -22,34 +22,34 @@
             <title>Project Structure</title>
             <p>The project contains the following folder structure:</p>
             <ul id="ul_dvx_ghj_qpb">
-                <li><codeph>custom-settings/frameworks</codeph> - Contains custom <xref
+                <li><filepath>custom-settings/frameworks</filepath> - Contains custom <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script.html"
                         format="html" scope="external">DITA and DITA Map framework
                     extensions</xref>.</li>
-                <li><codeph>custom-settings/learned-words</codeph> - Contains learned words for the
+                <li><filepath>custom-settings/learned-words</filepath> - Contains learned words for the
                     English dictionary.</li>
-                <li><codeph>filters</codeph> - This initially empty folder can be updated to contain
+                <li><filepath>filters</filepath> - This initially empty folder can be updated to contain
                         <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-ditaval-file.html"
                         format="html" scope="external">DITAVAL Filter files</xref> used to profile
                     the DITA content when publishing.</li>
-                <li><codeph>images</codeph> - Contains images used in the DITA project.</li>
-                <li><codeph>oxygen-term-checker</codeph> - Contains a <xref
+                <li><filepath>images</filepath> - Contains images used in the DITA project.</li>
+                <li><filepath>oxygen-term-checker</filepath> - Contains a <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/terminology-checker-addon.html"
                         format="html" scope="external">terminology file</xref> with an example
                     rule.</li>
-                <li><codeph>publishing</codeph> - Contains a <xref
+                <li><filepath>publishing</filepath> - Contains a <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_open_toolkit_project.html"
                         format="html" scope="external">DITA-OT project file</xref> and a <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/whr-publishing-template-2.html"
                         format="html" scope="external">publishing template</xref>.</li>
-                <li><codeph>reusables</codeph> - Contains various reusable components. For example,
+                <li><filepath>reusables</filepath> - Contains various reusable components. For example,
                     in the "reusable_components.dita" topic, you can add various DITA elements (such
                     as notes, paragraphs, lists, and list items) that are reused in various places
                     in the project. See <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-create-conref.html"
                         format="html" scope="external">more about reusing DITA content</xref>.</li>
-                <li><codeph>topics</codeph> - Contains all the DITA topics in the project.</li>
+                <li><filepath>topics</filepath> - Contains all the DITA topics in the project.</li>
             </ul>
         </section>
         <section id="section_evx_ghj_qpb">
@@ -152,14 +152,14 @@
         </section>
         <section id="section_kvx_ghj_qpb">
             <title>Publishing</title>
-            <p>You can publish the content of the <codeph>project.ditamap</codeph> in two ways:</p>
+            <p>You can publish the content of the <filepath>project.ditamap</filepath> in two ways:</p>
             <ul id="ul_lvx_ghj_qpb">
-                <li>You can open the DITA-OT project file named <codeph>publish-project.xml</codeph>
+                <li>You can open the DITA-OT project file named <filepath>publish-project.xml</filepath>
                     from the <filepath>publishing</filepath> subfolder and two predefined publishing
                     scenarios become available. You can read more about DITA-OT project files <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita_open_toolkit_project.html"
                         format="html" scope="external">in the user manual</xref>.</li>
-                <li>You can also open the <codeph>project.ditamap</codeph> file in the DITA Maps
+                <li>You can also open the <filepath>project.ditamap</filepath> file in the DITA Maps
                     Manager view, invoke the "Configure Transformation Scenario(s)" dialog box, and
                     in the Project section, there are two predefined transformation scenarios (one
                     for WebHelp, the other for PDF) that use the publishing template archived in the
@@ -177,7 +177,7 @@
             you should download the project template (<codeph>.zxpr</codeph> file) from the project
                 <xref href="https://github.com/oxygenxml/DITA-Startup-Project/releases"
                 format="html" scope="external">releases page</xref> and <xref
-                href="https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/create-your-own-templates.html#create-your-own-templates"
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/create-your-own-templates.html#create-your-own-templates"
                 format="html" scope="external">set it as a new document template</xref>.</p>
     </body>
 </topic>
