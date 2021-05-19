@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="22.1">
+<project>
     <meta>
         <filters directoryPatterns="" filePatterns="\Qblog.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="22.1" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>additional.frameworks.directories</String>
@@ -18,7 +18,7 @@
                                 <Boolean>false</Boolean>
                             </field>
                             <field name="checkNonDITAReferencesSelected">
-                                <Boolean>true</Boolean>
+                                <Boolean>false</Boolean>
                             </field>
                             <field name="includeRemoteResourcesSelected">
                                 <Boolean>true</Boolean>
@@ -199,7 +199,7 @@
                                 <field name="publishingTemplateDataPO">
                                     <publishingTemplate>
                                         <field name="templateRoot">
-                                            <String>C:\Users\radu_coravu\Documents\blog\publishing\webhelpBlogTemplate.zip</String>
+                                            <String>${pd}/publishing/webhelpBlogTemplate.zip</String>
                                         </field>
                                         <field name="descriptorRelativePath">
                                             <String>Oxygen XML Blog WebHelp Template.opt</String>
@@ -457,6 +457,9 @@
                                 </String-array>
                             </field>
                             <field name="spellCheckInComments">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="spellCheckInPIs">
                                 <Boolean>false</Boolean>
                             </field>
                             <field name="spellCheckInAttributeValues">
