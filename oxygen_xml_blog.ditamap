@@ -32,6 +32,8 @@
         <topichead navtitle="Customizing">
             <topicref href="topics/startup_dita_project.dita"/>
             <topicref href="topics/customizeDITACSS.dita"/>
+            <topicref
+                href="topics/customizing_a_document_type_using_an_extension_framework_script.dita"/>
             <topicref href="topics/controlledAttributeValues.dita">
                 <topicref href="topics/controlledAttributeValues2.dita"/>
             </topicref>

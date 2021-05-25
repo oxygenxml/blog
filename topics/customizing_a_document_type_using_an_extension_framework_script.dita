@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="customizing_a_document_type_using_an_extension_framework_script">
+    <title>Customizing the DITA framework using a framework extension script</title>
+    <shortdesc>How to customize an existing framework, like DITA, using a <xref
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
+            format="html" scope="external">framework extension script</xref>.</shortdesc>
+    <prolog>
+        <author>Alex Jitianu</author>
+        <critdates>
+            <created date="2021-05-24"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>All the validation, editing and publishing support Oxygen has for a specific XML
+            vocabulary is defined in a <xref href="oxygenFrameworks.dita">framework
+                configuration</xref>. Oxygen comes bundled with such frameworks for popular XML
+            vocabularies, like DITA. A common use case is to make changes to these built-in
+            frameworks, to tailor them according to specific requirements.</p>
+        <p>A framework extension script is an XML file in which one describes the changes to perform
+            on a base framework. Let's assume that we want to make the following changes to the DITA
+                framework:<ol id="ol_obx_1dj_spb">
+                <li>Customize the new document templates</li>
+                <li>Change the Author mode rendering with a new CSS file</li>
+                <li>Remove the <uicontrol>Bold</uicontrol>, <uicontrol>Italic</uicontrol>,
+                        <uicontrol>Underline</uicontrol> actions from the Author mode</li>
+                <li>Add the <uicontrol>Insert Note</uicontrol> action on the toolbar</li>
+            </ol></p>
+        <section id="section_eg4_zdj_spb">
+            <title>Creating the framework extension script</title>
+            <p>The easiest way to create such a descriptor is to use the <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/new-dialog-sa.html"
+                    format="html" scope="external"><b>New</b> document wizard</xref> and choose the
+                    <b>Extend Framework Script</b> or <b>Create Framework Script</b> template.
+                Define it as an extension of the DITA framework through the <xmlatt>base</xmlatt>
+                attribute. We set a high priority as well, through the
+                    <xmlelement>priority</xmlelement> element, to make sure our framework will be
+                picked in favor of the DITA
+                one.<codeblock id="codeblock_ufp_g2j_spb" outputclass="language-xml">&lt;script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
+  base="DITA">
+  &lt;name>Custom DITA&lt;/name>
+  &lt;description>A custom DITA framework.&lt;/description>
+  &lt;priority>High&lt;/priority>
+&lt;/script></codeblock></p>
+            <p>You need to save the script inside a framework directory, the same place where a
+                *.framework file should sit. For example, if you save it inside
+                    <filepath>.../custom-frameworks/custom-dita/dita-script.exf</filepath> then you
+                need to add <filepath>.../custom-frameworks</filepath> as an <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-location.html"
+                    format="html" scope="external">Additional frameworks directories</xref>
+                    list.<note id="note_ynz_hs4_spb">Oxygen 23.1 or later will automatically detect
+                    the script and load the framework. If you want to use the framework in an older
+                    Oxygen XML Editor version that does not have support for these scripts, you can
+                    compile the script to obtain the *.framework file by using the
+                        <uicontrol>Compile Framework Extension</uicontrol> script action from the
+                    contextual menu or by running the
+                        <filepath>scripts/compileFrameworkScript.bat</filepath> external tool
+                    (available in the All Platforms distribution only).</note></p>
+        </section>
+        <section id="section_wdq_wr4_spb">
+            <title>Customizing the new document templates</title>
+            <p>The <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/customizing-templates.html?hl=document%2Ctemplates"
+                    format="html" scope="external">document templates</xref> appear when the user
+                uses the <uicontrol>New...</uicontrol> action. To add a new template we need to:</p>
+            <ul id="ul_qzg_kt4_spb">
+                <li>in the directory where we saved the script we will create a new file
+                        <filepath>templates/My custom topic.dita</filepath>. The content of the file
+                    represents the template's content.</li>
+                <li>specify in the script the new template locations by adding this fragment inside
+                    the <xmlelement>script</xmlelement>
+                    element.<codeblock id="codeblock_rxz_nt4_spb" outputclass="language-xml">  &lt;documentTemplates inherit="none">
+    &lt;addEntry path="${framework}/templates"/>
+  &lt;/documentTemplates></codeblock></li>
+            </ul>
+        </section>
+        <note id="note_upf_11p_spb">Through the <xmlatt>inherit</xmlatt> attribute we've chosen not
+            to inherit any of the document templates defined in the base framework.</note>
+        <section id="section_cjl_d1p_spb">
+            <title>Changing the Author mode rendering with a new CSS file</title>
+            <p>The author mode is driven by CSS rules. To add new rules you need to:</p>
+            <ul id="ul_itv_vgp_spb">
+                <li>Create a new CSS file in the directory where we saved the script. Let's give it
+                    a name, for example <filepath>css/custom.css</filepath> and a rule to make
+                    titles red:<codeblock id="codeblock_xwm_zgp_spb">title {
+  color:red;
+}</codeblock></li>
+                <li>specify in the script the path to the new CSS  by adding this fragment inside
+                    the <xmlelement>script</xmlelement>
+                    element.<codeblock id="codeblock_cbp_chp_spb" outputclass="language-css">  &lt;author>
+    &lt;css>
+      &lt;addCss path="${framework}/css/custom.css"/>
+    &lt;/css>
+  &lt;/author></codeblock></li>
+            </ul>
+        </section>
+        <section id="section_jrg_nhp_spb">
+            <title>Removing the <uicontrol>Bold</uicontrol>, <uicontrol>Italic</uicontrol>,
+                    <uicontrol>Underline</uicontrol> actions from the Author mode</title>
+            <p>An <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/the-action-dialog.html"
+                    format="html" scope="external">author action</xref> is just a configuration that
+                describes which operation to use depending on the context. Each action has an unique
+                id. Let's assume that we don't want <uicontrol>Bold</uicontrol>,
+                    <uicontrol>Italic</uicontrol> and <uicontrol>Underline</uicontrol> actions from
+                the built-in DITA framework because their markup is not a semantic one. After we
+                inspect the actions <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/the-action-dialog.html"
+                    format="html" scope="external">preferences</xref> and we find out their ids, we
+                can filter them from all toolbars and menus  by adding this fragment inside the
+                    <xmlelement>script</xmlelement>
+                element.<codeblock id="codeblock_rnh_jbq_spb" outputclass="language-xml">&lt;author>
+    &lt;authorActions>
+      &lt;removeAction id="bold"/>
+      &lt;removeAction id="italic"/>
+      &lt;removeAction id="underline"/>
+    &lt;/authorActions>
+  &lt;/author></codeblock></p>
+        </section>
+        <section id="section_usw_mbq_spb">
+            <title>Adding the <uicontrol>Insert Note</uicontrol> action on the toolbar</title>
+            <p>The <uicontrol>Insert Node</uicontrol> action is already defined in the DITA
+                framework, but it's not present on the toolbar. To add it on the toolbar we need
+                to:</p>
+            <ul id="ul_ag1_sbq_spb">
+                <li>Go to preferences, edit the DITA framework and search in the <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/the-actions-sub-tab.html"
+                        format="html" scope="external">Actions</xref> tab for the <uicontrol>Insert
+                        Node</uicontrol> action.  Write down its id. </li>
+                <li>Edit the framework extension script and put the action in toolbar  by adding
+                    this fragment inside the <xmlelement>script</xmlelement>
+                    element.<codeblock id="codeblock_agp_ybq_spb" outputclass="language-xml">  &lt;author>
+    &lt;toolbars>
+      &lt;toolbar>
+        &lt;addAction id="insert.note" anchor="paragraph"/>
+      &lt;/toolbar>
+    &lt;/toolbars>
+  &lt;/author></codeblock></li>
+            </ul>
+            <note id="note_m3y_4cq_spb">In this example we use an action already present on the
+                toolbar as an anchor. We add our action on the toolbar after the action that inserts
+                a paragraph.</note>
+        </section>
+        <p> </p>
+    </body>
+</topic>
