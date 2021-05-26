@@ -144,4 +144,14 @@
         </section>
         <p> </p>
     </body>
+    <related-links>
+        <link
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
+            format="html" scope="external"><desc>Framework extension script use cases</desc></link>
+        <link
+            href="https://www.oxygenxml.com/events/2021/webinar_creating_frameworks_using_an_extension_script.html"
+            format="html" scope="external">
+            <desc><b>Webinar: Creating Frameworks Using an Extension Script</b></desc>
+        </link>
+    </related-links>
 </topic>
