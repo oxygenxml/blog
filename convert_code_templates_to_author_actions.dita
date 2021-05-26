@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="convert_code_templates_to_author_actions">
+    <title>Convert code templates to external author actions</title>
+    <shortdesc>How to bring code templates into a framework as author actions.</shortdesc>
+    <prolog>
+        <author>Alex Jitianu</author>
+        <critdates>
+            <created date="2021-05-26"/>
+        </critdates>
+    </prolog>
+    <taskbody>
+        <context>Code templates are code fragments that can be inserted quickly at the current
+            editing position. <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/the-action-dialog.html#the-action-dialog"
+                format="html" scope="external">Author actions</xref>, available in the Author mode,
+            offer a lot more flexibility, for example you can decide what fragment to insert based
+            on the current context. If you want to create a new framework or <xref
+                href="topics/customizing_a_document_type_using_an_extension_framework_script.dita"
+                >customize an existing framework</xref> then it makes sense to convert code
+            templates to author actions. We will then contribute them to the content completion
+            window. We will define the framework using a <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
+                format="html" scope="external">Framework extension script</xref>.</context>
+        <steps>
+            <step>
+                <cmd>Create a framework or extend an existing framework using a <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
+                        format="html" scope="external">Framework extension script</xref>.</cmd>
+            </step>
+            <step>
+                <cmd>Go to <menucascade>
+                        <uicontrol>Options</uicontrol>
+                        <uicontrol>Preferences...</uicontrol>
+                    </menucascade> ] on page <uicontrol>Code Templates</uicontrol> and <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-code-templates.html#preferences-editor-code-templates__dlentry_omp_bgk_54b"
+                        format="html" scope="external">Export</xref> the code templates to a file
+                    called <filepath>code-templates.xml</filepath>.</cmd>
+            </step>
+            <step>
+                <cmd> Create an XSLT file with the following content: </cmd>
+                <info>
+                    <codeblock id="codeblock_agm_k3x_spb" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    version="3.0">
+    &lt;xsl:output method="xml"/>
+    &lt;xsl:template match="//codeTemplateItem[field[@name='contentType']/String/text() = 'text/xml']">
+        &lt;xsl:variable name="actionName" select="field[@name='renderString']/String/text()"/>
+        &lt;xsl:result-document href="externalAuthorActions/{$actionName}.xml">
+            &lt;a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
+                id="{$actionName}">
+                &lt;a:name>&lt;xsl:value-of select="$actionName"/>&lt;/a:name>
+                &lt;a:description>&lt;xsl:value-of select="field[@name='descriptionString']/String/text()"/>&lt;/a:description>
+                &lt;a:operations>
+                    &lt;a:operation id="InsertFragmentOperation">
+                        &lt;a:xpathCondition>true()&lt;/a:xpathCondition>
+                        &lt;a:arguments>
+                            &lt;a:argument name="fragment">
+                                &lt;!-- Try parsing the fragment. if it succeeds, we basically unwrap it from the CDATA. -->
+                                &lt;xsl:try
+                                    select="parse-xml-fragment(field[@name='unparsedInsertString']/String/text())">
+                                    &lt;xsl:catch>
+                                        &lt;!-- Parsing failed. It might have unresolved entities. Keep it in a CDATA. -->
+                                        &lt;xsl:text disable-output-escaping="yes">&amp;lt;![CDATA[&lt;/xsl:text>
+                                        &lt;xsl:value-of disable-output-escaping="true" select="field[@name='unparsedInsertString']/String/text()" >&lt;/xsl:value-of>
+                                        &lt;xsl:text disable-output-escaping="yes">]]&amp;gt;&lt;/xsl:text>
+                                    &lt;/xsl:catch>
+                                &lt;/xsl:try>
+                            &lt;/a:argument>
+                        &lt;/a:arguments>
+                    &lt;/a:operation>
+                &lt;/a:operations>
+                &lt;a:accessKey/>
+            &lt;/a:authorAction>
+        &lt;/xsl:result-document>
+    &lt;/xsl:template>
+    
+    &lt;xsl:template match="text()"/>
+&lt;/xsl:stylesheet></codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Create an <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/xslt-transformation.html"
+                        format="html" scope="external">XSLT Transformation scenario</xref> and apply
+                    the XSLT over the <filepath>code-templates.xml</filepath> file.</cmd>
+            </step>
+            <step>
+                <cmd>Go to the directory of <filepath>code-templates.xml</filepath> and copy the
+                    generated <filepath>externalAuthorActions</filepath> to the framework directory,
+                    the directory with the framework extension script.</cmd>
+            </step>
+            <step>
+                <cmd>Create another XSLT with following content, create an <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/xslt-transformation.html"
+                        format="html" scope="external">XSLT Transformation scenario</xref> and apply
+                    it over the <filepath>code-templates.xml</filepath> file.</cmd>
+                <info>
+                    <codeblock id="codeblock_x4h_hnx_spb">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    version="3.0">
+    &lt;xsl:output method="xml" omit-xml-declaration="yes" indent="true">&lt;/xsl:output>
+    &lt;xsl:output method="xml"/>
+    &lt;xsl:template match="/">
+        &lt;contentCompletion>
+            &lt;authorActions>
+                &lt;xsl:apply-templates/>
+            &lt;/authorActions>
+        &lt;/contentCompletion>
+    &lt;/xsl:template>
+    &lt;xsl:template match="//codeTemplateItem[field[@name='contentType']/String/text() = 'text/xml']">
+        &lt;xsl:variable name="actionName" select="field[@name='renderString']/String/text()"/>
+        
+        &lt;addAction id="{$actionName}" inCCWindow="true"/> 
+    &lt;/xsl:template>
+    
+    &lt;xsl:template match="text()"/>
+&lt;/xsl:stylesheet></codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Copy the resulting <xmlelement>contentCompletion</xmlelement> into the <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
+                        format="html" scope="external">Framework extension script</xref> root
+                    element.</cmd>
+            </step>
+        </steps>
+        <result id="result_ult_mnx_spb">There's a new <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-create-custom-actions.html#dg-create-custom-actions__section_2"
+                format="html" scope="external">external author action</xref> for each initial code
+            template. All actions are contributed to the <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html#framework-customization-script-usecases__section_cgh_yzm_knb"
+                format="html" scope="external">content completion window</xref>.</result>
+    </taskbody>
+</task>
