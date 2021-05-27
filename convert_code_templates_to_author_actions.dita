@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="convert_code_templates_to_author_actions">
-    <title>Convert code templates to external author actions</title>
-    <shortdesc>How to bring code templates into a framework as author actions.</shortdesc>
+    <title>Convert Code Templates to External Author Actions</title>
+    <shortdesc>Describes how to bring code templates into a framework as author actions.</shortdesc>
     <prolog>
         <author>Alex Jitianu</author>
         <critdates>
@@ -13,13 +13,13 @@
         <context>Code templates are code fragments that can be inserted quickly at the current
             editing position. <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/the-action-dialog.html#the-action-dialog"
-                format="html" scope="external">Author actions</xref>, available in the Author mode,
-            offer a lot more flexibility, for example you can decide what fragment to insert based
+                format="html" scope="external">Author actions</xref> that are available in the Author mode
+            offer a lot more flexibility. For example, you can decide what fragment to insert based
             on the current context. If you want to create a new framework or <xref
                 href="topics/customizing_a_document_type_using_an_extension_framework_script.dita"
-                >customize an existing framework</xref> then it makes sense to convert code
-            templates to author actions. We will then contribute them to the content completion
-            window. We will define the framework using a <xref
+                >customize an existing framework</xref>, then it makes sense to convert code
+            templates to author actions. You can then contribute them to the content completion
+            window. You can also define the framework using a <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"
                 format="html" scope="external">Framework extension script</xref>.</context>
         <steps>
@@ -31,14 +31,15 @@
             <step>
                 <cmd>Go to <menucascade>
                         <uicontrol>Options</uicontrol>
-                        <uicontrol>Preferences...</uicontrol>
-                    </menucascade> ] on page <uicontrol>Code Templates</uicontrol> and <xref
+                        <uicontrol>Preferences</uicontrol>
+                    <uicontrol>Code Templates</uicontrol>
+                    </menucascade> and <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-code-templates.html#preferences-editor-code-templates__dlentry_omp_bgk_54b"
                         format="html" scope="external">Export</xref> the code templates to a file
-                    called <filepath>code-templates.xml</filepath>.</cmd>
+                    named <filepath>code-templates.xml</filepath>.</cmd>
             </step>
             <step>
-                <cmd> Create an XSLT file with the following content: </cmd>
+                <cmd>Create an XSLT file with the following content: </cmd>
                 <info>
                     <codeblock id="codeblock_agm_k3x_spb" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -91,11 +92,11 @@
             </step>
             <step>
                 <cmd>Go to the directory of <filepath>code-templates.xml</filepath> and copy the
-                    generated <filepath>externalAuthorActions</filepath> to the framework directory,
-                    the directory with the framework extension script.</cmd>
+                    generated <filepath>externalAuthorActions</filepath> to the framework directory
+                    (the directory with the framework extension script).</cmd>
             </step>
             <step>
-                <cmd>Create another XSLT with following content, create an <xref
+                <cmd>Create another XSLT with the following content, then create an <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/xslt-transformation.html"
                         format="html" scope="external">XSLT Transformation scenario</xref> and apply
                     it over the <filepath>code-templates.xml</filepath> file.</cmd>
@@ -131,7 +132,7 @@
                     element.</cmd>
             </step>
         </steps>
-        <result id="result_ult_mnx_spb">There's a new <xref
+        <result id="result_ult_mnx_spb">There is a new <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-create-custom-actions.html#dg-create-custom-actions__section_2"
                 format="html" scope="external">external author action</xref> for each initial code
             template. All actions are contributed to the <xref
