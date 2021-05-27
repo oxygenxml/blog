@@ -100,7 +100,7 @@
                         format="html" scope="external">XSLT Transformation scenario</xref> and apply
                     it over the <filepath>code-templates.xml</filepath> file.</cmd>
                 <info>
-                    <codeblock id="codeblock_x4h_hnx_spb">&lt;?xml version="1.0" encoding="UTF-8"?>
+                    <codeblock id="codeblock_x4h_hnx_spb" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
