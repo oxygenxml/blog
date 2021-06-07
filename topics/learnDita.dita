@@ -15,18 +15,16 @@
           format="html" scope="external"/> and a larger section on DITA authoring: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/#topics/author-dita.html"
           format="html" scope="external"/>.</p>
-      <p>There are two past webinars about DITA support in Oxygen, you can follow them on our Oxygen
-        YouTube channel: <xref href="https://www.youtube.com/watch?v=j7LMcO_euJU" format="html"
-          scope="external"/>.</p>
-      <p>And we have a list of videos, some of them DITA-related here: <xref
-					href="https://www.oxygenxml.com/videos.html" format="html" scope="external"
-					/>.<dl id="dl_av4_tgf_wpb">
-						<dlentry>
-							<dt>Getting Started with Oxygen and DITA</dt>
-							<dd><xref
+      <p>We have a list of videos, some of them DITA-related here: <xref
+					href="https://www.oxygenxml.com/videos.html" format="html" scope="external"/>
+				and a series of past webinar recordings about editing DITA with Oxygen.<dl
+					id="dl_av4_tgf_wpb">
+					<dlentry>
+						<dt>Getting Started with Oxygen and DITA</dt>
+						<dd><xref
 								href="https://www.oxygenxml.com/events/2020/webinar_getting_started_with_dita_using_oxygen_xml_editor.html"
 								format="html" scope="external"/></dd>
-						</dlentry>
+					</dlentry>
 					<dlentry>
 						<dt>Basic DITA Profiling and Reuse</dt>
 						<dd><xref
