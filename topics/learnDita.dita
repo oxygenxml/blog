@@ -19,7 +19,27 @@
         YouTube channel: <xref href="https://www.youtube.com/watch?v=j7LMcO_euJU" format="html"
           scope="external"/>.</p>
       <p>And we have a list of videos, some of them DITA-related here: <xref
-          href="https://www.oxygenxml.com/videos.html" format="html" scope="external"/>.</p>
+					href="https://www.oxygenxml.com/videos.html" format="html" scope="external"
+					/>.<dl id="dl_av4_tgf_wpb">
+						<dlentry>
+							<dt>Getting Started with Oxygen and DITA</dt>
+							<dd><xref
+								href="https://www.oxygenxml.com/events/2020/webinar_getting_started_with_dita_using_oxygen_xml_editor.html"
+								format="html" scope="external"/></dd>
+						</dlentry>
+					<dlentry>
+						<dt>Basic DITA Profiling and Reuse</dt>
+						<dd><xref
+								href="https://www.oxygenxml.com/events/2020/webinar_working_with_dita_in_oxygen.html"
+								format="html" scope="external"/></dd>
+					</dlentry>
+					<dlentry>
+						<dt>Advanced DITA Profiling and Reuse</dt>
+						<dd><xref
+								href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_advanced_profiling_and_reuse_strategies.html"
+								format="html" scope="external"/></dd>
+					</dlentry>
+				</dl></p>
     </section>
     <section id="section_hbg_wfj_2v">
       <title>Resources for learning DITA:</title>
