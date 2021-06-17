@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="xslt_training">
+    <title>XSLT Training</title>
+	<prolog>
+		<author>raducoravu</author>
+		<critdates>
+			<created date="2021-06-17"/>
+		</critdates>
+	</prolog>
+    <body>
+        <p>Putting together a list of resources (courses, books, training) valuable for learning
+			XSLT:<ul id="ul_lbs_bdz_ypb">
+			<li>Michael Kay's "<xref
+				href="https://www.amazon.com/XSLT-2-0-XPath-Programmers-Reference/dp/0470192747"
+				format="html" scope="external">XSLT 2.0 and XPath 2.0</xref>", especially Part I:
+				Foundations.</li>
+			<li><xref href="https://www.delightfulcomputing.com/xslfaq/xsl/" format="html"
+				scope="external">XSLT Frequently Asked Questions</xref> maintained by Dave
+				Pauson.</li>
+			<li><xref href="https://www.delightfulcomputing.com/" format="html" scope="external"
+				>XSLT training courses</xref> by Liam Quinn.</li>
+			<li>An<xref
+				href="https://www.udemy.com/course/practical-transformation-using-xslt-and-xpath"
+				format="html" scope="external"> Udemy course</xref> by Ken Holman containing also
+				some free lectures.</li>
+			<li>XSLT Training courses by Dimitre Novatchev on <xref
+				href="https://www.pluralsight.com/authors/dimitre-novatchev" format="html"
+				scope="external">PluralSight</xref>.</li>
+			<li>XSLT consulting by <xref href="http://www.mulberrytech.com/xsl/" format="html"
+				scope="external">Mulberry Technologies</xref>.</li>
+			<li>Our Oxygen XML <xref href="https://www.oxygenxml.com/partners.html#trainingpartners"
+				format="html" scope="external">training partners</xref>. </li>
+			</ul></p>
+    </body>
+</topic>

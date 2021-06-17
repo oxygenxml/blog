@@ -94,6 +94,7 @@
         <topicref href="topics/collaboration-teams.dita"/>
         <topicref href="george/enable-massive-contributions.dita"/>
         <topicref href="topics/all_about_editor_variables.dita"/>
+		<topicref href="xslt_training.dita"/>
     </topichead>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
 </map>
