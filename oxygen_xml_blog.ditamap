@@ -28,6 +28,7 @@
             <topicref href="topics/tableRowColors.dita"/>
             <topicref href="topics/creating-simple-dita-open-toolkit.dita"/>
             <topicref href="topics/using_git_hooks_with_dita.dita"/>
+			<topicref href="topics/creating_graphs_from_dita_maps.dita"/>
         </topichead>
         <topichead navtitle="Customizing">
             <topicref href="topics/startup_dita_project.dita"/>
