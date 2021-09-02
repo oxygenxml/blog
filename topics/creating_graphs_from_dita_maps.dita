@@ -14,24 +14,28 @@
 			href="https://visjs.github.io/vis-network/docs/network/index.html" format="html"
 			scope="external">VisJS</xref> Javascript library can be used to construct node network
 			diagrams. Here's how you can use it for your DITA project:<ol id="ol_slp_cym_5qb">
-			<li>Open the main DITA Map in the <ph keyref="oxygen"/> <uicontrol>DITA Maps
-				Manager</uicontrol> view, use the <uicontrol>Configure Transformation
-				Scenarios</uicontrol> button, then create a new transformation scenario of type
-				<uicontrol>DITA OT Transformation</uicontrol> choosing the <uicontrol>Merge DITA
-				Content to Single XML file</uicontrol> transformation type.</li>
+			<li>Open the main DITA Map in the <ph keyref="oxygen"/> <uicontrol>DITA Maps Manager</uicontrol>
+				view, use the <uicontrol>Configure Transformation Scenarios</uicontrol> button, then
+				create a new transformation scenario of type <uicontrol>DITA OT
+				Transformation</uicontrol> choosing the <uicontrol>Merge DITA Content to Single XML
+				file</uicontrol> transformation type. If you are not using <ph keyref="oxygen"/> you
+				can download and install the <uicontrol>dita-merge</uicontrol> plugin separately
+				from <xref href="https://github.com/oxygenxml/dita-merged" format="html"
+				scope="external">Github</xref>.</li>
 			<li>Apply the new transformation scenario on the DITA Map, once the merged XML document
 				is generated, create another transformation scenario of type <uicontrol>XML
 				transformation with XSLT</uicontrol> and transform to HTML using the XSLT
 				stylesheet: <xref
 				href="https://github.com/oxygenxml/dita-merged/blob/master/possible-applications/createHTMLVisGraph.xsl"
 				format="xsl" scope="external"/></li>
-			<li>Open the result HTML document in a web browser. Depending on the complexity of the
-				DITA project it may take some time for the diagram to show up. As an example the
-				related links section below contains a reference to a diagram representation of the
-				Oxygen XML Blog. If we regard the diagram as a circle, on the outer bounds of the
-				circle are topics which have few incoming and outgoing links and in the center
-				topics which have many outgoing and incoming links. Links from the DITA Map to the
-				topics are not taken into account.</li>
+			<li>Open the result HTML document in a web browser. Depending on the complexity of the DITA
+				project it may take some time for the diagram to show up. As an example the related
+				links section below contains a reference to a diagram representation of the Oxygen
+				XML Blog. If we regard the diagram as a circle, on the outer bounds of the circle
+				are topics which have few incoming and outgoing links and in the center topics which
+				have many outgoing and incoming links. Links from the DITA Map to the topics are not
+				taken into account. You can interact with the diagram by dragging nodes and by using
+				the mouse wheel to zoom in or out.</li>
 			</ol></p>
     </body>
 	<related-links>
