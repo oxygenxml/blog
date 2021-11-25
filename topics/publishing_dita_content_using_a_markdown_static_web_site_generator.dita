@@ -49,8 +49,66 @@ theme: readthedocs</codeblock></p>
                         search should work and by default the table of contents presents the files
                         in the order in which they appear on disk:</p>
                     <p>
-                        <image href="../images/mkdocs_toc.png" width="800px"/></p>
+                        <image href="../images/mkdocs_toc.png" width="600"/></p>
                 </li>
+                <li>The <filepath>flowers/docs/index.md</filepath> file contains the table of
+                    contents derived from the original DITA Map structure. It's contents can be used
+                    to create a navigation map which can be included in the
+                        <filepath>flowers/mkdocs.yml</filepath> configuration file:<ul>
+                        <li>Open the <filepath>index.md</filepath> file generated from the DITA Map
+                            in <ph keyref="oxygen"/> and in the <uicontrol>HTML</uicontrol> preview
+                            right click and choose to export as HTML.</li>
+                        <li>Create an XSLT stylesheet which when applied over the HTML content
+                            generates the entire structure of the table of
+                            contents:<codeblock outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    version="2.0">
+    &lt;xsl:output method="text"/>
+    &lt;xsl:template match="/">
+        &lt;xsl:apply-templates select="//*:a"/>
+    &lt;/xsl:template>
+    &lt;xsl:template match="*:a">
+    - &lt;xsl:value-of select="text()"/>: &lt;xsl:value-of select="@href"/>
+    &lt;/xsl:template>
+&lt;/xsl:stylesheet></codeblock></li>
+                    </ul><ul>
+                        <li>Apply the stylesheet over the HTML content to produce the content which
+                            gets included in the <filepath>flowers/mkdocs.yml</filepath>
+                            configuration file:<codeblock>site_name: Flowers
+nav:
+    - Home: index.md
+    - Introduction: topics/introduction.md
+    - Care and Preparation: topics/care.md
+    - Pruning: tasks/pruning.md
+    - Garden Preparation: tasks/gardenPreparation.md
+    - Flowers by Season: topics/index.md
+    - Spring Flowers: concepts/springFlowers.md
+    - Iris: topics/flowers/iris.md
+    - Snowdrop: topics/flowers/snowdrop.md
+    - Summer Flowers: concepts/summerFlowers.md
+    - Gardenia: topics/flowers/gardenia.md
+    - Lilac: topics/flowers/lilac.md
+    - Autumn Flowers: concepts/autumnFlowers.md
+    - Chrysanthemum: topics/flowers/chrysanthemum.md
+    - Salvia: topics/flowers/salvia.md
+    - Winter Flowers: concepts/winterFlowers.md
+    - Gerbera: topics/flowers/gerbera.md
+    - Genus: concepts/glossaryGenus.md
+    - Pollination: concepts/glossaryPollination.md
+    - Sepal: concepts/glossarySepal.md
+    - Rhizome: concepts/glossaryRhizome.md
+    - Bulb: concepts/glossaryBulb.md
+    - Cultivar: concepts/glossaryCultivar.md
+    - Perennial: concepts/glossaryPerennial.md
+    - Panicle: concepts/glossaryPanicle.md
+    - Copyright: topics/copyright.md
+theme: readthedocs</codeblock></li>
+                    </ul><ul>
+                        <li>Now the output should have the table of contents generated from the
+                            original DITA Map.</li>
+                        <li><image href="../images/properTocMKDocs.png" width="600"/></li>
+                    </ul></li>
             </ul></p>
     </body>
 </topic>
