@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="publishing_dita_content_using_a_markdown_static_web_site_generator">
-    <title>Publishing DITA content using the mkdocs web site generator</title>
+    <title>Publishing DITA Content Using the MKDocs Web Site Generator</title>
     <body>
         <p><xref href="https://www.mkdocs.org/getting-started/" format="html" scope="external"
-                >MKDocs</xref> is a static site generator that's geared towards building project
-            documentation. Documentation source files are written in Markdown, and configured with a
+                >MKDocs</xref> is a static site generator that is geared towards building project
+            documentation. Documentation source files are written in Markdown and configured with a
             single YAML configuration file.</p>
-        <p>Here's how to use DITA XML content to build a static site with MKDocs:<ul>
-                <li>Open your DITA Map in the <ph keyref="oxygen"/>
-                    <uicontrol>DITA Maps Manager</uicontrol> view. For my tests I will use the
+        <p>Here is how to use DITA XML content to build a static site with MKDocs:<ol>
+                <li>Open your DITA map in the <ph keyref="oxygen"/>
+                    <uicontrol>DITA Maps Manager</uicontrol> view. For my example, I will use the
                         <filepath>OXYGEN_INSTALL_DIR/samples/flowers/flowers.ditamap</filepath>
                     sample.</li>
                 <li>Use the <uicontrol>Configure Transformation Scenarios</uicontrol> toolbar
                     button, create a new transformation scenario of type <uicontrol>DITA-OT
                         transformation</uicontrol> and choose <uicontrol>GitHub-flavored
-                        Markdown</uicontrol> as a transformation type.</li>
-                <li>In the transformation scenario's <uicontrol>Output</uicontrol> tab you can
-                    configure the folder where the Markdown content should be output. </li>
+                        Markdown</uicontrol> as the transformation type.</li>
+                <li>In the transformation scenario's <uicontrol>Output</uicontrol> tab, you can
+                    configure the folder where the Markdown content should be generated.</li>
                 <li>Use the new transformation scenario to transform your DITA content into
                     Markdown.</li>
-                <li>Install the mkdocs package on your system: <xref
+                <li>Install the <i>mkdocs</i> package on your system: <xref
                         href="https://www.mkdocs.org/getting-started/" format="html"
                         scope="external"/>.</li>
                 <li>Create a new project using the <codeph>mkdocs</codeph> command
@@ -29,38 +29,34 @@ INFO     -  Creating project directory: flowers
 INFO     -  Writing config file: flowers/mkdocs.yml
 INFO     -  Writing initial docs: flowers/docs/index.md
 Developer$ cd flowers</codeblock></li>
-                <li>In the created project's <filepath>flowers/docs</filepath> folder copy the
+                <li>In the created project's <filepath>flowers/docs</filepath> folder, copy the
                     entire set of Markdown files produced by publishing the DITA content.</li>
-                <li>Use the mkdocs serve command to start a local web
+                <li>Use the <i>mkdocs</i> serve command to start a local web
                     server:<codeblock>Developer:flowers $ mkdocs serve
 INFO     -  Building documentation...
 INFO     -  Cleaning site directory
 INFO     -  Documentation built in 0.24 seconds
 INFO     -  [14:03:38] Serving on http://127.0.0.1:8000/</codeblock></li>
-            </ul><ul>
-                <li>
-                    <p>Open the <filepath>flowers/mkdocs.yml</filepath> and configure it further,
-                        change the name of the project to something more appropriate, like
-                            <b>Flowers</b>. Change the theme to some other theme supported by
-                            <codeph>mkdocs</codeph> like
-                        <uicontrol>readthedocs</uicontrol>.<codeblock>site_name: Flowers
-theme: readthedocs</codeblock></p>
-                    <p>Back to the browser, the new site name and color theme should be applied, the
-                        search should work and by default the table of contents presents the files
-                        in the order in which they appear on disk:</p>
-                    <p>
-                        <image href="../images/mkdocs_toc.png" width="600"/></p>
-                </li>
-                <li>The <filepath>flowers/docs/index.md</filepath> file contains the table of
-                    contents derived from the original DITA Map structure. It's contents can be used
-                    to create a navigation map which can be included in the
-                        <filepath>flowers/mkdocs.yml</filepath> configuration file:<ul>
-                        <li>Open the <filepath>index.md</filepath> file generated from the DITA Map
-                            in <ph keyref="oxygen"/> and in the <uicontrol>HTML</uicontrol> preview
-                            right click and choose to export as HTML.</li>
-                        <li>Create an XSLT stylesheet which when applied over the HTML content
-                            generates the entire structure of the table of
-                            contents:<codeblock outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                <li>Open the <filepath>flowers/mkdocs.yml</filepath> file and configure it further,
+                    change the name of the project to something more appropriate (e.g.
+                        <b>Flowers</b>). Change the theme to some other theme supported by
+                        <codeph>mkdocs</codeph> (e.g.
+                            <uicontrol>readthedocs</uicontrol>).<codeblock id="codeblock_kqh_42h_vrb">site_name: Flowers
+theme: readthedocs</codeblock><p><b>Result:</b> Back in the browser, the
+                        new site name and color theme should be applied, the search should work, and
+                        by default, the table of contents presents the files in the order that they
+                        appear on disk:</p><p>
+                        <image href="../images/mkdocs_toc.png" width="600" id="image_kq3_42h_vrb"
+                        /></p><p>The <filepath>flowers/docs/index.md</filepath> file contains the
+                        table of contents derived from the original DITA map structure. Its contents
+                        can be used to create a navigation map which can be included in the
+                            <filepath>flowers/mkdocs.yml</filepath> configuration file.</p></li>
+                <li>Open the <filepath>index.md</filepath> file generated from the DITA map in <ph
+                        keyref="oxygen"/> and in the <uicontrol>HTML</uicontrol> preview right click
+                    and choose to export as HTML.</li>
+                <li>Create an XSLT stylesheet that when applied over the HTML content, it generates
+                    the entire structure of the table of
+                    contents:<codeblock outputclass="language-xml" id="codeblock_djt_42h_vrb">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
@@ -72,10 +68,9 @@ theme: readthedocs</codeblock></p>
     - &lt;xsl:value-of select="text()"/>: &lt;xsl:value-of select="@href"/>
     &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock></li>
-                    </ul><ul>
-                        <li>Apply the stylesheet over the HTML content to produce the content which
-                            gets included in the <filepath>flowers/mkdocs.yml</filepath>
-                            configuration file:<codeblock>site_name: Flowers
+                <li>Apply the stylesheet over the HTML content to produce the content that gets
+                    included in the <filepath>flowers/mkdocs.yml</filepath> configuration
+                            file:<codeblock id="codeblock_fjt_42h_vrb">site_name: Flowers
 nav:
     - Home: index.md
     - Introduction: topics/introduction.md
@@ -103,12 +98,10 @@ nav:
     - Perennial: concepts/glossaryPerennial.md
     - Panicle: concepts/glossaryPanicle.md
     - Copyright: topics/copyright.md
-theme: readthedocs</codeblock></li>
-                    </ul><ul>
-                        <li>Now the output should have the table of contents generated from the
-                            original DITA Map.</li>
-                        <li><image href="../images/properTocMKDocs.png" width="600"/></li>
-                    </ul></li>
-            </ul></p>
+theme: readthedocs</codeblock><p><b>Result:</b> Now the output should
+                        have the table of contents generated from the original DITA
+                            map:</p><p><image href="../images/properTocMKDocs.png" width="600"
+                            id="image_hjt_42h_vrb"/></p></li>
+            </ol></p>
     </body>
 </topic>
