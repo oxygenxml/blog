@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="deleting_elements_in_a_refactoring_operation">
+    <title>Deleting Elements in a Refactoring Operation</title>
+    <prolog>
+        <author>chrispy</author>
+        <critdates>
+            <created date="2021-12-07"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Recently, a writer wanted to remove the index from their DITA book. This required the
+            following:</p>
+        <ul id="ul_ws4_x2m_vrb">
+            <li>
+                <p>Removing the <codeph>&lt;indexlists></codeph> element from the map:</p>
+                <codeblock id="pre_try_ffm_vrb" outputclass="language-xml">&lt;backmatter>
+  &lt;booklists>
+    <b>&lt;indexlist/></b>
+  &lt;/booklists>
+&lt;/backmatter></codeblock>
+            </li>
+            <li>
+                <p>Removing topic-level <codeph>&lt;indexterm></codeph> elements from topic
+                    prologs:</p>
+                <codeblock id="pre_x1d_gfm_vrb" outputclass="language-xml">&lt;topic id="feature_A">
+  &lt;title>About Feature A&lt;/title>
+  &lt;prolog>
+    &lt;metadata>
+      &lt;keywords>
+        <b>&lt;indexterm>feature A&lt;/indexterm></b>
+      &lt;/keywords>
+    &lt;/metadata>
+  &lt;/prolog></codeblock>
+            </li>
+            <li>
+                <p>Removing inline <codeph>&lt;indexterm></codeph> elements from topic content:</p>
+                <codeblock id="pre_wsf_gfm_vrb" outputclass="language-xml">&lt;p>This is about <b>&lt;indexterm>feature B&lt;/indexterm></b>feature B.&lt;/p></codeblock>
+            </li>
+        </ul>
+        <p>Oxygen provides a "Delete element" refactoring operation. However, it does precisely what
+            it says—deletes the specified elements, leaving everything else in place:</p>
+        <codeblock id="pre_gdf_lgm_vrb" outputclass="language-xml">&lt;topic id="feature_A">
+  &lt;title>About Feature A&lt;/title>
+  &lt;prolog>
+    &lt;metadata>
+      &lt;keywords>
+
+      &lt;/keywords>
+    &lt;/metadata>
+  &lt;/prolog></codeblock>
+        <p>I decided to create an XSLT refactoring operation that does the following:</p>
+        <ul id="ul_xzc_yhm_vrb">
+            <li>
+                <p>Deletes the specified elements</p>
+            </li>
+            <li>
+                <p>Deletes any containing (ancestor) elements that became empty as a result</p>
+            </li>
+            <li>
+                <p>Updates whitespace/newline formatting around deleted elements as needed</p>
+            </li>
+            <li>
+                <p>Serves as an easily customizable template for other element deletion uses</p>
+            </li>
+        </ul>
+        <p>Fortunately, as described in <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations.html"
+                format="html" scope="external">Custom Refactoring Operations</xref>, Oxygen allows
+            us to package up customized XSLT refactoring operations in an easy-to-use way. For the
+            XML descriptor file, put this content into a <filepath>remove-index.xml</filepath>
+            file:</p>
+        <codeblock id="codeblock_izj_ljm_vrb" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;refactoringOperationDescriptor
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.oxygenxml.com/ns/xmlRefactoring" id="remove-index"
+    name="Remove index from a DITA book">
+    &lt;description>Remove index terms and backmatter index from a DITA book.&lt;/description>
+    &lt;script type="XSLT" href="remove-index.xsl"/>
+    &lt;category>DITA&lt;/category>
+&lt;/refactoringOperationDescriptor></codeblock>
+        <p>For the XSLT file itself, put this content into a <filepath>remove-index.xsl</filepath>
+            file:</p>
+        <codeblock id="codeblock_jht_4jm_vrb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  exclude-result-prefixes="xs"
+  version="2.0">
+
+  &lt;!-- elements to delete -->
+  &lt;xsl:variable name="elements-to-delete" select="('indexterm', 'indexlist')"/>
+
+  &lt;!-- delete up to (and including) these elements, if they become empty -->
+  &lt;xsl:variable name="delete-up-to" select="('prolog', 'backmatter')"/>
+
+
+  &lt;!-- baseline identity transform -->
+  &lt;xsl:template match="@*|node()">
+    &lt;xsl:copy>
+      &lt;xsl:apply-templates select="@*|node()"/>
+    &lt;/xsl:copy>
+  &lt;/xsl:template>
+
+
+  &lt;!-- remove elements-to-delete -->
+  &lt;xsl:template match="*[name() = $elements-to-delete]"/>
+
+  &lt;!-- remove whitespace/newlines before elements-to-delete -->
+  &lt;xsl:template match="text()
+                       [following-sibling::*[1]
+                         [name() = $elements-to-delete]]
+                       [matches(., '^\s*\n\s*$')]"/>
+
+
+  &lt;!-- remove elements that contain our to-be-deleted elements,
+       but only if they become empty -->
+  &lt;xsl:template match="*[ancestor-or-self::*[name() = $delete-up-to]]
+                        [descendant::*[name() = $elements-to-delete]]">
+
+    &lt;!-- apply templates to this element's contents and see what we get -->
+    &lt;xsl:variable name="contents" as="node()*">
+      &lt;xsl:apply-templates select="node()"/>
+    &lt;/xsl:variable>
+
+    &lt;!-- if children elements remain, copy this element (and its preceding whitespace/newlines)
+         and put its contents inside -->
+    &lt;xsl:if test="$contents[self::*]">
+      &lt;xsl:copy select="preceding-sibling::node()[1][self::text()][matches(., '^\s*\n\s*$')]"/>
+      &lt;xsl:copy select=".">
+        &lt;xsl:sequence select="$contents"/>
+      &lt;/xsl:copy>
+    &lt;/xsl:if>
+  &lt;/xsl:template>
+
+  &lt;!-- remove whitespace/newlines before elements-to-delete
+       (we re-add whitespace/newlines above, if needed -->
+  &lt;xsl:template match="text()
+                       [following-sibling::*[1]
+                         [ancestor-or-self::*[name() = $delete-up-to]]
+                         [descendant::*[name() = $elements-to-delete]]]
+                       [matches(., '^\s*\n\s*$')]"/>
+
+&lt;/xsl:stylesheet></codeblock>
+        <p>At the beginning of the refactoring operation, two XSLT variables are defined:</p>
+        <ul id="ul_qqw_ckm_vrb">
+            <li>
+                <p><codeph>elements-to-delete</codeph> - the element names to delete, regardless of
+                    their contents</p>
+            </li>
+            <li>
+                <p><codeph>delete-up-to</codeph> - the highest-level containing element names to
+                    delete, if they become empty</p>
+            </li>
+        </ul>
+        <p>The refactoring operation works as follows:</p>
+        <ul id="ul_j54_4km_vrb">
+            <li>
+                <p>The <codeph>elements-to-delete</codeph> elements are always deleted.</p>
+                <ul id="ul_k42_qkm_vrb">
+                    <li>
+                        <p>Any whitespace/newline <codeph>text()</codeph> nodes directly preceding
+                            them are also deleted.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Any elements that (1) contain an <codeph>elements-to-delete</codeph> element as a
+                    descendant, (2) are contained by or are themselves a
+                        <codeph>delete-up-to</codeph> element, and (3) become empty due to the
+                    element deletion, are deleted.</p>
+                <ul id="ul_ufn_5km_vrb">
+                    <li>
+                        <p>To determine if a "containing" element becomes empty due to the deletion,
+                                <codeph>&lt;xsl:apply-templates></codeph> is called, then the
+                            results are checked to see if any elements remain. This is what allows
+                            the deletion to continue dynamically up through the containing
+                            elements.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To conditionally keep the whitespace/newline <codeph>text()</codeph> node
+                    directly preceding a "containing" element,</p>
+                <ul id="ul_twz_vlm_vrb">
+                    <li>
+                        <p>A standalone unconditional template always deletes the whitespace/newline
+                                <codeph>text()</codeph> node preceding a containing element, whether
+                            it will be kept or not.</p>
+                    </li>
+                    <li>
+                        <p>Inside the template that conditionally keeps containing elements, that
+                            same preceding <codeph>text()</codeph> node is re-included if the
+                            containing element is kept.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>The following example shows a <codeph>&lt;prolog></codeph> element that disappears
+            completely because it does not contain anything other than an
+                <codeph>&lt;indexterm></codeph> element:</p>
+        <table id="table_ky5_21n_vrb">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Before refactoring</entry>
+                        <entry>After refactoring</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>
+                            <codeblock outputclass="language-xml" id="codeblock_syx_h1n_vrb">&lt;topic id="feature_A">
+  &lt;title>About Feature A&lt;/title>
+  &lt;prolog>
+    &lt;metadata>
+      &lt;keywords>
+        <b>&lt;indexterm>feature A&lt;/indexterm></b>
+      &lt;/keywords>
+    &lt;/metadata>
+  &lt;/prolog></codeblock>
+                        </entry>
+                        <entry>
+                            <codeblock outputclass="language-xml" id="codeblock_utz_h1n_vrb">&lt;topic id="feature_A">
+  &lt;title>About Feature A&lt;/title></codeblock>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>The following example shows a <codeph>&lt;prolog></codeph> element that is partially kept
+            because it also contains a <codeph>&lt;resourceid></codeph> element:</p>
+        <table id="table_ztx_31n_vrb">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Before refactoring</entry>
+                        <entry>After refactoring</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>
+                            <codeblock outputclass="language-xml" id="codeblock_a5x_31n_vrb">&lt;topic id="feature_A">
+  &lt;title>About Feature A&lt;/title>
+  &lt;prolog>
+    &lt;metadata>
+      &lt;keywords>
+        <b>&lt;indexterm>feature A&lt;/indexterm></b>
+      &lt;/keywords>
+    &lt;/metadata>
+    <b>&lt;resourceid id="feature_A"/></b>
+  &lt;/prolog></codeblock>
+                        </entry>
+                        <entry>
+                            <codeblock outputclass="language-xml" id="codeblock_b5x_31n_vrb">&lt;topic id="feature_A">
+  &lt;title>About Feature A&lt;/title>
+  &lt;prolog>
+    &lt;resourceid id="feature_A"/>
+  &lt;/prolog></codeblock>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>This same refactoring code can be adapted to other use cases by editing the
+                <codeph>elements-to-delete</codeph> and <codeph>delete-up-to</codeph> variables as
+            needed.</p>
+    </body>
+</topic>
