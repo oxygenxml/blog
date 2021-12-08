@@ -13,6 +13,7 @@
             <topicref href="branchFilters/branchFilter.dita"/>
             <topicref href="keyscopes/keyscopesBlog.dita"/>
             <topicref href="presentation-reuse/presentation.ditamap" format="ditamap"/>
+            <topicref href="topics/cross_book_links.dita"/>
         </topichead>
         <topichead navtitle="Publishing">
    <topicref href="topics/dita_to_confluence.dita"/>

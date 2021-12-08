@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="cross_book_links">
+    <title>Cross-Book Links</title>
+    <prolog>
+        <author>chrispy</author>
+        <critdates>
+            <created date="2021-12-08"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>We use cross-book links in our DITA books, and I wanted to share some of our experiences
+            in using them.</p>
+        <p>A <term>cross-book link</term> is a link that crosses book boundaries. More specifically,
+            it is a link from a  topic in one book to another topic in another book. Cross-book
+            links are made possible by the introduction of <term>keyscopes</term> in DITA 1.3. For
+            more about keyscopes, see the related blog post, <xref
+                href="../keyscopes/keyscopesBlog.dita"/>.</p>
+        <note id="note_wkk_zds_vrb">
+            <p>References to "book" in this article apply equally to both <codeph>&lt;map></codeph>
+                and <codeph>&lt;bookmap></codeph> maps.</p>
+        </note>
+        <p>To define a cross-book link, two components are needed:</p>
+        <ul id="ul_pwy_rds_vrb">
+            <li>
+                <p>In the source book map, a <term>peer map</term> reference defines a keyscope for
+                    each target map that might be referenced by a cross-book link:</p>
+                <codeblock id="codeblock_oss_tds_vrb" outputclass="language-xml">&lt;map>
+  &lt;title>Book 1&lt;/title>
+  &lt;mapref href="book2.ditamap" <b>keyscope="book2"</b> scope="peer"/>
+  ...
+&lt;/map></codeblock>
+                <p>In DITA, a peer map is a map that exists alongside your current map. It is a
+                    declaration of another map's <i>existence</i>, but not an inclusion of that map
+                    for processing or publication.</p>
+            </li>
+            <li>
+                <p>To create a cross-book link in a source book topic, use a <codeph>keyref</codeph>
+                    (key-based) reference to the target topic that includes the keyscope prefix for
+                    the target book:</p>
+                <codeblock outputclass="language-xml">&lt;xref keyref="<b>book2.</b>topic2">topic 2&lt;/xref> </codeblock>
+            </li>
+        </ul>
+        <p>The following example shows a simple case with two books, each containing a topic that
+            references a topic in the other book:</p>
+        <image href="../images/cross_book_links_1.svg" placement="break" id="image_bmg_bzs_vrb" scale="80"/>
+        <p>Note that cross-book <codeph>&lt;xref></codeph> elements must explicitly contain their
+            target text inside them. Although Oxygen automatically resolves and displays cross-book
+            link target text during authoring, the DITA-OT does not resolve or include the target
+            text during publishing (because peer maps are not processed). As a result, you must
+            manually include the target text inside cross-book link elements.</p>
+        <p>Oxygen provides good support for creating cross-book links in its authoring environment.
+            You can create cross-book links in two ways:</p>
+        <ul id="ul_jx5_j5s_vrb">
+            <li>
+                <p>Choosing a scoped key from the <uicontrol>Cross reference</uicontrol> insertion
+                    dialog box</p>
+            </li>
+            <li>
+                <p>Doing a drag-and-drop operation from the source book in the <uicontrol>DITA Maps
+                        Manager</uicontrol> view into the topic editing window</p>
+            </li>
+            <li>
+                <p>Doing a <uicontrol>Copy</uicontrol> of the target topic's
+                        <codeph>&lt;topic></codeph> element, then a <menucascade>
+                        <uicontrol>Paste special</uicontrol>
+                        <uicontrol>Paste as link</uicontrol>
+                    </menucascade> where you want the link</p>
+            </li>
+        </ul>
+        <p>After you create the link, check that the <codeph>@keyref</codeph> value uses the
+            expected keyscope value. If not, check that the map context in the <uicontrol>DITA Maps
+                Manager</uicontrol> is set to the source map so that the link is created within the
+            correct source context. This can be done either by setting the context drop-down to
+                <uicontrol>&lt;Current map></uicontrol> and ensuring that the source map tab is
+            selected, or by explicitly setting the context drop-down to the source map (but remember
+            to change it back if you do this).</p>
+        <p>An interesting cross-book link problem occurred when we started reusing topics across
+            books. We encountered a case where (1) multiple books reused the same topic, and (2)
+            that topic had cross-book links to topics in those books:</p>
+        <image href="../images/cross_book_links_2.svg" placement="break" id="image_m5l_czs_vrb" scale="80"/>
+        <p>In this example, the <filepath>shared.dita</filepath> topic is included in both book1 and
+            book2, and it contains references to other topics in those books. The link to
+                <codeph>book1.topic1</codeph> was broken for the topic instance in book1 (because
+            book1 had no knowledge of a "<codeph>book1</codeph>" keyscope), but the same link worked
+            for the topic instance in book 2 (because book2 had a "<codeph>book2</codeph>" peer map
+            keyscope defined). A similar issue happened for the link to
+                <codeph>book2.topic2</codeph> in book2.</p>
+        <p>The solution was to define local map-level keyscopes for book1 and book2:</p>
+        <image href="../images/cross_book_links_3.svg" placement="break" id="image_lm1_5zs_vrb" scale="80"/>
+        <p>This allowed keyscoped links in reused topics to always resolve properly, whether they
+            pointed to a topic in the same book or a peer map book.</p>
+        <note id="note_itj_dks_vrb">
+            <p>If you use local map-level keyscopes, be sure to use Oxygen 24.0 or later to author
+                your content. It contains some fixes to create cross-book links properly in locally
+                keyscoped map contexts.</p>
+        </note>
+        <p>If you use cross-book links, it is important to understand how the DITA-OT handles them.
+            When a book containing cross-book links is published by itself, the cross-book link
+            elements are accepted syntactically, but during processing they become unresolved links
+            because the target peer maps are not processed. To fix the links, you can run some kind
+            of post-processing utility on the final set of published content. For HTML-based output
+            (such as WebHelp), we use the following utility:</p>
+        <p><xref href="https://github.com/chrispy-snps/DITA-fix-xbook-html-links" format="html"
+                scope="external"/></p>
+        <p>(We do not yet have a solution for cross-book links in our PDF output, but we plan to
+            look into it in the future.)</p>
+        <p>But, something very interesting happens when these books are published together as part
+            of a higher-level "collection" map:</p>
+        <image href="../images/cross_book_links_4.svg" placement="break" id="image_amq_4bt_vrb" scale="80"/>
+        <p>Note that the top-level "collection" map includes each book map within its relevant
+            keyscope. As a result, links that were "cross-book" in the individual maps automatically
+            resolve and become local links in the higher-level collection map! And because these
+            links resolve during publishing, no post-processing is needed.</p>
+        <note id="note_oc2_tqs_vrb">
+            <p>When a keyscoped <codeph>&lt;mapref></codeph> points to a map that has its own local
+                map-level keyscope, the keyscopes are not cascaded. Instead, a single keyscope with
+                the union of keyscope values is used, so that any keyscope in the union can be used
+                to reference into the map. For details, see <xref
+                    href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/keyScopes.html"
+                    format="html" scope="external">2.3.4.2 Key scopes</xref>.</p>
+        </note>
+        <p>This demonstrates a very useful aspect of keyscoped links between books—links
+            automatically become cross-book or local as needed, depending on what is included in
+            publishing. This gives you the freedom to publish books individually, in a single
+            collection, or in multiple collections. And you can even rearrange books across
+            collections, all without having to modify any links in the DITA source.</p>
+    </body>
+</topic>
