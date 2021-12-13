@@ -4,6 +4,11 @@
   <title>How to Migrate from Word to DITA</title>
   <prolog>
     <author>Radu Coravu</author>
+    <metadata>
+      <keywords>
+        <keyword outputclass="label">Migrate</keyword>
+      </keywords>
+    </metadata>
   </prolog>
   <body>
     <p>The need for migrating Microsoft Office<tm tmtype="reg"/> Word documents to XML formats, and

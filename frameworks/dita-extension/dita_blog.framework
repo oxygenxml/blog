@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="22.0" xml:space="preserve">
+<serialized xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
 			<documentTypeDescriptor-array>
 				<documentTypeDescriptor>
+					<field name="webResources">
+						<null/>
+					</field>
 					<field name="extensionPatch">
 						<documentTypeDescriptorPatch>
 							<field name="patchList">
@@ -28,10 +31,37 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/cssDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>19</Integer>
+										</field>
+										<field name="value">
+											<cssFile>
+												<field name="href">
+													<String>${framework}/css/custom.css</String>
+												</field>
+												<field name="title">
+													<String></String>
+												</field>
+												<field name="alternate">
+													<Boolean>false</Boolean>
+												</field>
+											</cssFile>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>86</Integer>
+											<Integer>92</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -134,7 +164,7 @@
 											<String>validationScenarios/[0]/pairs</String>
 										</field>
 										<field name="index">
-											<Integer>5</Integer>
+											<Integer>4</Integer>
 										</field>
 										<field name="value">
 											<validationUnit>
@@ -179,6 +209,9 @@
 															<String>${framework}/schematron/rules.sch</String>
 														</field>
 													</validationUnitSchema>
+												</field>
+												<field name="validationAdvancedSettings">
+													<null/>
 												</field>
 											</validationUnit>
 										</field>
@@ -1311,7 +1344,7 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>ancestor-or-self::*[contains(@class," topic/section ") and not(contains(@class," task/context "))]</String>
+														<String>oxy:allows-global-element("section")</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -1320,28 +1353,8 @@
 																<String>&lt;section>&lt;title/>&lt;p/>&lt;/section></String>
 															</entry>
 															<entry>
-																<String>insertLocation</String>
-																<String>ancestor-or-self::*[contains(@class," topic/section ") and not(contains(@class," task/context "))][1]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>After</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>self::*[contains(@class," topic/body ") and not(contains(@class," task/taskbody "))]</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;section>&lt;title/>&lt;p/>&lt;/section></String>
+																<String>insertEvenIfInvalid</String>
+																<String>false</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1737,7 +1750,7 @@ oxy:allows-global-element("*", "class", " topic/simpletable ")</String>
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>not(ancestor::dita) and ancestor::concept</String>
+														<String>oxy:allows-global-element("concept")</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -1746,68 +1759,20 @@ oxy:allows-global-element("*", "class", " topic/simpletable ")</String>
 																<String>&lt;concept id="">&lt;title/>&lt;conbody>&lt;/conbody>&lt;/concept></String>
 															</entry>
 															<entry>
+																<String>insertEvenIfInvalid</String>
+																<String>false</String>
+															</entry>
+															<entry>
 																<String>insertLocation</String>
-																<String>ancestor::concept[1]/*[last()]</String>
+																<String></String>
 															</entry>
 															<entry>
 																<String>insertPosition</String>
 																<String>After</String>
 															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>self::dita or (not(ancestor::dita) and self::concept)</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
 															<entry>
-																<String>fragment</String>
-																<String>&lt;concept id="">&lt;title/>&lt;/concept></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor::dita and (self::*[contains(@class,"topic/topic ")])</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;concept id="">&lt;title/>&lt;/concept></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor::dita and (ancestor-or-self::*[contains(@class,"topic/topic ")])</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;concept id="">&lt;title/>&lt;/concept></String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>ancestor-or-self::*[contains(@class,"topic/topic ")]/*[last()]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>After</String>
+																<String>schemaAware</String>
+																<String>true</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1847,7 +1812,7 @@ oxy:allows-global-element("*", "class", " topic/simpletable ")</String>
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>not(ancestor::dita) and ancestor::task</String>
+														<String>oxy:allows-global-element("task")</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -1856,64 +1821,12 @@ oxy:allows-global-element("*", "class", " topic/simpletable ")</String>
 																<String>&lt;task id="">&lt;title/>&lt;taskbody>&lt;/taskbody>&lt;/task></String>
 															</entry>
 															<entry>
-																<String>insertLocation</String>
-																<String>ancestor::task[1]/*[last()]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>After</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>self::dita or (not(ancestor::dita) and self::task)</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;task id="">&lt;title/>&lt;/task></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor::dita and (self::*[contains(@class,"topic/topic ")])</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;task id="">&lt;title/>&lt;/task></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor::dita and (ancestor-or-self::*[contains(@class,"topic/topic ")])</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;task id="">&lt;title/>&lt;/task></String>
+																<String>insertEvenIfInvalid</String>
+																<String>false</String>
 															</entry>
 															<entry>
 																<String>insertLocation</String>
-																<String>ancestor-or-self::*[contains(@class,"topic/topic ")]/*[last()]</String>
+																<String></String>
 															</entry>
 															<entry>
 																<String>insertPosition</String>
@@ -2067,73 +1980,21 @@ oxy:allows-global-element("*", "class", " topic/simpletable ")</String>
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>not(ancestor::dita) and ancestor::reference</String>
+														<String>oxy:allows-global-element("reference")</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>fragment</String>
 																<String>&lt;reference id="">&lt;title/>&lt;refbody/>&lt;/reference></String>
+															</entry>
+															<entry>
+																<String>insertEvenIfInvalid</String>
+																<String>false</String>
 															</entry>
 															<entry>
 																<String>insertLocation</String>
-																<String>ancestor::reference[1]/*[last()]</String>
-															</entry>
-															<entry>
-																<String>insertPosition</String>
-																<String>After</String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>self::dita or (not(ancestor::dita) and self::reference)</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;reference id="">&lt;title/>&lt;refbody/>&lt;/reference></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor::dita and (self::*[contains(@class,"topic/topic ")])</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;reference id="">&lt;title/>&lt;refbody/>&lt;/reference></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>ancestor::dita and (ancestor-or-self::*[contains(@class,"topic/topic ")])</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;reference id="">&lt;title/>&lt;refbody/>&lt;/reference></String>
-															</entry>
-															<entry>
-																<String>insertLocation</String>
-																<String>(ancestor-or-self::*[contains(@class,"topic/topic ")])/*[last()]</String>
+																<String></String>
 															</entry>
 															<entry>
 																<String>insertPosition</String>
@@ -5714,10 +5575,10 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<String>${i18n(insert_code_block)}</String>
 										</field>
 										<field name="description">
-											<String></String>
+											<String>${i18n(insert_codeblock_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String>/images/CodeBlock24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/CodeBlock16.png</String>
@@ -5764,7 +5625,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<String>${i18n(insert_note)}</String>
 										</field>
 										<field name="description">
-											<String></String>
+											<String>${i18n(insert_note_description)}</String>
 										</field>
 										<field name="largeIconPath">
 											<String></String>
@@ -5814,7 +5675,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<String>${i18n(insert_definition_list)}</String>
 										</field>
 										<field name="description">
-											<String></String>
+											<String>${i18n(insert_definition_list_description)}</String>
 										</field>
 										<field name="largeIconPath">
 											<String></String>
@@ -5869,10 +5730,10 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<String>${i18n(code)}</String>
 										</field>
 										<field name="description">
-											<String></String>
+											<String>${i18n(code_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String>/images/CodeBlock24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/CodeBlock16.png</String>
@@ -5907,6 +5768,309 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>up</String>
+										</field>
+										<field name="name">
+											<String>${i18n(Move_up)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(Move_up)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String>/images/NodeUp24.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>/images/NodeUp16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:current-selected-element()[preceding-sibling::*[1]]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>insertPosition</String>
+																<String>Before</String>
+															</entry>
+															<entry>
+																<String>sourceLocation</String>
+																<String>oxy:current-selected-element()</String>
+															</entry>
+															<entry>
+																<String>targetLocation</String>
+																<String>oxy:current-selected-element()/preceding-sibling::*[1]</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.MoveElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>down</String>
+										</field>
+										<field name="name">
+											<String>${i18n(Move_down)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(Move_down)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String>/images/NodeDown24.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>/images/NodeDown16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:current-selected-element()[following-sibling::*[1]]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+															<entry>
+																<String>sourceLocation</String>
+																<String>oxy:current-selected-element()</String>
+															</entry>
+															<entry>
+																<String>targetLocation</String>
+																<String>oxy:current-selected-element()/following-sibling::*[1]</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.MoveElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>surround.uicontrol</String>
+										</field>
+										<field name="name">
+											<String>${i18n(surround_uicontrol)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(surround_uicontrol_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/UIControl24.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/UIControl16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>element</String>
+																<String>&lt;uicontrol/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>surround.filepath</String>
+										</field>
+										<field name="name">
+											<String>${i18n(surround_filepath)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(surround_filepath_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/Filepath24.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/Filepath16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>element</String>
+																<String>&lt;filepath/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ToggleSurroundWithElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.menucascade</String>
+										</field>
+										<field name="name">
+											<String>${i18n(insert_menucascade)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(insert_menucascade_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/MenuCascade24.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/MenuCascade16.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;menucascade>&lt;uicontrol/>&lt;uicontrol/>&lt;/menucascade></String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>abc</String>
+										</field>
+										<field name="name">
+											<String>DEF</String>
+										</field>
+										<field name="description">
+											<String>DEF</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>true()</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;article-categories>
+  &lt;subj-group subj-group-type="badges">
+    &lt;compound-subject>
+        ${ask('Choose badge:', combobox, (${xpath_eval(doc('${framework}/resources/badges.xml')/badges/normalize-space(text()))}), '001', @code)}
+        &lt;compound-subject-part content-type="label">You chose: ${answer(@code)}&lt;/compound-subject-part>
+    &lt;/compound-subject>
+&lt;/subj-group>
+&lt;/article-categories></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -5922,6 +6086,11 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 									</field>
 									<field name="menuEntriesDescriptorList">
 										<menuEntry-array>
+											<menuItem>
+												<field name="actionID">
+													<String>abc</String>
+												</field>
+											</menuItem>
 											<menuItem>
 												<field name="actionID">
 													<String>reuse.content</String>
@@ -6046,6 +6215,23 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 																<String>insert.reference</String>
 															</field>
 														</menuItem>
+														<menuSeparator/>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.note</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.code.block</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.menucascade</String>
+															</field>
+														</menuItem>
+														<menuSeparator/>
 														<menuItem>
 															<field name="actionID">
 																<String>insert.image</String>
@@ -6094,6 +6280,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 																<String>underline</String>
 															</field>
 														</menuItem>
+														<menuSeparator/>
 														<menuItem>
 															<field name="actionID">
 																<String>subscript</String>
@@ -6102,6 +6289,23 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 														<menuItem>
 															<field name="actionID">
 																<String>superscript</String>
+															</field>
+														</menuItem>
+														<menuSeparator/>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.code.phrase</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>surround.filepath</String>
+															</field>
+														</menuItem>
+														<menuSeparator/>
+														<menuItem>
+															<field name="actionID">
+																<String>surround.uicontrol</String>
 															</field>
 														</menuItem>
 													</menuEntry-array>
@@ -6184,6 +6388,11 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 														<menuItem>
 															<field name="actionID">
 																<String>orderedList</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.definition.list</String>
 															</field>
 														</menuItem>
 													</menuEntry-array>
@@ -6494,6 +6703,11 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 														</menuItem>
 														<menuItem>
 															<field name="actionID">
+																<String>insert.menucascade</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
 																<String>insert.definition.list</String>
 															</field>
 														</menuItem>
@@ -6561,6 +6775,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 																<String>underline</String>
 															</field>
 														</menuItem>
+														<menuSeparator/>
 														<menuItem>
 															<field name="actionID">
 																<String>subscript</String>
@@ -6571,9 +6786,21 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 																<String>superscript</String>
 															</field>
 														</menuItem>
+														<menuSeparator/>
 														<menuItem>
 															<field name="actionID">
 																<String>insert.code.phrase</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>surround.filepath</String>
+															</field>
+														</menuItem>
+														<menuSeparator/>
+														<menuItem>
+															<field name="actionID">
+																<String>surround.uicontrol</String>
 															</field>
 														</menuItem>
 													</menuEntry-array>
@@ -7305,6 +7532,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 					<field name="templatesLocations">
 						<String-array>
 							<String>${configured.ditaot.dir}/plugins/*/template_folders/*</String>
+							<String>${frameworkDir}/templates/sample-project</String>
 							<String>${frameworkDir}/templates/topic</String>
 							<String>${frameworkDir}/templates/topic-xsd</String>
 							<String>${frameworkDir}/templates/topic-rng</String>
@@ -7312,13 +7540,11 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 							<String>${configured.ditaot.dir}/plugins/net.sourceforge.dita4publishers.doctypes/oxygen_templates/topic (Dita 4 Publishers)</String>
 							<String>${configured.ditaot.dir}/plugins/org.oasis-open.dita.v1_3/oxygen_templates/DITA 1.3/topic-rng</String>
 							<String>${configured.ditaot.dir}/plugins/mathml/oxygen_templates/MathML</String>
-							<String>${configured.ditaot.dir}/plugins/org.oasis.xdita/oxygen_templates/LW (Lightweight) DITA/topic-lw</String>
 						</String-array>
 					</field>
 					<field name="xmlCatalogs">
 						<String-array>
 							<String>${framework}/catalog.xml</String>
-							<String>${configured.ditaot.dir.url}/plugins/org.dita.base/catalog-dita.xml</String>
 							<String>${configured.ditaot.dir.url}/catalog-dita.xml</String>
 							<String>${framework}/styleguide/catalog.xml</String>
 							<String>${framework}/plugin/catalog.xml</String>
@@ -7886,6 +8112,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 								<field name="useAntennaHouse">
 									<Boolean>false</Boolean>
 								</field>
+								<field name="useDITAScript">
+									<Boolean>true</Boolean>
+								</field>
 								<field name="baseDir">
 									<String>${cfd}</String>
 								</field>
@@ -7948,7 +8177,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 									<list/>
 								</field>
 								<field name="jvmArgs">
-									<String>-Xmx384m</String>
+									<String></String>
 								</field>
 								<field name="useCustomJavaHome">
 									<Boolean>false</Boolean>
@@ -8057,6 +8286,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 								<field name="useAntennaHouse">
 									<Boolean>false</Boolean>
 								</field>
+								<field name="useDITAScript">
+									<Boolean>true</Boolean>
+								</field>
 								<field name="baseDir">
 									<String>${cfd}</String>
 								</field>
@@ -8081,7 +8313,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<null/>
 										</field>
 										<field name="ditavalFilePath">
-											<String></String>
+											<null/>
 										</field>
 										<field name="simpleFiltersList">
 											<list/>
@@ -8116,34 +8348,10 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 									<String></String>
 								</field>
 								<field name="ditaParams">
-									<list>
-										<ditaParameter>
-											<field name="name">
-												<String>dita.dir</String>
-											</field>
-											<field name="description">
-												<null/>
-											</field>
-											<field name="value">
-												<String>${configured.ditaot.dir}</String>
-											</field>
-											<field name="defaultValue">
-												<null/>
-											</field>
-											<field name="type">
-												<Integer>3</Integer>
-											</field>
-											<field name="possibleValues">
-												<null/>
-											</field>
-											<field name="possibleValuesDescriptions">
-												<null/>
-											</field>
-										</ditaParameter>
-									</list>
+									<list/>
 								</field>
 								<field name="jvmArgs">
-									<String>-Xmx384m</String>
+									<String></String>
 								</field>
 								<field name="useCustomJavaHome">
 									<Boolean>false</Boolean>
@@ -8252,6 +8460,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 								<field name="useAntennaHouse">
 									<Boolean>false</Boolean>
 								</field>
+								<field name="useDITAScript">
+									<Boolean>true</Boolean>
+								</field>
 								<field name="baseDir">
 									<String>${cfd}</String>
 								</field>
@@ -8345,72 +8556,10 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 												<null/>
 											</field>
 										</ditaParameter>
-										<ditaParameter>
-											<field name="name">
-												<String>css.processor.type</String>
-											</field>
-											<field name="description">
-												<null/>
-											</field>
-											<field name="value">
-												<String>chemistry</String>
-											</field>
-											<field name="defaultValue">
-												<String>chemistry</String>
-											</field>
-											<field name="type">
-												<Integer>4</Integer>
-											</field>
-											<field name="possibleValues">
-												<String-array>
-													<String>chemistry</String>
-													<String>prince</String>
-													<String>antenna-house</String>
-													<null/>
-												</String-array>
-											</field>
-											<field name="possibleValuesDescriptions">
-												<String-array>
-													<String></String>
-													<String></String>
-													<String></String>
-												</String-array>
-											</field>
-										</ditaParameter>
-										<ditaParameter>
-											<field name="name">
-												<String>fix.external.refs.com.oxygenxml</String>
-											</field>
-											<field name="description">
-												<null/>
-											</field>
-											<field name="value">
-												<String>true</String>
-											</field>
-											<field name="defaultValue">
-												<String>true</String>
-											</field>
-											<field name="type">
-												<Integer>4</Integer>
-											</field>
-											<field name="possibleValues">
-												<String-array>
-													<String>true</String>
-													<String>false</String>
-													<null/>
-												</String-array>
-											</field>
-											<field name="possibleValuesDescriptions">
-												<String-array>
-													<String></String>
-													<String></String>
-												</String-array>
-											</field>
-										</ditaParameter>
 									</list>
 								</field>
 								<field name="jvmArgs">
-									<String>-Xmx384m</String>
+									<String></String>
 								</field>
 								<field name="useCustomJavaHome">
 									<Boolean>false</Boolean>
@@ -8519,6 +8668,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 								<field name="useAntennaHouse">
 									<Boolean>false</Boolean>
 								</field>
+								<field name="useDITAScript">
+									<Boolean>true</Boolean>
+								</field>
 								<field name="baseDir">
 									<String>${cfd}</String>
 								</field>
@@ -8608,7 +8760,7 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 									</list>
 								</field>
 								<field name="jvmArgs">
-									<String>-Xmx384m</String>
+									<String></String>
 								</field>
 								<field name="useCustomJavaHome">
 									<Boolean>false</Boolean>
@@ -8747,6 +8899,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<field name="validationSchema">
 												<null/>
 											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
 										</validationUnit>
 										<validationUnit>
 											<field name="validationType">
@@ -8791,6 +8946,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 													</field>
 												</validationUnitSchema>
 											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
 										</validationUnit>
 										<validationUnit>
 											<field name="validationType">
@@ -8822,49 +8980,8 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<field name="validationSchema">
 												<null/>
 											</field>
-										</validationUnit>
-										<validationUnit>
-											<field name="validationType">
-												<validationUnitType>
-													<field name="validationInputType">
-														<String>text/xml</String>
-													</field>
-												</validationUnitType>
-											</field>
-											<field name="url">
-												<String>${currentFileURL}</String>
-											</field>
-											<field name="validationEngine">
-												<validationEngine>
-													<field name="engineType">
-														<String>&lt;Default engine></String>
-													</field>
-													<field name="allowsAutomaticValidation">
-														<Boolean>true</Boolean>
-													</field>
-												</validationEngine>
-											</field>
-											<field name="allowAutomaticValidation">
-												<Boolean>false</Boolean>
-											</field>
-											<field name="extensions">
+											<field name="validationAdvancedSettings">
 												<null/>
-											</field>
-											<field name="validationSchema">
-												<validationUnitSchema>
-													<field name="dtdSchemaPublicID">
-														<null/>
-													</field>
-													<field name="schematronPhase">
-														<null/>
-													</field>
-													<field name="type">
-														<Integer>7</Integer>
-													</field>
-													<field name="uri">
-														<String>${framework}/resources/dita-1.2-for-xslt2-other.sch</String>
-													</field>
-												</validationUnitSchema>
 											</field>
 										</validationUnit>
 										<validationUnit>
@@ -8909,6 +9026,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 														<String>${framework}/styleguide/rules/styleguide.sch</String>
 													</field>
 												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
 											</field>
 										</validationUnit>
 									</list>
@@ -8965,6 +9085,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 														<String>${framework}/resources/accessibility.sch</String>
 													</field>
 												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
 											</field>
 										</validationUnit>
 									</list>

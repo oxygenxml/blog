@@ -1,0 +1,8 @@
+keyword[outputclass = 'label'] {
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 6px;
+    margin: 0.2em;
+    padding: 0.2em;
+    width:20%;
+}

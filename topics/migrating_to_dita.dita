@@ -4,6 +4,11 @@
   <title>Migrating Various Document Formats to DITA</title>
   <prolog>
     <author>Radu Coravu</author>
+    <metadata>
+      <keywords>
+        <keyword outputclass="label">Migrate</keyword>
+      </keywords>
+    </metadata>
   </prolog>
   <body>
     <p>Most companies do not start new DITA-based projects from scratch. They already have content

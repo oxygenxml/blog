@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_sz1_ssy_ct">
-  <title>DITA 1.3 Key Scopes - Next Generation of Reuse</title><prolog><author>Radu Coravu</author></prolog>
+  <title>DITA 1.3 Key Scopes - Next Generation of Reuse</title><prolog><author>Radu Coravu</author>
+    <metadata>
+      <keywords>
+        <keyword outputclass="label">DITA 1.3</keyword>
+      </keywords>
+    </metadata></prolog>
   <body>
     <p>Thanks to the hard working <xref
         href="https://www.oasis-open.org/committees/membership.php?wg_abbrev=dita" format="html"
