@@ -7,6 +7,11 @@
         <critdates>
             <created date="2021-12-13"/>
         </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
     </prolog>
     <body>
         <p>DITA topics can contain <xmlelement>keyword</xmlelement> elements usually placed in a
@@ -54,7 +59,7 @@
                 publishing template folder there is an <filepath>opt</filepath> file which can
                 contain links to various XSLT stylesheets useful for customizations, we'll add a
                 link to a stylesheet for processing such special keyword label
-                elements:<codeblock id="codeblock_cfr_ft1_xrb">&lt;publishing-template>
+                elements:<codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml">&lt;publishing-template>
     &lt;name>.....&lt;/name>
     ......
         &lt;xslt>
@@ -108,7 +113,7 @@
                 label.</p><image href="../images/webhelp-labels.png" id="image_hzy_kbb_xrb"
                 scale="40"/><p>The Oxygen blog uses this customization and some of the articles in
                 the blog have labels defined on them: <xref
-                    href="../out/webhelp-responsive/branchFilters/branchFilter.html" format="html"
+                    href="../branchFilters/branchFilter.dita"
                 />.</p></section>
     </body>
 </topic>
