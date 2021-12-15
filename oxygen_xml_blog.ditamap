@@ -106,6 +106,7 @@
 				<navtitle>Oxygen XML Blog as a Graph</navtitle>
 			</topicmeta>
 		</topicref>
+        <topicref href="topics/oxygen_xml_vulnerability_analysis_faq.dita"/>
     </topichead>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
 </map>
