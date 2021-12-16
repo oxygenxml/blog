@@ -15,14 +15,11 @@
             features?</p>
         <p>Let's suppose that you already created an Oxygen framework for your documents vocabulary
             (if you need further information about frameworks, see <xref
-                href="http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html"
-                format="html" scope="external"
-                >http://blog.oxygenxml.com/2014/08/the-oxygen-sdk-part-2-frameworks.html</xref>).
-            What we want to obtain next is to extract all the CALS tables related support from
-                <b>Docbook</b> framework and add it to your custom framework. Why <b>Docbook</b> and
-            not <b>DITA</b> as reference? Because the <b>DITA</b> customization is based on the
-            "class" attribute checking while the <b>Docbook</b> one is more general (element-name
-            oriented).</p>
+                href="oxygenFrameworks.dita"/>). What we want to obtain next is to extract all the
+            CALS tables related support from <b>Docbook</b> framework and add it to your custom
+            framework. Why <b>Docbook</b> and not <b>DITA</b> as reference? Because the <b>DITA</b>
+            customization is based on the "class" attribute checking while the <b>Docbook</b> one is
+            more general (element-name oriented).</p>
         <ol id="ol_mkm_3cy_mlb">
             <li><b>Table rendering</b><ol id="ol_nkm_3cy_mlb">
                     <li>copy
@@ -60,13 +57,11 @@
                     <li> For every table action you have to define a corresponding action in the
                             <systemoutput>Document type</systemoutput> configuration dialog. Here
                         are the details: <xref
-                            href="https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/the-action-dialog.html"
-                            format="html" scope="external"
-                            >https://www.oxygenxml.com/doc/versions/17.1/ug-editor/#topics/the-action-dialog.html</xref>.
-                        You can look at the corresponding Docbook action to see the properties (id,
-                        name, icons, the conditions that enables it, the specific operation for CALS
-                        tables). <p>Once you created these actions you can add them to the UI.
-                        </p></li>
+                            href="https://www.oxygenxml.com/doc/ug-editor/#topics/the-action-dialog.html"
+                            format="html" scope="external"/>. You can look at the corresponding
+                        Docbook action to see the properties (id, name, icons, the conditions that
+                        enables it, the specific operation for CALS tables). <p>Once you created
+                            these actions you can add them to the UI. </p></li>
                 </ol></li>
             <li><b>Add table actions to menu, toolbar and contextual menu</b><ol id="ol_rkm_3cy_mlb">
                     <li>To add an action to the menu go to <systemoutput>Document
