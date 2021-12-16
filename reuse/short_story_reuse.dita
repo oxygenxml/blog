@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_tjq_tcw_gt">
   <title>A Short Story of Reuse</title>
+  <prolog>
+    <author>raducoravu</author>
+  </prolog>
   <body>
     <p>Give the smartest human in the world a piece of <b>wood</b> and ask him/her to make
         <b>paper</b>. Give them <b>no prior tools</b> and it will take <b>years</b> to come up with
