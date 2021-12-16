@@ -87,7 +87,7 @@
         <topicref
             href="topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.dita"
             keys="adding_cals_table_related_functionality_to_your_custom_oxygen_framework"/>
-        <topicref href="convert_code_templates_to_author_actions.dita"/>
+        <topicref href="topics/convert_code_templates_to_author_actions.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
         <topicref href="topics/general_tips_and_tricks.dita"/>
