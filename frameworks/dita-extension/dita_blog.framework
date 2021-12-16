@@ -61,7 +61,7 @@
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>92</Integer>
+											<Integer>91</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -120,10 +120,113 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>92</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>label</String>
+												</field>
+												<field name="name">
+													<String>label</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>oxy:allows-child-element('keyword')</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;keyword outputclass="label">${caret}&lt;/keyword></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/contextualItems/items</String>
 										</field>
 										<field name="index">
 											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<contextItem>
+												<field name="targets">
+													<list>
+														<Integer>0</Integer>
+													</list>
+												</field>
+												<field name="actionID">
+													<String>label</String>
+												</field>
+												<field name="alias">
+													<null/>
+												</field>
+												<field name="replacementFor">
+													<null/>
+												</field>
+												<field name="replacedElementNs">
+													<String></String>
+												</field>
+												<field name="displayOnlyWhenElementAllowed">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useReplaceElementName">
+													<Boolean>false</Boolean>
+												</field>
+											</contextItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/contextualItems/items</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
 										</field>
 										<field name="value">
 											<contextItem>
@@ -6018,59 +6121,6 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<Boolean>false</Boolean>
 										</field>
 									</action>
-									<action>
-										<field name="id">
-											<String>abc</String>
-										</field>
-										<field name="name">
-											<String>DEF</String>
-										</field>
-										<field name="description">
-											<String>DEF</String>
-										</field>
-										<field name="largeIconPath">
-											<String></String>
-										</field>
-										<field name="smallIconPath">
-											<String></String>
-										</field>
-										<field name="accessKey">
-											<String></String>
-										</field>
-										<field name="accelerator">
-											<null/>
-										</field>
-										<field name="actionModes">
-											<actionMode-array>
-												<actionMode>
-													<field name="xpathCondition">
-														<String>true()</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;article-categories>
-  &lt;subj-group subj-group-type="badges">
-    &lt;compound-subject>
-        ${ask('Choose badge:', combobox, (${xpath_eval(doc('${framework}/resources/badges.xml')/badges/normalize-space(text()))}), '001', @code)}
-        &lt;compound-subject-part content-type="label">You chose: ${answer(@code)}&lt;/compound-subject-part>
-    &lt;/compound-subject>
-&lt;/subj-group>
-&lt;/article-categories></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-													</field>
-												</actionMode>
-											</actionMode-array>
-										</field>
-										<field name="enabledInReadOnlyContext">
-											<Boolean>false</Boolean>
-										</field>
-									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -6086,11 +6136,6 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 									</field>
 									<field name="menuEntriesDescriptorList">
 										<menuEntry-array>
-											<menuItem>
-												<field name="actionID">
-													<String>abc</String>
-												</field>
-											</menuItem>
 											<menuItem>
 												<field name="actionID">
 													<String>reuse.content</String>
