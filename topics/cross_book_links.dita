@@ -26,10 +26,10 @@
                 <p>In the source book map, a <term>peer map</term> reference defines a keyscope for
                     each target map that might be referenced by a cross-book link:</p>
                 <codeblock id="codeblock_oss_tds_vrb" outputclass="language-xml">&lt;map>
-  &lt;title>Book 1&lt;/title>
-  &lt;mapref href="book2.ditamap" <b>keyscope="book2"</b> scope="peer"/>
-  ...
-&lt;/map></codeblock>
+                    &lt;title>Book 1&lt;/title>
+                    &lt;mapref href="book2.ditamap" <b>keyscope="book2"</b> processing-role="resource-only" scope="peer"/>
+                    ...
+                    &lt;/map></codeblock>
                 <p>In DITA, a peer map is a map that exists alongside your current map. It is a
                     declaration of another map's <i>existence</i>, but not an inclusion of that map
                     for processing or publication.</p>
@@ -44,11 +44,16 @@
         <p>The following example shows a simple case with two books, each containing a topic that
             references a topic in the other book:</p>
         <image href="../images/cross_book_links_1.svg" placement="break" id="image_bmg_bzs_vrb" scale="80"/>
-        <p>Note that cross-book <codeph>&lt;xref></codeph> elements must explicitly contain their
-            target text inside them. Although Oxygen automatically resolves and displays cross-book
-            link target text during authoring, the DITA-OT does not resolve or include the target
-            text during publishing (because peer maps are not processed). As a result, you must
-            manually include the target text inside cross-book link elements.</p>
+        <note id="note_fcd_s5q_zrb">The figures in this article omit
+            <codeph>processing-role="resource-only"</codeph> from <codeph>&lt;mapref
+                scope="peer"></codeph> elements for brevity. Although the DITA-OT implicitly treats
+            peer map references as resource-only by default, we do explicitly define their
+            processing role in our books.</note>
+        <p>Cross-book <codeph>&lt;xref></codeph> elements must explicitly contain their target text
+            inside them. Although Oxygen automatically resolves and displays cross-book link target
+            text during authoring, the DITA-OT does not resolve or include the target text during
+            publishing (because peer maps are not processed). As a result, you must manually include
+            the target text inside cross-book link elements.</p>
         <p>Oxygen provides good support for creating cross-book links in its authoring environment.
             You can create cross-book links in two ways:</p>
         <ul id="ul_jx5_j5s_vrb">
@@ -58,11 +63,11 @@
             </li>
             <li>
                 <p>Doing a drag-and-drop operation from the source book in the <uicontrol>DITA Maps
-                        Manager</uicontrol> view into the topic editing window</p>
+                    Manager</uicontrol> view into the topic editing window</p>
             </li>
             <li>
                 <p>Doing a <uicontrol>Copy</uicontrol> of the target topic's
-                        <codeph>&lt;topic></codeph> element, then a <menucascade>
+                    <codeph>&lt;topic></codeph> element, then a <menucascade>
                         <uicontrol>Paste special</uicontrol>
                         <uicontrol>Paste as link</uicontrol>
                     </menucascade> where you want the link</p>
@@ -72,7 +77,7 @@
             expected keyscope value. If not, check that the map context in the <uicontrol>DITA Maps
                 Manager</uicontrol> is set to the source map so that the link is created within the
             correct source context. This can be done either by setting the context drop-down to
-                <uicontrol>&lt;Current map></uicontrol> and ensuring that the source map tab is
+            <uicontrol>&lt;Current map></uicontrol> and ensuring that the source map tab is
             selected, or by explicitly setting the context drop-down to the source map (but remember
             to change it back if you do this).</p>
         <p>An interesting cross-book link problem occurred when we started reusing topics across
@@ -81,11 +86,11 @@
         <image href="../images/cross_book_links_2.svg" placement="break" id="image_m5l_czs_vrb" scale="80"/>
         <p>In this example, the <filepath>shared.dita</filepath> topic is included in both book1 and
             book2, and it contains references to other topics in those books. The link to
-                <codeph>book1.topic1</codeph> was broken for the topic instance in book1 (because
+            <codeph>book1.topic1</codeph> was broken for the topic instance in book1 (because
             book1 had no knowledge of a "<codeph>book1</codeph>" keyscope), but the same link worked
             for the topic instance in book 2 (because book2 had a "<codeph>book2</codeph>" peer map
             keyscope defined). A similar issue happened for the link to
-                <codeph>book2.topic2</codeph> in book2.</p>
+            <codeph>book2.topic2</codeph> in book2.</p>
         <p>The solution was to define local map-level keyscopes for book1 and book2:</p>
         <image href="../images/cross_book_links_3.svg" placement="break" id="image_lm1_5zs_vrb" scale="80"/>
         <p>This allowed keyscoped links in reused topics to always resolve properly, whether they
@@ -102,7 +107,7 @@
             of post-processing utility on the final set of published content. For HTML-based output
             (such as WebHelp), we use the following utility:</p>
         <p><xref href="https://github.com/chrispy-snps/DITA-fix-xbook-html-links" format="html"
-                scope="external"/></p>
+            scope="external"/></p>
         <p>(We do not yet have a solution for cross-book links in our PDF output, but we plan to
             look into it in the future.)</p>
         <p>But, something very interesting happens when these books are published together as part
