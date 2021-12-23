@@ -2,6 +2,12 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="publishing_dita_content_using_a_markdown_static_web_site_generator">
     <title>Publishing DITA Content Using the MKDocs Web Site Generator</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2021-12-23"/>
+        </critdates>
+    </prolog>
     <body>
         <p><xref href="https://www.mkdocs.org/getting-started/" format="html" scope="external"
                 >MKDocs</xref> is a static site generator that is geared towards building project
