@@ -66,11 +66,20 @@
           scope="external"/>.</li>
       <li>Besides being bundled with <b>Oxygen</b> the <b>TEI</b> framework is also available as a
         project partly maintained by the <b>TEI</b> community: <xref
-          href="https://code.google.com/p/oxygen-tei/" format="html" scope="external"/><p>HisTEI: An
-            <b>Oxygen</b> framework for historical documents encoded in TEI. </p><p>More details:
-            <xref href="https://github.com/odaata/HisTEI" format="html" scope="external"/>, <xref
+          href="https://code.google.com/p/oxygen-tei/" format="html" scope="external"/></li>
+      <li>
+        <p>HisTEI: An <b>Oxygen</b> framework for historical documents encoded in TEI. </p>
+        <p>More details: <xref href="https://github.com/odaata/HisTEI" format="html"
+            scope="external"/>, <xref
             href="https://www.oxygenxml.com/pipermail/oxygen-sdk/2014-November/000182.html"
-            format="html" scope="external"/></p></li>
+            format="html" scope="external"/></p>
+      </li>
+      <li>oXbytei is an <xref href="https://www.oxygenxml.com/" format="html" scope="external"
+          >oXygen</xref> framework for editing <xref href="https://tei-c.org/" format="html"
+          scope="external">TEI</xref>, that is configured by TEI's header. It offers high-level
+        functions that facilitate everyday work on TEI documents. More details: <xref
+          href="https://github.com/SCDH/oxbytei#an-oxygen-framework-configured-by-tei" format="html"
+          scope="external"/></li>
       <li>
         <p>Ediarium is an extension package for TEI editing within Oxygen.</p>
         <p>More details:<xref href="http://www.bbaw.de/en/telota/software/ediarum" format="html"
