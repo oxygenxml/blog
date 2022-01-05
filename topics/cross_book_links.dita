@@ -86,11 +86,11 @@
         <image href="../images/cross_book_links_2.svg" placement="break" id="image_m5l_czs_vrb" scale="80"/>
         <p>In this example, the <filepath>shared.dita</filepath> topic is included in both book1 and
             book2, and it contains references to other topics in those books. The link to
-            <codeph>book1.topic1</codeph> was broken for the topic instance in book1 (because
+                <codeph>book1.topic1</codeph> was broken for the topic instance in book1 (because
             book1 had no knowledge of a "<codeph>book1</codeph>" keyscope), but the same link worked
-            for the topic instance in book 2 (because book2 had a "<codeph>book2</codeph>" peer map
+            for the topic instance in book 2 (because book2 had a "<codeph>book1</codeph>" peer map
             keyscope defined). A similar issue happened for the link to
-            <codeph>book2.topic2</codeph> in book2.</p>
+                <codeph>book2.topic2</codeph> in book2.</p>
         <p>The solution was to define local map-level keyscopes for book1 and book2:</p>
         <image href="../images/cross_book_links_3.svg" placement="break" id="image_lm1_5zs_vrb" scale="80"/>
         <p>This allowed keyscoped links in reused topics to always resolve properly, whether they
