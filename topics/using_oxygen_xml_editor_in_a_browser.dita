@@ -12,45 +12,42 @@
         <p>The <xref
                 href="https://jetbrains.github.io/projector-client/mkdocs/latest/ij_user_guide/jetbrains/"
                 format="html" scope="external">JetBrains Projector</xref> is a technology for
-            rendering Swing applications over the network and it's thus an interesting way to run
-            and access these apps remotely. Some of its usecases are listed here: <xref
+            rendering Swing applications over the network and is an interesting way to run
+            and access these apps remotely. Some of its use cases are listed here: <xref
                 href="https://jetbrains.github.io/projector-client/mkdocs/latest/ij_user_guide/jetbrains/#use-cases"
                 format="html" scope="external"/>.</p>
-        <p>As Oxygen XML Editor is a Swing Java-based application this blog post gives some steps
-            about how Oxygen XML Editor could be accessed remotely and used from a web browser.<fig
-                id="fig_jx2_gn1_xrb">
-                <title>Oxygen XML Editor running in the Safari web browser using JetBrains
+        <p>Since Oxygen XML Editor is a Jave Swing-based application, this blog post explains how Oxygen XML Editor could be accessed remotely and used from a web browser.<fig>
+                <title>Oxygen XML Editor Running in the Safari Web Browser Using JetBrains
                     Projector</title>
                 <image href="../images/oxygen-web-browser.png" id="image_ujg_kn1_xrb" scale="30"/>
             </fig></p>
-        <p>The following steps are needed to prepare an Oxygen XML Editor installation on the server
-            side for running in a web browser:<ul id="ul_xp3_4n1_xrb">
-                <li>Download an all platforms <filepath>oxygen.tar.gz</filepath> installation kit of
-                    Oxygen: <xref
-                        href="https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html?os=Other"
-                        format="html" scope="external"/> and unpack it to an
-                        <filepath>oxygen</filepath> folder.</li>
-                <li>Download the <xref href="https://github.com/JetBrains/projector-installer"
-                        format="html" scope="external">Jetbrains projector installer</xref> and
-                    unzip it in the Oxygen installation folder, the folder path should be something
-                    like <filepath>oxygen/projector-server-1.5.0</filepath>.</li>
-                <li>Download the <xref href="https://github.com/JetBrains/JetBrainsRuntime/releases"
-                        format="html" scope="external">Jetbrains Java 11 runtime enviroment</xref>
-                    and unpack it to the <filepath>oxygen/jbr</filepath> folder.</li>
-                <li>Create a <filepath>start-projector-oxygen.bat</filepath> script in the
-                        <filepath>oxygen</filepath> installation folder so that it adds the
-                    JetBrains libraries to the classpath and runs the JetBrains server giving it as
-                    a parameter to name of the Oxygen main class to run with the
-                    contents:<codeblock id="codeblock_zhr_y41_xrb">@echo off
+        <p>To prepare an Oxygen XML Editor installation on the server side for running in a web
+        browser:<ol id="ul_xp3_4n1_xrb">
+        <li>Download an All platforms version of the Oxygen XML Editor installation kit (<filepath>oxygen.tar.gz</filepath>): <xref
+            href="https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html?os=Other"
+            format="html" scope="external"/>.</li>
+        <li>Unpack it to the <filepath>oxygen</filepath> folder.</li>
+        <li>Download the <xref href="https://github.com/JetBrains/projector-installer" format="html"
+            scope="external">Jetbrains projector installer</xref> and unzip it in the <ph
+            keyref="product"/> installation folder (the folder path should be something like:
+            <filepath>oxygen/projector-server-1.5.0</filepath>).</li>
+        <li>Download the <xref href="https://github.com/JetBrains/JetBrainsRuntime/releases"
+            format="html" scope="external">Jetbrains Java 11 runtime enviroment</xref> and unpack it
+          to the <filepath>oxygen/jbr</filepath> folder.</li>
+        <li>Create a <filepath>start-projector-oxygen.bat</filepath> script in the
+            <filepath>oxygen</filepath> installation folder so that it adds the JetBrains libraries
+          to the classpath and runs the JetBrains server giving it the name of the main class as a
+          parameter to run it with the
+          contents:<codeblock id="codeblock_zhr_y41_xrb">@echo off
 SET CP="%~dp0;%~dp0/classes;%~dp0/lib/oxygen-basic-utilities.jar;%~dp0/lib/oxygen.jar;%~dp0/projector-server-1.5.0/lib/*"
 
 %~dp0\jbr\bin\java.exe %OXYGEN_JAVA_OPTIONS% -Dcom.oxygenxml.app.descriptor=ro.sync.exml.EditorFrameDescriptor -cp %CP% -Dorg.jetbrains.projector.server.classToLaunch=ro.sync.exml.Oxygen org.jetbrains.projector.server.ProjectorLauncher %*</codeblock></li>
-                <li>Run the <filepath>start-projector-oxygen.bat</filepath> script which will by
-                    default start an HTTP server on port <codeph>8887</codeph>.</li>
-                <li>Connect from the same computer to the <codeph>localhost:8887</codeph> port or
-                    from another computer using a web browser. </li>
-                <li>You should be able to use Oxygen XML Editor in a web browser and have full
-                    access to the server side resources.</li>
-            </ul></p>
+        <li>Run the <filepath>start-projector-oxygen.bat</filepath> script, which will start an HTTP
+          server on port <codeph>8887</codeph> by default.</li>
+        <li>Connect to the <codeph>localhost:8887</codeph> port from the same computer or from
+          another computer using a web browser.</li>
+      </ol></p>
+    <p><b>Result:</b> You should be able to use Oxygen XML Editor in a web
+      browser and have full access to the server-side resources.</p>
     </body>
 </topic>
