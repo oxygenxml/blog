@@ -529,7 +529,7 @@
         </options>
     </meta>
     <projectTree name="blog.xpr">
-        <folder masterFiles="true" name="Master Files">
+        <folder masterFiles="true" name="Main Files">
             <file name="blog-project.xml"/>
         </folder>
         <folder path="."/>
