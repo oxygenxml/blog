@@ -3,7 +3,7 @@
 <map>
     <title>Oxygen XML Blog</title>
     <topicref href="topics/welcome.dita"/>
-    <topicref href="topics/what_s_new.dita"/>
+    <topicref href="topics/what_s_new.dita" print="no"/>
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">
             <topicref href="topics/learnDita.dita"/>
@@ -34,6 +34,7 @@
             <topicref href="topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita"/>
             <topicref href="topics/adding_labels_to_topics_in_the_webhelp_responsive_output.dita"
                 keys="adding_labels_to_topics_in_the_webhelp_responsive_output"/>
+            <topicref href="topics/recent_topics_list.dita"/>
         </topichead>
         <topichead navtitle="Customizing">
             <topicref href="topics/startup_dita_project.dita"/>

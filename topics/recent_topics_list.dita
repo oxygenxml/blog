@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="recent_topics_list">
+    <title>Dynamically publishing a list with the most recent topics</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-01-13"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>DITA topics can contain an optional <xmlelement>created</xmlelement> element specifying
+            the date when they were created by the technical writer. </p>
+        <p>
+            <codeblock id="codeblock_t1c_yq1_xrb" outputclass="language-xml">&lt;topic id="...">
+    &lt;title>...&lt;/title>
+    &lt;prolog>
+        &lt;author>...&lt;/author>
+        &lt;critdates>
+            &lt;created date="2022-01-13"/>
+        &lt;/critdates></codeblock>
+        </p>
+        <p>By customizing the WebHelp Responsive output we can dynamically generate at publishing
+            time a topic containing the most recent topics list taking into account the creation
+            date for each topic.</p>
+        <p>DITA WebHelp output can be customized using a <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html"
+                format="html" scope="external">publishing template mechanism</xref>. Inside a
+            publishing template folder, there is an <filepath>opt</filepath> file that can contain
+            links to various XSLT stylesheets that are useful for customizations. For example, we'll
+            add a link to a stylesheet for processing such special keyword label
+            elements:<codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml">&lt;publishing-template>
+    &lt;name>.....&lt;/name>
+    ......
+        &lt;xslt>
+            ....
+            &lt;extension file="xslt/updateWhatsNew.xsl" id="com.oxygenxml.webhelp.xsl.createTocXML"/>
+            .....
+        &lt;/xslt>
+    &lt;/webhelp>
+&lt;/publishing-template></codeblock>The <filepath>updateWhatsNew.xsl</filepath>
+            stylesheet will sort the first five most recent topics and create a new DITA topic
+            containing
+            it:<codeblock id="codeblock_b3f_k1b_xrb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
+    xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc">
+
+    &lt;!-- Artifically impose content to the what's new topic. -->
+    &lt;xsl:template match="/">
+        &lt;xsl:next-match/>
+        &lt;xsl:result-document href="{resolve-uri('topics/what_s_new.dita', base-uri())}">
+            &lt;xsl:processing-instruction name="workdir-uri">&lt;xsl:value-of select="replace(resolve-uri('topics/what_s_new.dita', base-uri()), 'what_s_new.dita', '')"/>&lt;/xsl:processing-instruction>
+            &lt;xsl:processing-instruction name="path2project-uri">../&lt;/xsl:processing-instruction>
+            &lt;xsl:processing-instruction name="path2rootmap-uri">../&lt;/xsl:processing-instruction>
+            &lt;topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+                id="topic_v5l_lts_fsb" ditaarch:DITAArchVersion="1.3"
+                domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d) "
+                class="- topic/topic ">
+                &lt;title class="- topic/title ">What's New!&lt;/title>
+                &lt;body class="- topic/body ">
+                    &lt;p class="- topic/p ">Most recent blog posts:&lt;/p>
+                    &lt;section class="- topic/section ">
+                        &lt;!-- Find the most recent topics by looking at the creation date and sorting them descending -->
+                        &lt;xsl:for-each
+                            select="//topicref[@href][not(@format) or @format = 'dita'][doc-available(resolve-uri(@href, base-uri()))][document(resolve-uri(@href, base-uri()))/*/prolog/critdates/created/@date]">
+                            &lt;xsl:sort select="document(resolve-uri(@href, base-uri()))/*/prolog/critdates/created/@date" order="descending"/>
+                            &lt;!-- Present only the first 5 topics -->
+                            &lt;xsl:if test="position() &amp;lt; 6">
+                                &lt;xsl:variable name="doc" select="document(resolve-uri(@href, base-uri()))"/>
+                                &lt;p class="- topic/p ">
+                                    &lt;xref href="{replace(@href, 'topics/', '')}" class="- topic/xref ">&lt;xsl:value-of select="$doc/*/title"/>&lt;/xref>
+                                &lt;/p>
+                            &lt;/xsl:if>
+                        &lt;/xsl:for-each>
+                    &lt;/section>
+                &lt;/body>
+            &lt;/topic>
+        &lt;/xsl:result-document>
+    &lt;/xsl:template>
+&lt;/xsl:stylesheet></codeblock></p>
+        <p>In the DITA Map we need to add a reference to a stub DITA topic which will be overwritten
+            by the publishing
+            process:<codeblock outputclass="language-xml">    &lt;topicref href="topics/what_s_new.dita" print="no"/></codeblock></p>
+        <section><p>The published output will produce a what's new topic as the one here: <xref
+                    href="what_s_new.dita"/>.</p>The WebHelp publishing template used for publishing
+            this blog already has a customization to display a recent list of topics: <xref
+                href="../publishing/webhelpBlogTemplate.zip" format="zip"/>.</section>
+    </body>
+</topic>
