@@ -14,7 +14,7 @@
         </metadata>
     </prolog>
     <body>
-        <p>DITA topics can contain an optional <xmlelement>created</xmlelement> element specifying
+        <p>DITA topics can contain an optional <xmlelement>created</xmlelement> element that specifyies
             the date when they were created by the technical writer. </p>
         <p>
             <codeblock id="codeblock_t1c_yq1_xrb" outputclass="language-xml">&lt;topic id="...">
@@ -25,9 +25,8 @@
             &lt;created date="2022-01-13"/>
         &lt;/critdates></codeblock>
         </p>
-        <p>By customizing the WebHelp Responsive output we can dynamically generate at publishing
-            time a topic containing the most recent topics list taking into account the creation
-            date for each topic.</p>
+        <p>At the time of publishing, we can dynamically generate a topic that contains a list of the most recent topics, 
+            while taking the creation date into account for each topic by customizing the WebHelp Responsive output.</p>
         <p>DITA WebHelp output can be customized using a <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html"
                 format="html" scope="external">publishing template mechanism</xref>. Inside a
@@ -45,7 +44,7 @@
     &lt;/webhelp>
 &lt;/publishing-template></codeblock>The <filepath>updateWhatsNew.xsl</filepath>
             stylesheet will sort the first five most recent topics and create a new DITA topic
-            containing
+            that contains
             it:<codeblock id="codeblock_b3f_k1b_xrb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
     xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc">
@@ -83,7 +82,7 @@
         &lt;/xsl:result-document>
     &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock></p>
-        <p>In the DITA Map we need to add a reference to a stub DITA topic which will be overwritten
+        <p>In the DITA Map, we need to add a reference to a stub DITA topic that will be overwritten
             by the publishing
             process:<codeblock outputclass="language-xml">    &lt;topicref href="topics/what_s_new.dita" print="no"/></codeblock></p>
         <section><p>The published output will produce a what's new topic as the one here: <xref
