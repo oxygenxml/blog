@@ -14,7 +14,7 @@
         </metadata>
     </prolog>
     <body>
-        <p>DITA topics can contain an optional <xmlelement>created</xmlelement> element that specifyies
+        <p>DITA topics can contain an optional <xmlelement>created</xmlelement> element that specifies
             the date when they were created by the technical writer. </p>
         <p>
             <codeblock id="codeblock_t1c_yq1_xrb" outputclass="language-xml">&lt;topic id="...">
