@@ -153,6 +153,9 @@
                                 <field name="useAntennaHouse">
                                     <Boolean>false</Boolean>
                                 </field>
+                                <field name="useDITAScript">
+                                    <Boolean>false</Boolean>
+                                </field>
                                 <field name="baseDir">
                                     <String>${cfd}</String>
                                 </field>
