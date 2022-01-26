@@ -35,6 +35,7 @@
             <topicref href="topics/adding_labels_to_topics_in_the_webhelp_responsive_output.dita"
                 keys="adding_labels_to_topics_in_the_webhelp_responsive_output"/>
             <topicref href="topics/recent_topics_list.dita"/>
+            <topicref href="topics/rss_feed_generation.dita" keys="rss_feed_generation"/>
         </topichead>
         <topichead navtitle="Customizing">
             <topicref href="topics/startup_dita_project.dita"/>

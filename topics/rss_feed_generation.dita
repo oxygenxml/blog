@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="rss_feed_generation">
+    <title>Dynamically Generating an RSS Feed</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-01-26"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>When publishing a web site from DITA XML content we can dynamically generate an RSS XML
+            feed by customizing the WebHelp Responsive output.</p>
+        <p>DITA WebHelp output can be customized using a <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html"
+                format="html" scope="external">publishing template mechanism</xref>. Inside a
+            publishing template folder, there is an <filepath>opt</filepath> file that can contain
+            links to various XSLT stylesheets that are useful for customizations. For example, we'll
+            add a link to a stylesheet for processing such special keyword label
+            elements:<codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml">&lt;publishing-template>
+    &lt;name>.....&lt;/name>
+    ......
+        &lt;xslt>
+            ....
+            &lt;extension file="xslt/createRSS.xsl" id="com.oxygenxml.webhelp.xsl.createNavLinks"/>
+            .....
+        &lt;/xslt>
+    &lt;/webhelp>
+&lt;/publishing-template></codeblock>The <filepath>createRSS.xsl</filepath> stylesheet
+            generates an <filepath>rss.xml</filepath> file containing references to all topics
+            referenced in the DITA
+            Map:<codeblock id="codeblock_b3f_k1b_xrb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" 
+    version="2.0">
+    
+    &lt;xsl:param name="JSON_OUTPUT_DIR_URI"/>
+    &lt;xsl:template match="/toc:toc">
+        &lt;xsl:next-match/>
+        &lt;xsl:apply-templates mode="rss" select="."/>
+    &lt;/xsl:template>
+    
+    &lt;xsl:template match="/toc:toc" mode="rss">
+        &lt;xsl:result-document href="{concat($JSON_OUTPUT_DIR_URI, '/../../../../rss.xml')}" indent="yes">
+            &lt;rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+                &lt;channel>
+                    &lt;title>&amp;lt;oXygen/&amp;gt; XML Editor Blog&lt;/title>
+                    &lt;link>/rss.xml&lt;/link>
+                    &lt;description>The Latest &amp;lt;oXygen/&amp;gt; XML Editor Blog Updates&lt;/description>
+                    &lt;language>en-us&lt;/language>
+                    &lt;pubDate>&lt;xsl:value-of select="format-dateTime(current-dateTime(),'[F], [D] [M01] [Y] [h] [P] [z]')"/>&lt;/pubDate>
+                    &lt;lastBuildDate>&lt;xsl:value-of select="format-dateTime(current-dateTime(),'[F], [D] [M01] [Y] [h] [P] [z]')"/>&lt;/lastBuildDate>
+                    &lt;docs>https://oxygenxmlblog.netlify.com/&lt;/docs>
+                    &lt;generator> oXygen XML Editor&lt;/generator>
+                    &lt;managingEditor>support@oxygenxml.com (Oxygen XML Editor Support)&lt;/managingEditor>
+                    &lt;webMaster>webmaster@oxygenxml.com (Oxygen XML Editor Webmaster)&lt;/webMaster>
+                    &lt;copyright>Copyright @2020 SyncRO Soft SRL. All rights reserved.&lt;/copyright>
+                    &lt;category>News&lt;/category>
+                    &lt;ttl>30&lt;/ttl>        
+                    &lt;image>
+                        &lt;url>http://www.oxygenxml.com/img/oxygenxml.gif&lt;/url>
+                        &lt;title>&amp;lt;oXygen/&amp;gt; XML Editor Blog&lt;/title>
+                        &lt;link>/rss.xml&lt;/link>
+                    &lt;/image>
+                    &lt;xsl:for-each select="//toc:topic">
+                        &lt;xsl:if test="not(@href = 'javascript:void(0)')">
+                            &lt;item>
+                                &lt;title>&lt;xsl:value-of select="toc:title"/>&lt;/title>
+                                &lt;link>&lt;xsl:value-of select="concat('/', @href)"/>&lt;/link>   
+                                &lt;guid isPermaLink="false">&lt;xsl:value-of select="@href"/>&lt;/guid>
+                            &lt;/item>
+                        &lt;/xsl:if>
+                    &lt;/xsl:for-each>
+                &lt;/channel>
+            &lt;/rss>
+        &lt;/xsl:result-document>
+    &lt;/xsl:template>
+&lt;/xsl:stylesheet></codeblock></p>
+        <section><p>The published output will produce a what's new topic as the one here: <xref
+                    href="https://blog.oxygenxml.com/rss.xml" format="html" scope="external"
+            />.</p>The WebHelp publishing template used for publishing this blog already has a
+            customization to display a recent list of topics: <xref
+                href="../publishing/webhelpBlogTemplate.zip" format="zip"/>.</section>
+    </body>
+</topic>
