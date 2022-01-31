@@ -77,7 +77,7 @@
         <topicref href="topics/customizing_oxygen.dita"/>
         <topicref href="topics/author-document-type-extension-sharing.dita"/>
         <topicref href="topics/sharing_schematron_validation_rules.dita"/>
-        <topicref href="topics/Oxygen%20plugins%20and%20frameworks.xml"/>
+        <topicref href="topics/Oxygen%20plugins%20and%20frameworks.dita"/>
         <topicref href="topics/author-document-type-extension-sharing-custom-new-file-templates.dita"/>
         <topicref href="topics/composing-author-actions.dita"/>
         <topicref href="topics/custom-author-action-js-based.dita"/>
