@@ -19,7 +19,7 @@
       <title>Migrating DocBook Content to DITA.</title>
       <p>You can migrate one or multiple DocBook documents to DITA using the <b>Oxygen Resources
           Converter</b> add-on: <xref href="https://github.com/oxygenxml/oxygen-resources-converter"
-          format="html" scope="external"/></p>
+          format="html" scope="external"/>.</p>
       <p>The <b>DocBook to DITA</b> conversion contains an option named <b>Create DITA maps from
           DocBook documents containing multiple sections</b>. When this option is selected, all
         sections from your DocBook document will be separated into individual DITA topics and
@@ -29,8 +29,8 @@
       <title>Migrating Microsoft Word Content to DITA</title>
       <p>The Oxygen XML User Manual has a detailed topic enumerating the possibilities to convert
         Microsoft Word content to DITA: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/ooxml-to-dita.html"
-          format="html" scope="external"/></p>
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/ooxml-to-dita.html" format="html"
+          scope="external"/>.</p>
     </section>
     <section id="section_yx1_hv4_4gb">
       <title>Migrating Excel Content to DITA</title>
@@ -40,7 +40,7 @@
         from an Excel spreadsheet and paste it inside an opened DITA topic. Also, as an alternate
         possibility, the <b>Oxygen Resources Converter</b> add-on was updated to be able to batch
         convert Excel to DITA: <xref href="https://github.com/oxygenxml/oxygen-resources-converter"
-          format="html" scope="external"/></p>
+          format="html" scope="external"/>.</p>
     </section>
     <section id="section_p4y_nv4_4gb">
       <title>Migrating LibreOffice Content to DITA</title>
@@ -60,7 +60,7 @@
             transformation scenario shipped in Oxygen to convert DocBook to DITA. </li>
           <li>Save the Google document as HTML then use the Oxygen batch converter add-on to convert
             it to DITA: <xref href="https://github.com/oxygenxml/oxygen-resources-converter"
-              format="html" scope="external"/></li>
+              format="html" scope="external"/>.</li>
         </ul></p>
     </section>
     <section id="section_gdg_tv4_4gb">
@@ -72,7 +72,7 @@
           format="html" scope="external"/>. If you want to convert multiple Markdown documents at
         once, you can use the <b>Oxygen Resources Converter</b> add-on: <xref
           href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
-          scope="external"/></p>
+          scope="external"/>.</p>
     </section>
     <section id="section_ss1_gw4_4gb">
       <title>Migrating HTML Content to DITA</title>
@@ -83,18 +83,27 @@
         in Oxygen's <b>Author</b> visual editing mode. If you want to convert multiple HTML files,
         you can use the <b>Oxygen Resources Converter</b> add-on: <xref
           href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
-          scope="external"/></p>
+          scope="external"/>.</p>
     </section>
     <section id="section_imj_py4_4gb">
       <title>Migrating Unstructured FrameMaker to DITA</title>
       <p>There is a FrameMaker plugin that can be used for this type of conversion: <xref
-          href="http://leximation.com/tools/info/fm2dita.php" format="php" scope="external"/></p>
+          href="http://leximation.com/tools/info/fm2dita.php" format="php" scope="external"/>.</p>
     </section>
     <section id="section_cry_wy4_4gb">
       <title>Migrating MadCap Content to DITA</title>
       <p>Some recent MadCap versions seem to have facilities to export content directly to DITA.
         Otherwise, you will need to convert XHTML content to DITA with a custom XSLT stylesheet to
         preserve variable references.</p>
+    </section>
+    <section id="section_hpn_vrm_lsb">
+      <title>Migrating Confluence Content to DITA</title>
+      <p>To convert Confluence content to DITA, you can use the <b>Oxygen Resources Converter</b>
+        add-on: <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
+          scope="external"/>.</p>
+      <p>You first need to export the content to HTML, then you can use the <b>Confluence to
+          DITA</b> action (available once the add-on is installed) to convert the exported
+          <filepath>index.html</filepath> file into a DITA map with topics.</p>
     </section>
     <section id="section_zv4_hy4_4gb">
       <title>Migrating Other Formats to DITA</title>
