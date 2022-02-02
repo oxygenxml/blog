@@ -5,7 +5,7 @@
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
-            <created date="2022-01-26"/>
+            <created date="2022-02-02"/>
         </critdates>
         <metadata>
             <keywords>
@@ -50,22 +50,22 @@
         &lt;xsl:result-document href="{concat($JSON_OUTPUT_DIR_URI, '/../../../../rss.xml')}" indent="yes">
             &lt;rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
                 &lt;channel>
-                    &lt;title>&amp;lt;oXygen/&amp;gt; XML Editor Blog&lt;/title>
+                    &lt;title>TITLE OF RSS FEED HERE&lt;/title>
                     &lt;link>/rss.xml&lt;/link>
-                    &lt;description>The Latest &amp;lt;oXygen/&amp;gt; XML Editor Blog Updates&lt;/description>
+                    &lt;description>DESCRIPTION OF FEED HERE&lt;/description>
                     &lt;language>en-us&lt;/language>
-                    &lt;pubDate>&lt;xsl:value-of select="format-dateTime(current-dateTime(),'[F], [D] [M01] [Y] [h] [P] [z]')"/>&lt;/pubDate>
+                    &lt;atom:link href="https://my.website/rss.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom"/>
                     &lt;lastBuildDate>&lt;xsl:value-of select="format-dateTime(current-dateTime(),'[F], [D] [M01] [Y] [h] [P] [z]')"/>&lt;/lastBuildDate>
                     &lt;docs>https://oxygenxmlblog.netlify.com/&lt;/docs>
-                    &lt;generator> oXygen XML Editor&lt;/generator>
-                    &lt;managingEditor>support@oxygenxml.com (Oxygen XML Editor Support)&lt;/managingEditor>
-                    &lt;webMaster>webmaster@oxygenxml.com (Oxygen XML Editor Webmaster)&lt;/webMaster>
-                    &lt;copyright>Copyright @2020 SyncRO Soft SRL. All rights reserved.&lt;/copyright>
+                    &lt;generator>FEED GENERATOR NAME&lt;/generator>
+                    &lt;managingEditor>EDITOR EMAIL INFORMATION&lt;/managingEditor>
+                    &lt;webMaster>WEBMASTER EMAIL INFORMATION&lt;/webMaster>
+                    &lt;copyright>Copyright Info Here. All rights reserved.&lt;/copyright>
                     &lt;category>News&lt;/category>
                     &lt;ttl>30&lt;/ttl>        
                     &lt;image>
-                        &lt;url>http://www.oxygenxml.com/img/oxygenxml.gif&lt;/url>
-                        &lt;title>&amp;lt;oXygen/&amp;gt; XML Editor Blog&lt;/title>
+                        &lt;url>http://my.website/img/rss-image.gif&lt;/url>
+                        &lt;title>BLOG TITLE HERE
                         &lt;link>/rss.xml&lt;/link>
                     &lt;/image>
                     &lt;xsl:for-each select="//toc:topic">
@@ -74,6 +74,20 @@
                                 &lt;title>&lt;xsl:value-of select="toc:title"/>&lt;/title>
                                 &lt;link>&lt;xsl:value-of select="concat('/', @href)"/>&lt;/link>   
                                 &lt;guid isPermaLink="false">&lt;xsl:value-of select="@href"/>&lt;/guid>
+                                &lt;xsl:variable name="ref" select="replace(resolve-uri(@href, base-uri()), '\.html', '.dita')"/>
+                                &lt;xsl:variable name="date" select="document($ref)/*/prolog/critdates/created/@date"/>
+                                &lt;xsl:choose>
+                                    &lt;xsl:when test="$date">
+                                        &lt;pubDate>&lt;xsl:value-of select="
+                                            format-date(xs:date($date),
+                                            '[F], [D01] [MNn,*-3] [Y] 00:00:00 GMT')"/>&lt;/pubDate>
+                                        &lt;!-- Format like: Thu, 20 Dec 2022 02:46:11 UTC -->
+                                    &lt;/xsl:when>
+                                    &lt;xsl:otherwise>
+                                        &lt;!-- Set some fixed date so that the topic does not appear as new -->
+                                        &lt;pubDate> Wed, 1 Jan 2020 02:46:11 GMT&lt;/pubDate>
+                                    &lt;/xsl:otherwise>
+                                &lt;/xsl:choose>
                             &lt;/item>
                         &lt;/xsl:if>
                     &lt;/xsl:for-each>
@@ -82,10 +96,18 @@
         &lt;/xsl:result-document>
     &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock></p>
-        <section><p>The published output will produce a what's new topic as the one here: <xref
-                    href="https://blog.oxygenxml.com/rss.xml" format="html" scope="external"
-            />.</p>The WebHelp publishing template used for publishing this blog already has a
-            customization to display a recent list of topics: <xref
+        <section><p>The published output will produce an RSS feed as the one here: <xref
+                    href="https://blog.oxygenxml.com/rss.xml" format="html" scope="external"/>. For
+                each topic referenced in the feed a publication date is computed based on its
+                creation date specified in the
+                prolog:<codeblock id="codeblock_ers_thk_lsb" outputclass="language-xml">&lt;topic id="rss_feed_generation">
+    &lt;title>...&lt;/title>
+    &lt;prolog>
+        &lt;author>...&lt;/author>
+        &lt;critdates>
+            &lt;created date="YYYY-MM-DD"/>
+        &lt;/critdates></codeblock></p>The WebHelp publishing template used for
+            publishing this blog already has a customization to create the RSS feed: <xref
                 href="../publishing/webhelpBlogTemplate.zip" format="zip"/>.</section>
     </body>
 </topic>
