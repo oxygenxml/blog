@@ -101,9 +101,12 @@
       <p>To convert Confluence content to DITA, you can use the <b>Oxygen Resources Converter</b>
         add-on: <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
           scope="external"/>.</p>
-      <p>You first need to export the content to HTML, then you can use the <b>Confluence to
-          DITA</b> action (available once the add-on is installed) to convert the exported
-          <filepath>index.html</filepath> file into a DITA map with topics.</p>
+      <p>You first need to export the content to HTML. For this, log in to your Confluence account
+        and navigate to the specific space that you want to export. Then go to <b>Space
+          Settings</b><b>→Export space</b> and choose to export it as HTML. Then, back on
+          <b>Oxygen</b>, you can then use the <b>Confluence to DITA</b> action (available once the
+        add-on is installed) to convert the exported <filepath>index.html</filepath> file into a
+        DITA map with topics.</p>
     </section>
     <section id="section_zv4_hy4_4gb">
       <title>Migrating Other Formats to DITA</title>
