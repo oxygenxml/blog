@@ -71,7 +71,8 @@ theme: readthedocs</codeblock><p><b>Result:</b> Back in the browser, the
         &lt;xsl:apply-templates select="//*:a"/>
     &lt;/xsl:template>
     &lt;xsl:template match="*:a">
-    - &lt;xsl:value-of select="text()"/>: &lt;xsl:value-of select="@href"/>
+        &lt;xsl:for-each select="ancestor-or-self::*:li">&lt;xsl:text>  &lt;/xsl:text>&lt;/xsl:for-each>- &lt;xsl:value-of select="text()"/>: &lt;xsl:value-of select="@href"/>&lt;xsl:text>
+&lt;/xsl:text>
     &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock></li>
                 <li>Apply the stylesheet over the HTML content to produce the content that gets
