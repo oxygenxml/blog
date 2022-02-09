@@ -96,18 +96,41 @@
         &lt;/xsl:result-document>
     &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock></p>
-        <section><p>The published output will produce an RSS feed as the one here: <xref
-                    href="https://blog.oxygenxml.com/rss.xml" format="html" scope="external"/>. For
-                each topic referenced in the feed a publication date is computed based on its
-                creation date specified in the
-                prolog:<codeblock id="codeblock_ers_thk_lsb" outputclass="language-xml">&lt;topic id="rss_feed_generation">
+        <p>The published output will produce an RSS feed as the one here: <xref
+                href="https://blog.oxygenxml.com/rss.xml" format="html" scope="external"/>. For each
+            topic referenced in the feed a publication date is computed based on its creation date
+            specified in the
+            prolog:<codeblock id="codeblock_ers_thk_lsb" outputclass="language-xml">&lt;topic id="rss_feed_generation">
     &lt;title>...&lt;/title>
     &lt;prolog>
         &lt;author>...&lt;/author>
         &lt;critdates>
             &lt;created date="YYYY-MM-DD"/>
-        &lt;/critdates></codeblock></p>The WebHelp publishing template used for
-            publishing this blog already has a customization to create the RSS feed: <xref
-                href="../publishing/webhelpBlogTemplate.zip" format="zip"/>.</section>
+        &lt;/critdates></codeblock></p>
+        <p>The WebHelp publishing template used for publishing this blog already has a customization
+            to create the RSS feed: <xref href="../publishing/webhelpBlogTemplate.zip" format="zip"
+            />.</p>
+        <section id="section_cwn_y4g_nsb">
+            <title>Using the RSS feed with <b>Follow.it</b> to receive new posts by email</title>
+            <p>Websites like <b>Follow.it</b> allow you to register a link to your RSS feed and
+                produce a small HTML form which can be embedded in your blog. Users who register to
+                receive notifications when new posts are available in the RSS feed will receive
+                automatic emails. </p>
+            <p>Once the RSS feed is available on the web site the following steps can be followed to
+                integrate with <b>Follow.it</b>:<ul id="ul_l4k_ppg_nsb">
+                    <li>Go to the <xref href="https://follow.it/ni" format="html" scope="external"
+                            >Follow.it</xref> web site and add a reference to your RSS feed.</li>
+                    <li>Customize on the web site the form which will be embedded in your blog HTML
+                        contents.</li>
+                    <li>In the Oxygen WebHelp publishing template folder, inside the
+                            <filepath>opt</filepath> file add references to an XML file which will
+                        contain the form in order for it to appear after the content of each
+                        article:<codeblock id="codeblock_v5l_wpg_nsb" outputclass="language-xml">&lt;fragment file="html-fragments/subscribe.xml" placeholder="webhelp.fragment.after.toc_or_tiles"/>
+&lt;fragment file="html-fragments/subscribe.xml" placeholder="webhelp.fragment.after.feedback"/></codeblock></li>
+                    <li>Create the <filepath>subscribe.xml</filepath> file and paste the form HTML
+                        content created by <b>Follow.it</b> inside it. Make the HTML content
+                        well-formed.</li>
+                </ul></p>
+        </section>
     </body>
 </topic>
