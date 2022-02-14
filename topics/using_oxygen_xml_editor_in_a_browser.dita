@@ -16,7 +16,8 @@
             and access these apps remotely. Some of its use cases are listed here: <xref
                 href="https://jetbrains.github.io/projector-client/mkdocs/latest/ij_user_guide/jetbrains/#use-cases"
                 format="html" scope="external"/>.</p>
-        <p>Since Oxygen XML Editor is a Jave Swing-based application, this blog post explains how Oxygen XML Editor could be accessed remotely and used from a web browser.<fig>
+        <p>Since Oxygen XML Editor is a Java Swing-based application, this blog post explains how
+            Oxygen XML Editor could be accessed remotely and used from a web browser.<fig>
                 <title>Oxygen XML Editor Running in the Safari Web Browser Using JetBrains
                     Projector</title>
                 <image href="../images/oxygen-web-browser.png" id="image_ujg_kn1_xrb" scale="30"/>
