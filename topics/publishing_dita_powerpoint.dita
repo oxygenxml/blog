@@ -10,45 +10,42 @@
     </prolog>
     <body>
         <p><xref href="https://pandoc.org/installing.html" format="html" scope="external"
-                >Pandoc</xref> is a command line interface which can convert lots of input formats
-            (like Markdown) to lots of output formats (like Powerpoint).</p>
+                >Pandoc</xref> is a command-line interface that can convert lots of input formats
+            (e.g. Markdown) to many types of output formats (e.g. Powerpoint).</p>
         <p>Here is how to publish DITA XML content to Powerpoint using Pandoc:<ol>
                 <li>Open your DITA map in the <ph keyref="oxygen"/>
                     <uicontrol>DITA Maps Manager</uicontrol> view. For my example, I will use the
                         <filepath>OXYGEN_INSTALL_DIR/samples/flowers/flowers.ditamap</filepath>
                     sample.</li>
                 <li>Use the <uicontrol>Configure Transformation Scenarios</uicontrol> toolbar
-                    button, create a new transformation scenario of type <uicontrol>DITA-OT
-                        transformation</uicontrol> and choose <uicontrol>GitHub-flavored
+                    button, create a new transformation scenario of the type <uicontrol>DITA-OT
+                        transformation</uicontrol>, and choose <uicontrol>GitHub-flavored
                         Markdown</uicontrol> as the transformation type.</li>
-                <li>In the transformation scenario's <uicontrol>Output</uicontrol> tab, you can
-                    configure the folder where the Markdown content should be generated.</li>
-                <li>In the same transformation scenario's <b>Parameters</b> tab set the
-                        <b>root-chunk-override</b> parameter to value <codeph>to-content</codeph> to
-                    produce a single large Markdown file containing all the DITA Map's
-                    contents.</li>
-                <li>Use the transformation scenario to transform your DITA content into
+                <li>In the transformation scenario's <uicontrol>Output</uicontrol> tab, specify the
+                    folder where the Markdown content should be generated.</li>
+                <li>In the same transformation scenario's <b>Parameters</b> tab, set the
+                        <b>root-chunk-override</b> parameter to the value of
+                        <codeph>to-content</codeph> to produce a single large Markdown file that
+                    contains all the DITA map's content.</li>
+                <li>Run the transformation scenario to transform your DITA content into
                     Markdown.</li>
-                <li>Download the <i>Pandoc</i> command line utility specific for your platform from:
+                <li>Download the <i>Pandoc</i> command-line utility specific for your platform from:
                         <xref href="https://pandoc.org/installing.html" format="html"
                         scope="external"/>.</li>
                 <li>Convert the Markdown file produced from DITA content to PPTX using the
                         <codeph>pandoc</codeph> command
                     line:<codeblock>pandoc -f markdown -t pptx -o /path/to/out/flowers.pptx /path/tp/flowers/out/flowers.md</codeblock></li>
-                <li>
-                    <p><b>Result:</b> You can open the result <filepath>flowers.pptx</filepath> in
-                        Powerpoint, for each DITA topic you should have a separate slide:</p>
-                    <p>
-                        <image href="../images/pandoc_dita_ppt.png" width="600" id="image_kq3_42h_vrb"
-                        /></p>
-                </li>
             </ol></p>
+        <p><b>Result:</b> You can open the resulting <filepath>flowers.pptx</filepath> in
+            Powerpointl. For each DITA topic, you should have a separate slide:</p>
+        <p>
+            <image href="../images/pandoc_dita_ppt.png" width="600" id="image_kq3_42h_vrb"/></p>
         <note id="note_myt_zrs_4sb" type="tip">You can use the same approach of producing Markdown
-            from DITA and then using Pandoc to produce other outputs like Wiki, EPUB, Word, RTF or
-            PDF.</note>
-        <note id="note_d2p_hss_4sb" type="tip">To produce web slides from DITA content you can also
+            from DITA and then using Pandoc to produce other outputs such as Wiki, EPUB, Word, RTF,
+            or PDF.</note>
+        <note id="note_d2p_hss_4sb" type="tip">To produce web slides from DITA content, you can also
             use the free DITA to RevealJS plugin created by Stefan Eike: <xref
                 href="https://github.com/doctales/org.doctales.reveal" format="reveal"
-                scope="external"/></note>
+                scope="external"/>.</note>
     </body>
 </topic>
