@@ -227,8 +227,9 @@ rm project.xml-preprocessed.xml</codeblock>
                 <li>
                     <p>In the <uicontrol>Project</uicontrol> view, expand the <uicontrol>Main
                             Files</uicontrol> list, right click on deliverables-all.xml and choose
-                            <uicontrol>Transform > Transform With</uicontrol>, and choose the "(all
-                        deliverables)" transformation.</p>
+                            <uicontrol>Transform > Transform With</uicontrol>, and choose the
+                            <uicontrol>Publish Preprocessed DITA-OT Project (all
+                            deliverables)</uicontrol> transformation.</p>
                     <p>This will build "review" and "final" versions of both the "Product A" and
                         "Product B" online help collections in the <filepath>out/</filepath>
                         directory, complete with correctly-named PDF files integrated into each
@@ -258,8 +259,8 @@ rm project.xml-preprocessed.xml</codeblock>
                         files, then choose <uicontrol>Refactoring > XML refactoring</uicontrol>.</p>
                 </li>
                 <li>
-                    <p>In the refactoring operation list, choose <uicontrol>Synopsys > Fix DITA-OT
-                            project file refactoring operation</uicontrol>.</p>
+                    <p>In the refactoring operation list, choose <uicontrol>Synopsys > Preprocess
+                            DITA-OT project file</uicontrol> refactoring operation.</p>
                 </li>
                 <li>
                     <p>Click the <uicontrol>Preview</uicontrol> button to see what the XSLT
