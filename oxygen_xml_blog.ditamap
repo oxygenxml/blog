@@ -17,6 +17,8 @@
             <topicref href="topics/cross_book_links.dita"/>
         </topichead>
         <topichead navtitle="Publishing">
+            <topicref href="topics/webhelp-dita-strong-points.dita"
+                keys="webhelp-dita-strong-points"/>
             <topichead navtitle="PDF">
                 <topicref href="topics/tableRowColors.dita"/>
                 <topicref href="topics/migrating-pdf-customizations.dita"/>

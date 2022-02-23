@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="webhelp-dita-strong-points">
+    <title>DITA WebHelp Publishing Solution strong points</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-02-23"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Oxygen XML Editor's own user guide is generated from DITA XML content and published as
+            WebHelp Responsive output: <xref href="https://www.oxygenxml.com/doc/ug-editor/" format="html" scope="external"/></p>
+        <p>I tried to compile below some strong points that the published WebHelp output obtained
+            from DITA XML content has:<ul id="ul_qtb_1yf_rsb">
+                <li>It's a pure HTML5+Javascript publishing solution without the need of any server
+                    side component.</li>
+                <li>The WebHelp output can be used both offline and online.</li>
+                <li>Compatible with all browser vendors: <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/wh_getting_started.html" format="html" scope="external"/></li>
+                <li>Responsive layout, adjusts to screen size and can be used on a wide variety of
+                    devices (mobile devices, tablets or desktops).</li>
+                <li>The WebHelp layout can be fully customized: <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/webhelp-responsive-description.html" format="html" scope="external"/>.</li>
+                <li>The WebHelp publishing comes with 7-8 pre-configuref color themes but you can
+                    create your own publishing templates: <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr_publishing_templates.html" format="html" scope="external"/>. </li>
+                <li>You can also use the free Oxygen Styles Basket web site to customize the WebHelp
+                    output: <xref href="https://styles.oxygenxml.com/" format="html" scope="external"/>.</li>
+                <li>Contains its own search engine implemented in Javascript (with support for AND,
+                    OR, exact match, auto complete and highlights). The search engine can assign
+                    various weights and priorities to various elements.<xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-search-engine.html" format="html" scope="external"/></li>
+                <li>Automatically generates an Index page if the DITA content contains
+                        <xmlelement>index</xmlelement> elements.</li>
+                <li>For each section contained inside a topic a mini table of contents is generated:
+                        <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-html5-pages.html#whr-topic-page-layout__topic-topic-toc" format="html" scope="external"/>.</li>
+                <li>Inner topics, sections and topics can be folded.</li>
+                <li>Code block contents can be automatically syntax highlighted when publishing:
+                        <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/add-syntax-highlights-codeblocks.html" format="html" scope="external"/>.</li>
+                <li>Track changes and comments made to the DITA XML content can be published as side
+                    notes in the WebHelp output.<xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/webhelp-responsive-plugin-additional-parameters.html#webhelp-responsive-plugin-additional-parameters__webhelp_show_changes_and_comments" format="html" scope="external"/>.</li>
+                <li>The WebHelp output comes with support for the following built-in languages:
+                    English, French, German, Japanese, and Chinese. And support for additional
+                    languages can be further added. It can also be used with right-to-left text
+                    orientation: <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-localization.html" format="html" scope="external"/>
+                </li>
+                <li>It can be used for context sensitive help, called with various help IDs from an
+                        application:<xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-context-sensitive.html" format="html" scope="external"/>
+                </li>
+                <li>The WebHelp Feedback system can be integrated in every WebHelp page and provides
+                    support for users to add comments and give feedback Feedback (create account,
+                    post message, moderate, manage multiple versions of documentation): <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-feedback-system.html" format="html" scope="external"/></li>
+                <li>You can embed Facebook, Twitter, or Google Analytics: <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/webhelp-social-media-integration.html" format="html" scope="external"/>.</li>
+                <li>WebHelp documentation can also be produced on the server side: <xref href="https://www.oxygenxml.com/xml_webhelp/download_oxygenxml_webhelp.html" format="html" scope="external"/></li>
+                <li>The WebHelp output was tested for Accessibility problems, it works well with a
+                    screen narrator and one of the WebHelp color themes is fully 508 compliant for
+                    people with reduced vision: <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-accessibility.html" format="html" scope="external"/></li>
+            </ul></p>
+        <p>Some past webinars may help further people who want to customize the WebHelp output:<ul
+                id="ul_ubm_tbg_rsb">
+                <li><xref
+                        href="https://www.oxygenxml.com/events/2022/webinar_techniques_for_customizing_the_webhelp_responsive_output.html"
+                        format="html" scope="external">Techniques for Customizing the WebHelp
+                        Responsive Output</xref></li>
+                <li><xref
+                        href="https://www.oxygenxml.com/events/2022/webinar_documentation_review_workflow_using_oxygen_feedback.html"
+                        format="html" scope="external">Documentation Review Workflow Using Oxygen
+                        Feedback</xref></li>
+                <li><xref
+                        href="https://www.oxygenxml.com/events/2021/webinar_dita_publishing_and_feedback_with_oxygen_tools.html"
+                        format="html" scope="external">DITA Publishing and Feedback with Oxygen
+                        Tools</xref></li>
+            </ul></p>
+    </body>
+</topic>
