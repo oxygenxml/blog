@@ -13,7 +13,7 @@
                 >Mermaid</xref> is a neat library that takes textual descriptions of diagrams and
             produces visual diagrams from them. </p>
         <p>Suppose you have a DITA topic that embeds such a textual description of a diagram: <xref
-            href="https://github.com/oxygenxml/dita-ot-diagrams-plugin/blob/master/com.oxygenxml.diagrams.svg/samples/testMermaidDiagram.dita"
+                href="https://github.com/oxygenxml/dita-ot-diagrams-plugin/blob/master/com.oxygenxml.diagrams.svg/samples/testMermaidDiagram.dita"
                 format="html" scope="external"/>.</p>
         <p>
             <codeblock id="codeblock_yz5_fdt_rsb" outputclass="language-xml">&lt;topic id="testMermaidDiagram">
@@ -29,13 +29,11 @@
     &lt;/body>
 &lt;/topic></codeblock>
         </p>
+        <image href="../images/mermaidDiagram.png" id="image_lz2_y2t_rsb" scale="50"/>
         <p>To provide support in Oxygen for publishing to HTML using such diagrams in DITA topics,
-            you need to install a DITA Open Toolkit publishing plugin that, once installed in the
-            DITA Open Toolkit, will convert the textual descriptions to SVG diagrams for both the
-            HTML-based and PDF outputs: <xref
-                href="https://github.com/oxygenxml/dita-ot-diagrams-plugin" format="html"
-                scope="external"/>.</p>
-        <p>Once you have this setup, you can publish such diagrams to HTML and PDF as the publishing
-            engine will automatically convert them to SVG in the published output.</p>
+            you need to install this free publishing plugin that, once installed in the DITA Open
+            Toolkit, will convert the textual descriptions to SVG diagrams for both the HTML-based
+            and PDF outputs: <xref href="https://github.com/oxygenxml/dita-ot-diagrams-plugin"
+                format="html" scope="external"/>.</p>
     </body>
 </topic>
