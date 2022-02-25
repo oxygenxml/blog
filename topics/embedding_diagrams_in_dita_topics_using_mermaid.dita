@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="embedding_diagrams_in_dita_topics_using_mermaid">
+    <title>Embedding Diagrams in DITA topics using Mermaid</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-02-25"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p><xref href="https://mermaid-js.github.io/mermaid/#/" format="html" scope="external"
+                >Mermaid</xref> is a neat library that takes textual descriptions of diagrams and
+            produces visual diagrams from them. </p>
+        <p>Suppose you have a DITA topic that embeds such a textual description of a diagram: <xref
+            href="https://github.com/oxygenxml/dita-ot-diagrams-plugin/blob/master/com.oxygenxml.diagrams.svg/samples/testMermaidDiagram.dita"
+                format="html" scope="external"/>.</p>
+        <p>
+            <codeblock id="codeblock_yz5_fdt_rsb" outputclass="language-xml">&lt;topic id="testMermaidDiagram">
+    &lt;title>Test Mermaid diagram&lt;/title>
+    &lt;body>
+        &lt;p>
+            &lt;foreign outputclass="embed-mermaid-diagram">graph TD;
+                A-->B;
+                A-->C;
+                B-->D;
+                C-->D;&lt;/foreign>
+        &lt;/p>
+    &lt;/body>
+&lt;/topic></codeblock>
+        </p>
+        <p>To provide support in Oxygen for publishing to HTML using such diagrams in DITA topics,
+            you need to install a DITA Open Toolkit publishing plugin that, once installed in the
+            DITA Open Toolkit, will convert the textual descriptions to SVG diagrams for both the
+            HTML-based and PDF outputs: <xref
+                href="https://github.com/oxygenxml/dita-ot-diagrams-plugin" format="html"
+                scope="external"/>.</p>
+        <p>Once you have this setup, you can publish such diagrams to HTML and PDF as the publishing
+            engine will automatically convert them to SVG in the published output.</p>
+    </body>
+</topic>
