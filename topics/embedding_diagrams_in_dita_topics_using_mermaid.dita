@@ -35,5 +35,8 @@
             Toolkit, will convert the textual descriptions to SVG diagrams for both the HTML-based
             and PDF outputs: <xref href="https://github.com/oxygenxml/dita-ot-diagrams-plugin"
                 format="html" scope="external"/>.</p>
+        <note id="note_dgy_gft_rsb" type="tip">You can preview the created diagrams using the
+            Mermaid live editor: <xref href="https://mermaid.live/edit" format="html"
+                scope="external"/>.</note>
     </body>
 </topic>
