@@ -66,6 +66,8 @@
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
             <topicref href="topics/preprocessing_ditaot_project_files.dita"/>
+            <topicref href="re_10_reasons_for_moving_away_from_dita.dita"
+                keys="re_10_reasons_for_moving_away_from_dita"/>
             <topichead navtitle="Refactoring">
                 <topicref href="topics/sort_glossentries.dita"/>
                 <topicref href="topics/replace-image-href-keyref.dita"/>
