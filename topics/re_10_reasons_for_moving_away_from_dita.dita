@@ -26,7 +26,7 @@
                         in which I investigated using the <uicontrol>MKDocs</uicontrol> static site
                         generator:</dd>
                     <dd><xref
-                            href="topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita"
+                            href="publishing_dita_content_using_a_markdown_static_web_site_generator.dita"
                         /></dd>
                 </dlentry>
                 <dlentry>
@@ -55,7 +55,7 @@
                     <dt>5. Open source DITA solutions develop too slowly.</dt>
                     <dd>If we discuss about storage, DITA content (the content of this blog for
                         example) can be stored in Git repositories and used with regular Git client
-                        tools: <xref href="topics/dita_for_small_teams.dita"/>.</dd>
+                        tools: <xref href="dita_for_small_teams.dita"/>.</dd>
                     <dd>If we discuss about the publishing ecosystem, once you can publish DITA to
                         plain HTML or Markdown using the DITA Open Toolkit, you can benefit of all
                         web based tools available for Markdown and plain HTML content.</dd>
@@ -104,7 +104,7 @@
                         solution 100% not portable when switching between web-based frameworks. I do
                         think there are more powerful ways to check if the structure is correct with
                         XML based standards using Schematron. And I also think our Oxygen <xref
-                            href="topics/validateCheckForCompletness.dita">Validate and check for
+                            href="validateCheckForCompletness.dita">Validate and check for
                             completeness</xref> action does a lot of consistency checks.</dd>
                     <dd><xref href="https://www.smashingmagazine.com/2022/02/thoughts-on-markdown/"
                             format="html" scope="external"/></dd>
