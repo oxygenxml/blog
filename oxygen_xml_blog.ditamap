@@ -25,6 +25,8 @@
                 <topicref href="topics/ditaToPDF.dita"/>
                 <topicref href="topics/pageBreakPlugin.dita"/>
             </topichead>
+            <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
+            <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
    <topicref href="topics/dita_to_confluence.dita"/>
    <topicref href="topics/dita-generate-changes-list.dita"/>
             <topicref href="topics/dita_publishing_customization_overview.dita"/>
@@ -63,8 +65,6 @@
             <topicref href="topics/validateCheckForCompletness.dita"/>
             <topicref href="topics/SchematronBCs.dita"/>
             <topicref href="topics/styleguide.dita"/>
-            <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
-            <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
             <topicref href="topics/preprocessing_ditaot_project_files.dita"/>
             <topicref href="topics/re_10_reasons_for_moving_away_from_dita.dita"
                 keys="re_10_reasons_for_moving_away_from_dita"/>
