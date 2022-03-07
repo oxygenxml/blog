@@ -36,12 +36,14 @@
     <p>If the XML source is published then it is possible to include an <q>Edit this page</q> link
       on the published format that will allow immediate access to the editor. An example of such
       access is provided for the <xref href="https://github.com/dita-ot/docs" format="html"
-        scope="external">DITA-OT documentation</xref> project. The development brunch is published
-      at <xref href="http://www.dita-ot.org/dev/" format="html" scope="external"/> and every page
-      contains at the bottom an <q>Edit this page</q> link that gives immediate access to the DITA
-      topic that page is generated from. For example, the <xref href="https://www.dita-ot.org/dev/"
-        format="html" scope="external"/> home page has an <uicontrol>Edit this page</uicontrol>
-      button will get you to edit the topic in the WebAuthor.</p>
+        scope="external">DITA-OT documentation</xref> project. The development
+      <?oxy_comment_start author="jeanniebacon" timestamp="20220307T192004+0000" comment="brunch --&gt; branch"?>brunch<?oxy_comment_end?>
+      is published at <xref href="http://www.dita-ot.org/dev/" format="html" scope="external"/> and
+      every page contains at the bottom an <q>Edit this page</q> link that gives immediate access to
+      the DITA topic that page is generated from. For example, the <xref
+        href="https://www.dita-ot.org/dev/" format="html" scope="external"/> home page has an
+        <uicontrol>Edit this page</uicontrol> button will get you to edit the topic in the
+      WebAuthor.</p>
     <p>Edit, then save, and a pull request with your changes will be automatically generated -
       contribution cannot be easier than this!</p>
     <p>Next we plan to have the <uicontrol>Edit this page</uicontrol> option for the oXygen
