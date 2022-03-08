@@ -36,7 +36,7 @@
     <p>If the XML source is published then it is possible to include an <q>Edit this page</q> link
       on the published format that will allow immediate access to the editor. An example of such
       access is provided for the <xref href="https://github.com/dita-ot/docs" format="html"
-        scope="external">DITA-OT documentation</xref> project. The development brunch is published
+        scope="external">DITA-OT documentation</xref> project. The development branch is published
       at <xref href="http://www.dita-ot.org/dev/" format="html" scope="external"/> and every page
       contains at the bottom an <q>Edit this page</q> link that gives immediate access to the DITA
       topic that page is generated from. For example, the <xref href="https://www.dita-ot.org/dev/"
