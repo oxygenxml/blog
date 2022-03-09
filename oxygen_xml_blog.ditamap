@@ -27,6 +27,7 @@
             </topichead>
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
+            <topicref href="topics/dita-codeblock-tabs.dita"/>
    <topicref href="topics/dita_to_confluence.dita"/>
    <topicref href="topics/dita-generate-changes-list.dita"/>
             <topicref href="topics/dita_publishing_customization_overview.dita"/>
