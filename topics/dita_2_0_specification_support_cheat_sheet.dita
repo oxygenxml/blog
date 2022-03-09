@@ -118,6 +118,42 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>-</entry>
                             <entry>Partially.</entry>
                         </row>
+                        <row>
+                            <entry>Added new <xmlelement>em</xmlelement> and
+                                    <xmlelement>strong</xmlelement> elements</entry>
+                            <entry>New elements similar in style to <xmlelement>b</xmlelement> and
+                                    <xmlelement>i</xmlelement> but with more semantics.</entry>
+                            <entry>-</entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry>Added new <xmlelement>partno</xmlelement>,
+                                    <xmlelement>hwcontrol</xmlelement>.</entry>
+                            <entry>New elements for documenting hardware.</entry>
+                            <entry>-</entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry>Added new <xmlelement>diagnostics</xmlelement>,
+                                    <xmlelement>diagnostics-general</xmlelement>,
+                                    <xmlelement>diagnostics-steps</xmlelement> elements.</entry>
+                            <entry>New elements added to the troubleshooting topic type.</entry>
+                            <entry>-</entry>
+                            <entry>-</entry>
+                        </row>
+                        <row>
+                            <entry>Added new <xmlelement>keytext</xmlelement> element.</entry>
+                            <entry>Used to simplify syntax for defining a key pointing to a small
+                                text fragment. </entry>
+                            <entry>-</entry>
+                            <entry>No.</entry>
+                        </row>
+                        <row>
+                            <entry>Added new <xmlelement>include</xmlelement> element.</entry>
+                            <entry>Similar to <xmlelement>coderef</xmlelement>.</entry>
+                            <entry>-</entry>
+                            <entry>Yes.</entry>
+                        </row>
                     </tbody>
                 </tgroup>
             </table>
