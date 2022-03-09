@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 2.x Topic//EN" "topic.dtd">
+<topic id="dita_2_0_specification_support_cheet_sheet">
+    <title>DITA 2.0 Specification Support Cheat Sheet</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-03-09"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>You can use the<b>Convert DITA 1.3 topics and maps to the DITA 2.0 standard</b> XML
+            refactoring action bundled with Oxygen 24 to convert DITA 1.3 content to the DITA 2.0
+            standard. The same XML refactoring action is also available as a separate GitHub
+            project: <xref href="https://github.com/oxygenxml/dita_1_3_to_2_x_converter"
+                format="html" scope="external"/>.</p>
+        <p>The DITA Open Toolkit publishing engine will support publishing a mix of DITA 1.3 and 2.0
+            topics and maps.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_xwb_b2d_vsb">
+                <title>DITA 2.0 Support Cheat Sheet</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Change</entry>
+                            <entry>Details</entry>
+                            <entry>Handled By Conversion</entry>
+                            <entry>Supported in DITA OT Publishing Engine</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>The DITA 2.0 topics/maps have specific schema references.</entry>
+                            <entry>References to DTD/XML Schema/RNG schemas need to be changed in
+                                all topics and maps.</entry>
+                            <entry>Yes.</entry>
+                            <entry>Yes</entry>
+                        </row>
+                        <row>
+                            <entry>Removed elements:
+                                <codeblock id="codeblock_zzn_kfd_vsb">titlealts, itemgroup, topicset, topicsetref, 
+longquoteref, anchor, anchorref, hasInstance, 
+hasKind, hasNarrower, hasPart, 
+hasRelated, relatedSubjects, subjectRelTable, 
+subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
+                            <entry>Removed some seldom used elements.</entry>
+                            <entry>Yes, automatically removes the elements.</entry>
+                            <entry>-</entry>
+                        </row>
+                        <row>
+                            <entry>Removed attributes:
+                                <codeblock id="codeblock_kpv_nfd_vsb">@mapkeyref, link/@query, hazardsymbol/@longdescref, 
+@xtrf, @xtrc,
+@spectitle,@specentry</codeblock></entry>
+                            <entry>Removed some seldom used attributes.</entry>
+                            <entry>Yes, automatically removes the attributes.</entry>
+                            <entry>-</entry>
+                        </row>
+                        <row>
+                            <entry>Removal of <xmlatt>navtitle</xmlatt>/<xmlatt>lockmeta</xmlatt>
+                                attributes</entry>
+                            <entry>Removed deprecated attributes, they can be replaced with
+                                equivalents.</entry>
+                            <entry>Yes, automatically converts them to
+                                    <xmlelement>topicmeta</xmlelement> equivalents.</entry>
+                            <entry>Yes</entry>
+                        </row>
+                        <row>
+                            <entry>Removal of <xmlatt>domains</xmlatt> default attribute.</entry>
+                            <entry>This is a default attribute which does not appear in the topic
+                                and map instances. It was used mostly for defining new attribute
+                                specializations, and all attribute specialization schemas need to be
+                                re-written to use the new <xmlatt>specializations</xmlatt> default
+                                attribute.</entry>
+                            <entry>-</entry>
+                            <entry>Yes.</entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <p>Removal of <b>@copy-to</b> attribute</p>
+                            </entry>
+                            <entry>Needs to be replaced with a <xmlelement>resourceid</xmlelement>
+                                element.</entry>
+                            <entry>Yes</entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry>Removal of the <xmlatt>print</xmlatt> attribute</entry>
+                            <entry>Needs to be replaced with the <xmlatt>deliveryTarget</xmlatt>
+                                attribute.</entry>
+                            <entry>Yes</entry>
+                            <entry>-</entry>
+                        </row>
+                        <row>
+                            <entry>Removed <xmlelement>substep</xmlelement> and
+                                    <xmlelement>substeps</xmlelement> task elements</entry>
+                            <entry>Needs to be replaced with the <xmlelement>steps</xmlelement> and
+                                    <xmlelement>step</xmlelement> elements.</entry>
+                            <entry>Yes</entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
+                            <entry>Removed <xmlelement>sectiondiv</xmlelement> element.</entry>
+                            <entry>Needs to be replaced with the <xmlelement>div</xmlelement>
+                                element.</entry>
+                            <entry>Yes</entry>
+                            <entry>-</entry>
+                        </row>
+                        <row>
+                            <entry>Added new <xmlelement>audio</xmlelement> and
+                                    <xmlelement>video</xmlelement> elements.</entry>
+                            <entry>New elements were added to refer to multimedia audio and video
+                                content and to define parameters.</entry>
+                            <entry>-</entry>
+                            <entry>Partially.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </body>
+</topic>
