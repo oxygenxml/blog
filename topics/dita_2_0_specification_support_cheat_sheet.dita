@@ -15,7 +15,10 @@
             project: <xref href="https://github.com/oxygenxml/dita_1_3_to_2_x_converter"
                 format="html" scope="external"/>.</p>
         <p>The DITA Open Toolkit publishing engine will support publishing a mix of DITA 1.3 and 2.0
-            topics and maps.</p>
+            topics and maps. The list of supported DITA 2.0 features in the publishing engine is
+            available here: <xref
+                href="https://www.dita-ot.org/dev/reference/dita-v2-0-support.html" format="html"
+                scope="external"/>.</p>
         <p>
             <table frame="all" rowsep="1" colsep="1" id="table_xwb_b2d_vsb">
                 <title>DITA 2.0 Support Cheat Sheet</title>
@@ -153,6 +156,20 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>Similar to <xmlelement>coderef</xmlelement>.</entry>
                             <entry>-</entry>
                             <entry>Yes.</entry>
+                        </row>
+                        <row>
+                            <entry>Simple tables can have titles and their cells can span rows and
+                                columns.</entry>
+                            <entry/>
+                            <entry>-</entry>
+                            <entry>Yes.</entry>
+                        </row>
+                        <row>
+                            <entry>Style output using ditaval <xmlatt>outputclass</xmlatt>
+                                attribute.</entry>
+                            <entry/>
+                            <entry>-</entry>
+                            <entry>Yes</entry>
                         </row>
                     </tbody>
                 </tgroup>
