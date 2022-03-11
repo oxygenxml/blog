@@ -25,17 +25,16 @@
                 </thead>
                 <tbody>
                     <row>
-                        <entry>Radu Coravu</entry>
-                        <entry>Helping people with XML-related technologies since the start of this
-                            century. Oxygen XML Editor @radu_coravu</entry>
+                        <entry>Alex Jitianu</entry>
+                        <entry>Project Manager, DITA/Authoring team. Oxygen XML Editor.</entry>
                     </row>
                     <row>
                         <entry>chrispy</entry>
                         <entry>Chris Papademetrious.</entry>
                     </row>
                     <row>
-                        <entry>Alex Jitianu</entry>
-                        <entry>Project Manager, DITA/Authoring team. Oxygen XML Editor.</entry>
+                        <entry>Cristi Talau</entry>
+                        <entry>Project Manager, Web Authoring team. Oxygen XML Editor.</entry>
                     </row>
                     <row>
                         <entry>Mihaela Calotescu</entry>
@@ -43,8 +42,13 @@
                             Editor.</entry>
                     </row>
                     <row>
-                        <entry>Cristi Talau</entry>
-                        <entry>Project Manager, Web Authoring team. Oxygen XML Editor.</entry>
+                        <entry>Radu Coravu</entry>
+                        <entry>Helping people with XML-related technologies since the start of this
+                            century. Oxygen XML Editor @radu_coravu</entry>
+                    </row>
+                    <row>
+                        <entry>Steven Higgs</entry>
+                        <entry>Senior Technical Writer. Oxygen XML Editor.</entry>
                     </row>
                 </tbody>
             </tgroup>
