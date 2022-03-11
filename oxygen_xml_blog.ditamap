@@ -127,5 +127,6 @@
 		</topicref>
         <topicref href="topics/oxygen_xml_vulnerability_analysis_faq.dita"/>
     </topichead>
+    <topicref href="topics/contributors.dita"/>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
 </map>
