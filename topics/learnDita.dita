@@ -21,27 +21,26 @@
           href="https://www.oxygenxml.com/doc/ug-editor/#topics/author-dita.html"
           format="html" scope="external"/>.</p>
       <p>We have a list of videos, some of them DITA-related here: <xref
-					href="https://www.oxygenxml.com/videos.html" format="html" scope="external"/>
-				and a series of past webinar recordings about editing DITA with Oxygen.<dl
-					id="dl_av4_tgf_wpb">
-					<dlentry>
-						<dt>Getting Started with Oxygen and DITA</dt>
-						<dd><xref
-								href="https://www.oxygenxml.com/events/2020/webinar_getting_started_with_dita_using_oxygen_xml_editor.html"
-								format="html" scope="external"/></dd>
-					</dlentry>
-					<dlentry>
-						<dt>Basic DITA Profiling and Reuse</dt>
-						<dd><xref
-								href="https://www.oxygenxml.com/events/2020/webinar_working_with_dita_in_oxygen.html"
-								format="html" scope="external"/></dd>
-					</dlentry>
-					<dlentry>
-						<dt>Advanced DITA Profiling and Reuse</dt>
-						<dd><xref
-								href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_advanced_profiling_and_reuse_strategies.html"
-								format="html" scope="external"/></dd>
-					</dlentry>
+          href="https://www.oxygenxml.com/videos.html" format="html" scope="external"/> and a series
+        of past webinar recordings about editing DITA with Oxygen.<dl id="dl_av4_tgf_wpb">
+          <dlentry>
+            <dt>Getting Started with Oxygen and DITA</dt>
+            <dd><xref
+                href="https://www.oxygenxml.com/events/2020/webinar_getting_started_with_dita_using_oxygen_xml_editor.html"
+                format="html" scope="external"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Basic DITA Profiling and Reuse</dt>
+            <dd><xref
+                href="https://www.oxygenxml.com/events/2020/webinar_working_with_dita_in_oxygen.html"
+                format="html" scope="external"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Advanced DITA Profiling and Reuse</dt>
+            <dd><xref
+                href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_advanced_profiling_and_reuse_strategies.html"
+                format="html" scope="external"/></dd>
+          </dlentry>
           <dlentry>
             <dt>Working with DITA in Oxygen - Customizing the Editing Experience</dt>
             <dd><xref
@@ -60,7 +59,9 @@
                 href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_migrating_to_dita_and_refactoring.html"
                 format="html" scope="external"/></dd>
           </dlentry>
-				</dl></p>
+        </dl>All these webinars above are also listed here: <xref
+          href="https://www.oxygenxml.com/working_with_dita_in_oxygen.html" format="html"
+          scope="external"/>.</p>
     </section>
     <section id="section_hbg_wfj_2v">
       <title>Resources for learning DITA:</title>

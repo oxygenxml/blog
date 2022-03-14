@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Properties","shortdesc":"<p class=\"shortdesc\">           <em class=\"ph i\">None<\/em>         <\/p>","href":"properties25.html","attributes":{"data-id":"properties-25"},"menu":{"hasChildren":false},"tocID":"properties-25-d1392e1681","topics":[]}]});

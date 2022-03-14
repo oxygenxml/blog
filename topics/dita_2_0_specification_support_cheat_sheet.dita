@@ -51,7 +51,8 @@ hasKind, hasNarrower, hasPart,
 hasRelated, relatedSubjects, subjectRelTable, 
 subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>Removed some seldom used elements.</entry>
-                            <entry>Yes, automatically removes the elements.</entry>
+                            <entry>Yes, automatically removes the elements and shows messages for
+                                each removed element.</entry>
                             <entry>-</entry>
                         </row>
                         <row>
@@ -60,11 +61,13 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
 @xtrf, @xtrc,
 @spectitle,@specentry</codeblock></entry>
                             <entry>Removed some seldom used attributes.</entry>
-                            <entry>Yes, automatically removes the attributes.</entry>
+                            <entry>Yes, automatically removes the attributes and shows messages for
+                                each removed attribute.</entry>
                             <entry>-</entry>
                         </row>
                         <row>
-                            <entry>Removal of <xmlatt>navtitle</xmlatt>/<xmlatt>lockmeta</xmlatt>
+                            <entry>Removal of
+                                    <xmlatt>navtitle</xmlatt>/<xmlatt>locktitle</xmlatt>/<xmlatt>lockmeta</xmlatt>
                                 attributes</entry>
                             <entry>Removed deprecated attributes, they can be replaced with
                                 equivalents.</entry>
@@ -145,13 +148,6 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>-</entry>
                         </row>
                         <row>
-                            <entry>Added new <xmlelement>keytext</xmlelement> element.</entry>
-                            <entry>Used to simplify syntax for defining a key pointing to a small
-                                text fragment. </entry>
-                            <entry>-</entry>
-                            <entry>No.</entry>
-                        </row>
-                        <row>
                             <entry>Added new <xmlelement>include</xmlelement> element.</entry>
                             <entry>Similar to <xmlelement>coderef</xmlelement>.</entry>
                             <entry>-</entry>
@@ -170,6 +166,20 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry/>
                             <entry>-</entry>
                             <entry>Yes</entry>
+                        </row>
+                        <row>
+                            <entry>Added new <xmlelement>keytext</xmlelement> element.</entry>
+                            <entry>Used to simplify syntax for defining a key pointing to a small
+                                text fragment. </entry>
+                            <entry>-</entry>
+                            <entry>No.</entry>
+                        </row>
+                        <row>
+                            <entry>New Bookmap <xmlelement>mapresources</xmlelement>
+                                element.</entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
                         </row>
                     </tbody>
                 </tgroup>
