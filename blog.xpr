@@ -119,6 +119,10 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>keys.context</String>
+                        <String>${pdu}/oxygen_xml_blog.ditamap?oxycontextProjectParent=blog-project.xml&amp;oxycontextID=blog&amp;oxycontextName=Oxygen%20XML%20Blog&amp;oxycontextType=GlobalContext</String>
+                    </entry>
+                    <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>

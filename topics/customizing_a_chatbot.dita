@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="customizing_a_document_type_using_an_extension_framework_script">
+    <title>How to export data for a chatbot using Oxygen and Google Dialogflow</title>
+    <shortdesc>A chatbot is a computer program that simulates human conversation through voice commands or text chats or both. Chatbot, short for chatterbot, is an artificial intelligence (AI) feature that can be embedded and used through any major messaging application.
+        This tool helps add convenience for customers, they are automated programs that interact with customers like a human would and cost little to nothing to engage with.
+    </shortdesc>
+    <prolog>
+        <author>Alex Smarandache</author>
+        <critdates>
+            <created date="2021-03-11"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Suppose we have a simple DITA topic:</p>
+        <codeblock outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+&lt;topic id="frequently_asked_questions">
+    &lt;title>Frequently Asked Questions&lt;/title>
+    &lt;body>
+        &lt;p>
+            &lt;table frame="all" rowsep="1" colsep="1" id="table_bkf_4dl_vsb">
+                &lt;tgroup cols="2">
+                    &lt;colspec colname="c1" colnum="1" colwidth="1*"/>
+                    &lt;colspec colname="c2" colnum="2" colwidth="1*"/>
+                    &lt;tbody>
+                        &lt;row>
+                            &lt;entry>
+                                &lt;p>What is Oxygen XML Editor?&lt;/p>
+                                &lt;p>What is Oxygen XML?&lt;/p>
+                            &lt;/entry>
+                            &lt;entry>
+                                &lt;p>Oxygen XML Editor is a great tool.&lt;/p>
+                            &lt;/entry>
+                        &lt;/row>
+                        &lt;row>
+                            &lt;entry>How do I learn DITA?&lt;/entry>
+                            &lt;entry>You can read the "Oxygen" user's guide, and the Oxygen XML Blog.&lt;/entry>
+                        &lt;/row>
+                    &lt;/tbody>
+                &lt;/tgroup>
+            &lt;/table>
+        &lt;/p>
+    &lt;/body>
+&lt;/topic>
+            
+        </codeblock>
+        <p>And the following XSLT file:</p>
+        <codeblock outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:oxy="abc">
+    &lt;xsl:output method="text"/>
+    &lt;xsl:template match="/">
+        &lt;xsl:text>Question,Answer
+&lt;/xsl:text>
+        &lt;xsl:for-each select="//tbody/row">
+            &lt;xsl:for-each select="entry[1]">
+                &lt;xsl:choose>
+                    &lt;xsl:when test="p">
+                        &lt;xsl:for-each select="p">
+                            &lt;xsl:value-of select="oxy:escapeForCSV(normalize-space(.))"/>,&lt;xsl:value-of
+                                select="oxy:escapeForCSV(normalize-space(string-join(../../entry[2]//text(), '')))"/>&lt;xsl:text>
+&lt;/xsl:text>
+                        &lt;/xsl:for-each>
+                    &lt;/xsl:when>
+                    &lt;xsl:otherwise>
+                        &lt;xsl:value-of select="oxy:escapeForCSV(normalize-space(.))"/>,&lt;xsl:value-of
+                            select="oxy:escapeForCSV(normalize-space(string-join(../entry[2]//text(), '')))"/>&lt;xsl:text>
+&lt;/xsl:text>
+                    &lt;/xsl:otherwise>
+                &lt;/xsl:choose>
+            &lt;/xsl:for-each>
+        &lt;/xsl:for-each>
+    &lt;/xsl:template>    
+    &lt;xsl:function name="oxy:escapeForCSV">
+        &lt;xsl:param name="value"/>
+        &lt;xsl:value-of select="replace(replace($value, '&amp;quot;', '&amp;quot;&amp;quot;'), ',', '&amp;quot;,&amp;quot;')"/>
+    &lt;/xsl:function>
+&lt;/xsl:stylesheet></codeblock>
+        <p>Create a transformation scenario using these 2 files. Save the output to a CSV file, as
+            in the picture below:</p>
+        <p><image href="../images/chatbot-save-result-as-csv.png" id="image_pdh_mpn_wsb"/></p>
+        <p>After applying the transformation, the following CSV file should
+            appear:<codeblock id="codeblock_ecl_rpn_wsb" outputclass="language-xml">What is Oxygen XML Editor?,Oxygen XML Editor is a great tool.
+What is Oxygen XML?,Oxygen XML Editor is a great tool.
+How do I learn DITA?,You can read the ""Oxygen"" user's guide"," and the Oxygen XML Blog.</codeblock></p>
+        <p><b>Observation</b>
+        </p>
+        <p>It is similar to a table with 2 columns, where the first column represents the question,
+            and the second column the answer, being separated by a comma. In general, a line is in
+            the form: "Question, Answer". One limitation is that each question can have only one
+            answer. In order for the same answer to be suitable for several questions, you can copy
+            it in the columns corresponding to the questions.</p>
+        <p>Next, follow these steps to export the data from the CSV file to a chat bot:<ol
+                id="ol_obx_1dj_spb">
+                <li>Create an account on <xref href="https://dialogflow.cloud.google.com/"
+                        format="html" scope="external"/></li>
+                <li>Create Agent and complete the desired fields<p><image
+                            href="../images/chatbot-create-agent.png" id="image_qnb_4tn_wsb"
+                    /></p></li>
+                <li>In Settings, enable<b> BETA FEATURES</b>.<p><image
+                            href="../images/chatbot-enable-beta.png" id="image_q32_dyn_wsb"
+                    /></p></li>
+                <li><b>Knowledge</b> -> <b>CREATE KNOWLEDGE BASE</b>(Enter a name for this knowledge
+                    base and press the SAVE button)<p><image
+                            href="../images/chatbot-create-knowledge.png" id="image_ldc_3yn_wsb"
+                        /></p></li>
+                <li>Add the CSV document. For this: Press <b>Create the first one</b> and complete
+                    the fields. Select <b>Update file from your computer</b> option and select the
+                    desired file. Click <b>CREATE</b> button. <p><image
+                            href="../images/chatbot-add-csv-file.png" id="image_kbf_qyn_wsb"
+                        /></p><p>The document will be registered in the knowledge base, as in the
+                        image below.</p><p><image
+                            href="../images/chatbot-knowledge-file-after-adding.png"
+                            id="image_ifw_xyn_wsb"/></p></li>
+                <li>
+                    <p>Convert questions and answers into intents.</p>
+                    <p>Press the View link from the image above. Check all questions that need to be
+                        converted to intents. Press <b>CONVERT TO INTENTS</b> button.</p>
+                    <p><image href="../images/chatbot-convert-to-intents.png" id="image_on3_yzn_wsb"
+                        /></p>
+                    <p>Now, when you click on <b>Intents</b>, the converted questions should
+                        appear.</p>
+                    <p><image href="../images/chatbot-intents.png" id="image_blz_j14_wsb"/></p>
+                </li>
+                <li>
+                    <p>Do a simulation. Click <b>Integration</b> → <b>Web demo</b> → (optional)
+                        enable this feature if isn't → click the presented link in the dialog.</p>
+                    <p><image href="../images/chatbot-chat-demo.png" id="image_dmf_514_wsb"/></p>
+                </li>
+            </ol></p>
+        <p> </p>
+    </body>
+</topic>

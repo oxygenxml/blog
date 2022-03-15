@@ -82,6 +82,7 @@
                 <topicref href="topics/dita_inheritance_hierarchy.dita"/>
                 <topicref href="topics/ditaUsage.dita"/>
             </topichead>
+            <topicref href="topics/customizing_a_chatbot.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">
