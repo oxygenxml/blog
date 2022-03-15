@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="using_oxygen_xml_editor_in_a_browser">
-    <title>Using Oxygen XML Editor in a Web Browser - (Experimental)</title>
+    <title>Using Oxygen XML Editor in a Web Browser (Experimental)</title>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
-            <created date="2022-01-10"/>
+            <created date="2022-03-15"/>
         </critdates>
     </prolog>
     <body>
@@ -29,9 +29,9 @@
             format="html" scope="external"/>.</li>
         <li>Unpack it to the <filepath>oxygen</filepath> folder.</li>
         <li>Download the <xref href="https://github.com/JetBrains/projector-installer" format="html"
-            scope="external">Jetbrains projector installer</xref> and unzip it in the <ph
-            keyref="product"/> installation folder (the folder path should be something like:
-            <filepath>oxygen/projector-server-1.5.0</filepath>).</li>
+                        scope="external">Jetbrains projector installer</xref> and unzip it in the
+                    Oxygen installation folder (the folder path should be something like:
+                        <filepath>oxygen/projector-server-1.5.0</filepath>).</li>
         <li>Download the <xref href="https://github.com/JetBrains/JetBrainsRuntime/releases"
             format="html" scope="external">Jetbrains Java 11 runtime enviroment</xref> and unpack it
           to the <filepath>oxygen/jbr</filepath> folder.</li>
