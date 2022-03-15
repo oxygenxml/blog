@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <meta>
+        <filters directoryPatterns="" filePatterns="\Qblog.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>additional.frameworks.directories</String>
+                        <String-array>
+                            <String>${pd}/frameworks</String>
+                        </String-array>
+                    </entry>
+                    <entry>
+                        <String>check.completeness.options</String>
+                        <checkCompletnessOptions>
+                            <field name="batchValidateDITAReferencesSelected">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="checkNonDITAReferencesSelected">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="includeRemoteResourcesSelected">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="useDitavalFileSeletcted">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="fromAssociatedScenarioRadioSelected">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="fromCurrentConditionSetSelected">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="fromAllConditionSetsSelected">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="checkForDuplicateSelected">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="onlyTopicInMap">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="identifyProfilingConflicts">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="reportProfilingConflictsWithPrefs">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="checkTableLayoutCheckbox">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="reportDuplicateTopics">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="reportExternalReferences">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="reportDuplicateKeyDefs">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="reportNotUsedKeyDefs">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="reportUnusedElemsWithID">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="ditavalFilePaths">
+                                <list/>
+                            </field>
+                            <field name="additionalSchematronChecksURL">
+                                <String>${pdu}/frameworks/dita-extension/schematron/rules.sch</String>
+                            </field>
+                        </checkCompletnessOptions>
+                    </entry>
+                    <entry>
+                        <String>document.types</String>
+                        <documentTypeDescriptor-array/>
+                    </entry>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.dictionaries.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.custom.locations.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.media.tab.defined.working.sets</String>
+                        <mediaWorkingSetPO-array>
+                            <mediaWorkingSetPO>
+                                <field name="workingSetEntries">
+                                    <list>
+                                        <workingSetEntry>
+                                            <field name="entryType">
+                                                <String>Folder_entry_type</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>${pdu}/images/</String>
+                                            </field>
+                                        </workingSetEntry>
+                                    </list>
+                                </field>
+                                <field name="wSetName">
+                                    <String>test</String>
+                                </field>
+                                <field name="isSelected">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </mediaWorkingSetPO>
+                        </mediaWorkingSetPO-array>
+                    </entry>
+                    <entry>
+                        <String>key.spellcheck.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>keys.context</String>
+                        <String>${pdu}/oxygen_xml_blog.ditamap?oxycontextProjectParent=blog-project.xml&amp;oxycontextID=blog&amp;oxycontextName=Oxygen%20XML%20Blog&amp;oxycontextType=GlobalContext</String>
+                    </entry>
+                    <entry>
+                        <String>scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>oxygen_xml_blog.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>DITA Map WebHelp Responsive - Blog</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
+                    <entry>
+                        <String>scenarios</String>
+                        <scenario-array>
+                            <ditaScenario>
+                                <field name="useXEP">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useAntennaHouse">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useDITAScript">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="baseDir">
+                                    <String>${cfd}</String>
+                                </field>
+                                <field name="outputDir">
+                                    <String>${cfd}/out/webhelp-responsive</String>
+                                </field>
+                                <field name="tempDir">
+                                    <String>${cfd}/temp/webhelp-responsive</String>
+                                </field>
+                                <field name="transtype">
+                                    <String>webhelp-responsive</String>
+                                </field>
+                                <field name="filters">
+                                    <ditavalFilters>
+                                        <field name="useDitavalFilePath">
+                                            <Boolean>false</Boolean>
+                                        </field>
+                                        <field name="useAppliedConditionSet">
+                                            <Boolean>true</Boolean>
+                                        </field>
+                                        <field name="appliedConditionSet">
+                                            <null/>
+                                        </field>
+                                        <field name="ditavalFilePath">
+                                            <null/>
+                                        </field>
+                                        <field name="simpleFiltersList">
+                                            <list/>
+                                        </field>
+                                    </ditavalFilters>
+                                </field>
+                                <field name="addOxygenJars">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="skinCssFile">
+                                    <null/>
+                                </field>
+                                <field name="lastCustomSkinCssPath">
+                                    <null/>
+                                </field>
+                                <field name="webhelpResponsiveTemplate">
+                                    <null/>
+                                </field>
+                                <field name="publishingTemplateDataPO">
+                                    <publishingTemplate>
+                                        <field name="templateRoot">
+                                            <String>${pd}/publishing/webhelpBlogTemplate.zip</String>
+                                        </field>
+                                        <field name="descriptorRelativePath">
+                                            <String>Oxygen XML Blog WebHelp Template.opt</String>
+                                        </field>
+                                        <field name="isCustomTemplate">
+                                            <Boolean>true</Boolean>
+                                        </field>
+                                    </publishingTemplate>
+                                </field>
+                                <field name="oxygenFeedbackPO">
+                                    <null/>
+                                </field>
+                                <field name="additionalAntArgs">
+                                    <String></String>
+                                </field>
+                                <field name="buildTarget">
+                                    <String></String>
+                                </field>
+                                <field name="buildFilePath">
+                                    <String></String>
+                                </field>
+                                <field name="ditaParams">
+                                    <list>
+                                        <ditaParameter>
+                                            <field name="name">
+                                                <String>args.figurelink.style</String>
+                                            </field>
+                                            <field name="description">
+                                                <null/>
+                                            </field>
+                                            <field name="value">
+                                                <String>TITLE</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>4</Integer>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <String-array>
+                                                    <String>NUMBER</String>
+                                                    <String>TITLE</String>
+                                                    <String>NUMTITLE</String>
+                                                    <null/>
+                                                </String-array>
+                                            </field>
+                                            <field name="possibleValuesDescriptions">
+                                                <String-array>
+                                                    <String></String>
+                                                    <String></String>
+                                                    <String></String>
+                                                </String-array>
+                                            </field>
+                                        </ditaParameter>
+                                        <ditaParameter>
+                                            <field name="name">
+                                                <String>args.tablelink.style</String>
+                                            </field>
+                                            <field name="description">
+                                                <null/>
+                                            </field>
+                                            <field name="value">
+                                                <String>TITLE</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <null/>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>4</Integer>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <String-array>
+                                                    <String>NUMBER</String>
+                                                    <String>TITLE</String>
+                                                    <String>NUMTITLE</String>
+                                                    <null/>
+                                                </String-array>
+                                            </field>
+                                            <field name="possibleValuesDescriptions">
+                                                <String-array>
+                                                    <String></String>
+                                                    <String></String>
+                                                    <String></String>
+                                                </String-array>
+                                            </field>
+                                        </ditaParameter>
+                                        <ditaParameter>
+                                            <field name="name">
+                                                <String>force-unique</String>
+                                            </field>
+                                            <field name="description">
+                                                <null/>
+                                            </field>
+                                            <field name="value">
+                                                <String>true</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <String>false</String>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>4</Integer>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <String-array>
+                                                    <String>true</String>
+                                                    <String>false</String>
+                                                    <null/>
+                                                </String-array>
+                                            </field>
+                                            <field name="possibleValuesDescriptions">
+                                                <String-array>
+                                                    <String></String>
+                                                    <String></String>
+                                                </String-array>
+                                            </field>
+                                        </ditaParameter>
+                                    </list>
+                                </field>
+                                <field name="jvmArgs">
+                                    <String>-Xmx384m</String>
+                                </field>
+                                <field name="useCustomJavaHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customJavaHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="useCustomANTHome">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="customANTHomeDir">
+                                    <String></String>
+                                </field>
+                                <field name="workingDir">
+                                    <null/>
+                                </field>
+                                <field name="showConsoleAlways">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>DITA Map WebHelp Responsive - Blog</String>
+                                </field>
+                                <field name="baseURL">
+                                    <null/>
+                                </field>
+                                <field name="footerURL">
+                                    <null/>
+                                </field>
+                                <field name="fOPMethod">
+                                    <null/>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <null/>
+                                </field>
+                                <field name="headerURL">
+                                    <null/>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <null/>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <null/>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>DITAMAP</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <String></String>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>DITA-OT</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </ditaScenario>
+                        </scenario-array>
+                    </entry>
+                    <entry>
+                        <String>spell.check.dictionaries.additional.folder</String>
+                        <String>${pd}/frameworks/dita-extension/dicts/</String>
+                    </entry>
+                    <entry>
+                        <String>spell.check.load.dictionaries.from.additional.folder</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>spell.check.options</String>
+                        <spellCheckOptions>
+                            <field name="automaticSpellCheck">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="automaticSpellCheckContentTypes">
+                                <String-array>
+                                    <String>application/xhtml+xml</String>
+                                    <String>text/html</String>
+                                    <String>text/markdown</String>
+                                    <String>text/nvdl</String>
+                                    <String>text/plain</String>
+                                    <String>text/properties</String>
+                                    <String>text/rng</String>
+                                    <String>text/sch</String>
+                                    <String>text/wsdl</String>
+                                    <String>text/xml</String>
+                                    <String>text/xproc</String>
+                                    <String>text/xsd</String>
+                                    <String>text/xsl</String>
+                                    <String>text/xspec</String>
+                                </String-array>
+                            </field>
+                            <field name="spellCheckInComments">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="spellCheckInPIs">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="spellCheckInAttributeValues">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="spellCheckInText">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="spellCheckInCDATA">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="language">
+                                <String>en</String>
+                            </field>
+                            <field name="caseSensitive">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="ignoreMixedCase">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="ignoreAcronyms">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="ignoreDigits">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="ignoreDuplicates">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="ignoreURL">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="checkPunctuation">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="allowCompound">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="allowFileExtensions">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="obeyLangAttributes">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="langAttrMissingUseDefault">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="ignoreSpellCheckElements">
+                                <String-array>
+                                    <String>codeblock</String>
+                                    <String>codeph</String>
+                                    <String>filepath</String>
+                                    <String>screen</String>
+                                </String-array>
+                            </field>
+                            <field name="preferredChecker">
+                                <Integer>1</Integer>
+                            </field>
+                        </spellCheckOptions>
+                    </entry>
+                    <entry>
+                        <String>storage.level.of.check.completeness.options</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="blog.xpr">
+        <folder masterFiles="true" name="Main Files">
+            <file name="blog-project.xml"/>
+        </folder>
+        <folder path="."/>
+    </projectTree>
+</project>
