@@ -9,10 +9,10 @@
         </critdates>
     </prolog>
     <body>
-        <p>You can use the<b>Convert DITA 1.3 topics and maps to the DITA 2.0 standard</b> XML
-            refactoring action bundled with Oxygen 24 to convert DITA 1.3 content to the DITA 2.0
-            standard. The same XML refactoring action is also available as a separate GitHub
-            project: <xref href="https://github.com/oxygenxml/dita_1_3_to_2_x_converter"
+        <p>You can use the <b>Convert DITA 1.3 topics and maps to the DITA 2.0 standard</b> XML
+            refactoring action bundled with Oxygen 24 (or later) to convert DITA 1.3 content to the
+            DITA 2.0 standard. The same XML refactoring action is also available as a separate
+            GitHub project: <xref href="https://github.com/oxygenxml/dita_1_3_to_2_x_converter"
                 format="html" scope="external"/>.</p>
         <p>The DITA Open Toolkit publishing engine will support publishing a mix of DITA 1.3 and 2.0
             topics and maps. The list of supported DITA 2.0 features in the publishing engine is
@@ -40,7 +40,7 @@
                             <entry>The DITA 2.0 topics/maps have specific schema references.</entry>
                             <entry>References to DTD/XML Schema/RNG schemas need to be changed in
                                 all topics and maps.</entry>
-                            <entry>Yes.</entry>
+                            <entry>Yes</entry>
                             <entry>Yes</entry>
                         </row>
                         <row>
@@ -50,7 +50,7 @@ longquoteref, anchor, anchorref, hasInstance,
 hasKind, hasNarrower, hasPart, 
 hasRelated, relatedSubjects, subjectRelTable, 
 subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
-                            <entry>Removed some seldom used elements.</entry>
+                            <entry>Removed some seldomly used elements.</entry>
                             <entry>Yes, automatically removes the elements and shows messages for
                                 each removed element.</entry>
                             <entry>-</entry>
@@ -60,7 +60,7 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                                 <codeblock id="codeblock_kpv_nfd_vsb">@mapkeyref, link/@query, hazardsymbol/@longdescref, 
 @xtrf, @xtrc,
 @spectitle,@specentry</codeblock></entry>
-                            <entry>Removed some seldom used attributes.</entry>
+                            <entry>Removed some seldomly used attributes.</entry>
                             <entry>Yes, automatically removes the attributes and shows messages for
                                 each removed attribute.</entry>
                             <entry>-</entry>
@@ -77,13 +77,13 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                         </row>
                         <row>
                             <entry>Removal of <xmlatt>domains</xmlatt> default attribute.</entry>
-                            <entry>This is a default attribute which does not appear in the topic
-                                and map instances. It was used mostly for defining new attribute
+                            <entry>This is a default attribute that does not appear in the topic and
+                                map instances. It was used mostly for defining new attribute
                                 specializations, and all attribute specialization schemas need to be
                                 re-written to use the new <xmlatt>specializations</xmlatt> default
                                 attribute.</entry>
                             <entry>-</entry>
-                            <entry>Yes.</entry>
+                            <entry>Yes</entry>
                         </row>
                         <row>
                             <entry>
@@ -122,7 +122,7 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>New elements were added to refer to multimedia audio and video
                                 content and to define parameters.</entry>
                             <entry>-</entry>
-                            <entry>Partially.</entry>
+                            <entry>Partially</entry>
                         </row>
                         <row>
                             <entry>Added new <xmlelement>em</xmlelement> and
@@ -151,14 +151,14 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>Added new <xmlelement>include</xmlelement> element.</entry>
                             <entry>Similar to <xmlelement>coderef</xmlelement>.</entry>
                             <entry>-</entry>
-                            <entry>Yes.</entry>
+                            <entry>Yes</entry>
                         </row>
                         <row>
                             <entry>Simple tables can have titles and their cells can span rows and
                                 columns.</entry>
                             <entry/>
                             <entry>-</entry>
-                            <entry>Yes.</entry>
+                            <entry>Yes</entry>
                         </row>
                         <row>
                             <entry>Style output using ditaval <xmlatt>outputclass</xmlatt>
@@ -172,7 +172,7 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>Used to simplify syntax for defining a key pointing to a small
                                 text fragment. </entry>
                             <entry>-</entry>
-                            <entry>No.</entry>
+                            <entry>No</entry>
                         </row>
                         <row>
                             <entry>New Bookmap <xmlelement>mapresources</xmlelement>
