@@ -15,8 +15,8 @@
     </prolog>
     <body>
         <p>When inserting <xmlelement>codeblock</xmlelement> elements in DITA content with code from
-            various languages you can use the <xmlatt>outputclass</xmlatt> attribute to provide
-            syntax highlight for each codeblock in the generated WebHelp and PDF outputs: <xref
+            various languages, you can use the <xmlatt>outputclass</xmlatt> attribute to provide
+            syntax highlighting for each codeblock in the generated WebHelp and PDF outputs: <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks-x.html"
                 format="html" scope="external"/>. </p>
         <p>Suppose you have consecutive <xmlelement>codeblock</xmlelement> elements, each one of
@@ -37,7 +37,7 @@ headers = {
   'Accept': 'application/json',
   'Authorization': 'Bearer {access-token}'
 }&lt;/codeblock></codeblock></p>
-        <p>You can install this open source DITA Open Toolkit plugin to display code blocks as
+        <p>You can install this open-source DITA Open Toolkit plugin to display codeblocks as
             separate tabs in the published WebHelp output: <xref
                 href="https://github.com/oxygenxml/dita-wh-codeblock-tabs" format="html"
                 scope="external"/>.</p>
