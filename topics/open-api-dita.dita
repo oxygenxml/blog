@@ -14,23 +14,23 @@
         </metadata>
     </prolog>
     <body>
-        <p>OpenAPI documentation is usually stored in JSON or YAML formats. In this topic we will
+        <p>OpenAPI documentation is usually stored in JSON or YAML formats. In this topic, we will
             attempt to convert OpenAPI documentation to Markdown using <xref
                 href="https://github.com/Mermade/widdershins" format="html" scope="external"
                 >widdershins</xref>, convert Markdown to DITA content using the Oxygen Batch
-            Converter add-on and then publish to WebHelp Responsive output.</p>
-        <ul id="ul_yjr_kyn_wsb">
-            <li>Download to the local disk the Yaml or JSON representation of an OpenAPI
-                specification. I will use the OpenAPI documentation from the Oxygen Content Fusion
-                server: <xref href="https://fusion.oxygenxml.com/api/swagger.json" format="json"
-                    scope="external"/>.</li>
+            Converter add-on, and then publish to WebHelp Responsive output.</p>
+        <ol id="ul_yjr_kyn_wsb">
+            <li>Download the Yaml or JSON representation of an OpenAPI specification to the local
+                disk. For this example, I used the OpenAPI documentation from the Oxygen Content
+                Fusion server: <xref href="https://fusion.oxygenxml.com/api/swagger.json"
+                    format="json" scope="external"/>.</li>
             <li>Download and install <xref href="https://github.com/Mermade/widdershins"
                     format="html" scope="external">widdershins</xref>.</li>
-            <li>From a command prompt or terminal produce a Markdown representation of the original
+            <li>From a command prompt or terminal, produce a Markdown representation of the original
                 API
                 file:<codeblock id="codeblock_zxt_5yn_wsb">widdershins --search false --language_tabs 'ruby:Ruby' 'python:Python' --summary /../swagger.json -o swagger.md</codeblock></li>
             <li>
-                <p>In the Oxygen application use the <menucascade>
+                <p>In the Oxygen application, use the <menucascade>
                         <uicontrol>Tools</uicontrol>
                         <uicontrol>Batch Documents Converter</uicontrol>
                         <uicontrol/>
@@ -39,17 +39,17 @@
                 <p><image href="../images/md-dita-map-dmm.png" scale="40" id="image_yfw_yzn_wsb"
                     /></p>
             </li>
-            <li>Once you have the DITA Map you can publish it to WebHelp responsive or integrate it
-                as part of a larger DITA Map. The map can be further modified, by adding chunking
+            <li>Once you have the DITA Map, you can publish it to WebHelp Responsive or integrate it
+                as part of a larger DITA Map. The map can be further modified by adding chunking
                 attributes to avoid breaking the published output in too many HTML files.</li>
-            <li>For we publish the <filepath>swagger.ditamap</filepath> to WebHelp the parameter
-                    <codeph>validate</codeph> needs to be set to <codeph>no</codeph> as the produced
-                DITA content has some invalid content inside.</li>
+            <li>When publishing the <filepath>swagger.ditamap</filepath> to WebHelp, we set the
+                    <codeph>validate</codeph> parameter to <codeph>no</codeph> because the produced
+                DITA content had some invalid content inside.</li>
             <li>The resulting WebHelp output is available here: <xref
                     href="https://blog.oxygenxml.com/resources/open-api-webhelp/returns_the_current_user%27s_details.html"
-                    format="html" scope="external"/>. Code blocks containing sample source code are
-                divided in multiple tabs using this plugin: <xref href="dita-codeblock-tabs.dita"
+                    format="html" scope="external"/>. Codeblocks that contain sample source code are
+                divided into multiple tabs using this plugin: <xref href="dita-codeblock-tabs.dita"
                 />.</li>
-        </ul>
+        </ol>
     </body>
 </topic>
