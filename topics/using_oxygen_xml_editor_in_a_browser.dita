@@ -24,9 +24,10 @@
             </fig></p>
         <p>To prepare an Oxygen XML Editor installation on the server side for running in a web
         browser:<ol id="ul_xp3_4n1_xrb">
-        <li>Download an All platforms version of the Oxygen XML Editor installation kit (<filepath>oxygen.tar.gz</filepath>): <xref
-            href="https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html?os=Other"
-            format="html" scope="external"/>.</li>
+        <li>Download an All Platforms version of the Oxygen XML Editor installation kit
+                        (<filepath>oxygen.tar.gz</filepath>): <xref
+                        href="https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html?os=Other"
+                        format="html" scope="external"/>.</li>
         <li>Unpack it to the <filepath>oxygen</filepath> folder.</li>
         <li>Download the <xref href="https://github.com/JetBrains/projector-installer" format="html"
                         scope="external">Jetbrains projector installer</xref> and unzip it in the
