@@ -50,7 +50,7 @@ longquoteref, anchor, anchorref, hasInstance,
 hasKind, hasNarrower, hasPart, 
 hasRelated, relatedSubjects, subjectRelTable, 
 subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
-                            <entry>Removed some seldomly used elements.</entry>
+                            <entry>Removed some seldom used elements.</entry>
                             <entry>Yes, automatically removes the elements and shows messages for
                                 each removed element.</entry>
                             <entry>-</entry>
@@ -60,7 +60,7 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                                 <codeblock id="codeblock_kpv_nfd_vsb">@mapkeyref, link/@query, hazardsymbol/@longdescref, 
 @xtrf, @xtrc,
 @spectitle,@specentry</codeblock></entry>
-                            <entry>Removed some seldomly used attributes.</entry>
+                            <entry>Removed some seldom used attributes.</entry>
                             <entry>Yes, automatically removes the attributes and shows messages for
                                 each removed attribute.</entry>
                             <entry>-</entry>
@@ -154,16 +154,20 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                             <entry>Yes</entry>
                         </row>
                         <row>
+                            <entry>Titles, cell and row span attributes for
+                                    <xmlelement>simpletable</xmlelement> elements.</entry>
                             <entry>Simple tables can have titles and their cells can span rows and
                                 columns.</entry>
-                            <entry/>
                             <entry>-</entry>
                             <entry>Yes</entry>
                         </row>
                         <row>
                             <entry>Style output using ditaval <xmlatt>outputclass</xmlatt>
                                 attribute.</entry>
-                            <entry/>
+                            <entry>Profiling attributes defined on DITA elements can be converted to
+                                custom <xmlatt>class</xmlatt> attribute values in the generated HTML
+                                output by adding specific <xmlatt>outputclass</xmlatt> attributes on
+                                the filters in the <filepath>ditaval</filepath> filter file.</entry>
                             <entry>-</entry>
                             <entry>Yes</entry>
                         </row>
@@ -177,7 +181,10 @@ subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
                         <row>
                             <entry>New Bookmap <xmlelement>mapresources</xmlelement>
                                 element.</entry>
-                            <entry/>
+                            <entry>A wrapper for various elements like
+                                    <xmlelement>keydef</xmlelement>,
+                                    <xmlelement>ditavalref</xmlelement> which could not be used on
+                                the first level of the DITA Book Map.</entry>
                             <entry/>
                             <entry/>
                         </row>
