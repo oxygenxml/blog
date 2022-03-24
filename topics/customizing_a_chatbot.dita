@@ -2,11 +2,12 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="customizing_a_document_type_using_an_extension_framework_script">
     <title>Export Training Data for the Google Dialogflow Chatbot</title>
-    <shortdesc>A chatbot is a computer program that simulates human conversation through voice
-        commands or text chats or both. Chatbot, short for chatterbot, is an artificial intelligence
-        (AI) feature that can be embedded and used through any major messaging application. Chat
-        bots helps add convenience for customers, they are automated programs that interact with
-        customers like a human would and cost little to nothing to engage with. </shortdesc>
+    <shortdesc>A <term>Chatbot</term> is a computer program that simulates human conversation
+        through voice commands or text chats or both. Chatbot (short for chatterbot), is an
+        artificial intelligence (AI) feature that can be embedded and used through any major
+        messaging application. <term>Chatbots</term> helps add convenience for customers, they are
+        automated programs that interact with customers like a human would, and cost little to
+        nothing to engage with.</shortdesc>
     <prolog>
         <author>Alex Smarandache</author>
         <critdates>
@@ -14,8 +15,8 @@
         </critdates>
     </prolog>
     <body>
-        <p>Suppose we have a simple DITA topic containing pairs of questions and answers placed as
-            rows in a table:</p>
+        <p>Suppose you have a simple DITA topic that contains pairs of questions and answers placed
+            as rows in a table:</p>
         <codeblock outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 &lt;topic id="frequently_asked_questions">
@@ -90,11 +91,10 @@ What is Oxygen XML?,Oxygen XML Editor is a great tool.
 How do I learn DITA?,You can read the ""Oxygen"" user's guide"," and the Oxygen XML Blog.</codeblock></p>
         <note id="note_xvy_mfv_wsb" type="notice">
             <p>The structure of the CSV file contains a table with 2 columns, where the first column
-                represents the question, and the second column the answer, being separated by a
-                comma. In general, a line is in the form: "Question, Answer". One limitation is that
-                each question can have only one answer. In order for the same answer to be suitable
-                for several questions, you can copy it in the columns corresponding to the
-                questions.</p>
+                represents the question and the second column the answer, separated by a comma. In
+                general, a line is in the form: "Question, Answer". One limitation is that each
+                question can have only one answer. For the same answer to be suitable for several
+                questions, you can copy it in the columns corresponding to the questions.</p>
         </note>
         <p>Next, follow these steps to use the data from the CSV file in the <uicontrol>Google
                 Dialogflow</uicontrol> chatbot:<ol id="ol_obx_1dj_spb">
@@ -109,12 +109,12 @@ How do I learn DITA?,You can read the ""Oxygen"" user's guide"," and the Oxygen 
                 <li>Go to <menucascade>
                         <uicontrol>Knowledge</uicontrol>
                         <uicontrol>CREATE KNOWLEDGE BASE</uicontrol>
-                    </menucascade>, enter a name for this knowledge base and press the SAVE
+                    </menucascade>, enter a name for this knowledge base, and click the SAVE
                             button.<p><image href="../images/chatbot-create-knowledge.png"
                             id="image_ldc_3yn_wsb" scale="50"/></p></li>
                 <li>Use the CSV document for training. For this: Press <uicontrol>Create the first
-                        one</uicontrol> and complete the fields. Select <uicontrol>Update file from
-                        your computer</uicontrol> option and select the desired file. Click the
+                        one</uicontrol> and complete the fields. Select the <uicontrol>Update file
+                        from your computer</uicontrol> option and select the desired file. Click the
                         <uicontrol>CREATE</uicontrol> button. <p><image
                             href="../images/chatbot-add-csv-file.png" id="image_kbf_qyn_wsb"
                             scale="50"/></p><p>The document will be registered in the knowledge
@@ -123,9 +123,9 @@ How do I learn DITA?,You can read the ""Oxygen"" user's guide"," and the Oxygen 
                             id="image_ifw_xyn_wsb" scale="50"/></p></li>
                 <li>
                     <p>Convert questions and answers into intents.</p>
-                    <p>Press the <uicontrol>View</uicontrol> link from the image above. Check all
-                        questions that need to be converted to intents. Press <uicontrol>CONVERT TO
-                            INTENTS</uicontrol> button.</p>
+                    <p>Click the <uicontrol>View</uicontrol> link from the image above. Check all
+                        questions that need to be converted to intents. Click the <uicontrol>CONVERT
+                            TO INTENTS</uicontrol> button.</p>
                     <p><image href="../images/chatbot-convert-to-intents.png" id="image_on3_yzn_wsb"
                             scale="50"/></p>
                     <p>Now, when you click on <b>Intents</b>, the converted questions should
@@ -137,12 +137,12 @@ How do I learn DITA?,You can read the ""Oxygen"" user's guide"," and the Oxygen 
                     <p>Do a simulation. Click <menucascade>
                             <uicontrol>Integration</uicontrol>
                             <uicontrol>Web demo</uicontrol>
-                        </menucascade>, if the demo feature is disabled, enable it.</p>
+                        </menucascade>, and if the demo feature is disabled, enable it.</p>
                     <p><image href="../images/chatbot-chat-demo.png" id="image_dmf_514_wsb"
                             scale="60"/></p>
                 </li>
             </ol></p>
-        <p> This was a basic way to show how a chatbot can be trained with intents and answers by
-            using a DITA topic to produce a comma separated value file.</p>
+        <p>This was a basic way to show how a chatbot can be trained with intents and answers by
+            using a DITA topic to produce a comma-separated value file.</p>
     </body>
 </topic>
