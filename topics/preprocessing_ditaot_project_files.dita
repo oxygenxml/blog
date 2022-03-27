@@ -71,34 +71,12 @@
                 </li>
             </ul>
             <p>In its simplest form, a <codeph>&lt;deliverable></codeph> can provide its own
-                    <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph>
-                information:</p>
-            <codeblock id="codeblock_ehc_v4d_qsb">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;?xml-model href="https://www.dita-ot.org/rng/project.rnc"
-            type="application/relax-ng-compact-syntax"?>
-&lt;project xmlns="https://www.dita-ot.org/project">
-
-  &lt;!-- a deliverable that can be created -->
-  &lt;<b>deliverable</b> id="del-pdf-book">
-
-    &lt;!-- book.ditamap filtered in "A" condition -->
-    &lt;<b>context</b> name="book">
-      &lt;input href="book.ditamap"/>
-    &lt;/context>
-
-    &lt;!-- output directory -->
-    &lt;output href="olh/pdf"/>
-
-    &lt;-- basic PDF transformation -->
-    &lt;<b>publication</b> transtype="pdf2">
-      &lt;param name="args.draft" value="no"/>
-    &lt;/publication>
-
-  &lt;/deliverable>
-
-&lt;/project></codeblock>
+                    <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph> information
+                within itself:</p>
+            <image href="preprocessing_ditaot_project_files/context_publication.svg"
+                placement="break" id="image_tst_chf_1tb"/>
             <p>For more complex output content situations, a <codeph>&lt;deliverable></codeph> can
-                reference <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph>
+                reference shared <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph>
                 elements by <codeph>@idref</codeph> references to <codeph>@id</codeph> values:</p>
             <image href="preprocessing_ditaot_project_files/idref_context_publication.svg"
                 placement="break" id="image_f4f_tcf_qsb"/>
@@ -112,22 +90,44 @@
                 organized by product writer teams, publications to be placed in files maintained by
                 a DITA environment maintainer, and so on.</p>
         </section>
-        <section id="section_lwn_ktd_qsb"><title>Limitation – Specify Per-Deliverable PDF File Names (#3682)</title><p>When I published multiple PDFs from the same map using DITAVAL conditions, the output PDF file
-                names were the same:</p><image href="preprocessing_ditaot_project_files/3682_1.svg" id="image_fvq_fc2_qsb" placement="break"/><p>Somehow I needed to define the <codeph>outputFile.base</codeph> parameter on a
-                    per-<codeph>&lt;deliverable></codeph> basis (to control the output PDF file
-                name):</p><image href="preprocessing_ditaot_project_files/3682_2.svg" id="image_slg_gc2_qsb" placement="break"/><p>But DITA-OT project files currently do not allow <codeph>&lt;param></codeph> elements to be
-                defined in a <codeph>&lt;deliverable></codeph> element.</p><p>I filed the following DITA-OT enhancement request for this:</p><p><xref
-                    href="https://github.com/dita-ot/dita-ot/issues/3682" format="html"
+        <section id="section_lwn_ktd_qsb">
+            <title>Limitation – Specify Per-Deliverable PDF File Names (#3682)</title>
+            <p>When I publish multiple PDFs from the same map using DITAVAL conditions, I needed to
+                define the <codeph>outputFile.base</codeph> parameter on a
+                    per-<codeph>&lt;deliverable></codeph> basis to control the output PDF file
+                name:</p>
+            <image href="preprocessing_ditaot_project_files/deliverable_pdf_name.svg"
+                placement="break" id="image_cy5_mhf_1tb"/>
+            <p>DITA-OT versions before 4.0 do not allow <codeph>&lt;param></codeph> elements to be
+                controlled from a <codeph>&lt;publication></codeph> reference in a
+                    <codeph>&lt;deliverable></codeph>. I filed the following DITA-OT enhancement
+                request for this:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/issues/3682" format="html"
                     scope="external" id="issue_3682_link">#3682: In DITA-OT project files, allow a
-                    PDF &lt;deliverable> to specify its output file name</xref></p></section>
-        <section id="section_xwl_qtd_qsb"><title>Limitation – Consider DITAVAL in Both &lt;context> and &lt;publication> (#3690)</title><p>I needed to apply DITAVAL from both <codeph>&lt;context></codeph> (for <codeph>@product</codeph>
-                filtering) and <codeph>&lt;publication></codeph> (for <codeph>@audience</codeph>
-                filtering of "review" and "final" deliverables). However, there is a bug that when
-                DITAVAL is applied from both places, the <codeph>&lt;publication></codeph> DITAVAL
-                is dropped:</p><image href="preprocessing_ditaot_project_files/3690.svg" id="image_l2d_mc2_qsb" placement="break"/><p>I filed the following DITA-OT issue for this:</p><p><xref href="https://github.com/dita-ot/dita-ot/issues/3690"
-                    format="html" scope="external" id="issue_3690_link">#3690: In DITA-OT project
-                    files, apply both &lt;context> and &lt;publication> DITAVAL
-            filtering</xref></p></section>
+                    PDF &lt;deliverable> to specify its output file name</xref></p>
+            <p>It was implemented for DITA-OT 4.0 in the following pull request:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/pull/3907" format="html"
+                    scope="external">#3907: Support param in publication reference</xref></p>
+        </section>
+        <section id="section_xwl_qtd_qsb">
+            <title>Limitation – Consider DITAVAL in Both &lt;context> and &lt;publication>
+                (#3690)</title>
+            <p>I needed to apply DITAVAL from both <codeph>&lt;context></codeph> (for
+                    <codeph>@product</codeph> filtering) and  <codeph>&lt;publication></codeph> (for
+                    <codeph>@audience</codeph>/<codeph>@deliveryTarget</codeph>/<codeph>@rev</codeph>
+                filtering/flagging of "review" and "final" deliverables):</p>
+            <image href="preprocessing_ditaot_project_files/publication_profiling.svg"
+                placement="break" id="image_fns_d3f_1tb"/>
+            <p>DITA-OT versions before 4.0 do not properly combine <codeph>&lt;context></codeph> and
+                    <codeph>&lt;publication></codeph> DITAVAL filtering. I filed the following
+                DITA-OT issue for this:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/issues/3690" format="html"
+                    scope="external" id="issue_3690_link">#3690: In DITA-OT project files, apply
+                    both &lt;context> and &lt;publication> DITAVAL filtering</xref></p>
+            <p>It was implemented for DITA-OT 4.0 in the following pull request:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/pull/3895" format="html"
+                    scope="external">#3907: Add profiles to publication project file</xref></p>
+        </section>
         <section id="section_hqc_1sd_qsb">
             <title>Limitation – Multiple Relative DITAVAL Paths (#3873)</title>
             <p>When I tried to work around the previous issue by specifying a list of DITAVAL files
@@ -148,7 +148,8 @@
         </section>
         <section id="section_td4_dxd_qsb">
             <title>Using Preprocessing to Work Around the Limitations</title>
-            <p>To work around these limitations, I created an XSLT file to do the following:</p>
+            <p>To work around these limitations in earlier DITA-OT versions before 4.0 is released,
+                I created an XSLT file to do the following:</p>
             <ul id="ul_lh3_gxd_qsb">
                 <li>
                     <p>Read the input DITA-OT project file</p>
@@ -175,14 +176,15 @@
                             <codeph>&lt;publication></codeph> instead (to work around #3682)</p>
                 </li>
                 <li>
-                    <p>Find <codeph>&lt;ditaval></codeph> references in
-                            <codeph>&lt;context></codeph>, combine them with DITAVAL references in
-                            <codeph>&lt;publication></codeph> into a list (to work around #3690)</p>
+                    <p>Combine <codeph>&lt;ditaval></codeph> references in
+                            <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph> into
+                        a list (to work around #3690)</p>
                 </li>
             </ul>
             <p>I then applied this XSLT file as a preprocessing step to translate the unsupported
-                project file constructs into supported constructs in a temporary preprocessed project
-                file, then ran DITA-OT publishing using that temporary file. For example,</p>
+                project file constructs into supported constructs in a temporary preprocessed
+                project file, then ran DITA-OT publishing using that temporary file. For
+                example,</p>
             <codeblock id="codeblock_fwl_mzd_qsb">#!/bin/bash
 rm -rf ./out
 
@@ -216,6 +218,12 @@ rm project.xml-preprocessed.xml</codeblock>
                 preprocessing workaround. The unsupported constructs still result in schema
                 violations when the original (non-preprocessed) project files are opened for editing
                 in Oxygen, but at least the publishing aspect works.</p>
+            <note id="note_lw4_zpf_1tb">
+                <p>The preprocessing XSLT stylesheet requires Saxon to run. To support, this, the
+                    preprocessing-based DITA-OT project transformations specify a list of additional
+                        <filepath>.jar</filepath> libraries to use. To see these libraries, click
+                    the <uicontrol>Libraries</uicontrol> button in the dialog box shown above.</p>
+            </note>
             <p>The following Oxygen project demonstrates this preprocessing approach:</p>
             <p><xref href="preprocessing_ditaot_project_files/preprocessed_ditaot_project_files.zip"
                     format="zip">preprocessed_ditaot_project_files.zip</xref></p>
@@ -239,8 +247,8 @@ rm project.xml-preprocessed.xml</codeblock>
                         list.</p>
                 </li>
             </ol>
-            <p>To view the XSLT transformation code without downloading the archive, click on the
-                following link:</p>
+            <p>To view the XSLT stylesheet without downloading the archive, click on the following
+                link:</p>
             <p><xref href="preprocessing_ditaot_project_files/preprocess_project_file.xsl"
                     format="xsl">preprocess_project_file.xsl</xref></p>
             <p>There are comments in the code to explain how it works.</p>
