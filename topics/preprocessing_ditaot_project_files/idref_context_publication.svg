@@ -70,9 +70,9 @@
 			<rect x="0" y="99.75" width="198" height="63" class="st7"/>
 			<text x="4" y="-152.85" transform="scale(1,-1)" class="st8" v:langID="1033"><v:paragraph/><v:tabList/>&#60;context <tspan
 						class="st9">id=&#34;context</tspan><tspan class="st9">-</tspan><tspan class="st9">A&#34;</tspan>&#62;<v:newlineChar/><v:tabChar/><tspan
-						x="12.64" dy="1.2em" class="st10">&#60;input href=&#34;dita/common_UG.ditamap&#34;/&#62;<v:newlineChar/><v:tabChar/><v:tabChar/></tspan><tspan
-						x="21.28" dy="1.2em" class="st10">&#60;profile&#62;<v:newlineChar/><v:tabChar/><v:tabChar/><v:tabChar/></tspan><tspan
-						x="29.92" dy="1.2em" class="st10">&#60;ditaval href=&#34;filter_A.ditaval&#34;/&#62;<v:newlineChar/><v:tabChar/></tspan><tspan
+						x="12.64" dy="1.2em" class="st10">&#60;input href=&#34;dita/common_UG.ditamap&#34;/&#62;<v:newlineChar/><v:tabChar/></tspan><tspan
+						x="12.64" dy="1.2em" class="st10">&#60;profile&#62;<v:newlineChar/><v:tabChar/><v:tabChar/></tspan><tspan
+						x="21.28" dy="1.2em" class="st10">&#60;ditaval href=&#34;filter_A.ditaval&#34;/&#62;<v:newlineChar/><v:tabChar/></tspan><tspan
 						x="12.64" dy="1.2em" class="st10">&#60;/profile&#62;<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
 						class="st10">&#60;/context&#62;</tspan></text>		</g>
 		<g id="shape2-30" v:mID="2" v:groupContext="shape" transform="translate(0.375,-4.875)">
@@ -94,8 +94,8 @@
 			<rect x="0" y="108.75" width="198" height="54" class="st13"/>
 			<text x="4" y="118.95" class="st8" v:langID="1033"><v:paragraph/><v:tabList/>&#60;deliverable id=&#34;del-pdf-A&#34;&#62;<v:newlineChar/><v:tabChar/><tspan
 						x="12.64" dy="1.2em" class="st10">&#60;context </tspan><tspan class="st9">idref=&#34;context</tspan><tspan
-						class="st9">-</tspan><tspan class="st9">A&#34;</tspan>/&#62;<v:newlineChar/><tspan x="4" dy="1.2em"
-						class="st10">  </tspan>&#60;output href=&#34;olh-A/pdf&#34;&#62;<v:newlineChar/><v:tabChar/><tspan
+						class="st9">-</tspan><tspan class="st9">A&#34;</tspan>/&#62;<v:newlineChar/><v:tabChar/><tspan x="12.64"
+						dy="1.2em" class="st10">&#60;output href=&#34;olh</tspan>-A/pdf&#34;&#62;<v:newlineChar/><v:tabChar/><tspan
 						x="12.64" dy="1.2em" class="st10">&#60;publication </tspan><tspan class="st12">idref=&#34;pub</tspan><tspan
 						class="st12">-</tspan><tspan class="st12">pdf&#34;</tspan>/&#62;<v:newlineChar/><tspan x="4" dy="1.2em"
 						class="st10">&#60;/deliverable&#62;</tspan></text>		</g>
