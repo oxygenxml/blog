@@ -29,7 +29,7 @@
   <!-- TOP-LEVEL PASS -->
   <xsl:mode on-no-match="shallow-copy"/>
 
-  <!-- TOP-LEVEL PASS - apply passes 1 and 2 to document -->
+  <!-- TOP-LEVEL PASS - apply passes 1 through 4 to document -->
   <xsl:template match="/">
     <xsl:variable name="pass1-results" as="document-node()">
       <xsl:apply-templates select="/" mode="pass1"/>
@@ -80,9 +80,11 @@
 
   <!-- PASS 3 - convert <profile> to <param name="args.filter"> -->
   <xsl:template match="profile[ditaval[@path|@value|@href]]" mode="pass3">
-    <param name="args.filter" xmlns="https://www.dita-ot.org/project">
-      <xsl:apply-templates select="ditaval/(@path|@value|@href)"/>
-    </param>
+    <xsl:for-each select="ditaval">
+      <param name="args.filter" xmlns="https://www.dita-ot.org/project">
+        <xsl:apply-templates select="./(@path|@value|@href)"/>
+      </param>
+    </xsl:for-each>
   </xsl:template>
 
   <!-- PASS 3 - pull @idref'ed <context> or <publication> elements inline -->
@@ -91,8 +93,13 @@
       <xsl:copy-of select="//*[@id = current()/@idref]"/>
     </xsl:variable>
 
+    <xsl:variable name="params" as="element()*">
+      <xsl:copy-of select="param[parent::publication]"/>
+    </xsl:variable>
+
     <xsl:copy select="$element">
       <xsl:apply-templates select="$element/((@* except @id)|node())" mode="pass3"/>  <!-- omit @id -->
+      <xsl:sequence select="$params"/>  <!-- include <param> overrides in <publication> references -->
     </xsl:copy>
   </xsl:template>
 
