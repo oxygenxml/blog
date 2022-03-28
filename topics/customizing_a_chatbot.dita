@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="customizing_a_document_type_using_an_extension_framework_script">
-    <title>Export Training Data for the Google Dialogflow Chatbot</title>
+    <title>Creating a Knowledge Base for the Google Dialogflow Chatbot using DITA XML
+        content</title>
     <shortdesc>A <term>Chatbot</term> is a computer program that simulates human conversation
         through voice commands or text chats or both. Chatbot (short for chatterbot), is an
         artificial intelligence (AI) feature that can be embedded and used through any major
