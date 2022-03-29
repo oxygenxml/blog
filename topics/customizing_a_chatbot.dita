@@ -142,6 +142,13 @@ How do I learn DITA?,You can read the ""Oxygen"" user's guide"," and the Oxygen 
                     <p><image href="../images/chatbot-chat-demo.png" id="image_dmf_514_wsb"
                             scale="60"/></p>
                 </li>
+                <li>Integrate the <uicontrol>Chatbot</uicontrol> in your HTML Content. Go to the
+                        <uicontrol>Dialogflow</uicontrol>
+                    <uicontrol>Integrations</uicontrol> page, click the <uicontrol>Web
+                        Demo</uicontrol> integration and you will get an
+                        <xmlelement>iframe</xmlelement> HTML element which can be pasted in your
+                    HTML page. Using a <uicontrol>WebHelp</uicontrol> customization you can also
+                    integrate the Chatbot in the footer for each generated HTML page.</li>
             </ol></p>
         <p>This was a basic way to show how a chatbot can be trained with intents and answers by
             using a DITA topic to produce a comma-separated value file.</p>
