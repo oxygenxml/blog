@@ -4,6 +4,7 @@
     <title>Oxygen XML Blog</title>
     <topicref href="topics/welcome.dita"/>
     <topicref href="topics/what_s_new.dita" print="no"/>
+    <topicref href="topics/frequently_asked_questions.dita"/>
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">
             <topicref href="topics/learnDita.dita"/>
