@@ -118,4 +118,7 @@
       </step>
     </steps>
   </taskbody>
+  <related-links>
+    <link href="generating_google_structured_data_from_your_dita_faq.dita"/>
+  </related-links>
 </task>
