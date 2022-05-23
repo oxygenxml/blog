@@ -42,7 +42,7 @@
         <cmd>Inside a WebHelp publishing template folder, there is an <filepath>opt</filepath> file
           that can contain links to various XSLT stylesheets that are useful for customizations. For
           example, we'll add a link to a stylesheet for processing such special DITA topics and
-          produces a special script containing details for each step.</cmd>
+          produces a special script containing details for each question/answer pair.</cmd>
         <stepresult>
           <codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml">&lt;publishing-template>
     &lt;name>.....&lt;/name>
