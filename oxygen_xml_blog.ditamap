@@ -47,8 +47,8 @@
                 keys="adding_labels_to_topics_in_the_webhelp_responsive_output"/>
             <topicref href="topics/recent_topics_list.dita"/>
             <topicref href="topics/rss_feed_generation.dita" keys="rss_feed_generation"/>
-      <topicref href="generating_google_structured_data_from_your_dita_tasks.dita"/>
-      <topicref href="generating_google_structured_data_from_your_dita_faq.dita"/>
+      <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
+      <topicref href="topics/generating_google_structured_data_from_your_dita_faq.dita"/>
         </topichead>
         <topichead navtitle="Customizing">
             <topicref href="topics/startup_dita_project.dita"/>

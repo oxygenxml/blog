@@ -111,7 +111,7 @@
       <step>
         <cmd>Once Google indexes your page, google search for it.</cmd>
         <stepresult>
-          <p><image href="images/structuredDataFAQ.png" id="image_grd_3kc_qtb" scale="50"/></p>
+          <p><image href="../images/structuredDataFAQ.png" id="image_grd_3kc_qtb" scale="50"/></p>
         </stepresult>
       </step>
     </steps>

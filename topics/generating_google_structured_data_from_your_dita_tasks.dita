@@ -113,7 +113,7 @@
       </step>
       <step>
         <cmd>Once Google indexes your page, google search for it.</cmd>
-        <stepresult><image href="images/googleAnswerSteps.png" id="image_knq_x2m_4tb" scale="50"
+        <stepresult><image href="../images/googleAnswerSteps.png" id="image_knq_x2m_4tb" scale="50"
           /></stepresult>
       </step>
     </steps>
