@@ -13,19 +13,19 @@
       <p>HTML pages published on the web can contain metadata specified using the <xref
           href="https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data#structured-data-format"
           format="html" scope="external">Google Structured Data</xref> specification. Once such
-        metadata exists in an HTML page the Google search engine can present for example steps to
-        complete a certain task directly in the search page, without the need to open the target
-        HTML page. Please see below a set of steps to automatically generate <b>Google Structured
-          Data</b> metadata for DITA tasks when publishing DITA content to Oxygen WebHelp Responsive
-        output which can be customized using a <xref
+        metadata exists in an HTML page, the Google search engine can present, for example, steps to
+        complete a certain task directly in the search page without the need to open the target HTML
+        page. Below is a set of steps for automatically generating <b>Google Structured Data</b>
+        metadata for DITA tasks when publishing DITA content to Oxygen WebHelp Responsive output,
+        which can be customized using a <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html"
           format="html" scope="external">publishing template mechanism</xref>.</p>
     </context>
     <steps>
       <step>
-        <cmd>Create in your DITA project a task topic with a specific <xmlatt>outputclass</xmlatt>
-          attribute value to signal that you want the Google structured data to be automatically
-          generated for it.</cmd>
+        <cmd>In your DITA project, create a task type of topic with a specific
+            <xmlatt>outputclass</xmlatt> attribute value to signal that you want the Google
+          structured data to be automatically generated for it.</cmd>
         <stepresult>
           <codeblock id="codeblock_vqt_p5l_4tb" outputclass="language-xml">&lt;task id="task_id" outputclass="google-structured-data-steps">
   &lt;title>My task&lt;/title>
@@ -43,8 +43,8 @@
       <step>
         <cmd>Inside a WebHelp publishing template folder, there is an <filepath>opt</filepath> file
           that can contain links to various XSLT stylesheets that are useful for customizations. For
-          example, we'll add a link to a stylesheet for processing such special tasks and produces a
-          special script containing details for each step.</cmd>
+          example, we'll add a link to a stylesheet for processing such special tasks and producing
+          a special script that contains details for each step.</cmd>
         <stepresult>
           <codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml">&lt;publishing-template>
     &lt;name>.....&lt;/name>
@@ -59,8 +59,8 @@
         </stepresult>
       </step>
       <step>
-        <cmd>Create the <filepath>addGoogleStructuredData.xsl</filepath> XSLT stylesheet which
-          processes the task contents and adds in the HTML head a script containing the steps in
+        <cmd>Create the <filepath>addGoogleStructuredData.xsl</filepath> XSLT stylesheet that
+          processes the task contents and adds in the HTML head a script that contains the steps in
           Google Structured Data format.</cmd>
         <stepresult>
           <codeblock id="codeblock_bm1_dwl_4tb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
