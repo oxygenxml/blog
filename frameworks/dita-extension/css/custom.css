@@ -6,3 +6,7 @@ keyword[outputclass = 'label'] {
     padding: 0.2em;
     width:20%;
 }
+
+.wh_top_menu{
+    text-transform: none;
+}

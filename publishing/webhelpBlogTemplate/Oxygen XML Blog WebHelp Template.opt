@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Oxygen XML Blog WebHelp Template</name>
+    <description>Oxygen XML Blog WebHelp Template</description>
+    <webhelp>
+        <preview-image file="oxygen-tree.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="no"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="webhelp.show.topic.toc" value="yes"/>
+            <parameter name="force-unique" value="true"/>
+            <parameter name="editlink.remote.ditamap.url" value="gitgh://https%3A%2F%2Fgithub.com%2Foxygenxml%2Fblog/master/oxygen_xml_blog.ditamap"/>
+            <parameter name="editlink.web.author.url" value="https://www.oxygenxml.com/oxygen-xml-web-author/"/>
+            <parameter name="webhelp.logo.image" value="oxygen-webhelp/template/resources/images/oxygen_logo.png"/>
+            <parameter name="webhelp.fragment.before.body.topic.page" value="&lt;progress value=&apos;0&apos; id=&apos;progressBar&apos;&gt;&lt;div class=&apos;progress-container&apos;&gt;&lt;span class=&apos;progress-bar&apos;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/progress&gt;"/>
+            
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="custom.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tree/oxygen/</online-preview-url>
+        <tags>
+            <tag type="layout">tree</tag>
+            <tag type="color">blue</tag>
+            <tag type="color">light</tag>
+        </tags>
+        <html-fragments>
+           <!-- <fragment file="html-fragments/mainpage_content.html" placeholder="webhelp.fragment.before.toc_or_tiles"/>-->
+            <fragment file="html-fragments/feedback_footer.xml" placeholder="webhelp.fragment.feedback"/>
+            <fragment file="html-fragments/head.xml" placeholder="webhelp.fragment.head"/>
+            <fragment file="html-fragments/footer.xml" placeholder="webhelp.fragment.footer"/>
+            <!--<fragment file="html-fragments/subscribe.xml" placeholder="webhelp.fragment.after.toc_or_tiles"/>-->
+            <fragment file="html-fragments/subscribe.xml" placeholder="webhelp.fragment.after.feedback"/>
+            <fragment file="html-fragments/scripts.html" placeholder="webhelp.fragment.after.body"/>
+        </html-fragments>
+        
+        <!--<html-fragments>
+            
+            <fragment file="fragments/footer.html" placeholder="webhelp.fragment.footer"/>
+            <fragment file="fragments/scripts.html" placeholder="webhelp.fragment.after.body"/>
+            
+        </html-fragments>-->
+        <xslt>
+            <extension file="xslt/custom.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+            <extension file="xslt/createRSS.xsl" id="com.oxygenxml.webhelp.xsl.createNavLinks"/>
+            <extension file="xslt/updateWhatsNew.xsl" id="com.oxygenxml.webhelp.xsl.createTocXML"/>
+            <extension file="xslt/customizeMainPage.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+            <!--<extension file="xslt/move-search-in-header.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>-->
+            <extension file="xslt/move-search-in-header.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
+            <extension file="xslt/move-search-in-header.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
+            
+            <!--<extension file="xslt/updateWhatsNew.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>-->
+        </xslt>
+    </webhelp>
+</publishing-template>
