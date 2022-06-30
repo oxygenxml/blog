@@ -14,6 +14,11 @@
         <critdates>
             <created date="2022-03-15"/>
         </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">Chatbot</keyword>
+            </keywords>
+        </metadata>
     </prolog>
     <body>
         <p>Suppose you have a simple DITA topic that contains pairs of questions and answers placed

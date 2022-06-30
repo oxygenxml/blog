@@ -7,6 +7,11 @@
     <critdates>
       <created date="2022-05-17"/>
     </critdates>
+    <metadata>
+      <keywords>
+        <keyword outputclass="label">Google Structured Data</keyword>
+      </keywords>
+    </metadata>
   </prolog>
   <taskbody>
     <context>
