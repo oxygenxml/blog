@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+body{
+    font-family: 'Open Sans', Roboto, sans-serif;
+    background: #f8f8fa;
+}
+
+body.wh_topic_page {
+    background-color: #fff
+}
+.wh_search_textfield {
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+    padding: 0 0.5em;
+    position: relative;
+    height: 2em;
+}
+.wh_search_button{
+    background-color: #43475e;
+    padding: 0.25em;
+    height: 2em;
+}
+
+.wh_top_menu{
+    text-transform: none;
+}
+
+div#follow-it {
+   /* width: 340px;
+    right: 0;
+    position: fixed;
+    bottom: 32px;*/
+}
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview{
+    box-shadow: none;
+    padding: 0;
+}
+.mb_index {
+	height:auto;
+	/*margin-top: 30px;*/
+}
+
+.mb_index h3, .top-rated h3, .welcome h3, .stripe-latest-posts h3{
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.mb_index h3{
+    margin-top: -43px;
+    position: absolute;
+}
+.top-rated h3, .welcome h3{
+    margin: -12px 0 1.4em 0;
+}
+.mb_index_bg{
+    background-image:none;
+   /* height:500px;*/
+    background-image: url("resources/images/blog-1st-entry1.jpg");
+    width: 100%;
+    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #fff;
+    margin-bottom: 3em;
+    box-shadow: 2px 2px 8px #c2c3cf;
+    border-radius: 5px
+}
+
+.mb_index_bg .entry{
+   padding: 2.5em;
+    width: 70%;
+    
+}
+.mb_index_bg .entry .title, .top-rated .entry .title, .welcome .entry .title{
+    font-size: 2em;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.4em;
+    
+}
+
+.mb_index_bg .entry .title{
+    margin-bottom: 1em
+}
+
+.top-rated .entry .title, .welcome .entry .title{
+    font-size: 1.4em;
+}
+
+.stripe-latest-posts .entry, .top-rated .entry, .welcome .entry{
+    width: 330px;
+    height: 250px;
+    padding: 1.5em;
+    box-shadow: 2px 2px 8px #c2c3cf;
+    margin: 1.5em .5em;
+    border-radius: 5px;
+    background-color: #fff;
+    display:inline-table;
+    /* border: 2px solid #ccc; */
+}
+
+.welcome .entry{
+    width: auto;
+    margin:0;
+     height: 347px;
+    }
+    
+ .top-rated .entry{
+     margin:0;
+     height: 347px;
+ }
+.wh_main_page .wh_search_input{
+    padding: 0;
+    background: none;
+}
+
+.wh_header{
+   /* background-image: linear-gradient( 11deg, #764ba2 0%, #667eea 100%);*/
+}
+.footer-container{
+    width: 1600px
+}
+
+.wh_footer a{
+    color: #0079e1;
+}
+
+.wh_footer #copy{
+    text-align: left;
+    padding-top: .4em;
+}
+.wh_footer{
+    border-top: 1px solid #ccc;
+    color: #000;
+    background: none #ffffff;
+    margin-top: 2em;
+    box-shadow: 0 -3px 13px #e3e3e3;
+}
+
+.entry a.title {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.5em;
+}
+
+.entry a:hover{
+    color: #287dd3!important
+}
+
+.author{
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    padding: 17px;
+    background-repeat: no-repeat;
+    border-radius:50%;
+    margin-bottom: 1em;
+    background-color: bisque;
+}
+
+.author.inPage a{
+    margin-top: -19px
+}
+
+
+.date.inPage{
+    font-size: .8em;
+    color: #555;
+    margin-left: 45px;
+    margin-top: -33px;
+}
+
+.after-pub-toc{
+      /* background-color: #f8f8f8; */
+    margin-top: 1.5em;
+    /* border-top: 1px solid #d1d1d1; */
+    /* box-shadow: 0 2px 7px #b7b7b7; */
+    border: 1px solid #dadada;
+}
+.wh_publication_toc {
+    border-radius: 3px;
+    padding: 1.5em 0.5em;
+    background-color: #ffffff;
+    /* box-shadow: 0 2px 7px #b7b7b7; */
+    border: 1px solid #dadada;
+}
+
+.wh_search_results{
+    margin-top: 2em;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px #c2c3cf; 
+}
+.wh-search-pagination{margin-top: 1em}
+
+
+#wh_publication_toc_content{
+    top: 143px !important
+}
+.after-pub-toc div#follow-it {
+    padding: 1.5em;
+}
+.label.inPage{
+    right: 0;
+    position: absolute;
+    border: 1px solid #666;
+    padding: 0.1em 0.8em;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.label.inPage a{
+    color: #666
+}
+.entry .date {
+    color: #818181;
+    font-size: .875em;
+    margin-bottom: 15px;
+}
+
+.entry .label{
+    color: #546E7A;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.author a {
+    display: inline-block;
+    width: 150px;
+    margin-left: 30px;
+    margin-top: -12px;
+    position: absolute;
+    color: #333;
+}
+
+.author.Radu_Coravu{
+    background-image: url("resources/images/foto-RaduC.jpg");
+}
+
+.author.Alex_Smarandache{
+    background-image: url("resources/images/AlexSmarandache.jpeg");
+}
+
+
+.wh_publication_title .title{
+    font-style: normal;
+    font-size: 31px;
+    line-height: 0em;
+    color: #fffbfb;
+    font-weight: 500;
+}
+
+.wh_search_input{
+    padding: 0;
+    background:none
+}
+
+.get-started{
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 1px solid #888;
+    border-radius: 8px;
+    margin-top: 3em;
+}
+#quick_links img{
+    width: 40px;
+    margin: .5em 1em
+}
+
+.wh_footer #quick_links img{
+    margin-top:0
+}
+
+.b-flavours a{
+    padding: 0 .5em
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 76px;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: #ff1700;
+      z-index: 1003;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: #ff1700;
+}
+
+.flat::-moz-progress-bar {
+  background-color: #ff1700;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #ff1700);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #ff1700);
+}
+
+.multiple::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(-45deg, 
+    transparent 33%, rgba(0, 0, 0, .1) 33%, 
+    rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(left, green, #ff1700);
+}
+
+.multiple::-moz-progress-bar {
+    background-image: -moz-linear-gradient(-45deg, 
+    transparent 33%, rgba(0, 0, 0, .1) 33%, 
+    rgba(0,0, 0, .1) 66%, transparent 66%),
+    -moz-linear-gradient(left, green, #ff1700);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: #ff1700;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
