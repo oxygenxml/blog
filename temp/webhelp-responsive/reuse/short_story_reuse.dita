@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\reuse?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/reuse/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_tjq_tcw_gt" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="topic:1;3:30" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="title:1;4:10">A Short Story of Reuse</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:1;9:8">Give the smartest human in the world a piece of <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:1;9:59">wood</b> and ask him/her to make
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:2;10:12">paper</b>. Give them <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:3;10:36">no prior tools</b> and it will take <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:4;10:75">years</b> to come up with
+      a decent process which would result in some brown almost usable thick piece of paper. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:2;12:8">This blog post is about <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:5;12:35">reuse</b>, not necessarily <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:6;12:65">reuse of tools and materials</b>,
+      but <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:7;13:14">reuse of knowledge</b>. Humanity has evolved not because each generation is smarter
+      than the last one but because we learned to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:8;14:54">reuse and pass knowledge</b> to larger and
+      larger audiences and from one generation to another. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:3;16:8">Almost all <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:9;16:22">tools</b> that we use today are made up of quite a complex set of components
+      which interact with each other. There is no one person in a car assembly factory who still
+      knows all the pieces and how they come together. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:4;19:8">Although using the tool is easier than interacting with all components which make it up, you
+      still need knowledge to operate it and in this day and age having enough people to teach how a
+      certain tool can be used is no longer an option. You need to pass knowledge <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:10;21:86">in other
+        forms</b>, on <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:11;22:26">paper</b> or in some kind of <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:12;22:58">digital form</b>. So I would define
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:13;23:12">technical communication</b> as a means of passing knowledge about using tools to a
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:14;24:12">larger audience</b>.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:5;25:8">Reuse in technical communication can be structured on <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:15;25:65">many levels</b>:<ul id="ul_k13_qgw_gt" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="ul:1;26:28">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="li:1;27:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:6;28:14">Reuse written content by <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:16;28:42">publishing it to more than one format</b> (PDF, HTML, EPUB,
+            MS Word).</p>
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:7;30:14">It turns out that <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:17;30:35">XML</b> is perfect for publishing content in more than one format.
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:18;31:18">XML</b> is not designed to be consumed directly by end users and its benefit lies
+            directly in this. Your <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:19;32:39">XML</b> content should contain all the data necessary for
+            obtaining all the output formats. So if you are using <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:20;33:70">XML</b> in your <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:21;33:89">technical
+              content</b>, no matter what <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:22;34:46">standard</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:23;34:65">custom</b> vocabulary, you can
+            safely check the first and most important level of reuse.</p>
+        </li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="li:2;37:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:8;38:14">Create <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:24;38:24">larger publications</b> from <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:25;38:56">existing ones</b>.</p>
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:9;39:14">Either using an <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:26;39:33">XML</b> standard like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:27;39:58">XInclude</b> or using standards with their
+            own diverse and powerful methods of reuse like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:28;40:63">DITA</b>, or by performing custom
+            techniques you can merge <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:29;41:41">XML</b> content in larger publications.</p>
+        </li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="li:3;43:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:10;44:14">Reuse content written for a <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:30;44:45">certain tool</b> to document the functionality and
+            behavior of a very <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:31;45:35">similar tool</b>.</p>
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:11;46:14">In most mature <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:32;46:32">XML</b> standards like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:33;46:58">DITA</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:34;46:74">Docbook</b> there is this
+            implemented concept of profiling which allows you to dynamically filter at publishing
+            time content marked with certain attributes from your original <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:35;48:79">XML</b> project. In
+            this way from the same <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:36;49:39">XML</b> content you can publish documentation for multiple
+            similar tools.</p>
+        </li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="li:4;52:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:12;53:14">Reuse <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:37;53:23">smaller pieces</b> of common content in <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:38;53:66">more than one</b> publication.</p>
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:13;54:14">Again, using <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:39;54:30">XML</b> standards like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:40;54:56">XInclude</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:41;54:75">DITA</b> specific
+            standards like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:42;55:31">content references</b> you can create and maintain small libraries of
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:43;56:18">reusable XML content</b>, then reuse these components across various
+            publications.</p>
+        </li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="li:5;59:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:14;60:14">Reuse <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:44;60:23">images</b> and other <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:45;60:47">binary resources</b> in multiple publications.</p>
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:15;61:14">Because <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:46;61:25">XML</b> content does not embed <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:47;61:59">binary resources</b>, these resources are
+            stored separately and thus they can be reused in multiple places.</p>
+        </li>
+      </ul></p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="p:16;65:8">So these are what I consider to be the main selling points for using <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/reuse/short_story_reuse.dita" xtrc="b:48;65:80">XML</b> in technical
+      documentation. As usual any feedback is welcomed.</p>
+  </body>
+</topic>

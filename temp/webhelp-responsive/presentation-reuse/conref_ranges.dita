@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\presentation-reuse?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/presentation-reuse/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="conref_ranges" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="topic:1;3:27" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="title:1;4:10">Content Reference Ranges</title><prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="prolog:1;4:50"><author class="- topic/author " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="author:1;4:58">Radu Coravu</author></prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="body:1;5:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="p:1;6:8">Instead of reusing a series of consecutive elements (for example steps, list items) one by
+      one you can reuse an entire range of sibling elements. For this to work, both the initial and
+      the final elements need to have IDs defined on them.</p>
+    <example class="- topic/example " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="example:1;9:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="title:2;10:14">Small example of content key reference with ranges</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="p:2;11:10">Reusable steps from task <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="filepath:1;11:45">reusable_steps.dita</filepath>:</p>
+      <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="codeblock:1;12:45">  &lt;steps&gt;
+      &lt;step id="washing"&gt;
+        &lt;cmd&gt;Wash the vegetables thoroughly.&lt;/cmd&gt;
+      &lt;/step&gt;
+      …..
+      &lt;step id="peeling"&gt;
+        &lt;cmd&gt;Pass the peeler gently over the vegetable.&lt;/cmd&gt;
+      &lt;/step&gt;
+    &lt;/steps&gt;</codeblock>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="p:3;21:10">Key definition in DITA Map:</p>
+      <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="codeblock:2;22:45"> &lt;keydef keys="reusable_steps" href="reusable_steps.dita"/&gt;</codeblock>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="p:4;23:10">Content key reference range:</p>
+      <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="codeblock:3;24:45">    &lt;steps&gt;
+      &lt;step conkeyref="reusable_steps/washing" conrefend="default.dita#default/peeling"&gt;
+        &lt;cmd/&gt;
+      &lt;/step&gt;
+    &lt;/steps&gt;</codeblock>
+    </example>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="p:5;30:8">The usual dialog from Oxygen used to insert reusable content can also be used to select the
+      range of elements to insert: <xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/insert-dita-content-reference.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/presentation-reuse/conref_ranges.dita" xtrc="xref:1;33:41"/>.</p>
+  </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:10;14:41" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><link class="- topic/link " format="dita" href="../presentation-reuse/reuseFragments.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:7;11:40" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Reuse fragments of content</linktext></link></linkpool></related-links></topic>

@@ -1,0 +1,380 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="24.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="Let's say you are editing XML documents belonging to a certain vocabulary (like DITA ) for which there is a framework configuration available. The content completion window appears in the Author ..."/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.creator" content="Radu Coravu"/><meta name="rights" content="© 2020 Syncro Soft"/><meta name="DC.date.created" content="2020-03-26"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="custom_author_action_content_completion"/><title>Adding a Custom Author Action to the Content Completion Window</title><!--  Generated with Oxygen version 24.1, build number 2022041502.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="custom_author_action_content_completion-d884e802"/><meta name="wh-source-relpath" content="topics/custom-author-action-content-completion.dita"/><meta name="wh-out-relpath" content="topics/custom-author-action-content-completion.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2022041502"/>
+    
+    
+    <script src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2022041502"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/custom.css?buildId=2022041502"/>
+        <link rel="icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/rss.xml"/>
+    </head>
+
+    <body id="custom_author_action_content_completion" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <progress value="0" id="progressBar"><div class="progress-container"><span class="progress-bar"></span></div></progress>
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/oxygen_logo.png" alt="Blog"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Blog</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="welcome-d884e11-mi" data-tocid="welcome-d884e11" data-state="leaf" class=" topicref " data-id="welcome"><span class="title"><a href="../topics/welcome.html">Welcome!</a></span></span></li><li role="menuitem"><span id="frequently_asked_questions-d884e28-mi" data-tocid="frequently_asked_questions-d884e28" data-state="leaf" class=" topicref " data-id="frequently_asked_questions"><span class="title"><a href="../topics/frequently_asked_questions.html">Frequently Asked Questions</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e37-mi" data-tocid="tocId-d884e37" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/learnDita.html">DITA</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e708-mi" data-tocid="tocId-d884e708" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/migratingToDITA.html">Migration</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e742-mi" data-tocid="tocId-d884e742" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/customizing_oxygen.html">SDK Development (Plugins, Frameworks)</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e871-mi" data-tocid="tocId-d884e871" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/general_tips_and_tricks.html">Miscellaneous</a></span></span></li><li role="menuitem"><span id="contributors-d884e987-mi" data-tocid="contributors-d884e987" data-state="leaf" class=" topicref " data-id="contributors"><span class="title"><a href="../topics/contributors.html">Contributors</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div></div>
+    </div>
+</header>
+        
+        
+         
+        
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../topics/customizing_oxygen.html">SDK Development (Plugins, Frameworks)</a></div></div></li><li class="active"><div class="topicref" data-id="custom_author_action_content_completion"><div class="title"><a href="../topics/custom-author-action-content-completion.html">Adding a Custom Author Action to the Content Completion Window</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="welcome-d884e11" class="topicref" data-id="welcome" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/welcome.html" id="welcome-d884e11-link">Welcome!</a></div></div></li><li role="treeitem"><div data-tocid="frequently_asked_questions-d884e28" class="topicref" data-id="frequently_asked_questions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/frequently_asked_questions.html" id="frequently_asked_questions-d884e28-link">Frequently Asked Questions</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e37" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e37-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/learnDita.html" id="tocId-d884e37-link">DITA</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e708" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e708-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/migratingToDITA.html" id="tocId-d884e708-link">Migration</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d884e742" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d884e742-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizing_oxygen.html" id="tocId-d884e742-link">SDK Development (Plugins, Frameworks)</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="customizing_oxygen-d884e743" class="topicref" data-id="customizing_oxygen" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizing_oxygen.html" id="customizing_oxygen-d884e743-link">Customizing <span class="ph">Oxygen XML Editor</span> (Overview)</a></div></div></li><li role="treeitem"><div data-tocid="author-document-type-sharing-d884e754" class="topicref" data-id="author-document-type-sharing" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/author-document-type-extension-sharing.html" id="author-document-type-sharing-d884e754-link">Document Type Extension Sharing</a></div></div></li><li role="treeitem"><div data-tocid="sharing_schematron_validation_rules-d884e762" class="topicref" data-id="sharing_schematron_validation_rules" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/sharing_schematron_validation_rules.html" id="sharing_schematron_validation_rules-d884e762-link">Sharing Schematron Validation Rules</a></div></div></li><li role="treeitem"><div data-tocid="topic_z4t_jhz_yp-d884e770" class="topicref" data-id="topic_z4t_jhz_yp" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/Oxygen%20plugins%20and%20frameworks.html" id="topic_z4t_jhz_yp-d884e770-link">Public hosted Oxygen Plugin and Framework Projects</a></div></div></li><li role="treeitem"><div data-tocid="author-document-type-sharing-d884e778" class="topicref" data-id="author-document-type-sharing" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/author-document-type-extension-sharing-custom-new-file-templates.html" id="author-document-type-sharing-d884e778-link">Sharing New Custom File Templates for a Specific Vocabulary</a></div></div></li><li role="treeitem"><div data-tocid="topic_h1m_54n_qcb-d884e786" class="topicref" data-id="topic_h1m_54n_qcb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/composing-author-actions.html" id="topic_h1m_54n_qcb-d884e786-link">Composing Author Actions</a></div></div></li><li role="treeitem"><div data-tocid="custom_author_action_js_based-d884e794" class="topicref" data-id="custom_author_action_js_based" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/custom-author-action-js-based.html" id="custom_author_action_js_based-d884e794-link">Implementing a Custom Author Action to Split a Table</a></div></div></li><li role="treeitem" class="active"><div data-tocid="custom_author_action_content_completion-d884e802" class="topicref" data-id="custom_author_action_content_completion" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/custom-author-action-content-completion.html" id="custom_author_action_content_completion-d884e802-link">Adding a Custom Author Action to the Content Completion Window</a></div></div></li><li role="treeitem"><div data-tocid="topic_c3q_lqd_vt-d884e810" class="topicref" data-id="topic_c3q_lqd_vt" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/howSpecialPasteWorksInOxygen.html" id="topic_c3q_lqd_vt-d884e810-link">How Special Paste works in Oxygen</a></div></div></li><li role="treeitem"><div data-tocid="the_oxygen_sdk_part_1_plugins-d884e818" class="topicref" data-id="the_oxygen_sdk_part_1_plugins" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/the_oxygen_sdk_part_1_plugins.html" id="the_oxygen_sdk_part_1_plugins-d884e818-link">The Oxygen SDK (Part 1: Plugins)</a></div></div></li><li role="treeitem"><div data-tocid="topic_in2_yhp_z4-d884e826" class="topicref" data-id="topic_in2_yhp_z4" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygenFrameworks.html" id="topic_in2_yhp_z4-d884e826-link">The Oxygen SDK (Part 2: Frameworks)</a></div></div></li><li role="treeitem"><div data-tocid="topic_xk5_gqk_qy-d884e835" class="topicref" data-id="topic_xk5_gqk_qy" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/packing-add-ons.html" id="topic_xk5_gqk_qy-d884e835-link">Your First Oxygen Add-on</a></div></div></li><li role="treeitem"><div data-tocid="all_about_oxygen_add_ons-d884e843" class="topicref" data-id="all_about_oxygen_add_ons" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/all_about_oxygen_add_ons.html" id="all_about_oxygen_add_ons-d884e843-link">Oxygen Add-ons Overview</a></div></div></li><li role="treeitem"><div data-tocid="adding_cals_table_related_functionality_to_your_custom_oxygen_framework-d884e851" class="topicref" data-id="adding_cals_table_related_functionality_to_your_custom_oxygen_framework" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.html" id="adding_cals_table_related_functionality_to_your_custom_oxygen_framework-d884e851-link">Adding CALS-table related functionality to your custom Oxygen framework</a></div></div></li><li role="treeitem"><div data-tocid="convert_code_templates_to_author_actions-d884e859" class="topicref" data-id="convert_code_templates_to_author_actions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/convert_code_templates_to_author_actions.html" id="convert_code_templates_to_author_actions-d884e859-link">Convert Code Templates to External Author Actions</a><div class="wh-tooltip"><p class="shortdesc">Describes how to bring code templates into a framework as author actions.</p></div></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e871" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e871-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/general_tips_and_tricks.html" id="tocId-d884e871-link">Miscellaneous</a></div></div></li><li role="treeitem"><div data-tocid="contributors-d884e987" class="topicref" data-id="contributors" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/contributors.html" id="contributors-d884e987-link">Contributors</a></div></div></li></ul></div>
+		                        <div class="after-pub-toc">
+    <div id="follow-it" class="entry followit--follow-form-container" attr-a="" attr-b="" attr-c="" attr-d="" attr-e="" attr-f="">
+        <form data-v-390679af="" action="https://api.follow.it/subscription-form/TlAwUVBWTnF6UFNwbEN3bVk3K2ZQeVd2bEhrNHZZTGo3VzZnRGt2Q0FiY3BEelVjSWd0NTdBWGV1SG1pOHR3ZkJycUFSRkV0ODlOV0YyY2hiN25CckF0V0E2SjVUbUdpMzRnMTdSQktEc0xJY01EU3I3T1FqQy9rY1Rqcjg1YzF8NmVGWFV0NXNOdDU3T2d4Qnp6d1dLYytWOFRGM2ZYU05nbnpOZ01LaXIzZz0=/8" method="post">
+            <div data-v-390679af="" class="form-preview">
+                <div data-v-390679af="" class="preview-heading">
+                    <h3 data-v-390679af="">Get new posts by email</h3></div> <div data-v-390679af="" class="preview-input-field"><input data-v-390679af="" type="email" name="email" required="required" placeholder="Enter your email" spellcheck="false" style="text-transform: none !important; font-family: Montserrat; font-weight: normal; color: rgb(0, 0, 0); font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"/></div> <div data-v-390679af="" class="preview-submit-button"><button data-v-390679af="" type="submit" style="text-transform: none !important; font-family: Montserrat; font-weight: bold; color: rgb(255, 255, 255); font-size: 16px; text-align: center; background-color: rgb(0, 0, 0);">Subscribe</button></div></div></form><a href="https://follow.it" class="powered-by-line">Powered by <img src="https://follow.it/static/img/colored-logo.svg" alt="follow.it" height="17px"/></a>
+    </div>
+</div>
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <span class="edit-link" style="font-size:12px; opacity:0.6; text-align:right; vertical-align:middle"><a target="_blank" href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Ftopics%2Fcustom-author-action-content-completion.dita&amp;ditamap=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Foxygen_xml_blog.ditamap&amp;dita.val.url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2F..%2F..%2FC%3A%2FUsers%2Fmihai%2FAppData%2FLocal%2FTemp%2FOxygenXMLTemp%2Foxy_ditaVal6031104318653633203.ditaval">Edit online</a></span><h1 class="- topic/title title topictitle1" id="ariaid-title1">Adding a Custom Author Action to the Content Completion Window</h1>
+  <div class="author inPage Radu_Coravu"><a href="topics/contributors.html">Radu Coravu</a></div><div class="date inPage">26 Mar 2020</div>
+  <div class="- topic/body body">
+        <p class="- topic/p p">Let's say you are editing XML documents belonging to a certain vocabulary (like
+        <strong class="+ topic/ph hi-d/b ph b">DITA</strong>) for which there is a framework configuration available. The content completion
+      window appears in the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Author</span> visual editing mode when you press the
+        <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ENTER</span> key and usually presents the set of XML elements allowed at the
+      caret position. The same list of elements is present in the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Elements</span>
+      view. These elements are usually proposed based on the DTD, XML or Relax NG vocabulary used to
+      validate the XML document. </p>
+    <div class="- topic/p p">But there may be cases in which you want to customize the content completion items. There is
+      a <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/configure-elements-attr-cc-individually.html" target="_blank" rel="external noopener">content completion configuration</a> file which can be
+      changed to allow for various use cases:<ul class="- topic/ul ul" id="custom_author_action_content_completion__ul_hlx_y4t_dlb" data-ofbid="custom_author_action_content_completion__ul_hlx_y4t_dlb">
+        <li class="- topic/li li">Disallow a certain set of elements to appear in the content completion window.  </li>
+        <li class="- topic/li li">Declare a set of required child elements which should be inserted automatically when the
+          parent element is inserted.</li>
+        <li class="- topic/li li">Declare a set of required attributes which should be inserted when a certain element is
+          inserted.</li>
+      </ul></div>
+    <div class="- topic/p p">There are also a number of use cases not covered by the content completion filter file:<ul class="- topic/ul ul" id="custom_author_action_content_completion__ul_ysd_5pt_dlb" data-ofbid="custom_author_action_content_completion__ul_ysd_5pt_dlb">
+        <li class="- topic/li li">You want to add a new item in the content completion filter which triggers a complex
+          action. For example when the item is selected you show a dialog and ask the end user from
+          some data, then insert a custom XML fragment based on that data the end user filled
+          out.</li>
+        <li class="- topic/li li">You want to replace an existing item in the content completion window with an item with
+          the same name but which again triggers a more complex action.</li>
+      </ul>Further in the blog post we'll go through the steps necessary to replace an item from the
+      content completion window with a complex action. As an example for the
+        <span class="+ topic/ph ui-d/uicontrol ph uicontrol">DITA</span> vocabulary when the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">created</span> item is
+      selected in the content completion window we want the inserted XML content to contain the
+      current date
+      like:<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><strong class="hl-tag">&lt;created</strong> <span class="hl-attribute">date</span>=<span class="hl-value">"2020-03-26"</span><strong class="hl-tag">/&gt;</strong></pre></div>
+    <div class="- topic/p p">Here are some steps to follow:<ol class="- topic/ol ol" id="custom_author_action_content_completion__ol_p5g_jpn_qcb" data-ofbid="custom_author_action_content_completion__ol_p5g_jpn_qcb">
+        <li class="- topic/li li">
+          <p class="- topic/p p">Follow the steps 1,3, 4 and 5 listed in this older blog post to create an extension of
+            the <strong class="+ topic/ph hi-d/b ph b">DITA</strong> framework: <a class="- topic/xref xref" href="customizeDITACSS.html">Customizing the DITA Visual Editing Experience</a>.</p>
+        </li>
+        <li class="- topic/li li">
+          <p class="- topic/p p">In the <strong class="+ topic/ph hi-d/b ph b">Document Type Association</strong> preferences page, edit the <strong class="+ topic/ph hi-d/b ph b">DITA</strong>
+            framework extension you just created. Go to the <strong class="+ topic/ph hi-d/b ph b">Author-&gt;Actions</strong> tab and create a
+            new action with the ID <code class="+ topic/ph pr-d/codeph ph codeph">created.current.date</code>. Use the predefined <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html#dg-default-author-operations__insertfragmentoperation" target="_blank" rel="external noopener"><strong class="+ topic/ph hi-d/b ph b">InsertFragmentOperation</strong></a> to insert a small
+            XML fragment. The XML fragment uses an editor variable which will be expanded to the
+            current date. There are plenty of other <a class="- topic/xref xref" href="all_about_editor_variables.html">editor variables</a> to choose from.</p>
+          <p class="- topic/p p">The custom action definition would look like this:</p>
+          <p class="- topic/p p"><img class="- topic/image image" id="custom_author_action_content_completion__image_crf_5rt_dlb" src="../images/customAuthorActionCreated.png" height="774" width="817"/></p>
+          <p class="- topic/p p">There are plenty of other <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/dg-default-author-operations.html" target="_blank" rel="external noopener">pre-defined operations</a> which can be used from an
+            Author action. For example a <a class="- topic/xref xref" href="custom-author-action-js-based.html">Javascript-based operation</a>, there are some other examples of what such
+            operations can do in a <a class="- topic/xref xref" href="https://github.com/oxygenxml/javascript-sample-operations" target="_blank" rel="external noopener">separate GitHub project</a>.</p>
+        </li>
+        <li class="- topic/li li">
+          <p class="- topic/p p">Go to the <strong class="+ topic/ph hi-d/b ph b">Author-&gt;Content Completion</strong> tab, find the new action in the
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Available Actions</span> list and add it to the  <strong class="+ topic/ph hi-d/b ph b">Current
+              actions</strong> list. You will be able to add it both in the content completion list and
+            the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Elements</span> view. In the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Filter - Remove content
+              completion items</span> list add an entry for <code class="+ topic/ph pr-d/codeph ph codeph">created</code> because we
+            want to remove the original item and replace it with the action.</p>
+        </li>
+        <li class="- topic/li li">Save all your changes by using the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Ok</span> button both in the document
+          type configuration dialog and in the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Preferences</span> dialog.</li>
+        <li class="- topic/li li">
+          <p class="- topic/p p">When editing a DITA topic in the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Author</span> visual editing mode you
+            can press <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ENTER</span> to show the content completion window, choose
+              <code class="+ topic/ph pr-d/codeph ph codeph">created</code> and your custom Author action will be called instead of the
+            original item.</p>
+        </li>
+      </ol></div>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        <div id="oxygen-feedback-frame-container"><script id="feedback-init" src="https://feedback.oxygenxml.com/app/init/init.js?deploymentToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkZXBsb3ltZW50SWQiOjIwMn0.55iY3IzfEYj5L2POslBxgyDocWSWm4YISz-C8shjEkFCUwaAF9CBr847SGuk7kPdynJYzohOipkDtjh9on_HHA"><!-- --></script></div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="footer">
+    <div class="container-fluid">
+        <div class="col-md-3" id="quick_links">
+            <div>
+                <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook" title="Facebook" target="_blank">
+                    <img src="../oxygen-webhelp/template/resources/images/facebook.png"/>
+                </a>
+                <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube" title="Youtube Channel" target="_blank">  
+                    <img src="../oxygen-webhelp/template/resources/images/you-tube.png"/>
+                </a>
+                <a href="http://twitter.com/oxygenxml" class="lk-blog" title="Twitter" target="_blank">  
+                    <img src="../oxygen-webhelp/template/resources/images/twitter.png"/>
+                </a>
+                <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">  
+                    <img src="../oxygen-webhelp/template/resources/images/linkedin.png"/>
+                </a>
+            </div>
+            <!--<a href="/terms_of_use.html">Terms of Use</a> | <a href="/privacy_policy.html">Privacy Policy
+                    </a>-->
+        </div>
+        
+        <div class="col-md-6">
+            
+            <div id="copy"> © 2002-2022 SyncRO Soft SRL. All rights reserved. 
+                <div><p> This website was created &amp; generated with
+                    Oxygen<sup>®</sup> <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 b-flavours">
+            <a type="application/rss+xml" href="/rss.xml">RSS</a>
+            <a href="/oxygen_xml_blog.pdf">PDF</a>
+            <a href="/oxygen_xml_blog.epub">EPUB</a>
+        </div>
+        
+            
+        
+    </div>
+    
+    <script>
+        $(".get-started").click(function() {
+            $([document.documentElement, document.body]).animate({
+               
+               scrollTop: $(".stripe-latest-posts").offset().top - 90
+            }, 1000);
+        });
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-2331448-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-2331448-3');
+    </script>
+    
+    
+    <style>
+        <!--@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400');-->
+        
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview *{
+        box-sizing: border-box !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
+        width: 100% !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
+        margin-top: 20px !important;
+        width: 100% !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+        width: 100% !important;
+        height: 40px !important;
+        border-radius: 6px !important;
+        border: 2px solid #e9e8e8 !important;
+        background-color: #fff !important;
+        outline: none !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+        color: #000000 !important;
+        font-family: "Montserrat" !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+        text-align: center !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
+        color: #000000 !important;
+        opacity: 1 !important;
+        }
+        
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:-ms-input-placeholder {
+        color: #000000 !important;
+        }
+        
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::-ms-input-placeholder {
+        color: #000000 !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
+        margin-top: 10px !important;
+        width: 100% !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
+        width: 100% !important;
+        height: 40px !important;
+        border: 0 !important;
+        border-radius: 6px !important;
+        line-height: 0px !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
+        cursor: pointer !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
+        color: #231f20 !important;
+        font-family: "Montserrat" !important;
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        line-height: 25px !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 10px !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
+        margin-left: 10px !important;
+        height: 1.13em !important;
+        max-height: 1.13em !important;
+        }
+    </style>
+</div><!--
+
+<div>
+<div>
+    <a type="application/rss+xml" href="/rss.xml">RSS</a>
+|<a href="/oxygen_xml_blog.pdf">PDF</a>
+|<a href="/oxygen_xml_blog.epub">EPUB</a>
+    
+</div>
+
+</div>-->
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        <div>
+    <script src="../oxygen-webhelp/template/resources/js/syncro.js"></script>
+    
+</div>
+    </body>
+</html>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="dita_inheritance_hierarchy" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="topic:1;3:40" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="title:1;4:10">DITA Inheritance Hierarchy</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="p:1;9:8">The DITA standard is based on the concept of inheritance that enables extending or
+      restricting the vocabulary while allowing the XML content to still be regarded as valid DITA.
+      Even in the DITA standard, there are various elements that are specializations of others (for
+      example "b" is a specialization of "ph"). The XSLT stylesheets that are used for publishing
+      match all DITA elements by the value of their @class attribute, so knowing how elements may
+      extend each other may be useful when customizing the DITA XSLT stylesheets. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="p:2;15:8">A DITA inheritance hierarchy list for the base <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="b:1;15:58">DITA Topic</b> specification is presented
+      below:</p>
+    <ul id="ul_ifp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:1;17:29">
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:1;18:11">topic/copyryear</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:2;19:11">topic/foreign <ul id="ul_jfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:2;19:49">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:3;20:15">mathml-d/mathml</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:4;21:15">svg-d/svg-container</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:5;23:11">topic/author</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:6;24:11">topic/example</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:7;25:11">topic/unknown</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:8;26:11">topic/titlealts</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:9;27:11">topic/linktext</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:10;28:11">topic/category</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:11;29:11">topic/data <ul id="ul_kfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:3;29:46">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:12;30:15">relmgmt-d/change-request-reference</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:13;31:15">relmgmt-d/change-person</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:14;32:15">relmgmt-d/change-request-id</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:15;33:15">relmgmt-d/change-request-system</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:16;34:15">relmgmt-d/change-completed</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:17;35:15">relmgmt-d/change-started</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:18;36:15">ut-d/sort-as</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:19;37:15">relmgmt-d/change-item</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:20;38:15">relmgmt-d/change-organization</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:21;39:15">relmgmt-d/change-summary</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:22;40:15">concept/data <ul id="ul_lfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:4;40:52">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:23;41:19">glossentry/glossPartOfSpeech</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:24;42:19">glossentry/glossProperty</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:25;43:19">glossentry/glossStatus</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:26;45:15">relmgmt-d/change-revisionid</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:27;47:11">topic/longdescref</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:28;48:11">topic/audience</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:29;49:11">topic/abstract <ul id="ul_mfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:5;49:50">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:30;50:15">concept/abstract <ul id="ul_nfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:6;50:56">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:31;51:19">glossentry/glossdef</li>
+            </ul></li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:32;54:11">topic/related-links</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:33;55:11">topic/body <ul id="ul_ofp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:7;55:46">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:34;56:15">task/taskbody</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:35;57:15">concept/conbody <ul id="ul_pfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:8;57:55">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:36;58:19">glossentry/glossBody</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:37;60:15">troubleshooting/troublebody</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:38;61:15">reference/refbody</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:39;63:11">topic/ph <ul id="ul_qfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:9;63:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:40;64:15">hi-d/overline</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:41;65:15">hi-d/line-through</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:42;66:15">hi-d/sub</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:43;67:15">pr-d/sep</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:44;68:15">equation-d/equation-inline</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:45;69:15">pr-d/repsep</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:46;70:15">equation-d/equation-number</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:47;71:15">hi-d/tt</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:48;72:15">task/cmd</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:49;73:15">pr-d/synph</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:50;74:15">sw-d/userinput</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:51;75:15">ut-d/coords</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:52;76:15">pr-d/oper</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:53;77:15">hi-d/sup</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:54;78:15">pr-d/var</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:55;79:15">sw-d/msgph</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:56;80:15">pr-d/codeph</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:57;81:15">ui-d/uicontrol</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:58;82:15">hi-d/i</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:59;83:15">hi-d/u</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:60;84:15">sw-d/filepath</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:61;85:15">sw-d/systemoutput</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:62;86:15">pr-d/delim</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:63;87:15">hi-d/b</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:64;88:15">ui-d/menucascade</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:65;90:11">topic/object</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:66;91:11">topic/fig <ul id="ul_rfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:10;91:45">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:67;92:15">ut-d/imagemap</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:68;93:15">pr-d/syntaxdiagram</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:69;94:15">equation-d/equation-figure</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:70;96:11">topic/featnum</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:71;97:11">topic/lines</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:72;98:11">topic/brand</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:73;99:11">topic/state</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:74;100:11">topic/source</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:75;101:11">topic/link</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:76;102:11">topic/vrm</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:77;103:11">topic/sli</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:78;104:11">topic/navtitle</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:79;105:11">topic/figgroup <ul id="ul_sfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:11;105:50">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:80;106:15">pr-d/synblk</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:81;107:15">pr-d/fragment</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:82;108:15">ut-d/area</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:83;109:15">pr-d/groupcomp</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:84;110:15">pr-d/groupseq</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:85;111:15">pr-d/groupchoice</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:86;113:11">topic/note <ul id="ul_tfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:12;113:46">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:87;114:15">hazard-d/hazardstatement</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:88;115:15">concept/note <ul id="ul_ufp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:13;115:52">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:89;116:19">glossentry/glossScopeNote</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:90;117:19">glossentry/glossUsage</li>
+            </ul></li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:91;120:11">topic/ol <ul id="ul_vfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:14;120:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:92;121:15">task/substeps</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:93;122:15">task/steps</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:94;124:11">topic/stentry <ul id="ul_wfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:15;124:49">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:95;125:15">task/choption</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:96;126:15">reference/propvalue</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:97;127:15">reference/propvaluehd</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:98;128:15">reference/propdeschd</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:99;129:15">reference/propdesc</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:100;130:15">reference/proptype</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:101;131:15">reference/proptypehd</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:102;132:15">task/choptionhd</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:103;133:15">task/chdesc</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:104;134:15">task/chdeschd</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:105;136:11">topic/dlentry <ul id="ul_xfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:16;136:49">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:106;137:15">pr-d/plentry</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:107;139:11">topic/vrmlist</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:108;140:11">topic/entry</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:109;141:11">topic/fn <ul id="ul_yfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:17;141:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:110;142:15">pr-d/synnote</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:111;144:11">topic/xref <ul id="ul_zfp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:18;144:46">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:112;145:15">mathml-d/mathmlref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:113;146:15">svg-d/svgref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:114;147:15">concept/xref <ul id="ul_agp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:19;147:52">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:115;148:19">glossentry/glossAlternateFor</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:116;150:15">pr-d/synnoteref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:117;151:15">pr-d/fragref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:118;152:15">pr-d/coderef</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:119;154:11">topic/component</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:120;155:11">topic/series</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:121;156:11">topic/bodydiv <ul id="ul_bgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:20;156:49">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:122;157:15">reference/refbodydiv</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:123;158:15">troubleshooting/troubleSolution</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:124;159:15">concept/conbodydiv</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:125;161:11">topic/data-about</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:126;162:11">topic/tgroup</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:127;163:11">topic/keywords</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:128;164:11">topic/boolean</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:129;165:11">topic/critdates</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:130;166:11">topic/strow <ul id="ul_cgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:21;166:47">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:131;167:15">task/chrow</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:132;168:15">reference/property</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:133;170:11">topic/simpletable <ul id="ul_dgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:22;170:53">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:134;171:15">reference/properties</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:135;172:15">task/choicetable</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:136;174:11">topic/linklist</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:137;175:11">topic/revised</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:138;176:11">topic/table</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:139;177:11">topic/dt <ul id="ul_egp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:23;177:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:140;178:15">pr-d/pt</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:141;180:11">topic/image <ul id="ul_fgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:24;180:47">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:142;181:15">hazard-d/hazardsymbol</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:143;182:15">concept/image <ul id="ul_ggp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:25;182:53">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:144;183:19">glossentry/glossSymbol</li>
+            </ul></li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:145;186:11">topic/ul <ul id="ul_hgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:26;186:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:146;187:15">hazard-d/messagepanel</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:147;188:15">task/choices</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:148;189:15">task/steps-unordered</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:149;191:11">topic/p <ul id="ul_igp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:27;191:43">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:150;192:15">concept/p <ul id="ul_jgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:28;192:49">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:151;193:19">glossentry/glossSurfaceForm</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:152;195:15">troubleshooting/responsibleParty</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:153;197:11">topic/q</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:154;198:11">topic/linkinfo</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:155;199:11">topic/dd <ul id="ul_kgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:29;199:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:156;200:15">pr-d/pd</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:157;202:11">topic/lq</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:158;203:11">topic/prodinfo</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:159;204:11">topic/dl <ul id="ul_lgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:30;204:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:160;205:15">pr-d/parml</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:161;207:11">topic/prolog</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:162;208:11">topic/indextermref</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:163;209:11">topic/copyright</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:164;210:11">topic/div <ul id="ul_mgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:31;210:45">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:165;211:15">equation-d/equation-block</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:166;213:11">topic/sthead <ul id="ul_ngp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:32;213:48">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:167;214:15">task/chhead</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:168;215:15">reference/prophead</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:169;217:11">topic/tbody</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:170;218:11">topic/searchtitle</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:171;219:11">topic/colspec</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:172;220:11">topic/created</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:173;221:11">topic/tm</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:174;222:11">topic/text</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:175;223:11">topic/cite</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:176;224:11">topic/li <ul id="ul_ogp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:33;224:44">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:177;225:15">hazard-d/howtoavoid</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:178;226:15">task/step</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:179;227:15">task/substep</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:180;228:15">hazard-d/consequence</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:181;229:15">hazard-d/typeofhazard</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:182;230:15">task/choice</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:183;231:15">task/stepsection</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:184;233:11">topic/permissions</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:185;234:11">topic/no-topic-nesting</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:186;235:11">topic/dlhead</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:187;236:11">topic/prodname</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:188;237:11">topic/index-base <ul id="ul_pgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:34;237:52">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:189;238:15">indexing-d/index-sort-as</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:190;239:15">indexing-d/index-see</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:191;240:15">indexing-d/index-see-also</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:192;242:11">topic/indexterm</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:193;243:11">topic/copyrholder</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:194;244:11">topic/longquoteref</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:195;245:11">topic/required-cleanup</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:196;246:11">topic/ddhd</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:197;247:11">topic/sl</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:198;248:11">topic/draft-comment</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:199;249:11">topic/section <ul id="ul_qgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:35;249:49">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:200;250:15">task/postreq</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:201;251:15">task/result</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:202;252:15">troubleshooting/remedy</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:203;253:15">task/tasktroubleshooting</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:204;254:15">concept/section <ul id="ul_rgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:36;254:55">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:205;255:19">glossentry/glossAlt</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:206;257:15">task/context</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:207;258:15">troubleshooting/cause</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:208;259:15">task/steps-informal</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:209;260:15">reference/refsyn</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:210;261:15">task/prereq</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:211;262:15">troubleshooting/condition</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:212;264:11">topic/pre <ul id="ul_sgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:37;264:45">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:213;265:15">sw-d/msgblock</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:214;266:15">pr-d/codeblock</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:215;267:15">ui-d/screen</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:216;269:11">topic/topic <ul id="ul_tgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:38;269:47">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:217;270:15">troubleshooting/troubleshooting</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:218;271:15">concept/concept <ul id="ul_ugp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:39;271:55">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:219;272:19">glossgroup/glossgroup</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:220;273:19">glossentry/glossentry</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:221;275:15">reference/reference</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:222;276:15">task/task</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:223;278:11">topic/platform</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:224;279:11">topic/alt</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:225;280:11">topic/keyword <ul id="ul_vgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:40;280:49">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:226;281:15">ui-d/shortcut</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:227;282:15">markup-d/markupname <ul id="ul_wgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:41;282:59">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:228;283:19">xml-d/parameterentity</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:229;284:19">xml-d/xmlatt</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:230;285:19">xml-d/numcharref</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:231;286:19">xml-d/xmlpi</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:232;287:19">xml-d/textentity</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:233;288:19">xml-d/xmlnsname</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:234;289:19">xml-d/xmlelement</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:235;291:15">pr-d/parmname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:236;292:15">pr-d/option</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:237;293:15">sw-d/cmdname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:238;294:15">ui-d/wintitle</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:239;295:15">ut-d/shape</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:240;296:15">sw-d/varname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:241;297:15">pr-d/apiname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:242;298:15">pr-d/kwd</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:243;299:15">sw-d/msgnum</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:244;301:11">topic/thead</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:245;302:11">topic/publisher</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:246;303:11">topic/desc</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:247;304:11">topic/term <ul id="ul_xgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:42;304:46">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:248;305:15">abbrev-d/abbreviated-form</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:249;307:11">topic/title <ul id="ul_ygp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:43;307:47">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:250;308:15">concept/title <ul id="ul_zgp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:44;308:53">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:251;309:19">glossentry/glossShortForm</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:252;310:19">glossentry/glossAbbreviation</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:253;311:19">glossentry/glossSynonym</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:254;312:19">glossentry/glossterm</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:255;313:19">glossentry/glossAcronym</li>
+            </ul></li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:256;316:11">topic/itemgroup <ul id="ul_ahp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:45;316:51">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:257;317:15">task/steptroubleshooting</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:258;318:15">task/tutorialinfo</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:259;319:15">task/info</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:260;320:15">task/stepxmp</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:261;321:15">task/stepresult</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:262;323:11">topic/row</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:263;324:11">topic/linkpool</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:264;325:11">topic/param</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:265;326:11">topic/shortdesc</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:266;327:11">topic/resourceid</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:267;328:11">topic/dthd</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:268;329:11">topic/metadata <ul id="ul_bhp_hw5_cfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:46;329:50">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:269;330:15">relmgmt-d/change-historylist</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:270;332:11">topic/othermeta</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:271;333:11">topic/prognum</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:272;334:11">topic/sectiondiv</li>
+    </ul>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="p:3;336:8">A DITA inheritance hierarchy list for the base <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="b:2;336:58">DITA Map</b> specification is presented
+      below:</p>
+    <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:47;338:9">
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:273;339:11">abbrev-d/abbreviated-form</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:274;340:11">delay-d/anchorkey</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:275;341:11">delay-d/exportanchors</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:276;342:11">ditavalref-d/ditavalmeta</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:277;343:11">ditavalref-d/dvrResourceSuffix</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:278;344:11">hazard-d/hazardstatement</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:279;345:11">hazard-d/hazardsymbol</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:280;346:11">hazard-d/messagepanel</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:281;347:11">hazard-d/typeofhazard</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:282;348:11">indexing-d/index-sort-as</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:283;349:11">map/topicmeta</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:284;350:11">map/topicref <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:48;350:28">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:285;351:15">ditavalref-d/ditavalref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:286;352:15">glossref-d/glossref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:287;353:15">mapgroup-d/anchorref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:288;354:15">mapgroup-d/keydef</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:289;355:15">mapgroup-d/mapref</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:290;356:15">mapgroup-d/topichead</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:291;357:15">mapgroup-d/topicset</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:292;358:15">mapgroup-d/topicsetref</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:293;360:11">mapgroup-d/topicgroup</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:294;361:11">pr-d/parml</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:295;362:11">pr-d/pd</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:296;363:11">pr-d/plentry</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:297;364:11">pr-d/pt</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:298;365:11">pr-d/synblk</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:299;366:11">pr-d/synnote</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:300;367:11">pr-d/synnoteref</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:301;368:11">relmgmt-d/change-historylist</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:302;369:11">sw-d/msgblock</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:303;370:11">sw-d/userinput</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:304;371:11">topic/data <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:49;371:26">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:305;372:15">ditavalref-d/dvrKeyscopePrefix</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:306;373:15">ditavalref-d/dvrKeyscopeSuffix</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:307;374:15">ditavalref-d/dvrResourcePrefix</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:308;375:15">relmgmt-d/change-completed</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:309;376:15">relmgmt-d/change-item</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:310;377:15">relmgmt-d/change-organization</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:311;378:15">relmgmt-d/change-person</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:312;379:15">relmgmt-d/change-request-id</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:313;380:15">relmgmt-d/change-request-reference</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:314;381:15">relmgmt-d/change-request-system</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:315;382:15">relmgmt-d/change-revisionid</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:316;383:15">relmgmt-d/change-started</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:317;384:15">relmgmt-d/change-summary</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:318;385:15">ut-d/sort-as</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:319;387:11">topic/dd</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:320;388:11">topic/dl</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:321;389:11">topic/dlentry</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:322;390:11">topic/dt</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:323;391:11">topic/fig <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:50;391:25">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:324;392:15">pr-d/syntaxdiagram</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:325;394:11">topic/figgroup <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:51;394:30">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:326;395:15">pr-d/fragment</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:327;396:15">pr-d/groupchoice</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:328;397:15">pr-d/groupcomp</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:329;398:15">pr-d/groupseq</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:330;399:15">ut-d/area</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:331;401:11">topic/fn</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:332;402:11">topic/image</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:333;403:11">topic/index-base <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:52;403:32">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:334;404:15">indexing-d/index-see</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:335;405:15">indexing-d/index-see-also</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:336;407:11">topic/keyword <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:53;407:29">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:337;408:15">delay-d/anchorid</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:338;409:15">markup-d/markupname <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:54;409:39">
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:339;410:19">xml-d/numcharref</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:340;411:19">xml-d/parameterentity</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:341;412:19">xml-d/textentity</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:342;413:19">xml-d/xmlatt</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:343;414:19">xml-d/xmlnsname</li>
+              <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:344;415:19">xml-d/xmlpi</li>
+            </ul></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:345;417:15">pr-d/apiname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:346;418:15">pr-d/kwd</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:347;419:15">pr-d/option</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:348;420:15">pr-d/parmname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:349;421:15">sw-d/cmdname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:350;422:15">sw-d/msgnum</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:351;423:15">sw-d/varname</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:352;424:15">ui-d/shortcut</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:353;425:15">ui-d/wintitle</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:354;426:15">ut-d/shape</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:355;427:15">xml-d/xmlelement</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:356;429:11">topic/keywords</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:357;430:11">topic/li <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:55;430:24">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:358;431:15">hazard-d/consequence</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:359;432:15">hazard-d/howtoavoid</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:360;434:11">topic/metadata</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:361;435:11">topic/note</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:362;436:11">topic/ph <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:56;436:24">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:363;437:15">hi-d/b</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:364;438:15">hi-d/i</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:365;439:15">hi-d/line-through</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:366;440:15">hi-d/overline</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:367;441:15">hi-d/sub</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:368;442:15">hi-d/sup</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:369;443:15">hi-d/tt</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:370;444:15">hi-d/u</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:371;445:15">pr-d/codeph</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:372;446:15">pr-d/delim</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:373;447:15">pr-d/oper</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:374;448:15">pr-d/repsep</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:375;449:15">pr-d/sep</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:376;450:15">pr-d/synph</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:377;451:15">pr-d/var</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:378;452:15">sw-d/filepath</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:379;453:15">sw-d/msgph</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:380;454:15">sw-d/systemoutput</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:381;455:15">ui-d/menucascade</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:382;456:15">ui-d/uicontrol</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:383;457:15">ut-d/coords</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:384;459:11">topic/pre <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:57;459:25">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:385;460:15">pr-d/codeblock</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:386;461:15">ui-d/screen</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:387;463:11">topic/term</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:388;464:11">topic/ul</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:389;465:11">topic/xref <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="ul:58;465:26">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:390;466:15">pr-d/coderef</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:391;467:15">pr-d/fragref</li>
+        </ul></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_inheritance_hierarchy.dita" xtrc="li:392;469:11">ut-d/imagemap</li>
+    </ul>
+  </body>
+</topic>

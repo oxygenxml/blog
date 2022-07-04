@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="open-api-dita" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="topic:1;3:27" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="title:1;4:12">Converting OpenAPI to DITA XML and Publishing to WebHelp (Experimental)</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="critdates:1;7:20">
+            <created date="2022-03-14" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="created:1;8:41"/>
+        </critdates>
+        <metadata class="- topic/metadata " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="metadata:1;10:19">
+            <keywords class="- topic/keywords " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="keywords:1;11:23">
+                <keyword outputclass="label" class="- topic/keyword " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="keyword:1;12:46">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="body:1;16:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="p:1;17:12">OpenAPI documentation is usually stored in JSON or YAML formats. In this topic, we will
+            attempt to convert OpenAPI documentation to Markdown using <xref href="https://github.com/Mermade/widdershins" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="xref:1;20:18"><?ditaot usertext?>widdershins</xref>, convert Markdown to DITA content using the Oxygen Batch
+            Converter add-on, and then publish to WebHelp Responsive output.</p>
+        <ol id="ul_yjr_kyn_wsb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="ol:1;22:33">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="li:1;23:17">Download the Yaml or JSON representation of an OpenAPI specification to the local
+                disk. For this example, I used the OpenAPI documentation from the Oxygen Content
+                Fusion server: <xref href="https://fusion.oxygenxml.com/api/swagger.json" format="json" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="xref:2;26:53"/>.</li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="li:2;27:17">Download and install <xref href="https://github.com/Mermade/widdershins" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="xref:3;28:52"><?ditaot usertext?>widdershins</xref>.</li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="li:3;29:17">From a command prompt or terminal, produce a Markdown representation of the original
+                API
+                file:<codeblock id="codeblock_zxt_5yn_wsb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="codeblock:1;31:60">widdershins --search false --language_tabs 'ruby:Ruby' 'python:Python' --summary /../swagger.json -o swagger.md</codeblock></li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="li:4;32:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="p:2;33:20">In the Oxygen application, use the <menucascade class="+ topic/ph ui-d/menucascade " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="menucascade:1;33:68">
+                        <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="uicontrol:1;34:36">Tools</uicontrol>
+                        <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="uicontrol:2;35:36">Batch Documents Converter</uicontrol>
+                        <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="uicontrol:3;36:37"/>
+                        <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="uicontrol:4;37:36">Markdown to DITA</uicontrol>
+                    </menucascade> conversion to convert the Markdown file to a DITA Map.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="p:3;39:20"><image href="../images/md-dita-map-dmm.png" scale="40" id="image_yfw_yzn_wsb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="image:1;40:23" dita-ot:image-width="600" dita-ot:image-height="816" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="li:5;42:17">Once you have the DITA Map, you can publish it to WebHelp Responsive or integrate it
+                as part of a larger DITA Map. The map can be further modified by adding chunking
+                attributes to avoid breaking the published output in too many HTML files.</li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="li:6;45:17">When publishing the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="filepath:1;45:47">swagger.ditamap</filepath> to WebHelp, we set the
+                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="codeph:1;46:29">validate</codeph> parameter to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="codeph:2;46:68">no</codeph> because the produced
+                DITA content had some invalid content inside.</li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="li:7;48:17">The resulting WebHelp output is available here: <xref href="https://blog.oxygenxml.com/resources/open-api-webhelp/returns_the_current_user%27s_details.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="xref:4;50:53"/>. Codeblocks that contain sample source code are
+                divided into multiple tabs using this plugin: <xref href="dita-codeblock-tabs.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/open-api-dita.dita" xtrc="xref:5;52:19" type="topic"><?ditaot gentext?>Show Consecutive DITA Code Blocks in Separate Tabs</xref>.</li>
+        </ol>
+    </body>
+</topic>

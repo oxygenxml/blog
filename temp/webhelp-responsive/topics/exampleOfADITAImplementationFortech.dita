@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_psm_s2g_dq" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="topic:1;3:30" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="title:1;4:10">Using DITA to Document a Software Product</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:1;9:8">Besides working on an <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:1;9:33">XML Editor</b> with lots of <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:2;9:64">DITA</b> editing functionality we
+      also use DITA internally for editing the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:3;10:51">Oxygen User's Guide</b>. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:2;11:8">In this article I will try to give you an overview of our entire workflow as evidence that
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:4;12:12">DITA</b> does work and that it can be used and implemented without expensive solutions. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:3;13:8">First here's an overview of our needs:<ul id="ul_sd1_hfg_dq" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="ul:1;13:69">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:1;14:13"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:5;14:16">Offline Help</b> which is available inside the installed application. Oxygen is a
+          multi-platform application so we need to generate both <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:6;15:69">HTML Help</b> (CHM) for
+            <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:7;16:16">Windows</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:8;16:35">JavaHelp</b> for the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:9;16:59">Mac OSX</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:10;16:78">Linux</b>
+          installations. Also for the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:11;17:42">Oxygen Eclipse Plugin</b> we need to generate <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:12;17:91">Eclipse
+            Help</b>.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:2;19:13"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:13;19:16">Online Help</b> which is available as <xref href="https://www.oxygenxml.com/doc/ug-oxygen/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="xref:1;20:92"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:14;20:95">WebHelp
+              with Feedback</b></xref> on our web site and allows users to add comments to each
+          topic. Those comments can then be used by us to rephrase and improve our
+          documentation.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:3;24:13"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:15;24:16">PDF</b> containing the entire contents of the user's manual. Nowadays most our users
+          use the online <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:16;25:29">WebHelp</b> because it can be used much easier for finding certain
+          topics so in our case at least the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:17;26:49">PDF</b> output is not popular anymore along
+          users.</li>
+      </ul></p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:4;29:8">We have two main distributions (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:18;29:43">Standalone</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:19;29:65">Eclipse plugin</b>) and three main
+      products (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:20;30:20">Editor</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:21;30:35">Developer</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:22;30:56">Author</b>). So we need to produce about six
+      (6) different publications from the same <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:23;31:51">DITA</b> content depending on the shipped
+      product.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:5;33:8">And here's an overview of the tools we use:</p>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="section:1;34:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="title:2;35:14"><ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="ph:1;35:35">Oxygen XML Editor</ph></title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:6;36:10">This may not come as a surprise but we use our own product to edit <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:24;36:80">DITA</b> content,
+        partly because it's ours and partly because it is a very good tool. During the last couple
+        of years this has been a good opportunity to improve our product based on our own feedback
+        (feedback coming from our technical writers).</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:7;40:10"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:25;40:13">Oxygen</b> is used in two ways:<ol id="ol_bnc_gng_dq" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="ol:1;40:67">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:4;41:15">By the technical writers to write DITA content.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:5;42:15">By the reviewers to review documented issues by adding comments, making changes with
+            change tracking enabled.</li>
+        </ol></p>
+    </section>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="section:2;46:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="title:3;47:14">DITA Open Toolkit + WebHelp plugin</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:8;48:10">We use the DITA Open Toolkit to publish DITA content to the outputs we are interested in.
+        The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:26;49:16">WebHelp</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:27;49:35">WebHelp with Feedback</b> outputs are our own additions to the
+          <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:28;50:14">DITA Open Toolkit</b>. But we do not use any special customizations for the other
+        outputs.</p>
+    </section>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="section:3;53:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="title:4;54:14">Jenkins integration server</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:9;55:10">We have an automated script which builds all the user manual outputs every night.</p>
+    </section>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="section:4;57:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="title:5;58:14">Automated DITA Content Validation</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:10;59:10">There is a script which runs on a test server and does three types of checks on the
+          <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:29;60:14">DITA</b> content:<ol id="ol_g4h_zkg_dq" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="ol:2;60:54">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:6;61:15">Validate and check for completeness, check for broken links, images, broken web links
+            and so on.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:7;63:15">Check and report topics, resources and images which are no longer referenced
+            anywhere.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="li:8;65:15">Spell check the entire DITA content.</li>
+        </ol></p>
+    </section>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="section:5;68:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="title:6;69:14">Git as a version control system</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:11;70:10">For a long time we used <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:30;70:37">Subversion</b> for version control. Recently we moved our DITA
+        content to a private <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:31;71:33">GitHub</b> repository and we also made a public <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:32;71:84">GitHub</b>
+        repository containing a copy of our user manual's DITA content:<xref href="https://github.com/oxygenxml/userguide" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="xref:2;73:89"/>. We use the
+          <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:33;74:14">SourceTree</b> application to work with <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:34;74:57">Git</b> and we are quite happy with it.</p>
+    </section>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="section:6;76:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="title:7;77:14">Atlassian Jira for workflow</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:12;78:10">We use Atlassian Jira to provide a workflow both for the issues which are related directly
+        to our software product and for the issues which are related exclusively with our user's
+        manual. The JIRA is integrated with both our <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:35;80:57">SVN</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:36;80:72">GIT</b> repositories so it
+        shows for a certain issue all resources which have been modified to fix it.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:13;82:10">More details about how with work with <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:37;82:51">DITA</b> can be found in these slides I presented
+        at <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="b:38;83:15">DITA Europe 2014</b>:<xref href="https://www.oxygenxml.com/forum/files/usingDitaForOxygenUsersManual.odp" format="odp" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="xref:3;85:29"/>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="p:14;86:10">Video demonstration showing how collaboration on a technical publication with Subversion
+        can be achieved: <xref href="https://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/exampleOfADITAImplementationFortech.dita" xtrc="xref:4;89:43"/>.</p>
+    </section>
+  </body>
+</topic>

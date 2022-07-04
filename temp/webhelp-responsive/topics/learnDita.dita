@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="learnDita" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="topic:1;3:23" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="title:1;4:10">Resources for learning DITA with Oxygen</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="author:1;6:13">Radu Coravu</author>
+    <metadata class="- topic/metadata " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="metadata:1;7:15">
+      <keywords class="- topic/keywords " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="keywords:1;8:17">
+        <keyword outputclass="label" class="- topic/keyword " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="keyword:1;9:38">Learn DITA</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="body:1;13:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:1;14:8">From time to time we get requests from beginners or from users migrating from other tools who
+      want to start using Oxygen with DITA and they need to know a set of useful resources.</p>
+    <section id="section_wyk_5fj_2v" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="section:1;16:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="title:2;17:14">Resources for editing DITA with Oxygen:</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:2;18:10">We have a getting started section in our user's manual: <xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/eppo-first-dita-topic.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:1;20:43"/> and a larger section on DITA authoring: <xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/author-dita.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:2;22:43"/>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:3;23:10">We have a list of videos, some of them DITA-related here: <xref href="https://www.oxygenxml.com/videos.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:3;24:88"/> and a series
+        of past webinar recordings about editing DITA with Oxygen.<dl id="dl_av4_tgf_wpb" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dl:1;25:91">
+          <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dlentry:1;26:20">
+            <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dt:1;27:17">Getting Started with Oxygen and DITA</dt>
+            <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dd:1;28:17"><xref href="https://www.oxygenxml.com/events/2020/webinar_getting_started_with_dita_using_oxygen_xml_editor.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:4;30:49"/></dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dlentry:2;32:20">
+            <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dt:2;33:17">Basic DITA Profiling and Reuse</dt>
+            <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dd:2;34:17"><xref href="https://www.oxygenxml.com/events/2020/webinar_working_with_dita_in_oxygen.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:5;36:49"/></dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dlentry:3;38:20">
+            <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dt:3;39:17">Advanced DITA Profiling and Reuse</dt>
+            <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dd:3;40:17"><xref href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_advanced_profiling_and_reuse_strategies.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:6;42:49"/></dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dlentry:4;44:20">
+            <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dt:4;45:17">Working with DITA in Oxygen - Customizing the Editing Experience</dt>
+            <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dd:4;46:17"><xref href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_customizing_the_editing_experience.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:7;48:49"/></dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dlentry:5;50:20">
+            <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dt:5;51:17">Working with DITA in Oxygen - Quick start with the DITA Startup Project</dt>
+            <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dd:5;52:17"><xref href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_startup_project.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:8;54:49"/></dd>
+          </dlentry>
+          <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dlentry:6;56:20">
+            <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dt:6;57:17">Working with DITA in Oxygen - Migrating to DITA and Refactoring</dt>
+            <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="dd:6;58:17"><xref href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_migrating_to_dita_and_refactoring.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:9;60:49"/></dd>
+          </dlentry>
+        </dl>All these webinars above are also listed here: <xref href="https://www.oxygenxml.com/working_with_dita_in_oxygen.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:10;64:29"/>.</p>
+    </section>
+    <section id="section_hbg_wfj_2v" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="section:2;66:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="title:3;67:14">Resources for learning DITA:</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:4;68:10">If you want to start learning about DITA in general there is a web site called <xref href="https://www.learningdita.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:11;69:79"><?ditaot usertext?>Learning
+        DITA</xref>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:5;71:10">The DITA 1.3 standard specification can be found here: <xref href="https://www.oxygenxml.com/dita/1.3/specs/#introduction/dita-release-overview.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:12;73:43"/>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:6;74:10">There are also a number of good books like <xref href="http://xmlpress.net/publications/dita/practitioners-1/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:13;76:38"><?ditaot usertext?>DITA For Practitioners</xref> and the <xref href="https://ditastyle.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:14;77:82"><?ditaot usertext?>DITA Style
+                    Guide</xref>.</p>
+    </section>
+    <section id="section_ufb_ngj_2v" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="section:3;80:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="title:4;81:14">Resources for customizing the DITA output formats</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:7;82:10">Usually customizing the XHTML based outputs means creating your custom CSS selectors. If
+        you generate WebHelp output using Oxygen, we have a section explaining basic WebHelp
+        customizations: <xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/customize_webhelp.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:15;86:43"/>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:8;87:10">For PDF-based outputs if you publish via the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="b:1;87:58">DITA Open Toolkit</b> we have a section in
+        our user's manual about PDF customizations: <xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-pdf-output.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:16;90:43"/>. There is also a <xref href="http://dita-generator.elovirta.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:17;91:85"><?ditaot usertext?>PDF plugin
+          generator</xref> created by Jarno Elovirta which can be used in order to customize the PDF
+        layout. The <xref href="http://xmlpress.net/publications/dita/dita-for-print/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:18;94:28"><?ditaot usertext?>DITA For Print</xref> book also covers quite a lot of many customization
+        possibilities. There are also a number of different alternatives to obtain PDF from DITA:
+        <xref href="ditaToPDF.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:19;96:38" type="topic"><?ditaot gentext?>Possibilities to obtain PDF from DITA</xref>.</p>
+    </section>
+    <section id="section_rqq_nhj_4jb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="section:4;98:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="title:5;99:14">Courses for learning DITA with <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="ph:1;99:66">Oxygen XML Editor</ph></title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:9;100:10">
+        <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="ul:1;101:13">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:1;102:15">Ryffine: <xref href="https://www.ryffine.com/workshops/#thedetails" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:20;103:33"/>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:2;104:15">Udemy: <xref href="https://www.udemy.com/course/technical-writing-how-to-write-using-dita-xml/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:21;106:47"/>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:3;107:15">Hyperwrite: <xref href="http://www.hyperwrite.com/Training/crsoxygenintro.aspx" format="aspx" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:22;108:47"/>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:4;109:15">Mekon: <xref href="http://mekon.com/news/dita-authoring-oxygen-author/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:23;110:33"/></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:5;111:15">French course by Tireme: <xref href="http://dita.tireme.fr/#definition/m2_session_adapter_dita.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:24;113:33"/></li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_r1p_13j_2v" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="section:5;117:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="title:6;118:14">DITA Trivia</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:10;119:10">There are a number of blogs on which you can read various DITA-related articles:<ul id="ul_lh4_c3j_2v" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="ul:2;120:30">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:6;121:15">Oxygen XML Blog: <xref href="welcome.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:25;121:59" type="topic"><?ditaot gentext?>Welcome!</xref>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:7;122:15">Magda Caloian's Think DITA blog: <xref href="http://think-dita.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:26;123:33"/>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:8;124:15">Scriptorium Blog: <xref href="http://www.scriptorium.com/blog/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:27;125:33"/>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:9;126:15">Eliot Kimber's Blog: <xref href="http://drmacros-xml-rants.blogspot.ro/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:28;127:33"/>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:10;128:15">A larger selection of technical writing and DITA articles:<xref href="http://idratherbewriting.com" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:29;129:83"/></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="li:11;130:15">List of learning DITA blog posts from Mekon: <xref href="http://mekon.com/bitesize-dita/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:30;131:86"/></li>
+        </ul></p>
+    </section>
+    <section id="section_lhf_cjj_2v" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="section:6;134:38"><title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="title:7;134:45">Community</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:11;135:10">The <xref href="https://dita-users.groups.io/g/main" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:31;137:10"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="b:2;137:13">DITA Users Group</b></xref> is probably the first place where you can register and ask
+        for help with DITA-related issues. There is also a <xref href="https://groups.google.com/forum/#!forum/dita-ot-users" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:32;140:12"><?ditaot usertext?>Google Groups DITA Users List</xref>. Most DITA Users register sooner or later on one of
+        these groups.</p></section>
+    <section id="section_v1r_ljj_2v" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="section:7;142:38">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="p:12;143:10">There is also a <xref href="https://www.linkedin.com/groups/162465" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/learnDita.dita" xtrc="xref:33;144:86"><?ditaot usertext?>DITA Awareness
+        Group</xref> on Linked In.</p>
+    </section>
+  </body>
+</topic>

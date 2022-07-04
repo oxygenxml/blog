@@ -1,0 +1,622 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="24.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="Oxygen XML Editor has about 18 years of development under its wings. During these years, we added lots of functionality and many of our users usually do not know more than 20-30% of Oxygen's features. ..."/><meta name="DC.rights.owner" content="(C) Copyright 2022"/><meta name="copyright" content="(C) Copyright 2022"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.creator" content="Radu Coravu"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="dita_oriented_tips_and_tricks"/><title>DITA Oriented Tips And Tricks</title><!--  Generated with Oxygen version 24.1, build number 2022041502.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="dita_oriented_tips_and_tricks-d884e558"/><meta name="wh-source-relpath" content="topics/dita_oriented_tips_and_tricks.dita"/><meta name="wh-out-relpath" content="topics/dita_oriented_tips_and_tricks.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2022041502"/>
+    
+    
+    <script src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2022041502"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/custom.css?buildId=2022041502"/>
+        <link rel="icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/rss.xml"/>
+    </head>
+
+    <body id="dita_oriented_tips_and_tricks" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <progress value="0" id="progressBar"><div class="progress-container"><span class="progress-bar"></span></div></progress>
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/oxygen_logo.png" alt="Blog"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Blog</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="welcome-d884e11-mi" data-tocid="welcome-d884e11" data-state="leaf" class=" topicref " data-id="welcome"><span class="title"><a href="../topics/welcome.html">Welcome!</a></span></span></li><li role="menuitem"><span id="frequently_asked_questions-d884e28-mi" data-tocid="frequently_asked_questions-d884e28" data-state="leaf" class=" topicref " data-id="frequently_asked_questions"><span class="title"><a href="../topics/frequently_asked_questions.html">Frequently Asked Questions</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e37-mi" data-tocid="tocId-d884e37" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/learnDita.html">DITA</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e708-mi" data-tocid="tocId-d884e708" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/migratingToDITA.html">Migration</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e742-mi" data-tocid="tocId-d884e742" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/customizing_oxygen.html">SDK Development (Plugins, Frameworks)</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d884e871-mi" data-tocid="tocId-d884e871" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/general_tips_and_tricks.html">Miscellaneous</a></span></span></li><li role="menuitem"><span id="contributors-d884e987-mi" data-tocid="contributors-d884e987" data-state="leaf" class=" topicref " data-id="contributors"><span class="title"><a href="../topics/contributors.html">Contributors</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div></div>
+    </div>
+</header>
+        
+        
+         
+        
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../topics/learnDita.html">DITA</a></div></div></li><li><div class="topicref"><div class="title"><a href="../topics/dita_for_small_teams.html">Other</a></div></div></li><li class="active"><div class="topicref" data-id="dita_oriented_tips_and_tricks"><div class="title"><a href="../topics/dita_oriented_tips_and_tricks.html">DITA Oriented Tips And Tricks</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="welcome-d884e11" class="topicref" data-id="welcome" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/welcome.html" id="welcome-d884e11-link">Welcome!</a></div></div></li><li role="treeitem"><div data-tocid="frequently_asked_questions-d884e28" class="topicref" data-id="frequently_asked_questions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/frequently_asked_questions.html" id="frequently_asked_questions-d884e28-link">Frequently Asked Questions</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d884e37" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d884e37-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/learnDita.html" id="tocId-d884e37-link">DITA</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e38" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e38-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/learnDita.html" id="tocId-d884e38-link">Learning</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e247" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e247-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/webhelp-dita-strong-points.html" id="tocId-d884e247-link">Publishing</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e472" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e472-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/startup_dita_project.html" id="tocId-d884e472-link">Customizing</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d884e528" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d884e528-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_for_small_teams.html" id="tocId-d884e528-link">Other</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="dita_for_small_teams-d884e529" class="topicref" data-id="dita_for_small_teams" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_for_small_teams.html" id="dita_for_small_teams-d884e529-link">DITA For Small Technical Documentation Teams</a></div></div></li><li role="treeitem"><div data-tocid="topic_twx_tyf_2hb-d884e537" class="topicref" data-id="topic_twx_tyf_2hb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygen-dita-strong-points.html" id="topic_twx_tyf_2hb-d884e537-link"><span class="ph">Oxygen XML Editor</span> DITA Editing solution strong points.</a></div></div></li><li role="treeitem"><div data-tocid="topic_lqn_dkt_dt-d884e547" class="topicref" data-id="topic_lqn_dkt_dt" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_1_3_support_o17.1.html" id="topic_lqn_dkt_dt-d884e547-link">DITA 1.3 Support in Upcoming <span class="ph">Oxygen XML Editor</span> 17.1</a></div></div></li><li role="treeitem" class="active"><div data-tocid="dita_oriented_tips_and_tricks-d884e558" class="topicref" data-id="dita_oriented_tips_and_tricks" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_oriented_tips_and_tricks.html" id="dita_oriented_tips_and_tricks-d884e558-link">DITA Oriented Tips And Tricks</a></div></div></li><li role="treeitem"><div data-tocid="dita_project_enhancements-d884e566" class="topicref" data-id="dita_project_enhancements" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_project_enhancements.html" id="dita_project_enhancements-d884e566-link">DITA Project Enhancements</a></div></div></li><li role="treeitem"><div data-tocid="translating_your_dita_project-d884e574" class="topicref" data-id="translating_your_dita_project" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/translating_your_dita_project.html" id="translating_your_dita_project-d884e574-link">Translating your DITA Project</a></div></div></li><li role="treeitem"><div data-tocid="topic_mp2_l4q_g5-d884e582" class="topicref" data-id="topic_mp2_l4q_g5" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/validateCheckForCompletness.html" id="topic_mp2_l4q_g5-d884e582-link">DITA Map Validate and Check for Completeness Overview</a></div></div></li><li role="treeitem"><div data-tocid="topic_hkx_gzc_cs-d884e590" class="topicref" data-id="topic_hkx_gzc_cs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/SchematronBCs.html" id="topic_hkx_gzc_cs-d884e590-link">Schematron Checks to help Technical Writing</a></div></div></li><li role="treeitem"><div data-tocid="topic_n3v_s5r_2v-d884e598" class="topicref" data-id="topic_n3v_s5r_2v" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/styleguide.html" id="topic_n3v_s5r_2v-d884e598-link">Implementing your own Style Guide</a></div></div></li><li role="treeitem"><div data-tocid="preprocessing_ditaot_project_files-d884e606" class="topicref" data-id="preprocessing_ditaot_project_files" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/preprocessing_ditaot_project_files.html" id="preprocessing_ditaot_project_files-d884e606-link">Preprocessing DITA-OT Project Files</a></div></div></li><li role="treeitem"><div data-tocid="re_10_reasons_for_moving_away_from_dita-d884e614" class="topicref" data-id="re_10_reasons_for_moving_away_from_dita" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/re_10_reasons_for_moving_away_from_dita.html" id="re_10_reasons_for_moving_away_from_dita-d884e614-link">Re: 10 reasons for moving away from DITA </a></div></div></li><li role="treeitem"><div data-tocid="dita_2_0_specification_support_cheet_sheet-d884e623" class="topicref" data-id="dita_2_0_specification_support_cheet_sheet" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_2_0_specification_support_cheat_sheet.html" id="dita_2_0_specification_support_cheet_sheet-d884e623-link">DITA 2.0 Specification Support Cheat Sheet</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e631" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e631-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/sort_glossentries.html" id="tocId-d884e631-link">Refactoring</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e656" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e656-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-standard-problems.html" id="tocId-d884e656-link">Surveys</a></div></div></li><li role="treeitem"><div data-tocid="customizing_a_document_type_using_an_extension_framework_script-d884e689" class="topicref" data-id="customizing_a_document_type_using_an_extension_framework_script" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizing_a_chatbot.html" id="customizing_a_document_type_using_an_extension_framework_script-d884e689-link">Creating a Knowledge Base for the Google Dialogflow Chatbot using DITA XML content</a><div class="wh-tooltip"><p class="shortdesc">A <dfn class="term">Chatbot</dfn> is a computer program that simulates human conversation         through voice commands or text chats or both. Chatbot (short for chatterbot), is an         artificial intelligence (AI) feature that can be embedded and used through any major         messaging application. <dfn class="term">Chatbots</dfn> helps add convenience for customers, they are         automated programs that interact with customers like a human would, and cost little to         nothing to engage with.</p></div></div></div></li></ul></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e708" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e708-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/migratingToDITA.html" id="tocId-d884e708-link">Migration</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e742" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e742-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizing_oxygen.html" id="tocId-d884e742-link">SDK Development (Plugins, Frameworks)</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d884e871" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d884e871-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/general_tips_and_tricks.html" id="tocId-d884e871-link">Miscellaneous</a></div></div></li><li role="treeitem"><div data-tocid="contributors-d884e987" class="topicref" data-id="contributors" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/contributors.html" id="contributors-d884e987-link">Contributors</a></div></div></li></ul></div>
+		                        <div class="after-pub-toc">
+    <div id="follow-it" class="entry followit--follow-form-container" attr-a="" attr-b="" attr-c="" attr-d="" attr-e="" attr-f="">
+        <form data-v-390679af="" action="https://api.follow.it/subscription-form/TlAwUVBWTnF6UFNwbEN3bVk3K2ZQeVd2bEhrNHZZTGo3VzZnRGt2Q0FiY3BEelVjSWd0NTdBWGV1SG1pOHR3ZkJycUFSRkV0ODlOV0YyY2hiN25CckF0V0E2SjVUbUdpMzRnMTdSQktEc0xJY01EU3I3T1FqQy9rY1Rqcjg1YzF8NmVGWFV0NXNOdDU3T2d4Qnp6d1dLYytWOFRGM2ZYU05nbnpOZ01LaXIzZz0=/8" method="post">
+            <div data-v-390679af="" class="form-preview">
+                <div data-v-390679af="" class="preview-heading">
+                    <h3 data-v-390679af="">Get new posts by email</h3></div> <div data-v-390679af="" class="preview-input-field"><input data-v-390679af="" type="email" name="email" required="required" placeholder="Enter your email" spellcheck="false" style="text-transform: none !important; font-family: Montserrat; font-weight: normal; color: rgb(0, 0, 0); font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"/></div> <div data-v-390679af="" class="preview-submit-button"><button data-v-390679af="" type="submit" style="text-transform: none !important; font-family: Montserrat; font-weight: bold; color: rgb(255, 255, 255); font-size: 16px; text-align: center; background-color: rgb(0, 0, 0);">Subscribe</button></div></div></form><a href="https://follow.it" class="powered-by-line">Powered by <img src="https://follow.it/static/img/colored-logo.svg" alt="follow.it" height="17px"/></a>
+    </div>
+</div>
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <span class="edit-link" style="font-size:12px; opacity:0.6; text-align:right; vertical-align:middle"><a target="_blank" href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Ftopics%2Fdita_oriented_tips_and_tricks.dita&amp;ditamap=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Foxygen_xml_blog.ditamap&amp;dita.val.url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2F..%2F..%2FC%3A%2FUsers%2Fmihai%2FAppData%2FLocal%2FTemp%2FOxygenXMLTemp%2Foxy_ditaVal6031104318653633203.ditaval">Edit online</a></span><h1 class="- topic/title title topictitle1" id="ariaid-title1">DITA Oriented Tips And Tricks</h1>
+  <div class="author inPage Radu_Coravu"><a href="topics/contributors.html">Radu Coravu</a></div>
+  <div class="- topic/body body">
+    <p class="- topic/p p"><span class="- topic/ph ph">Oxygen XML Editor</span> has about 18 years of development under its wings. During these
+      years, we added lots of functionality and many of our users usually do not know more than 20-30%
+      of Oxygen's features. So this presentation is intended for technical writers using Oxygen to
+      write DITA content and who may want to find out more about their tool.</p>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_gld_tbs_gfb" data-ofbid="dita_oriented_tips_and_tricks__section_gld_tbs_gfb"><h2 class="- topic/title title sectiontitle">Add-ons</h2>
+      
+      <p class="- topic/p p">There are lots of free add-ons provided by the Oxygen team that can be installed in an
+          <a class="- topic/xref xref" href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;type=Repositories" target="_blank" rel="external noopener">Oxygen standalone version</a>. I will enumerate some of
+        the most interesting one:</p>
+      <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_xbw_ccs_gfb" data-ofbid="dita_oriented_tips_and_tricks__ul_xbw_ccs_gfb">
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://github.com/oxygenxml/oxygen-git-plugin" target="_blank" rel="external noopener">Git add-on</a>. This plugin adds a side view allowing you to do some
+          common Git operations like pull, commit, push (mostly 90% of what a regular Git user would
+          do).</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html" target="_blank" rel="external noopener">Content Fusion Connector add-on</a>. Collaborate with
+          your peers by sending them links that allow them to give you feedback on your work using a
+          web browser without the need to pre-install anything on their side. </li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/translation-package-builder-addon.html" target="_blank" rel="external noopener">Translation package builder</a>. Small plugin that can
+          be used to prepare a zip file containing only the topics that have changed from one
+          version to another.</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" target="_blank" rel="external noopener">Batch convertor add-on</a>. Converts multiple HTML,
+          Markdown, Excel files to DITA.</li>
+      </ul>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_pwy_nd4_mfb" data-ofbid="dita_oriented_tips_and_tricks__section_pwy_nd4_mfb"><h2 class="- topic/title title sectiontitle">Project-related Functionality:</h2>
+      
+      <p class="- topic/p p">The Oxygen Project view is the place where you can organize and apply batch changes to all
+        your DITA resources:</p>
+      <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_shb_qd4_mfb" data-ofbid="dita_oriented_tips_and_tricks__ul_shb_qd4_mfb">
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html" target="_blank" rel="external noopener">Master files support</a>. Enable master files support
+          in the DITA project, add your top level DITA Maps as master files and any structure
+          changes, renaming or moving files will automatically update all links in the DITA Project.
+          Also works for renaming/moving image resources.</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-storing.html" target="_blank" rel="external noopener">Store options at project level.</a> Almost all of
+          Oxygen's preferences pages can be saved at project level. Once you do that, you can share
+          the <strong class="+ topic/ph hi-d/b ph b">project.xpr</strong> file with somebody else and when they open it, they will also get
+          the settings set inside the project.</li>
+        <li class="- topic/li li">Compare files/folders.</li>
+        <li class="- topic/li li">Refer to multiple folders.</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html" target="_blank" rel="external noopener">Batch operations</a>: Select a folder in the project
+          and use the "Transform", "Validate", "Format and Indent", "Find/Replace in Files", or
+          "Spell Check in Files". Or use the "XML Refactoring" action to apply a refactoring
+          stylesheet over all the selected files.</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html" target="_blank" rel="external noopener">Filter files</a>. You can instruct the Project view to
+          hide various file types.</li>
+      </ul>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_uf1_ncs_gfb" data-ofbid="dita_oriented_tips_and_tricks__section_uf1_ncs_gfb"><h2 class="- topic/title title sectiontitle">Navigation:</h2>
+      
+      <p class="- topic/p p">Actions to find opened files, find files containing a certain content or navigate between
+        files.</p>
+      <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_uwk_nnb_hhb" data-ofbid="dita_oriented_tips_and_tricks__ul_uwk_nnb_hhb">
+        <li class="- topic/li li">In the main <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Window</span> menu, you can find the <strong class="+ topic/ph hi-d/b ph b">Next/Previous
+            Editor</strong> actions and their shortcuts. Together with the <strong class="+ topic/ph hi-d/b ph b">Switch editor tab</strong>
+          action, these help you navigate between opened XML documents.</li>
+        <li class="- topic/li li">The <strong class="+ topic/ph hi-d/b ph b"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-view-x-editing2.html" target="_blank" rel="external noopener">Open/Find Resource</a></strong> view (main menu
+            <strong class="+ topic/ph hi-d/b ph b">Window-&gt;Show View</strong>) allows you to search for file names, search in file contents,
+          or search for files containing comments or change tracking.</li>
+        <li class="- topic/li li">Right-click the tab of an opened DITA document and use the <strong class="+ topic/ph hi-d/b ph b">Copy location</strong> action.
+          Or use the <strong class="+ topic/ph hi-d/b ph b">Show in Explorer/Finder</strong> action to locate the file.</li>
+        <li class="- topic/li li">Use the main menu <strong class="+ topic/ph hi-d/b ph b">File-&gt;Reopen last closed editor</strong> action to re-open the last
+          closed file.</li>
+        <li class="- topic/li li">Open a DITA topic in the <strong class="+ topic/ph hi-d/b ph b">Text</strong> editing mode, right click, choose <strong class="+ topic/ph hi-d/b ph b">Go to
+            definition</strong> to open the DTD, XML Schema or RelaxNG Schema at the precise location
+          where that DITA element is defined, something useful for debugging DITA
+          specializations.</li>
+        <li class="- topic/li li">Use the <strong class="+ topic/ph hi-d/b ph b">Navigation</strong> toolbar to <strong class="+ topic/ph hi-d/b ph b">Go back/forward/last modification</strong>.</li>
+      </ul>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_d3n_xg3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_d3n_xg3_ffb"><h2 class="- topic/title title sectiontitle">Find/Replace Functionality</h2>
+      
+      <p class="- topic/p p">The Find/Replace functionality is the bread and butter of any editing application and
+        Oxygen has lots of functionality in this regard:</p>
+      <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_xk3_zg3_ffb" data-ofbid="dita_oriented_tips_and_tricks__ul_xk3_zg3_ffb">
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/find-and-replace-text-in-files.html" target="_blank" rel="external noopener">Find/Replace in Files</a>. <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_fx2_fvz_3hb" data-ofbid="dita_oriented_tips_and_tricks__ul_fx2_fvz_3hb">
+            <li class="- topic/li li">Restrict to XPath - If you want to make replacements only in certain parts of the
+              XML document, the XPath restriction can be used to focus only on certain attributes or
+              element content.</li>
+            <li class="- topic/li li">Ignore Whitespaces - You should usually check this checkbox as there is always there
+              is a possibility what the words you are searching for may be split on multiple lines
+              in the XML content.</li>
+          </ul></li>
+        <li class="- topic/li li">The <strong class="+ topic/ph hi-d/b ph b">Find</strong> menu → <strong class="+ topic/ph hi-d/b ph b">Find Next/Previous</strong> actions allow you to find the
+          next/previous occurrence of the current selected word(s). Or you can use the <strong class="+ topic/ph hi-d/b ph b">Find
+            All</strong> action to find and highlight all occurrences of a word or a sequence of
+          words.</li>
+        <li class="- topic/li li">The <strong class="+ topic/ph hi-d/b ph b">Find</strong> menu → <strong class="+ topic/ph hi-d/b ph b">Find all Elements</strong> action shows a dialog box allowing you
+          to find elements or attributes containing a sequence of words.</li>
+        <li class="- topic/li li">The <strong class="+ topic/ph hi-d/b ph b">Find</strong> menu → <strong class="+ topic/ph hi-d/b ph b">Quick find toolbar</strong> is a compact toolbar giving you access
+          to search functionality.</li>
+        <li class="- topic/li li">The <strong class="+ topic/ph hi-d/b ph b">XPath</strong> allows you to use <strong class="+ topic/ph hi-d/b ph b">XPath</strong> expressions (i.e.
+            <code class="+ topic/ph pr-d/codeph ph codeph">//comment()[contains(., 'TODO')]</code>) to search the current topic or a set
+          of topics for elements, attributes, or comments matching a set of conditions.</li>
+      </ul>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_syz_dg3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_syz_dg3_ffb"><h2 class="- topic/title title sectiontitle">DITA Maps Manager</h2>
+      
+      <p class="- topic/p p">The DITA Maps Manager view's contextual menu gives you quite an impressive array of useful
+        actions:</p>
+      <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_ubn_bg3_ffb" data-ofbid="dita_oriented_tips_and_tricks__ul_ubn_bg3_ffb">
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/fast-create-topics.html" target="_blank" rel="external noopener">Fast create new topics</a>. Create a set of DITA
+          topics by specifying only their titles.</li>
+        <li class="- topic/li li">Add references to multiple topics.</li>
+        <li class="- topic/li li">Create key definition with keyword.</li>
+        <li class="- topic/li li">Edit Properties - You can even set profiling attributes on multiple selected topic
+          references.</li>
+        <li class="- topic/li li">Export DITA Map - Export your DITA Map to a zip archive ready for translation.</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/find-unreferenced-resources.html" target="_blank" rel="external noopener">Find Unreferenced Resources</a> - Find all resources
+          which are no longer used in a DITA project.</li>
+        <li class="- topic/li li">Refactoring menu <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_zt2_jg3_ffb" data-ofbid="dita_oriented_tips_and_tricks__ul_zt2_jg3_ffb">
+            <li class="- topic/li li">Rename/Move topic - Renames a topic and all references to it.</li>
+            <li class="- topic/li li">Rename key - Rename a DITA key and all its references in the entire project.</li>
+            <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-convert-topics.html" target="_blank" rel="external noopener">Conversions between topics</a> - Convert between
+              topics, tasks, concepts, and references for multiple selected DITA files.</li>
+            <li class="- topic/li li">Convert nested sections to new topics - Convert all sections located inside a topic
+              to new topics.</li>
+            <li class="- topic/li li">Convert nested topics to new topic - Convert all nested topics to new topic
+              files.</li>
+            <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations-x-tools.html" target="_blank" rel="external noopener">Apply custom refactoring scripts</a> - Create and
+              apply your own XSLT or XQuery refactoring scripts.</li>
+          </ul></li>
+        <li class="- topic/li li">Find/Replace in Files.</li>
+        <li class="- topic/li li">Spell Check in Files.</li>
+        <li class="- topic/li li">Search References - Search all references to a particular referenced topic.</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-maps-manager.html" target="_blank" rel="external noopener">Remove from Disk</a> - Check in how many places a
+          topic is referenced and then remove it from disk.</li>
+        <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-maps-manager.html" target="_blank" rel="external noopener">Open with resolved topics</a> - Open the DITA Map with
+          all topic references expanded, useful if you want to have an overview of the entire
+          publication.</li>
+        <li class="- topic/li li">Synchronized selection between DITA Maps manager and main editor area - Anytime a DITA
+          topic is opened both in the DITA Maps Manager and the main editing area, moving the
+          selection in one instance will also move the selection to the corresponding place in the
+          other.</li>
+      </ul>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_l1g_sg3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_l1g_sg3_ffb"><h2 class="- topic/title title sectiontitle">Editing in the Author Visual Editing Mode</h2>
+      
+      <div class="- topic/p p">
+        <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_idm_ch3_ffb" data-ofbid="dita_oriented_tips_and_tricks__ul_idm_ch3_ffb">
+          <li class="- topic/li li">Maximize editor area - Double-click the opened editor's tab to hide all side views and
+            maximize editing space, double click again to show the side views.</li>
+          <li class="- topic/li li">Increase/decrease editor font - Use <strong class="+ topic/ph hi-d/b ph b">Ctrl/CMD +/-</strong> to increase or decrease the
+            font in the current edited document.</li>
+          <li class="- topic/li li">Inserting elements - Pressing ENTER in the Author visual editing mode will show you a
+            list with all possible elements that can be inserted. If you choose an invalid element,
+            Oxygen will find a place for it. You can also add <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/the-content-completion-tab.html" target="_blank" rel="external noopener">custom actions</a> or code templates to the content
+            completion list.</li>
+          <li class="- topic/li li">Select content then press <strong class="+ topic/ph hi-d/b ph b">ENTER</strong> to surround the content in a new element.</li>
+          <li class="- topic/li li">Select multiple intervals - Press the <strong class="+ topic/ph hi-d/b ph b">Ctrl/CMD</strong> button when selecting text to
+            select multiple text intervals. Once you do that, you can use toolbar actions like
+              <strong class="+ topic/ph hi-d/b ph b">Bold</strong>, <strong class="+ topic/ph hi-d/b ph b">Italic</strong>, or <strong class="+ topic/ph hi-d/b ph b">Underline</strong> or you can use the <strong class="+ topic/ph hi-d/b ph b">Edit Profiling
+              Attributes</strong> action to set profiling attributes on all the selected items.</li>
+          <li class="- topic/li li">In-place attributes editor - Instead of using the <strong class="+ topic/ph hi-d/b ph b">Attributes</strong> view, you can
+            press <strong class="+ topic/ph hi-d/b ph b">Alt-Enter</strong> to edit attributes for the current element in a small pop-up
+            dialog box.</li>
+          <li class="- topic/li li">Select an entire element - Triple-click inside an element's contents to select the
+            entire element. After this, you can move the element to a new place.</li>
+          <li class="- topic/li li">Double-click to select by word, then drag the mouse to select the content word by
+            word.</li>
+          <li class="- topic/li li">Move elements (especially paragraphs, list items) up or down (<strong class="+ topic/ph hi-d/b ph b">ALT-UP/DOWN</strong>),
+            indent or unindent list items (<strong class="+ topic/ph hi-d/b ph b">Tab</strong>, <strong class="+ topic/ph hi-d/b ph b">Shift-Tab</strong>).</li>
+          <li class="- topic/li li">Select content and then use the <strong class="+ topic/ph hi-d/b ph b">Toggle comment</strong> action (contextual menu
+              <strong class="+ topic/ph hi-d/b ph b">Refactoring</strong> submenu) to quickly add an XML comment around it.</li>
+          <li class="- topic/li li">In the <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu-x-modes2.html" target="_blank" rel="external noopener">contextual menu</a> the <strong class="+ topic/ph hi-d/b ph b">Text</strong> submenu contains
+            useful actions to count the number of words in the entire document (or in the selected
+            text), convert the selection to upper, lowercase, or sentence case</li>
+          <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html#author-navigate-document-content__navigating_with_bookmarks" target="_blank" rel="external noopener">Bookmarks</a> - Click the vertical left side bar in
+            the editing area to add a bookmark. Navigate to that bookmark even after the file has
+            been closed using the <strong class="+ topic/ph hi-d/b ph b">Ctrl/CMD + number</strong> shortcut.</li>
+          <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode-x-modes2.html" target="_blank" rel="external noopener">Collapse other folds</a> - Click a fold triangle in
+            the Author visual editing mode and you can choose to close all other folds, useful when
+            working with multiple sections in the same file.</li>
+          <li class="- topic/li li">
+            <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html" target="_blank" rel="external noopener">Code templates</a> - Define small fragments of XML
+              content that can be inserted either by defining a shortcut key or by pressing
+                <strong class="+ topic/ph hi-d/b ph b">ENTER</strong> in the editing area.</p>
+          </li>
+          <li class="- topic/li li">
+            <div class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html" target="_blank" rel="external noopener">Editor variables</a> - Certain Oxygen-specific
+              macros can be automatically expanded. For example, a code template that inserts the
+              current author name can use this editor
+              variable:<pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;author&gt;${author.name}&lt;/author&gt;</code></pre>or a code
+              template that surrounds the selection inside a <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;keyword&gt;</code>
+              element:<pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;keyword&gt;${selection}&lt;/keyword&gt;</code></pre>or a code template
+              that first asks the end user for their name and then inserts it in the
+              document:<pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;author&gt;${ask('Author Name', generic, 'John Doe')}&lt;/author&gt;</code></pre>Code
+              templates can also be used when creating <a class="- topic/xref xref" href="author-document-type-extension-sharing-custom-new-file-templates.html">new file templates</a>.</div>
+          </li>
+          <li class="- topic/li li">Outline Quick find filter - The Outline view contains a filter that can be used to
+            reduce the number of elements displayed in it (for example, display only the contained
+            topics).</li>
+        </ul>
+      </div>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_ukg_nh3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_ukg_nh3_ffb"><h2 class="- topic/title title sectiontitle">DITA-specific Editing in the Author Visual Editing Mode</h2>
+      
+      <div class="- topic/p p">
+        <ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_vvc_4h3_ffb" data-ofbid="dita_oriented_tips_and_tricks__ul_vvc_4h3_ffb">
+          <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-reusable-components-view.html" target="_blank" rel="external noopener">DITA Reusable Components</a> view. You can use this
+            side view to quickly search for and insert references to keys or to reusable
+            components.</li>
+          <li class="- topic/li li">Inserting links to resources. Besides using the toolbar actions you can also:<ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_ycp_514_mfb" data-ofbid="dita_oriented_tips_and_tricks__ul_ycp_514_mfb">
+              <li class="- topic/li li">Drop a file from an outside location. Drag a DITA topic or other resource from the
+                Explorer/Finder or from the Oxygen Project and drop it inside an opened DITA topic
+                to insert a reference to it.</li>
+              <li class="- topic/li li">Paste a URL in the editing area to insert a reference to it.</li>
+            </ul></li>
+          <li class="- topic/li li">Links to images:<ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_sqn_x14_mfb" data-ofbid="dita_oriented_tips_and_tricks__ul_sqn_x14_mfb">
+              <li class="- topic/li li">Drop images from the Project view in the main editing area to insert references to
+                them.</li>
+              <li class="- topic/li li">Copy an image and then paste it in the editing area to insert a reference to
+                it.</li>
+              <li class="- topic/li li">Double-click broken image reference to modify attributes.</li>
+            </ul></li>
+          <li class="- topic/li li">Reuse content:<ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_rhz_1b4_mfb" data-ofbid="dita_oriented_tips_and_tricks__ul_rhz_1b4_mfb">
+              <li class="- topic/li li">Copy an element that has an ID set on it and then right-click elsewhere and use
+                the "<strong class="+ topic/ph hi-d/b ph b">Paste Special → Paste as content reference</strong>" to insert a content
+                reference to the element.</li>
+            </ul></li>
+          <li class="- topic/li li">Select multiple sibling paragraphs and use the <strong class="+ topic/ph hi-d/b ph b">Insert list item</strong> toolbar item to
+            convert them all to list items. Select multiple list items and use the <strong class="+ topic/ph hi-d/b ph b">Insert
+              table</strong> toolbar action to convert them to a table.</li>
+          <li class="- topic/li li">Working with tables:<ul class="- topic/ul ul" id="dita_oriented_tips_and_tricks__ul_x4b_l33_ffb" data-ofbid="dita_oriented_tips_and_tricks__ul_x4b_l33_ffb">
+              <li class="- topic/li li">You can right-click inside a table and use the <strong class="+ topic/ph hi-d/b ph b">Table Properties</strong> action to
+                change lots of table-related settings.</li>
+              <li class="- topic/li li">You can sort tables based on certain criteria.</li>
+              <li class="- topic/li li">In the contextual menu <strong class="+ topic/ph hi-d/b ph b">Refactoring</strong> submenu you can find actions to convert
+                between CALS and simple tables.</li>
+              <li class="- topic/li li">You can select an entire table by clicking its left corner and select an entire
+                row by clicking to the left of it.</li>
+            </ul></li>
+          <li class="- topic/li li"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/image-map-dita-x-dita2.html" target="_blank" rel="external noopener">Add hotspots to images</a> - You can right-click any
+            image reference and use the <strong class="+ topic/ph hi-d/b ph b">Image Map Editor</strong> to configure target links for
+            various parts of the image.</li>
+          <li class="- topic/li li">You can right-click inside an element and use the <strong class="+ topic/ph hi-d/b ph b">About Element</strong> contextual menu
+            item to find out more about it.</li>
+          <li class="- topic/li li">Pasting content from web browsers, Excel spreadsheets, or Word documents inside a DITA
+            topic produces the equivalent DITA content.</li>
+          <li class="- topic/li li">The <strong class="+ topic/ph hi-d/b ph b">Styles</strong> drop-down toolbar menu allows you to choose between various CSS
+            styles to apply while editing. The <strong class="+ topic/ph hi-d/b ph b">Hints</strong> and <strong class="+ topic/ph hi-d/b ph b">Inline actions</strong> layers should
+            be interesting for you to experiment with. Or you can <a class="- topic/xref xref" href="customizeDITACSS.html">add your own</a>.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_ecn_2k3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_ecn_2k3_ffb"><h2 class="- topic/title title sectiontitle">Preferences:</h2>
+      
+      <p class="- topic/p p">Oxygen has a lot of global settings that can be configured, I will just list what I
+        consider to be the most important ones:</p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-menu-shortcut-keys.html" target="_blank" rel="external noopener">Menu shortcut keys</a> - You can use this preferences
+        page to assign or to see the shortcut for any action available in Oxygen.</p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-fonts.html" target="_blank" rel="external noopener">Fonts</a> - This page allows you to change the default
+        fonts used in the application.</p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-appearance.html" target="_blank" rel="external noopener">Appearance</a> - Change the default color theme in
+        Oxygen (the <strong class="+ topic/ph hi-d/b ph b">Graphyte</strong> theme is quite popular).</p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-spell-check.html" target="_blank" rel="external noopener">Spell check</a> - Customize the spell checker settings,
+        use custom spell check dictionaries.</p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html" target="_blank" rel="external noopener">Save</a> - Settings to automatically save or to check
+        for errors before saving the file.</p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-external-tools.html" target="_blank" rel="external noopener">External tools</a> - Define various command line tools
+        that you can launch from Oxygen.</p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-content-completion-annotations.html" target="_blank" rel="external noopener">Annotations</a> - Disable the tooltips which appear when
+        hovering over various elements (useful if you have a small screen).</p>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_edt_dk3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_edt_dk3_ffb"><h2 class="- topic/title title sectiontitle">Tools</h2>
+      
+      <p class="- topic/p p">The <strong class="+ topic/ph hi-d/b ph b">Tools</strong> main menu is worth exploring sometimes. You can invoke XML refactoring
+        actions from it or open other small applications like the SVG viewer.</p>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_fdt_dk3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_fdt_dk3_ffb"><h2 class="- topic/title title sectiontitle">Import</h2>
+      
+      <p class="- topic/p p">The <strong class="+ topic/ph hi-d/b ph b">File</strong> menu offers the possibility to import HTML, CSV, Excel files, or database
+        content as XML.</p>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_gdt_dk3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_gdt_dk3_ffb"><h2 class="- topic/title title sectiontitle">Other Views and Toolbars:</h2>
+      
+      <p class="- topic/p p">You can right-click in the toolbar area and use the <strong class="+ topic/ph hi-d/b ph b">Configure Toolbars</strong> action to see
+        what toolbars are available or what toolbars can be removed.</p>
+      <p class="- topic/p p">The <strong class="+ topic/ph hi-d/b ph b">Symbols</strong> toolbar is quite interesting if you often want to insert symbols that
+        are not on the current keyboard.</p>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_hdt_dk3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_hdt_dk3_ffb"><h2 class="- topic/title title sectiontitle">Other Small Tips:</h2>
+      
+      <p class="- topic/p p">The main <strong class="+ topic/ph hi-d/b ph b">Window</strong> menu has actions to tile all opened XML documents and also to enable
+        synchronous scrolling in them (useful if you want to look at similar XML documents and maybe
+        to copy/paste between them).</p>
+    </section>
+    <section class="- topic/section section" id="dita_oriented_tips_and_tricks__section_jdt_dk3_ffb" data-ofbid="dita_oriented_tips_and_tricks__section_jdt_dk3_ffb"><h2 class="- topic/title title sectiontitle">Keeping in Touch</h2>
+      
+      <p class="- topic/p p">Oxygen's <strong class="+ topic/ph hi-d/b ph b">Help</strong> menu allows you to use the <strong class="+ topic/ph hi-d/b ph b">Report problem</strong> action to contact us
+        directly. The <strong class="+ topic/ph hi-d/b ph b">Support Tools-&gt;Randomize XML Content</strong> action allows you to randomize the
+        content of an XML project before sending it to us for tests.</p>
+      <p class="- topic/p p">And there are a lot of other ways to get in touch with us or to find various videos or
+        tutorials to read: <a class="- topic/xref xref" href="https://www.oxygenxml.com/technical_support.html" target="_blank" rel="external noopener">https://www.oxygenxml.com/technical_support.html</a>.</p>
+    </section>
+  </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        <div id="oxygen-feedback-frame-container"><script id="feedback-init" src="https://feedback.oxygenxml.com/app/init/init.js?deploymentToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkZXBsb3ltZW50SWQiOjIwMn0.55iY3IzfEYj5L2POslBxgyDocWSWm4YISz-C8shjEkFCUwaAF9CBr847SGuk7kPdynJYzohOipkDtjh9on_HHA"><!-- --></script></div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div id="wh_topic_toc_content">
+		                        
+	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_gld_tbs_gfb" data-tocid="dita_oriented_tips_and_tricks__section_gld_tbs_gfb">Add-ons</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_pwy_nd4_mfb" data-tocid="dita_oriented_tips_and_tricks__section_pwy_nd4_mfb">Project-related Functionality:</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_uf1_ncs_gfb" data-tocid="dita_oriented_tips_and_tricks__section_uf1_ncs_gfb">Navigation:</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_d3n_xg3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_d3n_xg3_ffb">Find/Replace Functionality</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_syz_dg3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_syz_dg3_ffb">DITA Maps Manager</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_l1g_sg3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_l1g_sg3_ffb">Editing in the Author Visual Editing Mode</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_ukg_nh3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_ukg_nh3_ffb">DITA-specific Editing in the Author Visual Editing Mode</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_ecn_2k3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_ecn_2k3_ffb">Preferences:</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_edt_dk3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_edt_dk3_ffb">Tools</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_fdt_dk3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_fdt_dk3_ffb">Import</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_gdt_dk3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_gdt_dk3_ffb">Other Views and Toolbars:</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_hdt_dk3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_hdt_dk3_ffb">Other Small Tips:</a></div></li><li class="section-item"><div class="section-title"><a href="#dita_oriented_tips_and_tricks__section_jdt_dk3_ffb" data-tocid="dita_oriented_tips_and_tricks__section_jdt_dk3_ffb">Keeping in Touch</a></div></li></ul></div>
+	                        	
+                        	</div>
+                        </nav>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="footer">
+    <div class="container-fluid">
+        <div class="col-md-3" id="quick_links">
+            <div>
+                <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook" title="Facebook" target="_blank">
+                    <img src="../oxygen-webhelp/template/resources/images/facebook.png"/>
+                </a>
+                <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube" title="Youtube Channel" target="_blank">  
+                    <img src="../oxygen-webhelp/template/resources/images/you-tube.png"/>
+                </a>
+                <a href="http://twitter.com/oxygenxml" class="lk-blog" title="Twitter" target="_blank">  
+                    <img src="../oxygen-webhelp/template/resources/images/twitter.png"/>
+                </a>
+                <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">  
+                    <img src="../oxygen-webhelp/template/resources/images/linkedin.png"/>
+                </a>
+            </div>
+            <!--<a href="/terms_of_use.html">Terms of Use</a> | <a href="/privacy_policy.html">Privacy Policy
+                    </a>-->
+        </div>
+        
+        <div class="col-md-6">
+            
+            <div id="copy"> © 2002-2022 SyncRO Soft SRL. All rights reserved. 
+                <div><p> This website was created &amp; generated with
+                    Oxygen<sup>®</sup> <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 b-flavours">
+            <a type="application/rss+xml" href="/rss.xml">RSS</a>
+            <a href="/oxygen_xml_blog.pdf">PDF</a>
+            <a href="/oxygen_xml_blog.epub">EPUB</a>
+        </div>
+        
+            
+        
+    </div>
+    
+    <script>
+        $(".get-started").click(function() {
+            $([document.documentElement, document.body]).animate({
+               
+               scrollTop: $(".stripe-latest-posts").offset().top - 90
+            }, 1000);
+        });
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-2331448-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-2331448-3');
+    </script>
+    
+    
+    <style>
+        <!--@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400');-->
+        
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview *{
+        box-sizing: border-box !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
+        width: 100% !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
+        margin-top: 20px !important;
+        width: 100% !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+        width: 100% !important;
+        height: 40px !important;
+        border-radius: 6px !important;
+        border: 2px solid #e9e8e8 !important;
+        background-color: #fff !important;
+        outline: none !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+        color: #000000 !important;
+        font-family: "Montserrat" !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+        text-align: center !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
+        color: #000000 !important;
+        opacity: 1 !important;
+        }
+        
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:-ms-input-placeholder {
+        color: #000000 !important;
+        }
+        
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::-ms-input-placeholder {
+        color: #000000 !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
+        margin-top: 10px !important;
+        width: 100% !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
+        width: 100% !important;
+        height: 40px !important;
+        border: 0 !important;
+        border-radius: 6px !important;
+        line-height: 0px !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
+        cursor: pointer !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
+        color: #231f20 !important;
+        font-family: "Montserrat" !important;
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        line-height: 25px !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 10px !important;
+        }
+        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
+        margin-left: 10px !important;
+        height: 1.13em !important;
+        max-height: 1.13em !important;
+        }
+    </style>
+</div><!--
+
+<div>
+<div>
+    <a type="application/rss+xml" href="/rss.xml">RSS</a>
+|<a href="/oxygen_xml_blog.pdf">PDF</a>
+|<a href="/oxygen_xml_blog.epub">EPUB</a>
+    
+</div>
+
+</div>-->
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        <div>
+    <script src="../oxygen-webhelp/template/resources/js/syncro.js"></script>
+    
+</div>
+    </body>
+</html>

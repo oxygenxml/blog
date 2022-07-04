@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="all_about_oxygen_add_ons" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="topic:1;3:38" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:1;4:12">Oxygen Add-ons Overview</title>
+        <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="prolog:1;5:17">
+                <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="author:1;6:25">Radu Coravu</author>
+                <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="critdates:1;7:28">
+                        <created date="2020-01-18" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="created:1;8:78"/>
+                </critdates>
+        </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:1;12:12"><ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:1;12:33">Oxygen XML Editor</ph> can be extended to support new functionalities and vocabularies.
+            These extensions can be either plugins or frameworks: <xref href="https://www.oxygenxml.com/doc/ug-editor/dev_guide/introduction-dev-guide.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:1;15:49"/>.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:2;16:20">This blog post is intended as a small overview of <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:2;16:91">Oxygen XML Editor</ph> add-ons,
+                        what they are, sample add-ons implemented by third parties, sample add-ons
+                        implemented by us and where we want to go from here.</p>
+                <section id="section_en5_nrp_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:1;19:51"><title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:2;19:58">Short History of Frameworks Support in <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:3;20:58">Oxygen XML Editor</ph></title><ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:1;20:70">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:1;21:37">The concept of framework appeared around <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:4;21:99">Oxygen XML Editor</ph>
+                                        version 9.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:3;22:54">A framework (or document type) is a means to
+                                                group together resources for editing, rendering and
+                                                validating a specific XML vocabulary: <xref href="https://www.oxygenxml.com/doc/ug-editor/glossary/framework.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:2;26:83"/>.</p></li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:2;27:37">Originally frameworks could be manually installed by being
+                                        copied to the
+                                                <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="filepath:1;29:59">OXYGEN_INSTALL_DIR\frameworks</filepath>
+                                        folder or by setting them up in the Preferences page.
+                                                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:4;31:52">Around version 14 we added support to pack
+                                                plugins and frameworks as <xref href="packing-add-ons.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:3;33:79" type="topic"><?ditaot usertext?>add-ons</xref> and
+                                                thus automate the installation process.</p></li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:3;35:37">In version 16 we added support to extend a base framework. Such
+                                        an extension can be afterwards be bundled as an add-on.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:4;37:37">A sample framework extension add-on which adds custom visual
+                                        display support can be found here: <xref href="https://github.com/oxygenxml/dita-author-slides" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:4;40:80"><?ditaot usertext?>DITA Topics as
+                                                Slides</xref>.</li>
+                        </ul></section>
+        <section id="section_ryq_zqp_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:2;43:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:3;44:20">Short History of Plugin Support in <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:5;44:76">Oxygen XML Editor</ph></title>
+                        <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:2;45:29">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:5;46:37">The initial support for plugins was primitive, it allowed adding
+                                        a contextual menu action in the Text editing mode for
+                                        manipulating the selected content: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/text-editing-mode-plugins.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:5;50:81"/>.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:6;51:37">In version 11.2 the Workspace Access plugin type was added:
+                                                <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/workspace-access-plugin.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:6;54:81"/>.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:5;54:85">Workspace Access
+                                                plugins allow you to:<ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:3;55:74">
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:7;56:55">Add custom toolbar and menu actions.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:8;57:55">Add custom side views.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:9;58:55">Add various behaviors depending on various
+                                                  events which occur in the application:<ul id="ul_cv3_yx1_qkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:4;60:71">
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:10;61:55">Open, Save, Close documents.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:11;62:55">Switch between document.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:12;63:55">Open or close the application.</li>
+                                                  </ul></li>
+                                                </ul>Such plugins can be implemented either in Java
+                                                or Javascript (since version 17.1).</p></li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:13;67:37">Originally plugins could be manually installed by being copied
+                                        to the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="filepath:2;68:58">OXYGEN_INSTALL_DIR\plugins</filepath>.
+                                        Around version 14 we added support to pack plugins and
+                                        frameworks as <xref href="packing-add-ons.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:7;71:50" type="topic"><?ditaot usertext?>add-ons</xref> and thus automate the installation
+                                        process.</li>
+                        </ul>
+        </section>
+        <section id="section_z4s_kxp_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:3;75:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:4;76:20">Public Hosted Plugins and Frameworks</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:6;77:16">There is an older blog post with an up to date list of <xref href="Oxygen%20plugins%20and%20frameworks.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:8;78:70" type="topic"><?ditaot gentext?>Public hosted Oxygen Plugin and Framework Projects</xref>.</p>
+        </section>
+        <section id="section_eqq_lxp_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:4;80:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:5;81:20">Private Hosted Plugins and Frameworks</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:7;82:16">Content Management Systems like Astoria, Bluestream, Ixiasoft, SDL have implemented
+                                plugins which allow <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:6;83:74">Oxygen XML Editor</ph> to connect to their remote
+                                storage servers.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:8;85:16">There are also lots of privately used frameworks used for editing various varieties
+                                of XML documents inside companies.</p>
+        </section>
+        <section id="section_b52_vwp_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:5;88:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:6;89:20">Why are we (the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:7;89:57">Oxygen XML Editor</ph> team) working on add-ons?</title>
+                        <ul id="ul_nxz_h21_qkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:5;90:49">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:14;91:37">Open source add-ons are useful as samples for third
+                                        parties.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:15;93:37">We can work with external collaborators on add-ons.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:16;94:37">Add-ons can be released at a much faster pace.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:17;95:37">Interns who work for us for a couple of months can implement
+                                        useful functionality without making changes to the
+                                        application main code base.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:18;98:37">We can work on add-ons before <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:8;98:88">Oxygen XML Editor</ph> releases
+                                        when we enter a code freeze stage.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:19;100:37">We can use our own API and abandon the mindset of regarding the
+                                        main application as a monolith.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:20;102:37">Sincerely, working on add-ons is more FUN.</li>
+                        </ul>
+        </section>
+        <section id="section_h14_jwg_lkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:6;105:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:7;106:20">Plugins and Frameworks Developed by <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:9;106:77">Oxygen XML Editor</ph></title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:9;107:16">Samples: <ul id="ul_tdc_nxg_lkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:6;107:49">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:21;108:25">Sample Javascript-based plugins: <xref href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:9;110:83"/>.<ul id="ul_shs_wch_lkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:7;111:71">
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:22;112:55">Apply XSLT filter on open/save.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:23;113:55">Add custom editor variable resolver.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:24;114:55">Impose options.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:25;115:55">Add custom image renderer for Author visual
+                                                  editing mode.</li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:26;117:55">Add custom validation problems filter.</li>
+                                                </ul></li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:27;119:25">Sample Workspace-access plugin Maven based: <xref href="https://github.com/oxygenxml/sample-plugin-workspace-access" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:10;121:61"/></li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:28;122:25">User interface filter plugin: <xref href="https://github.com/oxygenxml/oxygen-components-filter-plugin" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:11;124:61"/></li>
+                </ul></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:10;126:16">Useful add-ons with public sources: <ul id="ul_ub2_ywg_lkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:8;126:76">
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:29;127:45">Git support add-on: <xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:12;129:83"/></li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:30;130:45">Batch Resources Convertor add-on: <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:13;132:83"/></li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:31;133:45">DocBook Validation add-on: <xref href="https://github.com/oxygenxml/oxygen-docbook-validate-check-completeness" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:14;135:83"/></li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:32;136:45">Add-on for connecting to any CMIS-enabled storage server
+                                                (like Alfresco): <xref href="https://github.com/oxygenxml/oxygen-cmis-plugin" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:15;139:83"/>.</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:33;140:45">DITA-specific add-ons:<ul id="ul_ugb_bxg_lkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:9;140:91">
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:34;141:55">Translation helper: <xref href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:16;143:83"/></li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:35;144:55">Prolog updater: <xref href="https://github.com/oxygenxml/oxygen-dita-prolog-updater" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:17;146:83"/></li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:36;147:55">Outgoing References View: <xref href="https://github.com/oxygenxml/oxygen-dita-outgoing-references-view" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:18;149:83"/></li>
+                                                </ul></li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:37;151:45">Support for rendering various image formats in the
+                                                Author visual editing mode:<ul id="ul_jvm_2bh_lkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:10;152:100">
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:38;153:55">EMF: <xref href="https://github.com/oxygenxml/oxygenxml.emf.support" format="support" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:19;155:86"/></li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:39;156:55">CGM: <xref href="https://github.com/oxygenxml/oxygenxml.cgm.support" format="support" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:20;158:86"/></li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:40;159:55">PDF: <xref href="https://github.com/oxygenxml/oxygen-pdf-image" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:21;161:83"/></li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:41;162:55">LaTex: <xref href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/latex-images-support" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:22;164:83"/></li>
+                                                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:42;165:55">PlantUML: <xref href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/plantuml-images-support" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:23;167:83"/></li>
+                                                </ul></li>
+                                </ul></p>
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:11;170:28">Useful add-ons with private repositories (can be installed from
+                                application default add-on update site):<ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:11;171:77">
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:43;172:45">Content Fusion Oxygen add-on - bundled with Oxygen.</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:44;173:45">WebHelp Feedback Oxygen add-on.</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:45;174:45">Emmet plugin for Oxygen.</li>
+                                </ul></p>
+        </section>
+                <section id="section_hrm_2yj_rkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:7;177:51">
+                        <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:8;178:32">Using Frameworks and Plugins in the <ph keyref="webauthor" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:10;178:92">WebAuthor</ph> in-browser
+                                editor</title>
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:12;180:28">The <ph keyref="webauthor" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:11;180:56">WebAuthor</ph> in-browser editing tool reuses on the server most of the
+                                internal architecture of an <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:12;181:82">Oxygen XML Editor</ph> standalone
+                                version:</p>
+                        <ul id="ul_ars_xzj_rkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:12;183:49">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:46;184:37">The <xref href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:24;186:80"><?ditaot usertext?><ph keyref="webauthor" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:13;186:104">WebAuthor</ph></xref> can
+                                        use for editing XML vocabularies the same framework
+                                        configurations used in <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:14;188:85">Oxygen XML Editor</ph>: <xref href="https://www.oxygenxml.com/doc/ug-waCustom/topics/customizing_frameworks.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:25;190:81"/></li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:47;191:37"><xref href="https://www.oxygenxml.com/doc/ug-waCustom/topics/customizing_plugins.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="xref:26;193:80"><?ditaot usertext?>Plugins</xref> can be
+                                        implemented to connect the <ph keyref="webauthor" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:15;194:92">WebAuthor</ph> to various
+                                        servers.</li>
+                        </ul>
+                </section>
+                <section id="section_cny_ddh_lkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="section:8;198:51">
+                        <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="title:9;199:32">Where can we go from here?</title>
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:13;200:28">Possible future plugins we can work on:<ul id="ul_mf5_jdh_lkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:13;200:91">
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:48;201:45">Support for Google Drive (already available in
+                                                <ph keyref="webauthor" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:16;202:73">WebAuthor</ph>)</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:49;203:45">Support for Perforce (already available in
+                                                <ph keyref="webauthor" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ph:17;204:73">WebAuthor</ph>)</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:50;205:45">Use Grammarly for spell check (no API available on
+                                                Grammarly side)</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:51;207:45">Presentation mode plugin (increase fonts, disable
+                                                certain settings).</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:52;209:45">Context side view plugin using XPath with support for
+                                                favorite expressions.</li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:53;211:45">Plugin which highlights various characters or ­text
+                                                fragments in the content.</li>
+                                </ul></p>
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:14;214:28">Possible new API enhancements:<ul id="ul_ucd_f2h_lkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="ul:14;214:82">
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="li:54;215:45">Add support for a plugin to contribute a custom editing
+                                                perspective (toolbars/views arrangement).</li>
+                                </ul></p>
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/all_about_oxygen_add_ons.dita" xtrc="p:15;218:28">Besides the possible enhancements listed below, we want your feedback. So
+                                are you using Oxygen add-ons? Are you developing such add-ons? What
+                                do you need from us to better support your use cases?</p>
+                </section>
+    </body>
+</topic>

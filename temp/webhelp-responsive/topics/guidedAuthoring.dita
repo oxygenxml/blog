@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_pvf_tqf_kw" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="topic:1;3:30" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:1;4:10">Guided DITA Authoring Solution Overview</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:1;9:8">We have some past blog posts about how Oxygen can be used to impose various editing behaviors
+      for your team. In this one, will try to bring all of these solutions together in a
+      comprehensive overview.</p>
+    <section id="section_gdc_fvf_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:1;12:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:2;13:14">Learning to Work with DITA and Oxygen</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:2;14:10">You can find useful links for learning how to edit DITA using Oxygen in this previous blog
+        post: <xref href="learnDita.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:1;17:13" type="topic"><?ditaot gentext?>Resources for learning DITA with Oxygen</xref>.</p>
+    </section>
+    <section id="section_ohc_55f_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:2;19:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:3;20:14">Migrating to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:3;21:10">There are multiple reasons why you would want to migrate from unstructured content to
+        structured: <xref href="migratingToDITA.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:2;23:40" type="topic"><?ditaot gentext?>Migrating to a Structured Standards-based Documentation Solution</xref>. </p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:4;24:10">This older blog post details some possibilities of migrating Word documents to DITA: <xref href="migrateWordToDita.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:3;25:40" type="topic"><?ditaot gentext?>How to Migrate from Word to DITA</xref>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:5;26:10">You also have ways to migrate from XML-based standards (like DocBook or XHTML to DITA)
+        using a set of predefined transformation scenarios.</p>
+    </section>
+    <section id="section_ncf_bhg_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:3;29:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:4;30:14">Restricting the Visual Editing Experience</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:6;31:10">The entire visual editing experience in Oxygen's <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:1;31:62">Author</b> editing mode is driven by
+          <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:2;32:14">CSS</b>. Oxygen has support for defining various CSS layers that can be applied when
+        editing DITA content. For example, if you choose to create a Lightweight DITA topic in
+        Oxygen, it has a special editing layer that contributes a combination of buttons, hints, and
+        form controls designed to assist and guide the author. The following blog post details how a
+        custom CSS that will be used to enhance the visual editing experience can be created and
+        shared with others: <xref href="customizeDITACSS.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:4;38:41" type="topic"><?ditaot gentext?>Customizing the DITA Visual Editing Experience</xref>.</p>
+    </section>
+    <section id="section_lgg_mvf_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:4;40:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:5;41:14">Implementing Your own Style Guide</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:7;42:10">Suppose you are a team of technical writers collaborating on a DITA-based project and you
+        have your own various best practices in regards to which elements to use and when to use
+        them. So, at some point you gather a set of HTML resources that explain how various DITA
+        elements should be used, you store them on an internal server, and you want all your team
+        members to have access to that set of HTML resources directly from Oxygen. This blog post
+        provides more details and useful links to help you get started: <xref href="styleguide.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:5;48:35" type="topic"><?ditaot gentext?>Implementing your own Style Guide</xref>.</p>
+    </section>
+    <section id="section_n4s_jwf_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:5;50:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:6;51:14">Imposing Controlled Attribute Values</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:8;52:10">If you want to impose DITA attribute values that need to be set for profiling or general
+        use, this blog post should cover all you need to know about this: <xref href="controlledAttributeValues.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:6;53:120" type="topic"><?ditaot gentext?>Controlled Attribute Values for your DITA Project</xref>.</p>
+    </section>
+    <section id="section_rwd_4wf_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:6;55:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:7;56:14">Imposing Business Rules and Structure Restrictions to the DITA Content</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:9;57:10">In most cases, instead of relying on people to memorize numerous internal documentation
+        style rules, you can convert many of these rules to Schematron and allow the application to
+        automatically signal the content author when a rule is violated. You can also add quick
+        fixes to provide authors various ways to rectify the problem. This blog post contains more
+        details about this: <xref href="SchematronBCs.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:7;62:38" type="topic"><?ditaot gentext?>Schematron Checks to help Technical Writing</xref>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:10;63:10">The DITA framework can be extended to add new Schematron rules: <xref href="sharing_schematron_validation_rules.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:8;64:58" type="topic"><?ditaot gentext?>Sharing Schematron Validation Rules</xref>.</p>
+    </section>
+    <section id="section_xpf_cyf_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:7;66:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:8;67:14">Running Batch Validation Checks on all of Your DITA Content</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:11;68:10">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:3;68:17">Validate and Check For Completeness</b> tool available in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:4;68:82">DITA Maps
+          Manager</b> view performs a lot of different consistency checks on all your DITA topics.
+        It can also be used to apply <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:5;70:41">Schematron</b> business rules on all of your topics: <xref href="validateCheckForCompletness.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:9;71:52" type="topic"><?ditaot gentext?>DITA Map Validate and Check for Completeness Overview</xref>.</p>
+    </section>
+    <section id="section_av5_zwf_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:8;73:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:9;74:14">Sharing DITA Editing Customizations with Your Team</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:12;75:10">Most of the custom editing behaviors, toolbar, and menu buttons that are available when
+        editing DITA content are defined in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:6;76:52">DITA</b> framework configuration. A framework
+        configuration's general anatomy is described here: <xref href="oxygenFrameworks.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:10;78:41" type="topic"><?ditaot gentext?>The Oxygen SDK (Part 2: Frameworks)</xref>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:13;79:10">The framework configuration can be shared with all of your team members. For example, here
+        is a way to restrict team members from using certain DITA elements: <xref href="author-document-type-extension-sharing.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:11;81:63" type="topic"><?ditaot gentext?>Document Type Extension Sharing</xref>. </p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:14;82:10">Furthermore, here is a way to distribute new DITA file templates to your team: <xref href="author-document-type-extension-sharing-custom-new-file-templates.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:12;83:87" type="topic"><?ditaot gentext?>Sharing New Custom File Templates for a Specific Vocabulary</xref>.</p>
+    </section>
+    <section id="section_lqh_fxf_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:9;85:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:10;86:14">Sharing Global Application Settings with Your Team</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:15;87:10">Suppose you want all of your team members to enable the automatic spell checker when
+        writing documentation, or you want all of them to use a custom term dictionary or a custom
+        set of learned words. This older blog post offers some hints about how global Oxygen
+        settings can be distributed to your team members: <xref href="sharingSettings.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:13;91:40" type="topic"><?ditaot gentext?>Sharing Application Settings</xref>.</p>
+    </section>
+    <section id="section_hhl_scg_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:10;93:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:11;94:14">Collaboration, Content Management, and Version Tracking</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:16;95:10">All major Content Management Systems (CMSs) have plugins that can be installed in Oxygen to
+        provide access to the CMS: <xref href="https://www.oxygenxml.com/partners.html#cmssolutionpartners" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:14;98:29"/>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:17;99:10">Even if you lack the funds to buy a commercial CMS, there are still plenty of open source
+        version tracking solutions that provide the possibility of collaboration on a single DITA
+        project: <xref href="collaboration-teams.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:15;102:44" type="topic"><?ditaot gentext?>Collaboration (Teams working on a common XML project)</xref>. For
+        example, the Oxygen User's Manual is written in <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:7;103:60">DITA</b> and we use a <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="b:8;103:85">GitHub</b>
+        private repository to collaborate on it: <xref href="collaboration-for-documenting-software.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:16;105:63" type="topic"><?ditaot gentext?>Collaboration for Documenting a Software Product using DITA</xref>.</p>
+    </section>
+    <section id="section_wql_wyh_kw" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="section:11;107:38">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="title:12;108:14">Allowing Subject Matter Experts to Review Content</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:18;109:10">Many technical writers are interested in having their content reviewed by the subject
+        matter experts who are directly involved in building the tools. Oxygen has support for
+        change tracking and adding comments directly in the edited content. Subject matter experts
+        do not necessarily need to have the standalone version of Oxygen installed. The Oxygen Web
+        Author is an online editing and reviewing solution that allows them to add comments and
+        propose changes directly in the DITA content by using any device with a web browser (laptop,
+        tablet, phone): <xref href="https://www.oxygenxml.com/xml_web_author.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="xref:17;116:30"/>.</p>
+    </section>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/guidedAuthoring.dita" xtrc="p:19;118:8">I hope this overview will help you to implement a complete guided authoring experience using
+      Oxygen. As usual, if you have any questions or suggestions, they are welcome.</p>
+  </body>
+</topic>

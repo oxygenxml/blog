@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="embedding_diagrams_in_dita_topics_using_plantuml" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="topic:1;3:62" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="title:1;4:12">Embedding Diagrams in DITA topics using PlantUML</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <metadata class="- topic/metadata " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="metadata:1;7:19">
+            <keywords class="- topic/keywords " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="keywords:1;8:23">
+                <keyword outputclass="label" class="- topic/keyword " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="keyword:1;9:46">DITA Diagrams</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="body:1;13:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="p:1;14:12"><xref href="https://plantuml.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="xref:1;14:78"><?ditaot usertext?>PlantUML</xref> is a
+            neat library that takes textual descriptions of diagrams and produces visual diagrams
+            from them. </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="p:2;17:12">Suppose you have a DITA topic that embeds such a textual description of a diagram: <xref href="https://github.com/oxygenxml/dita-ot-diagrams-plugin/blob/master/com.oxygenxml.diagrams.svg/samples/testPlantUMLDiagram.dita" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="xref:2;19:49"/>.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="p:3;20:12"><image id="image_lmd_jzh_ckb" href="../images/previewPlantUML.png" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="image:1;21:55" dita-ot:image-width="851" dita-ot:image-height="766" dita-ot:horizontal-dpi="120" dita-ot:vertical-dpi="120"/></p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="p:4;22:12">To provide support in Oxygen for using such diagrams in DITA topics, you need to install
+            the following components:<ul id="ul_s2r_yyh_ckb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="ul:1;23:62">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="li:1;24:21">An Oxygen plugin that presents PlantUML textual descriptions as images when
+                    editing the content in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="b:1;25:51">Author</b> visual editing mode: <xref href="https://github.com/oxygenxml/wsaccess-javascript-sample-plugins/tree/master/plantuml-images-support" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="xref:3;27:57"/>. </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="li:2;28:21">A DITA Open Toolkit publishing plugin that, once installed in the DITA Open
+                    Toolkit, will convert the textual descriptions to diagrams for both the
+                    HTML-based and PDF outputs: <xref href="https://github.com/oxygenxml/dita-ot-diagrams-plugin" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="xref:4;32:43"/>.</li>
+            </ul></p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="p:5;34:12">Once you have this setup, you can both visualize the diagrams when editing and publish
+            them while having the diagram representations dynamically converted to SVG in the
+            published output.</p>
+    </body>
+    <related-links class="- topic/related-links " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="related-links:1;38:20">
+        <link href="embedding_diagrams_in_dita_topics_using_mermaid.dita" class="- topic/link " xtrf="file:/D:/syncprojects/blog/topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" xtrc="link:1;39:76" type="topic"><?ditaot gentext?><linktext class="- topic/linktext ">Embedding Diagrams in DITA Topics Using Mermaid</linktext></link>
+    </related-links>
+</topic>

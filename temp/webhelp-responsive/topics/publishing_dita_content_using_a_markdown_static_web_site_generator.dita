@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="publishing_dita_content_using_a_markdown_static_web_site_generator" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="topic:1;3:80" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="title:1;4:12">Publishing DITA Content Using the MKDocs Web Site Generator</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="critdates:1;7:20">
+            <created date="2021-12-23" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="p:1;12:12"><xref href="https://www.mkdocs.org/getting-started/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="xref:1;13:18"><?ditaot usertext?>MKDocs</xref> is a static site generator that is geared towards building project
+            documentation. Documentation source files are written in Markdown and configured with a
+            single YAML configuration file.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="p:2;16:12">Here is how to use DITA XML content to build a static site with MKDocs:<ol class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="ol:1;16:87">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:1;17:21">Open your DITA map in the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="ph:1;17:68">Oxygen XML Editor</ph>
+                    <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="uicontrol:1;18:32">DITA Maps Manager</uicontrol> view. For my example, I will use the
+                        <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="filepath:1;19:35">OXYGEN_INSTALL_DIR/samples/flowers/flowers.ditamap</filepath>
+                    sample.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:2;21:21">Use the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="uicontrol:2;21:40">Configure Transformation Scenarios</uicontrol> toolbar
+                    button, create a new transformation scenario of type <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="uicontrol:3;22:85">DITA-OT
+                        transformation</uicontrol> and choose <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="uicontrol:4;23:74">GitHub-flavored
+                        Markdown</uicontrol> as the transformation type.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:3;25:21">In the transformation scenario's <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="uicontrol:5;25:65">Output</uicontrol> tab, you can
+                    configure the folder where the Markdown content should be generated.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:4;27:21">Use the new transformation scenario to transform your DITA content into
+                    Markdown.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:5;29:21">Install the <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="i:1;29:36">mkdocs</i> package on your system: <xref href="https://www.mkdocs.org/getting-started/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="xref:2;31:43"/>.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:6;32:21">Create a new project using the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="codeph:1;32:60">mkdocs</codeph> command
+                    line:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="codeblock:1;33:37">Developer$ mkdocs new flowers
+INFO     -  Creating project directory: flowers
+INFO     -  Writing config file: flowers/mkdocs.yml
+INFO     -  Writing initial docs: flowers/docs/index.md
+Developer$ cd flowers</codeblock></li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:7;38:21">In the created project's <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="filepath:2;38:56">flowers/docs</filepath> folder, copy the
+                    entire set of Markdown files produced by publishing the DITA content.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:8;40:21">Use the <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="i:2;40:32">mkdocs</i> serve command to start a local web
+                    server:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="codeblock:2;41:39">Developer:flowers $ mkdocs serve
+INFO     -  Building documentation...
+INFO     -  Cleaning site directory
+INFO     -  Documentation built in 0.24 seconds
+INFO     -  [14:03:38] Serving on http://127.0.0.1:8000/</codeblock></li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:9;46:21">Open the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="filepath:3;46:40">flowers/mkdocs.yml</filepath> file and configure it further,
+                    change the name of the project to something more appropriate (e.g.
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="b:1;48:28">Flowers</b>). Change the theme to some other theme supported by
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="codeph:2;49:33">mkdocs</codeph> (e.g.
+                            <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="uicontrol:6;50:40">readthedocs</uicontrol>).<codeblock id="codeblock_kqh_42h_vrb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="codeblock:3;50:103">site_name: Flowers
+theme: readthedocs</codeblock><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="p:3;51:34"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="b:2;51:37">Result:</b> Back in the browser, the
+                        new site name and color theme should be applied, the search should work, and
+                        by default, the table of contents presents the files in the order that they
+                        appear on disk:</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="p:4;54:47">
+                        <image href="../images/mkdocs_toc.png" width="600" id="image_kq3_42h_vrb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="image:1;56:27" dita-ot:image-width="2230" dita-ot:image-height="1048" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="p:5;56:34">The <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="filepath:4;56:48">flowers/docs/index.md</filepath> file contains the
+                        table of contents derived from the original DITA map structure. Its contents
+                        can be used to create a navigation map which can be included in the
+                            <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="filepath:5;59:39">flowers/mkdocs.yml</filepath> configuration file.</p></li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:10;60:21">Open the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="filepath:6;60:40">index.md</filepath> file generated from the DITA map in <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="ph:2;61:42">Oxygen XML Editor</ph> and in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="uicontrol:7;61:65">HTML</uicontrol> preview right click
+                    and choose to export as HTML.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:11;63:21">Create an XSLT stylesheet that when applied over the HTML content, it generates
+                    the entire structure of the table of
+                    contents:<codeblock outputclass="language-xml" id="codeblock_djt_42h_vrb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="codeblock:4;65:95">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    version="2.0"&gt;
+    &lt;xsl:output method="text"/&gt;
+    &lt;xsl:template match="/"&gt;
+        &lt;xsl:apply-templates select="//*:a"/&gt;
+    &lt;/xsl:template&gt;
+    &lt;xsl:template match="*:a"&gt;
+        &lt;xsl:variable name="noDescendents" select="count(parent::*:li/descendant::*:li)"/&gt;
+        &lt;xsl:for-each select="ancestor-or-self::*:li"&gt;&lt;xsl:text&gt;  &lt;/xsl:text&gt;&lt;/xsl:for-each&gt;- &lt;xsl:value-of select="text()"/&gt;:&lt;xsl:choose&gt;&lt;xsl:when test="$noDescendents = 0"&gt;&lt;xsl:value-of select="@href"/&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:text&gt;
+  &lt;/xsl:text&gt;&lt;xsl:for-each select="ancestor-or-self::*:li"&gt;&lt;xsl:text&gt;  &lt;/xsl:text&gt;&lt;/xsl:for-each&gt;- &lt;xsl:value-of select="text()"/&gt;:&lt;xsl:value-of select="@href"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;
+        &lt;xsl:text&gt;
+&lt;/xsl:text&gt;
+    &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</codeblock></li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="li:12;81:21">Apply the stylesheet over the HTML content to produce the content that gets
+                    included in the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="filepath:7;82:47">flowers/mkdocs.yml</filepath> configuration
+                            file:<codeblock id="codeblock_fjt_42h_vrb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="codeblock:5;83:72">site_name: Flowers
+nav:
+    - Home: index.md
+    - Introduction: topics/introduction.md
+    - Care and Preparation: topics/care.md
+    - Pruning: tasks/pruning.md
+    - Garden Preparation: tasks/gardenPreparation.md
+    - Flowers by Season: topics/index.md
+    - Spring Flowers: concepts/springFlowers.md
+    - Iris: topics/flowers/iris.md
+    - Snowdrop: topics/flowers/snowdrop.md
+    - Summer Flowers: concepts/summerFlowers.md
+    - Gardenia: topics/flowers/gardenia.md
+    - Lilac: topics/flowers/lilac.md
+    - Autumn Flowers: concepts/autumnFlowers.md
+    - Chrysanthemum: topics/flowers/chrysanthemum.md
+    - Salvia: topics/flowers/salvia.md
+    - Winter Flowers: concepts/winterFlowers.md
+    - Gerbera: topics/flowers/gerbera.md
+    - Genus: concepts/glossaryGenus.md
+    - Pollination: concepts/glossaryPollination.md
+    - Sepal: concepts/glossarySepal.md
+    - Rhizome: concepts/glossaryRhizome.md
+    - Bulb: concepts/glossaryBulb.md
+    - Cultivar: concepts/glossaryCultivar.md
+    - Perennial: concepts/glossaryPerennial.md
+    - Panicle: concepts/glossaryPanicle.md
+    - Copyright: topics/copyright.md
+theme: readthedocs</codeblock><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="p:6;111:34"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="b:3;111:37">Result:</b> Now the output should
+                        have the table of contents generated from the original DITA
+                            map:</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="p:7;113:40"><image href="../images/properTocMKDocs.png" width="600" id="image_hjt_42h_vrb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita" xtrc="image:2;114:53" dita-ot:image-width="1680" dita-ot:image-height="844" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p></li>
+            </ol></p>
+    </body>
+</topic>

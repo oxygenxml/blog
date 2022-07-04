@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_c3q_lqd_vt" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="topic:1;3:30" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="title:1;4:10">How Special Paste works in Oxygen</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="p:1;9:8">If you've worked with one of the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:1;9:44">XML</b> vocabularies for which Oxygen has out of the box
+      support like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:2;10:23">DITA</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:3;10:36">Docbook</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:4;10:52">TEI</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:5;10:64">XHTML</b> you've probably already
+      used the support Oxygen has for converting content pasted in the application from external
+      applications like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:6;12:28">Microsoft Word</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:7;12:51">Excel</b> or from any <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:8;12:76">web browser</b>. This is
+      a very useful feature for converting various types of content to XML because it preserves and
+      converts styling, links, lists, tables and image references. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="p:2;15:8">The feature relies on the fact that when copying content in the applications mentioned above,
+      they set in the clipboard the HTML equivalent of the copied content. So all Oxygen has to do
+      is clean up that HTML, make it wellformed XHTML and apply conversion XSLT stylesheets over
+      it.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="p:3;19:8">This support is not hardcoded and anybody who is developing an <xref href="oxygenFrameworks.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="xref:1;20:36" type="topic"><?ditaot usertext?>Oxygen framework customization</xref> for a certain XML vocabulary can
+      provide conversion stylesheets for external pasted HTML content.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="p:4;22:8">I will describe how this works for the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:9;22:50">DITA</b> framework and you can do the same for
+      yours. You can also use this information to modify the way in which smart paste works for the
+      bundled framework configurations.<ol id="ol_hpf_cc2_vt" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="ol:1;24:63">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="li:1;25:13">In the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="uicontrol:1;25:31">Preferences-&gt;Document Type Association</uicontrol> page you can choose
+          to edit (or extend) the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:10;26:38">DITA</b> document type association.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="li:2;27:13">In the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:11;27:23">Extensions</b> tab the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:12;27:49">Extensions bundle</b> implementation is set to
+            <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:13;28:16">DITAExtensionsBundle</b> which resides in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:14;28:65">DITA</b> Java extensions archive
+            <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:15;29:16">dita.jar</b>.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="li:3;30:13">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:16;30:20">DITAExtensionsBundle</b> is an extension of the <xref href="https://www.oxygenxml.com/doc/ug-editor/index.html#tasks/dg-extensions-bundle.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="xref:2;32:44"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:17;32:47">ExtensionsBundle</b></xref> API and it provides its
+          own external object extension
+          handler:<codeblock outputclass="language-java" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="codeblock:1;34:58">  /**
+   * @see ro.sync.ecss.extensions.api.ExtensionsBundle#createExternalObjectInsertionHandler()
+   */
+  @Override
+  public AuthorExternalObjectInsertionHandler createExternalObjectInsertionHandler() {
+    return new DITAExternalObjectInsertionHandler();
+  }</codeblock></li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="li:4;41:13">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:18;41:20">DITAExternalObjectInsertionHandler</b> extends the base class <xref href="https://www.oxygenxml.com/InstData/Editor/SDK/javadoc/ro/sync/ecss/extensions/api/AuthorExternalObjectInsertionHandler.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="xref:3;43:44"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:19;43:47">AuthorExternalObjectInsertionHandler</b></xref> and
+          provides a reference to its specific conversion
+            stylesheet:<codeblock outputclass="language-java" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="codeblock:2;45:63">  /**
+   * @see ro.sync.ecss.extensions.api.AuthorExternalObjectInsertionHandler#getImporterStylesheetFileName(ro.sync.ecss.extensions.api.AuthorAccess)
+   */
+  @Override
+  protected String getImporterStylesheetFileName(AuthorAccess authorAccess) {
+    return "xhtml2ditaDriver.xsl";
+  }</codeblock><note class="- topic/note " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="note:1;51:22">The
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:20;52:18">Extensions</b> tab also allows you to specify the external object insertion handler
+            as a separate extension.</note></li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="li:5;54:13">In the same <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:21;54:28">Document Type</b> edit dialog in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:22;54:68">Classpath</b> tab you will see
+          that there is a reference to a framework-specific resources folder
+            like:<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="filepath:1;56:28">${framework}/resources/</filepath></li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="li:6;57:13">If you look on disk in the DITA framework <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:23;57:58">resources</b> folder:
+            <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="filepath:2;58:23">"OXYGEN_INSTALL_DIR\frameworks\dita\resources"</filepath> you will find the
+            <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/howSpecialPasteWorksInOxygen.dita" xtrc="b:24;59:16">xhtml2ditaDriver.xsl</b> stylesheet there. The stylesheet imports various other
+          stylesheets which you could probably fully reuse and which apply various cleanups on HTML
+          produced with MS Word. It also handles the conversion between the pasted HTML content and
+          DITA so it is a good starting point, you can copy the entire set of XSLT stylesheets to
+          your framework and use those as a starting point.</li>
+      </ol></p>
+  </body>
+</topic>
