@@ -37,7 +37,8 @@
                         <a class="title" href="/topics/migrateWordToDita.html">
                             How to Migrate from Word to DITA
                         </a>
-                        <!--<div class="date">17 May 2022</div>--><div class="label">MIGRATE | 5 MIN READ</div></div>
+                        <!--<div class="date">17 May 2022</div>--><div><div class="label">MIGRATE | 5 MIN READ</div></div>
+                    </div>
                 </div>
                 
                 <div class="banner stripe-latest-posts col-lg-12"> 
