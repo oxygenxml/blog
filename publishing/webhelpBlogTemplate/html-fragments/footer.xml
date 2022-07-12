@@ -1,4 +1,3 @@
-
 <div class="footer">
     <div class="container-fluid">
         <div class="col-md-3" id="quick_links">
@@ -16,33 +15,26 @@
                     <img src="${path(oxygen-webhelp-template-dir)}/resources/images/linkedin.png"/>
                 </a>
             </div>
-            <!--<a href="/terms_of_use.html">Terms of Use</a> | <a href="/privacy_policy.html">Privacy Policy
-                    </a>-->
         </div>
         
-        <div class="col-md-6">
-            
+        <div class="col-md-5">
             <div id="copy"> © 2002-2022 SyncRO Soft SRL. All rights reserved. 
-                <div><p> This website was created &amp; generated with
-                    Oxygen<sup>®</sup> <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
-                </p>
-                </div>
+                <div><p> This website is powered by Oxygen<sup>®</sup> <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a></p></div>
             </div>
+        </div>
+        <div class="col-md-1 b-subscribe">
+            <a href="/#follow-it" type="button" class="btn get-started">Subscribe</a>
         </div>
         <div class="col-md-2 b-flavours">
             <a type="application/rss+xml" href="/rss.xml">RSS</a>
             <a href="/oxygen_xml_blog.pdf">PDF</a>
             <a href="/oxygen_xml_blog.epub">EPUB</a>
         </div>
-        
-            
-        
     </div>
     
     <script>
         $(".get-started").click(function() {
             $([document.documentElement, document.body]).animate({
-               
                scrollTop: $(".stripe-latest-posts").offset().top - 90
             }, 1000);
         });
@@ -54,102 +46,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
         gtag('config', 'UA-2331448-3');
     </script>
-    
-    
-    <style>
-        <!--@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:400');-->
-        
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview *{
-        box-sizing: border-box !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
-        width: 100% !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5{
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
-        margin-top: 20px !important;
-        width: 100% !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
-        width: 100% !important;
-        height: 40px !important;
-        border-radius: 6px !important;
-        border: 2px solid #e9e8e8 !important;
-        background-color: #fff !important;
-        outline: none !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
-        color: #000000 !important;
-        font-family: "Montserrat" !important;
-        font-size: 14px !important;
-        font-weight: 400 !important;
-        line-height: 20px !important;
-        text-align: center !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
-        color: #000000 !important;
-        opacity: 1 !important;
-        }
-        
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:-ms-input-placeholder {
-        color: #000000 !important;
-        }
-        
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::-ms-input-placeholder {
-        color: #000000 !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
-        margin-top: 10px !important;
-        width: 100% !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
-        width: 100% !important;
-        height: 40px !important;
-        border: 0 !important;
-        border-radius: 6px !important;
-        line-height: 0px !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
-        cursor: pointer !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
-        color: #231f20 !important;
-        font-family: "Montserrat" !important;
-        font-size: 13px !important;
-        font-weight: 400 !important;
-        line-height: 25px !important;
-        text-align: center !important;
-        text-decoration: none !important;
-        display: flex !important;
-        width: 100% !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin-top: 10px !important;
-        }
-        .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
-        margin-left: 10px !important;
-        height: 1.13em !important;
-        max-height: 1.13em !important;
-        }
-    </style>
 </div>
-
-<!--
-
-<div>
-<div>
-    <a type="application/rss+xml" href="/rss.xml">RSS</a>
-|<a href="/oxygen_xml_blog.pdf">PDF</a>
-|<a href="/oxygen_xml_blog.epub">EPUB</a>
-    
-</div>
-
-</div>-->

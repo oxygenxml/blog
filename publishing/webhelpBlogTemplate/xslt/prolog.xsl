@@ -3,9 +3,10 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
     <xsl:template match="*[contains(@class, ' topic/prolog ')]">     
         <xsl:variable name="avatar-author" select="replace(*[contains(@class, ' topic/author ')],' ','_')"/>
-        <div class="author inPage {$avatar-author}"><a href="topics/contributors.html">
-            <xsl:value-of select="*[contains(@class, ' topic/author ')]"/></a>
-            
+        <div class="author inPage {$avatar-author}">
+            <a href="/topics/contributors.html">
+                <xsl:value-of select="*[contains(@class, ' topic/author ')]"/>
+            </a>
         </div>
         <xsl:if test="exists(.//*[contains(@class, ' topic/created ')]/@date)">  
             <div class="date inPage">
