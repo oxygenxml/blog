@@ -416,9 +416,9 @@ progress::-webkit-progress-bar {
     .stripe-latest-posts .entry, .top-rated .entry, .welcome .entry{
         width:93%;
     }
-    .top-rated .entry{
+    /*.top-rated .entry{
         margin: auto
-    }
+    }*/
 }
 
 

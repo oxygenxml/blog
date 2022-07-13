@@ -5,23 +5,28 @@
     <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="critdates:1;7:16">
       <created date="2022-05-17" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="created:1;8:35"/>
     </critdates>
+    <metadata class="- topic/metadata " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="metadata:1;10:15">
+      <keywords class="- topic/keywords " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="keywords:1;11:17">
+        <keyword outputclass="label" class="- topic/keyword " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="keyword:1;12:38">Google Structured Data</keyword>
+      </keywords>
+    </metadata>
   </prolog>
-  <taskbody class="- topic/body task/taskbody " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="taskbody:1;11:13">
-    <context class="- topic/section task/context " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="context:1;12:14">
-      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="p:1;13:10">HTML pages published on the web can contain metadata specified using the <xref href="https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data#structured-data-format" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xref:1;15:42"><?ditaot usertext?>Google Structured Data</xref> specification. Once such
-        metadata exists in an HTML page the Google search engine can present for example lists of
-        frequently asked questions directly in the search page, without the need to open the target
-        HTML page. Please see below a set of steps to automatically generate <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="b:1;18:81">Google Structured
+  <taskbody class="- topic/body task/taskbody " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="taskbody:1;16:13">
+    <context class="- topic/section task/context " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="context:1;17:14">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="p:1;18:10">HTML pages published on the web can contain metadata specified using the <xref href="https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data#structured-data-format" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xref:1;20:42"><?ditaot usertext?>Google Structured Data</xref> specification. Once such
+        metadata exists in an HTML page, the Google search engine can present, for example, lists of
+        frequently asked questions directly in the search page without the need to open the target
+        HTML page. Below is a set of steps for automatically generating <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="b:1;23:76">Google Structured
           Data</b> metadata for DITA frequently asked questions when publishing DITA content to
-        Oxygen WebHelp Responsive output which can be customized using a <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xref:2;22:42"><?ditaot usertext?>publishing template mechanism</xref>.</p>
+        Oxygen WebHelp Responsive output, which can be customized using a <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xref:2;27:42"><?ditaot usertext?>publishing template mechanism</xref>.</p>
     </context>
-    <steps class="- topic/ol task/steps " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="steps:1;24:12">
-      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:1;25:13">
-        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:1;26:14">Create in your DITA project a topic with a specific <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xmlatt:1;26:74">outputclass</xmlatt>
+    <steps class="- topic/ol task/steps " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="steps:1;29:12">
+      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:1;30:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:1;31:14">In your DITA project, create a topic with a specific <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xmlatt:1;31:75">outputclass</xmlatt>
           attribute value to signal that you want the Google structured data to be automatically
           generated for it.</cmd>
-        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:1;29:21">
-          <codeblock id="codeblock_vqt_p5l_4tb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="codeblock:1;30:76">&lt;topic id="frequently_asked_questions" outputclass="google-structured-data-faq"&gt;
+        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:1;34:21">
+          <codeblock id="codeblock_vqt_p5l_4tb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="codeblock:1;35:76">&lt;topic id="frequently_asked_questions" outputclass="google-structured-data-faq"&gt;
     &lt;title&gt;Frequently Asked Questions&lt;/title&gt;
     &lt;body&gt;
         &lt;section&gt;
@@ -32,13 +37,13 @@
 ..............</codeblock>
         </stepresult>
       </step>
-      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:2;41:13">
-        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:2;42:14">Inside a WebHelp publishing template folder, there is an <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="filepath:1;42:81">opt</filepath> file
+      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:2;46:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:2;47:14">Inside a WebHelp publishing template folder, there is an <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="filepath:1;47:81">opt</filepath> file
           that can contain links to various XSLT stylesheets that are useful for customizations. For
           example, we'll add a link to a stylesheet for processing such special DITA topics and
-          produces a special script containing details for each question/answer pair.</cmd>
-        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:2;46:21">
-          <codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="codeblock:2;47:76">&lt;publishing-template&gt;
+          producing a special script that contains details for each question/answer pair.</cmd>
+        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:2;51:21">
+          <codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="codeblock:2;52:76">&lt;publishing-template&gt;
     &lt;name&gt;.....&lt;/name&gt;
     ......
         &lt;xslt&gt;
@@ -50,12 +55,12 @@
 &lt;/publishing-template&gt;</codeblock>
         </stepresult>
       </step>
-      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:3;59:13">
-        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:3;60:14">Create the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="filepath:2;60:35">addGoogleStructuredData.xsl</filepath> XSLT stylesheet which
-          processes the task contents and adds in the HTML head a script containing the frequently
-          asked questions in Google Structured Data format.</cmd>
-        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:3;63:21">
-          <codeblock id="codeblock_bm1_dwl_4tb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="codeblock:3;64:76">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:3;64:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:3;65:14">Create the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="filepath:2;65:35">addGoogleStructuredData.xsl</filepath> XSLT stylesheet that
+          processes the task contents and adds a script  in the HTML head that contains the
+          frequently asked questions in Google Structured Data format.</cmd>
+        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:3;68:21">
+          <codeblock id="codeblock_bm1_dwl_4tb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="codeblock:3;69:76">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   exclude-result-prefixes="xs"
   version="2.0"&gt;
@@ -93,22 +98,22 @@
 &lt;/xsl:stylesheet&gt;</codeblock>
         </stepresult>
       </step>
-      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:4;102:13">
-        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:4;103:14">Publish the DITA XML Content to a web site using the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="b:2;103:70">WebHelp Responsive</b>
+      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:4;107:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:4;108:14">Publish the DITA XML Content to a web site using the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="b:2;108:70">WebHelp Responsive</b>
           transformation.</cmd>
       </step>
-      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:5;106:13">
-        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:5;107:14">Test your HTML page using the Google Rich Results Tester: <xref href="https://search.google.com/test/rich-results" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xref:3;109:13"/>.</cmd>
+      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:5;111:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:5;112:14">Test your HTML page using the Google Rich Results Tester: <xref href="https://search.google.com/test/rich-results" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="xref:3;114:13"/>.</cmd>
       </step>
-      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:6;111:13">
-        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:6;112:14">Once Google indexes your page, google search for it.</cmd>
-        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:4;113:21">
-          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="p:2;114:14"><image href="../images/structuredDataFAQ.png" id="image_grd_3kc_qtb" scale="50" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="image:1;114:95" dita-ot:image-width="806" dita-ot:image-height="786" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
+      <step class="- topic/li task/step " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="step:6;116:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="cmd:6;117:14">Once Google indexes your page, google search for it.</cmd>
+        <stepresult class="- topic/itemgroup task/stepresult " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="stepresult:4;118:21">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="p:2;119:14"><image href="../images/structuredDataFAQ.png" id="image_grd_3kc_qtb" scale="50" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="image:1;119:95" dita-ot:image-width="806" dita-ot:image-height="786" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
         </stepresult>
       </step>
     </steps>
   </taskbody>
-  <related-links class="- topic/related-links " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="related-links:1;119:18">
-    <link href="generating_google_structured_data_from_your_dita_tasks.dita" class="- topic/link " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="link:1;120:79" type="task"><?ditaot gentext?><linktext class="- topic/linktext ">Generating Google Structured Data from your DITA tasks</linktext></link>
+  <related-links class="- topic/related-links " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="related-links:1;124:18">
+    <link href="generating_google_structured_data_from_your_dita_tasks.dita" class="- topic/link " xtrf="file:/D:/syncprojects/blog/topics/generating_google_structured_data_from_your_dita_faq.dita" xtrc="link:1;125:79" type="task"><?ditaot gentext?><linktext class="- topic/linktext ">Generating Google Structured Data from your DITA tasks</linktext></link>
   </related-links>
 </task>
