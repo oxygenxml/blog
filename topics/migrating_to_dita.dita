@@ -68,7 +68,7 @@
       <p>The DITA Open Toolkit publishing engine bundled with Oxygen allows you to reference
         Markdown files directly in a DITA map and either publish them directly or export the
         Markdown files to DITA one by one: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/markdown-dita-x-dita2.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/markdown-dita-2.html"
           format="html" scope="external"/>. If you want to convert multiple Markdown documents at
         once, you can use the <b>Oxygen Resources Converter</b> add-on: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" format="html"

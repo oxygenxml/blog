@@ -33,12 +33,12 @@
           passes the output to <xref href="https://github.com/marcbachmann/node-html-pdf"
             format="html" scope="external">node-html-pdf</xref>. This plugins takes a HTML file as a
           parameter and returns a PDF document. </li>
-        <li>The <xref href="http://www.turnkey.com.au/tksweb/index.html" format="html"
+        <li>The <xref href="https://turnkey.com.au/" format="html"
             scope="external">TopLeaf</xref> XML Publisher commercial product allows you to produce
           various outputs like PDF and EPUB from XML content. The application also has a visual PDF
           layout formatter, it comes also with a DITA OT plugin and has installation instructions
           for Oxygen:<xref
-            href="https://www.turnkey.com.au/oxygen_plugin.html"
+            href="https://turnkey.com.au/topleaf-downloads/"
             format="html" scope="external"/>.</li>
         <li><xref href="https://www.miramo.com/download/documentation/Miramo_DITA-OT_GettingStarted.pdf" format="html" scope="external"
             >Miramo</xref>, again a commercial solution which recently started developing support

@@ -35,7 +35,7 @@
       separate public projects and maintained by third parties (either users or companies). I will
       try to compile a list below:</p>
     <ul id="ol_vct_khz_yp">
-      <li>Project <b>Argon</b> by German company <xref href="https://axxepta.com/" format="html"
+      <li>Project <b>Argon</b> by German company <xref href="https://github.com/axxepta" format="html"
           scope="external">Axxepta</xref> provides a plugin which can connect Oxygen to a BaseX
         server: <xref href="https://github.com/axxepta/project-argon" format="html" scope="external"
         />. The integration also provides CMS-like capabilities for searching and version control.
@@ -82,7 +82,7 @@
           scope="external"/></li>
       <li>
         <p>Ediarium is an extension package for TEI editing within Oxygen.</p>
-        <p>More details:<xref href="http://www.bbaw.de/en/telota/software/ediarum" format="html"
+        <p>More details:<xref href="https://www.bbaw.de/en/bbaw-digital/telota/research-and-software/ediarum" format="html"
             scope="external"/>, <xref href="https://github.com/telota/ediarum" format="html"
             scope="external"/></p>
       </li>

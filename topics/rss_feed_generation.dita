@@ -108,7 +108,7 @@
             &lt;created date="YYYY-MM-DD"/>
         &lt;/critdates></codeblock></p>
         <p>The WebHelp publishing template used for publishing this blog already has a customization
-            to create the RSS feed: <xref href="../publishing/webhelpBlogTemplate.zip" format="zip"
+          to create the RSS feed: <xref href="https://github.com/oxygenxml/blog/tree/master/publishing/webhelpBlogTemplate" format="html" scope="external"
             />.</p>
         <section id="section_cwn_y4g_nsb">
             <title>Using the RSS Feed With <b>Follow.it</b> to Receive New Posts by Email</title>

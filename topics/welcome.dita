@@ -90,7 +90,7 @@
                             your repository.</li>
                         <li>As an alternative, you can use the Oxygen XML Web Author browser editing
                             tool that has its own Git connector: <xref
-                                href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
+                              href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
                                 format="html" scope="external"/>.</li>
                         <li>Please remember to add the name of the author and the created date for
                             the topic in the DITA topic prolog section
