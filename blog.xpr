@@ -18,7 +18,7 @@
                                 <Boolean>false</Boolean>
                             </field>
                             <field name="checkNonDITAReferencesSelected">
-                                <Boolean>false</Boolean>
+                                <Boolean>true</Boolean>
                             </field>
                             <field name="includeRemoteResourcesSelected">
                                 <Boolean>true</Boolean>
