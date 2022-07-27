@@ -128,24 +128,6 @@
             <p><xref href="https://github.com/dita-ot/dita-ot/pull/3895" format="html"
                     scope="external">#3907: Add profiles to publication project file</xref></p>
         </section>
-        <section id="section_hqc_1sd_qsb">
-            <title>Limitation – Multiple Relative DITAVAL Paths (#3873)</title>
-            <p>When I tried to work around the previous issue by specifying a list of DITAVAL files
-                in a <codeph>&lt;publication></codeph>:</p>
-            <codeblock id="codeblock_shq_qwd_qsb">&lt;deliverable ...>
-  &lt;publication transtype="html5">
-    &lt;param name="args.filter" path="<b>flag_final.ditaval:filter_B.ditaval</b>"/>
-  &lt;/publication>
-  ...
-&lt;/deliverable></codeblock>
-            <p>I found that files <i>after</i> the first file were not expanded from relative to
-                absolute paths, and thus were not resolved properly during publishing:</p>
-            <codeblock id="codeblock_qbx_twd_qsb">[ditaval-merge] [DOTJ071E][ERROR] Cannot find the specified DITAVAL 'file:/home/chrispy/dita-ot/filter_B.ditaval'.</codeblock>
-            <p>I filed the following DITA-OT issue for this:</p>
-            <p><xref href="https://github.com/dita-ot/dita-ot/issues/3873" format="html"
-                    scope="external">#3873: args.filter does not support multiple relative paths in
-                    DITA-OT project file</xref></p>
-        </section>
         <section id="section_td4_dxd_qsb">
             <title>Using Preprocessing to Work Around the Limitations</title>
             <p>To work around these limitations in earlier DITA-OT versions before 4.0 is released,
@@ -176,9 +158,9 @@
                             <codeph>&lt;publication></codeph> instead (to work around #3682)</p>
                 </li>
                 <li>
-                    <p>Combine <codeph>&lt;ditaval></codeph> references in
-                            <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph> into
-                        a list (to work around #3690)</p>
+                    <p>Find <codeph>&lt;ditaval></codeph> elements in
+                            <codeph>&lt;publication></codeph>, move them to
+                            <codeph>&lt;context></codeph> instead (to work around #3690)</p>
                 </li>
             </ul>
             <p>I then applied this XSLT file as a preprocessing step to translate the unsupported

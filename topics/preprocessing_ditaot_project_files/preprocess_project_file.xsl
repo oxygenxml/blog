@@ -11,17 +11,12 @@
   version="3.0">
   <xsl:output method="xml" indent="yes"/>
 
-  <xsl:param name="file.separator" as="xs:string" select="':'"/>
 
   <!-- this is a DITA-OT project file preprocessor to support the following:
 
        * #3682: In DITA-OT project files, allow a PDF <deliverable> to specify its output file name (https://github.com/dita-ot/dita-ot/issues/3682)
        * #3690: In DITA-OT project files, apply both <context> and <publication> DITAVAL filtering (https://github.com/dita-ot/dita-ot/issues/3690)
-       * #3873: args.filter does not support multiple relative paths in DITA-OT project file (https://github.com/dita-ot/dita-ot/issues/3873)
 
-       current limitations:
-
-       * <include> is not supported
   -->
 
 
@@ -56,15 +51,7 @@
 
   <!-- PASS 1 - resolve <include> references -->
   <xsl:template match="include[@href]" mode="pass1">
-    <xsl:apply-templates select="document(@href, /)/*/*" mode="pass1"/>
-  </xsl:template>
-
-  <!-- PASS 1 - convert <ditaval> and <param name="args.filter"> to use absolute path -->
-  <!--  <xsl:template match="(ditaval|param[@name = 'args.filter'])/(@path|@value|@href)">-->  <!-- attribute list requires Saxon 10 -->
-  <xsl:template match="(ditaval|param[@name = 'args.filter'])/@*[name() = ('path', 'value', 'href')]" mode="pass1">
-    <xsl:attribute name="{name()}">
-      <xsl:value-of select="resolve-uri(., base-uri(.))"/>
-    </xsl:attribute>
+    <xsl:apply-templates select="document(@href, /)/*/*" mode="#current"/>
   </xsl:template>
 
 
@@ -78,15 +65,6 @@
   <!-- PASS 3 -->
   <xsl:mode name="pass3" on-no-match="shallow-copy"/>
 
-  <!-- PASS 3 - convert <profile> to <param name="args.filter"> -->
-  <xsl:template match="profile[ditaval[@path|@value|@href]]" mode="pass3">
-    <xsl:for-each select="ditaval">
-      <param name="args.filter" xmlns="https://www.dita-ot.org/project">
-        <xsl:apply-templates select="./(@path|@value|@href)"/>
-      </param>
-    </xsl:for-each>
-  </xsl:template>
-
   <!-- PASS 3 - pull @idref'ed <context> or <publication> elements inline -->
   <xsl:template match="(context|publication)[@idref]" mode="pass3">
     <xsl:variable name="element" as="element()">
@@ -98,7 +76,7 @@
     </xsl:variable>
 
     <xsl:copy select="$element">
-      <xsl:apply-templates select="$element/((@* except @id)|node())" mode="pass3"/>  <!-- omit @id -->
+      <xsl:apply-templates select="$element/((@* except @id)|node())" mode="#current"/>  <!-- omit @id -->
       <xsl:sequence select="$params"/>  <!-- include <param> overrides in <publication> references -->
     </xsl:copy>
   </xsl:template>
@@ -110,41 +88,33 @@
   <!-- PASS 4 -->
   <xsl:mode name="pass4" on-no-match="shallow-copy"/>
 
+  <!-- PASS 4 - add <deliverable>-specific <param> settings to <publication> -->
   <xsl:template match="publication" mode="pass4">
     <xsl:copy>
-      <!-- copy everything except original DITAVAL references -->
-      <xsl:apply-templates select="@*|(node() except param[@name = 'args.filter'])" mode="pass4"/>
-
-      <!-- add new merged DITAVAL reference -->
-      <xsl:sequence select="mine:merge-ditaval(..//param[@name = 'args.filter'][@href|@path|@value])"/>
-
-      <!-- add any <deliverable>-specific <param> settings -->
+      <xsl:apply-templates select="@*|node()" mode="#current"/>
       <xsl:sequence select="../param"/>
     </xsl:copy>
   </xsl:template>
 
-  <!-- given a set of <param> elements, return a single <param> using a colon-separated reference list -->
-  <xsl:function name="mine:merge-ditaval" as="element()*">
-    <xsl:param name="ditavals" as="element()*"/>
-    <xsl:if test="count($ditavals/(@href|@path|@value)) > 0">
-      <param name="args.filter" xmlns="https://www.dita-ot.org/project">
-        <xsl:attribute name="value">  <!-- file lists must use @value, not @href or @path -->
-          <xsl:choose>
-            <xsl:when test="$file.separator eq ':'">  <!-- in Linux, 'file:' cannot be used in DITAVAL file list -->
-              <xsl:value-of select="string-join($ditavals/replace((@href|@path|@value), 'file:', ''), $file.separator)"/>
-            </xsl:when>
-            <xsl:when test="$file.separator eq ';'">  <!-- in Windows, 'file:' must be used in DITAVAL file list -->
-              <xsl:value-of select="string-join($ditavals/(@href|@path|@value), $file.separator)"/>
-            </xsl:when>
-          </xsl:choose>
-        </xsl:attribute>
-      </param>
-    </xsl:if>
-  </xsl:function>
+  <!-- PASS 4 - move <publication>-specific <profile> settings to <context> -->
+  <xsl:template match="context" mode="pass4">
+    <xsl:variable name="ditavals" as="element(ditaval)*">
+      <xsl:sequence select="profile/ditaval"/>
+      <xsl:sequence select="../publication/profile/ditaval"/>
+    </xsl:variable>
+    <xsl:copy>
+      <xsl:apply-templates select="@*|(node() except profile)" mode="#current"/>
+      <xsl:if test="exists($ditavals)">
+        <profile>
+          <xsl:sequence select="$ditavals"/>
+        </profile>
+      </xsl:if>
+    </xsl:copy>
+  </xsl:template>
 
-  <!-- delete "moved" elements in their old locations -->
-  <xsl:template match="deliverable/context/param" mode="pass4"/>
+  <!-- PASS 4 - delete moved elements from their original locations -->
   <xsl:template match="deliverable/param" mode="pass4"/>
+  <xsl:template match="publication/profile" mode="pass4"/>
 
 </xsl:stylesheet>
 
