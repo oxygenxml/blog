@@ -28,6 +28,7 @@
             </topichead>
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
+            <topicref href="topics/task-steps-diagram.dita"/>
             <topicref href="topics/dita-codeblock-tabs.dita"/>
             <topicref href="topics/open-api-dita.dita"/>
    <topicref href="topics/dita_to_confluence.dita"/>
