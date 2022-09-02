@@ -226,7 +226,7 @@
                                 <field name="publishingTemplateDataPO">
                                     <publishingTemplate>
                                         <field name="templateRoot">
-                                            <String>D:/syncprojects/blog/publishing/webhelpBlogTemplate/</String>
+                                            <String>${pd}/publishing/webhelpBlogTemplate/</String>
                                         </field>
                                         <field name="descriptorRelativePath">
                                             <String>Oxygen XML Blog WebHelp Template.opt</String>

@@ -14,7 +14,7 @@
         </metadata>
     </prolog>
     <body>
-    <p>Using our special DITA Open Toolkit plugin you can embed diagram text descriptions (either in
+    <p>Using our free DITA Open Toolkit plugin you can embed diagram text descriptions (either in
         <xref href="embedding_diagrams_in_dita_topics_using_plantuml.dita">PlantUML</xref> or <xref
         href="embedding_diagrams_in_dita_topics_using_mermaid.dita">Mermaid</xref> format) in DITA
       topics and have them rendered as diagram images in the published output.</p>
