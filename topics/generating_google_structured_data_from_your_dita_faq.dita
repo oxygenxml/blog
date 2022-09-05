@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="generating_google_structured_data_from_your_dita_faq" outputclass="google-structured-data-steps">
+<task id="generating_google_structured_data_from_your_dita_faq">
   <title>Generating Google Structured Data from your DITA frequently asked questions</title>
   <prolog>
     <author>Radu Coravu</author>
