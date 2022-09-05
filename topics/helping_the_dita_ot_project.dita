@@ -123,5 +123,14 @@
       <p>When necessary we contribute issues on the DITA Open Toolkit documentation issues list:
           <xref href="https://github.com/dita-ot/docs" format="html" scope="external"/>. </p>
     </section>
+    <section id="section_zsb_5tl_t5b">
+      <title>The DITA Open Toolkit Day</title>
+      <p>We started hosting and sponsoring the DITA Open Toolkit day about 8 years ago in 2014 as a
+        way to bring together the community of plugin/customization developers with the main
+        contributors to the DITA OT project. The DITA OT Day is also a means to celebrate the work
+        of the main DITA OT contributors. Recordings for all videos from past DITA OT Day events can
+        be found here: <xref href="https://www.dita-ot.org/dev/topics/dita-ot-day-videos.html"
+          format="html" scope="external"/>.</p>
+    </section>
     </body>
 </topic>
