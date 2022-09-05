@@ -5,6 +5,7 @@
     <webhelp>
         <preview-image file="oxygen-tree.png"/>
         <parameters>
+            <parameter name="generate.google.structured.data.enabled" value="yes"/>
             <parameter name="webhelp.show.main.page.tiles" value="no"/>
             <parameter name="webhelp.show.main.page.toc" value="no"/>
             <parameter name="webhelp.top.menu.depth" value="3"/>
