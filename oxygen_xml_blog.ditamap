@@ -17,7 +17,7 @@
             <topicref href="presentation-reuse/presentation.ditamap" format="ditamap"/>
             <topicref href="topics/cross_book_links.dita"/>
         </topichead>
-        <topichead navtitle="Publishing">
+        <topicref href="topics/dita_ot_publishing_customizations_overview.dita">
             <topicref href="topics/webhelp-dita-strong-points.dita"
                 keys="webhelp-dita-strong-points"/>
             <topichead navtitle="PDF">
@@ -50,7 +50,7 @@
             <topicref href="topics/rss_feed_generation.dita" keys="rss_feed_generation"/>
       <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
       <topicref href="topics/generating_google_structured_data_from_your_dita_faq.dita"/>
-        </topichead>
+        </topicref>
         <topichead navtitle="Customizing">
             <topicref href="topics/startup_dita_project.dita"/>
             <topicref href="topics/customizeDITACSS.dita"/>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita_ot_publishing_customizations_overview">
+    <title>Publishing Customizations Overview</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-09-05"/>
+    </critdates>
+  </prolog>
+    <body>
+        <p>An overview of various useful publishing customizations which appear as individual
+      articles on the Oxygen XML Blog.</p>
+    <section id="section_kvh_rkm_t5b">
+      <title>Embed PlantUML/Mermaid diagrams in DITA topics</title>
+      <ul id="ul_qml_xkm_t5b">
+        <li><xref href="embedding_diagrams_in_dita_topics_using_plantuml.dita"/></li>
+        <li><xref href="embedding_diagrams_in_dita_topics_using_mermaid.dita"/></li>
+      </ul>
+    </section>
+    <section id="section_pgd_clm_t5b">
+      <title>Presenting DITA task steps as diagrams</title>
+      <p><xref href="task-steps-diagram.dita"/></p>
+    </section>
+    <section id="section_pyj_klm_t5b">
+      <title>Presenting a DITA project in a graph-like representation</title>
+      <p><xref href="creating_graphs_from_dita_maps.dita"/></p>
+    </section>
+    <section id="section_y1f_2lm_t5b">
+      <title>Generate Google Structured Data content from DITA content</title>
+      <ul id="ul_fxy_2lm_t5b">
+        <li><xref href="generating_google_structured_data_from_your_dita_tasks.dita"/></li>
+        <li><xref href="generating_google_structured_data_from_your_dita_faq.dita"/></li>
+      </ul>
+    </section>
+    <section id="section_ss4_hlm_t5b">
+      <title>Present consecutive code blocks as tabs in HTML output</title>
+      <p><xref href="dita-codeblock-tabs.dita"/></p>
+    </section>
+    <section id="section_k5n_ykm_t5b">
+      <title>Embed Latex equations in DITA topics</title>
+      <p><xref href="adding-latex-equation-support-dita.dita"/></p>
+    </section>
+    <section id="section_twd_jlm_t5b">
+      <title>Convert OpenAPI content to DITA</title>
+      <p><xref href="open-api-dita.dita"/></p>
+    </section>
+    <section id="section_s2j_nlm_t5b">
+      <title>Various applications for DITA to Markdown publishing</title>
+      <ul id="ul_tnd_4lm_t5b">
+        <li><xref keyref="publishing_dita_powerpoint"/></li>
+        <li><xref href="publishing_dita_content_using_a_markdown_static_web_site_generator.dita"
+          /></li>
+      </ul>
+    </section>
+    <section id="section_zmw_rlm_t5b">
+      <title>Generating a list of recent added topics and RSS feed for a DITA project</title>
+      <ul id="ul_ubw_slm_t5b">
+        <li><xref href="recent_topics_list.dita"/></li>
+        <li><xref keyref="rss_feed_generation"/></li>
+      </ul>
+    </section>
+    <section id="section_ls3_zlm_t5b">
+      <title>Marking DITA topics with labels for the HTML based output</title>
+      <p><xref keyref="adding_labels_to_topics_in_the_webhelp_responsive_output"/></p>
+    </section>
+    </body>
+</topic>
