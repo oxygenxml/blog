@@ -260,6 +260,11 @@ h3.followit{
     background-image: url("resources/images/foto-AlexSmarandache.jpeg");
 }
 
+.author.Alex_Jitianu{
+    background-image: url("resources/images/foto-AlexJitianu.jpg");
+}
+
+
 .wh_logo + .wh_publication_title{
     margin-top: 0.3em;
 }
