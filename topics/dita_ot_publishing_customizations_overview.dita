@@ -34,8 +34,11 @@
       </ul>
     </section>
     <section id="section_ss4_hlm_t5b">
-      <title>Present consecutive code blocks as tabs in HTML output</title>
-      <p><xref href="dita-codeblock-tabs.dita"/></p>
+      <title>Present consecutive elements as tabs in HTML output</title>
+      <ul id="ul_pht_hbt_t5b">
+        <li><xref href="dita-codeblock-tabs.dita"/></li>
+        <li><xref href="task-steps-diagram.dita"/></li>
+      </ul>
     </section>
     <section id="section_k5n_ykm_t5b">
       <title>Embed Latex equations in DITA topics</title>
