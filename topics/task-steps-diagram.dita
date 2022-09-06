@@ -14,13 +14,13 @@
         </metadata>
     </prolog>
     <body>
-    <p>Using our free DITA Open Toolkit plugin you can embed diagram text descriptions (either in
-        <xref href="embedding_diagrams_in_dita_topics_using_plantuml.dita">PlantUML</xref> or <xref
+    <p>By using our free DITA Open Toolkit plugin, you can embed diagram text descriptions (either
+      in <xref href="embedding_diagrams_in_dita_topics_using_plantuml.dita">PlantUML</xref> or <xref
         href="embedding_diagrams_in_dita_topics_using_mermaid.dita">Mermaid</xref> format) in DITA
       topics and have them rendered as diagram images in the published output.</p>
     <p>I experimented with dynamically constructing diagrams (using the <xref
-        href="task-steps-diagram.dita">Mermaid</xref> framework) for DITA tasks at publishing
-      time.</p>
+        href="task-steps-diagram.dita">Mermaid</xref> framework) for DITA tasks at the time of
+      publishing.</p>
     <p>Suppose you have a DITA task with a set of steps.</p>
     <p>
       <codeblock id="codeblock_yz5_fdt_rsb" outputclass="language-xml">&lt;steps>
@@ -73,9 +73,9 @@ State&lt;xsl:value-of select="$statePos"/>&lt;xsl:value-of select="position() - 
     &lt;xsl:next-match/>
   &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock></p>
-    <p>A complete DITA Open Toolkit containing the customization can be found here: <xref
-        href="../resources/com.oxygenxml.task.diagram.zip" format="zip"/></p>
-    <p>At publishing time the task's HTML page will contain this diagram inside it:</p>
+    <p>A complete DITA Open Toolkit that contains the customization can be found here: <xref
+        href="../resources/com.oxygenxml.task.diagram.zip" format="zip"/>.</p>
+    <p>At the time of publishing, the task's HTML page will contain this diagram inside it:</p>
     <p><image href="../images/task-diagram.png" id="image_t2h_t5q_s5b" scale="40"/></p>
   </body>
     <related-links>
