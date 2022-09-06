@@ -61,6 +61,7 @@
         </topichead>
         <topichead navtitle="Other">
             <topicref href="topics/dita_for_small_teams.dita"/>
+            <topicref href="topics/supporting_the_dita_ot_project.dita"/>
             <topicref href="topics/oxygen-dita-strong-points.dita"/>
             <topicref href="topics/dita_1_3_support_o17.1.dita"/>
             <topicref href="topics/dita_oriented_tips_and_tricks.dita"/>

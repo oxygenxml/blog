@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="helping_the_dita_ot_project">
-    <title>Helping the DITA OT Project as a Commercial Company</title>
+    <title>Supporting the DITA OT Project as a Commercial Company</title>
   <prolog>
     <author>Radu Coravu</author>
     <critdates>
@@ -23,13 +23,13 @@
       <p>We started integrating the <b>DITA Open Toolkit</b> in Oxygen about 14 years ago, some time
         around 2008 in Oxygen XML Editor version 10. The DITA Open Toolkit remains a very important
         part of the DITA editing and publishing solution provided by us.</p>
-      <p>Currently we are using the DITA Open Toolkit publishing engine as a component in our Oxygen
-        Publishing Engine in multiple projects:<ul id="ul_yfr_nbl_t5b">
+      <p>Currently we are using the <b>DITA Open Toolkit</b> publishing engine as a component in our
+        Oxygen Publishing Engine in multiple projects:<ul id="ul_yfr_nbl_t5b">
           <li>Oxygen XML Editor</li>
           <li>Oxygen XML Author</li>
           <li>Oxygen XML Developer</li>
           <li>Oxygen Publishing Engine</li>
-        </ul>and there will probably be more to come.</p>
+        </ul>and there will probably be more to come in the future.</p>
     </section>
     <section id="section_h2n_sbl_t5b">
       <title>Implementing Plugins for the DITA Open Toolkit</title>
@@ -63,7 +63,7 @@
           scope="external">channels</xref> on which people ask questions about DITA OT
           publishing:<ul id="ul_btn_k2l_t5b">
           <li><xref href="https://dita-users.groups.io/g/main" format="html" scope="external">DITA
-              Users List</xref>.</li>
+              Users List</xref> - about 1000 answers and replies so far.</li>
           <li><xref href="https://groups.google.com/g/dita-ot-users" format="html" scope="external"
               >DITA OT Users Google Group</xref></li>
           <li><xref href="https://github.com/dita-ot/dita-ot/discussions" format="html"
@@ -71,11 +71,11 @@
           <li><xref href="http://slack.dita-ot.org/" format="html" scope="external">DITA OT Slack
               Channel</xref></li>
           <li><xref href="https://stackoverflow.com/questions/tagged/dita-ot" format="html"
-              scope="external">Stack Overflow</xref></li>
+              scope="external">Stack Overflow</xref> - about 77 answers so far.</li>
         </ul></p>
       <p>There are also Oxygen specific channels:<ul id="ul_jxw_p3l_t5b">
-          <li><xref href="https://www.oxygenxml.com/forum/" format="html" scope="external">Oxygen
-              XML Forum</xref></li>
+          <li><xref href="https://www.oxygenxml.com/forum/dita-editing-and-publishing-dita-content/"
+              format="html" scope="external">Oxygen XML Forum</xref> - 2328 topics so far.</li>
           <li><xref href="https://www.oxygenxml.com/mailinglists.html" format="html"
               scope="external">Oxygen Users List</xref></li>
         </ul></p>
@@ -86,7 +86,10 @@
     <section id="section_pmn_jll_t5b">
       <title>DITA Open Toolkit Publishing-related Articles</title>
       <p>The <xref href="https://blog.oxygenxml.com" format="html" scope="external">Oxygen XML
-          Blog</xref> has more than 20 DITA Open Toolkit publishing related articles.</p>
+          Blog</xref> has <xref
+          href="https://blog.oxygenxml.com/search.html?searchQuery=label_DITA_Publishing_Customization"
+          format="html" scope="external">more than 20</xref> DITA Open Toolkit publishing related
+        articles.</p>
     </section>
     <section id="section_gsm_zfl_t5b">
       <title>Registering and analysing issues, opening pull requests</title>
@@ -101,7 +104,7 @@
       <p>In the last years we became a major contributor of pull requests which contain bug fixes
           (<xref
           href="https://github.com/dita-ot/dita-ot/pulls?q=is%3Apr+is%3Aclosed+author%3Araducoravu"
-          format="html" scope="external">about 60 contributed by me</xref>).</p>
+          format="html" scope="external">more than 70 contributed pull requests so far</xref>).</p>
     </section>
     <section id="section_iph_whl_t5b">
       <title>Contributing with improvement ideas to the DITA Open Toolkit project</title>
@@ -125,12 +128,13 @@
     </section>
     <section id="section_zsb_5tl_t5b">
       <title>The DITA Open Toolkit Day</title>
-      <p>We started hosting and sponsoring the DITA Open Toolkit day about 8 years ago in 2014 as a
-        way to bring together the community of plugin/customization developers with the main
-        contributors to the DITA OT project. The DITA OT Day is also a means to celebrate the work
-        of the main DITA OT contributors. Recordings for all videos from past DITA OT Day events can
-        be found here: <xref href="https://www.dita-ot.org/dev/topics/dita-ot-day-videos.html"
-          format="html" scope="external"/>.</p>
+      <p>We started hosting and sponsoring the <b>DITA Open Toolkit Day</b> about 8 years ago back
+        in 2014 as a way to bring together the community of plugin/customization developers with the
+        main contributors to the DITA OT project. The <b>DITA OT Day</b> is also a means to
+        celebrate the work of the main <b>DITA OT</b> contributors. Recordings for all videos from
+        past DITA OT Day events can be found here: <xref
+          href="https://www.dita-ot.org/dev/topics/dita-ot-day-videos.html" format="html"
+          scope="external"/>.</p>
     </section>
     </body>
 </topic>
