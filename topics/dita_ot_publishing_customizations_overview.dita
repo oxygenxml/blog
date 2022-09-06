@@ -19,8 +19,13 @@
       </ul>
     </section>
     <section id="section_pgd_clm_t5b">
-      <title>Presenting DITA task steps as diagrams</title>
-      <p><xref href="task-steps-diagram.dita"/></p>
+      <title>DITA task steps presentation alternatives</title>
+      <p>
+        <ul id="ul_xkv_g3t_t5b">
+          <li><xref href="task-steps-diagram.dita"/></li>
+          <li><xref href="dita-steps-tabs.dita"/></li>
+        </ul>
+      </p>
     </section>
     <section id="section_pyj_klm_t5b">
       <title>Presenting a DITA project in a graph-like representation</title>
@@ -37,7 +42,6 @@
       <title>Present consecutive elements as tabs in HTML output</title>
       <ul id="ul_pht_hbt_t5b">
         <li><xref href="dita-codeblock-tabs.dita"/></li>
-        <li><xref href="task-steps-diagram.dita"/></li>
       </ul>
     </section>
     <section id="section_k5n_ykm_t5b">
@@ -51,7 +55,7 @@
     <section id="section_s2j_nlm_t5b">
       <title>Various applications for DITA to Markdown publishing</title>
       <ul id="ul_tnd_4lm_t5b">
-        <li><xref keyref="publishing_dita_powerpoint"/></li>
+        <li><xref href="publishing_dita_powerpoint.dita"/></li>
         <li><xref href="publishing_dita_content_using_a_markdown_static_web_site_generator.dita"
           /></li>
       </ul>
@@ -60,12 +64,16 @@
       <title>Generating a list of recent added topics and RSS feed for a DITA project</title>
       <ul id="ul_ubw_slm_t5b">
         <li><xref href="recent_topics_list.dita"/></li>
-        <li><xref keyref="rss_feed_generation"/></li>
+        <li><xref href="rss_feed_generation.dita"/></li>
       </ul>
     </section>
     <section id="section_ls3_zlm_t5b">
       <title>Marking DITA topics with labels for the HTML based output</title>
-      <p><xref keyref="adding_labels_to_topics_in_the_webhelp_responsive_output"/></p>
+      <p><xref href="adding_labels_to_topics_in_the_webhelp_responsive_output.dita"/></p>
+    </section>
+    <section id="section_vqp_q3t_t5b">
+      <title>Generating content for Google Chatbot</title>
+      <p><xref href="customizing_a_chatbot.dita"/></p>
     </section>
     </body>
 </topic>

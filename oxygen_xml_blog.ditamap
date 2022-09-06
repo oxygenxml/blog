@@ -18,8 +18,7 @@
             <topicref href="topics/cross_book_links.dita"/>
         </topichead>
         <topicref href="topics/dita_ot_publishing_customizations_overview.dita">
-            <topicref href="topics/webhelp-dita-strong-points.dita"
-                keys="webhelp-dita-strong-points"/>
+            <topicref href="topics/webhelp-dita-strong-points.dita"/>
             <topichead navtitle="PDF">
                 <topicref href="topics/tableRowColors.dita"/>
                 <topicref href="topics/migrating-pdf-customizations.dita"/>
@@ -30,7 +29,7 @@
             <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
             <topicref href="topics/task-steps-diagram.dita"/>
             <topicref href="topics/dita-codeblock-tabs.dita"/>
-      <topicref href="topics/dita-steps-tabs.dita" keys="dita-steps-tabs"/>
+      <topicref href="topics/dita-steps-tabs.dita"/>
             <topicref href="topics/open-api-dita.dita"/>
    <topicref href="topics/dita_to_confluence.dita"/>
    <topicref href="topics/dita-generate-changes-list.dita"/>
@@ -43,12 +42,10 @@
             <topicref href="topics/using_git_hooks_with_dita.dita"/>
 			<topicref href="topics/creating_graphs_from_dita_maps.dita"/>
             <topicref href="topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita"/>
-            <topicref href="topics/publishing_dita_powerpoint.dita"
-                keys="publishing_dita_powerpoint"/>
-            <topicref href="topics/adding_labels_to_topics_in_the_webhelp_responsive_output.dita"
-                keys="adding_labels_to_topics_in_the_webhelp_responsive_output"/>
+            <topicref href="topics/publishing_dita_powerpoint.dita"/>
+            <topicref href="topics/adding_labels_to_topics_in_the_webhelp_responsive_output.dita"/>
             <topicref href="topics/recent_topics_list.dita"/>
-            <topicref href="topics/rss_feed_generation.dita" keys="rss_feed_generation"/>
+            <topicref href="topics/rss_feed_generation.dita"/>
       <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
       <topicref href="topics/generating_google_structured_data_from_your_dita_faq.dita"/>
         </topicref>
@@ -73,8 +70,7 @@
             <topicref href="topics/SchematronBCs.dita"/>
             <topicref href="topics/styleguide.dita"/>
             <topicref href="topics/preprocessing_ditaot_project_files.dita"/>
-            <topicref href="topics/re_10_reasons_for_moving_away_from_dita.dita"
-                keys="re_10_reasons_for_moving_away_from_dita"/>
+            <topicref href="topics/re_10_reasons_for_moving_away_from_dita.dita"/>
             <topicref href="topics/dita_2_0_specification_support_cheat_sheet.dita"/>
             <topichead navtitle="Refactoring">
                 <topicref href="topics/sort_glossentries.dita"/>
@@ -111,8 +107,7 @@
         <topicref href="topics/packing-add-ons.dita"/>
         <topicref href="topics/all_about_oxygen_add_ons.dita"/>
         <topicref
-            href="topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.dita"
-            keys="adding_cals_table_related_functionality_to_your_custom_oxygen_framework"/>
+            href="topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.dita"/>
         <topicref href="topics/convert_code_templates_to_author_actions.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
