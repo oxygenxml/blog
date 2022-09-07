@@ -15,10 +15,10 @@
     </prolog>
     <body>
     <p>You can present individual DITA task steps in separate tabs in the generated WebHelp output
-      using this free plugin: <xref href="https://github.com/oxygenxml/dita-wh-tabs" format="html"
-        scope="external"/>. </p>
-    <p>Suppose you have a DITA task containing steps
-      like:<codeblock id="codeblock_g4s_bsc_vsb" outputclass="language-xml">&lt;steps>
+            by using this free plugin: <xref href="https://github.com/oxygenxml/dita-wh-tabs"
+                format="html" scope="external"/>. </p>
+    <p>Suppose you have a DITA task that contains steps like
+            this:<codeblock id="codeblock_g4s_bsc_vsb" outputclass="language-xml">&lt;steps>
     &lt;step>
         &lt;cmd>Begin by cutting out all the dead branches.&lt;/cmd>
     &lt;/step>
@@ -27,11 +27,12 @@
         &lt;cmd>Clean up the area.&lt;/cmd>
     &lt;/step>
 &lt;/steps></codeblock></p>
-    <p>You can install this open-source DITA Open Toolkit plugin to display steps as separate tabs
-      in the published WebHelp output: <xref href="https://github.com/oxygenxml/dita-wh-tabs"
-        format="html" scope="external"/>. To enable generating separate tabs for each DITA task
-      step, you also need to set the publising parameter <codeph>tabs.for.steps</codeph> to value
-        <codeph>true</codeph>.</p>
+    <p>You can install this open-source DITA Open Toolkit plugin to display the steps as separate
+            tabs in the published WebHelp output: <xref
+                href="https://github.com/oxygenxml/dita-wh-tabs" format="html" scope="external"/>.
+            To enable generating separate tabs for each DITA task step, you also need to set the
+                <codeph>tabs.for.steps</codeph> publishing parameter to the value of
+                <codeph>true</codeph>.</p>
     <p>The WebHelp output should look like this:</p>
     <image href="../images/step-tabs.png" id="image_ll4_mhn_t5b" scale="30"/>
   </body>
