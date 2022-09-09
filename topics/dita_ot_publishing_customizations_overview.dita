@@ -28,8 +28,13 @@
       </p>
     </section>
     <section id="section_pyj_klm_t5b">
-      <title>Presenting a DITA Project in a Graph-like Representation</title>
-      <p><xref href="creating_graphs_from_dita_maps.dita"/></p>
+      <title>DITA Project Overview</title>
+      <p>
+        <ul id="ul_pg3_4n4_55b">
+          <li><xref href="dita_map_metrics_evolution.dita"/></li>
+          <li><xref href="creating_graphs_from_dita_maps.dita"/></li>
+        </ul>
+      </p>
     </section>
     <section id="section_y1f_2lm_t5b">
       <title>Generate Google Structured Data Content from DITA Content</title>
