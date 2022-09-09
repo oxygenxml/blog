@@ -11,6 +11,19 @@
     <body>
         <p>An overview of various useful publishing customizations that appear as individual
       articles on the Oxygen XML Blog.</p>
+    <section id="section_pyj_klm_t5b">
+      <title>DITA Project Overview</title>
+      <p>
+        <ul id="ul_pg3_4n4_55b">
+          <li><xref href="dita_map_metrics_evolution.dita"/></li>
+          <li><xref href="creating_graphs_from_dita_maps.dita"/></li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_k5n_ykm_t5b">
+      <title>Embed Latex Equations in DITA Topics</title>
+      <p><xref href="adding-latex-equation-support-dita.dita"/></p>
+    </section>
     <section id="section_kvh_rkm_t5b">
       <title>Embed PlantUML/Mermaid Diagrams in DITA Topics</title>
       <ul id="ul_qml_xkm_t5b">
@@ -27,15 +40,6 @@
         </ul>
       </p>
     </section>
-    <section id="section_pyj_klm_t5b">
-      <title>DITA Project Overview</title>
-      <p>
-        <ul id="ul_pg3_4n4_55b">
-          <li><xref href="dita_map_metrics_evolution.dita"/></li>
-          <li><xref href="creating_graphs_from_dita_maps.dita"/></li>
-        </ul>
-      </p>
-    </section>
     <section id="section_y1f_2lm_t5b">
       <title>Generate Google Structured Data Content from DITA Content</title>
       <ul id="ul_fxy_2lm_t5b">
@@ -48,10 +52,6 @@
       <ul id="ul_pht_hbt_t5b">
         <li><xref href="dita-codeblock-tabs.dita"/></li>
       </ul>
-    </section>
-    <section id="section_k5n_ykm_t5b">
-      <title>Embed Latex Equations in DITA Topics</title>
-      <p><xref href="adding-latex-equation-support-dita.dita"/></p>
     </section>
     <section id="section_twd_jlm_t5b">
       <title>Convert OpenAPI Content to DITA</title>
