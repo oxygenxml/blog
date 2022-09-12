@@ -25,23 +25,17 @@
           format="html" scope="external">build output</xref> from <b>DITA</b> content using the
         command line.</p>
       <p>Besides this, there are applications which come with the <b>DITA Open Toolkit</b> bundled.
-        For example <ph keyref="oxygen"/> comes bundled with both <b>DITA Open Toolkit</b>
-        <b>1.8</b> and <b>2.x</b>. Oxygen provides visual means to run the bundled DITA Open Toolkit
-        using a concept called <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-ot-transformation.html"
-          format="html" scope="external"><b>transformation scenarios</b></xref>.</p>
+        For example <ph keyref="oxygen"/> comes bundled usually with the latest bundled <b>DITA Open
+          Toolkit</b>. Oxygen provides visual means to run the bundled DITA Open Toolkit using a
+        concept called <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/create-dita-ot-transformation.html"
+          format="html" scope="external">transformation scenarios</xref>.</p>
     </section>
     <section id="section_i3f_jps_qv">
       <title>What version of DITA Open Toolkit should I use?</title>
-      <p>Probably most of the DITA implementations available are still using <xref
-          href="https://sourceforge.net/projects/dita-ot/files/DITA-OT%20Stable%20Release/DITA%20Open%20Toolkit%201.8/"
-          format="html" scope="external"><b>DITA Open Toolkit 1.8.5</b></xref>. This usually happens
-        because companies have output customizations which have not yet been modified to work with
-        the latest DITA Open Toolkit releases.</p>
-      <p>But if you do not have legacy plugins or customizations you should try to use whenever
-        possible the most recent stable version of the DITA Open Toolkit available on the official
-          <xref href="http://www.dita-ot.org/download" format="html" scope="external"
-          >download</xref> page. </p>
+      <p>You should try to use the latest DITA Open Toolkit release available on the official <xref
+          href="http://www.dita-ot.org/download" format="html" scope="external">download</xref>
+        page. </p>
     </section>
     <section id="section_f4p_dqs_qv">
       <title>What outputs can I obtain using the DITA Open Toolkit?</title>
@@ -74,12 +68,13 @@
         extension points available in the <b>DITA Open Toolkit</b>: <xref
           href="https://www.dita-ot.org/dev/extension-points/plugin-extension-points.html" format="html"
           scope="external"/>.</p>
-      <p>Once you have <xref href="https://www.dita-ot.org/dev/topics/plugin-newtranstype.html#ariaid-title1"
+      <p>Once you have <xref
+          href="https://www.dita-ot.org/dev/topics/plugin-newtranstype.html#ariaid-title1"
           format="html" scope="external">created</xref> a plugin you can install it in the <b>DITA
           Open Toolkit</b> either by <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-ot-install-plugin.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-ot-install-plugin.html"
           format="html" scope="external">manual installation</xref> or using the new <xref
-            href="https://www.dita-ot.org/dev/topics/plugins-installing.html" format="html"
+          href="https://www.dita-ot.org/dev/topics/plugins-installing.html" format="html"
           scope="external">automated installation procedure</xref>.</p>
     </section>
     <section id="section_p33_l5s_qv">
@@ -94,11 +89,18 @@
     </section>
     <section id="section_tcx_v5s_qv">
       <title>How do I customize the PDF output?</title>
-      <p>The PDF output is obtained by passing the original <b>DITA</b> content to <b>XSL-FO</b> and
-        then generating <b>PDF</b> using an <b>XSL-FO</b> processor. The default bundled and used
-        XSL-FO processor is the <xref href="https://xmlgraphics.apache.org/fop/" format="html"
-          scope="external">Apache FOP</xref> but you can also install separately and use commercial
-        PDF processors like <xref href="https://www.antennahouse.com/" format="html"
+      <p>Oxygen comes bundled with a DITA Open Toolkit plugin which uses CSS to style the DITA
+        content and produce PDF: <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/pdf-css-customization.html"
+          format="html" scope="external"/>. This plugin is free to use from inside Oxygen but is
+        part of a commercial product if you want to automate the publishing on the server side. This
+        is our recommended plugin for publishing DITA to PDF.</p>
+      <p>In addition the DITA Open Toolkit comes bundled with a free PDF generation plugin which
+        uses XSL-FO. The PDF output is obtained by passing the original <b>DITA</b> content to
+          <b>XSL-FO</b> and then generating <b>PDF</b> using an <b>XSL-FO</b> processor. The default
+        bundled and used XSL-FO processor is the <xref href="https://xmlgraphics.apache.org/fop/"
+          format="html" scope="external">Apache FOP</xref> but you can also install separately and
+        use commercial PDF processors like <xref href="https://www.antennahouse.com/" format="html"
           scope="external">Antenna House</xref> or <xref href="http://www.renderx.com/"
           format="html" scope="external">RenderX XEP</xref>.</p>
       <p>You can customize the <b>PDF</b> output either using a <xref
