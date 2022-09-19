@@ -66,8 +66,9 @@
       </ul>
     </section>
     <section id="section_zmw_rlm_t5b">
-      <title>Generating a List of Recently Added Topics and RSS Feed for a DITA Project</title>
+      <title>DITA Prolog Customizations</title>
       <ul id="ul_ubw_slm_t5b">
+        <li><xref href="prolog-wh-output.dita"/></li>
         <li><xref href="recent_topics_list.dita"/></li>
         <li><xref href="rss_feed_generation.dita"/></li>
       </ul>
