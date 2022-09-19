@@ -79,7 +79,9 @@
             customization to display information from the prolog: <xref
                 href="https://github.com/oxygenxml/blog/tree/master/publishing/webhelpBlogTemplate"
                 format="html" scope="external"/>.</p>
-        <p>Each published topic contains information about the author name, created date and an estimate number of minutes it takes to read the article:</p>
+        <p>Each published topic contains information about the author name, created date and an
+            estimate number of minutes it takes to read the article. The author name display can be
+            enriched with an avatar photo:</p>
         <image href="../images/prolog-display.png" id="image_qjl_3sj_x5b" scale="50"/>
     </body>
 </topic>
