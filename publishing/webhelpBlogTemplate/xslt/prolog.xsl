@@ -15,6 +15,14 @@
                     '[D] [MNn,3-3] [Y0001]')"/>
             </div>
         </xsl:if>
+        <div style="color: gray;">
+            <xsl:variable name="fileContent" select="/"/>
+            <xsl:variable name="text" select="normalize-space($fileContent)"/> 
+            <xsl:variable name="textWithoutSpaces" select="translate($fileContent, ' ', '')" /> 
+            <xsl:variable name="fileCountWords" select="string-length($text) - string-length($textWithoutSpaces) +1"/>
+            <xsl:variable name="readMin" select="format-number($fileCountWords div 50, '0')"/>
+            Read time: <xsl:value-of select="$readMin"/> minute(s)
+        </div>
         <xsl:next-match/>
     </xsl:template>
 </xsl:stylesheet>
