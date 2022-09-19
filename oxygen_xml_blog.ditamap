@@ -44,6 +44,7 @@
             <topicref href="topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita"/>
             <topicref href="topics/publishing_dita_powerpoint.dita"/>
             <topicref href="topics/adding_labels_to_topics_in_the_webhelp_responsive_output.dita"/>
+            <topicref href="topics/prolog-wh-output.dita" keys="prolog-wh-output"/>
             <topicref href="topics/recent_topics_list.dita"/>
             <topicref href="topics/rss_feed_generation.dita"/>
       <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
