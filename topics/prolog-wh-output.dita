@@ -15,8 +15,8 @@
     </prolog>
     <body>
         <p>DITA topics can contain a <xmlelement>prolog</xmlelement> element with various details
-            like the <b>author name</b>, <b>creation date</b>, details which are not displayed by
-            default in the published output. </p>
+            such as the <b>author name</b>, <b>creation date</b>, and other details that are not
+            displayed in the published output by default. </p>
         <p>
             <codeblock id="codeblock_t1c_yq1_xrb" outputclass="language-xml">&lt;topic id="...">
     &lt;title>...&lt;/title>
@@ -26,8 +26,8 @@
             &lt;created date="2022-01-13"/>
         &lt;/critdates></codeblock>
         </p>
-        <p>At the time of publishing, we can show before the actual topic content the author name,
-            creation date and the number of minutes it takes to read the article by customizing the
+        <p>At the time of publishing, we can show the author name, creation date, and the number of
+            minutes it takes to read the article before the actual topic content by customizing the
             WebHelp Responsive output.</p>
         <p>DITA WebHelp output can be customized using a <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html"
@@ -45,7 +45,7 @@
         &lt;/xslt>
     &lt;/webhelp>
 &lt;/publishing-template></codeblock>The <filepath>prolog.xsl</filepath> stylesheet will
-            display the author name, creation date and an approximate number of minutes it takes to
+            display the author name, creation date, and an approximate number of minutes it takes to
             read the
             article:<codeblock id="codeblock_b3f_k1b_xrb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
@@ -79,7 +79,7 @@
             customization to display information from the prolog: <xref
                 href="https://github.com/oxygenxml/blog/tree/master/publishing/webhelpBlogTemplate"
                 format="html" scope="external"/>.</p>
-        <p>Each published topic contains information about the author name, created date and an
+        <p>Each published topic contains information about the author name, created date, and an
             estimate number of minutes it takes to read the article. The author name display can be
             enriched with an avatar photo:</p>
         <image href="../images/prolog-display.png" id="image_qjl_3sj_x5b" scale="50"/>
