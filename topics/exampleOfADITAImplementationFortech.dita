@@ -4,51 +4,75 @@
   <title>Using DITA to Document a Software Product</title>
   <prolog>
     <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-09-28"/>
+    </critdates>
   </prolog>
   <body>
-    <p>Besides working on an <b>XML Editor</b> with lots of <b>DITA</b> editing functionality we
-      also use DITA internally for editing the <b>Oxygen User's Guide</b>. </p>
+    <p>Besides working on an XML editing tool with lots of <b>DITA</b> editing functionality we also
+      use DITA internally for editing the <b>Oxygen User's Guide</b>. </p>
     <p>In this article I will try to give you an overview of our entire workflow as evidence that
         <b>DITA</b> does work and that it can be used and implemented without expensive solutions. </p>
     <p>First here's an overview of our needs:<ul id="ul_sd1_hfg_dq">
-        <li><b>Offline Help</b> which is available inside the installed application. Oxygen is a
-          multi-platform application so we need to generate both <b>HTML Help</b> (CHM) for
-            <b>Windows</b> and <b>JavaHelp</b> for the <b>Mac OSX</b> and <b>Linux</b>
-          installations. Also for the <b>Oxygen Eclipse Plugin</b> we need to generate <b>Eclipse
-            Help</b>.</li>
         <li><b>Online Help</b> which is available as <xref
-            href="https://www.oxygenxml.com/doc/ug-oxygen/" format="html" scope="external"><b>WebHelp
-              with Feedback</b></xref> on our web site and allows users to add comments to each
-          topic. Those comments can then be used by us to rephrase and improve our
-          documentation.</li>
-        <li><b>PDF</b> containing the entire contents of the user's manual. Nowadays most our users
-          use the online <b>WebHelp</b> because it can be used much easier for finding certain
-          topics so in our case at least the <b>PDF</b> output is not popular anymore along
-          users.</li>
+        href="https://www.oxygenxml.com/doc/ug-oxygen/" format="html" scope="external"><b>WebHelp
+        Responsive</b></xref> on our web site. Our <xref
+        href="https://www.oxygenxml.com/doc/ug-feedback/topics/ofb-installing-feeback-oxygen.html"
+        format="html" scope="external">WebHelp Feedback</xref> integration allows users to add
+        comments and ratings to each topic. Those comments can later be used by us to rephrase and
+        improve our documentation.</li>
+        <li><b>PDF</b> containing the entire contents of the user's manual. The PDF output is styled
+        using CSS and obtained from DITA content using our <xref
+        href="https://www.oxygenxml.com/publishing_engine.html" format="html" scope="external"
+        >Oxygen Publishing Engine</xref>. Nowadays most our users use the online <b>WebHelp</b>
+        because it can be used much easier for finding certain topics so in our case at least the
+        <b>PDF</b> output is not popular anymore along users.</li>
+      <li><b>Offline Help</b> which is available inside the installed application. Oxygen is a
+        multi-platform application so we need to generate both <b>HTML Help</b> (CHM) for
+        <b>Windows</b> and <b>JavaHelp</b> for the <b>Mac OSX</b> and <b>Linux</b> installations.
+        Also for the <b>Oxygen Eclipse Plugin</b> we need to generate <b>Eclipse Help</b>.</li>
       </ul></p>
     <p>We have two main distributions (<b>Standalone</b> and <b>Eclipse plugin</b>) and three main
-      products (<b>Editor</b>, <b>Developer</b> and <b>Author</b>). So we need to produce about six
-      (6) different publications from the same <b>DITA</b> content depending on the shipped
-      product.</p>
+      products (<b>Editor</b>, <b>Developer</b> and <b>Author</b>). We also have a web editing tool,
+      WebHelp generation plugin and publishing engines. So we need to produce more than 9 different
+      publications from the same <b>DITA</b> content depending on the shipped product.</p>
     <p>And here's an overview of the tools we use:</p>
+    <section id="section_lqd_nfw_z5b">
+      <title>Git as a Version Control System</title>
+      <p>We store our DITA content in a private <b>GitHub</b> repository and we also made a public
+        <b>GitHub</b> repository containing a copy of our user manual's DITA content:<xref
+        href="https://github.com/oxygenxml/userguide" format="html" scope="external"/>. We use the
+        free Oxygen <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
+        format="html" scope="external">Git client add-on</xref> for collaborating on the project.
+        Other external Git clients like <b>SourceTree</b> or <b>Fork</b> can also be used to check
+        out, edit and push changes to the Git repository. Our editing workflow is similar to what is
+        described in <xref
+        href="https://www.oxygenxml.com/events/2020/webinar_using_dita_for_small_technical_documentation_teams.html"
+        format="html" scope="external">this past webinar</xref>.</p>
+    </section>
     <section>
-      <title><ph keyref="oxygen"/></title>
+      <title>Oxygen XML Author</title>
       <p>This may not come as a surprise but we use our own product to edit <b>DITA</b> content,
         partly because it's ours and partly because it is a very good tool. During the last couple
         of years this has been a good opportunity to improve our product based on our own feedback
         (feedback coming from our technical writers).</p>
-      <p><b>Oxygen</b> is used in two ways:<ol id="ol_bnc_gng_dq">
-          <li>By the technical writers to write DITA content.</li>
-          <li>By the reviewers to review documented issues by adding comments, making changes with
-            change tracking enabled.</li>
-        </ol></p>
+      <p><b>Oxygen</b> is used by the technical writers to write <b>DITA</b> content but we also
+        have colleagues who review content and propose changes directly from the web Browser.</p>
+    </section>
+    <section id="section_wvl_dgw_z5b">
+      <title>Oxygen Content Fusion</title>
+      <p>The <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+        format="html" scope="external">Content Fusion add-on</xref> for XML Author allows uploading
+        the edited content to a cloud server and providing a web editing tool for people to provide
+        feedback and review the DITA content directly in a web browser: <xref
+        href="https://www.oxygenxml.com/content_fusion.html" format="html" scope="external"/>.</p>
     </section>
     <section>
-      <title>DITA Open Toolkit + WebHelp plugin</title>
-      <p>We use the DITA Open Toolkit to publish DITA content to the outputs we are interested in.
-        The <b>WebHelp</b> and <b>WebHelp with Feedback</b> outputs are our own additions to the
-          <b>DITA Open Toolkit</b>. But we do not use any special customizations for the other
-        outputs.</p>
+      <title>Oxygen Publishing Engine</title>
+      <p>We use the <xref href="https://www.oxygenxml.com/publishing_engine.html" format="html"
+        scope="external">Oxygen Publishing Engine</xref> (based on the DITA Open Toolkit) to publish
+        DITA content to the outputs we are interested in, mostly WebHelp Responsive, PDF and Windows
+        Help. </p>
     </section>
     <section>
       <title>Jenkins integration server</title>
@@ -56,37 +80,18 @@
     </section>
     <section>
       <title>Automated DITA Content Validation</title>
-      <p>There is a script which runs on a test server and does three types of checks on the
-          <b>DITA</b> content:<ol id="ol_g4h_zkg_dq">
-          <li>Validate and check for completeness, check for broken links, images, broken web links
-            and so on.</li>
-          <li>Check and report topics, resources and images which are no longer referenced
-            anywhere.</li>
-          <li>Spell check the entire DITA content.</li>
-        </ol></p>
+      <p>There is a <xref
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html"
+        format="html" scope="external">Validate and Check for Completeness</xref> script which runs
+        on a test server and does various types of checks on the <b>DITA</b> content (including
+        checks for validation, filtering problems, broken links, etc).</p>
     </section>
     <section>
-      <title>Git as a version control system</title>
-      <p>For a long time we used <b>Subversion</b> for version control. Recently we moved our DITA
-        content to a private <b>GitHub</b> repository and we also made a public <b>GitHub</b>
-        repository containing a copy of our user manual's DITA content:<xref
-          href="https://github.com/oxygenxml/userguide" format="html" scope="external"/>. We use the
-          <b>SourceTree</b> application to work with <b>Git</b> and we are quite happy with it.</p>
-    </section>
-    <section>
-      <title>Atlassian Jira for workflow</title>
-      <p>We use Atlassian Jira to provide a workflow both for the issues which are related directly
-        to our software product and for the issues which are related exclusively with our user's
-        manual. The JIRA is integrated with both our <b>SVN</b> and <b>GIT</b> repositories so it
-        shows for a certain issue all resources which have been modified to fix it.</p>
-      <p>More details about how with work with <b>DITA</b> can be found in these slides I presented
-        at <b>DITA Europe 2014</b>:<xref
-          href="https://www.oxygenxml.com/forum/files/usingDitaForOxygenUsersManual.odp" format="odp"
-          scope="external"/>.</p>
-      <p>Video demonstration showing how collaboration on a technical publication with Subversion
-        can be achieved: <xref
-          href="https://www.oxygenxml.com/demo/Collaborative_Authoring_Using_Subversion.html"
-          format="html" scope="external"/>.</p>
+      <title>Atlassian Jira for Ticketing and Workflow</title>
+      <p>We use <b>Atlassian Jira</b> to provide a workflow both for the issues which are related
+        directly to our software product and for the issues which are related exclusively with our
+        user's manual. The JIRA is integrated with both our <b>SVN</b> and <b>GIT</b> repositories
+        so it shows for a certain issue all resources which have been modified to fix it.</p>
     </section>
   </body>
 </topic>
