@@ -36,7 +36,4 @@
             them while having the diagram representations dynamically converted to SVG in the
             published output.</p>
     </body>
-    <related-links>
-        <link href="embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
-    </related-links>
 </topic>

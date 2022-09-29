@@ -135,4 +135,44 @@
     </topichead>
     <topicref href="topics/contributors.dita"/>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
+    <reltable title="Related Links">
+        <relrow>
+            <relcell>
+                <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="topics/task-steps-diagram.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
+                <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="topics/creating_graphs_from_dita_maps.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="resources/sampleGraphBlog.html" format="html">
+                    <topicmeta>
+                        <navtitle>Graph Visualization of the Oxygen XML Blog DITA Map</navtitle>
+                    </topicmeta>
+                </topicref>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"
+                />
+            </relcell>
+            <relcell>
+                <topicref href="topics/generating_google_structured_data_from_your_dita_faq.dita"/>
+            </relcell>
+        </relrow>
+    </reltable>
 </map>

@@ -45,7 +45,4 @@
             Mermaid live editor: <xref href="https://mermaid.live/edit" format="html"
                 scope="external"/>.</note>
     </body>
-    <related-links>
-        <link href="embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
-    </related-links>
 </topic>

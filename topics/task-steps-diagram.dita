@@ -78,8 +78,4 @@ State&lt;xsl:value-of select="$statePos"/>&lt;xsl:value-of select="position() - 
     <p>At the time of publishing, the task's HTML page will contain this diagram inside it:</p>
     <p><image href="../images/task-diagram.png" id="image_t2h_t5q_s5b" scale="40"/></p>
   </body>
-    <related-links>
-    <link href="embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
-    <link href="embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
-  </related-links>
 </topic>
