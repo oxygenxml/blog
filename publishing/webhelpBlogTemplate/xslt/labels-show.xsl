@@ -6,7 +6,7 @@
     <xsl:template match="*[contains(@class, ' topic/prolog ')]">
         <!-- create a special div which displays all labels, with a link on each label -->
         <xsl:if test=".//keyword[@outputclass = 'label']">
-            <div class="label inPage">
+            <div class="label-container inPage">
                 <xsl:apply-templates select=".//keyword[@outputclass = 'label']"/>
             </div>
         </xsl:if>
@@ -15,7 +15,7 @@
     
     <!-- Match a label keyword and display it as a span -->
     <xsl:template match="keyword[@outputclass = 'label']">
-        <a
+        <a class="label inPage"
             href="{concat('../search.html?searchQuery=label_', normalize-space(translate(text(), ' ', '_')))}">
             <span><xsl:value-of select="text()"/></span>
         </a>
