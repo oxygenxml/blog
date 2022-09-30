@@ -84,15 +84,10 @@
         customizations: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/#topics/customize_webhelp.html"
           format="html" scope="external"/>.</p>
-      <p>For PDF-based outputs if you publish via the <b>DITA Open Toolkit</b> we have a section in
-        our user's manual about PDF customizations: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-pdf-output.html"
-          format="html" scope="external"/>. There is also a <xref
-          href="http://dita-generator.elovirta.com/" format="html" scope="external">PDF plugin
-          generator</xref> created by Jarno Elovirta which can be used in order to customize the PDF
-        layout. The <xref href="http://xmlpress.net/publications/dita/dita-for-print/" format="html"
-          scope="external">DITA For Print</xref> book also covers quite a lot of many customization
-        possibilities. There are also a number of different alternatives to obtain PDF from DITA:
+      <p>For PDF-based outputs we recommend, support and maintain our <xref
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/pdf-css-customization.html"
+        format="html" scope="external">CSS-based PDF publishing</xref> which is free to use from <ph
+        keyref="oxygen"/>. There are also a number of different choices to obtain PDF from DITA:
         <xref href="ditaToPDF.dita"/>.</p>
     </section>
     <section id="section_rqq_nhj_4jb">
