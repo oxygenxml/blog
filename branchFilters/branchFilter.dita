@@ -8,30 +8,29 @@
       </keywords>
     </metadata></prolog>
   <body>
-    <p>In this blog post I'm going to give you a small example of how branch filtering can benefit
-      two cases of reuse which could not be done previously. You can read more about branch
+    <p>In this blog post, I'm going to give you a small example of how branch filtering can benefit
+      two cases of reuse, which could not be done previously. You can read more about branch
       filtering in the <xref
         href="https://www.oxygenxml.com/dita/1.3/specs/index.html#archSpec/base/branch-filtering.html"
         format="html" scope="external">DITA 1.3 specs</xref>.</p>
     <section>
       <title>Case 1 - Combine Two Profiles in the Same Publication</title>
-      <p>Let's say you have a <b>DITA Project</b> about preparing and cooking vegetables. And your
-        DITA Map looks like
+      <p>Suppose that you have a <b>DITA Project</b> about preparing and cooking vegetables and your
+        DITA map looks like
         this:<codeblock outputclass="language-xml">&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 &lt;map>
  &lt;title>Cooking vegetables&lt;/title>
  &lt;topicref href="cleaningTableArea.dita" audience="novice"/>
  &lt;topicref href="preparingVegetables.dita"/>
  &lt;topicref href="addingExtraFlavor.dita" audience="expert"/>
- &lt;/map></codeblock>
-        You have some content common both for <b>expert</b> and <b>novice</b> users but you also
-        have content which is specific for a target audience. You do not need to teach <b>expert</b>
-        chefs how to clean the table and you do not want to teach <b>novice</b> cooks about enhanced
-        flavoring techniques. </p>
-      <p>All is fine until at some point you decide to produce a publication which contains merged
-        inside both the novice and the expert map contents. And here's where branch filtering comes
-        for help. You can create a main DITA Map which reuses your current DITA Map with two
-        profiling
+ &lt;/map></codeblock> You have some content common both for <b>expert</b> and <b>novice</b>
+        users but you also have content that is specific for a target audience. You do not need to
+        teach <b>expert</b> chefs how to clean the table and you do not want to teach <b>novice</b>
+        cooks about enhanced flavoring techniques. </p>
+      <p>All of this is fine until at some point you decide to produce a publication that contains
+        content merged inside both the novice and the expert map content. Here's where branch
+        filtering can help. You can create a main DITA map that reuses your current DITA map with
+        two profiling
         contexts:<codeblock outputclass="language-xml">&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 &lt;map>
  &lt;title>Cooking Vegetables.&lt;/title>
@@ -48,19 +47,17 @@
  &lt;/topichead>
 &lt;/map></codeblock></p>
     </section>
-    <section><title>Case 2 - Reusing Common Topics with Different Product Names</title><p>Let's say
-        you have a simple <b>DITA</b> task in which you have described how a certain task can be
-        performed for a certain product. In our case, the task describes peeling
-        <b>potatoes</b>:</p><image 
-        href="image1.png"
-        id="image_npn_dcn_ft"/></section>
-    <p>The task works and at some point in your <b>Vegetables Soup</b> publication you realise you
-      need to write a similar task about peeling <b>cucumbers</b>. The task is exactly the same,
-      except the product name. So naturally you want to reuse the existing written task. For this we
-      re-write the task so that instead of the product <b>potatoes</b> it contains two
+    <section><title>Case 2 - Reusing Common Topics with Different Product Names</title><p>Suppose
+        that you have a simple <b>DITA</b> task in which you have described how a certain task can
+        be performed for a certain product. In our case, the task describes peeling
+        <b>potatoes</b>:</p><image href="image1.png" id="image_npn_dcn_ft"/></section>
+    <p>The task works and at some point in your <b>Vegetables Soup</b> publication, you realize that
+      you need to write a similar task about peeling <b>cucumbers</b>. The task is exactly the same,
+      except for the product name. So naturally you want to reuse the existing written task. For
+      this, we re-write the task so that instead of the product <b>potatoes</b>, it contains two
       consecutive profiled product
       names:<codeblock outputclass="language-xml">Peeling &lt;ph product="potatoes">potatoes&lt;/ph>&lt;ph product="cucumbers">cucumbers&lt;/ph></codeblock>and
-      include the task in the main DITA Map in two places with different ditaval filters
+      include the task in the main DITA map in two places with different ditaval filters
       applied:<codeblock outputclass="language-xml">&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 &lt;map>
  &lt;title>Peeling Vegetables.&lt;/title>
@@ -76,11 +73,12 @@
   &lt;/topicref>
  &lt;/topichead>
 &lt;/map></codeblock></p>
-    <p>This kind of usage will produce in the HTML output folder two topic HTML files from the
-      single <filepath>peeling.dita</filepath>, one for each filter context.</p>
+    <p>This kind of usage will produce two topic HTML files from the single
+        <filepath>peeling.dita</filepath> (in the HTML output folder), one for each filter
+      context.</p>
     <p>The DITA samples for this post can be downloaded from <xref
         href="https://www.oxygenxml.com/forum/files/branchFilteringBlogSamples.zip" format="zip"
         scope="external"/>.</p>
-    <p>As usual any feedback is welcomed.</p>
+    <p>As usual, any feedback is welcomed.</p>
   </body>
 </topic>
