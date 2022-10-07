@@ -72,10 +72,10 @@
           href="https://www.oxygenxml.com/dita/1.3/specs/#introduction/dita-release-overview.html"
           format="html" scope="external"/>.</p>
       <p>There are also a number of good books like <xref
-                    href="http://xmlpress.net/publications/dita/practitioners-1/" format="html"
-                    scope="external">DITA For Practitioners</xref> and the <xref
-                    href="https://ditastyle.com/" format="html" scope="external">DITA Style
-                    Guide</xref>.</p>
+          href="http://xmlpress.net/publications/dita/practitioners-1/" format="html"
+          scope="external">DITA For Practitioners</xref> and the <xref
+          href="https://www.oxygenxml.com/dita/styleguide/" format="html" scope="external">DITA
+          Style Guide</xref>.</p>
     </section>
     <section id="section_ufb_ngj_2v">
       <title>Resources for customizing the DITA output formats</title>
