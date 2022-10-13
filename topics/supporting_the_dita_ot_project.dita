@@ -9,16 +9,18 @@
     </critdates>
   </prolog>
     <body>
-        <p>This small article is about the relationship between our company, <b>Syncro Soft</b>
-      (which produces the Oxygen XML tools), and the open source <xref
-      href="https://www.dita-ot.org/" format="html" scope="external">DITA Open Toolkit</xref>
-      project.</p>
-    <p> As a commercial company using the <b>DITA Open Toolkit </b>in multiple projects, we try to
-      base this relationship on:<ul id="ul_bwt_t1l_t5b">
-      <li><b>Give and take</b> </li>
-      <li><b>Respect</b></li>
-      <li><b>Growth</b></li>
-      </ul>but as in any relationship, there is probably always room for improvement.</p>
+    <section id="section_oxn_ydc_2vb">
+      <title>Overview</title>
+      <p>This small article is about the relationship between our company, <b>Syncro Soft</b> (which
+        produces the Oxygen XML tools), and the open source <xref href="https://www.dita-ot.org/"
+        format="html" scope="external">DITA Open Toolkit</xref> project.</p>
+      <p> As a commercial company using the <b>DITA Open Toolkit </b>in multiple projects, we try to
+        base this relationship on:<ul id="ul_bwt_t1l_t5b">
+        <li><b>Give and take</b> </li>
+        <li><b>Respect</b></li>
+        <li><b>Growth</b></li>
+        </ul>but as in any relationship, there is probably always room for improvement.</p>
+    </section>
     <section id="section_gbp_1bl_t5b">
       <title>History and Context</title>
       <p>We started integrating the <b>DITA Open Toolkit</b> into Oxygen about <b>14</b> years ago,
