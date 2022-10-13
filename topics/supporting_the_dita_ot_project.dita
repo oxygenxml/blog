@@ -10,7 +10,9 @@
   </prolog>
     <body>
         <p>This small article is about the relationship between our company, <b>Syncro Soft</b>
-      (which produces the Oxygen XML tools), and the DITA Open Toolkit project.</p>
+      (which produces the Oxygen XML tools), and the open source <xref
+      href="https://www.dita-ot.org/" format="html" scope="external">DITA Open Toolkit</xref>
+      project.</p>
     <p> As a commercial company using the DITA Open Toolkit in multiple projects, we try to base
       this relationship on:<ul id="ul_bwt_t1l_t5b">
         <li><b>Give and take</b>
