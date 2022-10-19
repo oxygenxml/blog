@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="shorts_insert_image_references_use_media_tab_to_insert_image_reference">
+<title>Use DITA Reusable Components/Media Tab to Insert an Image Reference</title>
+<body>
+            
+            <p><image href="../images/shorts-media-tab-img-ref.gif" id="image_etx_cm5_fvb"
+      scale="60"/></p>
+        </body>
+</topic>

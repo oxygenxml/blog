@@ -7,7 +7,21 @@
     <topicref href="topics/frequently_asked_questions.dita"/>
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">
-            <topicref href="topics/learnDita.dita"/>
+            <topicref href="topics/learnDita.dita">
+                <topichead navtitle="Learn DITA Editing with Oxygen with Small animated GIFs">
+                    <topicref href="topics/shorts_insert_image_references.dita">
+                        <topicref
+                            href="topics/shorts_insert_image_references_drag_and_drop_to_insert_an_image_reference.dita"/>
+                        <topicref
+                            href="topics/shorts_insert_image_references_copypaste_to_insert_an_image_reference.dita"/>
+                        <topicref
+                            href="topics/shorts_insert_image_references_use_toolbar_action_to_insert_a_figure_with_an_image_reference.dita"/>
+                        <topicref
+                            href="topics/shorts_insert_image_references_use_media_tab_to_insert_image_reference.dita"
+                        />
+                    </topicref>
+                </topichead>
+            </topicref>
             <topicref href="topics/exampleOfADITAImplementationFortech.dita"/>
             <topicref href="topics/guidedAuthoring.dita"/>
             <topicref href="topics/maintain-healthy-dita-project.dita"/>
