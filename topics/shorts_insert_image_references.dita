@@ -11,11 +11,15 @@
     <body>
         <p>Learn all ways to insert image references in DITA topics using small animated GIFs.<ul
                 id="ul_v4s_bdr_hvb">
+                <li><xref href="#./section_erb_pcr_hvb"/></li>
                 <li><xref href="#./section_yds_lcr_hvb"/></li>
                 <li><xref href="#./section_fyy_mcr_hvb"/></li>
-                <li><xref href="#./section_erb_pcr_hvb"/></li>
                 <li><xref href="#./section_ow4_qcr_hvb"/></li>
             </ul></p>
+        <section id="section_erb_pcr_hvb">
+            <title>Use Toolbar Action to Insert a Figure with an Image Reference</title>
+            <p><image href="../images/shorts-image-toolbar-insert.gif" id="image_elp_1l5_fvb"/></p>
+        </section>
         <section id="section_yds_lcr_hvb">
             <title>Drag and Drop to Insert an Image Reference</title>
             <p><image href="../images/shorts-image-dnd.gif" id="image_ts5_hk5_fvb" scale="90"/></p>
@@ -24,10 +28,6 @@
             <title>Copy/Paste to Insert an Image Reference</title>
             <p><image href="../images/shorts-image-copy-paste.gif" id="image_dzt_4k5_fvb" scale="90"
                 /></p>
-        </section>
-        <section id="section_erb_pcr_hvb">
-            <title>Use Toolbar Action to Insert a Figure with an Image Reference</title>
-            <p><image href="../images/shorts-image-toolbar-insert.gif" id="image_elp_1l5_fvb"/></p>
         </section>
         <section id="section_ow4_qcr_hvb">
             <title>Use DITA Reusable Components/Media Tab to Insert an Image Reference</title>
