@@ -20,16 +20,16 @@
             <title>Use Toolbar Action to Insert a Figure with an Image Reference</title>
             <p><image href="../images/shorts-image-toolbar-insert.gif" id="image_elp_1l5_fvb"/></p>
         </section>
-        <section id="section_yds_lcr_hvb">
+        <section id="section_yds_lcr_hvb" outputclass="collapsed">
             <title>Drag and Drop to Insert an Image Reference</title>
             <p><image href="../images/shorts-image-dnd.gif" id="image_ts5_hk5_fvb" scale="90"/></p>
         </section>
-        <section id="section_fyy_mcr_hvb">
+        <section id="section_fyy_mcr_hvb" outputclass="collapsed">
             <title>Copy/Paste to Insert an Image Reference</title>
             <p><image href="../images/shorts-image-copy-paste.gif" id="image_dzt_4k5_fvb" scale="90"
                 /></p>
         </section>
-        <section id="section_ow4_qcr_hvb">
+        <section id="section_ow4_qcr_hvb" outputclass="collapsed">
             <title>Use DITA Reusable Components/Media Tab to Insert an Image Reference</title>
             <p><image href="../images/shorts-media-tab-img-ref.gif" id="image_etx_cm5_fvb"
                     scale="80"/></p>

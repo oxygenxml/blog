@@ -37,10 +37,10 @@
         </tags>
         <html-fragments>
             <fragment file="html-fragments/feedback_footer.xml" placeholder="webhelp.fragment.feedback"/>
+            <fragment file="html-fragments/collapse-section-script.xml" placeholder="webhelp.fragment.head.topic.page"/>
             <fragment file="html-fragments/head.xml" placeholder="webhelp.fragment.head"/>
             <fragment file="html-fragments/footer.xml" placeholder="webhelp.fragment.footer"/>
             <fragment file="html-fragments/scripts.html" placeholder="webhelp.fragment.after.body.topic.page"/>
-           <!-- <fragment file="html-fragments/follow-it.html" placeholder="webhelp.fragment.after.publication.toc"/>-->
             <fragment file="html-fragments/read-progress.html" placeholder="webhelp.fragment.before.body.topic.page"/>
         </html-fragments>
         
