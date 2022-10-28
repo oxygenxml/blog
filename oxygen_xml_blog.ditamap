@@ -99,6 +99,7 @@
         <topicref href="topics/migrating_to_dita.dita"/>
         <topicref href="topics/migrateWordToDita.dita"/>
         <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
+        <topicref href="topics/migratingFmToDita.dita"/>
     </topichead>
     <topichead navtitle="SDK Development (Plugins, Frameworks)">
         <topicref href="topics/customizing_oxygen.dita"/>
