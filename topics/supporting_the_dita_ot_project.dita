@@ -99,11 +99,9 @@
       <title>Registering and Analyzing Issues, Opening Pull Requests</title>
       <p>Our general procedure when encountering <b>DITA Open Toolkit</b> bugs is to:<ul
         id="ul_bwl_4yb_2vb">
-        <li>Open issues for them on the DITA Open Toolkit list</li>
-        <li>If possible find time to analyse the issues</li>
-        <li>
-          <p>Propose workarounds or fixes.</p>
-        </li>
+        <li>Open issues for them on the DITA Open Toolkit list.</li>
+        <li>If possible find time to analyse the issues.</li>
+        <li>Propose workarounds or fixes.</li>
         </ul></p>
       <p>We are possibly the biggest contributor of bug and improvement requests to the <b>DITA Open
         Toolkit</b>. Most of these bugs and improvements are discovered by our end users and added
