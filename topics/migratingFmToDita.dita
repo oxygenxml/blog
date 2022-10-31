@@ -9,6 +9,8 @@
         </critdates>
     </prolog>
     <body>
+        <p>This article explores ways of converting unstructured FrameMaker documents to a DITA XML
+            project.</p>
         <section id="section_udc_1sf_hvb">
             <title>Unstructured FrameMaker to HTML to DITA</title>
             <p>For performing this migration, your documents have to be in the ".mif" format.</p>
@@ -27,7 +29,8 @@
                                     <li>Create a settings file for publishing that contains mappings
                                         to HTML elements for all paragraph and character
                                             styles:<image href="../images/fm-to-dita/mapping.png"
-                                            id="image_zlv_1nh_3vb"/><p>It's very important to have
+                                                id="image_zlv_1nh_3vb" placement="break"/>
+                                        <p>It's very important to have
                                             mappings to HTML headings elements for paragraph styles
                                             that marks headings in your document. In the example
                                             from the above image, the "<i>Chapter</i>",
@@ -45,12 +48,12 @@
                                     <li>Publish the '<i>mif</i>' document to HTML using
                                             <uicontrol>Basic HTML</uicontrol>:<image
                                             href="../images/fm-to-dita/publish.png"
-                                            id="image_dcv_5qh_3vb"/></li>
+                                            id="image_dcv_5qh_3vb"  placement="break"/></li>
                                 </ol></p>
                             <p>After these substeps, an '.htm' document should result into the
                                 output directory:</p>
                             <p><image href="../images/fm-to-dita/htmlOutput.PNG" id="image_ttk_wrh_3vb"
-                                /></p>
+                                placement="break"/></p>
                         </dd>
                     </dlentry>
                     <dlentry>
@@ -107,14 +110,14 @@
                                         from HTML documents containing multiple headings</uicontrol>
                                     option is checked too: <image
                                         href="../images/fm-to-dita/conversionDialog.PNG"
-                                        id="image_qmm_dg3_3vb"/></li>
+                                        id="image_qmm_dg3_3vb"  placement="break"/></li>
                                 <li>Press the <uicontrol>Convert</uicontrol> button.</li>
                             </ol></dd>
                     </dlentry>
                 </dl></p>
             <p>The resulting DITA Map preserved the structure of the document, the images, tables,
                 internal and external link:<image href="../images/fm-to-dita/output.PNG"
-                    id="image_vl4_gg3_3vb"/></p>
+                    id="image_vl4_gg3_3vb"  placement="break"/></p>
             <p> As usual, migration from proprietary formats to XML is never perfect and manual
                 changes need to be made. The names of the original styles are preserved on the
                     <xmlatt>ouputclass</xmlatt> attributes and these can be used for adding extra
