@@ -14,7 +14,7 @@
                         <div class="entry">
                             <div class="title">Welcome to the Oxygen XML Blog!</div>
                             <div>
-                                If you have been searching for useful articles and tutorials covering the various aspects of editing, developing, and publishing using Oxygen XML Editor with various XML technologies, you arrived at the right place!
+                                If you have been searching for useful articles and tutorials covering the various aspects of editing, developing, and publishing using Oxygen XML Author or Editor with various XML technologies, you arrived at the right place!
                             </div>
                             <div class="col-md-4" id="quick_links">
                                 <button type="button" class="btn get-started">Get Started</button>
