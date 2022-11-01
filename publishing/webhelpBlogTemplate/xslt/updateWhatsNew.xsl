@@ -12,7 +12,7 @@
                 <div class="mb_index col-lg-9">
                     <div class="mb_index_bg">
                         <div class="entry">
-                            <div class="title">Welcome to our Blog!</div>
+                            <div class="title">Welcome to the Oxygen XML Blog!</div>
                             <div>
                                 If you have been searching for useful articles and tutorials covering the various aspects of editing, developing, and publishing using Oxygen XML Editor with various XML technologies, you arrived at the right place!
                             </div>
