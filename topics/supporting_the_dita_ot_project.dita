@@ -21,27 +21,24 @@
         <li><b>Growth</b></li>
         </ul>but as in any relationship, there is probably always room for improvement.</p>
     </section>
-    <section id="section_gbp_1bl_t5b">
-      <title>History and Context</title>
-      <p>We started integrating the <b>DITA Open Toolkit</b> into Oxygen about <b>14</b> years ago,
-        some time around <b>2008</b> in Oxygen XML Editor version <b>10</b>. The DITA Open Toolkit
-        remains a very important part of the DITA XML editing and publishing solution provided by
-        us.</p>
-      <p>Currently, we are using the <b>DITA Open Toolkit</b> publishing engine as a component in
-        our Oxygen Publishing Engine in multiple projects:<ul id="ul_yfr_nbl_t5b">
-          <li><b>Oxygen XML Editor</b></li>
-          <li><b>Oxygen XML Author</b></li>
-          <li><b>Oxygen XML Developer</b></li>
-          <li><b>Oxygen Publishing Engine (based on the DITA OT)</b></li>
-        </ul>and there will probably be more to come in the future.</p>
-    </section>
+    <section id="section_gbp_1bl_t5b"><title>History and Context</title><p>We started integrating
+      the <b>DITA Open Toolkit</b> into Oxygen about <b>14</b> years ago, some time around
+      <b>2008</b> in Oxygen XML Editor version <b>10</b>. The DITA Open Toolkit remains a very
+      important part of the DITA XML editing and publishing solution provided by
+      us.</p><p>Currently, we are using the <b>DITA Open Toolkit</b> as a publishing component in
+      our <b>Oxygen Publishing Engine</b> in multiple projects:<ul id="ul_yfr_nbl_t5b">
+      <li><b>Oxygen XML Editor</b></li>
+      <li><b>Oxygen XML Author</b></li>
+      <li><b>Oxygen XML Developer</b></li>
+      <li><b>Oxygen Publishing Engine (based on the DITA OT)</b></li>
+      </ul>and there will probably be more to come in the future.</p></section>
     <section id="section_h2n_sbl_t5b">
       <title>Implementing Plugins for the DITA Open Toolkit</title>
       <p>During these years, we've implemented a number of <b>commercial</b> plugins for the DITA
         Open Toolkit, plugins bundled in the <xref
         href="https://www.oxygenxml.com/publishing_engine.html" format="html" scope="external"
         >Oxygen Publishing Engine</xref>:<ul id="ul_sc4_vbl_t5b">
-        <li><b>DITA to WebHelp</b></li>
+        <li><b>DITA to WebHelp Responsive</b></li>
         <li><b>DITA to PDF (using CSS for styling)</b></li>
         <li><b>DITA to Zendesk</b></li>
         <li><b>CodeBlock Syntax Highlight</b></li>
@@ -75,7 +72,7 @@
           <li><xref href="http://slack.dita-ot.org/" format="html" scope="external">DITA OT Slack
               Channel</xref></li>
           <li><xref href="https://stackoverflow.com/questions/tagged/dita-ot" format="html"
-          scope="external">Stack Overflow</xref> (about <b>50</b> answers so far)</li>
+          scope="external">Stack Overflow</xref> (about <b>80</b> answers so far)</li>
         </ul></p>
       <p>There are also Oxygen-specific channels:<ul id="ul_jxw_p3l_t5b">
           <li><xref href="https://www.oxygenxml.com/forum/dita-editing-and-publishing-dita-content/"

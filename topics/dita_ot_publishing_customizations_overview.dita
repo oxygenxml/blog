@@ -81,5 +81,12 @@
       <title>Generating Content for Google Chatbot</title>
       <p><xref href="customizing_a_chatbot.dita"/></p>
     </section>
+    <section id="section_iyb_ggl_jvb">
+      <title>Externally Contributed Articles</title>
+      <ul id="ul_l1j_hgl_jvb">
+        <li><xref href="cross_book_links.dita"/></li>
+        <li><xref href="preprocessing_ditaot_project_files.dita"/></li>
+      </ul>
+    </section>
     </body>
 </topic>
