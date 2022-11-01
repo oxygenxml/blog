@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_dgl_yrf_hvb">
-    <title>Migrating Unstructured FrameMaker Content to DITA</title>
+    <title>Migrating Unstructured Adobe FrameMaker Content to DITA</title>
     <prolog>
         <author>Cosmin Duna</author>
         <critdates>
@@ -130,5 +130,7 @@
                     href="http://leximation.com/tools/info/fm2dita.php" format="html"
                     scope="external"/>.</p>
         </section>
+        <p><fn>Adobe and FrameMaker are either registered trademarks or trademarks of Adobe in the
+                United States and/or other countries.</fn></p>
     </body>
 </topic>
