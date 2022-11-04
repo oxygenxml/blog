@@ -68,9 +68,11 @@
                                         format="html" scope="external"/>.</li>
                                 <li>Copy the <filepath>correctHtmlFromMif.xml</filepath> and
                                         <filepath>correctHtmlFromMif.xsl</filepath> files from the
-                                    "43. FM conversion fixes" directory into the
-                                        <filepath>refactoring</filepath> directory from the Oxygen
-                                    XML Editor installation directory.</li>
+                                    "43. FM conversion fixes" directory in one of the locations that
+                                    Oxygen scans when loading the custom refactoring operations:
+                                        <xref
+                                        href="https://www.oxygenxml.com/doc/ug-editor/topics/sharing-custom-refactoring-operations.html"
+                                        format="html" scope="external"/>.</li>
                                 <li>Restart Oxygen.</li>
                                 <li>Add the output directory that contains the HTML file to your
                                     project.</li>
