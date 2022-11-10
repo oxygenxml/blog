@@ -16,9 +16,9 @@
     <section id="section_wyk_5fj_2v">
       <title>Resources for editing DITA with Oxygen:</title>
       <p>We have a getting started section in our user's manual: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/eppo-first-dita-topic.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-first-dita-topic.html"
           format="html" scope="external"/> and a larger section on DITA authoring: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/author-dita.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/author-dita.html"
           format="html" scope="external"/>.</p>
       <p>We have a list of videos, some of them DITA-related here: <xref
           href="https://www.oxygenxml.com/videos.html" format="html" scope="external"/> and a series
@@ -82,7 +82,7 @@
       <p>Usually customizing the XHTML based outputs means creating your custom CSS selectors. If
         you generate WebHelp output using Oxygen, we have a section explaining basic WebHelp
         customizations: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/customize_webhelp.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/customize_webhelp.html"
           format="html" scope="external"/>.</p>
       <p>For PDF-based outputs we recommend, support and maintain our <xref
         href="https://www.oxygenxml.com/doc/ug-editor/topics/pdf-css-customization.html"
