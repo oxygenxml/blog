@@ -44,8 +44,8 @@
             from DITA and then using Pandoc to produce other outputs such as Wiki, EPUB, Word, RTF,
             or PDF.</note>
         <note id="note_d2p_hss_4sb" type="tip">To produce web slides from DITA content, you can also
-            use the free DITA to RevealJS plugin created by Stefan Eike: <xref
-                href="https://github.com/doctales/org.doctales.reveal" format="reveal"
-                scope="external"/>.</note>
+            use the free DITA to RevealJS plugin created by Stefan Jung: <xref
+            href="https://github.com/doctales/org.doctales.reveal" format="reveal" scope="external"
+            />.</note>
     </body>
 </topic>
