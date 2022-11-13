@@ -27,10 +27,10 @@
       important part of the DITA XML editing and publishing solution provided by
       us.</p><p>Currently, we are using the <b>DITA Open Toolkit</b> as a publishing component in
       our <b>Oxygen Publishing Engine</b> in multiple projects:<ul id="ul_yfr_nbl_t5b">
-      <li><b>Oxygen XML Editor</b></li>
-      <li><b>Oxygen XML Author</b></li>
-      <li><b>Oxygen XML Developer</b></li>
       <li><b>Oxygen Publishing Engine (based on the DITA OT)</b></li>
+        <li><b>Oxygen XML Editor</b></li>
+        <li><b>Oxygen XML Author</b></li>
+        <li><b>Oxygen XML Developer</b></li>
       </ul>and there will probably be more to come in the future.</p></section>
     <section id="section_h2n_sbl_t5b">
       <title>Implementing Plugins for the DITA Open Toolkit</title>
