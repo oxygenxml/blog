@@ -31,7 +31,7 @@ task initValidation {
  String projectDir = "."
  doLast {
  if(! new File("${projectDir}/extracted/oxygen/").exists()){
-   ant.get(src: 'https://www.oxygenxml.com/InstData/Editor/All/oxygen.tar.gz', dest: "${projectDir}/oxygen.tar.gz", skipexisting: 'true')
+   ant.get(src: 'https://archives.oxygenxml.com/Oxygen/Editor/InstData24.1/All/oxygen.tar.gz', dest: "${projectDir}/oxygen.tar.gz", skipexisting: 'true')
    ant.untar(src: "${projectDir}/oxygen.tar.gz", dest: "${projectDir}/extracted", compression: 'gzip')
    new File("${projectDir}/extracted/oxygen/scriptinglicensekey.txt").write(System.getenv( 'SCRIPTING_LICENSE_KEY' ).replaceAll("  ", "\n"))
   }
