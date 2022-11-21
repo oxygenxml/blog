@@ -11,6 +11,19 @@
     <body>
         <p>This article explores ways of converting unstructured FrameMaker documents to a DITA XML
             project.</p>
+        <section id="section_lzc_csf_hvb">
+            <title>Using a FrameMaker Plugin</title>
+            <p>There is a FrameMaker plugin that can be used for this type of conversion: <xref
+                    href="http://leximation.com/tools/info/fm2dita.php" format="html"
+                    scope="external"/>.</p>
+        </section>
+        <section id="section_lzc_csf_hvg">
+            <title>Using FrameMaker Conversion Table</title>
+            <p> FrameMaker has a feature named "Conversion Table" that can be used for this type of
+                conversion: <xref
+                    href="https://help.adobe.com/en_US/framemaker/using/using-framemaker/user-guide/WSB3FD6CD7-6930-474f-BB1E-64762D105DB6_ver12.0.html"
+                    format="html" scope="external"/>.</p>
+        </section>
         <section id="section_udc_1sf_hvb">
             <title>Unstructured FrameMaker to HTML to DITA</title>
             <p>For performing this migration, your documents have to be in the ".mif" format.</p>
@@ -125,12 +138,6 @@
                 changes need to be made. The names of the original styles are preserved on the
                     <xmlatt>ouputclass</xmlatt> attributes and these can be used for adding extra
                 processing using refactoring operations.</p>
-        </section>
-        <section id="section_lzc_csf_hvb">
-            <title>Using a FrameMaker Plugin</title>
-            <p>There is a FrameMaker plugin that can be used for this type of conversion: <xref
-                    href="http://leximation.com/tools/info/fm2dita.php" format="html"
-                    scope="external"/>.</p>
         </section>
         <p><i>Adobe and FrameMaker are either registered trademarks or trademarks of Adobe in the
             United States and/or other countries.</i></p>
