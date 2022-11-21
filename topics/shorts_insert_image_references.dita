@@ -9,12 +9,12 @@
         </critdates>
     </prolog>
     <body>
-        <p>Learn all ways to insert image references in DITA topics using small animated GIFs.<ul
-                id="ul_v4s_bdr_hvb">
-                <li><xref href="#./section_erb_pcr_hvb"/></li>
-                <li><xref href="#./section_yds_lcr_hvb"/></li>
-                <li><xref href="#./section_fyy_mcr_hvb"/></li>
-                <li><xref href="#./section_ow4_qcr_hvb"/></li>
+        <p>Learn all ways to insert image references in DITA topics using small animated clips.<ul
+            id="ul_v4s_bdr_hvb">
+            <li><xref href="#./section_erb_pcr_hvb"/></li>
+            <li><xref href="#./section_yds_lcr_hvb"/></li>
+            <li><xref href="#./section_fyy_mcr_hvb"/></li>
+            <li><xref href="#./section_ow4_qcr_hvb"/></li>
             </ul></p>
         <section id="section_erb_pcr_hvb">
             <title>Use Toolbar Action to Insert a Figure with an Image Reference</title>
