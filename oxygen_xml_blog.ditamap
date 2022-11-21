@@ -9,7 +9,7 @@
     <topichead navtitle="DITA">
         <topichead navtitle="Learning">
             <topicref href="topics/learnDita.dita">
-                <topichead navtitle="Learn DITA Editing with Oxygen with Small Animated Clips">
+                <topichead navtitle="Learn DITA Editing with Oxygen with Small Clips">
                     <topicref href="topics/shorts_insert_image_references.dita"/>
                     <topicref href="topics/shorts_insert_links.dita"/>
                 </topichead>
