@@ -29,8 +29,8 @@
                         href="https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html?os=Other"
                         format="html" scope="external"/>.</li>
         <li>Unpack it to the <filepath>oxygen</filepath> folder.</li>
-        <li>Download the <xref href="https://github.com/JetBrains/projector-installer" format="html"
-                        scope="external">Jetbrains projector installer</xref> and unzip it in the
+        <li>Download the <xref href="https://github.com/JetBrains/projector-server/releases" format="html"
+                        scope="external">Jetbrains projector server</xref> and unzip it in the
                     Oxygen installation folder (the folder path should be something like:
                         <filepath>oxygen/projector-server-1.5.0</filepath>).</li>
         <li>Download the <xref href="https://github.com/JetBrains/JetBrainsRuntime/releases"
