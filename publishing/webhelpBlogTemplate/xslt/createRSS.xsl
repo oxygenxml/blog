@@ -40,7 +40,7 @@
                                 <link><xsl:value-of select="concat('https://blog.oxygenxml.com', '/', @href)"/></link>   
                                 <guid isPermaLink="false"><xsl:value-of select="@href"/></guid>
                                 <xsl:variable name="ref" select="replace(resolve-uri(@href, base-uri()), '\.html', '.dita')"/>
-                                <xsl:variable name="date" select="document($ref)/*/prolog/critdates/created/@date"/>
+                                <xsl:variable name="date" select="(document($ref)//prolog)[1]/critdates/created/@date"/>
                                 <xsl:choose>
                                     <xsl:when test="$date">
                                         <pubDate><xsl:value-of select="
