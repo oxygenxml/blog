@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ycy_cpn_mvb">
+    <title>Soft generalization</title>
+    <body>
+        <p>To visualize how a document will look like when it is generalized but without really
+            generalizing it, that is without replacing the elements with more general ones, we
+            implemented a CSS rendering to show the XML tags as if the document is generalized.</p>
+        <p>For example, an element on which we make the tags visible using CSS static content placed
+            before and after the element looks like: </p>
+        <p><image href="images/softGeneralization1.png" id="image_uqz_fsn_mvb" scalefit="yes"
+            /></p>
+        <p>If we generalize on level, showing the first derived element type than in this sample
+            <xmlelement>xmlelement</xmlelement> will turn into
+            <xmlelement>markupname</xmlelement>:</p>
+        <p><image href="images/softGeneralization2.png" scalefit="yes" id="image_pcz_4sn_mvb"
+            /></p>
+        <p>If we generalize to show the base elements then many of the tag names will change, as
+            highlighted in the following screen shot:</p>
+        <p><image href="images/softGeneralization3.png" scalefit="yes" id="image_wmd_wsn_mvb"
+            /></p>
+    </body>
+</topic>

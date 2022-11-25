@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_d2">
+   <title>DITA Markup Name Mention
+      <?oxy_insert_start author="George Bina" timestamp="20221115T150255+0000"?>Next v
+      <?oxy_insert_end?>Domain</title>
+   <body>
+      <p>
+         <image href="domains/markup-d-nodes.svg" id="image_d2"/>
+      </p>
+   </body>
+</topic>

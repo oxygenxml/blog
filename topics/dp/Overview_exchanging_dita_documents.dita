@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="section_kct_1dv_fvb">
+<title>Exchanging DITA documents</title>
+<body>
+			
+			<p>One advantage of using DITA is that we can tag at semantic level. For this to work,
+				we need to create a specialization that reflects exactly the concepts the users of
+				that specialization are familiar with. If one tries to layer its actual needs over
+				an existing specialization - or one of the standard schemas - these may not match
+				exactly the concepts of the audience and thus it will look like DITA is not the best
+				fit.</p>
+			<p>But the problem with a specialization is how do we exchange it with other parties? We
+				need to provide them also our specialization, and if they do not have our
+				specialization, then what happens?</p>
+			<p>One approach will be to export the DITA content as generalized content. Then import
+				such a generalized package into an existing DITA installation by specializing as
+				much as possible taking into account what is available on the target DITA
+				installation.</p>
+			<p>How can this be achieved?</p>
+			<p>From the class of the root element we can identify the possible specialized root
+				elements and check if we have them defined in a schema in the target DITA
+				installation. Once we choose a root element then we need to analyze the domain
+				attributes of the root element and see what domains are defined in the target topic
+				type and then specialize elements from those domains back, otherwise, if a domain is
+				not present in the target schema we need to leave the base element.</p>
+			<p>We have support for generalization - and that is relatively easy to implement - and
+				we can probably obtain also the export package in a generalized form. We are missing
+				however a tool to take a generalized package, analyze a current DITA installation
+				and specialize everything so that it matches what is available in that specific DITA
+				installation.</p>
+		</body>
+</topic>

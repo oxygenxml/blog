@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA 2.x Map//EN" "map.dtd">
+<map>
+   <title>DITA Specializations</title>
+   <topicref href="bookmap.dita"/>
+   <topicref href="learningSummary.dita"/>
+   <topicref href="learningPlan.dita"/>
+   <topicref href="learningOverview.dita"/>
+   <topicref href="learningContent.dita"/>
+   <topicref href="learningObjectMap.dita"/>
+   <topicref href="learningBase.dita"/>
+   <topicref href="learningGroupMap.dita"/>
+   <topicref href="learningAssessment.dita"/>
+   <topicref href="troubleshooting.dita"/>
+   <topicref href="reference.dita"/>
+   <topicref href="task.dita"/>
+   <topicref href="glossentry.dita"/>
+   <topicref href="glossgroup.dita"/>
+   <topicref href="concept.dita"/>
+   <topicref href="subjectScheme.dita"/>
+</map>

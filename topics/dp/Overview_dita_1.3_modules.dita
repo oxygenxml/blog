@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="section_cjg_gqz_jvb">
+	<title>DITA modules</title>
+	<body>
+		<p>The DITA specification mentions that each element has a <codeph>class</codeph> attribute
+			that encodes information about the type of that element, for
+			example:<codeblock outputclass="language-xml">&lt;step class="- topic/li task/step"&gt;</codeblock>
+			and this information includes:<lq>A sequence of one or more tokens of the form
+			<codeph>"modulename/typename"</codeph>, with each token separated by one or more spaces,
+			where <codeph>modulename</codeph> is the short name of the vocabulary module and
+			<codeph>typename</codeph> is the element type name. Tokens are ordered left to right
+			from most general to most specialized.</lq></p>
+		<p>By analyzing all the class values from all the elements defined in the schemas we can
+			identify the base modules (top level ones), in this case <codeph>topic</codeph> and a
+			hierarchy implied by how the elements are defined, by this relation from more general to
+			more specialized modules, thus identifying how modules are specialized from others, in
+			this example <codeph>task</codeph> is specialized from <codeph>topic</codeph>.</p>
+		<p>The base DITA modules:</p>
+		<p><image href="diagrams/BaseModules.svg" id="image_edg_b2h_kvb"/></p>
+		<p>The modules specialization hierarchy:</p>
+		<p><image href="diagrams/ModulesHierarchy.svg" id="image_ccw_p3h_kvb"/></p>
+	</body>
+</topic>

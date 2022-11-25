@@ -14,6 +14,23 @@
                     <topicref href="topics/shorts_insert_links.dita"/>
                     <topicref href="topics/shorts_reuse_content.dita"/>
                 </topichead>
+                <topicref href="topics/dp/dita_perspectives.dita" chunk="to-content">
+                    <topicref href="topics/dp/Overview.dita">
+                    <topicref href="topics/dp/Overview_dita_1.3_shells.dita"/>
+                    <topicref href="topics/dp/Overview_dita_1.3_modules.dita"/>
+                    <topicref href="topics/dp/Overview_dita_elements.dita"/>
+                    <topicref href="topics/dp/specializations.ditamap" format="ditamap"/>
+                    <topicref href="topics/dp/Overview_dita_elements_domains.dita">
+                        <topicref href="topics/dp/domains.ditamap" format="ditamap"/>
+                    </topicref>
+                </topicref>
+                <topicref href="topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita">
+                    <topicref href="topics/dp/element_selection_during_editing.dita"/>
+                    <topicref href="topics/dp/automatic_markup_detection.dita"/>
+                    <topicref href="topics/dp/soft_generalization.dita"/>
+                </topicref>
+                <topicref href="topics/dp/Overview_exchanging_dita_documents.dita"/>
+                </topicref>
             </topicref>
             <topicref href="topics/exampleOfADITAImplementationFortech.dita"/>
             <topicref href="topics/guidedAuthoring.dita"/>

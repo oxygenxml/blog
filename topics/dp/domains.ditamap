@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA 2.x Map//EN" "map.dtd">
+<map>
+   <title>DITA Domains</title>
+   <topicref href="learningInteractionBase2-d.dita"/>
+   <topicref href="learningmap-d.dita"/>
+   <topicref href="learningInteractionBase-d.dita"/>
+   <topicref href="learningmeta-d.dita"/>
+   <topicref href="learning-d.dita"/>
+   <topicref href="learning2-d.dita"/>
+   <topicref href="abbrev-d.dita"/>
+   <topicref href="markup-d.dita"/>
+   <topicref href="mathml-d.dita"/>
+   <topicref href="svg-d.dita"/>
+   <topicref href="ui-d.dita"/>
+   <topicref href="equation-d.dita"/>
+   <topicref href="taskreq-d.dita"/>
+   <topicref href="pr-d.dita"/>
+   <topicref href="xml-d.dita"/>
+   <topicref href="glossref-d.dita"/>
+   <topicref href="sw-d.dita"/>
+   <topicref href="relmgmt-d.dita"/>
+   <topicref href="xnal-d.dita"/>
+   <topicref href="ditavalref-d.dita"/>
+   <topicref href="delay-d.dita"/>
+   <topicref href="indexing-d.dita"/>
+   <topicref href="hazard-d.dita"/>
+   <topicref href="hi-d.dita"/>
+   <topicref href="mapgroup-d.dita"/>
+   <topicref href="ut-d.dita"/>
+   <topicref href="classify-d.dita"/>
+</map>
