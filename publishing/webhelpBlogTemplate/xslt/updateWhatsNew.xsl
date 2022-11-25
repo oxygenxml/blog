@@ -25,16 +25,17 @@
                     <div class="banner stripe-latest-posts">                         
                         <h3>Latest Posts</h3>
                         <xsl:for-each
-                            select="//topicref[@href][not(@format) or @format = 'dita'][doc-available(resolve-uri(@href, base-uri()))][document(resolve-uri(@href, base-uri()))/*/prolog/critdates/created/@date]">
-                            <xsl:sort select="document(resolve-uri(@href, base-uri()))/*/prolog/critdates/created/@date" order="descending"/>
+                            select="//topicref[@href][not(@format) or @format = 'dita'][doc-available(resolve-uri(@href, base-uri()))][(document(resolve-uri(@href, base-uri()))//prolog)[1]/critdates/created/@date]">
+                            <xsl:sort select="(document(resolve-uri(@href, base-uri()))//prolog)[1]/critdates/created/@date" order="descending"/>
                             <!-- Present only the first 10 topics -->
                             <xsl:if test="position() &lt; 10">
                                 <xsl:variable name="doc" select="document(resolve-uri(@href, base-uri()))"/>
-                                <xsl:variable name="cd" select="$doc/*/prolog/critdates/created/@date"/>
+                                <xsl:variable name="cd" select="($doc//prolog)[1]/critdates/created/@date"/>
                                 <div class="entry">
-                                    <xsl:variable name="avatar-author" select="replace($doc/*/prolog/author,' ','_')"/>
-                                    <div class="author {$avatar-author}"><a href="topics/contributors.html"><xsl:value-of select="$doc/*/prolog/author"/></a></div>
-                                    <xsl:variable name="label" select="$doc/*/prolog/metadata/keywords/keyword[@outputclass = 'label']"/>
+                                    <xsl:variable name="prolog" select="($doc//prolog)[1]"/>
+                                    <xsl:variable name="avatar-author" select="replace($prolog/author,' ','_')"/>
+                                    <div class="author {$avatar-author}"><a href="topics/contributors.html"><xsl:value-of select="$prolog/author"/></a></div>
+                                    <xsl:variable name="label" select="$prolog/metadata/keywords/keyword[@outputclass = 'label']"/>
                                     <xsl:variable name="fileUrl" select="replace(@href, '\.dita$', '.html')"/>
                                     <xsl:variable name="fileContent" select="$doc/*"/>
                                     <xsl:variable name="x" select="normalize-space($fileContent)"/> 
@@ -43,7 +44,7 @@
                                     <xsl:variable name="readMin" select="format-number($fileCountWords div 50, '0')"/>
                                     
                                     <a class="title" href="{$fileUrl}">
-                                        <xsl:value-of select="$doc/*/title"/>
+                                        <xsl:value-of select="($doc//title)[1]"/>
                                     </a>
                                     <div class="date">
                                         <xsl:value-of select="format-date(xs:date($cd),'[D] [MNn,3-3] [Y0001]')"/></div>
