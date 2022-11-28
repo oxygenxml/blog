@@ -13,8 +13,8 @@
             or it derives as a specialized version of another element. This hierarchy should
             actually decrease the cognitive complexity of a vocabulary because it allows you to find
             an element faster than working with a flat list. </p>
-        <p>In this article we want to show the hierarchy of elements in DITA and then explore how we
-            may take advantage of this in understanding the DITA architecture, learning DITA,
+        <p>In this article, I want to show the hierarchy of elements in DITA and then explore how
+            you can take advantage of this in understanding the DITA architecture, learning DITA,
             document authoring, etc.</p>
     </body>
 </topic>
