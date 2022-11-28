@@ -12,11 +12,11 @@
 			where <codeph>modulename</codeph> is the short name of the vocabulary module and
 			<codeph>typename</codeph> is the element type name. Tokens are ordered left to right
 			from most general to most specialized.</lq></p>
-		<p>By analyzing all the class values from all the elements defined in the schemas we can
-			identify the base modules (top level ones), in this case <codeph>topic</codeph> and a
-			hierarchy implied by how the elements are defined, by this relation from more general to
-			more specialized modules, thus identifying how modules are specialized from others, in
-			this example <codeph>task</codeph> is specialized from <codeph>topic</codeph>.</p>
+		<p>By analyzing all the class values from all the elements defined in the schemas, I can identify
+			the base modules (top level ones). In this case, <codeph>topic</codeph> and a hierarchy
+			implied by how the elements are defined by this relation from more general to more
+			specialized modules, thus identifying how modules are specialized from others (in this
+			example, <codeph>task</codeph> is specialized from <codeph>topic</codeph>).</p>
 		<p>The base DITA modules:</p>
 		<p><image href="diagrams/BaseModules.svg" id="image_edg_b2h_kvb"/></p>
 		<p>The modules specialization hierarchy:</p>
