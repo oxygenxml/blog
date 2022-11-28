@@ -2,11 +2,11 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="jd1_dr1_lvb">
-	<title>DITA domains</title>
+	<title>DITA Domains</title>
 	<body>
-		<p>Some DITA elements are defined to be part of a domain that can be added on any DITA
-			document type as a pluggable component. A domain defines a number of semantic elements
-			that are derived from other elements, providing a specialization of the base elements
-			but reflecting the semantics of a domain like programming, software, etc.</p>
+		<p>Some DITA elements are defined to be part of a domain that can be added on any DITA document
+			type as a pluggable component. A domain defines a number of semantic elements that are
+			derived from other elements, providing a specialization of the base elements but
+			reflecting the semantics of a domain, such as programming, software, etc.</p>
 	</body>
 </topic>
