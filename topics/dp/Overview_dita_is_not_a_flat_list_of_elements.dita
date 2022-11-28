@@ -2,25 +2,25 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="section_akj_ycv_fvb">
-	<title>Taking advantage of DITA elements hierarchy</title>
+	<title>Taking Advantage of DITA Element Hierarchy</title>
 	<body>
-		<p>Elements in DITA are defined not as a flat list of elements, but instead DITA defines a
-			hierarchy, similar to a type hierarchy, and elements are either base elements or they
-			are derived from another element. If we look at the analogy with a type system, the base
-			elements are similar to the primitive types and the other elements are equivalent to
-			derived types.</p>
-		<p>This is realized using values specified in the <b>class</b> attribute. These values
-			specify the category and the name of the current element and, if we talk about a derived
-			element, also the name and category of its parent, as well as all the ancestors up to
-			the base element.</p>
-		<p>For example the <xmlatt>class</xmlatt> value for the <xmlelement>lcPlanTitle</xmlelement>
+		<p>Elements in DITA are defined not as a flat list of elements, but instead as a hierarchy,
+			similar to a type hierarchy, and elements are either base elements or they are derived
+			from another element. If we look at the analogy with a type system, the base elements
+			are similar to the primitive types and the other elements are equivalent to derived
+			types.</p>
+		<p>This is realized using values specified in the <b>class</b> attribute. These values specify the
+			category and the name of the current element and (if we talk about a derived element)
+			also the name and category of its parent, as well as all the ancestors up to the base
+			element.</p>
+		<p>For example, the <xmlatt>class</xmlatt> value for the <xmlelement>lcPlanTitle</xmlelement>
 			element
 			is:<codeblock outputclass="language-xml">class="- topic/fig learningBase/fig learningPlan/lcPlanTitle"</codeblock>This
 			means that the current element is <xmlelement>lcPlanTitle</xmlelement> from the
-			<codeph>learningPlan</codeph> category and this is derived from the
-			<xmlelement>fig</xmlelement> element from the <codeph>learningBase</codeph> category,
-			which in turn is defined from the <xmlelement>fig</xmlelement> element from the
-			<codeph>topic</codeph> category.</p>
-		<p>We may take this information into account in some situations.</p>
+				<codeph>learningPlan</codeph> category and this is derived from the
+				<xmlelement>fig</xmlelement> element from the <codeph>learningBase</codeph>
+			category, which in turn is defined from the <xmlelement>fig</xmlelement> element from
+			the <codeph>topic</codeph> category.</p>
+		<p>We can take this information into account in some situations.</p>
 	</body>
 </topic>
