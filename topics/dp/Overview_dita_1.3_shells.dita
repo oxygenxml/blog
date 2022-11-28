@@ -2,14 +2,14 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="section_nxt_xry_jvb">
-	<title>DITA shells</title>
+	<title>DITA Shells</title>
 	<body>
-		<p>DITA 1.3 is defines multiple types of documents, along with the generic topic and map
-			there are also many specialized topics types and maps types. Each type of document is
-			defined by a schema that is marked as a <codeph>shell</codeph> schema, a schema that
-			should be an entry point, the one that should be referred from an XML document. All the
-			defined shells are presented in the following diagram, grouped by the folder they are
-			defined in:</p>
+		<p>DITA 1.3 defines multiple types of documents. Along with the generic topic and map, there are
+			also many specialized topics types and maps types. Each type of document is defined by a
+			schema that is marked as a <codeph>shell</codeph> schema, a schema that should be an
+			entry point, the one that should be referred from an XML document. All the defined
+			shells are presented in the following diagram, grouped by the folder they are defined
+			in:</p>
 		<image href="diagrams/ShellModulesByGroup.svg" id="image_ghz_5dz_jvb"/>
 	</body>
 </topic>
