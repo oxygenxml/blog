@@ -2,7 +2,7 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="section_cjg_gqz_jvb">
-	<title>DITA modules</title>
+	<title>DITA Modules</title>
 	<body>
 		<p>The DITA specification mentions that each element has a <codeph>class</codeph> attribute
 			that encodes information about the type of that element, for
