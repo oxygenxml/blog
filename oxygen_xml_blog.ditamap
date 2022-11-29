@@ -115,7 +115,17 @@
     <topichead navtitle="Migration">
         <topicref href="topics/migratingToDITA.dita"/>
         <topicref href="topics/migrating_to_dita.dita"/>
-        <topicref href="topics/migrateWordToDita.dita"/>
+        <topicref href="topics/migrateWordToDita.dita">
+            <topicref
+                href="topics/migrating_word_to_dita_bdc/migrating_word_to_dita_using_batch_documents_converter.dita">
+                <topicref
+                    href="topics/migrating_word_to_dita_bdc/preparing_word_document_for_migration.dita"/>
+                <topicref href="topics/migrating_word_to_dita_bdc/converting_word_document.dita"/>
+                <topicref
+                    href="topics/migrating_word_to_dita_bdc/customizing_the_resulting_dita_content.dita"/>
+                <topicref href="topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita"/>
+            </topicref>
+        </topicref>
         <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
         <topicref href="topics/migratingFmToDita.dita"/>
     </topichead>

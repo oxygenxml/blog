@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="frequently-asked-questions">
+    <title>Frequently Asked Questions</title>
+    <prolog>
+        <author>Cosmin Duna</author>
+        <critdates>
+            <created date="2022-11-29"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section id="how-to-fix-unknown-style-warnings">
+            <title>How can I fix the unrecognized style warnings?</title>
+            <p>When converting a Word document, the styles that don't have a mapping into the
+                <uicontrol>Word styles mapping</uicontrol> table from the preferences page
+                are converted to simple paragraph elements and a warning will be reported for
+                each of them in the Results view.</p>
+            <p>Let's take the following example: I have converted the Word document and I see
+                the following warnings in the Results view: <image placement="break" href="images/unknownStyles.PNG" id="image_gqd_2kg_rvb"/></p>
+            <p>These are the steps that you should follow for adding this configuration:<ol id="ol_lzl_jkg_rvb">
+                <li>Open the <uicontrol>Plugins / Batch Documents Converter</uicontrol>
+                    preferences page from Oxygen</li>
+                <li>For fixing the first warning add a new row in the <uicontrol>Word styles
+                    mapping</uicontrol> table with the following cells:<ol id="ol_flf_nkg_rvb">
+                        <li>Type the "p" text into the <uicontrol>Word element</uicontrol>
+                            cell, because the unrecognized style was found on a Word
+                            paragraph.</li>
+                        <li>Type the "Document Title" into the <uicontrol>Word
+                            style</uicontrol> cell.</li>
+                        <li>Into the "HTML elements" cell you have to add a correspondent
+                            HTML element. For this one, a correspondent element is
+                            "<xmlelement>h1</xmlelement>" as for the default mapping of
+                            "Title" style. So, type "<i>h1:fresh</i>" into this cell. The
+                            ":fresh" suffix instructs the converter to create a new element
+                            every time it finds this kind of paragraph. When it's not set,
+                            the converter will try to reuse the elements and combine
+                            sequences of the same style paragraphs into a single
+                            element.</li>
+                    </ol></li>
+                <li>For fixing the second warning add a new row in the <uicontrol>Word
+                    styles mapping</uicontrol> table with the following cells:<ol id="ol_arm_3mg_rvb">
+                        <li>Type the "r" text into the <uicontrol>Word element</uicontrol>
+                            cell, because the unrecognized style was found on a Word
+                            character.</li>
+                        <li>Type the "Keyboard Key" into the <uicontrol>Word
+                            style</uicontrol> cell.</li>
+                        <li>Into the <uicontrol>HTML elements</uicontrol> cell you have to
+                            add a correspondent HTML element. For this one, a correspondent
+                            element is "<xmlelement>kbd</xmlelement>" as for the default
+                            mapping of "HTML Keyboard" style. So, type "<i>kbd</i>" into
+                            this cell. </li>
+                    </ol>
+                </li>
+            </ol> After these steps, you should have these two rows in the configuration
+                from the table: <simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb2">
+                    <strow>
+                        <stentry>p</stentry>
+                        <stentry>Document Title</stentry>
+                        <stentry>h1:fresh</stentry>
+                    </strow>
+                    <strow>
+                        <stentry>r</stentry>
+                        <stentry>Keyboard Key</stentry>
+                        <stentry>kbd</stentry>
+                    </strow>
+                </simpletable>
+            </p>
+            <p>For more information about the <uicontrol>Word styles mapping</uicontrol>
+                configuration see this section from the documentation: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping" format="html" scope="external">Conversions from Word</xref></p>
+            
+        </section>
+        <section id="how-to-configure-mapping-when-wanted-element-doest-exist-in-html">
+            <title>How can I configure the styles mapping when the wanted element doesn't exist
+                in HTML?</title>
+            <p>A frequent case when setting the mapping configuration for a custom style is not
+                to find a correspondent element in HTML, although one exists in DITA.</p>
+            <p>Let's take the following example: I have a Word document that contains a
+                character custom style named "filepath". We know that a correspondent element
+                exists in DITA, but we cannot find one in HTML.</p>
+            <p>These are the steps that can be applied to handle this case: </p>
+            <ol id="ol_cf3_hx1_rvb">
+                <li>Go to the <uicontrol>Plugins / Batch Documents Converter</uicontrol>
+                    preferences page and add the following mapping into the <uicontrol>Word
+                        styles mapping</uicontrol> table:<simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb">
+                            <strow>
+                                <stentry>r</stentry>
+                                <stentry>Filepath</stentry>
+                                <stentry>i.filepath</stentry>
+                            </strow>
+                        </simpletable></li>
+                <li>Convert the Word document to DITA. The characters styled with the
+                    <i>Filepath</i> style in Word are converted to the
+                    <xmlelement>i</xmlelement> element with the "<i>filepath</i>"
+                    <xmlatt>outputclass</xmlatt> attribute on DITA.</li>
+                <li>Move the output files into your project, select them and apply the
+                    "<b>Rename element</b>" refactoring operation using the
+                    "<i>//i[@outputclass = 'filepath']</i>" XPath for matching the target
+                    <xmlelement>i</xmlelement> element and changing them to the
+                    <xmlelement>filepath</xmlelement> DITA element.</li>
+                <li>Apply the "Remove attribute" refactoring operation using the
+                    "<i>//filepath[@outputclass = 'filepath']</i>" XPath for matching the
+                    target elements and deleting the <xmlatt>outputclass</xmlatt>
+                    attributes.</li>
+            </ol>
+            <p>Instead of step 3 and 4 you can also create a custom refactoring operation that
+                makes these two changes, like this: </p>
+            <ol id="custom_refactoring_example">
+                <li>Create an XSLT file (for example, named
+                        <filepath>batch-converter-post-processing.xsl</filepath>) that iterates over
+                    all elements from the document finds the <xmlelement>i</xmlelement> elements
+                    with the "filepath" <xmlatt>outputclass</xmlatt> attribute and replaces them
+                    with the <xmlelement>filepath</xmlelement> elements without copying the
+                        <xmlatt>outputclass</xmlatt> attribute:
+                    <codeblock id="codeblock_ct1_pzf_rvb" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
+
+    &lt;xsl:template match="@* | node()">
+        &lt;xsl:copy>
+            &lt;xsl:apply-templates select="@* | node()"/>
+        &lt;/xsl:copy>
+    &lt;/xsl:template>
+
+    &lt;xsl:template match="i[@outputclass = 'filepath']">
+        &lt;xsl:element name="filepath">
+            &lt;xsl:apply-templates select="node()"/>
+        &lt;/xsl:element>
+    &lt;/xsl:template>
+&lt;/xsl:stylesheet></codeblock></li>
+                <li>Create an XML Refactoring operation descriptor (for example, named
+                        <filepath>batch-converter-post-processing.xml</filepath>) that references
+                    the stylesheet and provides
+                    descriptions:<codeblock id="codeblock_tfw_nbg_rvb" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;refactoringOperationDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.oxygenxml.com/ns/xmlRefactoring" id="op_qzq_y2x_nsb"
+    name="Post-processing Batch Documents Converter">
+    &lt;description>Post-process the resulting DITA documents from the Word conversion using the Batch Documents Converter add-on.&lt;/description>
+    &lt;script type="XSLT" href="batch-converter-post-processing.xsl"/>
+&lt;/refactoringOperationDescriptor></codeblock></li>
+                <li>Copy these two files into a folder <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/sharing-custom-refactoring-operations.html" format="html" scope="external">scanned by Oxygen XML Editor when it
+                    loads the custom operation</xref>.</li>
+                <li>Apply the new custom operation named "<i>Post-processing Batch Documents
+                    Converter</i>" that can be found now into the list of refactoring
+                    operations from the "XML Refactoring" dialog.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

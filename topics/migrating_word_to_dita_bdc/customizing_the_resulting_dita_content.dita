@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="customizing_dita_result">
+    <title>Customizing resulting DITA content</title>
+    <prolog>
+        <author>Cosmin Duna</author>
+        <critdates>
+            <created date="2022-11-29"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Oxygen provides refactoring actions that can be used for <b>organizing</b> and
+            <b>customizing</b> the resulting DITA documents, to <b>respect</b> various
+            DITA best practices.</p>
+        <p>These are some of the most used <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/refactoring-xml-documents-x-tools.html" format="html" scope="external">refactoring operations</xref> that can be
+            applied after the conversion process:<ul id="ul_um5_1q1_rvb">
+                <li>In the <uicontrol>Project</uicontrol> view, the <uicontrol>Move
+                    Resource</uicontrol> and <uicontrol>Rename Resource</uicontrol>
+                    actions can be applied to DITA or non-DITA resources: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-main-files.html#dita-main-files__moving_or_renaming_nondita_resources" format="html" scope="external"/></li>
+                <li>
+                    <p>In the <uicontrol>DITA Maps Manager</uicontrol> view you can arrange
+                        the topics and nodes using the <b>drag and drop</b> support: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-maps-manager.html#dita-maps-manager__drag_and_drop_in_the_dita_maps_manager" format="html" scope="external"/></p>
+                </li>
+                <li>There are refactoring actions for converting between DITA topic types.
+                    So, if the resulting topics look more like DITA Tasks or DITA Concepts,
+                    you can simply convert them using refactoring actions like “Convert to
+                    Task”, “Convert to Concept” and others.</li>
+                <li>There are actions for generating unique IDs for elements
+                    (<uicontrol>Generate IDs</uicontrol>) or changing the ids of the
+                    topics using the file names (<uicontrol>Change topic ID to file
+                        name</uicontrol>).</li>
+                <li>When resulting documents contain <i>nested topics</i> or
+                    <i>sections</i>, you can use <uicontrol>Convert Nested Topics to New
+                        Topics</uicontrol> or <uicontrol>Convert Sections to New
+                            Topics</uicontrol> to extract new files.</li>
+                <li>Topics can be extracted from the map hierarchy into a new DITA map,
+                    using the <uicontrol>Extract to new DITA Map</uicontrol> action.</li>
+                <li>
+                    <p>The <b>Convert DITA Map to Bookmap</b> and <uicontrol>Convert Bookmap
+                        to DITA Map</uicontrol> actions allow converting between map and
+                        bookmap types.</p>
+                </li>
+                <li>
+                    <p>For converting links inside your documents from <i>direct
+                        addressing</i> to <i>indirect key-based addressing</i>, you can
+                        use the <b>Define keys for all topic references</b> action.</p>
+                </li>
+                <li>There are also operations for modifying elements inside documents: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/predefined-refactoring-operations-x-tools.html#predefined-refactoring-operations__refactoring_operations_for_elements" format="html" scope="external"/></li>
+            </ul>Here you have the list of all built-in refactoring operations that can be
+            found in Oxygen: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/predefined-refactoring-operations-x-tools.html" format="html" scope="external"/></p>
+        <p/>
+        <p>When resulting documents require some custom changes you can create a custom
+            refactoring operation based on XSLT: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations-x-tools.html" format="html" scope="external"/>.</p>
+        <p>See this example of a <xref href="frequently_asked_questions.dita#frequently-asked-questions/custom_refactoring_example">custom
+            refactoring operation</xref></p>
+    </body>
+</topic>
