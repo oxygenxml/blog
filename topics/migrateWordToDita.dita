@@ -21,9 +21,12 @@
       <p>The <xref href="https://github.com/oxygenxml/oxygen-resources-converter" format="html"
         scope="external">Oxygen Batch Documents Converter add-on</xref> can be installed in Oxygen and it allows
         you to convert one or more documents to various formats.</p>
-      <p>The following post describes this migration process: <xref
+      <p>More details about the main stages of the Word to DITA migration using the Batch
+        Documents Converter add-on: <xref
           href="migrating_word_to_dita_bdc/migrating_word_to_dita_using_batch_documents_converter.dita"
-        /></p>
+          /></p>
+        <p><note id="note_jmp_cdh_rvb">The Batch Documents Converter add-on is the recommended way to convert
+          one or multiple Word documents to DITA content.</note></p>
     </section>
     <section id="method_1">
       <title>Smart Paste</title>
