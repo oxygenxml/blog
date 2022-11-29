@@ -10,11 +10,10 @@ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
         </critdates>
     </prolog>
     <body>
-        <p>The Word to DITA conversion uses the Word styles found in the Word document for
-            creating structure and formatting the text into the output document. The
-            converter ignores the font, size or color set on text content. To achieve the
-            best results, the Word document has to be <b>well formatted</b> using the
-            <b>word styles</b>.</p>
+        <p>The Word to DITA conversion uses the Word styles found in the Word document for creating
+            structure and formatting the text into the output document. The converter ignores the
+            font, size or color set on text content. To achieve the best results, the Word document
+            has to be <b>well formatted</b> using <b>styles</b>.</p>
         <p>This preparation step assumes correcting  the cases when formatting of the
             content was not made using styles. These are the things that you should take
             into account when checking the document: </p>
