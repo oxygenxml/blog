@@ -9,7 +9,7 @@
         </critdates>
     </prolog>
     <body>
-        <p>This article explores ways of converting unstructured FrameMaker documents to a DITA XML
+        <p>This article explores ways to convert unstructured FrameMaker documents to a DITA XML
             project.</p>
         <section id="section_lzc_csf_hvb">
             <title>Using a FrameMaker Plugin</title>
@@ -19,51 +19,50 @@
         </section>
         <section id="section_lzc_csf_hvg">
             <title>Using FrameMaker Conversion Table</title>
-            <p> FrameMaker has a feature named "Conversion Table" that can be used for this type of
+            <p>FrameMaker has a "Conversion Table" feature that can be used for this type of
                 conversion: <xref
                     href="https://help.adobe.com/en_US/framemaker/using/using-framemaker/user-guide/WSB3FD6CD7-6930-474f-BB1E-64762D105DB6_ver12.0.html"
                     format="html" scope="external"/>.</p>
         </section>
         <section id="section_udc_1sf_hvb">
             <title>Unstructured FrameMaker to HTML to DITA</title>
-            <p>For performing this migration, your documents have to be in the ".mif" format.</p>
+            <p>To perform this migration, your documents must be in the ".mif" format.</p>
             <p>If your documents are in the '.fm' format, you can use the <uicontrol>MIF Wash
-                    Utility</uicontrol> for converting your book into a <i>.mif</i> document: <xref
+                    Utility</uicontrol> to convert your book into a <i>.mif</i> document: <xref
                     href="https://helpx.adobe.com/framemaker/kb/how-to-use-mifwash-utility-in-framemaker.html"
                     format="html" scope="external"/>.</p>
-            <p>The '<i>mif</i>' document has to go through the following conversion and correction
-                steps to obtain DITA content. <dl id="dl_nxm_ylh_3vb">
+            <p>The '<i>mif</i>' document must go through the following conversion and correction
+                steps to obtain DITA content: <dl id="dl_nxm_ylh_3vb">
                     <dlentry>
                         <dt>Publish Your Unstructured FrameMaker to HTML</dt>
                         <dd>
                             <p>In this step, the <i>mif</i> document is converted to HTML using the
                                     <uicontrol>Basic HTML</uicontrol> scenario from FrameMaker. Here
-                                are the substeps for doing it: <ol id="ol_rkd_qmh_3vb">
+                                are the substeps: <ol id="ol_rkd_qmh_3vb">
                                     <li>Create a settings file for publishing that contains mappings
                                         to HTML elements for all paragraph and character
                                             styles:<image href="../images/fm-to-dita/mapping.png"
                                             id="image_zlv_1nh_3vb" placement="break"/>
                                         <p>It's very important to have mappings to HTML heading
-                                            elements for paragraph styles that marks headings in
-                                            your document. In the example from the above image, the
-                                                "<i>Chapter</i>", "<i>Heading</i>", and
-                                                "<i>Title</i>" styles are mapped to the "<i>h1</i>"
-                                            element, the "Subtitle" and "Section" styles to the 'h2'
-                                            element, and the "Subsection" style to the 'h3'
-                                            element.</p><p>The styles set on the list should be
-                                            mapped to the 'li' elements. In the example, it's the
-                                            "Bullet", "Step", and "Step1" styles.</p><p>The
-                                            paragraph styles without mapping are converted to HTML
-                                            paragraphs, so you can skip the ones where the mapping
-                                            is not necessary. The "Body", "CellBody", and
-                                            "CellHeading" styles don't have a mapping in the example
-                                            from the above image. </p></li>
+                                            elements for paragraph styles that mark headings in your
+                                            document. In the example above, the "<i>Chapter</i>",
+                                                "<i>Heading</i>", and "<i>Title</i>" styles are
+                                            mapped to the "<i>h1</i>" element, the "Subtitle" and
+                                            "Section" styles to the 'h2' element, and the
+                                            "Subsection" style to the 'h3' element.</p><p>The styles
+                                            set on the list should be mapped to the 'li' elements.
+                                            In the example, it's the "Bullet", "Step", and "Step1"
+                                            styles.</p><p>The paragraph styles without mapping are
+                                            converted to HTML paragraphs, so you can skip the ones
+                                            where the mapping is not necessary. The "Body",
+                                            "CellBody", and "CellHeading" styles don't have a
+                                            mapping in the example above. </p></li>
                                     <li>Publish the '<i>mif</i>' document to HTML using
                                             <uicontrol>Basic HTML</uicontrol>:<image
                                             href="../images/fm-to-dita/publish.png"
                                             id="image_dcv_5qh_3vb" placement="break"/></li>
                                 </ol></p>
-                            <p>After these substeps, an '.htm' document should result in the output
+                            <p>This should result in an '.htm' document located in the output
                                 directory:</p>
                             <p>
                                 <image href="../images/fm-to-dita/htmlOutput.PNG"
@@ -89,7 +88,7 @@
                                 <li>Restart Oxygen.</li>
                                 <li>Add the output directory that contains the HTML file to your
                                     project.</li>
-                                <li>In the Project view, right-click the HTML file and invoke the
+                                <li>In the Project view, right-click the HTML file, and invoke the
                                         <uicontrol>Refactoring</uicontrol>><uicontrol> XML
                                         Refactoring</uicontrol> action.</li>
                                 <li>In the resulting dialog box, search for the operation named
@@ -98,15 +97,16 @@
                             </ol><p>The applied refactoring operation corrects two problems in the
                                 HTML document:<ul id="ul_afs_wsh_3vb">
                                     <li>The list items without a parent element ('ol' or 'ul').</li>
-                                    <li>Targets of the cross-references that have the "name"
+                                    <li>Targets of the cross references that have the "name"
                                         attributes from anchor elements instead of the "id"
                                         attributes.</li>
                                 </ul></p></dd>
                     </dlentry>
                     <dlentry>
-                        <dt>Convert HTML to DITA Using Oxygen Batch Documents Converter Add-on</dt>
+                        <dt>Convert HTML to DITA Using the Oxygen Batch Documents Converter
+                            Add-on</dt>
                         <dd>The Batch Documents Converter add-on has to be installed in Oxygen for
-                            doing this step. Follow the installation procedure from <xref
+                            this step. Follow the installation procedure <xref
                                 href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
                                 format="html" scope="external">here</xref>.</dd>
                         <dd>Before converting the document, you should configure which headings are
@@ -134,7 +134,7 @@
             <p>The resulting DITA map preserves the structure of the document, images, tables, and
                 internal and external links:<image href="../images/fm-to-dita/output.PNG"
                     id="image_vl4_gg3_3vb" placement="break"/></p>
-            <p>As usual, migration from proprietary formats to XML is never perfect and manual
+            <p>Note that migration from proprietary formats to XML is never perfect and manual
                 changes need to be made. The names of the original styles are preserved on the
                     <xmlatt>ouputclass</xmlatt> attributes and these can be used for adding extra
                 processing using refactoring operations.</p>
