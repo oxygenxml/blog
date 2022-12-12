@@ -24,6 +24,8 @@
             <li><b>Table rendering</b><ol id="ol_nkm_3cy_mlb">
                     <li>copy
                             <systemoutput>[oXygen_install_dir]\frameworks\docbook\css\cals_table.css</systemoutput>
+                        and
+                            <systemoutput>[oXygen_install_dir]\frameworks\docbook\css\html_cals_table.css</systemoutput>
                         in your framework css directory</li>
                     <li> in the <systemoutput>Document Type</systemoutput> edit dialog,
                             <systemoutput>Author</systemoutput> tab,
@@ -45,6 +47,7 @@
                     <li>Table Properties</li>
                     <li>Join cells</li>
                     <li>Split cell</li>
+                    <li>Colspecs (both table.collapse.colspec and table.expand.colspec)</li>
                 </ul><ol id="ol_qkm_3cy_mlb">
                     <li>Copy<systemoutput>
                             [oXygen_installation_dir]\frameworks\docbook\docbook.jar</systemoutput>
