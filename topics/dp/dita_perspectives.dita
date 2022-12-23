@@ -16,5 +16,8 @@
         <p>In this article, I want to show the hierarchy of elements in DITA and then explore how
             you can take advantage of this in understanding the DITA architecture, learning DITA,
             document authoring, etc.</p>
+        <p>All the scripts I used to generate these diagrams can be found in the <xref
+            href="https://github.com/oxygenxml/DITAPerspectives" format="html" scope="external">DITA
+            Perspectives Github Project</xref>.</p>
     </body>
 </topic>
