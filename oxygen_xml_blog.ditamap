@@ -167,6 +167,7 @@
         </topicref>
         <topicref href="topics/oxygen_xml_vulnerability_analysis_faq.dita"/>
         <topicref href="topics/using_oxygen_xml_editor_in_a_browser.dita"/>
+		<topicref href="topics/blog_2022_retrospective.dita"/>
     </topichead>
     <topicref href="topics/contributors.dita"/>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
