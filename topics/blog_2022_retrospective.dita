@@ -10,51 +10,53 @@
 	</prolog>
     <body>
         <p>So here we are at the end of <b>2022</b> and I figured it's a good time to go through
-			some of the improvements we made and posts we added on the <b>Oxygen XML Blog</b>. A
+			some of the improvements we made and posts we added in the <b>Oxygen XML Blog</b>. A
 			short summary of our activity on the <b>Oxygen XML Blog</b> can be found below:<dl
-			id="dl_ps2_lkw_zvb">
-			<dlentry>
-				<dt>Statistics</dt>
-				<dd>As an overview of the most read articles on the blog we found out that articles
-					about conversions from various formats (especially MS Word) to <b>DITA XML</b>,
-					articles about learning <b>DITA XML</b> and general <b>tips and tricks</b>
-					articles were the most read. And I think we provided some good quality content
-					covering these aspects in 2022. In total in 2022 we provided about 30 new
-					articles to the blog.</dd>
-			</dlentry>
-			<dlentry>
-				<dt>Collaborators</dt>
-				<dd>This year we had lots more internal collaborators with contributors to the
-					<b>Oxygen XML Blog</b>. Our web designers <b>Mihai</b> and <b>Luci</b> created a
-					new color theme for the blog. My colleagues <b>Cosmin Duna</b>, <b>George
-					Bina</b> and <b>Alex Smarandache</b> contributed various interesting and useful
-					articles to the blog. Our external collaborator <b>Chris Papademetrious</b> also
-					submitted an article about enhancing DITA Open Toolkit project files.</dd>
-			</dlentry>
-			<dlentry>
-				<dt>Moving the product forward</dt>
-				<dd>The blog also served as a place where to experiment with ideas which were later
-					incorporated in <b>Oxygen</b>. For example based on articles written on the blog
-					we added to <b>Oxygen</b> the capability to convert <b>OpenAPI</b> documents to
-					<b>DITA XML</b> or to generate <b>Google Structured Data</b> content when
-					publishing <b>DITA XML</b> content to <b>WebHelp Responsive</b> Output.</dd>
-			</dlentry>
+				id="dl_ps2_lkw_zvb">
+				<dlentry>
+					<dt>Statistics</dt>
+					<dd>As an overview of the most read articles on the blog, we found out that
+						articles about conversions from various formats (especially MS Word) to
+							<b>DITA XML</b>, articles about learning <b>DITA XML</b>, and general
+							<b>tips and tricks</b> articles were the most read. Also, I think we
+						provided some good quality content covering these aspects in 2022. In total,
+						we provided about 30 new articles to the blog in 2022.</dd>
+				</dlentry>
+				<dlentry>
+					<dt>Collaborators</dt>
+					<dd>This year, we had a lot more internal collaborators with contributors to the
+							<b>Oxygen XML Blog</b>. Our web designers <b>Mihai</b> and <b>Luci</b>
+						created a new color theme for the blog. My colleagues <b>Cosmin Duna</b>,
+							<b>George Bina</b>, and <b>Alex Smarandache</b> contributed various
+						interesting and useful articles to the blog. Our external collaborator
+							<b>Chris Papademetrious</b> also submitted an article about enhancing
+						DITA Open Toolkit project files.</dd>
+				</dlentry>
+				<dlentry>
+					<dt>Moving the product forward</dt>
+					<dd>The blog also served as a place to experiment with ideas that were later
+						incorporated into <b>Oxygen</b>. For example, based on articles written in
+						the blog, we added to <b>Oxygen</b> the capability to convert <b>OpenAPI</b>
+						documents to <b>DITA XML</b> or to generate <b>Google Structured Data</b>
+						content when publishing <b>DITA XML</b> content to <b>WebHelp Responsive</b>
+						Output.</dd>
+				</dlentry>
 			</dl></p>
-		<p>We hope you found the articles we added to the <b>Oxygen XML Blog</b> this year useful.
-			If you have ideas about possible future articles which we could add to the blog, we are
-			always open to suggestions, or you can also contribute articles yourselves:<xref
-			href="welcome.dita#welcome/section_tnr_rr3_jkb"/>.</p>
+		<p>We hope you found the articles we added to the <b>Oxygen XML Blog</b> this year useful. If you
+			have ideas about possible future articles that we could add to the blog, we are always
+			open to suggestions, or you can also contribute articles yourselves: <xref
+				href="welcome.dita#welcome/section_tnr_rr3_jkb"/></p>
 		<p>A more detailed list of contributions to the blog can be found below:</p>
 		<section id="section_ljn_css_zvb">
 			<title>Colors and Layout Redesign</title>
-			<p>My colleagues <b>Mihai</b> and <b>Luci</b> who maintain and design our web site have
-				had time this year to do a full redesign of the Oxygen <b>WebHelp</b> publishing
+			<p>My colleagues <b>Mihai</b> and <b>Luci</b> (who maintain and design our web site) have had
+				time this year to do a full redesign of the Oxygen <b>WebHelp</b> publishing
 				template we are using to publish our blog's DITA XML content to WebHelp.</p>
 			<p>So thanks to their work the entire layout of the blog looks better now!</p>
-			<p>We also changed the <b>WebHelp</b> feedback authentication available on each page of
-				the blog to the <b>Oxygen XML</b> organization so that with the same authentication
-				you can leave us feedback either on the <b>Oxygen Users Guide</b> Web pages or on
-				the <b>Oxygen XML Blog</b>.</p>
+			<p>We also changed the <b>WebHelp</b> feedback authentication available on each page of the blog
+				to the <b>Oxygen XML</b> organization so that with the same authentication, you can
+				leave us feedback either on the <b>Oxygen Users Guide</b> Web pages or on the
+					<b>Oxygen XML Blog</b>.</p>
 		</section>
 		<section id="section_ayy_zqs_zvb">
 			<title>Migrating Word and Unstructured FrameMaker to DITA XML</title>
@@ -68,12 +70,11 @@
 		</section>
 		<section id="section_v4y_xps_zvb">
 			<title>DITA Publishing</title>
-			<p>In 2022 I wrote quite a few small articles based on my experiences with various DITA
-				publishing customizations and they are all linked in this overview post:<xref
-				href="dita_ot_publishing_customizations_overview.dita"/>.</p>
-			<p>I also wrote an article about the various ways in which we support the <b>DITA Open
-				Toolkit</b> open source engine: <xref href="supporting_the_dita_ot_project.dita"
-				/>.</p>
+			<p>In 2022, I wrote quite a few small articles based on my experiences with various DITA
+				publishing customizations and they are all linked in this overview post: <xref
+					href="dita_ot_publishing_customizations_overview.dita"/>.</p>
+			<p>I also wrote an article about the various ways that we support the <b>DITA Open Toolkit</b>
+				open source engine: <xref href="supporting_the_dita_ot_project.dita"/>.</p>
 			<p>My colleague <b>Alexandru Smarandache</b> submitted his first article about <xref
 				href="customizing_a_chatbot.dita">creating learning content for the Google Chatbot
 				from DITA XML content</xref>. </p>
@@ -87,9 +88,9 @@
 		</section>
 		<section id="section_shr_tss_zvb">
 			<title>DITA Perspectives</title>
-			<p>Our boss and colleague <b>George Bina</b> contributed an article and a GitHub project
-				with his experiments creating automatic graphs showing the hierarchy of DITA
-				elements in the DITA specification:<xref href="dp/dita_perspectives.dita"/></p>
+			<p>Our boss and colleague <b>George Bina</b> contributed an article and a GitHub project with his
+				experiments creating automatic graphs showing the hierarchy of DITA elements in the
+				DITA specification: <xref href="dp/dita_perspectives.dita"/>.</p>
 		</section>
 		<section id="section_mt4_hrs_zvb">
 			<title>Short Clips - DITA Editing</title>
