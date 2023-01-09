@@ -50,21 +50,40 @@
           scope="external"/>.</p>
     </section>
     <section id="section_pqy_rlp_rdb">
-      <title>General Translation Workflow</title>
+      <title>General Translation Workflow when the Translation agency accept DITA documents</title>
       <p>When translating <b>DITA</b> content, the most common process involves these steps:<ol
           id="ol_rwf_sz4_rdb">
           <li>You create your content in the primary language using a <b>DITA</b> authoring tool
               (<b><ph keyref="oxygen"/></b>).</li>
           <li>Before each release, you gather all the <b>DITA</b> topics that have been changed and
             need to be translated. The Oxygen <xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/fluenta-dita-translation-add-on.html"
-              format="html" scope="external">Fluenta DITA Translation</xref> add-on might be handy
-            for this.</li>
+              href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
+              format="html" scope="external">Translation Package Builder</xref> plugin might be
+            handy for this.</li>
           <li>Send a copy of the relevant <b>DITA</b> files to the translation agency (known also as
             "localisation service provider").</li>
           <li>Receive translated <b>DITA</b> content back from the translation agency and integrate
             it in each language-specific project folder.</li>
         </ol></p>
+    </section>
+    <section id="section_emr_dvs_cwb">
+      <title>Translation Workflow when the Translation agency accepts XLIFF files</title>
+      <p><term>XLIFF</term> (<b>XML Localization Interchange File Format</b>) is an XML-based format
+        created to standardize the way data are passed between and among tools during a localization
+        process. If your translation agency accepts this format, the translation workflow usually
+        has these steps:<ol>
+          <li>At various milestones (for example, when a new version is released), you generate
+            XLIFF files for each language you translate to.</li>
+          <li>You send the XLIFF file to the translation service provider.</li>
+          <li>Once the XLIFF returns from translation, you generate a translated version of your map
+            and topics from the XLIFF file.</li>
+        </ol></p>
+      <p>
+        <note id="note_uym_cws_cwb" type="important">The <xref
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/fluenta-dita-translation-add-on.html"
+            format="html" scope="external">Fluenta DITA Translation</xref> add-on can help with all
+          of these steps.</note>
+      </p>
     </section>
     <section id="section_anj_qyz_sdb">
       <title>Publishing your Translated Content</title>
