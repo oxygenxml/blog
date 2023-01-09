@@ -57,9 +57,9 @@
               (<b><ph keyref="oxygen"/></b>).</li>
           <li>Before each release, you gather all the <b>DITA</b> topics that have been changed and
             need to be translated. The Oxygen <xref
-              href="https://github.com/oxygenxml/oxygen-dita-translation-package-builder"
-              format="html" scope="external">Translation Package Builder</xref> plugin might be
-            handy for this.</li>
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/fluenta-dita-translation-add-on.html"
+              format="html" scope="external">Fluenta DITA Translation</xref> add-on might be handy
+            for this.</li>
           <li>Send a copy of the relevant <b>DITA</b> files to the translation agency (known also as
             "localisation service provider").</li>
           <li>Receive translated <b>DITA</b> content back from the translation agency and integrate
