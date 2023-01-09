@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_x3s_z4n_mvb">
+    <title>Element Selection During Editing</title>
+    <body>
+        <p>To take advantage of the fact that elements in DITA form a hierarchy, one possibility is
+            to follow this hierarchy when we present the user with the choice of an element to
+            insert, so instead of presenting a flat list of choices, we can organize the elements
+            according to the hierarchy defined by the <xmlatt>class</xmlatt> attribute values and
+            thus, if the user selects an unordered list (<xmlelement>ul</xmlelement> element) to
+            insert (for example), we can further present all the elements specialized from the
+                <xmlelement>ul</xmlelement> element that are valid in that position in the document.
+            Of course, this makes sense if the user is browsing for an element to insert, and the
+            user already knows the element and types its name, then we can just filter that name and
+            eventually, if there are elements specializing the one identified by the entered string,
+            then we can show them further.</p>
+        <p>Another possibility is to present a drop-down for an element that has specialized
+            elements, and those are valid at that location, and allow the user to move to a more
+            specialized element by selecting it from that drop-down.</p>
+    </body>
+</topic>

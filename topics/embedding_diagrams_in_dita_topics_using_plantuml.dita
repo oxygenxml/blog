@@ -4,13 +4,19 @@
     <title>Embedding Diagrams in DITA topics using PlantUML</title>
     <prolog>
         <author>Radu Coravu</author>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Diagrams</keyword>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
     </prolog>
     <body>
         <p><xref href="https://plantuml.com/" format="html" scope="external">PlantUML</xref> is a
             neat library that takes textual descriptions of diagrams and produces visual diagrams
             from them. </p>
         <p>Suppose you have a DITA topic that embeds such a textual description of a diagram: <xref
-                href="https://github.com/oxygenxml/dita-plant-uml/blob/master/com.oxygenxml.plantuml.svg/samples/testDiagram.dita"
+            href="https://github.com/oxygenxml/dita-ot-diagrams-plugin/blob/master/com.oxygenxml.diagrams.svg/samples/testPlantUMLDiagram.dita"
                 format="html" scope="external"/>.</p>
         <p><image id="image_lmd_jzh_ckb"
                 href="../images/previewPlantUML.png"/></p>
@@ -23,7 +29,7 @@
                 <li>A DITA Open Toolkit publishing plugin that, once installed in the DITA Open
                     Toolkit, will convert the textual descriptions to diagrams for both the
                     HTML-based and PDF outputs: <xref
-                        href="https://github.com/oxygenxml/dita-plant-uml" format="html"
+                        href="https://github.com/oxygenxml/dita-ot-diagrams-plugin" format="html"
                         scope="external"/>.</li>
             </ul></p>
         <p>Once you have this setup, you can both visualize the diagrams when editing and publish

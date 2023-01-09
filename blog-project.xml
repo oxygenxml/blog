@@ -8,7 +8,7 @@
     <context idref="blog"/>
     <output href="site"/>
     <publication transtype="webhelp-responsive">
-      <param name="webhelp.publishing.template" href="publishing/webhelpBlogTemplate.zip"/>
+      <param name="webhelp.publishing.template" href="publishing/webhelpBlogTemplate"/>
     </publication>
   </deliverable>
   
@@ -16,7 +16,7 @@
     <context idref="blog"/>
     <output href="site"/>
     <publication transtype="pdf-css-html5">
-      <param name="pdf.publishing.template" href="publishing/webhelpBlogTemplate.zip"/>
+      <param name="pdf.publishing.template" href="publishing/webhelpBlogTemplate"/>
     </publication>
   </deliverable>
   

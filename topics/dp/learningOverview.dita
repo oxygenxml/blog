@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_d2">
+   <title>learningOverview</title>
+   <body>
+      <p>Defined in ../data/rng/learning/rng/learningOverviewMod.rng</p>
+      <p>
+         <image href="specializations/learningOverview-nodes.svg"
+                id="image_d2"/>
+      </p>
+   </body>
+</topic>

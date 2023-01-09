@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="preparing_word">
+    <title>Preparing Word Document for Migration</title>
+    <prolog>
+        <author>Cosmin Duna</author>
+        <critdates>
+            <created date="2022-11-29"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>The Word to DITA conversion uses the styles found in the Word document for creating
+            structure and formatting the text into the output document. The converter ignores the
+            font, size or color set on text content. To achieve the best results, the Word document
+            has to be <i>well styled</i>.</p>
+        <p>This preparation step assumes correcting various cases when formatting of the content was
+            not made using styles. These are the things that you should take into account when
+            checking the Word document: </p>
+        <ol>
+            <li>
+                <p>It's important to make sure that titles and headings were formatted using styles
+                    because the topics and sections structure of the output document results from
+                    these.</p>
+                <p>This is an example of bad formatting: Instead of using the "<b>Heading 1</b>"
+                    style, when formatting a title paragraph, the writer changed its font, size and
+                    color, keeping the default "<b>Normal</b>" style: <image
+                        href="images/badPractice.PNG" id="image_snc_hlw_pvb" placement="break"/></p>
+            </li>
+            <li><p>For the rest of the content, you can try to use the default Word styles for
+                    creating semantics where it's possible. </p><p>This is an example of bad
+                    formatting: Instead of using the "<b>Quote</b>" style, when formatting a
+                    paragraph, the writer added it between quotes characters and changed its font
+                    and alignment keeping the default "<b>Normal</b>" style:<image placement="break"
+                        href="images/quote.PNG" id="image_bn1_gxw_pvb"/></p>Converting the
+                paragraphs containing the "Normal" style will result in DITA p elements. So if you
+                omit this step, you also have the option of adding semantics by post-processing the
+                resulting DITA content.<p>
+                    <note id="note_emq_bvw_pvb" type="note">The text content formatted using the
+                        bold, italic, underline, strike-through, subscript or superscript actions
+                        are handled by the converter. So you don't need to replace them with
+                        correspondent styles like "Strong" and "Emphasis".</note>
+                </p></li>
+        </ol>
+    </body>
+</topic>

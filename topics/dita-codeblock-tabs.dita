@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita-codeblock-tabs">
+    <title>Show Consecutive DITA Code Blocks in Separate Tabs</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-03-09"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>When inserting <xmlelement>codeblock</xmlelement> elements in DITA content with code from
+            various languages, you can use the <xmlatt>outputclass</xmlatt> attribute to provide
+            syntax highlighting for each codeblock in the generated WebHelp and PDF outputs: <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks-x.html"
+                format="html" scope="external"/>. </p>
+        <p>Suppose you have consecutive <xmlelement>codeblock</xmlelement> elements, each one of
+            them displaying how something can be accomplished in a particular programming language,
+            like
+            this:<codeblock id="codeblock_g4s_bsc_vsb" outputclass="language-xml">&lt;codeblock xml:space="preserve" outputclass="ruby">require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' =&amp;gt; 'application/octet-stream',
+  'Accept' =&amp;gt; 'application/json',
+  'Authorization' =&amp;gt; 'Bearer {access-token}'
+}
+&lt;/codeblock>
+    &lt;codeblock xml:space="preserve" outputclass="python">import requests
+headers = {
+  'Content-Type': 'application/octet-stream',
+  'Accept': 'application/json',
+  'Authorization': 'Bearer {access-token}'
+}&lt;/codeblock></codeblock></p>
+        <p>You can install this open-source DITA Open Toolkit plugin to display codeblocks as
+            separate tabs in the published WebHelp output: <xref
+                href="https://github.com/oxygenxml/dita-wh-codeblock-tabs" format="html"
+                scope="external"/>.</p>
+        <p>The WebHelp output should look like this:</p>
+        <image href="../images/codeblock-tabs.png" id="image_ewm_ssc_vsb" scale="50"/>
+    </body>
+</topic>

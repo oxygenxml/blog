@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="contributors">
+    <title>Contributors</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-03-11"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Everybody can contribute interesting XML and publishing-related articles to the Oxygen
+            XML Blog: <xref href="welcome.dita#welcome/section_tnr_rr3_jkb"/> All contributors to
+            the Oxygen XML Blog are listed below.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_wln_jnq_vsb">
+            <title>List of contributors to the Oxygen XML Blog</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.85*"/>
+                <thead>
+                    <row>
+                        <entry>Author Name</entry>
+                        <entry>Details</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Alex Jitianu</entry>
+                        <entry>Project Manager, DITA/Authoring team. Oxygen XML Editor.</entry>
+                    </row>
+                    <row>
+                        <entry>Chris Papademetrious</entry>
+                        <entry>Senior Technical Writer, Synopsys Inc.</entry>
+                    </row>
+                    <row>
+                        <entry>Cosmin Duna</entry>
+                        <entry>Senior Software Developer. Oxygen XML Editor.</entry>
+                    </row>
+                    <row>
+                        <entry>Cristi Talau</entry>
+                        <entry>Project Manager, Web Authoring team. Oxygen XML Editor.</entry>
+                    </row>
+                    <row>
+                        <entry>George Bina</entry>
+                        <entry>Owner, DITA XML Expert. Oxygen XML Editor.</entry>
+                    </row>
+                    <row>
+                        <entry>Mihaela Calotescu</entry>
+                        <entry>Senior software developer, Web Authoring team. Oxygen XML
+                            Editor.</entry>
+                    </row>
+                    <row>
+                        <entry>Radu Coravu</entry>
+                        <entry>Helping people with XML-related technologies since the start of this
+                            century. Oxygen XML Editor @radu_coravu</entry>
+                    </row>
+                    <row>
+                        <entry>Steven Higgs</entry>
+                        <entry>Senior Technical Writer. Oxygen XML Editor.</entry>
+                    </row>
+                    <row>
+                        <entry>Alex Smarandache</entry>
+                        <entry>Software Developer. Oxygen XML Editor.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="rss_feed_generation">
+    <title>Dynamically Generating an RSS Feed</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-02-03"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>When publishing a website from DITA XML content, we can dynamically generate an RSS XML
+            feed by customizing the WebHelp Responsive output.</p>
+        <p>DITA WebHelp output can be customized using a <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html"
+                format="html" scope="external">publishing template mechanism</xref>. Inside a
+            publishing template folder, there is an <filepath>opt</filepath> file that can contain
+            links to various XSLT stylesheets that are useful for customizations. For example, we'll
+            add a link to a stylesheet for processing such special keyword label
+            elements:<codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml">&lt;publishing-template>
+    &lt;name>.....&lt;/name>
+    ......
+        &lt;xslt>
+            ....
+            &lt;extension file="xslt/createRSS.xsl" id="com.oxygenxml.webhelp.xsl.createNavLinks"/>
+            .....
+        &lt;/xslt>
+    &lt;/webhelp>
+&lt;/publishing-template></codeblock>The <filepath>createRSS.xsl</filepath> stylesheet
+            generates an <filepath>rss.xml</filepath> file that contains references to all topics
+            referenced in the DITA
+            Map:<codeblock id="codeblock_b3f_k1b_xrb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" 
+    version="2.0">
+    
+    &lt;xsl:param name="JSON_OUTPUT_DIR_URI"/>
+    &lt;xsl:template match="/toc:toc">
+        &lt;xsl:next-match/>
+        &lt;xsl:apply-templates mode="rss" select="."/>
+    &lt;/xsl:template>
+    
+    &lt;xsl:template match="/toc:toc" mode="rss">
+        &lt;xsl:result-document href="{concat($JSON_OUTPUT_DIR_URI, '/../../../../rss.xml')}" indent="yes">
+            &lt;rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+                &lt;channel>
+                    &lt;title>TITLE OF RSS FEED HERE&lt;/title>
+                    &lt;link>/rss.xml&lt;/link>
+                    &lt;description>DESCRIPTION OF FEED HERE&lt;/description>
+                    &lt;language>en-us&lt;/language>
+                    &lt;atom:link href="https://my.website/rss.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom"/>
+                    &lt;lastBuildDate>&lt;xsl:value-of select="format-dateTime(current-dateTime(),'[F], [D] [M01] [Y] [h] [P] [z]')"/>&lt;/lastBuildDate>
+                    &lt;docs>https://oxygenxmlblog.netlify.com/&lt;/docs>
+                    &lt;generator>FEED GENERATOR NAME&lt;/generator>
+                    &lt;managingEditor>EDITOR EMAIL INFORMATION&lt;/managingEditor>
+                    &lt;webMaster>WEBMASTER EMAIL INFORMATION&lt;/webMaster>
+                    &lt;copyright>Copyright Info Here. All rights reserved.&lt;/copyright>
+                    &lt;category>News&lt;/category>
+                    &lt;ttl>30&lt;/ttl>        
+                    &lt;image>
+                        &lt;url>http://my.website/img/rss-image.gif&lt;/url>
+                        &lt;title>BLOG TITLE HERE
+                        &lt;link>/rss.xml&lt;/link>
+                    &lt;/image>
+                    &lt;xsl:for-each select="//toc:topic">
+                        &lt;xsl:if test="not(@href = 'javascript:void(0)')">
+                            &lt;item>
+                                &lt;title>&lt;xsl:value-of select="toc:title"/>&lt;/title>
+                                &lt;link>&lt;xsl:value-of select="concat('/', @href)"/>&lt;/link>   
+                                &lt;guid isPermaLink="false">&lt;xsl:value-of select="@href"/>&lt;/guid>
+                                &lt;xsl:variable name="ref" select="replace(resolve-uri(@href, base-uri()), '\.html', '.dita')"/>
+                                &lt;xsl:variable name="date" select="document($ref)/*/prolog/critdates/created/@date"/>
+                                &lt;xsl:choose>
+                                    &lt;xsl:when test="$date">
+                                        &lt;pubDate>&lt;xsl:value-of select="
+                                            format-date(xs:date($date),
+                                            '[F], [D01] [MNn,*-3] [Y] 00:00:00 GMT')"/>&lt;/pubDate>
+                                        &lt;!-- Format like: Thu, 20 Dec 2022 02:46:11 UTC -->
+                                    &lt;/xsl:when>
+                                    &lt;xsl:otherwise>
+                                        &lt;!-- Set some fixed date so that the topic does not appear as new -->
+                                        &lt;pubDate> Wed, 1 Jan 2020 02:46:11 GMT&lt;/pubDate>
+                                    &lt;/xsl:otherwise>
+                                &lt;/xsl:choose>
+                            &lt;/item>
+                        &lt;/xsl:if>
+                    &lt;/xsl:for-each>
+                &lt;/channel>
+            &lt;/rss>
+        &lt;/xsl:result-document>
+    &lt;/xsl:template>
+&lt;/xsl:stylesheet></codeblock></p>
+        <p>The published output will produce an RSS feed similar to the one here: <xref
+                href="https://blog.oxygenxml.com/rss.xml" format="html" scope="external"/>. For each
+            topic referenced in the feed, a publication date is computed based on its creation date
+            specified in the
+            prolog:<codeblock id="codeblock_ers_thk_lsb" outputclass="language-xml">&lt;topic id="rss_feed_generation">
+    &lt;title>...&lt;/title>
+    &lt;prolog>
+        &lt;author>...&lt;/author>
+        &lt;critdates>
+            &lt;created date="YYYY-MM-DD"/>
+        &lt;/critdates></codeblock></p>
+        <p>The WebHelp publishing template used for publishing this blog already has a customization
+          to create the RSS feed: <xref href="https://github.com/oxygenxml/blog/tree/master/publishing/webhelpBlogTemplate" format="html" scope="external"
+            />.</p>
+        <section id="section_cwn_y4g_nsb">
+            <title>Using the RSS Feed With <b>Follow.it</b> to Receive New Posts by Email</title>
+            <p>Websites such as <b>Follow.it</b> allow you to register a link to your RSS feed and
+                produce a small HTML form that can be embedded in your blog. Users who register to
+                receive notifications when new posts are available in the RSS feed will receive
+                automatic emails. </p>
+            <p>Once the RSS feed is available on the website, the following steps can be followed to
+                integrate with <b>Follow.it</b>:<ol id="ul_l4k_ppg_nsb">
+                    <li>Go to the <xref href="https://follow.it/ni" format="html" scope="external"
+                            >Follow.it</xref> website and add a reference to your RSS feed.</li>
+                    <li>On the website, customize the form that will be embedded in your blog HTML
+                        contents.</li>
+                    <li>In the the <filepath>opt</filepath> file (inside the Oxygen WebHelp
+                        publishing template folder), add references to an XML file that contains the
+                        structure for it to appear after the content of each
+                        article:<codeblock id="codeblock_v5l_wpg_nsb" outputclass="language-xml">&lt;fragment file="html-fragments/subscribe.xml" placeholder="webhelp.fragment.after.toc_or_tiles"/>
+&lt;fragment file="html-fragments/subscribe.xml" placeholder="webhelp.fragment.after.feedback"/></codeblock></li>
+                    <li>Create the <filepath>subscribe.xml</filepath> file and paste the form HTML
+                        content created by <b>Follow.it</b> inside it. Make the HTML content
+                        well-formed.</li>
+                </ol></p>
+        </section>
+    </body>
+</topic>

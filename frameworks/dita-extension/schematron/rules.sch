@@ -26,7 +26,7 @@
                         <critdates>
                             <created>
                                 <xsl:attribute name="date">
-                                    <xsl:value-of select="format-dateTime(current-dateTime(),'[Y]-[M01]-[D]')"/>
+                                    <xsl:value-of select="format-dateTime(current-dateTime(),'[Y]-[M01]-[D01]')"/>
                                 </xsl:attribute>
                             </created>
                         </critdates>

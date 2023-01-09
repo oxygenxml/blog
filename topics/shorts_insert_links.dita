@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="shorts_insert_links">
+    <title>Short Clips - Insert Links</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-10-27"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Learn all ways to insert links in DITA topics using small clips.<ul id="ul_wvn_h1z_hvb">
+            <li><xref href="#./section_erb_pcr_hvb"/></li>
+            <li><xref href="#./section_x24_w45_hvb"/></li>
+            <li><xref href="#./section_yds_lcr_hvb"/></li>
+            <li><xref href="#./section_fyy_mcr_hvb"/></li>
+            <li><xref href="#./section_yds_lcr_hvb2"/></li>
+            <li><xref href="#./section_ujb_zm5_hvb"/></li>
+            <li><xref href="#./section_mmz_lm5_hvb"/></li>
+            <li><xref href="#./section_wx2_nm5_hvb"/></li>
+            </ul></p>
+        <section id="section_erb_pcr_hvb">
+            <title>Use Toolbar Action to Insert a Cross Reference to Another Topic</title>
+            <p>
+                <object data="../images/shorts-crossref-toolbar-insert.mp4" outputclass="video"/>
+                </p>
+        </section>
+        <section id="section_x24_w45_hvb">
+            <title>Use Toolbar Action to Insert a Cross Reference to a Table</title>
+            <p>
+                <object data="../images/shorts-link-inner-element-toolbar.mp4" outputclass="video"/>
+                </p>
+        </section>
+        <section id="section_yds_lcr_hvb">
+            <title>Drag and Drop to Insert a Cross Reference</title>
+            <p>
+                <object data="../images/shorts-crossref-dnd.mp4" outputclass="video"/>
+                </p>
+        </section>
+        <section id="section_fyy_mcr_hvb">
+            <title>Copy/Paste to Insert a Cross Reference</title>
+            <p>
+                <object data="../images/shorts-crossref-copy-paste.mp4" outputclass="video"/>
+                </p>
+        </section>
+        <section id="section_yds_lcr_hvb2">
+            <title>Copy Paste to Insert a Cross Reference To a Table</title>
+            <p>
+                <object data="../images/shorts-inner-topic-dnd.mp4" outputclass="video"/>
+                </p>
+        </section>
+        <section id="section_ujb_zm5_hvb">
+            <title>Use Toolbar Action to Insert a Related Link to Another Topic</title>
+            <p>
+                <object data="../images/shorts-rellink-toolbar-action.mp4" outputclass="video"/>
+                </p>
+        </section>
+        <section id="section_mmz_lm5_hvb">
+            <title>Use Toolbar Action to Insert a Link to a Web Site</title>
+            <p>
+                <object data="../images/shorts-weblink-toolbar-action.mp4" outputclass="video"/>
+                </p>
+        </section>
+        <section id="section_wx2_nm5_hvb">
+            <title>Use Toolbar Action to Insert a Link to a PDF</title>
+            <p>
+                <object data="../images/shorts-link-pdf.mp4" outputclass="video"/>
+                </p>
+        </section>
+    </body>
+</topic>

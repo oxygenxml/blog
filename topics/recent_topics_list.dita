@@ -86,8 +86,8 @@
             by the publishing
             process:<codeblock outputclass="language-xml">    &lt;topicref href="topics/what_s_new.dita" print="no"/></codeblock></p>
         <section><p>The published output will produce a what's new topic as the one here: <xref
-                    href="what_s_new.dita"/>.</p>The WebHelp publishing template used for publishing
+                    href="what_s_new.html" scope="peer" format="html"/>.</p>The WebHelp publishing template used for publishing
             this blog already has a customization to display a recent list of topics: <xref
-                href="../publishing/webhelpBlogTemplate.zip" format="zip"/>.</section>
+              href="https://github.com/oxygenxml/blog/tree/master/publishing/webhelpBlogTemplate" format="html" scope="external"/>.</section>
     </body>
 </topic>

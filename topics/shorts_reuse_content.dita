@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="shorts_reuse_content">
+    <title>Short Clips - Reuse Content</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-11-23"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section id="section_xbt_bcq_pvb">
+            <title>Define a Key for a Product Name and Use It</title>
+            <p><object data="../images/shorts-keydef-keyword.mp4" outputclass="video"/></p>
+        </section>
+        <section id="section_d55_1dq_pvb">
+            <title>Use an Already Defined Key for a Product Name Using The Toolbar Action</title>
+            <p><object data="../images/shorts-keydef-keyword-insert.mp4" outputclass="video"/></p>
+        </section>
+        <section id="section_vvv_kfq_pvb">
+            <title>Add a Content Reference to a Reusable Note Using the Toolbar Actions</title>
+            <p><object data="../images/shorts-conref-toolbar-action.mp4" outputclass="video"/></p>
+        </section>
+        <section id="section_s23_xgq_pvb">
+            <title>Add a Content Reference Using Copy/Special Paste Operations</title>
+            <p><object data="../images/shorts-conref-copy-paste.mp4" outputclass="video"/></p>
+        </section>
+        <section id="section_twl_zhq_pvb">
+            <title>Add a Content Reference Using the DITA Reusable Components View</title>
+            <p><object data="../images/shorts-conref-reusable-comps.mp4" outputclass="video"/></p>
+        </section>
+    </body>
+</topic>

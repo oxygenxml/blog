@@ -45,7 +45,7 @@
    <p>The Oxygen Project view is the place where you can organize and apply batch changes to all
     your resources:</p>
    <ul id="ul_shb_qd4_mfb">
-    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html"
+    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-main-files.html"
       format="html" scope="external">Master files support</xref>. Enable master files support in the
      project, add your top level XML documents as master files and any structure changes, renaming
      or moving files will automatically update all links in the Project. Also works for
@@ -61,14 +61,14 @@
     <li>Add references to multiple folders from various parts of your current file system and
      organize your work in one place.</li>
     <li><xref
-      href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view.html"
       format="html" scope="external">Batch operations</xref>: Select a folder in the project, right
      click and use the <uicontrol>Transform</uicontrol>, <uicontrol>Validate</uicontrol>,
       <uicontrol>Format and Indent</uicontrol>, <uicontrol>Find/Replace in Files</uicontrol>, or
       <uicontrol>Spell Check in Files</uicontrol>. Or use the <uicontrol>XML Refactoring</uicontrol>
      action to apply a refactoring stylesheet over all the selected files.</li>
     <li><xref
-      href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view.html"
       format="html" scope="external">Filter files</xref>. You can instruct the Project view to hide
      various file types.</li>
     <li>The <b>Image Preview</b> view will show the image current selected in the <b>Project</b>
@@ -88,7 +88,7 @@
      actions and their shortcuts. Together with the <b>Switch editor tab</b> action, these help you
      navigate between opened XML documents.</li>
     <li>The <b><xref
-       href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-view-x-editing2.html"
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-dialog.html"
        format="html" scope="external">Open/Find Resource</xref></b> view (main menu <b>Window->Show
       View</b>) allows you to search for file names, search in file contents, or search for files
      containing comments or change tracking.</li>
@@ -157,7 +157,7 @@
     </li>
     <li>Triple click an element tag to select the entire element.</li>
     <li><xref
-      href="https://www.oxygenxml.com/doc/ug-editor/topics/text-navigate-document-content-x-editing2.html"
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/text-navigate-document-content.html"
       format="html" scope="external">Various navigation shortcuts</xref>: Go after next tag. Select
      parent. Use the top level breadcrump.</li>
     <li>Move lines up and down (<b>Alt-Up/Down</b>).</li>
@@ -170,7 +170,7 @@
     <li>Drag/drop resources from a file browser or copy/paste to create links to the resources.</li>
     <li>Remove results of XPath execution.</li>
     <li>Use <xref
-      href="https://www.oxygenxml.com/doc/ug-editor/topics/text-mode-actions-x-modes2.html"
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/text-mode-actions.html"
       format="html" scope="external">contextual menu</xref> to: <ul id="ul_pvt_bp5_nkb">
       <li>Apply base 64/32 encoding or decoding to various parts of the XML document. (for example
        insert base 64 encoded images using the <b>data:image/png;base64,</b> protocol.</li>
@@ -234,17 +234,17 @@
      <li>Select content and then use the <b>Toggle comment</b> action (contextual menu
        <b>Refactoring</b> submenu) to quickly add an XML comment around it.</li>
      <li>In the <xref
-       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu-x-modes2.html"
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu.html"
        format="html" scope="external">contextual menu</xref> the <b>Text</b> submenu contains useful
       actions to count the number of words in the entire document (or in the selected text), convert
       the selection to upper, lowercase, or sentence case).</li>
      <li><xref
-       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html#author-navigate-document-content__navigating_with_bookmarks"
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content.html"
        format="html" scope="external">Bookmarks</xref> - Click the vertical left side bar in the
       editing area to add a bookmark. Navigate to that bookmark even after the file has been closed
       using the <b>Ctrl/CMD + number</b> shortcut.</li>
      <li><xref
-       href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode-x-modes2.html"
+       href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode.html"
        format="html" scope="external">Collapse other folds</xref> - Click a fold triangle in the
       Author visual editing mode and you can choose to close all other folds, useful when working
       with multiple sections in the same file.</li>
@@ -338,7 +338,7 @@
     <li>The <b>File</b> menu offers the possibility to import HTML, CSV, Excel files, or database
      content as XML. </li>
     <li>For some XML frameworks like DITA, TEI, DocBook and XHTML you can use the <xref
-      href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support-x-modes2.html"
+      href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support.html"
       format="html" scope="external">smart paste</xref> functionality.</li>
     <li>The <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
       format="html" scope="external">Batch convertor add-on</xref> allows you to convert multiple

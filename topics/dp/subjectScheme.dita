@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_d2">
+   <title>subjectScheme</title>
+   <body>
+      <p>Defined in ../data/rng/subjectScheme/rng/subjectSchemeMod.rng</p>
+      <p>
+         <image href="specializations/subjectScheme-nodes.svg"
+                id="image_d2"/>
+      </p>
+   </body>
+</topic>

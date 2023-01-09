@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="task-steps-diagram">
+    <title>Presenting DITA Task Steps as Diagrams</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-09-02"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+    <p>By using our free DITA Open Toolkit plugin, you can embed diagram text descriptions (either
+      in <xref href="embedding_diagrams_in_dita_topics_using_plantuml.dita">PlantUML</xref> or <xref
+        href="embedding_diagrams_in_dita_topics_using_mermaid.dita">Mermaid</xref> format) in DITA
+      topics and have them rendered as diagram images in the published output.</p>
+    <p>I experimented with dynamically constructing diagrams (using the <xref
+        href="task-steps-diagram.dita">Mermaid</xref> framework) for DITA tasks at the time of
+      publishing.</p>
+    <p>Suppose you have a DITA task with a set of steps.</p>
+    <p>
+      <codeblock id="codeblock_yz5_fdt_rsb" outputclass="language-xml">&lt;steps>
+  &lt;step>
+    &lt;cmd>Begin by cutting out all the dead branches.&lt;/cmd>
+    &lt;substeps>
+      &lt;substep>
+        &lt;cmd>Find shears&lt;/cmd>
+      &lt;/substep>
+      ....
+    &lt;/substeps>
+  &lt;/step>
+  &lt;step>
+    &lt;cmd>Remove all tangled or crossed over branches. This allows air to circulate and
+      reduces bug and fungi infestation. &lt;/cmd>
+  &lt;/step>
+  .......
+&lt;/steps></codeblock>
+    </p>
+    <p>A DITA Open Toolkit plugin can use an XSLT customization to dynamically create a Mermaid text
+      diagram representation from the DITA task steps:
+      <codeblock id="codeblock_rdx_fvq_s5b" outputclass="language-xml">  &lt;xsl:template match="steps[step]">
+    &lt;xsl:variable name="var">
+      &lt;foreign outputclass="embed-mermaid-diagram" class="- topic/foreign ">
+stateDiagram-v2
+Title: &lt;xsl:value-of select="normalize-space(ancestor::task/title)"/>
+Title --> State1
+&lt;xsl:for-each select="step">
+&lt;xsl:variable name="statePos" select="position()"/>
+  State&lt;xsl:value-of select="$statePos"/>: &lt;xsl:value-of select="normalize-space(cmd)"/>
+&lt;xsl:if test="position() > 1">
+  State&lt;xsl:value-of select="$statePos - 1"/> --> State&lt;xsl:value-of select="$statePos"/> 
+&lt;/xsl:if>
+&lt;xsl:if test="substeps/substep">
+&lt;xsl:for-each select="substeps/substep">
+State&lt;xsl:value-of select="$statePos"/>&lt;xsl:value-of select="position()"/>: &lt;xsl:value-of select="normalize-space(cmd)"/>   
+&lt;/xsl:for-each>
+state State&lt;xsl:value-of select="$statePos"/>{
+&lt;xsl:for-each select="substeps/substep">
+&lt;xsl:if test="position() > 1">
+State&lt;xsl:value-of select="$statePos"/>&lt;xsl:value-of select="position() - 1"/> --> State&lt;xsl:value-of select="$statePos"/>&lt;xsl:value-of select="position()"/> 
+&lt;/xsl:if>
+&lt;/xsl:for-each>
+}
+&lt;/xsl:if>
+&lt;/xsl:for-each>
+      &lt;/foreign>
+    &lt;/xsl:variable>
+    &lt;xsl:apply-templates select="$var"/>
+    &lt;xsl:next-match/>
+  &lt;/xsl:template>
+&lt;/xsl:stylesheet></codeblock></p>
+    <p>A complete DITA Open Toolkit that contains the customization can be found here: <xref
+        href="../resources/com.oxygenxml.task.diagram.zip" format="zip"/>.</p>
+    <p>At the time of publishing, the task's HTML page will contain this diagram inside it:</p>
+    <p><image href="../images/task-diagram.png" id="image_t2h_t5q_s5b" scale="40"/></p>
+  </body>
+</topic>

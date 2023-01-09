@@ -3,7 +3,7 @@
 <topic id="cross_book_links">
     <title>Cross-Book Links</title>
     <prolog>
-        <author>chrispy</author>
+        <author>Chris Papademetrious</author>
         <critdates>
             <created date="2021-12-08"/>
         </critdates>
@@ -26,10 +26,10 @@
                 <p>In the source book map, a <term>peer map</term> reference defines a keyscope for
                     each target map that might be referenced by a cross-book link:</p>
                 <codeblock id="codeblock_oss_tds_vrb" outputclass="language-xml">&lt;map>
-                    &lt;title>Book 1&lt;/title>
-                    &lt;mapref href="book2.ditamap" <b>keyscope="book2"</b> processing-role="resource-only" scope="peer"/>
-                    ...
-                    &lt;/map></codeblock>
+    &lt;title>Book 1&lt;/title>
+    &lt;mapref href="book2.ditamap" <b>keyscope="book2"</b> processing-role="resource-only" scope="peer"/>
+        ...
+    &lt;/map></codeblock>
                 <p>In DITA, a peer map is a map that exists alongside your current map. It is a
                     declaration of another map's <i>existence</i>, but not an inclusion of that map
                     for processing or publication.</p>

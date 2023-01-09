@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="converting_word">
+    <title>Converting the Word Document</title>
+    <prolog>
+        <author>Cosmin Duna</author>
+        <critdates>
+            <created date="2022-11-29"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>For converting the Word document you have to install the Batch Documents
+            Converter add-on in Oxygen. For this, you can follow the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__section_tdq_wvx_qsb" format="html" scope="external">installation procedure</xref>
+            from the documentation.</p>
+        <section id="configurarea-maparii-de-stiluri">
+            <title>Configuring Word styles mapping</title>
+            <p>The Word to DITA conversion has two main steps: Word to HTML to DITA. The converter
+                allows customising the first step by setting a mapping between Word styles and HTML
+                elements. It already contains a default mapping configuration and because of this,
+                it knows to handle the default styles and the custom styles that are based on the
+                default styles.</p>
+            <p>Here you have more information about the <uicontrol>Word Styles Mapping</uicontrol>
+                option: <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping"
+                    format="html" scope="external">Conversions from Word</xref></p>
+            <p> This is an example of styles configuration: <xref href="frequently_asked_questions.dita#word-to-dita-frequently-asked-questions/how-to-fix-unknown-style-warnings"/></p>
+        </section>
+        <section id="configurarea-nivelului-maxim-de-heading-pentru-obtinerea-topicelor">
+            <title>Configuring the Maximum Heading Level for Creating Topics</title>
+            <p>The converter has an option named "<b>Maximum Heading Level for Creating Topics</b>"
+                in the Oxygen <menucascade>
+                    <uicontrol>Preferences</uicontrol>
+                    <uicontrol>Batch Documents Converter</uicontrol>
+                </menucascade> preferences page that allows setting a maximum heading level to
+                process as a DITA topic. The headings with a higher nesting level will be converted
+                to <xmlelement>section</xmlelement> elements.</p>
+            <p>This option can correspond with the value of the <uicontrol>Show levels</uicontrol>
+                option that you configure in MS Word for generating a table of contents.</p>
+            <p>For example, consider a document with the following headings hierarchy in the Word
+                document: <image placement="break" href="images/Hierarchy.PNG"
+                    id="image_y1c_hwz_qvb"/></p>
+            <p>if you keep the default <b>5</b> value for the <b>Maximum Heading Level for Creating
+                    Topics</b> option, all Word sections will be converted to DITA topics. If you
+                set the option to <b>3</b>, the "<b>Species</b>" and "<b>Characteristics</b>" Word
+                sections will be converted to DITA sections inside the "<b>Salvia</b>" DITA
+                topic.</p>
+        </section>
+        <section id="conversia-documentului">
+            <title>Converting the document</title>
+            <p>You can invoke the <uicontrol>Word to DITA</uicontrol> action from the following
+                places for converting the Word documents: </p>
+            <p>
+                <ul id="ul_otl_mzz_qvb">
+                    <li><uicontrol>Batch Documents Converter</uicontrol> from the
+                            <uicontrol>Tools</uicontrol> menu. </li>
+                    <li><uicontrol>Batch Documents Converter</uicontrol> in the contextual menu from
+                        the <uicontrol>Project</uicontrol> view.</li>
+                    <li><uicontrol>Additional conversions from</uicontrol> the <menucascade>
+                            <uicontrol>File</uicontrol>
+                        </menucascade><uicontrol>Import</uicontrol> menu.</li>
+                    <li>
+                        <uicontrol>Import</uicontrol> from the <uicontrol>Append
+                            child</uicontrol>, <uicontrol>Insert Before</uicontrol>, or
+                        <uicontrol>Insert After</uicontrol> sub-menus in the contextual
+                        menu from the <uicontrol>DITA Maps Manager</uicontrol> view. Note
+                        that these actions automatically insert references to the resulting
+                        documents into the DITA map. </li>
+                </ul>
+            </p>
+            <p>The Word to DITA conversion dialog contains an option named <uicontrol>Create DITA
+                    Maps from Word documents containing multiple headings</uicontrol> that allows us
+                to choose if the output will be a single <b>DITA Topic</b> or a <b>DITA Map</b>.
+                When the option is checked, the resulting DITA topics will be extracted into
+                separate files and referenced into an output DITA Map, otherwise, the topics will be
+                grouped into a DITA Composite file. The resulting topics can be controlled using the
+                    <xref
+                    href="#converting_word/configurarea-nivelului-maxim-de-heading-pentru-obtinerea-topicelor"
+                    >Maximum Heading Level for Creating Topics</xref> option.</p>
+        </section>
+    </body>
+</topic>

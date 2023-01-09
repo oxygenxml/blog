@@ -12,12 +12,12 @@
         href="https://github.com/oxygenxml/userguide" format="html" scope="external">project on
         GitHub</xref>.</p>
   <p>During these years on working on it, we progressively developed a set of simple rules which
-   were originally kept in a plain text document. The problem is that nobody can really remember all
-   these rules when actually writing. So recently we started to migrate these rules to Schematron
-   and have them reported automatically has validation warnings and errors while editing the topics.
-   And with the release of Oxygen 17 we can now also add <xref
-    href="https://www.oxygenxml.com/doc/ug-oxygen/#topics/schematron-quick-fixes.html" format="html"
-    scope="external">quick fixes</xref> for each of these problems.</p>
+      were originally kept in a plain text document. The problem is that nobody can really remember
+      all these rules when actually writing. So recently we started to migrate these rules to
+      Schematron and have them reported automatically has validation warnings and errors while
+      editing the topics. And we can also add <xref
+      href="https://www.oxygenxml.com/doc/ug-oxygen/#topics/schematron-quick-fixes.html"
+      format="html" scope="external">quick fixes</xref> for each of these problems.</p>
   <p>So below I will try to tell you what each rule imposes and what it's Schematron implementation
    looks like. If you want to quickly test these rules on your side, you can add them to the
    Schematron file which is used by default to validate DITA topics located in:

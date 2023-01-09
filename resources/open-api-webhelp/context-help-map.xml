@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="oxygen-content-fusion-api"
+               path="oxygen_content_fusion_api_v4.1-snapshot.html"/>
+   <appContext helpID="oxygen-content-fusion-api-internal" path="internal.html"/>
+   <appContext helpID="returns-statistics-for-activity-found-on-tasks-associated-with-the-current-user"
+               path="returns_statistics_for_activity_found_on_tasks_associated_with_the_current_user.html"/>
+   <appContext helpID="returns-statistics-for-activity-found-on-tasks-associated-with-the-current-user-parameters"
+               path="parameters.html"/>
+   <appContext helpID="returns-statistics-for-activity-found-on-tasks-associated-with-the-current-user-responses"
+               path="responses.html"/>
+   <appContext helpID="returns-assignable-accounts-filtered-by-user-name-or-email"
+               path="returns_assignable_accounts_filtered_by_user_name_or_email.html"/>
+   <appContext helpID="returns-assignable-accounts-filtered-by-user-name-or-email-parameters"
+               path="parameters1.html"/>
+   <appContext helpID="returns-assignable-accounts-filtered-by-user-name-or-email-responses"
+               path="responses1.html"/>
+   <appContext helpID="returns-assignable-accounts-filtered-by-user-name-or-email-responseschema"
+               path="response_schema.html"/>
+   <appContext helpID="returns-a-list-of-assignable-accounts"
+               path="returns_a_list_of_assignable_accounts.html"/>
+   <appContext helpID="returns-a-list-of-assignable-accounts--parameters"
+               path="parameters2.html"/>
+   <appContext helpID="returns-a-list-of-assignable-accounts--responses"
+               path="responses2.html"/>
+   <appContext helpID="returns-a-list-of-assignable-accounts--responseschema"
+               path="response_schema1.html"/>
+   <appContext helpID="oxygen-content-fusion-api-task" path="task.html"/>
+   <appContext helpID="marks-a-file-as-being-read-by-the-current-user"
+               path="marks_a_file_as_being_read_by_the_current_user..html"/>
+   <appContext helpID="marks-a-file-as-being-read-by-the-current-user.-parameters"
+               path="parameters3.html"/>
+   <appContext helpID="marks-a-file-as-being-read-by-the-current-user.-responses"
+               path="responses3.html"/>
+   <appContext helpID="marks-a-file-as-no-longer-being-read-by-the-current-user"
+               path="marks_a_file_as_no_longer_being_read_by_the_current_user..html"/>
+   <appContext helpID="marks-a-file-as-no-longer-being-read-by-the-current-user.-parameters"
+               path="parameters4.html"/>
+   <appContext helpID="marks-a-file-as-no-longer-being-read-by-the-current-user.-responses"
+               path="responses4.html"/>
+   <appContext helpID="returns-the-readers-of-the-given-file"
+               path="returns_the_readers_of_the_given_file..html"/>
+   <appContext helpID="returns-the-readers-of-the-given-file.-parameters"
+               path="parameters5.html"/>
+   <appContext helpID="returns-the-readers-of-the-given-file.-responses"
+               path="responses5.html"/>
+   <appContext helpID="returns-the-readers-of-the-given-file.-responseschema"
+               path="response_schema2.html"/>
+   <appContext helpID="returns-the-readers-of-the-given-files"
+               path="returns_the_readers_of_the_given_files..html"/>
+   <appContext helpID="returns-the-readers-of-the-given-files.-parameters"
+               path="parameters6.html"/>
+   <appContext helpID="returns-the-readers-of-the-given-files.-responses"
+               path="responses6.html"/>
+   <appContext helpID="returns-the-readers-of-the-given-files.-responseschema"
+               path="response_schema3.html"/>
+   <appContext helpID="get-the-content-of-a-file"
+               path="get_the_content_of_a_file..html"/>
+   <appContext helpID="get-the-content-of-a-file.-parameters" path="parameters7.html"/>
+   <appContext helpID="get-the-content-of-a-file.-responses" path="responses7.html"/>
+   <appContext helpID="set-the-content-of-a-file"
+               path="set_the_content_of_a_file..html"/>
+   <appContext helpID="set-the-content-of-a-file.-parameters" path="parameters8.html"/>
+   <appContext helpID="set-the-content-of-a-file.-responses" path="responses8.html"/>
+   <appContext helpID="makefilereviewable" path="makefilereviewable.html"/>
+   <appContext helpID="makefilereviewable-parameters" path="parameters9.html"/>
+   <appContext helpID="makefilereviewable-responses" path="responses9.html"/>
+   <appContext helpID="makefilereviewable-responseschema" path="response_schema4.html"/>
+   <appContext helpID="list-the-files-from-a-given-folder"
+               path="list_the_files_from_a_given_folder..html"/>
+   <appContext helpID="list-the-files-from-a-given-folder.-parameters"
+               path="parameters10.html"/>
+   <appContext helpID="list-the-files-from-a-given-folder.-responses"
+               path="responses10.html"/>
+   <appContext helpID="clears-the-locks-set-on-files"
+               path="clears_the_locks_set_on_files..html"/>
+   <appContext helpID="clears-the-locks-set-on-files.-responses"
+               path="responses11.html"/>
+   <appContext helpID="uploads-a-review-task" path="uploads_a_review_task.html"/>
+   <appContext helpID="uploads-a-review-task-parameters" path="parameters11.html"/>
+   <appContext helpID="detailed-descriptions" path="detailed_descriptions.html"/>
+   <appContext helpID="uploads-a-review-task-responses" path="responses12.html"/>
+   <appContext helpID="return-a-list-pending-collaborators"
+               path="return_a_list_pending_collaborators.html"/>
+   <appContext helpID="return-a-list-pending-collaborators-parameters"
+               path="parameters12.html"/>
+   <appContext helpID="return-a-list-pending-collaborators-responses"
+               path="responses13.html"/>
+   <appContext helpID="return-a-list-pending-collaborators-responseschema"
+               path="response_schema5.html"/>
+   <appContext helpID="returns-a-list-of-everyone-assigned-as-a-collaborator-for-a-particular-review-task"
+               path="returns_a_list_of_everyone_assigned_as_a_collaborator_for_a_particular_review_task.html"/>
+   <appContext helpID="returns-a-list-of-everyone-assigned-as-a-collaborator-for-a-particular-review-task-parameters"
+               path="parameters13.html"/>
+   <appContext helpID="returns-a-list-of-everyone-assigned-as-a-collaborator-for-a-particular-review-task-responses"
+               path="responses14.html"/>
+   <appContext helpID="returns-a-list-of-everyone-assigned-as-a-collaborator-for-a-particular-review-task-responseschema"
+               path="response_schema6.html"/>
+   <appContext helpID="assigns-a-task-to-another-user"
+               path="assigns_a_task_to_another_user.html"/>
+   <appContext helpID="assigns-a-task-to-another-user-parameters"
+               path="parameters14.html"/>
+   <appContext helpID="assigns-a-task-to-another-user-responses"
+               path="responses15.html"/>
+   <appContext helpID="assigns-a-task-to-a-user-without-account"
+               path="assigns_a_task_to_a_user_without_account.html"/>
+   <appContext helpID="assigns-a-task-to-a-user-without-account-parameters"
+               path="parameters15.html"/>
+   <appContext helpID="assigns-a-task-to-a-user-without-account-responses"
+               path="responses16.html"/>
+   <appContext helpID="download-original-task" path="download_original_task.html"/>
+   <appContext helpID="download-original-task-parameters" path="parameters16.html"/>
+   <appContext helpID="download-original-task-responses" path="responses17.html"/>
+   <appContext helpID="download-the-original-version-of-a-particular-review-task"
+               path="download_the_original_version_of_a_particular_review_task.html"/>
+   <appContext helpID="download-the-original-version-of-a-particular-review-task-parameters"
+               path="parameters17.html"/>
+   <appContext helpID="download-the-original-version-of-a-particular-review-task-responses"
+               path="responses18.html"/>
+   <appContext helpID="downloads-the-current-content-of-a-particular-review-task"
+               path="downloads_the_current_content_of_a_particular_review_task.html"/>
+   <appContext helpID="downloads-the-current-content-of-a-particular-review-task-parameters"
+               path="parameters18.html"/>
+   <appContext helpID="downloads-the-current-content-of-a-particular-review-task-responses"
+               path="responses19.html"/>
+   <appContext helpID="updatesharingtype" path="updatesharingtype.html"/>
+   <appContext helpID="updatesharingtype-parameters" path="parameters19.html"/>
+   <appContext helpID="updatesharingtype-responses" path="responses20.html"/>
+   <appContext helpID="returns-a-list-of-activity-items-for-a-particular-review-task"
+               path="returns_a_list_of_activity_items_for_a_particular_review_task.html"/>
+   <appContext helpID="returns-a-list-of-activity-items-for-a-particular-review-task-parameters"
+               path="parameters20.html"/>
+   <appContext helpID="returns-a-list-of-activity-items-for-a-particular-review-task-responses"
+               path="responses21.html"/>
+   <appContext helpID="returns-a-list-of-activity-items-for-a-particular-review-task-responseschema"
+               path="response_schema7.html"/>
+   <appContext helpID="returns-information-about-a-particular-review-task"
+               path="returns_information_about_a_particular_review_task.html"/>
+   <appContext helpID="returns-information-about-a-particular-review-task-parameters"
+               path="parameters21.html"/>
+   <appContext helpID="returns-information-about-a-particular-review-task-responses"
+               path="responses22.html"/>
+   <appContext helpID="deletes-a-particular-review-task"
+               path="deletes_a_particular_review_task.html"/>
+   <appContext helpID="-deletes-a-particular-review-task-parameters"
+               path="parameters22.html"/>
+   <appContext helpID="-deletes-a-particular-review-task-responses"
+               path="responses23.html"/>
+   <appContext helpID="changes-the-settings-for-a-particular-review-task"
+               path="changes_the_settings_for_a_particular_review_task.html"/>
+   <appContext helpID="changes-the-settings-for-a-particular-review-task-parameters"
+               path="parameters23.html"/>
+   <appContext helpID="changes-the-settings-for-a-particular-review-task-responses"
+               path="responses24.html"/>
+   <appContext helpID="removecollaborator" path="removecollaborator.html"/>
+   <appContext helpID="removecollaborator-parameters" path="parameters24.html"/>
+   <appContext helpID="removecollaborator-responses" path="responses25.html"/>
+   <appContext helpID="removes-an-invited-collaborator"
+               path="removes_an_invited_collaborator.html"/>
+   <appContext helpID="removes-an-invited-collaborator-parameters"
+               path="parameters25.html"/>
+   <appContext helpID="removes-an-invited-collaborator-responses"
+               path="responses26.html"/>
+   <appContext helpID="returns-a-list-of-files-attached-a-particular-review-task"
+               path="returns_a_list_of_files_attached_a_particular_review_task.html"/>
+   <appContext helpID="returns-a-list-of-files-attached-a-particular-review-task-parameters"
+               path="parameters26.html"/>
+   <appContext helpID="returns-a-list-of-files-attached-a-particular-review-task-responses"
+               path="responses27.html"/>
+   <appContext helpID="returns-a-list-of-files-attached-a-particular-review-task-responseschema"
+               path="response_schema8.html"/>
+   <appContext helpID="adds-a-comment-on-a-particular-review-task"
+               path="adds_a_comment_on_a_particular_review_task.html"/>
+   <appContext helpID="adds-a-comment-on-a-particular-review-task-parameters"
+               path="parameters27.html"/>
+   <appContext helpID="adds-a-comment-on-a-particular-review-task-responses"
+               path="responses28.html"/>
+   <appContext helpID="marks-the-activity-in-particular-review-task-as-being-read"
+               path="marks_the_activity_in_particular_review_task_as_being_read.html"/>
+   <appContext helpID="marks-the-activity-in-particular-review-task-as-being-read-parameters"
+               path="parameters28.html"/>
+   <appContext helpID="marks-the-activity-in-particular-review-task-as-being-read-responses"
+               path="responses29.html"/>
+   <appContext helpID="requests-access-to-task" path="requests_access_to_task.html"/>
+   <appContext helpID="requests-access-to-task-parameters" path="parameters29.html"/>
+   <appContext helpID="requests-access-to-task-responses" path="responses30.html"/>
+   <appContext helpID="returns-tasks-associated-with-the-current-user"
+               path="returns_tasks_associated_with_the_current_user.html"/>
+   <appContext helpID="returns-tasks-associated-with-the-current-user-parameters"
+               path="parameters30.html"/>
+   <appContext helpID="returns-tasks-associated-with-the-current-user-responses"
+               path="responses31.html"/>
+   <appContext helpID="oxygen-content-fusion-api-locking" path="locking.html"/>
+   <appContext helpID="gets-the-lock-status-on-a-file"
+               path="gets_the_lock_status_on_a_file..html"/>
+   <appContext helpID="gets-the-lock-status-on-a-file.-parameters"
+               path="parameters31.html"/>
+   <appContext helpID="gets-the-lock-status-on-a-file.-responses"
+               path="responses32.html"/>
+   <appContext helpID="update-the-lock-on-a-file"
+               path="update_the_lock_on_a_file..html"/>
+   <appContext helpID="update-the-lock-on-a-file.-parameters" path="parameters32.html"/>
+   <appContext helpID="update-the-lock-on-a-file.-responses" path="responses33.html"/>
+   <appContext helpID="removes-the-lock-from-a-file"
+               path="removes_the_lock_from_a_file..html"/>
+   <appContext helpID="removes-the-lock-from-a-file.-parameters"
+               path="parameters33.html"/>
+   <appContext helpID="removes-the-lock-from-a-file.-responses"
+               path="responses34.html"/>
+   <appContext helpID="oxygen-content-fusion-api-user" path="user.html"/>
+   <appContext helpID="returns-the-current-users-details"
+               path="returns_the_current_user's_details.html"/>
+   <appContext helpID="returns-the-current-user's-details-responses"
+               path="responses35.html"/>
+   <appContext helpID="records-the-users-consent-with-our-terms-and-conditions"
+               path="records_the_users_consent_with_our_terms_and_conditions.html"/>
+   <appContext helpID="records-the-users-consent-with-our-terms-and-conditions-parameters"
+               path="parameters34.html"/>
+   <appContext helpID="records-the-users-consent-with-our-terms-and-conditions-responses"
+               path="responses36.html"/>
+   <appContext helpID="sets-the-locale-for-the-current-user"
+               path="sets_the_locale_for_the_current_user.html"/>
+   <appContext helpID="sets-the-locale-for-the-current-user-parameters"
+               path="parameters35.html"/>
+   <appContext helpID="sets-the-locale-for-the-current-user-responses"
+               path="responses37.html"/>
+   <appContext helpID="deletes-the-current-user" path="deletes_the_current_user.html"/>
+   <appContext helpID="deletes-the-current-user-responses" path="responses38.html"/>
+   <appContext helpID="schemas" path="schemas.html"/>
+   <appContext helpID="tocS_TaskActivitiesStatistics"
+               path="taskactivitiesstatistics.html"/>
+   <appContext helpID="properties" path="properties.html"/>
+   <appContext helpID="tocS_TasksActivitiesStatistics"
+               path="tasksactivitiesstatistics.html"/>
+   <appContext helpID="properties-1" path="properties1.html"/>
+   <appContext helpID="tocS_FileLocationParams" path="filelocationparams.html"/>
+   <appContext helpID="properties-2" path="properties2.html"/>
+   <appContext helpID="tocS_AccountInfo" path="accountinfo.html"/>
+   <appContext helpID="properties-3" path="properties3.html"/>
+   <appContext helpID="tocS_FileLocationsParams" path="filelocationsparams.html"/>
+   <appContext helpID="properties-4" path="properties4.html"/>
+   <appContext helpID="tocS_FileDataWithLockInfo" path="filedatawithlockinfo.html"/>
+   <appContext helpID="properties-5" path="properties5.html"/>
+   <appContext helpID="tocS_LockData" path="lockdata.html"/>
+   <appContext helpID="properties-6" path="properties6.html"/>
+   <appContext helpID="tocS_SettingsData" path="settingsdata.html"/>
+   <appContext helpID="properties-7" path="properties7.html"/>
+   <appContext helpID="tocS_TaskGeneralData" path="taskgeneraldata.html"/>
+   <appContext helpID="properties-8" path="properties8.html"/>
+   <appContext helpID="tocS_InputPart" path="inputpart.html"/>
+   <appContext helpID="properties-9" path="properties9.html"/>
+   <appContext helpID="tocS_MediaType" path="mediatype.html"/>
+   <appContext helpID="properties-10" path="properties10.html"/>
+   <appContext helpID="tocS_MultipartFormDataInput" path="multipartformdatainput.html"/>
+   <appContext helpID="properties-11" path="properties11.html"/>
+   <appContext helpID="tocS_ActivityData" path="activitydata.html"/>
+   <appContext helpID="properties-12" path="properties12.html"/>
+   <appContext helpID="tocS_EntityTag" path="entitytag.html"/>
+   <appContext helpID="properties-13" path="properties13.html"/>
+   <appContext helpID="tocS_FileData" path="filedata.html"/>
+   <appContext helpID="properties-14" path="properties14.html"/>
+   <appContext helpID="tocS_Link" path="link.html"/>
+   <appContext helpID="properties-15" path="properties15.html"/>
+   <appContext helpID="tocS_Locale" path="locale.html"/>
+   <appContext helpID="properties-16" path="properties16.html"/>
+   <appContext helpID="tocS_MailNotificationsSettingsData"
+               path="mailnotificationssettingsdata.html"/>
+   <appContext helpID="properties-17" path="properties17.html"/>
+   <appContext helpID="tocS_NewCookie" path="newcookie.html"/>
+   <appContext helpID="properties-18" path="properties18.html"/>
+   <appContext helpID="tocS_PendingCollaborator" path="pendingcollaborator.html"/>
+   <appContext helpID="properties-19" path="properties19.html"/>
+   <appContext helpID="tocS_Response" path="response.html"/>
+   <appContext helpID="properties-20" path="properties20.html"/>
+   <appContext helpID="tocS_StatusType" path="statustype.html"/>
+   <appContext helpID="properties-21" path="properties21.html"/>
+   <appContext helpID="enumerated-values" path="enumerated_values.html"/>
+   <appContext helpID="tocS_Task" path="task1.html"/>
+   <appContext helpID="properties-22" path="properties22.html"/>
+   <appContext helpID="tocS_TaskCollaboratorData" path="taskcollaboratordata.html"/>
+   <appContext helpID="properties-23" path="properties23.html"/>
+   <appContext helpID="tocS_TaskDetails" path="taskdetails.html"/>
+   <appContext helpID="properties-24" path="properties24.html"/>
+   <appContext helpID="tocS_UriBuilder" path="uribuilder.html"/>
+   <appContext helpID="properties-25" path="properties25.html"/>
+   <appContext helpID="tocS_UserData" path="userdata.html"/>
+   <appContext helpID="properties-26" path="properties26.html"/>
+   <appContext helpID="tocS_CommentDetailsData" path="commentdetailsdata.html"/>
+   <appContext helpID="properties-27" path="properties27.html"/>
+   <appContext helpID="tocS_AgreeWithTermsParams" path="agreewithtermsparams.html"/>
+   <appContext helpID="properties-28" path="properties28.html"/>
+</map>

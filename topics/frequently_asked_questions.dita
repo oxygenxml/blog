@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="frequently_asked_questions" outputclass="google-structured-data-faq">
+    <title>Frequently Asked Questions</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-03-29"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section id="section_sd5_ypr_1tb">
+            <title>How do I register to receive notifications for new blog posts?</title>
+            <p>Each blog HTML page has at the end a form in which you can fill your email address if
+                you want to be notified when new posts are made.</p>
+        </section>
+        <section id="section_d2k_dqr_1tb">
+            <title>Can I contribute articles to the Oxygen XML Blog?</title>
+            <p>Yes, the procedure is listed here: <xref
+                    href="welcome.dita#welcome/section_tnr_rr3_jkb"/>.</p>
+        </section>
+        <section id="section_vqn_npr_1tb">
+            <title>How do I learn DITA XML with Oxygen?</title>
+            <p>Read our <xref href="learnDita.dita"/> blog post.</p>
+        </section>
+        <section id="section_ohz_spr_1tb">
+            <title>How do I convert various output formats to DITA XML?</title>
+            <p>Read our <xref href="migrating_to_dita.dita"/> and <xref
+                    href="migrateWordToDita.dita"/> blog posts.</p>
+        </section>
+        <section id="section_md3_rqr_1tb">
+            <title>Are there any productivity tips and tricks?</title>
+            <p>Our <xref href="general_tips_and_tricks.dita"/> and <xref
+                    href="dita_oriented_tips_and_tricks.dita"/> posts contains lots of interesting
+                productivity tips and tricks.</p>
+        </section>
+    </body>
+</topic>

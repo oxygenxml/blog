@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incorrect-terms>
+    <incorrect-term ignorecase="true">
+        <match>Oxygen</match>
+        <suggestion format="xml">&lt;ph keyref=&quot;product&quot;/></suggestion>
+        <message>Replace all occurrences of product with key reference</message>
+    </incorrect-term>
+  <incorrect-term ignorecase="true">
+    <match>will be</match>
+    <suggestion></suggestion>
+    <message>Future tense should not be allowed</message>
+  </incorrect-term>
+</incorrect-terms>

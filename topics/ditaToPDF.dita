@@ -11,34 +11,26 @@
         >DITA OT Day 2015</xref> I happened to come across two more DITA to PDF solutions that I did
       not know about so I tried to compile below a list of all DITA to PDF possibilities that I know
       of, along with some details:<ul id="ul_dzv_m1p_15">
-        <li>Legacy DITA to PDF editing solution. It is no longer distribute with DITA OT 2.x and is
-          probably not compatible anymore with it.</li>
+      <li><b>DITA Map PDF - based on HTML5 &amp; CSS</b>. This commercial plugin is developed and
+        maintainced by Oxygen as an alternative to the default PDF publishing. It allows styling the
+        DITA content using CSS and publishing to PDF using our own <b>Chemistry</b> engine or other
+        commercial solutions like <b>Prince XML</b> or <b>Antenna House</b>.</li>
         <li>Default DITA to PDF solution embedded in the DITA Open Toolkit distribution. Besides
           Apache FOP you can also use RenderX XEP or Antenna House for publishing. It's
           customization can be done either via a plugin or via a PDF customization folder: <xref
             href="https://www.oxygenxml.com/doc/ug-editor/index.html#topics/dita_pdf_output_customization.html"
             format="html" scope="external"/>.</li>
-        <li>DITA to PDF using CSS. This <xref href="https://github.com/oxygenxml/dita-css"
-            format="html" scope="external">open source DITA OT plugin</xref> was developed by Oxygen
-          as an alternative to the default PDF publishing. It allows styling the DITA content using
-          CSS and publishing to PDF using either <b>Prince XML</b> or <b>Antenna House</b>.</li>
         <li>Antenna House <xref href="https://github.com/AntennaHouse/pdf5" format="html"
             scope="external">DITA OT plugin</xref> for producing PDF from DITA using Antenna House.
           There is also a <xref href="https://github.com/AntennaHouse/ah-dita" format="html"
             scope="external">DITA specialization</xref> plugin which allows you to set specific
           formatting attributes directly to DITA elements.</li>
-        <li>DITA to HTML 5 to PDF using CSS. This <xref
-            href="http://doctales.github.io/plugins/org.doctales.pdf-css.html" format="html"
-            scope="external">open source DITA OT Plugin</xref> publishes DITA to HTML5 and then
-          passes the output to <xref href="https://github.com/marcbachmann/node-html-pdf"
-            format="html" scope="external">node-html-pdf</xref>. This plugins takes a HTML file as a
-          parameter and returns a PDF document. </li>
-        <li>The <xref href="http://www.turnkey.com.au/tksweb/index.html" format="html"
+        <li>The <xref href="https://turnkey.com.au/" format="html"
             scope="external">TopLeaf</xref> XML Publisher commercial product allows you to produce
           various outputs like PDF and EPUB from XML content. The application also has a visual PDF
           layout formatter, it comes also with a DITA OT plugin and has installation instructions
           for Oxygen:<xref
-            href="https://www.turnkey.com.au/oxygen_plugin.html"
+            href="https://turnkey.com.au/topleaf-downloads/"
             format="html" scope="external"/>.</li>
         <li><xref href="https://www.miramo.com/download/documentation/Miramo_DITA-OT_GettingStarted.pdf" format="html" scope="external"
             >Miramo</xref>, again a commercial solution which recently started developing support

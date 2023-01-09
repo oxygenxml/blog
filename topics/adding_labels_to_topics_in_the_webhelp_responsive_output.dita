@@ -124,6 +124,6 @@
                 the blog have labels defined on them: <xref
                     href="../branchFilters/branchFilter.dita"/>.</p>The WebHelp publishing template
             used for publishing this blog already has a customization to display labels in the blog
-            articles: <xref href="../publishing/webhelpBlogTemplate.zip" format="zip"/>.</section>
+            articles: <xref href="https://github.com/oxygenxml/blog/tree/master/publishing/webhelpBlogTemplate" format="html" scope="external"/>.</section>
     </body>
 </topic>

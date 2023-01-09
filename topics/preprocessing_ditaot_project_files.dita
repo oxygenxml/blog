@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="preprocessing_ditaot_project_files">
+    <title>Preprocessing DITA-OT Project Files</title>
+    <prolog>
+        <author>Chris Papademetrious</author>
+        <critdates>
+            <created date="2022-02-19"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p><term>Project files</term> were introduced in the DITA-OT 3.4 release. They provide a
+            standardized XML way to define how input DITA files should be published to output
+            content files, including details such as filtering, transformation parameters, and
+            output directory locations.</p>
+        <p>Our basic publishing requirements are as follows:</p>
+        <ul id="ul_zyn_jsd_qsb">
+            <li>
+                <p>We publish some books multiple times in multiple DITAVAL filtering
+                    conditions.</p>
+            </li>
+            <li>
+                <p>We publish to both PDF (using PDF Chemistry) and online help (using Oxygen
+                    WebHelp).</p>
+                <ul id="ul_bcl_ssd_qsb">
+                    <li>
+                        <p>PDFs are published individually per-book.</p>
+                    </li>
+                    <li>
+                        <p>WebHelp is published as a collection of books, with in-help links to the
+                            PDF files.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>We have "review" and "final" versions of our output.</p>
+                <ul id="ul_uxf_2df_qsb">
+                    <li>
+                        <p>These versions use different DITA-OT parameters and different DITAVAL
+                            flagging files.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>As I attempted to create a DITA-OT project file to produce our deliverables, I
+            encountered some limitations. This blog post describes how I created an XSLT-based
+            preprocessing approach to work around these limitations.</p>
+        <section id="section_ydm_knd_qsb">
+            <title>Quick Overview of Project Files</title>
+            <p>A project file uses three primary building block elements:</p>
+            <ul id="ul_nyy_hld_qsb">
+                <li>
+                    <p><codeph>&lt;content></codeph> - an input DITA map to process</p>
+                    <ul id="ul_hzm_1nd_qsb">
+                        <li>Can include one or more associated DITAVAL files</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><codeph>&lt;publication></codeph> - a transformation to apply</p>
+                    <ul id="ul_imj_bnd_qsb">
+                        <li>Can include transformation parameters</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><codeph>&lt;deliverable></codeph> - output content to create, by transforming
+                        a <codeph>&lt;context></codeph> with a <codeph>&lt;publication></codeph></p>
+                    <ul id="ul_q1c_rnd_qsb">
+                        <li>Can include an output subdirectory path (relative to the overall output
+                            directory)</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>In its simplest form, a <codeph>&lt;deliverable></codeph> can provide its own
+                    <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph> information
+                within itself:</p>
+            <image href="preprocessing_ditaot_project_files/context_publication.svg"
+                placement="break" id="image_tst_chf_1tb"/>
+            <p>For more complex output content situations, a <codeph>&lt;deliverable></codeph> can
+                reference shared <codeph>&lt;context></codeph> and <codeph>&lt;publication></codeph>
+                elements by <codeph>@idref</codeph> references to <codeph>@id</codeph> values:</p>
+            <image href="preprocessing_ditaot_project_files/idref_context_publication.svg"
+                placement="break" id="image_f4f_tcf_qsb"/>
+            <p>This <codeph>@idref</codeph> mechanism allows many deliverables to share common
+                context and publication definitions. If there is a change to a
+                    <codeph>&lt;context></codeph> (perhaps a different map or new DITAVAL condition)
+                or a <codeph>&lt;publication></codeph> (perhaps an updated DITA-OT parameter), then
+                all relevant deliverables inherit the change automatically.</p>
+            <p>In addition, DITA-OT project files can use <codeph>&lt;include></codeph> statements
+                to structure their information across multiple files. This allows contexts to be
+                organized by product writer teams, publications to be placed in files maintained by
+                a DITA environment maintainer, and so on.</p>
+        </section>
+        <section id="section_lwn_ktd_qsb">
+            <title>Limitation – Specify Per-Deliverable PDF File Names (#3682)</title>
+            <p>When I publish multiple PDFs from the same map using DITAVAL conditions, I needed to
+                define the <codeph>outputFile.base</codeph> parameter on a
+                    per-<codeph>&lt;deliverable></codeph> basis to control the output PDF file
+                name:</p>
+            <image href="preprocessing_ditaot_project_files/deliverable_pdf_name.svg"
+                placement="break" id="image_cy5_mhf_1tb"/>
+            <p>DITA-OT versions before 4.0 do not allow <codeph>&lt;param></codeph> elements to be
+                controlled from a <codeph>&lt;publication></codeph> reference in a
+                    <codeph>&lt;deliverable></codeph>. I filed the following DITA-OT enhancement
+                request for this:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/issues/3682" format="html"
+                    scope="external" id="issue_3682_link">#3682: In DITA-OT project files, allow a
+                    PDF &lt;deliverable> to specify its output file name</xref></p>
+            <p>It was implemented for DITA-OT 4.0 in the following pull request:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/pull/3907" format="html"
+                    scope="external">#3907: Support param in publication reference</xref></p>
+        </section>
+        <section id="section_xwl_qtd_qsb">
+            <title>Limitation – Consider DITAVAL in Both &lt;context> and &lt;publication>
+                (#3690)</title>
+            <p>I needed to apply DITAVAL from both <codeph>&lt;context></codeph> (for
+                    <codeph>@product</codeph> filtering) and  <codeph>&lt;publication></codeph> (for
+                    <codeph>@audience</codeph>/<codeph>@deliveryTarget</codeph>/<codeph>@rev</codeph>
+                filtering/flagging of "review" and "final" deliverables):</p>
+            <image href="preprocessing_ditaot_project_files/publication_profiling.svg"
+                placement="break" id="image_fns_d3f_1tb"/>
+            <p>DITA-OT versions before 4.0 do not properly combine <codeph>&lt;context></codeph> and
+                    <codeph>&lt;publication></codeph> DITAVAL filtering. I filed the following
+                DITA-OT issue for this:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/issues/3690" format="html"
+                    scope="external" id="issue_3690_link">#3690: In DITA-OT project files, apply
+                    both &lt;context> and &lt;publication> DITAVAL filtering</xref></p>
+            <p>It was implemented for DITA-OT 4.0 in the following pull request:</p>
+            <p><xref href="https://github.com/dita-ot/dita-ot/pull/3895" format="html"
+                    scope="external">#3907: Add profiles to publication project file</xref></p>
+        </section>
+        <section id="section_td4_dxd_qsb">
+            <title>Using Preprocessing to Work Around the Limitations</title>
+            <p>To work around these limitations in earlier DITA-OT versions before 4.0 is released,
+                I created an XSLT file to do the following:</p>
+            <ul id="ul_lh3_gxd_qsb">
+                <li>
+                    <p>Read the input DITA-OT project file</p>
+                    <ul id="ul_hvl_hxd_qsb">
+                        <li>
+                            <p>Resolve <codeph>&lt;include></codeph> statements to pull all content
+                                into a single file</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Convert all DITAVAL file references to absolute paths (to work around
+                        #3873)</p>
+                </li>
+                <li>
+                    <p>In <codeph>&lt;deliverable></codeph> elements, replace all
+                            <codeph>@idref</codeph>'ed <codeph>&lt;context></codeph> and
+                            <codeph>&lt;publication></codeph> elements with copies of the referenced
+                        elements (so we can modify them per-<codeph>&lt;deliverable></codeph>)</p>
+                </li>
+                <li>
+                    <p>Find <codeph>&lt;param></codeph> elements in
+                            <codeph>&lt;deliverable></codeph>, move them to
+                            <codeph>&lt;publication></codeph> instead (to work around #3682)</p>
+                </li>
+                <li>
+                    <p>Find <codeph>&lt;ditaval></codeph> elements in
+                            <codeph>&lt;publication></codeph>, move them to
+                            <codeph>&lt;context></codeph> instead (to work around #3690)</p>
+                </li>
+            </ul>
+            <p>I then applied this XSLT file as a preprocessing step to translate the unsupported
+                project file constructs into supported constructs in a temporary preprocessed
+                project file, then ran DITA-OT publishing using that temporary file. For
+                example,</p>
+            <codeblock id="codeblock_fwl_mzd_qsb">#!/bin/bash
+rm -rf ./out
+
+export DITAOT=$(dirname $(dirname $(which dita)))
+export SAXON_JAR=~/saxon/saxon-he-10.6.jar
+
+echo "Creating preprocessed DITA-OT project file..."
+java \
+  -jar ${SAXON_JAR} \
+  -xsl:frameworks/dita/preprocess_project_file.xsl \
+  -s:project.xml \
+  -o:project.xml-preprocessed.xml
+
+echo "Publishing preprocessed DITA-OT project file..."
+${DITAOT}/bin/dita --project project.xml-preprocessed.xml -t temp --verbose
+
+rm project.xml-preprocessed.xml</codeblock>
+            <p>This worked well from a linux command line, but we also needed our writers to be able
+                to run it from Oxygen. To do this, I created a copy of Oxygen's project file build
+                script at</p>
+            <codeblock id="codeblock_lmc_b12_qsb">&lt;OXYGEN_INSTALL>/frameworks/dita/dita_project/build_dita_project.xml</codeblock>
+            <p>and added similar XSLT preprocessing to it using Ant commands, then placed the
+                modified version at</p>
+            <codeblock id="codeblock_wdg_pb2_qsb">frameworks/dita/build_dita_project_preprocessed.xml</codeblock>
+            <p>in our Oxygen project directory. Then I extended the DITA-OT project file framework
+                and created an extended DITA-OT project file transformation pointing to the modified
+                build script:</p>
+            <image href="preprocessing_ditaot_project_files/ditaot_project_file_transformation.png"
+                placement="break" id="image_x23_rd2_qsb"/>
+            <p>This new transformation allowed Oxygen to publish project files that used the
+                preprocessing workaround. The unsupported constructs still result in schema
+                violations when the original (non-preprocessed) project files are opened for editing
+                in Oxygen, but at least the publishing aspect works.</p>
+            <note id="note_lw4_zpf_1tb">
+                <p>The preprocessing XSLT stylesheet requires Saxon to run. To support, this, the
+                    preprocessing-based DITA-OT project transformations specify a list of additional
+                        <filepath>.jar</filepath> libraries to use. To see these libraries, click
+                    the <uicontrol>Libraries</uicontrol> button in the dialog box shown above.</p>
+            </note>
+            <p>The following Oxygen project demonstrates this preprocessing approach:</p>
+            <p><xref href="preprocessing_ditaot_project_files/preprocessed_ditaot_project_files.zip"
+                    format="zip">preprocessed_ditaot_project_files.zip</xref></p>
+            <p>To run it,</p>
+            <ol id="ol_yj1_512_qsb">
+                <li>
+                    <p>Extract the archive and open <filepath>OPENME.xpr</filepath> in Oxygen.</p>
+                </li>
+                <li>
+                    <p>In the <uicontrol>Project</uicontrol> view, expand the <uicontrol>Main
+                            Files</uicontrol> list, right click on deliverables-all.xml and choose
+                            <uicontrol>Transform > Transform With</uicontrol>, and choose the
+                            <uicontrol>Publish Preprocessed DITA-OT Project (all
+                            deliverables)</uicontrol> transformation.</p>
+                    <p>This will build "review" and "final" versions of both the "Product A" and
+                        "Product B" online help collections in the <filepath>out/</filepath>
+                        directory, complete with correctly-named PDF files integrated into each
+                        online help collection.</p>
+                    <p>There are other deliverable files for specific subsets of deliverables,
+                        organized into logical folders in the <uicontrol>Main Files</uicontrol>
+                        list.</p>
+                </li>
+            </ol>
+            <p>To view the XSLT stylesheet without downloading the archive, click on the following
+                link:</p>
+            <p><xref href="preprocessing_ditaot_project_files/preprocess_project_file.xsl"
+                    format="xsl">preprocess_project_file.xsl</xref></p>
+            <p>There are comments in the code to explain how it works.</p>
+        </section>
+        <section id="section_v2t_gy2_qsb">
+            <title>Exploring How the XSLT Transformation Works</title>
+            <p>To help you explore how the XSLT transformation works, the Oxygen project also makes
+                it available as a refactoring operation that you can manually preview on project
+                files.</p>
+            <p>To do this,</p>
+            <ol id="ol_qrz_ly2_qsb">
+                <li>
+                    <p>In the <uicontrol>Project</uicontrol> view in the <uicontrol>Main
+                            Files</uicontrol> list in the <filepath>project_files/</filepath>
+                        directory, right-click one of the <filepath>deliverable*.xml</filepath>
+                        files, then choose <uicontrol>Refactoring > XML refactoring</uicontrol>.</p>
+                </li>
+                <li>
+                    <p>In the refactoring operation list, choose <uicontrol>Synopsys > Preprocess
+                            DITA-OT project file</uicontrol> refactoring operation.</p>
+                </li>
+                <li>
+                    <p>Click the <uicontrol>Preview</uicontrol> button to see what the XSLT
+                        transformation would do.</p>
+                </li>
+            </ol>
+            <p>For example,</p>
+            <image href="preprocessing_ditaot_project_files/refactoring_preview.png" placement="break"
+                id="image_crg_pz2_qsb"/>
+            <p>Be sure not to actually apply the refactoring operation to the file. Otherwise, you
+                will need to re-extract the archive to restore the original project file.</p>
+        </section>
+    </body>
+</topic>

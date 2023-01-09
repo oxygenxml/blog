@@ -3,9 +3,9 @@
 <topic id="creating_graphs_from_dita_maps">
     <title>Creating Link Graphs From DITA Maps</title>
 	<prolog>
-		<author>raducoravu</author>
+		<author>Radu Coravu</author>
 		<critdates>
-			<created date="2021-09-2"/>
+			<created date="2021-09-02"/>
 		</critdates>
 	</prolog>
     <body>
@@ -38,9 +38,4 @@
 				the mouse wheel to zoom in or out.</li>
 			</ol></p>
     </body>
-	<related-links>
-		<link href="../resources/sampleGraphBlog.html" format="html">
-			<linktext>Graph Visualization of the Oxygen XML Blog DITA Map</linktext>
-		</link>
-	</related-links>
 </topic>

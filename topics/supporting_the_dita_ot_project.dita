@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="helping_the_dita_ot_project">
+    <title>Supporting the DITA OT Project as a Commercial Company</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-09-05"/>
+    </critdates>
+  </prolog>
+    <body>
+    <section id="section_oxn_ydc_2vb">
+      <title>Overview</title>
+      <p>This small article is about the relationship between our company, <b>Syncro Soft</b> (which
+        produces the Oxygen XML tools), and the open source <xref href="https://www.dita-ot.org/"
+        format="html" scope="external">DITA Open Toolkit</xref> project.</p>
+      <p> As a commercial company using the <b>DITA Open Toolkit </b>in multiple projects, we try to
+        base this relationship on:<ul id="ul_bwt_t1l_t5b">
+        <li><b>Give and take</b> </li>
+        <li><b>Respect</b></li>
+        <li><b>Growth</b></li>
+        </ul>but as in any relationship, there is probably always room for improvement.</p>
+    </section>
+    <section id="section_gbp_1bl_t5b"><title>History and Context</title><p>We started integrating
+      the <b>DITA Open Toolkit</b> into Oxygen about <b>14</b> years ago, some time around
+      <b>2008</b> in Oxygen XML Editor version <b>10</b>. The DITA Open Toolkit remains a very
+      important part of the DITA XML editing and publishing solution provided by
+      us.</p><p>Currently, we are using the <b>DITA Open Toolkit</b> as a publishing component in
+      our <b>Oxygen Publishing Engine</b> in multiple projects:<ul id="ul_yfr_nbl_t5b">
+      <li><b>Oxygen Publishing Engine (based on the DITA OT)</b></li>
+        <li><b>Oxygen XML Editor</b></li>
+        <li><b>Oxygen XML Author</b></li>
+        <li><b>Oxygen XML Developer</b></li>
+      </ul>and there will probably be more to come in the future.</p></section>
+    <section id="section_h2n_sbl_t5b">
+      <title>Implementing Plugins for the DITA Open Toolkit</title>
+      <p>During these years, we've implemented a number of <b>commercial</b> plugins for the DITA
+        Open Toolkit, plugins bundled in the <xref
+        href="https://www.oxygenxml.com/publishing_engine.html" format="html" scope="external"
+        >Oxygen Publishing Engine</xref>:<ul id="ul_sc4_vbl_t5b">
+        <li><b>DITA to WebHelp Responsive</b></li>
+        <li><b>DITA to PDF (using CSS for styling)</b></li>
+        <li><b>DITA to Zendesk</b></li>
+        <li><b>CodeBlock Syntax Highlight</b></li>
+        </ul>We also created a considerable number of open-source DITA Open Toolkit plugins (about
+        <b>23</b>) available on the <xref
+        href="https://github.com/search?q=topic%3Adita-ot-plugin+org%3Aoxygenxml&amp;type=Repositories"
+        format="html" scope="external">Oxygen GitHub organization</xref>, with some of the most
+        popular ones being:<ul id="ul_qty_fcl_t5b">
+        <li><b>DITA Metrics Report</b></li>
+        <li><b>Export DITA Map</b></li>
+        <li><b>DITA Media Support</b></li>
+        <li><b>DITA PDF Track Changes</b></li>
+        <li><b>Embed PlantUML and Mermaid diagrams</b></li>
+        <li><b>Embed Latex Equations</b></li>
+        </ul></p>
+      <p>These open-source plugins are useful both for their original purpose but also as sample
+        plugins for people wanting to implement something similar. We try to maintain the
+        open-source plugins (as time allows) and answer any questions related to them.</p>
+    </section>
+    <section id="section_l23_ycl_t5b">
+      <title>Helping with Publishing-related Questions </title>
+      <p>There are various <xref href="https://www.dita-ot.org/contributing" format="html"
+          scope="external">channels</xref> where people ask questions about DITA OT publishing:<ul
+          id="ul_btn_k2l_t5b">
+          <li><xref href="https://dita-users.groups.io/g/main" format="html" scope="external">DITA
+          Users List</xref> (about <b>1000</b> answers and replies so far)</li>
+          <li><xref href="https://groups.google.com/g/dita-ot-users" format="html" scope="external"
+              >DITA OT Users Google Group</xref></li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/discussions" format="html"
+              scope="external">DITA OT Discussions List</xref></li>
+          <li><xref href="http://slack.dita-ot.org/" format="html" scope="external">DITA OT Slack
+              Channel</xref></li>
+          <li><xref href="https://stackoverflow.com/questions/tagged/dita-ot" format="html"
+          scope="external">Stack Overflow</xref> (about <b>80</b> answers so far)</li>
+        </ul></p>
+      <p>There are also Oxygen-specific channels:<ul id="ul_jxw_p3l_t5b">
+          <li><xref href="https://www.oxygenxml.com/forum/dita-editing-and-publishing-dita-content/"
+          format="html" scope="external">Oxygen XML Forum</xref> (<b>2328</b> DITA
+          editing/publishing related topics so far)</li>
+          <li><xref href="https://www.oxygenxml.com/mailinglists.html" format="html"
+              scope="external">Oxygen Users List</xref></li>
+        </ul></p>
+      <p>As time allows, we try to help people with <b>DITA Open Toolkit</b>-related questions on
+        these channels. </p>
+    </section>
+    <section id="section_pmn_jll_t5b">
+      <title>DITA Open Toolkit Publishing-related Articles</title>
+      <p>The <xref href="https://blog.oxygenxml.com" format="html" scope="external">Oxygen XML
+          Blog</xref> has <xref
+          href="https://blog.oxygenxml.com/search.html?searchQuery=label_DITA_Publishing_Customization"
+          format="html" scope="external">more than 20</xref> DITA Open Toolkit publishing related
+        articles.</p>
+    </section>
+    <section id="section_gsm_zfl_t5b">
+      <title>Registering and Analyzing Issues, Opening Pull Requests</title>
+      <p>Our general procedure when encountering <b>DITA Open Toolkit</b> bugs is to:<ul
+        id="ul_bwl_4yb_2vb">
+        <li>Open issues for them on the DITA Open Toolkit list.</li>
+        <li>If possible find time to analyse the issues.</li>
+        <li>Propose workarounds or fixes.</li>
+        </ul></p>
+      <p>We are possibly the biggest contributor of bug and improvement requests to the <b>DITA Open
+        Toolkit</b>. Most of these bugs and improvements are discovered by our end users and added
+        by us on the DITA OT issues list. During these years we've opened <xref
+        href="https://github.com/dita-ot/dita-ot/issues/created_by/raducoravu" format="html"
+        scope="external">more than 400 issues</xref> on the DITA Open Toolkit project.</p>
+      <p>In the last few years, we became a major contributor of pull requests that contain bug
+        fixes (<xref
+          href="https://github.com/dita-ot/dita-ot/pulls?q=is%3Apr+is%3Aclosed+author%3Araducoravu"
+          format="html" scope="external">more than 70 contributed pull requests so far</xref>).</p>
+    </section>
+    <section id="section_iph_whl_t5b">
+      <title>Contributing with Improvement Ideas to the DITA Open Toolkit Project</title>
+      <p>During these years, we contributed improvement ideas to the <b>DITA Open Toolkit</b> and
+        were involved in the process where they were implemented. Here are some improvement ideas in
+        which we were involved:<ul id="ul_idb_b3l_t5b">
+        <li>The <b>DITA Open Toolkit Project</b> file.</li>
+        <li><b>Metadata</b> to specify parameter names, descriptions, and default values in the
+          plugin descriptor files.</li>
+        <li>Processing <b>RelaxNG-based</b> DITA Maps and topics.</li>
+        </ul></p>
+    </section>
+    <section id="section_s45_fhl_t5b">
+      <title>Contributions to the DITA Open Toolkit Documentation</title>
+      <p>The <xref href="https://www.dita-ot.org/dev/" format="html" scope="external">DITA Open
+          Toolkit documentation</xref> has relevant content for people who want to get started using
+        and customizing the DITA Open Toolkit. We frequently help our users by giving them links to
+        the DITA OT documentation.</p>
+      <p>When necessary, we contribute issues on the DITA Open Toolkit documentation issues list:
+        <xref href="https://github.com/dita-ot/docs" format="html" scope="external"/>. I contributed
+        to the DITA OT Docs project about <xref
+        href="https://github.com/dita-ot/docs/issues/created_by/raducoravu" format="html"
+        scope="external">20 issues</xref> so far.</p>
+    </section>
+    <section id="section_zsb_5tl_t5b">
+      <title>The DITA Open Toolkit Day</title>
+      <p>We started hosting and sponsoring the <b>DITA Open Toolkit Day</b> about 8 years ago, back
+        in <b>2014</b>, as a way to bring the community of plugin/customization developers together
+        with the main contributors to the <b>DITA OT</b> project. The <b>DITA OT Day</b> is also a
+        means to celebrate the work of the main <b>DITA OT</b> contributors. Recordings for all
+        videos from past DITA OT Day events can be found here: <xref
+        href="https://www.dita-ot.org/dev/topics/dita-ot-day-videos.html" format="html"
+        scope="external"/>.</p>
+    </section>
+    </body>
+</topic>

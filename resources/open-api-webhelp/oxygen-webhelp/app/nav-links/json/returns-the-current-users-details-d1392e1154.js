@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Responses","href":"responses35.html","attributes":{"data-id":"returns-the-current-user's-details-responses"},"menu":{"hasChildren":false},"tocID":"returns-the-current-user's-details-responses-d1392e1167","topics":[]}]});

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="welcome">
-    <title>Welcome to the <ph keyref="oxygen"/> Blog !</title>
+    <title>Welcome! </title>
     <prolog>
         <author>Radu Coravu</author>
         <copyright>
@@ -21,15 +21,22 @@
                 href="https://www.oxygenxml.com/doc/ug-editor/" format="html" scope="external"/>.
             However, the blog allows us to deploy various small articles faster, without the need to
             wait for documentation updates.</p>
+        <section id="section_ftn_xd1_nsb">
+            <title>Follow us!</title>
+            <p>You can use an RSS feed reader to follow the blog for new articles: <xref
+                    href="https://blog.oxygenxml.com/rss.xml" scope="external" format="html"/>.</p>
+            <p>Or you can register to <xref href="#follow-it" format="html" scope="peer">receive
+                    emails</xref> when new articles are posted.</p>
+        </section>
         <section id="section_fqq_tr3_jkb">
             <title>History of the <ph keyref="oxygen"/> Blog</title>
-            <p>The blog was originally hosted by <xref href="https://aboutxml.blogspot.com"
-                    format="html" scope="external">Google Blogs</xref> and the first articles on the
-                blog appeared around 2007. Since Google Blogs did not allow enough flexibility in
+            <p>The blog was originally hosted by Google Blogs and the first articles on the blog
+                appeared around 2007. Since Google Blogs did not allow enough flexibility in
                 creating the published content (for example, the inability to create a table of
-                contents) the blog was migrated to XML content and is now hosted on the Netlify
-                platform: <xref href="https://oxygenxmlblog.netlify.com/" format="html"
-                    scope="external"/>.</p>
+                contents) the blog was migrated to DITA XML content stored on GitHub and is now
+                hosted both on the <xref href="https://blog.oxygenxml.com/" format="html"
+                    scope="external">Oxygen XML Web site</xref> and on the Netlify platform: <xref
+                    href="https://oxygenxmlblog.netlify.com/" format="html" scope="external"/>.</p>
         </section>
         <section id="section_pv2_1q3_jkb">
             <title>How the <ph keyref="oxygen"/> Blog Works</title>
@@ -83,7 +90,7 @@
                             your repository.</li>
                         <li>As an alternative, you can use the Oxygen XML Web Author browser editing
                             tool that has its own Git connector: <xref
-                                href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
+                              href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
                                 format="html" scope="external"/>.</li>
                         <li>Please remember to add the name of the author and the created date for
                             the topic in the DITA topic prolog section

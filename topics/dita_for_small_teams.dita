@@ -202,9 +202,9 @@
                     format="html" scope="external">Getting Started</xref> guide for DITA
                 editing.</p>
             <p>You can right click the <uicontrol>Project</uicontrol> root and <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html"
-                    format="html" scope="external">enable master files</xref>, then in the
-                    <uicontrol>Master Files</uicontrol> folder add a reference to the main DITA map
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-main-files.html"
+                    format="html" scope="external">enable main files</xref>, then in the
+                    <uicontrol>Main Files</uicontrol> folder add a reference to the main DITA map
                 (or maps). All refactoring operations (move resources to subfolders, rename topics
                 or resources) will properly update references in the entire DITA project hierarchy.
                 A minimal DITA project would probably contain:<ul id="ul_xl4_sqb_vkb">
@@ -328,7 +328,7 @@
                 project board. It can also be assigned various labels. Issues can also be assigned
                 to various people in your team.</p>
             <p>Oxygen's <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/author-managing-changes-x-modes2.html"
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/author-managing-changes.html"
                     format="html" scope="external">change tracking support</xref> allows you to
                 insert or delete content with change tracking or to make comments on content. The
                 Web Author online editing tool allows you to also make changes with change
@@ -388,4 +388,11 @@
                 projects.</p>
   </section>
     </body>
+  <related-links>
+    <link
+      href="https://www.oxygenxml.com/events/2020/webinar_using_dita_for_small_technical_documentation_teams.html"
+      format="html" scope="external">
+      <linktext>Webinar: Using DITA for Small Technical Documentation Teams</linktext>
+    </link>
+  </related-links>
 </topic>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="migrating-word-to-dita-using-batch-documents-converter">
+    <title>Migrating MS Word to DITA using the Batch Documents Converter</title>
+    <prolog>
+        <author>Cosmin Duna</author>
+        <critdates>
+            <created date="2022-11-29"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>This blog post presents how you can migrate from MS Word to DITA using the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" format="html"
+            scope="external">Oxygen Batch Documents Converter add-on</xref>.</p>
+        <p>The migration process has three main stages:
+            <ol>
+                <li>
+                    <p><xref href="preparing_word_document_for_migration.dita#preparing_word"/></p>
+                </li>
+                <li>
+                    <p><xref href="converting_word_document.dita#converting_word"/></p>
+                </li>
+                <li>
+                    <p><xref href="customizing_the_resulting_dita_content.dita#customizing_dita_result"/></p>
+                </li>
+            </ol>
+        </p>
+        <p>A webinar presenting this migration is available here: <xref href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_migrating_to_dita_and_refactoring.html" format="html" scope="external">Working with DITA in Oxygen - Migrating to DITA
+            and Refactoring</xref></p>
+        <p>A list of frequently asked questions about the migration process can be found here: <xref
+                href="frequently_asked_questions.dita"/></p>
+    </body>
+    
+    
+    
+</topic>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_bls_z4n_mvb">
+    <title>Automatic Markup Detection</title>
+    <body>
+        <p>If we first detect the base element and then determine if it is in fact a more
+            specialized one, it may help because it reduces the number of choices.</p>
+    </body>
+</topic>

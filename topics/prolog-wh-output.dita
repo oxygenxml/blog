@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="prolog-wh-output">
+    <title>Displaying prolog details (author, creation date, read time)</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-09-19"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword outputclass="label">DITA Publishing Customization</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>DITA topics can contain a <xmlelement>prolog</xmlelement> element with various details
+            such as the <b>author name</b>, <b>creation date</b>, and other details that are not
+            displayed in the published output by default. </p>
+        <p>
+            <codeblock id="codeblock_t1c_yq1_xrb" outputclass="language-xml">&lt;topic id="...">
+    &lt;title>...&lt;/title>
+    &lt;prolog>
+        &lt;author>...&lt;/author>
+        &lt;critdates>
+            &lt;created date="2022-01-13"/>
+        &lt;/critdates></codeblock>
+        </p>
+        <p>At the time of publishing, we can show the author name, creation date, and the number of
+            minutes it takes to read the article before the actual topic content by customizing the
+            WebHelp Responsive output.</p>
+        <p>DITA WebHelp output can be customized using a <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html"
+                format="html" scope="external">publishing template mechanism</xref>. Inside a
+            publishing template folder, there is an <filepath>opt</filepath> file that can contain
+            links to various XSLT stylesheets that are useful for customizations. For example, we'll
+            add a link to a stylesheet for processing the DITA
+            <xmlelement>prolog</xmlelement>:<codeblock id="codeblock_cfr_ft1_xrb" outputclass="language-xml">&lt;publishing-template>
+    &lt;name>.....&lt;/name>
+    ......
+        &lt;xslt>
+            ....
+            &lt;extension file="xslt/prolog.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+            .....
+        &lt;/xslt>
+    &lt;/webhelp>
+&lt;/publishing-template></codeblock>The <filepath>prolog.xsl</filepath> stylesheet will
+            display the author name, creation date, and an approximate number of minutes it takes to
+            read the
+            article:<codeblock id="codeblock_b3f_k1b_xrb" outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
+    &lt;xsl:template match="*[contains(@class, ' topic/prolog ')]">
+        &lt;!-- Display the author name -->
+        &lt;xsl:variable name="avatar-author" select="replace(*[contains(@class, ' topic/author ')],' ','_')"/>
+        &lt;div class="author">
+           &lt;xsl:value-of select="*[contains(@class, ' topic/author ')]"/>
+        &lt;/div>
+        &lt;!-- Display the creation date -->
+        &lt;xsl:if test="exists(.//*[contains(@class, ' topic/created ')]/@date)">  
+            &lt;div class="date">
+                &lt;xsl:variable name="cd" select=".//*[contains(@class, ' topic/created ')]/@date"/>
+                &lt;xsl:value-of select="format-date(xs:date($cd), 
+                    '[D] [MNn,3-3] [Y0001]')"/>
+            &lt;/div>
+        &lt;/xsl:if>
+        &lt;!-- Display the number of minutes it takes to read the article -->
+        &lt;div>
+            &lt;xsl:variable name="fileContent" select="/"/>
+            &lt;xsl:variable name="text" select="normalize-space($fileContent)"/> 
+            &lt;xsl:variable name="textWithoutSpaces" select="translate($fileContent, ' ', '')" /> 
+            &lt;xsl:variable name="fileCountWords" select="string-length($text) - string-length($textWithoutSpaces) +1"/>
+            &lt;xsl:variable name="readMin" select="format-number($fileCountWords div 50, '0')"/>
+            Read time: &lt;xsl:value-of select="$readMin"/> minute(s)
+        &lt;/div>
+        &lt;xsl:next-match/>
+    &lt;/xsl:template>
+&lt;/xsl:stylesheet></codeblock></p>
+        <p>The WebHelp publishing template used for publishing this blog already has a
+            customization to display information from the prolog: <xref
+                href="https://github.com/oxygenxml/blog/tree/master/publishing/webhelpBlogTemplate"
+                format="html" scope="external"/>.</p>
+        <p>Each published topic contains information about the author name, created date, and an
+            estimate number of minutes it takes to read the article. The author name display can be
+            enriched with an avatar photo:</p>
+        <image href="../images/prolog-display.png" id="image_qjl_3sj_x5b" scale="50"/>
+    </body>
+</topic>

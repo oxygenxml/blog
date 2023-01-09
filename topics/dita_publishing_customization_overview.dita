@@ -87,12 +87,10 @@
       <title>Customizing the Oxygen WebHelp-based output</title>
       <p>Oxygen’s <b>DITA OT</b> comes bundled with specific plugins developed by Oxygen that allows
         publishing <b>DITA</b> content to <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/wh-classic-output-x-2.html"
-          format="html" scope="external"><b>WebHelp Classic</b></xref> and <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/wh-responsive-output-x-2.html"
-          format="html" scope="external"><b>WebHelp Responsive</b></xref> outputs. Oxygen’s User’s
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/webhelp-responsive-output.html"
+          format="html" scope="external"><b>WebHelp Responsive</b></xref> output. Oxygen’s User’s
         Guide has detailed topics about how to customize these outputs: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/wh-responsive-customization-tips.html#wh-responsive-customization-tips"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/wh-responsive-customization-tips.html"
           format="html" scope="external"/>.</p>
     </section>
     <section id="section_jdb_4pn_hdb">

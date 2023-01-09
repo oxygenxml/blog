@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map chunk="to-content" toc="no">
+    <title>DITA Perspectives</title>
+    <topicref href="About.dita"/>
+    <topicref href="Overview.dita">
+        <topicref href="Overview_dita_1.3_shells.dita"/>
+        <topicref href="Overview_dita_1.3_modules.dita"/>
+        <topicref href="Overview_dita_elements.dita"/>
+        <topicref href="specializations.ditamap" format="ditamap"/>
+        <topicref href="Overview_dita_elements_domains.dita">
+            <topicref href="domains.ditamap" format="ditamap"/>
+        </topicref>
+    </topicref>
+    <topicref href="Overview_dita_is_not_a_flat_list_of_elements.dita">
+        <topicref href="element_selection_during_editing.dita"/>
+        <topicref href="automatic_markup_detection.dita"/>
+        <topicref href="soft_generalization.dita"/>
+    </topicref>
+    <topicref href="Overview_exchanging_dita_documents.dita"/>
+</map>

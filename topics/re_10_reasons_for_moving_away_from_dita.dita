@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="re_10_reasons_for_moving_away_from_dita">
+    <title>Re: 10 reasons for moving away from DITA </title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-03-02"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>I'm following Tom Johnson <codeph>@tomjohnson</codeph> on Twitter and so should you for
+            the very interesting articles related to technical documentation. One of his <xref
+                href="https://twitter.com/tomjohnson/status/1498782382412816384" format="html"
+                scope="external">recent posts</xref> reminded us about the <xref
+                href="https://idratherbewriting.com/2015/01/28/10-reasons-for-moving-away-from-dita/"
+                format="html" scope="external">10 reasons for moving away from DITA</xref> article
+            he wrote about 7 years ago so I re-visited the article and I wanted to reply to each of
+            the points he makes in the <b>10 reasons to move away from DITA</b> section, 7 years
+            after his original post:<dl id="dl_zzb_hrd_tsb">
+                <dlentry>
+                    <dt>1. DITA doesn't easily integrate into existing web frameworks.</dt>
+                    <dd>I think the <uicontrol>DITA to Markdown</uicontrol> transformation developed
+                        by Jarno Elovirta (which is freely available in the DITA Open Toolkit) has
+                        opened the possibility of using static web site generators. Here is an
+                        article I wrote where I investigated using the <uicontrol>MKDocs</uicontrol>
+                        static site generator:</dd>
+                    <dd><xref
+                            href="publishing_dita_content_using_a_markdown_static_web_site_generator.dita"
+                        />.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>2. DITA doesn't easily integrate with JavaScript libraries.</dt>
+                    <dd>Again, once you can publish DITA to Markdown, you can use the existing
+                        static web site generator infrastructure.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>3. I never bought into DITA's information typing model.</dt>
+                    <dd>I partially agreed, as most writers who are not externally constrained by
+                        the company or by some publishing customization to use explicit topic types
+                        (me included) would use the base DITA <codeph>topic</codeph> type for all of
+                        their work. </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>4. Writing in XML is a chore.</dt>
+                    <dd>For me, when writing in Markdown, adding paragraphs is easy, but when adding
+                        links, image references, or tables, it is a chore. It depends on what you
+                        are comfortable with and what you use every day. If I were to write Markdown
+                        every day, I would start to remember how I should encode a link and consider
+                        it a natural way of doing things. But indeed, using a plain text editor to
+                        write in XML is more difficult, in general. With a visual editing tool, it
+                        is much easier.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>5. Open-source DITA solutions develop too slowly.</dt>
+                    <dd>If we are discussing storage, DITA content (the content of this blog for
+                        example) can be stored in Git repositories and used with regular Git client
+                        tools: <xref href="dita_for_small_teams.dita"/>.</dd>
+                    <dd>If we are discussing the publishing ecosystem, once you can publish DITA to
+                        plain HTML or Markdown using the DITA Open Toolkit, you can benefit of all
+                        web based tools available for Markdown and plain HTML content.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>6. You can't easily customize the output.</dt>
+                    <dd><p>Again, it depends on what you are comfortable with. You can use Markdown
+                            content produced from DITA XML content with static web site generators
+                            like <b>MKDocs</b> or <b>Jekyll</b>. Indeed, if you use (for example)
+                            DITA to produce Oxygen WebHelp, although most of the customizations are
+                            made with CSS, you might still need to use XSLT for more advanced
+                            customizations. But as someone who spent hours trying to understand why
+                                <b>Hugo</b> does not properly follow links between articles, there
+                            is a learning curve for anything, and every static web site generator
+                            out there has its own configuration capabilities that need to be learned
+                            and explored. Also, once you get comfortable with a certain publishing
+                            process, you naturally consider that one easy and the others more
+                            difficult.</p>About publishing DITA to PDF, the default customization
+                        capabilities for the classic DITA to PDF publishing require knowledge of
+                        both XSLT and XSL-FO. This is why we invested in the Oxygen Chemistry
+                        CSS-based PDF processor, to be able to style the content using CSS and then
+                        use the CSS both for WebHelp and PDF publishing: <xref
+                            href="https://styles.oxygenxml.com/" format="html" scope="external"
+                        />.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>7. DITA doesn't integrate well with other non-DITA content.</dt>
+                    <dd>
+                        <p>DITA content integrates well with Markdown. We contacted Tom less than a
+                            year ago to again explore Oxygen's capabilities with a docs-as-code
+                            approach and his well thought out and complete article about combining
+                            DITA XML with Markdown is available here: <xref
+                                href="https://idratherbewriting.com/learnapidoc/pubapis_oxygenxml.html"
+                                format="html" scope="external"/>.</p>
+                        <p>In recent Oxygen versions, we also explored integrating other file types
+                            like Word or HTML directly with DITA projects: <xref
+                                href="https://www.oxygenxml.com/doc/ug-editor/topics/dynamically_convert_word_excel_html_markdown_to_dita.html"
+                                format="html" scope="external"/>.</p>
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>8. Everything I wanted to do with DITA, I can do with Markdown and Liquid on
+                        Jekyll.</dt>
+                    <dd>I am not familiar with Liquid, but I agree there are indeed ways that you
+                        can also reuse content with Markdown, not part of a standard but part of how
+                        a particular framework decided to support such extensions, making the
+                        solution 100% not portable when switching between web-based frameworks. I do
+                        think there are more powerful ways to check if the structure is correct with
+                        XML-based standards using Schematron. The Oxygen <xref
+                            href="validateCheckForCompletness.dita">Validate and check for
+                            completeness</xref> action also does a lot of consistency checks.</dd>
+                    <dd>An article about thoughts on Markdown: <xref
+                            href="https://www.smashingmagazine.com/2022/02/thoughts-on-markdown/"
+                            format="html" scope="external"/>.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>9. Innovation with DITA is too reliant on vendors.</dt>
+                    <dd>Once you can obtain plain HTML and plain Markdown from DITA XML content, you
+                        can benefit from all the tools created to process and display HTML and
+                        Markdown. The web tools publishing space is much more dynamic than the DITA
+                        XML publishing space. For me, looking into the web tools space from the
+                        outside, it's in a constant turmoil of innovation, which brings stress to
+                        any web developer who might want to choose a framework since there are so
+                        many frameworks developed over night while re-inventing solutions for the
+                        same concepts in different ways that you end up not knowing what to choose
+                        and with the Markdown content containing various framework-specific
+                        extensions not being able to easily switch between them. It's like tearing
+                        down the entire house and re-inventing it each day and sometimes forgetting
+                        about various problems that have been fixed in the previous iteration. While
+                        Markdown might now be the future winning format when it comes to web tools,
+                        some innovators want to switch to JSON even for writing web content: <xref
+                            href="https://www.smashingmagazine.com/2022/02/thoughts-on-markdown/"
+                            format="html" scope="external"/>.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>10. DITA is the wrong language for the API doc space.</dt>
+                    <dd>I would like to further explore using DITA XML in the API docs space, that's
+                        for sure. Now days, I think by "API Docs", most people would be referring to
+                        Swagger, OpenAPI documentation, mostly API documentation for web-based end
+                        points. I experimented a bit using <codeph>widdershins</codeph> to generate
+                        documentation from API docs to Markdown and then converting this Markdown
+                        content to DITA XML, converting the DITA content to WebHelp Responsive.
+                        Also, I'm not sure if the API docs world is larger than web-based end points
+                        using REST, but there are other programming languages as well but probably
+                        most API documentation is about accessing server end points now days.</dd>
+                </dlentry>
+            </dl></p>
+        <p>So these are my brief remarks on Tom's <b>10 reasons to move away from DITA</b> article
+            written some 7 years ago. Any feedback is welcomed as usual.</p>
+    </body>
+</topic>

@@ -16,32 +16,31 @@
     <section id="section_wyk_5fj_2v">
       <title>Resources for editing DITA with Oxygen:</title>
       <p>We have a getting started section in our user's manual: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/eppo-first-dita-topic.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-first-dita-topic.html"
           format="html" scope="external"/> and a larger section on DITA authoring: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/author-dita.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/author-dita.html"
           format="html" scope="external"/>.</p>
       <p>We have a list of videos, some of them DITA-related here: <xref
-					href="https://www.oxygenxml.com/videos.html" format="html" scope="external"/>
-				and a series of past webinar recordings about editing DITA with Oxygen.<dl
-					id="dl_av4_tgf_wpb">
-					<dlentry>
-						<dt>Getting Started with Oxygen and DITA</dt>
-						<dd><xref
-								href="https://www.oxygenxml.com/events/2020/webinar_getting_started_with_dita_using_oxygen_xml_editor.html"
-								format="html" scope="external"/></dd>
-					</dlentry>
-					<dlentry>
-						<dt>Basic DITA Profiling and Reuse</dt>
-						<dd><xref
-								href="https://www.oxygenxml.com/events/2020/webinar_working_with_dita_in_oxygen.html"
-								format="html" scope="external"/></dd>
-					</dlentry>
-					<dlentry>
-						<dt>Advanced DITA Profiling and Reuse</dt>
-						<dd><xref
-								href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_advanced_profiling_and_reuse_strategies.html"
-								format="html" scope="external"/></dd>
-					</dlentry>
+          href="https://www.oxygenxml.com/videos.html" format="html" scope="external"/> and a series
+        of past webinar recordings about editing DITA with Oxygen.<dl id="dl_av4_tgf_wpb">
+          <dlentry>
+            <dt>Getting Started with Oxygen and DITA</dt>
+            <dd><xref
+                href="https://www.oxygenxml.com/events/2020/webinar_getting_started_with_dita_using_oxygen_xml_editor.html"
+                format="html" scope="external"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Basic DITA Profiling and Reuse</dt>
+            <dd><xref
+                href="https://www.oxygenxml.com/events/2020/webinar_working_with_dita_in_oxygen.html"
+                format="html" scope="external"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Advanced DITA Profiling and Reuse</dt>
+            <dd><xref
+                href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_advanced_profiling_and_reuse_strategies.html"
+                format="html" scope="external"/></dd>
+          </dlentry>
           <dlentry>
             <dt>Working with DITA in Oxygen - Customizing the Editing Experience</dt>
             <dd><xref
@@ -60,7 +59,9 @@
                 href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_migrating_to_dita_and_refactoring.html"
                 format="html" scope="external"/></dd>
           </dlentry>
-				</dl></p>
+        </dl>All these webinars above are also listed here: <xref
+          href="https://www.oxygenxml.com/working_with_dita_in_oxygen.html" format="html"
+          scope="external"/>.</p>
     </section>
     <section id="section_hbg_wfj_2v">
       <title>Resources for learning DITA:</title>
@@ -71,27 +72,22 @@
           href="https://www.oxygenxml.com/dita/1.3/specs/#introduction/dita-release-overview.html"
           format="html" scope="external"/>.</p>
       <p>There are also a number of good books like <xref
-                    href="http://xmlpress.net/publications/dita/practitioners-1/" format="html"
-                    scope="external">DITA For Practitioners</xref> and the <xref
-                    href="https://ditastyle.com/" format="html" scope="external">DITA Style
-                    Guide</xref>.</p>
+          href="http://xmlpress.net/publications/dita/practitioners-1/" format="html"
+          scope="external">DITA For Practitioners</xref> and the <xref
+          href="https://www.oxygenxml.com/dita/styleguide/" format="html" scope="external">DITA
+          Style Guide</xref>.</p>
     </section>
     <section id="section_ufb_ngj_2v">
       <title>Resources for customizing the DITA output formats</title>
       <p>Usually customizing the XHTML based outputs means creating your custom CSS selectors. If
         you generate WebHelp output using Oxygen, we have a section explaining basic WebHelp
         customizations: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/customize_webhelp.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/customize_webhelp.html"
           format="html" scope="external"/>.</p>
-      <p>For PDF-based outputs if you publish via the <b>DITA Open Toolkit</b> we have a section in
-        our user's manual about PDF customizations: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/#topics/dita-pdf-output.html"
-          format="html" scope="external"/>. There is also a <xref
-          href="http://dita-generator.elovirta.com/" format="html" scope="external">PDF plugin
-          generator</xref> created by Jarno Elovirta which can be used in order to customize the PDF
-        layout. The <xref href="http://xmlpress.net/publications/dita/dita-for-print/" format="html"
-          scope="external">DITA For Print</xref> book also covers quite a lot of many customization
-        possibilities. There are also a number of different alternatives to obtain PDF from DITA:
+      <p>For PDF-based outputs we recommend, support and maintain our <xref
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/pdf-css-customization.html"
+        format="html" scope="external">CSS-based PDF publishing</xref> which is free to use from <ph
+        keyref="oxygen"/>. There are also a number of different choices to obtain PDF from DITA:
         <xref href="ditaToPDF.dita"/>.</p>
     </section>
     <section id="section_rqq_nhj_4jb">

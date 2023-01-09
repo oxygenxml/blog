@@ -1,0 +1,51 @@
+<div class="footer">
+    <div class="container-fluid">
+        <div class="col-md-3" id="quick_links">
+            <div>
+                <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook" title="Facebook" target="_blank">
+                    <img src="${path(oxygen-webhelp-template-dir)}/resources/images/facebook.png"/>
+                </a>
+                <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube" title="Youtube Channel" target="_blank">  
+                    <img src="${path(oxygen-webhelp-template-dir)}/resources/images/you-tube.png"/>
+                </a>
+                <a href="http://twitter.com/oxygenxml" class="lk-blog" title="Twitter" target="_blank">  
+                    <img src="${path(oxygen-webhelp-template-dir)}/resources/images/twitter.png"/>
+                </a>
+                <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">  
+                    <img src="${path(oxygen-webhelp-template-dir)}/resources/images/linkedin.png"/>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-5">
+            <div id="copy"> © 2002-2022 SyncRO Soft SRL. All rights reserved. 
+                <div><p> This website is powered by Oxygen<sup>®</sup> <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a></p></div>
+            </div>
+        </div>
+        <div class="col-md-1 b-subscribe">
+            <a href="/#follow-it" type="button" class="btn get-started">Subscribe</a>
+        </div>
+        <div class="col-md-2 b-flavours">
+            <a type="application/rss+xml" href="/rss.xml">RSS</a>
+            <a href="/oxygen_xml_blog.pdf">PDF</a>
+            <a href="/oxygen_xml_blog.epub">EPUB</a>
+        </div>
+    </div>
+    
+    <script>
+        $(".get-started").click(function() {
+            $([document.documentElement, document.body]).animate({
+               scrollTop: $(".stripe-latest-posts").offset().top - 90
+            }, 1000);
+        });
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-2331448-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-2331448-3');
+    </script>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_l1z_5kh_kvb">
+    <title>DITA Perspectives</title>
+    <prolog>
+        <author>George Bina</author>
+        <critdates>
+            <created date="2022-11-25"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>DITA is not defined as a flat list of elements, but each element is either a base element
+            or it derives as a specialized version of another element. This hierarchy should
+            actually decrease the cognitive complexity of a vocabulary because it allows you to find
+            an element faster than working with a flat list. </p>
+        <p>In this article, I want to show the hierarchy of elements in DITA and then explore how
+            you can take advantage of this in understanding the DITA architecture, learning DITA,
+            document authoring, etc.</p>
+        <p>All the scripts I used to generate these diagrams can be found in the <xref
+            href="https://github.com/oxygenxml/DITAPerspectives" format="html" scope="external">DITA
+            Perspectives Github Project</xref>.</p>
+    </body>
+</topic>

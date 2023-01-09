@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="dita_oriented_tips_and_tricks">
-  <title><ph keyref="oxygen"/> - DITA Oriented Tips And Tricks</title>
+  <title>DITA Oriented Tips And Tricks</title>
   <prolog>
     <author>Radu Coravu</author>
   </prolog>
@@ -41,9 +41,9 @@
       <p>The Oxygen Project view is the place where you can organize and apply batch changes to all
         your DITA resources:</p>
       <ul id="ul_shb_qd4_mfb">
-        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-master-files.html"
-            format="html" scope="external">Master files support</xref>. Enable master files support
-          in the DITA project, add your top level DITA Maps as master files and any structure
+        <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-main-files.html"
+            format="html" scope="external">Main files support</xref>. Enable main files support
+          in the DITA project, add your top level DITA Maps as main files and any structure
           changes, renaming or moving files will automatically update all links in the DITA Project.
           Also works for renaming/moving image resources.</li>
         <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-storing.html"
@@ -54,13 +54,13 @@
         <li>Compare files/folders.</li>
         <li>Refer to multiple folders.</li>
         <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view.html"
             format="html" scope="external">Batch operations</xref>: Select a folder in the project
           and use the "Transform", "Validate", "Format and Indent", "Find/Replace in Files", or
           "Spell Check in Files". Or use the "XML Refactoring" action to apply a refactoring
           stylesheet over all the selected files.</li>
         <li><xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view-x-editing2.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view.html"
             format="html" scope="external">Filter files</xref>. You can instruct the Project view to
           hide various file types.</li>
       </ul>
@@ -74,7 +74,7 @@
             Editor</b> actions and their shortcuts. Together with the <b>Switch editor tab</b>
           action, these help you navigate between opened XML documents.</li>
         <li>The <b><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-view-x-editing2.html"
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-dialog.html"
               format="html" scope="external">Open/Find Resource</xref></b> view (main menu
             <b>Window->Show View</b>) allows you to search for file names, search in file contents,
           or search for files containing comments or change tracking.</li>
@@ -196,17 +196,17 @@
           <li>Select content and then use the <b>Toggle comment</b> action (contextual menu
               <b>Refactoring</b> submenu) to quickly add an XML comment around it.</li>
           <li>In the <xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu-x-modes2.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu.html"
               format="html" scope="external">contextual menu</xref> the <b>Text</b> submenu contains
             useful actions to count the number of words in the entire document (or in the selected
             text), convert the selection to upper, lowercase, or sentence case</li>
           <li><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content-x-editing2.html#author-navigate-document-content__navigating_with_bookmarks"
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content.html"
               format="html" scope="external">Bookmarks</xref> - Click the vertical left side bar in
             the editing area to add a bookmark. Navigate to that bookmark even after the file has
             been closed using the <b>Ctrl/CMD + number</b> shortcut.</li>
           <li><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode-x-modes2.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode.html"
               format="html" scope="external">Collapse other folds</xref> - Click a fold triangle in
             the Author visual editing mode and you can choose to close all other folds, useful when
             working with multiple sections in the same file.</li>
@@ -278,7 +278,7 @@
                 row by clicking to the left of it.</li>
             </ul></li>
           <li><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/image-map-dita-x-dita2.html"
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/image-map-dita-2.html"
               format="html" scope="external">Add hotspots to images</xref> - You can right-click any
             image reference and use the <b>Image Map Editor</b> to configure target links for
             various parts of the image.</li>

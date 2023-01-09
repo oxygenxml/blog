@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita_ot_publishing_customizations_overview">
+    <title>Publishing Customizations</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-09-05"/>
+    </critdates>
+  </prolog>
+    <body>
+        <p>An overview of various useful publishing customizations that appear as individual
+      articles on the Oxygen XML Blog.</p>
+    <section id="section_pyj_klm_t5b">
+      <title>DITA Project Overview</title>
+      <p>
+        <ul id="ul_pg3_4n4_55b">
+          <li><xref href="dita_map_metrics_evolution.dita"/></li>
+          <li><xref href="creating_graphs_from_dita_maps.dita"/></li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_k5n_ykm_t5b">
+      <title>Embed Latex Equations in DITA Topics</title>
+      <p><xref href="adding-latex-equation-support-dita.dita"/></p>
+    </section>
+    <section id="section_kvh_rkm_t5b">
+      <title>Embed PlantUML/Mermaid Diagrams in DITA Topics</title>
+      <ul id="ul_qml_xkm_t5b">
+        <li><xref href="embedding_diagrams_in_dita_topics_using_plantuml.dita"/></li>
+        <li><xref href="embedding_diagrams_in_dita_topics_using_mermaid.dita"/></li>
+      </ul>
+    </section>
+    <section id="section_pgd_clm_t5b">
+      <title>DITA Task Steps Presentation Alternatives</title>
+      <p>
+        <ul id="ul_xkv_g3t_t5b">
+          <li><xref href="task-steps-diagram.dita"/></li>
+          <li><xref href="dita-steps-tabs.dita"/></li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_y1f_2lm_t5b">
+      <title>Generate Google Structured Data Content from DITA Content</title>
+      <ul id="ul_fxy_2lm_t5b">
+        <li><xref href="generating_google_structured_data_from_your_dita_tasks.dita"/></li>
+        <li><xref href="generating_google_structured_data_from_your_dita_faq.dita"/></li>
+      </ul>
+    </section>
+    <section id="section_ss4_hlm_t5b">
+      <title>Present Consecutive Elements as Tabs in HTML Output</title>
+      <ul id="ul_pht_hbt_t5b">
+        <li><xref href="dita-codeblock-tabs.dita"/></li>
+      </ul>
+    </section>
+    <section id="section_twd_jlm_t5b">
+      <title>Convert OpenAPI Content to DITA</title>
+      <p><xref href="open-api-dita.dita"/></p>
+    </section>
+    <section id="section_s2j_nlm_t5b">
+      <title>Various Applications for DITA to Markdown Publishing</title>
+      <ul id="ul_tnd_4lm_t5b">
+        <li><xref href="publishing_dita_powerpoint.dita"/></li>
+        <li><xref href="publishing_dita_content_using_a_markdown_static_web_site_generator.dita"
+          /></li>
+      </ul>
+    </section>
+    <section id="section_zmw_rlm_t5b">
+      <title>DITA Prolog Customizations</title>
+      <ul id="ul_ubw_slm_t5b">
+        <li><xref href="prolog-wh-output.dita"/></li>
+        <li><xref href="recent_topics_list.dita"/></li>
+        <li><xref href="rss_feed_generation.dita"/></li>
+      </ul>
+    </section>
+    <section id="section_ls3_zlm_t5b">
+      <title>Marking DITA Topics with Labels for the HTML-based Output</title>
+      <p><xref href="adding_labels_to_topics_in_the_webhelp_responsive_output.dita"/></p>
+    </section>
+    <section id="section_vqp_q3t_t5b">
+      <title>Generating Content for Google Chatbot</title>
+      <p><xref href="customizing_a_chatbot.dita"/></p>
+    </section>
+    <section id="section_iyb_ggl_jvb">
+      <title>Externally Contributed Articles</title>
+      <ul id="ul_l1j_hgl_jvb">
+        <li><xref href="cross_book_links.dita"/></li>
+        <li><xref href="preprocessing_ditaot_project_files.dita"/></li>
+      </ul>
+    </section>
+    </body>
+</topic>

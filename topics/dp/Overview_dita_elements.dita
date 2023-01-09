@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="section_tqk_tjh_kvb">
+	<title>DITA Elements</title>
+	<body>
+		<p>The total number of DITA elements defined in the schemas and how they are split into base
+			elements, specialized element, and a highlight of the duplicate elements, while having
+			the same name but being defined on a different module can be observed here:</p>
+		<p><image href="diagrams/BaseDITAElements.svg" id="image_smm_ws3_kvb" /></p>
+		<section id="section_h4y_p1j_kvb">
+			<title>Elements Split by Map and Topic Base</title>
+			<p><image href="diagrams/BaseDITATopicAndMapElements.svg" id="image_its_r1j_kvb"
+				/></p>
+		</section>
+		<section id="section_r52_lz3_kvb">
+			<title>Topic Elements</title>
+			<p>The element information is projected on the <codeph>topic</codeph> base module:</p>
+			<p><image href="diagrams/BaseDITATopicElements.svg" id="image_tn3_qz3_kvb" 
+				/></p>
+		</section>
+		<section id="section_r52_lz3_ksd">
+			<title>Map Elements</title>
+			<p>The element information is projected on the <codeph>map</codeph> base module:</p>
+			<p><image href="diagrams/BaseDITAMapElements.svg" id="image_tn3_qz3_kdb" 
+				/></p>
+		</section>
+	</body>
+</topic>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita_map_metrics_evolution">
+    <title>DITA Map Metrics Evolution</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-09-09"/>
+    </critdates>
+  </prolog>
+    <body>
+        <p>The <xref
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/author-dita-map-transformation-scenarios.html"
+        format="html" scope="external"><b>DITA Map Metrics Report</b></xref> transformation scenario
+      available in Oxygen can be applied on a DITA Map and produce all kinds of interesting metrics
+      for your DITA project:<ul id="ul_ugk_p34_55b">
+        <li>The number of processed maps and topics.</li>
+        <li>Content reuse percentage.</li>
+        <li>Number of elements, attributes, words, and characters used in the entire DITAmap
+          structure.</li>
+        <li>DITA conditional processing attributes used in the DITA maps.</li>
+        <li>Processing instructions.</li>
+        <li>External links.</li>
+        <li>All <codeph>@outputclass</codeph> attribute values gathered from the DITA project.</li>
+      </ul>There is also an <xref href="https://github.com/oxygenxml/dita-ot-metrics" format="html"
+        scope="external">open source DITA Open Toolkit plugin</xref> on the Oxygen XML GitHub
+      organization which can be used to generate a metrics report either in HTML or XML format.</p>
+    <p>If you generate metrics for various stages in the history of your DITA project (for example
+      for various releases) you can combine those metrics and generate graphs which can show various
+      indicators like:</p>
+    <ul id="ul_tzp_rj4_55b">
+      <li>Fluctuations in number of topics and maps.</li>
+      <li>Fluctuations in content reuse.</li>
+    </ul>
+    <p>Metrics reports and metrics evolution reports are useful to get an overview of a DITA-based
+      documentation project and to discuss its future directions. They are also useful indicators to
+      discuss with management.</p>
+    <p>Here are some steps to generate a metrics evolution report for a DITA project hosted on a Git
+        server:<ol id="ol_vxf_1k4_55b">
+        <li>Install this DITA Open Toolkit plugin which can publish DITA tables as SVG graphs: <xref
+            href="https://github.com/oxygenxml/dita-table-svg" format="html" scope="external"
+          />.</li>
+        <li>Install the DITA Metrics report plugin in your DITA Open Toolkit installation (if not
+          yet installed): <xref href="https://github.com/oxygenxml/dita-ot-metrics" format="html"
+            scope="external"/>.</li>
+        <li>Switch your Git project to various tagged versions, after each switch apply the
+            <uicontrol>metrics-report-xml</uicontrol> transformation type on the DITA Map and
+          generate an XML file representing the metrics for that particular version. As an example I
+          created 4 metrics reports for 4 previous Oxygen XML User's Guide versions: <xref
+            href="https://github.com/oxygenxml/dita-ot-metrics/tree/master/evolution/samples"
+            format="html" scope="external"/>.</li>
+        <li>Apply the <xref
+            href="https://github.com/oxygenxml/dita-ot-metrics/blob/master/evolution/generateDITATables.xsl"
+            format="html" scope="external">provided XSLT stylesheet</xref> to generate a DITA topic
+          containing tables which show how various indicators change between versions.</li>
+        <li>Apply the <uicontrol>DITA to HTML5</uicontrol> transformation on the topic to create an
+          HTML document showing the <xref
+            href="../resources/generated-metrics-evolution.html"
+            format="html" scope="local">evolution of different indicators as a graph</xref>.</li>
+      </ol></p>
+      <foreign outputclass="html-embed"><![CDATA[
+                <iframe width="100%" height="800" 
+                  src="../resources/generated-metrics-evolution.html" 
+                  frameborder="1">
+                </iframe>
+                ]]></foreign>
+    </body>
+</topic>
