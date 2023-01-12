@@ -5,7 +5,7 @@ task initDOT {
    doLast {
    if(! new File("${projectDir}/dita-ot/oxygen-publishing-engine/").exists()){
        //https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine.zip
-       ant.get(src: 'https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine-3.x.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
+       ant.get(src: 'https://archives.oxygenxml.com/Nightly/PublishingEngine/oxygen-publishing-engine.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
        ant.unzip(src: "${projectDir}/dita-ot.zip", dest: 'dita-ot')
        new File("${projectDir}/dita-ot/oxygen-publishing-engine/licensekey.txt").write(System.getenv( 'LICENSE_KEY' ).replaceAll("  ", "\n"))
     }
