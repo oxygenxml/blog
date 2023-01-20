@@ -152,12 +152,12 @@
             from Oxygen.</li>
           <li>Add a new row to the <uicontrol>Word styles mapping</uicontrol> table.</li>
           <li>Fill in the <uicontrol>Word element</uicontrol> cell with "<i>p</i>", and the
-              <uicontrol>Word style</uicontrol> cell with "<i>Code Block</i>" for matching these
-            paragraphs styled with "Code Block".</li>
+              <uicontrol>Word style</uicontrol> cell with "<i>Code Snippet</i>" for matching these
+            paragraphs styled with "Code Snippet".</li>
           <li>Fill in the <uicontrol>HTML elements</uicontrol> cell with
             "<i>pre:separator('\n')</i>". The <xmlelement>pre</xmlelement> element is the
             correspondent HTML element for these paragraphs. Because we want to merge these
-            sequences of "Code Block" styles paragraphs the ":fresh" marker was not used. The
+            sequences of "Code Snippet" styles paragraphs the ":fresh" marker was not used. The
               "<i>:separator('')</i>" syntax configures a separator when the same type consecutive
             paragraphs are merged. If it wouldn't be specified, we have obtained a pre element with
             a single line of text.  </li>
