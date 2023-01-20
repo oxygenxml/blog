@@ -160,8 +160,14 @@
             sequences of "Code Snippet" styles paragraphs the ":fresh" marker was not used. The
               "<i>:separator('')</i>" syntax configures a separator when the same type consecutive
             paragraphs are merged. If it wouldn't be specified, we have obtained a pre element with
-            a single line of text.  </li>
-        </ol></answer>
+            a single line of text.</li>
+        </ol><p>Using this configuration, a <xmlelement>pre</xmlelement> element is resulting in
+          HTML and DITA for every code block sequence. For obtaining
+            <xmlelement>codeblock</xmlelement> elements in DITA, see <xref
+            href="#word-to-dita-frequently-asked-questions/how-to-configure-mapping-when-wanted-element-doest-exist-in-html"
+          /> for setting a class attribute on the resulting <xmlelement>pre</xmlelement> HTML
+          element (by setting "<i>pre.codeblock:separator('\n')</i>" in the <uicontrol>HTML
+            elements</uicontrol> cell ) and creating a custom refactoring operation.</p></answer>
     </qagroup>
   </qabody>
 </qatopic>
