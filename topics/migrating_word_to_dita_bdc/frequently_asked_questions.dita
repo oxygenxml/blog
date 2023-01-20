@@ -140,5 +140,28 @@
         </ol>
       </answer>
     </qagroup>
+    <qagroup id="how-to-configure-mapping-for-codeblocks">
+      <question>How can I configure the styles mapping for paragraphs styled as code
+        blocks?</question>
+      <answer>In Word, a code block is represented as a sequence of paragraphs styled with a custom
+        style that adds a custom font and border, like this one: <image
+          href="images/wordCodeblock.PNG" placement="break" id="image_tfs_3r5_fwb"/> These are the
+        steps that you should follow for adding a mapping for this custom style:<ol
+          id="ol_sq5_hx5_fwb">
+          <li>Open the <uicontrol>Plugins / Batch Documents Converter</uicontrol> preferences page
+            from Oxygen.</li>
+          <li>Add a new row to the <uicontrol>Word styles mapping</uicontrol> table.</li>
+          <li>Fill in the <uicontrol>Word element</uicontrol> cell with "<i>p</i>", and the
+              <uicontrol>Word style</uicontrol> cell with "<i>Code Block</i>" for matching these
+            paragraphs styled with "Code Block".</li>
+          <li>Fill in the <uicontrol>HTML elements</uicontrol> cell with
+            "<i>pre:separator('\n')</i>". The <xmlelement>pre</xmlelement> element is the
+            correspondent HTML element for these paragraphs. Because we want to merge these
+            sequences of "Code Block" styles paragraphs the ":fresh" marker was not used. The
+              "<i>:separator('')</i>" syntax configures a separator when the same type consecutive
+            paragraphs are merged. If it wouldn't be specified, we have obtained a pre element with
+            a single line of text.  </li>
+        </ol></answer>
+    </qagroup>
   </qabody>
 </qatopic>
