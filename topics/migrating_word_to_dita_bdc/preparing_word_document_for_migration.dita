@@ -35,12 +35,17 @@ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
                         href="images/quote.PNG" id="image_bn1_gxw_pvb"/></p>Converting the
                 paragraphs containing the "Normal" style will result in DITA p elements. So if you
                 omit this step, you also have the option of adding semantics by post-processing the
-                resulting DITA content.<p>
+                resulting DITA content.
+                <p>
                     <note id="note_emq_bvw_pvb" type="note">The text content formatted using the
                         bold, italic, underline, strike-through, subscript or superscript actions
                         are handled by the converter. So you don't need to replace them with
                         correspondent styles like "Strong" and "Emphasis".</note>
                 </p></li>
+            <li>Save the shapes as SVG images because the converter doesn't support them. See the
+                following link for more information: <xref
+                    href="frequently_asked_questions.dita#word-to-dita-frequently-asked-questions/how_to_preserve_shapes"/>
+            </li>
         </ol>
     </body>
 </topic>

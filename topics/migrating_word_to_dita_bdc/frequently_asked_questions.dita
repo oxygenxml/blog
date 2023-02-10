@@ -168,5 +168,21 @@
           element (by setting "<i>pre.codeblock:separator('\n')</i>" in the <uicontrol>HTML
             elements</uicontrol> cell) and creating a custom refactoring operation.</p></answer>
     </qagroup>
+    <qagroup id="how_to_preserve_shapes">
+      <question>How can I preserve the Word shapes?</question>
+      <answer>The converter doesn't support the Word shapes and these will be ignored when
+        the document is converted to HTML or DITA. A workaround is to save them manually as SVG
+        images in MS Word before conversion. For this, you should follow these steps for every shape
+        inside the document:<ol id="ol_el1_tbt_lwb">
+          <li>Select the shape.</li>
+          <li>Invoke the <uicontrol>Cut</uicontrol> action from the contextual menu.</li>
+          <li>Invoke the <uicontrol>Paste Special...</uicontrol> action from the <menucascade>
+              <uicontrol>Home</uicontrol>
+              <uicontrol>Paste</uicontrol>
+            </menucascade> menu.</li>
+          <li>In the opened dialog select <uicontrol>Picture (SVG)</uicontrol> and press OK.</li>
+        </ol><p>After these, the document will contain "SVG" images, that will be preserved in the
+          HTML or DITA results.</p></answer>
+    </qagroup>
   </qabody>
 </qatopic>
