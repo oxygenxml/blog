@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="git_client_applications">
+    <title>Git Client Software</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-02-13"/>
+		</critdates>
+	</prolog>
+    <body>
+		<p>Server side solutions:<ul id="ul_gjw_5tl_mwb">
+				<li><b>GitHub</b> (either online or on-premise).</li>
+				<li><b>GitLab</b> (either online or on-premise).</li>
+			</ul></p>
+		<p>Both of these solutions come with:<ul id="ul_yxv_ztl_mwb">
+				<li>Support to create and manage private/public repositories.</li>
+				<li>Basic support to create and handle tickets/issues.</li>
+				<li>Support to create pull/merge requests.</li>
+			</ul></p>
+		<p>There are lots of free applications which can be used to work with Git repositories:</p>
+		<ul id="ul_v3t_mcs_lwb">
+			<li><b>Git Fork</b>.</li>
+			<li><b>Git Tower</b>.</li>
+			<li><b>SourceTree</b>.</li>
+			<li><b>GitHub Desktop</b>.</li>
+			<li><b>Git client</b> add-on in Oxygen XML Editor</li>
+			<li><b>Git</b> console.</li>
+		</ul>
+	</body>
+</topic>

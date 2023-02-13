@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="resources_for_learning_git">
+    <title>Resources For Learning Git</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-02-13"/>
+		</critdates>
+	</prolog>
+    <body>
+        <p><xref href="../topics/dita_for_small_teams.dita"/></p>
+    </body>
+</topic>
