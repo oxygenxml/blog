@@ -25,6 +25,8 @@
 		<section id="section_d5p_wxr_lwb">
 			<title>Advantages of using Git</title>
 			<ul id="ul_dvl_hyr_lwb">
+				<li>Present in most companies, knowing Git is in my opinion a nice asset to have for
+					any technical writer.</li>
 				<li>Free and stable system, used by many, with relative few bugs, with available
 					tutorials, documentation, with easy access to people who might help with Git
 					related questions. </li>
@@ -59,7 +61,8 @@
 				<li>No built-in support for publishing. Publishing pipelines need to be separately
 					built.</li>
 				<li>No way to lock resources when editing in order to avoid conflicts.</li>
-				<li>Mistakes can be made when using Git but usually they can be reverted.</li>
+				<li>Mistakes can be made when using Git but usually they can be reverted, or you can check out
+					the entire project again.</li>
 				<li>Some training is required to use and understand the branching and history models
 					in Git. But such training tutorials and courses are readily available.</li>
 				<li>No granular support for user roles. Users usually either have full read-write

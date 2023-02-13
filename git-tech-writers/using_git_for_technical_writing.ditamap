@@ -5,5 +5,6 @@
 	<topicref href="using_git_for_technical_writing.dita">
 		<topicref href="resources_for_learning_git.dita"/>
 		<topicref href="git_client_applications.dita"/>
+		<topicref href="common_workflows.dita"/>
 	</topicref>
 </map>

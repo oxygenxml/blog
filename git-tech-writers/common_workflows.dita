@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="common_workflows">
+    <title>Common Workflows</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-02-13"/>
+		</critdates>
+	</prolog>
+    <body>
+        <p>Common workflows for working with Git.</p>
+		<section id="section_hmq_2zl_mwb">
+			<title>All on one branch (all in one boat)</title>
+			<p>We all work with the same project(s) on the same branch. We have separate branches
+				which mark past releases. For features which may take a longer time to implement, we
+				connect them to the live content when they are done.</p>
+			<p>Common workflow:<ul id="ul_t13_zbm_mwb">
+					<li>Check in the project (one time operation).</li>
+					<li>Pull to get changes from the main repository.</li>
+					<li>Commit and push changes.</li>
+					<li>Deal with possible conflicts which may appear.</li>
+					<li>Request review either before commit or after the change was incorporated in
+						the main branch.</li>
+				</ul></p>
+			<p>Workflow for updating documentation for a past release:<ul id="ul_erq_fcm_mwb">
+					<li>Switch to branch specific for that release.</li>
+					<li>Pull to get changes from the main repository.</li>
+					<li>Commit and push changes.</li>
+					<li>Deal with possible conflicts which may appear.</li>
+				</ul></p>
+		</section>
+		<section id="section_fgh_kcm_mwb">
+			<title>Feature Branches</title>
+			<ul id="ul_jzw_tcm_mwb">
+				<li>Create a branch on which you work on a larger feature either by yourself or with
+					some other colleagues. </li>
+				<li>You can also request review on the branch. </li>
+				<li>When finished, merge the branch in the main repository branch.</li>
+			</ul>
+		</section>
+    </body>
+</topic>
