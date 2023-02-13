@@ -36,8 +36,34 @@
 				<li>Create a branch on which you work on a larger feature either by yourself or with
 					some other colleagues. </li>
 				<li>You can also request review on the branch. </li>
-				<li>When finished, merge the branch in the main repository branch.</li>
+				<li>When finished, merge the branch in the main repository branch or create a pull
+					request to merge the branch.</li>
 			</ul>
+			<p>Useful links:<ul id="ul_iv5_v3m_mwb">
+					<li><xref
+							href="https://betterprogramming.pub/solution-architecture-docs-as-code-366a7b40f9e5"
+							format="html" scope="external"/></li>
+				</ul></p>
+		</section>
+		<section id="section_pzq_w3m_mwb">
+			<title>Work Tips</title>
+			<p>
+				<dl id="dl_u1b_z3m_mwb">
+					<dlentry>
+						<dt>Micro Commits</dt>
+						<dd>Commit often, whenever a small change makes sense by itself. Useful
+							links: <xref
+								href="https://stackoverflow.blog/2022/12/19/use-git-tactically/"
+								format="html" scope="external"/></dd>
+					</dlentry>
+					<dlentry>
+						<dt>Pull Requests</dt>
+						<dd>Instead of merging your feature branch directly in the main branch,
+							create a pull request to allow a colleague to review and integrate the
+							change.</dd>
+					</dlentry>
+				</dl>
+			</p>
 		</section>
     </body>
 </topic>

@@ -6,5 +6,7 @@
 		<topicref href="resources_for_learning_git.dita"/>
 		<topicref href="git_client_applications.dita"/>
 		<topicref href="common_workflows.dita"/>
+		<topicref href="sharing_common_settings.dita"/>
+		<topicref href="publishing_content_from_git.dita"/>
 	</topicref>
 </map>
