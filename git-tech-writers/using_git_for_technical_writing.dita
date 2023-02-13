@@ -2,8 +2,8 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="using_git_for_technical_writing">
     <title>Using Git For Technical Writing</title>
-	<shortdesc>The Git version control system is a feasible solution to work and collaborate with
-		both small and large technical documentation projects.</shortdesc>
+	<shortdesc>The <b>Git</b> version control system is a feasible solution to work and collaborate
+		on both small and large technical documentation projects.</shortdesc>
 	<prolog>
 		<author>Radu Coravu</author>
 		<critdates>
