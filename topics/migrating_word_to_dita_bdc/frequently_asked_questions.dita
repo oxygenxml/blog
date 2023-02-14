@@ -12,41 +12,43 @@
     <qagroup id="how-to-fix-unknown-style-warnings">
       <question>How can I fix unrecognized style warnings?</question>
       <answer>
-        <p>When converting a Word document, the styles that don't have a mapping into the
+        <p>When converting a Word document, the styles that don't have a mapping in the
             <uicontrol>Word styles mapping</uicontrol> table from the preferences page are converted
-          to simple paragraph elements and a warning will be reported for each of them in the
+          to simple paragraph elements and a warning is reported for each of them in the
             <uicontrol>Results</uicontrol> view.</p>
-        <p>Let's take the following example: I have converted the Word document and I see
-          the following warnings in the Results view: <image placement="break" href="images/unknownStyles.PNG" id="image_gqd_2kg_rvb"/></p>
-        <p>These are the steps that you should follow for adding this configuration:<ol id="ol_lzl_jkg_rvb">
-          <li>Open the <uicontrol>Plugins / Batch Documents Converter</uicontrol> preferences page
-              from Oxygen.</li>
-          <li>For fixing the <codeph>Unrecognized "Document Title" style for "p" Word element</codeph> warning add a new row in the <uicontrol>Word
-                styles mapping</uicontrol> table with the following cells:<ol id="ol_flf_nkg_rvb">
-                <li>Type the "p" text into the <uicontrol>Word element</uicontrol> cell, because the
-                  unrecognized style was found on a Word paragraph.</li>
-                <li>Type the "Document Title" into the <uicontrol>Word style</uicontrol> cell.</li>
-                <li>In the "HTML elements" cell you have to add a corresponding HTML element. For
-                  this one, a corresponding element is "<xmlelement>h1</xmlelement>" as for the
-                  default mapping of "Title" style. So, type "<i>h1:fresh</i>" into this cell. The
-                  ":fresh" suffix instructs the converter to create a new element every time it
+        <p>As an example, suppose I have converted the Word document and I see the following
+          warnings in the Results view: <image placement="break" href="images/unknownStyles.PNG"
+            id="image_gqd_2kg_rvb"/></p>
+        <p>Here are the steps that you should follow for this configuration:<ol id="ol_lzl_jkg_rvb">
+            <li>Open the <uicontrol>Plugins / Batch Documents Converter</uicontrol> preferences page
+              in Oxygen.</li>
+            <li>To fix the <codeph>Unrecognized "Document Title" style for "p" Word element</codeph>
+              warning, add a new row in the <uicontrol>Word styles mapping</uicontrol> table with
+              the following cells:<ol id="ol_flf_nkg_rvb">
+                <li>Type "p" in the <uicontrol>Word element</uicontrol> cell (because the
+                  unrecognized style was found on a Word paragraph).</li>
+                <li>Type "Document Title" in the <uicontrol>Word style</uicontrol> cell.</li>
+                <li>In the "HTML elements" cell, you need to add a corresponding HTML element. For
+                  this example, a corresponding element is "<xmlelement>h1</xmlelement>" for the
+                  default mapping of the "Title" style. So, type "<i>h1:fresh</i>" into this cell.
+                  The ":fresh" suffix instructs the converter to create a new element every time it
                   finds this kind of paragraph. When it's not set, the converter will try to reuse
-                  the elements and combine sequences of the same style paragraphs into a single
+                  the elements and combine sequences of the same style of paragraphs into a single
                   element.</li>
               </ol></li>
-          <li>For fixing the <codeph>Unrecognized "Keyboard Key" style for "r" Word element</codeph> warning add a new row in the <uicontrol>Word styles
-                mapping</uicontrol> table with the following cells:<ol id="ol_arm_3mg_rvb">
-                <li>Type the "r" text into the <uicontrol>Word element</uicontrol> cell, because the
-                  unrecognized style was found on a Word character.</li>
-                <li>Type the "Keyboard Key" into the <uicontrol>Word style</uicontrol> cell.</li>
-                <li>In the <uicontrol>HTML elements</uicontrol> cell you have to add a corresponding
-                  HTML element. For this one, a corresponding element is
-                    "<xmlelement>kbd</xmlelement>" as for the default mapping of "HTML Keyboard"
+            <li>To fix the <codeph>Unrecognized "Keyboard Key" style for "r" Word element</codeph>
+              warning, add a new row in the <uicontrol>Word styles mapping</uicontrol> table with
+              the following cells:<ol id="ol_arm_3mg_rvb">
+                <li>Type "r" in the <uicontrol>Word element</uicontrol> cell (because the
+                  unrecognized style was found on a Word character).</li>
+                <li>Type "Keyboard Key" in the <uicontrol>Word style</uicontrol> cell.</li>
+                <li>In the <uicontrol>HTML elements</uicontrol> cell, you need to add a
+                  corresponding HTML element. For this example, a corresponding element is
+                    "<xmlelement>kbd</xmlelement>" for the default mapping of the "HTML Keyboard"
                   style. So, type "<i>kbd</i>" in this cell. </li>
-              </ol>
-            </li>
-        </ol> After these steps, you should have these two rows in the configuration
-          from the table: <simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb2">
+              </ol></li>
+          </ol> After completing these steps, you should have these two rows in the configuration
+          table: <simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb2">
             <strow>
               <stentry>p</stentry>
               <stentry>Document Title</stentry>
@@ -59,51 +61,51 @@
             </strow>
           </simpletable>
         </p>
-        <p>For more information about the <uicontrol>Word styles mapping</uicontrol>
-          configuration see this section from the documentation: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping" format="html" scope="external">Conversions from Word</xref></p>
+        <p>For more information about the <uicontrol>Word styles mapping</uicontrol> configuration,
+          see the following section from the documentation: <xref
+            href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping"
+            format="html" scope="external">Conversions from Word</xref>.</p>
       </answer>
     </qagroup>
     <qagroup id="how-to-configure-mapping-when-wanted-element-doest-exist-in-html">
       <question>How can I configure the styles mapping when the wanted element doesn't exist
         in HTML?</question>
       <answer>
-        <p>A frequent case when setting the mapping configuration for a custom style is not
-          to find a correspondent element in HTML, although one exists in DITA.</p>
-        <p>Let's take the following example: I have a Word document that contains a
-          character custom style named "filepath". We know that a correspondent element
-          exists in DITA, but we cannot find one in HTML.</p>
+        <p>A frequent case when setting the mapping configuration for a custom style is to not find
+          a correspondent element in HTML, although one exists in DITA.</p>
+        <p>As an example, suppose I have a Word document that contains a character custom style
+          named "filepath". We know that a correspondent element exists in DITA, but we cannot find
+          one in HTML.</p>
         <p>These are the steps that can be applied to handle this case: </p>
         <ol id="ol_cf3_hx1_rvb">
-          <li>Go to the <uicontrol>Plugins / Batch Documents Converter</uicontrol>
-            preferences page and add the following mapping into the <uicontrol>Word
-              styles mapping</uicontrol> table:<simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb">
-                <strow>
-                  <stentry>r</stentry>
-                  <stentry>Filepath</stentry>
-                  <stentry>i.filepath</stentry>
-                </strow>
-              </simpletable></li>
-          <li>Convert the Word document to DITA. The characters styled with the
-            <i>Filepath</i> style in Word are converted to the
-            <xmlelement>i</xmlelement> element with the "<i>filepath</i>"
-            <xmlatt>outputclass</xmlatt> attribute on DITA.</li>
-          <li>Move the output files into your project, select them and apply the
-            "<b>Rename element</b>" refactoring operation using the
-            "<i>//i[@outputclass = 'filepath']</i>" XPath for matching the target
-            <xmlelement>i</xmlelement> element and changing them to the
-            <xmlelement>filepath</xmlelement> DITA element.</li>
+          <li>Go to the <uicontrol>Plugins / Batch Documents Converter</uicontrol> preferences page
+            and add the following mapping in the <uicontrol>Word styles mapping</uicontrol>
+              table:<simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb">
+              <strow>
+                <stentry>r</stentry>
+                <stentry>Filepath</stentry>
+                <stentry>i.filepath</stentry>
+              </strow>
+            </simpletable></li>
+          <li>Convert the Word document to DITA. The characters styled with the <i>Filepath</i>
+            style in Word are converted to the <xmlelement>i</xmlelement> element with the
+              "<i>filepath</i>" <xmlatt>outputclass</xmlatt> attribute.</li>
+          <li>Move the output files to your project, select them, and apply the "<b>Rename
+              element</b>" refactoring operation using the "<i>//i[@outputclass = 'filepath']</i>"
+            XPath for matching the target <xmlelement>i</xmlelement> element and changing them to
+            the <xmlelement>filepath</xmlelement> DITA element.</li>
           <li>Apply the "Remove attribute" refactoring operation using the
             "<i>//filepath[@outputclass = 'filepath']</i>" XPath for matching the
             target elements and deleting the <xmlatt>outputclass</xmlatt>
             attributes.</li>
         </ol>
-        <p>Instead of step 3 and 4 you can also create a custom refactoring operation that
-          makes these two changes, like this: </p>
+        <p>Instead of steps 3 and 4, you can also create a custom refactoring operation that makes
+          these two changes, like this: </p>
         <ol id="custom_refactoring_example">
           <li>Create an XSLT file (for example, named
               <filepath>batch-converter-post-processing.xsl</filepath>) that iterates over all
-            elements from the document finds the <xmlelement>i</xmlelement> elements with the
-            "filepath" <xmlatt>outputclass</xmlatt> attribute and replaces them with the
+            elements from the document, finds the <xmlelement>i</xmlelement> elements with the
+            "filepath" <xmlatt>outputclass</xmlatt> attribute, and replaces them with the
               <xmlelement>filepath</xmlelement> elements without copying the
               <xmlatt>outputclass</xmlatt> attribute:
             <codeblock id="codeblock_ct1_pzf_rvb" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
@@ -132,11 +134,13 @@
     &lt;description>Post-process the resulting DITA documents from the Word conversion using the Batch Documents Converter add-on.&lt;/description>
     &lt;script type="XSLT" href="batch-converter-post-processing.xsl"/>
 &lt;/refactoringOperationDescriptor></codeblock></li>
-          <li>Copy these two files into a folder <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/sharing-custom-refactoring-operations.html" format="html" scope="external">scanned by Oxygen XML Editor when it
-            loads the custom operation</xref>.</li>
+          <li>Copy these two files to a folder <xref
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/sharing-custom-refactoring-operations.html"
+              format="html" scope="external">scanned by Oxygen XML Editor when it loads the custom
+              operation</xref>.</li>
           <li>Apply the new custom operation named "<i>Post-processing Batch Documents
-            Converter</i>" that can be found now into the list of refactoring
-            operations from the "XML Refactoring" dialog.</li>
+            Converter</i>" that can now be found in the list of refactoring operations from the "XML
+            Refactoring" dialog box.</li>
         </ol>
       </answer>
     </qagroup>
@@ -170,9 +174,9 @@
     </qagroup>
     <qagroup id="how_to_preserve_shapes">
       <question>How can I preserve the Word shapes?</question>
-      <answer>The converter doesn't support the Word shapes and these will be ignored when
-        the document is converted to HTML or DITA. A workaround is to save them manually as SVG
-        images in MS Word before conversion. For this, you should follow these steps for every shape
+      <answer>The converter doesn't support the Word shapes and these will be ignored when the
+        document is converted to HTML or DITA. A workaround is to save them manually as SVG images
+        in MS Word before the conversion. For this, you should follow these steps for every shape
         inside the document:<ol id="ol_el1_tbt_lwb">
           <li>Select the shape.</li>
           <li>Invoke the <uicontrol>Cut</uicontrol> action from the contextual menu.</li>
@@ -180,9 +184,10 @@
               <uicontrol>Home</uicontrol>
               <uicontrol>Paste</uicontrol>
             </menucascade> menu.</li>
-          <li>In the opened dialog select <uicontrol>Picture (SVG)</uicontrol> and press OK.</li>
-        </ol><p>After these, the document will contain "SVG" images, that will be preserved in the
-          HTML or DITA results.</p></answer>
+          <li>In the resulting dialog box, select <uicontrol>Picture (SVG)</uicontrol> and
+            <b>OK</b>.</li>
+        </ol><p>After completing these steps, the document will contain "SVG" images that will be
+          preserved in the HTML or DITA results.</p></answer>
     </qagroup>
   </qabody>
 </qatopic>
