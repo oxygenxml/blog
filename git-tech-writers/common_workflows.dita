@@ -11,10 +11,26 @@
     <body>
         <p>Common workflows for working with Git.</p>
 		<section id="section_hmq_2zl_mwb">
-			<title>All on one branch (all in one boat)</title>
-			<p>We all work with the same project(s) on the same branch. We have separate branches
+			<title>Centralized Workflow</title>
+			<p>We all work with the same project(s) on the main repository branch. We have separate branches
 				which mark past releases. For features which may take a longer time to implement, we
-				connect them to the live content when they are done.</p>
+				work on the main branch and we connect them to the live content when they are done.
+					<xref href="https://www.atlassian.com/git/tutorials/comparing-workflows"
+					format="html" scope="external"/></p>
+			<image placement="break"
+				href="https://mermaid.ink/img/pako:eNqVkLsOwjAMRX8l8gQSC2tnHhNiYENZTO2CpTyqxEGgin8nBSEYuuDt2sfX8h2gjcTQwFl0m7C_2GBqtdF7USPUGAt7R5zMlVOWGLKFCeTg0TnTyY2n5xtGLYmzWZoZScaTY5pPknu91GP5Dz8Ov3awAM_Jo1B9ahg7FqqlZwvjInGHxenIPipaekLlNYnGBI2mwgvAovFwD-1Hv5mV4Dmhh6ZDl2u3x3CM8av55bF7h_nK9PEEiYhzXA?type=png"
+				id="image_wb2_jdr_nwb"/>
+			<p><!--gitGraph
+    commit id: "Older versions"
+    commit id: "Small fixes"
+    commit id: "Features 1 (disabled)"
+    commit id: "Other small fixes"
+    commit id: "Features 1 (enabled)"
+  --></p>
+			<image placement="break"
+				href="https://mermaid.ink/img/pako:eNqVkj9rwzAQxb-KuDkZom6e22YqHQIZipardI5F9cdIp9IQ8t0rxzgJ1A5U2-n37ukeuhPoaAgaOFjeJuw7FUQ9OnpvWVjTCAXvzlAS35SyjSErmJHsRyjkZsKfCYPupq51BWNXR_orFv4L7u12Hp0Trf0Rm9nnblxe-WTs0YaZlldCLonyguMVy8f55FI-uZRPPpqf8r_nf1IAK_CUqtDUjzsNYgXckScFg9RQi8Xx4Hyu0tIbZHoxlmOChlOhFWDhuDsGPdWj5tniIaGHpkWX622P4SPGW00Xj7dxYS57c_4FXwu7aA?type=png"
+				id="image_mks_j5q_nwb"/>
+			<!--https://mermaid.live/edit#pako:eNqVkj9rwzAQxb-KuDkZom6e22YqHQIZipardI5F9cdIp9IQ8t0rxzgJ1A5U2-n37ukeuhPoaAgaOFjeJuw7FUQ9OnpvWVjTCAXvzlAS35SyjSErmJHsRyjkZsKfCYPupq51BWNXR_orFv4L7u12Hp0Trf0Rm9nnblxe-WTs0YaZlldCLonyguMVy8f55FI-uZRPPpqf8r_nf1IAK_CUqtDUjzsNYgXckScFg9RQi8Xx4Hyu0tIbZHoxlmOChlOhFWDhuDsGPdWj5tniIaGHpkWX622P4SPGW00Xj7dxYS57c_4FXwu7aA-->
 			<p>Common workflow:<ul id="ul_t13_zbm_mwb">
 					<li>Check in the project (one time operation).</li>
 					<li>Pull to get changes from the main repository.</li>
@@ -30,8 +46,15 @@
 					<li>Deal with possible conflicts which may appear.</li>
 				</ul></p>
 		</section>
-		<section id="section_fgh_kcm_mwb">
-			<title>Feature Branches</title>
+		<section id="section_fgh_kcm_mwb"><title>Feature Branches</title>We work on the smaller fixes on
+			the main branch, we create separate branches for larger features/fixes. <xref
+				href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow"
+				format="html" scope="external"/></section>
+		<section id="section_gxl_svq_nwb">
+			<image placement="break"
+				href="https://mermaid.ink/img/pako:eNqdkjFrwzAQhf-KuDku2N08t3QqHQItFC9X6WyLWJKRTiEl5L9XjqM2uA6Uaju9773TSTqCdIqghk7zk8exb6xISzpjNAutatHAy6DIiz35oJ0NDawgr7MoqvKuzMCHRyv77CuqsiiLVh8oXPw9yZ2LfBu4brA1OAwiqd_ts92gtjcNskfbUVgcqSXk6KmYy0Xeqnid_Ob8TqRZL6AoV29kSVV_ou7_Nd5PuCHf0a8RYANJSEkqPfRxIhvgngw1MGUpajEOPGWcEhpHhUyPSrPzULOPtAGM7LafVuZ6Zh40dh5N3hzRvjuXyhaHkGo6RzzP_-v8zU5feunOPQ?type=png"
+				id="image_psk_tvq_nwb"/>
+			<!--https://mermaid.live/edit#pako:eNqdks1qwzAQhF9F7DkuyL353NJT6SGQQtFlK60tEUsy-iktIe9eOY6b4DpQqttqvpnVSjqA9Iqggc6kp4CDFo6VJb21JjGjGibgpVcU2AeFaLyLAlaQ3SSymt_xGXgP6KSefVXNK1615pPi2a9J7n1Ot4HrBluLfc-K-tN-tls07qZBanQdxcWRWsKUA1VTuchbFa-TX33YszLrGWR89UaWVP0n6v5f413CLYWOfo0AGyhCSVLloQ8jKSBpsiRgzFLUYu7TmHEsaB4UJnpUJvkATQqZNoA5-e2Xk3M9MQ8Gu4AWmhb7WHYHdG_eX2o6ZTxPH-z0z47fRz3OiA-->
 			<ul id="ul_jzw_tcm_mwb">
 				<li>Create a branch on which you work on a larger feature either by yourself or with
 					some other colleagues. </li>
@@ -45,16 +68,29 @@
 							format="html" scope="external"/></li>
 				</ul></p>
 		</section>
+		<section id="section_qhl_zdr_nwb">
+			<title>GitFlow</title>
+			<p>The main branch holds the official content which will be released, we mostly commit
+				on a development branch. <xref
+					href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+					format="html" scope="external"/></p>
+			<image placement="break"
+				href="https://mermaid.ink/img/pako:eNqdkk9PwzAMxb9K5PMu68Sl5wHiwGkSB9SLSbzWoomrzEFM07477rryV0yC3GL_3vOT7AN4CQQ1tKy3GYeuSc6elxhZHYfaNXCXWBl7t1FUamAinjIm37lAL9TLcFZ15J-l6LfqZ68bfnXL2eNrh1BLpt-6pqveO_OciJymUqTc0jz3rHmgvGNJrlr-EF4OuLoYcPXfGNUfY1yNPCzATG1CsCUdRrIB7SjaIkYu0BZLryN5NLQMwXZ0HVglQ6250AKwqGz2yc__iVkzthkj1Fvsd1YdMD2KfPzp5HE_HcfpRo5vP-u02Q?type=png"
+				id="image_lhj_kfr_nwb"/>
+			<p><!--https://mermaid.live/edit#pako:eNqdkk9PwzAMxb9K5PMu68Sl5wHiwGkSB9SLSbzWoomrzEFM07477rryV0yC3GL_3vOT7AN4CQQ1tKy3GYeuSc6elxhZHYfaNXCXWBl7t1FUamAinjIm37lAL9TLcFZ15J-l6LfqZ68bfnXL2eNrh1BLpt-6pqveO_OciJymUqTc0jz3rHmgvGNJrlr-EF4OuLoYcPXfGNUfY1yNPCzATG1CsCUdRrIB7SjaIkYu0BZLryN5NLQMwXZ0HVglQ6250AKwqGz2yc__iVkzthkj1Fvsd1YdMD2KfPzp5HE_HcfpRo5vP-u02Q--></p>
+		</section>
 		<section id="section_pzq_w3m_mwb">
 			<title>Work Tips</title>
 			<p>
 				<dl id="dl_u1b_z3m_mwb">
 					<dlentry>
 						<dt>Micro Commits</dt>
-						<dd>Commit often, whenever a small change makes sense by itself. Useful
-							links: <xref
+						<dd>Commit often, whenever a small change makes sense by itself. Useful links: <xref
 								href="https://stackoverflow.blog/2022/12/19/use-git-tactically/"
-								format="html" scope="external"/></dd>
+								format="html" scope="external"/><image placement="break"
+								href="https://mermaid.ink/img/pako:eNptkE1qw0AMha8itHYu4HVCV93UdBNmI2ZkW9TzgywTl5C7d2wTurE2QuJ7T-I90efA2OIg9qFURpegls8xioGEFhx2hacJ_Mj-B3pZeXZ4Qt1WU_LGARI_YGZvktM5-sWXrIG1ssp97cnzDJIgUjkVfJdAm7NEGo7z2GBkjSSh_v7cJA5t5MgON0HgnpbJNvJV0WXX34JYVmxNF26QFsvdb_Lv-WCuQoNSxLanaa7bQume8__Mu8fnkdke3esPdtJtcA?type=png"
+								id="image_fww_cwq_nwb"
+							/><!--https://mermaid.live/edit#pako:eNptkE1qw0AMha8itHYu4HVCV93UdBNmI2ZkW9TzgywTl5C7d2wTurE2QuJ7T-I90efA2OIg9qFURpegls8xioGEFhx2hacJ_Mj-B3pZeXZ4Qt1WU_LGARI_YGZvktM5-sWXrIG1ssp97cnzDJIgUjkVfJdAm7NEGo7z2GBkjSSh_v7cJA5t5MgON0HgnpbJNvJV0WXX34JYVmxNF26QFsvdb_Lv-WCuQoNSxLanaa7bQume8__Mu8fnkdke3esPdtJtcA--></dd>
 					</dlentry>
 					<dlentry>
 						<dt>Pull Requests</dt>
