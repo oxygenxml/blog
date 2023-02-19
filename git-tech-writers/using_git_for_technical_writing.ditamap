@@ -5,7 +5,9 @@
 	<topicref href="using_git_for_technical_writing.dita">
 		<topicref href="resources_for_learning_git.dita"/>
 		<topicref href="git_client_applications.dita"/>
-		<topicref href="common_workflows.dita"/>
+		<topicref href="common_workflows.dita">
+			<topicref href="useful_features.dita"/>
+		</topicref>
 		<topicref href="sharing_common_settings.dita"/>
 		<topicref href="publishing_content_from_git.dita"/>
 	</topicref>

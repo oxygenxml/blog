@@ -20,13 +20,6 @@
 			<image placement="break"
 				href="https://mermaid.ink/img/pako:eNqVkLsOwjAMRX8l8gQSC2tnHhNiYENZTO2CpTyqxEGgin8nBSEYuuDt2sfX8h2gjcTQwFl0m7C_2GBqtdF7USPUGAt7R5zMlVOWGLKFCeTg0TnTyY2n5xtGLYmzWZoZScaTY5pPknu91GP5Dz8Ov3awAM_Jo1B9ahg7FqqlZwvjInGHxenIPipaekLlNYnGBI2mwgvAovFwD-1Hv5mV4Dmhh6ZDl2u3x3CM8av55bF7h_nK9PEEiYhzXA?type=png"
 				id="image_wb2_jdr_nwb"/>
-			<p><!--gitGraph
-    commit id: "Older versions"
-    commit id: "Small fixes"
-    commit id: "Features 1 (disabled)"
-    commit id: "Other small fixes"
-    commit id: "Features 1 (enabled)"
-  --></p>
 			<image placement="break"
 				href="https://mermaid.ink/img/pako:eNqVkj9rwzAQxb-KuDkZom6e22YqHQIZipardI5F9cdIp9IQ8t0rxzgJ1A5U2-n37ukeuhPoaAgaOFjeJuw7FUQ9OnpvWVjTCAXvzlAS35SyjSErmJHsRyjkZsKfCYPupq51BWNXR_orFv4L7u12Hp0Trf0Rm9nnblxe-WTs0YaZlldCLonyguMVy8f55FI-uZRPPpqf8r_nf1IAK_CUqtDUjzsNYgXckScFg9RQi8Xx4Hyu0tIbZHoxlmOChlOhFWDhuDsGPdWj5tniIaGHpkWX622P4SPGW00Xj7dxYS57c_4FXwu7aA?type=png"
 				id="image_mks_j5q_nwb"/>
@@ -78,28 +71,6 @@
 				href="https://mermaid.ink/img/pako:eNqdkk9PwzAMxb9K5PMu68Sl5wHiwGkSB9SLSbzWoomrzEFM07477rryV0yC3GL_3vOT7AN4CQQ1tKy3GYeuSc6elxhZHYfaNXCXWBl7t1FUamAinjIm37lAL9TLcFZ15J-l6LfqZ68bfnXL2eNrh1BLpt-6pqveO_OciJymUqTc0jz3rHmgvGNJrlr-EF4OuLoYcPXfGNUfY1yNPCzATG1CsCUdRrIB7SjaIkYu0BZLryN5NLQMwXZ0HVglQ6250AKwqGz2yc__iVkzthkj1Fvsd1YdMD2KfPzp5HE_HcfpRo5vP-u02Q?type=png"
 				id="image_lhj_kfr_nwb"/>
 			<p><!--https://mermaid.live/edit#pako:eNqdkk9PwzAMxb9K5PMu68Sl5wHiwGkSB9SLSbzWoomrzEFM07477rryV0yC3GL_3vOT7AN4CQQ1tKy3GYeuSc6elxhZHYfaNXCXWBl7t1FUamAinjIm37lAL9TLcFZ15J-l6LfqZ68bfnXL2eNrh1BLpt-6pqveO_OciJymUqTc0jz3rHmgvGNJrlr-EF4OuLoYcPXfGNUfY1yNPCzATG1CsCUdRrIB7SjaIkYu0BZLryN5NLQMwXZ0HVglQ6250AKwqGz2yc__iVkzthkj1Fvsd1YdMD2KfPzp5HE_HcfpRo5vP-u02Q--></p>
-		</section>
-		<section id="section_pzq_w3m_mwb">
-			<title>Work Tips</title>
-			<p>
-				<dl id="dl_u1b_z3m_mwb">
-					<dlentry>
-						<dt>Micro Commits</dt>
-						<dd>Commit often, whenever a small change makes sense by itself. Useful links: <xref
-								href="https://stackoverflow.blog/2022/12/19/use-git-tactically/"
-								format="html" scope="external"/><image placement="break"
-								href="https://mermaid.ink/img/pako:eNptkE1qw0AMha8itHYu4HVCV93UdBNmI2ZkW9TzgywTl5C7d2wTurE2QuJ7T-I90efA2OIg9qFURpegls8xioGEFhx2hacJ_Mj-B3pZeXZ4Qt1WU_LGARI_YGZvktM5-sWXrIG1ssp97cnzDJIgUjkVfJdAm7NEGo7z2GBkjSSh_v7cJA5t5MgON0HgnpbJNvJV0WXX34JYVmxNF26QFsvdb_Lv-WCuQoNSxLanaa7bQume8__Mu8fnkdke3esPdtJtcA?type=png"
-								id="image_fww_cwq_nwb"
-							/><!--https://mermaid.live/edit#pako:eNptkE1qw0AMha8itHYu4HVCV93UdBNmI2ZkW9TzgywTl5C7d2wTurE2QuJ7T-I90efA2OIg9qFURpegls8xioGEFhx2hacJ_Mj-B3pZeXZ4Qt1WU_LGARI_YGZvktM5-sWXrIG1ssp97cnzDJIgUjkVfJdAm7NEGo7z2GBkjSSh_v7cJA5t5MgON0HgnpbJNvJV0WXX34JYVmxNF26QFsvdb_Lv-WCuQoNSxLanaa7bQume8__Mu8fnkdke3esPdtJtcA--></dd>
-					</dlentry>
-					<dlentry>
-						<dt>Pull Requests</dt>
-						<dd>Instead of merging your feature branch directly in the main branch,
-							create a pull request to allow a colleague to review and integrate the
-							change.</dd>
-					</dlentry>
-				</dl>
-			</p>
 		</section>
     </body>
 </topic>
