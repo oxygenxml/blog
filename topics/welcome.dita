@@ -4,12 +4,13 @@
     <title>Welcome! </title>
     <prolog>
         <author>Radu Coravu</author>
+        <author>Tara English-Sweeney</author>
         <copyright>
             <copyryear year="2020"/>
             <copyrholder>Syncro Soft</copyrholder>
         </copyright>
         <critdates>
-            <created date="2020-01-14"/>
+            <created date="2023-02-20"/>
         </critdates>
     </prolog>
     <body>
@@ -80,7 +81,10 @@
                         >GitHub</xref> account, if you do not already have one.</li>
                 <li>Fork the contents of the <ph keyref="oxygen"/> GitHub project in your own GitHub
                     Repository: <xref href="https://github.com/oxygenxml/blog" format="html"
-                        scope="external"/>.</li>
+                        scope="external"/>.<ol id="ol_opj_jqq_4wb">
+                        <li>To fork the contents, in the GitHub repository, click <b>Fork > Create a
+                                new fork</b>.</li>
+                    </ol></li>
                 <li>Make changes to your forked project or to a branch from it. <ul
                         id="ul_gkd_4s3_jkb">
                         <li>If you have the <ph keyref="oxygen"/> application installed, you can
@@ -104,7 +108,11 @@
                             author information after the topic title.</li>
                     </ul></li>
                 <li>After all changes have been made to your fork of the project, you can create a
-                    pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
+                    pull request to the <ph keyref="oxygen"/> original GitHub project.<ol
+                        id="ol_a4f_5qq_4wb">
+                        <li>At the top of the Oxygen XML Web Author, go to <b>Git > Commit</b>.</li>
+                        <li>Enter a commit message and click <b>Commit</b>.</li>
+                    </ol></li>
                 <li>There is a <xref
                         href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/workflow.yml"
                         format="html" scope="external">GitHub action</xref> implemented in the
