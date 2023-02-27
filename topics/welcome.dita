@@ -78,9 +78,11 @@
             <ol id="ol_o1c_cs3_jkb">
                 <li>Create your own <xref href="https://github.com/" format="html" scope="external"
                         >GitHub</xref> account, if you do not already have one.</li>
-                <li>Fork the contents of the <ph keyref="oxygen"/> GitHub project in your own GitHub
-                    Repository: <xref href="https://github.com/oxygenxml/blog" format="html"
-                        scope="external"/>.</li>
+                <li>Fork the contents of the <ph keyref="oxygen"/> GitHub repository in your own
+					GitHub Repository: <xref href="https://github.com/oxygenxml/blog" format="html"
+						scope="external"/>. More details about how to fork a repository: <xref
+						href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects"
+						format="html" scope="external"/>.</li>
                 <li>Make changes to your forked project or to a branch from it. <ul
                         id="ul_gkd_4s3_jkb">
                         <li>If you have the <ph keyref="oxygen"/> application installed, you can
@@ -102,6 +104,9 @@
 &lt;/prolog></codeblock>This
                             prolog section will be used to add in the published HTML output the
                             author information after the topic title.</li>
+						<li>Each commit message must include a <xref
+								href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-the-commit-signoff-policy-for-your-repository"
+								format="html" scope="external">sign off</xref>.</li>
                     </ul></li>
                 <li>After all changes have been made to your fork of the project, you can create a
                     pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
