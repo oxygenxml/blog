@@ -9,6 +9,25 @@
 		</critdates>
 	</prolog>
     <body>
-        <p></p>
+		<p>It makes sense to share various common editing settings when working on a common Git
+				project:<ul id="ul_ug1_ll1_rwb">
+				<li>Spell check dictionaries.</li>
+				<li>Spell check learned words.</li>
+				<li>Terminology checker settings.</li>
+				<li>Actions and behaviors for editing content.</li>
+				<li>Custom validation and quick fixes.</li>
+				<li>Publishing templates.</li>
+			</ul></p>
+        <p>There are various ways to share these custom editing settings between the people who
+			collaborate on the same Git projects:<ul id="ul_ph4_cl1_rwb">
+				<li>Use a web editing tool to edit the Git content directly in a web browser with
+					all settings being common in the tool. Example: <xref
+						href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
+						format="html" scope="external">Oxygen WebAuthor</xref> Git connector.</li>
+				<li>Manually share a common set of settings.</li>
+				<li>Share the common settings directly in the Git project. Example: <xref
+						href="https://github.com/oxygenxml/DITA-Startup-Project" format="html"
+						scope="external"/>.</li>
+			</ul></p>
     </body>
 </topic>

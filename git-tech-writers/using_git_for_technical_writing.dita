@@ -2,8 +2,8 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="using_git_for_technical_writing">
     <title>Using Git For Technical Writing</title>
-	<shortdesc>The <b>Git</b> version control system is a feasible solution to work and collaborate
-		on both small and large technical documentation projects.</shortdesc>
+	<shortdesc>The <b>Git</b> version control system is a feasible solution to work and collaborate on
+		technical documentation projects no matter of their scale and number of resources. </shortdesc>
 	<prolog>
 		<author>Radu Coravu</author>
 		<critdates>
@@ -20,54 +20,14 @@
 			developing source code during software development. Its goals include speed, data
 			integrity, and support for distributed, non-linear workflows (thousands of parallel
 			branches running on different systems). (wiki)."</p>
-		<p>So Git was originally intended for developers, how come technical writers started using
-			it, and why is it a good idea for technical writers to use it?</p>
-		<section id="section_d5p_wxr_lwb">
-			<title>Advantages of using Git</title>
-			<ul id="ul_dvl_hyr_lwb">
-				<li>Present in most companies, knowing Git is in my opinion a nice asset to have for
-					any technical writer.</li>
-				<li>Free and stable system, used by many, with relative few bugs, with available
-					tutorials, documentation, with easy access to people who might help with Git
-					related questions. </li>
-				<li>Version control:<ul id="ul_xcq_hyr_lwb">
-						<li>History of changes made to a project.</li>
-						<li>Ability to revert to previous changes and to see who made certain
-							changes.</li>
-					</ul></li>
-				<li>Collaborate on the same project with support to:<ul id="ul_utr_xzr_lwb">
-						<li>Check out.</li>
-						<li>Update.</li>
-						<li>Commit/Revert changes.</li>
-						<li>Resolve conflicts.</li>
-					</ul></li>
-				<li>Support for branching (branches used for versioning the documentation or for
-					working on larger fixes) and for merging between branches.</li>
-				<li>Support to work on your own repository even with offline access and then to
-					merge changes in the remote repository when online connection is available.</li>
-				<li>Collaborate with other teams in the same company on projects, either by having
-					the documentation as part of the larger Git repository of the product, or by
-					allowing developers who know Git to contribute reviews.</li>
-				<li>Support to create pull requests for people who might not have write access or
-					want to have their work reviewed.</li>
-			</ul>
-		</section>
-		<section id="section_vkn_zzr_lwb">
-			<title>Disadvantages of Using Git</title>
-			<ul id="ul_hk5_b1s_lwb">
-				<li>No built-in support for a ticketing system. This support is added on the side
-					either by using a commercial ticketing system like JIRA or by using GitHub or
-					GitLab which have their own basic ways of adding and closing issues.</li>
-				<li>No built-in support for publishing. Publishing pipelines need to be separately
-					built.</li>
-				<li>No way to lock resources when editing in order to avoid conflicts.</li>
-				<li>Mistakes can be made when using Git but usually they can be reverted, or you can check out
-					the entire project again.</li>
-				<li>Some training is required to use and understand the branching and history models
-					in Git. But such training tutorials and courses are readily available.</li>
-				<li>No granular support for user roles. Users usually either have full read-write
-					access to a repository or only read access.</li>
-			</ul>
-		</section>
+		<p>So as Git was originally intended for developers, how come technical writers started using it,
+			and why is it a good idea for technical writers to use it?<ul id="ul_ydr_bf1_rwb">
+				<li><xref href="advantages_and_disadvantages_of_using_git.dita"/></li>
+				<li><xref href="git_client_applications.dita"/></li>
+				<li><xref href="common_workflows.dita"/></li>
+				<li><xref href="useful_features.dita"/></li>
+				<li><xref href="sharing_common_settings.dita"/></li>
+				<li><xref href="publishing_content_from_git.dita"/></li>
+			</ul></p>
     </body>
 </topic>

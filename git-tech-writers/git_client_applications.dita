@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="git_client_applications">
-    <title>Software Applications for Working with Git</title>
+    <title>Applications for Working with Git</title>
 	<prolog>
 		<author>Radu Coravu</author>
 		<critdates>
@@ -9,25 +9,34 @@
 		</critdates>
 	</prolog>
     <body>
-		<p>Server side solutions:<ul id="ul_gjw_5tl_mwb">
-				<li><b>GitHub</b> (either online or on-premise).</li>
-				<li><b>GitLab</b> (either online or on-premise).</li>
-			</ul></p>
-		<p>Both of these solutions come with:<ul id="ul_yxv_ztl_mwb">
-				<li>Support to create and manage private/public repositories.</li>
-				<li>Basic support to create and handle tickets/issues.</li>
-				<li>Support to create pull/merge requests.</li>
-			</ul></p>
-		<p>Client side solutions:</p>
-		<p>There are lots of free client side applications which can be used to work with Git
-			repositories:</p>
-		<ul id="ul_v3t_mcs_lwb">
-			<li><b>Git Fork</b>.</li>
-			<li><b>Git Tower</b>.</li>
-			<li><b>SourceTree</b>.</li>
-			<li><b>GitHub Desktop</b>.</li>
-			<li><b>Git client</b> add-on in Oxygen XML Editor</li>
-			<li><b>Git</b> console.</li>
-		</ul>
+		<section id="section_ozj_tzy_qwb">
+			<title>Server side solutions</title>
+			<p>
+				<ul id="ul_gjw_5tl_mwb">
+					<li><xref href="https://github.com/" format="html" scope="external"
+							>GitHub</xref> (either online or on-premise).</li>
+					<li><xref href="https://about.gitlab.com/" format="html" scope="external"
+							>GitLab</xref> (either online or on-premise).</li>
+				</ul>
+			</p>
+			<p>Both of these solutions come with:<ul id="ul_yxv_ztl_mwb">
+					<li>Support to create and manage private/public repositories.</li>
+					<li>Basic support to create and handle tickets/issues.</li>
+					<li>Support to create pull/merge requests.</li>
+				</ul></p>
+		</section>
+		<section id="section_jrl_5zy_qwb">
+			<title>Client side solutions</title>
+			<p>There are lots of free client side applications which can be used to work with Git
+				repositories:</p>
+			<ul id="ul_v3t_mcs_lwb">
+				<li><b>Git Fork</b>.</li>
+				<li><b>Git Tower</b>.</li>
+				<li><b>SourceTree</b>.</li>
+				<li><b>GitHub Desktop</b>.</li>
+				<li><b>Git</b> console.</li>
+				<li><b>Git client</b> add-on in Oxygen XML Editor.</li>
+			</ul>
+		</section>
 	</body>
 </topic>

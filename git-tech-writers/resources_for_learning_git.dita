@@ -9,6 +9,16 @@
 		</critdates>
 	</prolog>
     <body>
-        <p><xref href="../topics/dita_for_small_teams.dita"/></p>
-    </body>
+		<ul id="ul_i5q_2g1_rwb">
+			<li><xref href="https://www.atlassian.com/git" format="html" scope="external">Git
+					Basics</xref> tutorial by Atlassian.</li>
+			<li>The <xref href="https://git-scm.com/book/en/v2" format="html" scope="external">Pro
+					Git Book</xref>.</li>
+			<li><xref href="https://learngitbranching.js.org/" format="html" scope="external">Learn
+					Git Braching Interactive Tutorial</xref>.</li>
+			<li>Lots of courses about learning Git on <xref href="https://www.udemy.com/topic/git/"
+					format="html" scope="external">Udemy</xref>.</li>
+			<li><xref href="../topics/dita_for_small_teams.dita"/></li>
+		</ul>
+	</body>
 </topic>

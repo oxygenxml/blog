@@ -3,6 +3,7 @@
 <map>
     <title>Using Git for Technical Writing</title>
 	<topicref href="using_git_for_technical_writing.dita">
+		<topicref href="advantages_and_disadvantages_of_using_git.dita"/>
 		<topicref href="resources_for_learning_git.dita"/>
 		<topicref href="git_client_applications.dita"/>
 		<topicref href="common_workflows.dita">
