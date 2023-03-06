@@ -6,6 +6,7 @@
 		<topicref href="advantages_and_disadvantages_of_using_git.dita"/>
 		<topicref href="resources_for_learning_git.dita"/>
 		<topicref href="git_client_applications.dita"/>
+		<topicref href="editing_session_workflow.dita"/>
 		<topicref href="common_workflows.dita">
 			<topicref href="useful_features.dita"/>
 		</topicref>

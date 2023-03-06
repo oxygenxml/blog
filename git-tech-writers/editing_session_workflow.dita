@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="editing_session_workflow">
+    <title>Typical Editing Session</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-03-01"/>
+		</critdates>
+	</prolog>
+    <body>
+		<p>Usually an editing session has the following stages which are repeated throughout the
+			day:</p>
+		<p>
+			<image placement="break"
+				href="https://mermaid.ink/img/pako:eNptkTFPwzAQhf-KdXODaNIpAwMpbEgIOhEzWPYFR8S-yDkLVVX_O3bahIF6sb_zu-en8wk0GYQauoF-tFWBxWEvvUirN_dtY1F_U2Txho4Y0zbS1DOFo3gMymv7uWi37WscBtGQZ_QsngO5_02rumyfTM-Lei1XbUPO3bjYJffJru4HuumdEovirnjIcTJtRTFDmaG8QpWhusIONuAwONWbNINTfk4CW3QooU5Hg52KA0uQ_pykcTSKMUenADWHiBtQken96PXCF82-V19BOag7NUypOir_QfTHOHu8XGY_f8H5F9HJhLQ?type=png"
+				id="image_cgt_m3k_swb"/>
+			<ul id="ul_mdp_whk_swb">
+				<li><b>Checkout Branch From Remote Repository</b> - Checkout a branch from the
+					remote repository on which you want to work. Usually done only once.</li>
+				<li><b>Pull Content From Remote Repository</b> - Obtain the latest content for the
+					edited project branch.</li>
+				<li><b>Edit Content</b> - The project is edited and modified in the current working
+					copy.</li>
+				<li><b>Commit Content</b> - Commit the changes to the local working copy.</li>
+				<li><b>Push Content To Remote Repository</b> - Push from time to time the commits to
+					the remote repository so that others can use them as well.</li>
+			</ul>
+		</p>
+        <p><!--https://mermaid.live/edit#pako:eNptkTFPwzAQhf-KdXODaNIpAwMpbEgIOhEzWPYFR8S-yDkLVVX_O3bahIF6sb_zu-en8wk0GYQauoF-tFWBxWEvvUirN_dtY1F_U2Txho4Y0zbS1DOFo3gMymv7uWi37WscBtGQZ_QsngO5_02rumyfTM-Lei1XbUPO3bjYJffJru4HuumdEovirnjIcTJtRTFDmaG8QpWhusIONuAwONWbNINTfk4CW3QooU5Hg52KA0uQ_pykcTSKMUenADWHiBtQken96PXCF82-V19BOag7NUypOir_QfTHOHu8XGY_f8H5F9HJhLQ--></p>
+    </body>
+</topic>
