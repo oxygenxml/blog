@@ -13,8 +13,9 @@
 			day:</p>
 		<p>
 			<image placement="break"
-				href="https://mermaid.ink/img/pako:eNptkTFPwzAQhf-KdXODaNIpAwMpbEgIOhEzWPYFR8S-yDkLVVX_O3bahIF6sb_zu-en8wk0GYQauoF-tFWBxWEvvUirN_dtY1F_U2Txho4Y0zbS1DOFo3gMymv7uWi37WscBtGQZ_QsngO5_02rumyfTM-Lei1XbUPO3bjYJffJru4HuumdEovirnjIcTJtRTFDmaG8QpWhusIONuAwONWbNINTfk4CW3QooU5Hg52KA0uQ_pykcTSKMUenADWHiBtQken96PXCF82-V19BOag7NUypOir_QfTHOHu8XGY_f8H5F9HJhLQ?type=png"
+				href="https://mermaid.ink/img/pako:eNptkbFuwyAQQH8F3RxXjZ3JQ4c67VapajPVdEBwLlYNZ-FDVRTl3wtO7A4NC7zj6e44TqDJINTQDfSjrQosDnvpRVq9uW8bi_qbIos3dMSYtpGmnikcxWNQXtvPxd22T6Zn0ZBn9LyGy7Yh525cVO1rHIYlLJ4Duf9FVnuX7Mmu9oFuuqljUdwVD7mdTFtRzFBmKK9QZaiusIMNOAxO9SbN4JTLSWCLDiXU6WiwU3FgCdKfkxpHoxjzQylAzSHiBlRkej96vfDF2ffqKygHdaeGKUVH5T-I_hjnHC-X2c9fcP4ForCEtA?type=png"
 				id="image_cgt_m3k_swb"/>
+			<!--https://mermaid.live/edit#pako:eNptkbFuwyAQQH8F3RxXjZ3JQ4c67VapajPVdEBwLlYNZ-FDVRTl3wtO7A4NC7zj6e44TqDJINTQDfSjrQosDnvpRVq9uW8bi_qbIos3dMSYtpGmnikcxWNQXtvPxd22T6Zn0ZBn9LyGy7Yh525cVO1rHIYlLJ4Duf9FVnuX7Mmu9oFuuqljUdwVD7mdTFtRzFBmKK9QZaiusIMNOAxO9SbN4JTLSWCLDiXU6WiwU3FgCdKfkxpHoxjzQylAzSHiBlRkej96vfDF2ffqKygHdaeGKUVH5T-I_hjnHC-X2c9fcP4ForCEtA-->
 			<ul id="ul_mdp_whk_swb">
 				<li><b>Clone/Checkout Branch From Remote Repository</b> - Checkout a branch from the remote
 					repository on which you want to work. Usually done only once.<p><image
@@ -31,9 +32,23 @@
 			</ul>
 		</p>
 		<section id="section_lh1_5dr_swb">
-			<title>Handling Conflicts</title>
-			<p>Conflicts are usually caused by changes made to the same resources modified by others
-				in the meantime on the remote repository.</p>
+			<title>Handling Simple Conflicts</title>
+			<p>Conflicts are usually caused by trying to push changes made to resources which have
+				been in the meantime modified by others on the remote repository. <ul
+					id="ul_fnk_dgr_swb">
+					<li>If changes are made to text files on different lines, the conflicts are
+						automatically merged. </li>
+					<li>
+						<p>If the conflicting changes are on the same lines you can resolve the
+							conflict.</p>
+						<p><image href="images/simpleConflict.png" id="image_dy3_ggr_swb" scale="40"
+							/></p>
+						<p>The conflict can be resolved either by keeping your version, or the
+							version of the remote collaborator or by manual merging:</p>
+						<p><image href="images/resolveConflict.png" id="image_gj2_4gr_swb"
+								scale="30"/></p>
+					</li>
+				</ul></p>
 		</section>
         <p><!--https://mermaid.live/edit#pako:eNptkTFPwzAQhf-KdXODaNIpAwMpbEgIOhEzWPYFR8S-yDkLVVX_O3bahIF6sb_zu-en8wk0GYQauoF-tFWBxWEvvUirN_dtY1F_U2Txho4Y0zbS1DOFo3gMymv7uWi37WscBtGQZ_QsngO5_02rumyfTM-Lei1XbUPO3bjYJffJru4HuumdEovirnjIcTJtRTFDmaG8QpWhusIONuAwONWbNINTfk4CW3QooU5Hg52KA0uQ_pykcTSKMUenADWHiBtQken96PXCF82-V19BOag7NUypOir_QfTHOHu8XGY_f8H5F9HJhLQ--></p>
     </body>
