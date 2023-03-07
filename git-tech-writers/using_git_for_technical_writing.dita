@@ -23,6 +23,7 @@
 		<p>So as Git was originally intended for developers, how come technical writers started using it,
 			and why is it a good idea for technical writers to use it?<ul id="ul_ydr_bf1_rwb">
 				<li><xref href="advantages_and_disadvantages_of_using_git.dita"/></li>
+				<li><xref href="resources_for_learning_git.dita"/></li>
 				<li><xref href="git_client_applications.dita"/></li>
 				<li><xref href="common_workflows.dita"/></li>
 				<li><xref href="useful_features.dita"/></li>
