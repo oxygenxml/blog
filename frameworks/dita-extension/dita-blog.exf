@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
+	base="DITA">
+	<name>DITA - Blog</name>
+	<description/>
+	<priority>High</priority>
+	<author>
+		<css>
+			<addCss path="${framework}/css/custom.css"/>
+		</css>
+		<contentCompletion>
+			<authorActions>
+				<addAction id="oxygenProduct" inCCWindow="true"/>
+			</authorActions>
+		</contentCompletion>
+	</author>
+	<validationScenarios>
+		<addScenarios href="${framework}/validation-scenario.xml"/>
+		<defaultScenarios>
+			<name>DITA Custom</name>
+		</defaultScenarios>
+	</validationScenarios>
+</script>
