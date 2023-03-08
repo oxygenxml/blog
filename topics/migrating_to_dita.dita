@@ -108,6 +108,14 @@
         add-on is installed) to convert the exported <filepath>index.html</filepath> file into a
         DITA map with topics.</p>
     </section>
+    <section id="section_sgm_jvl_dtcx">
+      <title>Migrating AsciiDoc to DITA</title>
+      <p>You may use a third-party application (like <xref href="https://asciidoctor.org/"
+          format="html" scope="external">Asciidoctor</xref>) to convert AsciiDoc content to DocBook.
+        Afterwards use the <b>Oxygen Resources Converter</b> add-on: <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
+          format="html" scope="external"/></p>
+    </section>
     <section id="section_sgm_jvl_dtb">
       <title>Migrating LaTex to DITA</title>
       <p>You may use a third-party application (like <xref href="https://pandoc.org/" format="html"
