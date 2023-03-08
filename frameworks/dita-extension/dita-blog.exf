@@ -17,8 +17,9 @@
 		</contentCompletion>
 	</author>
 	<validationScenarios>
-		<addScenarios href="${framework}/validation-scenario.xml"/>
+		<addScenarios href="${framework}/schematron/validation-scenario.xml"/>
 		<defaultScenarios>
+			<name>DITA</name>
 			<name>DITA Custom</name>
 		</defaultScenarios>
 	</validationScenarios>
