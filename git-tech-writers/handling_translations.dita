@@ -11,6 +11,13 @@
     <body>
         <p>A set of useful advice for translating a DITA XML based project can be found here: <xref
                 href="../topics/translating_your_dita_project.dita"/>.</p>
-        <p>The translated DITA content can be stored also on Git.</p>
+        <p>The translated DITA content can be stored also on Git:<ul id="ul_wdz_tgf_twb">
+                <li>Keep the translation for each language in a separate folder in the same Git
+                    project. As a benefit binary resources can be shared between projects.</li>
+                <li>
+                    <p>Keep a separate parallel project with all the translations.</p>
+                </li>
+            </ul>
+        </p>
     </body>
 </topic>
