@@ -21,7 +21,7 @@
         <div style="color: gray;">
             <xsl:variable name="fileContent" select="/"/>
             <xsl:variable name="text" select="normalize-space($fileContent)"/> 
-            <xsl:variable name="textWithoutSpaces" select="translate($fileContent, ' ', '')" /> 
+        	<xsl:variable name="textWithoutSpaces" select="translate($text, ' ', '')" /> 
             <xsl:variable name="fileCountWords" select="string-length($text) - string-length($textWithoutSpaces) +1"/>
             <xsl:variable name="readMin" select="format-number($fileCountWords div 50, '0')"/>
             Read time: <xsl:value-of select="$readMin"/> minute(s)
