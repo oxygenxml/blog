@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="resources_for_learning_git">
-    <title>Resources For Learning Git</title>
+    <title>Useful Resources</title>
 	<prolog>
 		<author>Radu Coravu</author>
 		<critdates>
@@ -9,16 +9,43 @@
 		</critdates>
 	</prolog>
     <body>
-		<ul id="ul_i5q_2g1_rwb">
-			<li><xref href="https://www.atlassian.com/git" format="html" scope="external">Git
-					Basics</xref> tutorial by Atlassian.</li>
-			<li>The <xref href="https://git-scm.com/book/en/v2" format="html" scope="external">Pro
-					Git Book</xref>.</li>
-			<li><xref href="https://learngitbranching.js.org/" format="html" scope="external">Learn
-					Git Braching Interactive Tutorial</xref>.</li>
-			<li>Lots of courses about learning Git on <xref href="https://www.udemy.com/topic/git/"
-					format="html" scope="external">Udemy</xref>.</li>
-			<li><xref href="../topics/dita_for_small_teams.dita"/></li>
-		</ul>
+		<section id="section_wdw_5mf_twb">
+			<title>Learning Git</title>
+			<p>
+				<ul id="ul_i5q_2g1_rwb">
+					<li><xref href="https://www.atlassian.com/git" format="html" scope="external"
+							>Git Basics</xref> tutorial by Atlassian.</li>
+					<li>The <xref href="https://git-scm.com/book/en/v2" format="html"
+							scope="external">Pro Git Book</xref>.</li>
+					<li><xref href="https://learngitbranching.js.org/" format="html"
+							scope="external">Learn Git Braching Interactive Tutorial</xref>.</li>
+					<li>Lots of courses about learning Git on <xref
+							href="https://www.udemy.com/topic/git/" format="html" scope="external"
+							>Udemy</xref>.</li>
+				</ul>
+			</p>
+		</section>
+		<section id="section_qgp_vmf_twb">
+			<title>Workflows and Collaboration</title>
+			<ul id="ul_azc_ymf_twb">
+				<li><xref href="../topics/dita_for_small_teams.dita"/></li>
+				<li>Docs as Code:<ul id="ul_yk1_nnf_twb">
+						<li><xref
+								href="https://about.gitlab.com/blog/2022/10/12/five-fast-facts-about-docs-as-code-at-gitlab/"
+								format="html" scope="external">GitLab Docs As Code blog
+							post</xref></li>
+						<li><xref
+								href="https://betterprogramming.pub/solution-architecture-docs-as-code-366a7b40f9e5"
+								format="html" scope="external">Docs as Code blog post</xref></li>
+						<li><xref href="https://www.writethedocs.org/guide/docs-as-code/"
+								format="html" scope="external">Write the Docs - Docs as code blog
+								post</xref></li>
+					</ul></li>
+				<li><xref href="https://www.atlassian.com/git/tutorials/comparing-workflows"
+						format="html" scope="external">Git Workflows</xref></li>
+				<li><xref href="https://stackoverflow.blog/2022/12/19/use-git-tactically/"
+						format="html" scope="external">Tactical Git - Micro Commits</xref></li>
+			</ul>
+		</section>
 	</body>
 </topic>
