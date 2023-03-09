@@ -20,11 +20,11 @@
 				<li><b>Clone/Checkout Branch From Remote Repository</b> - Checkout a branch from the remote
 					repository on which you want to work. Usually done only once.<p><image
 							href="images/clone.png" id="image_ksg_jfr_swb" scale="30"/></p></li>
-				<li><b>Pull Content From Remote Repository</b> - Obtain the latest content for the
-					edited project branch.</li>
 				<li><b>Edit Content</b> - The project is edited and modified in the current working
 					copy.</li>
 				<li><b>Commit Content</b> - Commit the changes to the local working copy.</li>
+				<li><b>Pull Content From Remote Repository</b> - Obtain the latest content for the
+					edited project branch.</li>
 				<li><b>Push Content To Remote Repository</b> - Push from time to time the commits to the remote
 					repository so that others can use them as well. You must always pull content
 					from the repository before pushing to it.</li>

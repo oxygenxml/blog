@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="useful_features">
+    <title>Propose Changes</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-02-17"/>
+		</critdates>
+	</prolog>
+    <body>
+		<p>Besides the team of technical writers who have full write access to the documentation
+			repositories, there may be other collaborators (like subject matter experts) who have
+			read access to the repository and sometimes want to propose changes.</p>
+		<p>The workflow for proposing changes to a repository usually works like this:<ul
+				id="ul_gcj_sbf_twb">
+				<li>The collaborator creates a branch of the project on which they make changes and
+					add comments.</li>
+				<li>The branch is integrated back in the main project branch by the technical
+					writer.</li>
+			</ul></p>
+		<p><image
+				href="https://mermaid.ink/img/pako:eNqNkUFuAjEMRa8SeU0vMOtWXVVUYldlYxLPJCKJRx6HCiHuToZpKaJUanZ23v_fiY_g2BN0MER9FRyDLaYdxzlHNdF3xsI6eRKzJ5kil8nCA2STMSXjApaBrsRWsLhghPaRPp96Ir9Ft_tSB3I7rvrH7W_vhXuc_i488kT-foBrSMZYllYmGegfoWsN7c03frCCpm1Gvn3WcVZYaEwmCzPvqceadCZPDa2jR6UXH5UFOpVKK8CqvDkU910vzHPEQTBD12OaWnfE8sH8U9PF421Z0mVXpzMviJPY?type=png"
+				id="image_yyh_ybf_twb"/></p>
+		<!--https://mermaid.live/edit#pako:eNqNkUFuAjEMRa8SeU0vMOtWXVVUYldlYxLPJCKJRx6HCiHuToZpKaJUanZ23v_fiY_g2BN0MER9FRyDLaYdxzlHNdF3xsI6eRKzJ5kil8nCA2STMSXjApaBrsRWsLhghPaRPp96Ir9Ft_tSB3I7rvrH7W_vhXuc_i488kT-foBrSMZYllYmGegfoWsN7c03frCCpm1Gvn3WcVZYaEwmCzPvqceadCZPDa2jR6UXH5UFOpVKK8CqvDkU910vzHPEQTBD12OaWnfE8sH8U9PF421Z0mVXpzMviJPY-->
+		<p>Git Servers like <b>GitHub</b> or <b>GitLab</b> may add some extra functionality to help
+			technical writers review and accept changes. </p>
+    </body>
+	<related-links>
+		<link
+			href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+			format="html" scope="external">
+			<linktext>Pull Requests</linktext>
+		</link>
+	</related-links>
+</topic>

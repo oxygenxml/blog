@@ -11,7 +11,7 @@
     <body>
         <p>Common workflows for working with Git.</p>
 		<section id="section_hmq_2zl_mwb">
-			<title>Centralized Workflow</title>
+			<title>Centralized Workflow (1)</title>
 			<p>We all work with the same project(s) on the main repository branch. We have separate branches
 				which mark past releases. For features which may take a longer time to implement, we
 				work on the main branch and we connect them to the live content when they are done.
@@ -39,8 +39,18 @@
 					<li>Deal with possible conflicts which may appear.</li>
 				</ul></p>
 		</section>
-		<section id="section_fgh_kcm_mwb"><title>Feature Branches</title>We work on the smaller fixes on
-			the main branch, we create separate branches for larger features/fixes. <xref
+		<section id="section_wb4_mhr_nwb">
+			<title>Cherry Pick</title>
+			<p>Pick a commit from another branch and incorporate it. Useful to take small fixes for
+				a version branch and add them to the main branch.</p>
+			<p><xref href="https://www.atlassian.com/git/tutorials/cherry-pick" format="html"
+					scope="external"/><image placement="break"
+					href="https://mermaid.ink/img/pako:eNqlUTtvwjAQ_ivWzTCUbpn7mKoOSAzIy9W-kBOxHV3OCIT473WIoGkVtUO9ne976b4zuOQJKtixvgp2jY1mfC6FwGrYV8bChqTnFM3qwcId8SEYXWMO425ZdrPcdcC2NTUfzZTsGnL7lNUE5DhDtPDCR-rnGL8aTv1Wf_s1JHJaduz2P8nfwk7k37VwBsQ_wz1agAUEkhLIlwLOA95CUQ9kYTicpxpzq4PLpUBz51Hp2bMmgUol0wIwa1qforvNI-aJcScYoKqx7ctvh3Gb0tdMV423sfhr_5dPWrWjRA?type=png"
+					id="image_nvn_zhr_nwb"/></p>
+			<!--https://mermaid.live/edit#pako:eNqlUTtvwjAQ_ivWzTCUbpn7mKoOSAzIy9W-kBOxHV3OCIT473WIoGkVtUO9ne976b4zuOQJKtixvgp2jY1mfC6FwGrYV8bChqTnFM3qwcId8SEYXWMO425ZdrPcdcC2NTUfzZTsGnL7lNUE5DhDtPDCR-rnGL8aTv1Wf_s1JHJaduz2P8nfwk7k37VwBsQ_wz1agAUEkhLIlwLOA95CUQ9kYTicpxpzq4PLpUBz51Hp2bMmgUol0wIwa1qforvNI-aJcScYoKqx7ctvh3Gb0tdMV423sfhr_5dPWrWjRA-->
+		</section>
+		<section id="section_fgh_kcm_mwb"><title>Feature Branches (2)</title>We work on the smaller fixes
+			on the main branch, we create separate branches for larger features/fixes. <xref
 				href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow"
 				format="html" scope="external"/></section>
 		<section id="section_gxl_svq_nwb">
@@ -62,7 +72,7 @@
 				</ul></p>
 		</section>
 		<section id="section_qhl_zdr_nwb">
-			<title>GitFlow</title>
+			<title>GitFlow (3)</title>
 			<p>The main branch holds the official content which will be released, we mostly commit
 				on a development branch. <xref
 					href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="handling_translations">
+    <title>Handling Translations</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2023-03-09"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>A set of useful advice for translating a DITA XML based project can be found here: <xref
+                href="../topics/translating_your_dita_project.dita"/>.</p>
+        <p>The translated DITA content can be stored also on Git.</p>
+    </body>
+</topic>

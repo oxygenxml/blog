@@ -11,11 +11,12 @@
     <body>
 		<p>It makes sense to share various common editing settings when working on a common Git
 				project:<ul id="ul_ug1_ll1_rwb">
-				<li>Spell check dictionaries.</li>
-				<li>Spell check learned words.</li>
-				<li>Terminology checker settings.</li>
-				<li>Actions and behaviors for editing content.</li>
-				<li>Custom validation and quick fixes.</li>
+				<li>Spell check dictionaries and learned words.</li>
+				<li><xref href="../topics/checking_terminology_with_oxygen_xml_editor.dita">Checking
+						Terminology</xref>.</li>
+				<li><xref href="../topics/custom-author-action-content-completion.dita">Actions and behaviors
+						for editing content.</xref></li>
+				<li><xref href="../topics/SchematronBCs.dita">Custom validation and quick fixes.</xref></li>
 				<li>Publishing templates.</li>
 			</ul></p>
         <p>There are various ways to share these custom editing settings between the people who

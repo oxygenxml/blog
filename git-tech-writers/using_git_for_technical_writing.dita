@@ -21,13 +21,16 @@
 			integrity, and support for distributed, non-linear workflows (thousands of parallel
 			branches running on different systems). (wiki)."</p>
 		<p>So as Git was originally intended for developers, how come technical writers started using it,
-			and why is it a good idea for technical writers to use it?<ul id="ul_ydr_bf1_rwb">
+			and why is it a good idea for technical writers to use it?</p>
+		<p>The following small articles listed below attempt to cover various aspects of a technical
+			documentation solution using Git:<ul id="ul_ydr_bf1_rwb">
 				<li><xref href="advantages_and_disadvantages_of_using_git.dita"/></li>
 				<li><xref href="resources_for_learning_git.dita"/></li>
 				<li><xref href="git_client_applications.dita"/></li>
+				<li><xref href="editing_session_workflow.dita"/></li>
 				<li><xref href="common_workflows.dita"/></li>
-				<li><xref href="useful_features.dita"/></li>
-				<li>Handling Translations</li>
+				<li><xref href="propose_changes.dita"/></li>
+				<li><xref href="handling_translations.dita"/></li>
 				<li><xref href="sharing_common_settings.dita"/></li>
 				<li><xref href="publishing_content_from_git.dita"/></li>
 			</ul></p>
