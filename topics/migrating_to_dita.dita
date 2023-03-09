@@ -17,8 +17,9 @@
       project.</p>
     <section id="section_j23_k54_4gb">
       <title>Migrating DocBook Content to DITA.</title>
-      <p>You can migrate one or multiple DocBook documents to DITA using the <b>Oxygen Resources
-        Converter</b> add-on: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
+      <p>You can migrate one or multiple DocBook documents to DITA using the <b>Oxygen Batch
+          Documents Converter</b> add-on: <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
           format="html" scope="external"/>.</p>
       <p>The <b>DocBook to DITA</b> conversion contains an option named <b>Create DITA maps from
           DocBook documents containing multiple sections</b>. When this option is selected, all
@@ -38,7 +39,7 @@
           href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support.html"
           format="html" scope="external"><i>Smart Paste</i></xref> functionality to copy content
         from an Excel spreadsheet and paste it inside an opened DITA topic. Also, as an alternate
-        possibility, the <b>Oxygen Resources Converter</b> add-on was updated to be able to batch
+        possibility, the <b>Oxygen Batch Documents Converter</b> add-on was updated to be able to batch
         convert Excel to DITA: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
           format="html" scope="external"/>.</p>
     </section>
@@ -70,7 +71,7 @@
         Markdown files to DITA one by one: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/markdown-dita-2.html"
           format="html" scope="external"/>. If you want to convert multiple Markdown documents at
-        once, you can use the <b>Oxygen Resources Converter</b> add-on: <xref
+        once, you can use the <b>Oxygen Batch Documents Converter</b> add-on: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" format="html"
           scope="external"/>.</p>
     </section>
@@ -81,7 +82,7 @@
           format="html" scope="external"><i>Smart Paste</i></xref> functionality, you can open the
         HTML documents in a web browser, then copy the contents and paste it in a DITA topic opened
         in Oxygen's <b>Author</b> visual editing mode. If you want to convert multiple HTML files,
-        you can use the <b>Oxygen Resources Converter</b> add-on: <xref
+        you can use the <b>Oxygen Batch Documents Converter</b> add-on: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" format="html"
           scope="external"/>.</p>
     </section>
@@ -98,7 +99,7 @@
     </section>
     <section id="section_hpn_vrm_lsb">
       <title>Migrating Confluence Content to DITA</title>
-      <p>To convert Confluence content to DITA, you can use the <b>Oxygen Resources Converter</b>
+      <p>To convert Confluence content to DITA, you can use the <b>Oxygen Batch Documents Converter</b>
         add-on: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" format="html"
           scope="external"/>.</p>
       <p>You first need to export the content to HTML. For this, log in to your Confluence account
@@ -110,17 +111,25 @@
     </section>
     <section id="section_sgm_jvl_dtcx">
       <title>Migrating AsciiDoc to DITA</title>
-      <p>You may use a third-party application (like <xref href="https://asciidoctor.org/"
-          format="html" scope="external">Asciidoctor</xref>) to convert AsciiDoc content to DocBook.
-        Afterwards use the <b>Oxygen Resources Converter</b> add-on: <xref
+      <p>The <xref href="https://asciidoctor.org/" format="html" scope="external">Asciidoctor</xref>
+        third-party application can be used to convert AsciiDoc content to DocBook. Then, you can
+        convert the DocBook content to DITA using the method described <xref
+          href="#migrating_to_dita/section_j23_k54_4gb">here</xref>.</p>
+    </section>
+    <section id="section_sgm_jvl_dtct">
+      <title>Migrating reStructuredText to DITA</title>
+      <p>The <xref href="https://pandoc.org/" format="html" scope="external">Pandoc</xref>
+        third-party application can be used to convert reStructuredText content to DocBook or HTML.
+        Then, you can convert the DocBook or HTML content to DITA using the <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
-          format="html" scope="external"/></p>
+          format="html" scope="external">Oxygen Batch
+            Documents Converter</xref> add-on.</p>
     </section>
     <section id="section_sgm_jvl_dtb">
       <title>Migrating LaTex to DITA</title>
       <p>You may use a third-party application (like <xref href="https://pandoc.org/" format="html"
           scope="external">Pandoc</xref>) to convert LaTex content to Word or HTML. Afterwards use
-        the <b>Oxygen Resources Converter</b>: <xref
+        the <b>Oxygen Batch Documents Converter</b>: <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
           format="html" scope="external"/></p>
     </section>
