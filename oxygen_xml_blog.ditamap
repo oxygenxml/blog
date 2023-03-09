@@ -110,6 +110,7 @@
                 <topicref href="topics/ditaUsage.dita"/>
             </topichead>
             <topicref href="topics/customizing_a_chatbot.dita"/>
+			<topicref href="topics/using_chatgpt_in_a_dita_xml_project.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">
