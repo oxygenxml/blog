@@ -38,8 +38,8 @@
                                     <xsl:variable name="label" select="$prolog/metadata/keywords/keyword[@outputclass = 'label']"/>
                                     <xsl:variable name="fileUrl" select="replace(@href, '\.dita$', '.html')"/>
                                     <xsl:variable name="fileContent" select="$doc/*"/>
-                                    <xsl:variable name="x" select="normalize-space($fileContent)"/> 
-                                    <xsl:variable name="y" select="translate($fileContent, ' ', '')" /> 
+                                    <xsl:variable name="x" select="normalize-space($fileContent)"/>
+                                	<xsl:variable name="y" select="translate($x, ' ', '')" />
                                     <xsl:variable name="fileCountWords" select="string-length($x) - string-length($y) +1"/>
                                     <xsl:variable name="readMin" select="format-number($fileCountWords div 50, '0')"/>
                                     
