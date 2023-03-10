@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="markdown_vs_dita_syntax_and_capabilities_comparison">
+    <title>Markdown vs DITA Syntax and Capabilities Comparison</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-03-09"/>
+		</critdates>
+	</prolog>
+    <body>
+        <p>The following article is a comparison between the DITA XML standard and Markdown. The
+			comparison attempts to cover syntax specification and features.</p>
+		<table frame="all" id="table_nym_ysg_twb">
+			<title>DITA XML vs Markdown</title>
+			<tgroup cols="3">
+				<colspec colname="c1" colnum="1" colwidth="1*"/>
+				<colspec colname="newCol2" colnum="2" colwidth="1.79*"/>
+				<colspec colname="c2" colnum="3" colwidth="1.39*"/>
+				<thead>
+					<row>
+						<entry/>
+						<entry>DITA XML</entry>
+						<entry>Markdown</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Short description:</entry>
+						<entry><xref
+								href="https://www.oxygenxml.com/dita/1.3/specs/introduction/dita-release-overview.html"
+								format="html" scope="external">DITA XML</xref> is a standard for
+							designing, writing, managing, and publishing information. There are
+							multiple versions of the DITA standard, the most popular one being
+							1.3.</entry>
+						<entry><xref href="https://www.markdownguide.org/getting-started/"
+								format="html" scope="external">Markdown</xref> is a lightweight
+							markup language that you can use to add formatting elements to plaintext
+							text documents. There is an effort to standardize Markdown to a
+							specification named <xref href="https://commonmark.org/" format="html"
+								scope="external">CommonMark</xref>. In the wild there are lots of
+							Markdown flavors most of them sharing a common set of features.</entry>
+					</row>
+					<row>
+						<entry>Useful links for learning:</entry>
+						<entry><xref href="learnDita.dita"/></entry>
+						<entry>
+							<ul id="ul_xql_kxm_twb">
+								<li><xref href="https://www.markdownguide.org/basic-syntax/"
+										format="html" scope="external">Basic Markdown
+									Syntax</xref></li>
+								<li><xref href="https://daringfireball.net/projects/markdown/syntax"
+										format="html" scope="external">Markdown: Syntax</xref></li>
+							</ul>
+						</entry>
+					</row>
+					<row>
+						<entry>Pros</entry>
+						<entry>Open standard, support for content reuse, filtering, publishing engine with lots of
+							supported output formats.</entry>
+						<entry/>
+					</row>
+					<row>
+						<entry>Cons</entry>
+						<entry/>
+						<entry/>
+					</row>
+					<row>
+						<entry>Table of contents</entry>
+						<entry>Gathering multiple DITA topics in a larger publication is done by
+							using <xref
+								href="https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/definition-of-ditamaps.html"
+								format="html" scope="external">DITA Maps</xref>.</entry>
+						<entry><b>CommonMark</b> does not define the possibility to create a table
+							of contents or to aggregate multiple Markdown files in larger
+							publications. Various static web site generators have various ways to
+							define table of contents, usually based on Yaml like <xref
+								href="https://www.mkdocs.org/user-guide/configuration/"
+								format="html" scope="external">MKDocs</xref>.</entry>
+					</row>
+					<row>
+						<entry/>
+						<entry/>
+						<entry/>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+    </body>
+</topic>
