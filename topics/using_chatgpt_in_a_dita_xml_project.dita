@@ -141,5 +141,26 @@ Cand o bifam trebuie sa ramana in view doar cheile relative (cheile cu forma cea
 .........</codeblock>
 			</p><p><image href="../images/chatgpt-readability-analysis.png" id="image_tgz_kcg_twb"
 					scale="50"/></p></section>
+		<section id="section_ctp_vch_twb">
+			<title>Custom Validation (Schematron based)</title>
+			<ol id="ol_qfn_wch_twb">
+				<li>
+					<p>Create an ISO Schematron validation check which counts
+						words.<codeblock id="codeblock_igv_h2h_twb">Create an ISO Schematron schema which reports if a DITA short description element has more than 20 words.</codeblock></p>
+					<p><image href="../images/chatgpt-sch-count-words.png" id="image_wnt_y2h_twb"
+							scale="40"/></p>
+					<p>Remark: The namespace declaration and usage is wrong, DITA elements are in no
+						namespace. The assert test is correct.</p>
+				</li>
+				<li>
+					<p>Create an ISO Schematron validation check from a
+						description.<codeblock id="codeblock_pll_xch_twb">Create an ISO Schematron validation rule which reports an error if a DITA XML image element does not contain a scale attribute</codeblock></p>
+					<p><image href="../images/chatgpt-sch-image-scale.png" id="image_evh_qfh_twb"
+							scale="40"/></p>
+					<p>Remark: The namespace declaration and usage is wrong, DITA elements are in no
+						namespace. The assert test is correct.</p>
+				</li>
+			</ol>
+		</section>
 	</body>
 </topic>
