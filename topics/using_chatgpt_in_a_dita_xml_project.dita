@@ -126,6 +126,72 @@ Cand o bifam trebuie sa ramana in view doar cheile relative (cheile cu forma cea
 					<p><image href="../images/chatgpt-translate-rephrase.png" id="image_e3r_mbg_twb"
 							scale="50"/></p>
 				</li>
+				<li>Re-write an entire DITA XML topic to increase its
+						readability.<codeblock id="codeblock_xpf_rjj_5wb">Re-write the following DITA XML topic preserving all its original XML elements to increase its readability:
+&lt;topic id="dita_oriented_tips_and_tricks">
+	&lt;title>DITA Oriented Tips And Tricks&lt;/title>
+	&lt;prolog>
+		&lt;author>Radu Coravu&lt;/author>
+	&lt;/prolog>
+	&lt;body>
+		&lt;p>&lt;ph keyref="oxygen"/> has about 18 years of development under its wings. During these
+			years, we added lots of functionality and many of our users usually do not know more than 20-30%
+			of Oxygen's features. So this presentation is intended for technical writers using Oxygen to
+			write DITA content and who may want to find out more about their tool.&lt;/p>
+		&lt;section id="section_gld_tbs_gfb">
+			&lt;title>Add-ons&lt;/title>
+			&lt;p>There are lots of free add-ons provided by the Oxygen team that can be installed in an
+				&lt;xref
+					href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;amp;type=Repositories"
+					format="html" scope="external">Oxygen standalone version&lt;/xref>. I will enumerate some of
+				the most interesting one:&lt;/p>
+			&lt;ul id="ul_xbw_ccs_gfb">
+				&lt;li>&lt;xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
+					scope="external">Git add-on&lt;/xref>. This plugin adds a side view allowing you to do some
+					common Git operations like pull, commit, push (mostly 90% of what a regular Git user would
+					do).&lt;/li>
+				&lt;li>&lt;xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+					format="html" scope="external">Content Fusion Connector add-on&lt;/xref>. Collaborate with
+					your peers by sending them links that allow them to give you feedback on your work using a
+					web browser without the need to pre-install anything on their side. &lt;/li>
+			&lt;/ul>
+		&lt;/section>
+	&lt;/body>
+&lt;/topic></codeblock><p>Result:<codeblock id="codeblock_q3q_tjj_5wb" outputclass="language-xml">&lt;topic id="dita_oriented_tips_and_tricks">
+	&lt;title>DITA Oriented Tips And Tricks&lt;/title>
+	&lt;prolog>
+		&lt;author>Radu Coravu&lt;/author>
+	&lt;/prolog>
+	&lt;body>
+		&lt;p>&lt;ph keyref="oxygen"/> has been under development for about 18 years. During this time, we
+			have added a lot of functionality, but many of our users are not aware of more than
+			20-30% of Oxygen's features. This presentation is intended for technical writers who use
+			Oxygen to write DITA content and want to learn more about the tool.&lt;/p>
+		&lt;section id="section_gld_tbs_gfb">
+			&lt;title>Add-ons&lt;/title>
+			&lt;p>Oxygen provides a range of free add-ons that can be installed in the &lt;xref
+					href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;amp;type=Repositories"
+					format="html" scope="external">Oxygen standalone version&lt;/xref>. Here are some
+				of the most interesting ones:&lt;/p>
+
+			&lt;ul id="ul_xbw_ccs_gfb">
+				&lt;li>&lt;xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
+						scope="external">Git add-on&lt;/xref>: This plugin adds a side view that allows
+					you to perform common Git operations like pull, commit, and push (similar to
+					what a regular Git user would do).&lt;/li>
+				&lt;li>&lt;xref
+						href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+						format="html" scope="external">Content Fusion Connector add-on&lt;/xref>:
+					Collaborate with your peers by sending them links that allow them to give you
+					feedback on your work using a web browser, without the need for them to
+					pre-install anything on their side.&lt;/li>
+			&lt;/ul>
+		&lt;/section>
+	&lt;/body>
+&lt;/topic></codeblock></p><p>Remarks: If the prompt insists that all XML
+						elements should be preserved, the re-write does few things. But if the
+						prompt does not insist that all XML elements should be preserved, the inline
+						elements and links are removed.</p></li>
 			</ol>
 		</section>
 		<section id="section_yhr_2cg_twb"><title>Statistics</title>Create readability analysis for a
