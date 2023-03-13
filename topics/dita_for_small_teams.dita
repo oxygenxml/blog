@@ -351,15 +351,15 @@
                             level</b> checkbox.</li>
                     <li>You can also add terminology checking in the application: <xref
                             href="checking_terminology_with_oxygen_xml_editor.dita"/>.</li>
-                    <li>In GitHub projects you can configure custom actions and run validate and
-                        check for completeness with a <xref
-                            href="https://www.oxygenxml.com/oxygen_scripting.html" format="html"
-                            scope="external">special scripting license</xref> on pull requests. An
-                        example for such a validation action is in the Oxygen XML Blog: <xref
-                            href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/workflow.yml"
-                            format="yml" scope="external"/>. The validation runs on any opened pull
-                        request: <xref href="https://github.com/oxygenxml/blog/pull/25"
-                            format="html" scope="external"/>.</li>
+                    <li id="li_lr2_qsj_5wb">In GitHub projects you can configure custom actions and
+						run validate and check for completeness with a <xref
+							href="https://www.oxygenxml.com/oxygen_scripting.html" format="html"
+							scope="external">special scripting license</xref> on pull requests. An
+						example for such a validation action is in the Oxygen XML Blog: <xref
+							href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/workflow.yml"
+							format="yml" scope="external"/>. The validation runs on any opened pull
+						request: <xref href="https://github.com/oxygenxml/blog/pull/25"
+							format="html" scope="external"/>.</li>
                 </ul></p>
         </section>
         <section id="section_wtj_vvb_vkb">

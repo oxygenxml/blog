@@ -7,6 +7,7 @@
 		<topicref href="resources_for_learning_git.dita"/>
 		<topicref href="git_client_applications.dita"/>
 		<topicref href="editing_session_workflow.dita"/>
+		<topicref href="git_validation.dita"/>
 		<topicref href="common_workflows.dita"/>
 		<topicref href="propose_changes.dita"/>
 		<topicref href="handling_translations.dita"/>
