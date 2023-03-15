@@ -36,4 +36,11 @@
         applied either at topic or element levels. The product name is variable and depends on the
         applied filters.</p></section>
   </body>
+	<related-links>
+		<link
+			href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-profiling-conditional-text.html"
+			format="html" scope="external">
+			<linktext>DITA Profiling / Conditional Text</linktext>
+		</link>
+	</related-links>
 </topic>
