@@ -40,6 +40,7 @@
             <topicref href="keyscopes/keyscopesBlog.dita"/>
             <topicref href="presentation-reuse/presentation.ditamap" format="ditamap"/>
             <topicref href="topics/cross_book_links.dita"/>
+            <topicref href="topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita"/>
         </topichead>
         <topicref href="topics/dita_ot_publishing_customizations_overview.dita">
             <topicref href="topics/webhelp-dita-strong-points.dita"/>
