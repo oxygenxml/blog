@@ -214,6 +214,19 @@
                                         >Pandoc</xref>.</li>
                             </ul></entry>
                     </row>
+					<row>
+						<entry valign="top"><b>Translation</b></entry>
+						<entry valign="top">There are translation agencies accepting directly DITA
+							XML content or you can convert DITA XML to XLiff and use a translation
+							system. Each DITA XML topic or map can have an <xmlatt>xml:lang</xmlatt>
+							attribute to specify the current language in which it is
+									written.<p><xref href="translating_your_dita_project.dita"
+							/></p></entry>
+						<entry valign="top">There are various tools like <xref
+								href="https://simpleen.io/blog/translate-markdown-files"
+								format="html" scope="external">Simpleen</xref> which seem to
+							specifically handle Markdown translation.</entry>
+					</row>
                     <row>
                         <entry valign="top"><b>Extensibility</b></entry>
                         <entry valign="top">
