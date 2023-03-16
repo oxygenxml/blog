@@ -239,6 +239,10 @@
                                 <li>Use HTML elements inside Markdown, for example when defining
                                     complex tables or you do not have a Markdown equivalent.</li>
                                 <li>Yaml headers.</li>
+								<li>Ability on certain Markdown flavors/extensions to <xref
+										href="https://python-markdown.github.io/extensions/attr_list/"
+										format="html" scope="external">define attributes</xref> for
+									each element.</li>
                             </ul>
                         </entry>
                     </row>
