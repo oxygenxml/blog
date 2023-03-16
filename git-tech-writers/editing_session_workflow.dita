@@ -15,7 +15,7 @@
 			<image placement="break"
 				href="../images/editing-session-stages.png"
 				id="image_cgt_m3k_swb"/>
-			<!--https://mermaid.live/edit#pako:eNptkbFOwzAQhl_FurlBNOmUgYEUNiQEnYgZLPuCI2Jf5JyFqqrvjp02YaBe7O_06_P5fAJNBqGGbqAfbVVgcdhLL9LqzX3bWNTfFFm8oSPGtI009UzhKB6D8tp-Ltlt-2R6Fg15Rs9ruWxf4zAsZfEcyP13remqbci5G5pd0kx21RzopiR1LIq74iG3k2krihnKDOUVqgzVFXawAYfBqd6kGZzydRLYokMJdToa7FQcWIL05xSNo1GM-aEUoOYQcQMqMr0fvV74ktn36isoB3WnhilVR-U_iP4YZ8fLZfbzF5x_AbYGhLQ-->
+			<!--https://mermaid.live/edit#pako:eNptkbFOwzAQhl_FurlBNOmUgYEUNiQEnYgZLPvSWMS-yDkLVVXfHTslYaBe7O_06_P5fAZNBqGGbqBv3avA4rCXXqRlzX3b9Ki_KLJ4Q0eMaRtpskzhJB6D8rr_XLLb9slYFg15Rs9ruWxf4zAsZfEcyP13remqbci5G5pd0kz9qjnQTUnqWBR3xUNuJ9NWFDOUGcpfqDJUS24HG3AYnLImDeGc75PAPTqUUKejwU7FgSVIf0nROBrFmF9KAWoOETegItP7yeuFr5m9VcegHNSdGqZUHZX_IPpjnB0v1-HPf3D5ASPIhOI-->
 			<ul id="ul_mdp_whk_swb">
 				<li><b>Clone/Checkout Branch From Remote Repository</b> - Checkout a branch from the remote
 					repository on which you want to work. Usually done only once.<p><image
@@ -27,7 +27,7 @@
 					edited project branch.</li>
 				<li><b>Push Content To Remote Repository</b> - Push from time to time the commits to the remote
 					repository so that others can use them as well. You must always pull content
-					from the repository before pushing to it.</li>
+					from the repository before pushing to it, otherwise the pull will fail.</li>
 				<li><image href="images/pullBeforePush.png" id="image_odv_2fr_swb" scale="30"/></li>
 			</ul>
 		</p>
@@ -53,10 +53,10 @@
         <p><!--https://mermaid.live/edit#pako:eNptkTFPwzAQhf-KdXODaNIpAwMpbEgIOhEzWPYFR8S-yDkLVVX_O3bahIF6sb_zu-en8wk0GYQauoF-tFWBxWEvvUirN_dtY1F_U2Txho4Y0zbS1DOFo3gMymv7uWi37WscBtGQZ_QsngO5_02rumyfTM-Lei1XbUPO3bjYJffJru4HuumdEovirnjIcTJtRTFDmaG8QpWhusIONuAwONWbNINTfk4CW3QooU5Hg52KA0uQ_pykcTSKMUenADWHiBtQken96PXCF82-V19BOag7NUypOir_QfTHOHu8XGY_f8H5F9HJhLQ--></p>
 		<section id="section_smb_jhr_nwb">
 			<title>Micro Commits</title>
-			<p>Commit often, whenever a small change makes sense by itself. Useful links: <xref
+			<p>Commit often, whenever a small change in the documentation is beneficial and makes sense by
+				itself. Useful links: <xref
 					href="https://stackoverflow.blog/2022/12/19/use-git-tactically/" format="html"
-					scope="external"/><image placement="break"
-					href="../images/micro-commits.png"
+					scope="external"/><image placement="break" href="../images/micro-commits.png"
 					id="image_fww_cwq_nwb"
 				/><!--https://mermaid.live/edit#pako:eNptkE1qw0AMha8itHYu4HVCV93UdBNmI2ZkW9TzgywTl5C7d2wTurE2QuJ7T-I90efA2OIg9qFURpegls8xioGEFhx2hacJ_Mj-B3pZeXZ4Qt1WU_LGARI_YGZvktM5-sWXrIG1ssp97cnzDJIgUjkVfJdAm7NEGo7z2GBkjSSh_v7cJA5t5MgON0HgnpbJNvJV0WXX34JYVmxNF26QFsvdb_Lv-WCuQoNSxLanaa7bQume8__Mu8fnkdke3esPdtJtcA--></p>
 		</section>
