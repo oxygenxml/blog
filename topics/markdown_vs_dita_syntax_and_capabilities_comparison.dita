@@ -14,7 +14,7 @@
             this comparison without any implicit bias towards one or the other, if there are DITA
             XML or Markdown features that I missed, that was done out of ignorance and not out of
             malice. Feedback is always welcomed as usual.</p>
-        <table frame="all" id="table_nym_ysg_twb" rowsep="1" colsep="1">
+        <table frame="all" rowsep="1" colsep="1">
             <title>DITA XML vs Markdown</title>
             <tgroup cols="3">
                 <colspec colname="c1" colnum="1" colwidth="1*"/>
