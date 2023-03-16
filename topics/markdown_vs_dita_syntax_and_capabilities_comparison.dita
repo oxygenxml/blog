@@ -22,14 +22,14 @@
                 <colspec colname="c2" colnum="3" colwidth="4.39*"/>
                 <thead>
                     <row>
-                        <entry valign="top"/>
+                        <entry valign="top"><b/></entry>
                         <entry valign="top">DITA XML</entry>
                         <entry valign="top">Markdown</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry valign="top">Short description</entry>
+                        <entry valign="top"><b>Short description</b></entry>
                         <entry valign="top"><xref
                                 href="https://www.oxygenxml.com/dita/1.3/specs/introduction/dita-release-overview.html"
                                 format="html" scope="external">DITA XML</xref> is a standard for
@@ -49,7 +49,7 @@
                             Github Flavored Markdown.</entry>
                     </row>
                     <row>
-                        <entry valign="top">Useful links for learning</entry>
+                        <entry valign="top"><b>Useful links for learning</b></entry>
                         <entry valign="top"><xref href="learnDita.dita"/></entry>
                         <entry valign="top">
                             <ul id="ul_xql_kxm_twb">
@@ -62,7 +62,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry valign="top">Pros</entry>
+                        <entry valign="top"><b>Pros</b></entry>
                         <entry valign="top">
                             <ul id="ul_s2z_q2n_twb">
                                 <li>OASIS Open standard.</li>
@@ -103,7 +103,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry valign="top">Cons</entry>
+                        <entry valign="top"><b>Cons</b></entry>
                         <entry valign="top"><ul id="ul_pgj_pvj_5wb">
                                 <li>Smaller user base.</li>
                                 <li>Harder to learn.</li>
@@ -134,7 +134,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry valign="top">Cross-Compatibility</entry>
+                        <entry valign="top"><b>Cross-Compatibility</b></entry>
                         <entry valign="top">A DITA Map can refer to a <xref
                                 href="https://www.dita-ot.org/dev/topics/markdown-dita-syntax-reference.html#ariaid-title1"
                                 format="html" scope="external">Github flavored Markdown</xref> file
@@ -143,7 +143,7 @@
                         <entry valign="top">-</entry>
                     </row>
                     <row>
-                        <entry valign="top">Table of contents</entry>
+                        <entry valign="top"><b>Table of contents</b></entry>
                         <entry valign="top">Gathering multiple DITA topics in a larger publication
                             and defining the table of contents is done by using <xref
                                 href="https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/definition-of-ditamaps.html"
@@ -159,7 +159,7 @@
                                     format="html" scope="external">MKDocs</xref>.</p></entry>
                     </row>
 					<row>
-						<entry valign="top">Validation</entry>
+						<entry valign="top"><b>Validation</b></entry>
 						<entry valign="top">
 							<ul id="ul_ymm_cld_vwb">
 								<li>Validation according to the DITA specification DTDs/schemas done
@@ -182,7 +182,7 @@
 						</entry>
 					</row>
                     <row>
-                        <entry valign="top">Publishing</entry>
+                        <entry valign="top"><b>Publishing</b></entry>
                         <entry valign="top">
                             <ul id="ul_spg_2yj_5wb">
                                 <li>The <xref href="https://www.dita-ot.org/" format="html"
@@ -215,7 +215,7 @@
                             </ul></entry>
                     </row>
                     <row>
-                        <entry valign="top">Extensibility</entry>
+                        <entry valign="top"><b>Extensibility</b></entry>
                         <entry valign="top">
                             <ul id="ul_wyw_pfy_5wb">
                                 <li>Possibility to define a new <xref
@@ -243,7 +243,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry valign="top">Metadata</entry>
+                        <entry valign="top"><b>Metadata</b></entry>
                         <entry valign="top">
                             <ul id="ul_yt1_hgy_5wb">
                                 <li>The DITA <xmlelement>prolog</xmlelement> element can contain
@@ -285,7 +285,7 @@ Text body. </codeblock></li>
                         </entry>
                     </row>
                     <row>
-                        <entry valign="top">Content reuse:</entry>
+                        <entry valign="top"><b>Content reuse:</b></entry>
                         <entry valign="top">
                             <ul id="ul_ulq_bhy_5wb">
                                 <li>Key references to <xref
@@ -332,7 +332,7 @@ Text body. </codeblock></li>
                             </ul></entry>
                     </row>
                     <row>
-                        <entry valign="top">Filters</entry>
+                        <entry valign="top"><b>Filters</b></entry>
                         <entry valign="top">You can use <xref
                                 href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-profiling-conditional-text.html"
                                 format="html" scope="external">profiling attributes</xref> in DITA
@@ -348,7 +348,7 @@ Text body. </codeblock></li>
                             Markdown.</entry>
                     </row>
                     <row>
-                        <entry valign="top">Headings</entry>
+                        <entry valign="top"><b>Headings</b></entry>
                         <entry valign="top">
                             <ul id="ul_wzr_xly_5wb">
                                 <li>DITA topics have a <xmlelement>title</xmlelement> element which
@@ -389,7 +389,7 @@ Text body. </codeblock></li>
 ....</codeblock></entry>
                     </row>
                     <row>
-                        <entry valign="top">Block elements</entry>
+                        <entry valign="top"><b>Block elements</b></entry>
                         <entry valign="top">There are multiple topic types like
                                 <xmlelement>concept</xmlelement>, <xmlelement>task</xmlelement>,
                                 <xmlelement>reference</xmlelement> and extra topic types can be
@@ -409,7 +409,7 @@ Text body. </codeblock></li>
                             tables, lists, images, block quotes, etc.</entry>
                     </row>
                     <row>
-                        <entry valign="top">Inline elements</entry>
+                        <entry valign="top"><b>Inline elements</b></entry>
                         <entry valign="top"><xmlelement>b</xmlelement>, <xmlelement>i</xmlelement>,
                                 <xmlelement>u</xmlelement>,<xmlelement>sup</xmlelement>,<xmlelement>sub</xmlelement>
                             and other inline elements with more semantic meaning like
@@ -419,7 +419,7 @@ Text body. </codeblock></li>
                             also other inlines like subscript, superscript, strike-through.</entry>
                     </row>
 					<row>
-						<entry valign="top">Audio/Video</entry>
+						<entry valign="top"><b>Audio/Video</b></entry>
 						<entry valign="top">The DITA <xmlelement>object</xmlelement> element can be
 							used to refer to <xref
 								href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-adding-media.html"
@@ -429,7 +429,7 @@ Text body. </codeblock></li>
 							add a link to the audio/video instead.</entry>
 					</row>
                     <row>
-                        <entry valign="top">Tables</entry>
+                        <entry valign="top"><b>Tables</b></entry>
                         <entry valign="top">The DITA <xmlelement>table</xmlelement> element is based
 							on the CALS table specification. Cells can span multiple rows or columns
 							and contain inside block elements content like lists, paragraphs. <xref
@@ -446,7 +446,7 @@ Text body. </codeblock></li>
 							supports HTML elements inside it.</entry>
                     </row>
                     <row>
-                        <entry valign="top">Lists</entry>
+                        <entry valign="top"><b>Lists</b></entry>
                         <entry valign="top">Ordered <xmlelement>ol</xmlelement>, unordered
 								<xmlelement>ul</xmlelement> or definition lists
 								<xmlelement>dl</xmlelement>. Other topic types like
@@ -469,7 +469,7 @@ Text body. </codeblock></li>
 								elements inside it.</p></entry>
                     </row>
 					<row>
-						<entry valign="top">Links</entry>
+						<entry valign="top"><b>Links</b></entry>
 						<entry valign="top">
 							<ul id="ul_zb4_34d_vwb">
 								<li>Internal links (cross references):<ul id="ul_h3n_k4d_vwb">
@@ -490,7 +490,7 @@ Text body. </codeblock></li>
 							resources</xref>.</entry>
 					</row>
                     <row>
-                        <entry valign="top">Conclusion</entry>
+                        <entry valign="top"><b>Conclusion</b></entry>
                         <entry valign="top">
 							<ul id="ul_xkt_vnd_vwb">
 								<li>Harder to type in a plain text area, requires DITA editing tools
