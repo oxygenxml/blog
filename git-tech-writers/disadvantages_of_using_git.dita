@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="disadvantages_of_using_git">
+    <title>Disadvantages of using Git</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-03-01"/>
+		</critdates>
+	</prolog>
+    <body>
+    	<ul id="ul_hk5_b1s_lwb">
+    		<li>No built-in support for a ticketing system. <note id="note_b4n_421_rwb" type="tip">This
+					support is added on the side either by using a commercial ticketing system like
+					JIRA or by using Git based servers like GitHub or GitLab which have their own
+					basic ways of adding and closing issues.</note></li>
+    		<li>No built-in support for publishing. <note id="note_ch3_p21_rwb" type="tip"
+    			>Publishing pipelines need to be separately built.</note></li>
+    		<li>No way to lock resources when editing in order to avoid conflicts.<note
+    			id="note_egd_q21_rwb" type="tip">But there are ways to easily resolve most
+    			conflicts.</note></li>
+    		<li>Mistakes can be made when using Git. <note id="note_fhr_r21_rwb" type="tip"
+    			>Usually mistakes made which break the Git history or project structure can
+    			be reverted, or you can check out the entire project again.</note></li>
+    		<li>Some training is required to use and understand the branching and history models
+    			in Git. <note id="note_gng_s21_rwb" type="tip">Such training tutorials and
+    				courses are readily available.</note></li>
+    		<li>No granular support for user roles. Users usually either have full read-write
+    			access to a repository or only read access.<note id="note_m5p_jf1_rwb"
+    				type="tip">When using GitHub or GitLab, users with read only access to a
+    				repository can still create pull requests with the changes they want to
+    				incorporate in the main repository.</note></li>
+    	</ul>
+	</body>
+	<related-links>
+		<link href="https://www.atlassian.com/git/tutorials/why-git" format="html" scope="external"
+		/>
+	</related-links>
+</topic>
