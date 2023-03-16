@@ -15,7 +15,7 @@
 			<image placement="break"
 				href="../images/editing-session-stages.png"
 				id="image_cgt_m3k_swb"/>
-			<!--https://mermaid.live/edit#pako:eNptkbFuwyAQQH8F3RxXjZ3JQ4c67VapajPVdEBwLlYNZ-FDVRTl3wtO7A4NC7zj6e44TqDJINTQDfSjrQosDnvpRVq9uW8bi_qbIos3dMSYtpGmnikcxWNQXtvPxd22T6Zn0ZBn9LyGy7Yh525cVO1rHIYlLJ4Duf9FVnuX7Mmu9oFuuqljUdwVD7mdTFtRzFBmKK9QZaiusIMNOAxO9SbN4JTLSWCLDiXU6WiwU3FgCdKfkxpHoxjzQylAzSHiBlRkej96vfDF2ffqKygHdaeGKUVH5T-I_hjnHC-X2c9fcP4ForCEtA-->
+			<!--https://mermaid.live/edit#pako:eNptkbFOwzAQhl_FurlBNOmUgYEUNiQEnYgZLPuCI2Jf5JyFqqrvjp02YaBe7O_06_P5fAJNBqGGbqAfbVVgcdhLL9LqzX3bWNTfFFm8oSPGtI009UzhKB6D8tp-Ltlt-2R6Fg15Rs9ruWxf4zAsZfEcyP13remqbci5G5pd0kx21RzopiR1LIq74iG3k2krihnKDOUVqgzVFXawAYfBqd6kGZzydRLYokMJdToa7FQcWIL05xSNo1GM-aEUoOYQcQMqMr0fvV74ktn36isoB3WnhilVR-U_iP4YZ8fLZfbzF5x_AbYGhLQ-->
 			<ul id="ul_mdp_whk_swb">
 				<li><b>Clone/Checkout Branch From Remote Repository</b> - Checkout a branch from the remote
 					repository on which you want to work. Usually done only once.<p><image
