@@ -91,6 +91,7 @@
                                 <li>Large user base. Familiar to software engineers who use it to
                                     write issues.</li>
                                 <li>Basic syntax easy to learn.</li>
+                                <li>Easier to read without specialized tools.</li>
                                 <li>Offline and online free editing tools.</li>
                                 <li>For the base syntax quite easy to edit the content in a plain
                                     text editor tool.</li>
@@ -130,6 +131,8 @@
                                     between files.</li>
                                 <li>Not many possibilities to assemble multiple Markdown files and
                                     publish for example outputs like PDF or Word.</li>
+                                <li>Cannot render complex cell content (multiple paragraphs for
+                                    example) in table cells or in list items.</li>
                             </ul>
                         </entry>
                     </row>
