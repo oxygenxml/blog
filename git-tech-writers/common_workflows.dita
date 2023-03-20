@@ -18,12 +18,9 @@
 					<xref href="https://www.atlassian.com/git/tutorials/comparing-workflows"
 					format="html" scope="external"/></p>
 			<image placement="break"
-				href="https://mermaid.ink/img/pako:eNqVkLsOwjAMRX8l8gQSC2tnHhNiYENZTO2CpTyqxEGgin8nBSEYuuDt2sfX8h2gjcTQwFl0m7C_2GBqtdF7USPUGAt7R5zMlVOWGLKFCeTg0TnTyY2n5xtGLYmzWZoZScaTY5pPknu91GP5Dz8Ov3awAM_Jo1B9ahg7FqqlZwvjInGHxenIPipaekLlNYnGBI2mwgvAovFwD-1Hv5mV4Dmhh6ZDl2u3x3CM8av55bF7h_nK9PEEiYhzXA?type=png"
-				id="image_wb2_jdr_nwb"/>
-			<image placement="break"
-				href="https://mermaid.ink/img/pako:eNqVkj9rwzAQxb-KuDkZom6e22YqHQIZipardI5F9cdIp9IQ8t0rxzgJ1A5U2-n37ukeuhPoaAgaOFjeJuw7FUQ9OnpvWVjTCAXvzlAS35SyjSErmJHsRyjkZsKfCYPupq51BWNXR_orFv4L7u12Hp0Trf0Rm9nnblxe-WTs0YaZlldCLonyguMVy8f55FI-uZRPPpqf8r_nf1IAK_CUqtDUjzsNYgXckScFg9RQi8Xx4Hyu0tIbZHoxlmOChlOhFWDhuDsGPdWj5tniIaGHpkWX622P4SPGW00Xj7dxYS57c_4FXwu7aA?type=png"
+				href="../images/centralized-wf.png"
 				id="image_mks_j5q_nwb"/>
-			<!--https://mermaid.live/edit#pako:eNqVkj9rwzAQxb-KuDkZom6e22YqHQIZipardI5F9cdIp9IQ8t0rxzgJ1A5U2-n37ukeuhPoaAgaOFjeJuw7FUQ9OnpvWVjTCAXvzlAS35SyjSErmJHsRyjkZsKfCYPupq51BWNXR_orFv4L7u12Hp0Trf0Rm9nnblxe-WTs0YaZlldCLonyguMVy8f55FI-uZRPPpqf8r_nf1IAK_CUqtDUjzsNYgXckScFg9RQi8Xx4Hyu0tIbZHoxlmOChlOhFWDhuDsGPdWj5tniIaGHpkWX622P4SPGW00Xj7dxYS57c_4FXwu7aA-->
+			<!--https://mermaid.live/edit#pako:eNqVkk9PAyEQxb8KmXM9FG97rnoyHpr0YLiMMNsl8mcDg6lp-t1lu8GauK2R2_B778ELHEFHQ9DB3vJTwnFQQdSlo_eWhTWdUPDiDCXxQSnbGLKCBcluhkKuG35LGPTQXHcVzK6B9Hss_Bv8jNt6dE709iDWi8dduPzmLdijDQuWR0Iuif4KXKTNK293l9e6y2vd5a2rUP5ntyzuFcAKPKUqNPVRj5NYAQ_kScEkNdRjcTwln6q0jAaZHozlmKDjVGgFWDhuP4Nu86zZWNwn9ND16HLdHTG8xniZ6ZzxPH-m8586fQGAUMP4-->
 			<p>Common workflow:<ul id="ul_t13_zbm_mwb">
 					<li>Check in the project (one time operation).</li>
 					<li>Pull to get changes from the main repository.</li>
@@ -45,7 +42,7 @@
 				a version branch and add them to the main branch.</p>
 			<p><xref href="https://www.atlassian.com/git/tutorials/cherry-pick" format="html"
 					scope="external"/><image placement="break"
-					href="https://mermaid.ink/img/pako:eNqlUTtvwjAQ_ivWzTCUbpn7mKoOSAzIy9W-kBOxHV3OCIT473WIoGkVtUO9ne976b4zuOQJKtixvgp2jY1mfC6FwGrYV8bChqTnFM3qwcId8SEYXWMO425ZdrPcdcC2NTUfzZTsGnL7lNUE5DhDtPDCR-rnGL8aTv1Wf_s1JHJaduz2P8nfwk7k37VwBsQ_wz1agAUEkhLIlwLOA95CUQ9kYTicpxpzq4PLpUBz51Hp2bMmgUol0wIwa1qforvNI-aJcScYoKqx7ctvh3Gb0tdMV423sfhr_5dPWrWjRA?type=png"
+					href="../images/cherry-pick.png"
 					id="image_nvn_zhr_nwb"/></p>
 			<!--https://mermaid.live/edit#pako:eNqlUTtvwjAQ_ivWzTCUbpn7mKoOSAzIy9W-kBOxHV3OCIT473WIoGkVtUO9ne976b4zuOQJKtixvgp2jY1mfC6FwGrYV8bChqTnFM3qwcId8SEYXWMO425ZdrPcdcC2NTUfzZTsGnL7lNUE5DhDtPDCR-rnGL8aTv1Wf_s1JHJaduz2P8nfwk7k37VwBsQ_wz1agAUEkhLIlwLOA95CUQ9kYTicpxpzq4PLpUBz51Hp2bMmgUol0wIwa1qforvNI-aJcScYoKqx7ctvh3Gb0tdMV423sfhr_5dPWrWjRA-->
 		</section>
@@ -55,9 +52,9 @@
 				format="html" scope="external"/></section>
 		<section id="section_gxl_svq_nwb">
 			<image placement="break"
-				href="https://mermaid.ink/img/pako:eNqdkjFrwzAQhf-KuDku2N08t3QqHQItFC9X6WyLWJKRTiEl5L9XjqM2uA6Uaju9773TSTqCdIqghk7zk8exb6xISzpjNAutatHAy6DIiz35oJ0NDawgr7MoqvKuzMCHRyv77CuqsiiLVh8oXPw9yZ2LfBu4brA1OAwiqd_ts92gtjcNskfbUVgcqSXk6KmYy0Xeqnid_Ob8TqRZL6AoV29kSVV_ou7_Nd5PuCHf0a8RYANJSEkqPfRxIhvgngw1MGUpajEOPGWcEhpHhUyPSrPzULOPtAGM7LafVuZ6Zh40dh5N3hzRvjuXyhaHkGo6RzzP_-v8zU5feunOPQ?type=png"
+				href="../images/feature-branches.png"
 				id="image_psk_tvq_nwb"/>
-			<!--https://mermaid.live/edit#pako:eNqdks1qwzAQhF9F7DkuyL353NJT6SGQQtFlK60tEUsy-iktIe9eOY6b4DpQqttqvpnVSjqA9Iqggc6kp4CDFo6VJb21JjGjGibgpVcU2AeFaLyLAlaQ3SSymt_xGXgP6KSefVXNK1615pPi2a9J7n1Ot4HrBluLfc-K-tN-tls07qZBanQdxcWRWsKUA1VTuchbFa-TX33YszLrGWR89UaWVP0n6v5f413CLYWOfo0AGyhCSVLloQ8jKSBpsiRgzFLUYu7TmHEsaB4UJnpUJvkATQqZNoA5-e2Xk3M9MQ8Gu4AWmhb7WHYHdG_eX2o6ZTxPH-z0z47fRz3OiA-->
+			<!--https://mermaid.live/edit#pako:eNqVkrtuxCAQRX8FTb2OZJdu86qiFCuliNxMYGzQGrBgyEOr_ffg9ToPxy5CN9xz7zDAEaRXBDV0hu8DDrpxIi_prTUsjKpFA4-9oiBeKUTjXWxgBXmaRFGVV-UMvAR0Us-\-oiqLsmjNO8WLX5M8-MTbwM8Ge4t9L7L61X62WzRu0yA1uo7i4kgtIadAxVQu8lbFX8mMgcWbDweRJ77gq7dy7R0bl2gJi1X6zjgTNanN6P9MLKrZZil09Gcq2EEWcpLKb38cyQZYk83dxixFLaaex4xTRtOgkOlWGfYBag6JdoCJ_f7DybmemBuDXUALdYt9zLsDumfvv2s6ZzxMf-789U6fCorW7w-->
 			<ul id="ul_jzw_tcm_mwb">
 				<li>Create a branch on which you work on a larger feature either by yourself or with
 					some other colleagues. </li>
@@ -78,7 +75,7 @@
 					href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
 					format="html" scope="external"/></p>
 			<image placement="break"
-				href="https://mermaid.ink/img/pako:eNqdkk9PwzAMxb9K5PMu68Sl5wHiwGkSB9SLSbzWoomrzEFM07477rryV0yC3GL_3vOT7AN4CQQ1tKy3GYeuSc6elxhZHYfaNXCXWBl7t1FUamAinjIm37lAL9TLcFZ15J-l6LfqZ68bfnXL2eNrh1BLpt-6pqveO_OciJymUqTc0jz3rHmgvGNJrlr-EF4OuLoYcPXfGNUfY1yNPCzATG1CsCUdRrIB7SjaIkYu0BZLryN5NLQMwXZ0HVglQ6250AKwqGz2yc__iVkzthkj1Fvsd1YdMD2KfPzp5HE_HcfpRo5vP-u02Q?type=png"
+				href="../images/git-flow.png"
 				id="image_lhj_kfr_nwb"/>
 			<p><!--https://mermaid.live/edit#pako:eNqdkk9PwzAMxb9K5PMu68Sl5wHiwGkSB9SLSbzWoomrzEFM07477rryV0yC3GL_3vOT7AN4CQQ1tKy3GYeuSc6elxhZHYfaNXCXWBl7t1FUamAinjIm37lAL9TLcFZ15J-l6LfqZ68bfnXL2eNrh1BLpt-6pqveO_OciJymUqTc0jz3rHmgvGNJrlr-EF4OuLoYcPXfGNUfY1yNPCzATG1CsCUdRrIB7SjaIkYu0BZLryN5NLQMwXZ0HVglQ6250AKwqGz2yc__iVkzthkj1Fvsd1YdMD2KfPzp5HE_HcfpRo5vP-u02Q--></p>
 		</section>
