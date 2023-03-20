@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="section_qhl_zdr_nwb">
+<title>GitFlow</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-03-20"/>
+		</critdates>
+	</prolog>
+<body>
+		<p>Gitflow is a legacy Git workflow that was originally a disruptive and novel strategy for
+			managing Git branches. </p>
+			
+			<p>The main branch holds the official content which will be released, we mostly commit small
+			fixes on a development branch and use feature branches based on it. </p>
+			<image placement="break" href="../images/git-flow.png" id="image_lhj_kfr_nwb"/>
+			<p><!--https://mermaid.live/edit#pako:eNp1krtuwzAMRX9F0BwbSEbPfaBDpgAdCi-sRNtEbMmgqKZFkH-v_EqD1NFG4tx7KVFnbbxFXeia5JWhb0qn0jG-60gU2UKV-s2RELTqICBY6on4ZHCmURa_sPX9rGrQHH2Uu-6t1wt9q-2dR4UgkTFzeMoiZaYBV2NYE0-gOnk-qiDAsjg9xsipnn3NGMIVXh2zQ67xwSyz8X5A7MKsZ6f77f4FdUDuNmUOnjXvyIG8U7vtqmWe56v9q2zMK53e6OSeomxa53kQlFoa7NKgA26xgtiOL3ZJaOxt2uazJfGsC-GIGw1R_OHHmaWemCeCmqHTRQVtSN0e3If3fzWOHvvpG42_6fILmR7GUA--></p>
+		</body>
+	<related-links>
+		<link href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+			format="html" scope="external"/>
+	</related-links>
+</topic>

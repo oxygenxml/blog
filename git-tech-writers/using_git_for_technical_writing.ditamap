@@ -9,7 +9,11 @@
 		<topicref href="git_client_applications.dita"/>
 		<topicref href="editing_session_workflow.dita"/>
 		<topicref href="git_validation.dita"/>
-		<topicref href="common_workflows.dita"/>
+		<topicref href="common_workflows.dita">
+			<topicref href="centralized_workflow.dita"/>
+			<topicref href="feature_branches.dita"/>
+			<topicref href="gitflow.dita"/>
+		</topicref>
 		<topicref href="propose_changes.dita"/>
 		<topicref href="handling_translations.dita"/>
 		<topicref href="sharing_common_settings.dita"/>

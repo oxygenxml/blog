@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="section_hmq_2zl_mwb">
+<title>Centralized Workflow</title>
+	<prolog>
+		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-03-20"/>
+		</critdates>
+	</prolog>
+<body>
+			
+			<p>We all work with the same project(s) on the main repository branch. We have separate branches
+			which mark past releases. Both for small bug fixes and for features which may take a
+			longer time to implement, we work on the main branch. <xref
+				href="https://www.atlassian.com/git/tutorials/comparing-workflows" format="html"
+				scope="external"/></p>
+			<image placement="break" href="../images/centralized-wf.png" id="image_mks_j5q_nwb"/>
+			<!--https://mermaid.live/edit#pako:eNqVkk9PAyEQxb8KmXM9FG97rnoyHpr0YLiMMNsl8mcDg6lp-t1lu8GauK2R2_B778ELHEFHQ9DB3vJTwnFQQdSlo_eWhTWdUPDiDCXxQSnbGLKCBcluhkKuG35LGPTQXHcVzK6B9Hss_Bv8jNt6dE709iDWi8dduPzmLdijDQuWR0Iuif4KXKTNK293l9e6y2vd5a2rUP5ntyzuFcAKPKUqNPVRj5NYAQ_kScEkNdRjcTwln6q0jAaZHozlmKDjVGgFWDhuP4Nu86zZWNwn9ND16HLdHTG8xniZ6ZzxPH-m8586fQGAUMP4-->
+			<p>Common workflow:<ul id="ul_t13_zbm_mwb">
+					<li>Check in the project (one time operation).</li>
+					<li>Pull to get changes from the main repository.</li>
+					<li>Commit and push changes.</li>
+					<li>Deal with possible conflicts which may appear.</li>
+					<li>Request review either before commit or after the change was incorporated in
+						the main branch.</li>
+				</ul></p>
+			<p>Workflow for updating documentation for a past release:<ul id="ul_erq_fcm_mwb">
+					<li>Switch to branch specific for that release.</li>
+					<li>Pull to get changes from the main repository.</li>
+					<li>Commit and push changes.</li>
+					<li>Deal with possible conflicts which may appear.</li>
+				</ul></p>
+		<section id="section_iqy_pn3_wwb">
+			<title>Cherry Pick</title>
+			<p>Pick a commit from another branch and incorporate it. Useful to take small fixes for
+				a version branch and add them to the main branch.</p>
+			<p><xref href="https://www.atlassian.com/git/tutorials/cherry-pick" format="html"
+					scope="external"/><image placement="break" href="../images/cherry-pick.png"
+					id="image_nvn_zhr_nwb"/></p>
+			<!--https://mermaid.live/edit#pako:eNqlUTtvwjAQ_ivWzTCUbpn7mKoOSAzIy9W-kBOxHV3OCIT473WIoGkVtUO9ne976b4zuOQJKtixvgp2jY1mfC6FwGrYV8bChqTnFM3qwcId8SEYXWMO425ZdrPcdcC2NTUfzZTsGnL7lNUE5DhDtPDCR-rnGL8aTv1Wf_s1JHJaduz2P8nfwk7k37VwBsQ_wz1agAUEkhLIlwLOA95CUQ9kYTicpxpzq4PLpUBz51Hp2bMmgUol0wIwa1qforvNI-aJcScYoKqx7ctvh3Gb0tdMV423sfhr_5dPWrWjRA-->
+		</section>
+		</body>
+</topic>
