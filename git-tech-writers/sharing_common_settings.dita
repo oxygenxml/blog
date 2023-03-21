@@ -28,7 +28,10 @@
 				<li>Manually share a common set of settings.</li>
 				<li>Share the common settings directly in the Git project. Example: <xref
 						href="https://github.com/oxygenxml/DITA-Startup-Project" format="html"
-						scope="external"/>.</li>
+						scope="external">DITA Startup Project</xref>. When an Oxygen project
+					containing settings is distributed in a Git project  writers automatically get
+					the latest updates to the Oxygen environment without any work on their
+					part.</li>
 			</ul></p>
     </body>
 </topic>
