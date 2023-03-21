@@ -22,9 +22,12 @@
     		<li>Mistakes can be made when using Git. <note id="note_fhr_r21_rwb" type="tip"
     			>Usually mistakes made which break the Git history or project structure can
     			be reverted, or you can check out the entire project again.</note></li>
-    		<li>Some training is required to use and understand the branching and history models
-    			in Git. <note id="note_gng_s21_rwb" type="tip">Such training tutorials and
-    				courses are readily available.</note></li>
+    		<li>Some training is required to use and understand the branching and history models in Git.
+				Ideally you should have a <b>Git person</b> who understands how to resolve
+				conflicts, revert and cherry-pick commits, and in general recover from any Git
+				issues or at least who is willing to invest some time in understanding the Git
+					model.<note id="note_gng_s21_rwb" type="tip">Such training tutorials and courses
+					are readily available.</note></li>
     		<li>No granular support for user roles. Users usually either have full read-write
     			access to a repository or only read access.<note id="note_m5p_jf1_rwb"
     				type="tip">When using GitHub or GitLab, users with read only access to a
