@@ -28,6 +28,9 @@
 				issues or at least who is willing to invest some time in understanding the Git
 					model.<note id="note_gng_s21_rwb" type="tip">Such training tutorials and courses
 					are readily available.</note></li>
+			<li>Native Git is inefficient when asked to store large binary files (videos) or large
+				numbers of binary files (images, PDFs) because every revision of every file is
+				stored locally.</li>
     		<li>No granular support for user roles. Users usually either have full read-write
     			access to a repository or only read access.<note id="note_m5p_jf1_rwb"
     				type="tip">When using GitHub or GitLab, users with read only access to a

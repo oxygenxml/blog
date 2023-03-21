@@ -33,9 +33,10 @@
 		</p>
 		<section id="section_lh1_5dr_swb">
 			<title>Handling Simple Conflicts</title>
-			<p>Conflicts are usually caused by trying to push changes made to resources which have
-				been in the meantime modified by others on the remote repository. <ul
-					id="ul_fnk_dgr_swb">
+			<p>Conflicts are usually caused by trying to push changes made to resources which have been in
+				the meantime modified by others on the remote repository. Conflicts normally occur
+				when working with Git, they can be resolved and they are not a sign that anyone did
+				anything wrong.<ul id="ul_fnk_dgr_swb">
 					<li>If changes are made to text files on different lines, the conflicts are
 						automatically merged. </li>
 					<li>
