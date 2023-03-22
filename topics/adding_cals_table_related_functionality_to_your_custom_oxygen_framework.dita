@@ -13,6 +13,11 @@
             borders. But what if you are editing documents from other vocabularies, containing
             tables with <b>CALS</b> structure? What you can do to obtain the same table editing
             features?</p>
+        <p>One option is to use a plugin that adds CALS table editing support along with specific
+            table related actions: <xref
+                href="https://github.com/oxygenxml/web-author-sample-plugins/tree/master/web-author-CALS-table-plugin"
+                format="html" scope="external"/>.</p>
+        <p>Another option is to customize your framework configuration:</p>
         <p>Let's suppose that you already created an Oxygen framework for your documents vocabulary
             (if you need further information about frameworks, see <xref
                 href="oxygenFrameworks.dita"/>). What we want to obtain next is to extract all the
