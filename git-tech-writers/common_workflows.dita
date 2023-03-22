@@ -4,21 +4,15 @@
 	<title>Common Workflows</title>
 	<prolog>
 		<author>Radu Coravu</author>
-		<critdates>
-			<created date="2023-02-13"/>
-		</critdates>
 	</prolog>
 	<body>
 		<p>Workflows are <xref href="https://www.atlassian.com/git/tutorials/comparing-workflows"
-				format="html" scope="external">recipes</xref> for working and collaborating
+			format="html" scope="external">recipes</xref> for working and collaborating
 			successfully on a Git project.</p>
 		<p>Common workflows for working with Git.<ul id="ul_trs_fn3_wwb">
-				<li><xref href="centralized_workflow.dita"/></li>
-				<li><xref href="feature_branches.dita"/></li>
-				<li><xref href="gitflow.dita"/></li>
-			</ul></p>
-		
-		
-		
+			<li><xref href="centralized_workflow.dita"/></li>
+			<li><xref href="feature_branches.dita"/></li>
+			<li><xref href="gitflow.dita"/></li>
+		</ul></p>
 	</body>
 </topic>

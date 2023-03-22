@@ -4,9 +4,6 @@
     <title>Handling Translations</title>
     <prolog>
         <author>Radu Coravu</author>
-        <critdates>
-            <created date="2023-03-09"/>
-        </critdates>
     </prolog>
     <body>
         <p>A set of useful advice for translating a DITA XML based project can be found here: <xref

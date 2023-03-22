@@ -4,9 +4,6 @@
     <title>Validation</title>
 	<prolog>
 		<author>Radu Coravu</author>
-		<critdates>
-			<created date="2023-03-13"/>
-		</critdates>
 	</prolog>
     <body>
         <p>DITA XML content needs to be validated against the DITA schemas and possibly with

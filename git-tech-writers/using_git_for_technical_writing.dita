@@ -6,9 +6,6 @@
 		technical documentation projects no matter of their scale and number of resources. </shortdesc>
 	<prolog>
 		<author>Radu Coravu</author>
-		<critdates>
-			<created date="2023-02-13"/>
-		</critdates>
 	</prolog>
     <body>
 		<p>In this blog post we'll look into why technical writers should use Git and how various

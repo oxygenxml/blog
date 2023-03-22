@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="useful_features">
-    <title>Propose Changes</title>
+	<title>Propose Changes</title>
 	<prolog>
 		<author>Radu Coravu</author>
-		<critdates>
-			<created date="2023-02-17"/>
-		</critdates>
 	</prolog>
-    <body>
+	<body>
 		<p>Besides the team of technical writers who have full write access to the documentation
 			repositories, there may be other collaborators (like subject matter experts) who have
 			read access to the repository and sometimes want to propose changes.</p>
@@ -20,12 +17,12 @@
 					writer.</li>
 			</ul></p>
 		<p><image
-				href="https://mermaid.ink/img/pako:eNqNkUFuAjEMRa8SeU0vMOtWXVVUYldlYxLPJCKJRx6HCiHuToZpKaJUanZ23v_fiY_g2BN0MER9FRyDLaYdxzlHNdF3xsI6eRKzJ5kil8nCA2STMSXjApaBrsRWsLhghPaRPp96Ir9Ft_tSB3I7rvrH7W_vhXuc_i488kT-foBrSMZYllYmGegfoWsN7c03frCCpm1Gvn3WcVZYaEwmCzPvqceadCZPDa2jR6UXH5UFOpVKK8CqvDkU910vzHPEQTBD12OaWnfE8sH8U9PF421Z0mVXpzMviJPY?type=png"
+				href="../images/pull-request.png"
 				id="image_yyh_ybf_twb"/></p>
 		<!--https://mermaid.live/edit#pako:eNqNkUFuAjEMRa8SeU0vMOtWXVVUYldlYxLPJCKJRx6HCiHuToZpKaJUanZ23v_fiY_g2BN0MER9FRyDLaYdxzlHNdF3xsI6eRKzJ5kil8nCA2STMSXjApaBrsRWsLhghPaRPp96Ir9Ft_tSB3I7rvrH7W_vhXuc_i488kT-foBrSMZYllYmGegfoWsN7c03frCCpm1Gvn3WcVZYaEwmCzPvqceadCZPDa2jR6UXH5UFOpVKK8CqvDkU910vzHPEQTBD12OaWnfE8sH8U9PF421Z0mVXpzMviJPY-->
 		<p>Git Servers like <b>GitHub</b> or <b>GitLab</b> may add some extra functionality to help
 			technical writers review and accept changes. </p>
-    </body>
+	</body>
 	<related-links>
 		<link
 			href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"

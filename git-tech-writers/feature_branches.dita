@@ -2,27 +2,23 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="section_fgh_kcm_mwb">
-<title>Feature Branches</title>
+	<title>Feature Branches</title>
 	<prolog>
 		<author>Radu Coravu</author>
-		<critdates>
-			<created date="2023-03-20"/>
-		</critdates>
 	</prolog>
-<body>
-			
-			<p>We work on the smaller fixes on the main branch, we create separate branches for larger
+	<body>
+		<p>We work on the smaller fixes on the main branch, we create separate branches for larger
 			features/fixes. </p>
-			<image placement="break" href="../images/feature-branches.png" id="image_psk_tvq_nwb"/>
-			<!--https://mermaid.live/edit#pako:eNqVkrtuwzAMRX9F0BwVcEavfU1FhwAdCi-MRduELcmQqKRFkH-vHMd9GHaLaqN47r0SwZMsnUaZy5r40UPfFFakUzpjiAXpXBTyudPoxQF9IGdDIReQl7EpttlNNgF7D7ZsJp3aZipTFb1huOobLFsXeR34HrAz0HUidT_jJ7kBsquCsgFbY5g9qULg6FHtnWsN-DaoQBrVgfA4M_-b_JHJ4FkcnW9FmsVVuzivW2eZbMQ5LBbpB7IUGtSr1v-ZhdhOMoO-xt-_KDcyUclWpxU5DbJCcoMmRQ_GGiuIHQ-G54TGXgPjvSZ2XubsI24kRHa7d1tO9cjcEdQejMwr6EK67cG-OvdV48XjaVzNy4aePwBMqeYu-->
-			<ul id="ul_jzw_tcm_mwb">
-				<li>Create a branch on which you work on a larger feature either by yourself or with
-					some other colleagues. </li>
-				<li>You can also request review on the branch. </li>
-				<li>When finished, merge the branch in the main repository branch or create a pull
-					request to merge the branch.</li>
-			</ul>
-		</body>
+		<image placement="break" href="../images/feature-branches.png" id="image_psk_tvq_nwb"/>
+		<!--https://mermaid.live/edit#pako:eNqVkrtuwzAMRX9F0BwVcEavfU1FhwAdCi-MRduELcmQqKRFkH-vHMd9GHaLaqN47r0SwZMsnUaZy5r40UPfFFakUzpjiAXpXBTyudPoxQF9IGdDIReQl7EpttlNNgF7D7ZsJp3aZipTFb1huOobLFsXeR34HrAz0HUidT_jJ7kBsquCsgFbY5g9qULg6FHtnWsN-DaoQBrVgfA4M_-b_JHJ4FkcnW9FmsVVuzivW2eZbMQ5LBbpB7IUGtSr1v-ZhdhOMoO-xt-_KDcyUclWpxU5DbJCcoMmRQ_GGiuIHQ-G54TGXgPjvSZ2XubsI24kRHa7d1tO9cjcEdQejMwr6EK67cG-OvdV48XjaVzNy4aePwBMqeYu-->
+		<ul id="ul_jzw_tcm_mwb">
+			<li>Create a branch on which you work on a larger feature either by yourself or with
+				some other colleagues. </li>
+			<li>You can also request review on the branch. </li>
+			<li>When finished, merge the branch in the main repository branch or create a pull
+				request to merge the branch.</li>
+		</ul>
+	</body>
 	<related-links>
 		<link
 			href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow"

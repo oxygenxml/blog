@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="sharing_common_settings">
-    <title>Sharing Common Settings</title>
+	<title>Sharing Common Settings</title>
 	<prolog>
 		<author>Radu Coravu</author>
-		<critdates>
-			<created date="2023-02-13"/>
-		</critdates>
 	</prolog>
-    <body>
+	<body>
 		<p>It makes sense to share various common editing settings when working on a common Git
 				project:<ul id="ul_ug1_ll1_rwb">
 				<li>Spell check dictionaries and learned words.</li>
 				<li><xref href="../topics/checking_terminology_with_oxygen_xml_editor.dita">Checking
 						Terminology</xref>.</li>
-				<li><xref href="../topics/custom-author-action-content-completion.dita">Actions and behaviors
-						for editing content.</xref></li>
-				<li><xref href="../topics/SchematronBCs.dita">Custom validation and quick fixes.</xref></li>
+				<li><xref href="../topics/custom-author-action-content-completion.dita">Actions and
+						behaviors for editing content.</xref></li>
+				<li><xref href="../topics/SchematronBCs.dita">Custom validation and quick
+						fixes.</xref></li>
 				<li>Publishing templates.</li>
 			</ul></p>
-        <p>There are various ways to share these custom editing settings between the people who
+		<p>There are various ways to share these custom editing settings between the people who
 			collaborate on the same Git projects:<ul id="ul_ph4_cl1_rwb">
 				<li>Use a web editing tool to edit the Git content directly in a web browser with
 					all settings being common in the tool. Example: <xref
@@ -29,9 +27,9 @@
 				<li>Share the common settings directly in the Git project. Example: <xref
 						href="https://github.com/oxygenxml/DITA-Startup-Project" format="html"
 						scope="external">DITA Startup Project</xref>. When an Oxygen project
-					containing settings is distributed in a Git project  writers automatically get
+					containing settings is distributed in a Git project writers automatically get
 					the latest updates to the Oxygen environment without any work on their
 					part.</li>
 			</ul></p>
-    </body>
+	</body>
 </topic>

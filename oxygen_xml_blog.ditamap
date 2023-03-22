@@ -87,6 +87,8 @@
         </topichead>
         <topichead navtitle="Other">
             <topicref href="topics/dita_for_small_teams.dita"/>
+            <topicref href="git-tech-writers/using_git_for_technical_writing.ditamap"
+                format="ditamap"/>
             <topicref href="topics/supporting_the_dita_ot_project.dita"/>
             <topicref href="topics/dita_map_metrics_evolution.dita"/>
             <topicref href="topics/oxygen-dita-strong-points.dita"/>
