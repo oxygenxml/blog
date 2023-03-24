@@ -2,13 +2,14 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="using_git_for_technical_writing">
     <title>Using Git For Technical Writing</title>
-	<shortdesc>The <b>Git</b> version control system is a feasible solution to work and collaborate on
-		technical documentation projects no matter of their scale and number of resources. </shortdesc>
+	<shortdesc>The <b>Git</b> version control system is a feasible solution for working and
+		collaborating on technical documentation projects regardless of their scale and number of
+		resources. </shortdesc>
 	<prolog>
 		<author>Radu Coravu</author>
 	</prolog>
     <body>
-		<p>In this blog post we'll look into why technical writers should use Git and how various
+		<p>In this blog post, we'll look into why technical writers should use Git and how various
 			technical writing workflows can be accomplished using the Git distributed version
 			control system.</p>
 		<p>Definition of <b>Git</b> taken from Wikipedia:</p>
@@ -17,10 +18,10 @@
 			developing source code during software development. Its goals include speed, data
 			integrity, and support for distributed, non-linear workflows (thousands of parallel
 			branches running on different systems). (wiki)."</p>
-		<p>So as Git was originally intended for developers, how come technical writers started using it,
+		<p>So, since Git was originally intended for developers, why did technical writers start using it
 			and why is it a good idea for technical writers to use it?</p>
-		<p>The following small articles listed below attempt to cover various aspects of a technical
-			documentation solution using Git:<ul id="ul_ydr_bf1_rwb">
+		<p>The following small articles cover various aspects of a technical documentation solution using
+				Git:<ul id="ul_ydr_bf1_rwb">
 				<li><xref href="advantages_of_using_git.dita"/></li>
 				<li><xref href="disadvantages_of_using_git.dita"/></li>
 				<li><xref href="resources_for_learning_git.dita"/></li>
