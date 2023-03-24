@@ -6,11 +6,11 @@
         <author>Radu Coravu</author>
     </prolog>
     <body>
-        <p>A set of useful advice for translating a DITA XML based project can be found here: <xref
+        <p>Some useful advice for translating a DITA XML-based project can be found here: <xref
                 href="../topics/translating_your_dita_project.dita"/>.</p>
-        <p>The translated DITA content can be stored also on Git:<ul id="ul_wdz_tgf_twb">
+        <p>The translated DITA content can also be stored on Git:<ul id="ul_wdz_tgf_twb">
                 <li>Keep the translation for each language in a separate folder in the same Git
-                    project. As a benefit binary resources can be shared between projects.<p><image
+                    project. As a benefit, binary resources can be shared between projects.<p><image
                             href="images/translate-one-project.png" id="image_yqy_kv3_wwb"
                             scale="50"/></p></li>
                 <li>
