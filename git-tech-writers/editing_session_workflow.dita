@@ -6,8 +6,7 @@
 		<author>Radu Coravu</author>
 	</prolog>
     <body>
-		<p>Usually an editing session has the following stages which are repeated throughout the
-			day:</p>
+		<p>Usually, an editing session has the following stages that are repeated throughout the day:</p>
 		<p>
 			<image placement="break"
 				href="../images/editing-session-stages.png"
@@ -22,7 +21,7 @@
 				<li><b>Commit Content</b> - Commit the changes to the local working copy.</li>
 				<li><b>Pull Content From Remote Repository</b> - Obtain the latest content for the
 					edited project branch.</li>
-				<li><b>Push Content To Remote Repository</b> - Push from time to time the commits to the remote
+				<li><b>Push Content To Remote Repository</b> - From time to time, push the commits to the remote
 					repository so that others can use them as well. You must always pull content
 					from the repository before pushing to it, otherwise the pull will fail.</li>
 				<li><image href="images/pullBeforePush.png" id="image_odv_2fr_swb" scale="30"/></li>
@@ -30,19 +29,19 @@
 		</p>
 		<section id="section_lh1_5dr_swb">
 			<title>Handling Simple Conflicts</title>
-			<p>Conflicts are usually caused by trying to push changes made to resources which have been in
-				the meantime modified by others on the remote repository. Conflicts normally occur
-				when working with Git, they can be resolved and they are not a sign that anyone did
-				anything wrong.<ul id="ul_fnk_dgr_swb">
+			<p>Conflicts are usually caused by trying to push changes made to resources that, in the
+				meantime, have been modified by others on the remote repository. Conflicts normally
+				occur when working with Git, they can be resolved and they are not a sign that
+				anyone did anything wrong.<ul id="ul_fnk_dgr_swb">
 					<li>If changes are made to text files on different lines, the conflicts are
 						automatically merged. </li>
 					<li>
-						<p>If the conflicting changes are on the same lines you can resolve the
+						<p>If the conflicting changes are on the same lines, you can resolve the
 							conflict.</p>
 						<p><image href="images/simpleConflict.png" id="image_dy3_ggr_swb" scale="40"
 							/></p>
-						<p>The conflict can be resolved either by keeping your version, or the
-							version of the remote collaborator or by manual merging:</p>
+						<p>The conflict can be resolved by keeping your version, or the version of
+							the remote collaborator, or by manual merging:</p>
 						<p><image href="images/resolveConflict.png" id="image_gj2_4gr_swb"
 								scale="30"/></p>
 					</li>
