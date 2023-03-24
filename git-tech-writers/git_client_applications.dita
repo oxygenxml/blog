@@ -7,7 +7,7 @@
 	</prolog>
     <body>
 		<section id="section_ozj_tzy_qwb">
-			<title>Server side solutions</title>
+			<title>Server-side solutions</title>
 			<p>
 				<ul id="ul_gjw_5tl_mwb">
 					<li><xref href="https://github.com/" format="html" scope="external"
@@ -17,26 +17,26 @@
 				</ul>
 			</p>
 			<p>Both of these solutions come with:<ul id="ul_yxv_ztl_mwb">
-					<li>Support to create and manage private/public repositories.</li>
-					<li>Basic support to create and handle tickets/issues.</li>
-					<li>Support to create pull/merge requests.</li>
+					<li>Support for creating and managing private/public repositories.</li>
+					<li>Basic support for creating and handling tickets/issues.</li>
+					<li>Support for creating pull/merge requests.</li>
 				</ul></p>
 		</section>
 		<section id="section_jrl_5zy_qwb">
-			<title>Client side applications</title>
-			<p>There are lots of free client side applications which can be used to work with Git
+			<title>Client-side applications</title>
+			<p>There are lots of free client-side applications that can be used to work with Git
 				repositories:</p>
 			<ul id="ul_v3t_mcs_lwb">
-				<li><b>Git Fork</b>.</li>
-				<li><b>Git Tower</b>.</li>
-				<li><b>SourceTree</b>.</li>
-				<li><b>GitHub Desktop</b>.</li>
-				<li><b>Git</b> console.</li>
+				<li><b>Git Fork</b></li>
+				<li><b>Git Tower</b></li>
+				<li><b>SourceTree</b></li>
+				<li><b>GitHub Desktop</b></li>
+				<li><b>Git</b> console</li>
 				<li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html" format="html"
-						scope="external"><b>Git client</b></xref> add-on in Oxygen XML Editor.</li>
-				<li> Web-based clients like Oxygen <xref
-						href="https://www.oxygenxml.com/xml_web_author.html" format="html"
-						scope="external"><b>Web Author</b></xref>. </li>
+						scope="external"><b>Git Client</b></xref> add-on in Oxygen XML Editor</li>
+				<li>Web-based clients like Oxygen <xref href="https://www.oxygenxml.com/xml_web_author.html"
+						format="html" scope="external"><b>Web Author</b></xref>
+				</li>
 			</ul>
 		</section>
 	</body>
