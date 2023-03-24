@@ -7,14 +7,13 @@
 	</prolog>
 	<body>
 		<p>Besides the team of technical writers who have full write access to the documentation
-			repositories, there may be other collaborators (like subject matter experts) who have
+			repositories, there may be other collaborators (e.g. subject matter experts) who have
 			read access to the repository and sometimes want to propose changes.</p>
 		<p>The workflow for proposing changes to a repository usually works like this:<ul
 				id="ul_gcj_sbf_twb">
 				<li>The collaborator creates a branch of the project on which they make changes and
 					add comments.</li>
-				<li>The branch is integrated back in the main project branch by the technical
-					writer.</li>
+				<li>The branch is integrated back into the main project branch by the technical writer.</li>
 			</ul></p>
 		<p><image
 				href="../images/pull-request.png"
