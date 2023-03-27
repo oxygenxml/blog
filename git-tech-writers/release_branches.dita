@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="release_branches">
+    <title>Release Branches</title>
+    <prolog>
+        <author>Chris Papademetrious</author>
+    </prolog>
+    <body>
+        <p>My name is Chris Papademetrious and I work for Synopsys Inc., a semicoductor design
+            automation software company. I am an occasional guest contributor to the Oxygen XML
+            blog, and I wanted to share how we use Git.</p>
+        <p>Our team writes documentation for many different products. And for the most part, all
+            products follow a common software and documentation release schedule (every three
+            months). Our technical writers are knowledgeable on the products they write for, but
+            they tend to be novices with Git.</p>
+        <section id="section_znt_gvn_xwb">
+            <title>Our Attempt at the Centralized Workflow</title>
+            <p>When we first adopted DITA and Git, we used the centralized workflow. However, we ran
+                into issues when a particular product group needed to delay their release schedule.
+                When the rest of the group began working on the next release in the main branch, the
+                delayed group could not stay in the main branch because then "last-release" and
+                "next-release" content would get mixed and there was no single point where the main
+                branch represented the final release state. And so in these cases, we had to fork a
+                release branch off the main branch and move the delayed product writers there. (And
+                sometimes writers would keep working in the main branch out of inertia, and so the
+                main branch content would get mixed up anyway...)</p>
+            <image href="../images/release_branches/snps_centralized_workflow.png" placement="break"
+                id="image_hys_yzt_xwb"/>
+            <draft-comment><xref
+                    href="https://mermaid.live/edit#pako:eNqdU01PwzAM_SuVz-3UJs2S9cYG4sSJG-rFtO6H6JeyVGJM--9kGx2gjWgjl8jv2X7Pkr2FrM8JEihr86hxqNLOsy-rKHvrR-O1WHdfUN-2tfHqPPFSKAjNqOkuiFJw0cxNczcdT_Srxi6rPE0N4ZqiCzUTFWT278YhBc9g-ZM5SV032tI92vJ7tN_mmKuG32hiFZzbvkYnPhuf3azM_qVc1B02N6m3pEu6ovfKvS2rv7aFu2ou2z0JgQ_WnvWa2wvZ7rEUTEUtpbBPz6nAsTH77J1NxdH0z5sug8TokXwYhxwN3ddYamwncMDupe9tWGCzPsaQbOEdkiCKhZhFSoRCiQWXwoeNRWU440ywOV9IGYpQqp0PH4cObBbFXKgFZ1IpyYSaT5oPeW16PUnSIXo63vnh3HefTkhBvg"
+                    format="html" scope="external"/></draft-comment>
+            <p>We considered using the feature branch workflow. However, this would require writers
+                to be responsible for branch actions (forking feature branches and submitting pull
+                requests), which they had never done before. Many products have multiple writers,
+                which would require those feature branches to be synchronized on the server for
+                collaboration. Some products have 40+ features in a release cycle, and our past
+                experiences told us that writers could sometimes forget to switch branches. And so
+                we decided not to use this workflow.</p>
+            <p>We needed a workflow in which a writer could simply continue to write for a release
+                and not worry about switching branches until the release was done—<i>regardless of
+                    whether their product finished its release early or late</i>. So, we moved to a
+                    <term>release branch</term> workflow.</p>
+        </section>
+        <section id="section_iq4_fvn_xwb">
+            <title>The Release Branch Workflow</title>
+        </section>
+        <section id="section_iq4_fwn_rwb">
+            <p>In our release branch workflow, we create a branch for each release, named by the
+                scheduled release date. A writer can work in a release branch as long as they like,
+                and they can move to the next release branch whenever they are ready. If a feature
+                requires collaboration by multiple writers, they can collaborate in that release
+                branch.</p>
+            <p>The key feature of our release branch workflow is the <term>cascaded release
+                    merge</term>. Each week, we merge new commit activity forward from earlier
+                release branches to later release branches. If a branch has no new commit activity
+                since the last merge, no merge is performed from it.</p>
+            <image href="../images/release_branches/snps_release_branch_workflow.png"
+                placement="break" id="image_grn_f15_xwb"/>
+            <draft-comment author="chrispy"><xref
+                    href="https://mermaid.live/edit#pako:eNqdlE1vgzAMhv8K8plWkJBCua3btNN22W3KJQMD0Qqp0iC1Q_z30fChaSqtBjfbPHltx04DiUoRYsiledHiUPDK6b5PLaqkcDTuURyRXHNSXvXupMDkS9VmDPiDW5WlNI5MY4dDhsLUGh9WPoc5jsxzu577N0UG6i9E56HHQepOliXqHKeKhyOsczZTeoUkv0mysDf0juL1MsmijgaLtKYMF3aGznfmpu5stjdnNJOnRVWyu_c3PzXB4qmxquBejFLItFvl5oJwMAWWyOHyY4qZqPeGg9uHpmXvos1wM9DR1c6u-JsYwaldNruWV22nJGqj3s9VArHRNbpQH1Jh8EmKXItydB5E9aFUZ2Zif-xtiBs4QbzyA8bWfsQ8FrEtDZkL584bemtKGNnQbRh6zAuj1oVvewJZ-wFl0ZaSMIpCwqLNqPmcSqP0KInWeu3fM_ustT826JCe"
+                    format="html" scope="external"/></draft-comment>
+            <p>In the preceding diagram, the release1 branch is completed and quiet. Product writers
+                are finishing work in the release2 branch and moving to the release3 branch. Their
+                work in the release2 branch is automatically propagated to release3. At some point,
+                a product team finds that a retroactive documentation fix is needed for a feature in
+                the release1 branch. This fix is automatically propagated forward into the release2
+                and release3 branches.</p>
+            <p>In this workflow, the writer must remember only to check out the next release branch
+                after they complete their current release. And this is a notable enough
+                accomplishment that they tend to remember to do this.</p>
+            <p>However, writers can work in multiple release branches if they want to. Most products
+                have major releases on every third release interval. In this case, writers can make
+                minor typo fixes and rewordings in the next minor release branch, but get an early
+                start on feature documentation in the next major release branch. (Although in this
+                case, the writers must be diligent again about remembering to switch branches!)</p>
+            <p>For the most part, writers don't need to worry about the logistics of the release
+                merges. However, there are some cases in which they do need to be aware of them. For
+                example,</p>
+            <ul id="ul_tpk_syt_xwb">
+                <li>If a writer writes content for one release and wants to incrementally modify
+                    that content for the next release, they must wait for the merge to propagate the
+                    work forward to the next branch to be able to continue work on it.</li>
+                <li>If a writer wants to add content that should not propagate forward to subsequent
+                    releases (such as a temporary bug or limitation that is fixed in the next
+                    release), then they add content to the earlier release, wait for a merge, then
+                    remove it in the next release.</li>
+            </ul>
+            <p> In these cases, the writers can ask me to run a merge manually so they do not have
+                to wait.</p>
+        </section>
+        <section id="section_c33_qb4_xwb">
+            <title>The Branch-Merging Perl Script</title>
+            <p>The release branch merge is performed by a perl script called
+                    <filepath>merge_repo.pl</filepath>. The usage is as follows:</p>
+            <pre id="pre_s4h_vb4_xwb">$ <userinput>merge_repo.pl --help</userinput>
+Usage:
+      --dry-run
+           Do not actually commit any changes
+      --starting-at branch_name
+           Start merging at this branching (merging from previous branch)</pre>
+            <p>The script uses the command-line <codeph>git</codeph> client to perform its work. One
+                notable requirement is that the script needs a local repository to perform its
+                merging work in. The script automatically fetches and pulls all remote updates,
+                creating new local branches and deleting local branches that no longer have matching
+                remote branches as needed.</p>
+            <p>The script obtains the chronological list of release branches by querying and sorting
+                all branches that match <codeph>release/*</codeph> - there is no need to update any
+                branch list text files or databases as new release branches are created.</p>
+            <p>Here is an example of its output:</p>
+            <pre id="pre_lk3_2wt_xwb">$ <userinput>merge_repo.pl</userinput>
+Checking for commits to merge from 'release/2022.09' to 'release/2022.12'...
+Merging 1 commits from 'release/2022.09' to 'release/2022.12'...
+Pushing merge to 'release/2022.12' upstream...
+Merge from 'release/2022.09' to 'release/2022.12' succeeded.
+
+Checking for commits to merge from 'release/2022.12' to 'release/2023.03'...
+Merging 4 commits from 'release/2022.12' to 'release/2023.03'...
+Pushing merge to 'release/2023.03' upstream...
+Merge from 'release/2022.12' to 'release/2023.03' succeeded.
+
+Checking for commits to merge from 'release/2023.03' to 'release/2023.06'...
+Merging 8 commits from 'release/2023.03' to 'release/2023.06'...
+Pushing merge to 'release/2023.06' upstream...
+Merge from 'release/2023.03' to 'release/2023.06' succeeded.</pre>
+            <p>Here is the resulting commit graph as shown on the Gitlab server web page, from the
+                previous merge to the just-completed merge:</p>
+            <image href="../images/release_branches/gitlab_merge_graph.png" placement="break"
+                id="image_jlh_nwt_xwb"/>
+            <p>As mentioned earlier, no matter how many "earlier" branches exist, no forward merge
+                is performed from a branch unless it contains new activity since the last merge.</p>
+            <p>If a release merge result cannot be pushed (perhaps because a writer just pushed
+                something new to the server), the script abort its current merge, updates its local
+                repository, and retries the merge.</p>
+            <p>If the script encounters a merge conflict, it prints information to STDERR about how
+                to manually reproduce and resolve the conflict, then continue the merge:</p>
+            <pre id="pre_vjv_2xt_xwb">$ <userinput>merge_repo.pl</userinput>
+Checking for commits to merge from 'release/2022.09' to 'release/2022.12'...
+Merging 1 commits from 'release/2022.09' to 'release/2022.12'...
+Pushing merge to 'release/2022.12' upstream...
+Merge from 'release/2022.09' to 'release/2022.12' succeeded.
+
+Checking for commits to merge from 'release/2022.12' to 'release/2023.03'...
+Merging 4 commits from 'release/2022.12' to 'release/2023.03'...
+Merge from 'release/2022.12' to 'release/2023.03' failed:
+Auto-merging some_topic.dita
+CONFLICT (content): Merge conflict in some_topic.dita
+Automatic merge failed; fix conflicts and then commit the result.
+some_topic.dita:21: leftover conflict marker
+some_topic.dita:24: leftover conflict marker
+some_topic.dita:25: leftover conflict marker
+some_topic.dita:27: leftover conflict marker
+
+Perform the following commands manually:
+
+git checkout release/2023.03
+git merge release/2022.12
+...resolve conflict...
+git push
+merge_repo.pl --starting-at release/2023.06</pre>
+            <p>The script runs every Wednesday as a <filepath>cron</filepath> job. For conflicts or
+                other errors (like server downtime), the resulting output to STDERR causes
+                    <filepath>cron</filepath> to email the command output to the script owner (in
+                this case, me). Thanks to this behavior of <filepath>cron</filepath>, the script
+                operates quietly unless attention is needed.</p>
+        </section>
+    </body>
+</topic>

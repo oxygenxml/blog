@@ -12,6 +12,7 @@
 		<topicref href="common_workflows.dita">
 			<topicref href="centralized_workflow.dita"/>
 			<topicref href="feature_branches.dita"/>
+			<topicref href="release_branches.dita"/>
 			<topicref href="gitflow.dita"/>
 		</topicref>
 		<topicref href="propose_changes.dita"/>
