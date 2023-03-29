@@ -11,9 +11,9 @@
     <body>
         <p>The following article is a comparison between the DITA XML standard and Markdown. The
             comparison attempts to cover syntax specification and features. I attempted to write
-            this comparison without any implicit bias towards one or the other, if there are DITA
+            this comparison without any implicit bias towards one or the other. If there are DITA
             XML or Markdown features that I missed, that was done out of ignorance and not out of
-            malice. Feedback is always welcomed as usual.</p>
+            malice. Feedback is always welcomed, as usual.</p>
         <table frame="all" rowsep="1" colsep="1">
             <title>DITA XML vs Markdown</title>
             <tgroup cols="3">
@@ -37,16 +37,16 @@
                             multiple versions of the DITA standard, the most popular one being
                             version 1.3.</entry>
                         <entry valign="top"><xref
-								href="https://www.markdownguide.org/getting-started/" format="html"
-								scope="external">Markdown</xref> is a lightweight markup language
-							that you can use to add formatting elements to plain text documents.
-							There was an effort to standardize Markdown to a specification named
-								<xref href="https://commonmark.org/" format="html" scope="external"
-								>CommonMark</xref>. In the wild there are lots of Markdown flavors
-							and extensions most of them sharing a common set of features. The <xref
-								href="https://www.markdownguide.org/extended-syntax/" format="html"
-								scope="external">most popular</xref> are probably CommonMark and
-							Github Flavored Markdown.</entry>
+                                href="https://www.markdownguide.org/getting-started/" format="html"
+                                scope="external">Markdown</xref> is a lightweight markup language
+                            that you can use to add formatting elements to plain text documents.
+                            There was an effort to standardize Markdown to a specification named
+                                <xref href="https://commonmark.org/" format="html" scope="external"
+                                >CommonMark</xref>. There are lots of Markdown flavors and
+                            extensions, most of them sharing a common set of features. The <xref
+                                href="https://www.markdownguide.org/extended-syntax/" format="html"
+                                scope="external">most popular</xref> are probably CommonMark and
+                            Github-flavored Markdown.</entry>
                     </row>
                     <row>
                         <entry valign="top"><b>Useful links for learning</b></entry>
@@ -68,14 +68,14 @@
                                 <li>OASIS Open standard.</li>
                                 <li>Advanced support for <xref
                                         href="../presentation-reuse/introduction.dita">content
-                                        reuse</xref> either at topic, block or inline level.</li>
+                                        reuse</xref> either at topic, block, or inline level.</li>
                                 <li>Advanced support for <xref
                                         href="../presentation-reuse/reuseSimilarProducts.dita"
                                         >filtering</xref> (generating multiple similar user guides
                                     from the same content).</li>
-                                <li>Open source publishing engine with lots of supported output
+                                <li>Open-source publishing engine with lots of supported output
                                     formats (some free, some commercial) like HTML5, Windows Help,
-                                    PDF, Word, EPUB, so on.</li>
+                                    PDF, Word, EPUB, and so on.</li>
                             </ul>
                             <p><xref
                                     href="https://doctales.github.io/dita-introduction/website/topics/why-dita.html"
@@ -90,12 +90,12 @@
                             <ul id="ul_lnz_vvj_5wb">
                                 <li>Large user base. Familiar to software engineers who use it to
                                     write issues.</li>
-                                <li>Basic syntax easy to learn.</li>
+                                <li>Basic syntax, easy to learn.</li>
                                 <li>Easier to read without specialized tools.</li>
                                 <li>Offline and online free editing tools.</li>
-                                <li>For the base syntax quite easy to edit the content in a plain
+                                <li>For the base syntax, quite easy to edit the content in a plain
                                     text editor tool.</li>
-                                <li>Lots of static web site generator open source tools like <xref
+                                <li>Lots of static web site generator open-source tools like <xref
                                         href="https://www.mkdocs.org/" format="html"
                                         scope="external">MKDocs</xref> or <xref
                                         href="https://jekyllrb.com/" format="html" scope="external"
@@ -123,15 +123,15 @@
                                     "specification". There are various flavors with various syntax
                                     differences between them and you probably need to pick a flavor
                                     to use and stick to it.</li>
-                                <li>Advanced features like content reuse for example are not in the
-                                    base standard but may be implemented with different syntaxes for
-                                    various flavors.</li>
-                                <li>Static web site generators are not compatible with each other,
-                                    they have various specific configuration files or to link
+                                <li>Advanced features like content reuse, for example, are not in
+                                    the base standard but may be implemented with different syntaxes
+                                    for various flavors.</li>
+                                <li>Static web site generators are not compatible with each other
+                                    (they have various specific configuration files) or to link
                                     between files.</li>
                                 <li>Not many possibilities to assemble multiple Markdown files and
-                                    publish for example outputs like PDF or Word.</li>
-                                <li>Cannot render complex cell content (multiple paragraphs for
+                                    publish outputs like PDF or Word, for example.</li>
+                                <li>Cannot render complex cell content (multiple paragraphs, for
                                     example) in table cells or in list items.</li>
                             </ul>
                         </entry>
@@ -140,8 +140,8 @@
                         <entry valign="top"><b>Cross-Compatibility</b></entry>
                         <entry valign="top">A DITA Map can refer to a <xref
                                 href="https://www.dita-ot.org/dev/topics/markdown-dita-syntax-reference.html#ariaid-title1"
-                                format="html" scope="external">Github flavored Markdown</xref> file
-                            and the publishing engine can perform dynamic conversion from Markdown
+                                format="html" scope="external">Github-flavored Markdown</xref> file
+                            and the publishing engine can perform a dynamic conversion from Markdown
                             to DITA while editing.</entry>
                         <entry valign="top">-</entry>
                     </row>
@@ -157,7 +157,7 @@
                         <entry valign="top"><b>CommonMark</b> does not define the possibility to
                             create a table of contents or to aggregate multiple Markdown files in
                             larger publications. <p>Various static web site generators have various
-                                ways to define table of contents, usually based on <b>Yaml</b> like
+                                ways to define table of contents, usually based on <b>Yaml</b>, like
                                     <xref href="https://www.mkdocs.org/user-guide/configuration/"
                                     format="html" scope="external">MKDocs</xref>.</p></entry>
                     </row>
@@ -174,13 +174,12 @@
 						</entry>
 						<entry valign="top">
 							<ul id="ul_tb3_kld_vwb">
-								<li>Usually with Markdown you can look at a live preview while
-									typing to see that everything looks Ok.</li>
-								<li>There are various processors which may be used to validate
-									Markdown for example <xref
-										href="https://github.com/mattbriggs/markdown-validator"
-										format="html" scope="external">using a set of JSON
-										rules</xref>.</li>
+								<li>Usually with Markdown, you can look at a live preview while typing to see that
+                                    everything looks OK.</li>
+								<li>There are various processors that may be used to validate Markdown, for example <xref
+                                        href="https://github.com/mattbriggs/markdown-validator"
+                                        format="html" scope="external">using a set of JSON
+                                        rules</xref>.</li>
 							</ul>
 						</entry>
 					</row>
@@ -192,12 +191,13 @@
                                         scope="external">DITA Open toolkit</xref> publishing engine
                                     comes with default support to publish DITA Maps and customize to
                                     plain HTML5, PDF.</li>
-                                <li>There are additional open source plugin to publish to MS Word or
-                                    EPUB.</li>
-                                <li>Other curated open source plugins are available in the <xref
+                                <li>There are additional open-source plugins to publish to MS Word
+                                    or EPUB.</li>
+                                <li>Other curated open-source plugins are available in the <xref
                                         href="https://www.dita-ot.org/plugins" format="html"
                                         scope="external">DITA OT plugins registry</xref>.</li>
-                                <li>Commercial plugins to publish to WebHelp output like <xref
+                                <li>Commercial plugins are available to publish to WebHelp output
+                                    like <xref
                                         href="https://www.oxygenxml.com/xml_editor/webhelp.html"
                                         format="html" scope="external">Oxygen WebHelp</xref> or
                                         <xref href="https://www.fluidtopics.com/" format="html"
@@ -206,7 +206,7 @@
                         </entry>
                         <entry valign="top">Most publishing libraries rely on the conversion from
                             Markdown to HTML.<ul id="ul_kbj_xyj_5wb">
-                                <li>Lots of open source <xref
+                                <li>Lots of open-source <xref
                                         href="https://about.gitlab.com/blog/2022/04/18/comparing-static-site-generators/"
                                         format="html" scope="external">static web site
                                         generators</xref>.</li>
@@ -219,16 +219,15 @@
                     </row>
 					<row>
 						<entry valign="top"><b>Translation</b></entry>
-						<entry valign="top">There are translation agencies accepting directly DITA
-							XML content or you can convert DITA XML to XLiff and use a translation
-							system. Each DITA XML topic or map can have an <xmlatt>xml:lang</xmlatt>
-							attribute to specify the current language in which it is
-									written.<p><xref href="translating_your_dita_project.dita"
-							/></p></entry>
+						<entry valign="top">There are translation agencies directly accepting DITA XML content or you
+                            can convert DITA XML to XLiff and use a translation system. Each DITA
+                            XML topic or map can have an <xmlatt>xml:lang</xmlatt> attribute to
+                            specify the current language in which it is written.<p><xref
+                                    href="translating_your_dita_project.dita"/></p></entry>
 						<entry valign="top">There are various tools like <xref
-								href="https://simpleen.io/blog/translate-markdown-files"
-								format="html" scope="external">Simpleen</xref> which seem to
-							specifically handle Markdown translation.</entry>
+                                href="https://simpleen.io/blog/translate-markdown-files"
+                                format="html" scope="external">Simpleen</xref> that seem to
+                            specifically handle Markdown translation.</entry>
 					</row>
                     <row>
                         <entry valign="top"><b>Extensibility</b></entry>
@@ -243,16 +242,16 @@
                                 <li>Use the DITA <xmlelement>data</xmlelement> element with custom
                                     names and values and take them into account with publishing time
                                     customizations.</li>
-                                <li>Use the DITA <xmlelement>foreign</xmlelement> element, maybe for
-                                    example <xref
+                                <li>Use the DITA <xmlelement>foreign</xmlelement> element (for
+                                    example, <xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-embed-html.html"
                                         format="html" scope="external">embed HTML</xref> inside it
-                                    using a custom publishing plugin.</li>
+                                    using a custom publishing plugin).</li>
                             </ul>
                         </entry>
                         <entry valign="top">
                             <ul id="ul_xv3_1gy_5wb">
-                                <li>Use HTML elements inside Markdown, for example when defining
+                                <li>Use HTML elements inside Markdown, for example, when defining
                                     complex tables or you do not have a Markdown equivalent.</li>
                                 <li>Yaml headers.</li>
 								<li>Ability on certain Markdown flavors/extensions to <xref
@@ -270,7 +269,7 @@
                                     lots of <xref
                                         href="https://www.oxygenxml.com/dita/1.3/specs/langRef/containers/prolog-elements.html"
                                         format="html" scope="external">metadata</xref> information,
-                                    by not visible in the published output. Example:
+                                    but not visible in the published output. Example:
                                     <codeblock id="codeblock_pzy_sgy_5wb" outputclass="language-xml">&lt;topic id="topic_wcj_tgy_5wb">
  &lt;title>The Title&lt;/title>
  &lt;prolog>
@@ -282,18 +281,18 @@
     &lt;/keywords>
    &lt;/metadata>
   &lt;/prolog></codeblock></li>
-                                <li><xref
+                                <li>The <xref
                                         href="https://www.oxygenxml.com/dita/1.3/specs/langRef/containers/indexing-d.html"
                                         format="html" scope="external"
                                             ><xmlelement>indexterm</xmlelement> elements</xref> are
-                                    also considered metadata as they are used to generate an index
+                                    also considered metadata, as they are used to generate an index
                                     table.</li>
                             </ul>
                         </entry>
                         <entry valign="top">
                             <ul id="ul_fzg_ngy_5wb">
-                                <li>Sometimes Markdown files may contain Yaml headers before the
-                                    actual content defining simple keys and values. Example:
+                                <li>Sometimes, Markdown files may contain Yaml headers before the
+                                    actual content that define simple keys and values. Example:
                                     <codeblock id="codeblock_zx4_rgy_5wb">---
 title: The Title
 author: The Author
@@ -310,11 +309,11 @@ Text body. </codeblock></li>
                             <ul id="ul_ulq_bhy_5wb">
                                 <li>Key references to <xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-variables.html"
-                                        format="html" scope="external">re-use product
+                                        format="html" scope="external">re-used product
                                     names</xref>.</li>
                                 <li>Content references to <xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/working-with-content-references.html"
-                                        format="html" scope="external">reuse elements</xref> in
+                                        format="html" scope="external">re-used elements</xref> in
                                     multiple places.</li>
                                 <li>Content reference push to <xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/conref-push-mechanism.html"
@@ -323,28 +322,28 @@ Text body. </codeblock></li>
                                 <li><xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/coderef.html"
                                         format="html" scope="external">Code references</xref> to
-                                    reuse pieces of code in multiple places.</li>
+                                    re-use pieces of code in multiple places.</li>
                                 <li><xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-keyscopes.html"
                                         format="html" scope="external">Key scopes</xref> and <xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-branch-filtering.html"
                                         format="html" scope="external">branch filtering</xref> to
-                                    reuse the same topics in multiple contexts with different
+                                    re-use the same topics in multiple contexts with different
                                     content in each context.</li>
                                 <li><xref
                                         href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-reuse-topics.html"
-                                        format="html" scope="external">Reuse a topic in multiple
+                                        format="html" scope="external">Re-use a topic in multiple
                                         places</xref> in the publication.</li>
                             </ul>
                         </entry>
-                        <entry valign="top">No content reuse support is in the standard base,
-                            various extensions do exist for example:<ul id="ul_bp4_djy_5wb">
+                        <entry valign="top">No content re-use support is in the standard base.
+                            Various extensions do exist, for example:<ul id="ul_bp4_djy_5wb">
                                 <li><xref
                                         href="https://redocly.com/docs/developer-portal/guides/reusing-content/"
                                         format="html" scope="external">Redocly</xref> uses HTML
                                         <xmlelement>embed</xmlelement> tags with references to
-                                    Markdown files to reuse entire chunks of Markdown content placed
-                                    inside a file.</li>
+                                    Markdown files to re-use entire chunks of Markdown content
+                                    placed inside a file.</li>
                                 <li><xref
                                         href="https://gohugo.io/content-management/shortcodes/#shortcodes-with-markdown"
                                         format="html" scope="external">Hugo</xref> uses special
@@ -359,29 +358,29 @@ Text body. </codeblock></li>
                             XML topics or on topic references in a DITA Map map. By using a single
                             DITA Map and <xref
                                 href="../presentation-reuse/reuseSimilarProducts.dita"
-                                >filtering</xref> it differently you can obtain multiple
-                            publications from it.<p>For example for the Oxygen user's manual we
-                                obtain from the same DITA Map lots of distinct publications for
-                                "Oxygen XML Editor", "Oxygen XML Author", "Oxygen XML Web
-                                Author".</p></entry>
-                        <entry valign="top">There may be but I am not aware of such a feature in
+                                >filtering</xref> it differently, you can obtain multiple
+                            publications from it.<p>For example, for the Oxygen user's manual, we
+                                obtain lots of distinct publications for "Oxygen XML Editor",
+                                "Oxygen XML Author", "Oxygen XML Web Author" from the same DITA
+                                Map.</p></entry>
+                        <entry valign="top">There may be, but I am not aware of such a feature in
                             Markdown.</entry>
                     </row>
                     <row>
                         <entry valign="top"><b>Headings</b></entry>
                         <entry valign="top">
                             <ul id="ul_wzr_xly_5wb">
-                                <li>DITA topics have a <xmlelement>title</xmlelement> element which
+                                <li>DITA topics have a <xmlelement>title</xmlelement> element that
                                     appears as a heading 1 when published and is also used for the
                                         <xmlelement>title </xmlelement> element in the published
                                     HTML document.</li>
                                 <li>You can nest topics one inside the other and the generated HTML
-                                    output will have for each nested topic
-                                        <xmlelement>h2</xmlelement>, <xmlelement>h3</xmlelement>,
-                                    etc depending on the nested depth.</li>
+                                    output will have <xmlelement>h2</xmlelement>,
+                                        <xmlelement>h3</xmlelement>, etc for each nested topic,
+                                    depending on the nested depth.</li>
                                 <li>You can have <xmlelement>section</xmlelement> elements with
-                                        <xmlelement>title</xmlelement>elements inside a topic, they
-                                    cannot be nested one inside the other.<p>
+                                        <xmlelement>title</xmlelement>elements inside a topic (they
+                                    cannot be nested one inside the other).<p>
                                         <codeblock id="codeblock_gs5_gmy_5wb" outputclass="language-xml">&lt;topic id="topic_wcj_tgy_5wb">
  &lt;title>Title1&lt;/title>
  &lt;body>
@@ -397,8 +396,8 @@ Text body. </codeblock></li>
                                     </p></li>
                             </ul>
                         </entry>
-                        <entry valign="top">You can use a number of <codeph>#</codeph> followed by
-                            space and text to <xref
+                        <entry valign="top">You can use a number of <codeph>#</codeph> characters
+                            followed by space and text to <xref
                                 href="https://www.markdownguide.org/basic-syntax/#headings"
                                 format="html" scope="external">define a new heading</xref>. Headings
                             do not necessarily need to be incremental, you can start with heading
@@ -412,8 +411,8 @@ Text body. </codeblock></li>
                         <entry valign="top"><b>Block elements</b></entry>
                         <entry valign="top">There are multiple topic types like
                                 <xmlelement>concept</xmlelement>, <xmlelement>task</xmlelement>,
-                                <xmlelement>reference</xmlelement> and extra topic types can be
-                            added using specialization. <xref
+                                <xmlelement>reference</xmlelement>, and extra topic types can be
+                            added using a specialization. <xref
                                 href="https://www.oxygenxml.com/dita/1.3/specs/langRef/containers/body-elements.html"
                                 format="html" scope="external">The basic block elements</xref> are
                                 <xmlelement>topic</xmlelement>, <xmlelement>title</xmlelement>,
@@ -423,7 +422,8 @@ Text body. </codeblock></li>
                             <xmlelement>ol</xmlelement>, <xmlelement>table</xmlelement>,
                                 <xmlelement>section</xmlelement>, <xmlelement>fig</xmlelement>,
                                 <xmlelement>image</xmlelement>, <xmlelement>note</xmlelement>. There
-                            are also other block level elements depending on the topic type.</entry>
+                            are also other block-level elements, depending on the topic
+                            type.</entry>
                         <entry valign="top"><xref href="https://www.markdownguide.org/basic-syntax/"
                                 format="html" scope="external">Block elements</xref>: Paragraphs,
                             tables, lists, images, block quotes, etc.</entry>
@@ -432,19 +432,20 @@ Text body. </codeblock></li>
                         <entry valign="top"><b>Inline elements</b></entry>
                         <entry valign="top"><xmlelement>b</xmlelement>, <xmlelement>i</xmlelement>,
                                 <xmlelement>u</xmlelement>,<xmlelement>sup</xmlelement>,<xmlelement>sub</xmlelement>
-                            and other inline elements with more semantic meaning like
+                            and other inline elements with more semantic meaning (like
                                 <xmlelement>codeph</xmlelement>, <xmlelement>uicontrol</xmlelement>,
-                                <xmlelement>filepath</xmlelement>.</entry>
-                        <entry valign="top">Bold, italic,underline. Depending on the Markdown flavor
-                            also other inlines like subscript, superscript, strike-through.</entry>
+                                <xmlelement>filepath</xmlelement>).</entry>
+                        <entry valign="top">Bold, italic,underline. Depending on the Markdown
+                            flavor, other inlines like subscript, superscript,
+                            strike-through.</entry>
                     </row>
 					<row>
 						<entry valign="top"><b>Audio/Video</b></entry>
-						<entry valign="top">The DITA <xmlelement>object</xmlelement> element can be
-							used to refer to <xref
-								href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-adding-media.html"
-								format="html" scope="external">audio, video or iframe</xref>
-							content.</entry>
+						<entry valign="top">The DITA <xmlelement>object</xmlelement> element can be used to reference
+                                <xref
+                                href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-adding-media.html"
+                                format="html" scope="external">audio, video or iframe</xref>
+                            content.</entry>
 						<entry valign="top">No official support, maybe use embedded HTML content or
 							add a link to the audio/video instead.</entry>
 					</row>
@@ -457,36 +458,35 @@ Text body. </codeblock></li>
 								format="html" scope="external">The table</xref> can have header and
 							body rows.</entry>
                         <entry valign="top"><xref
-								href="https://www.markdownguide.org/extended-syntax/#tables"
-								format="html" scope="external">Markdown tables</xref> are usually
-							written in an ASCII graphic like representation allowing for cells
-							content to be aligned left or right. By default cells can contain inside
-							only plain text. If more complex table structures are needed, HTML
-							tables can be inserted directly in Markdown if the used Markdown flavor
-							supports HTML elements inside it.</entry>
+                                href="https://www.markdownguide.org/extended-syntax/#tables"
+                                format="html" scope="external">Markdown tables</xref> are usually
+                            written in an ASCII graphic, like representation allowing for cells
+                            content to be aligned left or right. By default, cells can contain only
+                            plain text inside. If more complex table structures are needed, HTML
+                            tables can be inserted directly in Markdown if the used Markdown flavor
+                            supports HTML elements inside it.</entry>
                     </row>
                     <row>
                         <entry valign="top"><b>Lists</b></entry>
                         <entry valign="top">Ordered <xmlelement>ol</xmlelement>, unordered
-								<xmlelement>ul</xmlelement> or definition lists
-								<xmlelement>dl</xmlelement>. Other topic types like
-								<xmlelement>task</xmlelement> contain for example the
-								<xmlelement>steps</xmlelement> element which is an ordered list of
-							steps. Each list item can contain inside block elements like paragraphs,
-							other lists, tables, etc.</entry>
+                                <xmlelement>ul</xmlelement>, or definition lists
+                                <xmlelement>dl</xmlelement>. Other topic types like
+                                <xmlelement>task</xmlelement> contain, for example, the
+                                <xmlelement>steps</xmlelement> element that is an ordered list of
+                            steps. Each list item can contain block elements like paragraphs, other
+                            lists, tables, etc.</entry>
                         <entry valign="top"><xref
-								href="https://www.markdownguide.org/basic-syntax/#lists-1"
-								format="html" scope="external">Ordered and unordered lists</xref>.
-							Each list element contains inside simple content, it cannot contain
-							block level elements like additional lists or multiple paragraphs.<p>The
-									<xref
-									href="https://www.markdownguide.org/extended-syntax/#task-lists"
-									format="html" scope="external">task list</xref> is an
-								interesting extension to show checkboxes next to each list
-								item.</p><p>Other types of lists (definition list for example) or
-								list items containing multiple block level elements can be inserted
-								directly in Markdown if the used Markdown flavor supports HTML
-								elements inside it.</p></entry>
+                                href="https://www.markdownguide.org/basic-syntax/#lists-1"
+                                format="html" scope="external">Ordered and unordered lists</xref>.
+                            Each list element contains simple content. It cannot contain block-
+                            level elements like additional lists or multiple paragraphs.<p>The <xref
+                                    href="https://www.markdownguide.org/extended-syntax/#task-lists"
+                                    format="html" scope="external">task list</xref> is an
+                                interesting extension to show checkboxes next to each list
+                                item.</p><p>Other types of lists (definition list for example) or
+                                list items that contain multiple block-level elements can be
+                                inserted directly in Markdown if the used Markdown flavor supports
+                                HTML elements inside it.</p></entry>
                     </row>
 					<row>
 						<entry valign="top"><b>Links</b></entry>
@@ -513,14 +513,12 @@ Text body. </codeblock></li>
                         <entry valign="top"><b>Conclusion</b></entry>
                         <entry valign="top">
 							<ul id="ul_xkt_vnd_vwb">
-								<li>Harder to type in a plain text area, requires DITA editing tools
-									most of which are not free.</li>
+								<li>Harder to type in a plain text area, requires DITA editing tools (most of which, are not
+                                    free).</li>
 								<li>Advanced support for structured validation.</li>
-								<li>Advanced support for content reuse and profiling conditional
-									text.</li>
-								<li>Publishing engine allows publishing to multiple output formats
-									like HTML, PDF and others based on plugins which can be
-									installed.</li>
+								<li>Advanced support for content re-use and profiling conditional text.</li>
+								<li>Publishing engine allows publishing to multiple output formats like HTML, PDF, and
+                                    others based on plugins that can be installed.</li>
 							</ul>
 						</entry>
                         <entry valign="top">
@@ -530,10 +528,9 @@ Text body. </codeblock></li>
 								<li>More complex elements need to be inserted as HTML elements. </li>
 								<li>Various Markdown extensions have extra support for example for
 									content reuse. </li>
-								<li>Mostly targeted towards obtaining web based HTML content. </li>
-								<li>Looks like a language which is not intended to do the heavy
-									lifting of producing multiple deliverable formats and
-									deliverables from the same content.</li>
+								<li>Mostly targeted towards obtaining web-based HTML content. </li>
+								<li>Looks like a language that is not intended to do the heavy lifting of producing multiple
+                                    deliverable formats and deliverables from the same content.</li>
 							</ul>
 						</entry>
                     </row>
