@@ -11,16 +11,16 @@
     <body>
 		<p>The <xref href="https://chat.openai.com/chat" format="html" scope="external">ChatGPT
 				OpenAI</xref> bot has the potential to help with various technical documentation
-			tasks: advice about the standard, small conversions, content generation, writing style
-			and readability analysis.</p>
-		<p>Below you can see a list of prompts I gave the bot along with the answers. The prompts to
+			tasks (advice about the standard, small conversions, content generation, writing style,
+			and readability analysis).</p>
+		<p>Below, you can see a list of prompts that I gave the bot along with the answers. The prompts to
 			the chatbot are presented as codeblocks.</p>
 		<section id="section_s3j_3zf_twb">
-			<title>Advice about DITA XML standard use</title>
+			<title>Advice About DITA XML Standard Use</title>
 			<p>
 				<ol>
 					<li>
-						<p>Debate about the type of DITA links to use in a
+						<p>Ask about the type of DITA links to use in a
 							topic.<codeblock id="codeblock_ql2_gyf_twb">Should I use cross references or related links in my DITA XML topic?</codeblock></p>
 						<p><image href="../images/chatgpt-xrefs-links.png" id="image_i2k_kyf_twb"
 								scale="50"/></p>
@@ -37,11 +37,11 @@
 			</p>
 		</section>
 		<section id="section_fzr_lzf_twb">
-			<title>Generate new content</title>
+			<title>Generate New Content</title>
 			<p>
 				<ol>
 					<li>
-						<p>Ask ChatGPT to generate DITA content about a very common task.</p>
+						<p>Instruct ChatGPT to generate DITA content about a very common task.</p>
 						<p>
 							<codeblock id="codeblock_fgv_vrf_twb">Write a small DITA XML task about installing a software application on Windows.</codeblock>
 						</p>
@@ -61,11 +61,11 @@
 			</p>
 		</section>
 		<section id="section_m4p_mzf_twb">
-			<title>Conversions</title>
+			<title>Simple Conversions</title>
 			<p>
 				<ol>
 					<li>
-						<p>Simple conversions - Convert Markdown content to DITA XML
+						<p>Convert Markdown content to DITA XML
 							topic.<codeblock id="codeblock_cnj_jvf_twb">Convert this Markdown content to a DITA XML topic:
 
 # Getting Started
@@ -79,7 +79,7 @@ List of steps:
 								scale="40"/></p>
 					</li>
 					<li>
-						<p>Simple conversions - Convert CSV content to DITA XML table.</p>
+						<p>Convert CSV content to DITA XML table.</p>
 						<p>
 							<codeblock id="codeblock_i1m_hwf_twb">Convert this CSV content containing headers to a DITA XML table element:
 
@@ -97,7 +97,7 @@ Frontosa,Cyphotilapia frontosus,Lake Tanganyika,Very peaceful,Omnivore,"PH 7.8 -
 			<title>Writing Style</title>
 			<ol id="ol_o5r_prf_twb">
 				<li>
-					<p>Debate what terminology to use in certain cases.</p>
+					<p>Ask what terminology to use in certain cases.</p>
 					<p>
 						<codeblock id="codeblock_v1m_wxf_twb">Should I use for technical documentation the phrase "click a button" or "press a button"?</codeblock>
 					</p>
@@ -105,9 +105,9 @@ Frontosa,Cyphotilapia frontosus,Lake Tanganyika,Very peaceful,Omnivore,"PH 7.8 -
 							scale="40"/></p>
 				</li>
 				<li>
-					<p>Re-phrase documentation provided by engineers using the Microsoft Style Guide
-						style, change also the person from first person to third
-						person.<codeblock id="codeblock_gft_b1g_twb">Re-phrase the following content to adhere to the Microsoft Style Guide, third person:
+					<p>Re-phrase documentation provided by engineers using the Microsoft Style Guide style and also
+						change the point of view from first-person to
+						third-person.<codeblock id="codeblock_gft_b1g_twb">Re-phrase the following content to adhere to the Microsoft Style Guide, third person:
 
 The action Show only keys with closest relative key scope from DITA Reusable Components / Keys tab was also added to Media tab Settings drop down menu
 The states of the two actions are synchronized. If you check it in Keys tab will automatically get checked in Media tab</codeblock></p>
@@ -115,11 +115,10 @@ The states of the two actions are synchronized. If you check it in Keys tab will
 							id="image_xjc_z1g_twb" scale="40"/></p>
 				</li>
 				<li>
-					<p>Translate some notes from the engineer's native language (in this case
-						Romanian with a mix of English words) to English, re-phrase using the
-						Microsoft Style Guide style, change also the person from first person to
-						third
-						person.<codeblock id="codeblock_fnd_3bg_twb">Translate to English, rephrase to adhere to the Microsoft Style Guide, third person:
+					<p>Translate some notes from the engineer's native language (in this case, Romanian with a mix
+						of English words) to English, re-phrase using the Microsoft Style Guide
+						style, and also change the point of view from first-person to
+						third-person.<codeblock id="codeblock_fnd_3bg_twb">Translate to English, rephrase to adhere to the Microsoft Style Guide, third person:
 
 In tabul Media, in meniul Settings a aparut actiunea Show only keys with closest relative key scope
 Cand o bifam trebuie sa ramana in view doar cheile relative (cheile cu forma cea mai scurta).</codeblock></p>
@@ -189,7 +188,7 @@ Cand o bifam trebuie sa ramana in view doar cheile relative (cheile cu forma cea
 		&lt;/section>
 	&lt;/body>
 &lt;/topic></codeblock></p><p>Remarks: If the prompt insists that all XML
-						elements should be preserved, the re-write does few things. But if the
+						elements should be preserved, the re-write does few things, but if the
 						prompt does not insist that all XML elements should be preserved, the inline
 						elements and links are removed.</p></li>
 			</ol>
@@ -208,23 +207,23 @@ Cand o bifam trebuie sa ramana in view doar cheile relative (cheile cu forma cea
 			</p><p><image href="../images/chatgpt-readability-analysis.png" id="image_tgz_kcg_twb"
 					scale="50"/></p></section>
 		<section id="section_ctp_vch_twb">
-			<title>Custom Validation (Schematron based)</title>
+			<title>Custom Validation (Schematron-based)</title>
 			<ol id="ol_qfn_wch_twb">
 				<li>
-					<p>Create an ISO Schematron validation check which counts
+					<p>Create an ISO Schematron validation check that counts
 						words.<codeblock id="codeblock_igv_h2h_twb">Create an ISO Schematron schema which reports if a DITA short description element has more than 20 words.</codeblock></p>
 					<p><image href="../images/chatgpt-sch-count-words.png" id="image_wnt_y2h_twb"
 							scale="40"/></p>
-					<p>Remark: The namespace declaration and usage is wrong, DITA elements are in no
-						namespace. The assert test is correct.</p>
+					<p>Remark: The namespace declaration and usage is wrong (DITA elements are in no namespace).
+						The assert test is correct.</p>
 				</li>
 				<li>
 					<p>Create an ISO Schematron validation check from a
 						description.<codeblock id="codeblock_pll_xch_twb">Create an ISO Schematron validation rule which reports an error if a DITA XML image element does not contain a scale attribute</codeblock></p>
 					<p><image href="../images/chatgpt-sch-image-scale.png" id="image_evh_qfh_twb"
 							scale="40"/></p>
-					<p>Remark: The namespace declaration and usage is wrong, DITA elements are in no
-						namespace. The assert test is correct.</p>
+					<p>Remark: The namespace declaration and usage is wrong (DITA elements are in no namespace).
+						The assert test is correct.</p>
 				</li>
 			</ol>
 		</section>
