@@ -13,11 +13,11 @@
   </prolog>
   <body>
     <p id="p_kdh_dgk_54b">We are proud to introduce our new <b>Oxygen AI Positron Assistant</b>
-      add-on which provides support for helping technical documentation writers generate content by
-      using the <uicontrol>Oxygen AI Positron</uicontrol> service. </p>
-    <p>The <codeph>Oxygen Positron Service</codeph> uses the OpenAI ChatGPT model
-        <codeph>GPT-3.5</codeph> to provide document generation, change suggestions and translation
-      capabilities.</p>
+      add-on which provides support for helping technical documentation writers generate and
+      re-write content by using the <uicontrol>Oxygen AI Positron</uicontrol> service. </p>
+    <p>The <codeph>Oxygen Positron Service</codeph> uses the <uicontrol>OpenAI ChatGPT</uicontrol>
+      model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions and
+      translation capabilities.</p>
     <section id="section_kgh_fzg_rsb">
       <title>Manual Installation</title>
       <p id="p_jzg_dgk_54b">To manually install this add-on, follow this procedure:<ol
