@@ -12,9 +12,12 @@
     </metadata>
   </prolog>
   <body>
-    <p id="p_kdh_dgk_54b">Our new <b>Oxygen AI Positron Assistant</b> add-on provides support for
-      helping technical documentation writers generate content by using the <uicontrol>Oxygen AI
-        Positron</uicontrol> service. </p>
+    <p id="p_kdh_dgk_54b">We are proud to introduce our new <b>Oxygen AI Positron Assistant</b>
+      add-on which provides support for helping technical documentation writers generate content by
+      using the <uicontrol>Oxygen AI Positron</uicontrol> service. </p>
+    <p>The <codeph>Oxygen Positron Service</codeph> uses the OpenAI ChatGPT model
+        <codeph>GPT-3.5</codeph> to provide document generation, change suggestions and translation
+      capabilities.</p>
     <section id="section_kgh_fzg_rsb">
       <title>Manual Installation</title>
       <p id="p_jzg_dgk_54b">To manually install this add-on, follow this procedure:<ol
@@ -41,8 +44,6 @@
       <p>From the <uicontrol>AI Positron Assistant</uicontrol> side view you can easily configure
         login details and connect to the <codeph>Oxygen Positron Service</codeph> in the web
         browser. The service is free to use for a number of 250 requests per month.</p>
-      <p>The <codeph>Oxygen Positron Service</codeph> uses the OpenAI ChatGPT server version
-          <codeph>3.5</codeph> API to propose document generation and change suggestions.</p>
     </section>
     <section id="section_utc_twz_1xb">
       <title>Generating Content</title>
