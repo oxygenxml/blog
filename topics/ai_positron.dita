@@ -90,11 +90,19 @@
                   <li>
                     <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
                       from some ideas entered in a configuration dialog.</p>
+                    <p>
+                      <image placement="break" href="../images/ai_new_topic.gif" scale="50"
+                        id="image_zlf_rrs_cxb"/>
+                    </p>
                   </li>
                   <li>
                     <p><uicontrol>Short Description</uicontrol> - Generates a short description
                         (<xmlelement>shortdesc</xmlelement> element) based on a summary of the
                       selected text.</p>
+                    <p>
+                      <image placement="break" href="../images/ai_short_desc.gif" scale="50"
+                        id="image_sqt_sqs_cxb"/>
+                    </p>
                   </li>
                   <li>
                     <p><uicontrol>Index Terms</uicontrol> - Generates a
