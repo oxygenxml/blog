@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ai_positron">
+  <title>Oxygen AI Positron Assistant Add-on</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <metadata>
+      <keywords>
+        <indexterm>Add-ons<indexterm>artificial intelligence</indexterm></indexterm>
+        <indexterm>AI Positron Assistant</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p id="p_kdh_dgk_54b">An <b>Oxygen AI Positron Assistant</b> add-on is available that provides
+      support for helping writers generate content by using the <uicontrol>Oxygen AI
+        Positron</uicontrol> service. </p>
+    <section id="section_kgh_fzg_rsb">
+      <title>Manual Installation</title>
+      <p id="p_jzg_dgk_54b">To manually install this add-on, follow this procedure:<ol
+        id="ol_kzg_dgk_54b">
+        <li id="li_lzg_dgk_54b">Go to <menucascade>
+              <uicontrol>Help</uicontrol>
+              <uicontrol>Install new add-ons</uicontrol>
+            </menucascade> to open an add-on selection dialog box. Enter or paste
+              <b>https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml</b> in the
+              <uicontrol>Show add-ons from</uicontrol> field or select it from the drop-down
+              menu.<note id="note_manual_installation">If you have issues connecting to the default
+              update site, you can <xref format="html" scope="external"
+                href="https://www.oxygenxml.com/php/download-addon.php?updateSite=https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml&amp;oxygenAddonId=oxygen.ai.positron.addon"
+                >download the add-on package</xref>, unzip it, then use the <uicontrol>Browse for
+                local files</uicontrol> action in the <uicontrol>Install new add-ons</uicontrol>
+              dialog box to locate the downloaded <filepath>addon.xml</filepath> file.</note></li>
+        <li id="li_nzg_dgk_54b">Select the <b>Oxygen AI Positron Assistant</b> add-on and click
+              <uicontrol>Next</uicontrol>.</li>
+        <li id="li_ozg_dgk_54b">Read the end-user license agreement. Then select the <uicontrol>I
+          accept all terms of the end-user license agreement</uicontrol> option and click
+          <uicontrol>Finish</uicontrol>.</li>
+        <li id="li_pzg_dgk_54b">Restart the application.</li>
+      </ol></p>
+      <p id="p_qzg_dgk_54b"><b>Result:</b> The <uicontrol>AI Positron Assistant</uicontrol> and
+          <uicontrol>AI Positron Activity</uicontrol> side views are now available.</p>
+    </section>
+    <section id="section_xb3_kmk_cxb">
+      <title>Connecting to the Positron Service</title>
+      <p>From the <uicontrol>AI Positron Assistant</uicontrol> side view you can easily configure
+        login details and connect to the <codeph>Oxygen Positron Service</codeph> in the web
+        browser. The service is free to use for a number of 250 requests per month.</p>
+      <p>The <codeph>Oxygen Positron Service</codeph> uses the OpenAI ChatGPT server version
+          <codeph>3.5</codeph> API to propose document generation and change suggestions.</p>
+    </section>
+    <section id="section_utc_twz_1xb">
+      <title>Generating Content</title>
+      <p>Once you login to the server, the following actions for generating content are available in
+        the <uicontrol>AI Positron Assistant</uicontrol> side view, in the <uicontrol>AI Positron
+          Assistant</uicontrol> popup menus, and in the <uicontrol>AI</uicontrol> main menu:<dl
+          id="dl_lcm_vwz_1xb">
+          <dlentry>
+            <dt>Content Generation</dt>
+            <dd>
+              <ul id="ul_qbx_wwz_1xb">
+                <li><uicontrol>Continue Writing</uicontrol> - Continues the idea in the current
+                  paragraph by generating extra content.</li>
+                <li><uicontrol>Follow Instructions</uicontrol> - Replaces the selected instructions
+                  with content generated based on them. </li>
+              </ul>
+            </dd>
+          </dlentry>
+          <dlentry>
+            <dt>DITA Topic Tools</dt>
+            <dd>
+              <p>
+                <ul id="ul_n2m_bxz_1xb">
+                  <li><uicontrol>Improve Readability</uicontrol> - Improves the readability and
+                    corrects spell check problems in the selected content preserving its original
+                    XML markup.</li>
+                  <li><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
+                    from some ideas entered in a configuration dialog.</li>
+                  <li>
+                    <p><uicontrol>Short Description</uicontrol> - Generates a short description
+                        (<xmlelement>shortdesc</xmlelement> element) based on a summary of the
+                      selected text.</p>
+                  </li>
+                  <li>
+                    <p><uicontrol>Index Terms</uicontrol> - Generates a
+                        <xmlelement>keywords</xmlelement> element that contains index terms obtained
+                      from the selected text and inserts it in the
+                      <xmlelement>prolog</xmlelement>.</p>
+                  </li>
+                </ul>
+              </p>
+            </dd>
+          </dlentry>
+          <dlentry>
+            <dt>Translation</dt>
+            <dd>
+              <p>The actions translate the selected text to the target language
+                  (<uicontrol>English</uicontrol>, <uicontrol>German</uicontrol>,
+                  <uicontrol>French</uicontrol>, <uicontrol>Japanese</uicontrol>) preserving the
+                original XML markup.</p>
+            </dd>
+          </dlentry>
+          <dlentry>
+            <dt>Overview</dt>
+            <dd>
+              <p>
+                <ul id="ul_bwl_3xz_1xb">
+                  <li><uicontrol>Readability</uicontrol> - Suggest changes to increase readability
+                    of the current selected content.</li>
+                  <li><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
+                    content.</li>
+                </ul>
+              </p>
+            </dd>
+          </dlentry>
+        </dl></p>
+      <p>Results for various reports and information about each executed action appear in the
+          <uicontrol>AI Positron Activity</uicontrol> side view.</p>
+    </section>
+  </body>
+</topic>
