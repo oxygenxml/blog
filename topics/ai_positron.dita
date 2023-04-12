@@ -25,12 +25,7 @@
             </menucascade> to open an add-on selection dialog box. Enter or paste
               <b>https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml</b> in the
               <uicontrol>Show add-ons from</uicontrol> field or select it from the drop-down
-              menu.<note id="note_manual_installation">If you have issues connecting to the default
-              update site, you can <xref format="html" scope="external"
-                href="https://www.oxygenxml.com/php/download-addon.php?updateSite=https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml&amp;oxygenAddonId=oxygen.ai.positron.addon"
-                >download the add-on package</xref>, unzip it, then use the <uicontrol>Browse for
-                local files</uicontrol> action in the <uicontrol>Install new add-ons</uicontrol>
-              dialog box to locate the downloaded <filepath>addon.xml</filepath> file.</note></li>
+            menu.</li>
         <li id="li_nzg_dgk_54b">Select the <b>Oxygen AI Positron Assistant</b> add-on and click
               <uicontrol>Next</uicontrol>.</li>
         <li id="li_ozg_dgk_54b">Read the end-user license agreement. Then select the <uicontrol>I
@@ -59,10 +54,22 @@
             <dt>Content Generation</dt>
             <dd>
               <ul id="ul_qbx_wwz_1xb">
-                <li><uicontrol>Continue Writing</uicontrol> - Continues the idea in the current
-                  paragraph by generating extra content.</li>
-                <li><uicontrol>Follow Instructions</uicontrol> - Replaces the selected instructions
-                  with content generated based on them. </li>
+                <li>
+                  <p><uicontrol>Continue Writing</uicontrol> - Continues the idea in the current
+                    paragraph by generating extra content.</p>
+                  <p>
+                    <image placement="break" href="../images/ai_continue_writing.gif"
+                      id="image_dmj_lms_cxb" scale="50"/>
+                  </p>
+                </li>
+                <li>
+                  <p><uicontrol>Follow Instructions</uicontrol> - Replaces the selected instructions
+                    with content generated based on them. </p>
+                  <p>
+                    <image placement="break" href="../images/ai_follow_instructions.gif"
+                      id="image_wjc_vns_cxb" scale="50"/>
+                  </p>
+                </li>
               </ul>
             </dd>
           </dlentry>
@@ -71,11 +78,15 @@
             <dd>
               <p>
                 <ul id="ul_n2m_bxz_1xb">
-                  <li><uicontrol>Improve Readability</uicontrol> - Improves the readability and
-                    corrects spell check problems in the selected content preserving its original
-                    XML markup.</li>
-                  <li><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
-                    from some ideas entered in a configuration dialog.</li>
+                  <li>
+                    <p><uicontrol>Improve Readability</uicontrol> - Improves the readability and
+                      corrects spell check problems in the selected content preserving its original
+                      XML markup.</p>
+                  </li>
+                  <li>
+                    <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
+                      from some ideas entered in a configuration dialog.</p>
+                  </li>
                   <li>
                     <p><uicontrol>Short Description</uicontrol> - Generates a short description
                         (<xmlelement>shortdesc</xmlelement> element) based on a summary of the
