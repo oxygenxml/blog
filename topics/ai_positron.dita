@@ -82,6 +82,10 @@
                     <p><uicontrol>Improve Readability</uicontrol> - Improves the readability and
                       corrects spell check problems in the selected content preserving its original
                       XML markup.</p>
+                    <p>
+                      <image placement="break" href="../images/ai_improve_readability.gif"
+                        scale="50" id="image_lw2_wps_cxb"/>
+                    </p>
                   </li>
                   <li>
                     <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
