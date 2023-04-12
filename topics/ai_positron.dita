@@ -12,8 +12,8 @@
     </metadata>
   </prolog>
   <body>
-    <p id="p_kdh_dgk_54b">An <b>Oxygen AI Positron Assistant</b> add-on is available that provides
-      support for helping writers generate content by using the <uicontrol>Oxygen AI
+    <p id="p_kdh_dgk_54b">Our new <b>Oxygen AI Positron Assistant</b> add-on provides support for
+      helping technical documentation writers generate content by using the <uicontrol>Oxygen AI
         Positron</uicontrol> service. </p>
     <section id="section_kgh_fzg_rsb">
       <title>Manual Installation</title>
@@ -132,10 +132,18 @@
             <dd>
               <p>
                 <ul id="ul_bwl_3xz_1xb">
-                  <li><uicontrol>Readability</uicontrol> - Suggest changes to increase readability
-                    of the current selected content.</li>
-                  <li><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
-                    content.</li>
+                  <li>
+                    <p><uicontrol>Readability</uicontrol> - Suggest changes to increase readability
+                      of the current selected content.</p>
+                  </li>
+                  <li>
+                    <p><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
+                      content.</p>
+                    <p>
+                      <image placement="break" href="../images/ai_summarize.gif" scale="50"
+                        id="image_snn_2ts_cxb"/>
+                    </p>
+                  </li>
                 </ul>
               </p>
             </dd>
