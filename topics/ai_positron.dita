@@ -127,6 +127,10 @@
                       from the selected text and inserts it in the
                       <xmlelement>prolog</xmlelement>.</p>
                   </li>
+                  <li><uicontrol>Itemize</uicontrol> - Converts a selected paragraph's contents to a
+                    summary and a list of items.</li>
+                  <li><uicontrol>Join Items</uicontrol> - Convert the selection containing a list of
+                    items to a single paragraph.</li>
                 </ul>
               </p>
             </dd>
@@ -150,8 +154,8 @@
               <p>
                 <ul id="ul_bwl_3xz_1xb">
                   <li>
-                    <p><uicontrol>Readability</uicontrol> - Suggest changes to increase readability
-                      of the current selected content.</p>
+                    <p><uicontrol>Readability</uicontrol> - Suggest changes to improve readability
+                      of the selected content.</p>
                   </li>
                   <li>
                     <p><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
