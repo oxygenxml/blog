@@ -18,6 +18,22 @@
     <p>The <codeph>Oxygen Positron Service</codeph> uses the <uicontrol>OpenAI ChatGPT</uicontrol>
       model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions and
       translation capabilities.</p>
+    <section>
+      <title>Overview</title>
+      <p>Let's simplify and assume that a technical documentation writer's work is done in two
+        stages: analysis and implementation. Usually in the analysis stage the technical
+        documentation writer could use resources like web search, <uicontrol>ChatGPT</uicontrol> or
+        discussions with colleagues or engineers to further understand the subject they are writing
+        about.</p>
+      <p>In the second stage the technical documentation writers use tools like <ph keyref="oxygen"
+        /> to write the actual content. Our <uicontrol>Oxygen AI Positron Assistant</uicontrol>
+        add-on explores various ways in which we can use <uicontrol>ChatGPT</uicontrol> to help
+        writers while editing or reviewing the technical documentation, give hints about what to
+        write next, improve readability of content or re-structure the content in various ways. </p>
+      <p>Content received from the <uicontrol>OpenAI ChatGPT</uicontrol> model may be inaccurate or
+        contain misleading information so it needs to be properly revised.</p>
+      <p>As always we are interested in your feedback and in your improvement suggestions.</p>
+    </section>
     <section id="section_kgh_fzg_rsb">
       <title>Manual Installation</title>
       <p id="p_jzg_dgk_54b">To manually install this add-on, follow this procedure:<ol
