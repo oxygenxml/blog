@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="add_ons_for_technical_documentation">
+    <title>Add-ons For Technical Documentation</title>
+    <shortdesc> Oxygen XML Author has various free and useful add-ons for technical documentation
+        writers including a language model for editing, batch document converter, Git client,
+        content fusion connector, feedback comments manager, terminology checker, DITA translation,
+        and live tutorials. </shortdesc>
+    <prolog>
+        <author>Radu Coravu</author>
+    </prolog>
+    <body>
+        <p>Oxygen XML Author can be enhanced by installing add-ons. There are quite a number of free
+            and useful add-ons for technical documentation writers and we will explore some of them.
+            Documentation and installation instructions for all Oxygen add-ons can be found <xref
+                href="https://www.oxygenxml.com/doc/ug-editor/topics/add-ons.html" format="html"
+                scope="external">here</xref>.<dl id="dl_g3z_x31_dxb">
+                <dlentry>
+                    <dt><xref href="ai_positron.dita"/></dt>
+                    <dd>Use the <b>Oxygen AI Positron</b> service based on <b>ChatGPT</b> to enhance
+                        your editing experience. </dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
+                            format="html" scope="external">Batch Documents Converter</xref></dt>
+                    <dd>Convert various formats like Word, HTML, Markdown, DocBook, Open API or
+                        Confluence to other formats like DITA XML.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
+                            format="html" scope="external">Git Client add-on</xref></dt>
+                    <dd>Collaborate with your colleagues on a Git project. Comes with support for: <ul>
+                            <li>Git Staging</li>
+                            <li>Git History</li>
+                            <li>Git Branch Manager</li>
+                            <li>Settings to validate before commit or before push.</li>
+                        </ul></dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+                            format="html" scope="external">Content Fusion Connector
+                        Add-on</xref></dt>
+                    <dd>Create review tasks for collaborators and subject matter experts who can
+                        later review the tasks in a web browser</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/ofb-feedback-comments-manager.html"
+                            format="html" scope="external">Feedback Comments Manager
+                        Add-on</xref></dt>
+                    <dd>View and manage comments made in the Oxygen WebHelp Feedback forms directly
+                        in the Oxygen application.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/terminology-checker-addon.html"
+                            format="html" scope="external">Terminology Checker Add-on</xref></dt>
+                    <dd>
+                        <ul>
+                            <li>Define terminology rules specific for your application to suggest
+                                replacements for certain combinations of words.</li>
+                            <li>Use rules already implemented in Vale syntax. </li>
+                        </ul>
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/fluenta-dita-translation-add-on.html"
+                            format="html" scope="external">Fluenta DITA Translation
+                        Add-on</xref></dt>
+                    <dd>Create and manage xliff files from your DITA XML content using the Fluenta libraries.<ul>
+                            <li>Create translation projects</li>
+                            <li>Convert DITA XML to XLiff</li>
+                            <li>Convert XLiff to DITA</li>
+                        </ul></dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/live-tutorials-addon.html"
+                            format="html" scope="external">Live Tutorials Add-on</xref></dt>
+                    <dd>Create or explore already available tutorials to learn various Oxygen
+                        features.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-prolog-updater.html"
+                            format="html" scope="external">DITA Prolog Updater Add-on</xref></dt>
+                    <dd>Automatically update the author name and revision dates in the prolog
+                        section when saving DITA topics or maps in Oxygen.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
+                            href="https://www.oxygenxml.com/ug-editor/topics/dita-outgoing-references-addon.html"
+                            format="html" scope="external">DITA References View Add-on</xref></dt>
+                    <dd>See for each opened DITA topic the set of outgoing and incoming references,
+                        including references defined in a relationship table.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt/>
+                    <dd/>
+                </dlentry>
+            </dl></p>
+    </body>
+</topic>
