@@ -13,26 +13,26 @@
   </prolog>
   <body>
     <p id="p_kdh_dgk_54b">We are proud to introduce our new <b>Oxygen AI Positron Assistant</b>
-      add-on which provides support for helping technical documentation writers generate and
+      add-on, which provides support for helping technical documentation writers generate and
       re-write content by using the <uicontrol>Oxygen AI Positron</uicontrol> service. </p>
     <p>The <codeph>Oxygen Positron Service</codeph> uses the <uicontrol>OpenAI ChatGPT</uicontrol>
-      model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions and
+      model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions, and
       translation capabilities.</p>
     <section>
       <title>Overview</title>
       <p>Let's simplify and assume that a technical documentation writer's work is done in two
-        stages: analysis and implementation. Usually in the analysis stage the technical
-        documentation writer could use resources like web search, <uicontrol>ChatGPT</uicontrol> or
+        stages: analysis and implementation. Usually, in the analysis stage, the technical
+        documentation writer could use resources like web search, <uicontrol>ChatGPT</uicontrol>, or
         discussions with colleagues or engineers to further understand the subject they are writing
         about.</p>
-      <p>In the second stage the technical documentation writers use tools like <ph keyref="oxygen"
+      <p>In the second stage, the technical documentation writers use tools like <ph keyref="oxygen"
         /> to write the actual content. Our <uicontrol>Oxygen AI Positron Assistant</uicontrol>
-        add-on explores various ways in which we can use <uicontrol>ChatGPT</uicontrol> to help
-        writers while editing or reviewing the technical documentation, give hints about what to
-        write next, improve readability of content or re-structure the content in various ways. </p>
+        add-on explores various ways that we can use <uicontrol>ChatGPT</uicontrol> to help writers
+        while editing or reviewing the technical documentation, give hints about what to write next,
+        improve readability of content, or re-structure the content in various ways. </p>
       <p>Content received from the <uicontrol>OpenAI ChatGPT</uicontrol> model may be inaccurate or
         contain misleading information so it needs to be properly revised.</p>
-      <p>As always we are interested in your feedback and in your improvement suggestions.</p>
+      <p>As always, we are interested in your feedback and in your improvement suggestions.</p>
     </section>
     <section id="section_kgh_fzg_rsb">
       <title>Manual Installation</title>
@@ -57,14 +57,14 @@
     </section>
     <section id="section_xb3_kmk_cxb">
       <title>Connecting to the Positron Service</title>
-      <p>From the <uicontrol>AI Positron Assistant</uicontrol> side view you can easily configure
+      <p>You can use the <uicontrol>AI Positron Assistant</uicontrol> side view to easily configure
         login details and connect to the <codeph>Oxygen Positron Service</codeph> in the web
-        browser. The service is free to use for a number of 250 requests per month.</p>
+        browser. The service is free to use for up to 250 requests per month.</p>
     </section>
     <section id="section_utc_twz_1xb">
       <title>Generating Content</title>
-      <p>Once you login to the server, the following actions for generating content are available in
-        the <uicontrol>AI Positron Assistant</uicontrol> side view, in the <uicontrol>AI Positron
+      <p>Once you log in to the server, the following actions for generating content are available
+        in the <uicontrol>AI Positron Assistant</uicontrol> side view, in the <uicontrol>AI Positron
           Assistant</uicontrol> popup menus, and in the <uicontrol>AI</uicontrol> main menu:<dl
           id="dl_lcm_vwz_1xb">
           <dlentry>
@@ -97,8 +97,8 @@
                 <ul id="ul_n2m_bxz_1xb">
                   <li>
                     <p><uicontrol>Improve Readability</uicontrol> - Improves the readability and
-                      corrects spell check problems in the selected content preserving its original
-                      XML markup.</p>
+                      corrects spell check problems in the selected content, while preserving its
+                      original XML markup.</p>
                     <p>
                       <image placement="break" href="../images/ai_improve_readability.gif"
                         scale="50" id="image_lw2_wps_cxb"/>
@@ -106,7 +106,7 @@
                   </li>
                   <li>
                     <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
-                      from some ideas entered in a configuration dialog.</p>
+                      from some ideas entered in a configuration dialog box.</p>
                     <p>
                       <image placement="break" href="../images/ai_new_topic.gif" scale="50"
                         id="image_zlf_rrs_cxb"/>
