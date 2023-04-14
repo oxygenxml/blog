@@ -59,7 +59,8 @@
       <title>Connecting to the Positron Service</title>
       <p>You can use the <uicontrol>AI Positron Assistant</uicontrol> side view to easily configure
         login details and connect to the <codeph>Oxygen Positron Service</codeph> in the web
-        browser. The service is free to use for up to 250 requests per month.</p>
+        browser. For now the service is free to use for up to 250 requests per month and a paid
+        subscription may be added as an option in the future.</p>
     </section>
     <section id="section_utc_twz_1xb">
       <title>Generating Content</title>
