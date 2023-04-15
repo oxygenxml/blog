@@ -4,6 +4,9 @@
   <title>Oxygen AI Positron Assistant Add-on</title>
   <prolog>
     <author>Radu Coravu</author>
+    <critdates>
+      <created date="2023-04-15"/>
+    </critdates>
     <metadata>
       <keywords>
         <indexterm>Add-ons<indexterm>artificial intelligence</indexterm></indexterm>
