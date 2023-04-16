@@ -182,5 +182,16 @@
       <p>Results for various reports and information about each executed action appear in the
           <uicontrol>AI Positron Activity</uicontrol> side view.</p>
     </section>
+    <section>
+      <title>Future Improvement Ideas</title>
+      <p>Here's a list of possible future ideas for using AI to improve the tech docs processes:<ul>
+          <li>Support for converting between various text formats like Markdown or ASCIIDoc to DITA
+            XML.</li>
+          <li>Support to automatically change the content based on comments left by reviewers.</li>
+          <li>Support to chat directly with the AI system.</li>
+          <li>More actions to change tone of voice (active/passive/marketing) for  existing
+            content.</li>
+        </ul></p>
+    </section>
   </body>
 </topic>
