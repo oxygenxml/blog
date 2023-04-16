@@ -31,10 +31,11 @@
                     <dt><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
                             format="html" scope="external">Git Client add-on</xref></dt>
                     <dd>Collaborate with your colleagues on a Git project. Comes with support for: <ul>
-                            <li>Git Staging</li>
+                            <li>Git Staging<ul>
+                                    <li>Settings to validate before commit or before push.</li>
+                                </ul></li>
                             <li>Git History</li>
                             <li>Git Branch Manager</li>
-                            <li>Settings to validate before commit or before push</li>
                         </ul></dd>
                 </dlentry>
                 <dlentry>
@@ -96,10 +97,6 @@
                             format="html" scope="external">DITA References View Add-on</xref></dt>
                     <dd>See the set of outgoing and incoming references for each opened DITA topic,
                         including references defined in a relationship table.</dd>
-                </dlentry>
-                <dlentry>
-                    <dt/>
-                    <dd/>
                 </dlentry>
             </dl></p>
     </body>
