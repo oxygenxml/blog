@@ -25,6 +25,17 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/fluenta-dita-translation-add-on.html"
+                            format="html" scope="external">Fluenta DITA Translation
+                        Add-on</xref></dt>
+                    <dd>Create and manage XLiff files from your DITA XML content using the Fluenta libraries.<ul>
+                            <li>Create translation projects</li>
+                            <li>Convert DITA XML to XLiff</li>
+                            <li>Convert XLiff to DITA</li>
+                        </ul></dd>
+                </dlentry>
+                <dlentry>
+                    <dt><xref
                             href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
                             format="html" scope="external">Batch Documents Converter</xref></dt>
                     <dd>Convert various formats like Word, HTML, Markdown, DocBook, Open API, or
@@ -68,17 +79,6 @@
                             <li>Use rules already implemented in Vale syntax. </li>
                         </ul>
                     </dd>
-                </dlentry>
-                <dlentry>
-                    <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/fluenta-dita-translation-add-on.html"
-                            format="html" scope="external">Fluenta DITA Translation
-                        Add-on</xref></dt>
-                    <dd>Create and manage XLiff files from your DITA XML content using the Fluenta libraries.<ul>
-                            <li>Create translation projects</li>
-                            <li>Convert DITA XML to XLiff</li>
-                            <li>Convert XLiff to DITA</li>
-                        </ul></dd>
                 </dlentry>
                 <dlentry>
                     <dt><xref
