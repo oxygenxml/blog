@@ -7,6 +7,9 @@
 		resources. </shortdesc>
 	<prolog>
 		<author>Radu Coravu</author>
+		<critdates>
+			<created date="2023-04-14"/>
+		</critdates>
 	</prolog>
     <body>
 		<p>In this blog post, we'll look into why technical writers should use Git and how various
