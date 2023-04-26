@@ -12,6 +12,7 @@
 		<p>Common workflows for working with Git:<ul id="ul_trs_fn3_wwb">
 				<li><xref href="centralized_workflow.dita"/></li>
 				<li><xref href="feature_branches.dita"/></li>
+				<li><xref href="release_branches.dita"/></li>
 				<li><xref href="gitflow.dita"/></li>
 			</ul></p>
 	</body>
