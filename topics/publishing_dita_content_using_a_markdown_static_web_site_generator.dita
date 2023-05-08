@@ -110,8 +110,16 @@ nav:
     - Copyright: topics/copyright.md
 theme: readthedocs</codeblock><p><b>Result:</b> Now the output should
                         have the table of contents generated from the original DITA
-                            map:</p><p><image href="../images/properTocMKDocs.png" width="600"
-                            id="image_hjt_42h_vrb"/></p></li>
+                            map:</p><p><image href="../images/properTocMKDocs.png" width="600" id="image_hjt_42h_vrb"/><note type="tip"
+                            >There is a <i>mkdocs-literate-nav</i>
+                            <xref href="https://github.com/oprypin/mkdocs-literate-nav"
+                                format="html" scope="external">mkdocs plugin</xref> which can be
+                            installed after <b>step 5</b> above and you can add the plugin
+                            information to the <codeph>mkdocs.yml</codeph> (instead of <b>step 9</b>
+                            above). This plugin utilises the <codeph>index.md</codeph> file built by
+                            the transform instead of the <codeph>nav</codeph> section in the
+                                <codeph>mkdocs.yml</codeph> to order the side toc
+                        correctly.</note></p></li>
             </ol></p>
     </body>
 </topic>
