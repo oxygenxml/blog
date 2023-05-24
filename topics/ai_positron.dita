@@ -70,7 +70,7 @@
         subscription may be added as an option in the future.</p>
     </section>
     <section id="section_utc_twz_1xb">
-      <title>Generating Content</title>
+      <title>Generating and Refining Content</title>
       <p>Once you log in to the server, the following actions for generating content are available
         in the <uicontrol>AI Positron Assistant</uicontrol> side view, in the <uicontrol>AI Positron
           Assistant</uicontrol> popup menus, and in the <uicontrol>AI</uicontrol> main menu:<dl
@@ -89,11 +89,8 @@
                 </li>
                 <li>
                   <p><uicontrol>Follow Instructions</uicontrol> - Replaces the selected instructions
-                    with content generated based on them. </p>
-                  <p>
-                    <image placement="break" href="../images/ai_follow_instructions.gif"
-                      id="image_wjc_vns_cxb" scale="50"/>
-                  </p>
+                    with content generated based on them. Available when editing schemas, XSLT
+                    stylesheets and Schematron files.</p>
                 </li>
               </ul>
             </dd>
@@ -135,15 +132,6 @@
                       from the selected text and inserts it in the
                       <xmlelement>prolog</xmlelement>.</p>
                   </li>
-                  <li>
-                    <p><uicontrol>Itemize</uicontrol> - Converts the content of a selected paragraph
-                      into a summary and a list of items.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_itemize.gif" scale="50"/>
-                    </p>
-                  </li>
-                  <li><uicontrol>Join Items</uicontrol> - Converts a selection that contains a list
-                    of items into a single paragraph.</li>
                 </ul>
               </p>
             </dd>
@@ -183,8 +171,43 @@
             </dd>
           </dlentry>
         </dl></p>
-      <p>Results for various reports and information about each executed action appear in the
-          <uicontrol>AI Positron Activity</uicontrol> side view.</p>
+      <dl>
+        <dlentry>
+          <dt>Rewrite</dt>
+          <dd>
+            <ul id="ul_p21_xdn_kxb">
+              <li id="li_lvd_nfl_4xb">
+                <p><uicontrol>Itemize</uicontrol> - Converts the selected content into a summary and
+                  a list of items.</p>
+                <image placement="break" href="../images/ai_itemize.gif" scale="50"
+                  id="image_ixj_4fl_4xb"/>
+              </li>
+              <li id="li_mvd_nfl_4xb"><uicontrol>Join Items</uicontrol> - Converts the selected list
+                of items into a paragraph.</li>
+              <li id="li_nvd_nfl_4xb"><uicontrol>Use active voice</uicontrol> - Replaces the
+                selected content with content that has been converted from passive to active
+                voice.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section id="section_a3d_sgl_4xb">
+      <title>AI Positron Chat</title>
+      <p>The <uicontrol>AI Positron Chat</uicontrol> side view present results after running each
+        action and allows further refining the responses by discussing with the <b>Positron</b>
+        server.</p>
+      <p><image href="../images/ai-chat.png" id="image_k2d_xgl_4xb" scale="30"/></p>
+      <p>Once a response is received from the server you can use the actions available in the
+          <uicontrol>AI Positron Chat</uicontrol> view to <b>insert</b> the response, <b>preview</b>
+        changes or <b>copy</b> the response to clipboard.</p>
+      <p>You can further discuss with the <b>AI Positron</b> platform in order to refine the
+        response.</p>
+      <p><image href="../images/ai-chat-rephrase.png" id="image_k1x_23l_4xb" scale="50"/></p>
+      <p>You can start a new chat and create your own favorite prompts using the supported
+          <b>${selection}</b> and <b>${document}</b> variables to specify the content which is sent
+        to the platform:</p>
+      <p><image href="../images/ai-prompts-favorite.gif" id="image_blv_nkl_4xb" scale="80"/></p>
     </section>
     <section>
       <title>Future Improvement Ideas</title>
@@ -192,7 +215,6 @@
           <li>Support for converting between various text formats like Markdown or ASCIIDoc to DITA
             XML.</li>
           <li>Support to automatically change the content based on comments left by reviewers.</li>
-          <li>Support to chat directly with the AI system.</li>
           <li>More actions to change tone of voice (active/passive/marketing) for  existing
             content.</li>
         </ul></p>
