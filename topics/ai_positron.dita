@@ -215,6 +215,14 @@
         to the platform:</p>
       <p><image href="../images/ai-prompts-favorite.gif" id="image_blv_nkl_4xb" scale="80"/></p>
     </section>
+    <section id="section_izh_bqm_4xb">
+      <title>Validation Quick Fixes</title>
+      <p>Whenever validation problems are displayed in the application
+          <uicontrol>Problems</uicontrol> list you can right click a problem and use the
+          <uicontrol>AI Positron Fix</uicontrol> action to ask the <b>AI Positron</b> platform for
+        help in fixing the problem.</p>
+      <p><image href="../images/ai-quick-fix.gif" scale="50"/></p>
+    </section>
     <section>
       <title>Future Improvement Ideas</title>
       <p>Here's a list of possible future ideas for using AI to improve the tech docs processes:<ul>
