@@ -223,6 +223,34 @@
         help in fixing the problem.</p>
       <p><image href="../images/ai-quick-fix.gif" scale="50"/></p>
     </section>
+    <section id="section_j5p_shs_4xb">
+      <title>Custom Schematron Validation Rules</title>
+      <p>The add-on contributes two XSLT extension functions
+          <codeph>ai:transform-content(instruction, content)</codeph> and
+          <codeph>ai:verify-content(instruction, content)</codeph> which can be used from custom
+        Schematron schemas to rephrase content or to perform validation checks on existing
+        content.</p>
+      <p>Example of a custom Schematron schema which can be used to rephrase a short description so
+        that it contains less words:
+        <codeblock id="codeblock_qr4_33s_4xb" outputclass="language-xml">&lt;sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3"
+    xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
+    &lt;sch:ns uri="http://www.oxygenxml.com/ai/function" prefix="ai"/>
+    &lt;sch:pattern>
+        &lt;sch:rule context="shortdesc">
+            &lt;sch:report test="count(tokenize(.,'\s+')) > 10" sqf:fix="rephrase">
+      The phrase must contain less than 10 words.&lt;/sch:report>
+            &lt;sqf:fix id="rephrase">
+                &lt;sqf:description>
+                    &lt;sqf:title>Rephrase phrase to be less that 10 words&lt;/sqf:title>
+                &lt;/sqf:description>
+                &lt;sqf:replace match="text()" select="ai:transform-content(
+                'Reformulate phrase to be less that 10 words', .)">&lt;/sqf:replace>
+            &lt;/sqf:fix>
+        &lt;/sch:rule>
+    &lt;/sch:pattern>
+&lt;/sch:schema> </codeblock></p>
+      <p><image href="../images/ai-schematron.gif" id="image_otq_pjs_4xb" scale="80"/></p>
+    </section>
     <section>
       <title>Future Improvement Ideas</title>
       <p>Here's a list of possible future ideas for using AI to improve the tech docs processes:<ul>
