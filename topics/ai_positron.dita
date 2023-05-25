@@ -22,218 +22,214 @@
     <p>The <codeph>Oxygen Positron Service</codeph> uses the <uicontrol>OpenAI ChatGPT</uicontrol>
       model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions, and
       translation capabilities.</p>
-    <section>
+    <section id="overview">
       <title>Overview</title>
-      <p>Let's simplify and assume that a technical documentation writer's work is done in two
-        stages: analysis and implementation. Usually, in the analysis stage, the technical
-        documentation writer could use resources like web search, <uicontrol>ChatGPT</uicontrol>, or
-        discussions with colleagues or engineers to further understand the subject they are writing
-        about.</p>
-      <p>In the second stage, the technical documentation writers use tools like <ph keyref="oxygen"
-        /> to write the actual content. Our <uicontrol>Oxygen AI Positron Assistant</uicontrol>
-        add-on explores various ways that we can use <uicontrol>ChatGPT</uicontrol> to help writers
-        while editing or reviewing the technical documentation, give hints about what to write next,
-        improve readability of content, or re-structure the content in various ways. </p>
-      <p>Content received from the <uicontrol>OpenAI ChatGPT</uicontrol> model may be inaccurate or
-        contain misleading information so it needs to be properly revised.</p>
-      <p>The terms of use for the service can be found <xref
-          href="https://www.oxygenxml.com/aipositron/user_terms.html" format="html" scope="external"
-          >here</xref>.</p>
-      <p>As always, we are interested in your feedback and in your improvement suggestions.</p>
+      <p id="p_f1t_x2w_4xb">In a simplified form, technical documentation is often done in two
+        stages: analysis and implementation. In the analysis stage, technical writers could use
+        various resources such as web searches, ChatGPT, or discussions with colleagues or engineers
+        to further understand the subject that needs to be documented.</p>
+      <p id="p_g1t_x2w_4xb">In the second stage, technical writers would use tools such as <ph
+          keyref="product"/> to write the actual content. The <uicontrol>Oxygen AI Positron
+          Assistant</uicontrol> add-on provides various ways to use <uicontrol>ChatGPT</uicontrol>
+        to help writers while editing or reviewing the technical documentation. For example, it can
+        be used to receive hints about what to write next, improve the readability of content, or
+        re-structure the content in various ways.</p>
+      <p id="p_h1t_x2w_4xb">
+        <note id="note_qpr_zj4_2xb">Content received from the <uicontrol>OpenAI ChatGPT</uicontrol>
+          model may be inaccurate or contain misleading information so it needs to be thoroughly
+          reviewed and revised accordingly.</note>
+        <note id="note_d4f_dk4_2xb" type="other" othertype="Terms">The terms of use for the service
+          can be found <xref href="https://www.oxygenxml.com/aipositron/user_terms.html"
+            format="html" scope="external">here</xref>.</note>
+      </p>
+      <p id="p_hkf_y2w_4xb">As always, we are interested in your feedback and in your improvement
+        suggestions.</p>
     </section>
     <section id="section_kgh_fzg_rsb">
       <title>Manual Installation</title>
       <p id="p_jzg_dgk_54b">To manually install this add-on, follow this procedure:<ol
         id="ol_kzg_dgk_54b">
         <li id="li_lzg_dgk_54b">Go to <menucascade>
-              <uicontrol>Help</uicontrol>
-              <uicontrol>Install new add-ons</uicontrol>
-            </menucascade> to open an add-on selection dialog box. Enter or paste
-              <b>https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml</b> in the
-              <uicontrol>Show add-ons from</uicontrol> field or select it from the drop-down
-            menu.</li>
+          <uicontrol>Help</uicontrol>
+          <uicontrol>Install new add-ons</uicontrol>
+        </menucascade> to open an add-on selection dialog box. Enter or paste
+          <b>https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml</b> in the
+          <uicontrol>Show add-ons from</uicontrol> field or select it from the drop-down
+          menu.</li>
         <li id="li_nzg_dgk_54b">Select the <b>Oxygen AI Positron Assistant</b> add-on and click
-              <uicontrol>Next</uicontrol>.</li>
+          <uicontrol>Next</uicontrol>.</li>
         <li id="li_ozg_dgk_54b">Read the end-user license agreement. Then select the <uicontrol>I
           accept all terms of the end-user license agreement</uicontrol> option and click
           <uicontrol>Finish</uicontrol>.</li>
         <li id="li_pzg_dgk_54b">Restart the application.</li>
       </ol></p>
       <p id="p_qzg_dgk_54b"><b>Result:</b> The <uicontrol>AI Positron Assistant</uicontrol> and
-          <uicontrol>AI Positron Activity</uicontrol> side views are now available.</p>
+        <uicontrol>AI Positron Activity</uicontrol> side views are now available.</p>
     </section>
     <section id="section_xb3_kmk_cxb">
-      <title>Connecting to the Positron Service</title>
-      <p>You can use the <uicontrol>AI Positron Assistant</uicontrol> side view to easily configure
-        login details and connect to the <codeph>Oxygen Positron Service</codeph> in the web
-        browser. For now the service is free to use for up to 250 requests per month and a paid
-        subscription may be added as an option in the future.</p>
+      <title>Connecting to the Oxygen AI Positron Service</title>
+      <p id="p_jq2_s2w_4xb">You can use the <uicontrol>AI Positron Assistant</uicontrol> side view
+        to easily configure login details and connect to the <codeph>Oxygen Positron
+          Service</codeph> in the web browser. The service is free to use for up to 250 requests per
+        month.</p>
+      <p id="p_ip2_qtv_4xb">To initiate the connection process, use the
+          <uicontrol>Connect</uicontrol> button in the <uicontrol>AI Positron Assistant</uicontrol>
+        view (or from the user drop-down menu at the top-right corner of the view).</p>
     </section>
     <section id="section_utc_twz_1xb">
       <title>Generating and Refining Content</title>
-      <p>Once you log in to the server, the following actions for generating content are available
-        in the <uicontrol>AI Positron Assistant</uicontrol> side view, in the <uicontrol>AI Positron
-          Assistant</uicontrol> popup menus, and in the <uicontrol>AI</uicontrol> main menu:<dl
-          id="dl_lcm_vwz_1xb">
-          <dlentry>
+      <p id="p_b2f_q2w_4xb">Once you log in to the server, the following actions for generating
+        content are available in the <uicontrol>AI Positron Assistant</uicontrol> side view, in the
+          <uicontrol>AI Positron Assistant</uicontrol> submenu within the contextual menu, and in
+        the <uicontrol>AI</uicontrol> main menu and the progress and results of triggering an action
+        are displayed in the <uicontrol>AI Positron Chat</uicontrol> view:<dl id="dl_lcm_vwz_1xb">
+          <dlentry id="dlentry_c2f_q2w_4xb">
             <dt>Content Generation</dt>
             <dd>
               <ul id="ul_qbx_wwz_1xb">
-                <li>
-                  <p><uicontrol>Continue Writing</uicontrol> - Continues the idea in the current
-                    paragraph by generating extra content.</p>
-                  <p>
-                    <image placement="break" href="../images/ai_continue_writing.gif"
-                      id="image_dmj_lms_cxb" scale="50"/>
-                  </p>
-                </li>
-                <li>
-                  <p><uicontrol>Follow Instructions</uicontrol> - Replaces the selected instructions
-                    with content generated based on them. Available when editing schemas, XSLT
-                    stylesheets and Schematron files.</p>
-                </li>
+                <li id="li_d2f_q2w_4xb"><uicontrol>Continue Writing</uicontrol> - Generates
+                  additional text based on the content to the left of the cursor.</li>
+                <li id="li_e2f_q2w_4xb"><uicontrol>Follow Instructions (available when editing
+                    schemas, XSLT stylesheets, and Schematron files)</uicontrol> - Replaces the
+                  selected instructions with content generated based on them.</li>
               </ul>
             </dd>
           </dlentry>
-          <dlentry>
+          <dlentry id="dlentry_f2f_q2w_4xb">
             <dt>DITA Topic Tools</dt>
             <dd>
-              <p>
+              <p id="p_g2f_q2w_4xb">
                 <ul id="ul_n2m_bxz_1xb">
-                  <li>
-                    <p><uicontrol>Improve Readability</uicontrol> - Improves the readability and
-                      corrects spell check problems in the selected content, while preserving its
-                      original XML markup.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_improve_readability.gif"
-                        scale="50" id="image_lw2_wps_cxb"/>
-                    </p>
+                  <li id="li_h2f_q2w_4xb"><uicontrol>Improve Readability</uicontrol> - Generates a
+                    modification to the selected content to improve readability and correct
+                    grammar/spelling problems, while preserving the original XML markup.</li>
+                  <li id="li_i2f_q2w_4xb"><uicontrol>Generate Topic</uicontrol> - Generates a DITA
+                    XML topic based on a text description entered in a popup dialog box.</li>
+                  <li id="li_j2f_q2w_4xb">
+                    <p id="p_k2f_q2w_4xb"><uicontrol>Short Description</uicontrol> - Generates a
+                      short description ( inside a <xmlelement>shortdesc</xmlelement> element) based
+                      on a summary of the selected text (or the entire document if there is no
+                      selection).</p>
                   </li>
-                  <li>
-                    <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
-                      from some ideas entered in a configuration dialog box.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_new_topic.gif" scale="50"
-                        id="image_zlf_rrs_cxb"/>
-                    </p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Short Description</uicontrol> - Generates a short description
-                        (<xmlelement>shortdesc</xmlelement> element) based on a summary of the
-                      selected text.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_short_desc.gif" scale="50"
-                        id="image_sqt_sqs_cxb"/>
-                    </p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Index Terms</uicontrol> - Generates a
+                  <li id="li_l2f_q2w_4xb">
+                    <p id="p_m2f_q2w_4xb"><uicontrol>Index Terms</uicontrol> - Generates a
                         <xmlelement>keywords</xmlelement> element that contains index terms obtained
-                      from the selected text and inserts it in the
-                      <xmlelement>prolog</xmlelement>.</p>
+                      from the selected text (or the entire document if there is no selection).</p>
                   </li>
                 </ul>
               </p>
             </dd>
           </dlentry>
-          <dlentry>
+          <dlentry id="dlentry_n2f_q2w_4xb">
             <dt>Translation</dt>
             <dd>
-              <p>The actions translate the selected text to the target language
-                  (<uicontrol>English</uicontrol>, <uicontrol>German</uicontrol>,
-                  <uicontrol>French</uicontrol>, <uicontrol>Japanese</uicontrol>) preserving the
-                original XML markup.</p>
-              <p>
-                <image placement="break" href="../images/ai_translate.gif" scale="50"
-                  id="image_qzs_1ss_cxb"/>
+              <p id="p_o2f_q2w_4xb">The actions in this category translate the selected text to the
+                target language (<uicontrol>English</uicontrol>, <uicontrol>German</uicontrol>,
+                  <uicontrol>French</uicontrol>, <uicontrol>Japanese</uicontrol>), while preserving
+                the original XML markup.</p>
+            </dd>
+          </dlentry>
+          <dlentry id="dlentry_p2f_q2w_4xb">
+            <dt>Overview</dt>
+            <dd>
+              <p id="p_q2f_q2w_4xb">
+                <ul id="ul_bwl_3xz_1xb">
+                  <li id="li_r2f_q2w_4xb"><uicontrol>Readability</uicontrol> - Generates suggestions
+                    for changing the selected content (or the entire document if there is no
+                    selection) to improve its general readability.</li>
+                  <li id="li_s2f_q2w_4xb"><uicontrol>Summarize</uicontrol> - Generates a summary of
+                    the selected content (or the entire document if there is no selection).</li>
+                  <li id="li_t2f_q2w_4xb"><uicontrol>Generate Questions</uicontrol> - Generates a
+                    list of five questions that are answered within the selected content (or the
+                    entire document if there is no selection).</li>
+                  <li id="li_u2f_q2w_4xb"><uicontrol>Answer Questions</uicontrol> - Generates
+                    answers to questions that the AI finds within the selected content (or the
+                    entire document if there is no selection).</li>
+                </ul>
               </p>
             </dd>
           </dlentry>
-          <dlentry>
-            <dt>Overview</dt>
+          <dlentry id="dlentry_v2f_q2w_4xb">
+            <dt>Rewrite</dt>
             <dd>
-              <p>
-                <ul id="ul_bwl_3xz_1xb">
-                  <li>
-                    <p><uicontrol>Readability</uicontrol> - Suggests changes to improve readability
-                      of the selected content.</p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
-                      content.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_summarize.gif" scale="50"
-                        id="image_snn_2ts_cxb"/>
-                    </p>
-                  </li>
-                  <li id="li_y5l_3rl_4xb"><uicontrol>Generate Questions</uicontrol> - Generates a
-                    list of 5 questions which are answered by reading the selected text or the
-                    entire document content.</li>
-                  <li id="li_ydy_vrl_4xb"><uicontrol>Answer Questions</uicontrol> - Generates
-                    answers to questions you ask based on the selected text or on the entire
-                    document content.</li>
-                </ul>
-              </p>
+              <ul id="ul_p21_xdn_kxb">
+                <li id="li_w2f_q2w_4xb"><uicontrol>Itemize</uicontrol> - Generates a suggestion for
+                  converting the selected content into a list of items.</li>
+                <li id="li_x2f_q2w_4xb"><uicontrol>Join Items</uicontrol> - Generates a suggestion
+                  for converting the selected list of items into a paragraph.</li>
+                <li id="li_y2f_q2w_4xb"><uicontrol>Use Active Voice</uicontrol> - Generates a
+                  suggestion for replacing the selected content with content that has been converted
+                  from passive to active voice.</li>
+                <li id="li_zr3_zg5_4xb"><b>Correct Grammar</b> - Generates a suggestion for
+                  correcting or enhancing grammar and spelling within the selected content.</li>
+              </ul>
             </dd>
           </dlentry>
         </dl></p>
-      <dl>
-        <dlentry>
-          <dt>Rewrite</dt>
-          <dd>
-            <ul id="ul_p21_xdn_kxb">
-              <li id="li_lvd_nfl_4xb">
-                <p><uicontrol>Itemize</uicontrol> - Converts the selected content into a summary and
-                  a list of items.</p>
-                <image placement="break" href="../images/ai_itemize.gif" scale="50"
-                  id="image_ixj_4fl_4xb"/>
-              </li>
-              <li id="li_mvd_nfl_4xb"><uicontrol>Join Items</uicontrol> - Converts the selected list
-                of items into a paragraph.</li>
-              <li id="li_nvd_nfl_4xb"><uicontrol>Use Active Voice</uicontrol> - Replaces the
-                selected content with content that has been converted from passive to active
-                voice.</li>
-              <li id="li_zr3_zg5_4xb"><b>Correct Grammar</b> - Correct and enhance the grammar and
-                spelling of the selected content.</li>
-            </ul>
-          </dd>
-        </dlentry>
-      </dl>
     </section>
     <section id="section_a3d_sgl_4xb">
-      <title>AI Positron Chat</title>
-      <p>The <uicontrol>AI Positron Chat</uicontrol> side view presents results after running each
-        action and allows further refining the responses by discussing with the <b>Positron</b>
-        server.</p>
-      <p><image href="../images/ai-chat.png" id="image_k2d_xgl_4xb" scale="30"/></p>
-      <p>Once a response is received from the server you can use the actions available in the
-          <uicontrol>AI Positron Chat</uicontrol> view to <b>insert</b> the response, <b>preview</b>
-        changes or <b>copy</b> the response to clipboard.</p>
-      <p>You can further discuss with the <b>AI Positron</b> platform in order to refine the
-        response.</p>
-      <p><image href="../images/ai-chat-rephrase.png" id="image_k1x_23l_4xb" scale="50"/></p>
-      <p>You can start a new chat and create your own favorite prompts using the supported
-          <b>${selection}</b> and <b>${document}</b> variables to specify the content which is sent
-        to the platform:</p>
-      <p><image href="../images/ai-prompts-favorite.gif" id="image_blv_nkl_4xb" scale="80"/></p>
+      <title>AI Positron Chat View</title>
+      <p id="p_gw1_p2w_4xb">The <uicontrol>AI Positron Chat</uicontrol> side-view presents results
+        after processing an action and allows you to further refine the responses by sending
+        messages to the <b>Positron</b> service platform.</p>
+      <p id="p_u11_tjv_4xb">
+        <fig id="fig_hpc_tjv_4xb">
+          <title>AI Positron Assistant and AI Positron Chat Views</title>
+          <image href="../img/ai-chat.png" id="image_k2d_xgl_4xb"/>
+        </fig>
+      </p>
+      <p id="p_drr_krv_4xb">When an AI Positron action is triggered, the <uicontrol>AI Positron
+          Chat</uicontrol> view is automatically opened and the progress and results are displayed
+        in the top pane within the view.</p>
+      <p id="p_hw1_p2w_4xb">Once a response is received from the server, the following actions are
+        available in the <uicontrol>AI Positron Chat</uicontrol> view (under the response):<ul
+          id="ul_iw1_p2w_4xb">
+          <li id="li_jw1_p2w_4xb"><b>Insert/Replace</b> - Inserts the response at the cursor
+            location within the document (or replaces the selected content).</li>
+          <li id="li_kw1_p2w_4xb"><b>Preview</b> - Allows you to preview the content that would be
+            inserted at the cursor location within the document. </li>
+          <li id="li_lw1_p2w_4xb"><b>Copy</b> - Copies the response to system clipboard.</li>
+        </ul></p>
+      <p id="p_mw1_p2w_4xb">You can use the bottom pane to send a message to the AI platform and you
+        can create your own favorite prompts and use supported variables to specify the content that
+        is sent to the platform. You can use the <uicontrol><image href="../img/ai-fav-drop18.png"
+          />Favorites</uicontrol> drop-down button to store a favorite prompt. You can use the
+            <uicontrol><image href="../img/ai-var-drop18.png"/>Insert Variables</uicontrol>
+        drop-down button to select one of the supported variables:<ul id="ul_nw1_p2w_4xb">
+          <li id="li_ow1_p2w_4xb"><b>${selection}</b> - Expands to the currently selected
+            content.</li>
+          <li id="li_pw1_p2w_4xb"><b>${document}</b> - Expands to the content of the entire
+            document.</li>
+        </ul></p>
+      <p id="p_hzh_dtv_4xb">To clear the information in the <uicontrol>AI Positron Chat</uicontrol>
+        view and start a new chat, click the <uicontrol><image href="../img/ai-Chat16.png"/>New
+          Chat</uicontrol> button in the top-right corner of the view.</p>
+    </section>
+    <section id="section_n1z_syz_2xb">
+      <title>AI Positron Activity Side View</title>
+      <p id="p_wct_5yz_2xb">The <uicontrol>AI Positron Activity</uicontrol> side view displays
+        results for various reports and information about each executed action. To open the view,
+        click on the <uicontrol><image href="../img/ai-Activity16.png"/>Show Activity
+          History</uicontrol> button in the top-right corner of the <uicontrol>AI Positron
+          Chat</uicontrol> view.</p>
     </section>
     <section id="section_izh_bqm_4xb">
       <title>Validation Quick Fixes</title>
-      <p>Whenever validation problems are displayed in the application
-          <uicontrol>Problems</uicontrol> list you can right click a problem and use the
-          <uicontrol>AI Positron Fix</uicontrol> action to ask the <b>AI Positron</b> platform for
-        help in fixing the problem.</p>
-      <p><image href="../images/ai-quick-fix.gif" scale="50"/></p>
+      <p>When validation problems are displayed in the <uicontrol>Results</uicontrol> pane, you can
+        right-click a problem and use the <uicontrol>AI Positron Fix</uicontrol> action to ask the
+          <b>AI Positron</b> platform for help with fixing the problem. It will propose content in
+        the <uicontrol>AI Positron Chat</uicontrol> view that can be used to solve the problem.</p>
+      <p><image href="../img/ai-quick-fix.png" id="image_yxd_trm_4xb"/></p>
     </section>
     <section id="section_j5p_shs_4xb">
       <title>Custom Schematron Validation Rules</title>
-      <p>The add-on contributes two XSLT extension functions
+      <p>The add-on contributes two XSLT extension functions:
           <codeph>ai:transform-content(instruction, content)</codeph> and
-          <codeph>ai:verify-content(instruction, content)</codeph> which can be used from custom
+          <codeph>ai:verify-content(instruction, content)</codeph>, which can be used from custom
         Schematron schemas to rephrase content or to perform validation checks on existing
         content.</p>
-      <p>Example of a custom Schematron schema which can be used to rephrase a short description so
-        that it contains less words:
+      <p>Here is an example of a custom Schematron schema that can be used to rephrase a short
+        description so that it contains less words:
         <codeblock id="codeblock_qr4_33s_4xb" outputclass="language-xml">&lt;sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     &lt;sch:ns uri="http://www.oxygenxml.com/ai/function" prefix="ai"/>
@@ -253,13 +249,14 @@
 &lt;/sch:schema> </codeblock></p>
       <p><image href="../images/ai-schematron.gif" id="image_otq_pjs_4xb" scale="80"/></p>
     </section>
-    <section>
+    <section id="future_improvement_ideas">
       <title>Future Improvement Ideas</title>
-      <p>Here's a list of possible future ideas for using AI to improve the tech docs processes:<ul>
-          <li>Support for converting between various text formats like Markdown or ASCIIDoc to DITA
-            XML.</li>
-          <li>Support to automatically change the content based on comments left by reviewers.</li>
-          <li>More actions to change tone of voice (active/passive/marketing) for  existing
+      <p>Here's a list of possible future ideas for using AI to improve the technical documentation processes:<ul>
+          <li>Support for converting between various text formats such as Markdown or ASCIIDoc to
+            DITA XML.</li>
+          <li>Support for automatically changing the content based on comments left by
+            reviewers.</li>
+          <li>More actions for changing the tone of voice (active/passive/marketing) for existing
             content.</li>
         </ul></p>
     </section>
