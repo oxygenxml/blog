@@ -29,7 +29,7 @@
         various resources such as web searches, ChatGPT, or discussions with colleagues or engineers
         to further understand the subject that needs to be documented.</p>
       <p id="p_g1t_x2w_4xb">In the second stage, technical writers would use tools such as <ph
-          keyref="product"/> to write the actual content. The <uicontrol>Oxygen AI Positron
+          keyref="oxygen"/> to write the actual content. The <uicontrol>Oxygen AI Positron
           Assistant</uicontrol> add-on provides various ways to use <uicontrol>ChatGPT</uicontrol>
         to help writers while editing or reviewing the technical documentation. For example, it can
         be used to receive hints about what to write next, improve the readability of content, or
@@ -63,8 +63,9 @@
           <uicontrol>Finish</uicontrol>.</li>
         <li id="li_pzg_dgk_54b">Restart the application.</li>
       </ol></p>
-      <p id="p_qzg_dgk_54b"><b>Result:</b> The <uicontrol>AI Positron Assistant</uicontrol> and
-        <uicontrol>AI Positron Activity</uicontrol> side views are now available.</p>
+      <p id="p_qzg_dgk_54b"><b>Result:</b> The <uicontrol>AI Positron Assistant</uicontrol>,
+          <uicontrol>AI Positron Chat</uicontrol> and <uicontrol>AI Positron Activity</uicontrol>
+        side views are now available.</p>
     </section>
     <section id="section_xb3_kmk_cxb">
       <title>Connecting to the Oxygen AI Positron Service</title>
@@ -87,8 +88,12 @@
             <dt>Content Generation</dt>
             <dd>
               <ul id="ul_qbx_wwz_1xb">
-                <li id="li_d2f_q2w_4xb"><uicontrol>Continue Writing</uicontrol> - Generates
-                  additional text based on the content to the left of the cursor.</li>
+                <li id="li_d2f_q2w_4xb">
+                  <p><uicontrol>Continue Writing</uicontrol> - Generates additional text based on
+                    the content to the left of the cursor.</p>
+                  <p><image href="../images/ai_continue_writing.gif" id="image_hqy_1hz_4xb"
+                      scale="50"/></p>
+                </li>
                 <li id="li_e2f_q2w_4xb"><uicontrol>Follow Instructions (available when editing
                     schemas, XSLT stylesheets, and Schematron files)</uicontrol> - Replaces the
                   selected instructions with content generated based on them.</li>
@@ -100,16 +105,26 @@
             <dd>
               <p id="p_g2f_q2w_4xb">
                 <ul id="ul_n2m_bxz_1xb">
-                  <li id="li_h2f_q2w_4xb"><uicontrol>Improve Readability</uicontrol> - Generates a
-                    modification to the selected content to improve readability and correct
-                    grammar/spelling problems, while preserving the original XML markup.</li>
-                  <li id="li_i2f_q2w_4xb"><uicontrol>Generate Topic</uicontrol> - Generates a DITA
-                    XML topic based on a text description entered in a popup dialog box.</li>
+                  <li id="li_h2f_q2w_4xb">
+                    <p><uicontrol>Improve Readability</uicontrol> - Generates a modification to the
+                      selected content to improve readability and correct grammar/spelling problems,
+                      while preserving the original XML markup.</p>
+                    <p><image href="../images/ai_improve_readability.gif" id="image_sy2_dhz_4xb"
+                        scale="50"/></p>
+                  </li>
+                  <li id="li_i2f_q2w_4xb">
+                    <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic based on a
+                      text description entered in a popup dialog box.</p>
+                    <p><image href="../images/ai_new_topic.gif" id="image_p44_fhz_4xb" scale="50"
+                      /></p>
+                  </li>
                   <li id="li_j2f_q2w_4xb">
                     <p id="p_k2f_q2w_4xb"><uicontrol>Short Description</uicontrol> - Generates a
                       short description ( inside a <xmlelement>shortdesc</xmlelement> element) based
                       on a summary of the selected text (or the entire document if there is no
                       selection).</p>
+                    <p><image href="../images/ai_short_desc.gif" id="image_owt_hhz_4xb" scale="50"
+                      /></p>
                   </li>
                   <li id="li_l2f_q2w_4xb">
                     <p id="p_m2f_q2w_4xb"><uicontrol>Index Terms</uicontrol> - Generates a
@@ -127,6 +142,7 @@
                 target language (<uicontrol>English</uicontrol>, <uicontrol>German</uicontrol>,
                   <uicontrol>French</uicontrol>, <uicontrol>Japanese</uicontrol>), while preserving
                 the original XML markup.</p>
+              <p><image href="../images/ai_translate.gif" id="image_mlr_jhz_4xb" scale="50"/></p>
             </dd>
           </dlentry>
           <dlentry id="dlentry_p2f_q2w_4xb">
@@ -137,14 +153,22 @@
                   <li id="li_r2f_q2w_4xb"><uicontrol>Readability</uicontrol> - Generates suggestions
                     for changing the selected content (or the entire document if there is no
                     selection) to improve its general readability.</li>
-                  <li id="li_s2f_q2w_4xb"><uicontrol>Summarize</uicontrol> - Generates a summary of
-                    the selected content (or the entire document if there is no selection).</li>
+                  <li id="li_s2f_q2w_4xb">
+                    <p><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
+                      content (or the entire document if there is no selection).</p>
+                    <p><image href="../images/ai_summarize.gif" id="image_rbx_lhz_4xb" scale="50"
+                      /></p>
+                  </li>
                   <li id="li_t2f_q2w_4xb"><uicontrol>Generate Questions</uicontrol> - Generates a
                     list of five questions that are answered within the selected content (or the
                     entire document if there is no selection).</li>
-                  <li id="li_u2f_q2w_4xb"><uicontrol>Answer Questions</uicontrol> - Generates
-                    answers to questions that the AI finds within the selected content (or the
-                    entire document if there is no selection).</li>
+                  <li id="li_u2f_q2w_4xb">
+                    <p><uicontrol>Answer Questions</uicontrol> - Generates answers to questions that
+                      the AI finds within the selected content (or the entire document if there is
+                      no selection).</p>
+                    <p><image href="../images/ai-chat-answer-questions.png" id="image_hs2_n3z_4xb"
+                        scale="60"/></p>
+                  </li>
                 </ul>
               </p>
             </dd>
@@ -153,8 +177,11 @@
             <dt>Rewrite</dt>
             <dd>
               <ul id="ul_p21_xdn_kxb">
-                <li id="li_w2f_q2w_4xb"><uicontrol>Itemize</uicontrol> - Generates a suggestion for
-                  converting the selected content into a list of items.</li>
+                <li id="li_w2f_q2w_4xb">
+                  <p><uicontrol>Itemize</uicontrol> - Generates a suggestion for converting the
+                    selected content into a list of items.</p>
+                  <p><image href="../images/ai_itemize.gif" id="image_dgx_nhz_4xb" scale="50"/></p>
+                </li>
                 <li id="li_x2f_q2w_4xb"><uicontrol>Join Items</uicontrol> - Generates a suggestion
                   for converting the selected list of items into a paragraph.</li>
                 <li id="li_y2f_q2w_4xb"><uicontrol>Use Active Voice</uicontrol> - Generates a
@@ -175,7 +202,7 @@
       <p id="p_u11_tjv_4xb">
         <fig id="fig_hpc_tjv_4xb">
           <title>AI Positron Assistant and AI Positron Chat Views</title>
-          <image href="../img/ai-chat.png" id="image_k2d_xgl_4xb"/>
+          <image href="../images/ai-chat.png" id="image_k2d_xgl_4xb" scale="50"/>
         </fig>
       </p>
       <p id="p_drr_krv_4xb">When an AI Positron action is triggered, the <uicontrol>AI Positron
@@ -192,26 +219,25 @@
         </ul></p>
       <p id="p_mw1_p2w_4xb">You can use the bottom pane to send a message to the AI platform and you
         can create your own favorite prompts and use supported variables to specify the content that
-        is sent to the platform. You can use the <uicontrol><image href="../img/ai-fav-drop18.png"
-          />Favorites</uicontrol> drop-down button to store a favorite prompt. You can use the
-            <uicontrol><image href="../img/ai-var-drop18.png"/>Insert Variables</uicontrol>
+        is sent to the platform. You can use the <uicontrol>Favorites</uicontrol> drop-down button
+        to store a favorite prompt. You can use the <uicontrol>Insert Variables</uicontrol>
         drop-down button to select one of the supported variables:<ul id="ul_nw1_p2w_4xb">
           <li id="li_ow1_p2w_4xb"><b>${selection}</b> - Expands to the currently selected
             content.</li>
           <li id="li_pw1_p2w_4xb"><b>${document}</b> - Expands to the content of the entire
             document.</li>
         </ul></p>
+      <p><image href="../images/ai-prompts-favorite.gif" id="image_pxx_qhz_4xb" scale="80"/></p>
       <p id="p_hzh_dtv_4xb">To clear the information in the <uicontrol>AI Positron Chat</uicontrol>
-        view and start a new chat, click the <uicontrol><image href="../img/ai-Chat16.png"/>New
-          Chat</uicontrol> button in the top-right corner of the view.</p>
+        view and start a new chat, click the <uicontrol>New Chat</uicontrol> button in the top-right
+        corner of the view.</p>
     </section>
     <section id="section_n1z_syz_2xb">
       <title>AI Positron Activity Side View</title>
       <p id="p_wct_5yz_2xb">The <uicontrol>AI Positron Activity</uicontrol> side view displays
         results for various reports and information about each executed action. To open the view,
-        click on the <uicontrol><image href="../img/ai-Activity16.png"/>Show Activity
-          History</uicontrol> button in the top-right corner of the <uicontrol>AI Positron
-          Chat</uicontrol> view.</p>
+        click on the <uicontrol>Show Activity History</uicontrol> button in the top-right corner of
+        the <uicontrol>AI Positron Chat</uicontrol> view.</p>
     </section>
     <section id="section_izh_bqm_4xb">
       <title>Validation Quick Fixes</title>
@@ -219,7 +245,7 @@
         right-click a problem and use the <uicontrol>AI Positron Fix</uicontrol> action to ask the
           <b>AI Positron</b> platform for help with fixing the problem. It will propose content in
         the <uicontrol>AI Positron Chat</uicontrol> view that can be used to solve the problem.</p>
-      <p><image href="../img/ai-quick-fix.png" id="image_yxd_trm_4xb"/></p>
+      <p><image href="../images/ai-quick-fix.gif" id="image_yr2_thz_4xb" scale="50"/></p>
     </section>
     <section id="section_j5p_shs_4xb">
       <title>Custom Schematron Validation Rules</title>
@@ -247,7 +273,7 @@
         &lt;/sch:rule>
     &lt;/sch:pattern>
 &lt;/sch:schema> </codeblock></p>
-      <p><image href="../images/ai-schematron.gif" id="image_otq_pjs_4xb" scale="80"/></p>
+      <p><image href="../images/ai-schematron.gif" id="image_gkn_vhz_4xb"/></p>
     </section>
     <section id="future_improvement_ideas">
       <title>Future Improvement Ideas</title>
