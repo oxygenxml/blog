@@ -249,7 +249,7 @@
     </section>
     <section id="section_j5p_shs_4xb">
       <title>Custom Schematron Validation Rules</title>
-      <p>The add-on contributes two XSLT extension functions:
+      <p>The add-on contributes two XPath extension functions:
           <codeph>ai:transform-content(instruction, content)</codeph> and
           <codeph>ai:verify-content(instruction, content)</codeph>, which can be used from custom
         Schematron schemas to rephrase content or to perform validation checks on existing
@@ -277,7 +277,7 @@
     </section>
     <section>
       <title>XML Refactor</title>
-      <p>The two XSLT extension functions contributed by the add-on:
+      <p>The two XPath extension functions contributed by the add-on:
           <codeph>ai:transform-content(instruction, content)</codeph> and
           <codeph>ai:verify-content(instruction, content)</codeph>can also be used with an <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations-x-tools.html"
