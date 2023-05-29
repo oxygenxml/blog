@@ -24,16 +24,16 @@
       translation capabilities.</p>
     <section id="overview">
       <title>Overview</title>
-      <p id="p_f1t_x2w_4xb">In a simplified form, technical documentation is often done in two
-        stages: analysis and implementation. In the analysis stage, technical writers could use
-        various resources such as web searches, ChatGPT, or discussions with colleagues or engineers
-        to further understand the subject that needs to be documented.</p>
+      <p id="p_f1t_x2w_4xb">In simplified form, technical documentation is often done in two stages:
+        analysis and implementation. In the analysis stage, technical writers could use various
+        resources such as web searches, ChatGPT, or discussions with colleagues or engineers to
+        further understand the subject that needs to be documented.</p>
       <p id="p_g1t_x2w_4xb">In the second stage, technical writers would use tools such as <ph
           keyref="oxygen"/> to write the actual content. The <uicontrol>Oxygen AI Positron
           Assistant</uicontrol> add-on provides various ways to use <uicontrol>ChatGPT</uicontrol>
         to help writers while editing or reviewing the technical documentation. For example, it can
         be used to receive hints about what to write next, improve the readability of content, or
-        re-structure the content in various ways.</p>
+        restructure the content in various ways.</p>
       <p id="p_h1t_x2w_4xb">
         <note id="note_qpr_zj4_2xb">Content received from the <uicontrol>OpenAI ChatGPT</uicontrol>
           model may be inaccurate or contain misleading information so it needs to be thoroughly
@@ -42,7 +42,7 @@
           can be found <xref href="https://www.oxygenxml.com/aipositron/user_terms.html"
             format="html" scope="external">here</xref>.</note>
       </p>
-      <p id="p_hkf_y2w_4xb">As always, we are interested in your feedback and in your improvement
+      <p id="p_hkf_y2w_4xb">As always, we are interested in your feedback and improvement
         suggestions.</p>
     </section>
     <section id="section_kgh_fzg_rsb">
@@ -79,11 +79,10 @@
     </section>
     <section id="section_utc_twz_1xb">
       <title>Generating and Refining Content</title>
-      <p id="p_b2f_q2w_4xb">Once you log in to the server, the following actions for generating
-        content are available in the <uicontrol>AI Positron Assistant</uicontrol> side view, in the
-          <uicontrol>AI Positron Assistant</uicontrol> submenu within the contextual menu, and in
-        the <uicontrol>AI</uicontrol> main menu and the progress and results of triggering an action
-        are displayed in the <uicontrol>AI Positron Chat</uicontrol> view:<dl id="dl_lcm_vwz_1xb">
+      <p id="p_b2f_q2w_4xb">Once you log in to the server, you can generate content using the "AI
+        Positron Assistant" side view, which is available in the "AI" main menu and the "AI Positron
+        Assistant" submenu within the contextual menu. The progress and results of triggering an
+        action are displayed in the "AI Positron Chat" view.:<dl id="dl_lcm_vwz_1xb">
           <dlentry id="dlentry_c2f_q2w_4xb">
             <dt>Content Generation</dt>
             <dd>
@@ -140,8 +139,8 @@
             <dd>
               <p id="p_o2f_q2w_4xb">The actions in this category translate the selected text to the
                 target language (<uicontrol>English</uicontrol>, <uicontrol>German</uicontrol>,
-                  <uicontrol>French</uicontrol>, <uicontrol>Japanese</uicontrol>), while preserving
-                the original XML markup.</p>
+                  <uicontrol>French</uicontrol>, and <uicontrol>Japanese</uicontrol>), while
+                preserving the original XML markup.</p>
               <p><image href="../images/ai_translate.gif" id="image_mlr_jhz_4xb" scale="50"/></p>
             </dd>
           </dlentry>
