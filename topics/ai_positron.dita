@@ -275,6 +275,19 @@
 &lt;/sch:schema> </codeblock></p>
       <p><image href="../images/ai-schematron.gif" id="image_gkn_vhz_4xb"/></p>
     </section>
+    <section>
+      <title>XML Refactor</title>
+      <p>The two XSLT extension functions contributed by the add-on:
+          <codeph>ai:transform-content(instruction, content)</codeph> and
+          <codeph>ai:verify-content(instruction, content)</codeph>can also be used with an <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations-x-tools.html"
+          format="html" scope="external">XML refactor</xref> action.</p>
+      <p>Here is an example of a custom XML refactor action that can be used to rephrase a short
+        description so that it contains less words: </p>
+      <p><xref
+          href="https://github.com/oxygenxml/dita-refactoring-examples/tree/master/45%20AI%20Refactor"
+          format="html" scope="external"/></p>
+    </section>
     <section id="future_improvement_ideas">
       <title>Future Improvement Ideas</title>
       <p>Here's a list of possible future ideas for using AI to improve the technical documentation processes:<ul>
