@@ -278,7 +278,7 @@
       <title>XML Refactor</title>
       <p>The two XPath extension functions contributed by the add-on:
           <codeph>ai:transform-content(instruction, content)</codeph> and
-          <codeph>ai:verify-content(instruction, content)</codeph>can also be used with an <xref
+          <codeph>ai:verify-content(instruction, content)</codeph> can also be used with an <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations-x-tools.html"
           format="html" scope="external">XML refactor</xref> action.</p>
       <p>Here is an example of a custom XML refactor action that can be used to rephrase a short
