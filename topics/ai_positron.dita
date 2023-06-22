@@ -218,6 +218,8 @@
             inserted at the cursor location within the document. </li>
           <li id="li_lw1_p2w_4xb"><b>Copy</b> - Copies the response to system clipboard.</li>
         </ul></p>
+      <p>The Chat <uicontrol>History</uicontrol> drop down toolbar button allows going back to
+        previous conversations and continuing them.</p>
       <p id="p_mw1_p2w_4xb">You can use the bottom pane to send a message to the AI platform and you
         can create your own favorite prompts and use supported variables to specify the content that
         is sent to the platform. You can use the <uicontrol>Favorites</uicontrol> drop-down button
