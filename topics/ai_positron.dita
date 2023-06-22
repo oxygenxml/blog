@@ -207,9 +207,9 @@
       <p id="p_drr_krv_4xb">When an AI Positron action is triggered, the <uicontrol>AI Positron
           Chat</uicontrol> view is automatically opened and the progress and results are displayed
         in the top pane within the view.</p>
-      <p id="p_hw1_p2w_4xb">Once a response is received from the server, the following actions are
-        available in the <uicontrol>AI Positron Chat</uicontrol> view (under the response):<ul
-          id="ul_iw1_p2w_4xb">
+      <p id="p_hw1_p2w_4xb">The response is received from the server in streaming mode. Once the
+        entire response is received from the server, the following actions are available in the
+          <uicontrol>AI Positron Chat</uicontrol> view (under the response):<ul id="ul_iw1_p2w_4xb">
           <li id="li_jw1_p2w_4xb"><b>Insert/Replace</b> - Inserts the response at the cursor
             location within the document (or replaces the selected content).</li>
           <li id="li_kw1_p2w_4xb"><b>Preview</b> - Allows you to preview the content that would be
