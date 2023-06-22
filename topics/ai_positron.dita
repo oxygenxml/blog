@@ -79,10 +79,11 @@
     </section>
     <section id="section_utc_twz_1xb">
       <title>Generating and Refining Content</title>
-      <p id="p_b2f_q2w_4xb">Once you log in to the server, you can generate content using the "AI
-        Positron Assistant" side view, which is available in the "AI" main menu and the "AI Positron
-        Assistant" submenu within the contextual menu. The progress and results of triggering an
-        action are displayed in the "AI Positron Chat" view.:<dl id="dl_lcm_vwz_1xb">
+      <p id="p_b2f_q2w_4xb">Once you log in to the server, you can generate content using the
+          <uicontrol>AI Positron Assistant</uicontrol> side view, which is available in the
+          <uicontrol>AI</uicontrol> main menu and the <uicontrol>AI Positron Assistant</uicontrol>
+        submenu within the contextual menu. The progress and results of triggering an action are
+        displayed in the <uicontrol>AI Positron Chat</uicontrol> view:<dl id="dl_lcm_vwz_1xb">
           <dlentry id="dlentry_c2f_q2w_4xb">
             <dt>Content Generation</dt>
             <dd>
