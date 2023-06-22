@@ -267,6 +267,46 @@
         the <uicontrol>AI Positron Chat</uicontrol> view that can be used to solve the problem.</p>
       <p><image href="../images/ai-quick-fix.gif" id="image_yr2_thz_4xb" scale="50"/></p>
     </section>
+    <section id="section_rly_wp4_wxb">
+      <title>Creating Custom Actions</title>
+      <p>In the <xref href="#ai_positron/section_b5p_y14_wxb"/> you can define a reference to the
+        folder containing custom actions.</p>
+      <p>Once the add-on is installed, the <menucascade>
+          <uicontrol>File</uicontrol>
+          <uicontrol>New</uicontrol>
+        </menucascade> dialog wizard can be used to create a new <uicontrol>AI Positron Custom
+          Actions</uicontrol> file containing a JSON array with multiple actions. If the actions
+        file is saved in the custom actions folder defined in the preferences, validation and
+        content completion will be automatically provided for it.</p>
+      <p>The simplest action defines an action id, title, type and
+        context:<codeblock id="codeblock_z1m_gq4_wxb" outputclass="language-json">[
+    {
+        "id": "my.action.id",
+        "title": "Improve Grammar",
+        "type": "replace-selection-with-fragment",
+        "context": "Improve grammar in the following content preserving the XML markup:"
+    }
+]</codeblock></p>
+      <p>Defined actions can contain expandable parameters for which values can be customized before
+        invoking the action:<codeblock outputclass="language-json" id="codeblock_rxj_qq4_wxb">[
+    {
+        "id": "my.action.id",
+        "title": "Improve Grammar",
+        "type": "replace-selection-with-fragment",
+        "context": "${style} Improve grammar in the following content preserving the XML markup:",
+        "expand-params":[
+         {
+             "name": "style",
+             "label": "Style",
+             "value": "",
+             "alternate-values": ["Use active voice.", "Use passive voice."],
+             "alternate-value-labels": ["Active voice", "Passive voice"],
+             "choice-type": "single-choice"
+        }
+     ]
+    }
+]</codeblock></p>
+    </section>
     <section id="section_j5p_shs_4xb">
       <title>Custom Schematron Validation Rules</title>
       <p>The add-on contributes two XPath extension functions:
