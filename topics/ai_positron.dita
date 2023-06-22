@@ -229,6 +229,7 @@
             document.</li>
         </ul></p>
       <p><image href="../images/ai-prompts-favorite.gif" id="image_pxx_qhz_4xb" scale="80"/></p>
+      <p>Already sent prompts can be modified directly in the chat thread.</p>
       <p id="p_hzh_dtv_4xb">To clear the information in the <uicontrol>AI Positron Chat</uicontrol>
         view and start a new chat, click the <uicontrol>New Chat</uicontrol> button in the top-right
         corner of the view.</p>
