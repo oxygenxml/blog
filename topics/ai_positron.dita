@@ -121,7 +121,8 @@
                     <p id="p_k2f_q2w_4xb"><uicontrol>Short Description</uicontrol> - Generates a
                       short description ( inside a <xmlelement>shortdesc</xmlelement> element) based
                       on a summary of the selected text (or the entire document if there is no
-                      selection).</p>
+                      selection). You can configure the style and the approximative number of
+                      sentences to be generated.</p>
                     <p><image href="../images/ai_short_desc.gif" id="image_owt_hhz_4xb" scale="50"
                       /></p>
                   </li>
