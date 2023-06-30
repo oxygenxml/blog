@@ -253,7 +253,7 @@
               action and chat request to create more relevant and personalized responses.</dd>
           </dlentry>
           <dlentry>
-            <dt>Additional actions</dt>
+            <dt>AI actions</dt>
             <dd>Specify if default actions should be loaded. Specify also a local folder from where
               to load additional actions.</dd>
           </dlentry>
