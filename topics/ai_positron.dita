@@ -22,6 +22,9 @@
     <p>The <codeph>Oxygen Positron Service</codeph> uses the <uicontrol>OpenAI ChatGPT</uicontrol>
       model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions, and
       translation capabilities.</p>
+    <p>More details about installation and all the AI Positron features can be found in the <xref
+        href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html" format="html"
+        scope="external">Oxygen User's Manual</xref>.</p>
     <section id="overview">
       <title>Overview</title>
       <p id="p_f1t_x2w_4xb">In simplified form, technical documentation is often done in two stages:
@@ -361,4 +364,10 @@
         </ul></p>
     </section>
   </body>
+  <related-links>
+    <link href="https://idratherbewriting.com/learnapidoc/docapis_oxygenxml_positron_assistant.html"
+      format="html" scope="external">
+      <linktext>Blog Post About AI Positron Add-on By Tom Johnson</linktext>
+    </link>
+  </related-links>
 </topic>
