@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="converting_xpr_profiling">
+    <title>Converting .xpr Profiling Conditions to Standard DITA Files</title>
+    <prolog>
+        <author>Chris Papademetrious</author>
+        <critdates>
+            <created date="2023-07-10"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section id="section_xs4_4sb_byb">
+            <title>Profiling Conditions in the Oxygen .xpr Project File</title>
+            <p>When we first started using Oxygen and DITA, we defined our profiling conditions in
+                the Oxygen <filepath>.xpr</filepath> project file:</p>
+            <ul id="ul_l34_5tb_byb">
+                <li>
+                    <p>Attribute values were defined in <menucascade>
+                            <uicontrol>Profiling/Conditional Text</uicontrol>
+                            <uicontrol>Attributes and Condition Sets</uicontrol>
+                            <uicontrol>Profiling Attributes</uicontrol>
+                        </menucascade>:</p>
+                    <image href="converting_xpr_profiling/xpr_values.png"
+                        placement="break" id="image_fb5_zrd_byb"/>
+                </li>
+                <li><p>Colors were defined in <menucascade>
+                            <uicontrol>Profiling/Conditional Text</uicontrol>
+                            <uicontrol>Attributes and Condition Sets</uicontrol>
+                            <uicontrol>Colors and Styles</uicontrol>
+                        </menucascade>:</p>
+                    <image href="converting_xpr_profiling/xpr_colors.png"
+                        placement="break" id="image_npy_xrd_byb"/></li>
+            </ul>
+            <p>We organized our DITA content into three different Git repositories. The DITA content
+                in each Git repository used different profiling conditions. But we wanted to share a
+                single <filepath>.xpr</filepath> file across all three repositories, so we defined
+                all profiling conditions in that file.</p>
+            <p>Storing profiling conditions in a shared <filepath>.xpr</filepath> file caused some
+                issues:</p>
+            <ul id="ul_uz3_tcc_byb">
+                <li>
+                    <p>Writers were shown profiling conditions from other repositories that were not
+                        relevant to them.</p>
+                    <p>This was okay in the beginning because we did not have many profiling
+                        conditions. But over time, the number of profiling conditions increased as
+                        we increased content reuse and converted more content to DITA. </p>
+                </li>
+                <li>
+                    <p>It was time-consuming to add or update profiling conditions.</p>
+                    <p>Writers are not permitted to modify our <filepath>.xpr</filepath> file, so I
+                        needed to understand and implement each new condition. Then I had to roll
+                        out the updated <filepath>.xpr</filepath> file to all three Git repositories
+                        (and sometimes to multiple branches in a repository).</p>
+                </li>
+                <li>
+                    <p>Color definitions could become desynchronized.</p>
+                    <p>Colors were defined in two places—in the <filepath>.xpr</filepath> file for
+                        the Oxygen UI and in DITAVAL files for transformations—and I needed to
+                        remember to update the colors in both places.</p>
+                </li>
+            </ul>
+            <p>Oxygen supports <xref
+                    href="https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/controlled-values-for-attributes.html"
+                    format="html" scope="external">DITA subject scheme</xref> files for defining
+                profiling condition attribute <i>values</i> in a DITA-standard way, so we started
+                using them. This allowed writers to add or update attribute values, which was a step
+                in the right direction. But I still needed to update and distribute the
+                corresponding <i>colors</i> in the <filepath>.xpr</filepath> file.</p>
+            <p>When we decided to add a fourth Git repository that required many new profiling
+                conditions, we decided we needed a better approach. And fortunately the Oxygen v26.0
+                release saved the day with a solution.</p>
+        </section>
+        <section id="section_ihd_13c_byb">
+            <title>Profiling Conditions in Standard DITA Files</title>
+            <p>The Oxygen v26.0 release provides a new feature that allows profiling condition
+                colors to be loaded dynamically from DITAVAL files:</p>
+            <image href="converting_xpr_profiling/automatically_apply_ditaval.png" placement="break"
+                id="image_sfd_rsd_byb"/>
+            <p>In previous versions, Oxygen could statically import colors from DITAVAL files into
+                the <filepath>.xpr</filepath> file, but that did not resolve the fundamental
+                challenges with a shared <filepath>.xpr</filepath> files described above.</p>
+            <p>With this new feature, Oxygen loads the color definitions directly from the DITAVAL
+                files in the <uicontrol>Main Files</uicontrol> list when you open a DITA map or
+                topic.</p>
+            <p>Now we can define profiling conditions entirely with standard DITA files, with no
+                product-specific information needed in the <filepath>.xpr</filepath> file:</p>
+            <ul id="ul_t4w_gkc_byb">
+                <li>
+                    <p>Attribute values are defined by DITA subject scheme files</p>
+                </li>
+                <li>
+                    <p>Attribute colors are defined by DITAVAL files, for both editing and
+                        publishing</p>
+                </li>
+            </ul>
+            <p>Finally, profiling condition updates are completely self-service for writers! They
+                can freely add or update profiling condition values or colors as they want.</p>
+        </section>
+        <section id="section_ecr_nqf_byb">
+            <title>What Are DITA Subject Scheme Files?</title>
+            <p>A DITA <term>subject scheme</term> file is a specialized type of DITA map file that
+                can constrain attributes and elements to particular defined values. It is included
+                as a submap in a DITA content map. In this case, we can use it to constrain
+                profiling attributes.</p>
+            <p>Subject scheme maps accomplish this task in two steps:</p>
+            <ul id="topic_okv_ccx_fxb_ul_cgv_ctx_fxb">
+                <li>
+                    <p>A <xmlelement>subjectdef</xmlelement> element defines a set of values for a
+                        subject.</p>
+                    <ul id="topic_okv_ccx_fxb_ul_srd_q5x_fxb">
+                        <li>
+                            <p>For example, a subject could be a product family, and its values are
+                                variants within that product family.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>An <xmlelement>enumerationdef</xmlelement> element binds the values for one
+                        or more subjects (products) to the attribute specified by
+                            <xmlelement>attributedef</xmlelement>.</p>
+                </li>
+            </ul>
+            <p>In our environment, we keep a centralized set of value definition files in a
+                "warehouse" folder:</p>
+            <image href="converting_xpr_profiling/subjectschemes_distributed.svg" placement="break"
+                id="image_cs1_n4f_byb"/>
+            <p>DITA subject scheme structures might seem intimidating at first. However, they can be
+                easier to understand when populated with attributes and values that are familiar to
+                you.</p>
+        </section>
+        <section id="section_a4p_qkc_byb">
+            <title>Converting .xpr Profiling Conditions With Refactoring</title>
+            <p>To make it easier to move from <filepath>.xpr</filepath>-defined profiling conditions
+                to standard DITA profiling conditions, I created a refactoring operation that
+                processes an input <filepath>.xpr</filepath> file as follows:</p>
+            <ul id="ul_b2v_5kc_byb">
+                <li>
+                    <p>Converts profiling condition value definitions to DITA subject scheme
+                        files</p>
+                    <p>A <filepath>profiling.ditamap</filepath> file is created that can be
+                        referenced by DITA content maps.</p>
+                </li>
+                <li>
+                    <p>Converts profiling condition color definitions to a single
+                            <filepath>all_colors.ditaval</filepath> file</p>
+                    <p>This file can be added to the <uicontrol>Main Files</uicontrol> list defined
+                        in the Oxygen <filepath>.xpr</filepath> project file. Although the color
+                        definitions might change over time, the file location does not, and so no
+                        changes are needed to the <filepath>.xpr</filepath> file.</p>
+                </li>
+                <li>
+                    <p>Removes the converted value and color definitions from the input
+                            <filepath>.xpr</filepath> file</p>
+                </li>
+            </ul>
+            <p>You can use the following test case to experiment with this refactoring
+                operation:</p>
+            <p><xref href="converting_xpr_profiling/converting_xpr_profiling.zip" format="zip"
+                    >converting_xpr_profiling.zip</xref></p>
+            <p>The <filepath>oxygen.xpr</filepath> file in the test case contains profiling
+                conditions that you can convert to DITAVAL and DITA subject scheme files:</p>
+            <image href="converting_xpr_profiling/convert_xpr_profiling_to_dita_preview.gif"
+                placement="break" id="image_y3t_dcf_byb" scale="80"/>
+            <p>To try the refactoring operation,</p>
+            <ol id="ol_d3h_cpc_byb">
+                <li>
+                    <p>(Optional) Create a backup copy of the <filepath>.xpr</filepath> file.</p>
+                    <p>The refactoring operation removes converted profiling conditions from the
+                        input <filepath>.xpr</filepath> file, so you might want to save a copy of
+                        the original file.</p>
+                </li>
+                <li>
+                    <p>Open the <filepath>.xpr</filepath> file in an Oxygen editing window.</p>
+                    <p>Locate the <filepath>.xpr</filepath> file in the Project view, then
+                        right-click it and choose <menucascade>
+                            <uicontrol>Open with</uicontrol>
+                            <uicontrol>Internal editor</uicontrol>
+                        </menucascade>. When prompted for the format, accept the default of
+                            <uicontrol>XML Document</uicontrol>.</p>
+                </li>
+                <li>
+                    <p>Run the refactoring operation on the file.</p>
+                    <p>In the editing window, right-click and choose <menucascade>
+                            <uicontrol>Refactoring</uicontrol>
+                            <uicontrol>Profiling conditions</uicontrol>
+                            <uicontrol>Convert .xpr profiling conditions</uicontrol>
+                        </menucascade>.</p>
+                </li>
+                <li>
+                    <p>In the configuration dialog, specify how to perform the conversion:</p>
+                    <ul id="ul_b4b_qdf_byb">
+                        <li>
+                            <p>For <uicontrol>Attributes to convert</uicontrol>, specify the
+                                space-separated list of profiling attributes to convert.</p>
+                        </li>
+                        <li>
+                            <p>For <uicontrol>When writing &lt;subjectScheme> files</uicontrol>,
+                                specify how to distribute the value definitions
+                                    (<xmlelement>subjectdef</xmlelement>) and attribute bindings
+                                    (<xmlelement>enumerationdef</xmlelement>) across one or more
+                                subject scheme files.</p>
+                            <p>For example, if you are using <xref
+                                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-profiling-attribute-groups.html"
+                                    format="html" scope="external">profiling attribute groups</xref>
+                                (the testcase uses groups for the <xmlatt>product</xmlatt>
+                                attribute), having each group defined in its own
+                                    <xmlelement>subjectdef</xmlelement> file can help different
+                                writers track their own changes over time in Git.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Click the <uicontrol>Preview</uicontrol> button to preview the operation,
+                        then complete the refactoring operation.</p>
+                </li>
+                <li>
+                    <p>Add the <filepath>oxygen.xpr-profiling/</filepath> folder to the
+                            <uicontrol>Main Files</uicontrol> list.</p>
+                    <p>Right-click the folder in the <uicontrol>Project</uicontrol> view, then
+                        choose <uicontrol>Add to Main Files</uicontrol>.</p>
+                </li>
+                <li>
+                    <p>Configure Oxygen to dynamically load colors from the newly created DITAVAL
+                        file.</p>
+                    <p>In <menucascade>
+                            <uicontrol>Profiling/Conditional Text</uicontrol>
+                            <uicontrol>Attributes and Condition Sets</uicontrol>
+                            <uicontrol>Colors and Styles</uicontrol>
+                        </menucascade>, enable the <uicontrol>Automatically apply colors and
+                            styles...</uicontrol> checkbox.</p>
+                    <image href="converting_xpr_profiling/automatically_apply_ditaval.png"
+                        placement="break" id="image_n4y_qjq_byb"/>
+                </li>
+            </ol>
+            <p>The newly created <filepath>profiling.ditamap</filepath> file defines all profiling
+                condition values. If a particular DITA map needs only some conditions, you can
+                create a map-specific copy of the <filepath>profiling.ditamap</filepath> file that
+                binds only the values of interest. In our environment, we use the convention of
+                        <filepath><varname>mapdir</varname>/profiling.ditamap</filepath>, keeping
+                the same "<filepath>profiling.ditamap</filepath>" file name but placing it inside
+                the relevant map content folder.</p>
+            <p>To create a map-specific copy of <filepath>profiling.ditamap</filepath> in the test
+                case,</p>
+            <ol id="ol_vxk_zsj_byb">
+                <li>
+                    <p>Perform the conversion as described above.</p>
+                </li>
+                <li>
+                    <p>Copy the <filepath>profiling.ditamap</filepath> file from the
+                            <filepath>oxygen.xpr-profiling/</filepath> folder to the
+                            <filepath>my-map/</filepath> folder.</p>
+                </li>
+                <li>
+                    <p>Open the newly copied <filepath>my-map/profiling.ditamap</filepath> file and
+                        fix any <xmlelement>schemeref</xmlelement> references to
+                            <filepath>*-subjectdefs.ditamap</filepath> files.</p>
+                    <p>This step is only necessary if you configured the refactoring operation to
+                        create "two" or "many" <xmlelement>subjectScheme</xmlelement> files.</p>
+                </li>
+                <li>
+                    <p>Add a map reference to the map-specific profiling file.</p>
+                    <p>Open the <filepath>my-map.ditamap</filepath> file in the <uicontrol>DITA Maps
+                            Manager</uicontrol>, then add a map reference to the
+                            <filepath>my-map/profiling.ditamap</filepath> file.</p>
+                </li>
+            </ol>
+        </section>
+    </body>
+    <related-links>
+        <link href="controlledAttributeValues.dita"/>
+    </related-links>
+</topic>
