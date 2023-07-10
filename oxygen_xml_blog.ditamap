@@ -84,7 +84,7 @@
                 <topicref href="topics/controlledAttributeValues2.dita"/>
             </topicref>
             <topicref href="topics/convertingSubjectSchemeMapToDITAVAL.dita"/>
-            <topicref href="topics/converting_xpr_profiling.dita"/>
+            <!--<topicref href="topics/converting_xpr_profiling.dita"/>-->
         </topichead>
         <topichead navtitle="Other">
             <topicref href="topics/dita_for_small_teams.dita"/>
