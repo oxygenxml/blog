@@ -346,7 +346,7 @@
           <codeph>ai:verify-content(instruction, content)</codeph> can also be used with an <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations-x-tools.html"
           format="html" scope="external">XML refactor</xref> action.</p>
-      <p>Here is an example of a custom XML refactor action that can be used to rephrase a short
+      <p>Here is an example of a custom  XML refactor action that can be used to rephrase a short
         description so that it contains less words: </p>
       <p><xref
           href="https://github.com/oxygenxml/dita-refactoring-examples/tree/master/45%20AI%20Refactor"
