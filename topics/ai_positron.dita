@@ -235,7 +235,10 @@
             document.</li>
         </ul></p>
       <p><image href="../images/ai-prompts-favorite.gif" id="image_pxx_qhz_4xb" scale="80"/></p>
-      <p>Already sent prompts can be modified directly in the chat thread.</p>
+      <note type="tip" id="note_hcc_rrc_2yb">Already sent prompts can be modified directly in the
+        chat thread. Once a prompt is edited a new chat thread is started based on the new prompt
+        content. On an edited prompt there are <uicontrol>Next/Previous</uicontrol> navigation
+        buttons which can be used to navigate between chat threads.</note>
       <p id="p_hzh_dtv_4xb">To clear the information in the <uicontrol>AI Positron Chat</uicontrol>
         view and start a new chat, click the <uicontrol>New Chat</uicontrol> button in the top-right
         corner of the view.</p>
