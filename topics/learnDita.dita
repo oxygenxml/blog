@@ -100,7 +100,7 @@
       <title>Courses for learning DITA with <ph keyref="oxygen"/></title>
       <p>
         <ul>
-          <li>Ryffine: <xref href="https://www.ryffine.com/workshops/#thedetails" format="html"
+          <li>Ryffine: <xref href="https://www.ryffine.com/" format="html"
               scope="external"/>.</li>
           <li>Udemy: <xref
               href="https://www.udemy.com/course/technical-writing-how-to-write-using-dita-xml/"

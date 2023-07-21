@@ -25,7 +25,7 @@
           There is also a <xref href="https://github.com/AntennaHouse/ah-dita" format="html"
             scope="external">DITA specialization</xref> plugin which allows you to set specific
           formatting attributes directly to DITA elements.</li>
-        <li>The <xref href="https://turnkey.com.au/" format="html"
+        <li>The <xref href="https://contiem.com/software/publishing-software/topleaf/" format="html"
             scope="external">TopLeaf</xref> XML Publisher commercial product allows you to produce
           various outputs like PDF and EPUB from XML content. The application also has a visual PDF
           layout formatter, it comes also with a DITA OT plugin and has installation instructions
@@ -41,10 +41,7 @@
       </ul></p>
     <p>Now the question would be, why there are so many solutions available? In my opinion all these
       solutions are available because the default DITA to PDF output still requires quite a lot of
-      XSLT skills in order to customize. Jarno Elovirta's <xref
-        href="https://dita-generator-hrd.appspot.com/pdf-plugin/" format="html" scope="external">PDF
-        plugin generator</xref> covers some of the mainstream possible customizations but not
-      all.</p>
+      XSLT skills in order to customize. </p>
     <p>What do you think?</p>
   </body>
 </topic>
