@@ -96,7 +96,7 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/ug-editor/topics/dita-outgoing-references-addon.html"
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-outgoing-references-addon.html"
                             format="html" scope="external">DITA References View Add-on</xref></dt>
                     <dd>See the set of outgoing and incoming references for each opened DITA topic,
                         including references defined in a relationship table.</dd>
