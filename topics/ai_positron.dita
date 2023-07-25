@@ -195,6 +195,27 @@
               </ul>
             </dd>
           </dlentry>
+        </dl><dl>
+          <dlentry id="dlentry_mnb_fxn_2yb">
+            <dt>Marketing</dt>
+            <dd>
+              <p id="p_dwj_gxn_2yb">
+                <ul id="ul_ewj_gxn_2yb">
+                  <li id="li_op3_djt_fyb"><uicontrol>Release Notes</uicontrol> - Creates release
+                    notes based on a set of features or issue ticket numbers with optional
+                    descriptions.</li>
+                  <li id="li_qnx_fjt_fyb"><uicontrol>Marketing Post</uicontrol> - Creates a
+                    marketing post based on a list of release notes.</li>
+                  <li id="li_fwj_gxn_2yb"><uicontrol>Pain-Agitate-Solution</uicontrol> - Rewrites
+                    the content using a marketing style based on the
+                      <term>Pain-Agitate-Solution</term> framework.</li>
+                  <li id="li_mky_wxn_2yb"><uicontrol>Features-Advantages-Benefits</uicontrol> -
+                    Rewrites the content using a marketing style based on the
+                      <term>Features-Advantages-Benefits</term> framework.</li>
+                </ul>
+              </p>
+            </dd>
+          </dlentry>
         </dl></p>
       <p>Custom actions can be configured in the <xref href="#ai_positron/section_b5p_y14_wxb"
         />.</p>
