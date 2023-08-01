@@ -10,7 +10,7 @@
     </prolog>
     <body>
         <p>We needed a way to resolve DITA <codeph>&lt;xref></codeph> and <codeph>&lt;link></codeph>
-            elements to their target element in refactoring operation. We also needed to determine
+            elements to their target element in a refactoring operation. We also needed to determine
             whether the link was a local or peer-map reference. Fortunately, Oxygen v25.1 provided
             us with the solution!</p>
         <section id="section_kmq_l2m_gyb">
@@ -18,11 +18,11 @@
             <p>For <codeph>&lt;xref></codeph> and <codeph>&lt;link></codeph> elements, we use a mix
                 of <xmlatt>href</xmlatt> and <xmlatt>keyref</xmlatt> references in our content. In
                 XSLT refactoring operations, we could resolve <xmlatt>href</xmlatt> references to
-                the target file (and optionally an element in that file) by using the XPath
-                    <codeph>document()</codeph> function. However, we had no way to resolve
-                    <xmlatt>keyref</xmlatt> references because a refactoring operation processes
-                only the current file; it knows nothing about Oxygen's map context or the keys
-                defined within it. In addition, writing such a resolver in XSLT that properly
+                the target file (and optionally, an element in that file) by using the XPath
+                    <codeph>document()</codeph> function. However, we had no way of resolving
+                    <xmlatt>keyref</xmlatt> references because a refactoring operation only
+                processes the current file (it doesn't consider Oxygen's map context or the keys
+                defined within it). In addition, writing such a resolver in XSLT that properly
                 considers keyscopes would be enormously difficult.</p>
         </section>
         <p>In the Oxygen v25.1 release, <xref
@@ -32,12 +32,12 @@
         <ul id="ul_k2r_ydm_gyb">
             <li>
                 <p>The <codeph>getKeyRefInfo()</codeph> function returns information about a
-                    reference's type: local, peer, unresolved, and so on</p>
+                    reference's type (local, peer, unresolved, and so on).</p>
             </li>
             <li>
                 <p>The <codeph>getKeyRefAbsoluteReference()</codeph> function resolves a
                         <xmlatt>keyref</xmlatt> to its equivalent <xmlatt>href</xmlatt> reference
-                    URL</p>
+                    URL.</p>
             </li>
         </ul>
         <note id="note_j2y_khm_gyb">
@@ -48,7 +48,7 @@
             XSLT for <xmlatt>keyref</xmlatt> references too!</p>
         <section id="section_wkw_skm_gyb">
             <title>Resolving Cross-References in Refactoring Operations</title>
-            <p>The attached testcase provides the following XSLT file that you can include in your
+            <p>The attached test case provides the following XSLT file that you can include in your
                 own refactoring operations:</p>
             <p><filepath>frameworks/dita/refactoring/util-get-referenced-element.xsl</filepath></p>
             <p>This file defines a <codeph>mode="get-referenced-element"</codeph> template that,
@@ -79,11 +79,11 @@
                     <ul id="ul_msn_34m_gyb">
                         <li>
                             <p>If no <varname>file</varname> is specified, the in-memory document
-                                containing the cross-reference element is used.</p>
+                                that contains the cross-reference element is used.</p>
                         </li>
                         <li>
                             <p>If a <varname>file</varname> is specified and that file contains the
-                                cross-reference element, the in-memory document containing the
+                                cross-reference element, the in-memory document that contains the
                                 cross-reference element is used.</p>
                         </li>
                         <li>
@@ -91,16 +91,17 @@
                                 XPath <codeph>document()</codeph> function.</p>
                         </li>
                     </ul>
-                    <p>This heuristic ensures that in multiple-pass refactoring operations, the
-                        in-memory version of the content is preferred over on-disk version.</p>
+                    <p>This heuristic approach ensures that in multiple-pass refactoring operations,
+                        the in-memory version of the content is preferred over the on-disk
+                        version.</p>
                 </li>
                 <li>
-                    <p>The topic matching the <varname>topic_id</varname> value is obtained from the
-                        target document.</p>
+                    <p>The topic that matches the <varname>topic_id</varname> value is obtained from
+                        the target document.</p>
                 </li>
                 <li>
                     <p>If an <varname>element_id</varname> is specified, the element in the topic
-                        matching the <varname>element_id</varname> value is obtained.</p>
+                        that matches the <varname>element_id</varname> value is obtained.</p>
                     <p>Because non-topic <xmlatt>id</xmlatt> values do not need to be unique, the
                         code ensures that no subtopics within the matching topic are searched to
                         avoid incorrect matches.</p>
@@ -117,8 +118,8 @@
                 available to resolve the reference.</p>
         </section>
         <section id="section_klm_crm_gyb">
-            <title>Example Testcase</title>
-            <p>The following Oxygen project provides examples of how cross-reference resolution can
+            <title>Example Test Case</title>
+            <p>The following Oxygen project provides examples of how cross-reference resolutions can
                 be used in refactoring operations and Schematron checks:</p>
             <p><xref href="resolving_refs_refactoring/resolving_refs_refactoring.zip" format="zip"
                     >resolving_refs_refactoring.zip</xref></p>
@@ -130,14 +131,14 @@
                         <li>
                             <p>Sets (or updates) the <xmlatt>type</xmlatt> attribute for
                                     <xmlelement>xref</xmlelement> and <xmlelement>link</xmlelement>
-                                elements</p>
+                                elements.</p>
                             <image href="resolving_refs_refactoring/refactoring_setting_type_attributes.png" placement="break"
                                 id="image_kc3_nnn_gyb"/>
                         </li>
                         <li>
                             <p>Populates the target text for <xmlelement>xref</xmlelement> and
                                     <xmlelement>link</xmlelement> elements that reference topics in
-                                peer maps (i.e., cross-book links)</p>
+                                peer maps (i.e. cross-book links).</p>
                             <image href="resolving_refs_refactoring/refactoring_target_text.png" placement="break"
                                 id="image_q3x_spn_gyb"/>
                         </li>
@@ -149,8 +150,8 @@
                         <li>
                             <p>Warn about <xmlelement>xref</xmlelement> and
                                     <xmlelement>link</xmlelement> elements that reference topics in
-                                peer maps (i.e., cross-book links) but do not contain any target
-                                text</p>
+                                peer maps (i.e. cross-book links) but do not contain any target
+                                text.</p>
                             <image href="resolving_refs_refactoring/schematron_warn_missing_target_text.png" placement="break"
                                 id="image_yhp_nmn_gyb"/>
                             <p>This check also offers a "quick fix" that populates the target text
@@ -159,10 +160,10 @@
                         <li>
                             <p>Show the value of the <codeph>getKeyRefInfo()</codeph> and
                                     <codeph>getKeyRefAbsoluteReference()</codeph> API calls for any
-                                element with a <xmlatt>keyref</xmlatt> attribute</p>
+                                element with a <xmlatt>keyref</xmlatt> attribute.</p>
                             <image href="resolving_refs_refactoring/showing_API_values.png" placement="break"
                                 id="image_xrk_vln_gyb"/>
-                            <p>These informational checks are commented out by default; you can
+                            <p>These informational checks are commented out by default. You can
                                 uncomment them in the following file:</p>
                             <p><filepath>frameworks/dita/sch/checks.sch</filepath></p>
                         </li>
