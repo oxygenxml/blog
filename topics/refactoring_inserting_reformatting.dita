@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="refactoring_inserting_reformatting">
+    <title>Inserting and Reformatting Content in Refactoring Operations</title>
+    <prolog>
+        <author>Chris Papademetrious</author>
+        <critdates>
+            <created date="2023-02-28"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>In Oxygen, refactoring operations are a powerful way to provide content modification
+            functionality to users. This blog post describes some challenges that can occur when
+            adding, changing, or deleting content. It also provides solutions that you can use in
+            your own refactoring operations.</p>
+        <section id="section_ysv_kz4_hyb">
+            <title>Reindenting XML After Content Updates</title>
+            <p>In XSLT, all document content is represented by a node - elements, attributes, text,
+                comments, and so on. In fact, even the whitespace text surrounding indented elements
+                are explicit text nodes in the document.</p>
+            <note id="note_o32_tdx_hyb">
+                <p>In the figures below,</p>
+                <ul id="ul_gct_n5p_3yb">
+                    <li>
+                        <p>Notable space characters are represented by the Unicode "U+2420: Symbol
+                            For Space" (<codeph>␠</codeph>) character.</p>
+                    </li>
+                    <li>
+                        <p>Notable line-end characters are represented by the Unicode "U+240A:
+                            Symbol For Line Feed" (<codeph>␊</codeph>) character.</p>
+                    </li>
+                </ul>
+            </note>
+            <p>When you delete an element node in a refactoring operation, any preceding or
+                following text nodes are left in place:</p>
+            <image href="refactoring_inserting_reformatting/deleting_element.svg" placement="break"
+                id="image_xgd_pdx_hyb"/>
+            <p>When you insert a new element node before or after an existing element node, no new
+                indenting whitespace is added (unless the refactoring operation explicitly inserts
+                it):</p>
+            <image href="refactoring_inserting_reformatting/inserting_element.svg" placement="break"
+                id="image_rpl_pdx_hyb"/>
+            <p>The testcase below provides a <codeph>mode="indent-stuff"</codeph> template mode that
+                looks for <xmlatt>indent</xmlatt> attribute directives. (They are removed as part of
+                the reformatting process.)</p>
+            <p>In the following example, the indent-reformatting template is applied around a
+                    <xmlelement>p</xmlelement> deletion:</p>
+            <image href="refactoring_inserting_reformatting/deleting_element_reformatted.svg"
+                placement="break" id="image_ezg_bbr_3yb"/>
+            <p>In the following example, the indent-reformatting template is applied to
+                    <xmlelement>p</xmlelement> insertions:</p>
+            <image href="refactoring_inserting_reformatting/inserting_element_reformatted.svg"
+                placement="break" id="image_tqh_jzq_3yb"/>
+            <p>The <xmlatt>indent</xmlatt> attribute contains a space-separated list that supports
+                the following values:</p>
+            <ul id="ul_yjl_zhq_3yb">
+                <li>
+                    <p><codeph>self</codeph> - reformat indenting whitespace before the current
+                        element (and after, for the last child of a parent)</p>
+                </li>
+                <li>
+                    <p><codeph>adjacent-siblings</codeph> - reformat indenting whitespace before the
+                        preceding and following sibling elements (and after, for the last child of a
+                        parent)</p>
+                </li>
+                <li>
+                    <p><codeph>siblings</codeph> - reformat whitespace around <i>all</i> sibling
+                        elements in the same parent element</p>
+                </li>
+                <li>
+                    <p><codeph>children</codeph> - reformat whitespace around all child elements</p>
+                </li>
+                <li>
+                    <p><codeph>deep</codeph> - reformat whitespace around all child and descendant
+                        elements</p>
+                </li>
+            </ul>
+            <p>The <xmlatt>indent</xmlatt> attribute allows you to control the scope of content
+                change so that the revision control change footprint can be controlled.</p>
+            <p>The <codeph>mode="indent-stuff"</codeph> template works as follows:</p>
+            <ul id="ul_tdc_fl5_hyb">
+                <li>
+                    <p>Different files can have different indenting width conventions.</p>
+                    <ul id="ul_c5s_tgq_3yb">
+                        <li>
+                            <p>The template uses the most common indenting value (the <xref
+                                    href="https://en.wikipedia.org/wiki/Mode_(statistics)"
+                                    format="html" scope="external"><term>statistical
+                                    mode</term></xref>)  in each file.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Elements inserted in a block context (like <xmlelement>p</xmlelement>) should
+                        be indented, but elements in an inline context (like
+                            <xmlelement>codeph</xmlelement>) should not.</p>
+                    <ul id="ul_tsg_ngx_hyb">
+                        <li>
+                            <p>Some elements (like <xmlelement>indexterm</xmlelement>) should be
+                                treated as block <i>or</i> inline elements based on their context
+                                (such as when in <xmlelement>prolog</xmlelement> or
+                                    <xmlelement>p</xmlelement>).</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>There might or might not be existing indenting whitespace around an element,
+                        and it might or might not be correct.</p>
+                    <ul id="ul_gh1_z3q_3yb">
+                        <li>
+                            <p>Indenting is added or repaired as needed.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>The last child element of a parent element requires one less indent level
+                        before its parent's closing tag.</p>
+                </li>
+            </ul>
+            <p>To determine where indenting is appropriate, the stylesheet defines
+                    <codeph>inner-tag-type</codeph> and <codeph>outer-tag-type</codeph> XSLT3 maps
+                that indicate the expected type of content at the inside and outside of each
+                element's tags. Possible values are <codeph>block</codeph> (block elements),
+                    <codeph>text</codeph> (text content or inline elements), or an empty string
+                (unknown or ambiguous content type). For example,</p>
+            <simpletable id="simpletable_q53_bfs_3yb">
+                <sthead>
+                    <stentry>Element</stentry>
+                    <stentry><codeph>outer-tag-type</codeph></stentry>
+                    <stentry><codeph>inner-tag-type</codeph></stentry>
+                </sthead>
+                <strow>
+                    <stentry><codeph>body</codeph></stentry>
+                    <stentry><codeph>block</codeph></stentry>
+                    <stentry><codeph>block</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>p</codeph></stentry>
+                    <stentry><codeph>block</codeph></stentry>
+                    <stentry><codeph>text</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>ph</codeph></stentry>
+                    <stentry><codeph>text</codeph></stentry>
+                    <stentry><codeph>text</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>menucascade</codeph></stentry>
+                    <stentry><codeph>text</codeph></stentry>
+                    <stentry><codeph>block</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>indexterm</codeph></stentry>
+                    <stentry><codeph>''</codeph> (empty string)</stentry>
+                    <stentry><codeph>text</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>entry</codeph></stentry>
+                    <stentry><codeph>block</codeph></stentry>
+                    <stentry><codeph>''</codeph> (empty string)</stentry>
+                </strow>
+            </simpletable>
+            <p>For elements with unknown or ambiguous content types at the tag boundaries, the
+                stylesheet applies heuristics to guess at the indentation needs.</p>
+            <p>To view the XSLT stylesheet without downloading the testcase, click on the following
+                link:</p>
+            <p><xref href="refactoring_inserting_reformatting/util-indent.xsl" format="xsl"
+                >util-indent.xsl</xref></p>
+            <p>There are comments in the code to explain how it works.</p>
+        </section>
+        <section id="section_ypj_jz4_hyb">
+            <title>Considering Content Models During Content Insertion</title>
+            <p>When inserting new content, the changes should not introduce any DITA content model
+                (schema) violations. Some DITA content models require a specific element ordering.
+                For example, the content model for <xmlelement>prolog</xmlelement> is:</p>
+            <dl id="dl_lcq_bg5_hyb">
+                <dlentry>
+                    <dt><xmlelement>prolog</xmlelement> =</dt>
+                    <dd>
+                        <p><xmlelement>author</xmlelement>*, <xmlelement>source</xmlelement>?,
+                                <xmlelement>publisher</xmlelement>?,
+                                <xmlelement>copyright</xmlelement>*,
+                                <xmlelement>critdates</xmlelement>?,
+                                <xmlelement>permissions</xmlelement>?,
+                                <xmlelement>metadata</xmlelement>*,
+                                <xmlelement>resourceid</xmlelement>*, (<xmlelement>data</xmlelement>
+                            | <xmlelement>data-about</xmlelement> | <xmlelement>foreign</xmlelement>
+                            | <xmlelement>sort-as</xmlelement> |
+                            <xmlelement>unknown</xmlelement>)*</p>
+                    </dd>
+                </dlentry>
+            </dl>
+            <p>Commas in the content model indicate an ordering requirement. For example, a
+                    <xmlelement>resourceid</xmlelement> element must be inserted after its preceding
+                elements and before its following elements.</p>
+            <p>The testcase below provides a <codeph>mode="insert-stuff"</codeph> template mode that
+                inserts content at a specified element path inside the selected element.</p>
+            <p>In the following example, the content-insertion template is applied to a
+                    <xmlelement>topic</xmlelement> element to insert a
+                    <xmlelement>resourceid</xmlelement> element in a <xmlelement>prolog</xmlelement>
+                element:</p>
+            <image href="refactoring_inserting_reformatting/inserting_resourceid.svg"
+                placement="break" id="image_tsj_cwd_3yb"/>
+            <p>In the following example, the content-insertion template is applied to a
+                    <xmlelement>topic</xmlelement> template to insert an
+                    <xmlelement>indexterm</xmlelement> element using a multiple-level insertion
+                path:</p>
+            <image href="refactoring_inserting_reformatting/inserting_indexterm.svg"
+                placement="break" id="image_nyv_tbm_3yb"/>
+            <p>The <codeph>mode="insert-stuff"</codeph> template works as follows:</p>
+            <ul id="ul_aff_tjq_3yb">
+                <li>
+                    <p>The <codeph>path</codeph> parameter can be a sequence of element name
+                        strings, a path string value using slash ("<codeph>/</codeph>") separators,
+                        or a mix of both.</p>
+                    <ul id="ul_qjh_fnq_3yb">
+                        <li>
+                            <p>An empty string or sequence value inserts the content directly into
+                                the applied element.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>New elements are inserted into existing elements using content model
+                        information.</p>
+                    <ul id="ul_z3v_tjq_3yb">
+                        <li>
+                            <p>The template creates or reuses intermediate element levels as needed,
+                                considering content models along the way.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>New elements created by a <xmlatt>path</xmlatt> specification have a default
+                            <xmlatt>indent</xmlatt> value of <codeph>self</codeph>.</p>
+                    <p>You can override the default <xmlatt>indent</xmlatt> value by specifying the
+                            <codeph>indent</codeph> parameter with the
+                            <codeph>mode="insert-stuff"</codeph> template. For example,</p>
+                    <ul id="ul_vrq_ykq_3yb">
+                        <li>
+                            <p>Setting <codeph>indent</codeph> to <codeph>"self
+                                    adjacent-siblings"</codeph> reformats content more aggressively
+                                around newly created intermediate elements.</p>
+                        </li>
+                        <li>
+                            <p>Setting <codeph>indent</codeph> to an empty string value disables
+                                reformatting for newly created elements.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>The insertion content itself is not indented unless it has explicitly defined
+                            <xmlatt>indent</xmlatt> attributes.</p>
+                </li>
+                <li>
+                    <p>Only simple ordered-list content model modeling is supported.</p>
+                </li>
+            </ul>
+            <p>To view the XSLT stylesheet without downloading the testcase, click on the following
+                link:</p>
+            <p><xref href="refactoring_inserting_reformatting/util-insert.xsl" format="xsl"
+                    >util-insert.xsl</xref></p>
+            <p>There are comments in the code to explain how it works.</p>
+        </section>
+        <section id="section_xxt_b1p_hyb">
+            <title>Example Testcase</title>
+            <p>The following Oxygen project provides the moded templates described earlier, along
+                with an example refactoring operation that demonstrates their use:</p>
+            <p><xref
+                    href="refactoring_inserting_reformatting/refactoring_inserting_reformatting.zip"
+                    format="zip">refactoring_inserting_reformatting.zip</xref></p>
+            <p>Specifically, it provides the following:</p>
+            <ul id="ul_fks_f1s_3yb">
+                <li>
+                    <p><filepath>frameworks/dita/refactoring/util-indent.xsl</filepath></p>
+                    <p>This stylesheet file defines the <codeph>mode="indent-stuff"</codeph>
+                        template.</p>
+                    <p>The <codeph>outer-tag-type</codeph> and <codeph>inner-tag-type XSLT3</codeph>
+                        maps are defined at the top of the file. You can update or add to these as
+                        needed.</p>
+                </li>
+                <li>
+                    <p><filepath>frameworks/dita/refactoring/util-insert.xsl</filepath></p>
+                    <p>This stylesheet file defines the <codeph>mode="insert-stuff"</codeph>
+                        template.</p>
+                    <p>The <codeph>content-models</codeph> map is defined at the top of the file.
+                        Only <xmlelement>prolog</xmlelement>-related content models are defined in
+                        this testcase. You can add to these as needed.</p>
+                </li>
+                <li>
+                    <p><filepath>frameworks/dita/refactoring/insert-by-content-model.xml</filepath></p>
+                    <p><filepath>frameworks/dita/refactoring/insert-by-content-model.xsl</filepath></p>
+                    <p>This Oxygen refactoring operation allows you to interactively experiment with
+                        content insertion and reformatting. It includes and uses both of the
+                        stylesheets above.</p>
+                </li>
+            </ul>
+            <p>To try out the example refactoring operation,</p>
+            <ol id="ol_uf4_t1s_3yb">
+                <li>
+                    <p>Open the <filepath>OPENME2.ditamap</filepath> file in the <uicontrol>DITA
+                            Maps Manager</uicontrol>.</p>
+                </li>
+                <li>
+                    <p>Open "My Topic" (<filepath>topic.dita</filepath>) in the Oxygen editor.</p>
+                </li>
+                <li>
+                    <p>Right-click in the topic editing window, then choose <menucascade>
+                            <uicontrol>Refactoring</uicontrol>
+                            <uicontrol>Content insertion</uicontrol>
+                            <uicontrol>Insert element by content model</uicontrol>
+                        </menucascade>.</p>
+                </li>
+                <li>
+                    <p>For the configuration parameters, enter the following:</p>
+                    <image
+                        href="refactoring_inserting_reformatting/testcase_refactoring_parameters.png"
+                        placement="break" id="image_jlm_lbs_3yb"/>
+                </li>
+                <li>
+                    <p>When you preview the refactoring operation, the results should be as
+                        follows:</p>
+                    <image
+                        href="refactoring_inserting_reformatting/testcase_refactoring_preview.png"
+                        placement="break" id="image_gr1_nbs_3yb"/>
+                </li>
+            </ol>
+        </section>
+    </body>
+</topic>

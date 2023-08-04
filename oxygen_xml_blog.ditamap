@@ -107,6 +107,7 @@
                 <topicref href="topics/replace-image-href-keyref.dita"/>
                 <topicref href="topics/deleting_elements_in_refactoring.dita"/>
                 <topicref href="topics/resolving_refs_refactoring.dita"/>
+                <topicref href="topics/refactoring_inserting_reformatting.dita"/>
             </topichead>
             <topichead navtitle="Surveys">
                 <topicref href="topics/dita-standard-problems.dita"/>
