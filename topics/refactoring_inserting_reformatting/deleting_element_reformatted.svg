@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.2496395in"
+   height="2.6246405in"
+   viewBox="0 0 8.2496396 2.6246404"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="deleting_element_reformatted.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="in"
+     showgrid="true"
+     inkscape:zoom="2.0899411"
+     inkscape:cx="394.74797"
+     inkscape:cy="188.28282"
+     inkscape:window-width="3440"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="in"
+       originx="-24.000359"
+       originy="11.999641"
+       spacingx="0.0625"
+       spacingy="0.062500001"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="8"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.5935645,2.1135683)">
+    <rect
+       style="fill:none;stroke-width:0.0104167"
+       id="rect1"
+       width="8.2496395"
+       height="2.6246405"
+       x="-1.5935645"
+       y="-2.1135683"
+       inkscape:label="frame" />
+    <rect
+       style="fill:#ececec;stroke:#1a1a1a;stroke-width:0.0104167;stroke-dasharray:none"
+       id="rect5"
+       width="2.9999995"
+       height="1"
+       x="-0.21892457"
+       y="-0.61392778"
+       ry="0"
+       rx="0" />
+    <rect
+       style="fill:#ececec;stroke:none;stroke-width:0.0134912;stroke-dasharray:none"
+       id="rect5-8"
+       width="7.9999976"
+       height="1.25"
+       x="-1.4685664"
+       y="-1.9885702"
+       ry="0"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-size:0.138889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';white-space:pre;shape-inside:url(#rect5);shape-padding:0.0624924;display:inline;fill:#000000"><tspan
+         x="-0.15625"
+         y="-0.42720093"
+         id="tspan5">   &lt;p&gt;line 1&lt;/p&gt;&#10;</tspan><tspan
+         x="-0.15625"
+         y="-0.25206512"
+         id="tspan7">   &lt;p <tspan
+   style="font-weight:bold;fill:#0000ff"
+   id="tspan6">indent=&quot;self&quot;</tspan>&gt;line 2&lt;/p&gt;␊&#10;</tspan><tspan
+         x="-0.15625"
+         y="-0.075138533"
+         id="tspan8">␠␠␠&#10;</tspan><tspan
+         x="-0.15625"
+         y="0.09847271"
+         id="tspan10">   &lt;p <tspan
+   style="font-weight:bold;fill:#0000ff"
+   id="tspan9">indent=&quot;self&quot;</tspan>&gt;line 4&lt;/p&gt;&#10;</tspan><tspan
+         x="-0.15625"
+         y="0.27387473"
+         id="tspan11">   &lt;p&gt;line 5&lt;/p&gt;</tspan></text>
+    <rect
+       style="fill:#ececec;stroke:#1a1a1a;stroke-width:0.0104167;stroke-dasharray:none"
+       id="rect5-6"
+       width="1.6260806"
+       height="0.87464249"
+       x="3.656075"
+       y="-0.55142778"
+       ry="0"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       id="text1-6"
+       style="font-size:0.138889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';white-space:pre;shape-inside:url(#rect5-6);shape-padding:0.0624923;display:inline;fill:#000000"><tspan
+         x="3.71875"
+         y="-0.36317637"
+         id="tspan13">   &lt;p&gt;line 1&lt;/p&gt;<tspan
+   style="font-weight:bold;fill:#008000"
+   id="tspan12">␊&#10;</tspan></tspan><tspan
+         x="3.71875"
+         y="-0.18804058"
+         id="tspan16"><tspan
+   style="font-weight:bold;fill:#008000"
+   id="tspan14">␠␠␠</tspan>&lt;p&gt;line 2&lt;/p&gt;<tspan
+   style="font-weight:bold;fill:#008000"
+   id="tspan15">␊&#10;</tspan></tspan><tspan
+         x="3.71875"
+         y="-0.012904772"
+         id="tspan18"><tspan
+   style="font-weight:bold;fill:#008000"
+   id="tspan17">␠␠␠</tspan>&lt;p&gt;line 4&lt;/p&gt;&#10;</tspan><tspan
+         x="3.71875"
+         y="0.16070647"
+         id="tspan19">   &lt;p&gt;line 5&lt;/p&gt;</tspan></text>
+    <path
+       style="fill:#aaaaff;stroke:#000000;stroke-width:0.0104167;stroke-dasharray:none"
+       d="m 2.906075,-0.23892787 v 0.25000021 h 0.3750001 v 0.1250001 l 0.2500001,-0.2500001 -0.2500001,-0.25000022 v 0.12500001 z"
+       id="path12" />
+    <text
+       xml:space="preserve"
+       id="text3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.138889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';white-space:pre;shape-inside:url(#rect5-8);display:inline;fill:#000000;stroke:none"
+       x="-10.472675"
+       y="0"><tspan
+         x="-1.46875"
+         y="-1.8647009"
+         id="tspan20">&lt;!-- TOP-LEVEL PASS - apply multiple processing passes to input document --&gt;&#10;</tspan><tspan
+         x="-1.46875"
+         y="-1.6910896"
+         id="tspan21">&lt;xsl:template match=&quot;/*&quot; priority=&quot;100&quot;&gt;&#10;</tspan><tspan
+         x="-1.46875"
+         y="-1.5174784"
+         id="tspan22">  &lt;xsl:variable name=&quot;result&quot; as=&quot;element()&quot;&gt;&#10;</tspan><tspan
+         x="-1.46875"
+         y="-1.3438671"
+         id="tspan23">    &lt;xsl:next-match/&gt;  &lt;!-- apply #default mode templates first --&gt;&#10;</tspan><tspan
+         x="-1.46875"
+         y="-1.1702558"
+         id="tspan24">  &lt;/xsl:variable&gt;&#10;</tspan><tspan
+         x="-1.46875"
+         y="-0.99664452"
+         id="tspan26">  &lt;xsl:apply-templates select=&quot;$result&quot; <tspan
+   style="font-weight:bold"
+   id="tspan25">mode=&quot;indent-stuff&quot;</tspan>/&gt;  &lt;!-- process/remove @indent --&gt;&#10;</tspan><tspan
+         x="-1.46875"
+         y="-0.82124247"
+         id="tspan27">&lt;/xsl:template&gt;</tspan></text>
+  </g>
+</svg>
