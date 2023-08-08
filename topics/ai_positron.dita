@@ -285,6 +285,13 @@
             <dd>Specify if default actions should be loaded. Specify also a local folder from where
               to load additional actions.</dd>
           </dlentry>
+          <dlentry>
+            <dt>Cache responses for identical prompts</dt>
+            <dd>If enabled, responses for identical requests are stored (cached), resulting in fewer
+              requests being sent to the AI server and faster completion times. A <uicontrol>Reset
+                cache</uicontrol> button located to the right of this option can be used to clear
+              the cache.</dd>
+          </dlentry>
         </dl></p>
     </section>
     <section id="section_izh_bqm_4xb">
