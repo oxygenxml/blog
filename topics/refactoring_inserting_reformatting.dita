@@ -14,12 +14,12 @@
             adding, changing, or deleting content. It also provides solutions that you can use in
             your own refactoring operations.</p>
         <section id="section_ysv_kz4_hyb">
-            <title>Reindenting XML After Content Updates</title>
-            <p>In XSLT, all document content is represented by a node - elements, attributes, text,
-                comments, and so on. In fact, even the whitespace text surrounding indented elements
-                are explicit text nodes in the document.</p>
+            <title>Re-indenting XML After Content Updates</title>
+            <p>In XSLT, all document content is represented by a node (elements, attributes, text,
+                comments, and so on). In fact, even the whitespace text surrounding indented
+                elements are explicit text nodes in the document.</p>
             <note id="note_o32_tdx_hyb">
-                <p>In the figures below,</p>
+                <p>In the figures below:</p>
                 <ul id="ul_gct_n5p_3yb">
                     <li>
                         <p>Notable space characters are represented by the Unicode "U+2420: Symbol
@@ -32,7 +32,7 @@
                 </ul>
             </note>
             <p>When you delete an element node in a refactoring operation, any preceding or
-                following text nodes are left in place:</p>
+                subsequent text nodes are left in place:</p>
             <image href="refactoring_inserting_reformatting/deleting_element.svg" placement="break"
                 id="image_xgd_pdx_hyb"/>
             <p>When you insert a new element node before or after an existing element node, no new
@@ -40,9 +40,9 @@
                 it):</p>
             <image href="refactoring_inserting_reformatting/inserting_element.svg" placement="break"
                 id="image_rpl_pdx_hyb"/>
-            <p>The testcase below provides a <codeph>mode="indent-stuff"</codeph> template mode that
-                looks for <xmlatt>indent</xmlatt> attribute directives. (They are removed as part of
-                the reformatting process.)</p>
+            <p>The test case below provides a <codeph>mode="indent-stuff"</codeph> template mode
+                that looks for <xmlatt>indent</xmlatt> attribute directives (they are removed as
+                part of the reformatting process).</p>
             <p>In the following example, the indent-reformatting template is applied around a
                     <xmlelement>p</xmlelement> deletion:</p>
             <image href="refactoring_inserting_reformatting/deleting_element_reformatted.svg"
@@ -55,24 +55,25 @@
                 the following values:</p>
             <ul id="ul_yjl_zhq_3yb">
                 <li>
-                    <p><codeph>self</codeph> - reformat indenting whitespace before the current
-                        element (and after, for the last child of a parent)</p>
+                    <p><codeph>self</codeph> - Reformat indenting whitespace before the current
+                        element (and after, for the last child of a parent).</p>
                 </li>
                 <li>
-                    <p><codeph>adjacent-siblings</codeph> - reformat indenting whitespace before the
+                    <p><codeph>adjacent-siblings</codeph> - Reformat indenting whitespace before the
                         preceding and following sibling elements (and after, for the last child of a
-                        parent)</p>
+                        parent).</p>
                 </li>
                 <li>
-                    <p><codeph>siblings</codeph> - reformat whitespace around <i>all</i> sibling
-                        elements in the same parent element</p>
+                    <p><codeph>siblings</codeph> - Reformat whitespace around <i>all</i> sibling
+                        elements in the same parent element.</p>
                 </li>
                 <li>
-                    <p><codeph>children</codeph> - reformat whitespace around all child elements</p>
+                    <p><codeph>children</codeph> - Reformat whitespace around all child
+                        elements.</p>
                 </li>
                 <li>
-                    <p><codeph>deep</codeph> - reformat whitespace around all child and descendant
-                        elements</p>
+                    <p><codeph>deep</codeph> - Reformat whitespace around all child and descendant
+                        elements.</p>
                 </li>
             </ul>
             <p>The <xmlatt>indent</xmlatt> attribute allows you to control the scope of content
@@ -91,14 +92,14 @@
                     </ul>
                 </li>
                 <li>
-                    <p>Elements inserted in a block context (like <xmlelement>p</xmlelement>) should
-                        be indented, but elements in an inline context (like
+                    <p>Elements inserted in a block context (i.e. <xmlelement>p</xmlelement>) should
+                        be indented, but elements in an inline context (i.e.
                             <xmlelement>codeph</xmlelement>) should not.</p>
                     <ul id="ul_tsg_ngx_hyb">
                         <li>
-                            <p>Some elements (like <xmlelement>indexterm</xmlelement>) should be
+                            <p>Some elements (i.e. <xmlelement>indexterm</xmlelement>) should be
                                 treated as block <i>or</i> inline elements based on their context
-                                (such as when in <xmlelement>prolog</xmlelement> or
+                                (such as when they are in <xmlelement>prolog</xmlelement> or
                                     <xmlelement>p</xmlelement>).</p>
                         </li>
                     </ul>
@@ -122,7 +123,7 @@
                 that indicate the expected type of content at the inside and outside of each
                 element's tags. Possible values are <codeph>block</codeph> (block elements),
                     <codeph>text</codeph> (text content or inline elements), or an empty string
-                (unknown or ambiguous content type). For example,</p>
+                (unknown or ambiguous content type). For example:</p>
             <simpletable id="simpletable_q53_bfs_3yb">
                 <sthead>
                     <stentry>Element</stentry>
@@ -161,8 +162,8 @@
                 </strow>
             </simpletable>
             <p>For elements with unknown or ambiguous content types at the tag boundaries, the
-                stylesheet applies heuristics to guess at the indentation needs.</p>
-            <p>To view the XSLT stylesheet without downloading the testcase, click on the following
+                stylesheet applies heuristics to guess the indentation needs.</p>
+            <p>To view the XSLT stylesheet without downloading the test case, click on the following
                 link:</p>
             <p><xref href="refactoring_inserting_reformatting/util-indent.xsl" format="xsl"
                 >util-indent.xsl</xref></p>
@@ -193,8 +194,8 @@
             <p>Commas in the content model indicate an ordering requirement. For example, a
                     <xmlelement>resourceid</xmlelement> element must be inserted after its preceding
                 elements and before its following elements.</p>
-            <p>The testcase below provides a <codeph>mode="insert-stuff"</codeph> template mode that
-                inserts content at a specified element path inside the selected element.</p>
+            <p>The test case below provides a <codeph>mode="insert-stuff"</codeph> template mode
+                that inserts content at a specified element path inside the selected element.</p>
             <p>In the following example, the content-insertion template is applied to a
                     <xmlelement>topic</xmlelement> element to insert a
                     <xmlelement>resourceid</xmlelement> element in a <xmlelement>prolog</xmlelement>
@@ -235,7 +236,7 @@
                             <xmlatt>indent</xmlatt> value of <codeph>self</codeph>.</p>
                     <p>You can override the default <xmlatt>indent</xmlatt> value by specifying the
                             <codeph>indent</codeph> parameter with the
-                            <codeph>mode="insert-stuff"</codeph> template. For example,</p>
+                            <codeph>mode="insert-stuff"</codeph> template. For example:</p>
                     <ul id="ul_vrq_ykq_3yb">
                         <li>
                             <p>Setting <codeph>indent</codeph> to <codeph>"self
@@ -256,14 +257,14 @@
                     <p>Only simple ordered-list content model modeling is supported.</p>
                 </li>
             </ul>
-            <p>To view the XSLT stylesheet without downloading the testcase, click on the following
+            <p>To view the XSLT stylesheet without downloading the test case, click on the following
                 link:</p>
             <p><xref href="refactoring_inserting_reformatting/util-insert.xsl" format="xsl"
                     >util-insert.xsl</xref></p>
             <p>There are comments in the code to explain how it works.</p>
         </section>
         <section id="section_xxt_b1p_hyb">
-            <title>Example Testcase</title>
+            <title>Example Test Case</title>
             <p>The following Oxygen project provides the moded templates described earlier, along
                 with an example refactoring operation that demonstrates their use:</p>
             <p><xref
@@ -285,7 +286,7 @@
                         template.</p>
                     <p>The <codeph>content-models</codeph> map is defined at the top of the file.
                         Only <xmlelement>prolog</xmlelement>-related content models are defined in
-                        this testcase. You can add to these as needed.</p>
+                        this test case. You can add to these as needed.</p>
                 </li>
                 <li>
                     <p><filepath>frameworks/dita/refactoring/insert-by-content-model.xml</filepath></p>
@@ -295,7 +296,7 @@
                         stylesheets above.</p>
                 </li>
             </ul>
-            <p>To try out the example refactoring operation,</p>
+            <p>To try out the example refactoring operation:</p>
             <ol id="ol_uf4_t1s_3yb">
                 <li>
                     <p>Open the <filepath>OPENME2.ditamap</filepath> file in the <uicontrol>DITA
