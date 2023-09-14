@@ -93,8 +93,6 @@
                 <li id="li_d2f_q2w_4xb">
                   <p><uicontrol>Continue Writing</uicontrol> - Generates additional text based on
                     the content to the left of the cursor.</p>
-                  <p><image href="../images/ai_continue_writing.gif" id="image_hqy_1hz_4xb"
-                      scale="50"/></p>
                 </li>
                 <li id="li_e2f_q2w_4xb"><uicontrol>Follow Instructions (available when editing
                     schemas, XSLT stylesheets, and Schematron files)</uicontrol> - Replaces the
@@ -111,14 +109,10 @@
                     <p><uicontrol>Improve Readability</uicontrol> - Generates a modification to the
                       selected content to improve readability and correct grammar/spelling problems,
                       while preserving the original XML markup.</p>
-                    <p><image href="../images/ai_improve_readability.gif" id="image_sy2_dhz_4xb"
-                        scale="50"/></p>
                   </li>
                   <li id="li_i2f_q2w_4xb">
                     <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic based on a
                       text description entered in a popup dialog box.</p>
-                    <p><image href="../images/ai_new_topic.gif" id="image_p44_fhz_4xb" scale="50"
-                      /></p>
                   </li>
                   <li id="li_j2f_q2w_4xb">
                     <p id="p_k2f_q2w_4xb"><uicontrol>Short Description</uicontrol> - Generates a
@@ -126,8 +120,6 @@
                       on a summary of the selected text (or the entire document if there is no
                       selection). You can configure the style and the approximative number of
                       sentences to be generated.</p>
-                    <p><image href="../images/ai_short_desc.gif" id="image_owt_hhz_4xb" scale="50"
-                      /></p>
                   </li>
                   <li id="li_l2f_q2w_4xb">
                     <p id="p_m2f_q2w_4xb"><uicontrol>Index Terms</uicontrol> - Generates a
@@ -145,7 +137,6 @@
                 target language (<uicontrol>English</uicontrol>, <uicontrol>German</uicontrol>,
                   <uicontrol>French</uicontrol>, and <uicontrol>Japanese</uicontrol>), while
                 preserving the original XML markup.</p>
-              <p><image href="../images/ai_translate.gif" id="image_mlr_jhz_4xb" scale="50"/></p>
             </dd>
           </dlentry>
           <dlentry id="dlentry_p2f_q2w_4xb">
@@ -159,8 +150,6 @@
                   <li id="li_s2f_q2w_4xb">
                     <p><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
                       content (or the entire document if there is no selection).</p>
-                    <p><image href="../images/ai_summarize.gif" id="image_rbx_lhz_4xb" scale="50"
-                      /></p>
                   </li>
                   <li id="li_t2f_q2w_4xb"><uicontrol>Generate Questions</uicontrol> - Generates a
                     list of five questions that are answered within the selected content (or the
@@ -183,7 +172,6 @@
                 <li id="li_w2f_q2w_4xb">
                   <p><uicontrol>Itemize</uicontrol> - Generates a suggestion for converting the
                     selected content into a list of items.</p>
-                  <p><image href="../images/ai_itemize.gif" id="image_dgx_nhz_4xb" scale="50"/></p>
                 </li>
                 <li id="li_x2f_q2w_4xb"><uicontrol>Join Items</uicontrol> - Generates a suggestion
                   for converting the selected list of items into a paragraph.</li>
