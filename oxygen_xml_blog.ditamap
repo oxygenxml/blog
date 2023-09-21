@@ -157,6 +157,7 @@
         <topicref href="topics/convert_code_templates_to_author_actions.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
+        <topicref href="topics/oxygen_xml_ecosystem.dita"/>
         <topicref href="topics/add_ons_for_technical_documentation.dita"/>
         <topicref href="topics/general_tips_and_tricks.dita"/>
         <topicref href="topics/checking_terminology_with_oxygen_xml_editor.dita"/>
