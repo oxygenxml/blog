@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="oxygen_xml_ecosystem">
+    <title>Oxygen XML Ecosystem</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2023-09-21"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>The set of Oxygen XML related products has grown over the years and it's useful to have a
+            general overview of the product functionality we offer and what each of these products
+            can do. I enjoyed the way in which <b>George Bina</b>'s presentation
+                <uicontrol>Use-cases using the Oxygen XML tools</uicontrol> at Convex Baltimore 2023
+            presented an overview of all our products and I'm embedding it below as it might be
+            useful for our clients and integrators to also have a general overview of our products'
+            ecosystem.</p>
+        <p><foreign outputclass="html-embed">&lt;iframe
+                src="../resources/OxygenXMLProducts-UseCases.pdf" height="600"
+                width="1000"/></foreign></p>
+    </body>
+</topic>
