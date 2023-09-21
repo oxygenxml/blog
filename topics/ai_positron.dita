@@ -79,6 +79,31 @@
           <uicontrol>Connect</uicontrol> button in the <uicontrol>AI Positron Assistant</uicontrol>
         view (or from the user drop-down menu at the top-right corner of the view).</p>
     </section>
+    <section id="section_enw_lnb_4yb">
+      <title>AI Server Requests and Credits</title>
+      <p id="p_fnw_lnb_4yb">Each user has a limit to the number of requests that are sent to the AI
+        server each month and this is managed through the use of credits. Each user has a default
+        limit of 100,000 credits per month.</p>
+      <p id="p_swh_g4b_4yb">Credits are calculated using a weighted model based on tokens:<ul
+          id="ul_tvm_j4b_4yb">
+          <li id="li_uvm_j4b_4yb">1 token of GPT_3_5_4K = 1 credit</li>
+          <li id="li_vxv_l4b_4yb">1 token of GPT_3_5_16K = 2 credits</li>
+          <li id="li_hqx_l4b_4yb">1 token of GPT_4_8K = 30 credits</li>
+          <li id="li_sqy_l4b_4yb">1 token of GPT_4_32K = 60 credits<note id="note_oxb_q4b_4yb">The
+              transitions from GPT_3_5_4K to GPT_3_5_16K and from GPT_4_8K to GPT_4_32K are done
+              dynamically by the AI Positron depending on the length of the input text.</note></li>
+        </ul></p>
+      <p id="p_nv2_t4b_4yb">Each invoked action consumes tokens with the AI prompt associated with
+        the action, the input text (editor text, selection from the editor text, chat messages, or
+        user input), and the AI response. After these, the tokens are converted to credits according
+        to the used model.</p>
+      <p>
+        <note id="note_mkc_5bg_vyb" type="notice">A token is usually the equivalent of about 4
+          English characters. More details about tokens can be found <xref
+            href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them"
+            format="html" scope="external">here</xref>.</note>
+      </p>
+    </section>
     <section id="section_utc_twz_1xb">
       <title>Generating and Refining Content</title>
       <p id="p_b2f_q2w_4xb">Once you log in to the server, you can generate content using the
@@ -254,41 +279,61 @@
     </section>
     <section id="section_b5p_y14_wxb">
       <title>AI Positron Assistant Preferences Page</title>
-      <p>Various settings can be configured in the <menucascade>
+      <p>Various settings can be configured in <menucascade>
+          <uicontrol>Options</uicontrol>
           <uicontrol>Preferences</uicontrol>
-          <uicontrol/>
+          <uicontrol>Plugins</uicontrol>
           <uicontrol>Oxygen AI Positron Assistant</uicontrol>
-        </menucascade> page:<dl id="dl_uwz_yb4_wxb">
+        </menucascade>:<dl id="dl_uwz_yb4_wxb">
           <dlentry>
             <dt>AI Positron Service address</dt>
-            <dd>For now there is only one public platform providing this service.</dd>
+            <dd>Currently, there is only one public platform providing this service.</dd>
           </dlentry>
           <dlentry>
+            <dt>Default model</dt>
+            <dd>The default model is used for the chat view and for actions that do not explicitly
+              specify a fixed model. Each chosen model consumes a certain <xref
+                href="#ai_positron/section_enw_lnb_4yb">number of credits</xref> per token.</dd>
+          </dlentry>
+          <dlentry id="dlentry_l2r_fq5_wxb">
             <dt>Context</dt>
             <dd>The context provides useful information about the user to the AI and is used in each
               action and chat request to create more relevant and personalized responses.</dd>
           </dlentry>
+          <dlentry id="dlentry_mmg_gq5_wxb">
+            <dt>Load default actions</dt>
+            <dd>Specifies if default actions are loaded.</dd>
+          </dlentry>
           <dlentry>
             <dt>Additional actions folder</dt>
-            <dd>Specify if default actions should be loaded. Specify also a local folder from where
-              to load additional actions.</dd>
+            <dd>You can use this option to specify a local folder where you have stored additional
+              actions.</dd>
           </dlentry>
           <dlentry>
             <dt>Enable XPath Functions</dt>
-            <dd>Enable the use of AI specific XPath functions in Oxygen when applying Schematron
-              validation or XSLT transformations. Disabled by default.<dl id="dl_m1z_kvr_jyb">
-                <dlentry>
-                  <dt>Cache responses and reuse them for identical prompts</dt>
-                  <dd>If enabled, responses for identical requests are stored (cached), resulting in
-                    fewer requests being sent to the AI server and faster completion times. </dd>
-                </dlentry>
-                <dlentry>
-                  <dt>Cache size</dt>
-                  <dd>Set a maximum limit for the cache size. </dd>
-                  <dd>A <uicontrol>Reset cache</uicontrol> button located to the right of this
-                    option can be used to clear the cache. Enabled by default.</dd>
-                </dlentry>
-              </dl></dd>
+            <dd>Enables the use of AI-specific XPath functions in the application when applying
+              Schematron validation or XSLT transformations. This feature is disabled by default.<p>
+                <dl id="dl_m1z_kvr_jyb">
+                  <dlentry>
+                    <dt>Cache responses and reuse them for identical prompts</dt>
+                    <dd>If enabled (default), responses for identical requests are stored (cached),
+                      resulting in fewer requests being sent to the AI server and faster completion
+                      times. A <uicontrol>Clear cache</uicontrol> button located to the right of
+                      this option can be used to clear the cache.</dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>Cache size</dt>
+                    <dd>Specifies a maximum limit for the cache size.</dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>Notify me when the number of requests exceeds</dt>
+                    <dd>You can select this option and specify a number of AI requests that when
+                      exceeded, a confirmation dialog box is displayed asking if you want to
+                      continue using the XPath AI functions. If you select "No" for the answer, the
+                      XPath functions will be disabled.</dd>
+                  </dlentry>
+                </dl>
+              </p></dd>
           </dlentry>
         </dl></p>
     </section>
