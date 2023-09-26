@@ -9,13 +9,12 @@
         </critdates>
     </prolog>
     <body>
-        <p>The set of Oxygen XML related products has grown over the years and it's useful to have a
-            general overview of the product functionality we offer and what each of these products
-            can do. I enjoyed the way in which <b>George Bina</b>'s presentation
-                <uicontrol>Use-cases using the Oxygen XML tools</uicontrol> at Convex Baltimore 2023
-            presented an overview of all our products and I'm embedding it below as it might be
-            useful for our clients and integrators to also have a general overview of our products'
-            ecosystem.</p>
+        <p>The set of Oxygen XML related products has expanded over the years. It is helpful to have
+            a general understanding of the functionality we offer and what each of these products
+            can do. I enjoyed the presentation by <b>George Bina</b> titled <b>Use-cases using the
+                Oxygen XML tools</b> at Convex Baltimore 2023. It provided an overview of all our
+            products. I am embedding it below for our clients and integrators to also have a general
+            understanding of our products' ecosystem.</p>
         <p><foreign outputclass="html-embed">&lt;iframe
                 src="../resources/OxygenXMLProducts-UseCases.pdf" height="600"
                 width="1000"/></foreign></p>
