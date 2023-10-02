@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="similarities_tech_docs_soft_engs">
+    <title>Similarities between Technical Documentation Writers and Software Engineers</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2022-10-01"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_xlq_sn5_yyb">
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="newCol2" colnum="2" colwidth="1*"/>
+                    <colspec colname="c2" colnum="3" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>General Concept</entry>
+                            <entry>Software Engineers</entry>
+                            <entry>Tech Docs Writer</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Concerned with concise and accurate representation of
+                                concepts</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Express concepts in simple terms</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Controlled terminology</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Project structure</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Custom validation rules</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Accurate messages</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Document their code</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Orchestration of installation</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Concerned with Translation</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Content Reuse</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Inversion of Control</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Linking/Relationship between objects</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Overview of complex systems</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Building complex systems from basic building blocks</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Encapsulation</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Pair Programming</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Helping yourself</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Requesting help from peers</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Working with AI tools</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Working with a number of vocabularies/languages</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Version Control</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Inversion of Control</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Project-wide Validation</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Obtaining multiple products from the same code base</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>User interface styling and colors</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Looking at the final result from the user's point of view</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>No appreciation for fluff</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Enjoyment in deleting content</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </body>
+</topic>
