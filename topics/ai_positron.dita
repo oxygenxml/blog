@@ -234,48 +234,94 @@
         />.</p>
     </section>
     <section id="section_a3d_sgl_4xb">
-      <title>AI Positron Chat View</title>
-      <p id="p_gw1_p2w_4xb">The <uicontrol>AI Positron Chat</uicontrol> side-view presents results
-        after processing an action and allows you to further refine the responses by sending
-        messages to the <b>Positron</b> service platform.</p>
+      <title>AI Positron Views</title>
+      <p>The add-on provides access to the following side-views: <uicontrol>AI Positron
+          Assistant</uicontrol> and <uicontrol>AI Positron Chat</uicontrol>. If a view is not
+        displayed, it can be opened by selecting it from <menucascade>
+          <uicontrol>Window</uicontrol>
+          <uicontrol>Show View</uicontrol>
+        </menucascade>.</p>
       <p id="p_u11_tjv_4xb">
         <fig id="fig_hpc_tjv_4xb">
           <title>AI Positron Assistant and AI Positron Chat Views</title>
-          <image href="../images/ai-chat.png" id="image_k2d_xgl_4xb" scale="50"/>
+          <image href="../images/ai-chat.png"
+            id="image_k2d_xgl_4xb"/>
         </fig>
       </p>
-      <p id="p_drr_krv_4xb">When an AI Positron action is triggered, the <uicontrol>AI Positron
-          Chat</uicontrol> view is automatically opened and the progress and results are displayed
-        in the top pane within the view.</p>
-      <p id="p_hw1_p2w_4xb">The response is received from the server in streaming mode. Once the
-        entire response is received from the server, the following actions are available in the
-          <uicontrol>AI Positron Chat</uicontrol> view (under the response):<ul id="ul_iw1_p2w_4xb">
-          <li id="li_jw1_p2w_4xb"><b>Insert/Replace</b> - Inserts the response at the cursor
-            location within the document (or replaces the selected content).</li>
-          <li id="li_kw1_p2w_4xb"><b>Preview</b> - Allows you to preview the content that would be
-            inserted at the cursor location within the document. </li>
-          <li id="li_lw1_p2w_4xb"><b>Copy</b> - Copies the response to system clipboard.</li>
+      <p id="p_izm_1hz_txb"><u><uicontrol>AI Positron Assistant View</uicontrol></u></p>
+      <p id="p_v3y_fgz_txb">The <uicontrol>AI Positron Assistant</uicontrol> view contains the
+        available <xref href="#ai_positron/section_utc_twz_1xb">actions (buttons) that can be used
+          to generate and refine content</xref>. Simply click a button to trigger the corresponding
+        action. You can hover the mouse cursor over a button to see a description of what the action
+        does.</p>
+      <p>The <uicontrol><image
+            href="../images/ai-record18.png"
+            id="image_hgg_wz3_zyb"/>Record</uicontrol> button in the top-left corner of the view
+        allows you to <xref href="#ai_positron/record-changes">create custom actions or prompts by
+          recording changes</xref>.</p>
+      <p id="p_dtr_2hz_txb">There is also a user drop-down menu at the top-right corner of the
+          <uicontrol>AI Positron Assistant</uicontrol> view that contains the following actions:<ul
+          id="ul_jgn_vhz_txb">
+          <li id="li_kgn_vhz_txb"><uicontrol>Usage status</uicontrol> - Opens a dialog box that
+            displays your usage information.</li>
+          <li id="li_ylx_yhz_txb"><uicontrol>Disconnect</uicontrol> - Disconnects <b>Oxygen</b> from
+            the <codeph>Oxygen Positron Service</codeph>.</li>
+          <li id="li_t2x_c3z_txb"><uicontrol>Preferences</uicontrol> - Opens the <xref
+              href="#ai_positron/section_b5p_y14_wxb"><uicontrol>Oxygen AI Positron
+                Assistant</uicontrol> preferences page</xref> where you can configure the
+              <uicontrol>AI Positron service address</uicontrol> and provide a
+              <uicontrol>Context</uicontrol> for the user that the AI will use to create more
+            relevant and personalized responses.</li>
         </ul></p>
-      <p>The Chat <uicontrol>History</uicontrol> drop down toolbar button allows going back to
-        previous conversations and continuing them.</p>
-      <p id="p_mw1_p2w_4xb">You can use the bottom pane to send a message to the AI platform and you
-        can create your own favorite prompts and use supported variables to specify the content that
-        is sent to the platform. You can use the <uicontrol>Favorites</uicontrol> drop-down button
-        to store a favorite prompt. You can use the <uicontrol>Insert Variables</uicontrol>
-        drop-down button to select one of the supported variables:<ul id="ul_nw1_p2w_4xb">
-          <li id="li_ow1_p2w_4xb"><b>${selection}</b> - Expands to the currently selected
+      <p id="p_xfz_chz_txb"><u><uicontrol>AI Positron Chat View</uicontrol></u></p>
+      <p id="p_drr_krv_4xb">The <uicontrol>AI Positron Chat</uicontrol> view presents results after
+        processing an action and allows you to further refine the responses by sending messages to
+        the <b>Positron</b> service platform. When an AI Positron action is triggered, the
+          <uicontrol>AI Positron Chat</uicontrol> view is automatically opened and the progress and
+        results are displayed in the top pane within the view. </p>
+      <p>The response is received from the server in streaming mode (the AI sends chunks of the
+        response as it is being generated rather than waiting to send the entire response after it
+        is generated). Once the entire response is received from the server, the following actions
+        are available in the <uicontrol>AI Positron Chat</uicontrol> view (under the response):<ul
+          id="ul_igg_wz3_zyb">
+          <li><b>Insert/Replace</b> - Inserts the response at the cursor location within the
+            document (or replaces the selected content).</li>
+          <li><b>Preview</b> - Allows you to preview the content that would be inserted at the
+            cursor location within the document. </li>
+          <li><b>Copy</b> - Copies the response to the system clipboard.</li>
+        </ul></p>
+      <p>The Chat <uicontrol>History</uicontrol> drop-down toolbar button makes it easy to go back
+        to previous conversations and continue them.</p>
+      <p id="p_xtt_dxx_pxb">You can use the bottom pane to refine the response by sending a message
+        to the AI platform and it will generate a new response based upon your message. You can
+        create your own favorite prompts and use supported variables to specify the content that is
+        sent to the platform. You can use the <uicontrol><image
+            href="../images/ai-fav-drop18.png"
+            id="image_jgg_wz3_zyb"/>Favorites</uicontrol> drop-down button to store a favorite
+        prompt. You can use the <uicontrol><image
+          href="../images/ai-var-drop18.png"
+            id="image_kgg_wz3_zyb"/>Insert Variables</uicontrol> drop-down button to select one of
+        the supported variables:<ul id="ul_ytt_dxx_pxb">
+          <li id="li_ztt_dxx_pxb"><b>${selection}</b> - Expands to the currently selected
             content.</li>
-          <li id="li_pw1_p2w_4xb"><b>${document}</b> - Expands to the content of the entire
+          <li id="li_a5t_dxx_pxb"><b>${document}</b> - Expands to the content of the entire
             document.</li>
         </ul></p>
-      <p><image href="../images/ai-prompts-favorite.gif" id="image_pxx_qhz_4xb" scale="80"/></p>
-      <note type="tip" id="note_hcc_rrc_2yb">Already sent prompts can be modified directly in the
-        chat thread. Once a prompt is edited a new chat thread is started based on the new prompt
-        content. On an edited prompt there are <uicontrol>Next/Previous</uicontrol> navigation
-        buttons which can be used to navigate between chat threads.</note>
+      <p>
+        <note id="note_gpz_mp5_wxb" type="tip">Previously sent prompts can be modified directly in
+          the chat thread. Once a prompt is edited, a new chat thread is started based on the new
+          prompt's content. For edited prompts, you can use the <uicontrol><image
+            href="../images/Next16.png"
+              id="image_lgg_wz3_zyb"/>Next</uicontrol>/<uicontrol><image
+                href="../images/Previous16.png"
+              id="image_mgg_wz3_zyb"/>Previous</uicontrol> buttons to navigate between chat
+          threads.</note>
+      </p>
       <p id="p_hzh_dtv_4xb">To clear the information in the <uicontrol>AI Positron Chat</uicontrol>
-        view and start a new chat, click the <uicontrol>New Chat</uicontrol> button in the top-right
-        corner of the view.</p>
+        view and start a new chat, click the <uicontrol><image
+          href="../images/ai-Chat16.png"
+            id="image_ngg_wz3_zyb"/>New Chat</uicontrol> button in the top-right corner of the
+        view.</p>
     </section>
     <section id="section_b5p_y14_wxb">
       <title>AI Positron Assistant Preferences Page</title>
@@ -384,6 +430,53 @@
      ]
     }
 ]</codeblock></p>
+    </section>
+    <section id="record-changes">
+      <title>Create Custom Prompts/Actions by Recording Changes</title>
+      <p>The <uicontrol><image href="../images/ai-record18.png" id="image_cgj_cz3_zyb"
+          />Record</uicontrol> button in the top-left corner of the view allows you to create new AI
+        actions. It opens the <uicontrol>Record examples for instructions</uicontrol> dialog box
+        where you can provide a set of instructions that are intended for the AI to follow. Then,
+        after clicking the <uicontrol>Start recording</uicontrol> button at the bottom of the dialog
+        box, you can record a collection of examples in the editing area that will help the AI
+        better follow the given instructions. The examples are recorded from the changes made in the
+        open editors. </p>
+      <p>After providing examples, you need to click the <uicontrol><image
+        href="../images/ai-stop-record18.png" id="image_dgj_cz3_zyb"/>Record</uicontrol> button
+        again to stop the recording. You will then have the opportunity to save the final result
+        either as a Positron action or as a favorite chat prompt for the <uicontrol>AI Positron Chat
+          View</uicontrol>.</p>
+      <p>For example, if you want to add DITA markup to menu cascades, you can follow these
+          steps:<ol id="ol_egj_cz3_zyb">
+            <li>Click the <uicontrol><image href="../images/ai-record18.png" id="image_fgj_cz3_zyb"
+              />Record</uicontrol> button.</li>
+          <li>In the <uicontrol>Record examples for instructions</uicontrol> dialog box, enter some
+            instructions like: <i>You are a technical writer. Add DITA markup to menu
+            cascades.</i></li>
+          <li>Click <uicontrol>Start recording</uicontrol>.</li>
+          <li>Open a DITA topic that has a menu cascade without markup (for example: <codeph>File >
+              Export</codeph>).</li>
+          <li>Edit the topic and add markup, transforming it to:
+            <codeblock outputclass="language-xml" id="codeblock_ggj_cz3_zyb">&lt;menucascade>
+  &lt;uicontrol>File&lt;/uicontrol>
+  &lt;uicontrol>Export&lt;/uicontrol>
+&lt;/menucascade></codeblock></li>
+            <li>Click the <uicontrol><image href="../images/ai-stop-record18.png" id="image_hgj_cz3_zyb"
+              />Record</uicontrol> button again to stop the recording. The system generates the
+            following instructions with
+            examples:<codeblock outputclass="language-xml" id="codeblock_igj_cz3_zyb">You are a technical writer. Add DITA markup to a menu cascades.
+###
+Input:
+        &lt;p>File > Export&lt;/p>
+
+Output:
+      &lt;p>&lt;menucascade>&lt;uicontrol>File&lt;/uicontrol>
+      &lt;uicontrol>Export&lt;/uicontrol>&lt;/menucascade>&lt;/p>
+
+Input: ${selection}
+Output:
+</codeblock></li>
+        </ol></p>
     </section>
     <section id="section_j5p_shs_4xb">
       <title>Custom Schematron Validation Rules</title>
