@@ -9,6 +9,16 @@
         </critdates>
     </prolog>
     <body>
+        <p>I'm a software engineer by trade, I've been doing this for 20 years, working for Oxygen
+            XML Editor and working along side my colleagues in developing tools used by technical
+            documentation writers. I also do lots of technical support and sometimes I write small
+            blog posts like this one or update our technical documentation. I've done lots of
+            mistakes and maybe also learned a trick or two along the way.</p>
+        <p>In time I've come to view the aspects of a technical writer's job (especially a tech
+            writer who is using standards which have lots of potential for reuse like DITA XML)
+            similar to many of the aspects of a software developer's job. So I started putting
+            together a list of concepts and the way in which both these jobs (which may seem
+            incompatible with each other at first) would utilize such concepts.</p>
         <p>
             <table frame="all" rowsep="1" colsep="1" id="table_xlq_sn5_yyb">
                 <tgroup cols="3">
@@ -17,152 +27,254 @@
                     <colspec colname="c2" colnum="3" colwidth="1*"/>
                     <thead>
                         <row>
-                            <entry>General Concept</entry>
+                            <entry>Concept</entry>
                             <entry>Software Engineers</entry>
                             <entry>Tech Docs Writer</entry>
                         </row>
                     </thead>
                     <tbody>
                         <row>
-                            <entry>Concerned with concise and accurate representation of
-                                concepts</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Accessibility</entry>
+                            <entry>We build our software products by following accessibility best
+                                practices, we test our products using screen readers and collaborate
+                                with our vision impaired users to fix accessibility
+                                problems.</entry>
+                            <entry>Published technical documentation also needs to be accessible by
+                                adding for example alternate text for images. <xref
+                                    href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-accessibility.html"
+                                    format="html" scope="external">WebHelp</xref> and PDF outputs
+                                obtained using Oxygen from DITA XML content are section 508
+                                compliant.</entry>
                         </row>
                         <row>
-                            <entry>Express concepts in simple terms</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Accurate and Concise Messages</entry>
+                            <entry>We are required to present accurate and concise error messages,
+                                dialogs, prompts to our end users. In time we've learned to pass
+                                most of these error messages by our tech docs writers, asking their
+                                opinion in order to improve them.</entry>
+                            <entry>The technical documentation must also be accurate and concise.
+                                Also the technical writer's advice greatly benefits the software
+                                developers when they work in developing the messages in the
+                                application.</entry>
                         </row>
                         <row>
-                            <entry>Controlled terminology</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Building Complex Systems from Basic Building Blocks</entry>
+                            <entry>We build small components (classes) and then we use them to build
+                                projects. We then use the many individual projects, to build entire
+                                products. </entry>
+                            <entry>Publications are built by using small topics of information or
+                                small reusable elements like notes, tables. Even larger publications
+                                can be built by combining the DITA Maps used to describe
+                                subcomponents of the product.</entry>
                         </row>
                         <row>
-                            <entry>Project structure</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Custom validation rules</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Accurate messages</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Document their code</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Orchestration of installation</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Concerned with Concise and Accurate Representation of
+                                Concepts</entry>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
                             <entry>Concerned with Translation</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>In general all user interface strings in an application will be
+                                translated to multiple languages so we need to take this into
+                                account when designing the application.</entry>
+                            <entry>A DITA XML project which needs to be translated in multiple
+                                languages also needs to follow a <xref
+                                    href="translating_your_dita_project.dita"
+                                    format="dita">sequence of best
+                                practices</xref>.</entry>
                         </row>
                         <row>
                             <entry>Content Reuse</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>We reuse entire projects in multiple products. We reuse
+                                libraries, classes, functions. Content reuse gives us the ability to
+                                build projects faster.</entry>
+                            <entry>Similarly starting from the top down, entire DITA Maps can be
+                                joined together to create documentation for larger publications,
+                                topics can be used in multiple places in a DITA Map, elements like
+                                notes, tables, lists can be reused in multiple places.</entry>
                         </row>
                         <row>
-                            <entry>Inversion of Control</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Controlled Terminology</entry>
+                            <entry>There are lots of ways in which a message can be conveyed. All
+                                messages presented to the end user need to have a certain style,
+                                tone, use plain language.</entry>
+                            <entry><xref
+                                    href="checking_terminology_with_oxygen_xml_editor.dita"
+                                    format="dita">Controlled terminology</xref> is
+                                also an important aspect of a technical writer's job.</entry>
                         </row>
                         <row>
-                            <entry>Linking/Relationship between objects</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Custom Validation Rules</entry>
+                            <entry>We have various automatic tools which report warnings when
+                                certain best practices for writing the code are not followed. This
+                                gives us more consistency.</entry>
+                            <entry>Using <xref href="SchematronBCs.dita" format="dita">Schematron
+                                    Rules</xref> technical writers also can impose custom validation
+                                rules, specific for their project.</entry>
                         </row>
                         <row>
-                            <entry>Overview of complex systems</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Building complex systems from basic building blocks</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Document my Code/Documentation</entry>
+                            <entry>Most programming languages have support to add comments
+                                containing documentation about what the code does, why various
+                                choices were taken. This documentation gives more information which
+                                could not be derived just by reading the code.</entry>
+                            <entry>It's a best practice to try and keep a <xref
+                                    href="styleguide.dita"/> in which various best
+                                practices and architectural decisions for the documentation project
+                                are described. Such a Style Guide makes on-boarding easier and in
+                                time the rules in the style guide may start to be automatically
+                                applied using Schematron or a terminology checker.</entry>
                         </row>
                         <row>
                             <entry>Encapsulation</entry>
-                            <entry/>
-                            <entry/>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
-                            <entry>Pair Programming</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Enjoy</entry>
+                            <entry>For the long term it's good to find particular aspects about your
+                                job that you particularly enjoy doing. For example I've always been
+                                interested in investigating why certain bugs occur and following
+                                through to investigate and solve them.</entry>
+                            <entry>Whether it's rewriting/correcting problems in existing content,
+                                writing new content, adding custom validation rules or improving the
+                                architecture of the existing technical documentation project,
+                                technical writers may also have preferred activities.</entry>
+                        </row>
+                        <row>
+                            <entry>Deleting Unused/Deprecated Content</entry>
+                            <entry>All mature software products contain components which in time may
+                                become unmaintained, unused. In time such components may become
+                                security problems. So software developers spend time also in
+                                deprecating and then trimming these components.</entry>
+                            <entry>Documentation also in time may contain content which is no longer
+                                accurate or topics which refer to features which no longer exist. So
+                                deleting unused content is also a part of a tech writer's
+                                job.</entry>
+                        </row>
+                        <row>
+                            <entry>Evolve</entry>
+                            <entry>We need to constantly deepen our understanding of the current
+                                techniques we use, learn new techniques, new frameworks or
+                                programming languages. </entry>
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Express concepts in simple terms</entry>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
                             <entry>Helping yourself</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Requesting help from peers</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Working with AI tools</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Working with a number of vocabularies/languages</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>Version Control</entry>
-                            <entry/>
-                            <entry/>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
                             <entry>Inversion of Control</entry>
-                            <entry/>
-                            <entry/>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
-                            <entry>Project-wide Validation</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Learn by Teaching</entry>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
-                            <entry>Obtaining multiple products from the same code base</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row>
-                            <entry>User interface styling and colors</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Linking/Relationship between objects</entry>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
                             <entry>Looking at the final result from the user's point of view</entry>
-                            <entry/>
-                            <entry/>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
-                            <entry>No appreciation for fluff</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>No Appreciation for Fluff</entry>
+                            <entry />
+                            <entry />
                         </row>
                         <row>
-                            <entry>Enjoyment in deleting content</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Obtaining multiple products from the same code base</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Orchestration of installation</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Overview of complex systems</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Pair Programming</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Project structure and naming resources</entry>
+                            <entry>Experienced software developers are interested in properly naming
+                                things. We try to give good names to functions, variables, packages.
+                                We try to be consistent when naming things using compound names,
+                                either use hyphens or use upper-lower-case sequences.</entry>
+                            <entry>It makes sense for technical documentation writers to also have
+                                best practices when it comes to a project's structure, how files
+                                should be named, where images should be stored, how key names should
+                                be given and so on.<xref
+                                    href="https://github.com/oxygenxml/dita-project-best-practices"
+                                    format="html" scope="external">Sample Project</xref>.</entry>
+                        </row>
+                        <row>
+                            <entry>Project-wide Validation</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Read the docs</entry>
+                            <entry>We learn a lot by doing, by copy pasting and reusing content from
+                                other similar projects that we have. But sometimes taking the time
+                                to read the documentation for the frameworks and libraries that we
+                                use is really worth it.</entry>
+                            <entry>By reading for example the <xref
+                                    href="https://www.oxygenxml.com/dita/1.3/specs/" format="html"
+                                    scope="external">DITA 1.3 standard documentation</xref> a
+                                technical documentation writer might find various features that can
+                                be used in their project. They might also understand certain
+                                limitations in the way things work. </entry>
+                        </row>
+                        <row>
+                            <entry>Requesting help from peers</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Security</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>User interface styling and colors</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Version Control</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Working with AI tools</entry>
+                            <entry />
+                            <entry />
+                        </row>
+                        <row>
+                            <entry>Working With A Number Of Vocabularies/languages</entry>
+                            <entry />
+                            <entry />
                         </row>
                     </tbody>
                 </tgroup>
