@@ -21,7 +21,8 @@
       re-write content by using the <uicontrol>Oxygen AI Positron</uicontrol> service. </p>
     <p>The <codeph>Oxygen Positron Service</codeph> uses the <uicontrol>OpenAI ChatGPT</uicontrol>
       model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions, and
-      translation capabilities.</p>
+      translation capabilities. A setting to switch to using the <codeph>GPT-4</codeph> model is
+      also provided.</p>
     <p>More details about installation and all the AI Positron features can be found in the <xref
         href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html" format="html"
         scope="external">Oxygen User's Manual</xref>.</p>
