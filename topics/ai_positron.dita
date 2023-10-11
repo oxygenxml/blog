@@ -25,6 +25,10 @@
     <p>More details about installation and all the AI Positron features can be found in the <xref
         href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html" format="html"
         scope="external">Oxygen User's Manual</xref>.</p>
+    <object width="560" height="315"
+      data="https://www.youtube.com/embed/Do_KWYZfCFg?si=2Mrm7Bh1pmPvehqV" outputclass="iframe">
+      <param name="allowfullscreen" />
+    </object>
     <section id="overview">
       <title>Overview</title>
       <p id="p_f1t_x2w_4xb">In simplified form, technical documentation is often done in two stages:
