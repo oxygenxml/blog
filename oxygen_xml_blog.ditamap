@@ -84,7 +84,7 @@
                 <topicref href="topics/controlledAttributeValues2.dita"/>
             </topicref>
             <topicref href="topics/convertingSubjectSchemeMapToDITAVAL.dita"/>
-            <!--<topicref href="topics/converting_xpr_profiling.dita"/>-->
+            <topicref href="topics/converting_xpr_profiling.dita"/>
         </topichead>
         <topichead navtitle="Other">
             <topicref href="topics/dita_for_small_teams.dita"/>
@@ -118,6 +118,7 @@
             <topicref href="topics/customizing_a_chatbot.dita"/>
 			<topicref href="topics/using_chatgpt_in_a_dita_xml_project.dita"/>
             <topicref href="topics/ai_positron.dita"/>
+            <topicref href="topics/similarities_tech_docs_soft_engs.dita"/>
         </topichead>
     </topichead>
     <topichead navtitle="Migration">
