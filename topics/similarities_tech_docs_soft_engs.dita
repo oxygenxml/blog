@@ -173,7 +173,10 @@
                                     scope="external">DITA 1.3 standard</xref> or the <xref
                                     href="welcome.dita">Oxygen XML Blog</xref> a technical writers
                                 can deepen their understanding of the used standard, what features
-                                it offers and what best practices to follow. <p>Sometimes technical
+                                it offers and what best practices to follow. <p>There are lots of
+                                    useful resources about approaching technical documentation
+                                    online like: <xref href="https://diataxis.fr/" format="html"
+                                        scope="external">Diátaxis</xref>.</p><p>Sometimes technical
                                     writers also become involved in styling the published HTML or
                                     PDF outputs, in uploading the deliverables to the proper places
                                     on the web site, producing training material or receiving user
