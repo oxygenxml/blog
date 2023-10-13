@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="similarities_tech_docs_soft_engs">
-    <title>Similarities between Technical Documentation Writers and Software Engineers</title>
+    <title>Similarities between Tech Docs Writers and Software Engineers</title>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
@@ -37,11 +37,14 @@
                             <entry>Accessibility</entry>
                             <entry>We build our software products by following accessibility best
                                 practices, we test our products using screen readers and collaborate
-                                with our vision impaired users to fix accessibility
-                                problems.</entry>
+                                with our vision impaired users to fix accessibility problems. We
+                                also try to make sure there is enough color contrast in the
+                                application and ship various color themes for the
+                                application.</entry>
                             <entry>Published technical documentation also needs to be accessible by
                                 adding for example alternate text for images and using relevant text
-                                for links. <xref
+                                for links. It's important also to consider the color theme of the
+                                published output. <xref
                                     href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-accessibility.html"
                                     format="html" scope="external">WebHelp</xref> and PDF outputs
                                 obtained using Oxygen from DITA XML content are section 508
@@ -54,7 +57,7 @@
                                 most of these error messages by our tech docs writers, asking their
                                 opinion in order to improve them.</entry>
                             <entry>The technical documentation must also be accurate and concise.
-                                Also the technical writer's advice greatly benefits the software
+                                The technical writer's advice can also greatly benefits the software
                                 developers when they work in developing the messages in the
                                 application.</entry>
                         </row>
@@ -62,18 +65,40 @@
                             <entry>Building Complex Systems from Basic Building Blocks</entry>
                             <entry>We build small components (classes) and then we use them to build
                                 projects. We then use the many individual projects, to build entire
-                                large products. </entry>
+                                large products. <p>We keep the small components as simple as
+                                    possible in order to maximize their reuse potential. With this
+                                    simple components we build large complex projects.</p></entry>
                             <entry>Publications are built by using small topics of information or
                                 small reusable elements like notes, tables. Even larger publications
                                 can be built by combining the DITA Maps used to describe
-                                subcomponents of the product.</entry>
+                                subcomponents of the product. <p>Individual topics/tasks are small,
+                                    simple and easy to follow. With these simple topics you can
+                                    build large technical documentation projects.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Code Review</entry>
+                            <entry>We have a stage where the code which was written by someone is
+                                reviewed by a usually more experienced peer. The code reviewer may
+                                propose various changes, either small message changes or changes
+                                from the point of view of someone who knows better the architecture
+                                of the project. There is also the possibility for a novice to code
+                                review, this exposes them to new techniques and they also can give a
+                                fresh perspective of things.</entry>
+                            <entry>Having experienced technical writers review the work of novice
+                                writers is a great way to accustom the novice writers to a certain
+                                company specific way in which the content must be written.
+                                Experienced tech writers can also better determine if the content
+                                for example should be placed somewhere else in the project or if the
+                                current topic should be split in multiple ones as they have a better
+                                overall overview of the project.</entry>
                         </row>
                         <row>
                             <entry>Content Reuse</entry>
-                            <entry>We reuse entire projects in multiple products. We reuse
+                            <entry>We reuse entire small projects in multiple products. We reuse
                                 libraries, classes, functions. Content reuse gives us the ability to
-                                build projects faster.</entry>
-                            <entry>Similarly starting from the top down, entire DITA Maps can be
+                                build products faster and to build different products from the same
+                                content.</entry>
+                            <entry>Similarly, starting from the top down, entire DITA Maps can be
                                 joined together to create documentation for larger publications,
                                 topics can be used in multiple places in a DITA Map, elements like
                                 notes, tables, lists can be reused in multiple places.<p>Useful
@@ -88,22 +113,26 @@
                         </row>
                         <row>
                             <entry>Custom Validation Rules</entry>
-                            <entry>We have various automatic tools which report warnings when
-                                certain best practices for writing the code are not followed. This
-                                gives us more consistency.</entry>
+                            <entry>We have various automatic tools (like <b>Sonar</b>) which report
+                                warnings when certain best practices for writing the code are not
+                                followed. This gives us more consistency as we are many people
+                                working on the same code base and the code we produce needs to me
+                                easily read, understood and maintained by others.</entry>
                             <entry>Using <xref href="SchematronBCs.dita" format="dita">Schematron
                                     Rules</xref> technical writers also can impose custom validation
-                                rules, specific for their project.</entry>
+                                rules, specific for their project. These custom validation rules
+                                ensure consistency throughout the tech docs project.</entry>
                         </row>
                         <row>
                             <entry>Deleting Unused/Deprecated Content</entry>
                             <entry>All mature software products contain components which in time may
                                 become unmaintained, unused. In time such components may become
-                                security problems. So software developers spend time also in
-                                deprecating and then removing these components.</entry>
-                            <entry>Documentation also in time may contain content which is no longer
-                                accurate or topics which refer to features which no longer exist. So
-                                deleting unused content is also a part of a tech writer's
+                                security problems or may just contain inaccurate information. So
+                                software developers spend time also in deprecating and then removing
+                                these components.</entry>
+                            <entry>Technical documentation also in time may contain content which is
+                                no longer accurate or topics which refer to features which no longer
+                                exist. So deleting unused content is also a part of a tech writer's
                                 job.</entry>
                         </row>
                         <row>
@@ -120,11 +149,12 @@
                                 Schematron or a terminology checker.</entry>
                         </row>
                         <row>
-                            <entry>Enjoyment</entry>
+                            <entry>Enjoy</entry>
                             <entry>For the long term it's good to find particular aspects about your
-                                job that you particularly enjoy doing. For example I've always been
-                                interested in investigating why certain bugs occur and following
-                                through to investigate and solve them.</entry>
+                                job that you particularly enjoy doing. For example in my case I've
+                                always been interested in investigating why certain bugs occur and
+                                following through to investigate and solve them. I'm also very eager
+                                to delete unused code and functionality.</entry>
                             <entry>Whether it's rewriting/correcting problems in existing content,
                                 writing new content, adding custom validation rules, helping others,
                                 discussing with engineers or improving the architecture of the
@@ -143,39 +173,64 @@
                                     scope="external">DITA 1.3 standard</xref> or the <xref
                                     href="welcome.dita">Oxygen XML Blog</xref> a technical writers
                                 can deepen their understanding of the used standard, what features
-                                it offers and what best practices to follow. Sometimes technical
-                                writers also become involved in styling the published HTML or PDF
-                                outputs, in uploading the deliverables to the proper places on the
-                                web site, producing training material or receiving user feedback and
-                                integrating it back in the documentation.</entry>
-                        </row>
-                        <row>
-                            <entry>Express Concepts in Simple Terms</entry>
-                            <entry />
-                            <entry />
+                                it offers and what best practices to follow. <p>Sometimes technical
+                                    writers also become involved in styling the published HTML or
+                                    PDF outputs, in uploading the deliverables to the proper places
+                                    on the web site, producing training material or receiving user
+                                    feedback and integrating it back in the documentation. So they
+                                    move towards scripting and being power-users.</p></entry>
                         </row>
                         <row>
                             <entry>Helping Yourself</entry>
-                            <entry />
-                            <entry />
+                            <entry>When I do not know how to do something I first try to figure
+                                things out on my one before asking for help. I use various internal
+                                resources (our internal wiki) or external resources like Google,
+                                ChatGPT, StackOverflow. I always tend to remember better the
+                                solution I found if I put some effort into finding it
+                                myself.</entry>
+                            <entry>Overcoming obstacles by oneself is possible if the company has
+                                internal wikis, internal style guides that the technical writers can
+                                use. By helping ourselves in time we develop a certain In time
+                                experienced writers develop a certain grit which allows us to
+                                overcome daily obstacles.</entry>
                         </row>
                         <row>
                             <entry>Inversion of Control</entry>
-                            <entry />
-                            <entry />
+                            <entry>Most of the times we use libraries developed by us or by others
+                                to build larger projects. So our code uses other code. But there are
+                                frameworks like <b>Spring</b> which have this concept of
+                                    <b>inversion of control</b>. With this concept, our code does
+                                not use libraries but those libraries in turn orchestrate and use
+                                our code.</entry>
+                            <entry>The DITA XML standard has the concept of <xref
+                                    href="../keyscopes/keyscopesBlog.dita">key scopes</xref> which
+                                allows key references and content key references in topics to have
+                                different values depending on where in the DITA Map the topic is
+                                referenced. So in a way your topics contain variable place holders
+                                which may expand to different content depending on where they are
+                                    used.<p>The DITA XML standard also has this concept of <xref
+                                        href="../presentation-reuse/conref_push.dita">content
+                                        reference push</xref>. With conref push content can be
+                                    placed in a topic from the outside.</p></entry>
                         </row>
                         <row>
                             <entry>Learn by Teaching</entry>
-                            <entry />
-                            <entry />
+                            <entry>Teaching is a great way to learn more about the concepts
+                                yourself. You do not need to be highly experienced in a subject
+                                matter in order to make small presentations in the team about it.
+                                You can use such small presentations to start discussions about the
+                                subject matter and gather best practices from other team members who
+                                might now more about the subject matter than you do.</entry>
+                            <entry>You can read for example about an aspect of a standard like DITA
+                                XML that you are not using in the company like for example <xref
+                                    href="../branchFilters/branchFilter.dita">branch
+                                    filtering</xref> or relationship tables, make a small
+                                presentation in the team and then try to start a discussion about
+                                how the feature could be used in the tech docs project and what
+                                problems it could solve.</entry>
                         </row>
                         <row>
-                            <entry>Linking/Relationship between objects</entry>
-                            <entry />
-                            <entry />
-                        </row>
-                        <row>
-                            <entry>Managing Dependencies</entry>
+                            <entry>Managing Dependencies/Linking between objects</entry>
                             <entry>The more dependencies a class, object or project has, the more
                                 difficult is to use it in another context. In our work we try to
                                 uncouple objects, to decrease the dependencies between the in order
@@ -188,8 +243,13 @@
                         </row>
                         <row>
                             <entry>No Appreciation for Fluff</entry>
-                            <entry />
-                            <entry />
+                            <entry>The written code should be as compact and easy to read as
+                                possible. An application's features should again be intuitive to use
+                                with an user's interface which does not present more than you need
+                                to accomplish a certain task.</entry>
+                            <entry>Small topics describing key concepts, small tasks describing how
+                                various things can be accomplished. Precise messages, simplified
+                                English, no fancy words, no thesaurus.</entry>
                         </row>
                         <row>
                             <entry>Obtaining multiple products from the same code base</entry>
@@ -288,11 +348,6 @@
                         </row>
                         <row>
                             <entry>Working with AI tools</entry>
-                            <entry />
-                            <entry />
-                        </row>
-                        <row>
-                            <entry>Working With A Number Of Vocabularies/languages</entry>
                             <entry />
                             <entry />
                         </row>
