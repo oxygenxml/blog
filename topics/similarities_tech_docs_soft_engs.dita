@@ -12,8 +12,8 @@
         <p>I'm a software engineer, working for Oxygen XML Editor and working along side my
             colleagues in developing tools used by technical documentation writers. I also do lots
             of technical support and sometimes I write small blog posts like this one or update our
-            technical documentation. I've done lots of mistakes and maybe also learned a trick or
-            two along the way.</p>
+            technical documentation. I'm a 10x developer in my very small field of expertise and a
+            (1/10)x developer in all others.</p>
         <p>In time I've come to view the aspects of a technical writer's job (especially a tech
             writer who is using standards which have lots of potential for reuse like DITA XML)
             similar to many of the aspects of a software developer's job. So I started putting
@@ -142,7 +142,7 @@
                                 choices were taken. This documentation gives more information which
                                 could not be derived just by reading the code.</entry>
                             <entry>It's a best practice to try and keep a <xref
-                                    href="styleguide.dita" /> in which various best practices and
+                                    href="styleguide.dita"/> in which various best practices and
                                 architectural decisions for the documentation project are described.
                                 Such a Style Guide makes on-boarding easier and in time the rules in
                                 the style guide may start to be automatically applied using
@@ -256,18 +256,18 @@
                         </row>
                         <row>
                             <entry>Obtaining multiple products from the same code base</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Overview of Complex Systems</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Pair Programming</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Project Structure and Naming Resources</entry>
@@ -284,13 +284,13 @@
                         </row>
                         <row>
                             <entry>Project-wide Validation</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Publishing Orchestration</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Read the Docs</entry>
@@ -307,18 +307,18 @@
                         </row>
                         <row>
                             <entry>Requesting Help from Peers</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Security</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Styling and Colors</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Terminology</entry>
@@ -341,18 +341,18 @@
                         </row>
                         <row>
                             <entry>User's Point of View</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Version Control</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                         <row>
                             <entry>Working with AI tools</entry>
-                            <entry />
-                            <entry />
+                            <entry/>
+                            <entry/>
                         </row>
                     </tbody>
                 </tgroup>
