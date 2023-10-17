@@ -9,21 +9,21 @@
         </critdates>
     </prolog>
     <body>
-        <p>I'm a software engineer, working for Oxygen XML Editor and working along side my
-            colleagues in developing tools used by technical documentation writers. I also do lots
-            of technical support and sometimes I write small blog posts like this one or update our
-            technical documentation. </p>
+        <p>I'm a software engineer, working for Oxygen XML Editor along side my colleagues in
+            developing tools used by technical documentation writers. I also do lots of technical
+            support and sometimes I write small blog posts like this one or update our technical
+            documentation. </p>
         <p>In time I've come to view the aspects of a technical writer's job (especially a tech
             writer who is using standards which have lots of potential for reuse like DITA XML)
-            similar to many of the aspects of a software developer's job. So I started putting
+            quite similar to many of the aspects of a software developer's job. So I started putting
             together a list of concepts and the way in which both these jobs (which may seem
             incompatible with each other at first) would utilize such concepts.</p>
         <p>
             <table frame="all" rowsep="1" colsep="1" id="table_xlq_sn5_yyb">
                 <tgroup cols="3">
                     <colspec colname="c1" colnum="1" colwidth="1*"/>
-                    <colspec colname="newCol2" colnum="2" colwidth="1*"/>
-                    <colspec colname="c2" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol2" colnum="2" colwidth="2*"/>
+                    <colspec colname="c2" colnum="3" colwidth="2*"/>
                     <thead>
                         <row valign="top">
                             <entry>Concept</entry>
@@ -38,12 +38,13 @@
                                 practices, we test our products using screen readers and collaborate
                                 with our vision impaired users to fix accessibility problems. We
                                 also try to make sure there is enough color contrast in the
-                                application and ship various color themes for the
+                                application components and icons, that all font sizes are
+                                configurable and ship various color themes for the
                                 application.</entry>
                             <entry>Published technical documentation also needs to be accessible by
                                 adding for example alternate text for images and using relevant text
                                 for links. It's important also to consider the color theme of the
-                                published output. <xref
+                                published output has enough contrast. <xref
                                     href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-accessibility.html"
                                     format="html" scope="external">WebHelp</xref> and PDF outputs
                                 obtained using Oxygen from DITA XML content are section 508
@@ -65,7 +66,7 @@
                             <entry>We build small components (classes) and then we use them to build
                                 projects. We then use the many individual projects, to build entire
                                 large products. <p>We keep the small components as simple as
-                                    possible in order to maximize their reuse potential. With this
+                                    possible in order to maximize their reuse potential. With these
                                     simple components we build large complex projects.</p></entry>
                             <entry>Publications are built by using small topics of information or
                                 small reusable elements like notes, tables. Even larger publications
@@ -114,9 +115,9 @@
                             <entry>Custom Validation Rules</entry>
                             <entry>We have various automatic tools (like <b>Sonar</b>) which report
                                 warnings when certain best practices for writing the code are not
-                                followed. This gives us more consistency as we are many people
-                                working on the same code base and the code we produce needs to me
-                                easily read, understood and maintained by others.</entry>
+                                followed. This gives us more consistency as we are many devs working
+                                on the same code base and the code we produce needs to me easily
+                                read, understood and maintained by others.</entry>
                             <entry>Using <xref href="SchematronBCs.dita" format="dita">Schematron
                                     Rules</xref> technical writers also can impose custom validation
                                 rules, specific for their project. These custom validation rules
@@ -139,32 +140,42 @@
                             <entry>Most programming languages have support to add comments
                                 containing documentation about what the code does, why various
                                 choices were taken. This documentation gives more information which
-                                could not be derived just by reading the code.</entry>
+                                could not be derived just by reading the code. We also have internal
+                                wikis with diagrams and descriptions of various architecture choices
+                                and steps to set up various projects for people who just started
+                                working on them.</entry>
                             <entry>It's a best practice to try and keep a <xref
                                     href="styleguide.dita"/> in which various best practices and
                                 architectural decisions for the documentation project are described.
                                 Such a Style Guide makes on-boarding easier and in time the rules in
                                 the style guide may start to be automatically applied using
-                                Schematron or a terminology checker.</entry>
+                                Schematron or a terminology checker. Publishing customizations
+                                should also be documented in a style guide and a quick getting
+                                started tutorial for people who start working on the specific
+                                technical documentation project may also be useful.</entry>
                         </row>
                         <row valign="top">
                             <entry>Enjoy</entry>
                             <entry>For the long term it's good to find particular aspects about your
                                 job that you particularly enjoy doing. For example in my case I've
                                 always been interested in investigating why certain bugs occur and
-                                following through to investigate and solve them. I'm also very eager
-                                to delete unused code and functionality.</entry>
+                                following through spending hours to investigate and solve them. I'm
+                                also very eager to delete unused code and functionality.</entry>
                             <entry>Whether it's rewriting/correcting problems in existing content,
                                 writing new content, adding custom validation rules, helping others,
                                 discussing with engineers or improving the architecture of the
                                 existing technical documentation project, technical writers may also
-                                have preferred activities.</entry>
+                                have preferred activities in which in time they will excel. In
+                                general in a team we get to know what each person does best and who
+                                to ask for advice in a certain case.</entry>
                         </row>
                         <row valign="top">
                             <entry>Evolve</entry>
                             <entry>We need to constantly deepen our understanding of the current
                                 techniques we use, learn new techniques, new frameworks or
-                                programming languages. </entry>
+                                programming languages. Learning new things helps us also in
+                                obtaining a different view of the current techniques we are
+                                using.</entry>
                             <entry>By reading various resources like the <xref
                                     href="https://www.oxygenxml.com/dita/styleguide/" format="html"
                                     scope="external">DITA Style Guide</xref>, the <xref
@@ -175,12 +186,14 @@
                                 it offers and what best practices to follow. <p>There are lots of
                                     useful resources about approaching technical documentation
                                     online like: <xref href="https://diataxis.fr/" format="html"
-                                        scope="external">Diátaxis</xref>.</p><p>Sometimes technical
-                                    writers also become involved in styling the published HTML or
-                                    PDF outputs, in uploading the deliverables to the proper places
-                                    on the web site, producing training material or receiving user
-                                    feedback and integrating it back in the documentation. So they
-                                    move towards scripting and being power-users.</p></entry>
+                                        scope="external">Diátaxis</xref>. And various <xref
+                                            href="learnDita.dita#learnDita/section_lhf_cjj_2v">community places</xref> where one
+                                    can ask for help or follow up on conversations.</p><p>Sometimes
+                                    technical writers also become involved in styling the published
+                                    HTML or PDF outputs, in uploading the deliverables to the proper
+                                    places on the web site, producing training material or receiving
+                                    user feedback and integrating it back in the documentation. So
+                                    they move towards scripting and being power-users.</p></entry>
                         </row>
                         <row valign="top">
                             <entry>Helping Yourself</entry>
@@ -192,15 +205,14 @@
                                 myself.</entry>
                             <entry>Overcoming obstacles by oneself is possible if the company has
                                 internal wikis, internal style guides that the technical writers can
-                                use. By helping ourselves in time we develop a certain In time
-                                experienced writers develop a certain grit which allows us to
-                                overcome daily obstacles.</entry>
+                                use. By helping ourselves in time experienced writers develop a
+                                certain grit which allows them to overcome daily obstacles.</entry>
                         </row>
                         <row valign="top">
                             <entry>Inversion of Control</entry>
                             <entry>Most of the times we use libraries developed by us or by others
                                 to build larger projects. So our code uses other code. But there are
-                                frameworks like <b>Spring</b> which have this concept of
+                                frameworks like <b>Java Spring</b> which have this concept of
                                     <b>inversion of control</b>. With this concept, our code does
                                 not use libraries but those libraries in turn orchestrate and use
                                 our code.</entry>
@@ -210,26 +222,29 @@
                                 different values depending on where in the DITA Map the topic is
                                 referenced. So in a way your topics contain variable place holders
                                 which may expand to different content depending on where they are
-                                    used.<p>The DITA XML standard also has this concept of <xref
-                                        href="../presentation-reuse/conref_push.dita">content
+                                used in the DITA Map.<p>The DITA XML standard also has this concept
+                                    of <xref href="../presentation-reuse/conref_push.dita">content
                                         reference push</xref>. With conref push content can be
-                                    placed in a topic from the outside.</p></entry>
+                                    placed in a topic from the outside.</p><p>A DITA topic which
+                                    contains key references is not truly instantiated until it's
+                                    referenced in a certain place in the DITA Map.</p></entry>
                         </row>
                         <row valign="top">
                             <entry>Learn by Teaching</entry>
                             <entry>Teaching is a great way to learn more about the concepts
                                 yourself. You do not need to be highly experienced in a subject
-                                matter in order to make small presentations in the team about it.
-                                You can use such small presentations to start discussions about the
+                                matter in order to make small presentations in the team about it. I
+                                sometimes make small presentations to start discussions about the
                                 subject matter and gather best practices from other team members who
-                                might now more about the subject matter than you do.</entry>
-                            <entry>You can read for example about an aspect of a standard like DITA
-                                XML that you are not using in the company like for example <xref
+                                now more about the subject matter than I do.</entry>
+                            <entry>You can read for example about an aspect of a standard like <b
+                                    id="b_yvh_dp3_dzb">DITA XML</b> that you are not using in the
+                                company like for example <xref
                                     href="../branchFilters/branchFilter.dita">branch
-                                    filtering</xref> or relationship tables, make a small
-                                presentation in the team and then try to start a discussion about
-                                how the feature could be used in the tech docs project and what
-                                problems it could solve.</entry>
+                                    filtering</xref> or <b id="b_gxp_dp3_dzb">relationship
+                                    tables</b>, make a small presentation in the team and then try
+                                to start a discussion about how the feature could be used in the
+                                tech docs project and what problems it could solve.</entry>
                         </row>
                         <row valign="top">
                             <entry>Managing Dependencies/Linking between objects</entry>
@@ -245,8 +260,47 @@
                         </row>
                         <row>
                             <entry>Metadata/Extensibility</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>From the point of view of a Java developer like myself, support
+                                for annotations was added to the Java programming language about 20
+                                years ago and it allowed the creation of various important libraries
+                                which extend in a way the language to offer all kinds of useful
+                                functionality. </entry>
+                            <entry>The DITA XML standard has various ways in which users can enhance
+                                the publishing or add metadata useful for specific needs:<ul
+                                    id="ul_ld1_xq3_dzb">
+                                    <li>Using the <xref
+                                            href="https://www.oxygenxml.com/dita/1.3/specs/langRef/base/metadata.html"
+                                            format="html" scope="external"
+                                                ><xmlelement>metadata</xmlelement></xref> element
+                                        and sub-elements to define key words, index terms,
+                                        categories which can be used to add various publishing
+                                        features. The Oxygen WebHelp output uses keywords to enhance
+                                        the search functionality and index terms to create and index
+                                        page.</li>
+                                    <li>The <xmlatt>outputclass</xmlatt> attribute which can be set
+                                        on almost all DITA elements and allows customizing elements
+                                        easily using CSS in the published output. For example you
+                                        can use it to specify the <xref
+                                            href="https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks-x.html"
+                                            format="html" scope="external">language</xref> of codeblock
+                                        elements.</li>
+                                    <li>The <xmlelement>foreign</xmlelement> element which allows
+                                        adding non DITA XML content and which can be used for
+                                        various enhancements like <xref
+                                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-embed-html.htm"
+                                            format="html" scope="external">embedding HTML content</xref>
+                                        directly in DITA topics.</li>
+                                    <li>The <xmlelement>data</xmlelement> element can be used almost
+                                        anywhere to specify key value pairs which are later used in
+                                        the published output.</li>
+                                    <li>The DITA XML standard itself can be specialized or
+                                        restricted using a <xref
+                                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-integrate-specialization.html"
+                                            format="html" scope="external">specific
+                                        procedure</xref>.</li>
+                                </ul><p>This possibility to extend the standard makes it much more
+                                    valuable and allows targeting specific company
+                                needs.</p></entry>
                         </row>
                         <row valign="top">
                             <entry>No Appreciation for Fluff</entry>
@@ -291,7 +345,11 @@
                             <entry>Having an overview of the documentation project helps you know
                                 where to make a change, what pleasant or unpleasant side effects it
                                 generates and how to possibly re-structure the content in order to
-                                facilitate making that change.</entry>
+                                facilitate making that change. Content reuse adds a lot of
+                                efficiency to the process of building an user's guide and reusing
+                                large chunks of content between user manuals. Content reuse
+                                unfortunately also makes it easier sometimes to propagate errors in
+                                multiple places.</entry>
                         </row>
                         <row valign="top">
                             <entry>Pair Programming</entry>
@@ -301,7 +359,7 @@
                                 thinks about the larger context in which the issue is resolved and
                                 asks questions while the other implements it. Or the engineers can
                                 be an expert and a novice in which case the novice sees directly how
-                                the expert ponders and implements the issue.</entry>
+                                the expert considers and implements the issue.</entry>
                             <entry>I'm not sure if in the domain of tech docs writing people use
                                 such pair docs writing but I think it could also benefit a novice to
                                 see exactly how people with more experience organize themselves,
