@@ -113,11 +113,12 @@
                         </row>
                         <row valign="top">
                             <entry>Custom Validation Rules</entry>
-                            <entry>We have various automatic tools (like <b>Sonar</b>) which report
-                                warnings when certain best practices for writing the code are not
-                                followed. This gives us more consistency as we are many devs working
-                                on the same code base and the code we produce needs to me easily
-                                read, understood and maintained by others.</entry>
+                            <entry>We have various automatic tools (like <b id="b_rpq_pw4_dzb"
+                                    >Sonar</b>) which report warnings when certain best practices
+                                for writing the code are not followed. This gives us more
+                                consistency as we are many devs working on the same code base and
+                                the code we produce needs to me easily read, understood and
+                                maintained by others.</entry>
                             <entry>Using <xref href="SchematronBCs.dita" format="dita">Schematron
                                     Rules</xref> technical writers also can impose custom validation
                                 rules, specific for their project. These custom validation rules
@@ -187,13 +188,14 @@
                                     useful resources about approaching technical documentation
                                     online like: <xref href="https://diataxis.fr/" format="html"
                                         scope="external">Diátaxis</xref>. And various <xref
-                                            href="learnDita.dita#learnDita/section_lhf_cjj_2v">community places</xref> where one
-                                    can ask for help or follow up on conversations.</p><p>Sometimes
-                                    technical writers also become involved in styling the published
-                                    HTML or PDF outputs, in uploading the deliverables to the proper
-                                    places on the web site, producing training material or receiving
-                                    user feedback and integrating it back in the documentation. So
-                                    they move towards scripting and being power-users.</p></entry>
+                                        href="learnDita.dita#learnDita/section_lhf_cjj_2v">community
+                                        places</xref> where one can ask for help or follow up on
+                                    conversations.</p><p>Sometimes technical writers also become
+                                    involved in styling the published HTML or PDF outputs, in
+                                    uploading the deliverables to the proper places on the web site,
+                                    producing training material or receiving user feedback and
+                                    integrating it back in the documentation. So they move towards
+                                    scripting and being power-users.</p></entry>
                         </row>
                         <row valign="top">
                             <entry>Helping Yourself</entry>
@@ -212,10 +214,10 @@
                             <entry>Inversion of Control</entry>
                             <entry>Most of the times we use libraries developed by us or by others
                                 to build larger projects. So our code uses other code. But there are
-                                frameworks like <b>Java Spring</b> which have this concept of
-                                    <b>inversion of control</b>. With this concept, our code does
-                                not use libraries but those libraries in turn orchestrate and use
-                                our code.</entry>
+                                frameworks like <b id="b_hqq_pw4_dzb">Java Spring</b> which have
+                                this concept of <b id="b_iqq_pw4_dzb">inversion of control</b>. With
+                                this concept, our code does not use libraries but those libraries in
+                                turn orchestrate and use our code.</entry>
                             <entry>The DITA XML standard has the concept of <xref
                                     href="../keyscopes/keyscopesBlog.dita">key scopes</xref> which
                                 allows key references and content key references in topics to have
@@ -282,14 +284,14 @@
                                         easily using CSS in the published output. For example you
                                         can use it to specify the <xref
                                             href="https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks-x.html"
-                                            format="html" scope="external">language</xref> of codeblock
-                                        elements.</li>
+                                            format="html" scope="external">language</xref> of
+                                        codeblock elements.</li>
                                     <li>The <xmlelement>foreign</xmlelement> element which allows
                                         adding non DITA XML content and which can be used for
                                         various enhancements like <xref
                                             href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-embed-html.htm"
-                                            format="html" scope="external">embedding HTML content</xref>
-                                        directly in DITA topics.</li>
+                                            format="html" scope="external">embedding HTML
+                                            content</xref> directly in DITA topics.</li>
                                     <li>The <xmlelement>data</xmlelement> element can be used almost
                                         anywhere to specify key value pairs which are later used in
                                         the published output.</li>
@@ -380,21 +382,37 @@
                         </row>
                         <row valign="top">
                             <entry>Publishing Orchestration</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>We have various automated flows which generate nightly build
+                                installation kits for our product which can be further tested by the
+                                QA team.</entry>
+                            <entry>Although the published output can be obtained from an Oxygen
+                                installation by running a transformation scenario in time it's a
+                                good idea to automate the publishing by using an integration server
+                                like Jenkins for example to constantly poll the userguide project
+                                for modifications and update an internal web site with the latest
+                                HTML or PDF outputs in order to show how the documentation is
+                                evolving and give material to engineers who want to review the
+                                published content. For the Oxygen XML blog for example a <xref
+                                    href="welcome.dita#welcome/section_cbc_g11_qkb">Gradle build
+                                    file</xref> is used to automate the publishing.</entry>
                         </row>
                         <row valign="top">
                             <entry>Read the Docs</entry>
-                            <entry>We learn a lot by doing, by copy pasting and reusing content from
-                                other similar projects that we have. But sometimes taking the time
-                                to read the documentation for the frameworks and libraries that we
-                                use is really worth it.</entry>
+                            <entry>We learn a lot by doing, or by copy pasting or reusing content
+                                from other similar projects that we have. But sometimes taking the
+                                time to read the documentation for the frameworks and libraries that
+                                we use is really worth it.</entry>
                             <entry>By reading for example the <xref
                                     href="https://www.oxygenxml.com/dita/1.3/specs/" format="html"
                                     scope="external">DITA 1.3 standard documentation</xref> a
                                 technical documentation writer might find various features that can
                                 be used in their project. They might also understand certain
-                                limitations in the way things work. </entry>
+                                limitations in the way things work. <p>There are <xref
+                                        href="learnDita.dita">lots of resources</xref> for learning
+                                    DITA or for learning how to better use Oxygen to edit DITA XML
+                                    content. So it is sometimes worth taking the time to explore the
+                                    tools you are using and the capabilities of the
+                                standard.</p></entry>
                         </row>
                         <row valign="top">
                             <entry>Requesting Help from Peers</entry>
@@ -405,22 +423,49 @@
                                 else usually takes priority over the current task. </entry>
                             <entry>Besides asking their peers for help technical documentation
                                 writers also have various engineers and subject matter experts who
-                                could help when </entry>
+                                could help when writing content either by giving feedback or by
+                                providing some initial content (some notes for example) to be used
+                                for the official documentation.</entry>
                         </row>
                         <row valign="top">
                             <entry>Security</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>We do our best to protect our applications from security
+                                vulnerabilities by updating old libraries and by considering various
+                                scenarios in which attackers would attempt to gain control over an
+                                application. </entry>
+                            <entry>Besides keeping the user guide contents in a secure location to
+                                avoid exposing for example to competition features which have not
+                                yet been released, the HTML output obtained from the user guide
+                                contents also needs to be updated to contain the latest Javascript
+                                libraries and not be susceptible to vulnerabilities when loaded in a
+                                web browser.<p>Content in the user's guide in general also needs to
+                                    be considered from the point of view of not giving an attacker
+                                    details about how the product could be configured for use in
+                                    other scenarios than the ones intended by the
+                                developers.</p></entry>
                         </row>
                         <row valign="top">
                             <entry>Server Side Validation</entry>
-                            <entry/>
-                            <entry/>
-                        </row>
-                        <row valign="top">
-                            <entry>Styling and Colors</entry>
-                            <entry/>
-                            <entry/>
+                            <entry>Validation and automated tests run on the server side (we use a
+                                Jenkins integration server) whenever changes are made to source code
+                                for a certain project. If automatic tests fail, emails are sent to
+                                the people who have committed the latest changes which broke the
+                                builds.</entry>
+                            <entry><p>Whenever you have multiple topic files, filters, content
+                                    reuse, you may end up with potential validation problems in the
+                                    edited content, problems ranging from broken links to invalid ID
+                                    attribute values or invalid topics.</p>Oxygen has a very useful
+                                    <xref
+                                    href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html"
+                                    format="html" scope="external"><b id="b_ftb_bw4_dzb">Validate
+                                        and check for completeness</b></xref> action which checks
+                                lots of potential problems in the context of a DITA Map, but maybe
+                                not all people run such an action before they commit. Such an action
+                                can also be <xref
+                                    href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html"
+                                    format="html" scope="external"/>scripted to run on the server
+                                side in an integration server like <b id="b_wbh_kw4_dzb">Jenkins</b>
+                                for example.</entry>
                         </row>
                         <row valign="top">
                             <entry>Terminology</entry>
@@ -443,6 +488,24 @@
                         </row>
                         <row valign="top">
                             <entry>User's Point of View</entry>
+                            <entry>All features need to be discussed and implemented from the point
+                                of view of the people who will actually benefit from using them. For
+                                technical people this is sometimes difficult to do but we try to
+                                constantly remind ourselves to implement features which help certain
+                                real-world workflows to be performed by the end user and not for the
+                                sake of closing tickets. </entry>
+                            <entry>The documentation also needs to target certain user profiles and
+                                be written to help people perform tasks and understand concepts. The
+                                product knowledge level of the end user is almost never the same
+                                with the one of the tech writer.</entry>
+                        </row>
+                        <row>
+                            <entry>User Feedback</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row valign="top">
+                            <entry>User Interface</entry>
                             <entry/>
                             <entry/>
                         </row>
@@ -463,7 +526,7 @@
         <p>Writers and software engineers have lots of things in common because we are all working
             with language, we communicate in a specific language. Computer programming languages
             contain less words and are more simple than the English vocabulary but in the end we are
-            all in the market of describing, expressing and building complex systems using simple
+            all in the market of describing, expressing and building large systems using simple
             terms.</p>
         <p>If you have feedback about these concepts and how they influence your writing, it is as
             usual welcomed.</p>
