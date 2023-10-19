@@ -5,7 +5,7 @@
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
-            <created date="2022-10-01"/>
+            <created date="2023-10-19"/>
         </critdates>
     </prolog>
     <body>
@@ -26,14 +26,14 @@
                     <colspec colname="c2" colnum="3" colwidth="2*"/>
                     <thead>
                         <row valign="top">
-                            <entry>Concept</entry>
+                            <entry id="entry_vyh_qcx_dzb">Concept</entry>
                             <entry>Software Engineers</entry>
                             <entry>Tech Docs Writer</entry>
                         </row>
                     </thead>
                     <tbody>
                         <row valign="top" id="row_qyb_4xw_dzb">
-                            <entry>Accessibility</entry>
+                            <entry id="entry_yyh_qcx_dzb">Accessibility</entry>
                             <entry>We build our software products by following accessibility best
                                 practices, we test our products using screen readers and collaborate
                                 with our vision impaired users to fix accessibility problems. We
@@ -51,7 +51,7 @@
                                 compliant.</entry>
                         </row>
                         <row valign="top" id="row_wyb_4xw_dzb">
-                            <entry>Accurate and Concise Messages</entry>
+                            <entry id="entry_bzh_qcx_dzb">Accurate and Concise Messages</entry>
                             <entry>We are required to present accurate and concise error messages,
                                 dialogs, prompts to our end users. In time we've learned to pass
                                 most of these error messages by our tech docs writers, asking their
@@ -62,7 +62,8 @@
                                 application.</entry>
                         </row>
                         <row valign="top" id="row_xyb_4xw_dzb">
-                            <entry>Building Complex Systems from Basic Building Blocks</entry>
+                            <entry id="entry_czh_qcx_dzb">Building Complex Systems from Basic
+                                Building Blocks</entry>
                             <entry>We build small components (classes) and then we use them to build
                                 projects. We then use the many individual projects, to build entire
                                 large products. <p>We keep the small components as simple as
@@ -76,7 +77,7 @@
                                     build large technical documentation projects.</p></entry>
                         </row>
                         <row valign="top" id="row_yyb_4xw_dzb">
-                            <entry>Code Review</entry>
+                            <entry id="entry_ezh_qcx_dzb">Code Review</entry>
                             <entry>We have a stage where the code which was written by someone is
                                 reviewed by a usually more experienced peer. The code reviewer may
                                 propose various changes, either small message changes or changes
@@ -93,7 +94,7 @@
                                 overall overview of the project.</entry>
                         </row>
                         <row valign="top" id="row_zyb_4xw_dzb">
-                            <entry>Content Reuse</entry>
+                            <entry id="entry_fzh_qcx_dzb">Content Reuse</entry>
                             <entry>We reuse entire small projects in multiple products. We reuse
                                 libraries, classes, functions. Content reuse gives us the ability to
                                 build products faster and to build different products from the same
@@ -112,7 +113,7 @@
                                     </ul></p></entry>
                         </row>
                         <row valign="top" id="row_azb_4xw_dzb">
-                            <entry>Custom Validation Rules</entry>
+                            <entry id="entry_gzh_qcx_dzb">Custom Validation Rules</entry>
                             <entry>We have various automatic tools (like <b id="b_rpq_pw4_dzb"
                                     >Sonar</b>) which report warnings when certain best practices
                                 for writing the code are not followed. This gives us more
@@ -125,7 +126,7 @@
                                 ensure consistency throughout the tech docs project.</entry>
                         </row>
                         <row valign="top" id="row_bzb_4xw_dzb">
-                            <entry>Deleting Unused/Deprecated Content</entry>
+                            <entry id="entry_izh_qcx_dzb">Deleting Unused/Deprecated Content</entry>
                             <entry>All mature software products contain components which in time may
                                 become unmaintained, unused. In time such components may become
                                 security problems or may just contain inaccurate information. So
@@ -137,7 +138,7 @@
                                 job.</entry>
                         </row>
                         <row valign="top" id="row_czb_4xw_dzb">
-                            <entry>Document my Code/Documentation</entry>
+                            <entry id="entry_jzh_qcx_dzb">Document my Code/Documentation</entry>
                             <entry>Most programming languages have support to add comments
                                 containing documentation about what the code does, why various
                                 choices were taken. This documentation gives more information which
@@ -156,7 +157,7 @@
                                 technical documentation project may also be useful.</entry>
                         </row>
                         <row valign="top" id="row_dzb_4xw_dzb">
-                            <entry>Enjoy</entry>
+                            <entry id="entry_kzh_qcx_dzb">Enjoy</entry>
                             <entry>For the long term it's good to find particular aspects about your
                                 job that you particularly enjoy doing. For example in my case I've
                                 always been interested in investigating why certain bugs occur and
@@ -171,7 +172,7 @@
                                 to ask for advice in a certain case.</entry>
                         </row>
                         <row valign="top" id="row_ezb_4xw_dzb">
-                            <entry>Evolve</entry>
+                            <entry id="entry_mzh_qcx_dzb">Evolve</entry>
                             <entry>We need to constantly deepen our understanding of the current
                                 techniques we use, learn new techniques, new frameworks or
                                 programming languages. Learning new things helps us also in
@@ -198,7 +199,7 @@
                                     scripting and being power-users.</p></entry>
                         </row>
                         <row valign="top" id="row_fzb_4xw_dzb">
-                            <entry>Helping Yourself</entry>
+                            <entry id="entry_nzh_qcx_dzb">Helping Yourself</entry>
                             <entry>When I do not know how to do something I first try to figure
                                 things out on my one before asking for help. I use various internal
                                 resources (our internal wiki) or external resources like Google,
@@ -211,7 +212,7 @@
                                 certain grit which allows them to overcome daily obstacles.</entry>
                         </row>
                         <row valign="top" id="row_gzb_4xw_dzb">
-                            <entry>Inversion of Control</entry>
+                            <entry id="entry_ozh_qcx_dzb">Inversion of Control</entry>
                             <entry>Most of the times we use libraries developed by us or by others
                                 to build larger projects. So our code uses other code. But there are
                                 frameworks like <b id="b_hqq_pw4_dzb">Java Spring</b> which have
@@ -231,8 +232,24 @@
                                     contains key references is not truly instantiated until it's
                                     referenced in a certain place in the DITA Map.</p></entry>
                         </row>
+                        <row>
+                            <entry id="entry_pzh_qcx_dzb">Issues/Tickets List</entry>
+                            <entry>We work internally mostly with <b id="b_mtf_v1x_dzb">Atlassian
+                                    JIRA</b> to create issues/tickets. We have various workflows for
+                                our issues which allow us to have quality assurance, and
+                                documentation connected to the same issue ID. The issue connects all
+                                the commits and modifications made both in the development phase and
+                                in the documentation phase. So looking on an issue I can see also
+                                links to all changes made to fix and document the issue.<p>For some
+                                    projects we also work with GitHub issues or GitLab
+                                    issues/tickets and although more simple they also provide us
+                                    with some basic way of keeping track of work
+                                progress.</p></entry>
+                            <entry>An issues/tickets list is also very important for tech doc
+                                writers to keep track of what needs to be done.</entry>
+                        </row>
                         <row valign="top" id="row_hzb_4xw_dzb">
-                            <entry>Learn by Teaching</entry>
+                            <entry id="entry_qzh_qcx_dzb">Learn by Teaching</entry>
                             <entry>Teaching is a great way to learn more about the concepts
                                 yourself. You do not need to be highly experienced in a subject
                                 matter in order to make small presentations in the team about it. I
@@ -249,7 +266,8 @@
                                 tech docs project and what problems it could solve.</entry>
                         </row>
                         <row valign="top" id="row_izb_4xw_dzb">
-                            <entry>Managing Dependencies/Linking between objects</entry>
+                            <entry id="entry_rzh_qcx_dzb">Managing Dependencies/Linking between
+                                objects</entry>
                             <entry>The more dependencies a class, object or project has, the more
                                 difficult is to use it in another context. In our work we try to
                                 uncouple objects, to decrease the dependencies between the in order
@@ -261,7 +279,7 @@
                                 topics in multiple contexts.</entry>
                         </row>
                         <row id="row_jzb_4xw_dzb">
-                            <entry>Metadata/Extensibility</entry>
+                            <entry id="entry_szh_qcx_dzb">Metadata/Extensibility</entry>
                             <entry>From the point of view of a Java developer like myself, support
                                 for annotations was added to the Java programming language about 20
                                 years ago and it allowed the creation of various important libraries
@@ -305,7 +323,7 @@
                                 needs.</p></entry>
                         </row>
                         <row valign="top" id="row_kzb_4xw_dzb">
-                            <entry>No Appreciation for Fluff</entry>
+                            <entry id="entry_tzh_qcx_dzb">No Appreciation for Fluff</entry>
                             <entry>The written code should be as compact and easy to read as
                                 possible. An application's features should again be intuitive to use
                                 with an user's interface which does not present more than you need
@@ -315,7 +333,8 @@
                                 English, no fancy words, no thesaurus.</entry>
                         </row>
                         <row valign="top" id="row_lzb_4xw_dzb">
-                            <entry>Obtaining multiple products from the same code base</entry>
+                            <entry id="entry_uzh_qcx_dzb">Obtaining multiple products from the same
+                                code base</entry>
                             <entry>Using configuration files we can reuse an entire product code
                                 base to create multiple products each with a specific subset of
                                 features.</entry>
@@ -325,7 +344,8 @@
                                     products</xref>.</entry>
                         </row>
                         <row valign="top" id="row_mzb_4xw_dzb">
-                            <entry>One trick pony / Jack of all trades</entry>
+                            <entry id="entry_vzh_qcx_dzb">One trick pony / Jack of all
+                                trades</entry>
                             <entry>Even if in time we specialize and become very productive with one
                                 set of tools and when working on a certain aspect of the
                                 application, having a larger overview and being able to use other
@@ -340,7 +360,7 @@
                                 people in the company might use.</entry>
                         </row>
                         <row valign="top" id="row_nzb_4xw_dzb">
-                            <entry>Overview of Complex Systems</entry>
+                            <entry id="entry_wzh_qcx_dzb">Overview of Complex Systems</entry>
                             <entry>Either when making a small improvement or implementing a large
                                 feature, having an overview of the entire project's architecture
                                 helps a lot.</entry>
@@ -354,7 +374,7 @@
                                 multiple places.</entry>
                         </row>
                         <row valign="top" id="row_ozb_4xw_dzb">
-                            <entry>Pair Programming</entry>
+                            <entry id="entry_xzh_qcx_dzb">Pair Programming</entry>
                             <entry>We have this concept that we apply from time to time in which two
                                 people work on the same issue from the same computer. These people
                                 can be peers with the same knowledge, in which case one of them
@@ -368,7 +388,8 @@
                                 understand the requirements and work on issues.</entry>
                         </row>
                         <row valign="top" id="row_pzb_4xw_dzb">
-                            <entry>Project Structure and Naming Resources</entry>
+                            <entry id="entry_yzh_qcx_dzb">Project Structure and Naming
+                                Resources</entry>
                             <entry>Experienced software developers are interested in properly naming
                                 things. We try to give good names to functions, variables, packages.
                                 We try to be consistent when naming things using compound names,
@@ -381,7 +402,7 @@
                                     format="html" scope="external">Sample Project</xref>.</entry>
                         </row>
                         <row valign="top" id="row_qzb_4xw_dzb">
-                            <entry>Publishing Orchestration</entry>
+                            <entry id="entry_zzh_qcx_dzb">Publishing Orchestration</entry>
                             <entry>We have various automated flows which generate nightly build
                                 installation kits for our product which can be further tested by the
                                 QA team.</entry>
@@ -397,7 +418,7 @@
                                     file</xref> is used to automate the publishing.</entry>
                         </row>
                         <row valign="top" id="row_rzb_4xw_dzb">
-                            <entry>Read the Docs</entry>
+                            <entry id="entry_a13_qcx_dzb">Read the Docs</entry>
                             <entry>We learn a lot by doing, or by copy pasting or reusing content
                                 from other similar projects that we have. But sometimes taking the
                                 time to read the documentation for the frameworks and libraries that
@@ -415,7 +436,7 @@
                                 standard.</p></entry>
                         </row>
                         <row valign="top" id="row_szb_4xw_dzb">
-                            <entry>Requesting Help from Peers</entry>
+                            <entry id="entry_b13_qcx_dzb">Requesting Help from Peers</entry>
                             <entry>Besides an internal wiki of content and procedures we rely on a
                                 network of colleagues, some from our teams, some from others or from
                                 the system admins team. In time we come to know each other's
@@ -428,7 +449,7 @@
                                 for the official documentation.</entry>
                         </row>
                         <row valign="top" id="row_tzb_4xw_dzb">
-                            <entry>Security</entry>
+                            <entry id="entry_c13_qcx_dzb">Security</entry>
                             <entry>We do our best to protect our applications from security
                                 vulnerabilities by updating old libraries and by considering various
                                 scenarios in which attackers would attempt to gain control over an
@@ -445,7 +466,7 @@
                                 developers.</p></entry>
                         </row>
                         <row valign="top" id="row_uzb_4xw_dzb">
-                            <entry>Server Side Validation</entry>
+                            <entry id="entry_d13_qcx_dzb">Server Side Validation</entry>
                             <entry>Validation and automated tests run on the server side (we use a
                                 Jenkins integration server) whenever changes are made to source code
                                 for a certain project. If automatic tests fail, emails are sent to
@@ -463,12 +484,12 @@
                                 not all people run such an action before they commit. Such an action
                                 can also be <xref
                                     href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html"
-                                    format="html" scope="external"/>scripted to run on the server
-                                side in an integration server like <b id="b_wbh_kw4_dzb">Jenkins</b>
-                                for example.</entry>
+                                    format="html" scope="external">scripted</xref> to run on the
+                                server side in an integration server like <b id="b_wbh_kw4_dzb"
+                                    >Jenkins</b> for example.</entry>
                         </row>
                         <row valign="top" id="row_vzb_4xw_dzb">
-                            <entry>Terminology</entry>
+                            <entry id="entry_e13_qcx_dzb">Terminology</entry>
                             <entry>There are lots of ways in which a message can be conveyed. All
                                 messages presented to the end user need to have a certain style,
                                 tone, use plain language.</entry>
@@ -477,7 +498,7 @@
                                 aspect of a technical writer's job.</entry>
                         </row>
                         <row valign="top" id="row_wzb_4xw_dzb">
-                            <entry>Translation</entry>
+                            <entry id="entry_f13_qcx_dzb">Translation</entry>
                             <entry>In general all user interface strings in an application will be
                                 translated to multiple languages so we need to take this into
                                 account when designing the application.</entry>
@@ -487,7 +508,7 @@
                                     of best practices</xref>.</entry>
                         </row>
                         <row valign="top" id="row_xzb_4xw_dzb">
-                            <entry>User's Point of View</entry>
+                            <entry id="entry_g13_qcx_dzb">User's Point of View</entry>
                             <entry>All features need to be discussed and implemented from the point
                                 of view of the people who will actually benefit from using them. For
                                 technical people this is sometimes difficult to do but we try to
@@ -500,24 +521,64 @@
                                 with the one of the tech writer.</entry>
                         </row>
                         <row id="row_yzb_4xw_dzb">
-                            <entry>User Feedback</entry>
-                            <entry/>
-                            <entry/>
+                            <entry id="entry_h13_qcx_dzb">User Feedback</entry>
+                            <entry>It's important to get feedback from end users. This feedback
+                                gives us ideas about what to implement in the future and also allows
+                                us to modify existing features to better accommodate certain
+                                workflows. So we try to make it as easy as possible to give
+                                feedback, we have a <b id="b_g1m_myw_dzb">Report problem</b> action
+                                directly in the application, we have a support email address, forum,
+                                user's list, also on each of our user's manual pages there is a
+                                feedback comments section.</entry>
+                            <entry>Receiving user feedback for the written documentation is also
+                                very important to improve the documentation to cover the actual user
+                                needs. The <xref
+                                    href="https://www.oxygenxml.com/oxygen_feedback.html"
+                                    format="html" scope="external">Oxygen Feedback platform</xref>
+                                can be easily embedded for example in the generated web pages to
+                                allow users to provide feedback related to the documentation. We use
+                                it for the Oxygen user's manual, blog and it's a very good mechanism
+                                to get in touch with users and to improve the docs.</entry>
                         </row>
                         <row valign="top" id="row_zzb_4xw_dzb">
-                            <entry>User Interface</entry>
-                            <entry/>
-                            <entry/>
+                            <entry id="entry_i13_qcx_dzb">User Interface</entry>
+                            <entry>An application may work very well from the functionality point of
+                                view but if it does not look very nice(ugly color theme, ugly icons,
+                                not intuitive user interface layouts) it will not end up getting
+                                used that much. </entry>
+                            <entry>A published user's guide also needs to have appropriate colors,
+                                fonts in order to improve readability and find ability. So besides
+                                the actual content care must also be taken to decide what font
+                                styles and sizes to use, what color theme to implement.</entry>
                         </row>
                         <row valign="top" id="row_a1c_4xw_dzb">
-                            <entry>Version Control</entry>
-                            <entry/>
-                            <entry/>
+                            <entry id="entry_j13_qcx_dzb">Version Control</entry>
+                            <entry>We use a mix of Git repositories and Subversion repositories for
+                                our software projects. Version control allows us to collaborate, to
+                                have a history of changes and to have release branches for our
+                                products.</entry>
+                            <entry>Using a version control system like Git similarly gives the
+                                possibility to collaborate on documentation projects with various
+                                    <xref
+                                    href="../git-tech-writers/using_git_for_technical_writing.dita"
+                                    >workflows</xref>. <p>As an alternative you can use a commercial
+                                    content management system or in the cloud editing
+                                    solution.</p><p>No matter what storage system you use to
+                                    collaborate, having a history of changes and release branches is
+                                    a must.</p></entry>
                         </row>
                         <row valign="top">
-                            <entry>Working with AI tools</entry>
-                            <entry/>
-                            <entry/>
+                            <entry id="entry_k13_qcx_dzb">Working with AI tools</entry>
+                            <entry>Developers can work with ChatGPT to ask advice about how to write
+                                various pieces of code, especially in programming languages with
+                                which they are not familiar. They can also ask for help re-writing
+                                messages or translating small pieces of content.</entry>
+                            <entry>Working directly with AI tools or using an add-on like the <xref
+                                    href="ai_positron.dita">Oxygen AI Positron Assistant view</xref>
+                                tech doc writers can also use the AI tools to improve readability,
+                                remove grammar problems, re-write content in various styles or
+                                translate content. So AI tools are valuable for writers as
+                                co-pilots.</entry>
                         </row>
                     </tbody>
                 </tgroup>
