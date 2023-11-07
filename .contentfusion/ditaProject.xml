@@ -4,9 +4,15 @@
         <input href="../oxygen_xml_blog.ditamap"/>
     </context>
     <publication id="webhelp" transtype="webhelp-responsive"/>
+    <publication id="pdf" transtype="pdf-css-html5"/>
     <deliverable id="WebHelp-1699356135868" name="WebHelp">
         <context idref="SAsnXHOTnBHuRsE"/>
         <output href="webhelp-output"/>
         <publication idref="webhelp"/>
+    </deliverable>
+    <deliverable id="PDF-1699356492238" name="PDF">
+        <context idref="SAsnXHOTnBHuRsE"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf"/>
     </deliverable>
 </project>
