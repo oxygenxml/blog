@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project xmlns="https://www.dita-ot.org/project">
-    <context id="SAsnXHOTnBHuRsE" name="WebHelp">
+    <context id="SAsnXHOTnBHuRsE" name="Blog Publication">
         <input href="../oxygen_xml_blog.ditamap"/>
     </context>
 </project>
