@@ -6,7 +6,7 @@
 		<author>Radu Coravu</author>
 	</prolog>
 	<body>
-		<p>We create branches for any change, either for large features or small fixes We also create
+		<p>We create branches for any change, either for large features or small fixes. We also create
 			branches for past released versions of the documentation in order to be able to add
 			small fixes and re-publish documentation for a specific past version.</p>
 		<image placement="break" href="../images/any-change-branches.png" id="image_psk_tvq_nwb" scale="50"/>
