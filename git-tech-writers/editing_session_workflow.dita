@@ -27,6 +27,13 @@
 				<li><image href="images/pullBeforePush.png" id="image_odv_2fr_swb" scale="30"/></li>
 			</ul>
 		</p>
+		<section>
+			<title>Commit Message</title>
+			<p>Each commit has a commit message. The commit message is in general a brief
+				description of the changes. When using a ticketing system, as a best practice the
+				commit message contains the ID of the ticket.</p>
+			<image href="images/commit-message.png" placement="break" scale="50"/>
+		</section>
 		<section id="section_lh1_5dr_swb">
 			<title>Handling Simple Conflicts</title>
 			<p>Conflicts are usually caused by trying to push changes made to resources that, in the
