@@ -8,7 +8,9 @@
 	</prolog>
 	<body>
 		<p>We work on the smaller fixes on the main branch, we create separate branches for larger
-			features/fixes. </p>
+			features/fixes. We also create separate branches for past released versions of the
+			documentation in order to add small fixes and be able to re-publish documentation for
+			them.</p>
 		<image placement="break" href="../images/feature-branches.png" id="image_psk_tvq_nwb"/>
 		<!--https://mermaid.live/edit#pako:eNqVkrtuwzAMRX9F0BwVcEavfU1FhwAdCi-MRduELcmQqKRFkH-vHMd9GHaLaqN47r0SwZMsnUaZy5r40UPfFFakUzpjiAXpXBTyudPoxQF9IGdDIReQl7EpttlNNgF7D7ZsJp3aZipTFb1huOobLFsXeR34HrAz0HUidT_jJ7kBsquCsgFbY5g9qULg6FHtnWsN-DaoQBrVgfA4M_-b_JHJ4FkcnW9FmsVVuzivW2eZbMQ5LBbpB7IUGtSr1v-ZhdhOMoO-xt-_KDcyUclWpxU5DbJCcoMmRQ_GGiuIHQ-G54TGXgPjvSZ2XubsI24kRHa7d1tO9cjcEdQejMwr6EK67cG-OvdV48XjaVzNy4aePwBMqeYu-->
 		<ul id="ul_jzw_tcm_mwb">
