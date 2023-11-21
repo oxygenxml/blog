@@ -7,7 +7,7 @@
         processing-role="resource-only" scope="peer"/>
     <topicref href="topics/frequently_asked_questions.dita"/>
     <topichead navtitle="DITA">
-        <topichead navtitle="Learning" keys="learning">
+        <topicref keys="learning" href="topics/learningDITAGeneral.dita">
             <topicref href="topics/learnDita.dita">
                 <topichead navtitle="Learn DITA Editing with Oxygen with Small Clips">
                     <topicref href="topics/shorts_insert_image_references.dita"/>
@@ -41,7 +41,7 @@
             <topicref href="presentation-reuse/presentation.ditamap" format="ditamap"/>
             <topicref href="topics/cross_book_links.dita"/>
             <topicref href="topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita"/>
-        </topichead>
+        </topicref>
         <topicref href="topics/dita_ot_publishing_customizations_overview.dita" keys="publishing">
             <topicref href="topics/webhelp-dita-strong-points.dita"/>
             <topichead navtitle="PDF">
