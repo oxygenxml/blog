@@ -24,4 +24,8 @@
   <topicref keyref="migrate">
     <topicsubject keyref="blog-migrate"/>
   </topicref>
+  
+  <topicref keyref="sdk">
+    <topicsubject keyref="blog-sdk"/>
+  </topicref>
 </map>

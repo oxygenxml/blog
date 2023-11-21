@@ -37,5 +37,11 @@
         <navtitle>Migrate</navtitle>
       </topicmeta>
     </subjectdef>
+    
+    <subjectdef keys="blog-sdk">
+      <topicmeta>
+        <navtitle>Plugins/Frameworks SDK</navtitle>
+      </topicmeta>
+    </subjectdef>
   </hasInstance>
 </subjectScheme>

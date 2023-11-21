@@ -138,7 +138,7 @@
         <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
         <topicref href="topics/migratingFmToDita.dita"/>
     </topicref>
-    <topichead navtitle="SDK Development (Plugins, Frameworks)">
+    <topicref keys="sdk" href="sdk.dita">
         <topicref href="topics/customizing_oxygen.dita"/>
         <topicref href="topics/author-document-type-extension-sharing.dita"/>
         <topicref href="topics/sharing_schematron_validation_rules.dita"/>
@@ -156,7 +156,7 @@
         <topicref
             href="topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.dita"/>
         <topicref href="topics/convert_code_templates_to_author_actions.dita"/>
-    </topichead>
+    </topicref>
     <topichead navtitle="Miscellaneous">
         <topicref href="topics/oxygen_xml_ecosystem.dita"/>
         <topicref href="topics/add_ons_for_technical_documentation.dita"/>
