@@ -75,7 +75,7 @@
             <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
             <topicref href="topics/generating_google_structured_data_from_your_dita_faq.dita"/>
         </topicref>
-        <topichead navtitle="Customizing" keys="customizing">
+        <topicref keys="customizing" href="topics/dita-editing-customizations.dita">
             <topicref href="topics/startup_dita_project.dita"/>
             <topicref href="topics/customizeDITACSS.dita"/>
             <topicref
@@ -85,7 +85,7 @@
             </topicref>
             <topicref href="topics/convertingSubjectSchemeMapToDITAVAL.dita"/>
             <topicref href="topics/converting_xpr_profiling.dita"/>
-        </topichead>
+        </topicref>
         <topichead navtitle="Other">
             <topicref href="topics/dita_for_small_teams.dita"/>
             <topicref href="git-tech-writers/using_git_for_technical_writing.ditamap"
