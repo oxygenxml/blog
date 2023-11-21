@@ -121,7 +121,7 @@
             <topicref href="topics/similarities_tech_docs_soft_engs.dita"/>
         </topichead>
     </topichead>
-    <topichead navtitle="Migration">
+    <topicref keys="migrate" href="migration.dita">
         <topicref href="topics/migratingToDITA.dita"/>
         <topicref href="topics/migrating_to_dita.dita"/>
         <topicref href="topics/migrateWordToDita.dita">
@@ -137,7 +137,7 @@
         </topicref>
         <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
         <topicref href="topics/migratingFmToDita.dita"/>
-    </topichead>
+    </topicref>
     <topichead navtitle="SDK Development (Plugins, Frameworks)">
         <topicref href="topics/customizing_oxygen.dita"/>
         <topicref href="topics/author-document-type-extension-sharing.dita"/>

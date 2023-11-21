@@ -20,4 +20,8 @@
       <subjectref keyref="blog-dita-customizing"/>
     </topicsubject>
   </topicref>
+  
+  <topicref keyref="migrate">
+    <topicsubject keyref="blog-migrate"/>
+  </topicref>
 </map>

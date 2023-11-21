@@ -31,5 +31,11 @@
         </topicmeta>
       </subjectdef>
     </subjectdef>
+    
+    <subjectdef keys="blog-migrate">
+      <topicmeta>
+        <navtitle>Migrate</navtitle>
+      </topicmeta>
+    </subjectdef>
   </hasInstance>
 </subjectScheme>
