@@ -7,7 +7,7 @@
         processing-role="resource-only" scope="peer"/>
     <topicref href="topics/frequently_asked_questions.dita"/>
     <topichead navtitle="DITA">
-        <topichead navtitle="Learning">
+        <topichead navtitle="Learning" keys="learning">
             <topicref href="topics/learnDita.dita">
                 <topichead navtitle="Learn DITA Editing with Oxygen with Small Clips">
                     <topicref href="topics/shorts_insert_image_references.dita"/>
@@ -42,7 +42,7 @@
             <topicref href="topics/cross_book_links.dita"/>
             <topicref href="topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita"/>
         </topichead>
-        <topicref href="topics/dita_ot_publishing_customizations_overview.dita">
+        <topicref href="topics/dita_ot_publishing_customizations_overview.dita" keys="publishing">
             <topicref href="topics/webhelp-dita-strong-points.dita"/>
             <topichead navtitle="PDF">
                 <topicref href="topics/tableRowColors.dita"/>
@@ -75,7 +75,7 @@
             <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
             <topicref href="topics/generating_google_structured_data_from_your_dita_faq.dita"/>
         </topicref>
-        <topichead navtitle="Customizing">
+        <topichead navtitle="Customizing" keys="customizing">
             <topicref href="topics/startup_dita_project.dita"/>
             <topicref href="topics/customizeDITACSS.dita"/>
             <topicref
@@ -182,6 +182,8 @@
     </topichead>
     <topicref href="topics/contributors.dita"/>
     <topicref href="key_definitions.ditamap" format="ditamap"/>
+    <mapref href="classification/blog-subject-scheme.ditamap" type="subjectScheme"/>
+    <mapref href="classification/blog-classification.ditamap" processing-role="resource-only"/>
     <reltable title="Related Links">
         <relrow>
             <relcell>

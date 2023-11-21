@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Classification Map//EN" "classifyMap.dtd">
+<map processing-role="resource-only">
+    <title>Blog Classification</title>
+  
+  <topicref keyref="learning">
+    <topicsubject keyref="blog-dita">
+      <subjectref keyref="blog-dita-learning"/>
+    </topicsubject>
+  </topicref>
+  
+  <topicref keyref="publishing">
+    <topicsubject keyref="blog-dita">
+      <subjectref keyref="blog-dita-publishing"/>
+    </topicsubject>
+  </topicref>
+  
+  <topicref keyref="customizing">
+    <topicsubject keyref="blog-dita">
+      <subjectref keyref="blog-dita-customizing"/>
+    </topicsubject>
+  </topicref>
+</map>
