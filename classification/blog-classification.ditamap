@@ -4,28 +4,38 @@
     <title>Blog Classification</title>
   
   <topicref keyref="learning">
-    <topicsubject keyref="blog-dita">
-      <subjectref keyref="blog-dita-learning"/>
+    <topicsubject keyref="blog">
+      <topicsubject keyref="blog-dita">
+        <subjectref keyref="blog-dita-learning"/>
+      </topicsubject>
     </topicsubject>
   </topicref>
   
   <topicref keyref="publishing">
-    <topicsubject keyref="blog-dita">
-      <subjectref keyref="blog-dita-publishing"/>
+    <topicsubject keyref="blog">
+      <topicsubject keyref="blog-dita">
+        <subjectref keyref="blog-dita-publishing"/>
+      </topicsubject>
     </topicsubject>
   </topicref>
   
   <topicref keyref="customizing">
-    <topicsubject keyref="blog-dita">
-      <subjectref keyref="blog-dita-customizing"/>
+    <topicsubject keyref="blog">
+      <topicsubject keyref="blog-dita">
+        <subjectref keyref="blog-dita-customizing"/>
+      </topicsubject>
     </topicsubject>
   </topicref>
   
   <topicref keyref="migrate">
-    <topicsubject keyref="blog-migrate"/>
+    <topicsubject keyref="blog">
+      <topicsubject keyref="blog-migrate"/>
+    </topicsubject>
   </topicref>
   
   <topicref keyref="sdk">
-    <topicsubject keyref="blog-sdk"/>
+    <topicsubject keyref="blog">
+      <topicsubject keyref="blog-sdk"/>
+    </topicsubject>
   </topicref>
 </map>
