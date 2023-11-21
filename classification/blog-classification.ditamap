@@ -22,10 +22,14 @@
   </topicref>
   
   <topicref keyref="migrate">
-      <topicsubject keyref="blog-migrate"/>
+    <topicsubject keyref="blog">
+      <subjectref keyref="blog-migrate"/>
+    </topicsubject>
   </topicref>
   
   <topicref keyref="sdk">
-      <topicsubject keyref="blog-sdk"/>
+    <topicsubject keyref="blog">
+      <subjectref keyref="blog-sdk"/>
+    </topicsubject>
   </topicref>
 </map>
