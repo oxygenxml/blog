@@ -12,7 +12,7 @@
     <!-- DITA -->
     <subjectdef keys="blog-dita">
       <topicmeta>
-        <navtitle>DITA</navtitle>
+        <navtitle>DITA XML</navtitle>
       </topicmeta>
       <!-- A tree of related values -->
       <subjectdef keys="blog-dita-learning">
