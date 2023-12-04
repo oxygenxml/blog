@@ -181,7 +181,7 @@
 		<topicref href="topics/blog_2022_retrospective.dita"/>
     </topichead>
     <topicref href="topics/contributors.dita"/>
-    <topicref href="key_definitions.ditamap" format="ditamap"/>
+    <topicref href="maps/key_definitions.ditamap" format="ditamap"/>
     <mapref href="classification/blog-subject-scheme.ditamap" type="subjectScheme"/>
     <mapref href="classification/blog-classification.ditamap" processing-role="resource-only"/>
     <reltable title="Related Links">
