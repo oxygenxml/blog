@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>SDK Development (Plugins, Frameworks) Map</title>
+    <topicref keys="sdk" href="../topics/sdk.dita">
+        <topicref href="../topics/customizing_oxygen.dita"/>
+        <topicref href="../topics/author-document-type-extension-sharing.dita"/>
+        <topicref href="../topics/sharing_schematron_validation_rules.dita"/>
+        <topicref href="../topics/Oxygen%20plugins%20and%20frameworks.dita"/>
+        <topicref
+            href="../topics/author-document-type-extension-sharing-custom-new-file-templates.dita"/>
+        <topicref href="../topics/composing-author-actions.dita"/>
+        <topicref href="../topics/custom-author-action-js-based.dita"/>
+        <topicref href="../topics/custom-author-action-content-completion.dita"/>
+        <topicref href="../topics/howSpecialPasteWorksInOxygen.dita"/>
+        <topicref href="../topics/the_oxygen_sdk_part_1_plugins.dita"/>
+        <topicref href="../topics/oxygenFrameworks.dita"/>
+        <topicref href="../topics/packing-add-ons.dita"/>
+        <topicref href="../topics/all_about_oxygen_add_ons.dita"/>
+        <topicref
+            href="../topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.dita"/>
+        <topicref href="../topics/convert_code_templates_to_author_actions.dita"/>
+    </topicref>
+</map>

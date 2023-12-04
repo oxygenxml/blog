@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>DITA Articles</title>
+    <topichead navtitle="DITA">
+        <topicref keys="learning" href="../topics/learningDITAGeneral.dita">
+            <topicref href="../topics/learnDita.dita">
+                <topichead navtitle="Learn DITA Editing with Oxygen with Small Clips">
+                    <topicref href="../topics/shorts_insert_image_references.dita"/>
+                    <topicref href="../topics/shorts_insert_links.dita"/>
+                    <topicref href="../topics/shorts_reuse_content.dita"/>
+                </topichead>
+                <topicref href="../topics/dp/dita_perspectives.dita" chunk="to-content">
+                    <topicref href="../topics/dp/Overview.dita">
+                        <topicref href="../topics/dp/Overview_dita_1.3_shells.dita"/>
+                        <topicref href="../topics/dp/Overview_dita_1.3_modules.dita"/>
+                        <topicref href="../topics/dp/Overview_dita_elements.dita"/>
+                        <topicref href="../topics/dp/specializations.ditamap" format="ditamap"/>
+                        <topicref href="../topics/dp/Overview_dita_elements_domains.dita">
+                            <topicref href="../topics/dp/domains.ditamap" format="ditamap"/>
+                        </topicref>
+                    </topicref>
+                    <topicref href="../topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita">
+                        <topicref href="../topics/dp/element_selection_during_editing.dita"/>
+                        <topicref href="../topics/dp/automatic_markup_detection.dita"/>
+                        <topicref href="../topics/dp/soft_generalization.dita"/>
+                    </topicref>
+                    <topicref href="../topics/dp/Overview_exchanging_dita_documents.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="../topics/exampleOfADITAImplementationFortech.dita"/>
+            <topicref href="../topics/guidedAuthoring.dita"/>
+            <topicref href="../topics/maintain-healthy-dita-project.dita"/>
+            <topicref href="../topics/dita_linking_stretegies.dita"/>
+            <topicref href="../branchFilters/branchFilter.dita"/>
+            <topicref href="../keyscopes/keyscopesBlog.dita"/>
+            <topicref href="../presentation-reuse/presentation.ditamap" format="ditamap"/>
+            <topicref href="../topics/cross_book_links.dita"/>
+            <topicref href="../topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita"/>
+        </topicref>
+        <topicref href="../topics/dita_ot_publishing_customizations_overview.dita" keys="publishing">
+            <topicref href="../topics/webhelp-dita-strong-points.dita"/>
+            <topichead navtitle="PDF">
+                <topicref href="../topics/tableRowColors.dita"/>
+                <topicref href="../topics/ditaToPDF.dita"/>
+                <topicref href="../topics/pageBreakPlugin.dita"/>
+            </topichead>
+            <topicref href="../topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
+            <topicref href="../topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
+            <topicref href="../topics/task-steps-diagram.dita"/>
+            <topicref href="../topics/dita-codeblock-tabs.dita"/>
+            <topicref href="../topics/dita-steps-tabs.dita"/>
+            <topicref href="../topics/open-api-dita.dita"/>
+            <topicref href="../topics/dita_to_confluence.dita"/>
+            <topicref href="../topics/dita-generate-changes-list.dita"/>
+            <topicref href="../topics/dita_publishing_customization_overview.dita"/>
+            <topicref href="../topics/ditaOTFAQ.dita"/>
+            <topicref href="../topics/enhancing_dita_publishing_with_plugins.dita"/>
+            <topicref href="../topics/adding-latex-equation-support-dita.dita"/>
+            <topicref href="../topics/useful-dita-ot-plugins.dita"/>
+            <topicref href="../topics/creating-simple-dita-open-toolkit.dita"/>
+            <topicref href="../topics/using_git_hooks_with_dita.dita"/>
+            <topicref href="../topics/creating_graphs_from_dita_maps.dita"/>
+            <topicref
+                href="../topics/publishing_dita_content_using_a_markdown_static_web_site_generator.dita"/>
+            <topicref href="../topics/publishing_dita_powerpoint.dita"/>
+            <topicref href="../topics/adding_labels_to_topics_in_the_webhelp_responsive_output.dita"/>
+            <topicref href="../topics/prolog-wh-output.dita"/>
+            <topicref href="../topics/recent_topics_list.dita"/>
+            <topicref href="../topics/rss_feed_generation.dita"/>
+            <topicref href="../topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
+            <topicref href="../topics/generating_google_structured_data_from_your_dita_faq.dita"/>
+        </topicref>
+        <topicref keys="customizing" href="../topics/dita-editing-customizations.dita">
+            <topicref href="../topics/startup_dita_project.dita"/>
+            <topicref href="../topics/customizeDITACSS.dita"/>
+            <topicref
+                href="../topics/customizing_a_document_type_using_an_extension_framework_script.dita"/>
+            <topicref href="../topics/controlledAttributeValues.dita">
+                <topicref href="../topics/controlledAttributeValues2.dita"/>
+            </topicref>
+            <topicref href="../topics/convertingSubjectSchemeMapToDITAVAL.dita"/>
+            <topicref href="../topics/converting_xpr_profiling.dita"/>
+        </topicref>
+        <topichead navtitle="Other">
+            <topicref href="../topics/dita_for_small_teams.dita"/>
+            <topicref href="../git-tech-writers/using_git_for_technical_writing.ditamap"
+                format="ditamap"/>
+            <topicref href="../topics/supporting_the_dita_ot_project.dita"/>
+            <topicref href="../topics/dita_map_metrics_evolution.dita"/>
+            <topicref href="../topics/oxygen-dita-strong-points.dita"/>
+            <topicref href="../topics/dita_oriented_tips_and_tricks.dita"/>
+            <topicref href="../topics/dita_project_enhancements.dita"/>
+            <topicref href="../topics/translating_your_dita_project.dita"/>
+            <topicref href="../topics/validateCheckForCompletness.dita"/>
+            <topicref href="../topics/SchematronBCs.dita"/>
+            <topicref href="../topics/styleguide.dita"/>
+            <topicref href="../topics/preprocessing_ditaot_project_files.dita"/>
+            <topicref href="../topics/re_10_reasons_for_moving_away_from_dita.dita"/>
+            <topicref href="../topics/dita_2_0_specification_support_cheat_sheet.dita"/>
+            <topichead navtitle="Refactoring">
+                <topicref href="../topics/sort_glossentries.dita"/>
+                <topicref href="../topics/replace-image-href-keyref.dita"/>
+                <topicref href="../topics/deleting_elements_in_refactoring.dita"/>
+                <topicref href="../topics/resolving_refs_refactoring.dita"/>
+                <topicref href="../topics/refactoring_inserting_reformatting.dita"/>
+            </topichead>
+            <topichead navtitle="Surveys">
+                <topicref href="../topics/dita-standard-problems.dita"/>
+                <topicref href="../topics/linkSurvey.dita"/>
+                <topicref href="../topics/dita_inheritance_hierarchy.dita"/>
+                <topicref href="../topics/ditaUsage.dita"/>
+            </topichead>
+            <topicref href="../topics/customizing_a_chatbot.dita"/>
+            <topicref href="../topics/using_chatgpt_in_a_dita_xml_project.dita"/>
+            <topicref href="../topics/ai_positron.dita"/>
+            <topicref href="../topics/similarities_tech_docs_soft_engs.dita"/>
+        </topichead>
+    </topichead>
+</map>
