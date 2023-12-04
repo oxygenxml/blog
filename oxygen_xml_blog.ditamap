@@ -23,6 +23,7 @@
         </topicref>
         <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
         <topicref href="topics/migratingFmToDita.dita"/>
+        <topicref href="topics/use-topic-titles-to-generate-file-names.dita"/>
     </topicref>
     <topicref href="maps/sdk-development-plugins-frameworks-map.ditamap" format="ditamap"/>
     <topichead navtitle="Miscellaneous">
