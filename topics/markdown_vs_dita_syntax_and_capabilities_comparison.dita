@@ -49,7 +49,7 @@
                             Github-flavored Markdown.</entry>
                     </row>
                     <row>
-                        <entry valign="top"><b>Useful links for learning</b></entry>
+                        <entry valign="top"><b>Useful resources for learning</b></entry>
                         <entry valign="top"><xref href="learnDita.dita"/></entry>
                         <entry valign="top">
                             <ul id="ul_xql_kxm_twb">
@@ -78,11 +78,11 @@
                                     PDF, Word, EPUB, and so on.</li>
                             </ul>
                             <p><xref
-                                    href="https://doctales.github.io/dita-introduction/website/topics/why-dita.html"
+                                href="https://stefan-jung.org/dita-introduction/topics/why-dita.html"
                                     format="html" scope="external">Doctales - Why use
                                 DITA</xref></p>
                             <p><xref
-                                    href="https://doctales.github.io/dita-introduction/website/topics/pros-and-cons.html"
+                                href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html"
                                     format="html" scope="external">Doctales - Pros and
                                 Cons</xref></p>
                         </entry>
@@ -114,8 +114,8 @@
                                 <li>Smaller number of open source tools to generate professional
                                     looking outputs.</li>
                             </ul><xref
-                                href="https://doctales.github.io/dita-introduction/website/topics/pros-and-cons.html"
-                                format="html" scope="external">Doctales - Pros and
+                                href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html"
+                                format="html" scope="external">Pros and
                             Cons</xref></entry>
                         <entry valign="top">
                             <ul id="ul_bcf_kxj_5wb">

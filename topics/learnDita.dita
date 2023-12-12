@@ -68,8 +68,8 @@
       <p>If you want to start learning about DITA in general there is a web site called <xref
           href="https://www.learningdita.com/" format="html" scope="external">Learning
         DITA</xref>.</p>
-			<p>Doctales <xref href="https://doctales.github.io/dita-introduction/website"
-					format="html" scope="external">DITA Introduction</xref> articles.</p>
+      <p><xref href="https://stefan-jung.org/dita-introduction/"
+					format="html" scope="external">DITA Introduction</xref> articles by Stefan Jung.</p>
       <p>The free Oxygen <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/live-tutorials-addon.html"
           format="html" scope="external">Live Tutorials add-on</xref> contains various small
