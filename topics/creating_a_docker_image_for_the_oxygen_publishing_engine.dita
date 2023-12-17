@@ -4,9 +4,6 @@
     <title>Creating a Docker Image for the Oxygen Publishing Engine</title>
     <prolog>
         <author>Radu Coravu</author>
-        <critdates>
-            <created date="2023-12-17"/>
-        </critdates>
     </prolog>
     <conbody>
         <p><xref href="https://www.docker.com" format="html" scope="external">Docker</xref> is a

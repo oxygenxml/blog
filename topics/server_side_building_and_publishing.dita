@@ -4,9 +4,6 @@
     <title>Server Side Building and Publishing</title>
     <prolog>
         <author>Radu Coravu</author>
-        <critdates>
-            <created date="2023-12-17"/>
-        </critdates>
     </prolog>
     <body>
         <p>The <xref href="https://www.oxygenxml.com/publishing_engine.html" format="html"

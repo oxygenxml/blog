@@ -4,9 +4,6 @@
     <title>Building and Publishing Using Netlify</title>
     <prolog>
         <author>Radu Coravu</author>
-        <critdates>
-            <created date="2023-12-17"/>
-        </critdates>
     </prolog>
     <conbody>
         <p><xref href="https://www.netlify.com/" format="html" scope="external">Netlify</xref> is an

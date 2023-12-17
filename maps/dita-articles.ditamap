@@ -27,6 +27,8 @@
                     </topicref>
                     <topicref href="../topics/dp/Overview_exchanging_dita_documents.dita"/>
                 </topicref>
+               <!-- <topicref
+                    href="../topics/types_of_companies_which_would_benefit_from_the_dita_xml_standard.dita"/>-->
             </topicref>
             <topicref href="../topics/exampleOfADITAImplementationFortech.dita"/>
             <topicref href="../topics/guidedAuthoring.dita"/>
@@ -70,6 +72,14 @@
             <topicref href="../topics/rss_feed_generation.dita"/>
             <topicref href="../topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
             <topicref href="../topics/generating_google_structured_data_from_your_dita_faq.dita"/>
+            <topicref href="../topics/server_side_building_and_publishing.dita">
+                <topicref href="../topics/building_and_publishing_using_netlify.dita"/>
+                <topicref
+                    href="../topics/creating_a_docker_image_for_the_oxygen_publishing_engine.dita">
+                    <topicref
+                        href="../topics/running_the_publishing_engine_docker_image_on_aws.dita"/>
+                </topicref>
+            </topicref>
         </topicref>
         <topicref keys="customizing" href="../topics/dita-editing-customizations.dita">
             <topicref href="../topics/startup_dita_project.dita"/>

@@ -4,9 +4,6 @@
     <title>Running the Publishing Engine Docker Image on AWS</title>
     <prolog>
         <author>Radu Coravu</author>
-        <critdates>
-            <created date="2023-12-17"/>
-        </critdates>
     </prolog>
     <conbody>
         <p>You can create an EC2 instance on the Amazon Cloud Computing AWS platform, run the
@@ -82,6 +79,30 @@ oxygen-publishing-engine:1.0 \
                     <dd>
                         <codeblock id="codeblock_rpk_hmk_5zb">cp -rf /home/ec2-user/blog/out/site/* /var/www/html/</codeblock>
                     </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Script to Update the Repository And Publish If Necessary</dt>
+                    <dd>Create a script named for example <filepath>pullPublish.sh</filepath> with
+                        the contents:<codeblock id="codeblock_knk_2sk_5zb">#! /bin/sh
+cd /home/ec2-user/blog
+git -C . remote update &amp;> /dev/null
+checkgit=`git -C . status`
+
+if [[ ! "$checkgit" =~ "up to date" ]]; then
+    # Pull
+    git -C . pull
+    # And publish
+    sudo docker run -it -e LICENSE_KEY="$(&lt;/home/ec2-user/licensekey.txt)" -v /home/ec2-user/blog/:/src  oxygen-publishing-engine:1.0 -p /src/blog-project.xml -o /src/out -f webhelp-responsive -v
+    # Move web site to web server's folder.
+    mv -f /home/ec2-user/blog/out/site/* /var/www/html/
+fi</codeblock></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Schedule Script to Run Every 10 Minutes</dt>
+                    <dd>Edit the <filepath>crontab</filepath>
+                        file:<codeblock id="codeblock_xbm_h5k_5zb">cd /etc
+sudo vi crontab</codeblock>and add to the
+                        file:<codeblock id="codeblock_lwy_k5k_5zb">*/10 * * * * /home/ec2-user/pullPublish.sh</codeblock></dd>
                 </dlentry>
             </dl>
         </p>
