@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="server_side_building_and_publishing">
+    <title>Server Side Building and Publishing</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2023-12-17"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>The <xref href="https://www.oxygenxml.com/publishing_engine.html" format="html"
+                scope="external">Oxygen Publishing Engine</xref> is a commercial licensed command
+            line tool based on the <uicontrol>DITA Open Toolkit</uicontrol>. This means that instead
+            of publishing directly from <ph keyref="oxygen"/> you can use an integration server to
+            run the transformations and publish the output or simply use it from a command-line
+            interface. </p>
+        <p>Features of the <xref href="https://www.oxygenxml.com/publishing_engine.html"
+                format="html" scope="external">Oxygen Publishing Engine</xref>:<dl
+                id="dl_mlg_hhj_5zb">
+                <dlentry>
+                    <dt>Publishing WebHelp Responsive Output</dt>
+                    <dd>The <xref
+                            href="https://www.oxygenxml.com/xml_webhelp/webhelp_responsive.html"
+                            format="html" scope="external">WebHelp Responsive</xref> system features
+                        a very flexible layout and is designed to adapt to any device and screen
+                        size to provide an optimal viewing and interaction experience. It is based
+                        upon the <i>Bootstrap</i> responsive front-end framework and is available
+                        for DITA document types.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Publishing PDF based on CSS</dt>
+                    <dd>You can use the same Publishing Templates to build both the WebHelp and PDF
+                        outputs. The <xref href="https://styles.oxygenxml.com/" format="html"
+                            scope="external">Oxygen Styles Basket</xref> allows building a base
+                        publishing template visual customization based on CSS, customization which
+                        can be later used to produce the outputs.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Publishing to Zendesk</dt>
+                    <dd>The Enterprise edition of the license allows publishing DITA XML content
+                        directly as Zendesk articles.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Change Tracking and Comments in the Published Output</dt>
+                    <dd>You can enable a parameter to show Oxygen track changes and comments in the
+                        generated WebHelp and PDF outputs.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Syntax Highlight inside Code Blocks</dt>
+                    <dd><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks.html"
+                            format="html" scope="external">Syntax highlight</xref> of code blocks in
+                        the WebHelp and PDF outputs.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Embedding Media Video/Audio Resources</dt>
+                    <dd><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/whr-add-videos.html"
+                            format="html" scope="external">Embed video and audio resources</xref> in
+                        the published WebHelp and PDF outputs.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>DITA Metrics Report</dt>
+                    <dd>Build <xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-map-metrics-report-2.html"
+                            format="html" scope="external">statistics and metrics</xref> for a DITA
+                        XML project.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Dynamic Word/Excel/OpenAPI/Makdown to DITA Conversions</dt>
+                    <dd>Dynamically convert <xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dynamically_convert_word_excel_html_markdown_to_dita.html"
+                            format="html" scope="external">Word/Excel/OpenAPI and Markdown
+                            files</xref> referenced in the DITA Map to DITA XML content while
+                        publishing.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Add Edit Links to Published Output</dt>
+                    <dd>Add for each published topic <xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/wh-edit-link.html"
+                            format="html" scope="external">edit links</xref> connecting the
+                        published output to an online editor to provide feedback.</dd>
+                </dlentry>
+            </dl></p>
+    </body>
+</topic>
