@@ -29,12 +29,11 @@
                     <dt>Running a Container Using the Docker Image</dt>
                     <dd>Assuming you have obtained a license key to use the Oxygen Publishing Engine
                         commercially you can paste the license key in a
-                            <filepath>licensekey.txt</filepath> file replacing new lines with two
-                        spaces, then provide the license key content as an environmental variable to
-                        the docker image. Other provided parameters are the mapped folder from where
-                        the Docker container should obtain the DITA XML content, the image name and
-                        version and parameters which get sent to the <codeph>dita</codeph> command
-                        for
+                            <filepath>licensekey.txt</filepath> file then provide the license key
+                        content as an environmental variable to the docker image. Other provided
+                        parameters are the mapped folder from where the Docker container should
+                        obtain the DITA XML content, the image name and version and parameters which
+                        get sent to the <codeph>dita</codeph> command for
                         publishing.<codeblock id="codeblock_uqn_mnj_5zb">docker run -it -e LICENSE_KEY="$(&lt;licensekey.txt)" \
 -v /Users/.../samples/dita/flowers:/src  \
 oxygen-publishing-engine:1.0 \
