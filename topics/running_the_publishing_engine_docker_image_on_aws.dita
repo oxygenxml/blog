@@ -94,6 +94,7 @@ if [[ ! "$checkgit" =~ "up to date" ]]; then
     # And publish
     sudo docker run -it -e LICENSE_KEY="$(&lt;/home/ec2-user/licensekey.txt)" -v /home/ec2-user/blog/:/src  oxygen-publishing-engine:1.0 -p /src/blog-project.xml -o /src/out -f webhelp-responsive -v
     # Move web site to web server's folder.
+    rm -rf /var/www/html/*
     mv -f /home/ec2-user/blog/out/site/* /var/www/html/
 fi</codeblock></dd>
                 </dlentry>
