@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="building_and_publishing_using_netlify">
+    <title>Building and Publishing Using Netlify</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2023-12-17"/>
+        </critdates>
+    </prolog>
+    <conbody>
+        <p><xref href="https://www.netlify.com/" format="html" scope="external">Netlify</xref> is an
+            easy to use way of connecting to a GitHub account containing DITA XML content, building
+            the content whenever changes are detected and then hosting the content. The Oxygen XML
+            Blog has a <xref href="../build/build.gradle" format="gradle">Gradle build file</xref>
+            which can be invoked from a Netlify account to automatically build and published WebHelp
+            and PDF outputs of the blog content. The problem with Netlify is that it has support
+            only for Java 8 while the latest Oxygen Publishing Engine now requires Java 17 and
+            later.</p>
+    </conbody>
+</concept>
