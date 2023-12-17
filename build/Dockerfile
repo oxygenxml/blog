@@ -30,11 +30,9 @@ RUN chmod 755 /opt/app/dita-ot/bin/dita
 # Create the script which creates the license key on disk 
 # before running the transformation and then invokes the dita script
 RUN echo "#! /bin/sh" >> /opt/app/dita-ot/bin/setup
-# RUN echo "LICENSE_KEY_NEW_LINES=\$(echo \"\$LICENSE_KEY\" | tr '  ' '\n')" >> /opt/app/dita-ot/bin/setup
+# Create a licene key file from the env variable, run the "dita" script and then remove license file at the end.
 RUN echo "echo \"\$LICENSE_KEY\" > /opt/app/dita-ot/licensekey.txt" >> /opt/app/dita-ot/bin/setup
-RUN echo "sed -i 's/  /\n/g' /opt/app/dita-ot/licensekey.txt" >> /opt/app/dita-ot/bin/setup
 RUN echo "/opt/app/dita-ot/bin/dita \$@" >> /opt/app/dita-ot/bin/setup
-RUN echo "rm -rf /opt/app/dita-ot/licensekey.txt" >> /opt/app/dita-ot/bin/setup
 RUN chmod 755 /opt/app/dita-ot/bin/setup
 RUN chmod +x /opt/app/dita-ot/bin/setup
 
