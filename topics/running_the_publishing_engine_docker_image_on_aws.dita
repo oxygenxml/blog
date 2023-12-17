@@ -77,6 +77,12 @@ oxygen-publishing-engine:1.0 \
 -f webhelp-responsive -v</codeblock>
                     </dd>
                 </dlentry>
+                <dlentry>
+                    <dt>Copy the Published Content to the HTTP Web Server's Folder</dt>
+                    <dd>
+                        <codeblock id="codeblock_rpk_hmk_5zb">cp -rf /home/ec2-user/blog/out/site/* /var/www/html/</codeblock>
+                    </dd>
+                </dlentry>
             </dl>
         </p>
     </conbody>
