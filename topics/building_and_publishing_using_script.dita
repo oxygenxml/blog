@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="building_and_publishing_using_netlify">
+    <title>Building and Publishing Using a Script</title>
+    <prolog>
+        <author>Radu Coravu</author>
+    </prolog>
+    <conbody>
+        <p> The Oxygen XML Blog has a <xref href="../build/build.gradle" format="gradle">Gradle
+                build file</xref> which can be invoked to automatically build and published WebHelp
+            and PDF outputs of the blog content. </p>
+    </conbody>
+</concept>
