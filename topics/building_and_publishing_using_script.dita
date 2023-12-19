@@ -8,6 +8,8 @@
     <conbody>
         <p> The Oxygen XML Blog has a <xref href="../build/build.gradle" format="gradle">Gradle
                 build file</xref> which can be invoked to automatically build and published WebHelp
-            and PDF outputs of the blog content. </p>
+            and PDF outputs of the blog content. So you can start from such an example to build your
+            own script which downloads the Oxygen Publishing Engine, sets up the license details and
+            then publishes.</p>
     </conbody>
 </concept>

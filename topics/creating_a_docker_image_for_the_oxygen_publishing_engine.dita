@@ -16,7 +16,10 @@
                 format="html" scope="external">sample Docker configuration</xref> file for the
             Oxygen Publishing Engine is included in the Oxygen XML Blog project. Characteristics of
             the Docker configuration file:<ul>
-                <li>Installs Java </li>
+                <li>Installs Java 17.</li>
+                <li>Downloads the Oxygen Publishing Engine.</li>
+                <li>Sets up a script which will provide the license key to the publishing engine
+                    using the <codeph>LICENSE_KEY</codeph> environmental variable.</li>
             </ul></p>
         <p>Steps to use the sample Docker configuration file:<dl id="dl_ibl_2nj_5zb">
                 <dlentry>
