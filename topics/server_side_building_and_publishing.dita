@@ -4,6 +4,9 @@
     <title>Server Side Building and Publishing</title>
     <prolog>
         <author>Radu Coravu</author>
+        <critdates>
+            <created date="2023-12-20"/>
+        </critdates>
     </prolog>
     <body>
         <p>The <xref href="https://www.oxygenxml.com/publishing_engine.html" format="html"
@@ -12,6 +15,12 @@
             of publishing directly from <ph keyref="oxygen"/> you can use an integration server to
             run the transformations and publish the output or simply use it from a command-line
             interface. </p>
+        <p>Possible ways to run the Oxygen Publishing Engine on the server side:<ul
+                id="ul_bhp_gyf_vzb">
+                <li><xref href="building_and_publishing_using_script.dita"/>.</li>
+                <li><xref href="creating_a_docker_image_for_the_oxygen_publishing_engine.dita"/> and
+                    then <xref href="running_the_publishing_engine_docker_image_on_aws.dita"/>.</li>
+            </ul></p>
         <p>Features of the <xref href="https://www.oxygenxml.com/publishing_engine.html"
                 format="html" scope="external">Oxygen Publishing Engine</xref>:<dl
                 id="dl_mlg_hhj_5zb">

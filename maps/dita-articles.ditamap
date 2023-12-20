@@ -41,6 +41,14 @@
             <topicref href="../topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita"/>
         </topicref>
         <topicref href="../topics/dita_ot_publishing_customizations_overview.dita" keys="publishing">
+            <topicref href="../topics/server_side_building_and_publishing.dita">
+                <topicref href="../topics/building_and_publishing_using_script.dita"/>
+                <topicref
+                    href="../topics/creating_a_docker_image_for_the_oxygen_publishing_engine.dita">
+                    <topicref
+                        href="../topics/running_the_publishing_engine_docker_image_on_aws.dita"/>
+                </topicref>
+            </topicref>
             <topicref href="../topics/webhelp-dita-strong-points.dita"/>
             <topichead navtitle="PDF">
                 <topicref href="../topics/tableRowColors.dita"/>
@@ -72,14 +80,6 @@
             <topicref href="../topics/rss_feed_generation.dita"/>
             <topicref href="../topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
             <topicref href="../topics/generating_google_structured_data_from_your_dita_faq.dita"/>
-            <topicref href="../topics/server_side_building_and_publishing.dita">
-                <topicref href="../topics/building_and_publishing_using_script.dita"/>
-                <topicref
-                    href="../topics/creating_a_docker_image_for_the_oxygen_publishing_engine.dita">
-                    <topicref
-                        href="../topics/running_the_publishing_engine_docker_image_on_aws.dita"/>
-                </topicref>
-            </topicref>
         </topicref>
         <topicref keys="customizing" href="../topics/dita-editing-customizations.dita">
             <topicref href="../topics/startup_dita_project.dita"/>
