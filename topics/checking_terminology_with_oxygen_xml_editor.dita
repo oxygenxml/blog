@@ -67,6 +67,12 @@
           format="html" scope="external">Congree</xref> Language Checker also has an integration for
         Oxygen standalone.</p>
         </section>
+    <section>
+      <title>AI Positron Add-on</title>
+      <p>The <xref href="ai_positron.dita"/> has builtin actions to correct grammar or improve
+        readability of selected content. Other custom actions based on company specific rules can be
+        added.</p>
+    </section>
         <section id="section_h1h_msb_g1b">
             <title>Open-source alternatives</title>
             <p><xref href="https://www.languagetool.org/" format="html" scope="external"
