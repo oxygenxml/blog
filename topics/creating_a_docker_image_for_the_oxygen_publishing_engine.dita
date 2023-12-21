@@ -38,12 +38,15 @@
                         parameters are the mapped folder from where the Docker container should
                         obtain the DITA XML content, the image name and version and parameters which
                         get sent to the <codeph>dita</codeph> command for
-                        publishing.<codeblock id="codeblock_uqn_mnj_5zb">docker run -it -e LICENSE_KEY="$(&lt;licensekey.txt)" \
+                        publishing.<codeblock id="codeblock_uqn_mnj_5zb">$: docker run -it -e LICENSE_KEY="$(&lt;licensekey.txt)" \
+--name dita-ot-publish\
 -v /Users/.../samples/dita/flowers:/src  \
 oxygen-publishing-engine:1.0 \
 -i /src/flowers.ditamap \
 -o /src/out \
--f webhelp-responsive -v</codeblock></dd>
+-f webhelp-responsive -v
+
+$: docker remove dita-ot-publish</codeblock></dd>
                 </dlentry>
             </dl></p>
     </conbody>

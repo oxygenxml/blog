@@ -27,8 +27,7 @@
                 <dlentry>
                     <dt>Publishing WebHelp Responsive Output</dt>
                     <dd>The <xref
-                            href="https://www.oxygenxml.com/xml_webhelp/webhelp_responsive.html"
-                            format="html" scope="external">WebHelp Responsive</xref> system features
+                            href="webhelp-dita-strong-points.dita">WebHelp Responsive</xref> system features
                         a very flexible layout and is designed to adapt to any device and screen
                         size to provide an optimal viewing and interaction experience. It is based
                         upon the <i>Bootstrap</i> responsive front-end framework and is available
@@ -45,7 +44,7 @@
                 <dlentry>
                     <dt>Publishing to Zendesk</dt>
                     <dd>The Enterprise edition of the license allows publishing DITA XML content
-                        directly as Zendesk articles.</dd>
+                        directly as <b id="b_fr1_qtm_vzb">Zendesk</b> articles.</dd>
                 </dlentry>
                 <dlentry>
                     <dt>Change Tracking and Comments in the Published Output</dt>
