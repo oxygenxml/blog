@@ -64,14 +64,16 @@ sudo docker image build -t oxygen-publishing-engine:1.0 .</codeblock></dd>
                             <filepath>/home/ec2-user/licensekey.txt</filepath>.</dd>
                 </dlentry>
                 <dlentry>
-                    <dt>Run the Docker Image to Publish</dt>
+                    <dt>Run a Container Based on the Docker Image to Publish</dt>
                     <dd>
                         <codeblock id="codeblock_k3t_3ck_5zb">sudo docker run -it -e LICENSE_KEY="$(&lt;/home/ec2-user/licensekey.txt)" \
+--name dita-ot-publish\
 -v /home/ec2-user/blog/:/src  \
 oxygen-publishing-engine:1.0 \
 -p /src/blog-project.xml \
 -o /src/out \
--f webhelp-responsive -v</codeblock>
+-f webhelp-responsive -v
+sudo docker remove dita-ot-publish</codeblock>
                     </dd>
                 </dlentry>
                 <dlentry>
