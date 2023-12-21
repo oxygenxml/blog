@@ -20,6 +20,10 @@
                 <li><xref href="building_and_publishing_using_script.dita"/>.</li>
                 <li><xref href="creating_a_docker_image_for_the_oxygen_publishing_engine.dita"/> and
                     then <xref href="running_the_publishing_engine_docker_image_on_aws.dita"/>.</li>
+                <li><xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dcpp_running_pdf_from_integration_server.html"
+                        format="html" scope="external">Create a Maven project and run it from a
+                        Jenkins Job</xref>.</li>
             </ul></p>
         <p>Features of the <xref href="https://www.oxygenxml.com/publishing_engine.html"
                 format="html" scope="external">Oxygen Publishing Engine</xref>:<dl
