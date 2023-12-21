@@ -8,7 +8,7 @@
     <conbody>
         <p><xref href="https://www.docker.com" format="html" scope="external">Docker</xref> is a
             platform used to build, share, and run portable application containers. </p>
-        <p>While the Oxygen Publishing Engine does not provide by default a docker image, such an
+        <p>While the Oxygen Publishing Engine does not provide a docker image by default, such an
             image can be constructed quite easily based on the instructions in the <xref
                 href="https://www.dita-ot.org/dev/topics/using-docker-images" format="html"
                 scope="external">DITA Open Toolkit documentation</xref>.</p>
@@ -18,25 +18,25 @@
             the Docker configuration file:<ul>
                 <li>Installs Java 17.</li>
                 <li>Downloads the Oxygen Publishing Engine.</li>
-                <li>Sets up a script which will provide the license key to the publishing engine
+                <li>Sets up a script that will provide the license key to the publishing engine
                     using the <codeph>LICENSE_KEY</codeph> environmental variable.</li>
             </ul></p>
         <p>Steps to use the sample Docker configuration file:<dl id="dl_ibl_2nj_5zb">
                 <dlentry>
                     <dt>Build a Docker Image</dt>
-                    <dd>Assuming you have installed Docker, on a Mac or Linux system open a console
-                        or terminal, "cd" to the folder where the <codeph>Dockerfile</codeph>
-                        configuration file is located and run the
+                    <dd>Assuming you have installed Docker, open a console or terminal on a Mac or
+                        Linux system, "cd" to the folder where the <codeph>Dockerfile</codeph>
+                        configuration file is located, and run the
                         command:<codeblock id="codeblock_mfj_knj_5zb">docker image build -t oxygen-publishing-engine:1.0 .</codeblock></dd>
                 </dlentry>
                 <dlentry>
                     <dt>Running a Container Using the Docker Image</dt>
                     <dd>Assuming you have obtained a license key to use the Oxygen Publishing Engine
-                        commercially you can paste the license key in a
-                            <filepath>licensekey.txt</filepath> file then provide the license key
+                        commercially, you can paste the license key in a
+                            <filepath>licensekey.txt</filepath> file, then provide the license key
                         content as an environmental variable to the docker image. Other provided
                         parameters are the mapped folder from where the Docker container should
-                        obtain the DITA XML content, the image name and version and parameters which
+                        obtain the DITA XML content, the image name and version, and parameters that
                         get sent to the <codeph>dita</codeph> command for publishing. The container
                         is automatically removed from Docker once finished as the produced output is
                         already saved on the shared
