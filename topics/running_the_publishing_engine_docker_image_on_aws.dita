@@ -7,8 +7,8 @@
     </prolog>
     <conbody>
         <p>You can create an EC2 instance on the Amazon Cloud Computing AWS platform, run the
-            publishing there if changes are detected in a Git project and publish the content to the
-            same platform.</p>
+            publishing there if changes are detected in a Git project, and publish the content to
+            the same platform.</p>
         <p>
             <dl id="dl_z45_qzj_5zb">
                 <dlentry>
@@ -37,12 +37,12 @@
                 </dlentry>
                 <dlentry>
                     <dt>Install Git in the EC2 instance</dt>
-                    <dd>Run in the console this command to install
+                    <dd>Run this command in the console to install
                         git:<codeblock id="codeblock_sjq_dbk_5zb">sudo yum install git</codeblock></dd>
                 </dlentry>
                 <dlentry>
                     <dt>Install Docker in the EC2 Instance</dt>
-                    <dd>Run in the console this command to install Docker and start the Docker
+                    <dd>Run this command in the console to install Docker and start the Docker
                         daemon:<codeblock id="codeblock_hyt_qbk_5zb">sudo yum install docker
 sudo systemctl start docker</codeblock></dd>
                 </dlentry>
@@ -60,8 +60,8 @@ sudo docker image build -t oxygen-publishing-engine:1.0 .</codeblock></dd>
                 </dlentry>
                 <dlentry>
                     <dt>Save the Oxygen Publishing Engine License to a file</dt>
-                    <dd>Save the Oxygen Publishing Engine to a file for example in
-                            <filepath>/home/ec2-user/licensekey.txt</filepath>.</dd>
+                    <dd>Save the Oxygen Publishing Engine to a file (for example, in
+                            <filepath>/home/ec2-user/licensekey.txt</filepath>).</dd>
                 </dlentry>
                 <dlentry>
                     <dt>Run a Container Based on the Docker Image to Publish</dt>
@@ -83,8 +83,8 @@ oxygen-publishing-engine:1.0 \
                 </dlentry>
                 <dlentry>
                     <dt>Script to Update the Repository And Publish If Necessary</dt>
-                    <dd>Create a script named for example <filepath>pullPublish.sh</filepath> with
-                        the contents:<codeblock id="codeblock_knk_2sk_5zb">#! /bin/sh
+                    <dd>Create a script (for example, named <filepath>pullPublish.sh</filepath>)
+                        with the contents:<codeblock id="codeblock_knk_2sk_5zb">#! /bin/sh
 cd /home/ec2-user/blog
 git -C . remote update &amp;> /dev/null
 checkgit=`git -C . status`
