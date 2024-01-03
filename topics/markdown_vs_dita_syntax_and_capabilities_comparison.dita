@@ -433,7 +433,7 @@ Text body. </codeblock></li>
                             and other inline elements with more semantic meaning (like
                                 <xmlelement>codeph</xmlelement>, <xmlelement>uicontrol</xmlelement>,
                                 <xmlelement>filepath</xmlelement>).</entry>
-                        <entry valign="top">Bold, italic,underline. Depending on the Markdown
+                        <entry valign="top">Bold, italic, underline. Depending on the Markdown
                             flavor, other inlines like subscript, superscript,
                             strike-through.</entry>
                     </row>
