@@ -437,6 +437,25 @@ Text body. </codeblock></li>
                             flavor, other inlines like subscript, superscript,
                             strike-through.</entry>
                     </row>
+                    <row>
+                        <entry valign="top"><b id="b_pyl_dwd_zzb"> Equations / Formulas</b></entry>
+                        <entry valign="top">
+                            <ul id="ul_fpm_2wd_zzb">
+                                <li><xref
+                                        href="https://www.oxygenxml.com/dita/1.3/specs/langRef/technicalContent/mathml.html"
+                                        format="html" scope="external">MathML equations</xref> added
+                                    directly inside the DITA topics or referenced as separate
+                                    files.</li>
+                                <li><xref href="adding-latex-equation-support-dita.dita">Latex equations</xref> embedded using third party plugins in DITA
+                                        <xmlelement>foreign</xmlelement> elements.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top"><xref
+                                href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions"
+                                format="html" scope="external">GitHub flavored Markdown</xref> and
+                            other flavors as well support embedding Latex equations in Markdown
+                            content using <codeph>$</codeph>.</entry>
+                    </row>
 					<row>
 						<entry valign="top"><b>Audio/Video</b></entry>
 						<entry valign="top">The DITA <xmlelement>object</xmlelement> element can be used to reference
