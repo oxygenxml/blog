@@ -49,6 +49,31 @@
                             Github-flavored Markdown.</entry>
                     </row>
                     <row>
+                        <entry valign="top"><b id="b_dgk_2f4_11c">Why should I use this
+                            format?</b></entry>
+                        <entry valign="top">
+                            <ul id="ul_nnj_ff4_11c">
+                                <li>You work (or want to work) for a company which manufactures
+                                    similar products (large possibility of content reuse).</li>
+                                <li>You want to obtain multiple output formats (HTML based, quality
+                                    PDF).</li>
+                                <li>You want to work with a standard and be able to change tools if
+                                    necessary.</li>
+                                <li>You want to impose structural validation constraints on the
+                                    edited content.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top">
+                            <ul id="ul_v4b_gf4_11c">
+                                <li>You work for a company which has mostly one product and
+                                    publishes the documentation mostly on the web.</li>
+                                <li>You work with ticketing systems which use Markdown for styling
+                                    content.</li>
+                                <li>You produce internal documentation or small articles.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
                         <entry valign="top"><b>Useful resources for learning</b></entry>
                         <entry valign="top"><xref href="learnDita.dita"/></entry>
                         <entry valign="top">
