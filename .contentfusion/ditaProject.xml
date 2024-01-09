@@ -10,4 +10,9 @@
         <output href="webhelp-output"/>
         <publication idref="webhelp"/>
     </deliverable>
+    <deliverable id="PDF-1704795322387" name="PDF">
+        <context idref="IOcBGIFBKuGAjBj"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf"/>
+    </deliverable>
 </project>
