@@ -3,4 +3,10 @@
     <context id="IukfVpqKsJWNBFd" name="Blog">
         <input href="../oxygen_xml_blog.ditamap"/>
     </context>
+    <publication id="webhelp" transtype="webhelp-responsive"/>
+    <deliverable id="WebHelp-1704797197379" name="WebHelp">
+        <context idref="IukfVpqKsJWNBFd"/>
+        <output href="webhelp-output"/>
+        <publication idref="webhelp"/>
+    </deliverable>
 </project>
