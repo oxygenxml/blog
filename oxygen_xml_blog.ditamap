@@ -48,6 +48,7 @@
         <topicref href="topics/oxygen_xml_vulnerability_analysis_faq.dita"/>
         <topicref href="topics/using_oxygen_xml_editor_in_a_browser.dita"/>
 		<topicref href="topics/blog_2022_retrospective.dita"/>
+        <topicref href="topics/10_things_i_enjoy_about_the_new_oxygen_json_editor.dita"/>
     </topichead>
     <topicref href="topics/contributors.dita"/>
     <topicref href="maps/key_definitions.ditamap" format="ditamap"/>
