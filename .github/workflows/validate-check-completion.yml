@@ -1,4 +1,4 @@
-name: Validate Blog
+name: Validate And Check For Completeness Blog
 
 on:
   pull_request:
@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: gpt-review
-        uses: microsoft/gpt-review@v0.9.5
       - uses: actions/checkout@v2
       - name: Set up JDK 1.8
         uses: actions/setup-java@v1
