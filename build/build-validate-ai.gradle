@@ -33,7 +33,7 @@ task runAIValidation(type:Exec) {
         if(! content.equals("__OK__")){
             //Write to a markdown file the contents
             new File(projectDirFile, "report.md").write(content);
-            //throw new Exception("Grammar check problems:\n" + content);
+            throw new Exception("Grammar check problems:\n" + content);
         } else {
             new File(projectDirFile, "report.md").write("No grammar check problems found");
         }
