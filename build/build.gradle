@@ -2,7 +2,7 @@ import org.gradle.api.tasks.Exec
 import groovy.json.JsonSlurper
 
 task initDOT {
-  String projectDir = "."
+   String projectDir = "."
    doLast {
    if(! new File("${projectDir}/dita-ot/oxygen-publishing-engine/").exists()){
        //https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine.zip
@@ -67,26 +67,30 @@ task postProcessValidation(dependsOn: [runValidation]) {
 }
 
 task runAIValidation(type:Exec) {
+ File projectDirFile = new File(System.getProperty("user.dir"), "/../").getCanonicalFile();
  def values = System.getenv('ALL_CHANGED_FILES').split(' ');
  String allFileContents = "";
  for(changedFile in values){
     if(changedFile.endsWith(".dita") || changedFile.endsWith(".xml")){
         allFileContents += "\n****File: " + changedFile + "\nContent:\n";
-        allFileContents += new File("../", changedFile).getText();
+        allFileContents += new File(projectDirFile, changedFile).getText();
     }
  }
+ println allFileContents;
+
  String prompt = "You are a DITA XML technical documentation writer, skilled detecting grammar problems.\n"+
  "You will receive content from multiple files, separated by **** markers. \n" +
  "If there are grammar problems in the provided DITA XML content, return a unified diff between the old content and the content with the corrected problems. If there are no grammar problems to be made, return __OK__";
+ File jsonFile = new File(projectDirFile, "output.json");
  commandLine "curl",
    "-v",
    "https://api.openai.com/v1/chat/completions",
    '-H', 'Content-Type: application/json',
   '-H', 'Authorization: Bearer ' + System.getenv( 'AI_LICENSE_KEY' ),
   "-d", '{"model": "gpt-4","messages": [{"role": "system","content": "' + groovy.json.StringEscapeUtils.escapeJavaScript(prompt) + '"},{"role": "user","content": "' + groovy.json.StringEscapeUtils.escapeJavaScript(allFileContents) + '"}]}',
-  "-o", "output.json";
+  "-o", jsonFile.getAbsolutePath();
  doLast {
-    def result = new JsonSlurper().parse(file("output.json"))
+    def result = new JsonSlurper().parse(jsonFile)
     String content = result.choices[0].message.content;
     if(! content.equals("__OK__")){
         throw new Exception("Grammar check problems:\n" + content);
