@@ -24,4 +24,4 @@ jobs:
        env: #Or as an environment variable
          AI_LICENSE_KEY: ${{secrets.AI_LICENSE_KEY}}
          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-       run: cd ./build/validation;./gradlewCustom --info --stacktrace runAIValidation
+       run: cd ./build/validation;../gradlewCustom --info --stacktrace runAIValidation
