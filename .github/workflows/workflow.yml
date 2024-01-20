@@ -29,4 +29,5 @@ jobs:
          echo HELLO BEFORE
          ./gradlewCustom --build-file build-validate-ai.gradle --info --stacktrace runAIValidation
          echo HELLO after
+         cat ../report.md
          echo "$(cat ../report.md)" >> $GITHUB_STEP_SUMMARY
