@@ -6,7 +6,7 @@ on:
     types: [ opened, synchronize, reopened ]
 
 jobs:
-  validate:
+  validate-check-completeness:
     runs-on: ubuntu-latest
 
     steps:
