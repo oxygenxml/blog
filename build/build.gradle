@@ -48,7 +48,7 @@ task runValidation(type:Exec, dependsOn: [initValidation]) {
         if(execResult.getExitValue() != 0) {
             String reportText = new File("${projectDir}/extracted/oxygen/validationReport.xml").text;
             println reportText;
-            throw new new Exception("Validation failed; "
+            throw new Exception("Validation failed; "
                               + "see task output for details." + reportText);
         }
  }
