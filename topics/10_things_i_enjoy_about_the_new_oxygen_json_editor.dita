@@ -10,7 +10,7 @@
     </prolog>
     <conbody>
         <p>We released the <xref href="https://www.oxygenxml.com/oxygen_json_editor.html"
-                format="html" scope="external">Oxygen JSON Editor</xref> a couple months ago as a
+                format="html" scope="external">Oxygen JSON Editor </xref> a couple months ago as a
             practical tool for web developers and people interested in general in editing,
             validating or converting JSON documents.</p>
         <p> In this article I will list some of the features of Oxygen JSON Editor that I enjoy the
