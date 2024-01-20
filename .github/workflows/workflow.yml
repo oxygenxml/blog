@@ -28,8 +28,4 @@ jobs:
        run: |
          cd ./build/
          ./gradlewCustom --build-file build-validate-ai.gradle --info --stacktrace runAIValidation
-     - name: REPORT
-       run: |
-         echo Building report
-         cat report.md
-         echo "$(cat report.md)" >> $GITHUB_STEP_SUMMARY
+         if [-f ../report.md] then "$(cat ../report.md)" >> $GITHUB_STEP_SUMMARY;exit 1
