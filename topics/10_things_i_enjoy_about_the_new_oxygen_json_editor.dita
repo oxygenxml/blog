@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="_10_things_i_enjoy_about_the_new_oxygen_json_editor">
-    <title>10 Things I Enjoy About the New Oxygen JSON Editor</title>
+    <title>10 Things I Enjoy About the New Oxygem JSON Editor</title>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
@@ -10,12 +10,12 @@
     </prolog>
     <conbody>
         <p>We released the <xref href="https://www.oxygenxml.com/oxygen_json_editor.html"
-                format="html" scope="external">Oxygen JSON Editor</xref> a couple of months ago as a
+                format="html" scope="external">Oxygen JSON Editor</xref> a couple months ago as a
             practical tool for web developers and people interested in general in editing,
             validating or converting JSON documents.</p>
         <p> In this article I will list some of the features of Oxygen JSON Editor that I enjoy the
                 most:<ul id="ul_mtr_zyb_d1c">
-                <li>Value for money. The 12 months subscription license is <xref
+                <li>Value for money. The 12 months subscrption license is <xref
                         href="https://www.oxygenxml.com/json_editor/buy.html" format="html"
                         scope="external">less than 100 USD</xref> per year and gives you always
                     access to the latest JSON Editor released version.</li>
