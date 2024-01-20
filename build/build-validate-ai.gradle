@@ -26,10 +26,19 @@ task runAIValidation(type:Exec) {
   "-o", jsonFile.getAbsolutePath();
  doLast {
     println "TEXT IN JSON FILE " + jsonFile.getText();
-    def result = new JsonSlurper().parse(jsonFile)
-    String content = result.choices[0].message.content;
-    if(! content.equals("__OK__")){
-        throw new Exception("Grammar check problems:\n" + content);
+    def result = new JsonSlurper().parse(jsonFile);
+    if(result.choices != null){
+        String content = result.choices[0].message.content;
+        if(! content.equals("__OK__")){
+            //Write to a markdown file the contents
+            new File(projectDirFile, "report.md").write(content);
+            throw new Exception("Grammar check problems:\n" + content);
+        } else {
+            new File(projectDirFile, "report.md").write("No grammar check problems found");
+        }
+    } else {
+        new File(projectDirFile, "report.md").write(jsonFile.getText());
+        throw new Exception("Problems with returned AI result:\n" + jsonFile.getText());
     }
  }
 }
