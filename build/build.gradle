@@ -1,5 +1,4 @@
 import org.gradle.api.tasks.Exec
-import groovy.json.JsonSlurper
 
 task initDOT {
    String projectDir = "."
@@ -41,13 +40,22 @@ task initValidation {
 }
 
 task runValidation(type:Exec, dependsOn: [initValidation]) {
+  File projectDirFile = new File(System.getProperty("user.dir"), "/../").getCanonicalFile();
+  File buildDirFile = new File(System.getProperty("user.dir")).getCanonicalFile();
   workingDir "${projectDir}/extracted/oxygen";
   ignoreExitValue true;
-  commandLine "sh", "${projectDir}/extracted/oxygen/scripts/validateCheckDITA.sh", "-i", "${projectDir}/../blog-project.xml", "-r", "${projectDir}/extracted/oxygen/validationReport.xml";
+  commandLine "sh", "${buildDirFile.getAbsolutePath()}/extracted/oxygen/scripts/validateCheckDITA.sh", "-i", "${projectDirFile.getAbsolutePath()}/blog-project.xml", "-r", "${buildDirFile.getAbsolutePath()}/extracted/oxygen/validationReport.xml";
   doLast {
-        String reportText = new File("${projectDir}/extracted/oxygen/validationReport.xml").text;
+        String reportText = new File("${buildDirFile.getAbsolutePath()}/extracted/oxygen/validationReport.xml").text;
         if(reportText.contains("<incident>")) {
-            new File("${projectDir}/../validationReport.xml").write(reportText);
+            ant {
+              xslt(
+                 in: "${buildDirFile.getAbsolutePath() + '/extracted/oxygen/validationReport.xml'}",
+                 out: "${projectDirFile.getAbsolutePath() + '/validationReport.md'}",
+                 force: "true",
+                 style: "${buildDirFile.getAbsolutePath() + '/validationReport.xsl'}"
+              )
+           }
        }
  }
 }
