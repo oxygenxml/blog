@@ -1,4 +1,5 @@
 import org.gradle.api.tasks.Exec
+import groovy.json.JsonSlurper
 
 task initDOT {
   String projectDir = "."
@@ -62,6 +63,18 @@ task postProcessValidation(dependsOn: [runValidation]) {
       token: '<?xml version="1.0" encoding="UTF-8"?>',
       value: '<?xml-stylesheet type="text/css" href="report.css"?>'
   )
+ }
+}
+
+task runAIValidation(type:Exec) {
+ workingDir "${projectDir}/"
+ commandLine "curl", "-v", "https://api.openai.com/v1/chat/completions", '-H', 'Content-Type: application/json', '-H', 'Authorization: Bearer ' + System.getenv( 'AI_LICENSE_KEY' ), "-d", '{"model": "gpt-4","messages": [{"role": "system","content": "You are a DITA XML technical documentation writer, skilled detecting grammar problems. If there are grammar problems in the provided DITA XML content, return a unified diff between the old content and the content with the corrected problems. If there are no grammar problems to be made, return __OK__"},{"role": "user","content": "<title>I am a developer.</title>\\n<p>Here is some problems</p>"}]}', "-o", "output.json"
+ doLast {
+    def result = new JsonSlurper().parse(file("output.json"))
+    String content = result.choices[0].message.content;
+    if(! content.equals("__OK__")){
+        throw new Exception("Grammar check problems:\n" + content);
+    }
  }
 }
 
