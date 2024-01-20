@@ -1,4 +1,4 @@
-name: Validate Blog
+name: Validate And Check For Completeness Blog
 
 on:
   pull_request:
