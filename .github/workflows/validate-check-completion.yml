@@ -24,4 +24,4 @@ jobs:
         run: |
           cd ./build
           ./gradlewCustom --info --stacktrace runValidation
-          if test -f ../validationReport.xml; then cat ../validationReport.xml > $GITHUB_STEP_SUMMARY;exit 1; fi
+          if test -f ../validationReport.md; then cat ../validationReport.md > $GITHUB_STEP_SUMMARY;exit 1; fi
