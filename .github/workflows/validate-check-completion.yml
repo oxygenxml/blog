@@ -20,4 +20,7 @@ jobs:
       - name: Build with Gradle
         env: # Or as an environment variable
          SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
-        run: cd ./build;./gradlewCustom --info --stacktrace runValidation
+        run: |
+          cd ./build
+          ./gradlewCustom --info --stacktrace runValidation
+          if test -f ../validationReport.xml; then cat ../validationReport.xml > $GITHUB_STEP_SUMMARY;exit 1; fi
