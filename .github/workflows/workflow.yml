@@ -27,4 +27,4 @@ jobs:
        run: |
          cd ./build/
          ./gradlewCustom --build-file build-validate-ai.gradle --info --stacktrace runAIValidation
-         if [-f ../report.md]; then "$(cat ../report.md)" >> $GITHUB_STEP_SUMMARY;exit 1; fi
+         if test -f ../report.md; then "$(cat ../report.md)" >> $GITHUB_STEP_SUMMARY;exit 1; fi
