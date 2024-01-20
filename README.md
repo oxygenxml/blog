@@ -1,4 +1,4 @@
-# Oxygen XML Blog
+# Oxygen XML Blog 
 
 The Oxygen XML Blog project contains all the resources used to publish the Oxygen 
 XML Blog in DITA format.
