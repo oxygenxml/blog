@@ -25,8 +25,12 @@
                     lot when creating JSON configuration files for the Oxygen <b id="b_kvk_11c_d1c"
                         >AI Positron Assistant</b> add-on.</li>
                 <li>Built on top of the Oxygen application platform, the JSON Editor offers the
-                    regular Oxygen facilities: Project view, Find Replace capabilities and much
-                    more.</li>
+                    regular Oxygen facilities: <ul id="ul_ngk_whw_d1c">
+                        <li>Multi platform application (Windows, Mac, Linux).</li>
+                        <li>Project view.</li>
+                        <li>Find Replace capabilities.</li>
+                        <li>and much more....</li>
+                    </ul></li>
                 <li>As another neat feature of being an Oxygen application, you can install in the
                     Oxygen JSON Editor free useful add-ons like the <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
