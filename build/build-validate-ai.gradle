@@ -2,7 +2,7 @@ import org.gradle.api.tasks.Exec
 import groovy.json.JsonSlurper
 
 task runAIValidation(type:Exec) {
- File projectDirFile = new File(System.getProperty("user.dir"), "/../../").getCanonicalFile();
+ File projectDirFile = new File(System.getProperty("user.dir"), "/../").getCanonicalFile();
  def values = System.getenv('ALL_CHANGED_FILES').split(' ');
  String allFileContents = "";
  for(changedFile in values){
