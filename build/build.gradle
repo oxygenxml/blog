@@ -76,20 +76,21 @@ task runAIValidation(type:Exec) {
         allFileContents += new File(projectDirFile, changedFile).getText();
     }
  }
- println allFileContents;
+ //println allFileContents;
 
  String prompt = "You are a DITA XML technical documentation writer, skilled detecting grammar problems.\n"+
  "You will receive content from multiple files, separated by **** markers. \n" +
  "If there are grammar problems in the provided DITA XML content, return a unified diff between the old content and the content with the corrected problems. If there are no grammar problems to be made, return __OK__";
  File jsonFile = new File(projectDirFile, "output.json");
  commandLine "curl",
-   "-v",
+   //"-v",
    "https://api.openai.com/v1/chat/completions",
    '-H', 'Content-Type: application/json',
   '-H', 'Authorization: Bearer ' + System.getenv( 'AI_LICENSE_KEY' ),
   "-d", '{"model": "gpt-4","messages": [{"role": "system","content": "' + groovy.json.StringEscapeUtils.escapeJavaScript(prompt) + '"},{"role": "user","content": "' + groovy.json.StringEscapeUtils.escapeJavaScript(allFileContents) + '"}]}',
   "-o", jsonFile.getAbsolutePath();
  doLast {
+    println "TEXT IN JSON FILE " + jsonFile.getText();
     def result = new JsonSlurper().parse(jsonFile)
     String content = result.choices[0].message.content;
     if(! content.equals("__OK__")){
