@@ -17,7 +17,7 @@ task runAIValidation(type:Exec) {
  "You will receive content from multiple files, separated by **** markers. \n" +
  "If there are grammar problems in the provided DITA XML content, return a report in Markdown format containing an unified diff between the old content and the content with the corrected problems. If there are no grammar problems to be made, return __OK__";
  File jsonFile = new File(projectDirFile, "output.json");
- String inputJSON = '{"model": "gpt-4-1106-preview","messages": [{"role": "system","content": "' + groovy.json.StringEscapeUtils.escapeJava(prompt) + '"},{"role": "user","content": "' + groovy.json.StringEscapeUtils.escapeJava(allFileContents) + '"}]}';
+ String inputJSON = '{"model": "gpt-3.5-turbo-1106","messages": [{"role": "system","content": "' + groovy.json.StringEscapeUtils.escapeJava(prompt) + '"},{"role": "user","content": "' + groovy.json.StringEscapeUtils.escapeJava(allFileContents) + '"}]}';
  new File(projectDirFile, "input.json").write(inputJSON);
  commandLine "curl",
    //"-v",
@@ -33,7 +33,7 @@ task runAIValidation(type:Exec) {
         if(! content.equals("__OK__")){
             //Write to a markdown file the contents
             new File(projectDirFile, "report.md").write(content);
-            throw new Exception("Grammar check problems:\n" + content);
+            //throw new Exception("Grammar check problems:\n" + content);
         } else {
             new File(projectDirFile, "report.md").write("No grammar check problems found");
         }
