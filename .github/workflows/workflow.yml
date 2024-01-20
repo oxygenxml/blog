@@ -21,7 +21,6 @@ jobs:
      - name: Make gradlew executable
        run: chmod +x ./build/gradlewCustom
      - name: Build with Gradle
-       continue-on-error: true
        env: #Or as an environment variable
          AI_LICENSE_KEY: ${{secrets.AI_LICENSE_KEY}}
          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
