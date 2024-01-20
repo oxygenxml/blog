@@ -21,7 +21,7 @@
                     access to the latest JSON Editor released version.</li>
                 <li>Support to create JSON Schemas and to use JSON Schemas to validate JSON
                     instances. There is a great <b id="b_zgq_pbc_d1c">JSON Schema</b> diagram which
-                    can be used to visually compose JSON schema files. I used this support quite a
+                    can be used to visuall compose JSON schema files. I used this support quite a
                     lot when creating JSON configuration files for the Oxygen <b id="b_kvk_11c_d1c"
                         >AI Positron Assistant</b> add-on.</li>
                 <li>Built on top of the Oxygen application platform, the JSON Editor offers the
