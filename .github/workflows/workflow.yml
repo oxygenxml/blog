@@ -31,5 +31,5 @@ jobs:
      - name: REPORT
        run: |
          echo Building report
-         cat ../report.md
-         echo "$(cat ../report.md)" >> $GITHUB_STEP_SUMMARY
+         cat report.md
+         echo "$(cat report.md)" >> $GITHUB_STEP_SUMMARY
