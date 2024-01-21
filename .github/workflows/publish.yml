@@ -1,4 +1,4 @@
-name: Validate And Check For Completeness Blog
+name: Publish Blog to Netlify
 
 on:
   push:
