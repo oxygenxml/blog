@@ -24,9 +24,11 @@ jobs:
         run: |
           cd ./build
           ./gradlewCustom --info --stacktrace
-      - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+      - name: Publish
+        uses: South-Paw/action-netlify-cli@1.0.1
+        id: netlify
         with:
+          args: 'deploy --json --prod --dir \"./site\" --message \"production [${{ github.sha }}]\"'
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.OXYGEN_XML_BLOG_NETLIFY }}
-          NETLIFY_DEPLOY_TO_PROD: true
-          NETLIFY_SITE_ID: oxygenxmlblog
-          build_directory: site
+          NETLIFY_SITE_ID: ${{ secrets.OXYGEN_XML_BLOG_NETLIFY_SIDE_ID }} 
