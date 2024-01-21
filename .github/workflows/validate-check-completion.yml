@@ -23,5 +23,5 @@ jobs:
          SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
         run: |
           cd ./build
-          ./gradlewCustom --info --stacktrace runValidation
+          ./gradlewCustom --build-file build-validate-check.gradle --info --stacktrace runValidation
           if test -f ../validationReport.md; then cat ../validationReport.md > $GITHUB_STEP_SUMMARY;exit 1; fi
