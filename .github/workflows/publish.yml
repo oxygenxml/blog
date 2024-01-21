@@ -23,4 +23,10 @@ jobs:
          LICENSE_KEY: ${{secrets.LICENSE_KEY}}
         run: |
           cd ./build
-          ./gradlewCustom --info --stacktrace          
+          ./gradlewCustom --info --stacktrace
+      - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.OXYGEN_XML_BLOG_NETLIFY }}
+          NETLIFY_DEPLOY_TO_PROD: true
+          NETLIFY_SITE_ID: oxygenxmlblog
+          build_directory: site
