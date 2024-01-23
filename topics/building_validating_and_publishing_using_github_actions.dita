@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="building_and_publishing_using_github_actions">
-    <title>Building Validating And Publishing Using GitHub Actions</title>
+    <title>Building, Validating And Publishing Using GitHub Actions</title>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
