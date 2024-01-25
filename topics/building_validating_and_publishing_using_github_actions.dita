@@ -67,7 +67,7 @@
                             of running such a GitHub action contains the severity, description and a
                             link to the topic in which the error was found. The link can be followed
                             to open the topic in Oxygen <b>WebAuthor</b>:<fig id="fig_dcp_3wt_21c">
-                                <image href="../images/validation-report-gh-action.png"
+                                <image href="../images/validation-report-gh-actions.png"
                                     id="image_zf4_nvt_21c" scale="40"/>
                             </fig></li>
                     </ul></li>
