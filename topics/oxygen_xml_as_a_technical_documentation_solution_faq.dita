@@ -111,6 +111,15 @@
                 </dd>
             </dlentry>
             <dlentry>
+                <dt>How can I convert my current content to DITA XML?</dt>
+                <dd>You can find <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-migrating-various-formats.html"
+                        format="html" scope="external">here</xref> advice about how to convert
+                    various document formats to DITA XML. For any other document format the advice
+                    is to possibly try to export it to HTML content and then use the free Oxygen
+                        <b>Batch Documents Converter</b> add-on.</dd>
+            </dlentry>
+            <dlentry>
                 <dt>Do you have case studies or references from companies who are successfully using
                     Oxygen? </dt>
                 <dd>Some of our customers who have agreed to be officially listed are mentioned
