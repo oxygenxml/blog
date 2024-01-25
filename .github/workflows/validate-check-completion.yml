@@ -21,6 +21,7 @@ jobs:
       - name: Build with Gradle
         env: # Or as an environment variable
          SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
+         BRANCH_NAME: ${{ github.event.pull_request.head.ref }}
         run: |
           cd ./build
           ./gradlewCustom --build-file build-validate-check.gradle --info --stacktrace runValidation
