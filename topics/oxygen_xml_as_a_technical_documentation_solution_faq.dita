@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="oxygen_xml_as_a_technical_documentation_solution_faq">
+    <title>Oxygen XML As a Technical Documentation Solution FAQ</title>
+    <shortdesc>This topic covers some of the most frequent questions we get from technical
+        documentation writer teams willing to investigate the <b>Oxygen XML</b> set of tools as a
+        possible solution for writing and publishing content.</shortdesc>
+    <prolog>
+        <author>Radu Coravu</author>
+    </prolog>
+    <body>
+        <dl id="dl_gdg_wwf_f1c">
+            <dlentry>
+                <dt>What does Oxygen XML provide as a tool to a technical documentation team?</dt>
+                <dd>
+                    <p>Oxygen is a <b>DITA XML</b> desktop editing tool which can be used by
+                        technical documentation writers to <b>write</b>, <b>reuse</b> and
+                            <b>publish</b> DITA XML content to a variety of output formats like
+                            <b>WebHelp Responsive</b> and <b>PDF</b>.</p>
+                    <p>Some of our strong points capabilities are listed <xref
+                            href="oxygen-dita-strong-points.dita"
+                            >here</xref>.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Is Oxygen a Content Management System?</dt>
+                <dd>
+                    <p><b>Oxygen</b> is not a <b>content management system</b>, we do not store the
+                        content that you are editing on our side. </p>
+                    <p>Our clients use <b>Oxygen XML</b> for collaboration on a technical
+                        documentation project in one of these ways:</p>
+                    <ul id="ul_scc_cxf_f1c">
+                        <li>We have clients who use Oxygen's <xref
+                                href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
+                                format="html" scope="external"><b>Git client add-on</b></xref> to
+                            collaborate on the same project using a <xref
+                                href="../git-tech-writers/using_git_for_technical_writing.dita">Git
+                                repository</xref>.</li>
+                        <li><b>Oxygen</b> also has built-in support for working with <xref
+                                href="https://www.oxygenxml.com/doc/ug-editor/topics/sharepoint-connection.html"
+                                format="html" scope="external"><b>Sharepoint</b></xref> repositories
+                            if you want to store the edited content on <b>Sharepoint</b>.</li>
+                        <li>-There are commercial <b>CMSs</b> (content management systems) which
+                            have integrations with <b>Oxygen</b>. Some of them are listed <xref
+                                href="https://www.oxygenxml.com/partners.html#cmssolutionpartners"
+                                format="html" scope="external">here</xref>. These commercial content
+                            management systems like <b>Astoria</b>, <b>Bluestream</b>,
+                                <b>Componize</b> usually have plugins allowing <b>Oxygen</b> to
+                            connect to the <b>CMS</b> remote storage, open documents, edit and save
+                            them back. But the price of the commercial content management systems is
+                            separate from the price of an <b>Oxygen</b> license.</li>
+                    </ul>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>What Oxygen products should I buy for our technical documentation team?</dt>
+                <dd>All our prices are transparently available <xref
+                        href="https://www.oxygenxml.com/buy.html" format="html" scope="external"
+                        >here</xref>. <p>The usual purchase suggestion for a technical writer's team
+                        is something like this:</p><p>
+                        <ul id="ul_b5l_yxf_f1c">
+                            <li>
+                                <p>One permanent user based license of Oxygen XML Editor
+                                    Professional: <xref
+                                        href="https://www.oxygenxml.com/buy_new_licenses_professional_smp.html"
+                                        format="html" scope="external"/>.</p>
+                                <p>This one license would be for the person who besides writing is
+                                    also in charge of customizing the published output.</p>
+                            </li>
+                            <li>
+                                <p>A permanent license of Oxygen XML Author professional for each
+                                    full time tech writer: <xref
+                                        href="https://www.oxygenxml.com/buy_new_licenses_author_professional_smp.html"
+                                        format="html" scope="external"/>.</p>
+                                <p>The <b>Oxygen XML Author</b> allows writers to visually edit
+                                        <b>DITA XML</b> content and to publish it to <b>WebHelp</b>,
+                                        <b>PDF</b> and other formats.</p>
+                            </li>
+                            <li>
+                                <p>Any other occasional contributor or reviewer (subject matter
+                                    expert, engineers for example) can use our Content Fusion
+                                    platform to give feedback on the content directly from a web
+                                    browser. </p>
+                                <p>A video with how <b>Content Fusion</b> Works: <xref
+                                        href="https://www.oxygenxml.com/content_fusion/take_a_tour.html"
+                                        format="html" scope="external"/>.</p>
+                                <p>And the pricing depending on the number of people who would
+                                    simultaneously review the content: <xref
+                                        href="https://www.oxygenxml.com/content_fusion/buy_content_fusion.html"
+                                        format="html" scope="external"/>.</p>
+                            </li>
+                        </ul>
+                    </p></dd>
+            </dlentry>
+            <dlentry>
+                <dt>What type of customer support and training will I get from the Oxygen team?</dt>
+                <dd>
+                    <p>We help customers with advice and any problems they encounter when using our
+                        application. </p>
+                    <p>For example if you want to create your own publishing customizations, these
+                        are usually done using CSS. You would have one colleague on your side
+                        creating the customization and asking us questions along the way. We do not
+                        implement full customizations for you but we guide you along the way.</p>
+                    <p>As for training, we have lots of videos and online resources for learning to
+                        use Oxygen to produce technical documentation: <xref
+                            href="learnDita.dita"/>.</p>
+                    <p>We can offer you a one-time web meeting to show you how Oxygen works in
+                        general but if you want a more rigorous training we have partners like
+                        Ryffine or Mekon who offer such courses:<xref
+                            href="learnDita.dita#learnDita/section_rqq_nhj_4jb"/>.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Do you have case studies or references from companies who are successfully using
+                    Oxygen? </dt>
+                <dd>Some of our customers who have agreed to be officially listed are mentioned
+                    here: <xref href="https://www.oxygenxml.com/customers.html" format="html"
+                        scope="external"/>.</dd>
+                <dd>Also some testimonials: <xref href="https://www.oxygenxml.com/case_studies.html"
+                        format="html" scope="external"/>.</dd>
+            </dlentry>
+        </dl>
+    </body>
+</topic>
