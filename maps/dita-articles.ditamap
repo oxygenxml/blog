@@ -43,6 +43,7 @@
         <topicref href="../topics/dita_ot_publishing_customizations_overview.dita" keys="publishing">
             <topicref href="../topics/server_side_building_and_publishing.dita">
                 <topicref href="../topics/building_and_publishing_using_script.dita"/>
+                <topicref href="../topics/building_validating_and_publishing_using_github_actions.dita"/>
                 <topicref
                     href="../topics/creating_a_docker_image_for_the_oxygen_publishing_engine.dita">
                     <topicref

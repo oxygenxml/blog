@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="building_and_publishing_using_netlify">
+<concept id="building_and_publishing_using_script">
     <title>Building and Publishing Using a Script</title>
     <prolog>
         <author>Radu Coravu</author>

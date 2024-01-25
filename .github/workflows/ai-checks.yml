@@ -1,0 +1,31 @@
+name: Validate Blog With AI For Grammar Checks
+
+on:
+  pull_request:
+    branches: [ master ]
+    types: [ opened, synchronize, reopened ]
+jobs:
+  check-grammar-using-ai:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v4
+       with:
+         fetch-depth: 0
+     - name: Get changed files
+       id: changed-files
+       uses: tj-actions/changed-files@v42
+     - name: Set up JDK 21
+       uses: actions/setup-java@v4
+       with:
+         distribution: 'temurin'
+         java-version: 21
+     - name: Make gradlew executable
+       run: chmod +x ./build/gradlewCustom
+     - name: Build with Gradle
+       env: #Or as an environment variable
+         AI_LICENSE_KEY: ${{secrets.AI_LICENSE_KEY}}
+         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+       run: |
+         cd ./build/
+         ./gradlewCustom --build-file build-validate-ai.gradle --info --stacktrace runAIValidation
+         if test -f ../report.md; then cat ../report.md > $GITHUB_STEP_SUMMARY;exit 1; fi

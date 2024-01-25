@@ -12,18 +12,18 @@
         <p>We released the <xref href="https://www.oxygenxml.com/oxygen_json_editor.html"
                 format="html" scope="external">Oxygen JSON Editor </xref> a couple months ago as a
             practical tool for web developers and people interested in general in editing,
-            validating or converting JSON documents.</p>
-        <p> In this article I will list some of the features of Oxygen JSON Editor that I enjoy the
+            validating, or converting JSON documents.</p>
+        <p>In this article, I will list some of the features of Oxygen JSON Editor that I enjoy the
                 most:<ul id="ul_mtr_zyb_d1c">
                 <li>Value for money. The 12 months subscrption license is <xref
                         href="https://www.oxygenxml.com/json_editor/buy.html" format="html"
-                        scope="external">less than 100 USD</xref> per year and gives you always
+                        scope="external">less than 100 USD</xref> per year and always gives you
                     access to the latest JSON Editor released version.</li>
                 <li>Support to create JSON Schemas and to use JSON Schemas to validate JSON
-                    instances. There is a great <b id="b_zgq_pbc_d1c">JSON Schema</b> diagram which
-                    can be used to visuall compose JSON schema files. I used this support quite a
-                    lot when creating JSON configuration files for the Oxygen <b id="b_kvk_11c_d1c"
-                        >AI Positron Assistant</b> add-on.</li>
+                    instances. There is a great <b id="b_zgq_pbc_d1c">JSON Schema</b> diagram editor
+                    that can be used to visually compose JSON schema files. I used this support
+                    quite a lot when creating JSON configuration files for the Oxygen <b
+                        id="b_kvk_11c_d1c">AI Positron Assistant</b> add-on.</li>
                 <li>Built on top of the Oxygen application platform, the JSON Editor offers the
                     regular Oxygen facilities: <ul id="ul_ngk_whw_d1c">
                         <li>Multi platform application (Windows, Mac, Linux).</li>
@@ -31,22 +31,22 @@
                         <li>Find Replace capabilities.</li>
                         <li>and much more....</li>
                     </ul></li>
-                <li>As another neat feature of being an Oxygen application, you can install in the
-                    Oxygen JSON Editor free useful add-ons like the <xref
+                <li>As another neat feature of being an Oxygen application, in the Oxygen JSON
+                    Editor, you can install useful free add-ons like the <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
                         format="html" scope="external">Git client-add on</xref>, <b
-                        id="b_fvz_y1c_d1c">Batch Documents Converter</b> or the <xref
+                        id="b_fvz_y1c_d1c">Batch Documents Converter</b>, or the <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/xsd-to-json-schema-converter-x2.html"
                         format="html" scope="external">JSON Schema Documentation generator
                         add-on</xref>.</li>
                 <li>All the nifty conversion tools (<b id="b_ehv_k1c_d1c">JSON to YAML</b>, <b
                         id="b_vvx_k1c_d1c">YAML to JSON</b>, <b id="b_pw1_l1c_d1c">XML to JSON</b>)
-                    allowing you to change between representations in various formats of the same
-                    data. For my work I used for example the<b id="b_bqq_k1c_d1c"> XML to JSON</b>
+                    allow you to change between representations in various formats of the same data.
+                    For my work, I used, for example, the<b id="b_bqq_k1c_d1c"> XML to JSON</b>
                     converter to convert a piece of HTML content representing an unordered list to a
-                    JSON object which I further proceeded to load from Javascript.</li>
-                <li>When editing a JSON file the <b id="b_tw4_d1c_d1c">Author</b> visual editing
-                    mode allows me to add new lines in values by pressing ENTER, new lines which are
+                    JSON object that I further proceeded to load from JavaScript.</li>
+                <li>When editing a JSON file, the <b id="b_tw4_d1c_d1c">Author</b> visual editing
+                    mode allows me to add new lines in values by pressing ENTER, new lines that are
                     escaped automatically to <codeph>\n</codeph> when switching to the Text editing
                     mode.</li>
                 <li>You can run <b id="b_ivr_mbc_d1c">XPath</b> expressions over opened JSON
@@ -54,9 +54,9 @@
                 <li>You can edit much <b id="b_l3p_n1c_d1c">more</b> than JSON documents. This is a
                     web developer editor in disguise, allowing you to edit <b id="b_u42_gcc_d1c"
                         >Markdown</b>, <b id="b_gb3_r1c_d1c">HTML</b>, <b id="b_kgl_r1c_d1c"
-                    >CSS</b>, <b id="b_sjt_r1c_d1c">Javascript</b>, <b id="b_tlz_r1c_d1c">YAML</b>
+                    >CSS</b>, <b id="b_sjt_r1c_d1c">Javascript</b>, <b id="b_tlz_r1c_d1c">YAML</b>,
                     and of course <b id="b_ntf_s1c_d1c">JSON</b>.</li>
-                <li>Support to create, edit and convert <b id="b_kvt_v1c_d1c">OpenAPI</b>
+                <li>Support to create, edit, and convert <b id="b_kvt_v1c_d1c">OpenAPI</b>
                     specification documents either in <b id="b_fwd_w1c_d1c">JSON</b> or <b
                         id="b_xt3_w1c_d1c">YAML</b> format.</li>
                 <li>The <b id="b_wqb_ fbc_d1c">Tools</b> menu's <b id="b_vpx_fbc_d1c">Compare</b>

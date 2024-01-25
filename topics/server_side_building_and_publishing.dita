@@ -18,6 +18,8 @@
         <p>Possible ways to run the Oxygen Publishing Engine on the server side:<ul
                 id="ul_bhp_gyf_vzb">
                 <li><xref href="building_and_publishing_using_script.dita"/>.</li>
+                <li><xref href="building_validating_and_publishing_using_github_actions.dita"
+                    />.</li>
                 <li><xref href="creating_a_docker_image_for_the_oxygen_publishing_engine.dita"/> and
                     then <xref href="running_the_publishing_engine_docker_image_on_aws.dita"/>.</li>
                 <li><xref
