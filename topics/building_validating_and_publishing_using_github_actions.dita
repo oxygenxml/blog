@@ -64,10 +64,11 @@
                                 href="https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary"
                                 format="html" scope="external"
                                 ><codeph>$GITHUB_STEP_SUMMARY</codeph></xref> variable. The report
-                            of running such a GitHub action looks like this:<fig
-                                id="fig_dcp_3wt_21c">
+                            of running such a GitHub action contains the severity, description and a
+                            link to the topic in which the error was found. The link can be followed
+                            to open the topic in Oxygen <b>WebAuthor</b>:<fig id="fig_dcp_3wt_21c">
                                 <image href="../images/validation-report-gh-action.png"
-                                    id="image_zf4_nvt_21c" scale="30"/>
+                                    id="image_zf4_nvt_21c" scale="40"/>
                             </fig></li>
                     </ul></li>
                 <li>Validate only the changed topics in a pull request using <b>OpenAI</b> and a
