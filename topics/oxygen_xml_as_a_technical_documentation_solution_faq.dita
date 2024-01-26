@@ -23,6 +23,23 @@
                 </dd>
             </dlentry>
             <dlentry>
+                <dt>To which companies would you recommend a DITA XML based solution for writing
+                    technical documentation?</dt>
+                <dd>I would recommend the use of the DITA XML standard for writing technical
+                    documentation with Oxygen XML as an editing tool to companies for which one of
+                    the following conditions is fulfilled:<ul id="ul_ef1_wbn_f1c">
+                        <li>They have multiple similar products and want to take advantage of DITA
+                            XML high reuse capabilities and condition profiling/filters to produce
+                            multiple similar but not identical manuals from the same project.</li>
+                        <li>They want to add structure based validation rules which must be followed
+                            by all members of a team.</li>
+                        <li>They want to create their own custom vocabulary of semantic
+                            elements.</li>
+                        <li>Besides web based outputs they want to produce also PDFs and want to
+                            have a relatively high degree of controlling the PDF customization.</li>
+                    </ul></dd>
+            </dlentry>
+            <dlentry>
                 <dt>Is Oxygen a Content Management System?</dt>
                 <dd>
                     <p><b>Oxygen</b> is not a <b>content management system</b>, we do not store the
