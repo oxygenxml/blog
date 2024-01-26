@@ -13,25 +13,28 @@
       use DITA internally for editing the <b>Oxygen User's Guide</b>. </p>
     <p>In this article I will try to give you an overview of our entire workflow as evidence that
         <b>DITA</b> does work and that it can be used and implemented without expensive solutions. </p>
-    <p>First here's an overview of our needs:<ul id="ul_sd1_hfg_dq">
-        <li><b>Online Help</b> which is available as <xref
-        href="https://www.oxygenxml.com/doc/ug-oxygen/" format="html" scope="external"><b>WebHelp
-        Responsive</b></xref> on our web site. Our <xref
-        href="https://www.oxygenxml.com/doc/ug-feedback/topics/ofb-installing-feeback-oxygen.html"
-        format="html" scope="external">WebHelp Feedback</xref> integration allows users to add
-        comments and ratings to each topic. Those comments can later be used by us to rephrase and
-        improve our documentation.</li>
-        <li><b>PDF</b> containing the entire contents of the user's manual. The PDF output is styled
-        using CSS and obtained from DITA content using our <xref
-        href="https://www.oxygenxml.com/publishing_engine.html" format="html" scope="external"
-        >Oxygen Publishing Engine</xref>. Nowadays most our users use the online <b>WebHelp</b>
-        because it can be used much easier for finding certain topics so in our case at least the
-        <b>PDF</b> output is not popular anymore along users.</li>
-      <li><b>Offline Help</b> which is available inside the installed application. Oxygen is a
-        multi-platform application so we need to generate both <b>HTML Help</b> (CHM) for
-        <b>Windows</b> and <b>JavaHelp</b> for the <b>Mac OSX</b> and <b>Linux</b> installations.
-        Also for the <b>Oxygen Eclipse Plugin</b> we need to generate <b>Eclipse Help</b>.</li>
-      </ul></p>
+        <p>First, here's an overview of our needs:</p>
+        <ul id="ul_sd1_hfg_dq">
+            <li><b>Online Help</b> which is available as <xref
+                    href="https://www.oxygenxml.com/doc/ug-oxygen/" format="html" scope="external"
+                        ><b>WebHelp Responsive</b></xref> on our website. Our <xref
+                    href="https://www.oxygenxml.com/doc/ug-feedback/topics/ofb-installing-feeback-oxygen.html"
+                    format="html" scope="external">WebHelp Feedback</xref> integration allows users
+                to add comments and ratings to each topic. Those comments can later be used by us to
+                rephrase and improve our documentation.</li>
+            <li><b>PDF</b> containing the entire contents of the user's manual. The PDF output is
+                styled using CSS and obtained from DITA content using our <xref
+                    href="https://www.oxygenxml.com/publishing_engine.html" format="html"
+                    scope="external">Oxygen Publishing Engine</xref>. Nowadays, most of our users
+                use the online <b>WebHelp</b> because it can be used much easier for finding certain
+                topics. So, in our case, at least the <b>PDF</b> output is not popular anymore among
+                users.</li>
+            <li><b>Offline Help</b> which is available inside the installed application. Oxygen is a
+                multi-platform application, so we need to generate both <b>HTML Help</b> (CHM) for
+                    <b>Windows</b> and <b>JavaHelp</b> for the <b>Mac OSX</b> and <b>Linux</b>
+                installations. Also, for the <b>Oxygen Eclipse Plugin</b>, we need to generate
+                    <b>Eclipse Help</b>.</li>
+        </ul>
     <p>We have two main distributions (<b>Standalone</b> and <b>Eclipse plugin</b>) and three main
       products (<b>Editor</b>, <b>Developer</b> and <b>Author</b>). We also have a web editing tool,
       WebHelp generation plugin and publishing engines. So we need to produce more than 9 different
