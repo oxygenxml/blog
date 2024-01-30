@@ -16,30 +16,30 @@
             <dlentry>
                 <dt>What does Oxygen XML provide as a tool to a technical documentation team?</dt>
                 <dd>
-                    <p>Oxygen is a <b>DITA XML</b> desktop editing tool which can be used by
-                        technical documentation writers to <b>write</b>, <b>reuse</b> and
-                            <b>publish</b> DITA XML content to a variety of output formats like
+                    <p>Oxygen is a <b>DITA XML</b> desktop editing tool that can be used by
+                        technical documentation writers to <b>write</b>, <b>reuse</b>, and
+                            <b>publish</b> DITA XML content to a variety of output formats, such as
                             <b>WebHelp Responsive</b> and <b>PDF</b>.</p>
-                    <p>Some of our strong points capabilities are listed <xref
-                            href="oxygen-dita-strong-points.dita"
-                            >here</xref>.</p>
+                    <p>Some of our strong capabilities are listed <xref
+                            href="oxygen-dita-strong-points.dita">here</xref>.</p>
                 </dd>
             </dlentry>
             <dlentry>
                 <dt>To which companies would you recommend a DITA XML based solution for writing
                     technical documentation?</dt>
                 <dd>I would recommend the use of the DITA XML standard for writing technical
-                    documentation with Oxygen XML as an editing tool to companies for which one of
-                    the following conditions is fulfilled:<ul id="ul_ef1_wbn_f1c">
+                    documentation with Oxygen XML as an editing tool to companies that have one of
+                    the following conditions fulfilled:<ul id="ul_ef1_wbn_f1c">
                         <li>They have multiple similar products and want to take advantage of DITA
                             XML high reuse capabilities and condition profiling/filters to produce
-                            multiple similar but not identical manuals from the same project.</li>
-                        <li>They want to add structure based validation rules which must be followed
+                            multiple similar, but not identical, manuals from the same project.</li>
+                        <li>They want to add structure-based validation rules that must be followed
                             by all members of a team.</li>
                         <li>They want to create their own custom vocabulary of semantic
                             elements.</li>
-                        <li>Besides web based outputs they want to produce also PDFs and want to
-                            have a relatively high degree of controlling the PDF customization.</li>
+                        <li>Besides web-based outputs, they also want to produce PDFs and want to
+                            have a relatively high degree of control over the PDF
+                            customization.</li>
                     </ul></dd>
             </dlentry>
             <dlentry>
@@ -58,14 +58,14 @@
                                 repository</xref>.</li>
                         <li><b>Oxygen</b> also has built-in support for working with <xref
                                 href="https://www.oxygenxml.com/doc/ug-editor/topics/sharepoint-connection.html"
-                                format="html" scope="external"><b>Sharepoint</b></xref> repositories
-                            if you want to store the edited content on <b>Sharepoint</b>.</li>
-                        <li>There are commercial <b>CMSs</b> (content management systems) which have
+                                format="html" scope="external"><b>SharePoint</b></xref> repositories
+                            if you want to store the edited content on <b>SharePoint</b>.</li>
+                        <li>There are commercial <b>CMSs</b> (content management systems) that have
                             integrations with <b>Oxygen</b>. Some of them are listed <xref
                                 href="https://www.oxygenxml.com/partners.html#cmssolutionpartners"
                                 format="html" scope="external">here</xref>. These commercial content
-                            management systems like <b>Astoria</b>, <b>Bluestream</b>,
-                                <b>Componize</b> usually have plugins allowing <b>Oxygen</b> to
+                            management systems such as <b>Astoria</b>, <b>Bluestream</b>,
+                                <b>Componize</b> usually have plugins that allow <b>Oxygen</b> to
                             connect to the <b>CMS</b> remote storage, open documents, edit and save
                             them back. But the price of the commercial content management systems is
                             separate from the price of an <b>Oxygen</b> license.</li>
@@ -74,18 +74,18 @@
             </dlentry>
             <dlentry>
                 <dt>What Oxygen products should I buy for our technical documentation team?</dt>
-                <dd>All our prices are transparently available <xref
+                <dd>All of our prices are transparently available <xref
                         href="https://www.oxygenxml.com/buy.html" format="html" scope="external"
                         >here</xref>. <p>The usual purchase suggestion for a technical writer's team
                         is something like this:</p><p>
                         <ul id="ul_b5l_yxf_f1c">
                             <li>
-                                <p>One permanent user based license of Oxygen XML Editor
+                                <p>One permanent user-based license of Oxygen XML Editor
                                     Professional: <xref
                                         href="https://www.oxygenxml.com/buy_new_licenses_professional_smp.html"
                                         format="html" scope="external"/>.</p>
-                                <p>This one license would be for the person who besides writing is
-                                    also in charge of customizing the published output.</p>
+                                <p>This one license would be for the person who is in charge of
+                                    customizing the published output as well as writing content.</p>
                             </li>
                             <li>
                                 <p>A permanent license of Oxygen XML Author professional for each
@@ -94,17 +94,17 @@
                                         format="html" scope="external"/>.</p>
                                 <p>The <b>Oxygen XML Author</b> allows writers to visually edit
                                         <b>DITA XML</b> content and to publish it to <b>WebHelp</b>,
-                                        <b>PDF</b> and other formats.</p>
+                                        <b>PDF</b>, and other formats.</p>
                             </li>
                             <li>
                                 <p>Any other occasional contributor or reviewer (subject matter
-                                    expert, engineers for example) can use our Content Fusion
+                                    experts or engineers, for example) can use our Content Fusion
                                     platform to give feedback on the content directly from a web
                                     browser. </p>
-                                <p>A video with how <b>Content Fusion</b> Works: <xref
+                                <p>A video of how <b>Content Fusion</b> Works: <xref
                                         href="https://www.oxygenxml.com/content_fusion/take_a_tour.html"
                                         format="html" scope="external"/>.</p>
-                                <p>And the pricing depending on the number of people who would
+                                <p>And the pricing, depending on the number of people who would
                                     simultaneously review the content: <xref
                                         href="https://www.oxygenxml.com/content_fusion/buy_content_fusion.html"
                                         format="html" scope="external"/>.</p>
@@ -117,27 +117,27 @@
                 <dd>
                     <p>We help customers with advice and any problems they encounter when using our
                         application. </p>
-                    <p>For example if you want to create your own publishing customizations, these
+                    <p>For example, if you want to create your own publishing customizations, these
                         are usually done using CSS. You would have one colleague on your side
                         creating the customization and asking us questions along the way. We do not
-                        implement full customizations for you but we guide you along the way.</p>
+                        implement full customizations for you, but we guide you along the way.</p>
                     <p>As for training, we have lots of videos and online resources for learning to
                         use Oxygen to produce technical documentation: <xref
                             href="learnDita.dita"/>.</p>
                     <p>We can offer you a one-time web meeting to show you how Oxygen works in
-                        general but if you want a more rigorous training we have partners like
-                        Ryffine or Mekon who offer such courses:<xref
+                        general, but if you want a more rigorous training, we have partners like
+                        Ryffine or Mekon who offer such courses: <xref
                             href="learnDita.dita#learnDita/section_rqq_nhj_4jb"/>.</p>
                 </dd>
             </dlentry>
             <dlentry>
                 <dt>How can I convert my current content to DITA XML?</dt>
-                <dd>You can find <xref
+                <dd>You can find advice about how to convert various document formats to DITA XML
+                        <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-migrating-various-formats.html"
-                        format="html" scope="external">here</xref> advice about how to convert
-                    various document formats to DITA XML. For any other document format the advice
-                    is to possibly try to export it to HTML content and then use the free Oxygen
-                        <b>Batch Documents Converter</b> add-on.</dd>
+                        format="html" scope="external">here</xref>. For any other document format,
+                    the advice is to possibly try to export it to HTML content and then use the free
+                    Oxygen <b>Batch Documents Converter</b> add-on.</dd>
             </dlentry>
             <dlentry>
                 <dt>Do you have case studies or references from companies who are successfully using
