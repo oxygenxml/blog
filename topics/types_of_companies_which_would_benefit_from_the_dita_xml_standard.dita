@@ -39,7 +39,8 @@
                 </dd>
             </dlentry>
         </dl>
-        <p>The benefits for companies would be the following:<table frame="all">
+        <p>The benefits for companies would be the following:<table frame="all" colsep="1"
+                rowsep="1">
                 <title>Benefits</title>
                 <tgroup cols="4">
                     <colspec colname="c1" colnum="1" colwidth="1*"/>
