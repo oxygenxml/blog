@@ -5,30 +5,97 @@
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
-            <created date="2023-12-15"/>
+            <created date="2023-12-31"/>
         </critdates>
     </prolog>
     <body>
         <p>I would divide in general the companies which benefit from using DITA XML for their
-            user's manuals in three large sections:</p>
-        <section id="section_zp1_l5v_tzb">
-            <title>Companies Creating Physical Products</title>
-            <p>These companies create real-world objects, be them weapons, cars, refrigerators or
-                computer chips. Each version of each product has an unique product ID and needs to
-                be documented. Different products are sometimes similar in functionality but they
-                also have some differences.</p>
-        </section>
-        <section id="section_qht_w5v_tzb">
-            <title>Companies Creating Versioned Software Products</title>
-            <p>These companies provide software components which are versioned and usually get
-                installed on the client's side. As each client may have an older version of the
-                product, user manuals for older versions need to be made available.</p>
-        </section>
-        <section id="section_p4s_kvv_tzb">
-            <title>Companies Creating Versionless Software Products</title>
-            <p>These companies usually provide cloud based services, the end user receives always
-                access to the latest stable release, there is no user manual made available for past
-                releases.</p>
-        </section>
+            technical documentation needs in three large sections:</p>
+        <dl id="dl_rtq_yb1_h1c">
+            <dlentry>
+                <dt>Companies Creating Physical Products</dt>
+                <dd>
+                    <p>These companies create real-world objects, be them cars, refrigerators or
+                        computer chips. Each version of each product has an unique product ID and
+                        needs to be documented. Different products are sometimes similar in
+                        functionality but they also have some differences.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Companies Creating Version-ed Software Products</dt>
+                <dd>
+                    <p>These companies provide software components which are version-ed and usually
+                        get installed on the client's side. As each client may have an older version
+                        of the product, user manuals for older versions need to be made
+                        available.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Companies Creating Version-less Software Products</dt>
+                <dd>
+                    <p>These companies usually provide cloud based services, the end user receives
+                        always access to the latest stable release, there is no user manual made
+                        available for past releases.</p>
+                </dd>
+            </dlentry>
+        </dl>
+        <p>The benefits for companies would be the following:<table frame="all">
+                <title>Benefits</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol2" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry morerows="1">Benefits</entry>
+                            <entry namest="newCol4" nameend="newCol3">Company Types</entry>
+                        </row>
+                        <row>
+                            <entry>Physical Products</entry>
+                            <entry>Version-ed Software Products</entry>
+                            <entry>Version-less Software Products</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Take advantage of <b>DITA XML</b> high reuse capabilities and
+                                condition profiling/filters to produce multiple similar, but not
+                                identical, manuals from the same project.</entry>
+                            <entry>Produce manuals for similar components.</entry>
+                            <entry>Produce user manuals for similar types of software
+                                products.</entry>
+                            <entry>Produce user manuals for similar types of software
+                                products.</entry>
+                        </row>
+                        <row>
+                            <entry>Add structure-based validation rules that must be followed by all
+                                members of a team.</entry>
+                            <entry>Use common validation and terminology rules for the entire
+                                team.</entry>
+                            <entry>Use common validation and terminology rules for the entire
+                                team.</entry>
+                            <entry>Use common validation and terminology rules for the entire
+                                team.</entry>
+                        </row>
+                        <row>
+                            <entry>Create custom vocabulary of semantic elements.</entry>
+                            <entry>Useful to add specific semantic meaning to content specific for
+                                the company.</entry>
+                            <entry>Useful to add specific semantic meaning to content specific for
+                                the company.</entry>
+                            <entry>Useful to add specific semantic meaning to content specific for
+                                the company.</entry>
+                        </row>
+                        <row>
+                            <entry>Besides web-based outputs, produce PDFs with a relatively high
+                                degree of control over the PDF customization.</entry>
+                            <entry>Useful to produce PDFs for print or online delivery.</entry>
+                            <entry>Useful to produce PDFs for print or online delivery.</entry>
+                            <entry>Useful to produce PDFs for print or online delivery.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
     </body>
 </topic>
