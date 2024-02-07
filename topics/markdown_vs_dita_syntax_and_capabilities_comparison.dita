@@ -89,6 +89,9 @@
                     <row>
                         <entry valign="top"><b>Pros</b></entry>
                         <entry valign="top">
+                            <p><xref
+                                    href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html"
+                                    format="html" scope="external">DITA XML pros and cons</xref></p>
                             <ul id="ul_s2z_q2n_twb">
                                 <li>OASIS Open standard.</li>
                                 <li>Advanced support for <xref
@@ -110,6 +113,10 @@
                                     format="html" scope="external">Pros and Cons</xref></p>
                         </entry>
                         <entry valign="top">
+                            <p><xref
+                                    href="https://stymied.medium.com/why-you-should-and-should-not-use-markdown-1b9d70987792"
+                                    format="html" scope="external">Markdown pros and
+                                cons.</xref></p>
                             <ul id="ul_lnz_vvj_5wb">
                                 <li>Large user base. Familiar to software engineers who use it to
                                     write issues.</li>
