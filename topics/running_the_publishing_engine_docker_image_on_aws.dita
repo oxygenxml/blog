@@ -60,7 +60,9 @@ sudo docker image build -t oxygen-publishing-engine:1.0 .</codeblock></dd>
                 </dlentry>
                 <dlentry>
                     <dt>Save the Oxygen Publishing Engine License to a file</dt>
-                    <dd>Save the Oxygen Publishing Engine to a file (for example, in
+                    <dd>Save the <xref href="https://www.oxygenxml.com/publishing_engine.html"
+                            format="html" scope="external">Oxygen Publishing Engine</xref> license
+                        key to a file (for example, in
                             <filepath>/home/ec2-user/licensekey.txt</filepath>).</dd>
                 </dlentry>
                 <dlentry>
