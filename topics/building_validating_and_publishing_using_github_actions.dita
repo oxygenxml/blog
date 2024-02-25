@@ -34,7 +34,7 @@
                             downloads the <b>Oxygen Publishing Engine</b>, licenses it, produces the
                             output, and stores it in a specific folder.</li>
                         <li>Create a custom <xref
-                                href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/publish.yml"
+                                href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/publish_netlify.yml"
                                 format="yml" scope="external">GitHub action</xref> that runs the
                             build file and then uses a plugin to upload the entire folder to the
                             Netlify web site. The end result looks like this: <xref
