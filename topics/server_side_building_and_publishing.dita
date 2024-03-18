@@ -96,4 +96,11 @@
                 </dlentry>
             </dl></p>
     </body>
+    <related-links>
+        <link
+            href="https://www.oxygenxml.com/events/2020/webinar_introducing_the_oxygen_publishing_engine_for_dita.html"
+            format="html" scope="external">
+            <linktext>Webinar: Introducing the Oxygen Publishing Engine for DITA</linktext>
+        </link>
+    </related-links>
 </topic>

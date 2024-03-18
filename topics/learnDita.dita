@@ -95,6 +95,35 @@
         format="html" scope="external">CSS-based PDF publishing</xref> which is free to use from <ph
         keyref="oxygen"/>. There are also a number of different choices to obtain PDF from DITA:
         <xref href="ditaToPDF.dita"/>.</p>
+            <p>We have a series of past webinar recordings about customizing the published output:<ul>
+                    <li>Transforming DITA documents to PDF using CSS<ul>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2021/webinar_transforming_dita_documents_to_pdf_part_1.html"
+                                    format="html" scope="external">Part 1 – Page Definitions, Cover
+                                    Page and PDF Metadata</xref></li>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2022/webinar_transforming_dita_documents_to_pdf_using_css_part_2.html"
+                                    format="html" scope="external">Part 2 – Book design, Pagination,
+                                    Page Layout and Bookmarks</xref></li>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2022/webinar_transforming_dita_documents_to_pdf_using_css_part_3.html"
+                                    format="html" scope="external">Part 3 – Advanced Fonts
+                                    Usage</xref></li>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2023/webinar_transforming_dita_documents_to_pdf_using_css_part_4.html"
+                                    format="html" scope="external">Part 4 – Advanced CSS
+                                    Rules</xref></li>
+                        </ul></li>
+                    <li><xref
+                            href="https://www.oxygenxml.com/events/2022/webinar_techniques_for_customizing_the_webhelp_responsive_output.html"
+                            format="html" scope="external">Techniques for Customizing the WebHelp
+                            Responsive Output</xref></li>
+                    <li><xref
+                            href="https://www.oxygenxml.com/events/2022/webinar_using_oxygen_styles_basket_to_create_css_customization_from_scratch.html"
+                            format="html" scope="external">Using Oxygen Styles Basket to Create CSS
+                            Customization from Scratch</xref></li>
+                </ul>And if you are interested in server side building and publishing this topic
+                might be useful:<xref href="server_side_building_and_publishing.dita"/>.</p>
     </section>
     <section id="section_rqq_nhj_4jb">
       <title>Courses for learning DITA with <ph keyref="oxygen"/></title>
