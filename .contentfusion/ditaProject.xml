@@ -21,4 +21,9 @@
         <output href="pdf-output"/>
         <publication idref="pdf"/>
     </deliverable>
+    <deliverable id="d-HTML_dita_project-1711032569239" name="HTML dita project">
+        <context idref="HIDareEFVgIinHY"/>
+        <output href="webhelp-output"/>
+        <publication idref="webhelp"/>
+    </deliverable>
 </project>
