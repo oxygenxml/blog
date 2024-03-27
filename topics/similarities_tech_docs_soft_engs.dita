@@ -61,6 +61,17 @@
                                 developers when they work in developing the messages in the
                                 application.</entry>
                         </row>
+                        <row>
+                            <entry>Balance between Time and Impact</entry>
+                            <entry>Time is a precious commodity, as an engineer I need to make the
+                                best of the time I have allocated in order to implement a certain
+                                feature or functionality or to refactor content. If time does not
+                                allow me to perform a full redesign of a certain functionality I can
+                                still gradually improve it.</entry>
+                            <entry>The tech docs writer may also not have enough time to refactor
+                                for example the entire project in a certain way but can gradually
+                                work towards a certain direction.</entry>
+                        </row>
                         <row valign="top" id="row_xyb_4xw_dzb">
                             <entry id="entry_czh_qcx_dzb">Building Complex Systems from Basic
                                 Building Blocks</entry>
