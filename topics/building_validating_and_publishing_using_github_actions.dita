@@ -47,15 +47,15 @@
                     <li>In the GitHub project's <b>Settings->Secrets and variables->Actions</b> category, define variables to store the S3 bucket name, region, access key ID, and secret access key. Also, create a secret for the <b>Oxygen Publishing Engine</b> license key.</li>
                     <li>Create a custom <xref
                                 href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle"
-                                format="gradle" scope="external">Gradle build file</xref> build file
-                            that downloads the <b>Oxygen Publishing Engine</b>, licenses it,
-                            produces the output, and stores it in a specific folder.</li>
+                                format="gradle" scope="external">Gradle build file</xref> that
+                            downloads the <b>Oxygen Publishing Engine</b>, licenses it, produces the
+                            output, and stores it in a specific folder.</li>
                     <li>Create a <b>GitHub</b> action that runs the build file and then uses the <xref href="https://github.com/aws-actions/configure-aws-credentials" format="html" scope="external">aws-actions/configure-aws-credentials</xref> action to configure the AWS credentials, followed by the <xref href="https://github.com/aws-actions/s3-sync" format="html" scope="external">aws-actions/s3-sync</xref> action to sync the output folder with the S3 bucket.</li>
                 </ol></li>
                 <li>Validate the entire DITA project using the Oxygen <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html"
                         format="html" scope="external"><b>Validate and Check for
-                        Completeness</b></xref> command line script:<ol id="ul_xzd_n5t_21c">
+                        Completeness</b></xref> command-line script:<ol id="ul_xzd_n5t_21c">
                         <li>In the GitHub project's <b>Settings->Secrets and variables->Actions</b>
                             category, define a variable named <codeph>SCRIPTING_LICENSE_KEY</codeph>
                             that has the Oxygen scripting license key as its value.</li>
