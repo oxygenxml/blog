@@ -131,7 +131,7 @@
                                     project I'm working on to copy/paste instead of reusing. </p>
                                 <p>I may prefer copy/pasting for example in order not to introduce
                                     dependencies between modules or when using incompatible data
-                                    formats.</p>
+                                    formats. Or if I plan to alter the content in certain ways.</p>
                                 <p>I may create auto tests to notify you when the source of truth
                                     has changed.</p>
                             </entry>
