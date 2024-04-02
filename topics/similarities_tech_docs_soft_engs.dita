@@ -124,6 +124,21 @@
                                                 Guide</xref></li>
                                     </ul></p></entry>
                         </row>
+                        <row>
+                            <entry>Copy/Paste vs Reuse</entry>
+                            <entry>
+                                <p>Sometimes I may decide that it's in the best interest of the
+                                    project I'm working on to copy/paste instead of reusing. </p>
+                                <p>I may prefer copy/pasting for example in order not to introduce
+                                    dependencies between modules or when using incompatible data
+                                    formats.</p>
+                                <p>I may create auto tests to notify you when the source of truth
+                                    has changed.</p>
+                            </entry>
+                            <entry>It's best to reuse as much as possible but sometimes the writer
+                                may decide that copy/pasting and then maybe making small adjustments
+                                is a better decision.</entry>
+                        </row>
                         <row valign="top" id="row_azb_4xw_dzb">
                             <entry id="entry_gzh_qcx_dzb">Custom Validation Rules</entry>
                             <entry>We have various automatic tools (like <b id="b_rpq_pw4_dzb"
