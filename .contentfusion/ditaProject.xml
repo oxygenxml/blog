@@ -3,9 +3,6 @@
     <context id="HIDareEFVgIinHY" name="Blog New 2">
         <input href="../blog-project.xml"/>
     </context>
-    <context id="MMNkejvXRfgDocA" name="Blog New">
-        <input href="../oxygen_xml_blog.ditamap"/>
-    </context>
     <context id="IukfVpqKsJWNBFd" name="Blog">
         <input href="../oxygen_xml_blog.ditamap"/>
     </context>
