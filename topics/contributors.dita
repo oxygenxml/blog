@@ -63,6 +63,10 @@
                         <entry>Alex Smarandache</entry>
                         <entry>Software Developer. <ph keyref="oxygen"/></entry>
                     </row>
+                    <row>
+                        <entry>Stefan Vasile</entry>
+                        <entry>CEO. <ph keyref="oxygen"/></entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>
