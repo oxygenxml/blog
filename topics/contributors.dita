@@ -67,6 +67,10 @@
                         <entry>Stefan Vasile</entry>
                         <entry>CEO. <ph keyref="oxygen"/></entry>
                     </row>
+                    <row>
+                        <entry>Alin Belu</entry>
+                        <entry>Marketing Specialist. <ph keyref="oxygen"/></entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>
