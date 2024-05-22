@@ -283,6 +283,10 @@ h3.followit{
     background-image: url("resources/images/foto-CosminD.jpg");
 }
 
+.author.Stefan_Vasile{
+    background-image: url("resources/images/foto-StefanV.png");
+}
+
 .wh_logo + .wh_publication_title{
     margin-top: 0.3em;
 }
