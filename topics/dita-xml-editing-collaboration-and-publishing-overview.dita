@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita-xml-editing-collaboration-and-publishing-overview">
+    <title>DITA XML Editing, Collaboration and Publishing Overview</title>
+    <shortdesc>This is an overview of the possibilities Oxygen XML offers to edit DITA XML content,
+        reuse, profile, review and and publish to various output formats like WebHelp Responsive and
+        CSS-based PDF. </shortdesc>
+    <prolog>
+        <author>Radu Coravu</author>
+        <!--<critdates>
+            <created date="2024-05-29"/>
+        </critdates>-->
+    </prolog>
+    <body>
+        <section id="section_gss_p5g_4bc">
+            <title>General Application Capabilities</title>
+            <p>An overview of the application and its DITA XML editing support can be found here:
+                    <xref href="oxygen-dita-strong-points.dita"/>.</p>
+            <p>
+                <ul id="ul_obb_yyg_4bc">
+                    <li>Permanent user based licensing.</li>
+                    <li>Cross platform availability.</li>
+                    <li>Complete DITA XML editing, review and publishing support.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="section_srq_s5g_4bc">
+            <title>DITA Maps Manager</title>
+            <p>The <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-maps-manager.html"
+                    format="html" scope="external">DITA Maps Manager</xref> view allows editing,
+                validating, making project-wide changes and publishing.<ul id="ul_rkw_szg_4bc">
+                    <li>Create new topics and refer to them.</li>
+                    <li>Update, move or delete existing topic references.</li>
+                    <li>Batch Project- wide Operations:<ul id="ul_d5s_n1h_4bc">
+                            <li><xref href="validateCheckForCompletness.dita">Validate and Check for
+                                    Completeness.</xref></li>
+                            <li>Move/rename referenced topics.</li>
+                            <li>Search references.</li>
+                            <li>Map-wide refactoring actions.</li>
+                            <li>Find/Replace in Files.</li>
+                            <li>Spell Check in Files.</li>
+                        </ul></li>
+                </ul></p>
+        </section>
+        <section id="section_tfp_v5g_4bc">
+            <title>Topic Editing</title>
+            <p>Full support to edit <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-pathfinder-structure.html"
+                    format="html" scope="external">DITA XML Topics</xref>.<ul id="ul_rfb_v1h_4bc">
+                    <li>Change Tags Visualisation Mode.</li>
+                    <li>CSS Styles drop down.</li>
+                    <li>Content Completion Window.</li>
+                    <li>Helper side views (Outline, Attributes, Elements views, DITA Reusable
+                        Components).</li>
+                    <li>Menu/Contextual Menu and Toolbar with DITA specific actions:<ul
+                            id="ul_jkd_y1h_4bc">
+                            <li>Insert links.</li>
+                            <li>Content Reuse.</li>
+                            <li>Edit Profiling Attributes.</li>
+                            <li>Work with tables.</li>
+                            <li>Insert references image and media resources.</li>
+                            <li>Insert lists, paragraph, bold/italic/underline styling.</li>
+                        </ul></li>
+                    <li>Multiple ways to insert links and content references using copy/paste, drag
+                        and drop.</li>
+                </ul></p>
+        </section>
+        <section id="section_rx1_q5g_4bc">
+            <title>Content Reuse</title>
+            <p>The DITA XML standard has lots of <xref
+                    href="../presentation-reuse/introduction.dita">content reuse</xref>
+                capabilities. Oxygen allows you to utilize the <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-pathfinder-reuse.html"
+                    format="html" scope="external">full potential</xref> of the DITA 1.3
+                    standard:<ul id="ul_tpw_qch_4bc">
+                    <li>Reuse product names using key definitions with keywords.</li>
+                    <li>Reuse XML elements in multiple places.</li>
+                    <li>Reuse ranges of XML elements.</li>
+                    <li>Push reusable content in target topics.</li>
+                    <li>Reuse entire DITA XML topics in multiple parts of the DITA Map.</li>
+                    <li>Use DITA 1.3 key scopes to reuse topics with variable content in various
+                        contexts.</li>
+                </ul></p>
+            <p>UI capabilities to insert reusable content:<ul id="ul_dss_bdh_4bc">
+                    <li><b>DITA Maps Manager</b> -> <b>Insert Key Definition with Keyword</b>.</li>
+                    <li>DITA XML topic editing toolbar with possibilities to reuse content.</li>
+                    <li>Using special paste to paste content references in topics.</li>
+                    <li>The <b>DITA Reusable Components</b> side view.</li>
+                    <li>Content Completion actions to insert reusable content.</li>
+                </ul></p>
+        </section>
+        <section id="section_yvh_q5g_4bc">
+            <title>Profiling/Filters</title>
+            <p><xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-profiling-conditional-text.html"
+                    format="html" scope="external">Profiling capabilities</xref> allow generating
+                multiple similar user manuals from the same DITA XML content.</p>
+            <p>With Oxygen you can:<ul id="ul_ykp_qgh_4bc">
+                    <li>Define values for the DITA profiling attributes and they can be easily
+                        managed to filter content in the published output.</li>
+                    <li>Switch between profile sets to see how the edited content looks like before
+                        publishing.</li>
+                </ul></p>
+        </section>
+        <section id="section_mkk_dvg_4bc">
+            <title>Project-wide Refactoring</title>
+            <p>The <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-main-files.html"
+                    format="html" scope="external"><b>Main Files</b></xref> support in the Oxygen
+                    <b>Project</b> view allows powerful refactoring operations:<ul
+                    id="ul_n4l_zgh_4bc">
+                    <li>Move or rename either one or multiple files.</li>
+                    <li>Change directory names or move entire directories.</li>
+                </ul></p>
+        </section>
+        <section id="section_ypb_dxg_4bc">
+            <title>Validation, Structure and Terminology Checks</title>
+            <p>The <xref href="validateCheckForCompletness.dita">Validate and Check For
+                    Completeness</xref> tool available in the <b>DITA Maps Manager</b> view performs
+                dozens of useful validation checks starting from a DITA map or from a DITA Open
+                Toolkit project:<ul>
+                    <li>Validate each map and topic according to the standard schemas.</li>
+                    <li>Validate each map and topic with a custom set Schematron schema.</li>
+                    <li>Check for broken links.</li>
+                    <li>Check for profiling/filter problems.</li>
+                    <li>and so much more....</li>
+                </ul><xref href="SchematronBCs.dita">Schematron checks</xref> with quick fixes can
+                be added to report structural problems.</p>
+            <p>The integrated spell checker and the <xref
+                    href="checking_terminology_with_oxygen_xml_editor.dita">Terminology
+                    Checker</xref> add-on can be used to check for content-related problems.</p>
+        </section>
+        <section id="section_mv3_xgh_4bc">
+            <title>Migration from Other Formats</title>
+            <p>You can use the smart paste support or the Oxygen Batch Documents Converter add-on to
+                    <xref href="migrating_to_dita.dita">migrate various document formats</xref> to
+                DITA XML.</p>
+            <p>On the fly conversions are also available for Markdown, OpenAPI or Word documents
+                referenced directly in a DITA Map.</p>
+        </section>
+        <section id="section_dsz_w5g_4bc">
+            <title>Framework Customizations</title>
+            <p/>
+        </section>
+        <section id="section_myn_1yg_4bc">
+            <title>Useful Add-ons</title>
+            <p>The Oxygen default add-ons repository offers a variety of <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/add-ons.html" format="html"
+                    scope="external">useful add-ons</xref> among which the following can be
+                    mentioned:<ul id="ul_e2k_13h_4bc">
+                    <li>Git Client add-on - Connect to Git repositories.</li>
+                    <li>Content Fusion connector - Allow SMEs to review technical documentation
+                        content directly in a web broser.</li>
+                    <li>Batch Documents Converter - Convert from various formats like MS Word,
+                        DocBook, Markdown, XHTML to DITA XML.</li>
+                    <li>Terminology Checker - Check for terminology related problems.</li>
+                    <li>Fluenta DITA Translation Add-on - Use the Fluenta third party library to
+                        create XLiff exports from DITA Maps and to import DITA Maps from translated
+                        XLiff files.</li>
+                    <li>Oxygen AI Positron Assistant.</li>
+                </ul></p>
+        </section>
+        <section id="section_k5r_1vg_4bc">
+            <title>Review</title>
+            <p/>
+        </section>
+        <section id="section_yjg_cyg_4bc">
+            <title>Translate</title>
+            <p/>
+        </section>
+        <section id="section_dkz_bvg_4bc">
+            <title>Publishing</title>
+            <p/>
+        </section>
+    </body>
+</topic>
