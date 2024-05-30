@@ -209,13 +209,21 @@
             <title>Review</title>
             <p>People can give feedback on the written technical documentation in various ways:<ul
                     id="ul_hbg_blh_4bc">
-                    <li>Review directly in the Oxygen desktop application:<ul id="ul_ysx_blh_4bc">
+                    <li>Internal <xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/author-change-tracking.html"
+                            format="html" scope="external">review</xref> directly in the Oxygen
+                        desktop application:<ul id="ul_ysx_blh_4bc">
                             <li>Use change tracking to make changes to existing content or to
                                 accept/reject changes.</li>
                             <li>Use the comments support to add comments, reply to comments or
-                                resolve.</li>
+                                resolve them.</li>
                         </ul></li>
-                    <li>Review content using the Content Fusion platform.</li>
+                    <li>Internal review content using the <xref
+                            href="https://www.oxygenxml.com/content_fusion.html" format="html"
+                            scope="external">Content Fusion</xref> platform.</li>
+                    <li>Internal or external review by publishing to WebHelp Responsive output and
+                        using the <xref href="https://www.oxygenxml.com/oxygen_feedback.html"
+                            format="html" scope="external">Feedback platform</xref>.</li>
                 </ul></p>
         </section>
         <section id="section_yjg_cyg_4bc">
