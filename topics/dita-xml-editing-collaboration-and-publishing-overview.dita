@@ -7,9 +7,9 @@
         CSS-based PDF. </shortdesc>
     <prolog>
         <author>Radu Coravu</author>
-        <!--<critdates>
+        <critdates>
             <created date="2024-05-29"/>
-        </critdates>-->
+        </critdates>
     </prolog>
     <body>
         <section id="section_gss_p5g_4bc">
@@ -228,11 +228,33 @@
         </section>
         <section id="section_yjg_cyg_4bc">
             <title>Translate</title>
-            <p/>
+            <p>Oxygen has support to:<ul id="ul_dhr_cgn_4bc">
+                    <li>Export from the <b>DITA Maps Manager</b> view a DITA Map as a zip in order
+                        to provide it to a translation agency.</li>
+                    <li>Fluenta DITA Translation Add-on - Use the Fluenta third party library to
+                        create XLiff exports from DITA Maps and to import DITA Maps from translated
+                        XLiff files.</li>
+                </ul></p>
+            <p>An in depth article about translation: <xref
+                    href="translating_your_dita_project.dita"/></p>
         </section>
         <section id="section_dkz_bvg_4bc">
             <title>Publishing</title>
-            <p/>
+            <p>Oxygen's bundled <b>Oxygen Publishing Engine</b> based on the <b>DITA Open
+                    Toolkit</b> open source project allows publishing DITA XML content to <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/author-dita-map-transformation-scenarios-2.html"
+                    format="html" scope="external">various outputs</xref> like <b>WebHelp
+                    Responsive</b>, <b>PDF (CSS customization based)</b>, <b>PDF (XSL-FO
+                    customization based)</b>, MS Word, EPUB, Windows Help, Markdown and other.</p>
+            <p>The <b>WebHelp Responsive</b> and <b>PDF (CSS customization based)</b> outputs can be
+                customized by creating publishing templates:<ul id="ul_cns_shn_4bc">
+                    <li>By using the <xref href="https://www.oxygenxml.com/styles_basket.html"
+                            format="html" scope="external">Oxygen Styles Basket Web
+                        Site</xref>.</li>
+                    <li>By using the user's guide articles and samples to customise the CSSs: <xref
+                            href="learnDita.dita#learnDita/section_ufb_ngj_2v"/>.</li>
+                </ul></p>
+            <p>Some more articles about publishing customizations: <xref keyref="publishing"/>.</p>
         </section>
     </body>
 </topic>

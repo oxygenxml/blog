@@ -3,6 +3,7 @@
 <map>
     <title>DITA Articles</title>
     <topichead navtitle="DITA">
+        <topicref href="../topics/dita-xml-editing-collaboration-and-publishing-overview.dita"/>
         <topicref keys="learning" href="../topics/learningDITAGeneral.dita">
             <topicref href="../topics/learnDita.dita">
                 <topichead navtitle="Learn DITA Editing with Oxygen with Small Clips">
