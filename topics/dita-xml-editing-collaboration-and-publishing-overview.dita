@@ -13,16 +13,20 @@
     </prolog>
     <body>
         <section id="section_gss_p5g_4bc">
-            <title>General Application Capabilities</title>
-            <p>An overview of the application and its DITA XML editing support can be found here:
-                    <xref href="oxygen-dita-strong-points.dita"/>.</p>
+            <title>Overview</title>
+            <p>An overview of the application's DITA XML editing support can be found here: <xref
+                    href="oxygen-dita-strong-points.dita"/>. Some of the strong points:</p>
             <p>
                 <ul id="ul_obb_yyg_4bc">
                     <li>Permanent user based licensing.</li>
                     <li>Cross platform availability.</li>
                     <li>Complete DITA XML editing, review and publishing support.</li>
+                    <li> Great technical support.</li>
                 </ul>
             </p>
+            <p>Some frequently asked questions about the overall solution, which companies can
+                benefit from using it and how the solution is usually purchased can be found here:
+                    <xref href="oxygen_xml_as_a_technical_documentation_solution_faq.dita"/>.</p>
         </section>
         <section id="section_srq_s5g_4bc">
             <title>DITA Maps Manager</title>
@@ -133,15 +137,35 @@
         </section>
         <section id="section_mv3_xgh_4bc">
             <title>Migration from Other Formats</title>
-            <p>You can use the smart paste support or the Oxygen Batch Documents Converter add-on to
-                    <xref href="migrating_to_dita.dita">migrate various document formats</xref> to
-                DITA XML.</p>
-            <p>On the fly conversions are also available for Markdown, OpenAPI or Word documents
-                referenced directly in a DITA Map.</p>
+            <ul id="ul_ghb_sjh_4bc">
+                <li>You can use the smart paste support to convert MS Word or Web content to DITA
+                    XML content on paste.</li>
+                <li>Or you can use the Oxygen Batch Documents Converter add-on to <xref
+                        href="migrating_to_dita.dita">migrate various document formats</xref> to
+                    DITA XML.</li>
+                <li>Dynamic on the fly conversions are also available for <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dynamically_convert_word_excel_html_markdown_to_dita.html"
+                        format="html" scope="external">Markdown, OpenAPI or Word</xref> documents
+                    referenced directly in a DITA Map.</li>
+            </ul>
         </section>
         <section id="section_dsz_w5g_4bc">
             <title>Framework Customizations</title>
-            <p/>
+            <p>Customize the overall <xref href="author-document-type-extension-sharing.dita">DITA XML editing</xref> functionality by:<ul id="ul_y34_wjh_4bc">
+                    <li>Adding new actions in the DITA specific menus and toolbars.</li>
+                    <li>Remove existing actions.</li>
+                    <li>Customize the <xref href="custom-author-action-content-completion.dita"
+                            >content completion window</xref> to add or remove entries.</li>
+                    <li>Customize the <xref href="customizeDITACSS.dita">visual editing</xref> using
+                        your custom CSS.</li>
+                    <li>Use your own <xref
+                            href="author-document-type-extension-sharing-custom-new-file-templates.dita"
+                            >new file templates</xref>.</li>
+                    <li>Add custom validation stages using custom schemas or <xref
+                            href="sharing_schematron_validation_rules.dita">Schematron
+                        checks</xref>.</li>
+                    <li>and much more...</li>
+                </ul></p>
         </section>
         <section id="section_myn_1yg_4bc">
             <title>Useful Add-ons</title>
@@ -163,7 +187,16 @@
         </section>
         <section id="section_k5r_1vg_4bc">
             <title>Review</title>
-            <p/>
+            <p>People can give feedback on the written technical documentation in various ways:<ul
+                    id="ul_hbg_blh_4bc">
+                    <li>Review directly in the Oxygen desktop application:<ul id="ul_ysx_blh_4bc">
+                            <li>Use change tracking to make changes to existing content or to
+                                accept/reject changes.</li>
+                            <li>Use the comments support to add comments, reply to comments or
+                                resolve.</li>
+                        </ul></li>
+                    <li>Review content using the Content Fusion platform.</li>
+                </ul></p>
         </section>
         <section id="section_yjg_cyg_4bc">
             <title>Translate</title>
