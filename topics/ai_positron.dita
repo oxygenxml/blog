@@ -21,9 +21,9 @@
   </prolog>
   <body>
     <p>This article is intended to be a general overview of the <b>Oxygen AI Positron Assistant</b>
-      add-on installation, licensing and functionality. </p>
-    <p>We've envisioned this add-on as a way to offer you a personal assistant containing useful
-      actions for checking content (readability, grammar), translating, explaining and creating
+      add-on installation, licensing, and functionality. </p>
+    <p>We've envisioned this add-on as a way to offer you a personal assistant that contains useful
+      actions for checking content (readability, grammar), translating, explaining, and creating
       overviews.</p>
     <object width="560" height="315"
       data="https://www.youtube.com/embed/Do_KWYZfCFg?si=2Mrm7Bh1pmPvehqV" outputclass="iframe">
@@ -36,17 +36,17 @@
             <li>
               <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html"
                   format="html" scope="external">AI Positron Assistant add-on</xref>.</p>
-              <p>This add-on works through a subscription based model using the <xref
+              <p>This add-on works through a subscription-based model using the <xref
                   href="https://www.oxygenxml.com/aipositron/user_terms.html" format="html"
-                  scope="external">Oxygen Positron Service</xref> platform which uses in turn the
+                  scope="external">Oxygen Positron Service</xref> platform, which in turn uses the
                 OpenAI API and functionality. </p>
               <p>Users can create new subscription accounts or authenticate using their existing
                   <b>Google</b> or <b>Github</b> accounts. The first subscription month is free and
                 a <xref href="https://www.oxygenxml.com/ai_positron/buy.html#ai-positron-service"
-                  format="html" scope="external">monthly subscription</xref> can be bought in order
-                to benefit of a number of credits each month.</p>
-              <p>You can control from the Preferences page the AI engine to be used by default for
-                performing actions and for chatting.</p>
+                  format="html" scope="external">monthly subscription</xref> can be purchased to
+                receive a number of credits each month.</p>
+              <p>You can control which AI engine is used by default for performing actions and for
+                chatting. This can be done from the Preferences page.</p>
             </li>
             <li>
               <p><xref
@@ -58,11 +58,11 @@
                     OpenAI-compatible servers like <b>Ollama</b>.</li>
                   <li>Microsoft Azure Open AI - Connect to an Open AI instance hosted as a virtual
                     machine on Microsoft Azure.</li>
-                  <li>Anthropic Claude - connect to Anthropic Claude using your own key.</li>
+                  <li>Anthropic Claude - Connect to Anthropic Claude using your own key.</li>
                 </ul></p>
-              <p>From the licensing point of view the <b>AI Positron Assistant Enterprise</b> add-on
-                works free of charge with any Oxygen XML Editor installation using an
-                  <b>Enterprise</b> license type for Oxygen XML Editor. For all other cases <xref
+              <p>From the licensing point of view, the <b>AI Positron Assistant Enterprise</b>
+                add-on works free of charge with any Oxygen XML Editor installation using an
+                  <b>Enterprise</b> license type for Oxygen XML Editor. For other cases, <xref
                   href="https://www.oxygenxml.com/ai_positron/buy.html?licenseType=enterprise#ai-positron-enterprise"
                   format="html" scope="external">a special license key</xref> needs to be purchased
                 for the add-on to enable this direct access. You can use the Register button in the
@@ -70,22 +70,22 @@
             </li>
           </ul></li>
         <li><xref href="https://www.oxygenxml.com/doc/ug-webauthor/topics/wa-ai-positron.html"
-            format="html" scope="external">Oxygen Web Author</xref> also allows installing an <b>AI
-            Positron Assistant</b> plugin with similar functionality as the one in Oxygen Desktop.
-          Currently the <xref href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
-            format="html" scope="external">WebAuthor</xref> and <xref
-            href="https://fusion.oxygenxml.com/" format="html" scope="external">Content
-            Fusion</xref> online demo websites come with the AI Positron add-on pre-installed. In
-          the near future an <xref
+            format="html" scope="external">Oxygen XML Web Author</xref> also allows installing an
+            <b>AI Positron Assistant</b> plugin with similar functionality as the one in the Oxygen
+          Desktop application. Currently, the <xref
+            href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html" format="html"
+            scope="external">WebAuthor</xref> and <xref href="https://fusion.oxygenxml.com/"
+            format="html" scope="external">Content Fusion</xref> online demo websites come with the
+          AI Positron add-on pre-installed. In the near future, an <xref
             href="https://www.oxygenxml.com/ai_positron/installation.html#oxygen-ai-positron-assistant-enterprise-for-web-author"
             format="html" scope="external"><b>AI Positron Assistant Enterprise</b></xref> plugin
-          will allow using either a license server or a special WebAuthor license component to
+          will allow using either a license server or a special Web Author license component to
           configure a custom AI engine. </li>
       </ul>
     </section>
     <section id="section_qwd_mbv_4bc">
       <title>Integration and Features Overview</title>
-      <p>After installing the add-on the following features are available in the Oxygen desktop:<ul
+      <p>After installing the add-on, the following features are available in the Oxygen desktop:<ul
           id="ul_b43_ldv_4bc">
           <li><xref
               href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_a3d_sgl_4xb"
@@ -94,11 +94,11 @@
               <li>Invoke various actions to generate and re-write content using AI.</li>
               <li><b>Chat</b> with the AI.</li>
               <li>A <b>History</b> list of previous interactions.</li>
-              <li>A <b>Favorites</b> drop down list and a way to mark inputs as favorites.</li>
-              <li>An <b>Attach</b> button to attach images or XML, text resources to the chat
+              <li>A <b>Favorites</b> drop-down list and a way to mark inputs as favorites.</li>
+              <li>An <b>Attach</b> button to attach images or XML text resources to the chat
                 message.</li>
             </ul></li>
-          <li><b>AI</b> main menu entry with support to invoke actions or to go to the add-ons
+          <li><b>AI</b> main menu entry with support to invoke actions or to go to the add-on's
             preferences page.</li>
           <li><b>AI Positron Assistant</b> contextual menu for all XML documents opened in the
               <b>Author</b> visual editing mode.</li>
@@ -114,8 +114,9 @@
           <li>The add-on contributes two <xref
               href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_j1x_jk3_qxb"
               format="html" scope="external">XPath extension functions</xref>
-            <codeph>ai:transform-content</codeph> and <codeph>ai:verify-content</codeph> that can be
-            used to rephrase content or to perform validation checks on existing content.</li>
+              (<codeph>ai:transform-content</codeph> and <codeph>ai:verify-content</codeph>) that
+            can be used to rephrase content or to perform validation checks on existing
+            content.</li>
         </ul></p>
     </section>
     <section id="section_hph_m3v_4bc">
@@ -123,8 +124,8 @@
       <p>Once you log in to the server, a <xref
           href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_utc_twz_1xb"
           format="html" scope="external">set of predefined actions</xref> are available, grouped in
-        categories: <b>Accessibility</b>, <b>Content Generation</b>, , <b>Development</b>,
-          <b>Rewrite</b>, <b>Overview</b>, <b>Marketing</b> and <b>Translation</b>. The <xref
+        categories: <b>Accessibility</b>, <b>Content Generation</b>, <b>Development</b>,
+          <b>Rewrite</b>, <b>Overview</b>, <b>Marketing</b>, and <b>Translation</b>. The <xref
           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/README.md"
           format="html" scope="external">AI Positron Assistant Samples Playground</xref> samples
         project contains useful samples to test the functionality of these actions.</p>
@@ -154,7 +155,7 @@
         to translate multiple DITA topics into a certain language or apply the <uicontrol>Correct
           Grammar</uicontrol> or <uicontrol>Improve Readability</uicontrol> actions on multiple
         resources.</p>
-      <p>In addition <b>XML Refactoring</b> actions based on XSLT or XQuery can use the XPath
+      <p>In addition, <b>XML Refactoring</b> actions based on XSLT or XQuery can use the XPath
         extension functions added by the add-on to perform batch changes in XML documents. Some
         examples can be found in the <xref
           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/XML%20Refactoring"
