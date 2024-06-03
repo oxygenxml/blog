@@ -15,7 +15,9 @@
         <section id="section_gss_p5g_4bc">
             <title>Overview</title>
             <p>You can find an overview of the application's DITA XML editing support here: <xref
-                    href="oxygen-dita-strong-points.dita"/>. Here are some of the key features:</p>
+                    href="oxygen-dita-strong-points.dita"/>
+            </p>
+            <p>Here are some of the key features:</p>
             <p>
                 <ul id="ul_obb_yyg_4bc">
                     <li>Permanent user-based licensing.</li>
@@ -35,11 +37,11 @@
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-maps-manager.html"
                     format="html" scope="external">DITA Maps Manager</xref> view allows editing,
                 validating, making project-wide changes and publishing.<ul id="ul_rkw_szg_4bc">
-                    <li>Create new topics and refer to them either one by one or by using the
-                            <b>Fast Create Topics</b> action.</li>
+                    <li>Create new topics and references to them either individually or in bulk by
+                        using the <b>Fast Create Topics</b> action.</li>
                     <li>Project- wide Operations:<ul id="ul_d5s_n1h_4bc">
                             <li>Search references.</li>
-                            <li>Rename, move or delete existing topic references.</li>
+                            <li>Rename, move, or delete existing topic references.</li>
                             <li><xref href="validateCheckForCompletness.dita">Validate and Check for
                                     Completeness.</xref></li>
                             <li>Map-wide XML refactoring actions.</li>
@@ -89,7 +91,7 @@
                     <li>Reuse XML elements in multiple places.</li>
                     <li>Reuse ranges of XML elements.</li>
                     <li>Push reusable content into target topics.</li>
-                    <li>Reuse entire DITA XML topics in various parts of the DITA Map.</li>
+                    <li>Reuse entire DITA XML topics in various parts of the DITA map.</li>
                     <li>Use DITA 1.3 key scopes to reuse topics with variable content in different
                         contexts.</li>
                 </ul></p>
@@ -138,14 +140,14 @@
             </ul>
         </section>
         <section id="section_ypb_dxg_4bc">
-            <title>Validation, Structure and Terminology Checks</title>
+            <title>Validation, Structure, and Terminology Checks</title>
             <ul>
                 <li>The <xref href="validateCheckForCompletness.dita">Validate and Check For
                         Completeness</xref> tool available in the <b>DITA Maps Manager</b> view
                     performs dozens of useful validation checks starting from a DITA map or from a
                     DITA Open Toolkit project:<ul>
                         <li>Validate each map and topic according to the standard schemas.</li>
-                        <li>Validate each map and topic with a custom set Schematron schema.</li>
+                        <li>Validate each map and topic with a custom Schematron schema.</li>
                         <li>Check for broken links.</li>
                         <li>Check for profiling/filter problems.</li>
                         <li>and so much more....</li>
@@ -206,7 +208,7 @@
                     <li>Terminology Checker - Checks for terminology-related issues in your
                         content.</li>
                     <li>Fluenta DITA Translation Add-on - Uses the Fluenta third-party library to
-                        create XLIFF exports from DITA Maps and import DITA Maps from translated
+                        create XLIFF exports from DITA maps and import DITA maps from translated
                         XLIFF files.</li>
                     <li>Oxygen AI Positron Assistant - Provides AI-powered assistance for content
                         creation and editing.</li>
@@ -237,10 +239,10 @@
         <section id="section_yjg_cyg_4bc">
             <title>Translate</title>
             <p>Oxygen provides support for:<ul id="ul_dhr_cgn_4bc">
-                    <li>Exporting a DITA Map as a zip file from the <b>DITA Maps Manager</b> view,
+                    <li>Exporting a DITA map as a zip file from the <b>DITA Maps Manager</b> view,
                         which can be sent to a translation agency.</li>
                     <li>Using the Fluenta DITA Translation Add-on, a third-party library, to
-                        generate XLiff exports from DITA Maps and import DITA Maps from translated
+                        generate XLiff exports from DITA maps and import DITA maps from translated
                         XLiff files.</li>
                 </ul></p>
             <p>For a more detailed explanation of the translation process, please refer to the
@@ -249,7 +251,7 @@
         <section id="section_dkz_bvg_4bc">
             <title>Publishing</title>
             <p>Oxygen comes with a built-in <b>Oxygen Publishing Engine</b> that is based on the
-                    <b>DITA Open Toolkit</b> open source project. This engine allows you to publish
+                    <b>DITA Open Toolkit</b> open-source project. This engine allows you to publish
                 DITA XML content to <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/author-dita-map-transformation-scenarios-2.html"
                     format="html" scope="external">various outputs</xref> such as <b>WebHelp
@@ -261,8 +263,8 @@
                     <li>By using the <xref href="https://www.oxygenxml.com/styles_basket.html"
                             format="html" scope="external">Oxygen Styles Basket Web
                         Site</xref>.</li>
-                    <li>By following the user's guide articles and samples to customize the CSS
-                        files: <xref href="learnDita.dita#learnDita/section_ufb_ngj_2v"/>.</li>
+                    <li>By following the user guide articles and samples to customize the CSS files:
+                            <xref href="learnDita.dita#learnDita/section_ufb_ngj_2v"/>.</li>
                 </ul></p>
             <p>For more information about publishing customizations, see the following articles:
                     <xref keyref="publishing"/>.</p>
