@@ -3,8 +3,9 @@
 <topic id="dita-xml-editing-collaboration-and-publishing-overview">
     <title>DITA XML Editing, Collaboration and Publishing Overview</title>
     <shortdesc>Oxygen XML provides a wide range of features for editing, reusing, profiling,
-        reviewing, and publishing DITA XML content. You can create various output formats, such as
-        responsive WebHelp and PDF documents styled with CSS.</shortdesc>
+        reviewing, and publishing DITA XML content. We strive to offer a complete editing,
+        collaboration package which is still flexible enough to be customized for a variety of use
+        cases.</shortdesc>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
@@ -55,10 +56,10 @@
                     <li>Create new topics and references to them either individually or in bulk by
                         using the <b>Fast Create Topics</b> action.</li>
                     <li>Project- wide Operations:<ul id="ul_d5s_n1h_4bc">
-                            <li>Search references.</li>
-                            <li>Rename, move, or delete existing topic references.</li>
                             <li><xref href="validateCheckForCompletness.dita">Validate and Check for
                                     Completeness.</xref></li>
+                            <li>Search references.</li>
+                            <li>Rename, move, or delete existing topic references.</li>
                             <li>Map-wide XML refactoring actions.</li>
                             <li>Find/Replace in Files.</li>
                             <li>Spell Check in Files.</li>
@@ -76,8 +77,8 @@
                     <li>Ability to change the Tags Visualization Mode.</li>
                     <li>Access to a CSS Styles drop-down menu.</li>
                     <li>Availability of a Content Completion Window.</li>
-                    <li>Helpful side views, including the Outline, Attributes, Elements views, and
-                        DITA Reusable Components.</li>
+                    <li>Helpful side views, including the <b>Outline</b>, <b>Attributes</b>,
+                            <b>Elements</b> views, and <b>DITA Reusable Components</b>.</li>
                     <li>DITA-specific actions accessible through the Menu, Contextual Menu, and
                         Toolbar, such as: <ul id="ul_jkd_y1h_4bc">
                             <li>Inserting links.</li>
@@ -181,8 +182,9 @@
                 <li>You can use the smart paste feature to convert Microsoft Word or web content
                     into DITA XML format when you paste it.</li>
                 <li>Alternatively, you can use the Oxygen Batch Documents Converter add-on to <xref
-                        href="migrating_to_dita.dita">convert various document formats</xref> to
-                    DITA XML.</li>
+                        href="migrating_to_dita.dita">convert various document formats</xref>
+                    including <b>Word</b>, <b>DocBook</b>, <b>Markdown</b>, <b>HTML</b> to <b>DITA
+                        XML</b>.</li>
                 <li>You can also perform on-the-fly conversions for <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/dynamically_convert_word_excel_html_markdown_to_dita.html"
                         format="html" scope="external">Markdown, OpenAPI, or Microsoft Word</xref>
@@ -215,18 +217,18 @@
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/add-ons.html" format="html"
                     scope="external">helpful add-ons</xref>. Some of the most notable ones
                     include:<ul id="ul_e2k_13h_4bc">
-                    <li>Git Client add-on - Allows you to connect to Git repositories.</li>
-                    <li>Content Fusion connector - Enables subject matter experts (SMEs) to review
-                        technical documentation content directly in a web browser.</li>
-                    <li>Batch Documents Converter - Converts documents from various formats such as
-                        MS Word, DocBook, Markdown, and XHTML to DITA XML.</li>
-                    <li>Terminology Checker - Checks for terminology-related issues in your
+                    <li><b>Git Client</b> add-on - Allows you to connect to Git repositories.</li>
+                    <li><b>Content Fusion Connector</b> - Enables subject matter experts (SMEs) to
+                        review technical documentation content directly in a web browser.</li>
+                    <li><b>Batch Documents Converter</b> - Converts documents from various formats
+                        such as MS Word, DocBook, Markdown, and XHTML to DITA XML.</li>
+                    <li><b>Terminology Checker</b> - Checks for terminology-related issues in your
                         content.</li>
-                    <li>Fluenta DITA Translation Add-on - Uses the Fluenta third-party library to
-                        create XLIFF exports from DITA maps and import DITA maps from translated
-                        XLIFF files.</li>
-                    <li>Oxygen AI Positron Assistant - Provides AI-powered assistance for content
-                        creation and editing.</li>
+                    <li><b>Fluenta DITA Translation</b> Add-on - Uses the Fluenta third-party
+                        library to create XLIFF exports from DITA maps and import DITA maps from
+                        translated XLIFF files.</li>
+                    <li><b>Oxygen AI Positron Assistant</b> - Provides AI-powered assistance for
+                        content creation and editing.</li>
                 </ul></p>
         </section>
         <section id="section_k5r_1vg_4bc">
@@ -249,6 +251,10 @@
                         Responsive output and using the <xref
                             href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
                             scope="external">Feedback platform</xref>.</li>
+                    <li>Review content internally or externally by publishing it to WebHelp
+                        Responsive output or PDF and using <xref
+                            href="https://www.oxygenxml.com/doc/ug-waCustom/topics/webauthor-integrate-embedded-launch.html"
+                            format="html" scope="external">edit links</xref>.</li>
                 </ul></p>
         </section>
         <section id="section_yjg_cyg_4bc">
