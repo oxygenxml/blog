@@ -31,6 +31,21 @@
                 benefit from using it, and how it is typically purchased, please see: <xref
                     href="oxygen_xml_as_a_technical_documentation_solution_faq.dita"/>.</p>
         </section>
+        <section id="section_bjv_2jx_pbc">
+            <title>Storage</title>
+            <p>Possibilities to store the DITA XML content:<ul id="ul_kl5_fjx_pbc">
+                    <li><xref href="../git-tech-writers/using_git_for_technical_writing.dita">Using
+                            a Git project.</xref>.</li>
+                    <li><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/sharepoint-connection.html"
+                            format="html" scope="external">Sharepoint</xref>.</li>
+                    <li>WebDav or eXist DB.</li>
+                    <li><xref href="https://www.oxygenxml.com/partners.html#cmssolutionpartners"
+                            format="html" scope="external">Using a commercial available
+                        CMS</xref>.</li>
+                    <li>Building your own CMS integration plugin.</li>
+                </ul></p>
+        </section>
         <section id="section_srq_s5g_4bc">
             <title>DITA Maps Manager</title>
             <p>The <xref

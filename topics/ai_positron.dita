@@ -3,9 +3,9 @@
 <topic id="ai_positron">
   <title>Oxygen AI Positron Assistant Add-on</title>
   <shortdesc>The <b>Oxygen AI Positron Assistant</b> add-on provides support for helping technical
-    documentation writers generate and re-write content. It also supports performing AI checks and
-    AI-based modifications on <b>multiple files</b> by integrating AI extensions with XML
-    technologies like <b>Schematron</b> or <b>XSLT</b>.</shortdesc>
+    documentation writers generate, re-write content, overview and research. It also supports
+    performing AI checks and AI-based modifications on <b>multiple files</b> by integrating AI
+    extensions with XML technologies like <b>Schematron</b> or <b>XSLT</b>.</shortdesc>
   <prolog>
     <author>Radu Coravu</author>
     <critdates>
@@ -95,6 +95,8 @@
               <li><b>Chat</b> with the AI.</li>
               <li>A <b>History</b> list of previous interactions.</li>
               <li>A <b>Favorites</b> drop-down list and a way to mark inputs as favorites.</li>
+              <li>The <b>Insert Editor Variables</b> drop-down list allows inserting various editor
+                variables which are expanded when the chat message is sent to the AI engine.</li>
               <li>An <b>Attach</b> button to attach images or XML text resources to the chat
                 message.</li>
             </ul></li>
