@@ -262,7 +262,7 @@
             <p>Oxygen provides support for:<ul id="ul_dhr_cgn_4bc">
                     <li>Exporting a DITA map as a zip file from the <b>DITA Maps Manager</b> view,
                         which can be sent to a translation agency.</li>
-                    <li>Using the Fluenta DITA Translation Add-on, a third-party library, to
+                    <li>Using the <b>Fluenta DITA Translation Add-on</b>, a third-party library, to
                         generate XLiff exports from DITA maps and import DITA maps from translated
                         XLiff files.</li>
                 </ul></p>
@@ -287,6 +287,9 @@
                     <li>By following the user guide articles and samples to customize the CSS files:
                             <xref href="learnDita.dita#learnDita/section_ufb_ngj_2v"/>.</li>
                 </ul></p>
+            <p>Publishing can also be configured to run <xref
+                    href="server_side_building_and_publishing.dita">server side</xref> by using the
+                Oxygen Publishing Engine.</p>
             <p>For more information about publishing customizations, see the following articles:
                     <xref keyref="publishing"/>.</p>
         </section>
