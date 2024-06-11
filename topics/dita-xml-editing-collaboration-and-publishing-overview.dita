@@ -113,7 +113,7 @@
                 </ul></p>
             <p>Oxygen provides several user interface features to insert reusable content:<ul
                     id="ul_dss_bdh_4bc">
-                    <li><b>DITA Maps Manager</b> -> <b>Insert Key Definition with Keyword</b>.</li>
+                    <li><b>DITA Maps Manager</b> -> <b>Insert Key Definition with Keyword</b></li>
                     <li>DITA XML topic editing toolbar with options to <b>Reuse Content</b>.</li>
                     <li>Using special paste to insert content references in topics.</li>
                     <li>The <b>DITA Reusable Components</b> side view.</li>
@@ -229,6 +229,9 @@
                         translated XLIFF files.</li>
                     <li><b>Oxygen AI Positron Assistant</b> - Provides AI-powered assistance for
                         content creation and editing.</li>
+                    <li><b>Oxygen Feedback Connector</b> - Provides ways to see and change (delete,
+                        accept, reject) comments offered in the Oxygen Feedback system to writers
+                        working in the desktop application.</li>
                 </ul></p>
         </section>
         <section id="section_k5r_1vg_4bc">
