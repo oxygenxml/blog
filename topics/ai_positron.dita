@@ -3,9 +3,10 @@
 <topic id="ai_positron">
   <title>Oxygen AI Positron Assistant Add-on</title>
   <shortdesc>The <b>Oxygen AI Positron Assistant</b> add-on provides support for helping technical
-    documentation writers generate, re-write content, overview and research. It also supports
-    performing AI checks and AI-based modifications on <b>multiple files</b> by integrating AI
-    extensions with XML technologies like <b>Schematron</b> or <b>XSLT</b>.</shortdesc>
+    documentation writers <b>generate</b>, <b>re-write</b> content, <b>overview</b> and
+      <b>research</b>. It also supports performing AI checks and AI-based modifications on
+      <b>multiple files</b> by integrating AI extensions with XML technologies like
+      <b>Schematron</b> or <b>XSLT</b>.</shortdesc>
   <prolog>
     <author>Radu Coravu</author>
     <critdates>
@@ -106,8 +107,8 @@
               <b>Author</b> visual editing mode.</li>
           <li><b>AI Positron Assistant</b> quick assist actions available on the left vertical
             stripe for all XML documents opened in the <b>Author</b> visual editing mode.</li>
-          <li><b>AI Positron XML Refactoring</b> actions added to the <b>Project</b> and <b>DITA
-              Maps Manager</b> views as a way to run actions on multiple files.</li>
+          <li><b>AI Positron Refactoring</b> actions added to the <b>Project</b> and <b>DITA Maps
+              Manager</b> views as a way to run actions on multiple files.</li>
           <li>When validation problems are displayed in the <uicontrol>Results</uicontrol> pane, you
             can right-click on a problem and use the <uicontrol>AI Positron Fix</uicontrol> action
             to ask the <b>AI Positron</b> platform for help with fixing the problem. It will propose
