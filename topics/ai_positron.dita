@@ -164,6 +164,31 @@
           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/XML%20Refactoring"
           format="html" scope="external">samples playground</xref>.</p>
     </section>
+    <section id="section_l21_qbl_sbc">
+      <title>Small Clips Showcasing the Functionality</title>
+      <p>A list of small animated clips showcasing some interesting aspects of the functionality.<dl
+          id="dl_mgw_tbl_sbc">
+          <dlentry>
+            <dt>Generat a draft DITA XML topic from an image</dt>
+            <dd><image href="../images/ai/draft-topic-image.gif" id="image_tqn_vbl_sbc" scale="70"
+              /></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Batch generating alternate text for DITA XML images</dt>
+            <dd><image href="../images/ai/batch-image-alt-text.gif" id="image_hn1_xbl_sbc"
+                scale="70"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Generate a Mermaid diagram from a task</dt>
+            <dd><image href="../images/ai/mermaid.gif" id="image_mr5_ybl_sbc" scale="70"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Add comments about grammar problems and then resolve them</dt>
+            <dd><image href="../images/ai/add-resolve-comments.gif" id="image_ikq_1cl_sbc"
+                scale="70"/></dd>
+          </dlentry>
+        </dl></p>
+    </section>
     <section id="section_tzn_jw5_4bc">
       <title>Useful Links</title>
       <ul id="ul_f5n_kw5_4bc">
