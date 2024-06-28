@@ -13,7 +13,9 @@
 						href="../topics/dita_for_small_teams.dita#dita_for_small_teams/li_lr2_qsj_5wb"
 						>server side</xref>. Examples:<ul id="ul_i33_ssj_5wb">
 						<li>Run validation on an integration server like Jenkins.</li>
-						<li>Run validation as a GitHub action.</li>
+						<li>Run validation as a <xref
+								href="../topics/building_validating_and_publishing_using_github_actions.dita"
+								>GitHub action</xref>.</li>
 					</ul></li>
 				<li>Validate on the client side before committing or pushing changes. For example,
 					the Oxygen <xref

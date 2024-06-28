@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita-xml-editing-collaboration-and-publishing-overview">
+    <title>DITA XML Editing, Collaboration and Publishing Overview</title>
+    <shortdesc>Oxygen XML provides a wide range of features for editing, reusing, profiling,
+        reviewing, and publishing DITA XML content. We strive to offer a complete editing,
+        collaboration package which is still flexible enough to be customized for a variety of use
+        cases.</shortdesc>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2024-05-29"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section id="section_gss_p5g_4bc">
+            <title>Overview</title>
+            <p>You can find an overview of the application's DITA XML editing support here: <xref
+                    href="oxygen-dita-strong-points.dita"/>
+            </p>
+            <p>Here are some of the key features:</p>
+            <p>
+                <ul id="ul_obb_yyg_4bc">
+                    <li>Permanent user-based licensing.</li>
+                    <li>Available on multiple platforms.</li>
+                    <li>Comprehensive support for editing, reviewing, and publishing DITA XML
+                        content.</li>
+                    <li>Excellent technical support.</li>
+                </ul>
+            </p>
+            <p>For answers to common questions about the overall solution, which companies can
+                benefit from using it, and how it is typically purchased, please see: <xref
+                    href="oxygen_xml_as_a_technical_documentation_solution_faq.dita"/>.</p>
+        </section>
+        <section id="section_bjv_2jx_pbc">
+            <title>Storage</title>
+            <p>Possibilities to store the DITA XML content:<ul id="ul_kl5_fjx_pbc">
+                    <li><xref href="../git-tech-writers/using_git_for_technical_writing.dita">Using
+                            a Git project.</xref>.</li>
+                    <li><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/sharepoint-connection.html"
+                            format="html" scope="external">Sharepoint</xref>.</li>
+                    <li>WebDav or eXist DB.</li>
+                    <li><xref href="https://www.oxygenxml.com/partners.html#cmssolutionpartners"
+                            format="html" scope="external">Using a commercial available
+                        CMS</xref>.</li>
+                    <li>Building your own CMS integration plugin.</li>
+                </ul></p>
+        </section>
+        <section id="section_srq_s5g_4bc">
+            <title>DITA Maps Manager</title>
+            <p>The <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-maps-manager.html"
+                    format="html" scope="external">DITA Maps Manager</xref> view allows editing,
+                validating, making project-wide changes and publishing.<ul id="ul_rkw_szg_4bc">
+                    <li>Create new topics and references to them either individually or in bulk by
+                        using the <b>Fast Create Topics</b> action.</li>
+                    <li>Project- wide Operations:<ul id="ul_d5s_n1h_4bc">
+                            <li><xref href="validateCheckForCompletness.dita">Validate and Check for
+                                    Completeness.</xref></li>
+                            <li>Search references.</li>
+                            <li>Rename, move, or delete existing topic references.</li>
+                            <li>Map-wide XML refactoring actions.</li>
+                            <li>Find/Replace in Files.</li>
+                            <li>Spell Check in Files.</li>
+                        </ul></li>
+                </ul></p>
+            <p>If you want to learn more about editing DITA XML with Oxygen, you can watch
+                recordings of past webinars here: <xref href="learnDita.dita"/>.</p>
+        </section>
+        <section id="section_tfp_v5g_4bc">
+            <title>Topic Editing</title>
+            <p>Oxygen XML Editor provides comprehensive support for editing <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-pathfinder-structure.html"
+                    format="html" scope="external">DITA XML Topics</xref>. Here are some key
+                features: <ul id="ul_rfb_v1h_4bc">
+                    <li>Ability to change the Tags Visualization Mode.</li>
+                    <li>Access to a CSS Styles drop-down menu.</li>
+                    <li>Availability of a Content Completion Window.</li>
+                    <li>Helpful side views, including the <b>Outline</b>, <b>Attributes</b>,
+                            <b>Elements</b> views, and <b>DITA Reusable Components</b>.</li>
+                    <li>DITA-specific actions accessible through the Menu, Contextual Menu, and
+                        Toolbar, such as: <ul id="ul_jkd_y1h_4bc">
+                            <li>Inserting links.</li>
+                            <li>Reusing content.</li>
+                            <li>Editing Profiling Attributes.</li>
+                            <li>Working with tables.</li>
+                            <li>Inserting references to image and media resources.</li>
+                            <li>Inserting lists, paragraphs, and applying bold, italic, or underline
+                                styling.</li>
+                        </ul></li>
+                    <li>Various methods to insert links and content references, including copy/paste
+                        and drag and drop.</li>
+                </ul></p>
+            <p>For more information on editing DITA XML with Oxygen, you can watch past webinar
+                recordings: <xref href="learnDita.dita"/>.</p>
+        </section>
+        <section id="section_rx1_q5g_4bc">
+            <title>Content Reuse</title>
+            <p>The DITA XML standard offers a wide range of <xref
+                    href="../presentation-reuse/introduction.dita">content reuse</xref> features.
+                Oxygen allows you to harness the <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-pathfinder-reuse.html"
+                    format="html" scope="external">full potential</xref> of the DITA 1.3
+                    standard:<ul id="ul_tpw_qch_4bc">
+                    <li>Reuse product names using key definitions with keywords.</li>
+                    <li>Reuse XML elements in multiple places.</li>
+                    <li>Reuse ranges of XML elements.</li>
+                    <li>Push reusable content into target topics.</li>
+                    <li>Reuse entire DITA XML topics in various parts of the DITA map.</li>
+                    <li>Use DITA 1.3 key scopes to reuse topics with variable content in different
+                        contexts.</li>
+                </ul></p>
+            <p>Oxygen provides several user interface features to insert reusable content:<ul
+                    id="ul_dss_bdh_4bc">
+                    <li><b>DITA Maps Manager</b> -> <b>Insert Key Definition with Keyword</b></li>
+                    <li>DITA XML topic editing toolbar with options to <b>Reuse Content</b>.</li>
+                    <li>Using special paste to insert content references in topics.</li>
+                    <li>The <b>DITA Reusable Components</b> side view.</li>
+                    <li>Content Completion actions to insert reusable content (keyrefs and
+                        conrefs).</li>
+                </ul></p>
+            <p>For more information on DITA XML content reuse with Oxygen, check out the past
+                webinar recordings: <xref href="learnDita.dita"/>.</p>
+        </section>
+        <section id="section_yvh_q5g_4bc">
+            <title>Profiling/Filters</title>
+            <p><xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-profiling-conditional-text.html"
+                    format="html" scope="external">Profiling capabilities</xref> make it possible to
+                create many similar user manuals from the same DITA XML content.</p>
+            <p>With Oxygen, you can:<ul id="ul_ykp_qgh_4bc">
+                    <li>Set values for the DITA profiling attributes. These can be easily managed to
+                        filter content in the published output.</li>
+                    <li>Change between profile sets. This lets you see how the edited content will
+                        look before publishing.</li>
+                </ul></p>
+            <p>You can watch past webinar recordings that cover DITA XML profiling with Oxygen:
+                    <xref href="learnDita.dita"/>.</p>
+        </section>
+        <section id="section_mkk_dvg_4bc">
+            <title>Project-wide Refactoring</title>
+            <ul id="ul_klv_clt_4bc">
+                <li>The <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-main-files.html"
+                        format="html" scope="external"><b>Main Files</b></xref> feature in the
+                    Oxygen <b>Project</b> view enables powerful refactoring operations: <ul
+                        id="ul_mlv_clt_4bc">
+                        <li>You can move or rename one or multiple files.</li>
+                        <li>You can change directory names or move entire directories.</li>
+                    </ul></li>
+                <li>You can apply <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/refactoring-xml-documents-x-tools.html"
+                        format="html" scope="external">XML refactoring</xref> actions to multiple
+                    files or entire folders.</li>
+            </ul>
+        </section>
+        <section id="section_ypb_dxg_4bc">
+            <title>Validation, Structure, and Terminology Checks</title>
+            <ul>
+                <li>The <xref href="validateCheckForCompletness.dita">Validate and Check For
+                        Completeness</xref> tool available in the <b>DITA Maps Manager</b> view
+                    performs dozens of useful validation checks starting from a DITA map or from a
+                    DITA Open Toolkit project:<ul>
+                        <li>Validate each map and topic according to the standard schemas.</li>
+                        <li>Validate each map and topic with a custom Schematron schema.</li>
+                        <li>Check for broken links.</li>
+                        <li>Check for profiling/filter problems.</li>
+                        <li>and so much more....</li>
+                    </ul></li>
+                <li><xref href="SchematronBCs.dita">Schematron checks</xref> with <b>quick fixes</b>
+                    can be added to report structural problems.</li>
+                <li>The built-in spell checker and the <xref
+                        href="checking_terminology_with_oxygen_xml_editor.dita">Terminology
+                        Checker</xref> add-on can be used to check for content-related
+                    problems.</li>
+            </ul>
+        </section>
+        <section id="section_mv3_xgh_4bc">
+            <title>Migrating from Other Formats</title>
+            <ul id="ul_ghb_sjh_4bc">
+                <li>You can use the smart paste feature to convert Microsoft Word or web content
+                    into DITA XML format when you paste it.</li>
+                <li>Alternatively, you can use the Oxygen Batch Documents Converter add-on to <xref
+                        href="migrating_to_dita.dita">convert various document formats</xref>
+                    including <b>Word</b>, <b>DocBook</b>, <b>Markdown</b>, <b>HTML</b> to <b>DITA
+                        XML</b>.</li>
+                <li>You can also perform on-the-fly conversions for <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dynamically_convert_word_excel_html_markdown_to_dita.html"
+                        format="html" scope="external">Markdown, OpenAPI, or Microsoft Word</xref>
+                    documents that are directly referenced in a DITA map.</li>
+            </ul>
+        </section>
+        <section id="section_dsz_w5g_4bc">
+            <title>Framework Customizations</title>
+            <p>You can customize the overall <xref
+                    href="author-document-type-extension-sharing.dita">DITA XML editing</xref>
+                functionality in several ways:<ul id="ul_y34_wjh_4bc">
+                    <li>Add new actions to the DITA-specific menus and toolbars.</li>
+                    <li>Remove existing actions that you don't need.</li>
+                    <li>Customize the <xref href="custom-author-action-content-completion.dita"
+                            >content completion window</xref> by adding or removing entries.</li>
+                    <li>Customize the <xref href="customizeDITACSS.dita">visual editing</xref>
+                        experience by using your own custom CSS.</li>
+                    <li>Use your own <xref
+                            href="author-document-type-extension-sharing-custom-new-file-templates.dita"
+                            >new file templates</xref> to create new documents.</li>
+                    <li>Add custom validation stages by using custom schemas or <xref
+                            href="sharing_schematron_validation_rules.dita">Schematron
+                        checks</xref>.</li>
+                    <li>And there are many other customization options available!</li>
+                </ul></p>
+        </section>
+        <section id="section_myn_1yg_4bc">
+            <title>Useful Add-ons</title>
+            <p>The Oxygen default add-ons repository provides a range of <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/add-ons.html" format="html"
+                    scope="external">helpful add-ons</xref>. Some of the most notable ones
+                    include:<ul id="ul_e2k_13h_4bc">
+                    <li><b>Git Client</b> add-on - Allows you to connect to Git repositories.</li>
+                    <li><b>Content Fusion Connector</b> - Enables subject matter experts (SMEs) to
+                        review technical documentation content directly in a web browser.</li>
+                    <li><b>Batch Documents Converter</b> - Converts documents from various formats
+                        such as MS Word, DocBook, Markdown, and XHTML to DITA XML.</li>
+                    <li><b>Terminology Checker</b> - Checks for terminology-related issues in your
+                        content.</li>
+                    <li><b>Fluenta DITA Translation</b> Add-on - Uses the Fluenta third-party
+                        library to create XLIFF exports from DITA maps and import DITA maps from
+                        translated XLIFF files.</li>
+                    <li><b>Oxygen AI Positron Assistant</b> - Provides AI-powered assistance for
+                        content creation and editing.</li>
+                    <li><b>Oxygen Feedback Connector</b> - Provides ways to see and change (delete,
+                        accept, reject) comments offered in the Oxygen Feedback system to writers
+                        working in the desktop application.</li>
+                </ul></p>
+        </section>
+        <section id="section_k5r_1vg_4bc">
+            <title>Review</title>
+            <p>There are several ways for people to provide feedback on technical documentation:<ul
+                    id="ul_hbg_blh_4bc">
+                    <li>Internally <xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/author-change-tracking.html"
+                            format="html" scope="external">review</xref> the content directly in the
+                        Oxygen desktop application:<ul id="ul_ysx_blh_4bc">
+                            <li>Use change tracking to modify existing content or to accept/reject
+                                changes.</li>
+                            <li>Use the comments feature to add comments, reply to comments, or
+                                resolve them.</li>
+                        </ul></li>
+                    <li>Review content internally using the <xref
+                            href="https://www.oxygenxml.com/content_fusion.html" format="html"
+                            scope="external">Content Fusion</xref> platform.</li>
+                    <li>Review content internally or externally by publishing it to WebHelp
+                        Responsive output and using the <xref
+                            href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
+                            scope="external">Feedback platform</xref>.</li>
+                    <li>Review content internally or externally by publishing it to WebHelp
+                        Responsive output or PDF and using <xref
+                            href="https://www.oxygenxml.com/doc/ug-waCustom/topics/webauthor-integrate-embedded-launch.html"
+                            format="html" scope="external">edit links</xref>.</li>
+                </ul></p>
+        </section>
+        <section id="section_yjg_cyg_4bc">
+            <title>Translate</title>
+            <p>Oxygen provides support for:<ul id="ul_dhr_cgn_4bc">
+                    <li>Exporting a DITA map as a zip file from the <b>DITA Maps Manager</b> view,
+                        which can be sent to a translation agency.</li>
+                    <li>Using the <b>Fluenta DITA Translation Add-on</b>, a third-party library, to
+                        generate XLiff exports from DITA maps and import DITA maps from translated
+                        XLiff files.</li>
+                </ul></p>
+            <p>For a more detailed explanation of the translation process, please refer to the
+                following article: <xref href="translating_your_dita_project.dita"/></p>
+        </section>
+        <section id="section_dkz_bvg_4bc">
+            <title>Publishing</title>
+            <p>Oxygen comes with a built-in <b>Oxygen Publishing Engine</b> that is based on the
+                    <b>DITA Open Toolkit</b> open-source project. This engine allows you to publish
+                DITA XML content to <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/author-dita-map-transformation-scenarios-2.html"
+                    format="html" scope="external">various outputs</xref> such as <b>WebHelp
+                    Responsive</b>, <b>PDF (CSS customization based)</b>, <b>PDF (XSL-FO
+                    customization based)</b>, MS Word, EPUB, Windows Help, Markdown, and more.</p>
+            <p>You can customize the <b>WebHelp Responsive</b> and <b>PDF (CSS customization
+                    based)</b> outputs by creating publishing templates in two ways:<ul
+                    id="ul_cns_shn_4bc">
+                    <li>By using the <xref href="https://www.oxygenxml.com/styles_basket.html"
+                            format="html" scope="external">Oxygen Styles Basket Web
+                        Site</xref>.</li>
+                    <li>By following the user guide articles and samples to customize the CSS files:
+                            <xref href="learnDita.dita#learnDita/section_ufb_ngj_2v"/>.</li>
+                </ul></p>
+            <p>Publishing can also be configured to run <xref
+                    href="server_side_building_and_publishing.dita">server side</xref> by using the
+                Oxygen Publishing Engine.</p>
+            <p>For more information about publishing customizations, see the following articles:
+                    <xref keyref="publishing"/>.</p>
+        </section>
+    </body>
+</topic>

@@ -8,10 +8,7 @@
   <body>
     <p>A week or two ago I opened a survey about various ways in which people are using DITA. The
       survey was taken by more than 50 distinct DITA users and I think it indicated quite clearly
-      some trends in the industry. As I said from the beginning, I'm releasing the entire set of
-      results, including individual responses to questions: <xref
-        href="https://www.surveymonkey.com/results/SM-3WSR598S/" format="html" scope="external"
-      />.</p>
+      some trends in the industry. As I said from the beginning, </p>
     <p>I will try below to sum up some of the results:</p>
     <section id="section_ctp_gvs_nv">
       <title>GIT is on a roll</title>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita_editing_customizations">
+    <title>Editing Customizations</title>
+    <body>
+        <p>The DITA XML editing features (visual editing, validation, custom actions) can be
+            customized by extending and changing the base DITA framework configuration.</p>
+    </body>
+</topic>

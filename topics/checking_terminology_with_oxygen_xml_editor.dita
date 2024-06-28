@@ -60,13 +60,19 @@
         and terminology. The plugins that Acrolinx developed for Oxygen standalone, Oxygen Eclipse
         plugin, and Oxygen Web Author allow you to run the Acrolinx checker directly from inside the
         application.</p>
-            <p><xref href="https://www.simplifiedenglish.net/hyperste/" format="html"
+            <p>Etteplan <xref href="https://www.simplifiedenglish.net/hyperste/" format="html"
           scope="external">HyperSTE</xref> is another popular commercial tool for checking content
         and terminology. They also have a plugin for Oxygen standalone.</p>
       <p>The <xref href="https://documentation.congree.com/display/EDV/Supported+Editors+1"
           format="html" scope="external">Congree</xref> Language Checker also has an integration for
         Oxygen standalone.</p>
         </section>
+    <section>
+      <title>AI Positron Add-on</title>
+      <p>The <xref href="ai_positron.dita"/> has builtin actions to correct grammar or improve
+        readability of selected content. Other custom actions based on company specific rules can be
+        added.</p>
+    </section>
         <section id="section_h1h_msb_g1b">
             <title>Open-source alternatives</title>
             <p><xref href="https://www.languagetool.org/" format="html" scope="external"

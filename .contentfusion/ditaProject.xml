@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project xmlns="https://www.dita-ot.org/project">
+    <context id="nwQcREgTDuzrCKr" name="abcdef">
+        <input href="../oxygen_xml_blog.ditamap"/>
+    </context>
+    <context id="IukfVpqKsJWNBFd" name="Blog">
+        <input href="../oxygen_xml_blog.ditamap"/>
+    </context>
+    <publication id="webhelp" transtype="webhelp-responsive"/>
+    <publication id="pdf" transtype="pdf-css-html5"/>
+    <deliverable id="PDF-1704797224129" name="PDF">
+        <context idref="IukfVpqKsJWNBFd"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf"/>
+    </deliverable>
+    <deliverable id="d-Oxygen_XML_Blog_to_WebHelp_Responsive-1715330605782" name="Oxygen XML Blog to WebHelp Responsive">
+        <context idref="IukfVpqKsJWNBFd"/>
+        <output href="webhelp-output"/>
+        <publication idref="webhelp"/>
+    </deliverable>
+</project>

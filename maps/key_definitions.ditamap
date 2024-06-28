@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Key definitions</title>
+    <keydef keys="oxygen">
+        <topicmeta>
+            <keywords>
+                <keyword>Oxygen XML Editor</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef keys="webauthor">
+        <topicmeta>
+            <keywords>
+                <keyword>WebAuthor</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+</map>

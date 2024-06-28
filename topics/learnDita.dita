@@ -68,8 +68,12 @@
       <p>If you want to start learning about DITA in general there is a web site called <xref
           href="https://www.learningdita.com/" format="html" scope="external">Learning
         DITA</xref>.</p>
-			<p>Doctales <xref href="https://doctales.github.io/dita-introduction/website"
-					format="html" scope="external">DITA Introduction</xref> articles.</p>
+      <p><xref href="https://stefan-jung.org/dita-introduction/"
+					format="html" scope="external">DITA Introduction</xref> articles by Stefan Jung.</p>
+      <p>The free Oxygen <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/live-tutorials-addon.html"
+          format="html" scope="external">Live Tutorials add-on</xref> contains various small
+        tutorials for learning DITA.</p>
       <p>The DITA 1.3 standard specification can be found here: <xref
           href="https://www.oxygenxml.com/dita/1.3/specs/#introduction/dita-release-overview.html"
           format="html" scope="external"/>.</p>
@@ -82,32 +86,68 @@
     <section id="section_ufb_ngj_2v">
       <title>Resources for customizing the DITA output formats</title>
       <p>Usually customizing the XHTML based outputs means creating your custom CSS selectors. If
-        you generate WebHelp output using Oxygen, we have a section explaining basic WebHelp
-        customizations: <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/customize_webhelp.html"
-          format="html" scope="external"/>.</p>
+                you generate WebHelp output using Oxygen, we have a section explaining basic <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/customize_webhelp.html"
+                    format="html" scope="external">WebHelp customizations</xref>.</p>
       <p>For PDF-based outputs we recommend, support and maintain our <xref
         href="https://www.oxygenxml.com/doc/ug-editor/topics/pdf-css-customization.html"
         format="html" scope="external">CSS-based PDF publishing</xref> which is free to use from <ph
         keyref="oxygen"/>. There are also a number of different choices to obtain PDF from DITA:
         <xref href="ditaToPDF.dita"/>.</p>
+            <p>We have a series of past webinar recordings about customizing the published output:<ul>
+                    <li>Transforming DITA documents to PDF using CSS<ul>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2021/webinar_transforming_dita_documents_to_pdf_part_1.html"
+                                    format="html" scope="external">Part 1 – Page Definitions, Cover
+                                    Page and PDF Metadata</xref></li>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2022/webinar_transforming_dita_documents_to_pdf_using_css_part_2.html"
+                                    format="html" scope="external">Part 2 – Book design, Pagination,
+                                    Page Layout and Bookmarks</xref></li>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2022/webinar_transforming_dita_documents_to_pdf_using_css_part_3.html"
+                                    format="html" scope="external">Part 3 – Advanced Fonts
+                                    Usage</xref></li>
+                            <li><xref
+                                    href="https://www.oxygenxml.com/events/2023/webinar_transforming_dita_documents_to_pdf_using_css_part_4.html"
+                                    format="html" scope="external">Part 4 – Advanced CSS
+                                    Rules</xref></li>
+                        </ul></li>
+                    <li><xref
+                            href="https://www.oxygenxml.com/events/2022/webinar_techniques_for_customizing_the_webhelp_responsive_output.html"
+                            format="html" scope="external">Techniques for Customizing the WebHelp
+                            Responsive Output</xref></li>
+                    <li><xref
+                            href="https://www.oxygenxml.com/events/2022/webinar_using_oxygen_styles_basket_to_create_css_customization_from_scratch.html"
+                            format="html" scope="external">Using Oxygen Styles Basket to Create CSS
+                            Customization from Scratch</xref></li>
+                </ul>And if you are interested in server side building and publishing this topic
+                might be useful:<xref href="server_side_building_and_publishing.dita"/>.</p>
     </section>
     <section id="section_rqq_nhj_4jb">
       <title>Courses for learning DITA with <ph keyref="oxygen"/></title>
       <p>
         <ul>
-          <li>Ryffine: <xref href="https://www.ryffine.com/workshops/#thedetails" format="html"
-              scope="external"/>.</li>
-          <li>Udemy: <xref
-              href="https://www.udemy.com/course/technical-writing-how-to-write-using-dita-xml/"
-              format="html" scope="external"/>.</li>
-          <li>Hyperwrite: <xref href="http://www.hyperwrite.com/Training/crsoxygenintro.aspx"
-              format="aspx" scope="external"/>.</li>
+          <li><b>Ryffine</b>: <xref href="https://www.ryffine.com/" format="html" scope="external"
+                        />.</li>
+          <li><b>Udemy</b>: <xref
+                            href="https://www.udemy.com/course/technical-writing-how-to-write-using-dita-xml/"
+                            format="html" scope="external"/>.</li>
+          <li><b>Hyperwrite</b>: <xref href="http://www.hyperwrite.com/Training/crsoxygenintro.aspx"
+                            format="aspx" scope="external"/>.</li>
+          <li>Basic principles and theory of DITA, 10 hour recorded training course by <b>Tony
+                            Self</b>: <xref
+                            href="https://firehead-training.net/course/dita-concepts" format="html"
+                            scope="external"/>.</li>
           <li>Mekon: <xref href="http://mekon.com/news/dita-authoring-oxygen-author/" format="html"
               scope="external"/></li>
-          <li>French course by Tireme: <xref
-              href="http://dita.tireme.fr/#definition/m2_session_adapter_dita.html" format="html"
-              scope="external"/></li>
+          <li>French course by <b>Tireme</b>: <xref
+                            href="http://dita.tireme.fr/#definition/m2_session_adapter_dita.html"
+                            format="html" scope="external"/></li>
+                    <li>"Writing DITA content" - course with a two day duration by <b>FlowTime</b>:
+                            <xref
+                            href="https://www.flowtime.be/en/writing-dita-xml-content-schrijven"
+                            format="html" scope="external"/>.</li>
         </ul>
       </p>
     </section>
@@ -126,16 +166,20 @@
               href="http://idratherbewriting.com" format="html" scope="external"/></li>
           <li>List of learning DITA blog posts from Mekon: <xref
               href="http://mekon.com/bitesize-dita/" format="html" scope="external"/></li>
+          <li id="li_xj2_lg1_5yb">DITA XML Benefits: <xref
+              href="https://technicallywewrite.com/2023/09/11/aboutdita" format="html"
+              scope="external"/></li>
+          <li id="li_ttn_lg1_5yb">Working with DITA projects in Oxygen: <xref
+              href="https://technicallywewrite.com/2023/09/14/aboutoxygen" format="html"
+              scope="external"/></li>
         </ul></p>
     </section>
     <section id="section_lhf_cjj_2v"><title>Community</title>
-      <p>The <xref
-        href="https://dita-users.groups.io/g/main" format="html" scope="external"
-        ><b>DITA Users Group</b></xref> is probably the first place where you can register and ask
-        for help with DITA-related issues. There is also a <xref
-          href="https://groups.google.com/forum/#!forum/dita-ot-users" format="html" scope="external"
-          >Google Groups DITA Users List</xref>. Most DITA Users register sooner or later on one of
-        these groups.</p></section>
+      <p>The <xref href="https://dita-users.groups.io/g/main" format="html" scope="external">DITA
+          Users List</xref> is probably the first place where you can register and ask for help with
+        DITA-related issues. A bunch of other community support forums for the publishing engine are
+        also listed here: <xref href="https://www.dita-ot.org/support" format="html"
+          scope="external"/>.</p></section>
     <section id="section_v1r_ljj_2v">
       <p>There is also a <xref
         href="https://www.linkedin.com/groups/162465" format="html" scope="external">DITA Awareness

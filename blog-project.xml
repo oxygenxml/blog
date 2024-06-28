@@ -2,7 +2,7 @@
 <project xmlns="https://www.dita-ot.org/project">
   <context name="Oxygen XML Blog" id="blog">
     <input href="oxygen_xml_blog.ditamap"/>
-  </context>
+  </context> 
   
   <deliverable name="Oxygen XML Blog to WebHelp Responsive" id="wh-responsive">
     <context idref="blog"/>
@@ -12,13 +12,13 @@
     </publication>
   </deliverable>
   
-  <deliverable name="Oxygen XML Blog to PDF" id="pdf">
+  <!--<deliverable name="Oxygen XML Blog to PDF" id="pdf">
     <context idref="blog"/>
     <output href="site"/>
     <publication transtype="pdf-css-html5">
       <param name="pdf.publishing.template" href="publishing/webhelpBlogTemplate"/>
     </publication>
-  </deliverable>
+  </deliverable>-->
   
   <deliverable name="Oxygen XML Blog to EPUB" id="epub">
     <context idref="blog"/>

@@ -7,10 +7,7 @@
   </prolog>
   <body>
     <p>A few weeks ago I published a survey that was intended to be an overview about DITA Linking
-      habits. A big thank you to everyone who participated. The entire set of survey results,
-      including the answers to open questions, can be found here:</p>
-    <p><xref href="https://www.surveymonkey.com/results/SM-N8RJ6CJX/" format="html" scope="external"
-      /></p>
+      habits. A big thank you to everyone who participated. </p>
     <p>Here are some of my thoughts in regards to the results:<ul id="ul_grq_tpn_mx">
         <li>Most projects (including ours) seems to approach linking with a mixture between DITA 1.1
           hrefs and DITA 1.2 keyrefs. In my opinion, this is caused by a variety of factors, of
@@ -24,9 +21,7 @@
         <li>There are projects where related links, chunking and collection-type are not used at
           all. I think this is not because the projects are not complex, but because the main output
           delivery format for those projects is <b>PDF</b>. In a DITA Reuse survey I opened last
-          year, there was a clear indication that PDF was still the most used output format: <xref
-            format="html" href="https://www.surveymonkey.com/results/SM-3WSR598S/" scope="external"
-          />.</li>
+          year, there was a clear indication that PDF was still the most used output format.</li>
       </ul></p>
     <p>Although harder to quantify, I usually like answers to open questions because you get a
       better idea about the difficulties of linking in DITA:<ul id="ul_bm5_ysn_mx">

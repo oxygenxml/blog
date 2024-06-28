@@ -2,199 +2,216 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="ai_positron">
   <title>Oxygen AI Positron Assistant Add-on</title>
+  <shortdesc>The <b>Oxygen AI Positron Assistant</b> add-on provides support for helping technical
+    documentation writers <b>generate</b>, <b>re-write</b> content, <b>overview</b> and
+      <b>research</b>. It also supports performing AI checks and AI-based modifications on
+      <b>multiple files</b> by integrating AI extensions with XML technologies like
+      <b>Schematron</b> or <b>XSLT</b>.</shortdesc>
   <prolog>
     <author>Radu Coravu</author>
     <critdates>
-      <created date="2023-04-15"/>
+      <created date="2024-05-31"/>
     </critdates>
     <metadata>
       <keywords>
         <indexterm>Add-ons<indexterm>artificial intelligence</indexterm></indexterm>
         <indexterm>AI Positron Assistant</indexterm>
+        <keyword>ChatGPT</keyword>
       </keywords>
     </metadata>
   </prolog>
   <body>
-    <p id="p_kdh_dgk_54b">We are proud to introduce our new <b>Oxygen AI Positron Assistant</b>
-      add-on, which provides support for helping technical documentation writers generate and
-      re-write content by using the <uicontrol>Oxygen AI Positron</uicontrol> service. </p>
-    <p>The <codeph>Oxygen Positron Service</codeph> uses the <uicontrol>OpenAI ChatGPT</uicontrol>
-      model <codeph>GPT-3.5</codeph> to provide document generation, change suggestions, and
-      translation capabilities.</p>
-    <section>
-      <title>Overview</title>
-      <p>Let's simplify and assume that a technical documentation writer's work is done in two
-        stages: analysis and implementation. Usually, in the analysis stage, the technical
-        documentation writer could use resources like web search, <uicontrol>ChatGPT</uicontrol>, or
-        discussions with colleagues or engineers to further understand the subject they are writing
-        about.</p>
-      <p>In the second stage, the technical documentation writers use tools like <ph keyref="oxygen"
-        /> to write the actual content. Our <uicontrol>Oxygen AI Positron Assistant</uicontrol>
-        add-on explores various ways that we can use <uicontrol>ChatGPT</uicontrol> to help writers
-        while editing or reviewing the technical documentation, give hints about what to write next,
-        improve readability of content, or re-structure the content in various ways. </p>
-      <p>Content received from the <uicontrol>OpenAI ChatGPT</uicontrol> model may be inaccurate or
-        contain misleading information so it needs to be properly revised.</p>
-      <p>The terms of use for the service can be found <xref
-          href="https://www.oxygenxml.com/aipositron/user_terms.html" format="html" scope="external"
-          >here</xref>.</p>
-      <p>As always, we are interested in your feedback and in your improvement suggestions.</p>
+    <p>This article is intended to be a general overview of the <b>Oxygen AI Positron Assistant</b>
+      add-on installation, licensing, and functionality. </p>
+    <p>We've envisioned this add-on as a way to offer you a personal assistant that contains useful
+      actions for checking content (readability, grammar), translating, explaining, and creating
+      overviews.</p>
+    <object width="560" height="315"
+      data="https://www.youtube.com/embed/Do_KWYZfCFg?si=2Mrm7Bh1pmPvehqV" outputclass="iframe">
+      <param name="allowfullscreen" />
+    </object>
+    <section id="overview">
+      <title>Installation and Licensing Overview</title>
+      <ul id="ul_sdg_1x5_4bc">
+        <li>Oxygen desktop allows installing two flavors of the add-on:<ul id="ul_rqp_cx5_4bc">
+            <li>
+              <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html"
+                  format="html" scope="external">AI Positron Assistant add-on</xref>.</p>
+              <p>This add-on works through a subscription-based model using the <xref
+                  href="https://www.oxygenxml.com/aipositron/user_terms.html" format="html"
+                  scope="external">Oxygen Positron Service</xref> platform, which in turn uses the
+                OpenAI API and functionality. </p>
+              <p>Users can create new subscription accounts or authenticate using their existing
+                  <b>Google</b> or <b>Github</b> accounts. The first subscription month is free and
+                a <xref href="https://www.oxygenxml.com/ai_positron/buy.html#ai-positron-service"
+                  format="html" scope="external">monthly subscription</xref> can be purchased to
+                receive a number of credits each month.</p>
+              <p>You can control which AI engine is used by default for performing actions and for
+                chatting. This can be done from the Preferences page.</p>
+            </li>
+            <li>
+              <p><xref
+                  href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron_enterprise.html"
+                  format="html" scope="external">AI Positron Assistant Enterprise add-on.</xref></p>
+              <p>This add-on allows end users to connect to their own AI engine server. The
+                following connection types are supported:<ul id="ul_twp_5z5_4bc">
+                  <li>OpenAI - Connect to your own OpenAI server using your own key. Or connect to
+                    OpenAI-compatible servers like <b>Ollama</b>.</li>
+                  <li>Microsoft Azure Open AI - Connect to an Open AI instance hosted as a virtual
+                    machine on Microsoft Azure.</li>
+                  <li>Anthropic Claude - Connect to Anthropic Claude using your own key.</li>
+                </ul></p>
+              <p>From the licensing point of view, the <b>AI Positron Assistant Enterprise</b>
+                add-on works free of charge with any Oxygen XML Editor installation using an
+                  <b>Enterprise</b> license type for Oxygen XML Editor. For other cases, <xref
+                  href="https://www.oxygenxml.com/ai_positron/buy.html?licenseType=enterprise#ai-positron-enterprise"
+                  format="html" scope="external">a special license key</xref> needs to be purchased
+                for the add-on to enable this direct access. You can use the Register button in the
+                AI Positron Assistant side view to configure the special license key.</p>
+            </li>
+          </ul></li>
+        <li><xref href="https://www.oxygenxml.com/doc/ug-webauthor/topics/wa-ai-positron.html"
+            format="html" scope="external">Oxygen XML Web Author</xref> also allows installing an
+            <b>AI Positron Assistant</b> plugin with similar functionality as the one in the Oxygen
+          Desktop application. Currently, the <xref
+            href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html" format="html"
+            scope="external">WebAuthor</xref> and <xref href="https://fusion.oxygenxml.com/"
+            format="html" scope="external">Content Fusion</xref> online demo websites come with the
+          AI Positron add-on pre-installed. In the near future, an <xref
+            href="https://www.oxygenxml.com/ai_positron/installation.html#oxygen-ai-positron-assistant-enterprise-for-web-author"
+            format="html" scope="external"><b>AI Positron Assistant Enterprise</b></xref> plugin
+          will allow using either a license server or a special Web Author license component to
+          configure a custom AI engine. </li>
+      </ul>
     </section>
-    <section id="section_kgh_fzg_rsb">
-      <title>Manual Installation</title>
-      <p id="p_jzg_dgk_54b">To manually install this add-on, follow this procedure:<ol
-        id="ol_kzg_dgk_54b">
-        <li id="li_lzg_dgk_54b">Go to <menucascade>
-              <uicontrol>Help</uicontrol>
-              <uicontrol>Install new add-ons</uicontrol>
-            </menucascade> to open an add-on selection dialog box. Enter or paste
-              <b>https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml</b> in the
-              <uicontrol>Show add-ons from</uicontrol> field or select it from the drop-down
-            menu.</li>
-        <li id="li_nzg_dgk_54b">Select the <b>Oxygen AI Positron Assistant</b> add-on and click
-              <uicontrol>Next</uicontrol>.</li>
-        <li id="li_ozg_dgk_54b">Read the end-user license agreement. Then select the <uicontrol>I
-          accept all terms of the end-user license agreement</uicontrol> option and click
-          <uicontrol>Finish</uicontrol>.</li>
-        <li id="li_pzg_dgk_54b">Restart the application.</li>
-      </ol></p>
-      <p id="p_qzg_dgk_54b"><b>Result:</b> The <uicontrol>AI Positron Assistant</uicontrol> and
-          <uicontrol>AI Positron Activity</uicontrol> side views are now available.</p>
-    </section>
-    <section id="section_xb3_kmk_cxb">
-      <title>Connecting to the Positron Service</title>
-      <p>You can use the <uicontrol>AI Positron Assistant</uicontrol> side view to easily configure
-        login details and connect to the <codeph>Oxygen Positron Service</codeph> in the web
-        browser. For now the service is free to use for up to 250 requests per month and a paid
-        subscription may be added as an option in the future.</p>
-    </section>
-    <section id="section_utc_twz_1xb">
-      <title>Generating Content</title>
-      <p>Once you log in to the server, the following actions for generating content are available
-        in the <uicontrol>AI Positron Assistant</uicontrol> side view, in the <uicontrol>AI Positron
-          Assistant</uicontrol> popup menus, and in the <uicontrol>AI</uicontrol> main menu:<dl
-          id="dl_lcm_vwz_1xb">
-          <dlentry>
-            <dt>Content Generation</dt>
-            <dd>
-              <ul id="ul_qbx_wwz_1xb">
-                <li>
-                  <p><uicontrol>Continue Writing</uicontrol> - Continues the idea in the current
-                    paragraph by generating extra content.</p>
-                  <p>
-                    <image placement="break" href="../images/ai_continue_writing.gif"
-                      id="image_dmj_lms_cxb" scale="50"/>
-                  </p>
-                </li>
-                <li>
-                  <p><uicontrol>Follow Instructions</uicontrol> - Replaces the selected instructions
-                    with content generated based on them. </p>
-                  <p>
-                    <image placement="break" href="../images/ai_follow_instructions.gif"
-                      id="image_wjc_vns_cxb" scale="50"/>
-                  </p>
-                </li>
-              </ul>
-            </dd>
-          </dlentry>
-          <dlentry>
-            <dt>DITA Topic Tools</dt>
-            <dd>
-              <p>
-                <ul id="ul_n2m_bxz_1xb">
-                  <li>
-                    <p><uicontrol>Improve Readability</uicontrol> - Improves the readability and
-                      corrects spell check problems in the selected content, while preserving its
-                      original XML markup.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_improve_readability.gif"
-                        scale="50" id="image_lw2_wps_cxb"/>
-                    </p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Generate Topic</uicontrol> - Generates a DITA XML topic starting
-                      from some ideas entered in a configuration dialog box.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_new_topic.gif" scale="50"
-                        id="image_zlf_rrs_cxb"/>
-                    </p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Short Description</uicontrol> - Generates a short description
-                        (<xmlelement>shortdesc</xmlelement> element) based on a summary of the
-                      selected text.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_short_desc.gif" scale="50"
-                        id="image_sqt_sqs_cxb"/>
-                    </p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Index Terms</uicontrol> - Generates a
-                        <xmlelement>keywords</xmlelement> element that contains index terms obtained
-                      from the selected text and inserts it in the
-                      <xmlelement>prolog</xmlelement>.</p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Itemize</uicontrol> - Converts the content of a selected paragraph
-                      into a summary and a list of items.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_itemize.gif" scale="50"/>
-                    </p>
-                  </li>
-                  <li><uicontrol>Join Items</uicontrol> - Converts a selection that contains a list
-                    of items into a single paragraph.</li>
-                </ul>
-              </p>
-            </dd>
-          </dlentry>
-          <dlentry>
-            <dt>Translation</dt>
-            <dd>
-              <p>The actions translate the selected text to the target language
-                  (<uicontrol>English</uicontrol>, <uicontrol>German</uicontrol>,
-                  <uicontrol>French</uicontrol>, <uicontrol>Japanese</uicontrol>) preserving the
-                original XML markup.</p>
-              <p>
-                <image placement="break" href="../images/ai_translate.gif" scale="50"
-                  id="image_qzs_1ss_cxb"/>
-              </p>
-            </dd>
-          </dlentry>
-          <dlentry>
-            <dt>Overview</dt>
-            <dd>
-              <p>
-                <ul id="ul_bwl_3xz_1xb">
-                  <li>
-                    <p><uicontrol>Readability</uicontrol> - Suggests changes to improve readability
-                      of the selected content.</p>
-                  </li>
-                  <li>
-                    <p><uicontrol>Summarize</uicontrol> - Generates a summary of the selected
-                      content.</p>
-                    <p>
-                      <image placement="break" href="../images/ai_summarize.gif" scale="50"
-                        id="image_snn_2ts_cxb"/>
-                    </p>
-                  </li>
-                </ul>
-              </p>
-            </dd>
-          </dlentry>
-        </dl></p>
-      <p>Results for various reports and information about each executed action appear in the
-          <uicontrol>AI Positron Activity</uicontrol> side view.</p>
-    </section>
-    <section>
-      <title>Future Improvement Ideas</title>
-      <p>Here's a list of possible future ideas for using AI to improve the tech docs processes:<ul>
-          <li>Support for converting between various text formats like Markdown or ASCIIDoc to DITA
-            XML.</li>
-          <li>Support to automatically change the content based on comments left by reviewers.</li>
-          <li>Support to chat directly with the AI system.</li>
-          <li>More actions to change tone of voice (active/passive/marketing) for  existing
+    <section id="section_qwd_mbv_4bc">
+      <title>Integration and Features Overview</title>
+      <p>After installing the add-on, the following features are available in the Oxygen desktop:<ul
+          id="ul_b43_ldv_4bc">
+          <li><xref
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_a3d_sgl_4xb"
+              format="html" scope="external">AI Positron Assistant</xref> side view. This side view
+            contains the following functionality:<ul id="ul_np4_ndv_4bc">
+              <li>Invoke various actions to generate and re-write content using AI.</li>
+              <li><b>Chat</b> with the AI.</li>
+              <li>A <b>History</b> list of previous interactions.</li>
+              <li>A <b>Favorites</b> drop-down list and a way to mark inputs as favorites.</li>
+              <li>The <b>Insert Editor Variables</b> drop-down list allows inserting various editor
+                variables which are expanded when the chat message is sent to the AI engine.</li>
+              <li>An <b>Attach</b> button to attach images or XML text resources to the chat
+                message.</li>
+            </ul></li>
+          <li><b>AI</b> main menu entry with support to invoke actions or to go to the add-on's
+            preferences page.</li>
+          <li><b>AI Positron Assistant</b> contextual menu for all XML documents opened in the
+              <b>Author</b> visual editing mode.</li>
+          <li><b>AI Positron Assistant</b> quick assist actions available on the left vertical
+            stripe for all XML documents opened in the <b>Author</b> visual editing mode.</li>
+          <li><b>AI Positron Refactoring</b> actions added to the <b>Project</b> and <b>DITA Maps
+              Manager</b> views as a way to run actions on multiple files.</li>
+          <li>When validation problems are displayed in the <uicontrol>Results</uicontrol> pane, you
+            can right-click on a problem and use the <uicontrol>AI Positron Fix</uicontrol> action
+            to ask the <b>AI Positron</b> platform for help with fixing the problem. It will propose
+            content in the chat pane (within the <uicontrol>AI Positron Assistant</uicontrol> view)
+            that can be used to solve the problem.</li>
+          <li>The add-on contributes two <xref
+              href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_j1x_jk3_qxb"
+              format="html" scope="external">XPath extension functions</xref>
+              (<codeph>ai:transform-content</codeph> and <codeph>ai:verify-content</codeph>) that
+            can be used to rephrase content or to perform validation checks on existing
             content.</li>
         </ul></p>
     </section>
+    <section id="section_hph_m3v_4bc">
+      <title>Predefined and Custom Actions</title>
+      <p>Once you log in to the server, a <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_utc_twz_1xb"
+          format="html" scope="external">set of predefined actions</xref> are available, grouped in
+        categories: <b>Accessibility</b>, <b>Content Generation</b>, <b>Development</b>,
+          <b>Rewrite</b>, <b>Overview</b>, <b>Marketing</b>, and <b>Translation</b>. The <xref
+          href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/README.md"
+          format="html" scope="external">AI Positron Assistant Samples Playground</xref> samples
+        project contains useful samples to test the functionality of these actions.</p>
+      <p><xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
+          format="html" scope="external">Custom actions</xref> can also be created and used. The
+        same <xref
+          href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Custom%20Actions"
+          format="html" scope="external">AI Positron Assistant Samples Playground</xref> contains
+        some sample custom actions. Some usage examples can be found in the <xref
+          href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Schematron%20and%20Quick%20Fixes"
+          format="html" scope="external">samples playground</xref>.</p>
+    </section>
+    <section id="section_ngk_klp_pbc">
+      <title>Visual Image Recognition (Vision)</title>
+      <p>The pre-defined <b>Generate Documentation Draft</b> and <b>Update Content Based on
+          Images</b> actions allow using the AI to create or update content depending on existing
+        images from your user's manual. You can also attach images in the <b>Chat</b> panel.</p>
+    </section>
+    <section id="section_bws_2lv_4bc">
+      <title>Batch Processing</title>
+      <p>The <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__ai_refactoring"
+          format="html" scope="external"><b>AI Positron Refactoring</b></xref> actions added to the
+          <b>Project</b> and <b>DITA Maps Manager</b> views are a way to run actions on multiple
+        files. For example, you could use the predefined <uicontrol>Translate to</uicontrol> action
+        to translate multiple DITA topics into a certain language or apply the <uicontrol>Correct
+          Grammar</uicontrol> or <uicontrol>Improve Readability</uicontrol> actions on multiple
+        resources.</p>
+      <p>In addition, <b>XML Refactoring</b> actions based on XSLT or XQuery can use the XPath
+        extension functions added by the add-on to perform batch changes in XML documents. Some
+        examples can be found in the <xref
+          href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/XML%20Refactoring"
+          format="html" scope="external">samples playground</xref>.</p>
+    </section>
+    <section id="section_l21_qbl_sbc">
+      <title>Small Clips Showcasing the Functionality</title>
+      <p>A list of small animated clips showcasing some interesting aspects of the functionality.<dl
+          id="dl_mgw_tbl_sbc">
+          <dlentry>
+            <dt>Generat a draft DITA XML topic from an image</dt>
+            <dd><image href="../images/ai/draft-topic-image.gif" id="image_tqn_vbl_sbc" scale="70"
+              /></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Batch generating alternate text for DITA XML images</dt>
+            <dd><image href="../images/ai/batch-image-alt-text.gif" id="image_hn1_xbl_sbc"
+                scale="70"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Generate a Mermaid diagram from a task</dt>
+            <dd><image href="../images/ai/mermaid.gif" id="image_mr5_ybl_sbc" scale="70"/></dd>
+          </dlentry>
+          <dlentry>
+            <dt>Add comments about grammar problems and then resolve them</dt>
+            <dd><image href="../images/ai/add-resolve-comments.gif" id="image_ikq_1cl_sbc"
+                scale="70"/></dd>
+          </dlentry>
+        </dl></p>
+    </section>
+    <section id="section_tzn_jw5_4bc">
+      <title>Useful Links</title>
+      <ul id="ul_f5n_kw5_4bc">
+        <li><xref
+            href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/README.md"
+            format="html" scope="external">AI Positron Assistant Samples Playground.</xref></li>
+        <li>
+          <xref
+            href="https://idratherbewriting.com/learnapidoc/docapis_oxygenxml_positron_assistant.html"
+            format="html" scope="external">Blog Post About AI Positron Add-on By Tom
+          Johnson</xref></li>
+        <li>
+          <xref
+            href="https://www.oxygenxml.com/events/2023/webinar_ai_as_a_tool_for_technical_content_creation.html"
+            format="html" scope="external">Webinar: AI as a Tool for Technical Content Creation
+          </xref></li>
+        <li>
+          <xref
+            href="https://www.oxygenxml.com/events/2023/webinar_leveraging_the_power_of_ai_and_schematron_for_content_verification_and_correction.html"
+            format="html" scope="external">Webinar: Leveraging the Power of AI and Schematron for
+            Content Verification and Correction </xref></li>
+      </ul>
+    </section>
   </body>
+ 
 </topic>

@@ -42,7 +42,7 @@
                     take part of the class attribute value and search using the "<b>Find/Replace in
                         Files</b>" Oxygen action in all of the DITA OT XSLT resources. In this case
                     I searched for <b>topic/pre</b>and found this XSLT
-                        stylesheet:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT3.x/plugins/org.dita.xhtml/xsl/xslhtml/dita2htmlImpl.xsl</i>
+                        stylesheet:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT/plugins/org.dita.xhtml/xsl/xslhtml/dita2htmlImpl.xsl</i>
                     containing this XSLT
                     template:<codeblock outputclass="language-xml">&lt;xsl:template match="*[contains(@class, ' topic/pre ')]" name="topic.pre">
   &lt;xsl:if test="contains(@frame, 'top')">&lt;hr />&lt;/xsl:if>
@@ -57,8 +57,8 @@
   &lt;/pre>
   &lt;xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
   &lt;xsl:if test="contains(@frame, 'bot')">&lt;hr />&lt;/xsl:if>&lt;xsl:value-of select="$newline"/>
-&lt;/xsl:template></codeblock>
-                    thus my <b>xhtmlHighlight.xsl </b>will overwrite the content of the template
+&lt;/xsl:template></codeblock> thus my <b>xhtmlHighlight.xsl </b>will overwrite
+                    the content of the template
                     like:<codeblock outputclass="language-xml">&lt;xsl:template match="*[contains(@class, ' topic/pre ')]" name="topic.pre">
   &lt;xsl:if test="contains(@frame, 'top')">&lt;hr />&lt;/xsl:if>
   &lt;xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
@@ -73,13 +73,12 @@
   &lt;/pre>
   &lt;xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
   &lt;xsl:if test="contains(@frame, 'bot')">&lt;hr />&lt;/xsl:if>&lt;xsl:value-of select="$newline"/>
-&lt;/xsl:template></codeblock>
-                    and call another XSLT template which applies as a Java extension the XSLTHL
-                    library to style the content. </li>
+&lt;/xsl:template></codeblock> and call another XSLT template which applies as a
+                    Java extension the XSLTHL library to style the content. </li>
                 <li>Create an XSLT stylesheet called <b>pdfHighlight.xsl</b> located in the same
                     plugin folder which will contain the PDF XSLT customization. In this case I will
                     overwrite the XSLT template
-                        from:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT3.x/plugins/org.dita.pdf2/xsl/fo/topic.xsl</i>
+                        from:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT/plugins/org.dita.pdf2/xsl/fo/topic.xsl</i>
                     which has the
                     content:<codeblock outputclass="language-xml">    &lt;xsl:template match="*[contains(@class,' topic/pre ')]">
         &lt;xsl:call-template name="setSpecTitle"/>
@@ -102,7 +101,7 @@
                     <p>Let's take now a look at what that misterious step (5) - running the
                         integrator to install the plugin - really did: <ul id="ul_w1w_wwp_tkb">
                             <li> In the XSLT
-                                    stylesheet:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT3.x/plugins/org.dita.xhtml/xsl/dita2html-base.xsl</i>
+                                    stylesheet:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT/plugins/org.dita.xhtml/xsl/dita2html-base.xsl</i>
                                 a new import automatically
                                 appeared:<codeblock outputclass="language-xml">&lt;xsl:import href="plugin:com.oxygenxml.highlight:xhtmlHighlight.xsl"/></codeblock>
                                 This import is placed after all base imports and because of this it
@@ -111,7 +110,7 @@
                                     href="http://www.w3.org/TR/xslt#import" format="html"
                                     scope="external"/>.</li>
                             <li> Likewise, in the top-level stylesheets related to PDF publishing
-                                    like:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT3.x/plugins/org.dita.pdf2/xsl/fo/topic2fo_shell.xsl</i>
+                                    like:<i>OXYGEN_INSTALL_DIR/frameworks/dita/DITA-OT/plugins/org.dita.pdf2/xsl/fo/topic2fo_shell.xsl</i>
                                 a new import statement has
                                 appeared:<codeblock outputclass="language-xml">&lt;xsl:import href="plugin:com.oxygenxml.highlight:pdfHighlight.xsl"/></codeblock></li>
                         </ul>Now you can take your plugin's folder and distribute it to anyone

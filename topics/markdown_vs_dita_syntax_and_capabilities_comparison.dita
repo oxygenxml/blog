@@ -49,7 +49,32 @@
                             Github-flavored Markdown.</entry>
                     </row>
                     <row>
-                        <entry valign="top"><b>Useful links for learning</b></entry>
+                        <entry valign="top"><b id="b_dgk_2f4_11c">Why should I use this
+                            format?</b></entry>
+                        <entry valign="top">
+                            <ul id="ul_nnj_ff4_11c">
+                                <li>You work (or want to work) for a company which manufactures
+                                    similar products (large possibility of content reuse).</li>
+                                <li>You want to obtain multiple output formats (HTML based, quality
+                                    PDF).</li>
+                                <li>You want to work with a standard and be able to change tools if
+                                    necessary.</li>
+                                <li>You want to impose structural validation constraints on the
+                                    edited content.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top">
+                            <ul id="ul_v4b_gf4_11c">
+                                <li>You work for a company which has mostly one product and
+                                    publishes the documentation mostly on the web.</li>
+                                <li>You work with ticketing systems which use Markdown for styling
+                                    content.</li>
+                                <li>You produce internal documentation or small articles.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry valign="top"><b>Useful resources for learning</b></entry>
                         <entry valign="top"><xref href="learnDita.dita"/></entry>
                         <entry valign="top">
                             <ul id="ul_xql_kxm_twb">
@@ -64,6 +89,9 @@
                     <row>
                         <entry valign="top"><b>Pros</b></entry>
                         <entry valign="top">
+                            <p><xref
+                                    href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html"
+                                    format="html" scope="external">DITA XML pros and cons</xref></p>
                             <ul id="ul_s2z_q2n_twb">
                                 <li>OASIS Open standard.</li>
                                 <li>Advanced support for <xref
@@ -78,15 +106,17 @@
                                     PDF, Word, EPUB, and so on.</li>
                             </ul>
                             <p><xref
-                                    href="https://doctales.github.io/dita-introduction/website/topics/why-dita.html"
-                                    format="html" scope="external">Doctales - Why use
-                                DITA</xref></p>
+                                    href="https://stefan-jung.org/dita-introduction/topics/why-dita.html"
+                                    format="html" scope="external">Why use DITA</xref></p>
                             <p><xref
-                                    href="https://doctales.github.io/dita-introduction/website/topics/pros-and-cons.html"
-                                    format="html" scope="external">Doctales - Pros and
-                                Cons</xref></p>
+                                    href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html"
+                                    format="html" scope="external">Pros and Cons</xref></p>
                         </entry>
                         <entry valign="top">
+                            <p><xref
+                                    href="https://stymied.medium.com/why-you-should-and-should-not-use-markdown-1b9d70987792"
+                                    format="html" scope="external">Markdown pros and
+                                cons.</xref></p>
                             <ul id="ul_lnz_vvj_5wb">
                                 <li>Large user base. Familiar to software engineers who use it to
                                     write issues.</li>
@@ -114,8 +144,8 @@
                                 <li>Smaller number of open source tools to generate professional
                                     looking outputs.</li>
                             </ul><xref
-                                href="https://doctales.github.io/dita-introduction/website/topics/pros-and-cons.html"
-                                format="html" scope="external">Doctales - Pros and
+                                href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html"
+                                format="html" scope="external">Pros and
                             Cons</xref></entry>
                         <entry valign="top">
                             <ul id="ul_bcf_kxj_5wb">
@@ -435,9 +465,28 @@ Text body. </codeblock></li>
                             and other inline elements with more semantic meaning (like
                                 <xmlelement>codeph</xmlelement>, <xmlelement>uicontrol</xmlelement>,
                                 <xmlelement>filepath</xmlelement>).</entry>
-                        <entry valign="top">Bold, italic,underline. Depending on the Markdown
+                        <entry valign="top">Bold, italic, underline. Depending on the Markdown
                             flavor, other inlines like subscript, superscript,
                             strike-through.</entry>
+                    </row>
+                    <row>
+                        <entry valign="top"><b id="b_pyl_dwd_zzb"> Equations / Formulas</b></entry>
+                        <entry valign="top">
+                            <ul id="ul_fpm_2wd_zzb">
+                                <li><xref
+                                        href="https://www.oxygenxml.com/dita/1.3/specs/langRef/technicalContent/mathml.html"
+                                        format="html" scope="external">MathML equations</xref> added
+                                    directly inside the DITA topics or referenced as separate
+                                    files.</li>
+                                <li><xref href="adding-latex-equation-support-dita.dita">Latex equations</xref> embedded using third party plugins in DITA
+                                        <xmlelement>foreign</xmlelement> elements.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top"><xref
+                                href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions"
+                                format="html" scope="external">GitHub flavored Markdown</xref> and
+                            other flavors as well support embedding Latex equations in Markdown
+                            content using <codeph>$</codeph>.</entry>
                     </row>
 					<row>
 						<entry valign="top"><b>Audio/Video</b></entry>

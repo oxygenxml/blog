@@ -26,7 +26,7 @@
                 <tbody>
                     <row>
                         <entry>Alex Jitianu</entry>
-                        <entry>Project Manager, DITA/Authoring team. Oxygen XML Editor.</entry>
+                        <entry>Project Manager, DITA/Authoring team. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
                         <entry>Chris Papademetrious</entry>
@@ -34,33 +34,42 @@
                     </row>
                     <row>
                         <entry>Cosmin Duna</entry>
-                        <entry>Senior Software Developer. Oxygen XML Editor.</entry>
+                        <entry>Senior Software Developer. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
                         <entry>Cristi Talau</entry>
-                        <entry>Project Manager, Web Authoring team. Oxygen XML Editor.</entry>
+                        <entry>Project Manager, Web Authoring team. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
                         <entry>George Bina</entry>
-                        <entry>Owner, DITA XML Expert. Oxygen XML Editor.</entry>
+                        <entry>Owner, DITA XML Expert. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
                         <entry>Mihaela Calotescu</entry>
-                        <entry>Senior software developer, Web Authoring team. Oxygen XML
-                            Editor.</entry>
+                        <entry>Senior software developer, Web Authoring team. <ph keyref="oxygen"
+                            /></entry>
                     </row>
                     <row>
-                        <entry>Radu Coravu</entry>
+                        <entry><xref href="https://github.com/raducoravu" format="html"
+                                scope="external">Radu Coravu</xref></entry>
                         <entry>Helping people with XML-related technologies since the start of this
-                            century. Oxygen XML Editor @radu_coravu</entry>
+                            century. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
                         <entry>Steven Higgs</entry>
-                        <entry>Senior Technical Writer. Oxygen XML Editor.</entry>
+                        <entry>Senior Technical Writer. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
                         <entry>Alex Smarandache</entry>
-                        <entry>Software Developer. Oxygen XML Editor.</entry>
+                        <entry>Software Developer. <ph keyref="oxygen"/></entry>
+                    </row>
+                    <row>
+                        <entry>Stefan Vasile</entry>
+                        <entry>CEO. <ph keyref="oxygen"/></entry>
+                    </row>
+                    <row>
+                        <entry>Alin Belu</entry>
+                        <entry>Marketing Specialist. <ph keyref="oxygen"/></entry>
                     </row>
                 </tbody>
             </tgroup>

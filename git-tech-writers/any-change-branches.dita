@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="any_change_branches">
+	<title>Branches For All Changes</title>
+	<prolog>
+		<author>Radu Coravu</author>
+	</prolog>
+	<body>
+		<p>We create branches for any change, either for large features or small fixes. We also create
+			branches for past released versions of the documentation in order to be able to add
+			small fixes and re-publish documentation for a specific past version.</p>
+		<image placement="break" href="../images/any-change-branches.png" id="image_psk_tvq_nwb" scale="50"/>
+		<!--https://mermaid.live/edit#pako:eNqFUj1vwyAQ_SuIOR6S0Wu_pqpDpAyVlwucDYoBC460VZT_XhzqtnaxynbvvXv3xN2FCyeR17zT9ORhUI1l6QlnjCamZc0a_tJL9OyMPmhnQ8MLEsYm-OjBCsWCgb6vhALbYfhqUChOLlKR-222H3mW-e9pU7MBbTNk0Hf4r9khx2a77SLhebetWv2OocrAYs4K_TdnErGZfyHq_K8WQY59RHKOVNUiUPS4sFnjZ1EIPLE3509jlklX2tSds6RtxKWYFdWP2uqgUK5ar62lEDrTjeUbnjSpQaazu4xow0mhSabjSIktxJ7GCdckjYMEwgepyXlek4-44RDJ7T-smOqsudfQeTC8bqEPCR3Avjr3U-PN4zmf-\-3qr5_yB__v-->
+		<ul id="ul_jzw_tcm_mwb">
+			<li>Create a branch on which you work to fix small problems or to work on a larger feature either
+				by yourself or with some other colleagues. </li>
+			<li>You can also request review on the branch. </li>
+			<li>When finished, merge the branch in the main repository branch or create a pull
+				request to merge the branch.</li>
+		</ul>
+	</body>
+</topic>

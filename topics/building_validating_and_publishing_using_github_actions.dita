@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="building_and_publishing_using_github_actions">
+    <title>Building, Validating, and Publishing Using GitHub Actions</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2024-01-23"/>
+        </critdates>
+    </prolog>
+    <conbody>
+        <p>If you have a GitHub-hosted DITA XML project (either on a private or public repository),
+            you can define GitHub actions to validate and publish your DITA XML project. </p>
+        <p>As an example, the Oxygen XML Blog contains GitHub actions to validate and publish a DITA
+            XML project:<ul id="ul_mj4_j5t_21c">
+                <li>Publish the Oxygen XML Blog DITA XML project to <b>Netlify</b> using a
+                        <b>GitHub</b> action:<ol id="ul_jhk_qwt_21c">
+                        <li>Create an account on <xref href="https://www.netlify.com/" format="html"
+                                scope="external">Netlify</xref> and create a site for the account.
+                            Create an <xref
+                                href="https://app.netlify.com/user/applications#personal-access-tokens"
+                                format="html" scope="external">authentication token</xref> to be
+                            able to access Netlify from a command line and deploy to the site from a
+                            remote location. In the Netlify UI, obtain the ID of <xref
+                                href="https://app.netlify.com/sites/oxygenxmlblog/configuration/general#site-information"
+                                format="html" scope="external">your site</xref>.</li>
+                        <li>In the GitHub project's <b>Settings->Secrets and variables->Actions</b>
+                            category, define two variables to keep the Netlify authentication token
+                            and the side ID values. Also, create a secret for the <b>Oxygen
+                                Publishing Engine</b> license key.</li>
+                        <li>Create a custom <xref
+                                href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle"
+                                format="gradle" scope="external">Gradle build file</xref> that
+                            downloads the <b>Oxygen Publishing Engine</b>, licenses it, produces the
+                            output, and stores it in a specific folder.</li>
+                        <li>Create a custom <xref
+                                href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/publish_netlify.yml"
+                                format="yml" scope="external">GitHub action</xref> that runs the
+                            build file and then uses a plugin to upload the entire folder to the
+                            Netlify web site. The end result looks like this: <xref
+                                href="https://oxygenxmlblog.netlify.app/" format="html"
+                                scope="external"/>.</li>
+                    </ol></li>
+                <li>Publish the DITA XML project to an <b>Amazon S3</b> server using a <b>GitHub</b> action:<ol id="ul_aws_s3_publishing">
+                    <li>Create an <b>Amazon S3</b> bucket and configure it for static website hosting. Make note of the bucket name and region.</li>
+                    <li>In the <b>IAM</b> console, create a new user with programmatic access and attach a policy that grants write access to the S3 bucket. Obtain the access key ID and secret access key for this user.</li>
+                    <li>In the GitHub project's <b>Settings->Secrets and variables->Actions</b> category, define variables to store the S3 bucket name, region, access key ID, and secret access key. Also, create a secret for the <b>Oxygen Publishing Engine</b> license key.</li>
+                    <li>Create a custom <xref
+                                href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle"
+                                format="gradle" scope="external">Gradle build file</xref> that
+                            downloads the <b>Oxygen Publishing Engine</b>, licenses it, produces the
+                            output, and stores it in a specific folder.</li>
+                    <li>Create a <b>GitHub</b> action that runs the build file and then uses the <xref href="https://github.com/aws-actions/configure-aws-credentials" format="html" scope="external">aws-actions/configure-aws-credentials</xref> action to configure the AWS credentials, followed by the <xref href="https://github.com/aws-actions/s3-sync" format="html" scope="external">aws-actions/s3-sync</xref> action to sync the output folder with the S3 bucket.</li>
+                </ol></li>
+                <li>Validate the entire DITA project using the Oxygen <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html"
+                        format="html" scope="external"><b>Validate and Check for
+                        Completeness</b></xref> command-line script:<ol id="ul_xzd_n5t_21c">
+                        <li>In the GitHub project's <b>Settings->Secrets and variables->Actions</b>
+                            category, define a variable named <codeph>SCRIPTING_LICENSE_KEY</codeph>
+                            that has the Oxygen scripting license key as its value.</li>
+                        <li>Set up a <xref
+                                href="https://github.com/oxygenxml/blog/blob/master/build/build-validate-check.gradle"
+                                format="gradle" scope="external">Gradle build file</xref> that
+                            downloads an Oxygen all platforms kit, licenses it, and runs it over the
+                            DITA map. The build file also applies an XSLT stylesheet over the XML
+                            report to produce a Markdown report.</li>
+                        <li>Create a <xref
+                                href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/validate-check-completion.yml"
+                                format="yml" scope="external">GitHub action</xref> that is triggered
+                            by pull requests or modifications done to pull requests, sets up Java,
+                            calls the Gradle build file, and then if there are errors, outputs the
+                            report in Markdown format using the <xref
+                                href="https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary"
+                                format="html" scope="external"
+                                ><codeph>$GITHUB_STEP_SUMMARY</codeph></xref> variable. The report
+                            of running such a GitHub action contains the severity, description, and
+                            a link to the topic where the error was found. The link can be followed
+                            to open the topic in Oxygen XML <b>Web Author</b>:<fig
+                                id="fig_dcp_3wt_21c">
+                                <image href="../images/validation-report-gh-actions.png"
+                                    id="image_zf4_nvt_21c" scale="40"/>
+                            </fig></li>
+                    </ol></li>
+                <li>Validate only the changed topics in a pull request using <b>OpenAI</b> and a
+                    custom prompt to check for grammar problems:<ol id="ul_u2m_rvt_21c">
+                        <li>In the GitHub project's <b>Settings->Secrets and variables->Actions</b>
+                            category, define a variable named <codeph>AI_LICENSE_KEY</codeph> that
+                            has the <b>OpenAI</b> key as its value.</li>
+                        <li>Create a custom <xref
+                                href="https://github.com/oxygenxml/blog/blob/master/build/build-validate-ai.gradle"
+                                format="gradle" scope="external">Gradle build file</xref> that finds
+                            all changed topics in the pull request and then uses the API key to send
+                            the content to <b>OpenAI</b> asking for a report of changes in
+                                <b>Markdown</b> format.</li>
+                        <li>Create a <xref
+                                href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/ai-checks.yml"
+                                format="yml" scope="external">custom GitHub action</xref> that saves
+                            the list of changed files as an environmental variable and passes this
+                            information to the build file, afterwards displaying the report using
+                            the <codeph>$GITHUB_STEP_SUMMARY</codeph> variable. The report of
+                            running such a GitHub action looks like this: <fig id="fig_pjb_mwt_21c">
+                                <image href="../images/validate-ai-gh-action.png"
+                                    id="image_kg3_nwt_21c" scale="40"/>
+                            </fig></li>
+                    </ol></li>
+            </ul></p>
+    </conbody>
+</concept>

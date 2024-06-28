@@ -41,7 +41,7 @@
                                     <xsl:variable name="x" select="normalize-space($fileContent)"/>
                                 	<xsl:variable name="y" select="translate($x, ' ', '')" />
                                     <xsl:variable name="fileCountWords" select="string-length($x) - string-length($y) +1"/>
-                                    <xsl:variable name="readMin" select="format-number($fileCountWords div 50, '0')"/>
+                                    <xsl:variable name="readMin" select="format-number($fileCountWords div 100, '0')"/>
                                     
                                     <a class="title" href="{$fileUrl}">
                                         <xsl:value-of select="($doc//title)[1]"/>

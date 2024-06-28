@@ -1,0 +1,35 @@
+import org.gradle.api.tasks.Exec
+
+task initValidation {
+ String projectDir = "."
+ doLast {
+ if(! new File("${projectDir}/extracted/oxygen/").exists()){
+   ant.get(src: 'https://www.oxygenxml.com/InstData/Editor/All/oxygen.tar.gz', dest: "${projectDir}/oxygen.tar.gz", skipexisting: 'true')
+   ant.untar(src: "${projectDir}/oxygen.tar.gz", dest: "${projectDir}/extracted", compression: 'gzip')
+   new File("${projectDir}/extracted/oxygen/scriptinglicensekey.txt").write(System.getenv( 'SCRIPTING_LICENSE_KEY' ).replaceAll("  ", "\n"))
+  }
+ }
+}
+
+task runValidation(type:Exec, dependsOn: [initValidation]) {
+  File projectDirFile = new File(System.getProperty("user.dir"), "/../").getCanonicalFile();
+  File buildDirFile = new File(System.getProperty("user.dir")).getCanonicalFile();
+  workingDir "${projectDir}/extracted/oxygen";
+  ignoreExitValue true;
+  commandLine "sh", "${buildDirFile.getAbsolutePath()}/extracted/oxygen/scripts/validateCheckDITA.sh", "-i", "${projectDirFile.getAbsolutePath()}/blog-project.xml", "-r", "${buildDirFile.getAbsolutePath()}/extracted/oxygen/validationReport.xml";
+  doLast {
+        String reportText = new File("${buildDirFile.getAbsolutePath()}/extracted/oxygen/validationReport.xml").text;
+        if(reportText.contains("<incident>")) {
+            ant {
+              xslt(
+                 in: "${buildDirFile.getAbsolutePath() + '/extracted/oxygen/validationReport.xml'}",
+                 out: "${projectDirFile.getAbsolutePath() + '/validationReport.md'}",
+                 force: "true",
+                 style: "${buildDirFile.getAbsolutePath() + '/validationReport.xsl'}"
+              ){
+                param(name:"BRANCH_NAME", expression:System.getenv( 'BRANCH_NAME' )) 
+              }
+           }
+       }
+ }
+}

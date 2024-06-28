@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="learningDITAGeneral">
+    <title>Learning</title>
+    <body>
+        <p>There are lots of resources available for learning to work with the DITA XML standard
+            both online and in on <ph keyref="oxygen"/> user's manual and blog.</p>
+    </body>
+</topic>

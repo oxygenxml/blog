@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="use_topic_titles_to_generate_file_names">
+    <title>Automation - Using DITA XML Topic Titles to Generate File Names</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2023-12-04"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>When you create a new DITA topic in <ph keyref="oxygen"/>, you can usually specify the
+            title of the topic and that title is used by the application to propose a file name. For
+            example, for a topic title like <b id="b_ptv_q15_qzb">WebHelp Output</b>, the file name
+            could be <codeph>webhelp_output.dita</codeph>.</p>
+        <p>In general, I think having file names that match the topic titles seems like a best
+            practice technique to identify each topic based solely on the file name. However, there
+            are cases where the file names do not match the topic or map titles and for such cases,
+            I created a <xref
+                href="https://github.com/oxygenxml/dita-refactoring-examples/tree/master/46%20Topic%20titles%20to%20File%20Names"
+                format="html" scope="external">free-to-use Python script</xref> to update the file
+            names of all topics and maps based on the titles specified inside them. The script
+            should also update any link or conref references to reflect the file name changes it
+            makes.</p>
+        <p>I think this script that updates file names based on titles for an entire DITA XML
+            project could be useful in these cases:<ul id="ul_nvp_c15_qzb">
+                <li>There are content management systems (CMSs) that use unique IDs as file names
+                    (for example, <codeph>abc434243243.xml</codeph>). When such projects are
+                    exported from the CMS, the file names look quite ugly on disk and also when
+                    publishing the projects to HTML-based outputs, you might get links to HTML files
+                    like <codeph>abc434243243.html</codeph>, which are ugly and hard to
+                    remember.</li>
+                <li>In time, from one version of the user's guide to another, the titles of certain
+                    topics may change and having a way to update the file names based on titles in
+                    the entire project may be useful.</li>
+                <li>Sometimes after migrating another file format like Microsoft Word to a DITA Map
+                    using the Oxygen <b id="b_osh_bb5_qzb">Batch Documents Converter</b> add-on, you
+                    may want to make sure the topic file names reflect their titles.</li>
+            </ul></p>
+        <p>Below, you can leave feedback or comments about such a practice or about using the script
+            for your project.</p>
+    </body>
+</topic>

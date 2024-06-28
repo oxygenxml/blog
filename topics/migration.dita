@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="migration">
+    <title>Migrate</title>
+    <body>
+        <p><ph keyref="oxygen"/> provides various facilities to migrate content from one format to
+            another.</p>
+    </body>
+</topic>

@@ -1,11 +1,12 @@
 import org.gradle.api.tasks.Exec
 
 task initDOT {
-  String projectDir = "."
+   String projectDir = "."
    doLast {
    if(! new File("${projectDir}/dita-ot/oxygen-publishing-engine/").exists()){
        //https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine.zip
-       ant.get(src: 'https://archives.oxygenxml.com/Nightly/PublishingEngine/oxygen-publishing-engine.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
+       //https://archives.oxygenxml.com/Nightly/PublishingEngine/oxygen-publishing-engine.zip
+       ant.get(src: 'https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
        ant.unzip(src: "${projectDir}/dita-ot.zip", dest: 'dita-ot')
        new File("${projectDir}/dita-ot/oxygen-publishing-engine/licensekey.txt").write(System.getenv( 'LICENSE_KEY' ).replaceAll("  ", "\n"))
     }
@@ -25,43 +26,6 @@ task copySite(type: Copy, dependsOn: [runTransformation]) {
 task copyResources(type: Copy) {
     from "${projectDir}/../resources/"
     into "${projectDir}/../site/resources"
-}
-
-task initValidation {
- String projectDir = "."
- doLast {
- if(! new File("${projectDir}/extracted/oxygen/").exists()){
-   ant.get(src: 'https://archives.oxygenxml.com/Oxygen/Editor/InstData24.1/All/oxygen.tar.gz', dest: "${projectDir}/oxygen.tar.gz", skipexisting: 'true')
-   ant.untar(src: "${projectDir}/oxygen.tar.gz", dest: "${projectDir}/extracted", compression: 'gzip')
-   new File("${projectDir}/extracted/oxygen/scriptinglicensekey.txt").write(System.getenv( 'SCRIPTING_LICENSE_KEY' ).replaceAll("  ", "\n"))
-  }
- }
-}
-
-task runValidation(type:Exec, dependsOn: [initValidation]) {
- workingDir "${projectDir}/extracted/oxygen"
- commandLine "sh", "${projectDir}/extracted/oxygen/scripts/validateCheckDITA.sh", "-i", "${projectDir}/../blog-project.xml", "-r", "${projectDir}/extracted/oxygen/validationReport.xml"
- ignoreExitValue true
-  doLast {
-        if(execResult.getExitValue() != 0) {
-            println new File("${projectDir}/extracted/oxygen/validationReport.xml").text
-            throw new TaskExecutionException( it,
-                new Exception( "Validation failed; "
-                              + "see task output for details." )
-            )
-        }
-    }
-}
-
-task postProcessValidation(dependsOn: [runValidation]) {
- String projectDir = "."
- doLast {
-    ant.replace(
-      file: '${projectDir}/../../site/validationReport.xml',
-      token: '<?xml version="1.0" encoding="UTF-8"?>',
-      value: '<?xml-stylesheet type="text/css" href="report.css"?>'
-  )
- }
 }
 
 task dist(dependsOn: [copySite, copyResources])

@@ -9,12 +9,10 @@
 		<p>There are two main ways to publish:<ul id="ul_xy2_5m1_rwb">
 				<li>Publish on the client side using the local Git repository and then manually
 					upload the published content to a web server.</li>
-				<li>Publish by connecting an integration server to the Git project. For example, for publishing
-					DITA XML content to PDF, you can create a <xref
-						href="https://www.oxygenxml.com/doc/ug-editor/topics/dcpp_generating_pdf_output.html"
-						format="html" scope="external">Jenkins or Travis job or run it from a
-						command line</xref>. For each version branch, a separate server-side job
-					could be created to run when the content is modified on that branch.</li>
+				<li><xref href="../topics/server_side_building_and_publishing.dita"/> by connecting for example
+					integration server to the Git project. For each version branch, a separate
+					server-side job could be created to run when the content is modified on that
+					branch.</li>
 			</ul></p>
 	</body>
 </topic>

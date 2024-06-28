@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="types_of_companies_which_would_benefit_from_the_dita_xml_standard">
+    <title>Types Of Companies Who Would Benefit From Using the DITA XML Standard</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2023-12-31"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>In general, I would divide the companies that benefit from using DITA XML for their
+            technical documentation needs in three large sections:</p>
+        <dl id="dl_rtq_yb1_h1c">
+            <dlentry>
+                <dt>Companies Creating Physical Products</dt>
+                <dd>
+                    <p>These companies create real-world objects, such as cars, refrigerators, or
+                        computer chips. Each version of each product has an unique product ID and
+                        needs to be documented. Different products are sometimes similar in
+                        functionality but they also have some differences.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Companies Creating Version-ed Software Products</dt>
+                <dd>
+                    <p>These companies provide software components that are version-ed and usually
+                        get installed on the client's side. As each client may have an older version
+                        of the product, user manuals for older versions need to be made
+                        available.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Companies Creating Version-less Software Products</dt>
+                <dd>
+                    <p>These companies usually provide cloud-based services, the end-user always
+                        receives access to the latest stable release, and there is no user manual
+                        made available for past releases.</p>
+                </dd>
+            </dlentry>
+        </dl>
+        <p>The benefits for companies would be as follows:<table frame="all" colsep="1" rowsep="1">
+                <title>Benefits</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol2" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry morerows="1">Benefits</entry>
+                            <entry namest="newCol4" nameend="newCol3">Company Types</entry>
+                        </row>
+                        <row>
+                            <entry>Physical Products</entry>
+                            <entry>Version-ed Software Products</entry>
+                            <entry>Version-less Software Products</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Take advantage of <b>DITA XML</b> high reuse capabilities and
+                                condition profiling/filters to produce multiple similar, but not
+                                identical, manuals from the same project.</entry>
+                            <entry>Produce manuals for similar components.</entry>
+                            <entry>Produce user manuals for similar types of software
+                                products.</entry>
+                            <entry>Produce user manuals for similar types of software
+                                products.</entry>
+                        </row>
+                        <row>
+                            <entry>Add structure-based validation rules that must be followed by all
+                                members of a team.</entry>
+                            <entry>Use common validation and terminology rules for the entire
+                                team.</entry>
+                            <entry>Use common validation and terminology rules for the entire
+                                team.</entry>
+                            <entry>Use common validation and terminology rules for the entire
+                                team.</entry>
+                        </row>
+                        <row>
+                            <entry>Create custom vocabulary of semantic elements.</entry>
+                            <entry>Useful to add specific semantic meaning to content specific for
+                                the company.</entry>
+                            <entry>Useful to add specific semantic meaning to content specific for
+                                the company.</entry>
+                            <entry>Useful to add specific semantic meaning to content specific for
+                                the company.</entry>
+                        </row>
+                        <row>
+                            <entry>Besides web-based outputs, produce PDFs with a relatively high
+                                degree of control over the PDF customization.</entry>
+                            <entry>Useful to produce PDFs for print or online delivery.</entry>
+                            <entry>Useful to produce PDFs for print or online delivery.</entry>
+                            <entry>Useful to produce PDFs for print or online delivery.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+    </body>
+</topic>

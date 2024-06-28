@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="running_the_publishing_engine_docker_image_on_aws">
+    <title>Running the Publishing Engine Docker Image on AWS</title>
+    <prolog>
+        <author>Radu Coravu</author>
+    </prolog>
+    <conbody>
+        <p>You can create an EC2 instance on the Amazon Cloud Computing AWS platform, run the
+            publishing there if changes are detected in a Git project, and publish the content to
+            the same platform.</p>
+        <p>
+            <dl id="dl_z45_qzj_5zb">
+                <dlentry>
+                    <dt>Create an Account on AWS</dt>
+                    <dd><xref href="https://aws.amazon.com/resources/create-account/" format="html"
+                            scope="external">Sign in</xref> to create an account on AWS.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Create an EC2 Instance</dt>
+                    <dd><xref
+                            href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
+                            format="html" scope="external">Create an EC2 Instance</xref> on
+                        AWS.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Configure the Security Group and Install a Web Server</dt>
+                    <dd>Configure the Security Group associated to the EC2 instance to allow for
+                        HTTP or HTTPS connections and <xref
+                            href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html"
+                            format="html" scope="external">install a web server</xref>.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Connect to the EC2 Instance</dt>
+                    <dd>Use the AWS Instance Connect to open a console in the web browser to the
+                        instance.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Install Git in the EC2 instance</dt>
+                    <dd>Run this command in the console to install
+                        git:<codeblock id="codeblock_sjq_dbk_5zb">sudo yum install git</codeblock></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Install Docker in the EC2 Instance</dt>
+                    <dd>Run this command in the console to install Docker and start the Docker
+                        daemon:<codeblock id="codeblock_hyt_qbk_5zb">sudo yum install docker
+sudo systemctl start docker</codeblock></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Clone the Git Project</dt>
+                    <dd>Create a local clone of the Git project by running this command in the
+                        console:<codeblock id="codeblock_wyk_nbk_5zb">git clone https://github.com/oxygenxml/blog.git</codeblock></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Create the Docker Image</dt>
+                    <dd>Change directory to the folder containing the
+                            <filepath>Dockerfile</filepath> and run Docker to create an
+                        image.<codeblock id="codeblock_t1g_tbk_5zb">cd blog/build
+sudo docker image build -t oxygen-publishing-engine:1.0 .</codeblock></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Save the Oxygen Publishing Engine License to a file</dt>
+                    <dd>Save the <xref href="https://www.oxygenxml.com/publishing_engine.html"
+                            format="html" scope="external">Oxygen Publishing Engine</xref> license
+                        key to a file (for example, in
+                            <filepath>/home/ec2-user/licensekey.txt</filepath>).</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Run a Container Based on the Docker Image to Publish</dt>
+                    <dd>
+                        <codeblock id="codeblock_k3t_3ck_5zb">sudo docker run -e LICENSE_KEY="$(&lt;/home/ec2-user/licensekey.txt)" \
+--rm --name dita-ot-publish\
+-v /home/ec2-user/blog/:/src  \
+oxygen-publishing-engine:1.0 \
+-p /src/blog-project.xml \
+-o /src/out \
+-f webhelp-responsive -v</codeblock>
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Copy the Published Content to the HTTP Web Server's Folder</dt>
+                    <dd>
+                        <codeblock id="codeblock_rpk_hmk_5zb">cp -rf /home/ec2-user/blog/out/site/* /var/www/html/</codeblock>
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Script to Update the Repository And Publish If Necessary</dt>
+                    <dd>Create a script (for example, named <filepath>pullPublish.sh</filepath>)
+                        with the contents:<codeblock id="codeblock_knk_2sk_5zb">#! /bin/sh
+cd /home/ec2-user/blog
+git -C . remote update &amp;> /dev/null
+checkgit=`git -C . status`
+
+if [[ ! "$checkgit" =~ "up to date" ]]; then
+    # Pull
+    git -C . pull
+    # And publish
+    sudo docker run -it -e LICENSE_KEY="$(&lt;/home/ec2-user/licensekey.txt)" -v /home/ec2-user/blog/:/src  oxygen-publishing-engine:1.0 -p /src/blog-project.xml -o /src/out -f webhelp-responsive -v
+    # Move web site to web server's folder.
+    rm -rf /var/www/html/*
+    mv -f /home/ec2-user/blog/out/site/* /var/www/html/
+fi</codeblock></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Schedule Script to Run Every 10 Minutes</dt>
+                    <dd>Edit the <filepath>crontab</filepath>
+                        file:<codeblock id="codeblock_xbm_h5k_5zb">cd /etc
+sudo vi crontab</codeblock>and add to the
+                        file:<codeblock id="codeblock_lwy_k5k_5zb">*/10 * * * * /home/ec2-user/pullPublish.sh</codeblock></dd>
+                </dlentry>
+            </dl>
+        </p>
+    </conbody>
+</concept>

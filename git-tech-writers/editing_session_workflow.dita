@@ -27,6 +27,22 @@
 				<li><image href="images/pullBeforePush.png" id="image_odv_2fr_swb" scale="30"/></li>
 			</ul>
 		</p>
+		<section>
+			<title>Commit Message</title>
+			<p>Each commit has a commit message. The commit message is in general a brief
+				description of the changes. When using a ticketing system, as a best practice the
+				commit message contains the ID of the ticket.</p>
+			<image href="images/commit-message.png" placement="break" scale="50"/>
+		</section>
+		<section id="section_smb_jhr_nwb">
+			<title>Micro Commits</title>
+			<p>Commit often, whenever a small change in the documentation is beneficial and makes
+				sense by itself. Useful links: <xref
+					href="https://stackoverflow.blog/2022/12/19/use-git-tactically/" format="html"
+					scope="external"/><image placement="break" href="../images/micro-commits.png"
+					id="image_fww_cwq_nwb"
+				/><!--https://mermaid.live/edit#pako:eNptkE1qw0AMha8itHYu4HVCV93UdBNmI2ZkW9TzgywTl5C7d2wTurE2QuJ7T-I90efA2OIg9qFURpegls8xioGEFhx2hacJ_Mj-B3pZeXZ4Qt1WU_LGARI_YGZvktM5-sWXrIG1ssp97cnzDJIgUjkVfJdAm7NEGo7z2GBkjSSh_v7cJA5t5MgON0HgnpbJNvJV0WXX34JYVmxNF26QFsvdb_Lv-WCuQoNSxLanaa7bQume8__Mu8fnkdke3esPdtJtcA--></p>
+		</section>
 		<section id="section_lh1_5dr_swb">
 			<title>Handling Simple Conflicts</title>
 			<p>Conflicts are usually caused by trying to push changes made to resources that, in the
@@ -48,14 +64,5 @@
 				</ul></p>
 		</section>
         <p><!--https://mermaid.live/edit#pako:eNptkTFPwzAQhf-KdXODaNIpAwMpbEgIOhEzWPYFR8S-yDkLVVX_O3bahIF6sb_zu-en8wk0GYQauoF-tFWBxWEvvUirN_dtY1F_U2Txho4Y0zbS1DOFo3gMymv7uWi37WscBtGQZ_QsngO5_02rumyfTM-Lei1XbUPO3bjYJffJru4HuumdEovirnjIcTJtRTFDmaG8QpWhusIONuAwONWbNINTfk4CW3QooU5Hg52KA0uQ_pykcTSKMUenADWHiBtQken96PXCF82-V19BOag7NUypOir_QfTHOHu8XGY_f8H5F9HJhLQ--></p>
-		<section id="section_smb_jhr_nwb">
-			<title>Micro Commits</title>
-			<p>Commit often, whenever a small change in the documentation is beneficial and makes sense by
-				itself. Useful links: <xref
-					href="https://stackoverflow.blog/2022/12/19/use-git-tactically/" format="html"
-					scope="external"/><image placement="break" href="../images/micro-commits.png"
-					id="image_fww_cwq_nwb"
-				/><!--https://mermaid.live/edit#pako:eNptkE1qw0AMha8itHYu4HVCV93UdBNmI2ZkW9TzgywTl5C7d2wTurE2QuJ7T-I90efA2OIg9qFURpegls8xioGEFhx2hacJ_Mj-B3pZeXZ4Qt1WU_LGARI_YGZvktM5-sWXrIG1ssp97cnzDJIgUjkVfJdAm7NEGo7z2GBkjSSh_v7cJA5t5MgON0HgnpbJNvJV0WXX34JYVmxNF26QFsvdb_Lv-WCuQoNSxLanaa7bQume8__Mu8fnkdke3esPdtJtcA--></p>
-		</section>
     </body>
 </topic>

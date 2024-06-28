@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_trg_15z_fs">
+  <title><b>Oxygen XML Users Meetup @ XML Prague 2024: A Deep Dive into XML Technologies and
+      Innovations</b></title>
+  <prolog>
+    <author>Alin Belu</author>
+    <critdates>
+      <created date="2024-05-21"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>At the start of the summer, the beautiful city of Prague will welcome, once more, the XML
+      Prague conference (June 6-8, 2024) - a unique opportunity for developers, markup enthusiasts,
+      information managers, and students to come together in person. </p>
+    <p>Continuing its tradition, the Oxygen XML team will be present at the conference to host the
+      highly anticipated <xref
+        href="https://www.oxygenxml.com/events/2024/oxygen_user_meetup_Prague.html" format="html"
+        scope="external"><b>Oxygen XML Users Meetup</b></xref>. This half-day event, taking place on
+        <b>June 6th</b>, promises to be packed with insightful sessions that cater to both seasoned
+      XML users and newcomers alike, straight from the dedicated individuals behind the Oxygen XML
+      suite of products. </p>
+    <image href="../images/oxygen_users_meetup/usersmeetup1.jpg" scale="15" id="image_ssz_bdz_lbc"/>
+    <image href="../images/oxygen_users_meetup/usersmeetup2.jpg" scale="15" id="image_z3p_cdz_lbc"/>
+    <p>In similar fashion to its past editions, our presenters prepared an agenda full of
+      eye-opening sessions regarding the cutting-edge solutions and tools that we've been tirelessly
+      developing. Here is a preview of what attendees can expect:</p>
+    <p><b>Oxygen Short History and Tools Overview</b>
+      <i>- presented by the Oxygen XML team</i></p>
+    <p><i>Kicking off the meetup at 15:00 (EEST), this session will take attendees through a brief
+        history of Oxygen XML Editor's development and an overview of the tools it offers. It’s a
+        great opportunity to see how Oxygen has evolved over the years and what it now offers to
+        enhance your XML editing capabilities. This will benefit attendees by providing a solid
+        foundation in the tools available for any XML editing needs.</i></p>
+    <p><b>Oxygen AI Positron Assistant</b><i> - presented by Radu Coravu</i></p>
+    <p><i>Explore the cutting-edge integration of AI within the Oxygen suite in this session. Learn
+        how AI is being utilized to streamline XML editing and content management processes.
+        Attendees will benefit from firsthand demonstrations of new functionalities, which are
+        designed to significantly enhance productivity and user experience.</i></p>
+    <p><b>XPath AI Extension Functions</b>
+      <i>- presented by Octavian Nadolu</i></p>
+    <p><i>This technical session will delve into the innovative use of AI in XPath functions,
+        illustrating how these can simplify complex XML operations. It’s a perfect session for those
+        looking to enhance their technical skills and understand the practical applications of AI in
+        XML workflows.</i></p>
+    <p><b>Oxygen Content Fusion Projects</b><i> - presented by Bogdan Dumitru</i></p>
+    <p><i>Discover new features in Oxygen Content Fusion that facilitate project management and
+        publishing directly from Git repositories. This session is particularly beneficial for teams
+        looking for robust collaboration tools in document editing and publishing.</i></p>
+    <p><b>The New JSON Editor</b>
+      <i>- presented by Mircea Enachescu</i></p>
+    <p><i>With the introduction of the new Oxygen JSON editor, this session will showcase its
+        diverse capabilities, including various editing modes and comprehensive validation tools.
+        Attendees will gain insights into how these features can be leveraged to improve data
+        handling and integration in their projects.</i></p>
+    <p><b>YAML Support in Oxygen</b>
+      <i>- presented by Mircea Enachescu</i></p>
+    <p><i>Learn about the latest improvements and features for YAML editing within the Oxygen
+        framework. This session is essential for those who work with YAML and XML, providing tools
+        that ensure greater consistency and error reduction in document management.</i></p>
+    <p><b>DITA XML Editing, Collaboration and Publishing Overview</b>
+      <i>- presented by Radu Coravu</i></p>
+    <p><i>This session focuses on the comprehensive capabilities of Oxygen XML Editor for DITA
+        projects, from editing to publishing. It’s an excellent opportunity to learn how to maximize
+        the efficiency of DITA content management and collaboration.</i></p>
+    <p><b>Oxygen Roadmap and Feedback</b>
+      <i>- presented by Octavian Nadolu</i></p>
+    <p><i>Conclude the day with a forward-looking session where the future roadmap of Oxygen
+        products will be discussed. Participants will have the chance to provide feedback, making it
+        an interactive and engaging session that shapes the future of Oxygen tools.</i></p>
+    <image href="../images/oxygen_users_meetup/usersmeetup3.jpg" scale="15" id="image_jjr_ddz_lbc"/>
+    <image href="../images/oxygen_users_meetup/usersmeetup4.jpg" scale="15" id="image_dwj_2dz_lbc"/>
+    <p>It's important to know that the Oxygen XML Users Meetup and XML Prague are designed not only
+      to impart technical knowledge but also to strengthen the social fabric of the XML user
+      community through meaningful interactions and shared experiences. You get the chance to
+        <b>meet like-minded individuals</b>, <b>form professional relationships</b>, and <b>create
+        lasting connections</b> within the XML community.</p>
+    <p>Make sure to mark your calendars and join us on the 6th of June in Prague for this enriching
+      experience! For more details regarding the event and its agenda, please visit <xref
+        href="https://www.oxygenxml.com/events/2024/oxygen_user_meetup_Prague.html" format="html"
+        scope="external">Oxygen XML Users Meetup in Prague</xref>.</p>
+  </body>
+</topic>

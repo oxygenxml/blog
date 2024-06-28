@@ -35,16 +35,16 @@
           (<b>custom_frameworks/dita-extension/rules</b>) that will contain all of your custom
         Schematron files.</li>
             <li>Create a new <b>ISO Schematron</b> file (for example, <b>additionalRules.sch</b>)
-        that contains the additional rules you want to impose. For example, the following Schematron
-        rule reports an error if the <b>@scale</b> attribute is used on an
-        image:<codeblock outputclass="language-xml">&lt;schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
+                that contains the additional rules you want to impose. For example, the following
+                Schematron rule reports an error if the <b>@scale</b> attribute is used on an
+                image:<codeblock outputclass="language-xml">&lt;schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     &lt;pattern>
         &lt;rule context="*[contains(@class, ' topic/image ')]">
             &lt;assert test="not(@scale)">
                 Dynamically scaled images are not properly displayed, you
                 should scale the image with an image tool and keep it within
-                the recommended with and height limits.
+                the recommended width and height limits.
             &lt;/assert>
         &lt;/rule>
     &lt;/pattern>

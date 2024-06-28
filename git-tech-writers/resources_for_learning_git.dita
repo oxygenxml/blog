@@ -16,9 +16,17 @@
 							scope="external">Pro Git Book</xref>.</li>
 					<li><xref href="https://learngitbranching.js.org/" format="html"
 							scope="external">Learn Git Braching Interactive Tutorial</xref>.</li>
+					<li>Blog post: <xref
+							href="https://blog.jetbrains.com/writerside/2023/11/collaborating-on-docs-best-practices-and-strategies-from-jetbrains-writers/"
+							format="html" scope="external">Collaborating on Docs: Best Practices and
+							Strategies From JetBrains Writers</xref>.</li>
 					<li>Lots of courses about learning Git on <xref
 							href="https://www.udemy.com/topic/git/" format="html" scope="external"
 							>Udemy</xref>.</li>
+					<li>Book written by a technical documentation writer: <xref
+							href="https://www.amazon.com/Learning-Git-Hands-Visual-Basics/dp/1098133919"
+							format="html" scope="external">Learning Git: A Hands-On and Visual Guide
+							to the Basics of Git - Anna Skoulikari</xref> on Amazon.</li>
 				</ul>
 			</p>
 		</section>
