@@ -59,6 +59,12 @@
                 href="https://www.oxygenxml.com/events/2021/webinar_working_with_dita_in_oxygen_migrating_to_dita_and_refactoring.html"
                 format="html" scope="external"/></dd>
           </dlentry>
+          <dlentry>
+            <dt>DITA XML Editing, Collaboration and Publishing Overview</dt>
+            <dd><xref
+                href="https://www.oxygenxml.com/events/2024/oxygen_user_meetup_Prague.html#video_7"
+                format="html" scope="external"/></dd>
+          </dlentry>
         </dl>All these webinars above are also listed here: <xref
           href="https://www.oxygenxml.com/working_with_dita_in_oxygen.html" format="html"
           scope="external"/>.</p>
