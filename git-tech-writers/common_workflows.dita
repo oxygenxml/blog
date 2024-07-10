@@ -15,5 +15,26 @@
 				<li><xref href="release_branches.dita"/></li>
 				<li><xref href="gitflow.dita"/></li>
 			</ul></p>
+		<section id="section_lz3_tvy_zbc">
+			<title>Re-base or merge branches?</title>
+			<p>In most these workflows changes are made on one branch and then integrated on other
+				branches. The changes can be integrated either with Git merge or with Git rebase.
+				This post from <xref
+					href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" format="html"
+					scope="external">Atlassian</xref> explains the differences. Oxygen's Git client
+				add-on supports in its <uicontrol>Git Branch Manager</uicontrol> view only the
+				possibility to merge a branch in another one. </p>
+			<p>Some highlights for each of these choices:<ul id="ul_mdj_nwy_zbc">
+					<li><uicontrol>Git Merge</uicontrol>: Combines two branches by creating a new
+						commit. It keeps the history of both branches as-is.</li>
+					<li>
+						<p><uicontrol>Git Rebase</uicontrol>: Moves the entire history of the branch
+							you're on to the tip of the branch you're rebasing onto. It gives a
+							linear commit history.<note id="note_jd1_bxy_zbc" type="important">The
+								golden rule of <codeph>git rebase</codeph> is to never use it on
+									<i>public</i> branches.</note></p>
+					</li>
+				</ul></p>
+		</section>
 	</body>
 </topic>
