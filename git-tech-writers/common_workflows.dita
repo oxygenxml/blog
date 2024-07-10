@@ -23,7 +23,8 @@
 					href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" format="html"
 					scope="external">Atlassian</xref> explains the differences. Oxygen's Git client
 				add-on supports in its <uicontrol>Git Branch Manager</uicontrol> view only the
-				possibility to merge a branch in another one. </p>
+				possibility to merge a branch in another one. Our general advice is to use
+					<uicontrol>Git merge</uicontrol>.</p>
 			<p>Some highlights for each of these choices:<ul id="ul_mdj_nwy_zbc">
 					<li><uicontrol>Git Merge</uicontrol>: Combines two branches by creating a new
 						commit. It keeps the history of both branches as-is.</li>
