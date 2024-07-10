@@ -192,7 +192,8 @@
             <dd><image href="../images/proof-read.gif" id="image_rdt_s13_ybc" scale="70"/></dd>
           </dlentry>
           <dlentry>
-            <dt>Add Structured Content - Project based Retrieval Augmentation (RAG)</dt>
+            <dt>Add Structured Content - Project based Retrieval Augmentation (RAG) (Oxygen 27 and
+              newer)</dt>
             <dd><image href="../images/rag-add-structure.gif" id="image_wxq_xjy_zbc" scale="70"
               /></dd>
           </dlentry>
