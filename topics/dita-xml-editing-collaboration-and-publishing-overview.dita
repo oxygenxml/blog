@@ -32,20 +32,20 @@
                 benefit from using it, and how it is typically purchased, please see: <xref
                     href="oxygen_xml_as_a_technical_documentation_solution_faq.dita"/>.</p>
         </section>
-        <section id="section_bjv_2jx_pbc">
-            <title>Storage</title>
-            <p>Possibilities to store the DITA XML content:<ul id="ul_kl5_fjx_pbc">
-                    <li><xref href="../git-tech-writers/using_git_for_technical_writing.dita">Using
-                            a Git project.</xref>.</li>
-                    <li><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/sharepoint-connection.html"
-                            format="html" scope="external">Sharepoint</xref>.</li>
-                    <li>WebDav or eXist DB.</li>
-                    <li><xref href="https://www.oxygenxml.com/partners.html#cmssolutionpartners"
-                            format="html" scope="external">Using a commercial available
-                        CMS</xref>.</li>
-                    <li>Building your own CMS integration plugin.</li>
-                </ul></p>
+        <section>
+            <title>General Advantages of Structured DITA XML Editing With Oxygen</title>
+            <ul id="ul_gnq_mc3_1cc">
+                <li>You own your content, the storage is on your own servers, privacy is
+                    insured.</li>
+                <li>You are using a standard (DITA XML) for which lots of tools and publishing
+                    choices exist.</li>
+                <li>Reuse content and easily update the reused content in multiple places.</li>
+                <li>Reduce translation costs by reusing content.</li>
+                <li>Lost of publishing format choices (WebHelp, PDF, Windows Help, Word, Markdown,
+                    etc).</li>
+                <li>Enforce consistency through structured validation (custom Schematron rules,
+                    Quick Fixes).</li>
+            </ul>
         </section>
         <section id="section_srq_s5g_4bc">
             <title>DITA Maps Manager</title>
@@ -232,6 +232,21 @@
                     <li><b>Oxygen Feedback Connector</b> - Provides ways to see and change (delete,
                         accept, reject) comments offered in the Oxygen Feedback system to writers
                         working in the desktop application.</li>
+                </ul></p>
+        </section>
+        <section id="section_bjv_2jx_pbc">
+            <title>Storage</title>
+            <p>Possibilities to store the DITA XML content:<ul id="ul_kl5_fjx_pbc">
+                    <li><xref href="../git-tech-writers/using_git_for_technical_writing.dita">Using
+                            a Git project.</xref>.</li>
+                    <li><xref
+                            href="https://www.oxygenxml.com/doc/ug-editor/topics/sharepoint-connection.html"
+                            format="html" scope="external">Sharepoint</xref>.</li>
+                    <li>WebDav or eXist DB.</li>
+                    <li><xref href="https://www.oxygenxml.com/partners.html#cmssolutionpartners"
+                            format="html" scope="external">Using a commercial available
+                        CMS</xref>.</li>
+                    <li>Building your own CMS integration plugin.</li>
                 </ul></p>
         </section>
         <section id="section_k5r_1vg_4bc">
