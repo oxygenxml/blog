@@ -312,4 +312,11 @@
                     <xref keyref="publishing"/>.</p>
         </section>
     </body>
+    <related-links>
+        <link href="https://www.oxygenxml.com/events/2024/oxygen_user_meetup_Prague.html#video_7"
+            format="html" scope="external">
+            <linktext>DITA XML Editing, Collaboration and Publishing Overview - webinar recording an
+                XML Prague.</linktext>
+        </link>
+    </related-links>
 </topic>
