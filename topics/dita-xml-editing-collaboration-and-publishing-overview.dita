@@ -192,6 +192,17 @@
                     documents that are directly referenced in a DITA map.</li>
             </ul>
         </section>
+        <section id="section_sp1_vnm_1cc">
+            <title>Integrating Other File Types in Your DITA Map</title>
+            <p>You can <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/markdown-dita.html"
+                    format="html" scope="external">integrate Markdown files</xref> directly in your
+                DITA Map, allowing subject matter experts to contribute content.</p>
+            <p>You can also integrate <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-compatible-docs.html"
+                    format="html" scope="external">other file formats</xref> like Word, Excel,
+                OpenAPI, HTML directly in the DITA Map.</p>
+        </section>
         <section id="section_dsz_w5g_4bc">
             <title>Framework Customizations</title>
             <p>You can customize the overall <xref
@@ -222,12 +233,14 @@
                     <li><b>Content Fusion Connector</b> - Enables subject matter experts (SMEs) to
                         review technical documentation content directly in a web browser.</li>
                     <li><b>Batch Documents Converter</b> - Converts documents from various formats
-                        such as MS Word, DocBook, Markdown, and XHTML to DITA XML.</li>
+                        such as <uicontrol>MS Word</uicontrol>, <uicontrol>DocBook</uicontrol>,
+                            <uicontrol>Markdown</uicontrol>, and <uicontrol>XHTML</uicontrol> to
+                            <uicontrol>DITA XML</uicontrol>.</li>
                     <li><b>Terminology Checker</b> - Checks for terminology-related issues in your
                         content.</li>
-                    <li><b>Fluenta DITA Translation</b> Add-on - Uses the Fluenta third-party
-                        library to create XLIFF exports from DITA maps and import DITA maps from
-                        translated XLIFF files.</li>
+                    <li><b>Fluenta DITA Translation Add-on</b> - Uses the Fluenta third-party library
+                        to create XLIFF exports from DITA maps and import DITA maps from translated
+                        XLIFF files.</li>
                     <li><b>Oxygen AI Positron Assistant</b> - Provides AI-powered assistance for
                         content creation and editing.</li>
                     <li><b>Oxygen Feedback Connector</b> - Provides ways to see and change (delete,
@@ -240,6 +253,7 @@
             <p>Possibilities to store the DITA XML content:<ul id="ul_kl5_fjx_pbc">
                     <li><xref href="../git-tech-writers/using_git_for_technical_writing.dita">Using
                             a Git project.</xref>.</li>
+                    <li>Subversion project.</li>
                     <li><xref
                             href="https://www.oxygenxml.com/doc/ug-editor/topics/sharepoint-connection.html"
                             format="html" scope="external">Sharepoint</xref>.</li>
@@ -266,15 +280,32 @@
                     <li>Review content internally using the <xref
                             href="https://www.oxygenxml.com/content_fusion.html" format="html"
                             scope="external">Content Fusion</xref> platform.</li>
-                    <li>Review content internally or externally by publishing it to WebHelp
-                        Responsive output and using the <xref
+                    <li>Review content internally or externally by publishing it to
+                            <uicontrol>WebHelp Responsive</uicontrol> output and using the <xref
                             href="https://www.oxygenxml.com/oxygen_feedback.html" format="html"
                             scope="external">Feedback platform</xref>.</li>
-                    <li>Review content internally or externally by publishing it to WebHelp
-                        Responsive output or PDF and using <xref
+                    <li>Review content internally or externally by publishing it to
+                            <uicontrol>WebHelp Responsive</uicontrol> output or
+                            <uicontrol>PDF</uicontrol> and using <xref
                             href="https://www.oxygenxml.com/doc/ug-waCustom/topics/webauthor-integrate-embedded-launch.html"
                             format="html" scope="external">edit links</xref>.</li>
                 </ul></p>
+        </section>
+        <section id="section_enq_dj4_1cc">
+            <title>Content Fusion Collaboration Platform (Web Browser)</title>
+            <ul id="ul_abg_2j4_1cc">
+                <li>Installation as a server component in the client's own network.</li>
+                <li>Live demo web site to test and explore: <xref
+                        href="https://fusion.oxygenxml.com" format="html" scope="external"/>.</li>
+                <li>Create and upload review tasks for subject matter experts.</li>
+                <li>Connect to Git projects:<ul id="ul_ydz_fj4_1cc">
+                        <li>Allow creating review tasks.</li>
+                        <li>Edit DITA XML content in your personal workspace.</li>
+                        <li>Edit other types of documents.</li>
+                        <li>Create publications and publish to WebHelp and PDF outputs.</li>
+                        <li>Use connectors to push publications to live web sites.</li>
+                    </ul></li>
+            </ul>
         </section>
         <section id="section_yjg_cyg_4bc">
             <title>Translate</title>
