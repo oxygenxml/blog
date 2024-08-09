@@ -88,6 +88,8 @@
           scope="external">DITA For Practitioners</xref> and the <xref
           href="https://www.oxygenxml.com/dita/styleguide/" format="html" scope="external">DITA
           Style Guide</xref>.</p>
+      <p><xref href="https://acm-sigdoc-structured.org/1-curriculum-resources.html" format="html"
+          scope="external">Resources for understanding and working with DITA XML by ACM</xref>.</p>
     </section>
     <section id="section_ufb_ngj_2v">
       <title>Resources for customizing the DITA output formats</title>
