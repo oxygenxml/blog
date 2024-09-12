@@ -9,14 +9,14 @@
         </critdates>
     </prolog>
     <body>
-        <p>We believe that we have created for technical documentation writers useful AI-based tools
-            in order both to enhance the editing  experience and to offset AI-powered assistants for
-            the published documentation.</p>
-        <p>This presentation created by <b>George Bina</b> and titled <b>AI-Powered XML Editing</b>
-            provides a high level overview of the most important AI related features we have
-            implemented in our application in the last years. I am embedding it below for our
-            clients and integrators to also have a general understanding of the <b>AI-Powered XML
-                Editing</b> tools we are offering.</p>
+        <p>We have developed AI-based tools that we believe will greatly benefit technical
+            documentation writers. These tools are designed to enhance the editing experience and
+            provide an alternative to AI-powered assistants for published documentation.</p>
+        <p><b>George Bina</b> has created a presentation titled '<b>AI-Powered XML Editing</b>,'
+            which offers a comprehensive overview of the key AI-related features we've implemented
+            in our application over recent years. I've included this presentation below for our
+            clients and integrators to gain a better understanding of the <b>AI-Powered XML
+                Editing</b> tools we offer.</p>
         <p><foreign outputclass="html-embed">&lt;iframe
                 src="../resources/OxygenAI.pdf" height="600"
                 width="1000"/></foreign></p>
