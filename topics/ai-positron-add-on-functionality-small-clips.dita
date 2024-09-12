@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ai-positron-add-on-functionality-small-clips">
+    <title>AI Positron Add-on Functionality - Small Clips</title>
+    <prolog>
+        <author>Radu Coravu</author>
+    </prolog>
+    <body>
+        <p>A list of small animated clips showcasing some interesting aspects of the
+                functionality.<dl id="dl_mgw_tbl_sbc">
+                <dlentry>
+                    <dt>Generat a draft DITA XML topic from an image</dt>
+                    <dd><image href="../images/ai/draft-topic-image.gif" id="image_tqn_vbl_sbc"
+                            scale="70"/></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Batch generating alternate text for DITA XML images</dt>
+                    <dd><image href="../images/ai/batch-image-alt-text.gif" id="image_hn1_xbl_sbc"
+                            scale="70"/></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Generate a Mermaid diagram from a task</dt>
+                    <dd><image href="../images/ai/mermaid.gif" id="image_mr5_ybl_sbc" scale="70"
+                        /></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Add comments about grammar problems and then resolve them</dt>
+                    <dd><image href="../images/ai/add-resolve-comments.gif" id="image_ikq_1cl_sbc"
+                            scale="70"/></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Proof Read and Resolve Comments</dt>
+                    <dd><image href="../images/proof-read.gif" id="image_rdt_s13_ybc" scale="70"
+                        /></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Add Structured Content - Project based Retrieval Augmentation (RAG)</dt>
+                    <dd><image href="../images/rag-add-structure.gif" id="image_wxq_xjy_zbc"
+                            scale="70"/></dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Improve Structure</dt>
+                    <dd><image href="../images/ai/improve-structure.gif" id="image_p5r_3zv_rcc" scale="70"
+                        /></dd>
+                </dlentry>
+            </dl></p>
+    </body>
+</topic>
