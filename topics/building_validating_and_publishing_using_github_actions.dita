@@ -104,6 +104,9 @@
                                     id="image_kg3_nwt_21c" scale="40"/>
                             </fig></li>
                     </ol></li>
+                <li>A <xref href="https://github.com/AlexJitianu/ai-assistants" format="html"
+                        scope="external">sample</xref> project which uses OpenAI to check topics for
+                    grammar problems and to create automatic pull requests for this.</li>
             </ul></p>
     </conbody>
 </concept>
