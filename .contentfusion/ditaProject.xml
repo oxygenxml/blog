@@ -8,7 +8,9 @@
     <deliverable id="PDF-1704797224129" name="PDF">
         <context idref="IukfVpqKsJWNBFd"/>
         <output href="pdf-output"/>
-        <publication idref="pdf"/>
+        <publication idref="pdf">
+            <param name="pdf.publishing.template" value="cf://templates/Oxygen"/>
+        </publication>
     </deliverable>
     <deliverable id="d-Oxygen_XML_Blog_to_WebHelp_Responsive-1715330605782" name="Oxygen XML Blog to WebHelp Responsive">
         <context idref="IukfVpqKsJWNBFd"/>
