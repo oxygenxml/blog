@@ -258,6 +258,10 @@ h3.followit{
     color: #333;
 }
 
+.author.Sorin_Carbunaru{
+    background-image: url("resources/images/foto-SorinC.png");
+}
+
 .author.Radu_Coravu{
     background-image: url("resources/images/foto-RaduC.jpg");
 }
