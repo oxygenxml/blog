@@ -10,13 +10,18 @@
     </prolog>
     <body>
         <p>Generative Artificial Intelligence (GenAI) is a category of AI focused on <b>creating
-                content </b>(text, images, videos, music, etc.), as opposed to traditional AI, which
-            aims primarily at understanding or classifying data. </p>
-        <p><b>Sorin Carbunaru</b> has created a presentation titled <b>Utilizing GenAI to Enhance
-                Early-Stage Technical Content Creation</b> about how generative AI can enhance your
-            productivity in the early-stage technical content creation. I've included this
-            presentation below for our clients and integrators to gain a better understanding of the
-                <b>AI-Powered XML Editing</b> tools we offer.</p>
+        content </b>(text, images, videos, music, etc.), as opposed to traditional AI, which aims
+      primarily at understanding or classifying data. And in the early-stages of writing technical
+      documentation, GenAI can be used for at least two purposes:</p>
+    <ol id="ol_icy_ydd_wcc">
+      <li>Generating a documentation draft from scratch.</li>
+      <li>Updating the existing text content based on recent changes in a product.</li>
+    </ol>
+        <p>I've created a presentation titled <b>Utilizing GenAI to Enhance Early-Stage Technical
+        Content Creation</b> about how generative AI can enhance your productivity in the
+      early-stage technical content creation, and I've included this presentation below for our
+      clients and integrators to gain a better understanding of the <b>AI-Powered XML Editing</b>
+      tools we offer.</p>
         <p><foreign outputclass="html-embed">&lt;iframe
             src="../resources/Sorin_Carbunaru_Utilizing_GenAI_With_Vision.pdf#zoom=50" height="600"
                 width="100%"/></foreign></p>
