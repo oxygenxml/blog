@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="gen-ai-enhance-editing">
+    <title>Utilizing GenAI to Enhance Early-Stage Technical Content Creation (Presentation)</title>
+    <prolog>
+        <author>Sorin Carbunaru</author>
+        <critdates>
+            <created date="2024-09-27"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Generative Artificial Intelligence (GenAI) is a category of AI focused on <b>creating
+                content </b>(text, images, videos, music, etc.), as opposed to traditional AI, which
+            aims primarily at understanding or classifying data. </p>
+        <p><b>Sorin Carbunaru</b> has created a presentation titled <b>Utilizing GenAI to Enhance
+                Early-Stage Technical Content Creation</b> about how generative AI can enhance your
+            productivity in the early-stage technical content creation. I've included this
+            presentation below for our clients and integrators to gain a better understanding of the
+                <b>AI-Powered XML Editing</b> tools we offer.</p>
+        <p><foreign outputclass="html-embed">&lt;iframe
+                src="../resources/2024_ETC_Sorin_Carbunaru_Utilizing_GenAI_To_Enhance_Early_Stage_Technical_Content_Creation.pdf#zoom=50" height="600"
+                width="100%"/></foreign></p>
+    </body>
+</topic>
