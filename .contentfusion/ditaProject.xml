@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project xmlns="https://www.dita-ot.org/project">
+    <context id="nwQcREgTDuzrCKr" name="abcdef">
+        <input href="../oxygen_xml_blog.ditamap"/>
+    </context>
     <context id="IukfVpqKsJWNBFd" name="Blog">
         <input href="../oxygen_xml_blog.ditamap"/>
     </context>
@@ -15,8 +18,6 @@
     <deliverable id="d-Oxygen_XML_Blog_to_WebHelp_Responsive-1715330605782" name="Oxygen XML Blog to WebHelp Responsive">
         <context idref="IukfVpqKsJWNBFd"/>
         <output href="webhelp-output"/>
-        <publication idref="webhelp">
-            <param name="webhelp.publishing.template" value="cf://templates/Oxygen"/>
-        </publication>
+        <publication idref="webhelp"/>
     </deliverable>
 </project>
