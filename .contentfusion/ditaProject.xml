@@ -18,6 +18,8 @@
     <deliverable id="d-Oxygen_XML_Blog_to_WebHelp_Responsive-1715330605782" name="Oxygen XML Blog to WebHelp Responsive">
         <context idref="IukfVpqKsJWNBFd"/>
         <output href="webhelp-output"/>
-        <publication idref="webhelp"/>
+        <publication idref="webhelp">
+            <param href="cf://templates/Oxygen" name="webhelp.publishing.template"/>
+        </publication>
     </deliverable>
 </project>
