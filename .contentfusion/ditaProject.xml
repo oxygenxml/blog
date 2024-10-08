@@ -12,14 +12,12 @@
         <context idref="IukfVpqKsJWNBFd"/>
         <output href="pdf-output"/>
         <publication idref="pdf">
-            <param name="pdf.publishing.template" value="cf://templates/Oxygen"/>
+            <param href="cf://templates/Oxygen" name="pdf.publishing.template"/>
         </publication>
     </deliverable>
     <deliverable id="d-Oxygen_XML_Blog_to_WebHelp_Responsive-1715330605782" name="Oxygen XML Blog to WebHelp Responsive">
         <context idref="IukfVpqKsJWNBFd"/>
         <output href="webhelp-output"/>
-        <publication idref="webhelp">
-            <param name="webhelp.publishing.template" value="cf://templates/Oxygen"/>
-        </publication>
+        <publication idref="webhelp"/>
     </deliverable>
 </project>
