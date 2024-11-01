@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="dita-xml-editing-collaboration-and-publishing-overview">
     <title>DITA XML Editing, Collaboration and Publishing Overview</title>
-    <shortdesc>Oxygen XML provides a wide range of features for editing, reusing, profiling,
+    <shortdesc>Oxygen XML provides a wide  range of features for editing, reusing, profiling,
         reviewing, and publishing DITA XML content. We strive to offer a complete editing,
         collaboration package which is still flexible enough to be customized for a variety of use
         cases.</shortdesc>
