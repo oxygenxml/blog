@@ -20,7 +20,7 @@
             features or feature categories), each with a short description based on personal
             experience.</p>
         <p>
-            <table frame="all" id="table_nlk_b1c_fdc" rowheader="firstcol">
+            <table frame="all" id="table_nlk_b1c_fdc" rowheader="firstcol" colsep="1" rowsep="1">
                 <title>Features Retrospective</title>
                 <tgroup cols="2">
                     <colspec colname="c1" colnum="1" colwidth="1*" align="left"/>
@@ -32,7 +32,7 @@
                                 tools more and more to improve readability and fix grammar or
                                 logical inconsistencies in articles like this one. I don't ask the
                                 AI to create new article ideas, but I do use AI tools to make the
-                                content I write easier to read. If I had lots of  time to work on a
+                                content I write easier to read. If I had lots of time to work on a
                                 new blog post article idea, I might not need AI tools, but
                                 unfortunately like many of you, I don't.</entry>
                         </row>
