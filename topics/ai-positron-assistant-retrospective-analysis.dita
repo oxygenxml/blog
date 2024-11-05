@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ai-positron-assistant-retrospective-analysis">
+    <title>AI Positron Assistant - Retrospective Analysis</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2024-11-05"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>It's been more than two years since we started working on the <xref
+                href="ai_positron.dita"/>, back when the <uicontrol>OpenAI GPT 3.5</uicontrol> AI
+            engine was released and we are currently on version 4.0.0 of the add-on. Our main
+            direction (which we still keep) was to provide powerful tools based on AI engines for
+            technical documentation writers (targeted mostly towards DITA XML users) and for our
+            XSLT/Schematron developers. I've always envisioned the AI set of tools as an
+            exoskeleton, as a way to add more power to a technical documentation writer's punch
+            throughout the day. The table below contains a list of concepts (mostly add-on specific
+            features or feature categories), each with a short description based on personal
+            experience.</p>
+        <p>
+            <table frame="all" id="table_nlk_b1c_fdc" rowheader="firstcol">
+                <title>Features Retrospective</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*" align="left"/>
+                    <colspec colname="c2" colnum="2" colwidth="3.14*"/>
+                    <tbody>
+                        <row>
+                            <entry>Eating our own dog food?</entry>
+                            <entry>Are we using AI tools ourselves? Yes, I have started using AI
+                                tools more and more to improve readability and fix grammar or
+                                logical inconsistencies in articles like this one. I don't ask the
+                                AI to create new article ideas, but I do use AI tools to make the
+                                content I write easier to read. If I had lots of  time to work on a
+                                new blog post article idea, I might not need AI tools, but
+                                unfortunately like many of you, I don't.</entry>
+                        </row>
+                        <row>
+                            <entry>Usefulness</entry>
+                            <entry>Are AI engines useful for a technical writer's work? Definitely
+                                yes. People might think they can just send the AI a bunch of content
+                                with a simple instruction like <codeph>Spell check this
+                                    content</codeph> and the AI will always return the correct
+                                content. The AI engine gives meaningful answers when the prompt is
+                                detailed and precise. This is why we include many predefined actions
+                                with our add-on.</entry>
+                        </row>
+                        <row>
+                            <entry>Platform availability</entry>
+                            <entry>From the start, we wanted the add-on to work for both the desktop
+                                Oxygen application and the WebAuthor in-browser editor. We included
+                                core features like predefined actions, chat support, and the ability
+                                to create custom actions. This way, we can offer most of these
+                                features on both the desktop and the web application.</entry>
+                        </row>
+                        <row>
+                            <entry>AI engine choice flexibility</entry>
+                            <entry>
+                                <p>Our initial offer was a <b>subscription</b>-based license using
+                                    the Oxygen AI Positron Platform as a bridge to OpenAI. We
+                                    noticed that some companies wanted a choice of which AI engine
+                                    to use, so we created the <uicontrol>Oxygen AI Positron
+                                        Enterprise</uicontrol> add-on. This add-on allows companies
+                                    to use their own AI engine directly, with support for connectors
+                                    to <b>OpenAI</b>, <b>Microsoft Azure OpenAI</b>, and
+                                        <b>Anthropic Claude</b>. There are also proxy servers that
+                                    can wrap many AI engines like <b>LLama</b> and <b>Mistral</b>,
+                                    allowing them to be accessed using the OpenAI interface. Is the
+                                    current flexibility we offer enough? Not in all cases. We plan
+                                    to allow developers to create their own connectors to use their
+                                    own APIs to access the engines.</p>
+                                <p>So are all AI engines equal? Our predefined actions have and are
+                                    actively tested with <b>OpenAI</b> engines and with engines
+                                    provided by <b>Anthropic Claude</b>. We also tried to use
+                                    engines like <b>Llama 3.1</b> or <b>Mistral</b> with our current
+                                    predefined actions but the results are not fantastic, the
+                                    possibility to obtain broken <b>DITA XML</b> content with these
+                                    open source engines is much higher.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Predefined actions</entry>
+                            <entry>Over time, we improved how we write prompts for the many <xref
+                                    href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_z5l_qbx_jbc"
+                                    format="html" scope="external">predefined actions</xref> that
+                                come with the add-on. For each action, we try to give a clear prompt
+                                with lots of details so the AI engine can produce the best results.
+                                We test our predefined actions using both manual and automatic
+                                tests. We got the best results with Open AI GPT-4 engines and the
+                                engines provided by <b>Anthropic Claude</b> like
+                                <b>Sonnet</b>.</entry>
+                        </row>
+                        <row>
+                            <entry>Custom actions</entry>
+                            <entry>We wanted to give companies the flexibility to create their own
+                                    <xref
+                                    href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
+                                    format="html" scope="external">custom actions</xref> using
+                                specific prompts to solve their unique problems. With the add-on, we
+                                provide a <b>JSON</b> schema that defines all aspects of
+                                implementing custom AI actions. The key to a successful action is to
+                                make it as precise and detailed as possible.</entry>
+                        </row>
+                        <row>
+                            <entry>Content generation</entry>
+                            <entry>
+                                <p>There are two main ways AI based content generation can be
+                                    useful:</p>
+                                <ul id="ul_njw_gbs_fdc">
+                                    <li>Summarizing a large amount of text. For example predefined
+                                        actions like <uicontrol>Short Description</uicontrol> try to
+                                        summarize a big piece of content. These actions usually work
+                                        very well.</li>
+                                    <li>Expanding a small amount of text. Content generation actions
+                                        like <uicontrol>Add Structured Content</uicontrol> or
+                                            <uicontrol>Generate Documentation Draft</uicontrol> use
+                                        the AI engine to expand existing content and create valid
+                                        DITA XML content. Since AI engines can make mistakes if they
+                                        don't have enough details, we added support for <xref
+                                            href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__ai-p-rag"
+                                            format="html" scope="external"><b>RAG</b></xref>
+                                        (retrieval augmented generation) functions. These functions
+                                        use the existing project content to give the AI engine
+                                        enough useful information to create new DITA XML content. A
+                                        common use for a writer is to gather data from different
+                                        sources and create a first draft of a DITA XML topic, which
+                                        they can refine later. This is what we aim to provide with
+                                        our predefined actions.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Vision support</entry>
+                            <entry>Certain actions like <b>Generate Image Alternate Text</b>,
+                                    <uicontrol>Generate Documentation Draft</uicontrol>, or
+                                    <b>Update Content Based on Images</b> use the capabilities of
+                                engines like <b>GPT-4o</b>. These engines read content from images
+                                provided by the user and then use that information to write new DITA
+                                XML content or update existing content. In our experience, these
+                                kinds of actions are useful and work quite well to update DITA XML
+                                content based on application screenshots.</entry>
+                        </row>
+                        <row>
+                            <entry>Rewrite actions</entry>
+                            <entry>We created useful actions to <b>Correct Grammar</b>, <b>Improve
+                                    Readability</b>, <b>Use Active Voice</b>, and <b>Improve
+                                    Structure</b>. These actions are applied to existing content,
+                                they have precise prompts which instruct the AI to preserve the
+                                existing content as much as possible, and they are solid examples of
+                                how the AI can help a writer during their daily work.</entry>
+                        </row>
+                        <row>
+                            <entry>Review actions</entry>
+                            <entry>At some point, we had the idea that the AI, instead of fixing
+                                problems, could leave the original content as it is and just add
+                                comments around the content that needs to be changed. So, the
+                                    <b>Proofread</b> action appeared as a way to allow the AI engine
+                                to give advice on existing content without making any changes. In a
+                                way, the AI engine becomes a reviewer of a first document draft. The
+                                    <b>Resolve Comments</b> action appeared as a way to allow the AI
+                                engine to fix existing comments by changing the content.</entry>
+                        </row>
+                        <row>
+                            <entry>Overview actions</entry>
+                            <entry>We created some useful actions to <b>Summarize</b> or report on
+                                the <b>Readability</b> of a DITA XML topic. We also created actions
+                                to use AI to better understand what questions a certain topic
+                                answers. In the future, using an AI engine might also include asking
+                                the AI to find <b>logical inconsistencies</b> in already written
+                                content, which may be too large for a person to fully digest
+                                easily.</entry>
+                        </row>
+                        <row>
+                            <entry>Translate actions</entry>
+                            <entry>There are studies that say the translation abilities in AI
+                                engines are better than <b>Google Translate</b> or <b>DeepL</b>. The
+                                available translation actions have clear prompts that tell the AI
+                                engine to skip certain DITA XML tags like
+                                    <xmlelement>codeblock</xmlelement> or
+                                    <xmlelement>codeph</xmlelement>. In general, they seem to do a
+                                good job of keeping the existing DITA XML structure, including the
+                                parts of reusable content and key references.</entry>
+                        </row>
+                        <row>
+                            <entry>Intelligent agents</entry>
+                            <entry>In the most recent add-on release, we added new actions like
+                                    <b>Split Topic</b> and <b>Create Topics</b>. These actions give
+                                the AI more freedom to process existing content and create new
+                                topics on disk. The AI uses a feedback loop where it first proposes
+                                a plan of action, evaluates how the content could be changed, and
+                                then makes the necessary changes. These actions try to use the AI
+                                engine's potential to the max by letting it plan and execute more
+                                complex tasks.</entry>
+                        </row>
+                        <row>
+                            <entry>Reuse actions</entry>
+                            <entry><b>DITA XML</b> is about content reuse. So, how can the AI engine
+                                help with this? For now, we have created two predefined actions.
+                                These actions use functions to let the AI engine access already
+                                reusable components. One action replaces product names with existing
+                                key references. The other action retrieves the closest reusable
+                                component to the currently selected paragraph. But I think more can
+                                be done in this area in the future.</entry>
+                        </row>
+                        <row>
+                            <entry>Chat</entry>
+                            <entry>
+                                <p>Using AI engines means accepting that an action might not always
+                                    give the right content. We give you control to preview the
+                                    changes suggested by the AI and then keep chatting with the AI
+                                    to fine-tune the answer until it is correct.</p>
+                                <p>Chatting with the AI can also be a useful way to learn how
+                                    different concepts work. We added <b>RAG</b> (retrieval
+                                    augmented generation) support in the chat window. This lets
+                                    people search for content and get precise answers based on their
+                                    own documentation project.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Specializations support</entry>
+                            <entry>So, how does the AI work with DITA XML specializations that might
+                                have custom <codeph>DOCTYPE</codeph> declarations or custom DITA XML
+                                    elements?<p>Most of the built-in actions should work well with
+                                    DITA XML specializations. For example, actions that rewrite the
+                                    content or translate it should keep the existing DITA XML
+                                    elements in the selection unchanged. Actions like <b>New DITA
+                                        Topic</b> create basic DITA XML topics. However, there are
+                                    actions like <b>Add Structured Content</b> that expand the
+                                    content of an already created DITA XML topic. This allows the
+                                    user to first create the DITA XML topic based on their
+                                    specialization before using the AI engine. Actions like
+                                        <b>Improve Structure</b> add base DITA XML elements to the
+                                    selected content, so they might not use all the specialized DITA
+                                    XML elements.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Third Party CMS support</entry>
+                            <entry>Both Oxygen desktop and in-browser editing tools can be
+                                integrated with various content management systems. Most AI
+                                predefined actions should work when Oxygen is integrated with
+                                third-party CMSs. However, actions that write content on disk (like
+                                actions from the <b>Intelligent agents</b> category) might not be
+                                able to create new topics on the CMS. Actions improved by using
+                                    <b>RAG</b> (retrieval augmented generation) might also not work
+                                well since the project content is stored on the CMS. Oxygen desktop
+                                has an <uicontrol>Enable indexing for remote resources</uicontrol>
+                                checkbox on its <uicontrol>Open/Find Resource</uicontrol> page in
+                                    <b>Preferences</b>. This allows our indexing engine to index
+                                content from the CMS. But the in-browser WebAuthor editing tool does
+                                not yet support indexing CMS-specific content.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>I hope this article, based on my experience working on AI editing tools and with AI
+            editing tools, will be useful to you. As always, you can leave feedback using the Oxygen
+            Feedback form, which appears below this published article.</p>
+    </body>
+</topic>

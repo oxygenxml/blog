@@ -100,6 +100,7 @@
             <topicref href="../topics/oxygen_ai_powered_editing.dita"/>
             <topicref href="../topics/gen_ai_enhance_editing.dita"/>
             <topicref href="../topics/using_chatgpt_in_a_dita_xml_project.dita"/>
+            <topicref href="../topics/ai-positron-assistant-retrospective-analysis.dita"/>
         </topichead>
         <topichead navtitle="Other">
             <topicref href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.dita"/>
