@@ -21,7 +21,6 @@
             experience.</p>
         <p>
             <table frame="all" id="table_nlk_b1c_fdc" rowheader="firstcol" colsep="1" rowsep="1">
-                <title>Features Retrospective</title>
                 <tgroup cols="2">
                     <colspec colname="c1" colnum="1" colwidth="1*" align="left"/>
                     <colspec colname="c2" colnum="2" colwidth="3.14*"/>
