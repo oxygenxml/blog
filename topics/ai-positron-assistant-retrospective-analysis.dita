@@ -9,16 +9,15 @@
         </critdates>
     </prolog>
     <body>
-        <p>It's been more than two years since we started working on the <xref
-                href="ai_positron.dita"/>, back when the <uicontrol>OpenAI GPT 3.5</uicontrol> AI
-            engine was released and we are currently on version 4.0.0 of the add-on. Our main
-            direction (which we still keep) was to provide powerful tools based on AI engines for
-            technical documentation writers (targeted mostly towards DITA XML users) and for our
-            XSLT/Schematron developers. I've always envisioned the AI set of tools as an
-            exoskeleton, as a way to add more power to a technical documentation writer's punch
-            throughout the day. The table below contains a list of concepts (mostly add-on specific
-            features or feature categories), each with a short description based on personal
-            experience.</p>
+        <p>It's been more than one year since we started working on the <xref
+        href="ai_positron.dita"/>, back when the <uicontrol>OpenAI GPT 3.5</uicontrol> AI engine was
+      released and we are currently on version 4.0.0 of the add-on. Our main direction (which we
+      still keep) was to provide powerful tools based on AI engines for technical documentation
+      writers (targeted mostly towards DITA XML users) and for our XSLT/Schematron developers. I've
+      always envisioned the AI set of tools as an exoskeleton, as a way to add more power to a
+      technical documentation writer's punch throughout the day. The table below contains a list of
+      concepts (mostly add-on specific features or feature categories), each with a short
+      description based on personal experience.</p>
         <section><title>Eating our own dog food?</title>Are we using AI tools ourselves? Yes, I have
             started using AI tools more and more to improve readability and fix grammar or logical
             inconsistencies in articles like this one. I don't ask the AI to create new article
