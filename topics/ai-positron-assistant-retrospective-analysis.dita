@@ -10,14 +10,15 @@
     </prolog>
     <body>
         <p>It's been more than one year since we started working on the <xref
-        href="ai_positron.dita"/>, back when the <uicontrol>OpenAI GPT 3.5</uicontrol> AI engine was
-      released and we are currently on version 4.0.0 of the add-on. Our main direction (which we
-      still keep) was to provide powerful tools based on AI engines for technical documentation
-      writers (targeted mostly towards DITA XML users) and for our XSLT/Schematron developers. I've
-      always envisioned the AI set of tools as an exoskeleton, as a way to add more power to a
-      technical documentation writer's punch throughout the day. The table below contains a list of
-      concepts (mostly add-on specific features or feature categories), each with a short
-      description based on personal experience.</p>
+                href="ai_positron.dita"/>, back when the <uicontrol>OpenAI GPT 3.5</uicontrol> AI
+            engine was released, and we are currently on version 4.0.0 of the add-on. Our main
+            direction (which we still keep) was to provide powerful tools based on AI engines for
+            technical documentation writers (targeted mostly towards DITA XML users) and for our
+            XSLT/Schematron developers. I've always envisioned the AI set of tools as an
+            exoskeleton, as a way to add more power to a technical documentation writer's punch
+            throughout the day. The table below contains a list of concepts (mostly add-on specific
+            features or feature categories), each with a short description based on personal
+            experience.</p>
         <section><title>Eating our own dog food?</title>Are we using AI tools ourselves? Yes, I have
             started using AI tools more and more to improve readability and fix grammar or logical
             inconsistencies in articles like this one. I don't ask the AI to create new article
@@ -47,7 +48,7 @@
             <p>So are all AI engines equal? Our predefined actions have and are actively tested with
                     <b>OpenAI</b> engines and with engines provided by <b>Anthropic Claude</b>. We
                 also tried to use engines like <b>Llama 3.1</b> or <b>Mistral</b> with our current
-                predefined actions but the results are not fantastic, the possibility to obtain
+                predefined actions but the results are not fantastic, as the possibility to obtain
                 broken <b>DITA XML</b> content with these open source engines is much higher.</p>
         </section>
         <section><title>Predefined actions</title>Over time, we improved how we write prompts for
@@ -57,7 +58,7 @@
             For each action, we try to give a clear prompt with lots of details so the AI engine can
             produce the best results. We test our predefined actions using both manual and automatic
             tests. We got the best results with Open AI GPT-4 engines and the engines provided by
-                <b>Anthropic Claude</b> like <b>Sonnet</b>.</section>
+                <b>Anthropic Claude</b>, like <b>Sonnet</b>.</section>
         <section><title>Custom actions</title>We wanted to give companies the flexibility to create
             their own <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
@@ -66,9 +67,9 @@
             aspects of implementing custom AI actions. The key to a successful action is to make it
             as precise and detailed as possible.</section>
         <section><title>Content generation</title>
-            <p>There are two main ways AI based content generation can be useful:</p>
+            <p>There are two main ways AI-based content generation can be useful:</p>
             <ul id="ul_njw_gbs_fdc">
-                <li>Summarizing a large amount of text. For example predefined actions like
+                <li>Summarizing a large amount of text. For example, predefined actions like
                         <uicontrol>Short Description</uicontrol> try to summarize a big piece of
                     content. These actions usually work very well.</li>
                 <li>Expanding a small amount of text. Content generation actions like <uicontrol>Add
@@ -94,7 +95,7 @@
             screenshots.</section>
         <section><title>Rewrite actions</title>We created useful actions to <b>Correct Grammar</b>,
                 <b>Improve Readability</b>, <b>Use Active Voice</b>, and <b>Improve Structure</b>.
-            These actions are applied to existing content, they have precise prompts which instruct
+            These actions are applied to existing content, they have precise prompts that instruct
             the AI to preserve the existing content as much as possible, and they are solid examples
             of how the AI can help a writer during their daily work.</section>
         <section><title>Review actions</title>At some point, we had the idea that the AI, instead of
@@ -108,7 +109,7 @@
             or report on the <b>Readability</b> of a DITA XML topic. We also created actions to use
             AI to better understand what questions a certain topic answers. In the future, using an
             AI engine might also include asking the AI to find <b>logical inconsistencies</b> in
-            already written content, which may be too large for a person to fully digest
+            already written content that may be too large for a person to fully digest
             easily.</section>
         <section><title>Translate actions</title>There are studies that say the translation
             abilities in AI engines are better than <b>Google Translate</b> or <b>DeepL</b>. The
@@ -152,15 +153,15 @@
                 not use all the specialized DITA XML elements.</p></section>
         <section><title>Third Party CMS support</title>Both Oxygen desktop and in-browser editing
             tools can be integrated with various content management systems. Most AI predefined
-            actions should work when Oxygen is integrated with third-party CMSs. However, actions
+            actions should work when Oxygen is integrated with a third-party CMS. However, actions
             that write content on disk (like actions from the <b>Intelligent agents</b> category)
-            might not be able to create new topics on the CMS. Actions improved by using <b>RAG</b>
-            (retrieval augmented generation) might also not work well since the project content is
-            stored on the CMS. Oxygen desktop has an <uicontrol>Enable indexing for remote
-                resources</uicontrol> checkbox on its <uicontrol>Open/Find Resource</uicontrol> page
-            in <b>Preferences</b>. This allows our indexing engine to index content from the CMS.
-            But the in-browser WebAuthor editing tool does not yet support indexing CMS-specific
-            content.</section>
+            might not be able to create new topics on the CMS. Actions that are improved by using
+                <b>RAG</b> (retrieval augmented generation) might also not work well since the
+            project content is stored on the CMS. Oxygen desktop has an <uicontrol>Enable indexing
+                for remote resources</uicontrol> checkbox in the <uicontrol>Open/Find
+                Resource</uicontrol> preferences page. This allows our indexing engine to index
+            content from the CMS. But the in-browser Web Author editing tool does not yet support
+            indexing CMS-specific content.</section>
         <p>I hope this article, based on my experience working on AI editing tools and with AI
             editing tools, will be useful to you. As always, you can leave feedback using the Oxygen
             Feedback form, which appears below this published article.</p>
