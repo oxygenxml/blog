@@ -17,9 +17,9 @@
           first column each cell contains the reused element and on the second one you can have a
           small description for each reused element. The description acts as metadata, it may give
           the technical writer more details about how that content should be reused.</li>
-        <li> Use <b>conkeyrefs</b> instead of <b>conrefs</b>. Really, because they use relative
-          paths conrefs always break when you move topics around. But more about conkeyrefs in the
-          next section.</li>
+        <li> Use <b>conkeyrefs</b> instead of <b>conrefs</b>. Because relative referenced paths used
+          in conrefs always break when you move topics around. But more about conkeyrefs in the next
+          section.</li>
         <li>When using conkeyrefs you should create a special map with key definitions. This keeps
           the reused content and the keys for it separate from the live content.</li>
       </ul></p>
