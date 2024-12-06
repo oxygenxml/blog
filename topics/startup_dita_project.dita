@@ -35,7 +35,7 @@
                     the DITA content when publishing.</li>
                 <li><filepath>images</filepath> - Contains images used in the DITA project.</li>
                 <li><filepath>oxygen-term-checker</filepath> - Contains a <xref
-                        href="https://www.oxygenxml.com/doc/ug-editor/topics/terminology-checker-addon.html"
+                        href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
                         format="html" scope="external">terminology file</xref> with an example
                     rule.</li>
                 <li><filepath>publishing</filepath> - Contains a <xref
@@ -143,7 +143,7 @@
         <section id="section_jvx_ghj_qpb">
             <title>Terminology Checking</title>
             <p>For checking terminology, you can use the Oxygen <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/terminology-checker-addon.html?"
+                    href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html?"
                     format="html" scope="external">Terminology Checker add-on</xref>. You can add
                 terminology rules to the <filepath>oxygen-term-checker</filepath> folder. For
                 example, the Oxygen user manual uses a set of Vale rules to check for <xref

@@ -125,7 +125,7 @@
                             format="html" scope="external">Oxygen Web Author</xref> to connect to
                         the Git Repository and create a new topic or modify an existing one.</li>
                     <li>Clone the repository to the local file system using Oxygen XML Author with
-                        the <xref href="https://github.com/oxygenxml/Oxygen-Git-Plugin"
+                        the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
                             format="html" scope="external">Git Add-on</xref> installed.</li>
                 </ul></p>
         </section>
@@ -133,7 +133,7 @@
             <title>Using Oxygen XML Author to Create/Modify Content in the Repository</title>
             <p>
                 <ul id="ul_cf2_5xy_tkb">
-                    <li>Install the <xref href="https://github.com/oxygenxml/Oxygen-Git-Plugin"
+                    <li>Install the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
                             format="html" scope="external">Git Add-on</xref> in Oxygen XML
                         Author.</li>
                     <li>Open the <uicontrol>Git Staging</uicontrol> view and use the
@@ -356,7 +356,7 @@
 							href="https://www.oxygenxml.com/oxygen_scripting.html" format="html"
 							scope="external">special scripting license</xref> on pull requests. An
 						example for such a validation action is in the Oxygen XML Blog: <xref
-							href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/workflow.yml"
+							href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/"
 							format="yml" scope="external"/>. The validation runs on any opened pull
 						request: <xref href="https://github.com/oxygenxml/blog/pull/25"
 							format="html" scope="external"/>.</li>

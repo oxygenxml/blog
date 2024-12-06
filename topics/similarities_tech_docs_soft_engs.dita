@@ -333,7 +333,7 @@
                                     <li>The <xmlelement>foreign</xmlelement> element allows adding
                                         non DITA XML content and can be used for various
                                         enhancements like <xref
-                                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-embed-html.htm"
+                                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-embed-html.html"
                                             format="html" scope="external">embedding HTML
                                             content</xref> directly in DITA topics.</li>
                                     <li>The <xmlelement>data</xmlelement> element can be used almost

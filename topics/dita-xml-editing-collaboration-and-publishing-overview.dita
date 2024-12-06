@@ -226,7 +226,7 @@
         <section id="section_myn_1yg_4bc">
             <title>Useful Add-ons</title>
             <p>The Oxygen default add-ons repository provides a range of <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/add-ons.html" format="html"
+                    href="https://www.oxygenxml.com/doc/ug-addons/topics/add-ons.html" format="html"
                     scope="external">helpful add-ons</xref>. Some of the most notable ones
                     include:<ul id="ul_e2k_13h_4bc">
                     <li><b>Git Client</b> add-on - Allows you to connect to Git repositories.</li>

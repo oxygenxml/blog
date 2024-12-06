@@ -53,7 +53,7 @@
                         documentation project in one of these ways:</p>
                     <ul id="ul_scc_cxf_f1c">
                         <li>We have clients who use Oxygen's <xref
-                                href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
+                                href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
                                 format="html" scope="external"><b>Git client add-on</b></xref> to
                             collaborate on the same project using a <xref
                                 href="../git-tech-writers/using_git_for_technical_writing.dita">Git

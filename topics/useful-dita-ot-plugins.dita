@@ -44,7 +44,7 @@
             <title>Use Markdown content directly in DITA Maps</title>
             <p>This plugin developed by Jarno Elovirta can be used to publish hybrid DITA projects
         containing both DITA and Markdown topics to any output format: <xref
-          href="https://github.com/jelovirt/dita-ot-markdown" format="html" scope="external"/>.</p>
+            href="https://github.com/jelovirt/org.lwdita" format="html" scope="external"/>.</p>
         </section>
         <section id="section_cn4_gvc_2z">
             <title>Embed video and audio resources in DITA topics</title>

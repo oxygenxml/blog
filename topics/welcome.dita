@@ -36,7 +36,7 @@
                 contents) the blog was migrated to DITA XML content stored on GitHub and is now
                 hosted both on the <xref href="https://blog.oxygenxml.com/" format="html"
                     scope="external">Oxygen XML Web site</xref> and on the Netlify platform: <xref
-                    href="https://oxygenxmlblog.netlify.com/" format="html" scope="external"/>.</p>
+                        href="https://oxygenxmlblog.netlify.app/" format="html" scope="external"/>.</p>
         </section>
         <section id="section_pv2_1q3_jkb">
             <title>How the <ph keyref="oxygen"/> Blog Works</title>
@@ -86,7 +86,7 @@
                 <li>Make changes to your forked project or to a branch from it. <ul
                         id="ul_gkd_4s3_jkb">
                         <li>If you have the <ph keyref="oxygen"/> application installed, you can
-                            download our <xref href="https://github.com/oxygenxml/oxygen-git-plugin"
+                            download our <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
                                 format="html" scope="external">Git add-on</xref> that should allow
                             you to clone the fork, make changes, and then commit and push them to
                             your repository.</li>
@@ -111,7 +111,7 @@
                 <li>After all changes have been made to your fork of the project, you can create a
                     pull request to the <ph keyref="oxygen"/> original GitHub project.</li>
                 <li>There is a <xref
-                        href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/workflow.yml"
+                        href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/"
                         format="html" scope="external">GitHub action</xref> implemented in the
                     project which will automatically run DITA validation on the entire project
                     branch and will report on the pull request if the validation is successful. </li>

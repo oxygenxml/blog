@@ -11,7 +11,7 @@ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
     </prolog>
     <body>
         <p>For converting the Word document you have to install the Batch Documents
-            Converter add-on in Oxygen. For this, you can follow the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__section_tdq_wvx_qsb" format="html" scope="external">installation procedure</xref>
+            Converter add-on in Oxygen. For this, you can follow the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html#batch-converter-addon__section_tdq_wvx_qsb" format="html" scope="external">installation procedure</xref>
             from the documentation.</p>
         <section id="configurarea-maparii-de-stiluri">
             <title>Configuring Word styles mapping</title>
@@ -22,7 +22,7 @@ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
                 default styles.</p>
             <p>Here you have more information about the <uicontrol>Word Styles Mapping</uicontrol>
                 option: <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping"
+                    href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping"
                     format="html" scope="external">Conversions from Word</xref></p>
             <p> This is an example of styles configuration: <xref href="frequently_asked_questions.dita#word-to-dita-frequently-asked-questions/how-to-fix-unknown-style-warnings"/></p>
         </section>

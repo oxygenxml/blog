@@ -374,11 +374,11 @@
     <li><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external"
       >Git add-on</xref>. This plugin adds a side view allowing you to do some common Git operations
      like pull, commit, push (mostly 90% of what a regular Git user would do).</li>
-    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+     <li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/content-fusion-addon.html"
       format="html" scope="external">Content Fusion Connector add-on</xref>. Collaborate with your
      peers by sending them links that allow them to give you feedback on your work using a web
      browser without the need to pre-install anything on their side. </li>
-    <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
+     <li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html"
       format="html" scope="external">Batch convertor add-on</xref>. Converts multiple HTML,
      Markdown, Excel files to DITA.</li>
    </ul>

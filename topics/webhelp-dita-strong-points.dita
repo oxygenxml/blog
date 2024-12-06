@@ -35,7 +35,7 @@
                 <li>It contains its own search engine implemented in Javascript (with support for
                     AND, OR, exact match, auto complete, and highlights). The search engine can
                     assign various weights and priorities to various elements.<xref
-                        href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-search-engine.html"
+                        href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr_searching.html"
                         format="html" scope="external"/>.</li>
                 <li>It automatically generates an Index page if the DITA content contains
                         <xmlelement>index</xmlelement> elements.</li>

@@ -10,7 +10,7 @@ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
         </critdates>
     </prolog>
     <body>
-        <p>This blog post presents how you can migrate from MS Word to DITA using the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" format="html"
+        <p>This blog post presents how you can migrate from MS Word to DITA using the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html"
             scope="external">Oxygen Batch Documents Converter add-on</xref>.</p>
         <p>The migration process has three main stages:
             <ol>

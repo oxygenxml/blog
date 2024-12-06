@@ -63,7 +63,7 @@
         </p>
         <p>For more information about the <uicontrol>Word styles mapping</uicontrol> configuration,
           see the following section from the documentation: <xref
-            href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping"
+            href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping"
             format="html" scope="external">Conversions from Word</xref>.</p>
       </answer>
     </qagroup>

@@ -45,7 +45,7 @@
       <p>We store our DITA content in a private <b>GitHub</b> repository and we also made a public
         <b>GitHub</b> repository containing a copy of our user manual's DITA content:<xref
         href="https://github.com/oxygenxml/userguide" format="html" scope="external"/>. We use the
-        free Oxygen <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
+        free Oxygen <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
         format="html" scope="external">Git client add-on</xref> for collaborating on the project.
         Other external Git clients like <b>SourceTree</b> or <b>Fork</b> can also be used to check
         out, edit and push changes to the Git repository. Our editing workflow is similar to what is
@@ -64,7 +64,7 @@
     </section>
     <section id="section_wvl_dgw_z5b">
       <title>Oxygen Content Fusion</title>
-      <p>The <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+      <p>The <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/content-fusion-addon.html"
         format="html" scope="external">Content Fusion add-on</xref> for XML Author allows uploading
         the edited content to a cloud server and providing a web editing tool for people to provide
         feedback and review the DITA content directly in a web browser: <xref

@@ -50,7 +50,7 @@
                                 format="gradle" scope="external">Gradle build file</xref> that
                             downloads the <b>Oxygen Publishing Engine</b>, licenses it, produces the
                             output, and stores it in a specific folder.</li>
-                    <li>Create a <b>GitHub</b> action that runs the build file and then uses the <xref href="https://github.com/aws-actions/configure-aws-credentials" format="html" scope="external">aws-actions/configure-aws-credentials</xref> action to configure the AWS credentials, followed by the <xref href="https://github.com/aws-actions/s3-sync" format="html" scope="external">aws-actions/s3-sync</xref> action to sync the output folder with the S3 bucket.</li>
+                        <li>Create a <b>GitHub</b> action that runs the build file and then uses the <xref href="https://github.com/aws-actions/configure-aws-credentials" format="html" scope="external">aws-actions/configure-aws-credentials</xref> action to configure the AWS credentials, followed by the <xref href="https://github.com/aws-actions" format="html" scope="external">aws-actions/s3-sync</xref> action to sync the output folder with the S3 bucket.</li>
                 </ol></li>
                 <li>Validate the entire DITA project using the Oxygen <xref
                         href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html"
