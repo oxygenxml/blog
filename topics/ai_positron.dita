@@ -35,7 +35,7 @@
       <ul id="ul_sdg_1x5_4bc">
         <li>Oxygen desktop allows installing two flavors of the add-on:<ul id="ul_rqp_cx5_4bc">
             <li>
-              <p><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html"
+              <p><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html"
                   format="html" scope="external">AI Positron Assistant add-on</xref>.</p>
               <p>This add-on works through a subscription-based model using the <xref
                   href="https://www.oxygenxml.com/aipositron/user_terms.html" format="html"
@@ -51,7 +51,7 @@
             </li>
             <li>
               <p><xref
-                  href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron_enterprise.html"
+                  href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron_enterprise.html"
                   format="html" scope="external">AI Positron Assistant Enterprise add-on.</xref></p>
               <p>This add-on allows end users to connect to their own AI engine server. The
                 following connection types are supported:<ul id="ul_twp_5z5_4bc">
@@ -89,7 +89,7 @@
       <p>After installing the add-on, the following features are available in the Oxygen desktop:<ul
           id="ul_b43_ldv_4bc">
           <li><xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_a3d_sgl_4xb"
+              href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_a3d_sgl_4xb"
               format="html" scope="external">AI Positron Assistant</xref> side view. This side view
             contains the following functionality:<ul id="ul_np4_ndv_4bc">
               <li>Invoke various actions to generate and re-write content using AI.</li>
@@ -115,7 +115,7 @@
             content in the chat pane (within the <uicontrol>AI Positron Assistant</uicontrol> view)
             that can be used to solve the problem.</li>
           <li>The add-on contributes two <xref
-              href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_j1x_jk3_qxb"
+              href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_j1x_jk3_qxb"
               format="html" scope="external">XPath extension functions</xref>
               (<codeph>ai:transform-content</codeph> and <codeph>ai:verify-content</codeph>) that
             can be used to rephrase content or to perform validation checks on existing
@@ -125,7 +125,7 @@
     <section id="section_hph_m3v_4bc">
       <title>Predefined and Custom Actions</title>
       <p>Once you log in to the server, a <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_utc_twz_1xb"
+          href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_utc_twz_1xb"
           format="html" scope="external">set of predefined actions</xref> are available, grouped in
         categories: <b>Accessibility</b>, <b>Content Generation</b>, <b>Development</b>,
           <b>Rewrite</b>, <b>Overview</b>, <b>Marketing</b>, and <b>Translation</b>. The <xref
@@ -133,7 +133,7 @@
           format="html" scope="external">AI Positron Assistant Samples Playground</xref> samples
         project contains useful samples to test the functionality of these actions.</p>
       <p><xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
+          href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
           format="html" scope="external">Custom actions</xref> can also be created and used. The
         same <xref
           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Custom%20Actions"
@@ -151,7 +151,7 @@
     <section id="section_bws_2lv_4bc">
       <title>Batch Processing</title>
       <p>The <xref
-          href="https://www.oxygenxml.com/doc/ug-editor/topics/ai_positron.html#ai_positron__ai_refactoring"
+          href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__ai_refactoring"
           format="html" scope="external"><b>AI Positron Refactoring</b></xref> actions added to the
           <b>Project</b> and <b>DITA Maps Manager</b> views are a way to run actions on multiple
         files. For example, you could use the predefined <uicontrol>Translate to</uicontrol> action

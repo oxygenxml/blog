@@ -16,7 +16,7 @@
         <p>Oxygen XML Author can be enhanced by installing add-ons. There are a large number of free
             and useful add-ons for technical documentation writers and we will explore some of them.
             Documentation and installation instructions for all Oxygen add-ons can be found <xref
-                href="https://www.oxygenxml.com/doc/ug-editor/topics/add-ons.html" format="html"
+                href="https://www.oxygenxml.com/doc/ug-addons/topics/add-ons.html" format="html"
                 scope="external">here</xref>.<dl id="dl_g3z_x31_dxb">
                 <dlentry>
                     <dt><xref href="ai_positron.dita"/></dt>
@@ -25,7 +25,7 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/fluenta-dita-translation-add-on.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
                             format="html" scope="external">Fluenta DITA Translation
                         Add-on</xref></dt>
                     <dd>Create and manage XLiff files from your DITA XML content using the Fluenta libraries.<ul>
@@ -36,13 +36,13 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html"
                             format="html" scope="external">Batch Documents Converter</xref></dt>
                     <dd>Convert various formats like Word, HTML, Markdown, DocBook, Open API, or
                         Confluence into other formats like DITA XML.</dd>
                 </dlentry>
                 <dlentry>
-                    <dt><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/git-addon.html"
+                    <dt><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
                             format="html" scope="external">Git Client add-on</xref></dt>
                     <dd>Collaborate with your colleagues on a Git project. Comes with support for: <ul>
                             <li>Git Staging<ul>
@@ -54,7 +54,7 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/content-fusion-addon.html"
                             format="html" scope="external">Content Fusion Connector
                         Add-on</xref></dt>
                     <dd>Create review tasks for collaborators and subject matter experts who can
@@ -62,7 +62,7 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/ofb-feedback-comments-manager.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/ofb-feedback-comments-manager.html"
                             format="html" scope="external">Feedback Comments Manager
                         Add-on</xref></dt>
                     <dd>View and manage comments made in the Oxygen WebHelp Feedback forms directly
@@ -70,7 +70,7 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/terminology-checker-addon.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
                             format="html" scope="external">Terminology Checker Add-on</xref></dt>
                     <dd>
                         <ul>
@@ -82,21 +82,21 @@
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/live-tutorials-addon.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/live-tutorials-addon.html"
                             format="html" scope="external">Live Tutorials Add-on</xref></dt>
                     <dd>Create or explore already available tutorials to learn various Oxygen
                         features.</dd>
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-prolog-updater.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/dita-prolog-updater.html"
                             format="html" scope="external">DITA Prolog Updater Add-on</xref></dt>
                     <dd>Automatically update the author name and revision dates in the prolog
                         section when saving DITA topics or maps in Oxygen.</dd>
                 </dlentry>
                 <dlentry>
                     <dt><xref
-                        href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-outgoing-references-addon.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/dita-outgoing-references-addon.html"
                             format="html" scope="external">DITA References View Add-on</xref></dt>
                     <dd>See the set of outgoing and incoming references for each opened DITA topic,
                         including references defined in a relationship table.</dd>
