@@ -90,6 +90,9 @@
           Style Guide</xref>.</p>
       <p><xref href="https://acm-sigdoc-structured.org/1-curriculum-resources.html" format="html"
           scope="external">Resources for understanding and working with DITA XML by ACM</xref>.</p>
+      <p><xref href="https://github.com/wongyah/awesome-technical-writing-learning" format="html"
+          scope="external">List of resources for learning and experimenting with DITA content by
+          Yedda Wang</xref></p>
     </section>
     <section id="section_ufb_ngj_2v">
       <title>Resources for customizing the DITA output formats</title>
