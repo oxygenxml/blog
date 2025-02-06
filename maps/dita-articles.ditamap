@@ -128,12 +128,12 @@
                 <topicref href="../topics/resolving_refs_refactoring.dita"/>
                 <topicref href="../topics/refactoring_inserting_reformatting.dita"/>
             </topichead>
-            <topichead navtitle="Surveys">
+            <!--<topichead navtitle="Surveys">
                 <topicref href="../topics/dita-standard-problems.dita"/>
                 <topicref href="../topics/linkSurvey.dita"/>
                 <topicref href="../topics/dita_inheritance_hierarchy.dita"/>
                 <topicref href="../topics/ditaUsage.dita"/>
-            </topichead>
+            </topichead>-->
             <topicref href="../topics/customizing_a_chatbot.dita"/>
             <topicref href="../topics/similarities_tech_docs_soft_engs.dita"/>
         </topichead>
