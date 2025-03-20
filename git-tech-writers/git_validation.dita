@@ -20,7 +20,7 @@
 				<li>Validate on the client side before committing or pushing changes. For example,
 					the Oxygen <xref
 						href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html#git-addon__section_lvb_pqy_kpb"
-						format="html" scope="external">Git Client add-on</xref> allows two types of
+						format="html" scope="external">Git Client add-on</xref> and Oxygen Content Fusion allows two types of
 					client side validation:<ul id="ul_usj_ftj_5wb">
 						<li>Validate modified resources before committing.</li>
 						<li>Validate the entire DITA project before pushing.</li>

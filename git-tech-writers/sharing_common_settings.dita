@@ -19,16 +19,27 @@
 		<p>There are various ways to share these custom editing settings between the people who
 			collaborate on the same Git projects:<ul id="ul_ph4_cl1_rwb">
 				<li>Use a web editing tool to edit the Git content directly in a web browser with all settings
-					being common in the tool. Example: <xref
-						href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
-						format="html" scope="external">Oxygen XML Web Author</xref> Git
-					connector.</li>
+					being common in the tool. Example: 
+					<ul>
+						<li><xref
+								href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html"
+								format="html" scope="external">Oxygen XML Web Author</xref> Git
+							connector
+						</li>
+						<li><xref
+								href="https://www.oxygenxml.com/content_fusion.html"
+								format="html" scope="external">Oxygen Content Fusion</xref>
+						</li>
+					</ul>
+					</li>
 				<li>Manually share a common set of settings.</li>
 				<li>Share the common settings directly in the Git project. Example: <xref
 						href="https://github.com/oxygenxml/DITA-Startup-Project" format="html"
 						scope="external">DITA Startup Project</xref>. When an Oxygen project that
 					contains settings is distributed in a Git project, writers automatically get the
-					latest updates to the Oxygen environment without any work on their part.</li>
+					latest updates to the Oxygen environment without any work on their part.
+					Working with Git projects is one of the core capabilities of Oxygen Content Fusion.
+					</li>
 			</ul></p>
 	</body>
 </topic>

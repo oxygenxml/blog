@@ -6,15 +6,25 @@
 		<author>Radu Coravu</author>
 	</prolog>
     <body>
+        <p>There are some disadvantages to using Git as a technical writing tool.</p>
+		<p>As Git users ourselves, we've experienced these challenges firsthand in our documentation workflow. 
+		To address these issues, we've implemented targeted features in our product, Oxygen Content Fusion, making the documentation process more efficient for technical writers.
+		This is an ongoing effort that evolves with each release.</p>
     	<ul id="ul_hk5_b1s_lwb">
     		<li>No built-in support for a ticketing system. <note id="note_b4n_421_rwb" type="tip">This
 					support is added on the side either by using a commercial ticketing system (such
 					as JIRA) or by using Git-based servers (such as GitHub or GitLab), which have
-					their own basic ways of adding and closing issues.</note></li>
+					their own basic ways of adding and closing issues. 
+					Oxygen Content Fusion features a built-in review task system that can serve as a lightweight ticketing solution.
+					</note>
+			</li>
     		<li>No built-in support for publishing. <note id="note_ch3_p21_rwb" type="tip">Publishing
-					pipelines need to be built separately.</note></li>
+					pipelines need to be built separately. Oxygen Content Fusion includes some built-in 
+					publishing capabilities with support for Amazon S3, Netlify, and SFTP Server</note></li>
     		<li>No way to lock resources when editing to avoid conflicts.<note id="note_egd_q21_rwb"
-					type="tip">However, there are ways to easily resolve most conflicts.</note></li>
+					type="tip">However, there are ways to easily resolve most conflicts. 
+					Oxygen Content Fusion addresses this limitation by providing some optional resource locking and 
+					user-friendly conflict resolution tools.</note></li>
     		<li>Mistakes can be made when using Git. <note id="note_fhr_r21_rwb" type="tip">Usually
 					mistakes made that break the Git history or project structure can be reverted,
 					or you can check out the entire project again.</note></li>
@@ -23,7 +33,10 @@
 				conflicts, revert and cherry-pick commits, and in general, recover from any Git
 				issues or at least who is willing to invest some time in understanding the Git
 					model.<note id="note_gng_s21_rwb" type="tip">Such training tutorials and courses
-					are readily available.</note></li>
+					are readily available.
+					Oxygen Content Fusion attempts to reduce the technical barrier with an interface designed to abstract away some of Git's complexity.
+					We welcome user feedback to continuously improve this experience.
+					</note></li>
 			<li>Native Git is inefficient when asked to store large binary files (videos) or large
 				numbers of binary files (images, PDFs) because every revision of every file is
 				stored locally.</li>
