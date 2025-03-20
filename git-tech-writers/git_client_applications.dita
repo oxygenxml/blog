@@ -35,8 +35,9 @@
 				<li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html"
 						scope="external"><b>Git Client</b></xref> add-on in Oxygen XML Editor</li>
 				<li>Web-based clients like Oxygen <xref href="https://www.oxygenxml.com/xml_web_author.html"
-						format="html" scope="external"><b>Web Author</b></xref>
-				</li>
+						format="html" scope="external"><b>Web Author</b></xref>, or Oxygen <xref
+						href="https://www.oxygenxml.com/content_fusion.html" format="html"
+						scope="external"><b>Content Fusion</b></xref></li>
 			</ul>
 		</section>
 	</body>
