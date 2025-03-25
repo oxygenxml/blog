@@ -93,5 +93,13 @@
         <p>The XML Refactoring XML descriptor and XSLT stylesheet can also be found here: <xref
                 href="https://github.com/oxygenxml/dita-refactoring-examples/tree/master/18.%20Sort%20Glossentries"
                 format="html" scope="external"/>.</p>
+        <section id="section_if2_2d2_52c">
+            <title>Alternative approach - AI Positron Assistant add-on</title>
+            <p>An alternative approach is to implement a custom AI action which uses a prompt to
+                instruct the AI to read the contents of the referenced glossentries, extract their
+                titles and then sort them: <xref
+                    href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/sort-glossentries-dita-map.json"
+                    format="html" scope="external"/></p>
+        </section>
     </body>
 </topic>
