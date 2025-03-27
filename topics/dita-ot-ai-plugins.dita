@@ -12,21 +12,21 @@
     <body>
         <p>As part of the <xref href="https://www.oxygenxml.com/events/2025/dita-ot_day.html"
                 format="html" scope="external">DITA Open Toolkit Day 2025</xref> conference in
-            Copenhagen I presented a couple of DITA Open Toolkit plugins I developed which can use
+            Copenhagen, I presented a couple of DITA Open Toolkit plugins I developed that can use
             AI or provide content to be used by the AI:<ul id="ul_dyf_ls2_52c">
-                <li>DITA OT plugin to preprocess using AI - Apply AI in the DITA OT pre-processing
-                    stage for example to translate content at publishing time.</li>
+                <li>DITA OT plugin to preprocess using AI to apply AI in the DITA OT pre-processing
+                    stage (for example, to translate content at publishing time).</li>
                 <li>DITA OT plugin to apply AI validation rules on pre-processed content (with
                     conrefs expanded) and create a report.</li>
-                <li>DITA OT plugin to create using AI from a Style Guide fine tuning JSONL content
-                    for the AI.</li>
+                <li>DITA OT plugin to create content using AI from a Style Guide, fine-tuning JSONL
+                    content for the AI.</li>
                 <li>DITA OT plugin to upload Markdown content to an AI Assistant vector store.</li>
-                <li>DITA OT Summarize plugin - create a summary of an entire DITA Map in
+                <li>DITA OT Summarize plugin to create a summary of an entire DITA map in
                     markdown.</li>
             </ul></p>
-        <p>If you find any of these subjects interesting the entire set of slides is attached below.
-            You can also use the feedback form if you want to have discussions about any of these
-            plugins.</p>
+        <p>If you find any of these subjects interesting, the entire set of slides is attached
+            below. You can also use the feedback form if you want to have discussions about any of
+            these plugins.</p>
         <p><foreign outputclass="html-embed">&lt;iframe
                 src="../resources/dot-ai-plugins.pdf" height="600"
                 width="1000"/></foreign></p>
