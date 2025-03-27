@@ -20,5 +20,6 @@
         <topicref href="handling_translations.dita"/>
         <topicref href="sharing_common_settings.dita"/>
         <topicref href="publishing_content_from_git.dita"/>
+    <topicref href="tame-the-branch-chaos.dita"/>
     </topicref>
 </map>

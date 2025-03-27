@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_cml_cpm_p2c">
+    <title>Tame the Branch Chaos – Switch Less, Write More</title>
+    <prolog>
+        <author>Cristian Talau</author>
+        <critdates>
+            <created date="2025-03-27"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword>Git workflows</keyword>
+                <keyword>Oxygen Content Fusion</keyword>
+                <keyword>Git branches</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>You’re mid-sentence, deep in the flow of writing. Then a Slack ping: “Can you quickly
+            check something on the release notes branch?” You sigh. Time to stash your changes,
+            switch branches, rebuild context—and just like that, your momentum is gone.</p>
+        <p>For technical writers, this isn't a rare disruption. It’s daily reality. Between juggling
+            multiple documentation tasks, waiting for SME feedback, and jumping between feature
+            branches, staying focused becomes a luxury.</p>
+        <section id="section_vkz_jqr_52c">
+            <title>The Multi-Tasking Writer’s Dilemma</title>
+            <p>In an ideal world, a technical writer picks up a task, finishes it in a focused work
+                session, and moves on to the next. In reality? Writing often happens in fragmented
+                windows between SME replies, engineering changes, and shifting priorities.</p>
+            <p>This leads to a juggling act between:</p>
+            <ul id="ul_ykz_jqr_52c">
+                <li><b>Multiple feature branches</b> for in-progress tasks at different stages of
+                    completion.</li>
+                <li><b>Quick hotfixes or urgent edits</b> that need to go out <i>now</i>.</li>
+                <li><b>Reviews and feedback</b> that come in late, requiring you to revisit a branch
+                    you last touched two weeks ago.</li>
+            </ul>
+            <p>Context switching happens not just between topics, but between Git branches, editor
+                states, and mental models.</p>
+            <p>Each time you need to switch branches, you face a decision tree:</p>
+            <ul id="ul_alz_jqr_52c">
+                <li>Do you commit half-finished work?</li>
+                <li>Do you stash and risk conflicts later?</li>
+                <li>Do you clone the whole repository again into another folder?</li>
+            </ul>
+            <p>This constant overhead takes a toll: it interrupts focus, slows down delivery, and
+                makes a high-cognitive-load job even harder. Writers end up spending more time
+                managing branches than actually writing.</p>
+        </section>
+        <section id="section_blz_jqr_52c">
+            <title>Four Ways to Juggle Branches</title>
+            <p>When you're deep in documentation work and need to temporarily switch to another
+                branch, you have a few options. Some are more elegant than others—but each comes
+                with its own trade-offs.</p>
+            <p>Let’s walk through the most common approaches, what they involve, and where things
+                can go wrong.</p>
+        </section>
+        <section id="section_clz_jqr_52c">
+            <title>The Git Stash Dance</title>
+            <p>Stash your current changes, switch to the other branch, then come back and re-apply
+                the stash.</p>
+            <p><b>Workflow in Oxygen:</b></p>
+            <ol id="ol_jlz_jqr_52c">
+                <li>Stash your local changes<ol id="ol_dpz_csr_52c">
+                        <li>If you haven't already, install the <xref
+                                href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                                format="html" scope="external">Oxygen Git Client Add-on</xref></li>
+                        <li>In the <uicontrol>Git Staging</uicontrol> view, open the triple dots
+                            menu and choose <uicontrol>Stash changes</uicontrol><p><image
+                                    href="images/stash-changes-menu.png" id="image_arf_yrr_52c"
+                                    width="300px"/></p></li>
+                        <li><image href="images/stash-create-dialog.png" id="image_ikn_csr_52c"
+                                width="300px"/></li>
+                    </ol></li>
+                <li>Switch the branch</li>
+                <li>Make quick edits, commit or push as needed</li>
+                <li>Switch back to the original branch</li>
+                <li>Apply the stash<ol id="ol_vhj_lsr_52c">
+                        <li>In the <uicontrol>Git Staging</uicontrol> view, open the triple dots
+                            menu and choose <uicontrol>List changes</uicontrol></li>
+                        <li><image href="images/apply-stash.png" id="image_ajn_ssr_52c"
+                                width="300px"/></li>
+                    </ol></li>
+            </ol>
+            <p><b>CLI workflow</b></p>
+            <p>If you are a script passionate, you can use these commands to achieve the same result
+                as the workflow
+                above:<codeblock id="codeblock_fll_mjs_52c" outputclass="language-bourne">git stash push -u -m "WIP on 'master' - taming the branch chaous [27 Mar 2025]"
+git checkout release-notes-branch
+# Make quick edits, commit or push as needed
+git checkout master
+git stash pop</codeblock></p>
+            <p>
+                <note id="note_ens_wsr_52c" type="tip">
+                    <ul id="ul_nlz_jqr_52c">
+                        <li>Make sure to leave the "Include untracked files" checkbox on, as it is
+                            by default. Otherwise, some newly added files may not be included in the
+                            stash.</li>
+                        <li>Always preview stashes before applying.</li>
+                        <li>Include the branch name in the stash name. This way, you avoid applying
+                            the stash on the wrong branch.</li>
+                        <li>Include the data in the stash name. This way you can cleanup old stashes
+                            with confidence.</li>
+                    </ul>
+                </note>
+            </p>
+        </section>
+        <section id="section_olz_jqr_52c">
+            <title>Temporary WIP Commit</title>
+            <p>Quickly commit your in-progress work to get it out of the way.</p>
+            <p><b>Oxygen Workflow</b></p>
+            <ol id="ol_plz_jqr_52c">
+                <li>Stage and commit all the local changes</li>
+                <li>Switch the branch</li>
+                <li>Make quick edits, commit or push as needed</li>
+                <li>Switch back to the original branch</li>
+                <li>Open the <xref
+                        href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html#git-addon__section_hjy_kmy_kpb"
+                        format="html" scope="external">history view</xref> &amp; filter commits by
+                    "Current local branch"<ol id="ol_lzj_h5r_52c">
+                        <li><image href="images/reset-branch-to-commit.png" id="image_cfx_g5r_52c"
+                                width="300px"/></li>
+                    </ol></li>
+                <li>Reset branch to the parent commit with "mixed mode"<ol id="ol_g25_h5r_52c">
+                        <li><image href="images/reset-mixed-mode.png" id="image_wzz_j5r_52c"
+                                width="300px"/></li>
+                    </ol></li>
+            </ol>
+            <p><b>CLI workflow</b><codeblock id="codeblock_lhf_kjs_52c">git add .
+git commit -m "WIP: halfway done with config docs"
+git checkout release-notes-branch
+# Do your other work
+git checkout master
+git reset HEAD~1 --mixed</codeblock></p>
+            <p>
+                <note id="note_mn2_ysr_52c" type="tip">
+                    <ul>
+                        <li>If working with others on the same branch, do not push! Your local
+                            commits may affect rebases or create confusion.</li>
+                        <li>When undoing the commit, make sure you have the "mixed" option
+                            checked.</li>
+                    </ul>
+                </note>
+            </p>
+        </section>
+        <section id="section_rlz_jqr_52c">
+            <title>Checkout in a Separate Folder </title>
+            <p>Create another working directory with a separate clone. This approach is simple to
+                understand but is heavy - you duplicate the entire repository and is not uncommon
+                for companies to have multi-gigabyte repositories.</p>
+            <p>As a mitigation, Git introduced the <codeph>worktree</codeph> command which allows
+                you to reuse the <codeph>.git</codeph> folder between multiple working copies. For
+                example, the working copy of the Oxygen's user guide has ~250MB and the
+                    <codeph>.git</codeph> folder is ~200MB of them.</p>
+            <p>To use this feature you need to go to the terminal and work with these commands:</p>
+            <codeblock id="codeblock_emz_jqr_52c" outputclass="language-bourne"># From your repo root
+git worktree add ../release-notes release-notes-branch
+cd ../release-notes
+# Make your changes and commit them
+cd ../my-main-repo
+</codeblock>
+            <p>
+                <note id="note_tfm_dtr_52c" type="tip"><codeph>worktree</codeph>s are fantastic for
+                    long-lived parallel work. Just don't forget where each copy lives and to remove
+                    them once you are done: <codeph id="codeblock_fmz_jqr_52c">git worktree remove
+                        ../release-notes</codeph>. </note>
+            </p>
+        </section>
+        <section id="section_gmz_jqr_52c">
+            <title>Oxygen Content Fusion Workspaces</title>
+            <p><xref href="https://www.oxygenxml.com/content_fusion.html" format="html"
+                    scope="external">Oxygen Content Fusion</xref> is a <b>web-based Git-enabled DITA
+                    CMS</b> providing structured content authoring, AI-assisted refinement via
+                Oxygen AI Positron, and publishing.</p>
+            <p>One of its benefits for author is that you can create multiple lightweight authoring
+                    <xref
+                    href="https://www.oxygenxml.com/doc/versions/8.0/ug-content-fusion/topics/cf-projects-workspace.html"
+                    format="html" scope="external">workspaces</xref> in your browser, for <i>any</i>
+                branch, and switch between them by just switching browser tabs. Unlike multiple
+                checkouts, workspaces don’t duplicate files. They’re created instantly without
+                copying any content, and with minimal overhead.</p>
+            <p><b>Workflow in CF:</b></p>
+            <ol id="ol_hmz_jqr_52c">
+                <li>Stay on your current task in your authoring tool.</li>
+                <li>In Content Fusion, select a different branch to create a new workspace.<ol
+                        id="ol_rgs_bvr_52c">
+                        <li><image href="images/cf-workspace.png" id="image_nm1_svr_52c"
+                                width="300px"/></li>
+                    </ol></li>
+                <li>Edit or review content independently from your current Git state.</li>
+                <li>Commit changes when you are ready<ol id="ol_md3_wvr_52c">
+                        <li><image href="cf-commit.png" id="image_er3_fbs_52c" width="300px"/></li>
+                    </ol></li>
+                <li>... or just leave the changes there, and switch to some more urgent work</li>
+            </ol>
+            <p>
+                <note id="note_arg_2tr_52c" type="tip">Need more feedback from a SME? Just create a
+                        <xref
+                        href="https://www.oxygenxml.com/doc/versions/8.0/ug-content-fusion/topics/content_fusion_task_details-x2.html"
+                        format="html" scope="external">review task</xref> from your workspace and
+                    set a due date. Content Fusion will automatically remind the SME—so you don’t
+                    have to chase them for a response.</note>
+            </p>
+        </section>
+        <section id="section_imz_jqr_52c">
+            <title>How Do <i>You</i> Handle Branch Chaos?</title>
+            <p>Every technical writer has their own way of dealing with the Git shuffle. Maybe
+                you’re a <codeph>stash</codeph> master. Maybe you keep six cloned repositories open
+                at all times (no judgment). Or maybe you’ve found a completely different workflow
+                that works for your team.</p>
+            <p>We’d love to hear from you:</p>
+            <ul id="ul_ymz_jqr_52c">
+                <li>Which approach saves you the most time?</li>
+                <li>Have you tried Git <codeph>worktree</codeph>s or Content Fusion workspaces?</li>
+                <li>What’s the weirdest branch-juggling ritual you’ve developed?</li>
+            </ul>
+            <p>
+                <note id="note_ehs_ftr_52c" type="important"><b>Share your tips, tricks, or horror
+                        stories in the comments—or reach out to us directly.</b> We’re always
+                    looking to learn from real-world workflows and improve the tools writers rely on
+                    every day.</note>
+            </p>
+        </section>
+    </body>
+    <related-links>
+        <link
+            href="https://www.oxygenxml.com/events/2025/webinar_solving_common_git_and_dita_challenges.html"
+            format="html" scope="external">
+            <linktext>Webinar: Solving Common Git and DITA Challenges</linktext>
+        </link>
+        <link href="https://www.youtube.com/watch?v=mzYjlPP1MxQ" format="html" scope="external">
+            <linktext>XML Based Docs As Code – Combining DITA XML With GitHub and Continuous
+                Delivery</linktext>
+        </link>
+        <link
+            href="https://www.oxygenxml.com/events/2020/webinar_documentation_management_inspired_by_software_development.html"
+            format="html" scope="external">
+            <linktext>Webinar- Docs as Code: Documentation Management Inspired by Software
+                Development</linktext>
+        </link>
+    </related-links>
+</topic>
