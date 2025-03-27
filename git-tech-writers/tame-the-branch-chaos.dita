@@ -22,6 +22,10 @@
         <p>For technical writers, this isn't a rare disruption. It’s daily reality. Between juggling
             multiple documentation tasks, waiting for SME feedback, and jumping between feature
             branches, staying focused becomes a luxury.</p>
+        <p>
+            <image href="images/branch-juggling.png" id="image_qyh_55s_52c" placement="break"
+                width="300px" align="center"/>
+        </p>
         <section id="section_vkz_jqr_52c">
             <title>The Multi-Tasking Writer’s Dilemma</title>
             <p>In an ideal world, a technical writer picks up a task, finishes it in a focused work
