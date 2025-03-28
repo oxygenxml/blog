@@ -103,7 +103,7 @@ git stash pop</codeblock></p>
                         <li>Always preview stashes before applying.</li>
                         <li>Include the branch name in the stash name. This way, you avoid applying
                             the stash on the wrong branch.</li>
-                        <li>Include the data in the stash name. This way you can cleanup old stashes
+                        <li>Include the date in the stash name. This way you can cleanup old stashes
                             with confidence.</li>
                     </ul>
                 </note>
@@ -176,8 +176,8 @@ cd ../my-main-repo
                     scope="external">Oxygen Content Fusion</xref> is a <b>web-based Git-enabled DITA
                     CMS</b> providing structured content authoring, AI-assisted refinement via
                 Oxygen AI Positron, and publishing.</p>
-            <p>One of its benefits for author is that you can create multiple lightweight authoring
-                    <xref
+            <p>One of its benefits for an author is that you can create multiple lightweight
+                authoring <xref
                     href="https://www.oxygenxml.com/doc/versions/8.0/ug-content-fusion/topics/cf-projects-workspace.html"
                     format="html" scope="external">workspaces</xref> in your browser, for <i>any</i>
                 branch, and switch between them by just switching browser tabs. Unlike multiple
