@@ -106,8 +106,6 @@
         <topichead navtitle="Other">
             <topicref href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.dita"/>
             <topicref href="../topics/dita_for_small_teams.dita"/>
-            <topicref href="../git-tech-writers/using_git_for_technical_writing.ditamap"
-                format="ditamap"/>
             <topicref
                 href="../topics/types_of_companies_which_would_benefit_from_the_dita_xml_standard.dita"/>
             <topicref href="../topics/supporting_the_dita_ot_project.dita"/>

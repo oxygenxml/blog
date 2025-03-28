@@ -25,6 +25,7 @@
         <topicref href="topics/migratingFmToDita.dita"/>
         <topicref href="topics/use-topic-titles-to-generate-file-names.dita"/>
     </topicref>
+    <topicref href="git-tech-writers/using_git_for_technical_writing.ditamap" format="ditamap"/>
     <topicref href="maps/sdk-development-plugins-frameworks-map.ditamap" format="ditamap"/>
     <topichead navtitle="Miscellaneous">
         <topicref href="topics/ISO-27001-certification-announcement.dita"/>
