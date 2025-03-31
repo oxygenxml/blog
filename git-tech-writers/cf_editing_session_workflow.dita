@@ -2,6 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_vkq_4dv_v2c">
     <title>Editing Session with Oxygen Content Fusion</title>
+    <prolog>
+        <author>Cristian Talau</author>
+    </prolog>
     <body>
         <p>You can use the <xref
                 href="https://www.oxygenxml.com/content_fusion/content_fusion_authoring.html"
