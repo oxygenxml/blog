@@ -32,9 +32,7 @@
 					improve the content if needed, and merges the pull request.</li>
 			</ol></p>
 		<p>You can see this workflow presented in detail in the video below. Short on time? Jump straight
-			to the
-				<?oxy_attributes href="&lt;change type=&quot;modified&quot; oldValue=&quot;https://Demo link here&quot; author=&quot;Mihaela Calotescu&quot; timestamp=&quot;20250331T122125+0000&quot; /&gt;"?><xref
-				href="https://www.youtube.com/watch?v=YzQ0XhmtPUI&amp;t=214s" format="html"
+			to the <xref href="https://www.youtube.com/watch?v=YzQ0XhmtPUI&amp;t=217s" format="html"
 				scope="external">demo section</xref> and see it in action. </p>
 		<p><?oxy_comment_start author="Cristi Talau" timestamp="20250331T110848+0000" comment="Not the correct video" id="w33_fdw_v2c"?><?oxy_comment_start author="Mihaela Calotescu" timestamp="20250331T121735+0000" parentID="w33_fdw_v2c" comment="I changed it to: https://youtu.be/YzQ0XhmtPUI" mid="1"?><?oxy_attributes data="&lt;change type=&quot;modified&quot; oldValue=&quot;https://www.youtube.com/embed/Yfr6WDFN7d0&quot; author=&quot;Mihaela Calotescu&quot; timestamp=&quot;20250331T121712+0000&quot; /&gt;"?><object
 				data="https://youtu.be/YzQ0XhmtPUI" outputclass="iframe"
