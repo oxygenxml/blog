@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_vkq_4dv_v2c">
+    <title>Editing Session with Oxygen Content Fusion</title>
+    <body>
+        <p>You can use the <xref
+                href="https://www.oxygenxml.com/content_fusion/content_fusion_authoring.html"
+                format="html" scope="external">Oxygen Content Fusion authoring features</xref> to
+            create content in your Git repository.</p>
+        <p>Here is your usual editing workflow to edit content on a Git branch:</p>
+        <p>
+            <ul id="ul_qw2_whv_v2c">
+                <li>Open the workspace for that branch</li>
+                <li>Synchronize the workspace</li>
+                <li>Edit</li>
+                <li>Pull incoming commits</li>
+                <li>(Optional) Validate</li>
+                <li>Commit</li>
+            </ul>
+        </p>
+        <p>I will detail each step below.</p>
+        <section id="section_kr4_jjv_v2c">
+            <title>Open the workspace</title>
+            <p>Content Fusion allows you to create a workspace for each Git branch. The workspace is
+                lightweight meaning that it is created instantly and with minimal resource overhead.
+                To open it, select the branch and click the <uicontrol>Edit in workspace</uicontrol>
+                button.</p>
+            <p><image href="images/cf-edit-in-workspace.png" id="image_gh2_wjv_v2c" width="300px"
+                /></p>
+        </section>
+        <section id="section_n2y_wjv_v2c">
+            <title>Synchronize the workspace</title>
+            <p>In most cases, your workspace is updated automatically when you open it. However, if
+                your workspace has some stale changes (maybe from an old abandoned edit), you will
+                have to manually synchronize it. You have two tools:</p>
+            <p>
+                <ol id="ol_xpz_5mv_v2c">
+                    <li>Use the <uicontrol>Discard all changes</uicontrol> action from the
+                            <uicontrol>Changes</uicontrol> side view if the existing changes are not
+                        relevant anymore:<p><image href="images/discard-all-action.png"
+                                id="image_p25_bnv_v2c" width="300px"/></p></li>
+                    <li><uicontrol>Pull</uicontrol> the incoming commits. This lets you bring in
+                        your workspace commits made by your collaborators.<p><image
+                                href="images/cf-pull-incomming-commits.png" id="image_v12_5nv_v2c"
+                                width="300px"/></p></li>
+                </ol>
+            </p>
+        </section>
+        <section id="section_erd_nnv_v2c">
+            <title>Edit</title>
+            <p>Use the workspace tools to work on your content. </p>
+        </section>
+        <section id="section_ljh_qnv_v2c">
+            <title>Pull incoming commits</title>
+            <p>While you were editing, your collaborators pushed some commits. Before you can commit
+                your changes, you have to integrate theirs first. In rare cases, you might run into
+                merge conflicts. To help you solve them, <xref
+                    href="https://www.oxygenxml.com/doc/versions/8.0/ug-content-fusion/topics/cf-projects-workspace-conflict-resolution.html"
+                    format="html" scope="external">Content Fusion has a dedicated merge
+                tool</xref>:</p>
+            <p><image href="images/merge-pull-incoming-commits-conflicts.png" id="image_wmf_g4v_v2c"
+                    width="300px"/></p>
+        </section>
+        <section id="section_lqg_k4v_v2c">
+            <title>Validate</title>
+            <p>Use the <uicontrol>Problems</uicontrol> view to check if your changes introduce any
+                validation problem or a broken link</p>
+            <p><image href="images/cf-problems-view.png" id="image_xz2_r4v_v2c" width="300px"/></p>
+        </section>
+        <section id="section_rms_34v_v2c">
+            <title>Commit</title>
+            <p>To make your changes available in the Git repository, you have to
+                    <uicontrol>Commit</uicontrol> them. Make sure to provide a descriptive commit
+                message.</p>
+            <p>
+                <note id="note_dm1_w4v_v2c">In Content Fusion, when you commit changes from your
+                    workspace they are immediately available on the underlying branch.</note>
+            </p>
+        </section>
+    </body>
+</topic>

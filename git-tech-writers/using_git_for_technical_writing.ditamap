@@ -7,7 +7,9 @@
         <topicref href="disadvantages_of_using_git.dita"/>
         <topicref href="resources_for_learning_git.dita"/>
         <topicref href="git_client_applications.dita"/>
-        <topicref href="editing_session_workflow.dita"/>
+        <topicref href="editing_session_workflow.dita">
+            <topicref href="cf_editing_session_workflow.dita"/>
+        </topicref>
         <topicref href="git_validation.dita"/>
         <topicref href="common_workflows.dita">
             <topicref href="centralized_workflow.dita"/>
@@ -20,6 +22,6 @@
         <topicref href="handling_translations.dita"/>
         <topicref href="sharing_common_settings.dita"/>
         <topicref href="publishing_content_from_git.dita"/>
-    <topicref href="tame-the-branch-chaos.dita"/>
+        <topicref href="tame-the-branch-chaos.dita"/>
     </topicref>
 </map>
