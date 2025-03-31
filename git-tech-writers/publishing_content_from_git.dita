@@ -6,13 +6,18 @@
 		<author>Radu Coravu</author>
 	</prolog>
 	<body>
-		<p>There are two main ways to publish:<ul id="ul_xy2_5m1_rwb">
+		<p>There are several ways to publish:<ul id="ul_xy2_5m1_rwb">
 				<li>Publish on the client side using the local Git repository and then manually
 					upload the published content to a web server.</li>
-				<li><xref href="../topics/server_side_building_and_publishing.dita"/> by connecting for example
-					integration server to the Git project. For each version branch, a separate
-					server-side job could be created to run when the content is modified on that
-					branch.</li>
+				<li><xref href="../topics/server_side_building_and_publishing.dita"/> by connecting
+					for example integration server to the Git project. For each version branch, a
+					separate server-side job could be created to run when the content is modified on
+					that branch.</li>
+				<li><xref href="https://www.oxygenxml.com/content_fusion/publishing.html"
+						format="html" scope="external">Use <b>Oxygen Content Fusion</b> to
+						publish</xref> your content. It offers the automation of a continuous
+					integration and continuous delivery (CI/CD) server without all the configuration
+					work. </li>
 			</ul></p>
 	</body>
 </topic>
