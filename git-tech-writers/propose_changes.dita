@@ -9,8 +9,7 @@
 		<p>Besides the team of technical writers who have full write access to the documentation
 			repositories, there may be other collaborators (e.g. subject matter experts) who have
 			read access to the repository and sometimes want to propose changes.</p>
-		<p>The workflow for proposing changes to a repository usually works like
-				this:<?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T122757+0000"?><ol
+		<p>The workflow for proposing changes to a repository usually works like this:<ol
 				id="ol_jl2_k2w_v2c">
 				<li><b>Identify the Need for a Change</b><p>The SME (subject matter expert) starts
 						by reading the published output and thinking about what to change</p></li>
@@ -19,7 +18,7 @@
 				<li><b>Make the Edits</b><p>Using the <xref
 							href="https://www.oxygenxml.com/xml_web_author.html" format="html"
 							scope="external">Oxygen XML Web
-						Author</xref><?oxy_insert_end?><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122936+0000" content=" interface"?><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T122757+0000"?>,
+						Author</xref><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122936+0000" content=" interface"?>,
 						the SME can make changes directly to the DITA topic—no need to download or
 						clone the repository.</p><xref
 						href="https://www.oxygenxml.com/xml_web_author.html" format="html"
@@ -29,7 +28,7 @@
 					their changes</li>
 				<li>The technical writer reviews the change, improve the content if needed, and
 					merges the pull request.</li>
-			</ol><?oxy_insert_end?><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122752+0000" content="&lt;ul id=&quot;ul_gcj_sbf_twb&quot;&gt;&lt;li&gt;The SME (subject matter expert) starts by reading the published output and thinking about what to change&lt;/li&gt;&lt;li&gt;They click on an &quot;Edit online&quot; link on the page they want to change&lt;/li&gt;&lt;li&gt;&lt;xref href=&quot;https://www.oxygenxml.com/xml_web_author.html&quot; format=&quot;html&quot; scope=&quot;external&quot;&gt;Oxygen XML Web Author&lt;/xref&gt; lets them make change to a DITA topic&lt;/li&gt;&lt;li&gt;When they try to commit, Web Author automatically creates a pull request with their changes&lt;/li&gt;&lt;li&gt;The technical writer reviews the change, improve the content if needed, and merges the pull request.&lt;/li&gt;&lt;/ul&gt;"?></p>
+			</ol></p>
 		<p>You can see this workflow presented in detail in the video below. Short on time? Jump straight
 			to the
 				<?oxy_attributes href="&lt;change type=&quot;modified&quot; oldValue=&quot;https://Demo link here&quot; author=&quot;Mihaela Calotescu&quot; timestamp=&quot;20250331T122125+0000&quot; /&gt;"?><xref
