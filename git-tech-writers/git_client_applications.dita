@@ -6,8 +6,30 @@
 		<author>Radu Coravu</author>
 	</prolog>
     <body>
+		<section id="section_gxh_vpv_v2c">
+			<title>Oxygen Applications</title>
+			<p>
+				<ul id="ul_v3t_mcs_lwx">
+					<li><xref href="https://www.oxygenxml.com/content_fusion.html" format="html"
+							scope="external"><b>Oxygen Content Fusion</b></xref> is a <b>web-based
+							Git-enabled DITA CMS</b>. It is designed to provide the missing pieces
+						that Git lacks when working with a DITA project, such as review workflows
+						and publishing.</li>
+					<li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+							format="html" scope="external"><b>Git Client</b></xref> add-on in Oxygen
+						XML Editor allows you to use Git from the comfort of your authoring
+						tool.</li>
+					<li><xref href="https://www.oxygenxml.com/xml_web_author.html" format="html"
+							scope="external"><b>Oxygen XML Web Author</b></xref> has support for all
+						Git hosting servers. It is customisable and can be integrated with your
+						workflows and tools, such as <xref
+							href="https://www.oxygenxml.com/demo/wa_web_author_into_your_documentation_review_workflow.html"
+							format="html" scope="external">JIRA issue tracking</xref>.</li>
+				</ul>
+			</p>
+		</section>
 		<section id="section_ozj_tzy_qwb">
-			<title>Server-side solutions</title>
+			<title>Repository hosting solutions</title>
 			<p>
 				<ul id="ul_gjw_5tl_mwb">
 					<li><xref href="https://github.com/" format="html" scope="external"
@@ -23,21 +45,21 @@
 				</ul></p>
 		</section>
 		<section id="section_jrl_5zy_qwb">
-			<title>Client-side applications</title>
+			<title>Other client-side applications</title>
 			<p>There are lots of free client-side applications that can be used to work with Git
 				repositories:</p>
 			<ul id="ul_v3t_mcs_lwb">
 				<li><b>Git Fork</b></li>
 				<li><b>Git Tower</b></li>
 				<li><b>SourceTree</b></li>
-				<li><b>GitHub Desktop</b></li>
-				<li><b>Git</b> console</li>
-				<li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html"
-						scope="external"><b>Git Client</b></xref> add-on in Oxygen XML Editor</li>
-				<li>Web-based clients like Oxygen <xref href="https://www.oxygenxml.com/xml_web_author.html"
-						format="html" scope="external"><b>Web Author</b></xref>, or Oxygen <xref
-						href="https://www.oxygenxml.com/content_fusion.html" format="html"
-						scope="external"><b>Content Fusion</b></xref></li>
+				<li><b>GitHub Desktop</b>
+					<ul id="ul_nlw_lrv_v2c">
+						<li>Allows you to cherry-pick commits with drag &amp; drop, but otherwise
+							has limited functionality</li>
+					</ul></li>
+				<li>The <codeph>git</codeph> command-line client<ul id="ul_adf_mrv_v2c">
+						<li>Useful for scripting or advanced commands</li>
+					</ul></li>
 			</ul>
 		</section>
 	</body>
