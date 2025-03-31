@@ -28,8 +28,10 @@
 						they try to commit, Web Author automatically creates a pull request with
 						their changes</p></li>
 				<li><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123021+0000"?><b>Review
-						and Merge</b><?oxy_insert_end?>The technical writer reviews the change,
-					improve the content if needed, and merges the pull request.</li>
+						and
+						Merge</b><?oxy_insert_end?><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123037+0000" type="surround"?><p><?oxy_insert_end?>The
+						technical writer reviews the change, improve the content if needed, and
+						merges the pull request.</p></li>
 			</ol></p>
 		<p>You can see this workflow presented in detail in the video below. Short on time? Jump straight
 			to the <xref href="https://www.youtube.com/watch?v=YzQ0XhmtPUI&amp;t=217s" format="html"
