@@ -18,16 +18,18 @@
 				<li><b>Make the Edits</b><p>Using the <xref
 							href="https://www.oxygenxml.com/xml_web_author.html" format="html"
 							scope="external">Oxygen XML Web
-						Author</xref><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122936+0000" content=" interface"?>,
+						Author</xref><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122938+0000" content=" interface,"?>
 						the SME can make changes directly to the DITA topic—no need to download or
-						clone the repository.</p><xref
-						href="https://www.oxygenxml.com/xml_web_author.html" format="html"
-						scope="external">Oxygen XML Web Author</xref> lets them make changes to a
-					DITA topic</li>
-				<li>When they try to commit, Web Author automatically creates a pull request with
-					their changes</li>
-				<li>The technical writer reviews the change, improve the content if needed, and
-					merges the pull request.</li>
+						clone the
+					repository.</p><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122948+0000" content="&lt;xref href=&quot;https://www.oxygenxml.com/xml_web_author.html&quot; format=&quot;html&quot; scope=&quot;external&quot;&gt;Oxygen XML Web Author&lt;/xref&gt; lets them make changes to a DITA topic"?></li>
+				<li><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123002+0000"?><b>Submit
+						the
+						Changes</b><?oxy_insert_end?><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123009+0000" type="surround"?><p><?oxy_insert_end?>When
+						they try to commit, Web Author automatically creates a pull request with
+						their changes</p></li>
+				<li><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123021+0000"?><b>Review
+						and Merge</b><?oxy_insert_end?>The technical writer reviews the change,
+					improve the content if needed, and merges the pull request.</li>
 			</ol></p>
 		<p>You can see this workflow presented in detail in the video below. Short on time? Jump straight
 			to the
