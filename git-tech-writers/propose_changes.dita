@@ -11,16 +11,23 @@
 			read access to the repository and sometimes want to propose changes.</p>
 		<p>The workflow for proposing changes to a repository usually works like this:<ul
 				id="ul_gcj_sbf_twb">
-				<li>The collaborator creates a branch of the project on which they make changes and
-					add comments.</li>
-				<li>The branch is integrated back into the main project branch by the technical writer.</li>
+				<li>The SME (subject matter expert) starts by reading the published output and
+					thinking about what to change</li>
+				<li>They click on an "Edit online" link on the page they want to change</li>
+				<li><xref href="https://www.oxygenxml.com/xml_web_author.html" format="html"
+						scope="external">Oxygen XML Web Author</xref> lets them make change to a
+					DITA topic</li>
+				<li>When they try to commit, Web Author automatically creates a pull request with
+					their changes</li>
+				<li>The technical writer reviews the change, improve the content if needed, and
+					merges the pull request.</li>
 			</ul></p>
-		<p><image
-				href="../images/pull-request.png"
-				id="image_yyh_ybf_twb"/></p>
-		<!--https://mermaid.live/edit#pako:eNqNkUFuAjEMRa8SeU0vMOtWXVVUYldlYxLPJCKJRx6HCiHuToZpKaJUanZ23v_fiY_g2BN0MER9FRyDLaYdxzlHNdF3xsI6eRKzJ5kil8nCA2STMSXjApaBrsRWsLhghPaRPp96Ir9Ft_tSB3I7rvrH7W_vhXuc_i488kT-foBrSMZYllYmGegfoWsN7c03frCCpm1Gvn3WcVZYaEwmCzPvqceadCZPDa2jR6UXH5UFOpVKK8CqvDkU910vzHPEQTBD12OaWnfE8sH8U9PF421Z0mVXpzMviJPY-->
-		<p>Git Servers like <b>GitHub</b> or <b>GitLab</b> may add some extra functionality to help
-			technical writers review and accept changes. </p>
+		<p>You can see this workflow presented in detail in the video below. Short on time? Jump
+			straight to the <xref href="https://Demo link here" format="html" scope="external">demo
+				section</xref> and see it in action. </p>
+		<p><?oxy_comment_start author="Cristi Talau" timestamp="20250331T110848+0000" comment="Not the correct video"?><object
+				data="https://www.youtube.com/embed/Yfr6WDFN7d0" outputclass="iframe"
+			/><?oxy_comment_end?></p>
 	</body>
 	<related-links>
 		<link
