@@ -17,28 +17,18 @@
 						they want to change</p></li>
 				<li><b>Make the Edits</b><p>Using the <xref
 							href="https://www.oxygenxml.com/xml_web_author.html" format="html"
-							scope="external">Oxygen XML Web
-						Author</xref><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122938+0000" content=" interface,"?>
-						the SME can make changes directly to the DITA topic—no need to download or
-						clone the
-					repository.</p><?oxy_delete author="Mihaela Calotescu" timestamp="20250331T122948+0000" content="&lt;xref href=&quot;https://www.oxygenxml.com/xml_web_author.html&quot; format=&quot;html&quot; scope=&quot;external&quot;&gt;Oxygen XML Web Author&lt;/xref&gt; lets them make changes to a DITA topic"?></li>
-				<li><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123002+0000"?><b>Submit
-						the
-						Changes</b><?oxy_insert_end?><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123009+0000" type="surround"?><p><?oxy_insert_end?>When
-						they try to commit, Web Author automatically creates a pull request with
-						their changes</p></li>
-				<li><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123021+0000"?><b>Review
-						and
-						Merge</b><?oxy_insert_end?><?oxy_insert_start author="Mihaela Calotescu" timestamp="20250331T123037+0000" type="surround"?><p><?oxy_insert_end?>The
-						technical writer reviews the change, improve the content if needed, and
-						merges the pull request.</p></li>
+							scope="external">Oxygen XML Web Author</xref> the SME can make changes
+						directly to the DITA topic—no need to download or clone the
+					repository.</p></li>
+				<li><b>Submit the Changes</b><p>When they try to commit, Web Author automatically
+						creates a pull request with their changes</p></li>
+				<li><b>Review and Merge</b><p>The technical writer reviews the change, improve the
+						content if needed, and merges the pull request.</p></li>
 			</ol></p>
 		<p>You can see this workflow presented in detail in the video below. Short on time? Jump straight
 			to the <xref href="https://www.youtube.com/watch?v=YzQ0XhmtPUI&amp;t=217s" format="html"
 				scope="external">demo section</xref> and see it in action. </p>
-		<p><?oxy_comment_start author="Cristi Talau" timestamp="20250331T110848+0000" comment="Not the correct video" id="w33_fdw_v2c"?><?oxy_comment_start author="Mihaela Calotescu" timestamp="20250331T121735+0000" parentID="w33_fdw_v2c" comment="I changed it to: https://youtu.be/YzQ0XhmtPUI" mid="1"?><?oxy_attributes data="&lt;change type=&quot;modified&quot; oldValue=&quot;https://www.youtube.com/embed/Yfr6WDFN7d0&quot; author=&quot;Mihaela Calotescu&quot; timestamp=&quot;20250331T121712+0000&quot; /&gt;"?><object
-				data="https://youtu.be/YzQ0XhmtPUI" outputclass="iframe"
-			/><?oxy_comment_end?><?oxy_comment_end mid="1"?></p>
+		<p><object data="https://youtu.be/YzQ0XhmtPUI" outputclass="iframe"/></p>
 	</body>
 	<related-links>
 		<link
