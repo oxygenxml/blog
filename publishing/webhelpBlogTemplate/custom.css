@@ -436,12 +436,12 @@ ul#ui-id-1.ui-autocomplete {
    z-index:999 !important;
 }
 
-@media (max-width: 1500px ){    
-    .wh_search_input{
-        width: 100%
-    }
-    
+
+.wh_search_input{
+    width: 100%
 }
+    
+
 
 @media (max-width: 620px ){    
     .mb_index_bg{height:auto}
