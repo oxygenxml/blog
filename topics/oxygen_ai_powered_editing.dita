@@ -17,8 +17,7 @@
             in our application over recent years. I've included this presentation below for our
             clients and integrators to gain a better understanding of the <b>AI-Powered XML
                 Editing</b> tools we offer.</p>
-        <p><foreign outputclass="html-embed">&lt;iframe
-                src="../resources/OxygenAI.pdf#zoom=50" height="600"
+        <p><foreign outputclass="html-embed">&lt;iframe src="../resources/OxygenAI.pdf" height="600"
                 width="100%"/></foreign></p>
     </body>
 </topic>

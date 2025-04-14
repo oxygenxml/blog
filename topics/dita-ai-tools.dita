@@ -22,8 +22,7 @@
             interact with DITA XML content, especially with DITA XML features like specialization,
             content reuse or filtering. It all considers how the AI actions can be made more DITA
             XML aware in order to be better integrated with a particular organization's needs.</p>
-        <p><foreign outputclass="html-embed">&lt;iframe
-                src="../resources/dita-ai-tools.pdf#zoom=50" height="600"
-                width="100%"/></foreign></p>
+        <p><foreign outputclass="html-embed">&lt;iframe src="../resources/dita-ai-tools.pdf"
+                height="600" width="100%"/></foreign></p>
     </body>
 </topic>
