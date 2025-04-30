@@ -9,19 +9,20 @@
         </critdates>
     </prolog>
     <body>
-        <p>The DITA XML standard is recognized for good reason for its versatile reuse capabilities
-            which allow creating content which is consistent and can be used to single source the
-            entire publication needs of a company.</p>
+        <p>The DITA XML standard is recognized (for good reason) for its versatile reuse
+            capabilities, which allows for creating content that is consistent and can be used to
+            single-source the entire publication needs of a company.</p>
         <p>AI editing tools can bring lots of extra benefits for technical documentation writers,
             capabilities for re-writing content to improve readability, grammar checking, content
-            generation, generating reports and much more.</p>
-        <p>But how do these benefits interact with the DITA XML features (content reuse,
-            specialization) and how can AI tools be developed to work better with these DITA XMl
-            specific features?</p>
-        <p>This presentation below enumerates various useful AI-related actions and checks how they
-            interact with DITA XML content, especially with DITA XML features like specialization,
-            content reuse or filtering. It all considers how the AI actions can be made more DITA
-            XML aware in order to be better integrated with a particular organization's needs.</p>
+            generation, generating reports, and much more.</p>
+        <p>How do these benefits interact with the DITA XML features (content reuse, specialization)
+            and how can AI tools be developed to work better with these DITA XMl specific
+            features?</p>
+        <p>The presentation below enumerates various useful AI-related actions and checks how they
+            interact with DITA XML content, especially with DITA XML features such as
+            specialization, content reuse, or filtering. It all considers how the AI actions can be
+            made more DITA XML-aware to be better integrated with a particular organization's
+            needs.</p>
         <p><foreign outputclass="html-embed">&lt;iframe src="../resources/dita-ai-tools.pdf"
                 height="600" width="100%"/></foreign></p>
     </body>
