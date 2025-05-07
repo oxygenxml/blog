@@ -157,6 +157,16 @@
                             <xref
                             href="https://www.flowtime.be/en/writing-dita-xml-content-schrijven"
                             format="html" scope="external"/>.</li>
+          <li>"Empowering Structured Authoring with oXygen XML" - <b>Metapercept</b> provides
+            advanced DITA-XML and oXygen XML training programs tailored for professionals seeking to
+            deepen their expertise in structured content authoring, semantic tagging, and
+            multichannel publishing. Their offerings include self-paced modules and instructor-led
+            sessions with real-world, enterprise-aligned use cases. Through the  <xref
+              href="https://academy.metapercept.com/course/OxygenXMLAuthor-80461" format="html"
+              scope="external">DITA Authoring with oXygen XML course</xref> on Metapercept Academy,
+            learners progress beyond the basics to master advanced concepts such as specialization,
+            content reuse strategies, key-based linking, conditional profiling, and integration with
+            custom DITA-OT publishing pipelines.</li>
         </ul>
       </p>
     </section>
