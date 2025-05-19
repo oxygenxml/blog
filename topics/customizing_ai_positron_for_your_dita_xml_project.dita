@@ -260,6 +260,10 @@ The &lt;product>Hisense&lt;/product> &lt;part-term>engine&lt;/part-term> is more
                 with your existing ways of working. Some of your project's rules can be automated
                 allowing you to also detect and fix such problems after the content is generated
                 using the AI engine.</p>
+            <p>An example of a detailed context prompt containing an overview of the project and
+                audience, terminology, style rules, described vocabulary changes can be found <xref
+                    href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md"
+                    format="html" scope="external">here</xref>.</p>
         </section>
     </body>
 </topic>
