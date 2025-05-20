@@ -137,7 +137,11 @@ motor vehicle chassis (instead of 'vehicle frame')
                 configured with a terminology rules file which allows it to highlight in real time
                 terminology problems and propose replacement for them. You can find <xref
                     href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/oxygen-term-checker/terms.xml"
-                    format="html" scope="external">here</xref> a sample terminology rules file.</p>
+                    format="html" scope="external">here</xref> a sample terminology rules file.
+                There is a <xref
+                    href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/create-term-checker-rules.json"
+                    format="html" scope="external">sample AI action</xref> which can generate an XML
+                rules file from the add-on based on a style guide.</p>
             <p>Once the <b>Terminology Checker</b> add-on is installed and flags the terminology
                 problems in the <uicontrol>Author</uicontrol> visual editor mode you can use the
                     <uicontrol>Fix Terminology Problems</uicontrol> AI action to fix terminology
