@@ -45,7 +45,8 @@
                             documents).</entry>
                         <entry>Hallucinations when generating content if not enough quality context
                             information is provided. The overall terminology or style guide is not
-                            taken into account.</entry>
+                            taken into account. The DITA XML specializations are also not taken into
+                            account by default.</entry>
                     </row>
                     <row>
                         <entry><b>Research</b> / <b>Explain</b> concepts (chat).</entry>
@@ -57,7 +58,7 @@
         </table>
         <section id="section_scz_5ln_jfc">
             <title>Access Content From Your Project</title>
-            <p>By default when <b>researching</b> or <b>asking</b>AI questions, <xref
+            <p>By default when <b>researching</b> or <b>asking</b> the AI questions, <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__ai-p-rag"
                     format="html" scope="external">Retrieval Augmented Generation (RAG)</xref> tools
                 give the AI access to <b>search for specific keywords</b> in your current DITA XML
@@ -255,6 +256,8 @@ The &lt;product>Hisense&lt;/product> &lt;part-term>engine&lt;/part-term> is more
         </section>
         <section id="section_t3d_hr4_jfc">
             <title>Conclusion</title>
+            <p>You need to invest time in order to adapt the AI Positron add-on to generate better
+                content for your particular project and organization particularities.</p>
             <p>By specifying your specific project particularities in a context prompt, content
                 created and re-written by an AI engine can become much more precise and fit better
                 with your existing ways of working. Some of your project's rules can be automated
