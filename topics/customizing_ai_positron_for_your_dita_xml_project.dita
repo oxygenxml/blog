@@ -13,13 +13,13 @@
             boost productivity. However, <b>DITA XML</b> projects have specific requirements. They
             often need particular <b>terminology</b> and adherence to <b>style guide rules</b>, or
             they may rely on company-specific <b>DITA</b> specialization DTDs/schemas that differ
-            from the standard <b>DITA DTDs</b> on which the AI models are trained. Therefore, to
+            from the standard <b>DITA DTDs</b> that the AI models are trained on. Therefore, to
             generate high-quality content using the AI actions, the add-on must be configured to
             understand the unique aspects of the <b>DITA XML</b> project it will be used with. </p>
         <section id="section_kjj_sdn_jfc">
             <title>AI Tools Pros/Cons</title>
         </section>
-        <p>With their ability to <b>rewrite</b>, <b>research</b> and <b>generate documentation
+        <p>With their ability to <b>rewrite</b>, <b>research</b>, and <b>generate documentation
                 drafts</b> AI models can be useful in a variety of cases as long as aspects specific
             to the current DITA XML project can be controlled and enforced.</p>
         <table frame="all" rowsep="1" colsep="1" id="table_cmr_5dn_jfc">
@@ -36,8 +36,8 @@
                     <row>
                         <entry><b>Re-write</b> content (correct grammar, active voice, style,
                             readability improvements).</entry>
-                        <entry>The company specific style guide might impose certain rules which by
-                            default are not taken into account by the AI model.</entry>
+                        <entry>The company specific style guide might impose certain rules that, by
+                            default, are not taken into account by the AI model.</entry>
                     </row>
                     <row>
                         <entry><b>Generating draft content</b> by combining multiple sources
@@ -58,7 +58,7 @@
         </table>
         <section id="section_scz_5ln_jfc">
             <title>Access Content From Your Project</title>
-            <p>By default when <b>researching</b> or <b>asking</b> the AI questions, <xref
+            <p>By default, when <b>researching</b> or <b>asking</b> the AI questions, <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__ai-p-rag"
                     format="html" scope="external">Retrieval Augmented Generation (RAG)</xref> tools
                 give the AI access to <b>search for specific keywords</b> in your current DITA XML
@@ -66,12 +66,12 @@
                 related and relevant to your discussion.</p>
             <p>Bundled AI actions like <b>Generate Documentation Draft</b>, <b>Expand Draft</b>,
                     <b>Create Topics</b> give the AI model access to the current indexed DITA XML
-                project to retrieve the topics with content similar to the new content which needs
-                to be created.</p>
+                project to retrieve the topics with content similar to the new content that needs to
+                be created.</p>
             <p>You can create your own <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
-                    format="html" scope="external">custom AI actions</xref> which allow RAG access
-                to the current project contents for the AI engine. An example can be found <xref
+                    format="html" scope="external">custom AI actions</xref> that allow RAG access to
+                the current project contents for the AI engine. An example can be found <xref
                     href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/add-related-links.json"
                     format="html" scope="external">here</xref>.</p>
         </section>
@@ -101,15 +101,14 @@ and their understanding of English may vary.</codeblock></p>
         </section>
         <section id="section_ugq_jpn_jfc">
             <title>Terminology Rules</title>
-            <p>A DITA XML project may define in various formats allowed terms and certain synonyms
-                which are not recommended to be used instead of the allowed terminology.</p>
+            <p>A DITA XML project may define (in various formats) allowed terms and certain synonyms
+                that are not recommended to be used instead of the allowed terminology.</p>
             <p>The <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
-                    format="html" scope="external"><b>Context</b></xref> text area from the Oxygen
-                    <b>Preferences</b>
-                <b>AI Positron Assistant</b> preferences page can also contain rules for the most
-                important terms and disallowed synonyms. </p>
-            <p>Example of context which establishes some of the most important
+                    format="html" scope="external"><b>Context</b></xref> field in the <b>AI Positron
+                    Assistant</b> preferences page can also contain rules for the most important
+                terms and disallowed synonyms. </p>
+            <p>Example of context that establishes some of the most important
                 terms:<codeblock id="codeblock_spl_xtn_jfc"># Terminology
 
 Specific terms in the DITA XML content must be wrapped in the &lt;term> element. Preserve all such terms and do not attempt to replace them with possible synonyms.
@@ -127,41 +126,42 @@ engine (instead of 'motor')
 electronic stability control (instead of 'ESP')
 motor vehicle chassis (instead of 'vehicle frame')
 ```</codeblock></p>
-            <p>Once the AI model receives the imposed terminology rules as part of the prompt context
-                it will take them into account for all interactions, for example for creating
-                documentation drafts from content which was written without taking the terminology
-                into account.</p>
+            <p>Once the AI model receives the imposed terminology rules as part of the prompt
+                context, it will take them into account for all interactions (e.g. for creating
+                documentation drafts from content that was written without taking the terminology
+                into account).</p>
             <p>The Oxygen <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
                     format="html" scope="external">Terminology Checker add-on</xref> can be
-                configured with a terminology rules file which allows it to highlight in real time
-                terminology problems and propose replacement for them. You can find <xref
+                configured with a terminology rules file that allows it to highlight terminology
+                problems in real time and propose replacement for them. You can find a sample
+                terminology rules file <xref
                     href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/oxygen-term-checker/terms.xml"
-                    format="html" scope="external">here</xref> a sample terminology rules file.
-                There is a <xref
+                    format="html" scope="external">here</xref>. There is also a <xref
                     href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/create-term-checker-rules.json"
-                    format="html" scope="external">sample AI action</xref> which can generate an XML
+                    format="html" scope="external">sample AI action</xref> that can generate an XML
                 rules file from the add-on based on a style guide.</p>
             <p>Once the <b>Terminology Checker</b> add-on is installed and flags the terminology
-                problems in the <uicontrol>Author</uicontrol> visual editor mode you can use the
+                problems in the <uicontrol>Author</uicontrol> visual editor mode, you can use the
                     <uicontrol>Fix Terminology Problems</uicontrol> AI action to fix terminology
-                problems in the current opened topic's contents.</p>
-            <p>As a conclusion you can add your most important terminology rules in the AI Context
-                setting to create and process DITA XML content while obeying directly the rules. But
-                installing the terminology checker add-on allows you to see terminology problems
-                highlighted in the visual editor and to fix them using the AI engine with the
-                bundled <uicontrol>Fix Terminology Problems</uicontrol> AI action.</p>
+                problems in the currently opened topic's contents.</p>
+            <p>As a conclusion, you can add your most important terminology rules in the
+                    <uicontrol>Context</uicontrol> setting to create and process DITA XML content
+                while directly obeying the rules. However, installing the terminology checker add-on
+                allows you to see terminology problems highlighted in the visual editor and to fix
+                them using the AI engine with the bundled <uicontrol>Fix Terminology
+                    Problems</uicontrol> AI action.</p>
         </section>
         <section id="section_fg1_g14_jfc">
             <title>Style Guide</title>
-            <p>A style guide is a set of project specific standards and guidelines used to ensure
+            <p>A style guide is a set of project-specific standards and guidelines used to ensure
                 consistency and clarity in technical documentation. A company's style guide may come
-                in various formats (DITA XML, Markdown, Word, so on) but some of the most important
-                rules in the style guide can be distilled and set in the Oxygen <b>Preferences</b>
-                <b>AI Positron Assistant</b> preferences page in the <xref
+                in various formats (DITA XML, Markdown, Word, etc.) but some of the most important
+                rules in the style guide can be distilled and set in the <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
-                    format="html" scope="external"><b>Context</b></xref> text area</p>
-            <p>Example of context which establishes some of the most important style guide
+                    format="html" scope="external"><b>Context</b></xref> field within the <b>AI
+                    Positron Assistant</b> preferences page.</p>
+            <p>Example of context that establishes some of the most important style guide
                 rules:<codeblock id="codeblock_y3q_m14_jfc"># Style guide
 
 There is a set of company specific Style Guide rules which are important to follow when rewriting or creating new content, the most important rules are mentioned below:
@@ -186,42 +186,42 @@ end result => result
             <p>The Oxygen <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
                     format="html" scope="external">Terminology Checker add-on</xref> can also match
-                disallowed words and phrases in the terminology rules file allowing you to see in
+                disallowed words and phrases in the terminology rules file, allowing you to see in
                 the visual editor the style guide problems and to correct them using the bundled
                     <uicontrol>Fix Terminology Problems</uicontrol> AI action. </p>
             <p><b>Style Guide</b> rules may also impose structural aspects for the DITA XML content
                 and such rules can be automated by converting them to <xref
-                    href="SchematronBCs.dita">Schematron rules</xref>. Once such Schematron rules are added
-                to the DITA XML project and start showing errors in the edited content the bundled
-                    <b>Fix Validation Problems</b> AI action can be used to ask the AI to fix the
-                reported problems in the current document. If the AI engine attempts to save content
-                to a topic and the saved content has validation problems, the AI receives the
-                validation problems and attempts to auto fix the problems until the topic becomes
-                valid.</p>
-            <p>An alternative to defining style guide in the AI context prompt or to impose them
-                after the content is generated would be to create a fine tuned AI model trained with
-                small examples based on the internal style guide and created using also an AI
+                    href="SchematronBCs.dita">Schematron rules</xref>. Once such Schematron rules
+                are added to the DITA XML project and start showing errors in the edited content,
+                the bundled <b>Fix Validation Problems</b> AI action can be used to ask the AI to
+                fix the reported problems in the current document. If the AI engine attempts to save
+                content to a topic and the saved content has validation problems, the AI receives
+                the validation problems and attempts to auto fix the problems until the topic
+                becomes valid.</p>
+            <p>An alternative to defining a style guide in the AI context prompt or to impose them
+                after the content is generated would be to create a fine-tuned AI model trained with
+                small examples based on the internal style guide and created also using an AI
                 model.</p>
         </section>
         <section id="section_lyz_ph4_jfc">
             <title>DITA XML DTD/Schemas Specialization</title>
-            <p>Quite often a company which uses the DITA XML standard may decide to create a DTD or
-                RelaxNG based specialization which defines new XML elements which are not known by
-                the AI engine.</p>
-            <p>Most bundled AI actions attempt to preserve as much as possible the existing XML
-                structure. AI actions like <uicontrol>Expand Draft</uicontrol> start from a newly
+            <p>Quite often, a company that uses the DITA XML standard may decide to create a DTD or
+                RelaxNG based specialization that defines new XML elements that are not known by the
+                AI engine.</p>
+            <p>Most bundled AI actions attempt to preserve the existing XML structure, as much as
+                possible. AI actions like <uicontrol>Expand Draft</uicontrol> start from a newly
                 created DITA XML topic and thus preserves the existing DTD/schema reference and XML
                 elements. </p>
-            <p>Actions like <uicontrol>Generate Documentation Draft</uicontrol> can specify in their
-                definition that a certain XML structure must be generated. An example for this can
-                be found <xref
+            <p>Actions like <uicontrol>Generate Documentation Draft</uicontrol> can specify (in
+                their definition) that a certain XML structure must be generated. An example, for
+                this can be found <xref
                     href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Documentation%20Draft/Formant%20and%20Indent%20Sample/doc-draft-model-specialization.xml"
                     format="html" scope="external">here</xref>.</p>
             <p>The most important XML vocabulary changes (DTD/schema references, newly added XML
-                elements) can be distilled and set in the Oxygen <b>Preferences</b>
-                <b>AI Positron Assistant</b> preferences page in the <xref
+                elements) can be distilled and set in the <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
-                    format="html" scope="external"><b>Context</b></xref> text area.</p>
+                    format="html" scope="external"><b>Context</b></xref> field within the <b>AI
+                    Positron Assistant</b> preferences page.</p>
             <p>Example of vocabulary changes described in the prompt context:</p>
             <codeblock id="codeblock_xrj_jq4_jfc"># Vocabulary Changes
 
@@ -260,14 +260,14 @@ The &lt;product>Hisense&lt;/product> &lt;part-term>engine&lt;/part-term> is more
         </section>
         <section id="section_t3d_hr4_jfc">
             <title>Conclusion</title>
-            <p>You need to invest time in order to adapt the AI Positron add-on to generate better
-                content for your particular project and organization particularities.</p>
+            <p>You need to invest time to adapt the AI Positron add-on to generate better content
+                for your particular project and organization particularities.</p>
             <p>By specifying your specific project particularities in a context prompt, content
                 created and re-written by an AI engine can become much more precise and fit better
                 with your existing ways of working. Some of your project's rules can be automated
                 allowing you to also detect and fix such problems after the content is generated
                 using the AI engine.</p>
-            <p>An example of a detailed context prompt containing an overview of the project and
+            <p>An example of a detailed context prompt that contains an overview of the project and
                 audience, terminology, style rules, described vocabulary changes can be found <xref
                     href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md"
                     format="html" scope="external">here</xref>.</p>
