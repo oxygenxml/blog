@@ -71,7 +71,7 @@
                 <dlentry>
                     <dt>description</dt>
                     <dd>A longer description of what the AI action does, usually used as tooltip.
-                        Example:<codeblock id="codeblock_il2_ns1_kfc">{
+                        Example:<codeblock id="codeblock_il2_ns1_kfc" outputclass="language-json">{
         "id": "...",
         "title": "Improve Grammar and Styles",
         "description": "Improve the grammar and styles based on the company's style guide."
@@ -193,7 +193,7 @@
                     <dd><xref
                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Replace_bold_with_uicontrol.json"
                             format="html" scope="external"
-                        >Example</xref>:<codeblock id="codeblock_qyh_zbb_kfc">{
+                        >Example</xref>:<codeblock id="codeblock_qyh_zbb_kfc" outputclass="language-json">{
   "id" : "replace.bold.with.uicontrol",
   "title" : "Replace bold with uicontrol",
   "input-type" : "markup",
