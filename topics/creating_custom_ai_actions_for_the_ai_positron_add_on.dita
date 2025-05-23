@@ -17,7 +17,7 @@
                 <b>AI Positron Custom Action</b> file that contains a custom action definition in
             JSON format or an <b>AI Positron Custom Actions List</b> that contains a JSON array with
             multiple defined actions. Validation and content completion are automatically provided
-            for such custom action files. To edit multi line parameter values you can switch the
+            for such custom action files. To edit multi-line parameter values, you can switch the
             edited action JSON definition file to the <b>Author</b> visual editor mode.</p>
         <p>If the action definition files are saved in the custom actions folder defined in the AI
             Positron Assistant preferences page, the AI Positron Assistant view should automatically
@@ -30,7 +30,7 @@
                 <dlentry>
                     <dt>id</dt>
                     <dd>
-                        <p>An unique ID for the action. If the ID of the action starts with
+                        <p>A unique ID for the action. If the ID of the action starts with
                                 <codeph>agent.hidden.action.</codeph>, then the action is not
                             visible to be invoked directly but can be called by using the <xref
                                 href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__dlentry_svh_mtv_g2c"
@@ -44,9 +44,10 @@
                                 contribute an extra <xref
                                     href="https://www.oxygenxml.com/doc/ug-editor/dev_guide/contributing_translations_for_new_labels_and_ui_text.html"
                                     format="html" scope="external"
-                                        ><filepath>translation.xml</filepath></xref> file containing
-                                translations. Such a plugin may translate titles, and descriptions
-                                for AI actions using the action ID as part of the key, for
+                                        ><filepath>translation.xml</filepath></xref> file that
+                                contains translations. Such a plugin may translate titles and
+                                descriptions for AI actions using the action ID as part of the key,
+                                for
                                 example:<codeblock id="codeblock_lfl_rr1_kfc" outputclass="language-xml">	&lt;key value="improve.grammar.custom.styles.title"> 
 		&lt;val lang="en_US">Improve Styles&lt;/val> 
 		&lt;val lang="de_DE">...&lt;/val> 
@@ -61,7 +62,7 @@
                 </dlentry>
                 <dlentry>
                     <dt>title</dt>
-                    <dd>The action name/title which gets presented in the UI.
+                    <dd>The action name/title that gets presented in the UI.
                         Example:<codeblock id="codeblock_kps_bs1_kfc" outputclass="language-json">{
         "id": "improve.grammar.custom.styles",
         "title": "Improve Grammar and Styles",
@@ -70,7 +71,7 @@
                 </dlentry>
                 <dlentry>
                     <dt>description</dt>
-                    <dd>A longer description of what the AI action does, usually used as tooltip.
+                    <dd>A longer description of what the AI action does, usually used as a tooltip.
                         Example:<codeblock id="codeblock_il2_ns1_kfc" outputclass="language-json">{
         "id": "...",
         "title": "Improve Grammar and Styles",
@@ -79,7 +80,7 @@
                 </dlentry>
                 <dlentry>
                     <dt>short-description</dt>
-                    <dd>A shorter description for the AI action which appears usually under the
+                    <dd>A shorter description for the AI action that usually appears under the
                         action title in the chat view. If not specified, it defaults to the
                         description value.
                         Example:<codeblock id="codeblock_h25_ts1_kfc" outputclass="language-json">{
@@ -103,14 +104,14 @@
                 <dlentry>
                     <dt>embed-assist</dt>
                     <dd>Set this optional boolean parameter to <codeph>true</codeph> to add the AI
-                        action to the top right <uicontrol>AI Positron Assistant</uicontrol> drop
-                        down button which appears when editing content in the
+                        action to the top right <uicontrol>AI Positron Assistant</uicontrol>
+                        drop-down button that appears when editing content in the
                             <uicontrol>Author</uicontrol> visual editing mode.</dd>
                 </dlentry>
                 <dlentry>
                     <dt>quick-assist</dt>
                     <dd>Set this optional boolean parameter to <codeph>true</codeph> to add the AI
-                        action to the quick assist bulb drop down menu which appears in the left
+                        action to the quick assist bulb drop down menu that appears in the left
                         vertical stripe.</dd>
                 </dlentry>
                 <dlentry>
@@ -127,22 +128,22 @@
                 <dlentry>
                     <dt>framework</dt>
                     <dd><p>A framework pattern (like '<codeph>DITA*</codeph>') or content type name
-                            (like '<codeph>text/css</codeph>') which when matched presents the
+                            (like '<codeph>text/css</codeph>') that, when matched, presents the
                             action when the document pertaining to the framework is opened. Example:
                             <codeblock id="codeblock_jjg_py1_kfc" outputclass="language-json">{
     "id": "generate.img.alternate.text",
     "title": "Generate Image Alternate Text",
     "framework": "*DITA*",
     ...
-}</codeblock></p>An example of an AI action which shows for any edited
-                        XML document (as it matches the <codeph>text/xml</codeph> content type) can
-                        be found <xref
+}</codeblock></p>An example of an AI action that shows this for any
+                        edited XML document (as it matches the <codeph>text/xml</codeph> content
+                        type) can be found <xref
                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/formula-equation.json"
                             format="html" scope="external">here</xref>.</dd>
                 </dlentry>
                 <dlentry>
                     <dt>prompt_ref</dt>
-                    <dd>A reference to a separate file (usually encoded in Markdown) which defines
+                    <dd>A reference to a separate file (usually encoded in Markdown) that defines
                         the entire action prompt. </dd>
                     <dd><xref
                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json"
@@ -164,7 +165,7 @@
                 </dlentry>
                 <dlentry>
                     <dt>context</dt>
-                    <dd>Multi-line parameter value which defines the prompt that is sent to the AI
+                    <dd>Multi-line parameter value that defines the prompt that is sent to the AI
                         along with the content to be processed. </dd>
                     <dd><xref
                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json"
@@ -188,7 +189,7 @@
                 </dlentry>
                 <dlentry>
                     <dt>examples</dt>
-                    <dd>An optional JSON array encoding examples which may help the AI better
+                    <dd>An optional JSON array that encodes examples that may help the AI better
                         understand how to apply the prompt. </dd>
                     <dd><xref
                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Replace_bold_with_uicontrol.json"
@@ -216,10 +217,10 @@
                 </dlentry>
                 <dlentry>
                     <dt>expand-params</dt>
-                    <dd>A JSON array which can define values for parameters which should be expanded
+                    <dd>A JSON array that can define values for parameters that should be expanded
                         in the context content. </dd>
                     <dd>All custom AI actions should define and use the
-                            <codeph>${contextInfo}</codeph> parameter which gets expanded to the
+                            <codeph>${contextInfo}</codeph> parameter, which gets expanded to the
                         value of the <uicontrol>Context</uicontrol> text area in the AI Positron
                         Assistant preferences page.
                         Example:<codeblock id="codeblock_xs1_gz1_kfc" outputclass="language-json">{
@@ -233,8 +234,8 @@
         "value": "${contextInfo}"
       }
     ]
-  }</codeblock>You can also define parameters which can be configured by the
-                        end user when hovering the AI action in the UI. <xref
+  }</codeblock>You can also define parameters that can be configured by the
+                        end user when hovering over the AI action in the UI. <xref
                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Thesaurus.json"
                             format="html" scope="external"
                             >Example</xref>:<codeblock id="codeblock_o5w_pz1_kfc" outputclass="language-json">{
@@ -268,7 +269,7 @@
                                 </dlentry>
                                 <dlentry>
                                     <dt>label</dt>
-                                    <dd>The label which appears in the UI when the parameter's value
+                                    <dd>The label that appears in the UI when the parameter's value
                                         is configured by the end user.</dd>
                                 </dlentry>
                                 <dlentry>
@@ -276,7 +277,7 @@
                                     <dd>The value of the parameter. It can contain various <xref
                                             href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html"
                                             format="html" scope="external">editor variables</xref>
-                                        which get automatically expanded. <xref
+                                        that get automatically expanded. <xref
                                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-prolog.json"
                                             format="html" scope="external"
                                         >Example</xref>:<codeblock id="codeblock_drx_31b_kfc" outputclass="language-json">{
@@ -293,13 +294,13 @@
                                 </dlentry>
                                 <dlentry>
                                     <dt>alternate-values</dt>
-                                    <dd>An optional array of alternate values which are available to
-                                        be configured by the end user when hovering the AI
+                                    <dd>An optional array of alternate values that are available to
+                                        be configured by the end user when hovering over the AI
                                         action.</dd>
                                 </dlentry>
                                 <dlentry>
                                     <dt>choice-type</dt>
-                                    <dd>An optional choice type defining how the end user can
+                                    <dd>An optional choice type that defines how the end user can
                                         configure the alternate values (combo box, check boxes,
                                         radio buttons).</dd>
                                 </dlentry>
@@ -312,9 +313,9 @@
                 </dlentry>
                 <dlentry>
                     <dt>parameters</dt>
-                    <dd>An array of parameters which can be used to specify an engine name,
-                        temperature or the available function definitions. Some of the most common
-                        set parameters:<dl id="dl_t55_fdb_kfc">
+                    <dd>An array of parameters that can be used to specify an engine name,
+                        temperature, or the available function definitions. Some of the most
+                        commonly set parameters:<dl id="dl_t55_fdb_kfc">
                             <dlentry>
                                 <dt>engine</dt>
                                 <dd>
@@ -338,21 +339,21 @@
                                 <dd>Temperature is an optional parameter that governs the randomness
                                     and thus the creativity of the responses. It is always a number
                                     between 0 (more deterministic) and 1 (more random). The default
-                                    value is 0 and it should in general remain unspecified when your
-                                    AI actions are intended for technical documentation which is
+                                    value is 0 and it should, in general, remain unspecified when
+                                    your AI actions are intended for technical documentation that is
                                     precise in nature.</dd>
                             </dlentry>
                             <dlentry>
                                 <dt>function_refs</dt>
-                                <dd>An optional JSON array which describes which functions can be
-                                    used when executing this action. The list of functions which can
+                                <dd>An optional JSON array that describes which functions can be
+                                    used when executing this action. The list of functions that can
                                     be referenced is available <xref
                                         href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_lqv_qnt_vbc"
                                         format="html" scope="external">here</xref>.</dd>
                                 <dd><xref
                                         href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/add-related-links.json"
                                         format="html" scope="external">Example</xref> of an AI
-                                    action which uses <uicontrol>Retrieval Augmented Generation
+                                    action that uses <uicontrol>Retrieval Augmented Generation
                                         (RAG)</uicontrol> functions to find related content in the
                                     project:<codeblock id="codeblock_s5d_n2b_kfc" outputclass="language-json">{
     "id": "find.add.related.links",
@@ -366,8 +367,8 @@
 }</codeblock></dd>
                                 <dd>
                                     <note id="note_hlw_x2b_kfc" type="important">There are specific
-                                        actions which can be called to invoke from an AI action
-                                        other AI actions, thus creating an agenting mechanism where
+                                        actions that can be called to invoke other AI actions from
+                                        an AI action, thus creating an agenting mechanism where
                                         various parts of the work is done by various actions. An
                                         example can be found <xref
                                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/ai-actions-composed.json"
@@ -379,13 +380,13 @@
             </dl><dl id="dl_nrp_ffb_kfc">
                 <dlentry>
                     <dt>input-type</dt>
-                    <dd>Describes how the XML content from the document which is sent to the
-                        platform should be processed, as regular XML including markup tags or as
-                        plain text without the tags and with all DITA XML content references and key
-                        references expanded. By default its value is assumed to be 'markup' which
-                        means the content is sent exactly as it is. Example of an AI action which
-                        requires the input to be sent without any markup tags and with the DITA XML
-                        conrefs and keyrefs
+                    <dd>Describes how the XML content from the document that is sent to the platform
+                        should be processed, as regular XML including markup tags or as plain text
+                        without the tags and with all DITA XML content references and key references
+                        expanded. By default, its value is assumed to be 'markup', which means the
+                        content is sent exactly as it is. Example of an AI action that requires the
+                        input to be sent without any markup tags and with the DITA XML conrefs and
+                        keyrefs
                         expanded:<codeblock id="codeblock_qkc_lgb_kfc" outputclass="language-json">{
     "id": "action.answer.questions",
     "type": "show-response",
@@ -396,15 +397,15 @@
                 </dlentry>
                 <dlentry>
                     <dt>type</dt>
-                    <dd>The type of the AI action. Some of the most used type values are listed
-                            below:<dl id="dl_rjl_ngb_kfc">
+                    <dd>The type of the AI action. Some of the most commonly used type values are
+                        listed below:<dl id="dl_rjl_ngb_kfc">
                             <dlentry>
                                 <dt>replace-selection-with-fragment</dt>
-                                <dd>The most common type of action. Send the selected content to the
-                                    AI platform and propose to replace the selection with the
-                                    received response. If there is no selected content automatically
-                                    the entire document is selected when the action is
-                                            invoked.<p><xref
+                                <dd>The most common type of action. Sends the selected content to
+                                    the AI platform and proposes to replace the selection with the
+                                    received response. If there is no selected content
+                                    automatically, the entire document is selected when the action
+                                    is invoked.<p><xref
                                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Replace_bold_with_uicontrol.json"
                                             format="html" scope="external"
                                         >Example</xref>:<codeblock id="codeblock_tfr_ygb_kfc" outputclass="language-json">{
@@ -416,9 +417,9 @@
                             </dlentry>
                             <dlentry>
                                 <dt>insert-schema-aware-fragment</dt>
-                                <dd>Insert in the current document at the caret offset or at an
-                                    offset specified by the <codeph>insert-modes</codeph> the
-                                    content received from the AI engine. If the inserted content is
+                                <dd>Inserts the content received from the AI engine in the current
+                                    document at the cursor position or at an offset specified by the
+                                        <codeph>insert-modes</codeph>. If the inserted content is
                                     invalid at the proposed offset, the application attempts to find
                                     a proper location for it. <xref
                                         href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json"
@@ -432,7 +433,7 @@
                             </dlentry>
                             <dlentry>
                                 <dt>prompt-user</dt>
-                                <dd>Show a dialog asking for a context and then run the
+                                <dd>Shows a dialog box that asks for a context and then runs the
                                             action.<p><xref
                                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/formula-equation.json"
                                             format="html" scope="external"
@@ -446,8 +447,8 @@
                             </dlentry>
                             <dlentry>
                                 <dt>show-response</dt>
-                                <dd>Send the selected content or the entire document to the AI
-                                    platform and show the response to the end user.<p><xref
+                                <dd>Sends the selected content or the entire document to the AI
+                                    platform and shows the response to the end user.<p><xref
                                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json"
                                             format="html" scope="external"
                                         >Example</xref>:<codeblock id="codeblock_v4c_b3b_kfc" outputclass="language-json">{
@@ -460,11 +461,11 @@
                         </dl><dl id="dl_ssk_g3b_kfc">
                             <dlentry>
                                 <dt>create-new-document</dt>
-                                <dd>Show a dialog asking for a context and then create a new
-                                    document based on the received server response. The
+                                <dd>Shows a dialog box that asks for a context and then creates a
+                                    new document based on the received server response. The
                                         <codeph>"additional_info"/"properties"/"file_extension"</codeph>
                                     property can be set to impose an extension for the newly created
-                                            document.,<p><xref
+                                            document.<p><xref
                                             href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/create-schematron-rules.json"
                                             format="html" scope="external"
                                         >Example</xref>:<codeblock id="codeblock_v55_j3b_kfc" outputclass="language-json">{
@@ -481,7 +482,7 @@
                 </dlentry>
                 <dlentry>
                     <dt>insert-modes</dt>
-                    <dd>A JSON array which defines places for inserting the content in an XML
+                    <dd>A JSON array that defines places for inserting the content in an XML
                         document. The first mode for which the XPath condition becomes true is run.
                         Such modes are used when the AI action <codeph>type</codeph> is
                             <codeph>insert-schema-aware-fragment</codeph>.</dd>
