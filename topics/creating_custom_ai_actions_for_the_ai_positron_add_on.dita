@@ -355,7 +355,7 @@
                                         format="html" scope="external">Example</xref> of an AI
                                     action that uses <uicontrol>Retrieval Augmented Generation
                                         (RAG)</uicontrol> functions to find related content in the
-                                    project:<codeblock id="codeblock_s5d_n2b_kfc" outputclass="language-json">{
+                                            project:<codeblock id="codeblock_s5d_n2b_kfc" outputclass="language-json">{
     "id": "find.add.related.links",
     ...
     "parameters": {
@@ -364,7 +364,23 @@
         {"ref": "get_content_for_document_url"}
     ]
 }
-}</codeblock></dd>
+}</codeblock><p><xref
+                                            href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/get-content-from-website.json"
+                                            format="html" scope="external">Example</xref> of an AI
+                                        action that uses the
+                                            <codeph>get_content_for_document_url</codeph> function
+                                        to retrieve content from a web
+                                        site:<codeblock id="codeblock_thd_gml_lfc" outputclass="language-json">{
+    "id": "action.get.oxygen.version.web.site",
+    "type": "insert-schema-aware-fragment",
+    "title": "Insert Latest Oxygen Version",
+    "context": "Obtain the latest version of Oxygen from the 'https://www.oxygenxml.com/xml_editor/whats_new.html' web site by calling the function 'get_content_for_document_url' and return it.",
+    "parameters": {
+        "function_refs": [
+            {"ref": "get_content_for_document_url"}
+        ]
+    }
+  }</codeblock></p></dd>
                                 <dd>
                                     <note id="note_hlw_x2b_kfc" type="important">There are specific
                                         actions that can be called to invoke other AI actions from
