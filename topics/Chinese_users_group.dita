@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_trg_15z_fs">
+  <title><b>Announcing the Launch of the Oxygen XML Chinese User Group</b></title>
+  <prolog>
+    <author>Alin Belu</author>
+    <critdates>
+      <created date="2025-04-07"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>We are pleased to announce the establishment of the <b>Oxygen XML Chinese User Group</b>, a
+      dedicated community for Chinese-speaking users of Oxygen XML suite of products. This
+      initiative is a partnership between Syncro Soft and Ray Content Tech (Beijing) that aims to
+      foster collaboration, knowledge sharing, and mutual support among professionals who utilize
+      Oxygen XML tools in Chinese-language environments.</p>
+    <p><i>What are the objectives of the Oxygen XML Chinese User Group?</i></p>
+    <ul id="ul_sl2_qw2_gfc">
+      <li>
+        <p><i>Community Engagement:</i> Connect with fellow users to discuss experiences, share
+          insights, and explore solutions tailored to the nuances of working with Oxygen XML in
+          Chinese contexts.​</p>
+      </li>
+      <li>
+        <p><i>Resource Sharing:</i> Access and contribute to a repository of resources, including
+          tutorials, templates, and best practices specifically designed for Chinese-language
+          documentation and workflows.​</p>
+      </li>
+      <li>
+        <p><i>Collaborative Learning:</i> Participate in discussions and collaborative projects that
+          enhance your proficiency and keep you informed about the latest developments and features
+          of the Oxygen XML suite of products.​</p>
+      </li>
+    </ul>
+    <p>At Syncro Soft, we are committed to supporting our diverse user base. The Oxygen XML products
+      offer comprehensive support for creating Chinese content, ensuring a seamless experience for
+      users working with these languages. The editor supports Chinese input methods, displaying
+      composed text in context and allowing for efficient content creation in both Author and Text
+      editing modes.</p>
+    <p>To learn more about the Oxygen XML Chinese User Group and become part of this community, you
+      can visit <xref href="https://raytech-oxygen-xml-community.replit.app/#user-group"
+        format="html" scope="external"
+      >raytech-oxygen-xml-community.replit.app/#user-group</xref>.​</p>
+    <p>We look forward to building a strong and supportive network of Oxygen XML users in the
+      Chinese-speaking world!</p>
+  </body>
+</topic>
