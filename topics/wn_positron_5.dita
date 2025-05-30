@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_wn_positron_5">
+  <title><b>What is New in Oxygen AI Positron Assistant 5.0</b></title>
+  <prolog>
+    <author>Alin Belu</author>
+    <critdates>
+      <created date="2025-05-30"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>The new <b>Oxygen AI Positron Assistant 5.0</b> brings meaningful improvements to help
+      content creators use AI more effectively in structured authoring.</p>
+    <p>One of the most useful updates is the ability to <b>generate or update files</b> like
+        <b>XSLT</b>, <b>XSD</b>, <b>Schematron</b>, <b>JSON Schema</b>, and <b>DTD</b> just by
+      providing a brief description. You can then review changes using the built-in <b>visual file
+        comparison</b> tool.</p>
+    <p>For <b>DITA users</b>, the assistant now supports advanced <b>content transformation</b>,
+      making it easy to convert between document types or restructure topics using AI
+      suggestions.</p>
+    <p>Other key updates include:</p>
+    <ul id="ul_i11_wlq_mfc">
+      <li>
+        <p><b>Eclipse plugin support</b></p>
+      </li>
+      <li>
+        <p>The option to <b>exclude specific files</b> from AI processing</p>
+      </li>
+      <li>
+        <p><b>Callback functions</b> for validation or tool integration</p>
+      </li>
+      <li>
+        <p>Support for attaching <b>Word, PowerPoint, and PDF</b> files as input</p>
+      </li>
+      <li>
+        <p>Access to new reasoning models like <b>o3</b>, <b>o1</b>, <b>o4-mini</b>, and more</p>
+      </li>
+      <li>
+        <p>Integration with <b>xAI Grok</b> and other custom AI services through specialized
+          connectors</p>
+      </li>
+    </ul>
+    <p>Additional refinements improve comment resolution, validation fixes, and allow referencing
+      external resources or prompts.</p>
+    <p>You can see the new features in action in this overview video:</p>
+    <p><object width="853" height="480" data="https://www.youtube.com/embed/DXYYYvCtjfI"
+        outputclass="iframe">
+        <param name="allowfullscreen"/>
+      </object></p>
+  </body>
+</topic>
