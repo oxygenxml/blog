@@ -67,7 +67,13 @@
         <topicref href="topics/using_oxygen_xml_editor_in_a_browser.dita"/>
 		<topicref href="topics/blog_2022_retrospective.dita"/>
     </topichead>
-    <topicref href="topics/contributors.dita"/>
+    <topicref href="topics/contributors.dita">
+        <topicmeta>
+            <data name="wh-tile">
+                <data name="hide" value="yes"/>
+            </data>
+        </topicmeta>
+    </topicref>
     <topicref href="maps/key_definitions.ditamap" format="ditamap"/>
     <mapref href="classification/blog-subject-scheme.ditamap" type="subjectScheme"/>
     <mapref href="classification/blog-classification.ditamap" processing-role="resource-only"/>
