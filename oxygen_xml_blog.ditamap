@@ -69,8 +69,8 @@
     </topichead>
     <topicref href="topics/contributors.dita">
         <topicmeta>
-            <data name="wh-tile">
-                <data name="hide" value="yes"/>
+            <data name="wh-menu">
+                <data name="hide" value="yes"/>        
             </data>
         </topicmeta>
     </topicref>
