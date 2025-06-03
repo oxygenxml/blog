@@ -18,6 +18,7 @@
         <topicref href="topics/using_chatgpt_in_a_dita_xml_project.dita"/>
         <topicref href="topics/ai-positron-assistant-retrospective-analysis.dita"/>
         <topicref href="topics/dita-ot-ai-plugins.dita"/>
+        <topicref href="topics/wn_positron_5.dita"/>
     </topichead>
     <topicref href="maps/dita-articles.ditamap" format="ditamap"/>
     <topicref keys="migrate" href="topics/migration.dita">
