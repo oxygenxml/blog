@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_z5n_nph_4fc">
+    <title>Speed Up Web Author Customization (use Web Author Test Server Add-on)</title>
+    <body>
+        <p>Are you working on any of these tasks:</p>
+        <ul id="ul_chr_xq3_4fc">
+            <li>
+                <p>Starting a new Web Author customization project?</p>
+            </li>
+            <li>
+                <p>Testing if an existing Oxygen XML Editor framework works with Web Author?</p>
+            </li>
+            <li>
+                <p>Making quick updates to a framework already used in a production Web Author
+                    server?</p>
+            </li>
+        </ul>
+        <p>The <b>Web Author Test Server Add-on</b> is designed to make your work easier and
+            faster.</p>
+        <p>This <b>Oxygen XML Editor plugin </b>lets you quickly preview and edit XML documents in a
+            local <b>Web Author Test Server</b>. It uses the same framework you are working on. You
+            do not need to package, deploy, or do any extra setup.</p>
+        <p>Once installed, you'll see a new button in the toolbar, called <b>Start Web Author
+                Server</b> that:</p>
+        <ul id="ul_lmy_vph_4fc">
+            <li>
+                <p>Launches a local Web Author Test Server automatically.</p>
+            </li>
+            <li>
+                <p>Opens your current document in it.</p>
+            </li>
+            <li>
+                <p>Loads the associated framework instantly.</p>
+            </li>
+        </ul>
+        <p>Watch this video for more details about how to install it and to see how efficient your
+            customization workflow can become when you will use it:</p>
+	<p><object width="560" height="315"
+      data="https://www.youtube.com/embed/u3WhXzxdc28" outputclass="iframe">
+<param name="allowfullscreen" />
+</object></p>
+        <p>
+            <note id="note_gmg_mt3_4fc">The update site shown in the video, that you can use to
+                install the add-on, is: <xref
+                    href="https://www.oxygenxml.com/InstData/Addons/optional/updateSite.xml"
+                    format="html" scope="external"/></note>
+        </p>
+    </body>
+</topic>
