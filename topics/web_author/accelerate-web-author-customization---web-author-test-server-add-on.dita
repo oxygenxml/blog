@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_z5n_nph_4fcd">
-    <title>Speed Up Web Author Customization (use Web Author Test Server Add-on)</title>
+    <title>Speed Up Oxygen XML Web Author Customization (use Web Author Test Server Add-on)</title>
    <prolog>
     <author>Mihaela Calotescu</author>
     <critdates>
@@ -12,7 +12,7 @@
         <p>Are you working on any of these tasks:</p>
         <ul id="ul_chr_xq3_4fc">
             <li>
-                <p>Starting a new Web Author customization project?</p>
+                <p>Starting a new Oxygen XML Web Author customization project?</p>
             </li>
             <li>
                 <p>Testing if an existing Oxygen XML Editor framework works with Web Author?</p>
