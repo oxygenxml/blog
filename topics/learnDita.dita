@@ -139,6 +139,9 @@
       <title>Courses for learning DITA with <ph keyref="oxygen"/></title>
       <p>
         <ul>
+          <li><b>Comtech Services</b>: <xref href="https://comtechservices.com/training/"
+              format="html" scope="external"/>. Comtech has three training classes that use Oxygen
+            exclusively: DITA Basics, Advanced Reuse Strategies, Publishing for DITA.</li>
           <li><b>Ryffine</b>: <xref href="https://www.ryffine.com/" format="html" scope="external"
                         />.</li>
           <li><b>Udemy</b>: <xref
