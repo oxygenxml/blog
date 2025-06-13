@@ -1,0 +1,22 @@
+[
+  {
+    "id": "thesaurus",
+    "title": "Thesaurus/Synonyms",
+    "categoryId": "Samples",
+    "output-action": "replace",
+    "prompt_ref": "prompts/thesaurus.md",
+    "expand-params": [
+      {
+        "name": "number",
+        "label": "Number of synonyms",
+        "value": "10",
+        "choice-type": "single-choice",
+        "alternate-values": [
+          "10",
+          "20",
+          "30"
+        ]
+      }
+    ]
+  }
+]

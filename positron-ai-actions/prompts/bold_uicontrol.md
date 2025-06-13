@@ -1,0 +1,1 @@
+Find where the bold element (<b>) has been used to mark up UI elements and change those instances by replacing the bold element with the uicontrol element (<uicontrol>). If you find some other content marked up with bold element, content that does not define UI elements, leave it unchanged. Also keep any other content unaltered.

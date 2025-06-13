@@ -1,0 +1,15 @@
+[ {
+  "id" : "replace.bold.with.uicontrol",
+  "title" : "Replace bold with uicontrol",
+  "categoryId": "Samples",
+  "output-action": "replace",
+  "prompt_ref": "prompts/bold_uicontrol.md",
+  "examples" : [ {
+    "prompt" : "<b>Run</b>",
+    "completion" : "<uicontrol>Run</uicontrol>"
+  },
+  {
+    "prompt" : "text1 <b>Run</b> text2",
+    "completion" : "text1 <uicontrol>Run</uicontrol> text2"
+  }]
+} ]
