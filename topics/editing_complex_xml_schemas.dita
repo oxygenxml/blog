@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="editing_complex_xml_schemas">
+    <title>Editing Complex XML Schemas with Oxygen XML Editor</title>
+    <prolog>
+        <author>Octavian Nadolu</author>
+        <critdates>
+            <created date="2025-06-13"/>
+        </critdates>
+    </prolog>
+    <body>
+        <bodydiv><section id="section_x5t_p3m_qfc">
+                <title>Using Main Files and Advanced Tools</title>
+                <p>As your XML-based projects grow in complexity, managing and editing large sets of
+                    interdependent XML Schema (XSD) files can become a challenge. Luckily, <b>Oxygen
+                        XML Editor</b> is designed with robust, productivity-boosting features to
+                    help you handle large schema structures with ease and accuracy. In this blog
+                    post, we’ll dive into key techniques—including main files support and built-in
+                    schema exploration tools—to streamline your schema development workflow.</p>
+            </section><section id="section_y5t_p3m_qfc">
+                <title>Why Main Files Are Important in Complex Schema Projects</title>
+                <p>In big projects, XML Schemas are rarely monolithic. Instead, they’re modular,
+                    often spanning dozens or hundreds of XSD files that <codeph>import</codeph> or
+                        <codeph>include</codeph> each other. Editing such a network of modules
+                    without clear context can lead to validation errors, missed dependencies, and
+                    incomplete code assist.</p>
+            </section><section id="section_z5t_p3m_qfc">
+                <title><b>Main File Support: Your Project’s Entry Point</b></title>
+                <p>Oxygen’s <b>main files support</b> feature is a game-changer for complex schema
+                    structures. By defining a <i>main</i> XSD file for your project, you:</p>
+                <ul id="ul_avt_p3m_qfc">
+                    <li>
+                        <p><b>Ensure accurate validation.</b> Each module gets validated in the
+                            context of the full schema set—not just in isolation.</p>
+                    </li>
+                    <li>
+                        <p><b>Unlock intelligent content completion.</b> Autocomplete and validation
+                            suggestions take the entire schema hierarchy into account, not just the
+                            current file.</p>
+                    </li>
+                    <li>
+                        <p><b>Simplify component-wide refactoring and navigation.</b> Changes like
+                            renaming elements, searching for references, or finding definitions are
+                            made in the context of the whole schema, enabling robust, error-free
+                            edits.</p>
+                    </li>
+                </ul>
+                <p>Read more about main file support in <xref
+                        href="https://www.oxygenxml.com/doc/ug-developer/topics/editing-xml-schema-main-files-context.html"
+                        format="html" scope="external">Oxygen's official documentation</xref>.</p>
+            </section><section id="section_bvt_p3m_qfc">
+                <title><b>How to Set a Main XSD File in Oxygen</b></title>
+                <ol id="ol_cvt_p3m_qfc">
+                    <li>Use Oxygen to automatically detect the main files in your project.
+                        Right-click the project root and select <b>Detect Main Files</b>.</li>
+                    <li>
+                        <p>Add main files manually. Right-click your main XSD files in the project
+                            and select <b>Add to Main Files</b>.</p>
+                    </li>
+                    <li>
+                        <p>Oxygen will now use this as the root context for validation, content
+                            assist, and other schema-aware tasks.</p>
+                    </li>
+                </ol>
+                <p>To see how the main file workflow works, watch this <xref
+                        href="https://youtu.be/zZiuM9Fyfrg" format="html" scope="external">video
+                        demo</xref>.</p>
+            </section><section id="section_dvt_p3m_qfc">
+                <title>Boost Schema Development with Helper Views</title>
+                <p>Oxygen XML Editor comes with powerful side views that provide insight and easy
+                    navigation within your schema ecosystem:</p>
+            </section><section id="section_evt_p3m_qfc">
+                <title><b>1. Component Dependencies View</b></title>
+                <p>This tool quickly shows relationships between schema components (elements, types,
+                    groups, etc.). For any selected component, you can visualize where it's used or
+                    which files it references. This is invaluable for impact analysis before making
+                    changes. </p>
+                <p>→ Learn more: <xref
+                        href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-component-dependencies.html"
+                        format="html" scope="external">Component Dependencies</xref></p>
+            </section><section id="section_fvt_p3m_qfc">
+                <title><b>2. Referenced/Dependent Resources View</b></title>
+                <p>This view helps you understand how schemas are included or imported. Whether you
+                    need a big-picture view or want to find circular dependencies, this tool shows
+                    the full chain of files involved.</p>
+                <p>→ Learn more: <xref
+                        href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-hierarchy.html"
+                        format="html" scope="external">Referenced/Dependent Resources</xref></p>
+            </section><section id="section_gvt_p3m_qfc">
+                <title><b>3. Schema Refactoring and Search</b></title>
+                <p>Oxygen also provides powerful <xref
+                        href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-search-references.html"
+                        format="html" scope="external">search and refactoring tools</xref>. For
+                    example, you can:</p>
+                <ul id="ul_hvt_p3m_qfc">
+                    <li>
+                        <p>Quickly find all references to a type or element in the project.</p>
+                    </li>
+                    <li>
+                        <p>Rename elements and types safely, updating all their uses.</p>
+                    </li>
+                    <li>
+                        <p>Extract schema components into new files or incorporate them from other
+                            modules.</p>
+                    </li>
+                </ul>
+            </section><b>Best Practices for Large XSD Structures in Oxygen</b><ul
+                id="ul_ivt_p3m_qfc">
+                <li>
+                    <p><b>Break schemas into modules:</b> Organize schemas into logical parts based
+                        on functionality or domain.</p>
+                </li>
+                <li>
+                    <p><b>Set one main entry point:</b> Use main file support to let Oxygen
+                        understand your entire schema.</p>
+                </li>
+                <li>
+                    <p><b>Leverage helper views:</b> Use Component Dependencies and Resource
+                        Hierarchy to understand and maintain your schema landscape.</p>
+                </li>
+                <li>
+                    <p><b>Refactor with confidence:</b> Use Oxygen's search and refactor features to
+                        safely evolve your schemas.</p>
+                </li>
+                <li>
+                    <p><b>Validate often:</b> Take advantage of context-aware validation to catch
+                        integration errors early.</p>
+                </li>
+            </ul><section id="section_jvt_p3m_qfc">
+                <title>Conclusion</title>
+                <p>For those working with complex, multi-file XML Schema projects, Oxygen XML
+                    Editor’s main file support and advanced schema navigation tools are
+                    indispensable. They transform schema management from a source of dread into a
+                    streamlined, error-resistant, and even enjoyable process.</p>
+                <p><b>Ready to bring order to your XML schemas?</b>
+                </p>
+                <p>Explore these features in your next Oxygen-powered project, and let structure
+                    work for you rather than against you!</p>
+                <p><i>References:</i></p>
+                <ul id="ul_kvt_p3m_qfc">
+                    <li>
+                        <p><xref
+                                href="https://www.oxygenxml.com/doc/ug-developer/topics/editing-xml-schema-main-files-context.html"
+                                format="html" scope="external">Editing XML Schema Main Files in
+                                Context - Oxygen User Guide</xref></p>
+                    </li>
+                    <li>
+                        <p><xref
+                                href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-component-dependencies.html"
+                                format="html" scope="external">Component Dependencies
+                            View</xref></p>
+                    </li>
+                    <li>
+                        <p><xref
+                                href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-hierarchy.html"
+                                format="html" scope="external">Referenced/Dependent Resources
+                                View</xref></p>
+                    </li>
+                </ul>
+                <p><i>Video Demo:</i>
+                    <xref href="https://youtu.be/zZiuM9Fyfrg" format="html" scope="external">Oxygen
+                        Main File Support Explained</xref></p>
+                <p><b>What tools or techniques do you use when working with large XML Schemas? Share
+                        your thoughts in the comments!</b></p>
+            </section></bodydiv>
+    </body>
+</topic>

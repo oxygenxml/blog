@@ -42,6 +42,7 @@
     <topicref href="git-tech-writers/using_git_for_technical_writing.ditamap" format="ditamap"/>
     <topicref href="maps/sdk-development-plugins-frameworks-map.ditamap" format="ditamap"/>
     <topichead navtitle="Miscellaneous">
+        <topicref href="topics/editing_complex_xml_schemas.dita"/>
         <topicref href="topics/ISO-27001-certification-announcement.dita"/>
         <topicref href="topics/OxygenUsersMeetup.dita"/>
         <topicref href="topics/Chinese_users_group.dita"/>
