@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="transform_text_files">
+    <title><b>How to Use Text Files as Primary Input for XSLT in Oxygen XML Editor</b></title>
+    <prolog>
+        <author>Octavia Nadolu</author>
+        <critdates>
+            <created date="2025-06-13"/>
+        </critdates>
+    </prolog>
+    <body>
+        <bodydiv><p>When working with Oxygen XML Editor, many users are accustomed to transforming
+                XML or JSON documents using XSLT or XQuery. But what if you want to process a plain
+                text file—perhaps a log, configuration, or other non-XML data—using XSLT? With
+                Oxygen’s powerful transformation scenarios and XSLT 3.0’s new features, you
+                can!</p><p>In this article, I’ll show you how you can use a text file as the primary
+                input for an XSLT transformation inside Oxygen XML Editor, even if the file isn’t
+                XML or JSON.</p><section id="section_u22_hfn_qfc">
+                <title>Background: Transformations in Oxygen XML Editor</title>
+                <p>Oxygen provides a robust set of features for transforming XML and JSON documents
+                        (<xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/xml-transformation-with-xslt.html"
+                        format="html" scope="external">XML Transformation with XSLT/XQuery</xref>,
+                        <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/json-transformation-with-xslt.htm"
+                        format="html" scope="external">JSON Transformation with XSLT/XQuery</xref>).
+                    Users typically create <xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/xslt-tab-x-publishing2.html"
+                        format="html" scope="external">transformation scenarios</xref> to automate
+                    these actions.</p>
+                <p>Traditionally, XSLT requires an XML or JSON input, but as of <b>XSLT 3.0</b>, you
+                    can use the <b>initial template</b> feature. This allows you to define a
+                        <codeph>xsl:initial-template</codeph>. entry point for your transformation,
+                    with no input document required. This feature opens up new
+                    possibilities—including processing text files!</p>
+            </section><b>Step-by-Step: Transforming Text Files with XSLT in Oxygen</b><section
+                id="section_v22_hfn_qfc">
+                <title>1. <b>Create an XSLT using an Initial Template</b></title>
+                <p>Write an XSLT 3.0 stylesheet that declares an initial template with
+                        <codeph>xsl:initial-template</codeph>. This template will serve as the main
+                    entry point.</p>
+                <codeblock outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    
+    &lt;!-- PARAMETERS • $input-uri – location of person.txt • $delim – field delimiter -->
+    &lt;xsl:param name="input-uri" select="'person.txt'"/>   &lt;!-- default -->
+    &lt;xsl:param name="delim"      select="'\|'" />         &lt;!-- “|” escaped for regex -->
+    
+    &lt;!-- result -->
+    &lt;xsl:output method="xml" indent="yes"/>
+    
+    &lt;!-- entry point (initial template) -->
+    &lt;xsl:template name="xsl:initial-template">
+        &lt;persons>
+            &lt;!-- read whole file, split it into separate lines -->
+            &lt;xsl:variable name="lines"
+                select="tokenize(unparsed-text($input-uri), '\r?\n')" />
+            
+            &lt;!-- iterate over the lines, skipping empties -->
+            &lt;xsl:for-each select="$lines[normalize-space()]">
+                &lt;!-- tokenize the current line into its fields -->
+                &lt;xsl:variable name="f" select="tokenize(., $delim)" />
+                
+                &lt;person>
+                    &lt;id>        &lt;xsl:value-of select="$f[1]"/>&lt;/id>
+                    &lt;firstName> &lt;xsl:value-of select="$f[2]"/>&lt;/firstName>
+                    &lt;lastName>  &lt;xsl:value-of select="$f[3]"/>&lt;/lastName>
+                    &lt;age>       &lt;xsl:value-of select="$f[4]"/>&lt;/age>
+                    &lt;city>      &lt;xsl:value-of select="$f[5]"/>&lt;/city>
+                &lt;/person>
+            &lt;/xsl:for-each>
+        &lt;/persons>
+    &lt;/xsl:template>
+&lt;/xsl:stylesheet>                </codeblock>
+            </section><section id="section_y22_hfn_qfc">
+                <title>2. <b>Define the Text File Location via Parameter</b></title>
+                <p>Instead of hardcoding the file path, make the text file’s location a parameter
+                    (as shown above, <codeph>$input-uri</codeph>).</p>
+                <codeblock id="codeblock_iv2_ckn_qfc">id | firstName | lastName | age | city
+001|John      |Doe       |29  |New York
+002|Jane      |Smith     |34  |London
+003|Paul      |Adams     |42  |Sydney</codeblock>
+            </section><section id="section_z22_hfn_qfc">
+                <title>3. <b>Create a Transformation Scenario</b></title>
+                <ul id="ul_af2_hfn_qfc">
+                    <li>Go to <b>Transformation Scenarios</b> in Oxygen.</li>
+                    <li>Create a <b>new XSLT transformation scenario</b>.</li>
+                    <li>Specify your XSLT as the stylesheet.</li>
+                    <li>In the parameters tab, add: <ul id="ul_bf2_hfn_qfc">
+                            <li><b>Name:</b>
+                                <codeph>input-uri</codeph></li>
+                            <li><b>Value:</b>
+                                <codeph>${currentFileURL}</codeph></li>
+                        </ul></li>
+                </ul>
+                <p>The <codeph>${currentFileURL}</codeph> variable automatically passes the path of
+                    your currently edited or selected file to the stylesheet.</p>
+            </section><section id="section_cf2_hfn_qfc">
+                <title>4. <b>Associate and Apply the Scenario</b></title>
+                <p>You can:</p>
+                <ul id="ul_df2_hfn_qfc">
+                    <li><b>Open the text file</b> in the editor and press the Transform button in
+                        the Transformation view.</li>
+                    <li><b>Select multiple text files</b> in the Project View, right-click, and run
+                        the scenario on all of them.</li>
+                    <li><b>Automate batch processing</b> The scenario will automatically process
+                        each selected text file, regardless of format, as long as your stylesheet
+                        can handle it.</li>
+                </ul>
+                <p>Now, your XSLT can process non-XML files using the full power of the XSLT 3.0
+                    language!</p>
+            </section><b>Use Cases</b><ul id="ul_ef2_hfn_qfc">
+                <li>Convert plain text lists into XML</li>
+                <li>Parse configuration logs</li>
+                <li>Normalize or restructure CSV or tab-delimited files (with some tweaking)</li>
+                <li>Batch transform multiple text documents from the Project view</li>
+            </ul>
+            <b>Learn More</b>
+            <ul id="ul_ff2_hfn_qfc">
+                <li><xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/xslt-tab-x-publishing2.html"
+                        format="html" scope="external">XSLT 3.0 Initial Template in
+                    Oxygen</xref></li>
+                <li><xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/xml-transformation-with-xslt.html"
+                        format="html" scope="external">XML Transformation with
+                    XSLT/XQuery</xref></li>
+                <li><xref
+                        href="https://www.oxygenxml.com/doc/ug-editor/topics/json-transformation-with-xslt.htm"
+                        format="html" scope="external">JSON Transformation with
+                    XSLT/XQuery</xref></li>
+            </ul><section id="section_gf2_hfn_qfc">
+                <title>Conclusion</title>
+                <p>With Oxygen XML Editor and XSLT 3.0’s initial template mechanism, you’re no
+                    longer limited to XML or JSON data. Whether you’re transforming text logs,
+                    flattening CSV, or assembling custom data workflows, you can harness the
+                    flexibility of scenarios, parameters, and XSLT for all your file types.</p>
+                <p><b>Give it a try and unlock new transformation possibilities in Oxygen!</b></p>
+            </section></bodydiv>
+    </body>
+</topic>
