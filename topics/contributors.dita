@@ -29,15 +29,19 @@
                         <entry>Project Manager, DITA/Authoring team. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
+                        <entry>Alex Smarandache</entry>
+                        <entry>Software Developer. <ph keyref="oxygen"/></entry>
+                    </row>
+                    <row>
+                        <entry>Alin Belu</entry>
+                        <entry>Marketing Specialist. <ph keyref="oxygen"/></entry>
+                    </row>
+                    <row>
                         <entry>Chris Papademetrious</entry>
                         <entry>Senior Technical Writer, Synopsys Inc.</entry>
                     </row>
                     <row>
                         <entry>Cosmin Duna</entry>
-                        <entry>Senior Software Developer. <ph keyref="oxygen"/></entry>
-                    </row>
-                    <row>
-                        <entry>Sorin Carbunaru</entry>
                         <entry>Senior Software Developer. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
@@ -47,6 +51,14 @@
                     <row>
                         <entry>George Bina</entry>
                         <entry>Owner, DITA XML Expert. <ph keyref="oxygen"/></entry>
+                    </row>
+                    <row>
+                        <entry>Sorin Carbunaru</entry>
+                        <entry>Senior Software Developer. <ph keyref="oxygen"/></entry>
+                    </row>
+                    <row>
+                        <entry>Octavian Nadolu</entry>
+                        <entry>Project Manager, Development team. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
                         <entry>Mihaela Calotescu</entry>
@@ -63,16 +75,8 @@
                         <entry>Senior Technical Writer. <ph keyref="oxygen"/></entry>
                     </row>
                     <row>
-                        <entry>Alex Smarandache</entry>
-                        <entry>Software Developer. <ph keyref="oxygen"/></entry>
-                    </row>
-                    <row>
                         <entry>Stefan Vasile</entry>
                         <entry>CEO. <ph keyref="oxygen"/></entry>
-                    </row>
-                    <row>
-                        <entry>Alin Belu</entry>
-                        <entry>Marketing Specialist. <ph keyref="oxygen"/></entry>
                     </row>
                 </tbody>
             </tgroup>
