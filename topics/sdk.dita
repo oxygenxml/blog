@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="sdk">
-    <title>SDK Development (Plugins, Frameworks)</title>
+    <title>SDK</title>
     <body>
         <p><ph keyref="oxygen"/> provides various ways to customize the application either by adding
             frameworks to customize editing for a certain XML vocabulary or by creating plugins.</p>
