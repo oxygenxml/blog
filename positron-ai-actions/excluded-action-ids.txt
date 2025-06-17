@@ -1,0 +1,3 @@
+action.generate.indexterms
+action.itemize
+action.join.items
