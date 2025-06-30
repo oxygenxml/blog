@@ -7,6 +7,7 @@
         processing-role="resource-only" scope="peer"/>
     <topicref href="topics/frequently_asked_questions.dita"/>
     <topichead navtitle="Artificial intelligence (AI)">
+        <topicref href="topics/ai_xpath_functions.dita"/>
         <topicref href="topics/ai_positron.dita">
             <topicref href="topics/ai-positron-add-on-functionality-small-clips.dita"/>
         </topicref>
@@ -44,6 +45,7 @@
     <topichead navtitle="Development">
         <topicref href="topics/transform_text_files.dita"/>
         <topicref href="topics/editing_complex_xml_schemas.dita"/>
+        <topicref href="topics/json_transfrom.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
         <topicref href="topics/ISO-27001-certification-announcement.dita"/>

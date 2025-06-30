@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ai_xpath_functions">
+    <title>AI XPath Extension Functions in Oxygen XML Editor</title>
+    <prolog>
+        <author>Octavian Nadolu</author>
+        <critdates>
+            <created date="2025-06-30"/>
+        </critdates>
+    </prolog>
+    <body>
+        <bodydiv><section id="section_it4_qtj_rfc">
+                <title>Introduction</title>
+                <p>The integration of <b>AI-driven XPath extension functions</b> in Oxygen XML
+                    Editor represents a major step forward in the XML content lifecycle by
+                    introducing intelligent automation. These features improve Schematron, XSLT, and
+                    XQuery workflows by enabling natural language-driven rephrasing, validation, and
+                    custom AI-powered actions directly within your schemas and stylesheets. This
+                    post provides an overview of the key functions, practical examples, and
+                    configuration options to help you use these AI capabilities effectively, safely,
+                    and at scale.</p>
+            </section><section id="section_jt4_qtj_rfc">
+                <title>Meet the AI XPath Extension Functions</title>
+                <p>The Oxygen AI Positron add-on introduces three primary functions (namespace
+                        <codeph>http://www.oxygenxml.com/ai/function</codeph>) that can be directly
+                    used in Schematron, XSLT, XQuery, XProc, and XPath expressions:</p>
+            </section><section id="section_kt4_qtj_rfc">
+                <title>ai:transform-content(system, (user, assistant,)* user)</title>
+                <ul id="ul_lt4_qtj_rfc">
+                    <li><b>Purpose:</b> Transforms or rephrases content using AI, guided by a system
+                        prompt and user-provided input.</li>
+                    <li><b>Parameters:</b><ul id="ul_mt4_qtj_rfc">
+                            <li><b>system:</b> Context or rule (e.g., “Follow company style
+                                guidelines”).</li>
+                            <li><b>user:</b> The input text to be transformed.</li>
+                            <li><b>assistant:</b> (Optional, repeatable) Previous AI responses for
+                                context in multi-stage operations.</li>
+                        </ul></li>
+                    <li><b>Returns:</b> AI-generated, transformed string.</li>
+                </ul>
+                <p><b>Sample Use in Schematron:</b></p>
+                <codeblock id="codeblock_ot4_qtj_rfc" outputclass="language-xml">&lt;sqf:replace match="text()" select="ai:transform-content('Reformulate phrase to be less than 50 words', .)"/>
+                </codeblock>
+            </section><section id="section_pt4_qtj_rfc">
+                <title>ai:verify-content(system, (user, assistant,)* user)</title>
+                <ul id="ul_qt4_qtj_rfc">
+                    <li><b>Purpose:</b> Validates content using natural language prompts, returning
+                        a Boolean result.</li>
+                    <li><b>Parameters:</b> Same as above.</li>
+                    <li><b>Returns:</b> Boolean (true/false), ideal for driving Schematron
+                        assertions.</li>
+                </ul>
+                <p><b>Sample Use in Schematron:</b></p>
+                <codeblock id="codeblock_st4_qtj_rfc" outputclass="language-xml">&lt;sch:report test="ai:verify-content('Does the following content have passive voice?', .)" sqf:fix="rephrase">
+    The phrase uses passive voice.
+&lt;/sch:report></codeblock>
+            </section><section id="section_ewf_z4l_sfc">
+                <title>ai:invoke-action(actionId, extraPrompt, content)</title>
+                <ul id="ul_tt4_qtj_rfc">
+                    <li><b>Purpose:</b> Executes a pre-configured AI action with additional context
+                        or prompts on a given content block.</li>
+                    <li><b>Parameters:</b><ul id="ul_ut4_qtj_rfc">
+                            <li><b>actionId:</b> ID of the registered AI action.</li>
+                            <li><b>extraPrompt:</b> Additional context for the action.</li>
+                            <li><b>content:</b> XML node or string to process.</li>
+                        </ul></li>
+                    <li><b>Returns:</b> The transformed (or analyzed) string.</li>
+                </ul>
+                <p><b>Sample Use in Schematron:</b></p>
+                <codeblock outputclass="language-xml" id="codeblock_vck_52m_sfc">&lt;sqf:replace match="text()" select="ai:invoke-action('Reformulate phrase to be less than 50 words', .)"/></codeblock>
+            </section><section id="section_vt4_qtj_rfc">
+                <title>Real-World Example: Optimizing Short Descriptions</title>
+                <p><b>Validation &amp; Refactoring in One Step:</b></p>
+                <p>This example demonstrates a rule that validates whether a short description
+                    exceeds 50 words and provides an automated fix to rephrase it to meet the word
+                    limit. The rule uses Schematron and Smart Fix (SQF) to ensure concise and
+                    effective short descriptions.</p>
+                <?oxy_attributes outputclass="&lt;change type=&quot;inserted&quot; author=&quot;Octavian&quot; timestamp=&quot;20250620T130946+0000&quot; /&gt;"?>
+                <codeblock id="codeblock_xt4_qtj_rfc" outputclass="language-xml">&lt;sch:rule context="shortdesc">
+    &lt;sch:report test="count(tokenize(.,'\s+')) > 50" sqf:fix="rephrase">
+        The phrase must contain less than 50 words.
+    &lt;/sch:report>
+    &lt;sqf:fix id="rephrase">
+        &lt;sqf:description>
+            &lt;sqf:title>Rephrase phrase to be less than 50 words&lt;/sqf:title>
+        &lt;/sqf:description>
+        &lt;sqf:replace match="text()" select="ai:transform-content('Reformulate phrase to be less than 50 words', .)"/>
+    &lt;/sqf:fix>
+&lt;/sch:rule></codeblock>
+                <p><b>Active Voice Checker:</b></p>
+                <p>This example illustrates a rule that checks if a short description contains
+                    passive voice and provides an automated fix to rephrase it into active voice.
+                    The rule leverages AI-based content verification and transformation to enhance
+                    the clarity and impact of the text.</p>
+                <?oxy_attributes outputclass="&lt;change type=&quot;inserted&quot; author=&quot;Octavian&quot; timestamp=&quot;20250620T130954+0000&quot; /&gt;"?>
+                <codeblock id="codeblock_zt4_qtj_rfc" outputclass="language-xml">&lt;sch:rule context="shortdesc">
+    &lt;sch:report test="ai:verify-content('Does the following content have passive voice?', .)"
+                sqf:fix="rephrase">The phrase uses passive voice.&lt;/sch:report>
+    &lt;sqf:fix id="rephrase">
+        &lt;sqf:description>
+            &lt;sqf:title>Rephrase text to be active voice&lt;/sqf:title>
+        &lt;/sqf:description>
+        &lt;sqf:replace match="text()" select="ai:transform-content('Rephrase text to be active voice', .)"/>
+    &lt;/sqf:fix>
+&lt;/sch:rule></codeblock>
+            </section><section id="section_refactor_content_xsl_ai">
+                <title>Refactor Content Using XSL and AI</title>
+                <p>The combination of AI and XSLT allows for dynamic and intelligent content
+                    transformation. By utilizing AI-driven XPath extension functions, you can
+                    automate tasks such as generating alternate text for images, ensuring
+                    accessibility and compliance with minimal manual intervention.</p>
+                <p><b>Example: Generate Alternate Text for Images</b></p>
+                <p>The following XSLT template generates alternate text for images with a `keyref`
+                    attribute but without an `alt` attribute. The template employs the
+                    `ai:transform-content` function to create a concise alternate text description
+                    for the image. The generated alternate text is then added to the `alt` element
+                    within the copied image node. This method ensures that all images lacking
+                    alternate text are enhanced with meaningful descriptions, improving both
+                    accessibility and usability.</p>
+                <codeblock id="codeblock_refactor_xsl_ai" outputclass="language-xml">
+&lt;xsl:template match="image[@keyref][not(alt)]">
+    &lt;xsl:copy>
+        &lt;xsl:apply-templates select="@*"/>
+        &lt;alt>
+            &lt;xsl:value-of select="
+                 ai:transform-content(
+                 'Create a short alternate text description for this image:',
+                 concat('{attach(', resolve-uri(@href, base-uri()), ')}'))"/>
+        &lt;/alt>
+        &lt;xsl:apply-templates select="node()"/>
+    &lt;/xsl:copy>
+&lt;/xsl:template></codeblock>
+                <p>This example demonstrates how AI can dynamically generate meaningful alternate
+                    text for images, ensuring your content is accessible and enriched with
+                    metadata.</p>
+                <p><b>Example: Language Translation and Validation</b></p>
+                <p>The following XSLT template showcases how AI-driven XPath functions can be used
+                    for multi-language translation and validation. In this example, content is
+                    translated into French in three variants, then translated back into English. The
+                    English translations are compared with the original content to determine the
+                    most accurate French translation:</p>
+                <codeblock id="codeblock_multilang_translation" outputclass="language-xml">
+    &lt;xsl:template match="text()">
+        &lt;xsl:variable name="agentFrench" select="ai:transform-content('Translate to French in 3 variants ', .)"/>
+        &lt;xsl:variable name="agentEnglish" select="ai:transform-content('Translate content from French to English ', $agentFrench)"/>
+        &lt;xsl:value-of select="ai:transform-content(
+            'Compare the English translation with original content and use the correct French translation. ',
+            'Translate to french in 3 variants ', 
+            $agentFrench, 
+            'Translate from french to english ', 
+            $agentEnglish,.)"/>
+    &lt;/xsl:template>
+</codeblock>
+                <p>This method ensures that the final French translation is both accurate and
+                    contextually appropriate, leveraging AI's capabilities to process and validate
+                    multilingual content effectively.</p>
+            </section><section id="section_a54_qtj_rfc">
+                <title>Configuration Options: Balancing Power and Performance</title>
+                <p>Oxygen provides several options to customize AI function behavior according to
+                    your project’s requirements:</p>
+            </section><b>Enable XPath Functions</b><ul id="ul_b54_qtj_rfc">
+                <li><b>Purpose:</b> Activates AI-driven XPath functions for Schematron/XSLT
+                    validation and transformation.</li>
+                <li><b>Default:</b> Enabled.</li>
+            </ul><b>Cache Responses and Reuse Them for Identical Prompts</b><ul id="ul_c54_qtj_rfc">
+                <li><b>Purpose:</b> Minimizes redundant API calls and accelerates
+                    validation/transformation by caching AI responses for identical inputs.</li>
+                <li><b>Default:</b> Enabled.</li>
+                <li><b>Management:</b> A "Clear cache" button allows you to instantly delete all
+                    stored responses.</li>
+            </ul><b>Cache Size</b><ul id="ul_d54_qtj_rfc">
+                <li><b>Purpose:</b> Sets an upper limit on the number of responses that can be
+                    cached, preventing excessive memory/resource usage.</li>
+            </ul><b>Notify Me When the Number of Requests Exceeds…</b><ul id="ul_e54_qtj_rfc">
+                <li><b>Purpose:</b> Provides a safeguard for large-scale operations.</li>
+                <li><b>Behavior:</b> If the specified threshold of AI requests is exceeded, Oxygen
+                    displays a confirmation dialog. You can choose to stop using the XPath AI
+                    functions if the volume seems excessive.</li>
+            </ul><section id="section_f54_qtj_rfc">
+                <title>Summary: Why Use AI XPath Functions in Oxygen?</title>
+                <ul id="ul_g54_qtj_rfc">
+                    <li><b>Express style, validation, and transformation in natural
+                        language</b>—eliminating the need for numerous rigid rules.</li>
+                    <li><b>Automate repetitive editorial tasks</b> (e.g., word count, voice,
+                        grammar) and provide AI-powered fixes directly in authoring tools.</li>
+                    <li><b>Control resource usage, compliance, and performance</b> through detailed
+                        configuration options.</li>
+                </ul>
+                <p>These features are revolutionizing the XML content pipeline, enabling smart,
+                    standards-compliant authoring and validation to be effortless and secure.</p>
+                <p>Ready to integrate AI into your XML workflow? Activate these options in Oxygen
+                    XML Editor and start making your content more consistent, compliant, and
+                    future-ready today.</p>
+            </section></bodydiv>
+    </body>
+    <related-links>
+        <link
+            href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_j1x_jk3_qxb"
+            format="html" scope="external">
+            <linktext>AI Positron XPath Extension Functions</linktext>
+        </link>
+        <link
+            href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__dlentry_ow2_bpd_dbc"
+            format="html" scope="external">
+            <linktext>AI XPath Extension Functions Options</linktext>
+        </link>        
+        <link href="https://youtu.be/mv3BUN1rGDI?si=MsmLW9kZAuuSLzPh" format="html" scope="external">
+            <linktext>XPath AI Extension Functions Explained</linktext>
+        </link>
+    </related-links>
+</topic>
