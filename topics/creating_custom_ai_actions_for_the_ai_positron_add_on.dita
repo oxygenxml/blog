@@ -148,9 +148,8 @@
                 <p>The prompt is the most important part of the AI action. A prompt must be as
                   precise and detailed as possible, including examples. Some companies may adopt
                   prompt methodologies like <uicontrol>COSTAR</uicontrol> to specify the prompt
-                  value. The context prompt defined in the <xref
-                    href="../../Documents/workspace/userguide-private/DITA/topics/ai_positron-preferences.dita#ai_positron-preferences/section_b5p_y14_wxb"
-                  /> page is used as a prefix for all AI action prompts.</p>
+                  value. The context prompt defined in the Oxygen AI Positron Preferences page is
+                  used as a prefix for all AI action prompts.</p>
                 <p><xref
                     href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/prompts/action_validate_and_fix.md"
                     format="html" scope="external">Here is an example of a large prompt
@@ -196,9 +195,8 @@
                 <p>The prompt is the most important part of the AI action. A prompt must be as
                   precise and detailed as possible, including examples. Some companies may adopt
                   prompt methodologies like <uicontrol>COSTAR</uicontrol> to specify the prompt
-                  value. The context prompt defined in the <xref
-                    href="../../Documents/workspace/userguide-private/DITA/topics/ai_positron-preferences.dita#ai_positron-preferences/section_b5p_y14_wxb"
-                  /> page is used as a prefix for all AI action prompts.</p>
+                  value. The context prompt defined in the Oxygen AI Positron Preferences page is
+                  used as a prefix for all AI action prompts.</p>
                 <p><xref
                     href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/prompts/action_validate_and_fix.md"
                     format="html" scope="external">Here is an example of a large prompt
