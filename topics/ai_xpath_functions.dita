@@ -22,8 +22,8 @@
             </section><section id="section_jt4_qtj_rfc">
                 <title>Meet the AI XPath Extension Functions</title>
                 <p>The Oxygen AI Positron add-on introduces three primary functions (namespace
-                        <codeph>http://www.oxygenxml.com/ai/function</codeph>) that can be directly
-                    used in Schematron, XSLT, XQuery, XProc, and XPath expressions:</p>
+                        <codeph>http://www.oxygenxml.com/ai/function</codeph>) that can be used
+                    directly in Schematron, XSLT, XQuery, XProc, and XPath expressions:</p>
             </section><section id="section_kt4_qtj_rfc">
                 <title>ai:transform-content(system, (user, assistant,)* user)</title>
                 <ul id="ul_lt4_qtj_rfc">
@@ -71,10 +71,10 @@
             </section><section id="section_vt4_qtj_rfc">
                 <title>Real-World Example: Optimizing Short Descriptions</title>
                 <p><b>Validation &amp; Refactoring in One Step:</b></p>
-                <p>This example demonstrates a rule that validates whether a short description
-                    exceeds 50 words and provides an automated fix to rephrase it to meet the word
-                    limit. The rule uses Schematron and Smart Fix (SQF) to ensure concise and
-                    effective short descriptions.</p>
+                <p>This example demonstrates a rule that validates if a short description exceeds 50
+                    words and provides an automated fix to rephrase it to meet the word limit. The
+                    rule uses Schematron and Smart Fix (SQF) to ensure concise and effective short
+                    descriptions.</p>
                 <?oxy_attributes outputclass="&lt;change type=&quot;inserted&quot; author=&quot;Octavian&quot; timestamp=&quot;20250620T130946+0000&quot; /&gt;"?>
                 <codeblock id="codeblock_xt4_qtj_rfc" outputclass="language-xml">&lt;sch:rule context="shortdesc">
     &lt;sch:report test="count(tokenize(.,'\s+')) > 50" sqf:fix="rephrase">
@@ -114,7 +114,7 @@
                     attribute but without an `alt` attribute. The template employs the
                     `ai:transform-content` function to create a concise alternate text description
                     for the image. The generated alternate text is then added to the `alt` element
-                    within the copied image node. This method ensures that all images lacking
+                    within the copied image node. This method ensures that all images that lack
                     alternate text are enhanced with meaningful descriptions, improving both
                     accessibility and usability.</p>
                 <codeblock id="codeblock_refactor_xsl_ai" outputclass="language-xml">
@@ -174,13 +174,13 @@
             </ul><b>Notify Me When the Number of Requests Exceeds…</b><ul id="ul_e54_qtj_rfc">
                 <li><b>Purpose:</b> Provides a safeguard for large-scale operations.</li>
                 <li><b>Behavior:</b> If the specified threshold of AI requests is exceeded, Oxygen
-                    displays a confirmation dialog. You can choose to stop using the XPath AI
+                    displays a confirmation dialog box. You can choose to stop using the XPath AI
                     functions if the volume seems excessive.</li>
             </ul><section id="section_f54_qtj_rfc">
                 <title>Summary: Why Use AI XPath Functions in Oxygen?</title>
                 <ul id="ul_g54_qtj_rfc">
-                    <li><b>Express style, validation, and transformation in natural
-                        language</b>—eliminating the need for numerous rigid rules.</li>
+                    <li><b>Express style, validation, and transformation in natural language</b>,
+                        eliminating the need for numerous rigid rules.</li>
                     <li><b>Automate repetitive editorial tasks</b> (e.g., word count, voice,
                         grammar) and provide AI-powered fixes directly in authoring tools.</li>
                     <li><b>Control resource usage, compliance, and performance</b> through detailed
