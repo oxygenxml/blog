@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="editing_complex_xml_schemas" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="topic:1;3:41" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:1;4:12">Editing Complex XML Schemas with Oxygen XML Editor</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="author:1;6:17">Octavian Nadolu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="critdates:1;7:20">
+            <created date="2025-06-13" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="body:1;11:11">
+        <bodydiv class="- topic/bodydiv " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="bodydiv:1;12:18"><section id="section_x5t_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:1;12:52">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:2;13:24">Using Main Files and Advanced Tools</title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:1;14:20">As your XML-based projects grow in complexity, managing and editing large sets of
+                    interdependent XML Schema (XSD) files can become a challenge. Luckily, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:1;15:95">Oxygen
+                        XML Editor</b> is designed with robust, productivity-boosting features to
+                    help you handle large schema structures with ease and accuracy. In this blog
+                    post, we’ll dive into key techniques—including main files support and built-in
+                    schema exploration tools—to streamline your schema development workflow.</p>
+            </section><section id="section_y5t_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:2;20:57">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:3;21:24">Why Main Files Are Important in Complex Schema Projects</title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:2;22:20">In big projects, XML Schemas are rarely monolithic. Instead, they’re modular,
+                    often spanning dozens or hundreds of XSD files that <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="codeph:1;23:81">import</codeph> or
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="codeph:2;24:33">include</codeph> each other. Editing such a network of modules
+                    without clear context can lead to validation errors, missed dependencies, and
+                    incomplete code assist.</p>
+            </section><section id="section_z5t_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:3;27:57">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:4;28:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:2;28:27">Main File Support: Your Project’s Entry Point</b></title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:3;29:20">Oxygen’s <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:3;29:32">main files support</b> feature is a game-changer for complex schema
+                    structures. By defining a <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="i:1;30:50">main</i> XSD file for your project, you:</p>
+                <ul id="ul_avt_p3m_qfc" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="ul:1;31:41">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:1;32:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:4;33:28"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:4;33:31">Ensure accurate validation.</b> Each module gets validated in the
+                            context of the full schema set—not just in isolation.</p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:2;36:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:5;37:28"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:5;37:31">Unlock intelligent content completion.</b> Autocomplete and validation
+                            suggestions take the entire schema hierarchy into account, not just the
+                            current file.</p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:3;41:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:6;42:28"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:6;42:31">Simplify component-wide refactoring and navigation.</b> Changes like
+                            renaming elements, searching for references, or finding definitions are
+                            made in the context of the whole schema, enabling robust, error-free
+                            edits.</p>
+                    </li>
+                </ul>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:7;48:20">Read more about main file support in <xref href="https://www.oxygenxml.com/doc/ug-developer/topics/editing-xml-schema-main-files-context.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:1;50:56"><?ditaot usertext?>Oxygen's official documentation</xref>.</p>
+            </section><section id="section_bvt_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:4;51:57">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:5;52:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:7;52:27">How to Set a Main XSD File in Oxygen</b></title>
+                <ol id="ol_cvt_p3m_qfc" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="ol:1;53:41">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:4;54:25">Use Oxygen to automatically detect the main files in your project.
+                        Right-click the project root and select <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:8;55:68">Detect Main Files</b>.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:5;56:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:8;57:28">Add main files manually. Right-click your main XSD files in the project
+                            and select <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:9;58:43">Add to Main Files</b>.</p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:6;60:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:9;61:28">Oxygen will now use this as the root context for validation, content
+                            assist, and other schema-aware tasks.</p>
+                    </li>
+                </ol>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:10;65:20">To see how the main file workflow works, watch this <xref href="https://youtu.be/zZiuM9Fyfrg" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:2;66:92"><?ditaot usertext?>video
+                        demo</xref>.</p>
+            </section><section id="section_dvt_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:5;68:57">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:6;69:24">Boost Schema Development with Helper Views</title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:11;70:20">Oxygen XML Editor comes with powerful side views that provide insight and easy
+                    navigation within your schema ecosystem:</p>
+            </section><section id="section_evt_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:6;72:57">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:7;73:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:10;73:27">1. Component Dependencies View</b></title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:12;74:20">This tool quickly shows relationships between schema components (elements, types,
+                    groups, etc.). For any selected component, you can visualize where it's used or
+                    which files it references. This is invaluable for impact analysis before making
+                    changes. </p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:13;78:20">→ Learn more: <xref href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-component-dependencies.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:3;80:56"><?ditaot usertext?>Component Dependencies</xref></p>
+            </section><section id="section_fvt_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:7;81:57">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:8;82:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:11;82:27">2. Referenced/Dependent Resources View</b></title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:14;83:20">This view helps you understand how schemas are included or imported. Whether you
+                    need a big-picture view or want to find circular dependencies, this tool shows
+                    the full chain of files involved.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:15;86:20">→ Learn more: <xref href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-hierarchy.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:4;88:56"><?ditaot usertext?>Referenced/Dependent Resources</xref></p>
+            </section><section id="section_gvt_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:8;89:57">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:9;90:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:12;90:27">3. Schema Refactoring and Search</b></title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:16;91:20">Oxygen also provides powerful <xref href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-search-references.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:5;93:56"><?ditaot usertext?>search and refactoring tools</xref>. For
+                    example, you can:</p>
+                <ul id="ul_hvt_p3m_qfc" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="ul:2;95:41">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:7;96:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:17;97:28">Quickly find all references to a type or element in the project.</p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:8;99:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:18;100:28">Rename elements and types safely, updating all their uses.</p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:9;102:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:19;103:28">Extract schema components into new files or incorporate them from other
+                            modules.</p>
+                    </li>
+                </ul>
+            </section><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:13;107:26">Best Practices for Large XSD Structures in Oxygen</b><ul id="ul_ivt_p3m_qfc" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="ul:3;108:37">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:10;109:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:20;110:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:14;110:27">Break schemas into modules:</b> Organize schemas into logical parts based
+                        on functionality or domain.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:11;113:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:21;114:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:15;114:27">Set one main entry point:</b> Use main file support to let Oxygen
+                        understand your entire schema.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:12;117:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:22;118:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:16;118:27">Leverage helper views:</b> Use Component Dependencies and Resource
+                        Hierarchy to understand and maintain your schema landscape.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:13;121:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:23;122:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:17;122:27">Refactor with confidence:</b> Use Oxygen's search and refactor features to
+                        safely evolve your schemas.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:14;125:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:24;126:24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:18;126:27">Validate often:</b> Take advantage of context-aware validation to catch
+                        integration errors early.</p>
+                </li>
+            </ul><section id="section_jvt_p3m_qfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="section:9;129:52">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="title:10;130:24">Conclusion</title>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:25;131:20">For those working with complex, multi-file XML Schema projects, Oxygen XML
+                    Editor’s main file support and advanced schema navigation tools are
+                    indispensable. They transform schema management from a source of dread into a
+                    streamlined, error-resistant, and even enjoyable process.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:26;135:20"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:19;135:23">Ready to bring order to your XML schemas?</b>
+                </p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:27;137:20">Explore these features in your next Oxygen-powered project, and let structure
+                    work for you rather than against you!</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:28;139:20"><i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="i:2;139:23">References:</i></p>
+                <ul id="ul_kvt_p3m_qfc" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="ul:4;140:41">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:15;141:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:29;142:28"><xref href="https://www.oxygenxml.com/doc/ug-developer/topics/editing-xml-schema-main-files-context.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:6;144:64"><?ditaot usertext?>Editing XML Schema Main Files in
+                                Context - Oxygen User Guide</xref></p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:16;147:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:30;148:28"><xref href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-component-dependencies.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:7;150:64"><?ditaot usertext?>Component Dependencies
+                            View</xref></p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="li:17;153:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:31;154:28"><xref href="https://www.oxygenxml.com/doc/ug-developer/topics/xml-schema-hierarchy.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:8;156:64"><?ditaot usertext?>Referenced/Dependent Resources
+                                View</xref></p>
+                    </li>
+                </ul>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:32;160:20"><i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="i:3;160:23">Video Demo:</i>
+                    <xref href="https://youtu.be/zZiuM9Fyfrg" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="xref:9;161:94"><?ditaot usertext?>Oxygen
+                        Main File Support Explained</xref></p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="p:33;163:20"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/editing_complex_xml_schemas.dita" xtrc="b:20;163:23">What tools or techniques do you use when working with large XML Schemas? Share
+                        your thoughts in the comments!</b></p>
+            </section></bodydiv>
+    </body>
+</topic>

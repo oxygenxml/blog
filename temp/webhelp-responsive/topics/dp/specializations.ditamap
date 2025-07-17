@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><?doctype-public -//OASIS//DTD DITA Map//EN?><?doctype-system map.dtd?><map xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="merge" class="- map/map " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (map glossref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" specializations="@props/deliveryTarget" xtrc="map:1;4:6" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap">
+   <title class="- topic/title " xtrc="title:1;5:11" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap">DITA Specializations</title>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#topic_d2" xtrc="topicref:1;6:35" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_1946803730" xtrc="topicref:2;7:43" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_478699498" xtrc="topicref:3;8:40" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_399908737" xtrc="topicref:4;9:44" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_1941374443" xtrc="topicref:5;10:43" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_512258127" xtrc="topicref:6;11:45" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_1397061896" xtrc="topicref:7;12:40" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_124313589" xtrc="topicref:8;13:44" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_685853440" xtrc="topicref:9;14:46" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_1201872167" xtrc="topicref:10;15:43" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_1578600424" xtrc="topicref:11;16:37" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_771044905" xtrc="topicref:12;17:32" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_1584426271" xtrc="topicref:13;18:38" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_2037759668" xtrc="topicref:14;19:38" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_298909341" xtrc="topicref:15;20:35" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+   <topicref class="- map/topicref " href="dita_perspectives.dita#unique_1742362608" xtrc="topicref:16;21:41" xtrf="file:/D:/syncprojects/blog/topics/dp/specializations.ditamap"/>
+</map>

@@ -179,6 +179,26 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>oxygen_xml_blog.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>DITA Map WebHelp Responsive - Blog</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>../eclipse-workspace/eXml/samples/dita/flowers/flowers.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -204,26 +224,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>6/dita/ditamap.framework/DITA Map/DITA Map WebHelp Responsive</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>oxygen_xml_blog.ditamap</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map PDF - based on HTML5 &amp; CSS</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -330,9 +330,6 @@
                                     <null/>
                                 </field>
                                 <field name="lastCustomSkinCssPath">
-                                    <null/>
-                                </field>
-                                <field name="webhelpResponsiveTemplate">
                                     <null/>
                                 </field>
                                 <field name="publishingTemplateDataPO">
@@ -729,9 +726,6 @@
                                     <null/>
                                 </field>
                                 <field name="lastCustomSkinCssPath">
-                                    <null/>
-                                </field>
-                                <field name="webhelpResponsiveTemplate">
                                     <null/>
                                 </field>
                                 <field name="publishingTemplateDataPO">

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\git-tech-writers?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/git-tech-writers/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="any_change_branches" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="topic:1;3:33" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="title:1;4:9">Branches For All Changes</title>
+	<prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="prolog:1;5:10">
+		<author class="- topic/author " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="author:1;6:11">Radu Coravu</author>
+	</prolog>
+	<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="body:1;8:8">
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="p:1;9:6">We create branches for any change, either for large features or small fixes. We also create
+			branches for past released versions of the documentation in order to be able to add
+			small fixes and re-publish documentation for a specific past version.</p>
+		<image placement="break" href="../images/any-change-branches.png" id="image_psk_tvq_nwb" scale="50" class="- topic/image " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="image:1;12:104" dita-ot:image-width="1500" dita-ot:image-height="860" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/>
+		
+		<ul id="ul_jzw_tcm_mwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="ul:1;14:27">
+			<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="li:1;15:8">Create a branch on which you work to fix small problems or to work on a larger feature either
+				by yourself or with some other colleagues. </li>
+			<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="li:2;17:8">You can also request review on the branch. </li>
+			<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/any-change-branches.dita" xtrc="li:3;18:8">When finished, merge the branch in the main repository branch or create a pull
+				request to merge the branch.</li>
+		</ul>
+	</body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:12;17:56" xtrf="file:/D:/syncprojects/blog/git-tech-writers/using_git_for_technical_writing.ditamap"><link class="- topic/link " format="dita" href="../git-tech-writers/common_workflows.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:9;14:48" xtrf="file:/D:/syncprojects/blog/git-tech-writers/using_git_for_technical_writing.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Common Workflows</linktext></link></linkpool></related-links></topic>

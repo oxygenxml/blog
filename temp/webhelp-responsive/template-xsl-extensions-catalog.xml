@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <uri name="template:xsl/com.oxygenxml.webhelp.xsl.dita2webhelp" uri="file:/D:/syncprojects/blog/publishing/webhelpBlogTemplate/xslt/custom.xsl"/>
+    <uri name="template:xsl/com.oxygenxml.webhelp.xsl.createNavLinks" uri="file:/D:/syncprojects/blog/publishing/webhelpBlogTemplate/xslt/createRSS.xsl"/>
+    <uri name="template:xsl/com.oxygenxml.webhelp.xsl.createTocXML" uri="file:/D:/syncprojects/blog/publishing/webhelpBlogTemplate/xslt/updateWhatsNew.xsl"/>
+    <uri name="template:xsl/com.oxygenxml.webhelp.xsl.createMainPage" uri="file:/D:/syncprojects/blog/publishing/webhelpBlogTemplate/xslt/customizeMainPage.xsl"/>
+    <uri name="template:xsl/com.oxygenxml.webhelp.xsl.createSearchPage" uri="file:/D:/syncprojects/blog/publishing/webhelpBlogTemplate/xslt/move-search-in-header.xsl"/>
+    <uri name="template:xsl/com.oxygenxml.webhelp.xsl.createIndexTermsPage" uri="file:/D:/syncprojects/blog/publishing/webhelpBlogTemplate/xslt/move-search-in-header.xsl"/>
+    <nextCatalog catalog="file:/C:/Users/mihai/AppData/Local/Programs/Oxygen%20XML%20Editor%2027/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/xsl/template_catalog.xml"/>
+</catalog>

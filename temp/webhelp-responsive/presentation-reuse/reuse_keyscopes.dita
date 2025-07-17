@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\presentation-reuse?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/presentation-reuse/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="reuse_keyscopes" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="topic:1;3:29" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="title:1;4:10">Reuse with Key Scopes</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="p:1;9:8">Using DITA 1.3 <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="b:1;9:26">key scopes</b> you can reuse a topic in multiple places in the DITA Map
+      with slightly different content.</p>
+    <example class="- topic/example " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="example:1;11:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="title:2;12:14">Reuse using key scopes</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="p:2;13:10">Let's say you write a topic about <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="b:2;13:47">Windows</b> installation for your software
+        product:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="codeblock:1;14:55">&lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"&gt;
+&lt;topic id="installation"&gt;
+  &lt;title&gt;&lt;ph keyref="osName"/&gt; Installation&lt;/title&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      &lt;ol id="ol_g5h_st4_zt"&gt;
+        &lt;li&gt;Download the executable.&lt;/li&gt;
+        &lt;li&gt;Run the executable by double clicking it.&lt;/li&gt;
+        &lt;li&gt;Follow steps described in the installation wizard.&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/topic&gt;</codeblock>and
+        at some point your realise that exactly the same steps need to be followed for the Linux
+        installation. The only difference is the name of the operating system. You use a keyref to
+        refer to the operating system name but just with DITA 1.2 support the key will resolve to a
+        single value.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="p:3;31:10">Using keyscopes in the DITA Map you can define multiple values for your key depending on
+        the context:</p>
+      <codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="codeblock:2;33:45"> &lt;topicgroup keyscope="windows"&gt;
+  &lt;keydef keys="osName"&gt;
+   &lt;topicmeta&gt;
+    &lt;keywords&gt;
+     &lt;keyword&gt;Windows&lt;/keyword&gt;
+    &lt;/keywords&gt;
+   &lt;/topicmeta&gt;
+  &lt;/keydef&gt;
+  &lt;topicref href="installation.dita"/&gt;
+ &lt;/topicgroup&gt;
+ &lt;topicgroup keyscope="linux"&gt;
+  &lt;keydef keys="osName"&gt;
+   &lt;topicmeta&gt;
+    &lt;keywords&gt;
+     &lt;keyword&gt;Linux&lt;/keyword&gt;
+    &lt;/keywords&gt;
+   &lt;/topicmeta&gt;
+  &lt;/keydef&gt;
+  &lt;topicref href="installation.dita"/&gt;
+ &lt;/topicgroup&gt;</codeblock>
+    </example>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="p:4;54:8">You can find a more detailed example and download samples for reuse based on key scopes in
+      this blog post: <xref href="../keyscopes/keyscopesBlog.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_keyscopes.dita" xtrc="xref:1;56:49" type="topic"><?ditaot gentext?>DITA 1.3 Key Scopes - Next Generation of Reuse</xref>.</p>
+  </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:15;20:43" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><link class="- topic/link " format="dita" href="../presentation-reuse/dita_1_3_reuse.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:14;19:40" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>DITA 1.3 Contributions to Reuse</linktext></link></linkpool></related-links></topic>

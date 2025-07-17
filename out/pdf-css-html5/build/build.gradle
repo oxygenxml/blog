@@ -1,0 +1,33 @@
+import org.gradle.api.tasks.Exec
+
+task initDOT {
+   String projectDir = "."
+   doLast {
+   if(! new File("${projectDir}/dita-ot/oxygen-publishing-engine/").exists()){
+       //https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine.zip
+       //https://archives.oxygenxml.com/Nightly/PublishingEngine/oxygen-publishing-engine.zip
+       ant.get(src: 'https://www.oxygenxml.com/InstData/PublishingEngine/oxygen-publishing-engine.zip', dest: "${projectDir}/dita-ot.zip", skipexisting: 'true')
+       ant.unzip(src: "${projectDir}/dita-ot.zip", dest: 'dita-ot')
+       new File("${projectDir}/dita-ot/oxygen-publishing-engine/licensekey.txt").write(System.getenv( 'LICENSE_KEY' ).replaceAll("  ", "\n"))
+    }
+  }
+}
+
+task runTransformation(type:Exec, dependsOn: [initDOT]) {
+ workingDir "${projectDir}/dita-ot/oxygen-publishing-engine/bin"
+ commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine/bin/dita", "--output=.", "--project", "${projectDir}/../blog-project.xml"
+}
+
+task copySite(type: Copy, dependsOn: [runTransformation]) {
+    from "${projectDir}/dita-ot/oxygen-publishing-engine/bin/site"
+    into "${projectDir}/../site"
+}
+
+task copyResources(type: Copy) {
+    from "${projectDir}/../resources/"
+    into "${projectDir}/../site/resources"
+}
+
+task dist(dependsOn: [copySite, copyResources])
+
+defaultTasks 'dist'

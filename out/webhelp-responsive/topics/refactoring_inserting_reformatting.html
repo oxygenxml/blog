@@ -1,0 +1,532 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="27.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="In Oxygen, refactoring operations are a powerful way to provide content modification functionality to users. This blog post describes some challenges that can occur when adding, changing, or deleting ..."/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.creator" content="Chris Papademetrious"/><meta name="DC.date.created" content="2023-08-07"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="refactoring_inserting_reformatting"/><title>Inserting and Reformatting Content in Refactoring Operations</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="refactoring_inserting_reformatting-d1658e1381"/><meta name="wh-source-relpath" content="topics/refactoring_inserting_reformatting.dita"/><meta name="wh-out-relpath" content="topics/refactoring_inserting_reformatting.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2025032023"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2025032023"/>
+
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20250717103834"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2025032023"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20250717103834"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2025032023"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2025032023"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2025032023"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/custom.css?buildId=2025032023"/>
+        <link rel="icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/rss.xml"/>
+    <script defer="true" src="../oxygen-webhelp/template/resources/js/custom-collapsed-sections.js"></script></head>
+
+    <body id="refactoring_inserting_reformatting" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="visually-hidden visually-hidden-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <progress value="0" id="progressBar"><div class="progress-container"><span class="progress-bar"></span></div></progress>
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/oxygen_logo.png" alt="Blog"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Blog</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-bs-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-bs-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="welcome-d1658e11-mi" data-tocid="welcome-d1658e11" data-state="leaf" class=" topicref " data-id="welcome"><span class="title"><a href="../topics/welcome.html">Welcome! </a></span></span></li><li role="menuitem"><span id="frequently_asked_questions-d1658e28-mi" data-tocid="frequently_asked_questions-d1658e28" data-state="leaf" class=" topicref " data-id="frequently_asked_questions"><span class="title"><a href="../topics/frequently_asked_questions.html">Frequently Asked Questions</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e37-mi" data-tocid="tocId-d1658e37" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ai_xpath_functions.html">Artificial intelligence (AI)</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e165-mi" data-tocid="tocId-d1658e165" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="migration-d1658e1415-mi" data-tocid="migration-d1658e1415" data-state="not-ready" class=" topicref " data-id="migration"><span class="title"><a href="../topics/migration.html">Migrate</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="using_git_for_technical_writing-d1658e1512-mi" data-tocid="using_git_for_technical_writing-d1658e1512" data-state="not-ready" class=" topicref " data-id="using_git_for_technical_writing"><span class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html">Using Git For Technical Writing</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="sdk-d1658e1672-mi" data-tocid="sdk-d1658e1672" data-state="not-ready" class=" topicref " data-id="sdk"><span class="title"><a href="../topics/sdk.html">SDK</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e1816-mi" data-tocid="tocId-d1658e1816" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/transform_text_files.html">Development</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e1835-mi" data-tocid="tocId-d1658e1835" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ISO-27001-certification-announcement.html">Miscellaneous</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/></div></form><span xmlns="" class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span><span xmlns="" class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
+            
+            
+            
+        </div></div>
+    </div>
+</header>
+        
+        
+         
+        
+        
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></div></div></li><li><div class="topicref"><div class="title"><a href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.html">Other</a></div></div></li><li><div class="topicref"><div class="title"><a href="../topics/sort_glossentries.html">Refactoring</a></div></div></li><li class="active"><div class="topicref" data-id="refactoring_inserting_reformatting"><div class="title"><a href="../topics/refactoring_inserting_reformatting.html">Inserting and Reformatting Content in Refactoring Operations</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="welcome-d1658e11" class="topicref" data-id="welcome" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/welcome.html" id="welcome-d1658e11-link">Welcome! </a></div></div></li><li role="treeitem"><div data-tocid="frequently_asked_questions-d1658e28" class="topicref" data-id="frequently_asked_questions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/frequently_asked_questions.html" id="frequently_asked_questions-d1658e28-link">Frequently Asked Questions</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e37" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e37-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai_xpath_functions.html" id="tocId-d1658e37-link">Artificial intelligence (AI)</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1658e165" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1658e165-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="tocId-d1658e165-link">DITA</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="dita-xml-editing-collaboration-and-publishing-overview-d1658e166" class="topicref" data-id="dita-xml-editing-collaboration-and-publishing-overview" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="dita-xml-editing-collaboration-and-publishing-overview-d1658e166-link">DITA XML Editing, Collaboration and Publishing Overview</a><div class="wh-tooltip"><p class="shortdesc">Oxygen XML provides a wide  range of features for editing, reusing, profiling,         reviewing, and publishing DITA XML content. We strive to offer a complete editing,         collaboration package which is still flexible enough to be customized for a variety of use         cases.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="learningDITAGeneral-d1658e177" class="topicref" data-id="learningDITAGeneral" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action learningDITAGeneral-d1658e177-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/learningDITAGeneral.html" id="learningDITAGeneral-d1658e177-link">Learning</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="dita_ot_publishing_customizations_overview-d1658e866" class="topicref" data-id="dita_ot_publishing_customizations_overview" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action dita_ot_publishing_customizations_overview-d1658e866-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_ot_publishing_customizations_overview.html" id="dita_ot_publishing_customizations_overview-d1658e866-link">Publishing Customizations</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="dita_editing_customizations-d1658e1147" class="topicref" data-id="dita_editing_customizations" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action dita_editing_customizations-d1658e1147-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-editing-customizations.html" id="dita_editing_customizations-d1658e1147-link">Editing Customizations</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1658e1218" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1658e1218-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.html" id="tocId-d1658e1218-link">Other</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="oxygen_xml_as_a_technical_documentation_solution_faq-d1658e1219" class="topicref" data-id="oxygen_xml_as_a_technical_documentation_solution_faq" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.html" id="oxygen_xml_as_a_technical_documentation_solution_faq-d1658e1219-link">Oxygen XML As a Technical Documentation Solution FAQ</a><div class="wh-tooltip"><p class="shortdesc">This topic covers some of the most frequent questions we get from technical         documentation writer teams willing to investigate the <strong class="ph b">Oxygen XML</strong> set of tools as a         possible solution for writing and publishing content.</p></div></div></div></li><li role="treeitem"><div data-tocid="dita_for_small_teams-d1658e1233" class="topicref" data-id="dita_for_small_teams" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_for_small_teams.html" id="dita_for_small_teams-d1658e1233-link">DITA For Small Technical Documentation Teams</a></div></div></li><li role="treeitem"><div data-tocid="types_of_companies_which_would_benefit_from_the_dita_xml_standard-d1658e1241" class="topicref" data-id="types_of_companies_which_would_benefit_from_the_dita_xml_standard" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/types_of_companies_which_would_benefit_from_the_dita_xml_standard.html" id="types_of_companies_which_would_benefit_from_the_dita_xml_standard-d1658e1241-link">Types Of Companies Who Would Benefit From Using the DITA XML Standard</a></div></div></li><li role="treeitem"><div data-tocid="helping_the_dita_ot_project-d1658e1249" class="topicref" data-id="helping_the_dita_ot_project" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/supporting_the_dita_ot_project.html" id="helping_the_dita_ot_project-d1658e1249-link">Supporting the DITA OT Project as a Commercial Company</a></div></div></li><li role="treeitem"><div data-tocid="dita_map_metrics_evolution-d1658e1257" class="topicref" data-id="dita_map_metrics_evolution" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_map_metrics_evolution.html" id="dita_map_metrics_evolution-d1658e1257-link">DITA Map Metrics Evolution</a></div></div></li><li role="treeitem"><div data-tocid="topic_twx_tyf_2hb-d1658e1265" class="topicref" data-id="topic_twx_tyf_2hb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygen-dita-strong-points.html" id="topic_twx_tyf_2hb-d1658e1265-link"><span class="ph">Oxygen XML Editor</span> DITA Editing solution strong points.</a></div></div></li><li role="treeitem"><div data-tocid="dita_oriented_tips_and_tricks-d1658e1275" class="topicref" data-id="dita_oriented_tips_and_tricks" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_oriented_tips_and_tricks.html" id="dita_oriented_tips_and_tricks-d1658e1275-link">DITA Oriented Tips And Tricks</a></div></div></li><li role="treeitem"><div data-tocid="dita_project_enhancements-d1658e1283" class="topicref" data-id="dita_project_enhancements" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_project_enhancements.html" id="dita_project_enhancements-d1658e1283-link">DITA Project Enhancements</a></div></div></li><li role="treeitem"><div data-tocid="translating_your_dita_project-d1658e1291" class="topicref" data-id="translating_your_dita_project" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/translating_your_dita_project.html" id="translating_your_dita_project-d1658e1291-link">Translating your DITA Project</a></div></div></li><li role="treeitem"><div data-tocid="topic_mp2_l4q_g5-d1658e1299" class="topicref" data-id="topic_mp2_l4q_g5" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/validateCheckForCompletness.html" id="topic_mp2_l4q_g5-d1658e1299-link">DITA Map Validate and Check for Completeness Overview</a></div></div></li><li role="treeitem"><div data-tocid="topic_hkx_gzc_cs-d1658e1307" class="topicref" data-id="topic_hkx_gzc_cs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/SchematronBCs.html" id="topic_hkx_gzc_cs-d1658e1307-link">Schematron Checks to help Technical Writing</a></div></div></li><li role="treeitem"><div data-tocid="topic_n3v_s5r_2v-d1658e1316" class="topicref" data-id="topic_n3v_s5r_2v" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/styleguide.html" id="topic_n3v_s5r_2v-d1658e1316-link">Implementing your own Style Guide</a></div></div></li><li role="treeitem"><div data-tocid="preprocessing_ditaot_project_files-d1658e1324" class="topicref" data-id="preprocessing_ditaot_project_files" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/preprocessing_ditaot_project_files.html" id="preprocessing_ditaot_project_files-d1658e1324-link">Preprocessing DITA-OT Project Files</a></div></div></li><li role="treeitem"><div data-tocid="re_10_reasons_for_moving_away_from_dita-d1658e1332" class="topicref" data-id="re_10_reasons_for_moving_away_from_dita" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/re_10_reasons_for_moving_away_from_dita.html" id="re_10_reasons_for_moving_away_from_dita-d1658e1332-link">Re: 10 reasons for moving away from DITA </a></div></div></li><li role="treeitem"><div data-tocid="dita_2_0_specification_support_cheet_sheet-d1658e1340" class="topicref" data-id="dita_2_0_specification_support_cheet_sheet" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_2_0_specification_support_cheat_sheet.html" id="dita_2_0_specification_support_cheet_sheet-d1658e1340-link">DITA 2.0 Specification Support Cheat Sheet</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1658e1348" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1658e1348-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/sort_glossentries.html" id="tocId-d1658e1348-link">Refactoring</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="topic_eph_k3j_kcb-d1658e1349" class="topicref" data-id="topic_eph_k3j_kcb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/sort_glossentries.html" id="topic_eph_k3j_kcb-d1658e1349-link">Sorting Glossary Lists in a DITA Bookmap</a></div></div></li><li role="treeitem"><div data-tocid="topic_cs4_cvh_px-d1658e1357" class="topicref" data-id="topic_cs4_cvh_px" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/replace-image-href-keyref.html" id="topic_cs4_cvh_px-d1658e1357-link">Replacing Direct Image References with Key References in a DITA Project.</a></div></div></li><li role="treeitem"><div data-tocid="deleting_elements_in_a_refactoring_operation-d1658e1365" class="topicref" data-id="deleting_elements_in_a_refactoring_operation" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/deleting_elements_in_refactoring.html" id="deleting_elements_in_a_refactoring_operation-d1658e1365-link">Deleting Elements in a Refactoring Operation</a></div></div></li><li role="treeitem"><div data-tocid="resolving_refs_refactoring-d1658e1373" class="topicref" data-id="resolving_refs_refactoring" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/resolving_refs_refactoring.html" id="resolving_refs_refactoring-d1658e1373-link">Resolving DITA Cross-References in Refactoring Operations</a></div></div></li><li role="treeitem" class="active"><div data-tocid="refactoring_inserting_reformatting-d1658e1381" class="topicref" data-id="refactoring_inserting_reformatting" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/refactoring_inserting_reformatting.html" id="refactoring_inserting_reformatting-d1658e1381-link">Inserting and Reformatting Content in Refactoring Operations</a></div></div></li></ul></li><li role="treeitem"><div data-tocid="customizing_a_document_type_using_an_extension_framework_script-d1658e1389" class="topicref" data-id="customizing_a_document_type_using_an_extension_framework_script" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizing_a_chatbot.html" id="customizing_a_document_type_using_an_extension_framework_script-d1658e1389-link">Creating a Knowledge Base for the Google Dialogflow Chatbot using DITA XML content</a><div class="wh-tooltip"><p class="shortdesc">A <dfn class="term">Chatbot</dfn> is a computer program that simulates human conversation         through voice commands or text chats or both. Chatbot (short for chatterbot), is an         artificial intelligence (AI) feature that can be embedded and used through any major         messaging application. <dfn class="term">Chatbots</dfn> helps add convenience for customers, they are         automated programs that interact with customers like a human would, and cost little to         nothing to engage with.</p></div></div></div></li><li role="treeitem"><div data-tocid="similarities_tech_docs_soft_engs-d1658e1406" class="topicref" data-id="similarities_tech_docs_soft_engs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/similarities_tech_docs_soft_engs.html" id="similarities_tech_docs_soft_engs-d1658e1406-link">Similarities Between Technical Doc Writers and Software Engineers</a></div></div></li></ul></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="migration-d1658e1415" class="topicref" data-id="migration" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action migration-d1658e1415-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/migration.html" id="migration-d1658e1415-link">Migrate</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="using_git_for_technical_writing-d1658e1512" class="topicref" data-id="using_git_for_technical_writing" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_git_for_technical_writing-d1658e1512-link" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html" id="using_git_for_technical_writing-d1658e1512-link">Using Git For Technical Writing</a><div class="wh-tooltip"><p class="shortdesc">The <strong class="ph b">Git</strong> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="sdk-d1658e1672" class="topicref" data-id="sdk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action sdk-d1658e1672-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/sdk.html" id="sdk-d1658e1672-link">SDK</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e1816" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e1816-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/transform_text_files.html" id="tocId-d1658e1816-link">Development</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e1835" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e1835-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ISO-27001-certification-announcement.html" id="tocId-d1658e1835-link">Miscellaneous</a></div></div></li><li role="treeitem"><div data-tocid="contributors-d1658e2016" class="topicref" data-id="contributors" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/contributors.html" id="contributors-d1658e2016-link">Contributors</a></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <span class="edit-link" style="font-size:12px; opacity:0.6; text-align:right; vertical-align:middle"><a target="_blank" title="Edit this document" href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Ftopics%2Frefactoring_inserting_reformatting.dita&amp;ditamap=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Foxygen_xml_blog.ditamap&amp;dita.val.url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2F..%2F..%2FC%3A%2FUsers%2Fmihai%2FAppData%2FLocal%2FTemp%2FOxygenXMLTemp%2Foxy_ditaVal7286082393808115835.ditaval">Edit online</a></span><h1 class="- topic/title title topictitle1" id="ariaid-title1">Inserting and Reformatting Content in Refactoring Operations</h1>
+    <div class="author inPage Chris_Papademetrious"><a href="/topics/contributors.html">Chris Papademetrious</a></div><div class="date inPage">7 Aug 2023</div><div style="color: gray;">
+            Read time: 11 minute(s)
+        </div>
+    <div class="- topic/body body">
+        <p class="- topic/p p">In Oxygen, refactoring operations are a powerful way to provide content modification
+            functionality to users. This blog post describes some challenges that can occur when
+            adding, changing, or deleting content. It also provides solutions that you can use in
+            your own refactoring operations.</p>
+        <section class="- topic/section section" id="refactoring_inserting_reformatting__section_ysv_kz4_hyb" data-ofbid="refactoring_inserting_reformatting__section_ysv_kz4_hyb"><h2 class="- topic/title title sectiontitle">Re-indenting XML After Content Updates</h2>
+            
+            <p class="- topic/p p">In XSLT, all document content is represented by a node (elements, attributes, text,
+                comments, and so on). In fact, even the whitespace text surrounding indented
+                elements are explicit text nodes in the document.</p>
+            <div class="- topic/note note note note_note" id="refactoring_inserting_reformatting__note_o32_tdx_hyb" data-ofbid="refactoring_inserting_reformatting__note_o32_tdx_hyb"><span class="note__title">Note:</span> <div class="note__body">
+                <p class="- topic/p p">In the figures below:</p>
+                <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_gct_n5p_3yb" data-ofbid="refactoring_inserting_reformatting__ul_gct_n5p_3yb">
+                    <li class="- topic/li li">
+                        <p class="- topic/p p">Notable space characters are represented by the Unicode "U+2420: Symbol
+                            For Space" (<code class="+ topic/ph pr-d/codeph ph codeph">␠</code>) character.</p>
+                    </li>
+                    <li class="- topic/li li">
+                        <p class="- topic/p p">Notable line-end characters are represented by the Unicode "U+240A:
+                            Symbol For Line Feed" (<code class="+ topic/ph pr-d/codeph ph codeph">␊</code>) character.</p>
+                    </li>
+                </ul>
+            </div></div>
+            <p class="- topic/p p">When you delete an element node in a refactoring operation, any preceding or
+                subsequent text nodes are left in place:</p>
+            <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_xgd_pdx_hyb" src="refactoring_inserting_reformatting/deleting_element.svg"/><br/>
+            <p class="- topic/p p">When you insert a new element node before or after an existing element node, no new
+                indenting whitespace is added (unless the refactoring operation explicitly inserts
+                it):</p>
+            <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_rpl_pdx_hyb" src="refactoring_inserting_reformatting/inserting_element.svg"/><br/>
+            <p class="- topic/p p">The test case below provides a <code class="+ topic/ph pr-d/codeph ph codeph">mode="indent-stuff"</code> template mode
+                that looks for <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@indent</code> attribute directives (they are removed as
+                part of the reformatting process).</p>
+            <p class="- topic/p p">In the following example, the indent-reformatting template is applied around a
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> deletion:</p>
+            <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_ezg_bbr_3yb" src="refactoring_inserting_reformatting/deleting_element_reformatted.svg"/><br/>
+            <p class="- topic/p p">In the following example, the indent-reformatting template is applied to
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> insertions:</p>
+            <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_tqh_jzq_3yb" src="refactoring_inserting_reformatting/inserting_element_reformatted.svg"/><br/>
+            <p class="- topic/p p">The <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@indent</code> attribute contains a space-separated list that supports
+                the following values:</p>
+            <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_yjl_zhq_3yb" data-ofbid="refactoring_inserting_reformatting__ul_yjl_zhq_3yb">
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">self</code> - Reformat indenting whitespace before the current
+                        element (and after, for the last child of a parent).</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">adjacent-siblings</code> - Reformat indenting whitespace before the
+                        preceding and following sibling elements (and after, for the last child of a
+                        parent).</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">siblings</code> - Reformat whitespace around <em class="+ topic/ph hi-d/i ph i">all</em> sibling
+                        elements in the same parent element.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">children</code> - Reformat whitespace around all child
+                        elements.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><code class="+ topic/ph pr-d/codeph ph codeph">deep</code> - Reformat whitespace around all child and descendant
+                        elements.</p>
+                </li>
+            </ul>
+            <p class="- topic/p p">The <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@indent</code> attribute allows you to control the scope of content
+                change so that the revision control change footprint can be controlled.</p>
+            <p class="- topic/p p">The <code class="+ topic/ph pr-d/codeph ph codeph">mode="indent-stuff"</code> template works as follows:</p>
+            <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_tdc_fl5_hyb" data-ofbid="refactoring_inserting_reformatting__ul_tdc_fl5_hyb">
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Different files can have different indenting width conventions.</p>
+                    <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_c5s_tgq_3yb" data-ofbid="refactoring_inserting_reformatting__ul_c5s_tgq_3yb">
+                        <li class="- topic/li li">
+                            <p class="- topic/p p">The template uses the most common indenting value (the <a class="- topic/xref xref" href="https://en.wikipedia.org/wiki/Mode_(statistics)" target="_blank" rel="external noopener"><dfn class="- topic/term term">statistical
+                                    mode</dfn></a>)  in each file.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Elements inserted in a block context (i.e. <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>) should
+                        be indented, but elements in an inline context (i.e.
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;codeph&gt;</code>) should not.</p>
+                    <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_tsg_ngx_hyb" data-ofbid="refactoring_inserting_reformatting__ul_tsg_ngx_hyb">
+                        <li class="- topic/li li">
+                            <p class="- topic/p p">Some elements (i.e. <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;indexterm&gt;</code>) should be
+                                treated as block <em class="+ topic/ph hi-d/i ph i">or</em> inline elements based on their context
+                                (such as when they are in <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;prolog&gt;</code> or
+                                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>).</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">There might or might not be existing indenting whitespace around an element,
+                        and it might or might not be correct.</p>
+                    <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_gh1_z3q_3yb" data-ofbid="refactoring_inserting_reformatting__ul_gh1_z3q_3yb">
+                        <li class="- topic/li li">
+                            <p class="- topic/p p">Indenting is added or repaired as needed.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">The last child element of a parent element requires one less indent level
+                        before its parent's closing tag.</p>
+                </li>
+            </ul>
+            <p class="- topic/p p">To determine where indenting is appropriate, the stylesheet defines
+                    <code class="+ topic/ph pr-d/codeph ph codeph">inner-tag-type</code> and <code class="+ topic/ph pr-d/codeph ph codeph">outer-tag-type</code> XSLT3 maps
+                that indicate the expected type of content at the inside and outside of each
+                element's tags. Possible values are <code class="+ topic/ph pr-d/codeph ph codeph">block</code> (block elements),
+                    <code class="+ topic/ph pr-d/codeph ph codeph">text</code> (text content or inline elements), or an empty string
+                (unknown or ambiguous content type). For example:</p>
+            <div class="simpletable-container"><table class="- topic/simpletable simpletable" id="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb" data-ofbid="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb"><colgroup><col style="width:33.33333333333333%"/><col style="width:33.33333333333333%"/><col style="width:33.33333333333333%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                    <th class="- topic/stentry stentry" scope="col" id="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__1">Element</th>
+                    <th class="- topic/stentry stentry" scope="col" id="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__2"><code class="+ topic/ph pr-d/codeph ph codeph">outer-tag-type</code></th>
+                    <th class="- topic/stentry stentry" scope="col" id="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__3"><code class="+ topic/ph pr-d/codeph ph codeph">inner-tag-type</code></th>
+                </tr></thead><tbody><tr class="- topic/strow strow">
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__1"><code class="+ topic/ph pr-d/codeph ph codeph">body</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__2"><code class="+ topic/ph pr-d/codeph ph codeph">block</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__3"><code class="+ topic/ph pr-d/codeph ph codeph">block</code></td>
+                </tr><tr class="- topic/strow strow">
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__1"><code class="+ topic/ph pr-d/codeph ph codeph">p</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__2"><code class="+ topic/ph pr-d/codeph ph codeph">block</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__3"><code class="+ topic/ph pr-d/codeph ph codeph">text</code></td>
+                </tr><tr class="- topic/strow strow">
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__1"><code class="+ topic/ph pr-d/codeph ph codeph">ph</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__2"><code class="+ topic/ph pr-d/codeph ph codeph">text</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__3"><code class="+ topic/ph pr-d/codeph ph codeph">text</code></td>
+                </tr><tr class="- topic/strow strow">
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__1"><code class="+ topic/ph pr-d/codeph ph codeph">menucascade</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__2"><code class="+ topic/ph pr-d/codeph ph codeph">text</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__3"><code class="+ topic/ph pr-d/codeph ph codeph">block</code></td>
+                </tr><tr class="- topic/strow strow">
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__1"><code class="+ topic/ph pr-d/codeph ph codeph">indexterm</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__2"><code class="+ topic/ph pr-d/codeph ph codeph">''</code> (empty string)</td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__3"><code class="+ topic/ph pr-d/codeph ph codeph">text</code></td>
+                </tr><tr class="- topic/strow strow">
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__1"><code class="+ topic/ph pr-d/codeph ph codeph">entry</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__2"><code class="+ topic/ph pr-d/codeph ph codeph">block</code></td>
+                    <td class="- topic/stentry stentry" headers="refactoring_inserting_reformatting__simpletable_q53_bfs_3yb__stentry__3"><code class="+ topic/ph pr-d/codeph ph codeph">''</code> (empty string)</td>
+                </tr></tbody></table></div>
+            <p class="- topic/p p">For elements with unknown or ambiguous content types at the tag boundaries, the
+                stylesheet applies heuristics to guess the indentation needs.</p>
+            <p class="- topic/p p">To view the XSLT stylesheet without downloading the test case, click on the following
+                link:</p>
+            <p class="- topic/p p"><a class="- topic/xref xref" href="refactoring_inserting_reformatting/util-indent.xsl">util-indent.xsl</a></p>
+            <p class="- topic/p p">There are comments in the code to explain how it works.</p>
+        </section>
+        <section class="- topic/section section" id="refactoring_inserting_reformatting__section_ypj_jz4_hyb" data-ofbid="refactoring_inserting_reformatting__section_ypj_jz4_hyb"><h2 class="- topic/title title sectiontitle">Considering Content Models During Content Insertion</h2>
+            
+            <p class="- topic/p p">When inserting new content, the changes should not introduce any DITA content model
+                (schema) violations. Some DITA content models require a specific element ordering.
+                For example, the content model for <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;prolog&gt;</code> is:</p>
+            <dl class="- topic/dl dl" id="refactoring_inserting_reformatting__dl_lcq_bg5_hyb" data-ofbid="refactoring_inserting_reformatting__dl_lcq_bg5_hyb">
+                
+                    <dt class="- topic/dt dt dlterm"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;prolog&gt;</code> =</dt>
+                    <dd class="- topic/dd dd">
+                        <p class="- topic/p p"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;author&gt;</code>*, <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;source&gt;</code>?,
+                                <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;publisher&gt;</code>?,
+                                <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;copyright&gt;</code>*,
+                                <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;critdates&gt;</code>?,
+                                <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;permissions&gt;</code>?,
+                                <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;metadata&gt;</code>*,
+                                <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;resourceid&gt;</code>*, (<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;data&gt;</code>
+                            | <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;data-about&gt;</code> | <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;foreign&gt;</code>
+                            | <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;sort-as&gt;</code> |
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;unknown&gt;</code>)*</p>
+                    </dd>
+                
+            </dl>
+            <p class="- topic/p p">Commas in the content model indicate an ordering requirement. For example, a
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;resourceid&gt;</code> element must be inserted after its preceding
+                elements and before its following elements.</p>
+            <p class="- topic/p p">The test case below provides a <code class="+ topic/ph pr-d/codeph ph codeph">mode="insert-stuff"</code> template mode
+                that inserts content at a specified element path inside the selected element.</p>
+            <p class="- topic/p p">In the following example, the content-insertion template is applied to a
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;topic&gt;</code> element to insert a
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;resourceid&gt;</code> element in a <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;prolog&gt;</code>
+                element:</p>
+            <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_tsj_cwd_3yb" src="refactoring_inserting_reformatting/inserting_resourceid.svg"/><br/>
+            <p class="- topic/p p">In the following example, the content-insertion template is applied to a
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;topic&gt;</code> template to insert an
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;indexterm&gt;</code> element using a multiple-level insertion
+                path:</p>
+            <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_nyv_tbm_3yb" src="refactoring_inserting_reformatting/inserting_indexterm.svg"/><br/>
+            <p class="- topic/p p">The <code class="+ topic/ph pr-d/codeph ph codeph">mode="insert-stuff"</code> template works as follows:</p>
+            <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_aff_tjq_3yb" data-ofbid="refactoring_inserting_reformatting__ul_aff_tjq_3yb">
+                <li class="- topic/li li">
+                    <p class="- topic/p p">The <code class="+ topic/ph pr-d/codeph ph codeph">path</code> parameter can be a sequence of element name
+                        strings, a path string value using slash ("<code class="+ topic/ph pr-d/codeph ph codeph">/</code>") separators,
+                        or a mix of both.</p>
+                    <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_qjh_fnq_3yb" data-ofbid="refactoring_inserting_reformatting__ul_qjh_fnq_3yb">
+                        <li class="- topic/li li">
+                            <p class="- topic/p p">An empty string or sequence value inserts the content directly into
+                                the applied element.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">New elements are inserted into existing elements using content model
+                        information.</p>
+                    <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_z3v_tjq_3yb" data-ofbid="refactoring_inserting_reformatting__ul_z3v_tjq_3yb">
+                        <li class="- topic/li li">
+                            <p class="- topic/p p">The template creates or reuses intermediate element levels as needed,
+                                considering content models along the way.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">New elements created by a <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@path</code> specification have a default
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@indent</code> value of <code class="+ topic/ph pr-d/codeph ph codeph">self</code>.</p>
+                    <p class="- topic/p p">You can override the default <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@indent</code> value by specifying the
+                            <code class="+ topic/ph pr-d/codeph ph codeph">indent</code> parameter with the
+                            <code class="+ topic/ph pr-d/codeph ph codeph">mode="insert-stuff"</code> template. For example:</p>
+                    <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_vrq_ykq_3yb" data-ofbid="refactoring_inserting_reformatting__ul_vrq_ykq_3yb">
+                        <li class="- topic/li li">
+                            <p class="- topic/p p">Setting <code class="+ topic/ph pr-d/codeph ph codeph">indent</code> to <code class="+ topic/ph pr-d/codeph ph codeph">"self
+                                    adjacent-siblings"</code> reformats content more aggressively
+                                around newly created intermediate elements.</p>
+                        </li>
+                        <li class="- topic/li li">
+                            <p class="- topic/p p">Setting <code class="+ topic/ph pr-d/codeph ph codeph">indent</code> to an empty string value disables
+                                reformatting for newly created elements.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">The insertion content itself is not indented unless it has explicitly defined
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@indent</code> attributes.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Only simple ordered-list content model modeling is supported.</p>
+                </li>
+            </ul>
+            <p class="- topic/p p">To view the XSLT stylesheet without downloading the test case, click on the following
+                link:</p>
+            <p class="- topic/p p"><a class="- topic/xref xref" href="refactoring_inserting_reformatting/util-insert.xsl">util-insert.xsl</a></p>
+            <p class="- topic/p p">There are comments in the code to explain how it works.</p>
+        </section>
+        <section class="- topic/section section" id="refactoring_inserting_reformatting__section_xxt_b1p_hyb" data-ofbid="refactoring_inserting_reformatting__section_xxt_b1p_hyb"><h2 class="- topic/title title sectiontitle">Example Test Case</h2>
+            
+            <p class="- topic/p p">The following Oxygen project provides the moded templates described earlier, along
+                with an example refactoring operation that demonstrates their use:</p>
+            <p class="- topic/p p"><a class="- topic/xref xref" href="refactoring_inserting_reformatting/refactoring_inserting_reformatting.zip">refactoring_inserting_reformatting.zip</a></p>
+            <p class="- topic/p p">Specifically, it provides the following:</p>
+            <ul class="- topic/ul ul" id="refactoring_inserting_reformatting__ul_fks_f1s_3yb" data-ofbid="refactoring_inserting_reformatting__ul_fks_f1s_3yb">
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><span class="+ topic/ph sw-d/filepath ph filepath">frameworks/dita/refactoring/util-indent.xsl</span></p>
+                    <p class="- topic/p p">This stylesheet file defines the <code class="+ topic/ph pr-d/codeph ph codeph">mode="indent-stuff"</code>
+                        template.</p>
+                    <p class="- topic/p p">The <code class="+ topic/ph pr-d/codeph ph codeph">outer-tag-type</code> and <code class="+ topic/ph pr-d/codeph ph codeph">inner-tag-type XSLT3</code>
+                        maps are defined at the top of the file. You can update or add to these as
+                        needed.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><span class="+ topic/ph sw-d/filepath ph filepath">frameworks/dita/refactoring/util-insert.xsl</span></p>
+                    <p class="- topic/p p">This stylesheet file defines the <code class="+ topic/ph pr-d/codeph ph codeph">mode="insert-stuff"</code>
+                        template.</p>
+                    <p class="- topic/p p">The <code class="+ topic/ph pr-d/codeph ph codeph">content-models</code> map is defined at the top of the file.
+                        Only <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;prolog&gt;</code>-related content models are defined in
+                        this test case. You can add to these as needed.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p"><span class="+ topic/ph sw-d/filepath ph filepath">frameworks/dita/refactoring/insert-by-content-model.xml</span></p>
+                    <p class="- topic/p p"><span class="+ topic/ph sw-d/filepath ph filepath">frameworks/dita/refactoring/insert-by-content-model.xsl</span></p>
+                    <p class="- topic/p p">This Oxygen refactoring operation allows you to interactively experiment with
+                        content insertion and reformatting. It includes and uses both of the
+                        stylesheets above.</p>
+                </li>
+            </ul>
+            <p class="- topic/p p">To try out the example refactoring operation:</p>
+            <ol class="- topic/ol ol" id="refactoring_inserting_reformatting__ol_uf4_t1s_3yb" data-ofbid="refactoring_inserting_reformatting__ol_uf4_t1s_3yb">
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Open the <span class="+ topic/ph sw-d/filepath ph filepath">OPENME2.ditamap</span> file in the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">DITA
+                            Maps Manager</span>.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Open "My Topic" (<span class="+ topic/ph sw-d/filepath ph filepath">topic.dita</span>) in the Oxygen editor.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Right-click in the topic editing window, then choose <span class="+ topic/ph ui-d/menucascade ph menucascade"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Refactoring</span><abbr title="and then"> &gt; </abbr><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Content insertion</span><abbr title="and then"> &gt; </abbr><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Insert element by content model</span></span>.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">For the configuration parameters, enter the following:</p>
+                    <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_jlm_lbs_3yb" src="refactoring_inserting_reformatting/testcase_refactoring_parameters.png"/><br/>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">When you preview the refactoring operation, the results should be as
+                        follows:</p>
+                    <br/><img class="- topic/image image" id="refactoring_inserting_reformatting__image_gr1_nbs_3yb" src="refactoring_inserting_reformatting/testcase_refactoring_preview.png"/><br/>
+                </li>
+            </ol>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        <div id="oxygen-feedback-frame-container">
+    <script defer="defer" id="feedback-init" src="https://feedback.oxygenxml.com/app/init/init.js?deploymentToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkZXBsb3ltZW50SWQiOjYyNX0.8cbUvwq4kXkiqS4uSdYU7NW33X_2PFhbjWI6AluOEJ1xI4JkXzYTXZLEtqRn72rzxIMXEQrSs1_xfGzoKvsYMQ"><!-- --></script>
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div id="wh_topic_toc_content">
+              	                <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#refactoring_inserting_reformatting__section_ysv_kz4_hyb" data-tocid="refactoring_inserting_reformatting__section_ysv_kz4_hyb">Re-indenting XML After Content Updates</a></div></li><li class="section-item"><div class="section-title"><a href="#refactoring_inserting_reformatting__section_ypj_jz4_hyb" data-tocid="refactoring_inserting_reformatting__section_ypj_jz4_hyb">Considering Content Models During Content Insertion</a></div></li><li class="section-item"><div class="section-title"><a href="#refactoring_inserting_reformatting__section_xxt_b1p_hyb" data-tocid="refactoring_inserting_reformatting__section_xxt_b1p_hyb">Example Test Case</a></div></li></ul></div>
+	                        	
+                        	</div>
+                        </nav>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="footer">
+    
+        <div class="footer-container container mx-auto">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-3 mb-3 mb-md-0" id="quick_links">
+                    <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook me-2" title="Facebook" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/you-tube.png" alt="YouTube"/>
+                    </a>
+                    <a href="http://twitter.com/oxygenxml" class="lk-blog me-2" title="Twitter" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/twitter.png" alt="Twitter"/>
+                    </a>
+                    <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/linkedin.png" alt="LinkedIn"/>
+                    </a>
+                </div>
+                
+                <div class="col-md-5 mb-3 mb-md-0" id="copy">
+                    © 2002-2025 SyncRO Soft SRL. All rights reserved.
+                    <div>
+                        <p>This website is powered by Oxygen<sup>®</sup> 
+                            <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-1 mb-3 mb-md-0 b-subscribe">
+                    <a href="/#follow-it" class="btn get-started">Subscribe</a>
+                </div>
+                
+                <div class="col-md-3 b-flavours">
+                    <a type="application/rss+xml" class="me-2" href="/rss.xml">RSS</a>
+                    <a class="me-2" href="/oxygen_xml_blog.pdf">PDF</a>
+                    <a href="/oxygen_xml_blog.epub">EPUB</a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./oxygen-webhelp/template/resources/js/search-nav.js" defer="defer"></script>
+        
+        <script><!--
+
+            document.querySelector(".get-started")?.addEventListener("click", function () {
+            const el = document.querySelector(".stripe-latest-posts");
+            if (el) {
+            window.scrollTo({
+            top: el.offsetTop - 90,
+            behavior: "smooth"
+            });
+            }
+            });
+        
+--></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4W3NZKJST" integrity="sha384-8klDZJT6xp3MWmbFq1S4K0+Phpnxe5BXVjrHKHWKEMPG06CzApoUqFnULJ+tdS30" crossorigin="anonymous"><!--
+
+        
+--></script>
+        <script><!--
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-D4W3NZKJST');
+        
+--></script>
+</div>
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        <div>
+   <!-- <script src="${oxygen-webhelp-template-dir}/resources/js/syncro.js"></script>-->
+    <script src="/oxygen-webhelp/template/resources/js/search-nav.js"></script>
+    
+</div>
+    </body>
+</html>

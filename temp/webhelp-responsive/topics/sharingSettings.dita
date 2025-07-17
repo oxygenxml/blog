@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_whr_nly_c5" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="topic:1;3:30" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="title:1;4:10">Sharing Application Settings</title><prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="prolog:1;4:54"><author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="author:1;4:62">Radu Coravu</author></prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="body:1;5:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="p:1;6:8">There are various ways in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:1;6:41">Oxygen</b> standalone version through which a team of writers
+      can share and use a set of common settings. Below I will try to list each of these
+      possibilities along with useful links:<ul id="ul_m2f_sly_c5" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="ul:1;8:68">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="li:1;9:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="p:2;10:14"> Save the settings at project level and have all users use the same project
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:2;11:18">"projectName.xpr"</b> file in the Project view when editing. Most of the Oxygen
+            Preference pages have a switch radio button which allows you to pass the settings to
+            Project level and save them in the current project configuration file opened in the
+            Project view. If you commit that Project configuration file to a version control system
+            like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:3;15:21">GIT</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:4;15:35">SVN</b>, all writers can open and use that project when working
+            with the repository content. </p>
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="p:3;17:14">For example, when we work on the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:5;17:50">Oxygen User's Manual</b> using our common
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:6;18:18">GitHub</b> repository, we all open in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:7;18:63">Project</b> view the
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:8;19:18">"userguide.xpr"</b> project which comes with various fixed options (eg: enabling
+            automatic spell checking):<xref href="https://github.com/oxygenxml/userguide" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="xref:1;21:47"/></p>
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="p:4;22:14">You can find out more details about sharing projects here: <xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/sharing-projects.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="xref:2;24:47"/>.</p>
+        </li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="li:2;26:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="p:5;27:14">Create and then provide a <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:9;27:43">default options XML document</b> to others. When placed in
+            a specific place in the Oxygen installation or referenced via a specific property in the
+            application startup script, this default options XML document will be used by the
+            application to provide default values for certain settings. You can find out more about
+            how default options work here:<xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/default-options.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="xref:3;33:47"/>.</p>
+        </li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="li:3;35:13">Have others manually <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:10;35:37">import</b> an options XML document which you <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:11;35:85">exported</b>
+          from Oxygen:<xref href="https://www.oxygenxml.com/doc/ug-editor/#topics/import-export-preferences.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="xref:4;38:45"/>.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="li:4;39:13">
+          <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="p:6;40:14">An Oxygen plugin could use our <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:12;40:48">Java API</b> to impose fixed options when the
+            application starts using the API method:
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:13;42:18">PluginWorkspaceProvider.getPluginWorkspace().setGlobalObjectProperty(key,
+              value)</b>. In our <xref href="https://www.oxygenxml.com/oxygen_sdk.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="xref:5;44:46"><?ditaot usertext?>Maven-based SDK</xref> we have a sample plugin called
+              <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:14;45:18">ImposeOptions</b> which imposes a fixed set of options when the application starts.
+          </p>
+        </li>
+      </ul></p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="p:7;49:8">If you want to share <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="b:15;49:32">document type configurations</b> (for editing certain XML vocabulary)
+      you can find more details in this older blog post: <xref href="author-document-type-extension-sharing.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/sharingSettings.dita" xtrc="xref:6;51:61" type="topic"><?ditaot gentext?>Document Type Extension Sharing</xref>.</p>
+  </body>
+</topic>

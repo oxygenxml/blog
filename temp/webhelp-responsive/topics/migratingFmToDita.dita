@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_dgl_yrf_hvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="topic:1;3:31" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="title:1;4:12">Migrating Unstructured Adobe FrameMaker Content to DITA</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="author:1;6:17">Cosmin Duna</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="critdates:1;7:20">
+            <created date="2022-10-28" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:1;12:12">This article explores ways to convert unstructured FrameMaker documents to a DITA XML
+            project.</p>
+        <section id="section_lzc_csf_hvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="section:1;14:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="title:2;15:20">Using a FrameMaker Plugin</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:2;16:16">There is a FrameMaker plugin that can be used for this type of conversion: <xref href="http://leximation.com/tools/info/fm2dita.php" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xref:1;18:39"/>.</p>
+        </section>
+        <section id="section_lzc_csf_hvg" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="section:2;20:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="title:3;21:20">Using FrameMaker Conversion Table</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:3;22:16">FrameMaker has a "Conversion Table" feature that can be used for this type of
+                conversion: <xref href="https://help.adobe.com/en_US/framemaker/using/using-framemaker/user-guide/WSB3FD6CD7-6930-474f-BB1E-64762D105DB6_ver12.0.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xref:2;25:53"/>.</p>
+        </section>
+        <section id="section_udc_1sf_hvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="section:3;27:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="title:4;28:20">Unstructured FrameMaker to HTML to DITA</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:4;29:16">To perform this migration, your documents must be in the ".mif" format.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:5;30:16">If your documents are in the '.fm' format, you can use the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:1;30:86">MIF Wash
+                    Utility</uicontrol> to convert your book into a <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:1;31:72">.mif</i> document: <xref href="https://helpx.adobe.com/framemaker/kb/how-to-use-mifwash-utility-in-framemaker.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xref:3;33:53"/>.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:6;34:16">The '<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:2;34:24">mif</i>' document must go through the following conversion and correction
+                steps to obtain DITA content: <dl id="dl_nxm_ylh_3vb" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dl:1;35:71">
+                    <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dlentry:1;36:30">
+                        <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dt:1;37:29">Publish Your Unstructured FrameMaker to HTML</dt>
+                        <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dd:1;38:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:7;39:32">In this step, the <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:3;39:53">mif</i> document is converted to HTML using the
+                                    <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:2;40:48">Basic HTML</uicontrol> scenario from FrameMaker. Here
+                                are the substeps: <ol id="ol_rkd_qmh_3vb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="ol:1;41:75">
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:1;42:41">Create a settings file for publishing that contains mappings
+                                        to HTML elements for all paragraph and character
+                                            styles:<image href="../images/fm-to-dita/mapping.png" id="image_zlv_1nh_3vb" placement="break" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="image:1;45:87" dita-ot:image-width="902" dita-ot:image-height="760" dita-ot:horizontal-dpi="120" dita-ot:vertical-dpi="120"/>
+                                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:8;46:44">It's very important to have mappings to HTML heading
+                                            elements for paragraph styles that mark headings in your
+                                            document. In the example above, the "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:4;48:85">Chapter</i>",
+                                                "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:5;49:53">Heading</i>", and "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:6;49:75">Title</i>" styles are
+                                            mapped to the "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:7;50:63">h1</i>" element, the "Subtitle" and
+                                            "Section" styles to the 'h2' element, and the
+                                            "Subsection" style to the 'h3' element.</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:9;52:91">The styles
+                                            set on the list should be mapped to the 'li' elements.
+                                            In the example, it's the "Bullet", "Step", and "Step1"
+                                            styles.</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:10;55:59">The paragraph styles without mapping are
+                                            converted to HTML paragraphs, so you can skip the ones
+                                            where the mapping is not necessary. The "Body",
+                                            "CellBody", and "CellHeading" styles don't have a
+                                            mapping in the example above. </p></li>
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:2;60:41">Publish the '<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:8;60:57">mif</i>' document to HTML using
+                                            <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:3;61:56">Basic HTML</uicontrol>:<image href="../images/fm-to-dita/publish.png" id="image_dcv_5qh_3vb" placement="break" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="image:2;63:87" dita-ot:image-width="555" dita-ot:image-height="422" dita-ot:horizontal-dpi="120" dita-ot:vertical-dpi="120"/></li>
+                                </ol></p>
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:11;65:32">This should result in an '.htm' document located in the output
+                                directory:</p>
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:12;67:32">
+                                <image href="../images/fm-to-dita/htmlOutput.PNG" id="image_ttk_wrh_3vb" placement="break" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="image:3;69:79" dita-ot:image-width="260" dita-ot:image-height="149" dita-ot:horizontal-dpi="96" dita-ot:vertical-dpi="96"/>
+                            </p>
+                        </dd>
+                    </dlentry>
+                    <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dlentry:2;73:30">
+                        <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dt:2;74:29">Correct the Resulting HTML Using a Custom Refactoring Operation</dt>
+                        <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dd:2;75:29">The HTML document that results from publishing requires some extra
+                            processing before applying the DITA conversion. </dd>
+                        <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dd:3;77:29">For this, do the following: <ol id="ol_ytc_5sh_3vb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="ol:2;77:81">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:3;78:37">Download the content from the following GitHub repository: <xref href="https://github.com/oxygenxml/dita-refactoring-examples" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xref:4;80:73"/>.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:4;81:37">Copy the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="filepath:1;81:56">correctHtmlFromMif.xml</filepath> and
+                                        <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="filepath:2;82:51">correctHtmlFromMif.xsl</filepath> files from the
+                                    "43. FM conversion fixes" directory in one of the locations that
+                                    Oxygen scans when loading the custom refactoring operations:
+                                        <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/sharing-custom-refactoring-operations.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xref:5;87:73"/>.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:5;88:37">Restart Oxygen.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:6;89:37">Add the output directory that contains the HTML file to your
+                                    project.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:7;91:37">In the Project view, right-click the HTML file, and invoke the
+                                        <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:4;92:52">Refactoring</uicontrol>&gt;<uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:5;92:87"> XML
+                                        Refactoring</uicontrol> action.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:8;94:37">In the resulting dialog box, search for the operation named
+                                        <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:9;95:44">Correct HTML resulting from 'mif'</i> and apply it to the
+                                    HTML document.</li>
+                            </ol><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:13;97:37">The applied refactoring operation corrects two problems in the
+                                HTML document:<ul id="ul_afs_wsh_3vb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="ul:1;98:71">
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:9;99:41">The list items without a parent element ('ol' or 'ul').</li>
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:10;100:41">Targets of the cross references that have the "name"
+                                        attributes from anchor elements instead of the "id"
+                                        attributes.</li>
+                                </ul></p></dd>
+                    </dlentry>
+                    <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dlentry:3;105:30">
+                        <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dt:3;106:29">Convert HTML to DITA Using the Oxygen Batch Documents Converter
+                            Add-on</dt>
+                        <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dd:4;108:29">The Batch Documents Converter add-on has to be installed in Oxygen for
+                            this step. Follow the installation procedure <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xref:6;111:64"><?ditaot usertext?>here</xref>.</dd>
+                        <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dd:5;112:29">Before converting the document, you should configure which headings are
+                            handled as topics or sections. For this, use the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html#batch-converter-addon__maximumHeadingLevelForCreatingTopics" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xref:7;115:64"><?ditaot usertext?><uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:6;115:75">Maximum Heading Level for
+                                    Creating Topics</uicontrol></xref> options from the add-on's
+                            preferences page.</dd>
+                        <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="dd:6;118:29">For converting the document, do the following:<ol id="ol_dxp_nc3_3vb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="ol:3;118:99">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:11;119:37">Right-click the HTML document in the Project view and invoke the
+                                    "HTML to DITA" option from the Batch Documents Converter
+                                    submenu.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:12;122:37">In the resulting dialog box, make sure that the
+                                        <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:7;123:52">Ignore HTML 'div' elements</uicontrol> option is
+                                    selected (because this element is not useful in the output) and
+                                    that the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:8;125:57">Create DITA maps from HTML documents
+                                        containing multiple headings</uicontrol> option is also
+                                    selected: <image href="../images/fm-to-dita/conversionDialog.PNG" id="image_qmm_dg3_3vb" placement="break" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="image:4;129:83" dita-ot:image-width="481" dita-ot:image-height="399" dita-ot:horizontal-dpi="96" dita-ot:vertical-dpi="96"/></li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="li:13;130:37">Click the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="uicontrol:9;130:58">Convert</uicontrol> button.</li>
+                            </ol></dd>
+                    </dlentry>
+                </dl></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:14;134:16">The resulting DITA map preserves the structure of the document, images, tables, and
+                internal and external links:<image href="../images/fm-to-dita/output.PNG" id="image_vl4_gg3_3vb" placement="break" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="image:5;136:63" dita-ot:image-width="1244" dita-ot:image-height="805" dita-ot:horizontal-dpi="96" dita-ot:vertical-dpi="96"/></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:15;137:16">Note that migration from proprietary formats to XML is never perfect and manual
+                changes need to be made. The names of the original styles are preserved on the
+                    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="xmlatt:1;139:29">ouputclass</xmlatt> attributes and these can be used for adding extra
+                processing using refactoring operations.</p>
+        </section>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="p:16;142:12"><i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migratingFmToDita.dita" xtrc="i:10;142:15">Adobe and FrameMaker are either registered trademarks or trademarks of Adobe in the
+            United States and/or other countries.</i></p>
+    </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:27;40:57" xtrf="file:/D:/syncprojects/blog/oxygen_xml_blog.ditamap"><link class="- topic/link " format="dita" href="../topics/migration.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:17;25:59" xtrf="file:/D:/syncprojects/blog/oxygen_xml_blog.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Migrate</linktext></link></linkpool></related-links></topic>

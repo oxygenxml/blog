@@ -13,7 +13,7 @@
         <xsl:param name="templatePageRootElem" as="element()" select="/*" tunnel="yes"></xsl:param>
         <xsl:next-match>
             <xsl:with-param name="templatePageRootElem" select="$templatePageRootElem" tunnel="yes"/>
-        </xsl:next-match>
+        </xsl:next-match> 
     </xsl:template>
     
     <xsl:template match="whc:webhelp_search_input" mode="copy_template">
@@ -23,7 +23,11 @@
         <xsl:choose>
             <xsl:when test="$outputComponent">
                 <!-- Apply default processing. -->
-                <xsl:next-match/>
+                <xsl:variable name="searchCustom">
+                    <xsl:next-match/>
+                    
+                </xsl:variable>
+                <xsl:apply-templates select="$searchCustom/*" mode="copy_search"/>
             </xsl:when>
             <xsl:otherwise>
                 <!-- Copy the WebHelp Welcome Fragment in its original location -->
@@ -33,6 +37,17 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    
+    <xsl:template match="node() | @*" mode="copy_search">
+        <xsl:copy>
+            <xsl:apply-templates select="node() | @*" mode="copy_search"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template match="*[contains(@class, 'wh_search_button')]" mode="copy_search">
+        
+    </xsl:template>
+    
     
     <xsl:template match="*[contains(@class, 'wh_header_flex_container')]" mode="copy_template">
         <!-- The root element of the HTML Layout page (ie: wt_index.html, wt_topic, etc. ). -->
@@ -44,6 +59,13 @@
                 <xsl:with-param name="outputComponent" as="xs:boolean" select="true()" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>  
+    </xsl:template>
+    
+    <xsl:template match="*:form[@id='searchForm']" mode="copy_search">
+        <xsl:next-match/>
+        <span class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span>
+        <span class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
+        
     </xsl:template>
     
     <xsl:template match="*[contains(@class, 'wh_welcome')]" mode="copy_template">

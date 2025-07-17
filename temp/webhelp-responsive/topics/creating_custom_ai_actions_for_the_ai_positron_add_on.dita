@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="creating_custom_ai_actions_for_the_ai_positron_add_on" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="topic:1;3:67" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="title:1;4:12">Creating Custom AI Actions for the AI Positron add-on</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="critdates:1;7:20">
+            <created date="2025-05-21" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:1;12:12">In the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:1;14:48"><?ditaot usertext?>AI Positron Assistant preferences page</xref>, you
+            can define a reference to a folder that contains custom actions.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:2;16:12">Once the add-on is installed, the New Document wizard can be used to create either a new
+                <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="b:1;17:20">AI Positron Custom Action</b> file that contains a custom action definition in
+            JSON format or an <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="b:2;18:34">AI Positron Custom Actions List</b> that contains a JSON array with
+            multiple defined actions. Validation and content completion are automatically provided
+            for such custom action files. To edit multi-line parameter values, you can switch the
+            edited action JSON definition file to the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="b:3;21:58">Author</b> visual editor mode.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:3;22:12">If the action definition files are saved in the custom actions folder defined in the AI
+            Positron Assistant preferences page, the AI Positron Assistant view should automatically
+            reload its Actions list to include them.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:4;25:12">Various examples of custom AI actions can be found <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Custom%20Actions" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:2;27:48"><?ditaot usertext?>here</xref> and can be used as starting points for
+            your own similar AI actions.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:5;29:12">An AI action definition may contain the following properties:</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:6;30:8">
+      <dl id="dl_vcf_mq1_kfc" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dl:1;31:31">
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:1;32:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:1;33:15">id</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:1;34:15">
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:7;35:16">A unique ID for the action. If the ID of the action starts with
+                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:1;36:25">agent.hidden.action.</codeph>, then the action is not visible to be invoked
+              directly but can be called by using the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:2;37:63">invoke_ai_action(actionID,
+                content)</codeph> function.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:8;39:16">Example:<codeblock id="codeblock_ghl_4q1_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:1;39:90">{
+        "id": "improve.grammar.custom.styles",
+        "title": "...",
+        ...
+}</codeblock><note id="note_q12_br1_kfc" class="- topic/note " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="note:1;43:42">An Oxygen desktop plugin can contribute an
+                extra <xref href="https://www.oxygenxml.com/doc/ug-editor/dev_guide/contributing_translations_for_new_labels_and_ui_text.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:3;46:50"><?ditaot usertext?><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="filepath:1;46:60">translation.xml</filepath></xref> file
+                that contains translations. Such a plugin may translate titles and descriptions for
+                AI actions using the action ID as part of the key.<p id="p_odz_rgq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:9;49:18">Example:</p><codeblock id="codeblock_lfl_rr1_kfc" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:2;49:95">	&lt;key value="improve.grammar.custom.styles.title"&gt; 
+		&lt;val lang="en_US"&gt;Improve Styles&lt;/val&gt; 
+		&lt;val lang="de_DE"&gt;...&lt;/val&gt; 
+		... 
+	&lt;/key&gt;
+	&lt;key value="improve.grammar.custom.styles.description"&gt;
+		&lt;val lang="en_US"&gt;Analyze and improve styles.&lt;/val&gt;
+		&lt;val lang="de_DE"&gt;...&lt;/val&gt;
+		...
+	&lt;/key&gt;</codeblock></note></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:2;61:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:2;62:15">title</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:2;63:15">
+            <p id="p_lrg_33q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:10;64:35">The action name/title that gets presented in the UI.</p>
+            <p id="p_mlj_tgq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:11;66:16">Example:<codeblock id="codeblock_kps_bs1_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:3;66:90">{
+        "id": "improve.grammar.custom.styles",
+        "title": "Improve Grammar and Styles",
+        ...
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:3;73:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:3;74:15">description</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:3;75:15">
+            <p id="p_bgy_h3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:12;76:35">A longer description of what the AI action does, usually used as a
+              tooltip.</p>
+            <p id="p_gy1_vgq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:13;79:16">Example:<codeblock id="codeblock_il2_ns1_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:4;79:90">{
+        "id": "...",
+        "title": "Improve Grammar and Styles",
+        "description": "Improve the grammar and styles based on the company's style guide."
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:4;86:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:4;87:15">short-description</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:4;88:15">
+            <p id="p_l3n_h3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:14;89:35">A shorter description for the AI action that usually appears under
+              the action title in the chat view. If not specified, it defaults to the description
+              value.</p>
+            <p id="p_tss_xgq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:15;93:16">Example:<codeblock id="codeblock_h25_ts1_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:5;93:90">{
+    "id": "action.translate.to.english",
+    "title": "English",
+    "short-description": "Translate to English",
+    "description": "Translate the selected content to English while preserving its 
+    original DITA XML markup.",
+    ....
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:5;103:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:5;104:15">categoryId</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:5;105:15">
+            <p id="p_ojj_g3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:16;106:35">The optional category in which the AI action is visually grouped,
+              if not specified it defaults to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:3;107:55">Other</codeph>.</p>
+            <p id="p_ow1_g3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:17;109:16">Example:<codeblock id="codeblock_r3y_hs1_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:6;109:90">{
+        "id": "improve.grammar.custom.styles",
+        "title": "Improve Grammar and Styles",
+        "categoryId": "Rewrite"
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:6;116:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:6;117:15">framework</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:6;118:15">
+            <p id="p_rlc_f3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:18;119:35">A framework pattern (like '<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:4;119:70">DITA*</codeph>') or content
+              type name (like '<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:5;120:40">text/css</codeph>') that, when matched, presents the action
+              when the document belonging to the framework is opened.</p>
+            <p id="p_slc_f3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:19;122:35">Example:
+              <codeblock id="codeblock_jjg_py1_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:7;123:81">{
+    "id": "generate.img.alternate.text",
+    "title": "Generate Image Alternate Text",
+    "framework": "*DITA*",
+    ...
+}</codeblock></p>
+            <p id="p_qsd_k3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:20;129:35">An example of an AI action that shows this for any edited XML
+              document (as it matches the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:6;130:51">text/xml</codeph> content type) can be found <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/formula-equation.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:4;132:48"><?ditaot usertext?>here</xref>.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:7;135:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:7;136:15">prompt_ref</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:7;137:15">
+            <p id="p_f4r_f3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:21;138:35">A reference to a separate file (usually encoded in Markdown) which
+              defines the entire action prompt.</p>
+            <p id="p_hds_c3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:22;140:35"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:5;143:18"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_ukv_jcb_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:8;143:99">{
+    "id": "action.update.title.based.on.content",
+    ....
+    "prompt_ref": "prompts/action_update_title.md"
+  }</codeblock><note type="important" id="note_i3p_mcb_kfc" class="- topic/note " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="note:2;147:61">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:23;148:20">The prompt is the most important part of the AI action. A prompt must be as
+                  precise and detailed as possible, including examples. Some companies may adopt
+                  prompt methodologies like <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="uicontrol:1;150:56">COSTAR</uicontrol> to specify the prompt
+                  value. The context prompt defined in the Oxygen AI Positron Preferences page is
+                  used as a prefix for all AI action prompts.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:24;153:20"><xref href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/prompts/action_validate_and_fix.md" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:6;155:52"><?ditaot usertext?>Here is an example of a large prompt
+                  file</xref>.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:25;157:20">A custom AI action can expand the context prompt in a specific part of its prompt
+                  by using the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:7;158:40">${contextPrompt}</codeph> variable in its own prompt.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:26;159:20">To define a custom AI action that does not use the context prompt in any way, in
+                  the AI action's JSON configuration file, you can expand the context prompt to an
+                  empty value like
+                  this:<codeblock id="codeblock_qzn_f4f_qfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:9;162:90">{
+    "id": "improve.grammar.custom",
+    "title": "..",
+     ....
+    "expand-params": [
+        {
+         "name": "contextPrompt",
+         "value": ""
+        }
+    ]
+}
+</codeblock></p>
+              </note></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:8;177:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:8;178:15">prompt</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:8;179:15">
+            <p id="p_l5q_l3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:27;180:35">Multi-line parameter value that defines inline the prompt that is
+              sent to the AI along with the content to be processed.</p>
+            <p id="p_eyz_whq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:28;182:35"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:7;185:16"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_lp4_3bb_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:10;185:97">{
+    "id": "action.review.logical.mistakes",
+    "title": "Logical Inconsistencies",
+    "output-action": "none",
+    "prompt": "# CONTEXT #\n\nYou will act as a reviewer interested in finding inconsistency 
+    and logical mistakes.\n\n# OBJECTIVE #\n\nYou are tasked with reviewing the given content.
+    \nFind logical and inconsistency mistakes in the content and return a report."
+}</codeblock></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:29;193:16">
+              <note type="important" id="note_ijc_j4f_qfc" class="- topic/note " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="note:3;194:60">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:30;195:20">The prompt is the most important part of the AI action. A prompt must be as
+                  precise and detailed as possible, including examples. Some companies may adopt
+                  prompt methodologies like <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="uicontrol:2;197:56">COSTAR</uicontrol> to specify the prompt
+                  value. The context prompt defined in the Oxygen AI Positron Preferences page is
+                  used as a prefix for all AI action prompts.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:31;200:20"><xref href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/prompts/action_validate_and_fix.md" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:8;202:52"><?ditaot usertext?>Here is an example of a large prompt
+                  file</xref>.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:32;204:20">A custom AI action can expand the context prompt in a specific part of its prompt
+                  by using the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:8;205:40">${contextPrompt}</codeph> variable in its own prompt.</p>
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:33;206:20">To define a custom AI action that does not use the context prompt in any way, in
+                  the AI action's JSON configuration file, you can expand the context prompt to an
+                  empty value like
+                  this:<codeblock id="codeblock_qzn_f4f_qfc2" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:11;209:91">{
+    "id": "improve.grammar.custom",
+    "title": "..",
+     ....
+    "expand-params": [
+        {
+         "name": "contextPrompt",
+         "value": ""
+        }
+    ]
+}
+</codeblock></p>
+              </note>
+            </p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:9;225:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:9;226:15">expand-params</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:9;227:15">A JSON array that can define values for parameters that should be expanded in the
+            context content. </dd>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:10;229:15">You can define parameters that can be configured by the end user when hovering over
+            the AI action in the UI.</dd>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:11;231:15">
+            <p id="p_zzp_vhq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:34;232:35"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Thesaurus.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:9;235:16"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_o5w_pz1_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:12;235:97">{
+  "id": "thesaurus",
+  "title": "Thesaurus/Synonyms",
+  "output-action": "replace",
+  "prompt": "Provide a max of ${number} synonyms for:",
+  "expand-params": [
+    ...
+    {
+      "name": "number",
+      "label": "Number of synonyms",
+      "value": "10",
+      "choice-type": "single-choice",
+      "alternate-values": [
+        "10",
+        "20",
+        "30"
+      ]
+    }
+  ]
+}</codeblock></p>
+            <p id="p_bll_n3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:35;255:35">The following properties are available for a defined parameter:<dl id="dl_utl_yz1_kfc" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dl:2;256:37">
+                <dlentry id="dlentry_cll_n3q_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:10;257:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:10;258:23">name</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:12;259:23">The parameter name. It can be referenced multiple times with the syntax
+                      <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:9;260:31">${param_name}</codeph> in the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:10;260:69">context</codeph> parameter or in
+                    the external prompt file referenced using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:11;261:71">prompt_ref</codeph>.</dd>
+                </dlentry>
+                <dlentry id="dlentry_dll_n3q_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:11;263:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:11;264:23">label</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:13;265:23">The label that appears in the UI when the parameter's value is configured by
+                    the end user.</dd>
+                </dlentry>
+                <dlentry id="dlentry_ell_n3q_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:12;268:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:12;269:23">value</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:14;270:23">
+                    <p id="p_zgm_p3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:36;271:43">The value of the parameter. It can contain various <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:10;273:56"><?ditaot usertext?>editor variables</xref> that get
+                      automatically expanded.</p>
+                    <p id="p_vvk_5hq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:37;275:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-prolog.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:11;278:24"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_drx_31b_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:13;278:105">{
+        "id": "action.update.prolog",
+        ...
+        "prompt": "Update the DITA XML topic prolog with the current date ${currentDate}...",
+        "expand-params": [
+            {
+                "name": "currentDate",
+                "value": "${date(yyyy-MM-dd)}"
+            }
+        ]
+    }</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_fll_n3q_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:13;291:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:13;292:23">alternate-values</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:15;293:23">An optional array of alternate values that are available to be configured by
+                    the end user when hovering over the AI action.</dd>
+                </dlentry>
+                <dlentry id="dlentry_gll_n3q_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:14;296:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:14;297:23">choice-type</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:16;298:23">An optional choice type that defines how the end user can configure the
+                    alternate values (combo box, check boxes, radio buttons).</dd>
+                </dlentry>
+                <dlentry id="dlentry_hll_n3q_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:15;301:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:15;302:23">prefix</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:17;303:23">The optional prefix value to be used for each expansion of the parameter's
+                    value.</dd>
+                </dlentry>
+              </dl></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:16;309:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:16;310:15">parameters</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:18;311:15">An array of parameters that can be used to specify an engine name, temperature, or the
+            available function definitions. Some of the most commonly set parameters:<p id="p_emg_thq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:38;313:34">
+              <dl id="dl_t55_fdb_kfc" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dl:3;314:39">
+                <dlentry id="dlentry_jng_thq_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:17;315:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:17;316:23">engine</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:19;317:23">
+                    <p id="p_kng_thq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:39;318:43">The optional name of the engine to use with the AI action,
+                      no matter what the default AI engine model is configured to be.</p>
+                    <p id="p_lng_thq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:40;320:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:12;323:24"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_egs_kdb_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:14;323:105">{
+    "id": "action.review.logical.mistakes",
+    ....,
+    "parameters": {
+        "engine": {"name": "o1"}
+    }
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_mng_thq_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:18;332:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:18;333:23">temperature</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:20;334:23">Temperature is an optional parameter that governs the randomness and thus the
+                    creativity of the responses. It is always a number between 0 (more
+                    deterministic) and 1 (more random). The default value is 0 and it should, in
+                    general, remain unspecified when your AI actions are intended for technical
+                    documentation that is precise in nature.</dd>
+                </dlentry>
+                <dlentry id="dlentry_nng_thq_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:19;340:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:19;341:23">function_refs</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:21;342:23">
+                    <p id="p_h5k_q3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:41;343:43">An optional JSON array that describes which functions can
+                      be used when executing this action.</p>
+                  </dd>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:22;346:23">
+                    <p id="p_wsv_q3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:42;347:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/add-related-links.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:13;349:56"><?ditaot usertext?>Example</xref> of an AI action that uses
+                        <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="uicontrol:3;350:36">Retrieval Augmented Generation (RAG)</uicontrol> functions to
+                      find related content in the
+                      project:<codeblock id="codeblock_s5d_n2b_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:15;352:97">{
+    "id": "find.add.related.links",
+    ...
+    "parameters": {
+    "function_refs": [
+        {"ref": "get_related_resources_overview_from_project"},
+        {"ref": "get_content_for_document_url"}
+    ]
+}
+}</codeblock></p>
+                    <p id="p_ong_thq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:43;362:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/get-content-from-website.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:14;364:56"><?ditaot usertext?>Example</xref> of an AI action that uses the
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:12;365:33">get_content_for_document_url</codeph> function to retrieve content
+                      from a web
+                        site:<codeblock id="codeblock_thd_gml_lfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:16;367:96">{
+    "id": "action.get.oxygen.version.web.site",
+    "output-action": "insert",
+    "title": "Insert Latest Oxygen Version",
+    "prompt": "Obtain the latest version of Oxygen from the 
+    'https://www.oxygenxml.com/xml_editor/whats_new.html' web site by calling the function 
+    'get_content_for_document_url' and return it.",
+    "parameters": {
+        "function_refs": [
+            {"ref": "get_content_for_document_url"}
+        ]
+    }
+  }</codeblock><note id="note_hlw_x2b_kfc" type="important" class="- topic/note " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="note:4;379:61">There are
+                        specific actions that can be called to invoke other AI actions from an AI
+                        action, thus creating an agenting mechanism where various parts of the work
+                        is done by various actions. An example can be found <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/ai-actions-composed.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:15;384:58"><?ditaot usertext?>here</xref>.</note></p>
+                  </dd>
+                </dlentry>
+              </dl>
+            </p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:20;390:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:20;391:15">input</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:23;392:15">Defines which part of the current document should be sent to be processed by the AI
+              engine.<p id="p_sfg_hgv_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:44;393:44">
+              <dl id="dl_kgg_hgv_nfc" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dl:4;394:39">
+                <dlentry id="dlentry_lgg_hgv_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:21;395:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:21;396:23">selection, document [default]</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:24;397:23">Prefers sending the selected content. If there is no selection, it selects and
+                    sends the entire document.</dd>
+                </dlentry>
+                <dlentry id="dlentry_mgg_hgv_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:22;400:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:22;401:23">selection</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:25;402:23">Prefers sending the selected content. If no content is selected, either no
+                    content is sent or an error message is received (depending on the action's
+                      <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:13;404:31">output-action</codeph>).</dd>
+                </dlentry>
+                <dlentry id="dlentry_ngg_hgv_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:23;406:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:23;407:23">document</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:26;408:23">Always sends the entire document for processing, regardless if there is
+                    content selected inside it.</dd>
+                </dlentry>
+                <dlentry id="dlentry_ogg_hgv_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:24;411:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:24;412:23">none</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:27;413:23">Does not send any content from the current document. See this <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/revised-action-format-properties/Custom%20Actions/formula-equation.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:16;415:54"><?ditaot usertext?>example</xref>.</dd>
+                </dlentry>
+              </dl>
+            </p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:25;420:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:25;421:15">input-type</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:28;422:15">
+            <p id="p_lfx_r3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:45;423:35">Describes how the XML content from the document that is sent to
+              the platform should be processed, as regular XML including markup tags or as plain
+              text without the tags and with all DITA XML content references and key references
+              expanded. By default, its value is assumed to be <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:14;426:72">markup</codeph>, which means
+              the content is sent exactly as it is.</p>
+            <p id="p_ytn_lhq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:46;428:35">Example of an AI action that requires the input to be sent without
+              any markup tags and with the DITA XML conrefs and keyrefs
+              expanded:<codeblock id="codeblock_qkc_lgb_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:17;430:90">{
+    "id": "action.answer.questions",
+    "output-action": "none",
+    "description": "Generate answers to questions you ask based on the selected text or on the 
+    entire document content.",
+    "input-type": "markup",
+    ....
+  }</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:26;440:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:26;441:15">output-action</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:29;442:15">Defines the type of change the AI action performs on the opened document. Some of the
+            most commonly used type values are listed below:<p id="p_pmc_khq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:47;443:83">
+              <dl id="dl_rjl_ngb_kfc" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dl:5;444:39">
+                <dlentry id="dlentry_jnc_khq_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:27;445:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:27;446:23">replace</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:30;447:23">
+                    <p id="p_apq_s3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:48;448:43">The most common type of action. Sends the selected content
+                      to the AI platform and proposes to replace the selection with the received
+                      response. If there is no selected content automatically, the entire document
+                      is selected when the action is invoked.</p>
+                    <p id="p_knc_khq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:49;452:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Replace_bold_with_uicontrol.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:17;455:24"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_tfr_ygb_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:18;455:105">{
+  "id" : "replace.bold.with.uicontrol",
+  "title" : "Replace bold with uicontrol",
+  "output-action" : "replace",
+  "prompt" : "Replace the bold element with the uicontrol element (&lt;uicontrol&gt;)....",
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_lnc_khq_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:28;463:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:28;464:23">insert</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:31;465:23">
+                    <p id="p_wzb_t3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:50;466:43">Inserts the content received from the AI engine in the
+                      current document at the cursor position or at an offset specified by the
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:15;468:33">insert-modes</codeph>. If the inserted content is invalid at the
+                      proposed offset, the application attempts to find a proper location for
+                      it.</p>
+                    <p id="p_gwc_hhq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:51;471:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:18;474:24"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_ecl_fhb_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:19;474:105">{
+    "id": "action.update.title.based.on.content",
+    "title": "Update Title",
+    "output-action": "insert",
+    "prompt": "You are tasked with creating a title for the given text, summarizing it and 
+    focusing on its main points:"
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_mnc_khq_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:29;483:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:29;484:23">none</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:32;485:23">
+                    <p id="p_vgl_t3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:52;486:43">Sends the selected content or the entire document to the
+                      AI platform and shows the response to the end user.</p>
+                    <p id="p_nnc_khq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:53;488:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:19;491:24"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_v4c_b3b_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:20;491:105">{
+    "id": "action.review.logical.mistakes",
+    "title": "Logical Inconsistencies",
+    "output-action": "none",
+    "prompt": "Find logical and inconsistency mistakes in the content and return a report.",
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_onc_khq_nfc" class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:30;499:51">
+                  <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:30;500:23">create-new-document</dt>
+                  <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:33;501:23">
+                    <p id="p_hvy_t3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:54;502:43">Shows a dialog box that asks for a context and then
+                      creates a new document based on the received server response. The
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:16;504:33">"additional_info"/"properties"/"file_extension"</codeph> property
+                      can be set to impose an extension for the newly created document.</p>
+                    <p id="p_srx_dhq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:55;506:43"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/create-schematron-rules.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:20;509:24"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_v55_j3b_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:21;509:105">{
+    "id": "action.create.schematron.rules",
+    "title": "Schematron Rules from Style Guide",
+    "output-action": "create-new-document",
+    "additional_info": {
+        "properties": {"file_extension": "sch"}
+    },
+    "prompt_ref": "prompts/create-schematron-rules.md"
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+              </dl>
+            </p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:31;523:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:31;524:15">insert-modes</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:34;525:15">
+            <p id="p_kvf_v3q_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:56;526:35">A JSON array that defines places for inserting the content in an
+              XML document. The first mode for which the XPath condition becomes true is <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="i:1;527:93">run</i>.
+              Such modes are used when the AI action <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:17;528:62">output-action</codeph> is
+                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:18;529:25">insert</codeph>.</p>
+            <p id="p_ekp_bhq_nfc" class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:57;530:35"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="xref:21;533:16"><?ditaot usertext?>Example</xref>:<codeblock id="codeblock_nsq_pfb_kfc" outputclass="language-json" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeblock:22;533:97">{
+    "id": "action.update.title.based.on.content",
+    ...
+    "output-action": "insert",
+    ...
+    "insert-modes": [
+      {
+        "xpath-condition": "(//title)[1]",
+        "target-location": "(//title)[1]",
+        "action": "replace"
+      },
+      {
+        "target-location": "(//shortdesc)[1]",
+        "action": "insert-before"
+      }
+    ]...
+  }</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:32;552:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:32;553:15">embed-assist</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:35;554:15">Set this optional boolean parameter to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:19;554:62">true</codeph> to add the AI action to
+            the top right <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="uicontrol:4;555:38">AI Positron Assistant</uicontrol> drop-down menu that appears
+            when editing content in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="uicontrol:5;556:52">Author</uicontrol> visual editing mode.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dlentry:33;558:18">
+          <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dt:33;559:15">quick-assist</dt>
+          <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="dd:36;560:15">Set this optional boolean parameter to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="codeph:20;560:62">true</codeph> to add the AI action to
+            the quick assist bulb drop-down menu that appears in the left vertical stripe.</dd>
+        </dlentry>
+      </dl>
+    </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita" xtrc="p:58;565:12">Hope this helped, as always you can use the feedback form below if you want to ask more
+            details about the possibilities of AI actions or want to brag about the custom AI
+            actions you have created.</p>
+    </body>
+</topic>

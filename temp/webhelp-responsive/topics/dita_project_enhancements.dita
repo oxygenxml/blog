@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="dita_project_enhancements" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="topic:1;3:39" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="title:1;4:12">DITA Project Enhancements</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="author:1;6:17">Radu Coravu</author>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="body:1;8:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="p:1;9:12">A DITA project file defines a set of deliverables. For each deliverable you have a
+            context containing the published DITA Map and filters. The deliverable also specifies
+            one or more transtypes, for each transtype specifying a set of parameter names and
+            values. The file format of the DITA Project can be either<xref href="https://github.com/dita-ot/dita-ot/blob/develop/src/test/resources/org/dita/dost/project/simple.xml" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="xref:1;14:48"><?ditaot usertext?> XML</xref> or <xref href="https://github.com/dita-ot/dita-ot/blob/develop/src/test/resources/org/dita/dost/project/simple.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="xref:2;16:48"><?ditaot usertext?>JSON</xref>. So what could we do with the DITA
+            Project in Oxygen?</p>
+        <section id="section_e41_rgs_dhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="section:1;18:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="title:2;19:20">Publishing</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="p:2;20:16">In the future the DITA Open Toolkit (probably version 3.4 or 4.0) will allow
+                publishing multiple deliverables by providing such a DITA project from the command
+                line. </p>
+        </section>
+        <section id="section_t1p_tgs_dhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="section:2;24:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="title:3;25:20">Editing the DITA Project</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="p:3;26:16">We need a special framework containing a schema, custom CSS for editing the DITA
+                project in the Oxygen Author visual editing mode. We also need an ANT-based
+                transformation scenario for publishing the DITA project.</p>
+        </section>
+        <section id="section_lb3_xgs_dhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="section:3;30:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="title:4;31:20">Adding the DITA Project in the "Master Files" folder</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="p:4;32:16">Once such a DITA project is added to the "Master Files" folder Oxygen could parse it
+                and obtain a list of (root map, filter) pairs. We can use this list of root maps
+                when renaming or moving content (topics, maps, resources) in the Project view. We
+                can use the (root map, filter) pairs to allow in the DITA Maps Manager selecting
+                such a pair if somebody wants to edit a topic in such a particular context.</p>
+        </section>
+        <section id="section_nzq_13s_dhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="section:4;38:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="title:5;39:20">Using the DITA Project information for editing</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="p:5;40:16">We have a specific drop-down "Filters" button both in the DITA Maps manager view and
+                in the main editing area. The button takes effect over all the files opened in the
+                application. We also have a "Root map" combo box in the DITA Maps Manager. Again, it
+                takes effect over all the maps and topics opened in the application. The DITA
+                Project would contribute (root map, filter) pairs which could be contributed in the
+                UI. Where could we contribute them? Maybe the "Root map" combo box could become a
+                "Contexts" combo box listing either DITAVAL files or (map, filter) pairs. If we want
+                to allow for certain files people to use certain editing contexts (thus avoiding to
+                apply the editing context on a per-application wide basis) we have an architectural
+                problem, the DITA Keys resolver is more or less a singleton object, but you would
+                need sometimes multiple such keys resolvers. </p>
+        </section>
+        <section id="section_b15_qhs_dhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="section:5;52:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="title:6;53:20">Using the DITA Project for the "Validate and check for completeness"
+                action</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="p:6;55:16">Right now the "Validate and check for completeness" starts validation from a
+                particular DITA Map and has a set of DITAVAL filters which can be set. Maybe if a
+                DITA Project is opened in the main editing area, we could have a special
+                "Validation" button for it on the toolbar, validating all the DITA Maps with all the
+                filters specified inside it.</p>
+        </section>
+        <section id="section_zfv_ghs_dhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="section:6;61:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="title:7;62:20">DITA Project extensibility</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_project_enhancements.dita" xtrc="p:7;63:16">From what I discussed with Jarno, ideally in the DITA project file we could include
+                our own XML tags from a specific namespace. In this way, for a certain deliverable
+                context we could for example also define the "reusable" content folders, the
+                "images" folders, information which could be used for information displayed in our
+                "DITA Reusable Components" view.</p>
+        </section>
+    </body>
+</topic>

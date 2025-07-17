@@ -1,0 +1,254 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="27.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="When inserting &lt;codeblock&gt; elements in DITA content with code from various languages, you can use the @outputclass attribute to provide syntax highlighting for each codeblock in the generated WebHelp ..."/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.subject" content="DITA Publishing Customization"/><meta name="keywords" content="DITA Publishing Customization"/><meta name="DC.relation" content="../topics/dita_ot_publishing_customizations_overview.html"/><meta name="DC.creator" content="Radu Coravu"/><meta name="DC.date.created" content="2022-03-09"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="dita-codeblock-tabs"/><title>Show Consecutive DITA Code Blocks in Separate Tabs</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="dita-codeblock-tabs-d1658e971"/><meta name="topic-facet" content="blog/blog-dita/blog-dita-publishing"/><meta name="wh-source-relpath" content="topics/dita-codeblock-tabs.dita"/><meta name="wh-out-relpath" content="topics/dita-codeblock-tabs.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2025032023"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2025032023"/>
+
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20250717103834"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2025032023"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20250717103834"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2025032023"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2025032023"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2025032023"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/custom.css?buildId=2025032023"/>
+        <link rel="icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/rss.xml"/>
+    <script defer="true" src="../oxygen-webhelp/template/resources/js/custom-collapsed-sections.js"></script></head>
+
+    <body id="dita-codeblock-tabs" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="visually-hidden visually-hidden-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <progress value="0" id="progressBar"><div class="progress-container"><span class="progress-bar"></span></div></progress>
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/oxygen_logo.png" alt="Blog"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Blog</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-bs-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-bs-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="welcome-d1658e11-mi" data-tocid="welcome-d1658e11" data-state="leaf" class=" topicref " data-id="welcome"><span class="title"><a href="../topics/welcome.html">Welcome! </a></span></span></li><li role="menuitem"><span id="frequently_asked_questions-d1658e28-mi" data-tocid="frequently_asked_questions-d1658e28" data-state="leaf" class=" topicref " data-id="frequently_asked_questions"><span class="title"><a href="../topics/frequently_asked_questions.html">Frequently Asked Questions</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e37-mi" data-tocid="tocId-d1658e37" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ai_xpath_functions.html">Artificial intelligence (AI)</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e165-mi" data-tocid="tocId-d1658e165" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="migration-d1658e1415-mi" data-tocid="migration-d1658e1415" data-state="not-ready" class=" topicref " data-id="migration"><span class="title"><a href="../topics/migration.html">Migrate</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="using_git_for_technical_writing-d1658e1512-mi" data-tocid="using_git_for_technical_writing-d1658e1512" data-state="not-ready" class=" topicref " data-id="using_git_for_technical_writing"><span class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html">Using Git For Technical Writing</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="sdk-d1658e1672-mi" data-tocid="sdk-d1658e1672" data-state="not-ready" class=" topicref " data-id="sdk"><span class="title"><a href="../topics/sdk.html">SDK</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e1816-mi" data-tocid="tocId-d1658e1816" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/transform_text_files.html">Development</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e1835-mi" data-tocid="tocId-d1658e1835" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ISO-27001-certification-announcement.html">Miscellaneous</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/></div></form><span xmlns="" class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span><span xmlns="" class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
+            
+            
+            
+        </div></div>
+    </div>
+</header>
+        
+        
+         
+        
+        
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></div></div></li><li><div class="topicref" data-id="dita_ot_publishing_customizations_overview"><div class="title"><a href="../topics/dita_ot_publishing_customizations_overview.html">Publishing Customizations</a></div></div></li><li class="active"><div class="topicref" data-id="dita-codeblock-tabs"><div class="title"><a href="../topics/dita-codeblock-tabs.html">Show Consecutive DITA Code Blocks in Separate Tabs</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="welcome-d1658e11" class="topicref" data-id="welcome" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/welcome.html" id="welcome-d1658e11-link">Welcome! </a></div></div></li><li role="treeitem"><div data-tocid="frequently_asked_questions-d1658e28" class="topicref" data-id="frequently_asked_questions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/frequently_asked_questions.html" id="frequently_asked_questions-d1658e28-link">Frequently Asked Questions</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e37" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e37-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai_xpath_functions.html" id="tocId-d1658e37-link">Artificial intelligence (AI)</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1658e165" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1658e165-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="tocId-d1658e165-link">DITA</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="dita-xml-editing-collaboration-and-publishing-overview-d1658e166" class="topicref" data-id="dita-xml-editing-collaboration-and-publishing-overview" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="dita-xml-editing-collaboration-and-publishing-overview-d1658e166-link">DITA XML Editing, Collaboration and Publishing Overview</a><div class="wh-tooltip"><p class="shortdesc">Oxygen XML provides a wide  range of features for editing, reusing, profiling,         reviewing, and publishing DITA XML content. We strive to offer a complete editing,         collaboration package which is still flexible enough to be customized for a variety of use         cases.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="learningDITAGeneral-d1658e177" class="topicref" data-id="learningDITAGeneral" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action learningDITAGeneral-d1658e177-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/learningDITAGeneral.html" id="learningDITAGeneral-d1658e177-link">Learning</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="dita_ot_publishing_customizations_overview-d1658e866" class="topicref" data-id="dita_ot_publishing_customizations_overview" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action dita_ot_publishing_customizations_overview-d1658e866-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_ot_publishing_customizations_overview.html" id="dita_ot_publishing_customizations_overview-d1658e866-link">Publishing Customizations</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="server_side_building_and_publishing-d1658e874" class="topicref" data-id="server_side_building_and_publishing" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action server_side_building_and_publishing-d1658e874-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/server_side_building_and_publishing.html" id="server_side_building_and_publishing-d1658e874-link">Server Side Building and Publishing</a></div></div></li><li role="treeitem"><div data-tocid="webhelp-dita-strong-points-d1658e914" class="topicref" data-id="webhelp-dita-strong-points" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/webhelp-dita-strong-points.html" id="webhelp-dita-strong-points-d1658e914-link">DITA WebHelp Publishing Solution Advantages</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e922" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e922-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/tableRowColors.html" id="tocId-d1658e922-link">PDF</a></div></div></li><li role="treeitem"><div data-tocid="embedding_diagrams_in_dita_topics_using_plantuml-d1658e947" class="topicref" data-id="embedding_diagrams_in_dita_topics_using_plantuml" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/embedding_diagrams_in_dita_topics_using_plantuml.html" id="embedding_diagrams_in_dita_topics_using_plantuml-d1658e947-link">Embedding Diagrams in DITA topics using PlantUML</a></div></div></li><li role="treeitem"><div data-tocid="embedding_diagrams_in_dita_topics_using_mermaid-d1658e955" class="topicref" data-id="embedding_diagrams_in_dita_topics_using_mermaid" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/embedding_diagrams_in_dita_topics_using_mermaid.html" id="embedding_diagrams_in_dita_topics_using_mermaid-d1658e955-link">Embedding Diagrams in DITA Topics Using Mermaid</a></div></div></li><li role="treeitem"><div data-tocid="task-steps-diagram-d1658e963" class="topicref" data-id="task-steps-diagram" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/task-steps-diagram.html" id="task-steps-diagram-d1658e963-link">Presenting DITA Task Steps as Diagrams</a></div></div></li><li role="treeitem" class="active"><div data-tocid="dita-codeblock-tabs-d1658e971" class="topicref" data-id="dita-codeblock-tabs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-codeblock-tabs.html" id="dita-codeblock-tabs-d1658e971-link">Show Consecutive DITA Code Blocks in Separate Tabs</a></div></div></li><li role="treeitem"><div data-tocid="dita-steps-tabs-d1658e979" class="topicref" data-id="dita-steps-tabs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-steps-tabs.html" id="dita-steps-tabs-d1658e979-link">Show DITA Task Steps in Separate Tabs</a></div></div></li><li role="treeitem"><div data-tocid="open-api-dita-d1658e987" class="topicref" data-id="open-api-dita" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/open-api-dita.html" id="open-api-dita-d1658e987-link">Converting OpenAPI to DITA XML and Publishing to WebHelp (Experimental)</a></div></div></li><li role="treeitem"><div data-tocid="dita_to_confluence-d1658e995" class="topicref" data-id="dita_to_confluence" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_to_confluence.html" id="dita_to_confluence-d1658e995-link">DITA to Confluence</a></div></div></li><li role="treeitem"><div data-tocid="dita_generate_changes_list-d1658e1004" class="topicref" data-id="dita_generate_changes_list" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-generate-changes-list.html" id="dita_generate_changes_list-d1658e1004-link">Generating a list of changes between releases</a></div></div></li><li role="treeitem"><div data-tocid="dita_publishing_customization_overview-d1658e1012" class="topicref" data-id="dita_publishing_customization_overview" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_publishing_customization_overview.html" id="dita_publishing_customization_overview-d1658e1012-link">DITA Publishing Customization Overview</a></div></div></li><li role="treeitem"><div data-tocid="topic_lyw_nns_qv-d1658e1020" class="topicref" data-id="topic_lyw_nns_qv" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/ditaOTFAQ.html" id="topic_lyw_nns_qv-d1658e1020-link">DITA Open Toolkit Frequently Asked Questions (FAQ)</a></div></div></li><li role="treeitem"><div data-tocid="enhancing_dita_publishing_with_plugins-d1658e1028" class="topicref" data-id="enhancing_dita_publishing_with_plugins" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/enhancing_dita_publishing_with_plugins.html" id="enhancing_dita_publishing_with_plugins-d1658e1028-link">Enhancing DITA Publishing With Plugins</a></div></div></li><li role="treeitem"><div data-tocid="topic_ktv_xv1_chb-d1658e1036" class="topicref" data-id="topic_ktv_xv1_chb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/adding-latex-equation-support-dita.html" id="topic_ktv_xv1_chb-d1658e1036-link">Adding support for embedding LaTeX equations in DITA content</a></div></div></li><li role="treeitem"><div data-tocid="topic_a3g_bsc_2z-d1658e1044" class="topicref" data-id="topic_a3g_bsc_2z" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/useful-dita-ot-plugins.html" id="topic_a3g_bsc_2z-d1658e1044-link">Useful DITA OT Plugins</a></div></div></li><li role="treeitem"><div data-tocid="creating_simple_dita_open_toolkit-d1658e1052" class="topicref" data-id="creating_simple_dita_open_toolkit" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/creating-simple-dita-open-toolkit.html" id="creating_simple_dita_open_toolkit-d1658e1052-link">Creating a simple DITA Open Toolkit plugin to customize published HTML and PDF content</a></div></div></li><li role="treeitem"><div data-tocid="topic_zxr_233_vkb-d1658e1060" class="topicref" data-id="topic_zxr_233_vkb" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/using_git_hooks_with_dita.html" id="topic_zxr_233_vkb-d1658e1060-link">Using Git client-side hooks to run DITA publishing pipelines</a><div class="wh-tooltip"><p class="shortdesc">This topic describes how to use Git client-side hooks to execute DITA commands and     publishing workflows, with an emphasis on using the <a class="xref" href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" target="_blank" rel="external noopener">Oxygen's Git Client</a>.</p></div></div></div></li><li role="treeitem"><div data-tocid="creating_graphs_from_dita_maps-d1658e1074" class="topicref" data-id="creating_graphs_from_dita_maps" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/creating_graphs_from_dita_maps.html" id="creating_graphs_from_dita_maps-d1658e1074-link">Creating Link Graphs From DITA Maps</a></div></div></li><li role="treeitem"><div data-tocid="publishing_dita_content_using_a_markdown_static_web_site_generator-d1658e1082" class="topicref" data-id="publishing_dita_content_using_a_markdown_static_web_site_generator" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/publishing_dita_content_using_a_markdown_static_web_site_generator.html" id="publishing_dita_content_using_a_markdown_static_web_site_generator-d1658e1082-link">Publishing DITA Content Using the MKDocs Web Site Generator</a></div></div></li><li role="treeitem"><div data-tocid="publishing_dita_powerpoint-d1658e1090" class="topicref" data-id="publishing_dita_powerpoint" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/publishing_dita_powerpoint.html" id="publishing_dita_powerpoint-d1658e1090-link">Creating PowerPoint Slides from DITA Content </a></div></div></li><li role="treeitem"><div data-tocid="adding_labels_to_topics_in_the_webhelp_responsive_output-d1658e1099" class="topicref" data-id="adding_labels_to_topics_in_the_webhelp_responsive_output" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/adding_labels_to_topics_in_the_webhelp_responsive_output.html" id="adding_labels_to_topics_in_the_webhelp_responsive_output-d1658e1099-link">Adding Labels to Topics in the WebHelp Responsive Output</a></div></div></li><li role="treeitem"><div data-tocid="prolog-wh-output-d1658e1107" class="topicref" data-id="prolog-wh-output" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/prolog-wh-output.html" id="prolog-wh-output-d1658e1107-link">Displaying prolog details (author, creation date, read time)</a></div></div></li><li role="treeitem"><div data-tocid="recent_topics_list-d1658e1115" class="topicref" data-id="recent_topics_list" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/recent_topics_list.html" id="recent_topics_list-d1658e1115-link">Dynamically publishing a list with the most recent topics</a></div></div></li><li role="treeitem"><div data-tocid="rss_feed_generation-d1658e1123" class="topicref" data-id="rss_feed_generation" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/rss_feed_generation.html" id="rss_feed_generation-d1658e1123-link">Dynamically Generating an RSS Feed</a></div></div></li><li role="treeitem"><div data-tocid="generating_google_structured_data_from_your_dita_tasks-d1658e1131" class="topicref" data-id="generating_google_structured_data_from_your_dita_tasks" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/generating_google_structured_data_from_your_dita_tasks.html" id="generating_google_structured_data_from_your_dita_tasks-d1658e1131-link">Generating Google Structured Data from your DITA tasks</a></div></div></li><li role="treeitem"><div data-tocid="generating_google_structured_data_from_your_dita_faq-d1658e1139" class="topicref" data-id="generating_google_structured_data_from_your_dita_faq" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/generating_google_structured_data_from_your_dita_faq.html" id="generating_google_structured_data_from_your_dita_faq-d1658e1139-link">Generating Google Structured Data from your DITA frequently asked questions</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="dita_editing_customizations-d1658e1147" class="topicref" data-id="dita_editing_customizations" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action dita_editing_customizations-d1658e1147-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-editing-customizations.html" id="dita_editing_customizations-d1658e1147-link">Editing Customizations</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e1218" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e1218-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.html" id="tocId-d1658e1218-link">Other</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="migration-d1658e1415" class="topicref" data-id="migration" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action migration-d1658e1415-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/migration.html" id="migration-d1658e1415-link">Migrate</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="using_git_for_technical_writing-d1658e1512" class="topicref" data-id="using_git_for_technical_writing" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_git_for_technical_writing-d1658e1512-link" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html" id="using_git_for_technical_writing-d1658e1512-link">Using Git For Technical Writing</a><div class="wh-tooltip"><p class="shortdesc">The <strong class="ph b">Git</strong> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="sdk-d1658e1672" class="topicref" data-id="sdk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action sdk-d1658e1672-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/sdk.html" id="sdk-d1658e1672-link">SDK</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e1816" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e1816-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/transform_text_files.html" id="tocId-d1658e1816-link">Development</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e1835" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e1835-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ISO-27001-certification-announcement.html" id="tocId-d1658e1835-link">Miscellaneous</a></div></div></li><li role="treeitem"><div data-tocid="contributors-d1658e2016" class="topicref" data-id="contributors" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/contributors.html" id="contributors-d1658e2016-link">Contributors</a></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <span class="edit-link" style="font-size:12px; opacity:0.6; text-align:right; vertical-align:middle"><a target="_blank" title="Edit this document" href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Ftopics%2Fdita-codeblock-tabs.dita&amp;ditamap=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Foxygen_xml_blog.ditamap&amp;dita.val.url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2F..%2F..%2FC%3A%2FUsers%2Fmihai%2FAppData%2FLocal%2FTemp%2FOxygenXMLTemp%2Foxy_ditaVal7286082393808115835.ditaval">Edit online</a></span><h1 class="- topic/title title topictitle1" id="ariaid-title1">Show Consecutive DITA Code Blocks in Separate Tabs</h1>
+    <div class="author inPage Radu_Coravu"><a href="/topics/contributors.html">Radu Coravu</a></div><div class="date inPage">9 Mar 2022</div><div style="color: gray;">
+            Read time: 1 minute(s)
+        </div><div class="wh-label-container" role="group" aria-label="Labels"><a class="wh-label" href="../search.html?searchQuery=label:DITA%20Publishing%20Customization"><span>DITA Publishing Customization</span></a></div>
+    <div class="- topic/body body">
+        <p class="- topic/p p">When inserting <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;codeblock&gt;</code> elements in DITA content with code from
+            various languages, you can use the <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@outputclass</code> attribute to provide
+            syntax highlighting for each codeblock in the generated WebHelp and PDF outputs: <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks-x.html" target="_blank" rel="external noopener">https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks-x.html</a>. </p>
+        <div class="- topic/p p">Suppose you have consecutive <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;codeblock&gt;</code> elements, each one of
+            them displaying how something can be accomplished in a particular programming language,
+            like
+            this:<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="dita-codeblock-tabs__codeblock_g4s_bsc_vsb" data-ofbid="dita-codeblock-tabs__codeblock_g4s_bsc_vsb"><code><strong class="hl-tag">&lt;codeblock</strong> <span class="hl-attribute">xml:space</span>=<span class="hl-value">"preserve"</span> <span class="hl-attribute">outputclass</span>=<span class="hl-value">"ruby"</span><strong class="hl-tag">&gt;</strong>require 'rest-client'
+require 'json'
+
+headers = {
+  'Content-Type' =&amp;gt; 'application/octet-stream',
+  'Accept' =&amp;gt; 'application/json',
+  'Authorization' =&amp;gt; 'Bearer {access-token}'
+}
+<strong class="hl-tag">&lt;/codeblock&gt;</strong>
+    <strong class="hl-tag">&lt;codeblock</strong> <span class="hl-attribute">xml:space</span>=<span class="hl-value">"preserve"</span> <span class="hl-attribute">outputclass</span>=<span class="hl-value">"python"</span><strong class="hl-tag">&gt;</strong>import requests
+headers = {
+  'Content-Type': 'application/octet-stream',
+  'Accept': 'application/json',
+  'Authorization': 'Bearer {access-token}'
+}<strong class="hl-tag">&lt;/codeblock&gt;</strong></code></pre></div>
+        <p class="- topic/p p">You can install this open-source DITA Open Toolkit plugin to display codeblocks as
+            separate tabs in the published WebHelp output: <a class="- topic/xref xref" href="https://github.com/oxygenxml/dita-wh-codeblock-tabs" target="_blank" rel="external noopener">https://github.com/oxygenxml/dita-wh-codeblock-tabs</a>.</p>
+        <p class="- topic/p p">The WebHelp output should look like this:</p>
+        <img class="- topic/image image" id="dita-codeblock-tabs__image_ewm_ssc_vsb" src="../images/codeblock-tabs.png" height="317" width="429"/>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        <div id="oxygen-feedback-frame-container">
+    <script defer="defer" id="feedback-init" src="https://feedback.oxygenxml.com/app/init/init.js?deploymentToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkZXBsb3ltZW50SWQiOjYyNX0.8cbUvwq4kXkiqS4uSdYU7NW33X_2PFhbjWI6AluOEJ1xI4JkXzYTXZLEtqRn72rzxIMXEQrSs1_xfGzoKvsYMQ"><!-- --></script>
+</div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="footer">
+    
+        <div class="footer-container container mx-auto">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-3 mb-3 mb-md-0" id="quick_links">
+                    <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook me-2" title="Facebook" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/you-tube.png" alt="YouTube"/>
+                    </a>
+                    <a href="http://twitter.com/oxygenxml" class="lk-blog me-2" title="Twitter" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/twitter.png" alt="Twitter"/>
+                    </a>
+                    <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/linkedin.png" alt="LinkedIn"/>
+                    </a>
+                </div>
+                
+                <div class="col-md-5 mb-3 mb-md-0" id="copy">
+                    © 2002-2025 SyncRO Soft SRL. All rights reserved.
+                    <div>
+                        <p>This website is powered by Oxygen<sup>®</sup> 
+                            <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-1 mb-3 mb-md-0 b-subscribe">
+                    <a href="/#follow-it" class="btn get-started">Subscribe</a>
+                </div>
+                
+                <div class="col-md-3 b-flavours">
+                    <a type="application/rss+xml" class="me-2" href="/rss.xml">RSS</a>
+                    <a class="me-2" href="/oxygen_xml_blog.pdf">PDF</a>
+                    <a href="/oxygen_xml_blog.epub">EPUB</a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./oxygen-webhelp/template/resources/js/search-nav.js" defer="defer"></script>
+        
+        <script><!--
+
+            document.querySelector(".get-started")?.addEventListener("click", function () {
+            const el = document.querySelector(".stripe-latest-posts");
+            if (el) {
+            window.scrollTo({
+            top: el.offsetTop - 90,
+            behavior: "smooth"
+            });
+            }
+            });
+        
+--></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4W3NZKJST" integrity="sha384-8klDZJT6xp3MWmbFq1S4K0+Phpnxe5BXVjrHKHWKEMPG06CzApoUqFnULJ+tdS30" crossorigin="anonymous"><!--
+
+        
+--></script>
+        <script><!--
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-D4W3NZKJST');
+        
+--></script>
+</div>
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        <div>
+   <!-- <script src="${oxygen-webhelp-template-dir}/resources/js/syncro.js"></script>-->
+    <script src="/oxygen-webhelp/template/resources/js/search-nav.js"></script>
+    
+</div>
+    </body>
+</html>

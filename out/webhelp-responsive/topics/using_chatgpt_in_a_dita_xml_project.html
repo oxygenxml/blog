@@ -1,0 +1,448 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="27.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="The ChatGPT OpenAI bot has the potential to help with various technical documentation tasks (advice about the standard, small conversions, content generation, writing style, and readability analysis). ..."/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.creator" content="Radu Coravu"/><meta name="DC.date.created" content="2023-03-09"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="using_chatgpt_in_a_dita_xml_project"/><title>Using ChatGPT in a DITA XML Project</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="using_chatgpt_in_a_dita_xml_project-d1658e130"/><meta name="wh-source-relpath" content="topics/using_chatgpt_in_a_dita_xml_project.dita"/><meta name="wh-out-relpath" content="topics/using_chatgpt_in_a_dita_xml_project.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2025032023"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2025032023"/>
+
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20250717103834"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2025032023"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20250717103834"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2025032023"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2025032023"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2025032023"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/custom.css?buildId=2025032023"/>
+        <link rel="icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/rss.xml"/>
+    <script defer="true" src="../oxygen-webhelp/template/resources/js/custom-collapsed-sections.js"></script></head>
+
+    <body id="using_chatgpt_in_a_dita_xml_project" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="visually-hidden visually-hidden-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <progress value="0" id="progressBar"><div class="progress-container"><span class="progress-bar"></span></div></progress>
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/oxygen_logo.png" alt="Blog"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Blog</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-bs-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-bs-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="welcome-d1658e11-mi" data-tocid="welcome-d1658e11" data-state="leaf" class=" topicref " data-id="welcome"><span class="title"><a href="../topics/welcome.html">Welcome! </a></span></span></li><li role="menuitem"><span id="frequently_asked_questions-d1658e28-mi" data-tocid="frequently_asked_questions-d1658e28" data-state="leaf" class=" topicref " data-id="frequently_asked_questions"><span class="title"><a href="../topics/frequently_asked_questions.html">Frequently Asked Questions</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e37-mi" data-tocid="tocId-d1658e37" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ai_xpath_functions.html">Artificial intelligence (AI)</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e165-mi" data-tocid="tocId-d1658e165" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="migration-d1658e1415-mi" data-tocid="migration-d1658e1415" data-state="not-ready" class=" topicref " data-id="migration"><span class="title"><a href="../topics/migration.html">Migrate</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="using_git_for_technical_writing-d1658e1512-mi" data-tocid="using_git_for_technical_writing-d1658e1512" data-state="not-ready" class=" topicref " data-id="using_git_for_technical_writing"><span class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html">Using Git For Technical Writing</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="sdk-d1658e1672-mi" data-tocid="sdk-d1658e1672" data-state="not-ready" class=" topicref " data-id="sdk"><span class="title"><a href="../topics/sdk.html">SDK</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e1816-mi" data-tocid="tocId-d1658e1816" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/transform_text_files.html">Development</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1658e1835-mi" data-tocid="tocId-d1658e1835" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ISO-27001-certification-announcement.html">Miscellaneous</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/></div></form><span xmlns="" class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span><span xmlns="" class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
+            
+            
+            
+        </div></div>
+    </div>
+</header>
+        
+        
+         
+        
+        
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../topics/ai_xpath_functions.html">Artificial intelligence (AI)</a></div></div></li><li class="active"><div class="topicref" data-id="using_chatgpt_in_a_dita_xml_project"><div class="title"><a href="../topics/using_chatgpt_in_a_dita_xml_project.html">Using ChatGPT in a DITA XML Project</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="welcome-d1658e11" class="topicref" data-id="welcome" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/welcome.html" id="welcome-d1658e11-link">Welcome! </a></div></div></li><li role="treeitem"><div data-tocid="frequently_asked_questions-d1658e28" class="topicref" data-id="frequently_asked_questions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/frequently_asked_questions.html" id="frequently_asked_questions-d1658e28-link">Frequently Asked Questions</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1658e37" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1658e37-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai_xpath_functions.html" id="tocId-d1658e37-link">Artificial intelligence (AI)</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="ai_xpath_functions-d1658e38" class="topicref" data-id="ai_xpath_functions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai_xpath_functions.html" id="ai_xpath_functions-d1658e38-link">AI XPath Extension Functions in Oxygen XML Editor</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="ai_positron-d1658e46" class="topicref" data-id="ai_positron" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action ai_positron-d1658e46-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai_positron.html" id="ai_positron-d1658e46-link">Oxygen AI Positron Assistant Add-on</a><div class="wh-tooltip"><p class="shortdesc">The <strong class="ph b">Oxygen AI Positron Assistant</strong> add-on provides support for helping technical     documentation writers <strong class="ph b">generate</strong>, <strong class="ph b">re-write</strong> content, <strong class="ph b">overview</strong> and       <strong class="ph b">research</strong>. It also supports performing AI checks and AI-based modifications on       <strong class="ph b">multiple files</strong> by integrating AI extensions with XML technologies like       <strong class="ph b">Schematron</strong> or <strong class="ph b">XSLT</strong>.</p></div></div></div></li><li role="treeitem"><div data-tocid="customizing_ai_tools_for_your_dita_xml_project_terminology_style_guide_and_specializations-d1658e90" class="topicref" data-id="customizing_ai_tools_for_your_dita_xml_project_terminology_style_guide_and_specializations" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizing_ai_positron_for_your_dita_xml_project.html" id="customizing_ai_tools_for_your_dita_xml_project_terminology_style_guide_and_specializations-d1658e90-link">Customizing AI Positron for Your DITA XML Project</a></div></div></li><li role="treeitem"><div data-tocid="creating_custom_ai_actions_for_the_ai_positron_add_on-d1658e98" class="topicref" data-id="creating_custom_ai_actions_for_the_ai_positron_add_on" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/creating_custom_ai_actions_for_the_ai_positron_add_on.html" id="creating_custom_ai_actions_for_the_ai_positron_add_on-d1658e98-link">Creating Custom AI Actions for the AI Positron add-on</a></div></div></li><li role="treeitem"><div data-tocid="dita_ai_tools-d1658e106" class="topicref" data-id="dita_ai_tools" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-ai-tools.html" id="dita_ai_tools-d1658e106-link">Overcoming Challenges - Editing DITA XML content with AI Tools (Presentation)</a></div></div></li><li role="treeitem"><div data-tocid="oxygen-ai-powered-editing-d1658e114" class="topicref" data-id="oxygen-ai-powered-editing" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygen_ai_powered_editing.html" id="oxygen-ai-powered-editing-d1658e114-link">AI-Powered XML Editing (Presentation)</a></div></div></li><li role="treeitem"><div data-tocid="gen-ai-enhance-editing-d1658e122" class="topicref" data-id="gen-ai-enhance-editing" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/gen_ai_enhance_editing.html" id="gen-ai-enhance-editing-d1658e122-link">Utilizing GenAI to Enhance Early-Stage Technical Content Creation (Presentation)</a></div></div></li><li role="treeitem" class="active"><div data-tocid="using_chatgpt_in_a_dita_xml_project-d1658e130" class="topicref" data-id="using_chatgpt_in_a_dita_xml_project" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/using_chatgpt_in_a_dita_xml_project.html" id="using_chatgpt_in_a_dita_xml_project-d1658e130-link">Using ChatGPT in a DITA XML Project</a></div></div></li><li role="treeitem"><div data-tocid="ai-positron-assistant-retrospective-analysis-d1658e138" class="topicref" data-id="ai-positron-assistant-retrospective-analysis" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai-positron-assistant-retrospective-analysis.html" id="ai-positron-assistant-retrospective-analysis-d1658e138-link">AI Positron Assistant - Retrospective Analysis</a></div></div></li><li role="treeitem"><div data-tocid="oxygen_xml_ecosystem-d1658e146" class="topicref" data-id="oxygen_xml_ecosystem" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-ot-ai-plugins.html" id="oxygen_xml_ecosystem-d1658e146-link">Providing content to AI engines using DITA OT plugins</a></div></div></li><li role="treeitem"><div data-tocid="topic_wn_positron_5-d1658e154" class="topicref" data-id="topic_wn_positron_5" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/wn_positron_5.html" id="topic_wn_positron_5-d1658e154-link"><strong class="ph b">What is New in Oxygen AI Positron Assistant 5.0</strong></a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e165" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e165-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="tocId-d1658e165-link">DITA</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="migration-d1658e1415" class="topicref" data-id="migration" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action migration-d1658e1415-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/migration.html" id="migration-d1658e1415-link">Migrate</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="using_git_for_technical_writing-d1658e1512" class="topicref" data-id="using_git_for_technical_writing" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_git_for_technical_writing-d1658e1512-link" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html" id="using_git_for_technical_writing-d1658e1512-link">Using Git For Technical Writing</a><div class="wh-tooltip"><p class="shortdesc">The <strong class="ph b">Git</strong> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="sdk-d1658e1672" class="topicref" data-id="sdk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action sdk-d1658e1672-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/sdk.html" id="sdk-d1658e1672-link">SDK</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e1816" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e1816-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/transform_text_files.html" id="tocId-d1658e1816-link">Development</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1658e1835" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1658e1835-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ISO-27001-certification-announcement.html" id="tocId-d1658e1835-link">Miscellaneous</a></div></div></li><li role="treeitem"><div data-tocid="contributors-d1658e2016" class="topicref" data-id="contributors" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/contributors.html" id="contributors-d1658e2016-link">Contributors</a></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <span class="edit-link" style="font-size:12px; opacity:0.6; text-align:right; vertical-align:middle"><a target="_blank" title="Edit this document" href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Ftopics%2Fusing_chatgpt_in_a_dita_xml_project.dita&amp;ditamap=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Foxygen_xml_blog.ditamap&amp;dita.val.url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2F..%2F..%2FC%3A%2FUsers%2Fmihai%2FAppData%2FLocal%2FTemp%2FOxygenXMLTemp%2Foxy_ditaVal7286082393808115835.ditaval">Edit online</a></span><h1 class="- topic/title title topictitle1" id="ariaid-title1">Using ChatGPT in a DITA XML Project</h1>
+	<div class="author inPage Radu_Coravu"><a href="/topics/contributors.html">Radu Coravu</a></div><div class="date inPage">9 Mar 2023</div><div style="color: gray;">
+            Read time: 10 minute(s)
+        </div>
+    <div class="- topic/body body">
+		<p class="- topic/p p">The <a class="- topic/xref xref" href="https://chat.openai.com/chat" target="_blank" rel="external noopener">ChatGPT
+				OpenAI</a> bot has the potential to help with various technical documentation
+			tasks (advice about the standard, small conversions, content generation, writing style,
+			and readability analysis).</p>
+		<p class="- topic/p p">Below, you can see a list of prompts that I gave the bot along with the answers. The prompts to
+			the chatbot are presented as codeblocks.</p>
+		<section class="- topic/section section" id="using_chatgpt_in_a_dita_xml_project__section_s3j_3zf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__section_s3j_3zf_twb"><h2 class="- topic/title title sectiontitle">Advice About DITA XML Standard Use</h2>
+			
+			<div class="- topic/p p">
+				<ol class="- topic/ol ol">
+					<li class="- topic/li li">
+						<div class="- topic/p p">Ask about the type of DITA links to use in a
+							topic.<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_ql2_gyf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_ql2_gyf_twb"><code>Should I use cross references or related links in my DITA XML topic?</code></pre></div>
+						<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_i2k_kyf_twb" src="../images/chatgpt-xrefs-links.png" height="509" width="583"/></p>
+					</li>
+					<li class="- topic/li li">
+						<p class="- topic/p p">Ask information about a specific DITA XML element.</p>
+						<div class="- topic/p p">
+							<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_l3m_pyf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_l3m_pyf_twb"><code>Can I use the DITA XML uicontrol element for company names?</code></pre>
+						</div>
+						<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_mwr_ryf_twb" src="../images/chatgpt-uicontrol.png" height="414" width="565"/></p>
+					</li>
+				</ol>
+			</div>
+		</section>
+		<section class="- topic/section section" id="using_chatgpt_in_a_dita_xml_project__section_fzr_lzf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__section_fzr_lzf_twb"><h2 class="- topic/title title sectiontitle">Generate New Content</h2>
+			
+			<div class="- topic/p p">
+				<ol class="- topic/ol ol">
+					<li class="- topic/li li">
+						<p class="- topic/p p">Instruct ChatGPT to generate DITA content about a very common task.</p>
+						<div class="- topic/p p">
+							<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_fgv_vrf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_fgv_vrf_twb"><code>Write a small DITA XML task about installing a software application on Windows.</code></pre>
+						</div>
+						<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_rvq_trf_twb" src="../images/chatgpt-install.png" height="213" width="430"/></p>
+					</li>
+					<li class="- topic/li li">
+						<p class="- topic/p p">Generate a list of index terms from existing DITA XML content.</p>
+						<div class="- topic/p p">
+							<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_mst_gsf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_mst_gsf_twb"><code>Create a DITA XML prolog element containing 5-6 index term elements related to the DITA XML topic below:
+....</code></pre>
+						</div>
+						<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_qfq_ksf_twb" src="../images/chatgpt-indexterms.png" height="364" width="592"/></p>
+					</li>
+				</ol>
+			</div>
+		</section>
+		<section class="- topic/section section" id="using_chatgpt_in_a_dita_xml_project__section_m4p_mzf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__section_m4p_mzf_twb"><h2 class="- topic/title title sectiontitle">Simple Conversions</h2>
+			
+			<div class="- topic/p p">
+				<ol class="- topic/ol ol">
+					<li class="- topic/li li">
+						<div class="- topic/p p">Convert Markdown content to DITA XML
+							topic.<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_cnj_jvf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_cnj_jvf_twb"><code>Convert this Markdown content to a DITA XML topic:
+
+# Getting Started
+
+List of steps:
+
+- Install application
+- Login
+- Perform task</code></pre></div>
+						<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_wjj_svf_twb" src="../images/chatgpt-convert-md.png" height="324" width="589"/></p>
+					</li>
+					<li class="- topic/li li">
+						<p class="- topic/p p">Convert CSV content to DITA XML table.</p>
+						<div class="- topic/p p">
+							<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_i1m_hwf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_i1m_hwf_twb"><code>Convert this CSV content containing headers to a DITA XML table element:
+
+Common name,Scientific name,Location,Temperament,Diet,Water,Size,Region of the Aquarium,Breeding
+Compressiceps,Haplochromis compressiceps,Lake Tanganyika,Territorial,Omnivore,"PH 7.0 - 8.0, Temp. 73 - 77 F",5 inches,Bottom,Hard
+Frontosa,Cyphotilapia frontosus,Lake Tanganyika,Very peaceful,Omnivore,"PH 7.8 - 8.5, Temp 75F - 82F",14 inches,Middle-Bottom,Medium</code></pre>
+						</div>
+						<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_ggl_mwf_twb" src="../images/chatgpt-convert-csv.png" height="195" width="588"/></p>
+					</li>
+				</ol>
+			</div>
+		</section>
+		<section class="- topic/section section" id="using_chatgpt_in_a_dita_xml_project__section_ycr_nzf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__section_ycr_nzf_twb"><h2 class="- topic/title title sectiontitle">Writing Style</h2>
+			
+			<ol class="- topic/ol ol" id="using_chatgpt_in_a_dita_xml_project__ol_o5r_prf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__ol_o5r_prf_twb">
+				<li class="- topic/li li">
+					<p class="- topic/p p">Ask what terminology to use in certain cases.</p>
+					<div class="- topic/p p">
+						<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_v1m_wxf_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_v1m_wxf_twb"><code>Should I use for technical documentation the phrase "click a button" or "press a button"?</code></pre>
+					</div>
+					<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_urm_yxf_twb" src="../images/chatgpt-terminology.png" height="271" width="591"/></p>
+				</li>
+				<li class="- topic/li li">
+					<div class="- topic/p p">Re-phrase documentation provided by engineers using the Microsoft Style Guide style and also
+						change the point of view from first-person to
+						third-person.<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_gft_b1g_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_gft_b1g_twb"><code>Re-phrase the following content to adhere to the Microsoft Style Guide, third person:
+
+The action Show only keys with closest relative key scope from DITA Reusable Components / Keys tab was also added to Media tab Settings drop down menu
+The states of the two actions are synchronized. If you check it in Keys tab will automatically get checked in Media tab</code></pre></div>
+					<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_xjc_z1g_twb" src="../images/chatgpt-rephrase-ms-styleguide.png" height="189" width="460"/></p>
+				</li>
+				<li class="- topic/li li">
+					<div class="- topic/p p">Translate some notes from the engineer's native language (in this case, Romanian with a mix
+						of English words) to English, re-phrase using the Microsoft Style Guide
+						style, and also change the point of view from first-person to
+						third-person.<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_fnd_3bg_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_fnd_3bg_twb"><code>Translate to English, rephrase to adhere to the Microsoft Style Guide, third person:
+
+In tabul Media, in meniul Settings a aparut actiunea Show only keys with closest relative key scope
+Cand o bifam trebuie sa ramana in view doar cheile relative (cheile cu forma cea mai scurta).</code></pre></div>
+					<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_e3r_mbg_twb" src="../images/chatgpt-translate-rephrase.png" height="103" width="571"/></p>
+				</li>
+				<li class="- topic/li li">Re-write an entire DITA XML topic to increase its
+						readability.<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_xpf_rjj_5wb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_xpf_rjj_5wb"><code>Re-write the following DITA XML topic preserving all its original XML elements to increase its readability:
+&lt;topic id="dita_oriented_tips_and_tricks"&gt;
+	&lt;title&gt;DITA Oriented Tips And Tricks&lt;/title&gt;
+	&lt;prolog&gt;
+		&lt;author&gt;Radu Coravu&lt;/author&gt;
+	&lt;/prolog&gt;
+	&lt;body&gt;
+		&lt;p&gt;&lt;ph keyref="oxygen"/&gt; has about 18 years of development under its wings. During these
+			years, we added lots of functionality and many of our users usually do not know more than 20-30%
+			of Oxygen's features. So this presentation is intended for technical writers using Oxygen to
+			write DITA content and who may want to find out more about their tool.&lt;/p&gt;
+		&lt;section id="section_gld_tbs_gfb"&gt;
+			&lt;title&gt;Add-ons&lt;/title&gt;
+			&lt;p&gt;There are lots of free add-ons provided by the Oxygen team that can be installed in an
+				&lt;xref
+					href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;amp;type=Repositories"
+					format="html" scope="external"&gt;Oxygen standalone version&lt;/xref&gt;. I will enumerate some of
+				the most interesting one:&lt;/p&gt;
+			&lt;ul id="ul_xbw_ccs_gfb"&gt;
+				&lt;li&gt;&lt;xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
+					scope="external"&gt;Git add-on&lt;/xref&gt;. This plugin adds a side view allowing you to do some
+					common Git operations like pull, commit, push (mostly 90% of what a regular Git user would
+					do).&lt;/li&gt;
+				&lt;li&gt;&lt;xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+					format="html" scope="external"&gt;Content Fusion Connector add-on&lt;/xref&gt;. Collaborate with
+					your peers by sending them links that allow them to give you feedback on your work using a
+					web browser without the need to pre-install anything on their side. &lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/section&gt;
+	&lt;/body&gt;
+&lt;/topic&gt;</code></pre><div class="- topic/p p">Result:<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="using_chatgpt_in_a_dita_xml_project__codeblock_q3q_tjj_5wb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_q3q_tjj_5wb"><code><strong class="hl-tag">&lt;topic</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"dita_oriented_tips_and_tricks"</span><strong class="hl-tag">&gt;</strong>
+	<strong class="hl-tag">&lt;title&gt;</strong>DITA Oriented Tips And Tricks<strong class="hl-tag">&lt;/title&gt;</strong>
+	<strong class="hl-tag">&lt;prolog&gt;</strong>
+		<strong class="hl-tag">&lt;author&gt;</strong>Radu Coravu<strong class="hl-tag">&lt;/author&gt;</strong>
+	<strong class="hl-tag">&lt;/prolog&gt;</strong>
+	<strong class="hl-tag">&lt;body&gt;</strong>
+		<strong class="hl-tag">&lt;p&gt;</strong><strong class="hl-tag">&lt;ph</strong> <span class="hl-attribute">keyref</span>=<span class="hl-value">"oxygen"</span><strong class="hl-tag">/&gt;</strong> has been under development for about 18 years. During this time, we
+			have added a lot of functionality, but many of our users are not aware of more than
+			20-30% of Oxygen's features. This presentation is intended for technical writers who use
+			Oxygen to write DITA content and want to learn more about the tool.<strong class="hl-tag">&lt;/p&gt;</strong>
+		<strong class="hl-tag">&lt;section</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"section_gld_tbs_gfb"</span><strong class="hl-tag">&gt;</strong>
+			<strong class="hl-tag">&lt;title&gt;</strong>Add-ons<strong class="hl-tag">&lt;/title&gt;</strong>
+			<strong class="hl-tag">&lt;p&gt;</strong>Oxygen provides a range of free add-ons that can be installed in the <strong class="hl-tag">&lt;xref</strong>
+					<span class="hl-attribute">href</span>=<span class="hl-value">"https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;amp;type=Repositories"</span>
+					<span class="hl-attribute">format</span>=<span class="hl-value">"html"</span> <span class="hl-attribute">scope</span>=<span class="hl-value">"external"</span><strong class="hl-tag">&gt;</strong>Oxygen standalone version<strong class="hl-tag">&lt;/xref&gt;</strong>. Here are some
+				of the most interesting ones:<strong class="hl-tag">&lt;/p&gt;</strong>
+
+			<strong class="hl-tag">&lt;ul</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"ul_xbw_ccs_gfb"</span><strong class="hl-tag">&gt;</strong>
+				<strong class="hl-tag">&lt;li&gt;</strong><strong class="hl-tag">&lt;xref</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"https://github.com/oxygenxml/oxygen-git-plugin"</span> <span class="hl-attribute">format</span>=<span class="hl-value">"html"</span>
+						<span class="hl-attribute">scope</span>=<span class="hl-value">"external"</span><strong class="hl-tag">&gt;</strong>Git add-on<strong class="hl-tag">&lt;/xref&gt;</strong>: This plugin adds a side view that allows
+					you to perform common Git operations like pull, commit, and push (similar to
+					what a regular Git user would do).<strong class="hl-tag">&lt;/li&gt;</strong>
+				<strong class="hl-tag">&lt;li&gt;</strong><strong class="hl-tag">&lt;xref</strong>
+						<span class="hl-attribute">href</span>=<span class="hl-value">"https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"</span>
+						<span class="hl-attribute">format</span>=<span class="hl-value">"html"</span> <span class="hl-attribute">scope</span>=<span class="hl-value">"external"</span><strong class="hl-tag">&gt;</strong>Content Fusion Connector add-on<strong class="hl-tag">&lt;/xref&gt;</strong>:
+					Collaborate with your peers by sending them links that allow them to give you
+					feedback on your work using a web browser, without the need for them to
+					pre-install anything on their side.<strong class="hl-tag">&lt;/li&gt;</strong>
+			<strong class="hl-tag">&lt;/ul&gt;</strong>
+		<strong class="hl-tag">&lt;/section&gt;</strong>
+	<strong class="hl-tag">&lt;/body&gt;</strong>
+<strong class="hl-tag">&lt;/topic&gt;</strong></code></pre></div><p class="- topic/p p">Remarks: If the prompt insists that all XML
+						elements should be preserved, the re-write does few things, but if the
+						prompt does not insist that all XML elements should be preserved, the inline
+						elements and links are removed.</p></li>
+			</ol>
+		</section>
+		<section class="- topic/section section" id="using_chatgpt_in_a_dita_xml_project__section_yhr_2cg_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__section_yhr_2cg_twb"><h2 class="- topic/title title sectiontitle">Statistics</h2>Create readability analysis for a
+			DITA XML topic.<div class="- topic/p p">
+				<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_cnl_gcg_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_cnl_gcg_twb"><code>Create a readability analysis for the following DITA XML topic:
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"&gt;
+&lt;topic id="topic_whr_nly_c5"&gt;
+  &lt;title&gt;Sharing Application Settings&lt;/title&gt;&lt;prolog&gt;&lt;author&gt;Radu Coravu&lt;/author&gt;&lt;/prolog&gt;
+  &lt;body&gt;
+    &lt;p&gt;There are various ways in the &lt;b&gt;Oxygen&lt;/b&gt; standalone version through which a team of writers
+.........</code></pre>
+			</div><p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_tgz_kcg_twb" src="../images/chatgpt-readability-analysis.png" height="469" width="479"/></p></section>
+		<section class="- topic/section section" id="using_chatgpt_in_a_dita_xml_project__section_ctp_vch_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__section_ctp_vch_twb"><h2 class="- topic/title title sectiontitle">Custom Validation (Schematron-based)</h2>
+			
+			<ol class="- topic/ol ol" id="using_chatgpt_in_a_dita_xml_project__ol_qfn_wch_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__ol_qfn_wch_twb">
+				<li class="- topic/li li">
+					<div class="- topic/p p">Create an ISO Schematron validation check that counts
+						words.<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_igv_h2h_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_igv_h2h_twb"><code>Create an ISO Schematron schema which reports if a DITA short description element has more than 20 words.</code></pre></div>
+					<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_wnt_y2h_twb" src="../images/chatgpt-sch-count-words.png" height="394" width="532"/></p>
+					<p class="- topic/p p">Remark: The namespace declaration and usage is wrong (DITA elements are in no namespace).
+						The assert test is correct.</p>
+				</li>
+				<li class="- topic/li li">
+					<div class="- topic/p p">Create an ISO Schematron validation check from a
+						description.<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="using_chatgpt_in_a_dita_xml_project__codeblock_pll_xch_twb" data-ofbid="using_chatgpt_in_a_dita_xml_project__codeblock_pll_xch_twb"><code>Create an ISO Schematron validation rule which reports an error if a DITA XML image element does not contain a scale attribute</code></pre></div>
+					<p class="- topic/p p"><img class="- topic/image image" id="using_chatgpt_in_a_dita_xml_project__image_evh_qfh_twb" src="../images/chatgpt-sch-image-scale.png" height="279" width="581"/></p>
+					<p class="- topic/p p">Remark: The namespace declaration and usage is wrong (DITA elements are in no namespace).
+						The assert test is correct.</p>
+				</li>
+			</ol>
+		</section>
+	</div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        <div id="oxygen-feedback-frame-container">
+    <script defer="defer" id="feedback-init" src="https://feedback.oxygenxml.com/app/init/init.js?deploymentToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkZXBsb3ltZW50SWQiOjYyNX0.8cbUvwq4kXkiqS4uSdYU7NW33X_2PFhbjWI6AluOEJ1xI4JkXzYTXZLEtqRn72rzxIMXEQrSs1_xfGzoKvsYMQ"><!-- --></script>
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div id="wh_topic_toc_content">
+              	                <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#using_chatgpt_in_a_dita_xml_project__section_s3j_3zf_twb" data-tocid="using_chatgpt_in_a_dita_xml_project__section_s3j_3zf_twb">Advice About DITA XML Standard Use</a></div></li><li class="section-item"><div class="section-title"><a href="#using_chatgpt_in_a_dita_xml_project__section_fzr_lzf_twb" data-tocid="using_chatgpt_in_a_dita_xml_project__section_fzr_lzf_twb">Generate New Content</a></div></li><li class="section-item"><div class="section-title"><a href="#using_chatgpt_in_a_dita_xml_project__section_m4p_mzf_twb" data-tocid="using_chatgpt_in_a_dita_xml_project__section_m4p_mzf_twb">Simple Conversions</a></div></li><li class="section-item"><div class="section-title"><a href="#using_chatgpt_in_a_dita_xml_project__section_ycr_nzf_twb" data-tocid="using_chatgpt_in_a_dita_xml_project__section_ycr_nzf_twb">Writing Style</a></div></li><li class="section-item"><div class="section-title"><a href="#using_chatgpt_in_a_dita_xml_project__section_yhr_2cg_twb" data-tocid="using_chatgpt_in_a_dita_xml_project__section_yhr_2cg_twb">Statistics</a></div></li><li class="section-item"><div class="section-title"><a href="#using_chatgpt_in_a_dita_xml_project__section_ctp_vch_twb" data-tocid="using_chatgpt_in_a_dita_xml_project__section_ctp_vch_twb">Custom Validation (Schematron-based)</a></div></li></ul></div>
+	                        	
+                        	</div>
+                        </nav>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="footer">
+    
+        <div class="footer-container container mx-auto">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-3 mb-3 mb-md-0" id="quick_links">
+                    <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook me-2" title="Facebook" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/you-tube.png" alt="YouTube"/>
+                    </a>
+                    <a href="http://twitter.com/oxygenxml" class="lk-blog me-2" title="Twitter" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/twitter.png" alt="Twitter"/>
+                    </a>
+                    <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">
+                        <img src="./oxygen-webhelp/template/resources/images/linkedin.png" alt="LinkedIn"/>
+                    </a>
+                </div>
+                
+                <div class="col-md-5 mb-3 mb-md-0" id="copy">
+                    © 2002-2025 SyncRO Soft SRL. All rights reserved.
+                    <div>
+                        <p>This website is powered by Oxygen<sup>®</sup> 
+                            <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-1 mb-3 mb-md-0 b-subscribe">
+                    <a href="/#follow-it" class="btn get-started">Subscribe</a>
+                </div>
+                
+                <div class="col-md-3 b-flavours">
+                    <a type="application/rss+xml" class="me-2" href="/rss.xml">RSS</a>
+                    <a class="me-2" href="/oxygen_xml_blog.pdf">PDF</a>
+                    <a href="/oxygen_xml_blog.epub">EPUB</a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./oxygen-webhelp/template/resources/js/search-nav.js" defer="defer"></script>
+        
+        <script><!--
+
+            document.querySelector(".get-started")?.addEventListener("click", function () {
+            const el = document.querySelector(".stripe-latest-posts");
+            if (el) {
+            window.scrollTo({
+            top: el.offsetTop - 90,
+            behavior: "smooth"
+            });
+            }
+            });
+        
+--></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4W3NZKJST" integrity="sha384-8klDZJT6xp3MWmbFq1S4K0+Phpnxe5BXVjrHKHWKEMPG06CzApoUqFnULJ+tdS30" crossorigin="anonymous"><!--
+
+        
+--></script>
+        <script><!--
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-D4W3NZKJST');
+        
+--></script>
+</div>
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        <div>
+   <!-- <script src="${oxygen-webhelp-template-dir}/resources/js/syncro.js"></script>-->
+    <script src="/oxygen-webhelp/template/resources/js/search-nav.js"></script>
+    
+</div>
+    </body>
+</html>
