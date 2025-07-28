@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ai-positron-code-development">
+    <title>Boosting XML Development with AI-Driven Code Actions in Oxygen XML Editor</title>
+    <prolog>
+        <author>Octavian Nadolu</author>
+        <critdates>
+            <created date="2025-07-28"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section id="section_rdh_j3f_bgc">
+            <title>Introduction</title>
+            <p>Discover how AI-powered actions in Oxygen XML Editor revolutionize XML schema and
+                XSLT stylesheet development. With AI actions to explain, annotate, generate, or
+                document code, chat with the AI about certain code, and to suggest refactoring,
+                these tools help developers work faster and smarter. As XML workflows become more
+                complex, smarter tools are essential for editing, collaboration, and refactoring.
+                The AI Positron Assistant in Oxygen XML Editor empowers users with a suite of
+                intelligent actions designed for modern code development. </p>
+            <p>In this post, we’ll explore the main AI actions that act on XML-development
+                languages, such as XML Schema, XSLT, and Schematron — <b>Explain Code</b>, <b>Chat
+                    About Code</b>, <b>Document Code</b>, <b>Annotate Code</b>, <b>Generate
+                Code</b>, and <b>Suggest Refactoring</b>, and we'll show examples of how they boost
+                productivity when working with XSLT.</p>
+            <p><b>Watch the video demonstration:</b>
+                <xref href="https://youtu.be/s7fppQS0w_c?si=EeNjOPutx04WmhzF&amp;t=377"
+                    format="html" scope="external"> Using AI for XML Development in Oxygen XML
+                    Editor </xref>
+            </p>
+        </section>
+        <section id="section_sdh_j3f_bgc">
+            <title>AI-Powered Code Actions Overview</title>
+            <p>AI Positron integrates smoothly with Oxygen XML Editor/Developer to improve code
+                quality, enhance understanding, and automate repetitive development tasks. Here’s an
+                overview of the main capabilities and their practical benefits for each AI-assisted
+                development action:</p>
+            <dl id="dl_tdh_j3f_bgc">
+                <dlentry>
+                    <dt>Explain Code</dt>
+                    <dd>Select any code fragment or place your cursor inside an element and AI
+                        Positron will immediately generate an explanation. This helps you quickly
+                        understand legacy XSLT templates, Schematron rules, or complex schema
+                        definitions, reducing time spent deciphering unfamiliar code.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Chat About Code</dt>
+                    <dd>Start an interactive chat with the AI about the selected code. Ask questions
+                        like "What’s the purpose of this constraint?" or "How can I optimize this
+                        template?" to brainstorm improvements, resolve technical issues, and make
+                        informed changes faster.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Document Code</dt>
+                    <dd>With a single action, generate clear and concise XML comments for selected
+                        XSLT, XML Schema, or Schematron code. These summaries, added before the code
+                        block make onboarding, code reviews, and future maintenance easier.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Annotate Code</dt>
+                    <dd>Automatically add comments to entire documents or specific elements. The
+                        generated annotations clarify intent, constraints, and relationships,
+                        streamlining documentation and sharing knowledgeacross your team.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Generate Code</dt>
+                    <dd>Describe the code or transformation you need and let AI Positron create XSLT
+                        templates, Schematron assertions, XSD complex types, or JSON Schema objects.
+                        The AI reuses existing components where possible, supporting DRY (don't
+                        repeat yourself) principles and speeds up the development process.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Suggest Refactoring</dt>
+                    <dd>Receive suggestions to simplify code and improve modularity.The AI can
+                        upgrade the XSLT version, split large templates, extract reusable code, or
+                        add clarifying comments. Refactoring helps you modernize and maintain code
+                        with less effort.</dd>
+                </dlentry>
+            </dl>
+        </section>
+        <section id="section_szt_hhf_bgc">
+            <title>Practical Example: Accelerate XSLT Development with AI Actions</title>
+            <p>As an XSLT developer, you can significantly speed up your workflow and improve code
+                quality using the AI Positron add-on in Oxygen XML Editor. Here’s an example showing
+                how to use AI actions with real XSLT code:</p>
+            <ol>
+                <li>
+                    <p><b>Understand Existing Templates with <i>Explain Code</i></b> - Suppose you
+                        encounter the following template: </p>
+                    <codeblock id="codeblock_tzt_hhf_bgc" outputclass="language-xml">&lt;xsl:template match="section"&gt;
+    &lt;div class="section"&gt;
+        &lt;h2&gt;&lt;xsl:value-of select="title"/&gt;&lt;/h2&gt;
+        &lt;xsl:apply-templates select="para"/&gt;
+    &lt;/div&gt;
+&lt;/xsl:template&gt;            </codeblock>
+                    <p>Select this code and use the <b>Explain Code</b> action. The AI will output:
+                        <codeblock id="codeblock_pqn_1ls_bgc">This template matches <codeph>&lt;section&gt;</codeph> elements, creates a <codeph>&lt;div&gt;</codeph> with class "section", outputs the section title in an <codeph>&lt;h2&gt;</codeph>, and applies templates to all <codeph>&lt;para&gt;</codeph> children.</codeblock></p>
+                </li>
+                <li>
+                    <p><b>Discuss and Improve Code with <i>Chat About Code</i></b> - If you want to
+                        optimize or extend the previous template, select it and use the <b>Chat
+                            About Code</b> action. For example, you might ask: </p>
+                    <codeblock id="codeblock_uzt_hhf_bgc">How can I add a check to display a warning if the section has no title?           </codeblock>
+                    <p>The AI suggested:</p>
+                    <codeblock id="codeblock_vzt_hhf_bgc" outputclass="language-xml"> &lt;xsl:template match="section">
+    &lt;div class="section">
+        <u>&lt;xsl:choose></u>
+            <u>&lt;xsl:when test="title"></u>
+                &lt;h2>&lt;xsl:value-of select="title"/>&lt;/h2>
+            <u>&lt;/xsl:when></u>
+            <u>&lt;xsl:otherwise></u>
+                <u>&lt;div class="warning">[WARNING: section has no title]&lt;/div></u>
+                <u>&lt;xsl:message terminate="no"></u>
+                    <u>WARNING: a &amp;lt;section&amp;gt; element has no &amp;lt;title&amp;gt;.</u>
+                <u>&lt;/xsl:message></u>
+            <u>&lt;/xsl:otherwise></u>
+        <u>&lt;/xsl:choose></u>
+        &lt;xsl:apply-templates select="para"/>
+    &lt;/div>
+&lt;/xsl:template></codeblock>
+                </li>
+                <li>
+                    <p><b>Document Templates with <i>Document Code</i></b> - To help with future
+                        maintenance, select the previous updated template and use the <b>Document
+                            Code</b> action. The AI will insert a comment before the template: </p>
+                    <codeblock id="codeblock_wzt_hhf_bgc" outputclass="language-xml">&lt;!-- Outputs each section as a div with its title in an h2 header. Issues a warning placeholder
+     when the title is missing and continues processing paragraphs. -->
+&lt;xsl:template match="section"&gt;
+[...]
+&lt;/xsl:template&gt;</codeblock>
+                </li>
+                <li>
+                    <p><b>Annotate Intricate Logic with <i>Annotate Code</i></b> - For complex
+                        templates, use the <b>Annotate Code</b> action to insert both template
+                        documentation and inline comments, all comments in this example were
+                        generated by AI: </p>
+                    <codeblock id="codeblock_b15_hhf_bgc" outputclass="language-xml"><u>&lt;!-- 
+  Template that matches the "book" element in the input XML and transforms it into HTML.
+  The structure includes a main &lt;div> containing the book's title and all chapters with their sections.
+--></u>
+&lt;xsl:template match="book">
+    &lt;div>
+        <u>&lt;!-- Output the book's title inside an &lt;h1> tag --></u>
+        &lt;h1>
+            &lt;xsl:value-of select="title"/>
+        &lt;/h1>
+        <u>&lt;!-- Iterate over each "chapter" child element of "book" --></u>
+        &lt;xsl:for-each select="chapter">
+            <u>&lt;!-- Output the chapter's title inside an &lt;h2> tag --></u>
+            &lt;h2>
+                &lt;xsl:value-of select="title"/>
+            &lt;/h2>
+            <u>&lt;!-- Apply templates to all "section" elements within the current chapter.
+                 This allows further processing of sections by other templates. --></u>
+            &lt;xsl:apply-templates select="section"/>
+        &lt;/xsl:for-each>
+    &lt;/div>
+&lt;/xsl:template>
+            </codeblock>
+                </li>
+                <li>
+                    <p><b>Generate New Templates with <i>Generate Code</i></b> - Place your cursor
+                        after a comment that describes the desired functionality and use the
+                            <b>Generate Code</b> action: </p>
+                    <codeblock id="codeblock_xzt_hhf_bgc">&lt;!-- Generate a template that outputs all author names in a comma-separated list --&gt;            </codeblock>
+                    <p>The AI generates: </p>
+                    <codeblock id="codeblock_yzt_hhf_bgc" outputclass="language-xml">&lt;xsl:template match="authors">
+    &lt;p>
+        &lt;xsl:for-each select="author">
+            &lt;xsl:value-of select="name"/>
+            &lt;xsl:if test="position() != last()">, &lt;/xsl:if>
+        &lt;/xsl:for-each>
+    &lt;/p>
+&lt;/xsl:template></codeblock>
+                </li>
+                <li>
+                    <p><b>Refactor Complex Code with <i>Suggest Refactoring</i></b> - If you have a
+                        monolithic template such as: </p>
+                    <codeblock id="codeblock_zzt_hhf_bgc">&lt;xsl:template match="book">
+    &lt;div>
+        &lt;h1>
+            &lt;xsl:value-of select="title"/>
+        &lt;/h1>
+        &lt;xsl:for-each select="chapter">
+            &lt;h2>
+                &lt;xsl:value-of select="title"/>
+            &lt;/h2>
+            &lt;xsl:apply-templates select="section"/>
+        &lt;/xsl:for-each>
+    &lt;/div>
+&lt;/xsl:template>           </codeblock>
+                    <p>This template processes the entire book structure in a single, nested
+                        template using &lt;xsl:for-each> for chapters and &lt;xsl:apply-templates>
+                        for sections. While this works, it can become difficult to maintain, extend,
+                        or debug as the complexity of the XML structure grows.</p>
+                    <p>Use the <b>Suggest Refactoring</b> action and the AI will suggest to break it
+                        into smaller templates:</p>
+                    <codeblock id="codeblock_a15_hhf_bgc" outputclass="language-xml">&lt;xsl:template match="book">
+    &lt;div>
+        &lt;h1>
+            &lt;xsl:value-of select="title"/>
+        &lt;/h1>
+        &lt;xsl:apply-templates select="chapter"/>
+    &lt;/div>
+&lt;/xsl:template>
+
+&lt;xsl:template match="chapter">
+    &lt;h2>
+        &lt;xsl:value-of select="title"/>
+    &lt;/h2>
+    &lt;xsl:apply-templates select="section"/>
+&lt;/xsl:template>
+
+&lt;xsl:template match="section">
+    &lt;h3>
+        &lt;xsl:value-of select="title"/>
+    &lt;/h3>
+    &lt;!-- Add more processing for section content here if needed -->
+&lt;/xsl:template></codeblock>
+                    <p>By breaking the logic into separate templates for &lt;book>, &lt;chapter>,
+                        and &lt;section>, each template is focused on a single responsibility. This
+                        modular approach makes it easier to understand what each part of the code is
+                        doing, and to locate or update specific logic. </p>
+                </li>
+            </ol>
+            <p><b>Summary:</b> With these AI-powered actions, you can quickly understand, document,
+                generate, refactor, and annotate XSLT code, making your XSLT development process
+                faster and your stylesheets easier to maintain. For more hands-on examples, see the
+                    <xref
+                    href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Code%20Development"
+                    format="html" scope="external">AI Positron Assistant samples on GitHub</xref>.
+            </p>
+        </section>
+        <section id="section_azl_4q1_cgc">
+            <title>Creating a Custom AI Action</title>
+            <p>For advanced automation and customized workflows, <b>Oxygen</b> lets you build and
+                integrate custom AI actions directly into your workspace. These actions extend
+                Oxygen’s standard tools and give you greater flexibility and control over AI-driven
+                tasks. </p>
+            <p>Use the <b>New Document</b> wizard to create an <b>AI Positron Custom Action</b>
+                file. This file contains an action definition in JSON format, where you can specify
+                the action's intent, parameters, and AI logic. </p>
+            <p>Oxygen offers automatic <b>validation</b> and <b>content completion</b> for these
+                files, so you can edit and maintain them with confidence. Work in <b>text mode</b>
+                for exact control, or switch to the <b>Author visual editing mode</b> for a guided,
+                interactive experience. </p>
+            <p>For example, you can create an AI action that generates a new XSLT document from
+                specific content with a simple guided workflow. You define the action logic and
+                workflow in JSON, and the integrated AI produces a complete XSLT stylesheet based on
+                your instructions. </p>
+            <p>The following JSON shows a custom AI action that generates an XSLT 3.0 document based
+                on provided source content: </p>
+            <codeblock id="pre_czl_4q1_cgc" outputclass="language-json">{
+    "id": "create.new.xslt",
+    "title": "Create New XSLT",
+    "output-action": "create-new-document",
+    "context": "# CONTEXT #\nYou will act as a senior XSLT developer.\n\n # OBJECTIVE #\nYou are tasked with creating an XSLT starting from the provided text. Create an XSLT with version 3.0 \n\n# RESPONSE #\nRespond with just the XSLT file content, without any other explanations.",
+    "parameters": {
+        "function_refs": [
+            {"ref": "get_content_for_document_url"}
+        ]
+    }
+}</codeblock>
+            <p>In <b>Author mode</b>, this action appears as a structured form, allowing you to
+                configure and review the action visually: </p>
+            <fig id="fig_hss_kr1_cgc">
+                <title>Custom AI Action in Author Mode</title>
+                <image href="../images/customAIActionXSL.png" id="image_k22_4r1_cgc">
+                    <alt><i>[ The <b>Create New XSLT</b> action displayed in Author mode, with
+                            editable fields and advanced AI parameters. ]</i></alt>
+                </image>
+            </fig>
+            <p>In this setup, you supply context, objectives, the desired output action, and any
+                helper functions (such as extracting content from a document URL). The AI then
+                generates the XSLT file and returns only the requested code. </p>
+            <p>For a detailed walkthrough on creating and customizing AI actions in Oxygen, see the
+                official documentation: <xref
+                    href="https://www.oxygenxml.com/doc/ug-addons/topics/creating_custom_ai_actions.html"
+                    format="html" scope="external">Creating Custom AI Actions in Oxygen</xref>.</p>
+            <p><b>Video Tutorial:</b>
+                <xref href="https://youtu.be/s7fppQS0w_c?si=DnFWym9JC08MbJ1g&amp;t=2001"
+                    format="html" scope="external"> How to Create Custom AI Actions in Oxygen
+                </xref></p>
+        </section>
+        <section id="section_xdh_j3f_bgc">
+            <title>Tips and Best Practices</title>
+            <ul id="ul_ydh_j3f_bgc">
+                <li><b>Focused Selection:</b> Select small code blocks for targeted explanations and
+                    documentation. </li>
+                <li><b>Iterative Chat:</b> Use the <i>Chat About Code</i> action for ongoing
+                    improvements, to ask questions, make changes, and regenerate code snippets
+                    interactively. </li>
+                <li><b>Refactor Files:</b> Run the <i>Suggest Refactoring</i> action on your code to
+                    update it to modern standards and to create more readable, reusable
+                    modules.</li>
+                <li><b>Comprehensive Comments:</b> Annotate large, multi-template XSLT or XSD files
+                    to improve shared understanding and make onboarding easier. </li>
+                <li><b>Explore Samples:</b> Review and adapt <xref scope="external" format="html"
+                        href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Code%20Development"
+                        >provided samples</xref> to help your team get started quickly. </li>
+            </ul>
+        </section>
+        <section id="section_zdh_j3f_bgc">
+            <title>Conclusion</title>
+            <p>AI-driven actions in Oxygen XML Editor are changing how developers approach code
+                understanding, editing, and maintenance. Whether you’re explaining a Schematron
+                rule, documenting a schema, generating new validation logic, or refactoring for the
+                future, AI Positron delivers efficiency at every step. Take advantage of these tools
+                to elevate your XML development workflow.</p>
+            <p>To experiment and learn more, check out the <xref
+                    href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Code%20Development"
+                    format="html" scope="external">Code Development</xref> subfolder in the AI
+                Positron samples project.</p>
+        </section>
+    </body>
+</topic>

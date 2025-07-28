@@ -7,6 +7,7 @@
         processing-role="resource-only" scope="peer"/>
     <topicref href="topics/frequently_asked_questions.dita"/>
     <topichead navtitle="Artificial intelligence (AI)">
+        <topicref href="topics/ai-positron-code-development.dita"/>
         <topicref href="topics/ai_xpath_functions.dita"/>
         <topicref href="topics/ai_positron.dita">
             <topicref href="topics/ai-positron-add-on-functionality-small-clips.dita"/>
