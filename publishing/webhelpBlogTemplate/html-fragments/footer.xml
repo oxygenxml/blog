@@ -3,17 +3,17 @@
         <div class="footer-container container mx-auto">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-3 mb-3 mb-md-0" id="quick_links">
-                    <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook me-2" title="Facebook" target="_blank">
-                        <img src="./oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook">
+                    <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook me-2" title="Facebook" target="_blank" >
+                        <img src="/oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook" />
                     </a>
-                    <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank">
-                        <img src="./oxygen-webhelp/template/resources/images/you-tube.png" alt="YouTube">
+                    <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank" >
+                        <img src="/oxygen-webhelp/template/resources/images/you-tube.png" alt="YouTube" />
                     </a>
                     <a href="http://twitter.com/oxygenxml" class="lk-blog me-2" title="Twitter" target="_blank">
-                        <img src="./oxygen-webhelp/template/resources/images/twitter.png" alt="Twitter">
+                        <img src="/oxygen-webhelp/template/resources/images/twitter.png" alt="Twitter" />
                     </a>
                     <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">
-                        <img src="./oxygen-webhelp/template/resources/images/linkedin.png" alt="LinkedIn">
+                        <img src="/oxygen-webhelp/template/resources/images/linkedin.png" alt="LinkedIn" />
                     </a>
                 </div>
                 
@@ -38,7 +38,7 @@
             </div>
         </div>
         
-        <script src="./oxygen-webhelp/template/resources/js/search-nav.js" defer></script>
+        <script src="/oxygen-webhelp/template/resources/js/search-nav.js" defer></script>
         
         <script>
             document.querySelector(".get-started")?.addEventListener("click", function () {
