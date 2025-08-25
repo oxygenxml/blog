@@ -75,9 +75,6 @@
 					href="dita_ot_publishing_customizations_overview.dita"/>.</p>
 			<p>I also wrote an article about the various ways that we support the <b>DITA Open Toolkit</b>
 				open source engine: <xref href="supporting_the_dita_ot_project.dita"/>.</p>
-			<p>My colleague <b>Alexandru Smarandache</b> submitted his first article about <xref
-				href="customizing_a_chatbot.dita">creating learning content for the Google Chatbot
-				from DITA XML content</xref>. </p>
 			<p>Our client and friend <b>Chris Papademetrious</b> also submitted an article about enhancing
 				DITA Open Toolkit project files: <xref
 				href="preprocessing_ditaot_project_files.dita"/>.</p>
