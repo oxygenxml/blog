@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="markdown_vs_dita_syntax_and_capabilities_comparison" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="topic:1;3:65" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="title:1;4:9">DITA XML vs Markdown Syntax and Capabilities Comparison</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="critdates:1;7:20">
+            <created date="2023-03-16" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:1;12:12">The following article is a comparison between the DITA XML standard and Markdown. The
+            comparison attempts to cover syntax specification and features. I attempted to write
+            this comparison without any implicit bias towards one or the other. If there are DITA
+            XML or Markdown features that I missed, that was done out of ignorance and not out of
+            malice. Feedback is always welcomed, as usual.</p>
+        <table frame="all" rowsep="1" colsep="1" class="- topic/table " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="table:1;17:50">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="title:2;18:20">DITA XML vs Markdown</title>
+            <tgroup cols="3" class="- topic/tgroup " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="tgroup:1;19:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="colspec:1;20:65"/>
+                <colspec colname="col2" colnum="2" colwidth="4.25*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="colspec:2;21:73"/>
+                <colspec colname="col3" colnum="3" colwidth="4.39*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="colspec:3;22:68"/>
+                <thead class="- topic/thead " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="thead:1;23:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:1;24:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:1;25:45" colname="col1" dita-ot:x="1" dita-ot:y="1"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:1;25:49"/></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:2;26:45" colname="col2" dita-ot:x="2" dita-ot:y="1">DITA XML</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:3;27:45" colname="col3" dita-ot:x="3" dita-ot:y="1">Markdown</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="tbody:1;30:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:2;31:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:4;32:45" colname="col1" dita-ot:x="1" dita-ot:y="2"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:2;32:48">Short description</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:5;33:45" colname="col2" dita-ot:x="2" dita-ot:y="2"><xref href="https://www.oxygenxml.com/dita/1.3/specs/introduction/dita-release-overview.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:1;35:64"><?ditaot usertext?>DITA XML</xref> is a standard for
+                            designing, writing, managing, and publishing information. There are
+                            multiple versions of the DITA standard, the most popular one being
+                            version 1.3.</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:6;39:45" colname="col3" dita-ot:x="3" dita-ot:y="2"><xref href="https://www.markdownguide.org/getting-started/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:2;41:50"><?ditaot usertext?>Markdown</xref> is a lightweight markup language
+                            that you can use to add formatting elements to plain text documents.
+                            There was an effort to standardize Markdown to a specification named
+                                <xref href="https://commonmark.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:3;45:34"><?ditaot usertext?>CommonMark</xref>. There are lots of Markdown flavors and
+                            extensions, most of them sharing a common set of features. The <xref href="https://www.markdownguide.org/extended-syntax/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:4;48:50"><?ditaot usertext?>most popular</xref> are probably CommonMark and
+                            Github-flavored Markdown.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:3;51:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:7;52:45" colname="col1" dita-ot:x="1" dita-ot:y="3"><b id="b_dgk_2f4_11c" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:3;52:67">Why should I use this
+                            format?</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:8;54:45" colname="col2" dita-ot:x="2" dita-ot:y="3">
+                            <ul id="ul_nnj_ff4_11c" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:1;55:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:1;56:37">You work (or want to work) for a company which manufactures
+                                    similar products (large possibility of content reuse).</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:2;58:37">You want to obtain multiple output formats (HTML based, quality
+                                    PDF).</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:3;60:37">You want to work with a standard and be able to change tools if
+                                    necessary.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:4;62:37">You want to impose structural validation constraints on the
+                                    edited content.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:9;66:45" colname="col3" dita-ot:x="3" dita-ot:y="3">
+                            <ul id="ul_v4b_gf4_11c" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:2;67:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:5;68:37">You work for a company which has mostly one product and
+                                    publishes the documentation mostly on the web.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:6;70:37">You work with ticketing systems which use Markdown for styling
+                                    content.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:7;72:37">You produce internal documentation or small articles.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:4;76:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:10;77:45" colname="col1" dita-ot:x="1" dita-ot:y="4"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:4;77:48">Useful resources for learning</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:11;78:45" colname="col2" dita-ot:x="2" dita-ot:y="4"><xref href="learnDita.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:5;78:74" type="topic"><?ditaot gentext?>Resources for learning DITA with Oxygen</xref></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:12;79:45" colname="col3" dita-ot:x="3" dita-ot:y="4">
+                            <ul id="ul_xql_kxm_twb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:3;80:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:8;81:37"><xref href="https://www.markdownguide.org/basic-syntax/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:6;82:72"><?ditaot usertext?>Basic Markdown
+                                    Syntax</xref></li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:9;84:37"><xref href="https://daringfireball.net/projects/markdown/syntax" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:7;85:72"><?ditaot usertext?>Markdown: Syntax</xref></li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:5;89:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:13;90:45" colname="col1" dita-ot:x="1" dita-ot:y="5"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:5;90:48">Pros</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:14;91:45" colname="col2" dita-ot:x="2" dita-ot:y="5">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:2;92:32"><xref href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:8;94:68"><?ditaot usertext?>DITA XML pros and cons</xref></p>
+                            <ul id="ul_s2z_q2n_twb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:4;95:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:10;96:37">OASIS Open standard.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:11;97:37">Advanced support for <xref href="../presentation-reuse/introduction.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:9;98:88" type="topic"><?ditaot usertext?>content
+                                        reuse</xref> either at topic, block, or inline level.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:12;100:37">Advanced support for <xref href="../presentation-reuse/reuseSimilarProducts.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:10;102:42" type="topic"><?ditaot usertext?>filtering</xref> (generating multiple similar user guides
+                                    from the same content).</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:13;104:37">Open-source publishing engine with lots of supported output
+                                    formats (some free, some commercial) like HTML5, Windows Help,
+                                    PDF, Word, EPUB, and so on.</li>
+                            </ul>
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:3;108:32"><xref href="https://stefan-jung.org/dita-introduction/topics/why-dita.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:11;110:68"><?ditaot usertext?>Why use DITA</xref></p>
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:4;111:32"><xref href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:12;113:68"><?ditaot usertext?>Pros and Cons</xref></p>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:15;115:45" colname="col3" dita-ot:x="3" dita-ot:y="5">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:5;116:32"><xref href="https://stymied.medium.com/why-you-should-and-should-not-use-markdown-1b9d70987792" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:13;118:68"><?ditaot usertext?>Markdown pros and
+                                cons.</xref></p>
+                            <ul id="ul_lnz_vvj_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:5;120:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:14;121:37">Large user base. Familiar to software engineers who use it to
+                                    write issues.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:15;123:37">Basic syntax, easy to learn.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:16;124:37">Easier to read without specialized tools.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:17;125:37">Offline and online free editing tools.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:18;126:37">For the base syntax, quite easy to edit the content in a plain
+                                    text editor tool.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:19;128:37">Lots of static web site generator open-source tools like <xref href="https://www.mkdocs.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:14;130:58"><?ditaot usertext?>MKDocs</xref> or <xref href="https://jekyllrb.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:15;132:42"><?ditaot usertext?>Jekyll</xref>.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:6;136:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:16;137:45" colname="col1" dita-ot:x="1" dita-ot:y="6"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:6;137:48">Cons</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:17;138:45" colname="col2" dita-ot:x="2" dita-ot:y="6"><ul id="ul_pgj_pvj_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:6;138:69">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:20;139:37">Smaller user base.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:21;140:37">Harder to learn.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:22;141:37">XML is more verbose than plain text.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:23;142:37">Visual editing requires the use of a commercial tool like
+                                    Oxygen.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:24;144:37">Smaller number of open source tools to generate professional
+                                    looking outputs.</li>
+                            </ul><xref href="https://stefan-jung.org/dita-introduction/topics/pros-and-cons.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:16;148:64"><?ditaot usertext?>Pros and
+                            Cons</xref></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:18;150:45" colname="col3" dita-ot:x="3" dita-ot:y="6">
+                            <ul id="ul_bcf_kxj_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:7;151:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:25;152:37">Not all language features are available in the base Markdown
+                                    "specification". There are various flavors with various syntax
+                                    differences between them and you probably need to pick a flavor
+                                    to use and stick to it.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:26;156:37">Advanced features like content reuse, for example, are not in
+                                    the base standard but may be implemented with different syntaxes
+                                    for various flavors.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:27;159:37">Static web site generators are not compatible with each other
+                                    (they have various specific configuration files) or to link
+                                    between files.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:28;162:37">Not many possibilities to assemble multiple Markdown files and
+                                    publish outputs like PDF or Word, for example.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:29;164:37">Cannot render complex cell content (multiple paragraphs, for
+                                    example) in table cells or in list items.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:7;169:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:19;170:45" colname="col1" dita-ot:x="1" dita-ot:y="7"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:7;170:48">Cross-Compatibility</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:20;171:45" colname="col2" dita-ot:x="2" dita-ot:y="7">A DITA Map can refer to a <xref href="https://www.dita-ot.org/dev/topics/markdown-dita-syntax-reference.html#ariaid-title1" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:17;173:64"><?ditaot usertext?>Github-flavored Markdown</xref> file
+                            and the publishing engine can perform a dynamic conversion from Markdown
+                            to DITA while editing.</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:21;176:45" colname="col3" dita-ot:x="3" dita-ot:y="7">-</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:8;178:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:22;179:45" colname="col1" dita-ot:x="1" dita-ot:y="8"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:8;179:48">Table of contents</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:23;180:45" colname="col2" dita-ot:x="2" dita-ot:y="8">Gathering multiple DITA topics in a larger publication
+                            and defining the table of contents is done by using <xref href="https://www.oxygenxml.com/dita/1.3/specs/archSpec/base/definition-of-ditamaps.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:18;183:64"><?ditaot usertext?>DITA Maps</xref>.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:6;183:84"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-pathfinder-documents.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:19;185:68"><?ditaot usertext?>Working with DITA
+                            Maps</xref></p></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:24;187:45" colname="col3" dita-ot:x="3" dita-ot:y="8"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:9;187:48">CommonMark</b> does not define the possibility to
+                            create a table of contents or to aggregate multiple Markdown files in
+                            larger publications. <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:7;189:53">Various static web site generators have various
+                                ways to define table of contents, usually based on <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:10;190:87">Yaml</b>, like
+                                    <xref href="https://www.mkdocs.org/user-guide/configuration/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:20;192:68"><?ditaot usertext?>MKDocs</xref>.</p></entry>
+                    </row>
+					<row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:9;194:11">
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:25;195:27" colname="col1" dita-ot:x="1" dita-ot:y="9"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:11;195:30">Validation</b></entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:26;196:27" colname="col2" dita-ot:x="2" dita-ot:y="9">
+							<ul id="ul_ymm_cld_vwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:8;197:32">
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:30;198:13">Validation according to the DITA specification DTDs/schemas done
+									when publishing or when editing.</li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:31;200:13">Additional validation can be done with <xref href="sharing_schematron_validation_rules.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:21;201:59" type="topic"><?ditaot usertext?>Schematron
+										rules</xref>.</li>
+							</ul>
+						</entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:27;205:27" colname="col3" dita-ot:x="3" dita-ot:y="9">
+							<ul id="ul_tb3_kld_vwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:9;206:32">
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:32;207:13">Usually with Markdown, you can look at a live preview while typing to see that
+                                    everything looks OK.</li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:33;209:13">There are various processors that may be used to validate Markdown, for example <xref href="https://github.com/mattbriggs/markdown-validator" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:22;211:72"><?ditaot usertext?>using a set of JSON
+                                        rules</xref>.</li>
+							</ul>
+						</entry>
+					</row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:10;216:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:28;217:45" colname="col1" dita-ot:x="1" dita-ot:y="10"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:12;217:48">Publishing</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:29;218:45" colname="col2" dita-ot:x="2" dita-ot:y="10">
+                            <ul id="ul_spg_2yj_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:10;219:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:34;220:37">The <xref href="https://www.dita-ot.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:23;221:58"><?ditaot usertext?>DITA Open toolkit</xref> publishing engine
+                                    comes with default support to publish DITA Maps and customize to
+                                    plain HTML5, PDF.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:35;224:37">There are additional open-source plugins to publish to MS Word
+                                    or EPUB.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:36;226:37">Other curated open-source plugins are available in the <xref href="https://www.dita-ot.org/plugins" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:24;228:58"><?ditaot usertext?>DITA OT plugins registry</xref>.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:37;229:37">Commercial plugins are available to publish to WebHelp output
+                                    like <xref href="https://www.oxygenxml.com/xml_editor/webhelp.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:25;232:72"><?ditaot usertext?>Oxygen WebHelp</xref> or
+                                        <xref href="https://www.fluidtopics.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:26;234:58"><?ditaot usertext?>Fluid Topics</xref>.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:30;237:45" colname="col3" dita-ot:x="3" dita-ot:y="10">Most publishing libraries rely on the conversion from
+                            Markdown to HTML.<ul id="ul_kbj_xyj_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:11;238:70">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:38;239:37">Lots of open-source <xref href="https://about.gitlab.com/blog/2022/04/18/comparing-static-site-generators/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:27;241:72"><?ditaot usertext?>static web site
+                                        generators</xref>.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:39;243:37">Lots of libraries (Javascript, Java, Python, etc) to convert
+                                    Markdown to HTML.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:40;245:37">Other conversion types available using <xref href="https://pandoc.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:28;247:42"><?ditaot usertext?>Pandoc</xref>.</li>
+                            </ul></entry>
+                    </row>
+					<row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:11;250:11">
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:31;251:27" colname="col1" dita-ot:x="1" dita-ot:y="11"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:13;251:30">Translation</b></entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:32;252:27" colname="col2" dita-ot:x="2" dita-ot:y="11">There are translation agencies directly accepting DITA XML content or you
+                            can convert DITA XML to XLiff and use a translation system. Each DITA
+                            XML topic or map can have an <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlatt:1;254:66">xml:lang</xmlatt> attribute to
+                            specify the current language in which it is written.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:8;255:84"><xref href="translating_your_dita_project.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:29;256:80" type="topic"><?ditaot gentext?>Translating your DITA Project</xref></p></entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:33;257:27" colname="col3" dita-ot:x="3" dita-ot:y="11">There are various tools like <xref href="https://simpleen.io/blog/translate-markdown-files" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:30;259:64"><?ditaot usertext?>Simpleen</xref> that seem to
+                            specifically handle Markdown translation.</entry>
+					</row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:12;262:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:34;263:45" colname="col1" dita-ot:x="1" dita-ot:y="12"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:14;263:48">Extensibility</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:35;264:45" colname="col2" dita-ot:x="2" dita-ot:y="12">
+                            <ul id="ul_wyw_pfy_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:12;265:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:41;266:37">Possibility to define a new <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-integrate-specialization.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:31;268:72"><?ditaot usertext?>specialization</xref> of the
+                                    DITA vocabulary with new element names.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:42;270:37">Use the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlatt:2;270:53">outputclass</xmlatt> attribute value on elements
+                                    to set custom values used when styling the output.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:43;272:37">Use the DITA <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:1;272:62">data</xmlelement> element with custom
+                                    names and values and take them into account with publishing time
+                                    customizations.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:44;275:37">Use the DITA <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:2;275:62">foreign</xmlelement> element (for
+                                    example, <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-embed-html.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:32;278:72"><?ditaot usertext?>embed HTML</xref> inside it
+                                    using a custom publishing plugin).</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:36;282:45" colname="col3" dita-ot:x="3" dita-ot:y="12">
+                            <ul id="ul_xv3_1gy_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:13;283:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:45;284:37">Use HTML elements inside Markdown, for example, when defining
+                                    complex tables or you do not have a Markdown equivalent.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:46;286:37">Yaml headers.</li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:47;287:13">Ability on certain Markdown flavors/extensions to <xref href="https://python-markdown.github.io/extensions/attr_list/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:33;289:42"><?ditaot usertext?>define attributes</xref> for
+									each element.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:13;294:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:37;295:45" colname="col1" dita-ot:x="1" dita-ot:y="13"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:15;295:48">Metadata</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:38;296:45" colname="col2" dita-ot:x="2" dita-ot:y="13">
+                            <ul id="ul_yt1_hgy_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:14;297:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:48;298:37">The DITA <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:3;298:58">prolog</xmlelement> element can contain
+                                    lots of <xref href="https://www.oxygenxml.com/dita/1.3/specs/langRef/containers/prolog-elements.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:34;301:72"><?ditaot usertext?>metadata</xref> information,
+                                    but not visible in the published output. Example:
+                                    <codeblock id="codeblock_pzy_sgy_5wb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="codeblock:1;303:102">&lt;topic id="topic_wcj_tgy_5wb"&gt;
+ &lt;title&gt;The Title&lt;/title&gt;
+ &lt;prolog&gt;
+  &lt;author&gt;The Author&lt;/author&gt;
+  &lt;metadata&gt;
+    &lt;keywords&gt;
+	&lt;keyword&gt;one&lt;/keyword&gt;
+       &lt;keyword&gt;two&lt;/keyword&gt;
+    &lt;/keywords&gt;
+   &lt;/metadata&gt;
+  &lt;/prolog&gt;</codeblock></li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:49;314:37">The <xref href="https://www.oxygenxml.com/dita/1.3/specs/langRef/containers/indexing-d.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:35;317:46"><?ditaot usertext?><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:4;317:58">indexterm</xmlelement> elements</xref> are
+                                    also considered metadata, as they are used to generate an index
+                                    table.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:39;322:45" colname="col3" dita-ot:x="3" dita-ot:y="13">
+                            <ul id="ul_fzg_ngy_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:15;323:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:50;324:37">Sometimes, Markdown files may contain Yaml headers before the
+                                    actual content that define simple keys and values. Example:
+                                    <codeblock id="codeblock_zx4_rgy_5wb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="codeblock:2;326:75">---
+title: The Title
+author: The Author
+keywords: [one, two, three, four]
+---
+# A Heading
+Text body. </codeblock></li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:14;336:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:40;337:45" colname="col1" dita-ot:x="1" dita-ot:y="14"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:16;337:48">Content reuse:</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:41;338:45" colname="col2" dita-ot:x="2" dita-ot:y="14">
+                            <ul id="ul_ulq_bhy_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:16;339:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:51;340:37">Key references to <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-variables.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:36;342:72"><?ditaot usertext?>re-used product
+                                    names</xref>.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:52;344:37">Content references to <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/working-with-content-references.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:37;346:72"><?ditaot usertext?>re-used elements</xref> in
+                                    multiple places.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:53;348:37">Content reference push to <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/conref-push-mechanism.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:38;350:72"><?ditaot usertext?>push content</xref> in
+                                    multiple places.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:54;352:37"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/coderef.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:39;354:72"><?ditaot usertext?>Code references</xref> to
+                                    re-use pieces of code in multiple places.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:55;356:37"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-keyscopes.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:40;358:72"><?ditaot usertext?>Key scopes</xref> and <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-branch-filtering.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:41;360:72"><?ditaot usertext?>branch filtering</xref> to
+                                    re-use the same topics in multiple contexts with different
+                                    content in each context.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:56;363:37"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-reuse-topics.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:42;365:72"><?ditaot usertext?>Re-use a topic in multiple
+                                        places</xref> in the publication.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:42;369:45" colname="col3" dita-ot:x="3" dita-ot:y="14">No content re-use support is in the standard base.
+                            Various extensions do exist, for example:<ul id="ul_bp4_djy_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:17;370:94">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:57;371:37"><xref href="https://redocly.com/docs/developer-portal/guides/reusing-content/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:43;373:72"><?ditaot usertext?>Redocly</xref> uses HTML
+                                        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:5;374:53">embed</xmlelement> tags with references to
+                                    Markdown files to re-use entire chunks of Markdown content
+                                    placed inside a file.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:58;377:37"><xref href="https://gohugo.io/content-management/shortcodes/#shortcodes-with-markdown" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:44;379:72"><?ditaot usertext?>Hugo</xref> uses special
+                                    notations named shortcuts.</li>
+                            </ul></entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:15;383:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:43;384:45" colname="col1" dita-ot:x="1" dita-ot:y="15"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:17;384:48">Filters</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:44;385:45" colname="col2" dita-ot:x="2" dita-ot:y="15">You can use <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-profiling-conditional-text.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:45;387:64"><?ditaot usertext?>profiling attributes</xref> in DITA
+                            XML topics or on topic references in a DITA Map map. By using a single
+                            DITA Map and <xref href="../presentation-reuse/reuseSimilarProducts.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:46;391:34" type="topic"><?ditaot usertext?>filtering</xref> it differently, you can obtain multiple
+                            publications from it.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:9;392:53">For example, for the Oxygen user's manual, we
+                                obtain lots of distinct publications for "Oxygen XML Editor",
+                                "Oxygen XML Author", "Oxygen XML Web Author" from the same DITA
+                                Map.</p></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:45;396:45" colname="col3" dita-ot:x="3" dita-ot:y="15">There may be, but I am not aware of such a feature in
+                            Markdown.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:16;399:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:46;400:45" colname="col1" dita-ot:x="1" dita-ot:y="16"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:18;400:48">Headings</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:47;401:45" colname="col2" dita-ot:x="2" dita-ot:y="16">
+                            <ul id="ul_wzr_xly_5wb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:18;402:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:59;403:37">DITA topics have a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:6;403:68">title</xmlelement> element that
+                                    appears as a heading 1 when published and is also used for the
+                                        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:7;405:53">title </xmlelement> element in the published
+                                    HTML document.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:60;407:37">You can nest topics one inside the other and the generated HTML
+                                    output will have <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:8;408:66">h2</xmlelement>,
+                                        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:9;409:53">h3</xmlelement>, etc for each nested topic,
+                                    depending on the nested depth.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:61;411:37">You can have <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:10;411:62">section</xmlelement> elements with
+                                        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:11;412:53">title</xmlelement>elements inside a topic (they
+                                    cannot be nested one inside the other).<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:10;413:79">
+                                        <codeblock id="codeblock_gs5_gmy_5wb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="codeblock:3;414:106">&lt;topic id="topic_wcj_tgy_5wb"&gt;
+ &lt;title&gt;Title1&lt;/title&gt;
+ &lt;body&gt;
+  &lt;section&gt;
+    &lt;title&gt;Section 1&lt;/title&gt;
+    &lt;p&gt;paragraph&lt;/p&gt;
+  &lt;/section&gt;
+ &lt;/body&gt;
+ &lt;topic id="inner"&gt;
+  &lt;title&gt;Inner topic title&lt;/title&gt;
+ &lt;/topic&gt;
+&lt;/topic&gt;</codeblock>
+                                    </p></li>
+                            </ul>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:48;429:45" colname="col3" dita-ot:x="3" dita-ot:y="16">You can use a number of <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="codeph:1;429:77">#</codeph> characters
+                            followed by space and text to <xref href="https://www.markdownguide.org/basic-syntax/#headings" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:47;432:64"><?ditaot usertext?>define a new heading</xref>. Headings
+                            do not necessarily need to be incremental, you can start with heading
+                            level 2 and then have a heading level
+                            1.<codeblock id="codeblock_qw5_pmy_5wb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="codeblock:4;435:69"># Heading level 1
+### Heading level 3
+## Heading level 2
+....</codeblock></entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:17;440:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:49;441:45" colname="col1" dita-ot:x="1" dita-ot:y="17"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:19;441:48">Block elements</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:50;442:45" colname="col2" dita-ot:x="2" dita-ot:y="17">There are multiple topic types like
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:12;443:45">concept</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:13;443:79">task</xmlelement>,
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:14;444:45">reference</xmlelement>, and extra topic types can be
+                            added using a specialization. <xref href="https://www.oxygenxml.com/dita/1.3/specs/langRef/containers/body-elements.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:48;447:64"><?ditaot usertext?>The basic block elements</xref> are
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:15;448:45">topic</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:16;448:77">title</xmlelement>,
+                            paragraph <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:17;449:51">p</xmlelement> elements,
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:18;450:45">codeblock</xmlelement>, lists
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:19;451:45">ul</xmlelement>
+                            <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:20;452:41">ol</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:21;452:70">table</xmlelement>,
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:22;453:45">section</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:23;453:79">fig</xmlelement>,
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:24;454:45">image</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:25;454:77">note</xmlelement>. There
+                            are also other block-level elements, depending on the topic
+                            type.</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:51;457:45" colname="col3" dita-ot:x="3" dita-ot:y="17"><xref href="https://www.markdownguide.org/basic-syntax/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:49;458:64"><?ditaot usertext?>Block elements</xref>: Paragraphs,
+                            tables, lists, images, block quotes, etc.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:18;461:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:52;462:45" colname="col1" dita-ot:x="1" dita-ot:y="18"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:20;462:48">Inline elements</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:53;463:45" colname="col2" dita-ot:x="2" dita-ot:y="18"><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:26;463:57">b</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:27;463:85">i</xmlelement>,
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:28;464:45">u</xmlelement>,<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:29;464:72">sup</xmlelement>,<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:30;464:101">sub</xmlelement>
+                            and other inline elements with more semantic meaning (like
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:31;466:45">codeph</xmlelement>, <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:32;466:78">uicontrol</xmlelement>,
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:33;467:45">filepath</xmlelement>).</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:54;468:45" colname="col3" dita-ot:x="3" dita-ot:y="18">Bold, italic, underline. Depending on the Markdown
+                            flavor, other inlines like subscript, superscript,
+                            strike-through.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:19;472:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:55;473:45" colname="col1" dita-ot:x="1" dita-ot:y="19"><b id="b_pyl_dwd_zzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:21;473:67"> Equations / Formulas</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:56;474:45" colname="col2" dita-ot:x="2" dita-ot:y="19">
+                            <ul id="ul_fpm_2wd_zzb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:19;475:53">
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:62;476:37"><xref href="https://www.oxygenxml.com/dita/1.3/specs/langRef/technicalContent/mathml.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:50;478:72"><?ditaot usertext?>MathML equations</xref> added
+                                    directly inside the DITA topics or referenced as separate
+                                    files.</li>
+                                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:63;481:37"><xref href="adding-latex-equation-support-dita.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:51;481:90" type="topic"><?ditaot usertext?>Latex equations</xref> embedded using third party plugins in DITA
+                                        <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:34;482:53">foreign</xmlelement> elements.</li>
+                            </ul>
+                        </entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:57;485:45" colname="col3" dita-ot:x="3" dita-ot:y="19"><xref href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:52;487:64"><?ditaot usertext?>GitHub flavored Markdown</xref> and
+                            other flavors as well support embedding Latex equations in Markdown
+                            content using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="codeph:2;489:51">$</codeph>.</entry>
+                    </row>
+					<row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:20;491:11">
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:58;492:27" colname="col1" dita-ot:x="1" dita-ot:y="20"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:22;492:30">Audio/Video</b></entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:59;493:27" colname="col2" dita-ot:x="2" dita-ot:y="20">The DITA <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:35;493:48">object</xmlelement> element can be used to reference
+                                <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-adding-media.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:53;496:64"><?ditaot usertext?>audio, video or iframe</xref>
+                            content.</entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:60;498:27" colname="col3" dita-ot:x="3" dita-ot:y="20">No official support, maybe use embedded HTML content or
+							add a link to the audio/video instead.</entry>
+					</row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:21;501:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:61;502:45" colname="col1" dita-ot:x="1" dita-ot:y="21"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:23;502:48">Tables</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:62;503:45" colname="col2" dita-ot:x="2" dita-ot:y="21">The DITA <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:36;503:66">table</xmlelement> element is based
+							on the CALS table specification. Cells can span multiple rows or columns
+							and contain inside block elements content like lists, paragraphs. <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/eppo-tables-2.html#eppo-tables__cals-table-model" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:54;507:40"><?ditaot usertext?>The table</xref> can have header and
+							body rows.</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:63;509:45" colname="col3" dita-ot:x="3" dita-ot:y="21"><xref href="https://www.markdownguide.org/extended-syntax/#tables" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:55;511:64"><?ditaot usertext?>Markdown tables</xref> are usually
+                            written in an ASCII graphic, like representation allowing for cells
+                            content to be aligned left or right. By default, cells can contain only
+                            plain text inside. If more complex table structures are needed, HTML
+                            tables can be inserted directly in Markdown if the used Markdown flavor
+                            supports HTML elements inside it.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:22;518:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:64;519:45" colname="col1" dita-ot:x="1" dita-ot:y="22"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:24;519:48">Lists</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:65;520:45" colname="col2" dita-ot:x="2" dita-ot:y="22">Ordered <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:37;520:65">ol</xmlelement>, unordered
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:38;521:45">ul</xmlelement>, or definition lists
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:39;522:45">dl</xmlelement>. Other topic types like
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:40;523:45">task</xmlelement> contain, for example, the
+                                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xmlelement:41;524:45">steps</xmlelement> element that is an ordered list of
+                            steps. Each list item can contain block elements like paragraphs, other
+                            lists, tables, etc.</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:66;527:45" colname="col3" dita-ot:x="3" dita-ot:y="22"><xref href="https://www.markdownguide.org/basic-syntax/#lists-1" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:56;529:64"><?ditaot usertext?>Ordered and unordered lists</xref>.
+                            Each list element contains simple content. It cannot contain block-
+                            level elements like additional lists or multiple paragraphs.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:11;531:92">The <xref href="https://www.markdownguide.org/extended-syntax/#task-lists" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:57;533:68"><?ditaot usertext?>task list</xref> is an
+                                interesting extension to show checkboxes next to each list
+                                item.</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="p:12;535:45">Other types of lists (definition list for example) or
+                                list items that contain multiple block-level elements can be
+                                inserted directly in Markdown if the used Markdown flavor supports
+                                HTML elements inside it.</p></entry>
+                    </row>
+					<row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:23;540:11">
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:67;541:27" colname="col1" dita-ot:x="1" dita-ot:y="23"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:25;541:30">Links</b></entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:68;542:27" colname="col2" dita-ot:x="2" dita-ot:y="23">
+							<ul id="ul_zb4_34d_vwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:20;543:32">
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:64;544:13">Internal links (cross references):<ul id="ul_h3n_k4d_vwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:21;544:71">
+										<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:65;545:15">Link to another topic. </li>
+										<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:66;546:15">Link to a particular element in another topic.</li>
+										<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:67;547:15">Links to web resources.</li>
+									</ul></li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:68;549:13">Related links (at the end of each topic)<ul id="ul_hlz_m4d_vwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:22;549:77">
+										<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:69;550:15">Link to another topic. </li>
+										<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:70;551:15">Link to a particular element in another topic.</li>
+										<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:71;552:15">Links to web resources.</li>
+									</ul></li>
+							</ul>
+						</entry>
+						<entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:69;556:27" colname="col3" dita-ot:x="3" dita-ot:y="23"><xref href="https://www.markdownguide.org/basic-syntax/#links" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="xref:58;558:40"><?ditaot usertext?>Links to other web
+							resources</xref>.</entry>
+					</row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="row:24;561:26">
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:70;562:45" colname="col1" dita-ot:x="1" dita-ot:y="24"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="b:26;562:48">Conclusion</b></entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:71;563:45" colname="col2" dita-ot:x="2" dita-ot:y="24">
+							<ul id="ul_xkt_vnd_vwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:23;564:32">
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:72;565:13">Harder to type in a plain text area, requires DITA editing tools (most of which, are not
+                                    free).</li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:73;567:13">Advanced support for structured validation.</li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:74;568:13">Advanced support for content re-use and profiling conditional text.</li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:75;569:13">Publishing engine allows publishing to multiple output formats like HTML, PDF, and
+                                    others based on plugins that can be installed.</li>
+							</ul>
+						</entry>
+                        <entry valign="top" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="entry:72;573:45" colname="col3" dita-ot:x="3" dita-ot:y="24">
+							<ul id="ul_xjw_tnd_vwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="ul:24;574:32">
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:76;575:13">Easy to manually type in a plain text area but a preview
+									definitely helps. </li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:77;577:13">More complex elements need to be inserted as HTML elements. </li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:78;578:13">Various Markdown extensions have extra support for example for
+									content reuse. </li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:79;580:13">Mostly targeted towards obtaining web-based HTML content. </li>
+								<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/markdown_vs_dita_syntax_and_capabilities_comparison.dita" xtrc="li:80;581:13">Looks like a language that is not intended to do the heavy lifting of producing multiple
+                                    deliverable formats and deliverables from the same content.</li>
+							</ul>
+						</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:28;40:98" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><link class="- topic/link " format="dita" href="../topics/learningDITAGeneral.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:2;7:77" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Learning</linktext></link></linkpool></related-links></topic>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\git-tech-writers?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/git-tech-writers/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="git_client_applications" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="topic:1;3:37" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="title:1;4:12">Applications for Working with Git</title>
+	<prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="prolog:1;5:10">
+		<author class="- topic/author " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="author:1;6:11">Radu Coravu</author>
+	</prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="body:1;8:11">
+		<section id="section_gxh_vpv_v2c" class="- topic/section " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="section:1;9:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="title:2;10:11">Oxygen Applications</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="p:1;11:7">
+				<ul id="ul_v3t_mcs_lwx" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="ul:1;12:29">
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:1;13:10"><xref href="https://www.oxygenxml.com/content_fusion.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="xref:1;14:25"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:1;14:28">Oxygen Content Fusion</b></xref> is a <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:2;14:69">web-based
+							Git-enabled DITA CMS</b>. It is designed to provide the missing pieces
+						that Git lacks when working with a DITA project, such as review workflows
+						and publishing.</li>
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:2;18:10"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="xref:2;19:39"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:3;19:42">Git Client</b></xref> add-on in Oxygen
+						XML Editor allows you to use Git from the comfort of your authoring
+						tool.</li>
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:3;22:10"><xref href="https://www.oxygenxml.com/xml_web_author.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="xref:3;23:25"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:4;23:28">Oxygen XML Web Author</b></xref> has support for all
+						Git hosting servers. It is customisable and can be integrated with your
+						workflows and tools, such as <xref href="https://www.oxygenxml.com/demo/wa_web_author_into_your_documentation_review_workflow.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="xref:4;27:39"><?ditaot usertext?>JIRA issue tracking</xref>.</li>
+				</ul>
+			</p>
+		</section>
+		<section id="section_ozj_tzy_qwb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="section:2;31:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="title:3;32:11">Repository hosting solutions</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="p:2;33:7">
+				<ul id="ul_gjw_5tl_mwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="ul:2;34:29">
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:4;35:10"><xref href="https://github.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="xref:5;36:9"><?ditaot usertext?>GitHub</xref> (either online or on-premise).</li>
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:5;37:10"><xref href="https://about.gitlab.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="xref:6;38:9"><?ditaot usertext?>GitLab</xref> (either online or on-premise).</li>
+				</ul>
+			</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="p:3;41:7">Both of these solutions come with:<ul id="ul_yxv_ztl_mwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="ul:3;41:65">
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:6;42:10">Support for creating and managing private/public repositories.</li>
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:7;43:10">Basic support for creating and handling tickets/issues.</li>
+					<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:8;44:10">Support for creating pull/merge requests.</li>
+				</ul></p>
+		</section>
+		<section id="section_jrl_5zy_qwb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="section:3;47:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="title:4;48:11">Other client-side applications</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="p:4;49:7">There are lots of free client-side applications that can be used to work with Git
+				repositories:</p>
+			<ul id="ul_v3t_mcs_lwb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="ul:4;51:28">
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:9;52:9"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:5;52:12">Git Fork</b></li>
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:10;53:9"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:6;53:12">Git Tower</b></li>
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:11;54:9"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:7;54:12">SourceTree</b></li>
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:12;55:9"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="b:8;55:12">GitHub Desktop</b>
+					<ul id="ul_nlw_lrv_v2c" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="ul:5;56:30">
+						<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:13;57:11">Allows you to cherry-pick commits with drag &amp; drop, but otherwise
+							has limited functionality</li>
+					</ul></li>
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:14;60:9">The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="codeph:1;60:21">git</codeph> command-line client<ul id="ul_adf_mrv_v2c" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="ul:6;60:77">
+						<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/git-tech-writers/git_client_applications.dita" xtrc="li:15;61:11">Useful for scripting or advanced commands</li>
+					</ul></li>
+			</ul>
+		</section>
+	</body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:5;9:56" xtrf="file:/D:/syncprojects/blog/git-tech-writers/using_git_for_technical_writing.ditamap"><link class="- topic/link " format="dita" href="../git-tech-writers/using_git_for_technical_writing.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:1;5:59" xtrf="file:/D:/syncprojects/blog/git-tech-writers/using_git_for_technical_writing.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Using Git For Technical Writing</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The <b class="+ topic/ph hi-d/b " xtrc="b:1;5:20" xtrf="file:/D:/syncprojects/blog/git-tech-writers/using_git_for_technical_writing.dita">Git</b> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </desc></link></linkpool></related-links></topic>

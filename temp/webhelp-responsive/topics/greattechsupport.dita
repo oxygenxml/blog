@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_elm_qn3_sr" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="topic:1;3:30" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="title:1;4:10">A set of rules for providing great tech support</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="p:1;9:8">I've been doing technical support for more than 10 years and I feel that I've gathered a few
+      ideas about what <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="b:1;10:27">great</b> tech support would be. And doing tech support the right way can
+      be great both for product users and for the product developer as it provides lots of
+      opportunities to further enhance and steer the application.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="p:2;13:8">
+      <ol class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="ol:1;14:11">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:1;15:13">Never say <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="b:2;15:26">never</b>. Never assume for certain that a feature request will not get
+          implemented. Just register it and wait for feedback from others. I've had so many cases in
+          which requests which initially seemed not worthy of implementation became important
+          features in later versions.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:2;19:13">When asked for a solution to a specific problem, give the solution but also provide a
+          sequence of deductive steps you took in order to find the solution. So give them the fish
+          but also discuss about how they can fish for themselves. Help people evolve and you will
+          have less tech support to do.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:3;23:13">Try to steer conversations as much as possible from private emails to forums and public
+          user lists. These become repositories of knowledge and you'll avoid explaining the same
+          thing multiple times if there is already a place on the web explaining it.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:4;26:13">In order to avoid answering the same question multiple times you have the following
+          constructive options:<ul id="ul_hbj_tw3_sr" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="ul:1;27:55">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:5;28:17">Add a topic in the product's User's Manual explaining the problem</li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:6;29:17">Improve the product so that it becomes easier to perform those particular
+              tasks.</li>
+          </ul></li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:7;32:13">Some of our users know more and work more with certain aspects of the application than
+          we do. So when certain work-flows are not appropriate for them, it's important that you
+          listen and possibly change the application accordingly.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:8;35:13">Whenever an older behavior is changed in the application, even if you consider that the
+          change is for the better, you will get complaints. And you will need to decide if users
+          just need a time to adjust to the changes or if you've taken the application in the wrong
+          direction.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:9;39:13">You may get asked questions which are not particularly related to what the application
+          does. But you might still be able to give your personal opinion and a few useful links to
+          get your client moving in the right direction.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:10;42:13">You will gain access to various user samples and work with the application to reproduce
+          certain problems. Various times while working with the application to reproduce a problem
+          you will also notice other behaviors which can be improved as well. Contribute all those
+          side-effect suggestions to your issues list as well.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:11;46:13">Make it as easy as possible for people to report problems or to ask questions about the
+          product. For example in Oxygen in the Help menu we have a "Report Problem" action which
+          can be used to quickly report to us any issue which may arise while using the
+          application.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="li:12;50:13">Always try to provide a feasible workaround for a bug or for a lack of
+          functionality.</li>
+      </ol>
+    </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/greattechsupport.dita" xtrc="p:3;54:8">If you have more ideas about this, please share them with me.</p>
+  </body>
+</topic>

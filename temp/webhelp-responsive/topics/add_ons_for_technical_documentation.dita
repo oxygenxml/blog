@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="add_ons_for_technical_documentation" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="topic:1;3:49" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="title:1;4:12">Add-ons For Technical Documentation</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="shortdesc:1;5:16">Oxygen XML Author has various free and useful add-ons for technical documentation
+        writers, including a language model for editing, batch document converter, Git client,
+        content fusion connector, feedback comments manager, terminology checker, DITA translation,
+        and live tutorials. </shortdesc>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="prolog:1;9:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="author:1;10:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="critdates:1;11:20">
+            <created date="2023-04-12" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="created:1;12:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="body:1;15:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="p:1;16:12">Oxygen XML Author can be enhanced by installing add-ons. There are a large number of free
+            and useful add-ons for technical documentation writers and we will explore some of them.
+            Documentation and installation instructions for all Oxygen add-ons can be found <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/add-ons.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:1;20:34"><?ditaot usertext?>here</xref>.<dl id="dl_g3z_x31_dxb" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dl:1;20:70">
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:1;21:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:1;22:25"><xref href="ai_positron.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:2;22:56" type="topic"><?ditaot gentext?>Oxygen AI Positron Assistant Add-on<?ditaot genshortdesc?><desc class="- topic/desc ">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:1;5:21">Oxygen AI Positron Assistant</b> add-on provides support for helping technical     documentation writers <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:2;6:30">generate</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:3;6:47">re-write</b> content, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:4;6:72">overview</b> and       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:5;7:10">research</b>. It also supports performing AI checks and AI-based modifications on       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:6;8:10">multiple files</b> by integrating AI extensions with XML technologies like       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:7;9:10">Schematron</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:8;9:31">XSLT</b>.</desc></xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:1;23:25">Use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="b:1;23:36">Oxygen AI Positron</b> service based on <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="b:2;23:79">ChatGPT</b> to enhance
+                        your editing experience. </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:2;26:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:2;27:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:3;29:60"><?ditaot usertext?>Fluenta DITA Translation
+                        Add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:2;31:25">Create and manage XLiff files from your DITA XML content using the Fluenta libraries.<ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="ul:1;31:114">
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:1;32:33">Create translation projects</li>
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:2;33:33">Convert DITA XML to XLiff</li>
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:3;34:33">Convert XLiff to DITA</li>
+                        </ul></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:3;37:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:3;38:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:4;40:60"><?ditaot usertext?>Batch Documents Converter</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:3;41:25">Convert various formats like Word, HTML, Markdown, DocBook, Open API, or
+                        Confluence into other formats like DITA XML.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:4;44:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:4;45:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:5;46:60"><?ditaot usertext?>Git Client add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:4;47:25">Collaborate with your colleagues on a Git project. Comes with support for: <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="ul:2;47:104">
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:4;48:33">Git Staging<ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="ul:3;48:48">
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:5;49:41">Settings to validate before commit or before push.</li>
+                                </ul></li>
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:6;51:33">Git History</li>
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:7;52:33">Git Branch Manager</li>
+                        </ul></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:5;55:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:5;56:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/content-fusion-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:6;58:60"><?ditaot usertext?>Content Fusion Connector
+                        Add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:5;60:25">Create review tasks for collaborators and subject matter experts who can
+                        later review the tasks in a web browser.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:6;63:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:6;64:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ofb-feedback-comments-manager.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:7;66:60"><?ditaot usertext?>Feedback Comments Manager
+                        Add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:6;68:25">View and manage comments made in the Oxygen WebHelp Feedback forms directly
+                        in the Oxygen application.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:7;71:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:7;72:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:8;74:60"><?ditaot usertext?>Terminology Checker Add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:7;75:25">
+                        <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="ul:4;76:29">
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:8;77:33">Define terminology rules specific for your application to suggest
+                                replacements for certain combinations of words.</li>
+                            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="li:9;79:33">Use rules already implemented in Vale syntax. </li>
+                        </ul>
+                    </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:8;83:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:8;84:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/live-tutorials-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:9;86:60"><?ditaot usertext?>Live Tutorials Add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:8;87:25">Create or explore already available tutorials to learn various Oxygen
+                        features.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:9;90:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:9;91:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/dita-prolog-updater.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:10;93:60"><?ditaot usertext?>DITA Prolog Updater Add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:9;94:25">Automatically update the author name and revision dates in the prolog
+                        section when saving DITA topics or maps in Oxygen.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dlentry:10;97:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dt:10;98:25"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/dita-outgoing-references-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="xref:11;100:60"><?ditaot usertext?>DITA References View Add-on</xref></dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/add_ons_for_technical_documentation.dita" xtrc="dd:10;101:25">See the set of outgoing and incoming references for each opened DITA topic,
+                        including references defined in a relationship table.</dd>
+                </dlentry>
+            </dl></p>
+    </body>
+</topic>

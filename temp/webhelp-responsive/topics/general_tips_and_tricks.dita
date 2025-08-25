@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="general_tips_and_tricks" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="topic:1;3:37" specializations="@props/deliveryTarget">
+ <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:1;4:9">Tips And Tricks</title>
+ <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="prolog:1;5:10">
+  <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="author:1;6:11">Radu Coravu</author>
+  <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="critdates:1;7:14">
+   <created date="2020-02-04" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="created:1;8:32"/>
+  </critdates>
+ </prolog>
+ <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="body:1;11:8">
+  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:1;12:6"><ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ph:1;12:27">Oxygen XML Editor</ph> has about 18 years of development under its wings. During these years, we
+   added lots of functionality and many of our users usually do not know more than 20-30% of
+   Oxygen's features. So this presentation is intended for people using Oxygen and who may want to
+   find out more about their tool.</p>
+  <section id="section_gdt_dk3_ffb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:1;16:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:2;17:11">General Layout - Views and Toolbars:</title>
+   <ul id="ul_gmy_rn5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:1;18:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:1;19:9">Side views and toolbars can be arranged by drag and drop. Views can be switched to the
+     auto-hide mode to gain screen size.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:2;21:9">To hide all side views you can use the main menu <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:1;21:69">Window-&gt;Maximize Editing
+      Area</uicontrol> action. Or you can maximize the editing area by double clicking on the tab of
+     an opened XML document.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:3;24:9">To hide all toolbars you can use the main menu <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:2;24:67">Window-&gt;Hide all
+      toolbars</uicontrol> action.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:4;26:9">You can also right-click in the toolbar area and use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:1;26:69">Configure Toolbars</b> action to
+     see what toolbars are available or what toolbars can be removed.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:5;28:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:2;28:16">Symbols</b> toolbar is quite interesting if you often want to insert symbols that are
+     not on the current keyboard.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:6;30:9">The entire layout of the views and toolbars can be saved (<uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:3;30:78">Window-&gt;Export
+      Layout</uicontrol>) and then shared with others (<uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:4;31:67">Window-&gt;Load
+     Layout</uicontrol>).</li>
+   </ul>
+  </section>
+  <section id="section_bpy_jdz_rkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:2;35:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:3;36:11">Side Views You Probably Never Used</title>
+   <ul id="ul_nyz_ldz_rkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:2;37:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:7;38:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:3;38:16">Information</b> view.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:8;39:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:4;39:16">Properties</b> view.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:9;40:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:5;40:16">Scratch Buffer</b> view.</li>
+   </ul>
+  </section>
+  <section id="section_pwy_nd4_mfb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:3;43:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:4;44:11">Project-related Functionality:</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:2;45:7">The Oxygen Project view is the place where you can organize and apply batch changes to all
+    your resources:</p>
+   <ul id="ul_shb_qd4_mfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:3;47:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:10;48:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-main-files.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:1;49:38"><?ditaot usertext?>Master files support</xref>. Enable master files support in the
+     project, add your top level XML documents as master files and any structure changes, renaming
+     or moving files will automatically update all links in the Project. Also works for
+     renaming/moving image resources.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:11;53:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-storing.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:2;54:38"><?ditaot usertext?>Store options at project level.</xref> Almost all of Oxygen's
+     preferences pages can be saved at project level. Once you do that, you can share the
+      <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:6;56:10">project.xpr</b> file with somebody else and when they open it, they will also get the
+     settings set inside the project. Transformation and validation scenarios can also be saved at
+     project level.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:12;59:9">Compare files/folders by selecting them in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:7;59:59">Project</b> view, right click and using
+     the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:8;60:13">Compare...</b> popup menu action.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:13;61:9">Add references to multiple folders from various parts of your current file system and
+     organize your work in one place.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:14;63:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:3;65:38"><?ditaot usertext?>Batch operations</xref>: Select a folder in the project, right
+     click and use the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:5;66:35">Transform</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:6;66:69">Validate</uicontrol>,
+      <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:7;67:18">Format and Indent</uicontrol>, <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:8;67:60">Find/Replace in Files</uicontrol>, or
+      <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:9;68:18">Spell Check in Files</uicontrol>. Or use the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:10;68:74">XML Refactoring</uicontrol>
+     action to apply a refactoring stylesheet over all the selected files.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:15;70:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/using-the-project-view.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:4;72:38"><?ditaot usertext?>Filter files</xref>. You can instruct the Project view to hide
+     various file types.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:16;74:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:9;74:16">Image Preview</b> view will show the image current selected in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:10;74:86">Project</b>
+     view.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:17;76:9">Open command prompt in a certain folder (right click on a folder, <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:11;76:86">Show
+      in-&gt;Terminal</uicontrol>.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:18;78:9">Open the current selected file or folder in the system file browser (right click and choose
+      <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:12;79:18">Show in-&gt;Finder</uicontrol>).</li>
+   </ul>
+  </section>
+  <section id="section_uf1_ncs_gfb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:4;82:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:5;83:11">Navigation:</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:3;84:7">Actions to find opened files, find files containing a certain content or navigate between
+    files.</p>
+   <ul id="ul_uwk_nnb_hhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:4;86:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:19;87:9">In the main <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:13;87:32">Window</uicontrol> menu, you can find the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:11;87:77">Next/Previous Editor</b>
+     actions and their shortcuts. Together with the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:12;88:56">Switch editor tab</b> action, these help you
+     navigate between opened XML documents.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:20;90:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:13;90:16"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/open-find-resource-dialog.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:5;92:39"><?ditaot usertext?>Open/Find Resource</xref></b> view (main menu <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:14;92:88">Window-&gt;Show
+      View</b>) allows you to search for file names, search in file contents, or search for files
+     containing comments or change tracking.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:21;95:9">Right-click the tab of an opened XML document and use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:15;95:70">Copy location</b> action. Or
+     use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:16;96:17">Show in Explorer/Finder</b> action to locate the file.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:22;97:9">Use the main menu <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:17;97:30">File-&gt;Reopen last closed editor</b> action to re-open the last closed
+     file.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:23;99:9">Use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:18;99:20">Navigation</b> toolbar to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:19;99:49">Go back/forward/last modification</b>.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:24;100:9">
+     <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:4;101:9">The main <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:20;101:21">Window</b> menu has actions to tile all opened XML documents and also to enable
+      synchronous scrolling in them (useful if you want to look at similar XML documents and maybe
+      to copy/paste between them).</p>
+    </li>
+   </ul>
+  </section>
+  <section id="section_d3n_xg3_ffb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:5;107:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:6;108:11">Find/Replace Functionality</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:5;109:7">The Find/Replace functionality is the bread and butter of any editing application and Oxygen
+    has lots of functionality in this regard:</p>
+   <ul id="ul_xk3_zg3_ffb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:5;111:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:25;112:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/find-and-replace-text-in-files.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:6;114:38"><?ditaot usertext?>Find/Replace in Files</xref>. <ul id="ul_fx2_fvz_3hb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:6;114:92">
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:26;115:11">Restrict to XPath - If you want to make replacements only in certain parts of the XML
+       document, the XPath restriction can be used to focus only on certain attributes or element
+       content.</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:27;118:11">Ignore Whitespaces - You should usually check this checkbox as there is always there is a
+       possibility what the words you are searching for may be split on multiple lines in the XML
+       content.</li>
+     </ul></li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:28;122:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:21;122:16">Find</b> menu → <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:22;122:35">Find Next/Previous</b> actions allow you to find the next/previous
+     occurrence of the current selected word(s). Or you can use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:23;123:72">Find All</b> action to find
+     and highlight all occurrences of a word or a sequence of words.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:29;125:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:24;125:16">Find</b> menu → <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:25;125:35">Find all Elements</b> action shows a dialog box allowing you to
+     find elements or attributes containing a sequence of words.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:30;127:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:26;127:16">Find</b> menu → <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:27;127:35">Quick find toolbar</b> is a compact toolbar giving you access to
+     search functionality.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:31;129:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:28;129:16">XPath</b> toolbar allows you to use <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:29;129:55">XPath</b> expressions (i.e.
+      <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeph:1;130:15">//comment()[contains(., 'TODO')]</codeph>) to search the current topic or a set of
+     topics for elements, attributes, or comments matching a set of conditions.</li>
+   </ul>
+  </section>
+  <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:6;134:12">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:7;135:11">Text Editing:</title>
+   <ul id="ul_s45_tn5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:7;136:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:32;137:9">You can use the mouse wheel or the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:30;137:47">Ctrl + and Ctrl -</b> shortcuts to increase or
+     decrease the font in the current opened XML document.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:33;139:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:31;139:16">Preferences-&gt;Editor / Edit Modes / Text</b> page allows you to wrap the visual line
+     and show a print margin.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:34;141:9">
+     <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:6;142:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:7;143:39"><?ditaot usertext?>Code templates</xref> can be used in order to define small
+      code snippets which are often inserted. <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:8;146:25"><?ditaot usertext?>Editor variables</xref> can be used inside those code templates and they
+      will get expanded on insertion. Various useful editor variables:</p>
+     <ul id="ul_anc_5n5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:8;148:30">
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:35;149:11"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeph:2;149:19">${author.name}</codeph></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:36;150:11"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeph:3;150:19">${selection}</codeph></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:37;151:11"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeph:4;151:19">${ask('Author Name', generic, 'John Doe')}</codeph></li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:38;152:11"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeph:5;152:19">${xpath_eval(upper-case(substring('${cfn}', 1, 4)))}</codeph></li>
+     </ul>
+     <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:7;154:9">Code templates can also be saved at project level or exported in order to share them with
+      others. You can read more about the contexts in which editor variables can appear in this blog
+      post: <xref href="all_about_editor_variables.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:9;156:59" type="topic"><?ditaot gentext?>All About Editor Variables</xref>.</p>
+    </li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:39;158:9">Triple click an element tag to select the entire element.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:40;159:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/text-navigate-document-content.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:10;161:38"><?ditaot usertext?>Various navigation shortcuts</xref>: Go after next tag. Select
+     parent. Use the top level breadcrump.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:41;163:9">Move lines up and down (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:32;163:36">Alt-Up/Down</b>).</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:42;164:9">Click line number to select the entire line. </li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:43;165:9">Go to line/column (main menu <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:33;165:41">Find-&gt;Go to...</b>). </li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:44;166:9">Open file at cursor on references to navigate to referenced file or create new file
+      (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:34;167:11">Ctrl-ENTER</b>).</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:45;168:9">Bookmarks (main menu <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:35;168:33">Edit-&gt;Bookmarks</b>).</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:46;169:9">Quick find filter for side views (Outline, Entities, Transformation Scenarios).</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:47;170:9">Drag/drop resources from a file browser or copy/paste to create links to the resources.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:48;171:9">Remove results of XPath execution.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:49;172:9">Use <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/text-mode-actions.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:11;174:38"><?ditaot usertext?>contextual menu</xref> to: <ul id="ul_pvt_bp5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:9;174:89">
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:50;175:11">Apply base 64/32 encoding or decoding to various parts of the XML document. (for example
+       insert base 64 encoded images using the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:36;176:51">data:image/png;base64,</b> protocol.</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:51;177:11">Escape/unescape selection.</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:52;178:11">Toggle comment.</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:53;179:11">Indent selection.</li>
+     </ul></li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:54;181:9">Split editor (main menu <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:37;181:36">Window-&gt;Split</b> actions) to copy paste between different parts
+     of the XML document.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:55;183:9">Open an XML document in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:38;183:40">Text</b> editing mode, right click, choose <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:39;183:86">Go to
+      definition</b> to open the DTD, XML Schema or RelaxNG Schema at the precise location where
+     that XML element is defined.</li>
+   </ul>
+  </section>
+  <section id="section_ify_v12_rkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:7;188:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:8;189:11">Huge File Editing</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:8;190:7">Huge XML and Text documents (Gigabytes) can be <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/huge-file-editor.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:12;192:23"><?ditaot usertext?>opened and edited</xref> in the application.</p>
+  </section>
+  <section id="section_zjm_4lt_nkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:8;194:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:9;195:11">Grid editing mode:</title>
+   <ul id="ul_tdt_fp5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:10;196:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:56;197:9">The <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:14;197:24">Grid</uicontrol> editing mode is useful for looking at XML documents exported
+     from data bases. </li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:57;199:9">You can use this mode to sort tables or to copy table data to Excel spreadsheets.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:58;200:9">The JSON editor also has a Grid editing mode.</li>
+   </ul>
+  </section>
+  <section id="section_l1g_sg3_ffb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:9;203:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:10;204:11">Editing in the Author Visual Editing Mode</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:9;205:7">
+    <ul id="ul_idm_ch3_ffb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:11;206:29">
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:59;207:10">Increase/decrease editor font - Use <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:40;207:49">Ctrl/CMD +/-</b> to increase or decrease the font in
+      the current edited document.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:60;209:10">Inserting elements - Pressing ENTER in the Author visual editing mode will show you a list
+      with all possible elements that can be inserted. If you choose an invalid element, Oxygen will
+      find a place for it. You can also add <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/the-content-completion-tab.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:13;213:39"><?ditaot usertext?>custom actions</xref> or code templates to the content
+      completion list.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:61;215:10">Select content then press <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:41;215:39">ENTER</b> to surround the content in a new element.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:62;216:10">Select start tag of element, press <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:42;216:48">ENTER</b> to rename the element.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:63;217:10">Select multiple intervals - Press the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:43;217:51">Ctrl/CMD</b> button when selecting text to select
+      multiple text intervals. Once you do that, you can use toolbar actions like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:44;218:86">Bold</b>,
+       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:45;219:11">Italic</b>, or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:46;219:29">Underline</b> or you can use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:47;219:65">Edit Profiling Attributes</b> action
+      to set profiling attributes on all the selected items.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:64;221:10">In-place attributes editor - Instead of using the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:48;221:63">Attributes</b> view, you can press
+       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:49;222:11">Alt-Enter</b> to edit attributes for the current element in a small pop-up dialog
+      box.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:65;224:10">Select an entire element - Triple-click inside an element's contents to select the entire
+      element. After this, you can move the element to a new place.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:66;226:10">Double-click to select by word, then drag the mouse to select the content word by
+      word.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:67;228:10">Move elements (especially paragraphs, list items) up or down (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:50;228:75">ALT-UP/DOWN</b>), indent
+      or unindent list items (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:51;229:34">Tab</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:52;229:46">Shift-Tab</b>).</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:68;230:10">Easily insert lists using framework specific auto correct support. Insert for example
+       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:53;231:11">1.</b> at the beginning of a paragraph, press the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:54;231:64">Space</b> key and the inserted
+      content becomes an ordered list. Or in a DITA topic at the beginning of a paragraph type
+       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:55;233:11">```java</b> and press space to insert a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xmlelement:1;233:63">codeblock</xmlelement>.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:69;234:10">Select content and then use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:56;234:45">Toggle comment</b> action (contextual menu
+       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:57;235:11">Refactoring</b> submenu) to quickly add an XML comment around it.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:70;236:10">In the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/author-contextual-menu.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:14;238:39"><?ditaot usertext?>contextual menu</xref> the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:58;238:69">Text</b> submenu contains useful
+      actions to count the number of words in the entire document (or in the selected text), convert
+      the selection to upper, lowercase, or sentence case).</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:71;241:10"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/author-navigate-document-content.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:15;243:39"><?ditaot usertext?>Bookmarks</xref> - Click the vertical left side bar in the
+      editing area to add a bookmark. Navigate to that bookmark even after the file has been closed
+      using the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:59;245:20">Ctrl/CMD + number</b> shortcut.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:72;246:10"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/folding-author-mode.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:16;248:39"><?ditaot usertext?>Collapse other folds</xref> - Click a fold triangle in the
+      Author visual editing mode and you can choose to close all other folds, useful when working
+      with multiple sections in the same file.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:73;251:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:10;252:10"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/code-templates-x-editing2.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:17;253:40"><?ditaot usertext?>Code templates</xref> - Define small fragments of XML content
+       that can be inserted either by defining a shortcut key or by pressing <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:60;254:81">ENTER</b> in the
+       editing area.</p>
+     </li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:74;257:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:11;258:10"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:18;259:40"><?ditaot usertext?>Editor variables</xref> - Certain Oxygen-specific macros can
+       be automatically expanded. For example, a code template that inserts the current author name
+       can use this editor
+       variable:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeblock:1;262:55">&lt;author&gt;${author.name}&lt;/author&gt;</codeblock>or
+       a code template that surrounds the selection inside a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xmlelement:2;263:74">keyword</xmlelement>
+       element:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeblock:2;264:54">&lt;keyword&gt;${selection}&lt;/keyword&gt;</codeblock>or
+       a code template that first asks the end user for their name and then inserts it in the
+       document:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="codeblock:3;266:55">&lt;author&gt;${ask('Author Name', generic, 'John Doe')}&lt;/author&gt;</codeblock>Editor
+       variables can also be used when creating <xref href="author-document-type-extension-sharing-custom-new-file-templates.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:19;268:86" type="topic"><?ditaot usertext?>new file
+        templates</xref>. You can read more about the contexts in which editor variables can appear
+       in this blog post: <xref href="all_about_editor_variables.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:20;270:73" type="topic"><?ditaot gentext?>All About Editor Variables</xref>.</p>
+     </li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:75;272:10">Outline Quick find filter - The Outline view contains a filter that can be used to reduce
+      the number of elements displayed in it (for example, display only the contained topics).</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:76;274:10">The <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:15;274:25">Author</uicontrol> editing mode is best for editing bidirectional text with
+      Arabic or Hebrew content.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:77;276:10">Editing MS Word and LibreOffice documents in the Author mode.</li>
+    </ul>
+   </p>
+  </section>
+  <section id="section_ecn_2k3_ffb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:10;280:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:11;281:11">Preferences:</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:12;282:7">Oxygen has a lot of global settings that can be configured, I will just list what I consider
+    to be the most important ones:</p>
+   <ul id="ul_a1d_rp5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:12;284:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:78;285:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-global.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:21;286:38"><?ditaot usertext?>Global</xref> - Change application language or show memory
+     status.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:79;288:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-appearance.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:22;289:38"><?ditaot usertext?>Appearance</xref> - Change the default color theme in Oxygen
+     (the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:61;290:14">Graphite</b> theme is quite popular).</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:80;291:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-application-layout.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:23;293:38"><?ditaot usertext?>Application Layout</xref> - impose custom layout or change
+     editor tabs placement.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:81;295:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-menu-shortcut-keys.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:24;297:38"><?ditaot usertext?>Menu shortcut keys</xref> - You can use this preferences page
+     to assign or to see the shortcut for any action available in Oxygen.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:82;299:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-fonts.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:25;300:38"><?ditaot usertext?>Fonts</xref> - This page allows you to change the default fonts
+     used in the application. You can also see what font can be used for a certain set of
+     characters.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:83;303:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-spell-check.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:26;305:38"><?ditaot usertext?>Spell check</xref> - Customize the spell checker settings, use
+     custom spell check dictionaries.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:84;307:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-external-tools.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:27;308:38"><?ditaot usertext?>External tools</xref> - Define various command line tools that
+     you can launch from Oxygen.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:85;310:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-content-completion-annotations.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:28;312:38"><?ditaot usertext?>Editor / Content Completion / Annotations</xref> - Disable the
+     tooltips which appear when hovering over various elements (useful if you have a small
+     screen).</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:86;315:9"><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:29;316:38"><?ditaot usertext?>Editor / Save</xref> - Settings to automatically save, recover
+     content data on computer crash or to check for errors before saving the file.</li>
+   </ul>
+  </section>
+  <section id="section_ism_qh2_rkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:11;320:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:12;321:11">CSS-based PDF Publishing</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:13;322:7">The embedded <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:16;322:31">Chemistry</uicontrol> engine can be used to publish any XML document
+    to PDF using CSS to style the published output. There is a new transformation type <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:62;323:91">XML to PDF
+     transformation using CSS</b> which can be used for this. The <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:17;324:78">CSS
+     Inspector</uicontrol> view can be used to see what CSS styles get applied.</p>
+  </section>
+  <section id="section_edt_dk3_ffb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:12;327:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:13;328:11">Tools</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:14;329:7">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:63;329:14">Tools</b> main menu is worth exploring. You can:<ul id="ul_thn_hq5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:13;329:86">
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:87;330:10">Invoke XML refactoring actions.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:88;331:10">Open the SVG Viewer.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:89;332:10">Find various JSON-related tools.</li>
+    </ul></p>
+  </section>
+  <section id="section_fdt_dk3_ffb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:13;335:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:14;336:11">Import - Convert</title>
+   <ul id="ul_nn3_nq5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:14;337:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:90;338:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:64;338:16">File</b> menu offers the possibility to import HTML, CSV, Excel files, or database
+     content as XML. </li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:91;340:9">For some XML frameworks like DITA, TEI, DocBook and XHTML you can use the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:30;342:38"><?ditaot usertext?>smart paste</xref> functionality.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:92;343:9">The <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:31;344:38"><?ditaot usertext?>Batch convertor add-on</xref> allows you to convert multiple
+     HTML, Markdown, Excel files to DITA.</li>
+   </ul>
+  </section>
+  <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:14;348:12">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:15;349:11">Connectivity</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:15;350:7">Oxygen comes bundled with an SVN client.</p>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:16;351:7">You can also work with resources directly from <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/webdav-connection.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:32;353:23"><?ditaot usertext?>WebDav repositories</xref>, <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/configure-exist.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:33;355:23"><?ditaot usertext?>Exist</xref> and various other databases.</p>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:17;356:7">There are also a couple of add-ons which add extra connectivity: <ul id="ul_pbj_lh5_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:15;356:96">
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:93;357:10"><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:34;358:9"><?ditaot usertext?>Git add-on</xref> for Oxygen.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:94;359:10"><xref href="https://github.com/oxygenxml/oxygen-cmis-plugin" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:35;360:9"><?ditaot usertext?>CMIS add-on</xref> for Oxygen.</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:95;361:10"><xref href="https://github.com/axxepta/project-argon" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:36;361:95"><?ditaot usertext?>BaseX
+       add-on</xref> for Oxygen.</li>
+    </ul></p>
+  </section>
+  <section id="section_gld_tbs_gfb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:15;365:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:16;366:11">Add-ons</title>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:18;367:7">In the application main menu you can go to the main menu <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="uicontrol:18;367:75">Help-&gt;Install new
+     Add-ons</uicontrol> and our official add-ons update site contains a couple of available
+    add-ons. There are also other free add-ons provided by the Oxygen team that can be installed in
+    an <xref href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;type=Repositories" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:37;371:37"><?ditaot usertext?>Oxygen standalone version</xref>. </p>
+   <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="p:19;372:7">I will enumerate some of the most popular interesting add-ons below:</p>
+   <ul id="ul_xbw_ccs_gfb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:16;373:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:96;374:9"><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:38;375:8"><?ditaot usertext?>Git add-on</xref>. This plugin adds a side view allowing you to do some common Git operations
+     like pull, commit, push (mostly 90% of what a regular Git user would do).</li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:97;377:10"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/content-fusion-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:39;378:38"><?ditaot usertext?>Content Fusion Connector add-on</xref>. Collaborate with your
+     peers by sending them links that allow them to give you feedback on your work using a web
+     browser without the need to pre-install anything on their side. </li>
+     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:98;381:10"><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:40;382:38"><?ditaot usertext?>Batch convertor add-on</xref>. Converts multiple HTML,
+     Markdown, Excel files to DITA.</li>
+   </ul>
+  </section>
+  <section id="section_jdt_dk3_ffb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="section:16;386:37">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="title:17;387:11">Keeping in Touch</title>
+   <ul id="ul_dlb_qbv_nkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="ul:17;388:28">
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:99;389:9">Oxygen's <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:65;389:21">Help</b> menu allows you to use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:66;389:60">Report problem</b> action to contact us
+     directly. </li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:100;391:9">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="b:67;391:16">Support Tools-&gt;Randomize XML Content</b> action allows you to randomize the content
+     of an XML project before sending it to us for tests.</li>
+    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="li:101;393:9">And there are a lot of other ways to get in touch with us or to find various videos or
+     tutorials to read: <xref href="https://www.oxygenxml.com/technical_support.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/general_tips_and_tricks.dita" xtrc="xref:41;395:25"/>.</li>
+   </ul>
+  </section>
+ </body>
+</topic>

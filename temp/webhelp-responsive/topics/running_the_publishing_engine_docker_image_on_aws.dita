@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="running_the_publishing_engine_docker_image_on_aws" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="concept:1;3:65" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="title:1;4:12">Running the Publishing Engine Docker Image on AWS</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="author:1;6:17">Radu Coravu</author>
+    </prolog>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="conbody:1;8:14">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="p:1;9:12">You can create an EC2 instance on the Amazon Cloud Computing AWS platform, run the
+            publishing there if changes are detected in a Git project, and publish the content to
+            the same platform.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="p:2;12:12">
+            <dl id="dl_z45_qzj_5zb" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dl:1;13:37">
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:1;14:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:1;15:25">Create an Account on AWS</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:1;16:25"><xref href="https://aws.amazon.com/resources/create-account/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="xref:1;17:46"><?ditaot usertext?>Sign in</xref> to create an account on AWS.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:2;19:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:2;20:25">Create an EC2 Instance</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:2;21:25"><xref href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="xref:2;23:60"><?ditaot usertext?>Create an EC2 Instance</xref> on
+                        AWS.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:3;26:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:3;27:25">Configure the Security Group and Install a Web Server</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:3;28:25">Configure the Security Group associated to the EC2 instance to allow for
+                        HTTP or HTTPS connections and <xref href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="xref:3;31:60"><?ditaot usertext?>install a web server</xref>.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:4;33:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:4;34:25">Connect to the EC2 Instance</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:4;35:25">Use the AWS Instance Connect to open a console in the web browser to the
+                        instance.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:5;38:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:5;39:25">Install Git in the EC2 instance</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:5;40:25">Run this command in the console to install
+                        git:<codeblock id="codeblock_sjq_dbk_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:1;41:67">sudo yum install git</codeblock></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:6;43:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:6;44:25">Install Docker in the EC2 Instance</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:6;45:25">Run this command in the console to install Docker and start the Docker
+                        daemon:<codeblock id="codeblock_hyt_qbk_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:2;46:70">sudo yum install docker
+sudo systemctl start docker</codeblock></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:7;49:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:7;50:25">Clone the Git Project</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:7;51:25">Create a local clone of the Git project by running this command in the
+                        console:<codeblock id="codeblock_wyk_nbk_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:3;52:71">git clone https://github.com/oxygenxml/blog.git</codeblock></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:8;54:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:8;55:25">Create the Docker Image</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:8;56:25">Change directory to the folder containing the
+                            <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="filepath:1;57:39">Dockerfile</filepath> and run Docker to create an
+                        image.<codeblock id="codeblock_t1g_tbk_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:4;58:69">cd blog/build
+sudo docker image build -t oxygen-publishing-engine:1.0 .</codeblock></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:9;61:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:9;62:25">Save the Oxygen Publishing Engine License to a file</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:9;63:25">Save the <xref href="https://www.oxygenxml.com/publishing_engine.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="xref:4;64:60"><?ditaot usertext?>Oxygen Publishing Engine</xref> license
+                        key to a file (for example, in
+                            <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="filepath:2;66:39">/home/ec2-user/licensekey.txt</filepath>).</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:10;68:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:10;69:25">Run a Container Based on the Docker Image to Publish</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:10;70:25">
+                        <codeblock id="codeblock_k3t_3ck_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:5;71:63">sudo docker run -e LICENSE_KEY="$(&lt;/home/ec2-user/licensekey.txt)" \
+--rm --name dita-ot-publish\
+-v /home/ec2-user/blog/:/src  \
+oxygen-publishing-engine:1.0 \
+-p /src/blog-project.xml \
+-o /src/out \
+-f webhelp-responsive -v</codeblock>
+                    </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:11;80:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:11;81:25">Copy the Published Content to the HTTP Web Server's Folder</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:11;82:25">
+                        <codeblock id="codeblock_rpk_hmk_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:6;83:63">cp -rf /home/ec2-user/blog/out/site/* /var/www/html/</codeblock>
+                    </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:12;86:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:12;87:25">Script to Update the Repository And Publish If Necessary</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:12;88:25">Create a script (for example, named <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="filepath:3;88:71">pullPublish.sh</filepath>)
+                        with the contents:<codeblock id="codeblock_knk_2sk_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:7;89:81">#! /bin/sh
+cd /home/ec2-user/blog
+git -C . remote update &amp;&gt; /dev/null
+checkgit=`git -C . status`
+
+if [[ ! "$checkgit" =~ "up to date" ]]; then
+    # Pull
+    git -C . pull
+    # And publish
+    sudo docker run -it -e LICENSE_KEY="$(&lt;/home/ec2-user/licensekey.txt)" -v /home/ec2-user/blog/:/src  oxygen-publishing-engine:1.0 -p /src/blog-project.xml -o /src/out -f webhelp-responsive -v
+    # Move web site to web server's folder.
+    rm -rf /var/www/html/*
+    mv -f /home/ec2-user/blog/out/site/* /var/www/html/
+fi</codeblock></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dlentry:13;104:26">
+                    <dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dt:13;105:25">Schedule Script to Run Every 10 Minutes</dt>
+                    <dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="dd:13;106:25">Edit the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="filepath:4;106:44">crontab</filepath>
+                        file:<codeblock id="codeblock_xbm_h5k_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:8;107:68">cd /etc
+sudo vi crontab</codeblock>and add to the
+                        file:<codeblock id="codeblock_lwy_k5k_5zb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/running_the_publishing_engine_docker_image_on_aws.dita" xtrc="codeblock:9;109:68">*/10 * * * * /home/ec2-user/pullPublish.sh</codeblock></dd>
+                </dlentry>
+            </dl>
+        </p>
+    </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:34;50:98" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><link class="- topic/link " format="dita" href="../topics/creating_a_docker_image_for_the_oxygen_publishing_engine.dita" mapclass="- map/topicref " role="parent" scope="local" type="concept" xtrc="topicref:33;48:100" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Creating a Docker Image for the Oxygen Publishing Engine</linktext></link></linkpool></related-links></concept>

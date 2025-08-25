@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\branchFilters?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/branchFilters/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topic_jc4_mvm_ft" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="topic:1;3:30" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="title:1;4:10">DITA 1.3 Branch Filtering - Next Generation of Reuse</title><prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="prolog:1;4:78"><author class="- topic/author " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="author:1;4:86">Radu Coravu</author>
+    <metadata class="- topic/metadata " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="metadata:1;5:15">
+      <keywords class="- topic/keywords " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="keywords:1;6:17">
+        <keyword outputclass="label" class="- topic/keyword " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="keyword:1;7:38">DITA 1.3</keyword>
+      </keywords>
+    </metadata></prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="body:1;10:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:1;11:8">In this blog post, I'm going to give you a small example of how branch filtering can benefit
+      two cases of reuse, which could not be done previously. You can read more about branch
+      filtering in the <xref href="https://www.oxygenxml.com/dita/1.3/specs/index.html#archSpec/base/branch-filtering.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="xref:1;15:40"><?ditaot usertext?>DITA 1.3 specs</xref>.</p>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="section:1;16:14">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="title:2;17:14">Case 1 - Combine Two Profiles in the Same Publication</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:2;18:10">Suppose that you have a <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:1;18:37">DITA Project</b> about preparing and cooking vegetables and your
+        DITA map looks like
+        this:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="codeblock:1;20:52">&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"&gt;
+&lt;map&gt;
+ &lt;title&gt;Cooking vegetables&lt;/title&gt;
+ &lt;topicref href="cleaningTableArea.dita" audience="novice"/&gt;
+ &lt;topicref href="preparingVegetables.dita"/&gt;
+ &lt;topicref href="addingExtraFlavor.dita" audience="expert"/&gt;
+ &lt;/map&gt;</codeblock> You have some content common both for <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:2;26:65">expert</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:3;26:83">novice</b>
+        users but you also have content that is specific for a target audience. You do not need to
+        teach <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:4;28:18">expert</b> chefs how to clean the table and you do not want to teach <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:5;28:90">novice</b>
+        cooks about enhanced flavoring techniques. </p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:3;30:10">All of this is fine until at some point you decide to produce a publication that contains
+        content merged inside both the novice and the expert map content. Here's where branch
+        filtering can help. You can create a main DITA map that reuses your current DITA map with
+        two profiling
+        contexts:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="codeblock:2;34:56">&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"&gt;
+&lt;map&gt;
+ &lt;title&gt;Cooking Vegetables.&lt;/title&gt;
+ &lt;topichead navtitle="Cooking for Beginners" keyscope="novice"&gt;
+  &lt;topicref href="vegetables.ditamap" format="ditamap"&gt;
+   &lt;ditavalref href="novice.ditaval"/&gt;
+  &lt;/topicref&gt;
+ &lt;/topichead&gt;
+ 
+ &lt;topichead navtitle="Cooking for Experts" keyscope="expert"&gt;
+  &lt;topicref href="vegetables.ditamap" format="ditamap"&gt;
+   &lt;ditavalref href="expert.ditaval"/&gt;
+  &lt;/topicref&gt;
+ &lt;/topichead&gt;
+&lt;/map&gt;</codeblock></p>
+    </section>
+    <section class="- topic/section " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="section:2;50:14"><title class="- topic/title " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="title:3;50:21">Case 2 - Reusing Common Topics with Different Product Names</title><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:4;50:91">Suppose
+        that you have a simple <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:6;51:35">DITA</b> task in which you have described how a certain task can
+        be performed for a certain product. In our case, the task describes peeling
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:7;53:12">potatoes</b>:</p><image href="image1.png" id="image_npn_dcn_ft" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="image:1;53:77" dita-ot:image-width="565" dita-ot:image-height="189" dita-ot:horizontal-dpi="120" dita-ot:vertical-dpi="120"/></section>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:5;54:8">The task works and at some point in your <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:8;54:52">Vegetables Soup</b> publication, you realize that
+      you need to write a similar task about peeling <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:9;55:57">cucumbers</b>. The task is exactly the same,
+      except for the product name. So naturally you want to reuse the existing written task. For
+      this, we re-write the task so that instead of the product <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="b:10;57:68">potatoes</b>, it contains two
+      consecutive profiled product
+      names:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="codeblock:3;59:51">Peeling &lt;ph product="potatoes"&gt;potatoes&lt;/ph&gt;&lt;ph product="cucumbers"&gt;cucumbers&lt;/ph&gt;</codeblock>and
+      include the task in the main DITA map in two places with different ditaval filters
+      applied:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="codeblock:4;61:53">&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"&gt;
+&lt;map&gt;
+ &lt;title&gt;Peeling Vegetables.&lt;/title&gt;
+ &lt;topichead navtitle="Potatoes"&gt;
+  &lt;topicref href="peeling.dita"&gt;
+   &lt;ditavalref href="potatoes.ditaval"/&gt;
+  &lt;/topicref&gt;
+ &lt;/topichead&gt;
+ 
+ &lt;topichead navtitle="Cucumbers"&gt;
+  &lt;topicref href="peeling.dita"&gt;
+   &lt;ditavalref href="cucumbers.ditaval"/&gt;
+  &lt;/topicref&gt;
+ &lt;/topichead&gt;
+&lt;/map&gt;</codeblock></p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:6;76:8">This kind of usage will produce two topic HTML files from the single
+        <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="filepath:1;77:19">peeling.dita</filepath> (in the HTML output folder), one for each filter
+      context.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:7;79:8">The DITA samples for this post can be downloaded from <xref href="https://www.oxygenxml.com/forum/files/branchFilteringBlogSamples.zip" format="zip" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="xref:2;81:27"/>.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/branchFilters/branchFilter.dita" xtrc="p:8;82:8">As usual, any feedback is welcomed.</p>
+  </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:24;36:66" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><link class="- topic/link " format="dita" href="../topics/learningDITAGeneral.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:2;7:77" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Learning</linktext></link></linkpool></related-links></topic>

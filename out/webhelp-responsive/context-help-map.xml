@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="welcome" path="topics/welcome.html"/>
+   <appContext helpID="frequently_asked_questions"
+               path="topics/frequently_asked_questions.html"/>
+   <appContext helpID="ai_positron" path="topics/ai_positron.html"/>
+   <appContext helpID="ai-positron-add-on-functionality-small-clips"
+               path="topics/ai-positron-add-on-functionality-small-clips.html"/>
+   <appContext helpID="customizing_ai_tools_for_your_dita_xml_project_terminology_style_guide_and_specializations"
+               path="topics/customizing_ai_positron_for_your_dita_xml_project.html"/>
+   <appContext helpID="creating_custom_ai_actions_for_the_ai_positron_add_on"
+               path="topics/creating_custom_ai_actions_for_the_ai_positron_add_on.html"/>
+   <appContext helpID="dita_ai_tools" path="topics/dita-ai-tools.html"/>
+   <appContext helpID="ai-positron-code-development"
+               path="topics/ai-positron-code-development.html"/>
+   <appContext helpID="ai_xpath_functions" path="topics/ai_xpath_functions.html"/>
+   <appContext helpID="oxygen-ai-powered-editing"
+               path="topics/oxygen_ai_powered_editing.html"/>
+   <appContext helpID="gen-ai-enhance-editing"
+               path="topics/gen_ai_enhance_editing.html"/>
+   <appContext helpID="using_chatgpt_in_a_dita_xml_project"
+               path="topics/using_chatgpt_in_a_dita_xml_project.html"/>
+   <appContext helpID="ai-positron-assistant-retrospective-analysis"
+               path="topics/ai-positron-assistant-retrospective-analysis.html"/>
+   <appContext helpID="oxygen_xml_ecosystem" path="topics/dita-ot-ai-plugins.html"/>
+   <appContext helpID="topic_wn_positron_5" path="topics/wn_positron_5.html"/>
+   <appContext helpID="dita-xml-editing-collaboration-and-publishing-overview"
+               path="topics/dita-xml-editing-collaboration-and-publishing-overview.html"/>
+   <appContext helpID="learningDITAGeneral" path="topics/learningDITAGeneral.html"/>
+   <appContext helpID="learnDita" path="topics/learnDita.html"/>
+   <appContext helpID="insert_image_references"
+               path="topics/shorts_insert_image_references.html"/>
+   <appContext helpID="shorts_insert_links" path="topics/shorts_insert_links.html"/>
+   <appContext helpID="shorts_reuse_content" path="topics/shorts_reuse_content.html"/>
+   <appContext helpID="topic_l1z_5kh_kvb" path="topics/dp/dita_perspectives.html"/>
+   <appContext helpID="topic_brt_yz5_fvb"
+               path="topics/dp/dita_perspectives.html#topic_brt_yz5_fvb"/>
+   <appContext helpID="section_nxt_xry_jvb"
+               path="topics/dp/dita_perspectives.html#section_nxt_xry_jvb"/>
+   <appContext helpID="section_cjg_gqz_jvb"
+               path="topics/dp/dita_perspectives.html#section_cjg_gqz_jvb"/>
+   <appContext helpID="section_tqk_tjh_kvb"
+               path="topics/dp/dita_perspectives.html#section_tqk_tjh_kvb"/>
+   <appContext helpID="topic_d2" path="topics/dp/dita_perspectives.html#topic_d2"/>
+   <appContext helpID="unique_1415260901"
+               path="topics/dp/dita_perspectives.html#unique_1415260901"/>
+   <appContext helpID="unique_1996640366"
+               path="topics/dp/dita_perspectives.html#unique_1996640366"/>
+   <appContext helpID="unique_384175489"
+               path="topics/dp/dita_perspectives.html#unique_384175489"/>
+   <appContext helpID="unique_1931849874"
+               path="topics/dp/dita_perspectives.html#unique_1931849874"/>
+   <appContext helpID="unique_2120885268"
+               path="topics/dp/dita_perspectives.html#unique_2120885268"/>
+   <appContext helpID="unique_660447220"
+               path="topics/dp/dita_perspectives.html#unique_660447220"/>
+   <appContext helpID="unique_1868206744"
+               path="topics/dp/dita_perspectives.html#unique_1868206744"/>
+   <appContext helpID="unique_1639262519"
+               path="topics/dp/dita_perspectives.html#unique_1639262519"/>
+   <appContext helpID="unique_1457875557"
+               path="topics/dp/dita_perspectives.html#unique_1457875557"/>
+   <appContext helpID="unique_1904920650"
+               path="topics/dp/dita_perspectives.html#unique_1904920650"/>
+   <appContext helpID="unique_1261936837"
+               path="topics/dp/dita_perspectives.html#unique_1261936837"/>
+   <appContext helpID="unique_255729896"
+               path="topics/dp/dita_perspectives.html#unique_255729896"/>
+   <appContext helpID="unique_1444203382"
+               path="topics/dp/dita_perspectives.html#unique_1444203382"/>
+   <appContext helpID="unique_1408162904"
+               path="topics/dp/dita_perspectives.html#unique_1408162904"/>
+   <appContext helpID="unique_511084189"
+               path="topics/dp/dita_perspectives.html#unique_511084189"/>
+   <appContext helpID="jd1_dr1_lvb"
+               path="topics/dp/dita_perspectives.html#jd1_dr1_lvb"/>
+   <appContext helpID="unique_100476323"
+               path="topics/dp/dita_perspectives.html#unique_100476323"/>
+   <appContext helpID="unique_928972128"
+               path="topics/dp/dita_perspectives.html#unique_928972128"/>
+   <appContext helpID="unique_248819856"
+               path="topics/dp/dita_perspectives.html#unique_248819856"/>
+   <appContext helpID="unique_1273933011"
+               path="topics/dp/dita_perspectives.html#unique_1273933011"/>
+   <appContext helpID="unique_1323729377"
+               path="topics/dp/dita_perspectives.html#unique_1323729377"/>
+   <appContext helpID="unique_29673647"
+               path="topics/dp/dita_perspectives.html#unique_29673647"/>
+   <appContext helpID="unique_1728861788"
+               path="topics/dp/dita_perspectives.html#unique_1728861788"/>
+   <appContext helpID="unique_1966969290"
+               path="topics/dp/dita_perspectives.html#unique_1966969290"/>
+   <appContext helpID="unique_1923240540"
+               path="topics/dp/dita_perspectives.html#unique_1923240540"/>
+   <appContext helpID="unique_966432766"
+               path="topics/dp/dita_perspectives.html#unique_966432766"/>
+   <appContext helpID="unique_1995021495"
+               path="topics/dp/dita_perspectives.html#unique_1995021495"/>
+   <appContext helpID="unique_1094628284"
+               path="topics/dp/dita_perspectives.html#unique_1094628284"/>
+   <appContext helpID="unique_28636658"
+               path="topics/dp/dita_perspectives.html#unique_28636658"/>
+   <appContext helpID="unique_1318922031"
+               path="topics/dp/dita_perspectives.html#unique_1318922031"/>
+   <appContext helpID="unique_2012792792"
+               path="topics/dp/dita_perspectives.html#unique_2012792792"/>
+   <appContext helpID="unique_1327477632"
+               path="topics/dp/dita_perspectives.html#unique_1327477632"/>
+   <appContext helpID="unique_1770740130"
+               path="topics/dp/dita_perspectives.html#unique_1770740130"/>
+   <appContext helpID="unique_743418949"
+               path="topics/dp/dita_perspectives.html#unique_743418949"/>
+   <appContext helpID="unique_146919944"
+               path="topics/dp/dita_perspectives.html#unique_146919944"/>
+   <appContext helpID="unique_878156283"
+               path="topics/dp/dita_perspectives.html#unique_878156283"/>
+   <appContext helpID="unique_685294258"
+               path="topics/dp/dita_perspectives.html#unique_685294258"/>
+   <appContext helpID="unique_484275166"
+               path="topics/dp/dita_perspectives.html#unique_484275166"/>
+   <appContext helpID="unique_98936725"
+               path="topics/dp/dita_perspectives.html#unique_98936725"/>
+   <appContext helpID="unique_1359792677"
+               path="topics/dp/dita_perspectives.html#unique_1359792677"/>
+   <appContext helpID="unique_598464755"
+               path="topics/dp/dita_perspectives.html#unique_598464755"/>
+   <appContext helpID="unique_773753679"
+               path="topics/dp/dita_perspectives.html#unique_773753679"/>
+   <appContext helpID="unique_434499551"
+               path="topics/dp/dita_perspectives.html#unique_434499551"/>
+   <appContext helpID="section_akj_ycv_fvb"
+               path="topics/dp/dita_perspectives.html#section_akj_ycv_fvb"/>
+   <appContext helpID="topic_x3s_z4n_mvb"
+               path="topics/dp/dita_perspectives.html#topic_x3s_z4n_mvb"/>
+   <appContext helpID="topic_bls_z4n_mvb"
+               path="topics/dp/dita_perspectives.html#topic_bls_z4n_mvb"/>
+   <appContext helpID="topic_ycy_cpn_mvb"
+               path="topics/dp/dita_perspectives.html#topic_ycy_cpn_mvb"/>
+   <appContext helpID="section_kct_1dv_fvb"
+               path="topics/dp/dita_perspectives.html#section_kct_1dv_fvb"/>
+   <appContext helpID="topic_psm_s2g_dq"
+               path="topics/exampleOfADITAImplementationFortech.html"/>
+   <appContext helpID="topic_pvf_tqf_kw" path="topics/guidedAuthoring.html"/>
+   <appContext helpID="topicID" path="topics/maintain-healthy-dita-project.html"/>
+   <appContext helpID="dita_linking_stretegies"
+               path="topics/dita_linking_stretegies.html"/>
+   <appContext helpID="topic_jc4_mvm_ft" path="branchFilters/branchFilter.html"/>
+   <appContext helpID="topic_sz1_ssy_ct" path="keyscopes/keyscopesBlog.html"/>
+   <appContext helpID="dita_reuse_strategies"
+               path="presentation-reuse/dita_reuse_strategies.html"/>
+   <appContext helpID="introduction" path="presentation-reuse/introduction.html"/>
+   <appContext helpID="versionControl" path="presentation-reuse/versionControl.html"/>
+   <appContext helpID="conversions" path="presentation-reuse/conversions.html"/>
+   <appContext helpID="creatingLargerPublications"
+               path="presentation-reuse/creatingLargerPublications.html"/>
+   <appContext helpID="reuseSimilarProducts"
+               path="presentation-reuse/reuseSimilarProducts.html"/>
+   <appContext helpID="reuseFragments" path="presentation-reuse/reuseFragments.html"/>
+   <appContext helpID="conrefs" path="presentation-reuse/conrefs.html"/>
+   <appContext helpID="conkeyrefs" path="presentation-reuse/conkeyrefs.html"/>
+   <appContext helpID="conref_ranges" path="presentation-reuse/conref_ranges.html"/>
+   <appContext helpID="reuse_tipcs" path="presentation-reuse/reuse_tipcs.html"/>
+   <appContext helpID="conref_push" path="presentation-reuse/conref_push.html"/>
+   <appContext helpID="reuse_variables" path="presentation-reuse/reuse_variables.html"/>
+   <appContext helpID="dita_1_3_reuse" path="presentation-reuse/dita_1_3_reuse.html"/>
+   <appContext helpID="reuse_keyscopes" path="presentation-reuse/reuse_keyscopes.html"/>
+   <appContext helpID="reuse_branch" path="presentation-reuse/reuse_branch.html"/>
+   <appContext helpID="reuse_other" path="presentation-reuse/reuse_other.html"/>
+   <appContext helpID="conclusions" path="presentation-reuse/conclusions.html"/>
+   <appContext helpID="cross_book_links" path="topics/cross_book_links.html"/>
+   <appContext helpID="markdown_vs_dita_syntax_and_capabilities_comparison"
+               path="topics/markdown_vs_dita_syntax_and_capabilities_comparison.html"/>
+   <appContext helpID="dita_ot_publishing_customizations_overview"
+               path="topics/dita_ot_publishing_customizations_overview.html"/>
+   <appContext helpID="server_side_building_and_publishing"
+               path="topics/server_side_building_and_publishing.html"/>
+   <appContext helpID="building_and_publishing_using_script"
+               path="topics/building_and_publishing_using_script.html"/>
+   <appContext helpID="building_and_publishing_using_github_actions"
+               path="topics/building_validating_and_publishing_using_github_actions.html"/>
+   <appContext helpID="creating_a_docker_image_for_the_oxygen_publishing_engine"
+               path="topics/creating_a_docker_image_for_the_oxygen_publishing_engine.html"/>
+   <appContext helpID="running_the_publishing_engine_docker_image_on_aws"
+               path="topics/running_the_publishing_engine_docker_image_on_aws.html"/>
+   <appContext helpID="webhelp-dita-strong-points"
+               path="topics/webhelp-dita-strong-points.html"/>
+   <appContext helpID="topic_kqb_nb3_ls" path="topics/tableRowColors.html"/>
+   <appContext helpID="topic_z4r_21p_15" path="topics/ditaToPDF.html"/>
+   <appContext helpID="topic_ih3_fkg_wr" path="topics/pageBreakPlugin.html"/>
+   <appContext helpID="embedding_diagrams_in_dita_topics_using_plantuml"
+               path="topics/embedding_diagrams_in_dita_topics_using_plantuml.html"/>
+   <appContext helpID="embedding_diagrams_in_dita_topics_using_mermaid"
+               path="topics/embedding_diagrams_in_dita_topics_using_mermaid.html"/>
+   <appContext helpID="task-steps-diagram" path="topics/task-steps-diagram.html"/>
+   <appContext helpID="dita-codeblock-tabs" path="topics/dita-codeblock-tabs.html"/>
+   <appContext helpID="dita-steps-tabs" path="topics/dita-steps-tabs.html"/>
+   <appContext helpID="open-api-dita" path="topics/open-api-dita.html"/>
+   <appContext helpID="dita_to_confluence" path="topics/dita_to_confluence.html"/>
+   <appContext helpID="dita_generate_changes_list"
+               path="topics/dita-generate-changes-list.html"/>
+   <appContext helpID="dita_publishing_customization_overview"
+               path="topics/dita_publishing_customization_overview.html"/>
+   <appContext helpID="topic_lyw_nns_qv" path="topics/ditaOTFAQ.html"/>
+   <appContext helpID="enhancing_dita_publishing_with_plugins"
+               path="topics/enhancing_dita_publishing_with_plugins.html"/>
+   <appContext helpID="topic_ktv_xv1_chb"
+               path="topics/adding-latex-equation-support-dita.html"/>
+   <appContext helpID="topic_a3g_bsc_2z" path="topics/useful-dita-ot-plugins.html"/>
+   <appContext helpID="creating_simple_dita_open_toolkit"
+               path="topics/creating-simple-dita-open-toolkit.html"/>
+   <appContext helpID="topic_zxr_233_vkb" path="topics/using_git_hooks_with_dita.html"/>
+   <appContext helpID="creating_graphs_from_dita_maps"
+               path="topics/creating_graphs_from_dita_maps.html"/>
+   <appContext helpID="publishing_dita_content_using_a_markdown_static_web_site_generator"
+               path="topics/publishing_dita_content_using_a_markdown_static_web_site_generator.html"/>
+   <appContext helpID="publishing_dita_powerpoint"
+               path="topics/publishing_dita_powerpoint.html"/>
+   <appContext helpID="adding_labels_to_topics_in_the_webhelp_responsive_output"
+               path="topics/adding_labels_to_topics_in_the_webhelp_responsive_output.html"/>
+   <appContext helpID="prolog-wh-output" path="topics/prolog-wh-output.html"/>
+   <appContext helpID="recent_topics_list" path="topics/recent_topics_list.html"/>
+   <appContext helpID="rss_feed_generation" path="topics/rss_feed_generation.html"/>
+   <appContext helpID="generating_google_structured_data_from_your_dita_tasks"
+               path="topics/generating_google_structured_data_from_your_dita_tasks.html"/>
+   <appContext helpID="generating_google_structured_data_from_your_dita_faq"
+               path="topics/generating_google_structured_data_from_your_dita_faq.html"/>
+   <appContext helpID="dita_editing_customizations"
+               path="topics/dita-editing-customizations.html"/>
+   <appContext helpID="startup_dita_project" path="topics/startup_dita_project.html"/>
+   <appContext helpID="topic_hg5_fpc_nx" path="topics/customizeDITACSS.html"/>
+   <appContext helpID="customizing_a_document_type_using_an_extension_framework_script"
+               path="topics/customizing_a_document_type_using_an_extension_framework_script.html"/>
+   <appContext helpID="topic_exv_hwt_rs" path="topics/controlledAttributeValues.html"/>
+   <appContext helpID="topic_exv_hwt_rs" path="topics/controlledAttributeValues2.html"/>
+   <appContext helpID="topic_qfl_l5z_1x"
+               path="topics/convertingSubjectSchemeMapToDITAVAL.html"/>
+   <appContext helpID="converting_xpr_profiling"
+               path="topics/converting_xpr_profiling.html"/>
+   <appContext helpID="oxygen_xml_as_a_technical_documentation_solution_faq"
+               path="topics/oxygen_xml_as_a_technical_documentation_solution_faq.html"/>
+   <appContext helpID="dita_for_small_teams" path="topics/dita_for_small_teams.html"/>
+   <appContext helpID="types_of_companies_which_would_benefit_from_the_dita_xml_standard"
+               path="topics/types_of_companies_which_would_benefit_from_the_dita_xml_standard.html"/>
+   <appContext helpID="helping_the_dita_ot_project"
+               path="topics/supporting_the_dita_ot_project.html"/>
+   <appContext helpID="dita_map_metrics_evolution"
+               path="topics/dita_map_metrics_evolution.html"/>
+   <appContext helpID="topic_twx_tyf_2hb" path="topics/oxygen-dita-strong-points.html"/>
+   <appContext helpID="dita_oriented_tips_and_tricks"
+               path="topics/dita_oriented_tips_and_tricks.html"/>
+   <appContext helpID="dita_project_enhancements"
+               path="topics/dita_project_enhancements.html"/>
+   <appContext helpID="translating_your_dita_project"
+               path="topics/translating_your_dita_project.html"/>
+   <appContext helpID="topic_mp2_l4q_g5"
+               path="topics/validateCheckForCompletness.html"/>
+   <appContext helpID="topic_hkx_gzc_cs" path="topics/SchematronBCs.html"/>
+   <appContext helpID="topic_n3v_s5r_2v" path="topics/styleguide.html"/>
+   <appContext helpID="preprocessing_ditaot_project_files"
+               path="topics/preprocessing_ditaot_project_files.html"/>
+   <appContext helpID="re_10_reasons_for_moving_away_from_dita"
+               path="topics/re_10_reasons_for_moving_away_from_dita.html"/>
+   <appContext helpID="dita_2_0_specification_support_cheet_sheet"
+               path="topics/dita_2_0_specification_support_cheat_sheet.html"/>
+   <appContext helpID="topic_eph_k3j_kcb" path="topics/sort_glossentries.html"/>
+   <appContext helpID="topic_cs4_cvh_px" path="topics/replace-image-href-keyref.html"/>
+   <appContext helpID="deleting_elements_in_a_refactoring_operation"
+               path="topics/deleting_elements_in_refactoring.html"/>
+   <appContext helpID="resolving_refs_refactoring"
+               path="topics/resolving_refs_refactoring.html"/>
+   <appContext helpID="refactoring_inserting_reformatting"
+               path="topics/refactoring_inserting_reformatting.html"/>
+   <appContext helpID="similarities_tech_docs_soft_engs"
+               path="topics/similarities_tech_docs_soft_engs.html"/>
+   <appContext helpID="migration" path="topics/migration.html"/>
+   <appContext helpID="topic_mmp_3yj_j5" path="topics/migratingToDITA.html"/>
+   <appContext helpID="migrating_to_dita" path="topics/migrating_to_dita.html"/>
+   <appContext helpID="migrateWordToDita" path="topics/migrateWordToDita.html"/>
+   <appContext helpID="migrating-word-to-dita-using-batch-documents-converter"
+               path="topics/migrating_word_to_dita_bdc/migrating_word_to_dita_using_batch_documents_converter.html"/>
+   <appContext helpID="preparing_word"
+               path="topics/migrating_word_to_dita_bdc/preparing_word_document_for_migration.html"/>
+   <appContext helpID="converting_word"
+               path="topics/migrating_word_to_dita_bdc/converting_word_document.html"/>
+   <appContext helpID="customizing_dita_result"
+               path="topics/migrating_word_to_dita_bdc/customizing_the_resulting_dita_content.html"/>
+   <appContext helpID="word-to-dita-frequently-asked-questions"
+               path="topics/migrating_word_to_dita_bdc/frequently_asked_questions.html"/>
+   <appContext helpID="batch_converting_html_to_xhtml"
+               path="topics/batch_converting_html_to_xhtml.html"/>
+   <appContext helpID="topic_dgl_yrf_hvb" path="topics/migratingFmToDita.html"/>
+   <appContext helpID="use_topic_titles_to_generate_file_names"
+               path="topics/use-topic-titles-to-generate-file-names.html"/>
+   <appContext helpID="using_git_for_technical_writing"
+               path="git-tech-writers/using_git_for_technical_writing.html"/>
+   <appContext helpID="advantages_and_disadvantages_of_using_git"
+               path="git-tech-writers/advantages_of_using_git.html"/>
+   <appContext helpID="disadvantages_of_using_git"
+               path="git-tech-writers/disadvantages_of_using_git.html"/>
+   <appContext helpID="resources_for_learning_git"
+               path="git-tech-writers/resources_for_learning_git.html"/>
+   <appContext helpID="git_client_applications"
+               path="git-tech-writers/git_client_applications.html"/>
+   <appContext helpID="editing_session_workflow"
+               path="git-tech-writers/editing_session_workflow.html"/>
+   <appContext helpID="topic_vkq_4dv_v2c"
+               path="git-tech-writers/cf_editing_session_workflow.html"/>
+   <appContext helpID="git_validation" path="git-tech-writers/git_validation.html"/>
+   <appContext helpID="common_workflows" path="git-tech-writers/common_workflows.html"/>
+   <appContext helpID="section_hmq_2zl_mwb"
+               path="git-tech-writers/centralized_workflow.html"/>
+   <appContext helpID="section_fgh_kcm_mwb"
+               path="git-tech-writers/feature_branches.html"/>
+   <appContext helpID="any_change_branches"
+               path="git-tech-writers/any-change-branches.html"/>
+   <appContext helpID="release_branches" path="git-tech-writers/release_branches.html"/>
+   <appContext helpID="section_qhl_zdr_nwb" path="git-tech-writers/gitflow.html"/>
+   <appContext helpID="useful_features" path="git-tech-writers/propose_changes.html"/>
+   <appContext helpID="handling_translations"
+               path="git-tech-writers/handling_translations.html"/>
+   <appContext helpID="sharing_common_settings"
+               path="git-tech-writers/sharing_common_settings.html"/>
+   <appContext helpID="publishing_content_from_git"
+               path="git-tech-writers/publishing_content_from_git.html"/>
+   <appContext helpID="topic_cml_cpm_p2c"
+               path="git-tech-writers/tame-the-branch-chaos.html"/>
+   <appContext helpID="sdk" path="topics/sdk.html"/>
+   <appContext helpID="customizing_oxygen" path="topics/customizing_oxygen.html"/>
+   <appContext helpID="author-document-type-sharing"
+               path="topics/author-document-type-extension-sharing.html"/>
+   <appContext helpID="sharing_schematron_validation_rules"
+               path="topics/sharing_schematron_validation_rules.html"/>
+   <appContext helpID="topic_z4t_jhz_yp"
+               path="topics/Oxygen%20plugins%20and%20frameworks.html"/>
+   <appContext helpID="author-document-type-sharing"
+               path="topics/author-document-type-extension-sharing-custom-new-file-templates.html"/>
+   <appContext helpID="topic_h1m_54n_qcb" path="topics/composing-author-actions.html"/>
+   <appContext helpID="custom_author_action_js_based"
+               path="topics/custom-author-action-js-based.html"/>
+   <appContext helpID="custom_author_action_content_completion"
+               path="topics/custom-author-action-content-completion.html"/>
+   <appContext helpID="topic_c3q_lqd_vt"
+               path="topics/howSpecialPasteWorksInOxygen.html"/>
+   <appContext helpID="the_oxygen_sdk_part_1_plugins"
+               path="topics/the_oxygen_sdk_part_1_plugins.html"/>
+   <appContext helpID="topic_in2_yhp_z4" path="topics/oxygenFrameworks.html"/>
+   <appContext helpID="topic_xk5_gqk_qy" path="topics/packing-add-ons.html"/>
+   <appContext helpID="all_about_oxygen_add_ons"
+               path="topics/all_about_oxygen_add_ons.html"/>
+   <appContext helpID="adding_cals_table_related_functionality_to_your_custom_oxygen_framework"
+               path="topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.html"/>
+   <appContext helpID="convert_code_templates_to_author_actions"
+               path="topics/convert_code_templates_to_author_actions.html"/>
+   <appContext helpID="topic_z5n_nph_4fcd"
+               path="topics/web_author/accelerate-web-author-customization---web-author-test-server-add-on.html"/>
+   <appContext helpID="transform_text_files" path="topics/transform_text_files.html"/>
+   <appContext helpID="editing_complex_xml_schemas"
+               path="topics/editing_complex_xml_schemas.html"/>
+   <appContext helpID="topic_h5b_n1p_kbc"
+               path="topics/ISO-27001-certification-announcement.html"/>
+   <appContext helpID="topic_trg_15z_fs" path="topics/OxygenUsersMeetup.html"/>
+   <appContext helpID="topic_trg_15z_fs" path="topics/Chinese_users_group.html"/>
+   <appContext helpID="oxygen_xml_ecosystem" path="topics/oxygen_xml_ecosystem.html"/>
+   <appContext helpID="add_ons_for_technical_documentation"
+               path="topics/add_ons_for_technical_documentation.html"/>
+   <appContext helpID="general_tips_and_tricks"
+               path="topics/general_tips_and_tricks.html"/>
+   <appContext helpID="checking_terminology_with_oxygen_xml_editor"
+               path="topics/checking_terminology_with_oxygen_xml_editor.html"/>
+   <appContext helpID="_10_things_i_enjoy_about_the_new_oxygen_json_editor"
+               path="topics/10_things_i_enjoy_about_the_new_oxygen_json_editor.html"/>
+   <appContext helpID="topic_e3d_cgq_zr" path="topics/opinions%20on%20Oxygen.html"/>
+   <appContext helpID="topic_elm_qn3_sr" path="topics/greattechsupport.html"/>
+   <appContext helpID="topic_tjq_tcw_gt" path="reuse/short_story_reuse.html"/>
+   <appContext helpID="topic_whr_nly_c5" path="topics/sharingSettings.html"/>
+   <appContext helpID="collaboration_for_documenting_software"
+               path="topics/collaboration-for-documenting-software.html"/>
+   <appContext helpID="collaboration_teams" path="topics/collaboration-teams.html"/>
+   <appContext helpID="enable-massive-contributions"
+               path="george/enable-massive-contributions.html"/>
+   <appContext helpID="all_about_editor_variables"
+               path="topics/all_about_editor_variables.html"/>
+   <appContext helpID="xslt_training" path="topics/xslt_training.html"/>
+   <appContext helpID="topic_udq_swp_xrb"
+               path="topics/oxygen_xml_vulnerability_analysis_faq.html"/>
+   <appContext helpID="using_oxygen_xml_editor_in_a_browser"
+               path="topics/using_oxygen_xml_editor_in_a_browser.html"/>
+   <appContext helpID="blog_2022_retrospective"
+               path="topics/blog_2022_retrospective.html"/>
+   <appContext helpID="contributors" path="topics/contributors.html"/>
+   <appContext helpID="embedding_diagrams_in_dita_topics_using_plantuml"
+               path="topics/embedding_diagrams_in_dita_topics_using_plantuml.html"/>
+   <appContext helpID="embedding_diagrams_in_dita_topics_using_mermaid"
+               path="topics/embedding_diagrams_in_dita_topics_using_mermaid.html"/>
+   <appContext helpID="task-steps-diagram" path="topics/task-steps-diagram.html"/>
+   <appContext helpID="embedding_diagrams_in_dita_topics_using_plantuml"
+               path="topics/embedding_diagrams_in_dita_topics_using_plantuml.html"/>
+   <appContext helpID="embedding_diagrams_in_dita_topics_using_mermaid"
+               path="topics/embedding_diagrams_in_dita_topics_using_mermaid.html"/>
+   <appContext helpID="creating_graphs_from_dita_maps"
+               path="topics/creating_graphs_from_dita_maps.html"/>
+   <appContext helpID="generating_google_structured_data_from_your_dita_tasks"
+               path="topics/generating_google_structured_data_from_your_dita_tasks.html"/>
+   <appContext helpID="generating_google_structured_data_from_your_dita_faq"
+               path="topics/generating_google_structured_data_from_your_dita_faq.html"/>
+</map>

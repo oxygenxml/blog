@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA 2.x Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="dita_2_0_specification_support_cheet_sheet" ditaarch:DITAArchVersion="2.0" specializations="@props/audience @props/deliveryTarget @props/otherprops @props/platform @props/product" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="topic:1;3:56" domains="a(props audience) a(props deliveryTarget) a(props otherprops) a(props platform) a(props product)">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="title:1;4:12">DITA 2.0 Specification Support Cheat Sheet</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="critdates:1;7:20">
+            <created date="2022-03-09" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="p:1;12:12">You can use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="b:1;12:31">Convert DITA 1.3 topics and maps to the DITA 2.0 standard</b> XML
+            refactoring action bundled with Oxygen 24 (or later) to convert DITA 1.3 content to the
+            DITA 2.0 standard. The same XML refactoring action is also available as a separate
+            GitHub project: <xref href="https://github.com/oxygenxml/dita_1_3_to_2_x_converter" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xref:1;16:49"/>.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="p:2;17:12">The DITA Open Toolkit publishing engine will support publishing a mix of DITA 1.3 and 2.0
+            topics and maps. The list of supported DITA 2.0 features in the publishing engine is
+            available here: <xref href="https://www.dita-ot.org/dev/reference/dita-v2-0-support.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xref:2;21:35"/>.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="p:3;22:12">
+            <table frame="all" rowsep="1" colsep="1" id="table_xwb_b2d_vsb" class="- topic/table " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="table:1;23:77">
+                <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="title:2;24:24">DITA 2.0 Support Cheat Sheet</title>
+                <tgroup cols="4" class="- topic/tgroup " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="tgroup:1;25:34">
+                    <colspec colname="col1" colnum="1" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="colspec:1;26:69"/>
+                    <colspec colname="col2" colnum="2" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="colspec:2;27:69"/>
+                    <colspec colname="col3" colnum="3" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="colspec:3;28:74"/>
+                    <colspec colname="col4" colnum="4" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="colspec:4;29:74"/>
+                    <thead class="- topic/thead " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="thead:1;30:28">
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:1;31:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:1;32:36" colname="col1" dita-ot:x="1" dita-ot:y="1">Change</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:2;33:36" colname="col2" dita-ot:x="2" dita-ot:y="1">Details</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:3;34:36" colname="col3" dita-ot:x="3" dita-ot:y="1">Handled By Conversion</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:4;35:36" colname="col4" dita-ot:x="4" dita-ot:y="1">Supported in DITA OT Publishing Engine</entry>
+                        </row>
+                    </thead>
+                    <tbody class="- topic/tbody " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="tbody:1;38:28">
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:2;39:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:5;40:36" colname="col1" dita-ot:x="1" dita-ot:y="2">The DITA 2.0 topics/maps have specific schema references.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:6;41:36" colname="col2" dita-ot:x="2" dita-ot:y="2">References to DTD/XML Schema/RNG schemas need to be changed in
+                                all topics and maps.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:7;43:36" colname="col3" dita-ot:x="3" dita-ot:y="2">Yes</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:8;44:36" colname="col4" dita-ot:x="4" dita-ot:y="2">Yes</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:3;46:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:9;47:36" colname="col1" dita-ot:x="1" dita-ot:y="3">Removed elements:
+                                <codeblock id="codeblock_zzn_kfd_vsb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="codeblock:1;48:71">titlealts, itemgroup, topicset, topicsetref, 
+longquoteref, anchor, anchorref, hasInstance, 
+hasKind, hasNarrower, hasPart, 
+hasRelated, relatedSubjects, subjectRelTable, 
+subjectRelHeader, subjectRel, subjectRole </codeblock></entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:10;53:36" colname="col2" dita-ot:x="2" dita-ot:y="3">Removed some seldom used elements.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:11;54:36" colname="col3" dita-ot:x="3" dita-ot:y="3">Yes, automatically removes the elements and shows messages for
+                                each removed element.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:12;56:36" colname="col4" dita-ot:x="4" dita-ot:y="3">-</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:4;58:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:13;59:36" colname="col1" dita-ot:x="1" dita-ot:y="4">Removed attributes:
+                                <codeblock id="codeblock_kpv_nfd_vsb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="codeblock:2;60:71">@mapkeyref, link/@query, hazardsymbol/@longdescref, 
+@xtrf, @xtrc,
+@spectitle,@specentry</codeblock></entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:14;63:36" colname="col2" dita-ot:x="2" dita-ot:y="4">Removed some seldom used attributes.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:15;64:36" colname="col3" dita-ot:x="3" dita-ot:y="4">Yes, automatically removes the attributes and shows messages for
+                                each removed attribute.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:16;66:36" colname="col4" dita-ot:x="4" dita-ot:y="4">-</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:5;68:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:17;69:36" colname="col1" dita-ot:x="1" dita-ot:y="5">Removal of
+                                    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:1;70:45">navtitle</xmlatt>/<xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:2;70:71">locktitle</xmlatt>/<xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:3;70:98">lockmeta</xmlatt>
+                                attributes</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:18;72:36" colname="col2" dita-ot:x="2" dita-ot:y="5">Removed deprecated attributes, they can be replaced with
+                                equivalents.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:19;74:36" colname="col3" dita-ot:x="3" dita-ot:y="5">Yes, automatically converts them to
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:1;75:49">topicmeta</xmlelement> equivalents.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:20;76:36" colname="col4" dita-ot:x="4" dita-ot:y="5">Yes</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:6;78:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:21;79:36" colname="col1" dita-ot:x="1" dita-ot:y="6">Removal of <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:4;79:55">domains</xmlatt> default attribute.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:22;80:36" colname="col2" dita-ot:x="2" dita-ot:y="6">This is a default attribute that does not appear in the topic and
+                                map instances. It was used mostly for defining new attribute
+                                specializations, and all attribute specialization schemas need to be
+                                re-written to use the new <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:5;83:67">specializations</xmlatt> default
+                                attribute.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:23;85:36" colname="col3" dita-ot:x="3" dita-ot:y="6">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:24;86:36" colname="col4" dita-ot:x="4" dita-ot:y="6">Yes</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:7;88:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:25;89:36" colname="col1" dita-ot:x="1" dita-ot:y="7">
+                                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="p:4;90:36">Removal of <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="b:2;90:50">@copy-to</b> attribute</p>
+                            </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:26;92:36" colname="col2" dita-ot:x="2" dita-ot:y="7">Needs to be replaced with a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:2;92:76">resourceid</xmlelement>
+                                element.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:27;94:36" colname="col3" dita-ot:x="3" dita-ot:y="7">Yes</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:28;95:36" colname="col4" dita-ot:x="4" dita-ot:y="7">No</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:8;97:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:29;98:36" colname="col1" dita-ot:x="1" dita-ot:y="8">Removal of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:6;98:59">print</xmlatt> attribute</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:30;99:36" colname="col2" dita-ot:x="2" dita-ot:y="8">Needs to be replaced with the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:7;99:74">deliveryTarget</xmlatt>
+                                attribute.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:31;101:36" colname="col3" dita-ot:x="3" dita-ot:y="8">Yes</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:32;102:36" colname="col4" dita-ot:x="4" dita-ot:y="8">-</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:9;104:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:33;105:36" colname="col1" dita-ot:x="1" dita-ot:y="9">Removed <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:3;105:56">substep</xmlelement> and
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:4;106:49">substeps</xmlelement> task elements</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:34;107:36" colname="col2" dita-ot:x="2" dita-ot:y="9">Needs to be replaced with the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:5;107:78">steps</xmlelement> and
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:6;108:49">step</xmlelement> elements.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:35;109:36" colname="col3" dita-ot:x="3" dita-ot:y="9">Yes</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:36;110:36" colname="col4" dita-ot:x="4" dita-ot:y="9">No</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:10;112:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:37;113:36" colname="col1" dita-ot:x="1" dita-ot:y="10">Removed <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:7;113:56">sectiondiv</xmlelement> element.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:38;114:36" colname="col2" dita-ot:x="2" dita-ot:y="10">Needs to be replaced with the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:8;114:78">div</xmlelement>
+                                element.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:39;116:36" colname="col3" dita-ot:x="3" dita-ot:y="10">Yes</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:40;117:36" colname="col4" dita-ot:x="4" dita-ot:y="10">-</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:11;119:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:41;120:36" colname="col1" dita-ot:x="1" dita-ot:y="11">Added new <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:9;120:58">audio</xmlelement> and
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:10;121:49">video</xmlelement> elements.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:42;122:36" colname="col2" dita-ot:x="2" dita-ot:y="11">New elements were added to refer to multimedia audio and video
+                                content and to define parameters.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:43;124:36" colname="col3" dita-ot:x="3" dita-ot:y="11">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:44;125:36" colname="col4" dita-ot:x="4" dita-ot:y="11">Partially</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:12;127:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:45;128:36" colname="col1" dita-ot:x="1" dita-ot:y="12">Added new <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:11;128:58">em</xmlelement> and
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:12;129:49">strong</xmlelement> elements</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:46;130:36" colname="col2" dita-ot:x="2" dita-ot:y="12">New elements similar in style to <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:13;130:81">b</xmlelement> and
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:14;131:49">i</xmlelement> but with more semantics.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:47;132:36" colname="col3" dita-ot:x="3" dita-ot:y="12">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:48;133:36" colname="col4" dita-ot:x="4" dita-ot:y="12">No</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:13;135:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:49;136:36" colname="col1" dita-ot:x="1" dita-ot:y="13">Added new <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:15;136:58">partno</xmlelement>,
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:16;137:49">hwcontrol</xmlelement>.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:50;138:36" colname="col2" dita-ot:x="2" dita-ot:y="13">New elements for documenting hardware.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:51;139:36" colname="col3" dita-ot:x="3" dita-ot:y="13">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:52;140:36" colname="col4" dita-ot:x="4" dita-ot:y="13">No</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:14;142:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:53;143:36" colname="col1" dita-ot:x="1" dita-ot:y="14">Added new <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:17;143:58">diagnostics</xmlelement>,
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:18;144:49">diagnostics-general</xmlelement>,
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:19;145:49">diagnostics-steps</xmlelement> elements.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:54;146:36" colname="col2" dita-ot:x="2" dita-ot:y="14">New elements added to the troubleshooting topic type.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:55;147:36" colname="col3" dita-ot:x="3" dita-ot:y="14">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:56;148:36" colname="col4" dita-ot:x="4" dita-ot:y="14">-</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:15;150:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:57;151:36" colname="col1" dita-ot:x="1" dita-ot:y="15">Added new <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:20;151:58">include</xmlelement> element.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:58;152:36" colname="col2" dita-ot:x="2" dita-ot:y="15">Similar to <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:21;152:59">coderef</xmlelement>.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:59;153:36" colname="col3" dita-ot:x="3" dita-ot:y="15">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:60;154:36" colname="col4" dita-ot:x="4" dita-ot:y="15">Yes</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:16;156:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:61;157:36" colname="col1" dita-ot:x="1" dita-ot:y="16">Titles, cell and row span attributes for
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:22;158:49">simpletable</xmlelement> elements.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:62;159:36" colname="col2" dita-ot:x="2" dita-ot:y="16">Simple tables can have titles and their cells can span rows and
+                                columns.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:63;161:36" colname="col3" dita-ot:x="3" dita-ot:y="16">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:64;162:36" colname="col4" dita-ot:x="4" dita-ot:y="16">Yes</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:17;164:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:65;165:36" colname="col1" dita-ot:x="1" dita-ot:y="17">Style output using ditaval <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:8;165:71">outputclass</xmlatt>
+                                attribute.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:66;167:36" colname="col2" dita-ot:x="2" dita-ot:y="17">Profiling attributes defined on DITA elements can be converted to
+                                custom <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:9;168:48">class</xmlatt> attribute values in the generated HTML
+                                output by adding specific <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlatt:10;169:67">outputclass</xmlatt> attributes on
+                                the filters in the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="filepath:1;170:62">ditaval</filepath> filter file.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:67;171:36" colname="col3" dita-ot:x="3" dita-ot:y="17">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:68;172:36" colname="col4" dita-ot:x="4" dita-ot:y="17">Yes</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:18;174:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:69;175:36" colname="col1" dita-ot:x="1" dita-ot:y="18">Added new <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:23;175:58">keytext</xmlelement> element.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:70;176:36" colname="col2" dita-ot:x="2" dita-ot:y="18">Used to simplify syntax for defining a key pointing to a small
+                                text fragment. </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:71;178:36" colname="col3" dita-ot:x="3" dita-ot:y="18">-</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:72;179:36" colname="col4" dita-ot:x="4" dita-ot:y="18">No</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="row:19;181:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:73;182:36" colname="col1" dita-ot:x="1" dita-ot:y="19">New Bookmap <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:24;182:60">mapresources</xmlelement>
+                                element.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:74;184:36" colname="col2" dita-ot:x="2" dita-ot:y="19">A wrapper for various elements like
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:25;185:49">keydef</xmlelement>,
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="xmlelement:26;186:49">ditavalref</xmlelement> which could not be used on
+                                the first level of the DITA Book Map.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:75;188:37" colname="col3" dita-ot:x="3" dita-ot:y="19"/>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/dita_2_0_specification_support_cheat_sheet.dita" xtrc="entry:76;189:37" colname="col4" dita-ot:x="4" dita-ot:y="19"/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </body>
+</topic>

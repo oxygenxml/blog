@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="similarities_tech_docs_soft_engs" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="topic:1;3:46" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="title:1;4:12">Similarities Between Technical Doc Writers and Software Engineers</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="critdates:1;7:20">
+            <created date="2023-10-19" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:1;12:12">I'm a software engineer, working for Oxygen XML Editor along side my colleagues in
+            developing tools used by technical documentation writers. I also do lots of technical
+            support and sometimes I write small blog posts like this one or update our technical
+            documentation. </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:2;16:12">Over time, I've come to view the aspects of a technical writer's job (especially a tech
+            writer who is using standards that have lots of potential for reuse, like DITA XML)
+            quite similar to many of the aspects of a software developer's job. So I started putting
+            together a list of concepts and the way in which both of these jobs (which may seem
+            incompatible with each other at first) would utilize such concepts.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:3;21:12">
+            <table frame="all" rowsep="1" colsep="1" id="table_xlq_sn5_yyb" class="- topic/table " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="table:1;22:77">
+                <tgroup cols="3" class="- topic/tgroup " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="tgroup:1;23:34">
+                    <colspec colname="col1" colnum="1" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="colspec:1;24:69"/>
+                    <colspec colname="col2" colnum="2" colwidth="2*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="colspec:2;25:74"/>
+                    <colspec colname="col3" colnum="3" colwidth="2*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="colspec:3;26:69"/>
+                    <thead class="- topic/thead " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="thead:1;27:28">
+                        <row valign="top" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:1;28:43">
+                            <entry id="entry_vyh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:1;29:59" colname="col1" dita-ot:x="1" dita-ot:y="1">Concept</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:2;30:36" colname="col2" dita-ot:x="2" dita-ot:y="1">Software Engineers</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:3;31:36" colname="col3" dita-ot:x="3" dita-ot:y="1">Tech Docs Writer</entry>
+                        </row>
+                    </thead>
+                    <tbody class="- topic/tbody " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="tbody:1;34:28">
+                        <row valign="top" id="row_qyb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:2;35:64">
+                            <entry id="entry_yyh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:4;36:59" colname="col1" dita-ot:x="1" dita-ot:y="2">Accessibility</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:5;37:36" colname="col2" dita-ot:x="2" dita-ot:y="2">We build our software products by following accessibility best
+                                practices, we test our products using screen readers and collaborate
+                                with our vision-impaired users to fix accessibility problems. We
+                                also try to make sure there is enough color contrast in the
+                                application components and icons, that all font sizes are
+                                configurable and ship various color themes for the
+                                application.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:6;44:36" colname="col3" dita-ot:x="3" dita-ot:y="2">Published technical documentation also needs to be accessible,
+                                for example by adding alternate text for images and using relevant
+                                text for links. It's also important to make sure the color theme of
+                                the published output has enough contrast. <xref href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-accessibility.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:1;49:68"><?ditaot usertext?>WebHelp</xref> and PDF outputs
+                                obtained using Oxygen from DITA XML content are section 508
+                                compliant.</entry>
+                        </row>
+                        <row valign="top" id="row_wyb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:3;53:64">
+                            <entry id="entry_bzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:7;54:59" colname="col1" dita-ot:x="1" dita-ot:y="3">Accurate and Concise Messages</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:8;55:36" colname="col2" dita-ot:x="2" dita-ot:y="3">We are required to present accurate and concise error messages,
+                                dialogs, and prompts to our end users. Over time, we've learned to
+                                pass most of these error messages by our tech docs writers, asking
+                                their opinion to help improve them.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:9;59:36" colname="col3" dita-ot:x="3" dita-ot:y="3">The technical documentation must also be accurate and concise.
+                                The technical writer's advice can also greatly benefit the software
+                                developers when they work in developing the messages in the
+                                application.</entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:4;64:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:10;65:36" colname="col1" dita-ot:x="1" dita-ot:y="4">Balance between Time and Impact</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:11;66:36" colname="col2" dita-ot:x="2" dita-ot:y="4">Time is a precious commodity, as an engineer I need to make the
+                                best of the time I have allocated in order to implement a certain
+                                feature or functionality or to refactor content. If time does not
+                                allow me to perform a full redesign of a certain functionality I can
+                                still gradually improve it.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:12;71:36" colname="col3" dita-ot:x="3" dita-ot:y="4">The tech docs writer may also not have enough time to refactor
+                                for example the entire project in a certain way but can gradually
+                                work towards a certain direction.</entry>
+                        </row>
+                        <row valign="top" id="row_xyb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:5;75:64">
+                            <entry id="entry_czh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:13;76:59" colname="col1" dita-ot:x="1" dita-ot:y="5">Building Complex Systems from Basic
+                                Building Blocks</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:14;78:36" colname="col2" dita-ot:x="2" dita-ot:y="5">We build small components (classes) and then we use them to build
+                                projects. We then use the many individual projects to build entire
+                                large products. <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:4;80:52">We keep the small components as simple as
+                                    possible to maximize their reuse potential. With these simple
+                                    components, we build large complex projects.</p></entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:15;83:36" colname="col3" dita-ot:x="3" dita-ot:y="5">Publications are built by using small topics of information or
+                                small reusable elements like notes or tables. Even larger
+                                publications can be built by combining the DITA maps used to
+                                describe subcomponents of the product. <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:5;86:75">Individual topics/tasks
+                                    are small, simple, and easy to follow. With these simple topics,
+                                    you can build large technical documentation
+                                projects.</p></entry>
+                        </row>
+                        <row valign="top" id="row_yyb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:6;91:64">
+                            <entry id="entry_ezh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:16;92:59" colname="col1" dita-ot:x="1" dita-ot:y="6">Code Review</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:17;93:36" colname="col2" dita-ot:x="2" dita-ot:y="6">We have a stage where the code that was written by someone is
+                                reviewed by a usually more experienced peer. The code reviewer may
+                                propose various changes, either small message changes or changes
+                                from the point of view of someone who knows the architecture of the
+                                project better. There is also the possibility for a novice to code
+                                review, as this exposes them to new techniques and they also can
+                                give a fresh perspective on things.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:18;100:36" colname="col3" dita-ot:x="3" dita-ot:y="6">Having experienced technical writers review the work of novice
+                                writers is a great way to acclimate the novice writers to a specific
+                                way that the content must be written for a certain company.
+                                Experienced tech writers can also, for example, better determine if
+                                the content should be placed somewhere else in the project or if the
+                                current topic should be split into multiple ones as they have a
+                                better overall overview of the project.</entry>
+                        </row>
+                        <row valign="top" id="row_zyb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:7;108:64">
+                            <entry id="entry_fzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:19;109:59" colname="col1" dita-ot:x="1" dita-ot:y="7">Content Reuse</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:20;110:36" colname="col2" dita-ot:x="2" dita-ot:y="7">We reuse entire small projects in multiple products. We reuse
+                                libraries, classes, and functions. Content reuse gives us the
+                                ability to build products faster and to build different products
+                                from the same content.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:21;114:36" colname="col3" dita-ot:x="3" dita-ot:y="7">Similarly, starting from the top down, entire DITA maps can be
+                                joined together to create documentation for larger publications,
+                                topics can be used in multiple places in a DITA map, and elements
+                                like notes, tables, lists can be reused in multiple places.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:6;117:95">Useful
+                                        links:<ul id="ul_zdm_tfj_bzb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="ul:1;118:71">
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="li:1;119:45"><xref href="../presentation-reuse/introduction.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:2;120:50" type="topic"><?ditaot usertext?>DITA Reuse Strategies</xref></li>
+                                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="li:2;121:45"><xref href="https://www.oxygenxml.com/dita/styleguide/c_Content_Re-use.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:3;123:80"><?ditaot usertext?>DITA Style
+                                                Guide</xref></li>
+                                    </ul></p></entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:8;127:30">
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:22;128:36" colname="col1" dita-ot:x="1" dita-ot:y="8">Copy/Paste vs Reuse</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:23;129:36" colname="col2" dita-ot:x="2" dita-ot:y="8">
+                                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:7;130:36">Sometimes I may decide that it's in the best interest of the
+                                    project I'm working on to copy/paste instead of reusing. </p>
+                                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:8;132:36">I may prefer copy/pasting for example in order not to introduce
+                                    dependencies between modules or when using incompatible data
+                                    formats. Or if I plan to alter the content in certain ways.</p>
+                                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:9;135:36">I may create auto tests to notify you when the source of truth
+                                    has changed.</p>
+                            </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:24;138:36" colname="col3" dita-ot:x="3" dita-ot:y="8">It's best to reuse as much as possible but sometimes the writer
+                                may decide that copy/pasting and then maybe making small adjustments
+                                is a better decision.</entry>
+                        </row>
+                        <row valign="top" id="row_azb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:9;142:64">
+                            <entry id="entry_gzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:25;143:59" colname="col1" dita-ot:x="1" dita-ot:y="9">Custom Validation Rules</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:26;144:36" colname="col2" dita-ot:x="2" dita-ot:y="9">We have various automatic tools (like <b id="b_rpq_pw4_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:1;145:38">Sonar</b>) that report warnings when certain best practices for
+                                writing the code are not followed. This gives us more consistency as
+                                we are many devs working on the same code base and the code we
+                                produce needs to be easily read, understood, and maintained by
+                                others.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:27;150:36" colname="col3" dita-ot:x="3" dita-ot:y="9">Using <xref href="SchematronBCs.dita" format="dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:4;150:88" type="topic"><?ditaot usertext?>Schematron
+                                    Rules</xref>, technical writers also can impose custom
+                                validation rules, specific for their project. These custom
+                                validation rules ensure consistency throughout the tech docs
+                                project.</entry>
+                        </row>
+                        <row valign="top" id="row_bzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:10;156:64">
+                            <entry id="entry_izh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:28;157:59" colname="col1" dita-ot:x="1" dita-ot:y="10">Deleting Unused/Deprecated Content</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:29;158:36" colname="col2" dita-ot:x="2" dita-ot:y="10">All mature software products contain components that in time may
+                                become unmaintained or unused. Over time, such components may become
+                                security problems or may just contain inaccurate information. So,
+                                software developers also spend time deprecating and then removing
+                                these components.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:30;163:36" colname="col3" dita-ot:x="3" dita-ot:y="10">Technical documentation also may contain content that is no
+                                longer accurate or topics that refer to features that no longer
+                                exist. So, deleting unused content is also a part of a tech writer's
+                                job.</entry>
+                        </row>
+                        <row valign="top" id="row_czb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:11;168:64">
+                            <entry id="entry_jzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:31;169:59" colname="col1" dita-ot:x="1" dita-ot:y="11">Document my Code/Documentation</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:32;170:36" colname="col2" dita-ot:x="2" dita-ot:y="11">Most programming languages have support to add comments
+                                containing documentation about what the code does and why various
+                                choices were made. This documentation gives more information that
+                                could not be derived just by reading the code. We also have internal
+                                wikis with diagrams and descriptions of various architecture choices
+                                and steps to set up various projects for people who just started
+                                working on them.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:33;177:36" colname="col3" dita-ot:x="3" dita-ot:y="11">It's a best practice to try <xref href="styleguide.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:5;177:94" type="topic"><?ditaot gentext?>Implementing your own Style Guide</xref> where
+                                various best practices and architectural decisions for the
+                                documentation project are described. Such a Style Guide makes
+                                on-boarding easier and over time, the rules in the style guide may
+                                start to be automatically applied using Schematron or a terminology
+                                checker. Publishing customizations should also be documented in a
+                                style guide and a quick getting started tutorial for people who
+                                start working on the specific technical documentation project may
+                                also be useful.</entry>
+                        </row>
+                        <row valign="top" id="row_dzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:12;187:64">
+                            <entry id="entry_kzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:34;188:59" colname="col1" dita-ot:x="1" dita-ot:y="12">Enjoy</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:35;189:36" colname="col2" dita-ot:x="2" dita-ot:y="12">For the long term, it's good to find particular aspects about
+                                your job that you particularly enjoy doing. For example, in my case
+                                I've always been interested in investigating why certain bugs occur
+                                and following through, spending hours to investigate and solve them.
+                                I'm also very eager to delete unused code and functionality.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:36;194:36" colname="col3" dita-ot:x="3" dita-ot:y="12">Whether it's rewriting/correcting problems in existing content,
+                                writing new content, adding custom validation rules, helping others,
+                                discussing with engineers, or improving the architecture of the
+                                existing technical documentation project, technical writers may also
+                                have preferred activities. In general, we get to know what each
+                                person does best within the team and who to ask for advice in
+                                certain cases.</entry>
+                        </row>
+                        <row valign="top" id="row_ezb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:13;202:64">
+                            <entry id="entry_mzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:37;203:59" colname="col1" dita-ot:x="1" dita-ot:y="13">Evolve</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:38;204:36" colname="col2" dita-ot:x="2" dita-ot:y="13">We need to constantly deepen our understanding of the current
+                                techniques we use, learn new techniques, and new frameworks or
+                                programming languages. Learning new things also helps us to obtain a
+                                different view of the current techniques we are using.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:39;208:36" colname="col3" dita-ot:x="3" dita-ot:y="13">By reading various resources like the <xref href="https://www.oxygenxml.com/dita/styleguide/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:6;210:54"><?ditaot usertext?>DITA Style Guide</xref>, the <xref href="https://www.oxygenxml.com/dita/1.3/specs/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:7;212:54"><?ditaot usertext?>DITA 1.3 standard</xref>, or the <xref href="welcome.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:8;213:57" type="topic"><?ditaot usertext?>Oxygen XML Blog</xref>, a technical writers
+                                can deepen their understanding of the used standard, what features
+                                it offers, and what best practices to follow. <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:10;215:82">There are lots of
+                                    useful resources about approaching technical documentation
+                                    online like: <xref href="https://diataxis.fr/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:9;218:58"><?ditaot usertext?>Diátaxis</xref>. And various <xref href="learnDita.dita#learnDita/section_lhf_cjj_2v" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:10;219:92" type="section"><?ditaot usertext?>community
+                                        places</xref> where one can ask for help or follow up on
+                                    conversations.</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:11;221:58">Sometimes, technical writers also become
+                                    involved in styling the published HTML or PDF outputs, in
+                                    uploading the deliverables to the proper places on the web site,
+                                    producing training material, or receiving user feedback and
+                                    integrating it back in the documentation. So, they move towards
+                                    scripting and being power-users.</p></entry>
+                        </row>
+                        <row valign="top" id="row_fzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:14;228:64">
+                            <entry id="entry_nzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:40;229:59" colname="col1" dita-ot:x="1" dita-ot:y="14">Helping Yourself</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:41;230:36" colname="col2" dita-ot:x="2" dita-ot:y="14">When I do not know how to do something, I first try to figure
+                                things out on my one before asking for help. I use various internal
+                                resources (our internal wiki) or external resources like Google,
+                                ChatGPT, StackOverflow. I always tend to remember the solution
+                                better if I put some effort into finding it myself.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:42;235:36" colname="col3" dita-ot:x="3" dita-ot:y="14">Overcoming obstacles by oneself is possible if the company has
+                                internal wikis or internal style guides that the technical writers
+                                can use. By helping ourselves, experienced writers develop a certain
+                                grit that allows them to overcome daily obstacles.</entry>
+                        </row>
+                        <row valign="top" id="row_gzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:15;240:64">
+                            <entry id="entry_ozh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:43;241:59" colname="col1" dita-ot:x="1" dita-ot:y="15">Inversion of Control</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:44;242:36" colname="col2" dita-ot:x="2" dita-ot:y="15">Most of the time, we use libraries developed by us or by others
+                                to build larger projects. So, our code uses other code. But there
+                                are frameworks like <b id="b_hqq_pw4_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:2;244:75">Java Spring</b> that have
+                                this concept of <b id="b_iqq_pw4_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:3;245:71">inversion of control</b>. With
+                                this concept, our code does not use libraries, but those libraries
+                                in turn orchestrate and use our code.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:45;248:36" colname="col3" dita-ot:x="3" dita-ot:y="15">The DITA XML standard has the concept of <xref href="../keyscopes/keyscopesBlog.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:11;249:76" type="topic"><?ditaot usertext?>key scopes</xref>, which
+                                allows key references and content key references in topics to have
+                                different values depending on where the topic is referenced in the
+                                DITA map. So in a way, your topics contain variable place holders
+                                that may expand to different content depending on where they are
+                                used in the DITA Map.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:12;254:57">The DITA XML standard also has this concept
+                                    of <xref href="../presentation-reuse/conref_push.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:12;255:92" type="topic"><?ditaot usertext?>content
+                                        reference push</xref>. With conref push content can be
+                                    placed in a topic from the outside.</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:13;257:79">A DITA topic that
+                                    contains key references is not truly instantiated until it's
+                                    referenced in a certain place in the DITA map.</p></entry>
+                        </row>
+                        <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:16;261:30">
+                            <entry id="entry_pzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:46;262:59" colname="col1" dita-ot:x="1" dita-ot:y="16">Issues/Tickets List</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:47;263:36" colname="col2" dita-ot:x="2" dita-ot:y="16">We work internally mostly with <b id="b_mtf_v1x_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:4;263:89">Atlassian
+                                    JIRA</b> to create issues/tickets. We have various workflows for
+                                our issues that allow us to have quality assurance, and
+                                documentation connected to the same issue ID. The issue connects all
+                                the commits and modifications made both in the development phase and
+                                in the documentation phase. So, looking at an issue, I can also see
+                                links to all changes made to fix and document the issue.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:14;269:92">For some
+                                    projects, we also work with GitHub issues or GitLab
+                                    issues/tickets and although more simple, they also provide us
+                                    with some basic way of keeping track of work
+                                progress.</p></entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:48;274:36" colname="col3" dita-ot:x="3" dita-ot:y="16">An issues/tickets list is also very important for tech doc
+                                writers to keep track of what needs to be done.</entry>
+                        </row>
+                        <row valign="top" id="row_hzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:17;277:64">
+                            <entry id="entry_qzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:49;278:59" colname="col1" dita-ot:x="1" dita-ot:y="17">Learn by Teaching</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:50;279:36" colname="col2" dita-ot:x="2" dita-ot:y="17">Teaching is a great way to learn more about the concepts
+                                yourself. You do not need to be highly experienced in a subject
+                                matter in order to make small presentations in the team about it. I
+                                sometimes make small presentations to start discussions about the
+                                subject matter and gather best practices from other team members who
+                                now more about the subject matter than I do.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:51;285:36" colname="col3" dita-ot:x="3" dita-ot:y="17">You can read about an aspect of a standard like <b id="b_yvh_dp3_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:5;286:56">DITA XML</b> that you are not using in the
+                                company (for example, about <xref href="../branchFilters/branchFilter.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:13;288:79" type="topic"><?ditaot usertext?>branch
+                                    filtering</xref> or <b id="b_gxp_dp3_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:6;289:79">relationship
+                                    tables</b>), make a small presentation in the team, and then try
+                                to start a discussion about how the feature could be used in the
+                                tech docs project and what problems it could solve.</entry>
+                        </row>
+                        <row valign="top" id="row_izb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:18;294:64">
+                            <entry id="entry_rzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:52;295:59" colname="col1" dita-ot:x="1" dita-ot:y="18">Managing Dependencies/Linking between
+                                objects</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:53;297:36" colname="col2" dita-ot:x="2" dita-ot:y="18">The more dependencies a class, object, or project has, the more
+                                difficult is to use it in another context. In our work, we try to
+                                uncouple objects, to decrease the dependencies between them to be
+                                able to reuse the objects in multiple contexts.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:54;301:36" colname="col3" dita-ot:x="3" dita-ot:y="18">There are various <xref href="dita_linking_stretegies.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:14;302:38" type="topic"><?ditaot usertext?>linking strategies</xref>, the main idea being to avoid direct
+                                references between topics and instead use indirect links and
+                                relationship tables. This gives you more flexibility to re-use
+                                topics in multiple contexts.</entry>
+                        </row>
+                        <row id="row_jzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:19;307:51">
+                            <entry id="entry_szh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:55;308:59" colname="col1" dita-ot:x="1" dita-ot:y="19">Metadata/Extensibility</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:56;309:36" colname="col2" dita-ot:x="2" dita-ot:y="19">From the point of view of a Java developer like myself, support
+                                for annotations was added to the Java programming language about 20
+                                years ago and it allowed the creation of various important libraries
+                                that in a way extend the language to offer all kinds of useful
+                                functionality. </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:57;314:36" colname="col3" dita-ot:x="3" dita-ot:y="19">The DITA XML standard has various ways that users can enhance the
+                                publishing or add metadata that is useful for specific needs:<ul id="ul_ld1_xq3_dzb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="ul:2;316:57">
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="li:3;317:41">Using the <xref href="https://www.oxygenxml.com/dita/1.3/specs/langRef/base/metadata.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:15;320:50"><?ditaot usertext?><xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xmlelement:1;320:62">metadata</xmlelement></xref> element
+                                        and sub-elements to define key words, index terms,
+                                        categories that can be used to add various publishing
+                                        features. The Oxygen WebHelp output uses keywords to enhance
+                                        the search functionality and index terms to create and index
+                                        page.</li>
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="li:4;326:41">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xmlatt:1;326:53">outputclass</xmlatt> attribute can be set on
+                                        almost all DITA elements and allows you to easily customize
+                                        elements using CSS in the published output. For example, you
+                                        can use it to specify the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/add-syntax-highlights-codeblocks-x.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:16;331:76"><?ditaot usertext?>language</xref> of
+                                        codeblock elements.</li>
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="li:5;333:41">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xmlelement:2;333:57">foreign</xmlelement> element allows adding
+                                        non DITA XML content and can be used for various
+                                        enhancements like <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-embed-html.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:17;337:76"><?ditaot usertext?>embedding HTML
+                                            content</xref> directly in DITA topics.</li>
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="li:6;339:41">The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xmlelement:3;339:57">data</xmlelement> element can be used almost
+                                        anywhere to specify key value pairs that are later used in
+                                        the published output.</li>
+                                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="li:7;342:41">The DITA XML standard itself can be specialized or
+                                        restricted using a <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-integrate-specialization.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:18;345:76"><?ditaot usertext?>specific
+                                        procedure</xref>.</li>
+                                </ul><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:15;347:41">This possibility to extend the standard makes it much more
+                                    valuable and allows targeting specific company
+                                needs.</p></entry>
+                        </row>
+                        <row valign="top" id="row_kzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:20;351:64">
+                            <entry id="entry_tzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:58;352:59" colname="col1" dita-ot:x="1" dita-ot:y="20">No Appreciation for Fluff</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:59;353:36" colname="col2" dita-ot:x="2" dita-ot:y="20">The written code should be as compact and easy to read as
+                                possible. An application's features should again be intuitive to use
+                                with a user's interface that does not present more than you need to
+                                accomplish a certain task.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:60;357:36" colname="col3" dita-ot:x="3" dita-ot:y="20">Small topics describing key concepts, small tasks describing how
+                                various things can be accomplished. Precise messages, simplified
+                                English, no fancy words, no thesaurus.</entry>
+                        </row>
+                        <row valign="top" id="row_lzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:21;361:64">
+                            <entry id="entry_uzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:61;362:59" colname="col1" dita-ot:x="1" dita-ot:y="21">Obtaining multiple products from the same
+                                code base</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:62;364:36" colname="col2" dita-ot:x="2" dita-ot:y="21">Using configuration files, we can reuse an entire product code
+                                base to create multiple products, each with a specific subset of
+                                features.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:63;367:36" colname="col3" dita-ot:x="3" dita-ot:y="21">Using profiling/filters or multiple main DITA maps, a DITA XML
+                                based project can be used to create user guides for <xref href="../presentation-reuse/reuseSimilarProducts.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:19;369:92" type="topic"><?ditaot usertext?>multiple
+                                    products</xref>.</entry>
+                        </row>
+                        <row valign="top" id="row_mzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:22;372:64">
+                            <entry id="entry_vzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:64;373:59" colname="col1" dita-ot:x="1" dita-ot:y="22">One trick pony / Jack of all
+                                trades</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:65;375:36" colname="col2" dita-ot:x="2" dita-ot:y="22">Even if over time we specialize and become very productive with
+                                one set of tools and when working on a certain aspect of the
+                                application, having a larger overview and being able to use other
+                                tools/languages/frameworks when necessary gives us lots of
+                                flexibility to help members of other teams or to make changes to
+                                sub-projects that we are not directly involved in.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:66;381:36" colname="col3" dita-ot:x="3" dita-ot:y="22">Being able to write documentation in multiple formats (Markdown,
+                                DITA XML, MS Word), being able to use various version control
+                                systems like Git or content management systems gives you the ability
+                                to apply for and be able to perform any technical documentation job,
+                                besides the benefit of using much of the workflows and tools other
+                                people in the company might use.</entry>
+                        </row>
+                        <row valign="top" id="row_nzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:23;388:64">
+                            <entry id="entry_wzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:67;389:59" colname="col1" dita-ot:x="1" dita-ot:y="23">Overview of Complex Systems</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:68;390:36" colname="col2" dita-ot:x="2" dita-ot:y="23">Either when making a small improvement or implementing a large
+                                feature, having an overview of the entire project's architecture
+                                helps a lot.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:69;393:36" colname="col3" dita-ot:x="3" dita-ot:y="23">Having an overview of the documentation project helps you know
+                                where to make a change, what pleasant or unpleasant side effects it
+                                generates and how to possibly re-structure the content to facilitate
+                                making that change. Content reuse adds a lot of efficiency to the
+                                process of building a user's guide and reusing large chunks of
+                                content between user manuals. Content reuse unfortunately also
+                                sometimes makes it easier to propagate errors in multiple
+                                places.</entry>
+                        </row>
+                        <row valign="top" id="row_ozb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:24;402:64">
+                            <entry id="entry_xzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:70;403:59" colname="col1" dita-ot:x="1" dita-ot:y="24">Pair Programming</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:71;404:36" colname="col2" dita-ot:x="2" dita-ot:y="24">We have this concept that we apply from time to time in which two
+                                people work on the same issue from the same computer. These people
+                                can be peers with the same knowledge, in which case one of them
+                                thinks about the larger context in which the issue is resolved and
+                                asks questions while the other implements it. Or the engineers can
+                                be an expert and a novice, in which case the novice directly sees
+                                how the expert considers and implements the issue.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:72;411:36" colname="col3" dita-ot:x="3" dita-ot:y="24">I'm not sure if in the domain of tech docs writing people use
+                                such pair docs writing but I think it could also benefit a novice to
+                                see exactly how people with more experience organize themselves,
+                                understand the requirements, and work on issues.</entry>
+                        </row>
+                        <row valign="top" id="row_pzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:25;416:64">
+                            <entry id="entry_yzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:73;417:59" colname="col1" dita-ot:x="1" dita-ot:y="25">Project Structure and Naming
+                                Resources</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:74;419:36" colname="col2" dita-ot:x="2" dita-ot:y="25">Experienced software developers are interested in properly naming
+                                things. We try to give good names to functions, variables, and
+                                packages. We try to be consistent when naming things using compound
+                                names, either using hyphens or upper-lower-case sequences.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:75;423:36" colname="col3" dita-ot:x="3" dita-ot:y="25">It makes sense for technical documentation writers to also have
+                                best practices when it comes to a project's structure, how files
+                                should be named, where images should be stored, how key names should
+                                be given, and so on. <xref href="https://github.com/oxygenxml/dita-project-best-practices" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:20;428:68"><?ditaot usertext?>Sample Project</xref>.</entry>
+                        </row>
+                        <row valign="top" id="row_qzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:26;430:64">
+                            <entry id="entry_zzh_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:76;431:59" colname="col1" dita-ot:x="1" dita-ot:y="26">Publishing Orchestration</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:77;432:36" colname="col2" dita-ot:x="2" dita-ot:y="26">We have various automated flows that generate nightly build
+                                installation kits for our product that can be further tested by the
+                                QA team.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:78;435:36" colname="col3" dita-ot:x="3" dita-ot:y="26">Although the published output can be obtained from an Oxygen
+                                installation by running a transformation scenario, over time it's a
+                                good idea to automate the publishing by using an integration server
+                                like Jenkins, for example, to constantly poll the user guide project
+                                for modifications and update an internal web site with the latest
+                                HTML or PDF outputs to show how the documentation is evolving and
+                                give material to engineers who want to review the published content.
+                                For the Oxygen XML blog, for example, a <xref href="welcome.dita#welcome/section_cbc_g11_qkb" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:21;443:85" type="section"><?ditaot usertext?>Gradle build
+                                    file</xref> is used to automate the publishing.</entry>
+                        </row>
+                        <row valign="top" id="row_rzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:27;446:64">
+                            <entry id="entry_a13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:79;447:59" colname="col1" dita-ot:x="1" dita-ot:y="27">Read the Docs</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:80;448:36" colname="col2" dita-ot:x="2" dita-ot:y="27">We learn a lot by doing, or by copy pasting or reusing content
+                                from other similar projects that we have. But sometimes taking the
+                                time to read the documentation for the frameworks and libraries that
+                                we use is really worth it.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:81;452:36" colname="col3" dita-ot:x="3" dita-ot:y="27">By reading the <xref href="https://www.oxygenxml.com/dita/1.3/specs/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:22;454:54"><?ditaot usertext?>DITA 1.3 standard documentation</xref>, for
+                                example, a technical documentation writer might find various
+                                features that can be used in their project. They might also
+                                understand certain limitations in the way things work. <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:16;457:91">There are
+                                        <xref href="learnDita.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:23;458:69" type="topic"><?ditaot usertext?>lots of resources</xref> for
+                                    learning DITA or for learning how to better use Oxygen to edit
+                                    DITA XML content. So, it is sometimes worth taking the time to
+                                    explore the tools you are using and the capabilities of the
+                                    standard.</p></entry>
+                        </row>
+                        <row valign="top" id="row_szb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:28;464:64">
+                            <entry id="entry_b13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:82;465:59" colname="col1" dita-ot:x="1" dita-ot:y="28">Requesting Help from Peers</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:83;466:36" colname="col2" dita-ot:x="2" dita-ot:y="28">Besides an internal wiki of content and procedures, we rely on a
+                                network of colleagues, some from our teams, some from others or from
+                                the system admins team. Over time, we come to know each other's
+                                strengths and know who to call when we need advice. Helping someone
+                                else usually takes priority over the current task. </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:84;471:36" colname="col3" dita-ot:x="3" dita-ot:y="28">Besides asking their peers for help, technical documentation
+                                writers also have various engineers and subject matter experts who
+                                could help when writing content either by giving feedback or by
+                                providing some initial content (some notes for example) to be used
+                                for the official documentation.</entry>
+                        </row>
+                        <row valign="top" id="row_tzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:29;477:64">
+                            <entry id="entry_c13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:85;478:59" colname="col1" dita-ot:x="1" dita-ot:y="29">Security</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:86;479:36" colname="col2" dita-ot:x="2" dita-ot:y="29">We do our best to protect our applications from security
+                                vulnerabilities by updating old libraries and by considering various
+                                scenarios in which attackers would attempt to gain control over an
+                                application. </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:87;483:36" colname="col3" dita-ot:x="3" dita-ot:y="29">Besides keeping the user guide contents in a secure location to
+                                avoid exposing information to the competition or features that have
+                                not yet been released, the HTML output obtained from the user guide
+                                contents also needs to be updated to contain the latest Javascript
+                                libraries and not be susceptible to vulnerabilities when loaded in a
+                                web browser.<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:17;488:48">Content in the user's guide in general also needs to
+                                    be considered from the point of view of not giving an attacker
+                                    details about how the product could be configured for use in
+                                    other scenarios other than the ones intended by the
+                                    developers.</p></entry>
+                        </row>
+                        <row valign="top" id="row_uzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:30;494:64">
+                            <entry id="entry_d13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:88;495:59" colname="col1" dita-ot:x="1" dita-ot:y="30">Server Side Validation</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:89;496:36" colname="col2" dita-ot:x="2" dita-ot:y="30">Validation and automated tests run on the server side (we use a
+                                Jenkins integration server) whenever changes are made to source code
+                                for a certain project. If automatic tests fail, emails are sent to
+                                the people who have committed the latest changes that broke the
+                                builds.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:90;501:36" colname="col3" dita-ot:x="3" dita-ot:y="30"><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:18;501:39">Whenever you have multiple topic files, filters, or content
+                                    reuse, you may end up with potential validation problems in the
+                                    edited content, problems ranging from broken links to invalid ID
+                                    attribute values or invalid topics.</p>Oxygen has a very useful
+                                    <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:24;507:68"><?ditaot usertext?><b id="b_ftb_bw4_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:7;507:90">Validate
+                                        and check for completeness</b></xref> action that checks
+                                lots of potential problems in the context of a DITA map, but maybe
+                                not all people run such an action before they commit. Such an action
+                                can also be <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/scripting_oxygen_dita_validate_and_check_for_completeness.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:25;513:68"><?ditaot usertext?>scripted</xref> to run on the
+                                server side in an integration server like <b id="b_wbh_kw4_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:8;515:38">Jenkins</b>, for example.</entry>
+                        </row>
+                        <row valign="top" id="row_vzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:31;517:64">
+                            <entry id="entry_e13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:91;518:59" colname="col1" dita-ot:x="1" dita-ot:y="31">Terminology</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:92;519:36" colname="col2" dita-ot:x="2" dita-ot:y="31">There are lots of ways that a message can be conveyed. All
+                                messages presented to the end user need to have a certain style,
+                                tone, and use plain language.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:93;522:36" colname="col3" dita-ot:x="3" dita-ot:y="31"><xref href="checking_terminology_with_oxygen_xml_editor.dita" format="dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:26;523:51" type="topic"><?ditaot usertext?>Controlled terminology</xref> is also an important
+                                aspect of a technical writer's job.</entry>
+                        </row>
+                        <row valign="top" id="row_wzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:32;526:64">
+                            <entry id="entry_f13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:94;527:59" colname="col1" dita-ot:x="1" dita-ot:y="32">Translation</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:95;528:36" colname="col2" dita-ot:x="2" dita-ot:y="32">In general, all user interface strings in an application will be
+                                translated to multiple languages so we need to take this into
+                                account when designing the application.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:96;531:36" colname="col3" dita-ot:x="3" dita-ot:y="32">A DITA XML project that needs to be translated into multiple
+                                languages also needs to follow a <xref href="translating_your_dita_project.dita" format="dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:27;533:93" type="topic"><?ditaot usertext?>sequence
+                                    of best practices</xref>.</entry>
+                        </row>
+                        <row valign="top" id="row_xzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:33;536:64">
+                            <entry id="entry_g13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:97;537:59" colname="col1" dita-ot:x="1" dita-ot:y="33">User's Point of View</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:98;538:36" colname="col2" dita-ot:x="2" dita-ot:y="33">All features need to be discussed and implemented from the point
+                                of view of the people who will actually benefit from using them. For
+                                technical people, this is sometimes difficult to do but we try to
+                                constantly remind ourselves to implement features that help certain
+                                real-world workflows to be performed by the end user and not for the
+                                sake of closing tickets. </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:99;544:36" colname="col3" dita-ot:x="3" dita-ot:y="33">The documentation also needs to target certain user profiles and
+                                be written to help people perform tasks and understand concepts. The
+                                product knowledge level of the end user is almost never the same as
+                                that of the tech writer.</entry>
+                        </row>
+                        <row id="row_yzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:34;549:51">
+                            <entry id="entry_h13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:100;550:59" colname="col1" dita-ot:x="1" dita-ot:y="34">User Feedback</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:101;551:36" colname="col2" dita-ot:x="2" dita-ot:y="34">It's important to get feedback from end users. This feedback
+                                gives us ideas about what to implement in the future and also allows
+                                us to modify existing features to better accommodate certain
+                                workflows. So, we try to make it as easy as possible to give
+                                feedback, we have a <b id="b_g1m_myw_dzb" class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="b:9;555:75">Report problem</b> action
+                                directly in the application, we have a support email address, a
+                                forum, user's list, and on each of our user's manual pages, there is
+                                also a feedback comments section.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:102;559:36" colname="col3" dita-ot:x="3" dita-ot:y="34">Receiving user feedback for the written documentation is also
+                                very important to improve the documentation to cover the actual user
+                                needs. For example, the <xref href="https://www.oxygenxml.com/oxygen_feedback.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:28;563:68"><?ditaot usertext?>Oxygen Feedback platform</xref>
+                                can be easily embedded in the generated web pages to allow users to
+                                provide feedback related to the documentation. We use it for the
+                                Oxygen user's manual, blog, and it's a very good mechanism to get in
+                                touch with users and to improve the docs.</entry>
+                        </row>
+                        <row valign="top" id="row_zzb_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:35;569:64">
+                            <entry id="entry_i13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:103;570:59" colname="col1" dita-ot:x="1" dita-ot:y="35">User Interface</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:104;571:36" colname="col2" dita-ot:x="2" dita-ot:y="35">An application may work very well from the functionality point of
+                                view but if it does not look very nice (ugly color theme, ugly
+                                icons, not intuitive user interface layouts) it will not end up
+                                getting used very much. </entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:105;575:36" colname="col3" dita-ot:x="3" dita-ot:y="35">A published user's guide also needs to have appropriate colors
+                                and fonts to improve readability and find ability. So, besides the
+                                actual content care, decisions must also be made in terms of what
+                                font styles and sizes to use, or what color theme to
+                                implement.</entry>
+                        </row>
+                        <row valign="top" id="row_a1c_4xw_dzb" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:36;581:64">
+                            <entry id="entry_j13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:106;582:59" colname="col1" dita-ot:x="1" dita-ot:y="36">Version Control</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:107;583:36" colname="col2" dita-ot:x="2" dita-ot:y="36">We use a mix of Git repositories and Subversion repositories for
+                                our software projects. Version control allows us to collaborate, to
+                                have a history of changes, and to have release branches for our
+                                products.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:108;587:36" colname="col3" dita-ot:x="3" dita-ot:y="36">Using a version control system like Git similarly gives the
+                                possibility to collaborate on documentation projects with various
+                                    <xref href="../git-tech-writers/using_git_for_technical_writing.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:29;591:38" type="topic"><?ditaot usertext?>workflows<?ditaot genshortdesc?><desc class="- topic/desc ">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/git-tech-writers/using_git_for_technical_writing.dita" xtrc="b:1;5:20">Git</b> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </desc></xref>. <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:19;591:59">As an alternative, you can use a
+                                    commercial content management system or in the cloud editing
+                                    solution.</p><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:20;593:53">No matter what storage system you use to
+                                    collaborate, having a history of changes and release branches is
+                                    a must.</p></entry>
+                        </row>
+                        <row valign="top" class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="row:37;597:43">
+                            <entry id="entry_k13_qcx_dzb" class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:109;598:59" colname="col1" dita-ot:x="1" dita-ot:y="37">Working with AI tools</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:110;599:36" colname="col2" dita-ot:x="2" dita-ot:y="37">Developers can work with ChatGPT to ask advice about how to write
+                                various pieces of code, especially in programming languages that
+                                they are not familiar with. They can also ask for help re-writing
+                                messages or translating small pieces of content.</entry>
+                            <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="entry:111;603:36" colname="col3" dita-ot:x="3" dita-ot:y="37">Working directly with AI tools or using an add-on like the <xref href="ai_positron.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="xref:30;604:61" type="topic"><?ditaot usertext?>Oxygen AI Positron Assistant
+                                view<?ditaot genshortdesc?><desc class="- topic/desc ">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:1;5:21">Oxygen AI Positron Assistant</b> add-on provides support for helping technical     documentation writers <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:2;6:30">generate</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:3;6:47">re-write</b> content, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:4;6:72">overview</b> and       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:5;7:10">research</b>. It also supports performing AI checks and AI-based modifications on       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:6;8:10">multiple files</b> by integrating AI extensions with XML technologies like       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:7;9:10">Schematron</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:8;9:31">XSLT</b>.</desc></xref>, tech doc writers can also use the AI tools to improve
+                                readability, remove grammar problems, re-write content in various
+                                styles, or translate content. So, AI tools are valuable for writers
+                                as co-pilots.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:21;614:12">Writers and software engineers have lots of things in common because we are all working
+            with language and we communicate in a specific language. Computer programming languages
+            contain less words and are more simple than the English vocabulary, but in the end we
+            are all in the market of describing, expressing, and building large systems using simple
+            terms.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/similarities_tech_docs_soft_engs.dita" xtrc="p:22;619:12">If you have feedback about these concepts and how they influence your writing, it is as
+            usual, welcomed.</p>
+    </body>
+</topic>

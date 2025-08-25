@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="blog_2022_retrospective" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="topic:1;3:37" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="title:1;4:12">Oxygen XML Blog 2022 Retrospective</title>
+	<prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="prolog:1;5:10">
+		<author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="author:1;6:11">Radu Coravu</author>
+		<critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="critdates:1;7:14">
+			<created date="2022-12-29" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="created:1;8:32"/>
+		</critdates>
+	</prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:1;12:12">So here we are at the end of <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:1;12:44">2022</b> and I figured it's a good time to go through
+			some of the improvements we made and posts we added in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:2;13:66">Oxygen XML Blog</b>. A
+			short summary of our activity on the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:3;14:44">Oxygen XML Blog</b> can be found below:<dl id="dl_ps2_lkw_zvb" class="- topic/dl " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dl:1;15:25">
+				<dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dlentry:1;16:14">
+					<dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dt:1;17:10">Statistics</dt>
+					<dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dd:1;18:10">As an overview of the most read articles on the blog, we found out that
+						articles about conversions from various formats (especially MS Word) to
+							<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:4;20:11">DITA XML</b>, articles about learning <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:5;20:52">DITA XML</b>, and general
+							<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:6;21:11">tips and tricks</b> articles were the most read. Also, I think we
+						provided some good quality content covering these aspects in 2022. In total,
+						we provided about 30 new articles to the blog in 2022.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dlentry:2;25:14">
+					<dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dt:2;26:10">Collaborators</dt>
+					<dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dd:2;27:10">This year, we had a lot more internal collaborators with contributors to the
+							<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:7;28:11">Oxygen XML Blog</b>. Our web designers <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:8;28:53">Mihai</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:9;28:70">Luci</b>
+						created a new color theme for the blog. My colleagues <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:10;29:64">Cosmin Duna</b>,
+							<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:11;30:11">George Bina</b>, and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:12;30:35">Alex Smarandache</b> contributed various
+						interesting and useful articles to the blog. Our external collaborator
+							<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:13;32:11">Chris Papademetrious</b> also submitted an article about enhancing
+						DITA Open Toolkit project files.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dlentry:3;35:14">
+					<dt class="- topic/dt " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dt:3;36:10">Moving the product forward</dt>
+					<dd class="- topic/dd " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="dd:3;37:10">The blog also served as a place to experiment with ideas that were later
+						incorporated into <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:14;38:28">Oxygen</b>. For example, based on articles written in
+						the blog, we added to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:15;39:32">Oxygen</b> the capability to convert <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:16;39:72">OpenAPI</b>
+						documents to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:17;40:23">DITA XML</b> or to generate <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:18;40:54">Google Structured Data</b>
+						content when publishing <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:19;41:34">DITA XML</b> content to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:20;41:61">WebHelp Responsive</b>
+						Output.</dd>
+				</dlentry>
+			</dl></p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:2;45:6">We hope you found the articles we added to the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:21;45:56">Oxygen XML Blog</b> this year useful. If you
+			have ideas about possible future articles that we could add to the blog, we are always
+			open to suggestions, or you can also contribute articles yourselves: <xref href="welcome.dita#welcome/section_tnr_rr3_jkb" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:1;48:54" type="section"><?ditaot gentext?>How You can Contribute to the Oxygen XML Editor Blog.</xref></p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:3;49:6">A more detailed list of contributions to the blog can be found below:</p>
+		<section id="section_ljn_css_zvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="section:1;50:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="title:2;51:11">Colors and Layout Redesign</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:4;52:7">My colleagues <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:22;52:24">Mihai</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:23;52:41">Luci</b> (who maintain and design our web site) have had
+				time this year to do a full redesign of the Oxygen <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:24;53:59">WebHelp</b> publishing
+				template we are using to publish our blog's DITA XML content to WebHelp.</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:5;55:7">So thanks to their work the entire layout of the blog looks better now!</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:6;56:7">We also changed the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:25;56:30">WebHelp</b> feedback authentication available on each page of the blog
+				to the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:26;57:15">Oxygen XML</b> organization so that with the same authentication, you can
+				leave us feedback either on the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:27;58:40">Oxygen Users Guide</b> Web pages or on the
+					<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:28;59:9">Oxygen XML Blog</b>.</p>
+		</section>
+		<section id="section_ayy_zqs_zvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="section:2;61:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="title:3;62:11">Migrating Word and Unstructured FrameMaker to DITA XML</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:7;63:7">Our colleague <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:29;63:24">Cosmin Duna</b> submitted two interesting migration related articles:<ul id="ul_ddb_2rs_zvb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="ul:1;64:25">
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="li:1;65:9"><xref href="migrating_word_to_dita_bdc/migrating_word_to_dita_using_batch_documents_converter.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:2;67:8" type="topic"><?ditaot gentext?>Migrating MS Word to DITA using the Batch Documents Converter</xref></li>
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="li:2;68:9"><xref href="migratingFmToDita.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:3;68:46" type="topic"><?ditaot gentext?>Migrating Unstructured Adobe FrameMaker Content to DITA</xref></li>
+				</ul></p>
+		</section>
+		<section id="section_v4y_xps_zvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="section:3;71:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="title:4;72:11">DITA Publishing</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:8;73:7">In 2022, I wrote quite a few small articles based on my experiences with various DITA
+				publishing customizations and they are all linked in this overview post: <xref href="dita_ot_publishing_customizations_overview.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:4;75:62" type="topic"><?ditaot gentext?>Publishing Customizations</xref>.</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:9;76:7">I also wrote an article about the various ways that we support the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:30;76:77">DITA Open Toolkit</b>
+				open source engine: <xref href="supporting_the_dita_ot_project.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:5;77:75" type="topic"><?ditaot gentext?>Supporting the DITA OT Project as a Commercial Company</xref>.</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:10;78:7">Our client and friend <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:31;78:32">Chris Papademetrious</b> also submitted an article about enhancing
+				DITA Open Toolkit project files: <xref href="preprocessing_ditaot_project_files.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:6;80:53" type="topic"><?ditaot gentext?>Preprocessing DITA-OT Project Files</xref>.</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:11;81:7"> These articles were also presented at the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:32;81:53">DITA Open Toolkit Day</b> 2022 along other
+				interesting talks: <xref href="https://www.oxygenxml.com/events/2022/dita-ot_day.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:7;84:23"/>.</p>
+		</section>
+		<section id="section_shr_tss_zvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="section:4;86:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="title:5;87:11">DITA Perspectives</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:12;88:7">Our boss and colleague <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:33;88:33">George Bina</b> contributed an article and a GitHub project with his
+				experiments creating automatic graphs showing the hierarchy of DITA elements in the
+				DITA specification: <xref href="dp/dita_perspectives.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:8;90:65" type="topic"><?ditaot gentext?>DITA Perspectives</xref>.</p>
+		</section>
+		<section id="section_mt4_hrs_zvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="section:5;92:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="title:6;93:11">Short Clips - DITA Editing</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="p:13;94:7">We started a series of small articles presenting various features of <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:34;94:79">DITA XML</b> editing
+				with <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="b:35;95:13">Oxygen</b> using small videos:<ul id="ul_ef5_jrs_zvb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="ul:2;95:67">
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="li:3;96:9"><xref href="shorts_insert_image_references.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:9;96:59" type="topic"><?ditaot gentext?>Short Clips - Insert Image References</xref></li>
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="li:4;97:9"><xref href="shorts_insert_links.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:10;97:48" type="topic"><?ditaot gentext?>Short Clips - Insert Links</xref></li>
+				<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="li:5;98:9"><xref href="shorts_reuse_content.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/blog_2022_retrospective.dita" xtrc="xref:11;98:49" type="topic"><?ditaot gentext?>Short Clips - Reuse Content</xref></li>
+				</ul></p>
+		</section>
+    </body>
+</topic>

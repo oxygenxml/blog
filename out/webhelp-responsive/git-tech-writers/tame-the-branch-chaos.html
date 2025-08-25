@@ -1,0 +1,436 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="27.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="You’re mid-sentence, deep in the flow of writing. Then a Slack ping: “Can you quickly check something on the release notes branch?” You sigh. Time to stash your changes, switch branches, rebuild ..."/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.subject" content="Git workflows,Oxygen Content Fusion,Git branches"/><meta name="keywords" content="Git workflows, Oxygen Content Fusion, Git branches"/><meta name="DC.relation" content="../git-tech-writers/using_git_for_technical_writing.html"/><meta name="DC.relation" content="https://www.oxygenxml.com/events/2025/webinar_solving_common_git_and_dita_challenges.html"/><meta name="DC.relation" content="https://www.youtube.com/watch?v=mzYjlPP1MxQ"/><meta name="DC.relation" content="https://www.oxygenxml.com/events/2020/webinar_documentation_management_inspired_by_software_development.html"/><meta name="DC.creator" content="Cristian Talau"/><meta name="DC.date.created" content="2025-03-27"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="topic_cml_cpm_p2c"/><title>Tame the Branch Chaos – Switch Less, Write More</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="topic_cml_cpm_p2c-d1655e1655"/><meta name="wh-source-relpath" content="git-tech-writers/tame-the-branch-chaos.dita"/><meta name="wh-out-relpath" content="git-tech-writers/tame-the-branch-chaos.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2025032023"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2025032023"/>
+
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20250825130822"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2025032023"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20250825130822"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2025032023"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2025032023"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2025032023"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/custom.css?buildId=2025032023"/>
+        <link rel="icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/rss.xml"/>
+    <script defer="true" src="../oxygen-webhelp/template/resources/js/custom-collapsed-sections.js"></script></head>
+
+    <body id="topic_cml_cpm_p2c" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="visually-hidden visually-hidden-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <progress value="0" id="progressBar"><div class="progress-container"><span class="progress-bar"></span></div></progress>
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/oxygen_logo.png" alt="Blog"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Blog</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-bs-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-bs-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="welcome-d1655e11-mi" data-tocid="welcome-d1655e11" data-state="leaf" class=" topicref " data-id="welcome"><span class="title"><a href="../topics/welcome.html">Welcome! </a></span></span></li><li role="menuitem"><span id="frequently_asked_questions-d1655e28-mi" data-tocid="frequently_asked_questions-d1655e28" data-state="leaf" class=" topicref " data-id="frequently_asked_questions"><span class="title"><a href="../topics/frequently_asked_questions.html">Frequently Asked Questions</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e37-mi" data-tocid="tocId-d1655e37" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ai_positron.html">Artificial intelligence (AI)</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e174-mi" data-tocid="tocId-d1655e174" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="migration-d1655e1407-mi" data-tocid="migration-d1655e1407" data-state="not-ready" class=" topicref " data-id="migration"><span class="title"><a href="../topics/migration.html">Migrate</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="using_git_for_technical_writing-d1655e1504-mi" data-tocid="using_git_for_technical_writing-d1655e1504" data-state="not-ready" class=" topicref " data-id="using_git_for_technical_writing"><span class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html">Using Git For Technical Writing</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="sdk-d1655e1664-mi" data-tocid="sdk-d1655e1664" data-state="not-ready" class=" topicref " data-id="sdk"><span class="title"><a href="../topics/sdk.html">SDK</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e1808-mi" data-tocid="tocId-d1655e1808" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/transform_text_files.html">Development</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e1827-mi" data-tocid="tocId-d1655e1827" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ISO-27001-certification-announcement.html">Miscellaneous</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/></div></form><span xmlns="" class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span><span xmlns="" class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
+            
+            
+            
+        </div></div>
+    </div>
+</header>
+        
+        
+         
+        
+        
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref" data-id="using_git_for_technical_writing"><div class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html">Using Git For Technical Writing</a><div class="wh-tooltip"><p class="shortdesc">The <strong class="ph b">Git</strong> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </p></div></div></div></li><li class="active"><div class="topicref" data-id="topic_cml_cpm_p2c"><div class="title"><a href="../git-tech-writers/tame-the-branch-chaos.html">Tame the Branch Chaos – Switch Less, Write More</a></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="welcome-d1655e11" class="topicref" data-id="welcome" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/welcome.html" id="welcome-d1655e11-link">Welcome! </a></div></div></li><li role="treeitem"><div data-tocid="frequently_asked_questions-d1655e28" class="topicref" data-id="frequently_asked_questions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/frequently_asked_questions.html" id="frequently_asked_questions-d1655e28-link">Frequently Asked Questions</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e37" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e37-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai_positron.html" id="tocId-d1655e37-link">Artificial intelligence (AI)</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e174" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e174-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="tocId-d1655e174-link">DITA</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="migration-d1655e1407" class="topicref" data-id="migration" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action migration-d1655e1407-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/migration.html" id="migration-d1655e1407-link">Migrate</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="using_git_for_technical_writing-d1655e1504" class="topicref" data-id="using_git_for_technical_writing" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action using_git_for_technical_writing-d1655e1504-link" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html" id="using_git_for_technical_writing-d1655e1504-link">Using Git For Technical Writing</a><div class="wh-tooltip"><p class="shortdesc">The <strong class="ph b">Git</strong> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="advantages_and_disadvantages_of_using_git-d1655e1518" class="topicref" data-id="advantages_and_disadvantages_of_using_git" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/advantages_of_using_git.html" id="advantages_and_disadvantages_of_using_git-d1655e1518-link">Advantages of Using Git</a></div></div></li><li role="treeitem"><div data-tocid="disadvantages_of_using_git-d1655e1526" class="topicref" data-id="disadvantages_of_using_git" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/disadvantages_of_using_git.html" id="disadvantages_of_using_git-d1655e1526-link">Disadvantages of Using Git</a></div></div></li><li role="treeitem"><div data-tocid="resources_for_learning_git-d1655e1534" class="topicref" data-id="resources_for_learning_git" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/resources_for_learning_git.html" id="resources_for_learning_git-d1655e1534-link">Useful Resources</a></div></div></li><li role="treeitem"><div data-tocid="git_client_applications-d1655e1542" class="topicref" data-id="git_client_applications" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/git_client_applications.html" id="git_client_applications-d1655e1542-link">Applications for Working with Git</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="editing_session_workflow-d1655e1550" class="topicref" data-id="editing_session_workflow" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action editing_session_workflow-d1655e1550-link" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/editing_session_workflow.html" id="editing_session_workflow-d1655e1550-link">Typical Editing Session</a></div></div></li><li role="treeitem"><div data-tocid="git_validation-d1655e1566" class="topicref" data-id="git_validation" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/git_validation.html" id="git_validation-d1655e1566-link">Validation</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="common_workflows-d1655e1574" class="topicref" data-id="common_workflows" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action common_workflows-d1655e1574-link" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/common_workflows.html" id="common_workflows-d1655e1574-link">Common Workflows</a></div></div></li><li role="treeitem"><div data-tocid="useful_features-d1655e1622" class="topicref" data-id="useful_features" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/propose_changes.html" id="useful_features-d1655e1622-link">Propose Changes</a></div></div></li><li role="treeitem"><div data-tocid="handling_translations-d1655e1630" class="topicref" data-id="handling_translations" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/handling_translations.html" id="handling_translations-d1655e1630-link">Handling Translations</a></div></div></li><li role="treeitem"><div data-tocid="sharing_common_settings-d1655e1638" class="topicref" data-id="sharing_common_settings" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/sharing_common_settings.html" id="sharing_common_settings-d1655e1638-link">Sharing Common Settings</a></div></div></li><li role="treeitem"><div data-tocid="publishing_content_from_git-d1655e1647" class="topicref" data-id="publishing_content_from_git" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/publishing_content_from_git.html" id="publishing_content_from_git-d1655e1647-link">Publishing Content From Git</a></div></div></li><li role="treeitem" class="active"><div data-tocid="topic_cml_cpm_p2c-d1655e1655" class="topicref" data-id="topic_cml_cpm_p2c" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/tame-the-branch-chaos.html" id="topic_cml_cpm_p2c-d1655e1655-link">Tame the Branch Chaos – Switch Less, Write More</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="sdk-d1655e1664" class="topicref" data-id="sdk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action sdk-d1655e1664-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/sdk.html" id="sdk-d1655e1664-link">SDK</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e1808" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e1808-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/transform_text_files.html" id="tocId-d1655e1808-link">Development</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e1827" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e1827-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ISO-27001-certification-announcement.html" id="tocId-d1655e1827-link">Miscellaneous</a></div></div></li><li role="treeitem"><div data-tocid="contributors-d1655e2008" class="topicref" data-id="contributors" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/contributors.html" id="contributors-d1655e2008-link">Contributors</a></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <span class="edit-link" style="font-size:12px; opacity:0.6; text-align:right; vertical-align:middle"><a target="_blank" title="Edit this document" href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Fgit-tech-writers%2Ftame-the-branch-chaos.dita&amp;ditamap=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Foxygen_xml_blog.ditamap&amp;dita.val.url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2F..%2F..%2FC%3A%2FUsers%2Fmihai%2FAppData%2FLocal%2FTemp%2FOxygenXMLTemp%2Foxy_ditaVal12757752844402397689.ditaval">Edit online</a></span><h1 class="- topic/title title topictitle1" id="ariaid-title1">Tame the Branch Chaos – Switch Less, Write More</h1>
+    <div class="author inPage Cristian_Talau"><a href="/topics/contributors.html">Cristian Talau</a></div><div class="date inPage">27 Mar 2025</div><div style="color: gray;">
+            Read time: 11 minute(s)
+        </div>
+    <div class="- topic/body body">
+        <p class="- topic/p p">You’re mid-sentence, deep in the flow of writing. Then a Slack ping: “Can you quickly
+            check something on the release notes branch?” You sigh. Time to stash your changes,
+            switch branches, rebuild context—and just like that, your momentum is gone.</p>
+        <p class="- topic/p p">For technical writers, this isn't a rare disruption. It’s daily reality. Between juggling
+            multiple documentation tasks, waiting for SME feedback, and jumping between feature
+            branches, staying focused becomes a luxury.</p>
+        <div class="- topic/p p">
+            <br/><div class="imagecenter"><img class="- topic/image image imagecenter" id="topic_cml_cpm_p2c__image_qyh_55s_52c" src="images/branch-juggling.png" width="300"/></div><br/>
+        </div>
+        <section class="- topic/section section" id="topic_cml_cpm_p2c__section_vkz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__section_vkz_jqr_52c"><h2 class="- topic/title title sectiontitle">The Multi-Tasking Writer’s Dilemma</h2>
+            
+            <p class="- topic/p p">In an ideal world, a technical writer picks up a task, finishes it in a focused work
+                session, and moves on to the next. In reality? Writing often happens in fragmented
+                windows between SME replies, engineering changes, and shifting priorities.</p>
+            <p class="- topic/p p">This leads to a juggling act between:</p>
+            <ul class="- topic/ul ul" id="topic_cml_cpm_p2c__ul_ykz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__ul_ykz_jqr_52c">
+                <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Multiple feature branches</strong> for in-progress tasks at different stages of
+                    completion.</li>
+                <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Quick hotfixes or urgent edits</strong> that need to go out <em class="+ topic/ph hi-d/i ph i">now</em>.</li>
+                <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Reviews and feedback</strong> that come in late, requiring you to revisit a branch
+                    you last touched two weeks ago.</li>
+            </ul>
+            <p class="- topic/p p">Context switching happens not just between topics, but between Git branches, editor
+                states, and mental models.</p>
+            <p class="- topic/p p">Each time you need to switch branches, you face a decision tree:</p>
+            <ul class="- topic/ul ul" id="topic_cml_cpm_p2c__ul_alz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__ul_alz_jqr_52c">
+                <li class="- topic/li li">Do you commit half-finished work?</li>
+                <li class="- topic/li li">Do you stash and risk conflicts later?</li>
+                <li class="- topic/li li">Do you clone the whole repository again into another folder?</li>
+            </ul>
+            <p class="- topic/p p">This constant overhead takes a toll: it interrupts focus, slows down delivery, and
+                makes a high-cognitive-load job even harder. Writers end up spending more time
+                managing branches than actually writing.</p>
+        </section>
+        <section class="- topic/section section" id="topic_cml_cpm_p2c__section_blz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__section_blz_jqr_52c"><h2 class="- topic/title title sectiontitle">Four Ways to Juggle Branches</h2>
+            
+            <p class="- topic/p p">When you're deep in documentation work and need to temporarily switch to another
+                branch, you have a few options. Some are more elegant than others—but each comes
+                with its own trade-offs.</p>
+            <p class="- topic/p p">Let’s walk through the most common approaches, what they involve, and where things
+                can go wrong.</p>
+        </section>
+        <section class="- topic/section section" id="topic_cml_cpm_p2c__section_clz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__section_clz_jqr_52c"><h2 class="- topic/title title sectiontitle">The Git Stash Dance</h2>
+            
+            <p class="- topic/p p">Stash your current changes, switch to the other branch, then come back and re-apply
+                the stash.</p>
+            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Workflow in Oxygen:</strong></p>
+            <ol class="- topic/ol ol" id="topic_cml_cpm_p2c__ol_jlz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__ol_jlz_jqr_52c">
+                <li class="- topic/li li">Stash your local changes<ol class="- topic/ol ol" type="a" id="topic_cml_cpm_p2c__ol_dpz_csr_52c" data-ofbid="topic_cml_cpm_p2c__ol_dpz_csr_52c">
+                        <li class="- topic/li li">If you haven't already, install the <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" target="_blank" rel="external noopener">Oxygen Git Client Add-on</a></li>
+                        <li class="- topic/li li">In the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Git Staging</span> view, open the triple dots
+                            menu and choose <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Stash changes</span><p class="- topic/p p"><img class="- topic/image image" id="topic_cml_cpm_p2c__image_arf_yrr_52c" src="images/stash-changes-menu.png" width="300"/></p></li>
+                        <li class="- topic/li li"><img class="- topic/image image" id="topic_cml_cpm_p2c__image_ikn_csr_52c" src="images/stash-create-dialog.png" width="300"/></li>
+                    </ol></li>
+                <li class="- topic/li li">Switch the branch</li>
+                <li class="- topic/li li">Make quick edits, commit or push as needed</li>
+                <li class="- topic/li li">Switch back to the original branch</li>
+                <li class="- topic/li li">Apply the stash<ol class="- topic/ol ol" type="a" id="topic_cml_cpm_p2c__ol_vhj_lsr_52c" data-ofbid="topic_cml_cpm_p2c__ol_vhj_lsr_52c">
+                        <li class="- topic/li li">In the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Git Staging</span> view, open the triple dots
+                            menu and choose <span class="+ topic/ph ui-d/uicontrol ph uicontrol">List changes</span></li>
+                        <li class="- topic/li li"><img class="- topic/image image" id="topic_cml_cpm_p2c__image_ajn_ssr_52c" src="images/apply-stash.png" width="300"/></li>
+                    </ol></li>
+            </ol>
+            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">CLI workflow</strong></p>
+            <div class="- topic/p p">If you are a script passionate, you can use these commands to achieve the same result
+                as the workflow
+                above:<pre class="+ topic/pre pr-d/codeblock pre codeblock language-bourne" id="topic_cml_cpm_p2c__codeblock_fll_mjs_52c" data-ofbid="topic_cml_cpm_p2c__codeblock_fll_mjs_52c"><code>git stash push -u -m <span class="hl-string">"WIP on 'master' - taming the branch chaous [27 Mar 2025]"</span>
+git checkout release-notes-branch
+<em class="hl-comment"># Make quick edits, commit or push as needed</em>
+git checkout master
+git stash pop</code></pre></div>
+            <div class="- topic/p p">
+                <div class="- topic/note note tip note_tip" id="topic_cml_cpm_p2c__note_ens_wsr_52c" data-ofbid="topic_cml_cpm_p2c__note_ens_wsr_52c"><span class="note__title">Tip:</span> <div class="note__body">
+                    <ul class="- topic/ul ul" id="topic_cml_cpm_p2c__ul_nlz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__ul_nlz_jqr_52c">
+                        <li class="- topic/li li">Make sure to leave the "Include untracked files" checkbox on, as it is
+                            by default. Otherwise, some newly added files may not be included in the
+                            stash.</li>
+                        <li class="- topic/li li">Always preview stashes before applying.</li>
+                        <li class="- topic/li li">Include the branch name in the stash name. This way, you avoid applying
+                            the stash on the wrong branch.</li>
+                        <li class="- topic/li li">Include the date in the stash name. This way you can cleanup old stashes
+                            with confidence.</li>
+                    </ul>
+                </div></div>
+            </div>
+        </section>
+        <section class="- topic/section section" id="topic_cml_cpm_p2c__section_olz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__section_olz_jqr_52c"><h2 class="- topic/title title sectiontitle">Temporary WIP Commit</h2>
+            
+            <p class="- topic/p p">Quickly commit your in-progress work to get it out of the way.</p>
+            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Oxygen Workflow</strong></p>
+            <ol class="- topic/ol ol" id="topic_cml_cpm_p2c__ol_plz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__ol_plz_jqr_52c">
+                <li class="- topic/li li">Stage and commit all the local changes</li>
+                <li class="- topic/li li">Switch the branch</li>
+                <li class="- topic/li li">Make quick edits, commit or push as needed</li>
+                <li class="- topic/li li">Switch back to the original branch</li>
+                <li class="- topic/li li">Open the <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html#git-addon__section_hjy_kmy_kpb" target="_blank" rel="external noopener">history view</a> &amp; filter commits by
+                    "Current local branch"<ol class="- topic/ol ol" type="a" id="topic_cml_cpm_p2c__ol_lzj_h5r_52c" data-ofbid="topic_cml_cpm_p2c__ol_lzj_h5r_52c">
+                        <li class="- topic/li li"><img class="- topic/image image" id="topic_cml_cpm_p2c__image_cfx_g5r_52c" src="images/reset-branch-to-commit.png" width="300"/></li>
+                    </ol></li>
+                <li class="- topic/li li">Reset branch to the parent commit with "mixed mode"<ol class="- topic/ol ol" type="a" id="topic_cml_cpm_p2c__ol_g25_h5r_52c" data-ofbid="topic_cml_cpm_p2c__ol_g25_h5r_52c">
+                        <li class="- topic/li li"><img class="- topic/image image" id="topic_cml_cpm_p2c__image_wzz_j5r_52c" src="images/reset-mixed-mode.png" width="300"/></li>
+                    </ol></li>
+            </ol>
+            <div class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">CLI workflow</strong><pre class="+ topic/pre pr-d/codeblock pre codeblock" id="topic_cml_cpm_p2c__codeblock_lhf_kjs_52c" data-ofbid="topic_cml_cpm_p2c__codeblock_lhf_kjs_52c"><code>git add .
+git commit -m "WIP: halfway done with config docs"
+git checkout release-notes-branch
+# Do your other work
+git checkout master
+git reset HEAD~1 --mixed</code></pre></div>
+            <div class="- topic/p p">
+                <div class="- topic/note note tip note_tip" id="topic_cml_cpm_p2c__note_mn2_ysr_52c" data-ofbid="topic_cml_cpm_p2c__note_mn2_ysr_52c"><span class="note__title">Tip:</span> <div class="note__body">
+                    <ul class="- topic/ul ul">
+                        <li class="- topic/li li">If working with others on the same branch, do not push! Your local
+                            commits may affect rebases or create confusion.</li>
+                        <li class="- topic/li li">When undoing the commit, make sure you have the "mixed" option
+                            checked.</li>
+                    </ul>
+                </div></div>
+            </div>
+        </section>
+        <section class="- topic/section section" id="topic_cml_cpm_p2c__section_rlz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__section_rlz_jqr_52c"><h2 class="- topic/title title sectiontitle">Checkout in a Separate Folder </h2>
+            
+            <p class="- topic/p p">Create another working directory with a separate clone. This approach is simple to
+                understand but is heavy - you duplicate the entire repository and is not uncommon
+                for companies to have multi-gigabyte repositories.</p>
+            <p class="- topic/p p">As a mitigation, Git introduced the <code class="+ topic/ph pr-d/codeph ph codeph">worktree</code> command which allows
+                you to reuse the <code class="+ topic/ph pr-d/codeph ph codeph">.git</code> folder between multiple working copies. For
+                example, the working copy of the Oxygen's user guide has ~250MB and the
+                    <code class="+ topic/ph pr-d/codeph ph codeph">.git</code> folder is ~200MB of them.</p>
+            <p class="- topic/p p">To use this feature you need to go to the terminal and work with these commands:</p>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock language-bourne" id="topic_cml_cpm_p2c__codeblock_emz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__codeblock_emz_jqr_52c"><code><em class="hl-comment"># From your repo root</em>
+git worktree add ../release-notes release-notes-branch
+<strong class="hl-keyword">cd</strong> ../release-notes
+<em class="hl-comment"># Make your changes and commit them</em>
+<strong class="hl-keyword">cd</strong> ../my-main-repo
+</code></pre>
+            <div class="- topic/p p">
+                <div class="- topic/note note tip note_tip" id="topic_cml_cpm_p2c__note_tfm_dtr_52c" data-ofbid="topic_cml_cpm_p2c__note_tfm_dtr_52c"><span class="note__title">Tip:</span> <div class="note__body"><code class="+ topic/ph pr-d/codeph ph codeph">worktree</code>s are fantastic for
+                    long-lived parallel work. Just don't forget where each copy lives and to remove
+                    them once you are done: <code class="+ topic/ph pr-d/codeph ph codeph" id="topic_cml_cpm_p2c__codeblock_fmz_jqr_52c">git worktree remove
+                        ../release-notes</code>. </div></div>
+            </div>
+        </section>
+        <section class="- topic/section section" id="topic_cml_cpm_p2c__section_gmz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__section_gmz_jqr_52c"><h2 class="- topic/title title sectiontitle">Oxygen Content Fusion Workspaces</h2>
+            
+            <p class="- topic/p p"><a class="- topic/xref xref" href="https://www.oxygenxml.com/content_fusion.html" target="_blank" rel="external noopener">Oxygen Content Fusion</a> is a <strong class="+ topic/ph hi-d/b ph b">web-based Git-enabled DITA
+                    CMS</strong> providing structured content authoring, AI-assisted refinement via
+                Oxygen AI Positron, and publishing.</p>
+            <p class="- topic/p p">One of its benefits for an author is that you can create multiple lightweight
+                authoring <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/versions/8.0/ug-content-fusion/topics/cf-projects-workspace.html" target="_blank" rel="external noopener">workspaces</a> in your browser, for <em class="+ topic/ph hi-d/i ph i">any</em>
+                branch, and switch between them by just switching browser tabs. Unlike multiple
+                checkouts, workspaces don’t duplicate files. They’re created instantly without
+                copying any content, and with minimal overhead.</p>
+            <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Workflow in CF:</strong></p>
+            <ol class="- topic/ol ol" id="topic_cml_cpm_p2c__ol_hmz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__ol_hmz_jqr_52c">
+                <li class="- topic/li li">Stay on your current task in your authoring tool.</li>
+                <li class="- topic/li li">In Content Fusion, select a different branch to create a new workspace.<ol class="- topic/ol ol" type="a" id="topic_cml_cpm_p2c__ol_rgs_bvr_52c" data-ofbid="topic_cml_cpm_p2c__ol_rgs_bvr_52c">
+                        <li class="- topic/li li"><img class="- topic/image image" id="topic_cml_cpm_p2c__image_nm1_svr_52c" src="images/cf-workspace.png" width="300"/></li>
+                    </ol></li>
+                <li class="- topic/li li">Edit or review content independently from your current Git state.</li>
+                <li class="- topic/li li">Commit changes when you are ready<ol class="- topic/ol ol" type="a" id="topic_cml_cpm_p2c__ol_md3_wvr_52c" data-ofbid="topic_cml_cpm_p2c__ol_md3_wvr_52c">
+                        <li class="- topic/li li"><img class="- topic/image image" id="topic_cml_cpm_p2c__image_er3_fbs_52c" src="cf-commit.png" width="300"/></li>
+                    </ol></li>
+                <li class="- topic/li li">... or just leave the changes there, and switch to some more urgent work</li>
+            </ol>
+            <div class="- topic/p p">
+                <div class="- topic/note note tip note_tip" id="topic_cml_cpm_p2c__note_arg_2tr_52c" data-ofbid="topic_cml_cpm_p2c__note_arg_2tr_52c"><span class="note__title">Tip:</span> <div class="note__body">Need more feedback from a SME? Just create a
+                        <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/versions/8.0/ug-content-fusion/topics/content_fusion_task_details-x2.html" target="_blank" rel="external noopener">review task</a> from your workspace and
+                    set a due date. Content Fusion will automatically remind the SME—so you don’t
+                    have to chase them for a response.</div></div>
+            </div>
+        </section>
+        <section class="- topic/section section" id="topic_cml_cpm_p2c__section_imz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__section_imz_jqr_52c"><h2 class="- topic/title title sectiontitle">How Do <em class="+ topic/ph hi-d/i ph i">You</em> Handle Branch Chaos?</h2>
+            
+            <p class="- topic/p p">Every technical writer has their own way of dealing with the Git shuffle. Maybe
+                you’re a <code class="+ topic/ph pr-d/codeph ph codeph">stash</code> master. Maybe you keep six cloned repositories open
+                at all times (no judgment). Or maybe you’ve found a completely different workflow
+                that works for your team.</p>
+            <p class="- topic/p p">We’d love to hear from you:</p>
+            <ul class="- topic/ul ul" id="topic_cml_cpm_p2c__ul_ymz_jqr_52c" data-ofbid="topic_cml_cpm_p2c__ul_ymz_jqr_52c">
+                <li class="- topic/li li">Which approach saves you the most time?</li>
+                <li class="- topic/li li">Have you tried Git <code class="+ topic/ph pr-d/codeph ph codeph">worktree</code>s or Content Fusion workspaces?</li>
+                <li class="- topic/li li">What’s the weirdest branch-juggling ritual you’ve developed?</li>
+            </ul>
+            <div class="- topic/p p">
+                <div class="- topic/note note important note_important" id="topic_cml_cpm_p2c__note_ehs_ftr_52c" data-ofbid="topic_cml_cpm_p2c__note_ehs_ftr_52c"><span class="note__title">Important:</span> <div class="note__body"><strong class="+ topic/ph hi-d/b ph b">Share your tips, tricks, or horror
+                        stories in the comments—or reach out to us directly.</strong> We’re always
+                    looking to learn from real-world workflows and improve the tools writers rely on
+                    every day.</div></div>
+            </div>
+        </section>
+    </div>
+    
+</article></main></div>
+                        
+                        
+                        <div class=" wh_related_links d-print-none "><nav aria-label="Related Links" role="navigation" class="- topic/related-links related-links"><div class="- topic/linklist linklist relinfo"><strong>Related information</strong><ul class="linklist related_link"><li class="linklist"><a class="- topic/link link navheader_parent_path" href="https://www.oxygenxml.com/events/2025/webinar_solving_common_git_and_dita_challenges.html" target="_blank" rel="external noopener" title="Webinar: Solving Common Git and DITA Challenges">Webinar: Solving Common Git and DITA Challenges</a></li><li class="linklist"><a class="- topic/link link navheader_parent_path" href="https://www.youtube.com/watch?v=mzYjlPP1MxQ" target="_blank" rel="external noopener" title="XML Based Docs As Code – Combining DITA XML With GitHub and Continuous&#xA;                Delivery">XML Based Docs As Code – Combining DITA XML With GitHub and Continuous
+                Delivery</a></li><li class="linklist"><a class="- topic/link link navheader_parent_path" href="https://www.oxygenxml.com/events/2020/webinar_documentation_management_inspired_by_software_development.html" target="_blank" rel="external noopener" title="Webinar- Docs as Code: Documentation Management Inspired by Software&#xA;                Development">Webinar- Docs as Code: Documentation Management Inspired by Software
+                Development</a></li></ul></div></nav></div>
+                        
+                        <div id="oxygen-feedback-frame-container">
+    <script defer="defer" id="feedback-init" src="https://feedback.oxygenxml.com/app/init/init.js?deploymentToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkZXBsb3ltZW50SWQiOjYyNX0.8cbUvwq4kXkiqS4uSdYU7NW33X_2PFhbjWI6AluOEJ1xI4JkXzYTXZLEtqRn72rzxIMXEQrSs1_xfGzoKvsYMQ"><!-- --></script>
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div id="wh_topic_toc_content">
+              	                <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#topic_cml_cpm_p2c__section_vkz_jqr_52c" data-tocid="topic_cml_cpm_p2c__section_vkz_jqr_52c">The Multi-Tasking Writer’s Dilemma</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_cml_cpm_p2c__section_blz_jqr_52c" data-tocid="topic_cml_cpm_p2c__section_blz_jqr_52c">Four Ways to Juggle Branches</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_cml_cpm_p2c__section_clz_jqr_52c" data-tocid="topic_cml_cpm_p2c__section_clz_jqr_52c">The Git Stash Dance</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_cml_cpm_p2c__section_olz_jqr_52c" data-tocid="topic_cml_cpm_p2c__section_olz_jqr_52c">Temporary WIP Commit</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_cml_cpm_p2c__section_rlz_jqr_52c" data-tocid="topic_cml_cpm_p2c__section_rlz_jqr_52c">Checkout in a Separate Folder </a></div></li><li class="section-item"><div class="section-title"><a href="#topic_cml_cpm_p2c__section_gmz_jqr_52c" data-tocid="topic_cml_cpm_p2c__section_gmz_jqr_52c">Oxygen Content Fusion Workspaces</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_cml_cpm_p2c__section_imz_jqr_52c" data-tocid="topic_cml_cpm_p2c__section_imz_jqr_52c">How Do <em class="+ topic/ph hi-d/i ph i">You</em> Handle Branch Chaos?</a></div></li></ul></div>
+	                        	
+                        	</div>
+                        </nav>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="footer">
+    
+        <div class="footer-container container mx-auto">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-3 mb-3 mb-md-0" id="quick_links">
+                    <a href="https://www.facebook.com/oxygenxml/" class="lk-facebook me-2" title="Facebook" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/you-tube.png" alt="YouTube"/>
+                    </a>
+                    <a href="http://twitter.com/oxygenxml" class="lk-blog me-2" title="Twitter" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/twitter.png" alt="Twitter"/>
+                    </a>
+                    <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/linkedin.png" alt="LinkedIn"/>
+                    </a>
+                </div>
+                
+                <div class="col-md-5 mb-3 mb-md-0" id="copy">
+                    © 2002-2025 SyncRO Soft SRL. All rights reserved.
+                    <div>
+                        <p>This website is powered by Oxygen<sup>®</sup> 
+                            <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-1 mb-3 mb-md-0 b-subscribe">
+                    <a href="/#follow-it" class="btn get-started">Subscribe</a>
+                </div>
+                
+                <div class="col-md-3 b-flavours">
+                    <a type="application/rss+xml" class="me-2" href="/rss.xml">RSS</a>
+                    <a class="me-2" href="/oxygen_xml_blog.pdf">PDF</a>
+                    <a href="/oxygen_xml_blog.epub">EPUB</a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/oxygen-webhelp/template/resources/js/search-nav.js" defer="defer"></script>
+        
+        <script><!--
+
+            document.querySelector(".get-started")?.addEventListener("click", function () {
+            const el = document.querySelector(".stripe-latest-posts");
+            if (el) {
+            window.scrollTo({
+            top: el.offsetTop - 90,
+            behavior: "smooth"
+            });
+            }
+            });
+        
+--></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4W3NZKJST" integrity="sha384-8klDZJT6xp3MWmbFq1S4K0+Phpnxe5BXVjrHKHWKEMPG06CzApoUqFnULJ+tdS30" crossorigin="anonymous"><!--
+
+        
+--></script>
+        <script><!--
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-D4W3NZKJST');
+        
+--></script>
+</div>
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        <div>
+   <!-- <script src="${oxygen-webhelp-template-dir}/resources/js/syncro.js"></script>-->
+    <script src="/oxygen-webhelp/template/resources/js/search-nav.js"></script>
+    
+</div>
+    </body>
+</html>

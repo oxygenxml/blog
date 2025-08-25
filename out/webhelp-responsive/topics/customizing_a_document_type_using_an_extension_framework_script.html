@@ -1,0 +1,365 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="27.1">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="description" content="How to customize an existing framework (e.g. DITA) using a framework extension script."/><meta name="DC.relation" content="../topics/dita-editing-customizations.html"/><meta name="DC.relation" content="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html"/><meta name="DC.relation" content="https://www.oxygenxml.com/events/2021/webinar_creating_frameworks_using_an_extension_script.html"/><meta name="DC.creator" content="Alex Jitianu"/><meta name="DC.date.created" content="2021-05-24"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="customizing_a_document_type_using_an_extension_framework_script"/>        
+      <title>Customizing the DITA Framework Using a Framework Extension Script</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="customizing_a_document_type_using_an_extension_framework_script-d1655e1180"/><meta name="topic-facet" content="blog/blog-dita/blog-dita-customizing"/><meta name="wh-source-relpath" content="topics/customizing_a_document_type_using_an_extension_framework_script.dita"/><meta name="wh-out-relpath" content="topics/customizing_a_document_type_using_an_extension_framework_script.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2025032023"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2025032023"/>
+
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20250825130822"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2025032023"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20250825130822"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2025032023"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2025032023"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2025032023"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/custom.css?buildId=2025032023"/>
+        <link rel="icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.oxygenxml.com/favicon.ico" type="image/x-icon"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="/rss.xml"/>
+    <script defer="true" src="../oxygen-webhelp/template/resources/js/custom-collapsed-sections.js"></script></head>
+
+    <body id="customizing_a_document_type_using_an_extension_framework_script" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="visually-hidden visually-hidden-focusable">
+            Jump to main content
+        </a>
+        
+        
+        <progress value="0" id="progressBar"><div class="progress-container"><span class="progress-bar"></span></div></progress>
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/oxygen_logo.png" alt="Blog"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Blog</span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-bs-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-bs-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="welcome-d1655e11-mi" data-tocid="welcome-d1655e11" data-state="leaf" class=" topicref " data-id="welcome"><span class="title"><a href="../topics/welcome.html">Welcome! </a></span></span></li><li role="menuitem"><span id="frequently_asked_questions-d1655e28-mi" data-tocid="frequently_asked_questions-d1655e28" data-state="leaf" class=" topicref " data-id="frequently_asked_questions"><span class="title"><a href="../topics/frequently_asked_questions.html">Frequently Asked Questions</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e37-mi" data-tocid="tocId-d1655e37" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ai_positron.html">Artificial intelligence (AI)</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e174-mi" data-tocid="tocId-d1655e174" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="migration-d1655e1407-mi" data-tocid="migration-d1655e1407" data-state="not-ready" class=" topicref " data-id="migration"><span class="title"><a href="../topics/migration.html">Migrate</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="using_git_for_technical_writing-d1655e1504-mi" data-tocid="using_git_for_technical_writing-d1655e1504" data-state="not-ready" class=" topicref " data-id="using_git_for_technical_writing"><span class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html">Using Git For Technical Writing</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="sdk-d1655e1664-mi" data-tocid="sdk-d1655e1664" data-state="not-ready" class=" topicref " data-id="sdk"><span class="title"><a href="../topics/sdk.html">SDK</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e1808-mi" data-tocid="tocId-d1655e1808" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/transform_text_files.html">Development</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1655e1827-mi" data-tocid="tocId-d1655e1827" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ISO-27001-certification-announcement.html">Miscellaneous</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/></div></form><span xmlns="" class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span><span xmlns="" class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
+            
+            
+            
+        </div></div>
+    </div>
+</header>
+        
+        
+         
+        
+        
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html">DITA</a></div></div></li><li><div class="topicref" data-id="dita_editing_customizations"><div class="title"><a href="../topics/dita-editing-customizations.html">Editing Customizations</a></div></div></li><li class="active"><div class="topicref" data-id="customizing_a_document_type_using_an_extension_framework_script"><div class="title"><a href="../topics/customizing_a_document_type_using_an_extension_framework_script.html">Customizing the DITA Framework Using a Framework Extension Script</a><div class="wh-tooltip"><p class="shortdesc">How to customize an existing framework (e.g. DITA) using a <a class="xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html" target="_blank" rel="external noopener">framework extension script</a>.</p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="welcome-d1655e11" class="topicref" data-id="welcome" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/welcome.html" id="welcome-d1655e11-link">Welcome! </a></div></div></li><li role="treeitem"><div data-tocid="frequently_asked_questions-d1655e28" class="topicref" data-id="frequently_asked_questions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/frequently_asked_questions.html" id="frequently_asked_questions-d1655e28-link">Frequently Asked Questions</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e37" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e37-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ai_positron.html" id="tocId-d1655e37-link">Artificial intelligence (AI)</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1655e174" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1655e174-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="tocId-d1655e174-link">DITA</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="dita-xml-editing-collaboration-and-publishing-overview-d1655e175" class="topicref" data-id="dita-xml-editing-collaboration-and-publishing-overview" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-xml-editing-collaboration-and-publishing-overview.html" id="dita-xml-editing-collaboration-and-publishing-overview-d1655e175-link">DITA XML Editing, Collaboration and Publishing Overview</a><div class="wh-tooltip"><p class="shortdesc">Oxygen XML provides a wide  range of features for editing, reusing, profiling,         reviewing, and publishing DITA XML content. We strive to offer a complete editing,         collaboration package which is still flexible enough to be customized for a variety of use         cases.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="learningDITAGeneral-d1655e186" class="topicref" data-id="learningDITAGeneral" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action learningDITAGeneral-d1655e186-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/learningDITAGeneral.html" id="learningDITAGeneral-d1655e186-link">Learning</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="dita_ot_publishing_customizations_overview-d1655e875" class="topicref" data-id="dita_ot_publishing_customizations_overview" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action dita_ot_publishing_customizations_overview-d1655e875-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita_ot_publishing_customizations_overview.html" id="dita_ot_publishing_customizations_overview-d1655e875-link">Publishing Customizations</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="dita_editing_customizations-d1655e1156" class="topicref" data-id="dita_editing_customizations" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action dita_editing_customizations-d1655e1156-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/dita-editing-customizations.html" id="dita_editing_customizations-d1655e1156-link">Editing Customizations</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="startup_dita_project-d1655e1164" class="topicref" data-id="startup_dita_project" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/startup_dita_project.html" id="startup_dita_project-d1655e1164-link">Startup DITA Project</a></div></div></li><li role="treeitem"><div data-tocid="topic_hg5_fpc_nx-d1655e1172" class="topicref" data-id="topic_hg5_fpc_nx" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizeDITACSS.html" id="topic_hg5_fpc_nx-d1655e1172-link">Customizing the DITA Visual Editing Experience</a></div></div></li><li role="treeitem" class="active"><div data-tocid="customizing_a_document_type_using_an_extension_framework_script-d1655e1180" class="topicref" data-id="customizing_a_document_type_using_an_extension_framework_script" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/customizing_a_document_type_using_an_extension_framework_script.html" id="customizing_a_document_type_using_an_extension_framework_script-d1655e1180-link">Customizing the DITA Framework Using a Framework Extension Script</a><div class="wh-tooltip"><p class="shortdesc">How to customize an existing framework (e.g. DITA) using a <a class="xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html" target="_blank" rel="external noopener">framework extension script</a>.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="topic_exv_hwt_rs-d1655e1194" class="topicref" data-id="topic_exv_hwt_rs" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action topic_exv_hwt_rs-d1655e1194-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/controlledAttributeValues.html" id="topic_exv_hwt_rs-d1655e1194-link">Controlled Attribute Values for your DITA Project</a></div></div></li><li role="treeitem"><div data-tocid="topic_qfl_l5z_1x-d1655e1211" class="topicref" data-id="topic_qfl_l5z_1x" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/convertingSubjectSchemeMapToDITAVAL.html" id="topic_qfl_l5z_1x-d1655e1211-link">Converting Subject Scheme Map Values to a DITAVAL</a></div></div></li><li role="treeitem"><div data-tocid="converting_xpr_profiling-d1655e1219" class="topicref" data-id="converting_xpr_profiling" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/converting_xpr_profiling.html" id="converting_xpr_profiling-d1655e1219-link">Converting .xpr Profiling Conditions to Standard DITA Files</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e1227" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e1227-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.html" id="tocId-d1655e1227-link">Other</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="migration-d1655e1407" class="topicref" data-id="migration" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action migration-d1655e1407-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/migration.html" id="migration-d1655e1407-link">Migrate</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="using_git_for_technical_writing-d1655e1504" class="topicref" data-id="using_git_for_technical_writing" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_git_for_technical_writing-d1655e1504-link" class="wh-expand-btn"></span><div class="title"><a href="../git-tech-writers/using_git_for_technical_writing.html" id="using_git_for_technical_writing-d1655e1504-link">Using Git For Technical Writing</a><div class="wh-tooltip"><p class="shortdesc">The <strong class="ph b">Git</strong> version control system is a feasible solution for working and 		collaborating on technical documentation projects regardless of their scale and number of 		resources. </p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="sdk-d1655e1664" class="topicref" data-id="sdk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action sdk-d1655e1664-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/sdk.html" id="sdk-d1655e1664-link">SDK</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e1808" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e1808-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/transform_text_files.html" id="tocId-d1655e1808-link">Development</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1655e1827" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1655e1827-link" class="wh-expand-btn"></span><div class="title"><a href="../topics/ISO-27001-certification-announcement.html" id="tocId-d1655e1827-link">Miscellaneous</a></div></div></li><li role="treeitem"><div data-tocid="contributors-d1655e2008" class="topicref" data-id="contributors" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../topics/contributors.html" id="contributors-d1655e2008-link">Contributors</a></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic topic" role="article" aria-labelledby="ariaid-title1">
+    <span class="edit-link" style="font-size:12px; opacity:0.6; text-align:right; vertical-align:middle"><a target="_blank" title="Edit this document" href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Ftopics%2Fcustomizing_a_document_type_using_an_extension_framework_script.dita&amp;ditamap=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2Fmaster%2Foxygen_xml_blog.ditamap&amp;dita.val.url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Foxygenxml%252Fblog%2F..%2F..%2FC%3A%2FUsers%2Fmihai%2FAppData%2FLocal%2FTemp%2FOxygenXMLTemp%2Foxy_ditaVal12757752844402397689.ditaval">Edit online</a></span><h1 class="- topic/title title topictitle1" id="ariaid-title1">Customizing the DITA Framework Using a Framework Extension Script</h1>
+    
+    <div class="author inPage Alex_Jitianu"><a href="/topics/contributors.html">Alex Jitianu</a></div><div class="date inPage">24 May 2021</div><div style="color: gray;">
+            Read time: 7 minute(s)
+        </div>
+    <div class="- topic/body body"><p class="- topic/shortdesc shortdesc">How to customize an existing framework (e.g. DITA) using a <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html" target="_blank" rel="external noopener">framework extension script</a>.</p>
+        <p class="- topic/p p">All the validation, editing, and publishing support Oxygen has for a specific XML
+            vocabulary is defined in a <a class="- topic/xref xref" href="oxygenFrameworks.html">framework
+                configuration</a>. Oxygen comes bundled with such frameworks for popular XML
+            vocabularies, such as DITA. A common use case is to make changes to these built-in
+            frameworks, to tailor them according to specific requirements.</p>
+        <div class="- topic/p p">A framework extension script is an XML file that defines the changes to perform
+            on a base framework. Suppose that you want to make the following changes to the DITA
+                framework:<ol class="- topic/ol ol" id="customizing_a_document_type_using_an_extension_framework_script__ol_obx_1dj_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__ol_obx_1dj_spb">
+                <li class="- topic/li li">Customize the new document templates.</li>
+                <li class="- topic/li li">Change the Author mode rendering with a new CSS file.</li>
+                <li class="- topic/li li">Remove the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Bold</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Italic</span>,
+                        <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Underline</span> actions from the Author mode.</li>
+                <li class="- topic/li li">Add the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Insert Note</span> action to the toolbar.</li>
+            </ol></div>
+        <section class="- topic/section section" id="customizing_a_document_type_using_an_extension_framework_script__section_eg4_zdj_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__section_eg4_zdj_spb"><h2 class="- topic/title title sectiontitle">Creating the Framework Extension Script</h2>
+            
+            <div class="- topic/p p">The easiest way to create such a script is to use the <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/new-dialog-sa.html" target="_blank" rel="external noopener"><strong class="+ topic/ph hi-d/b ph b">New</strong> document wizard</a> and choose the
+                    <strong class="+ topic/ph hi-d/b ph b">Extend Framework Script</strong> or <strong class="+ topic/ph hi-d/b ph b">Create Framework Script</strong> template.
+                Define it as an extension of the DITA framework through the <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@base</code>
+                attribute. Also, set a high priority, through the
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;priority&gt;</code> element, to make sure the framework will be
+                picked in favor of the DITA
+                one.<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="customizing_a_document_type_using_an_extension_framework_script__codeblock_ufp_g2j_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__codeblock_ufp_g2j_spb"><code><strong class="hl-tag">&lt;script</strong> <span class="hl-attribute">xmlns</span>=<span class="hl-value">"http://www.oxygenxml.com/ns/framework/extend"</span>
+  <span class="hl-attribute">xmlns:xsi</span>=<span class="hl-value">"http://www.w3.org/2001/XMLSchema-instance"</span>
+  <span class="hl-attribute">xsi:schemaLocation</span>=<span class="hl-value">"http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"</span>
+  <span class="hl-attribute">base</span>=<span class="hl-value">"DITA"</span><strong class="hl-tag">&gt;</strong>
+  <strong class="hl-tag">&lt;name&gt;</strong>Custom DITA<strong class="hl-tag">&lt;/name&gt;</strong>
+  <strong class="hl-tag">&lt;description&gt;</strong>A custom DITA framework.<strong class="hl-tag">&lt;/description&gt;</strong>
+  <strong class="hl-tag">&lt;priority&gt;</strong>High<strong class="hl-tag">&lt;/priority&gt;</strong>
+<strong class="hl-tag">&lt;/script&gt;</strong></code></pre></div>
+            <div class="- topic/p p">You need to save the script inside a framework directory (the same place as the
+                *.framework file). For example, if you save it inside
+                    <span class="+ topic/ph sw-d/filepath ph filepath">.../custom-frameworks/custom-dita/dita-script.exf</span>, then you
+                need to add <span class="+ topic/ph sw-d/filepath ph filepath">.../custom-frameworks</span> to the <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-location.html" target="_blank" rel="external noopener">Additional frameworks directories</a>
+                    list.<div class="- topic/note note note note_note" id="customizing_a_document_type_using_an_extension_framework_script__note_ynz_hs4_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__note_ynz_hs4_spb"><span class="note__title">Note:</span> <div class="note__body">Oxygen 23.1 or later will automatically detect
+                    the script and load the framework. If you want to use the framework in an older
+                    Oxygen XML Editor version that does not have support for these scripts, you can
+                    compile the script to obtain the *.framework file by using the
+                        <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Compile Framework Extension</span> script action from the
+                    contextual menu or by running the
+                        <span class="+ topic/ph sw-d/filepath ph filepath">scripts/compileFrameworkScript.bat</span> external tool
+                    (available in the All Platforms distribution only).</div></div></div>
+        </section>
+        <section class="- topic/section section" id="customizing_a_document_type_using_an_extension_framework_script__section_wdq_wr4_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__section_wdq_wr4_spb"><h2 class="- topic/title title sectiontitle">Customizing the New Document Templates</h2>
+            
+            <p class="- topic/p p">The <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/customizing-templates.html?hl=document%2Ctemplates" target="_blank" rel="external noopener">document templates</a> appear when the user
+                invokes the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">New...</span> action. To add a new template, you need to do the following:</p>
+            <ul class="- topic/ul ul" id="customizing_a_document_type_using_an_extension_framework_script__ul_qzg_kt4_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__ul_qzg_kt4_spb">
+                <li class="- topic/li li">In the directory where the script is saved, create a new file
+                        (e.g. <span class="+ topic/ph sw-d/filepath ph filepath">templates/My custom topic.dita</span>). The content of the file
+                    represents the template's content.</li>
+                <li class="- topic/li li">In the script, specify the new template locations by adding this fragment inside
+                    the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;script&gt;</code>
+                    element.<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="customizing_a_document_type_using_an_extension_framework_script__codeblock_rxz_nt4_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__codeblock_rxz_nt4_spb"><code>  <strong class="hl-tag">&lt;documentTemplates</strong> <span class="hl-attribute">inherit</span>=<span class="hl-value">"none"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;addEntry</strong> <span class="hl-attribute">path</span>=<span class="hl-value">"${framework}/templates"</span><strong class="hl-tag">/&gt;</strong>
+  <strong class="hl-tag">&lt;/documentTemplates&gt;</strong></code></pre></li>
+            </ul>
+        </section>
+        <div class="- topic/note note note note_note" id="customizing_a_document_type_using_an_extension_framework_script__note_upf_11p_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__note_upf_11p_spb"><span class="note__title">Note:</span> <div class="note__body">In the example snippet above, the <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@inherit</code> attribute is set to not inherit any of the document templates defined in the base framework.</div></div>
+        <section class="- topic/section section" id="customizing_a_document_type_using_an_extension_framework_script__section_cjl_d1p_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__section_cjl_d1p_spb"><h2 class="- topic/title title sectiontitle">Changing the Author Mode Rendering With a New CSS File</h2>
+            
+            <p class="- topic/p p">The author mode is driven by CSS rules. To add new rules, you need to:</p>
+            <ul class="- topic/ul ul" id="customizing_a_document_type_using_an_extension_framework_script__ul_itv_vgp_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__ul_itv_vgp_spb">
+                <li class="- topic/li li">Create a new CSS file in the directory where the script is saved. Give it
+                    a name (e.g. <span class="+ topic/ph sw-d/filepath ph filepath">css/custom.css</span>) and, for example, a rule to make
+                    titles red:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="customizing_a_document_type_using_an_extension_framework_script__codeblock_xwm_zgp_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__codeblock_xwm_zgp_spb"><code>title {
+  color:red;
+}</code></pre></li>
+                <li class="- topic/li li">In the script, specify the path to the new CSS by adding this fragment inside
+                    the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;script&gt;</code>
+                    element.<pre class="+ topic/pre pr-d/codeblock pre codeblock language-css" id="customizing_a_document_type_using_an_extension_framework_script__codeblock_cbp_chp_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__codeblock_cbp_chp_spb"><code>  &lt;author&gt;
+    &lt;css&gt;
+      &lt;addCss path=<span class="hl-string">"${framework}/css/custom.css"</span>/&gt;
+    &lt;/css&gt;
+  &lt;/author&gt;</code></pre></li>
+            </ul>
+        </section>
+        <section class="- topic/section section" id="customizing_a_document_type_using_an_extension_framework_script__section_jrg_nhp_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__section_jrg_nhp_spb"><h2 class="- topic/title title sectiontitle">Removing the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Bold</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Italic</span>,
+                    <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Underline</span> Actions From the Author Mode</h2>
+            
+            <div class="- topic/p p">An <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/the-action-dialog.html" target="_blank" rel="external noopener">author action</a> is just a configuration that
+                describes which operation to use depending on the context. Each action has a unique
+                ID. Suppose that you do not want <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Bold</span>,
+                    <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Italic</span>, and <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Underline</span> actions from
+                the built-in DITA framework because their markup is not semantic. After you
+                inspect the actions <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/the-action-dialog.html" target="_blank" rel="external noopener">preferences</a> and we find out their IDs, you
+                can filter them from all toolbars and menus by adding this fragment inside the
+                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;script&gt;</code>
+                element.<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="customizing_a_document_type_using_an_extension_framework_script__codeblock_rnh_jbq_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__codeblock_rnh_jbq_spb"><code><strong class="hl-tag">&lt;author&gt;</strong>
+    <strong class="hl-tag">&lt;authorActions&gt;</strong>
+      <strong class="hl-tag">&lt;removeAction</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"bold"</span><strong class="hl-tag">/&gt;</strong>
+      <strong class="hl-tag">&lt;removeAction</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"italic"</span><strong class="hl-tag">/&gt;</strong>
+      <strong class="hl-tag">&lt;removeAction</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"underline"</span><strong class="hl-tag">/&gt;</strong>
+    <strong class="hl-tag">&lt;/authorActions&gt;</strong>
+  <strong class="hl-tag">&lt;/author&gt;</strong></code></pre></div>
+        </section>
+        <section class="- topic/section section" id="customizing_a_document_type_using_an_extension_framework_script__section_usw_mbq_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__section_usw_mbq_spb"><h2 class="- topic/title title sectiontitle">Adding the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Insert Note</span> Action to the Toolbar</h2>
+            
+            <p class="- topic/p p">The <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Insert Node</span> action is already defined in the DITA
+                framework, but it is not present on the toolbar. To add it to the toolbar, you need
+                to:</p>
+            <ul class="- topic/ul ul" id="customizing_a_document_type_using_an_extension_framework_script__ul_ag1_sbq_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__ul_ag1_sbq_spb">
+                <li class="- topic/li li">Go to <strong class="+ topic/ph hi-d/b ph b">Options-&gt;Preferences</strong>, edit the DITA framework, and search in the <a class="- topic/xref xref" href="https://www.oxygenxml.com/doc/ug-editor/topics/the-actions-sub-tab.html" target="_blank" rel="external noopener">Actions</a> tab for the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Insert
+                        Node</span> action. Make note of its ID. </li>
+                <li class="- topic/li li">Edit the framework extension script and put the action in the toolbar by adding
+                    this fragment inside the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;script&gt;</code>
+                    element.<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="customizing_a_document_type_using_an_extension_framework_script__codeblock_agp_ybq_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__codeblock_agp_ybq_spb"><code>  <strong class="hl-tag">&lt;author&gt;</strong>
+    <strong class="hl-tag">&lt;toolbars&gt;</strong>
+      <strong class="hl-tag">&lt;toolbar&gt;</strong>
+        <strong class="hl-tag">&lt;addAction</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"insert.note"</span> <span class="hl-attribute">anchor</span>=<span class="hl-value">"paragraph"</span><strong class="hl-tag">/&gt;</strong>
+      <strong class="hl-tag">&lt;/toolbar&gt;</strong>
+    <strong class="hl-tag">&lt;/toolbars&gt;</strong>
+  <strong class="hl-tag">&lt;/author&gt;</strong></code></pre></li>
+            </ul>
+            <div class="- topic/note note note note_note" id="customizing_a_document_type_using_an_extension_framework_script__note_m3y_4cq_spb" data-ofbid="customizing_a_document_type_using_an_extension_framework_script__note_m3y_4cq_spb"><span class="note__title">Note:</span> <div class="note__body">In this example, an action is used that is already present on the
+                toolbar as an anchor. The new action is added to the toolbar after the action that inserts
+                a paragraph.</div></div>
+        </section>
+        <p class="- topic/p p"> </p>
+    </div>
+    
+</article></main></div>
+                        
+                        
+                        <div class=" wh_related_links d-print-none "><nav aria-label="Related Links" role="navigation" class="- topic/related-links related-links"><div class="- topic/linklist linklist relinfo"><strong>Related information</strong><ul class="linklist related_link"><li class="linklist"><a class="- topic/link link navheader_parent_path" href="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html" target="_blank" rel="external noopener" title="https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html">https://www.oxygenxml.com/doc/ug-editor/topics/framework-customization-script-usecases.html</a></li><li class="linklist"><a class="- topic/link link navheader_parent_path" href="https://www.oxygenxml.com/events/2021/webinar_creating_frameworks_using_an_extension_script.html" target="_blank" rel="external noopener" title="https://www.oxygenxml.com/events/2021/webinar_creating_frameworks_using_an_extension_script.html">https://www.oxygenxml.com/events/2021/webinar_creating_frameworks_using_an_extension_script.html</a></li></ul></div></nav></div>
+                        
+                        <div id="oxygen-feedback-frame-container">
+    <script defer="defer" id="feedback-init" src="https://feedback.oxygenxml.com/app/init/init.js?deploymentToken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJkZXBsb3ltZW50SWQiOjYyNX0.8cbUvwq4kXkiqS4uSdYU7NW33X_2PFhbjWI6AluOEJ1xI4JkXzYTXZLEtqRn72rzxIMXEQrSs1_xfGzoKvsYMQ"><!-- --></script>
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div id="wh_topic_toc_content">
+              	                <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#customizing_a_document_type_using_an_extension_framework_script__section_eg4_zdj_spb" data-tocid="customizing_a_document_type_using_an_extension_framework_script__section_eg4_zdj_spb">Creating the Framework Extension Script</a></div></li><li class="section-item"><div class="section-title"><a href="#customizing_a_document_type_using_an_extension_framework_script__section_wdq_wr4_spb" data-tocid="customizing_a_document_type_using_an_extension_framework_script__section_wdq_wr4_spb">Customizing the New Document Templates</a></div></li><li class="section-item"><div class="section-title"><a href="#customizing_a_document_type_using_an_extension_framework_script__section_cjl_d1p_spb" data-tocid="customizing_a_document_type_using_an_extension_framework_script__section_cjl_d1p_spb">Changing the Author Mode Rendering With a New CSS File</a></div></li><li class="section-item"><div class="section-title"><a href="#customizing_a_document_type_using_an_extension_framework_script__section_jrg_nhp_spb" data-tocid="customizing_a_document_type_using_an_extension_framework_script__section_jrg_nhp_spb">Removing the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Bold</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Italic</span>,
+                    <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Underline</span> Actions From the Author Mode</a></div></li><li class="section-item"><div class="section-title"><a href="#customizing_a_document_type_using_an_extension_framework_script__section_usw_mbq_spb" data-tocid="customizing_a_document_type_using_an_extension_framework_script__section_usw_mbq_spb">Adding the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Insert Note</span> Action to the Toolbar</a></div></li></ul></div>
+	                        	
+                        	</div>
+                        </nav>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div class="footer">
+    
+        <div class="footer-container container mx-auto">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-3 mb-3 mb-md-0" id="quick_links">
+                    <a href="https://www.facebook.com/oxygenxml/" class="lk-facebook me-2" title="Facebook" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/you-tube.png" alt="YouTube"/>
+                    </a>
+                    <a href="http://twitter.com/oxygenxml" class="lk-blog me-2" title="Twitter" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/twitter.png" alt="Twitter"/>
+                    </a>
+                    <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">
+                        <img src="/oxygen-webhelp/template/resources/images/linkedin.png" alt="LinkedIn"/>
+                    </a>
+                </div>
+                
+                <div class="col-md-5 mb-3 mb-md-0" id="copy">
+                    © 2002-2025 SyncRO Soft SRL. All rights reserved.
+                    <div>
+                        <p>This website is powered by Oxygen<sup>®</sup> 
+                            <a href="https://www.oxygenxml.com/xml_webhelp.html">XML WebHelp</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-1 mb-3 mb-md-0 b-subscribe">
+                    <a href="/#follow-it" class="btn get-started">Subscribe</a>
+                </div>
+                
+                <div class="col-md-3 b-flavours">
+                    <a type="application/rss+xml" class="me-2" href="/rss.xml">RSS</a>
+                    <a class="me-2" href="/oxygen_xml_blog.pdf">PDF</a>
+                    <a href="/oxygen_xml_blog.epub">EPUB</a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/oxygen-webhelp/template/resources/js/search-nav.js" defer="defer"></script>
+        
+        <script><!--
+
+            document.querySelector(".get-started")?.addEventListener("click", function () {
+            const el = document.querySelector(".stripe-latest-posts");
+            if (el) {
+            window.scrollTo({
+            top: el.offsetTop - 90,
+            behavior: "smooth"
+            });
+            }
+            });
+        
+--></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D4W3NZKJST" integrity="sha384-8klDZJT6xp3MWmbFq1S4K0+Phpnxe5BXVjrHKHWKEMPG06CzApoUqFnULJ+tdS30" crossorigin="anonymous"><!--
+
+        
+--></script>
+        <script><!--
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-D4W3NZKJST');
+        
+--></script>
+</div>
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        <div>
+   <!-- <script src="${oxygen-webhelp-template-dir}/resources/js/syncro.js"></script>-->
+    <script src="/oxygen-webhelp/template/resources/js/search-nav.js"></script>
+    
+</div>
+    </body>
+</html>

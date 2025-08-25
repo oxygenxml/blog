@@ -1,0 +1,1 @@
+oxy_webhelp_navlinks = {"topic_exv_hwt_rs-d1655e1194":{"topics":[{"title":"<strong class=\"ph b\">Controlled Attribute Values (Part 2 - Advanced)<\/strong>","href":"topics\/controlledAttributeValues2.html","attributes":{"data-id":"topic_exv_hwt_rs"},"menu":{"hasChildren":false},"tocID":"topic_exv_hwt_rs-d1655e1202","topics":[]}]}};
