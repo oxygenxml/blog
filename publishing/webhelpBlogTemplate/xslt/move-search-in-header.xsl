@@ -65,6 +65,7 @@
         <xsl:next-match/>
         <span class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span>
         <span class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
+        <button style="display:none; width: 25px;"></button>
         
     </xsl:template>
     
