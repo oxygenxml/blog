@@ -5,6 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const searchContainer = document.querySelector('.wh_search_input');
   const topMenuContainer = document.querySelector('.wh_top_menu_and_indexterms_link');
 
+  // creeaza butonul
+  const newButton = document.createElement("button");
+  newButton.textContent = "";
+  newButton.type = "button"; 
+
+  // seteaza stilurile
+  newButton.style.width = "150px"; 
+  newButton.style.display = "none";
+
+  // adauga în formular
+  searchForm.appendChild(newButton);
+
   function showSearch() {
     if (!searchIcon || !searchForm || !searchContainer || !topMenuContainer) return;
 
