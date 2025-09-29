@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="welcome" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="topic:1;3:21" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="title:1;4:12">Welcome! </title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <copyright class="- topic/copyright " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="copyright:1;7:20">
+            <copyryear year="2020" class="- topic/copyryear " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="copyryear:1;8:37"/>
+            <copyrholder class="- topic/copyrholder " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="copyrholder:1;9:26">Syncro Soft</copyrholder>
+        </copyright>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="critdates:1;11:20">
+            <created date="2020-01-14" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="created:1;12:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="body:1;15:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:1;16:12">Our blog contains various useful articles and tutorials covering various aspects of
+            editing, developing, and publishing using <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:1;17:76">Oxygen XML Editor</ph> with various XML
+            technologies. </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:2;19:12">Sometimes (quite often actually) articles originally written for the blog are curated by
+            our technical writers and end up being part of our official documentation: <xref href="https://www.oxygenxml.com/doc/ug-editor/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:1;21:97"/>.
+            However, the blog allows us to deploy various small articles faster, without the need to
+            wait for documentation updates.</p>
+        <section id="section_ftn_xd1_nsb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="section:1;24:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="title:2;25:20">Follow us!</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:3;26:16">You can use an RSS feed reader to follow the blog for new articles: <xref href="https://blog.oxygenxml.com/rss.xml" scope="external" format="html" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:2;27:95"/>.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:4;28:16">Or you can register to <xref href="#follow-it" format="html" scope="peer" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:3;28:90"><?ditaot usertext?>receive
+                    emails</xref> when new articles are posted.</p>
+        </section>
+        <section id="section_fqq_tr3_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="section:2;31:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="title:3;32:20">History of the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:2;32:56">Oxygen XML Editor</ph> Blog</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:5;33:16">The blog was originally hosted by Google Blogs and the first articles on the blog
+                appeared around 2007. Since Google Blogs did not allow enough flexibility in
+                creating the published content (for example, the inability to create a table of
+                contents) the blog was migrated to DITA XML content stored on GitHub and is now
+                hosted both on the <xref href="https://blog.oxygenxml.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:4;38:38"><?ditaot usertext?>Oxygen XML Web site</xref> and on the Netlify platform: <xref href="https://oxygenxmlblog.netlify.app/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:5;39:99"/>.</p>
+        </section>
+        <section id="section_pv2_1q3_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="section:3;41:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="title:4;42:20">How the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:3;42:49">Oxygen XML Editor</ph> Blog Works</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:6;43:16">The entire source code of the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:4;43:67">Oxygen XML Editor</ph> blog is stored in DITA content on
+                a public GitHub repository: <xref href="https://github.com/oxygenxml/blog" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:6;45:53"/>.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:7;46:16">There is a <xref href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:7;48:52"><?ditaot usertext?>Gradle build file</xref> that uses a special DITA
+                Open Toolkit to produce <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_generate_output.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:8;51:52"><?ditaot usertext?>WebHelp Responsive</xref>, EPUB and PDF outputs
+                from the DITA content. The following features are available in the published output:
+                    <ul id="ul_ayd_kr3_jkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ul:1;53:45">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:1;54:25">Color themes can be easily changed with CSS to modify how the output
+                        looks.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:2;56:25">Search functionality. Possibility to add index terms.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:3;57:25">RSS Feed is automatically generated from the entire list of topics.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:4;58:25">PDF output is automatically generated using Oxygen Chemistry Engine and can
+                        be customized with CSS.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:5;60:25">EPUB output is automatically generated using DITA For Publishers
+                        plugins.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:6;62:25">Each page has an <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="b:1;62:45">Edit online</b> link allowing it to be edited in the
+                        Oxygen XML Web Author.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:7;64:25">Each page has a comments section build using the <xref href="https://www.oxygenxml.com/oxygen_feedback.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:9;66:46"><?ditaot usertext?>Oxygen Feedback</xref> platform.</li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:8;67:25">Each time content is added to the project there is a <xref href="https://github.com/oxygenxml/blog/actions" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:10;69:46"><?ditaot usertext?>configured GitHub action</xref> which runs a validation
+                        report of the DITA content (reporting for example broken links).</li>
+                </ul></p>
+        </section>
+        <section id="section_tnr_rr3_jkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="section:4;73:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="title:5;74:20">How You can Contribute to the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:5;74:71">Oxygen XML Editor</ph> Blog.</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="p:8;75:16">We want to encourage our end users and collaborators to start creating small
+                Oxygen-related articles for our blog. To post your own articles, follow these
+                steps:</p>
+            <ol id="ol_o1c_cs3_jkb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ol:1;78:37">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:9;79:21">Create your own <xref href="https://github.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:11;80:26"><?ditaot usertext?>GitHub</xref> account, if you do not already have one.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:10;81:21">Fork the contents of the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:6;81:67">Oxygen XML Editor</ph> GitHub repository in your own
+					GitHub Repository: <xref href="https://github.com/oxygenxml/blog" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:12;83:25"/>. More details about how to fork a repository: <xref href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:13;85:39"/>.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:11;86:21">Make changes to your forked project or to a branch from it. <ul id="ul_gkd_4s3_jkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ul:2;87:45">
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:12;88:29">If you have the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:7;88:66">Oxygen XML Editor</ph> application installed, you can
+                            download our <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:14;90:64"><?ditaot usertext?>Git add-on</xref> that should allow
+                            you to clone the fork, make changes, and then commit and push them to
+                            your repository.</li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:13;93:29">As an alternative, you can use the Oxygen XML Web Author browser editing
+                            tool that has its own Git connector: <xref href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:15;96:65"/>.</li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:14;97:29">Please remember to add the name of the author and the created date for
+                            the topic in the DITA topic prolog section
+                            like:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="codeblock:1;99:72">&lt;prolog&gt;
+    &lt;author&gt;Radu Coravu&lt;/author&gt;
+    &lt;critdates&gt;
+        &lt;created date="2020-01-14"/&gt;
+    &lt;/critdates&gt;
+&lt;/prolog&gt;</codeblock>This
+                            prolog section will be used to add in the published HTML output the
+                            author information after the topic title.</li>
+						<li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:15;107:11">Each commit message must include a <xref href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-the-commit-signoff-policy-for-your-repository" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:16;109:40"><?ditaot usertext?>sign off</xref>.</li>
+                    </ul></li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:16;111:21">After all changes have been made to your fork of the project, you can create a
+                    pull request to the <ph keyref="oxygen" class="- topic/ph " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ph:8;112:62">Oxygen XML Editor</ph> original GitHub project.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:17;113:21">There is a <xref href="https://github.com/oxygenxml/blog/blob/master/.github/workflows/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:17;115:56"><?ditaot usertext?>GitHub action</xref> implemented in the
+                    project which will automatically run DITA validation on the entire project
+                    branch and will report on the pull request if the validation is successful. </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:18;118:21">We will review your changes and if your pull requests is accepted, the blog web
+                    site will be automatically updated with the new changes.</li>
+            </ol>
+        </section>
+        <section id="section_cbc_g11_qkb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="section:5;122:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="title:6;123:20">Technologies Used to Store, Build and Publish the Oxygen XML Blog</title>
+            <ul id="ul_wdy_h11_qkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ul:3;124:37">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:19;125:21">The blog content is stored on a public <xref href="https://github.com/oxygenxml/blog" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:18;127:26"><?ditaot usertext?>GitHub</xref> repository. </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:20;128:21"><xref href="https://github.com/oxygenxml/blog/issues" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:19;129:42"><?ditaot usertext?>GitHub's issues list</xref> is used to organize the work
+                    and add new improvement ideas.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:21;131:21">Offline editing the blog is done using <xref href="https://www.oxygenxml.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:20;132:56"><?ditaot usertext?>Oxygen XML Editor</xref> with its Git add-on
+                    installed.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:22;134:21">Online editing is done using <xref href="https://www.oxygenxml.com/xml_web_author.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:21;136:42"><?ditaot usertext?>Oxygen Web Author</xref>.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:23;137:21">A <xref href="https://github.com/oxygenxml/blog/blob/master/build/build.gradle" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:22;138:56"><?ditaot usertext?>Gradle build file</xref> is used to download
+                    a custom DITA Open Toolkit which contains the Oxygen WebHelp Responsive and PDF
+                    CSS plugins pre-installed, then run the publishing and validation stages.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:24;141:21">The <xref href="https://www.dita-ot.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:23;141:94"><?ditaot usertext?>DITA
+                        Open Toolkit</xref> is used along with custom plugins to publish the DITA
+                        content.<ul id="ul_ekl_2b1_qkb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="ul:4;143:57">
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:25;144:29"><xref href="https://www.oxygenxml.com/xml_editor/webhelp.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:24;145:64"><?ditaot usertext?>Oxygen WebHelp</xref> is used to
+                            publish the DITA content to HTML output. Publishing templates are used
+                            to customize the published output.</li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:26;148:29">The <xref href="https://www.oxygenxml.com/oxygen_feedback.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:25;149:64"><?ditaot usertext?>Oxygen Feedback system</xref> is used
+                            for adding feedback forms to each page.</li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:27;151:29"><xref href="https://www.oxygenxml.com/chemistry-html-to-pdf-converter.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:26;153:64"><?ditaot usertext?>Oxygen PDF Chemistry</xref> is used
+                            to produce PDF for the publishing platform.</li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:28;155:29">The <xref href="https://www.dita4publishers.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:27;156:50"><?ditaot usertext?>DITA For Publishers</xref> plugins are used to
+                            produce the EPUB output.</li>
+                    </ul></li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:29;159:21"> Oxygen DITA <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/dita-map-validate.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:28;161:56"><?ditaot usertext?>Validate and Check for Completeness</xref> is
+                    run as a GitHub action with the help of a <xref href="https://www.oxygenxml.com/oxygen_scripting.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:29;164:42"><?ditaot usertext?>special scripting license</xref>.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="li:30;165:21"><xref href="https://www.netlify.com/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/welcome.dita" xtrc="xref:30;166:26"><?ditaot usertext?>Netlify</xref> is used to connect to the repository, run Gradle and publish
+                    the WebSite.</li>
+            </ul>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\classification?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/classification/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Classification Map//EN?><?doctype-system classifyMap.dtd?><map xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" cascade="merge" class="- map/map " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d) (map classify-d) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (map glossref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" processing-role="resource-only" specializations="@props/deliveryTarget" xtrc="map:1;3:38" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">
+    <title class="- topic/title " xtrc="title:1;4:12" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">Blog Classification</title>
+  
+  <topicref class="- map/topicref " keyref="learning" xtrc="topicref:1;6:31" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap" href="../topics/learningDITAGeneral.dita">
+    <topicsubject class="+ map/topicref classify-d/topicsubject " keyref="blog-dita" processing-role="resource-only" toc="no" xtrc="topicsubject:1;7:38" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">
+        <subjectref class="+ map/topicref classify-d/subjectref " keyref="blog-dita-learning" processing-role="resource-only" toc="no" xtrc="subjectref:1;8:50" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">Learning</subjectref>
+      </topicsubject>
+  <topicmeta class="- map/topicmeta " xtrc="topicmeta:3;23:22" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">
+            <navtitle class="- topic/navtitle " xtrc="navtitle:4;24:23" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">Learning</navtitle>
+          </topicmeta></topicref>
+  
+  <topicref class="- map/topicref " keyref="publishing" xtrc="topicref:2;12:33" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap" href="../topics/dita_ot_publishing_customizations_overview.dita">
+      <topicsubject class="+ map/topicref classify-d/topicsubject " keyref="blog-dita" processing-role="resource-only" toc="no" xtrc="topicsubject:2;13:40" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">
+        <subjectref class="+ map/topicref classify-d/subjectref " keyref="blog-dita-publishing" processing-role="resource-only" toc="no" xtrc="subjectref:2;14:52" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">Publishing Customizations</subjectref>
+      </topicsubject>
+  <topicmeta class="- map/topicmeta " xtrc="topicmeta:4;28:22" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">
+            <navtitle class="- topic/navtitle " xtrc="navtitle:5;29:23" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">Publishing Customizations</navtitle>
+          </topicmeta></topicref>
+  
+  <topicref class="- map/topicref " keyref="customizing" xtrc="topicref:3;18:34" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap" href="../topics/dita-editing-customizations.dita">
+      <topicsubject class="+ map/topicref classify-d/topicsubject " keyref="blog-dita" processing-role="resource-only" toc="no" xtrc="topicsubject:3;19:40" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">
+        <subjectref class="+ map/topicref classify-d/subjectref " keyref="blog-dita-customizing" processing-role="resource-only" toc="no" xtrc="subjectref:3;20:53" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">Editing Customizations</subjectref>
+      </topicsubject>
+  <topicmeta class="- map/topicmeta " xtrc="topicmeta:5;33:22" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">
+            <navtitle class="- topic/navtitle " xtrc="navtitle:6;34:23" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">Editing Customizations</navtitle>
+          </topicmeta></topicref>
+  
+  <topicref class="- map/topicref " keyref="migrate" xtrc="topicref:4;24:30" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap" href="../topics/migration.dita">
+    <topicsubject class="+ map/topicref classify-d/topicsubject " keyref="blog" processing-role="resource-only" toc="no" xtrc="topicsubject:4;25:33" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">
+      <subjectref class="+ map/topicref classify-d/subjectref " keyref="blog-migrate" processing-role="resource-only" toc="no" xtrc="subjectref:4;26:42" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">Migrate</subjectref>
+    </topicsubject>
+  <topicmeta class="- map/topicmeta " xtrc="topicmeta:6;40:20" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">
+          <navtitle class="- topic/navtitle " xtrc="navtitle:7;41:21" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">Migrate</navtitle>
+        </topicmeta></topicref>
+  
+  <topicref class="- map/topicref " keyref="sdk" xtrc="topicref:5;30:26" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap" href="../topics/sdk.dita">
+    <topicsubject class="+ map/topicref classify-d/topicsubject " keyref="blog" processing-role="resource-only" toc="no" xtrc="topicsubject:5;31:33" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">
+      <subjectref class="+ map/topicref classify-d/subjectref " keyref="blog-sdk" processing-role="resource-only" toc="no" xtrc="subjectref:5;32:38" xtrf="file:/D:/syncprojects/blog/classification/blog-classification.ditamap">Plugins/Frameworks SDK</subjectref>
+    </topicsubject>
+  <topicmeta class="- map/topicmeta " xtrc="topicmeta:7;46:20" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">
+          <navtitle class="- topic/navtitle " xtrc="navtitle:8;47:21" xtrf="file:/D:/syncprojects/blog/classification/blog-subject-scheme.ditamap">Plugins/Frameworks SDK</navtitle>
+        </topicmeta></topicref>
+</map>

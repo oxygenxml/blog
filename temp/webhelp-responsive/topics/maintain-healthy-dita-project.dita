@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="topicID" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="topic:1;4:21" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:1;5:11">Maintaining a Healthy DITA Project</title>
+   <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="prolog:1;6:12">
+      <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="author:1;7:15">Radu Coravu</author>
+   </prolog>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="body:1;9:10">
+      <section id="section_llj_mbf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:1;10:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:2;11:17">How should a Happy and Healthy Documentation Project Look Like?</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:1;12:13"><image href="../healthy-images/brocolli.png" id="image_mck_nbf_rhb" scale="30" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:1;13:28" dita-ot:image-width="1162" dita-ot:image-height="1222" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/>
+         </p>
+      </section>
+      <section id="section_jfg_4bf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:2;16:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:3;17:17">Do you have a Healthy Project?</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:2;18:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:1;19:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:1;20:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:3;21:22">Focus on writing and not on workflow. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:2;23:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:4;24:22">Involve peer-reviews, SMEs and end users. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:3;26:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:5;27:22">Easy start for first-time contributors. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:4;29:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:6;30:22">Easier produce deliverables and correct errors in older deliverables. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:5;32:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:7;33:22">Allow for future evolution: more writers, more outputs, more content, more
+                     products. </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_uxd_qbf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:3;39:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:4;40:17">Why do big companies use the DITA standard?</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:8;41:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:2;42:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:6;43:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:9;44:22">Standard means owning your content and no vendor lock-in (editing or
+                     publishing). </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:7;47:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:10;48:22">DITA works very well with topic-based authoring. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:8;50:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:11;51:22">Lots of content reuse potential. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:9;53:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:12;54:22">Reuse lowers translation costs. </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_fdw_sbf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:4;59:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:5;60:17">DITA Doc Project Aspects</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:13;61:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:3;62:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:10;63:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:14;64:22">Storage </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:11;66:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:15;67:22">Workflow </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:12;69:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:16;70:22">Collaboration </p>
+                  <ul id="ul_hds_tbf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:4;71:43">
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:13;72:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:17;73:28">Sharing Common Constraints (editing, validation, spell check
+                           dictionaries, ...) </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:14;78:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:18;79:22">Structure </p>
+                  <ul id="ul_ids_tbf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:5;80:43">
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:15;81:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:19;82:28">Managing links and reusable content </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:16;86:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:20;87:22">Translation </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:17;89:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:21;90:22">Publishing (Producing Deliverables) </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_qq1_vbf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:5;95:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:6;96:17">Storage</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:22;97:13"><image href="../healthy-images/storage.png" id="image_ykv_wbf_rhb" scale="40" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:2;98:28" dita-ot:image-width="800" dita-ot:image-height="600"/></p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:23;99:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:6;100:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:18;101:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:24;102:22">Commercial content management systems (CMS). </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:19;104:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:25;105:22">Open Source version control systems: Git, Subversion, CVS </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_wcj_xbf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:6;110:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:7;111:17">Version Control</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:26;112:13"><image href="../healthy-images/history.png" id="image_vy1_zbf_rhb" scale="50" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:3;113:28" dita-ot:image-width="731" dita-ot:image-height="435" dita-ot:horizontal-dpi="120" dita-ot:vertical-dpi="120"/></p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:27;114:13">
+            <ul id="ul_pqn_ybf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:7;115:37">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:20;116:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:28;117:22">Ability to Tag Releases and Create Branches. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:21;119:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:29;120:22">See history for resources. </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_nlp_zbf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:7;125:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:8;126:17">Working with the storage system</title>
+         <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:8;127:14">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:22;128:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:30;129:19">Commercial CMSs – Remote editing, locking. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:23;131:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:31;132:19">Open Source version control systems – Local working copies, no editing
+                  restrictions → conflicts. </p>
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:32;134:19"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="b:1;134:22">Hint</b>: Maybe you can use the same storage system as software developers in
+                  your company. </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_c4b_ccf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:8;139:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:9;140:17">Collaboration and Workflow</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:33;141:13"><image href="../healthy-images/colaboration.png" id="image_wqr_ccf_rhb" scale="40" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:4;142:28" dita-ot:image-width="1390" dita-ot:image-height="1052" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
+         <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:9;143:14">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:24;144:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:34;145:19">We invest a lot of time each day collaborating with our team or external
+                  collaborators. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:25;148:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:35;149:19">Collaboration should be as comfortable as possible. </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_y3f_2cf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:9;153:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:10;154:17">Workflow</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:36;155:13">
+            <image href="../healthy-images/workflow.png" id="image_qdb_fcf_rhb" scale="80" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:5;157:28" dita-ot:image-width="500" dita-ot:image-height="375"/>
+         </p>
+      </section>
+      <section id="section_frh_hcf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:10;160:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:11;161:17">Issue tracking</title>
+         <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:10;162:14">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:26;163:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:37;164:19">Using workflow features in the CMS </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:27;166:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:38;167:19">Using issue management systems like Bugzilla, Atlassian JIRA or Trello. </p>
+               <ul id="ul_sn4_3cf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:11;168:40">
+                  <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:28;169:23"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="b:2;169:26">Tip:</b> Linking the product development with the documentation
+                     development.</li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+      <section id="section_osx_jcf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:11;175:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:12;176:17">Issue Tracking Examples</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:39;177:13">Custom workflows</p>
+         <ul id="ul_j2s_kcf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:12;178:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:29;179:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:40;180:19">Documentation task specific workflow </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:30;182:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:41;183:19">Integrate QA and documentation in software development process</p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_atk_mcf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:12;187:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:13;188:17">Issue tracking – Simple Documentation Workflow</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:42;189:13"><image href="../healthy-images/docworkflow.png" id="image_esw_ncf_rhb" scale="80" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:6;190:28" dita-ot:image-width="675" dita-ot:image-height="406" dita-ot:horizontal-dpi="120" dita-ot:vertical-dpi="120"/></p>
+      </section>
+      <section id="section_rnm_4cf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:13;192:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:14;193:17">Issue tracking – Development and Documentation Workflow</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:43;194:13"><image href="../healthy-images/issueworkflow.png" id="image_dhm_pcf_rhb" scale="80" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:7;195:28" dita-ot:image-width="758" dita-ot:image-height="584" dita-ot:horizontal-dpi="120" dita-ot:vertical-dpi="120"/>
+         </p>
+      </section>
+      <section id="section_azc_qcf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:14;198:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:15;199:17">Issue Tracking and Storage Integration</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:44;200:13">Issue Tracker can provide a single place where you can monitor a ticket from start to
+            end, including:</p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:45;202:13">Issue description and details </p>
+         <ul id="ul_dlz_qcf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:13;203:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:31;204:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:46;205:19">Who worked on that issue </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:32;207:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:47;208:19">What was changed in the application </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:33;210:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:48;211:19">What was changed in the documentation </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:34;213:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:49;214:19">Who should be notified when issue is resolved.  </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_z2k_tcf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:15;218:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:16;219:17">Involving Subject Matter Experts</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:50;220:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:14;221:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:35;222:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:51;223:22">SMEs provide original content (DITA or Markdown or ...) </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:36;225:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:52;226:22">Let SMEs review the published output. </p>
+                  <ul id="ul_mlw_5cf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:15;227:43">
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:37;228:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:53;229:28">HTML with feedback forms </p>
+                     </li>
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:38;231:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:54;232:28">PDF with comments. </p>
+                     </li>
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:39;234:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:55;235:28">Formal review with web editing tool integrated with storage system. </p>
+                     </li>
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:40;237:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:56;238:28">Informal review DITA content using change tracking and comment
+                           capabilities </p>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_mwv_wcf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:16;246:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:17;247:17">How can end users collaborate with us?</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:57;248:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:16;249:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:41;250:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:58;251:22">Send feedback via email/forum/phone. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:42;253:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:59;254:22">Send feedback in the published HTML output. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:43;256:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:60;257:22">Give feedback using an online DITA editing tool with comment-only capabilities.
+                  </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_lzf_ycf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:17;263:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:18;264:17">Contribution Consistency</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:61;265:13"><image href="../healthy-images/contrib.png" id="image_vzt_ycf_rhb" scale="80" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:8;266:28" dita-ot:image-width="800" dita-ot:image-height="600"/>
+         </p>
+      </section>
+      <section id="section_dy4_zcf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:18;269:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:19;270:17">Sharing common settings between writers</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:62;271:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:17;272:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:44;273:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:63;274:22">Custom style guide. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:45;276:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:64;277:22">Specific editing enhancements. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:46;279:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:65;280:22">Specific validation settings. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:47;282:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:66;283:22">Controlled attribute values. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:48;285:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:67;286:22">Custom spell and auto-correct dictionaries. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:49;288:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:68;289:22">Various other common preferences. </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_zrf_cdf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:19;294:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:20;295:17">Custom Style Guide</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:69;296:13">The style guide is internal documentation about how to write documentation.</p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:70;297:13">How can we remember what’s written in the style guide?</p>
+         <ul id="ul_xzx_cdf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:18;298:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:50;299:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:71;300:19">Searchable help output from internal style guide. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:51;302:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:72;303:19">Find an automatic way to impose style guide rules when editing. </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_msy_ddf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:20;307:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:21;308:17">Automating Style Guide Rules</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:73;309:13"><xref href="SchematronBCs.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:1;309:46" type="topic"><?ditaot gentext?>Schematron Checks to help Technical Writing</xref></p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:74;310:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:19;311:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:52;312:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:75;313:22">Schematron to add custom validation rules. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:53;315:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:76;316:22">Schematron Quick Fixes to propose quick fixes for each custom error message.
+                  </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_gds_gdf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:21;322:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:22;323:17">Using the same terminology rules</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:77;324:13"><xref href="checking_terminology_with_oxygen_xml_editor.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:2;324:76" type="topic"><?ditaot gentext?>Checking Terminology with Oxygen XML Editor</xref></p>
+      </section>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:78;326:10">
+         <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:20;327:14">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:54;328:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:79;329:19">Custom Spell dictionaries. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:55;331:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:80;332:19">Custom auto-correct mappings. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:56;334:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:81;335:19">Advanced terminology checkers like Acrolinx, HyperSTE or LanguageTools. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:57;337:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:82;338:19">Building your own terminology checker using Schematron. </p>
+            </li>
+         </ul>
+      </p>
+      <section id="section_cxn_3df_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:22;342:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:23;343:17">DITA Project Structure</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:83;344:13"><image href="../healthy-images/projstruct.png" id="image_m41_jdf_rhb" scale="60" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:9;345:28" dita-ot:image-width="800" dita-ot:image-height="600"/></p>
+         <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:21;346:14">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:58;347:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:84;348:19">Organizing various resources in various folders </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:59;350:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:85;351:19">Some CMSs may not consider this relevant. </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_svq_2hf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:23;355:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:24;356:17">File and folder naming/organization conventions</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:86;357:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:22;358:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:60;359:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:87;360:22">By type: </p>
+                  <ul id="ul_rtj_fhf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:23;361:43">
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:61;362:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:88;363:28">Tasks/t_installation.dita </p>
+                     </li>
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:62;365:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:89;366:28">Concepts/c_profiler.dita </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:63;370:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:90;371:22">By semantics: </p>
+                  <ul id="ul_stj_fhf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:24;372:43">
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:64;373:26">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:91;374:28">xslt_debugger/backmapping.dita </p>
+                     </li>
+                  </ul>
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:92;377:22"><xref href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Documentation_Process/c_File_Naming_Conventions.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:3;379:56"><?ditaot usertext?>DITA Style Guide</xref>
+                  </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_vkc_hhf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:24;385:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:25;386:17">Managing Content Reuse</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:93;387:13"><xref href="../presentation-reuse/dita_reuse_strategies.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:4;387:76" type="topic"><?ditaot gentext?>DITA Reuse Strategies</xref></p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:94;388:13"><image href="../healthy-images/reuse.png" id="image_cvg_3hf_rhb" scale="60" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:10;389:28" dita-ot:image-width="800" dita-ot:image-height="600"/></p>
+         <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:25;390:14">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:65;391:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:95;392:19">Separate folders containing reusable content. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:66;394:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:96;395:19">Keep dictionaries of reusable components </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:67;397:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:97;398:19">Prefer indirect references (conkeyrefs) </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_ydt_jhf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:25;402:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:26;403:17">Managing Links</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:98;404:13"><xref href="dita_linking_stretegies.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:5;404:56" type="topic"><?ditaot gentext?>DITA Linking Strategies</xref></p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:99;405:13"><image href="../healthy-images/link.png" id="image_rj2_lhf_rhb" scale="60" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:11;406:15" dita-ot:image-width="800" dita-ot:image-height="600"/></p>
+         <ul id="ul_nvs_lhf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:26;407:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:68;408:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:100;409:19">Prefer indirect links (key references) </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:69;411:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:101;412:19">Reuse link targets </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:70;414:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:102;415:19">Re-direct links depending on publication </p>
+            </li>
+         </ul>
+         <ul id="ul_ovs_lhf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:27;418:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:71;419:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:103;420:19">Use relationship tables </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_fnr_mhf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:26;424:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:27;425:17">Project-wide refactor operations</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:104;426:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:28;427:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:72;428:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:105;429:22">Convert between various topic types. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:73;431:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:106;432:22">Rename or move one or more topics. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:74;434:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:107;435:22">Change XML structure in topics from the entire project. </p>
+                  <ul id="ul_yzm_nhf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:29;436:43">
+                     <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:75;437:26">Example: Change the value of a specific attribute. </li>
+                  </ul>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_bwk_4hf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:27;443:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:28;444:17">Translation</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:108;445:13"><image href="../healthy-images/translate.png" id="image_hxg_phf_rhb" scale="60" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:12;446:28" dita-ot:image-width="1540" dita-ot:image-height="1150" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:109;447:13"><xref href="translating_your_dita_project.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:6;447:62" type="topic"><?ditaot gentext?>Translating your DITA Project</xref></p>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:110;448:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:30;449:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:76;450:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:111;451:22">You create your content in the primary language using a DITA authoring tool .
+                  </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:77;454:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:112;455:22">Send a copy of the relevant DITA files to the localization service provider
+                     (LSP). </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:78;458:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:113;459:22">Receive translated DITA content back from (LSP). </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_jjg_shf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:28;464:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:29;465:17">Optimizing for translation</title>
+         <ul id="ul_ddw_shf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:31;466:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:79;467:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:114;468:19">Use a controlled vocabulary (simplified English). </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:80;470:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:115;471:19">Avoid reusing inline elements other than product names. </p>
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:116;472:19"><xref href="https://lists.oasis-open.org/archives/dita/201301/msg00029.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:7;473:54"/>
+               </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:81;476:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:117;477:19">Avoid profiling/filtering content at inline level. </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_tf5_5hf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:29;481:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:30;482:17">Publishing</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:118;483:13"><image href="../healthy-images/publish.png" id="image_hh3_vhf_rhb" scale="80" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:13;484:28" dita-ot:image-width="800" dita-ot:image-height="600"/></p>
+      </section>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:119;486:10">
+         <ul id="ul_ux5_vhf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:32;487:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:82;488:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:120;489:19">Map-wide Validation and Consistency Checks</p>
+            </li>
+         </ul>
+         <ul id="ul_vx5_vhf_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:33;492:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:83;493:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:121;494:19">Validate each topic according to DITA standard. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:84;496:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:122;497:19">Check for broken links, key references and content references, missing images or
+                  referenced resources. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:85;500:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:123;501:19">Check for broken links to remote web sites. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:86;503:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:124;504:19">Check for broken links in the context of profiling filters. </p>
+            </li>
+         </ul>
+      </p>
+      <section id="section_zwq_whf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:30;508:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:31;509:17">Producing the deliverables</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:125;510:13">
+            <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:34;511:17">
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:87;512:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:126;513:22">Checking the project before publishing. </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:88;515:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:127;516:22">Sharing publishing customizations </p>
+               </li>
+               <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:89;518:20">
+                  <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:128;519:22">Automatic production of deliverables either via CMS or via an automated open
+                     source server (Jenkins). </p>
+               </li>
+            </ul>
+         </p>
+      </section>
+      <section id="section_w4d_yhf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:31;525:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:32;526:17">Useful links</title>
+         <ul class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:35;527:14">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:90;528:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:129;529:19">DITA Style Guide (by dr. Tony Self): </p>
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:130;530:19">
+                  <xref href="https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:8;532:54"/>
+               </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:91;535:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:131;536:19">Intelligent Style Guide (by George Bina): </p>
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:132;537:19">
+                  <xref href="https://github.com/oxygenxml/dim" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:9;538:97"/>
+               </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:92;541:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:133;542:19">Oxygen XML Blog (Reuse, Linking, custom validation, sharing settings): </p>
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:134;543:19"><xref href="welcome.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="xref:10;543:46" type="topic"><?ditaot gentext?>Welcome!</xref>
+               </p>
+            </li>
+         </ul>
+      </section>
+      <section id="section_ebt_zhf_rhb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="section:32;548:41">
+         <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="title:33;549:17">Conclusions</title>
+         <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:135;550:13">A healthy DITA project needs to:</p>
+         <ul id="ul_pmh_13f_rhb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="ul:36;551:34">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:93;552:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:136;553:19">Be Manageable. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:94;555:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:137;556:19">Allow for scalability. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:95;558:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:138;559:19">Allow for easy collaboration. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:96;561:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:139;562:19">Allow for detection and correction of mistakes before the deliverables are
+                  published. </p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="li:97;565:17">
+               <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:140;566:19">Allow for correction of mistakes after the deliverables are published. </p>
+            </li>
+         </ul>
+      </section>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:141;570:10">But don’t panic if you do not have all the aspects of a project covered, your project does
+         not need to be perfect, it needs to be perfectible.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="p:142;572:10"><image href="../healthy-images/nopanic.png" id="image_vrb_23f_rhb" scale="60" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/maintain-healthy-dita-project.dita" xtrc="image:14;573:12" dita-ot:image-width="820" dita-ot:image-height="668" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/>
+      </p>
+   </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:22;34:76" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><link class="- topic/link " format="dita" href="../topics/learningDITAGeneral.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:2;7:77" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Learning</linktext></link></linkpool></related-links></topic>

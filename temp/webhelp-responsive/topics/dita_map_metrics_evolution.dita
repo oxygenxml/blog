@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="dita_map_metrics_evolution" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="topic:1;3:40" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="title:1;4:12">DITA Map Metrics Evolution</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="author:1;6:13">Radu Coravu</author>
+    <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="critdates:1;7:16">
+      <created date="2022-09-09" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="created:1;8:35"/>
+    </critdates>
+  </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="p:1;12:12">The <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/author-dita-map-transformation-scenarios.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="xref:1;14:40"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="b:1;14:43">DITA Map Metrics Report</b></xref> transformation scenario
+      available in Oxygen can be applied on a DITA Map and produce all kinds of interesting metrics
+      for your DITA project:<ul id="ul_ugk_p34_55b" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="ul:1;16:53">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:1;17:13">The number of processed maps and topics.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:2;18:13">Content reuse percentage.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:3;19:13">Number of elements, attributes, words, and characters used in the entire DITAmap
+          structure.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:4;21:13">DITA conditional processing attributes used in the DITA maps.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:5;22:13">Processing instructions.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:6;23:13">External links.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:7;24:13">All <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="codeph:1;24:25">@outputclass</codeph> attribute values gathered from the DITA project.</li>
+      </ul>There is also an <xref href="https://github.com/oxygenxml/dita-ot-metrics" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="xref:2;26:26"><?ditaot usertext?>open source DITA Open Toolkit plugin</xref> on the Oxygen XML GitHub
+      organization which can be used to generate a metrics report either in HTML or XML format.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="p:2;28:8">If you generate metrics for various stages in the history of your DITA project (for example
+      for various releases) you can combine those metrics and generate graphs which can show various
+      indicators like:</p>
+    <ul id="ul_tzp_rj4_55b" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="ul:2;31:29">
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:8;32:11">Fluctuations in number of topics and maps.</li>
+      <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:9;33:11">Fluctuations in content reuse.</li>
+    </ul>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="p:3;35:8">Metrics reports and metrics evolution reports are useful to get an overview of a DITA-based
+      documentation project and to discuss its future directions. They are also useful indicators to
+      discuss with management.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="p:4;38:8">Here are some steps to generate a metrics evolution report for a DITA project hosted on a Git
+        server:<ol id="ol_vxf_1k4_55b" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="ol:1;39:40">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:10;40:13">Install this DITA Open Toolkit plugin which can publish DITA tables as SVG graphs: <xref href="https://github.com/oxygenxml/dita-table-svg" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="xref:3;42:13"/>.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:11;43:13">Install the DITA Metrics report plugin in your DITA Open Toolkit installation (if not
+          yet installed): <xref href="https://github.com/oxygenxml/dita-ot-metrics" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="xref:4;45:31"/>.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:12;46:13">Switch your Git project to various tagged versions, after each switch apply the
+            <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="uicontrol:1;47:24">metrics-report-xml</uicontrol> transformation type on the DITA Map and
+          generate an XML file representing the metrics for that particular version. As an example I
+          created 4 metrics reports for 4 previous Oxygen XML User's Guide versions: <xref href="https://github.com/oxygenxml/dita-ot-metrics/tree/master/evolution/samples" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="xref:5;51:45"/>.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:13;52:13">Apply the <xref href="https://github.com/oxygenxml/dita-ot-metrics/blob/master/evolution/generateDITATables.xsl" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="xref:6;54:44"><?ditaot usertext?>provided XSLT stylesheet</xref> to generate a DITA topic
+          containing tables which show how various indicators change between versions.</li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="li:14;56:13">Apply the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="uicontrol:2;56:34">DITA to HTML5</uicontrol> transformation on the topic to create an
+          HTML document showing the <xref href="../resources/generated-metrics-evolution.html" format="html" scope="local" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="xref:7;59:41"><?ditaot usertext?>evolution of different indicators as a graph</xref>.</li>
+      </ol></p>
+      <foreign outputclass="html-embed" class="- topic/foreign " xtrf="file:/D:/syncprojects/blog/topics/dita_map_metrics_evolution.dita" xtrc="foreign:1;61:41">
+                &lt;iframe width="100%" height="800" 
+                  src="../resources/generated-metrics-evolution.html" 
+                  frameborder="1"&gt;
+                &lt;/iframe&gt;
+                </foreign>
+    </body>
+</topic>

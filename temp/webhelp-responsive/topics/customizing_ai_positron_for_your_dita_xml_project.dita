@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="customizing_ai_tools_for_your_dita_xml_project_terminology_style_guide_and_specializations" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="topic:1;3:104" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:1;4:12">Customizing AI Positron for Your DITA XML Project</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="critdates:1;7:20">
+            <created date="2025-05-19" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:1;12:12">The <xref href="ai_positron.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:1;12:47" type="topic"><?ditaot gentext?>Oxygen AI Positron Assistant Add-on<?ditaot genshortdesc?><desc class="- topic/desc ">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:1;5:21">Oxygen AI Positron Assistant</b> add-on provides support for helping technical     documentation writers <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:2;6:30">generate</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:3;6:47">re-write</b> content, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:4;6:72">overview</b> and       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:5;7:10">research</b>. It also supports performing AI checks and AI-based modifications on       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:6;8:10">multiple files</b> by integrating AI extensions with XML technologies like       <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:7;9:10">Schematron</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/ai_positron.dita" xtrc="b:8;9:31">XSLT</b>.</desc></xref> includes a variety of helpful AI actions designed to
+            boost productivity. However, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:1;13:45">DITA XML</b> projects have specific requirements. They
+            often need particular <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:2;14:38">terminology</b> and adherence to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:3;14:74">style guide rules</b>, or
+            they may rely on company-specific <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:4;15:50">DITA</b> specialization DTDs/schemas that differ
+            from the standard <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:5;16:34">DITA DTDs</b> that the AI models are trained on. Therefore, to
+            generate high-quality content using the AI actions, the add-on must be configured to
+            understand the unique aspects of the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:6;18:53">DITA XML</b> project it will be used with. </p>
+        <section id="section_kjj_sdn_jfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="section:1;19:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:2;20:20">AI Tools Pros/Cons</title>
+        </section>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:2;22:12">With their ability to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:7;22:37">rewrite</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:8;22:53">research</b>, and <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:9;22:74">generate documentation
+                drafts</b> AI models can be useful in a variety of cases as long as aspects specific
+            to the current DITA XML project can be controlled and enforced.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_cmr_5dn_jfc" class="- topic/table " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="table:1;25:73">
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="tgroup:1;26:30">
+                <colspec colnum="1" colname="col1" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="colspec:1;27:65"/>
+                <colspec colnum="2" colname="col2" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="colspec:2;28:65"/>
+                <thead class="- topic/thead " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="thead:1;29:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="row:1;30:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:1;31:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Good</entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:2;32:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Bad/Ugly</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="tbody:1;35:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="row:2;36:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:3;37:32" colname="col1" dita-ot:x="1" dita-ot:y="2"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:10;37:35">Re-write</b> content (correct grammar, active voice, style,
+                            readability improvements).</entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:4;39:32" colname="col2" dita-ot:x="2" dita-ot:y="2">The company specific style guide might impose certain rules that, by
+                            default, are not taken into account by the AI model.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="row:3;42:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:5;43:32" colname="col1" dita-ot:x="1" dita-ot:y="3"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:11;43:35">Generating draft content</b> by combining multiple sources
+                            (including images, attached <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:12;44:60">PDF</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:13;44:72">Word</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:14;44:87">Markdown</b>
+                            documents).</entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:6;46:32" colname="col2" dita-ot:x="2" dita-ot:y="3">Hallucinations when generating content if not enough quality context
+                            information is provided. The overall terminology or style guide is not
+                            taken into account. The DITA XML specializations are also not taken into
+                            account by default.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="row:4;51:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:7;52:32" colname="col1" dita-ot:x="1" dita-ot:y="4"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:15;52:35">Research</b> / <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:16;52:53">Explain</b> concepts (chat).</entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="entry:8;53:32" colname="col2" dita-ot:x="2" dita-ot:y="4">By default an AI model responds to questions based on its training
+                            and not on the content from the current user’s manual.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <section id="section_scz_5ln_jfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="section:2;59:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:3;60:20">Access Content From Your Project</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:3;61:16">By default, when <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:17;61:36">researching</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:18;61:58">asking</b> the AI questions, <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__ai-p-rag" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:2;63:52"><?ditaot usertext?>Retrieval Augmented Generation (RAG)</xref> tools
+                give the AI access to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:19;64:42">search for specific keywords</b> in your current DITA XML
+                documentation and thus provide the AI access to the content of topics which are
+                related and relevant to your discussion.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:4;67:16">Bundled AI actions like <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:20;67:43">Generate Documentation Draft</b>, <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:21;67:80">Expand Draft</b>,
+                    <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:22;68:24">Create Topics</b> give the AI model access to the current indexed DITA XML
+                project to retrieve the topics with content similar to the new content that needs to
+                be created.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:5;71:16">You can create your own <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:3;73:52"><?ditaot usertext?>custom AI actions</xref> that allow RAG access to
+                the current project contents for the AI engine. An example can be found <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/add-related-links.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:4;76:52"><?ditaot usertext?>here</xref>.</p>
+        </section>
+        <section id="section_zlt_mpn_jfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="section:3;78:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:4;79:20">Overall Project Context and Audience</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:6;80:16">In the Oxygen <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:23;80:33">Preferences</b>
+                <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:24;81:20">AI Positron Assistant</b> preferences page you can set in the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:5;83:52"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:25;83:55">Context</b></xref> text area general
+                information about the current project and the intended audience. This context
+                information will be used subsequently for all AI actions and chat sessions. </p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:7;86:16">Example of a context which establishes an overall project scope and
+                audience:<codeblock id="codeblock_vkr_btn_jfc" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="codeblock:1;87:64"># Project context
+
+The current project contains technical documentation for a fun and easy to drive 
+dune vehicle named the Sharkfin Rover.
+
+# Audience
+
+Technical documentation must be precise and easy to understand. 
+Our clients are not technical, they are usually beginners when it comes to driving 
+and their understanding of English may vary.</codeblock></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:8;97:16">The same context information should be expanded to include terminology and style
+                guide information for the current project. An example can be found <xref href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:6;100:52"><?ditaot usertext?>here </xref>.</p>
+        </section>
+        <section id="section_ugq_jpn_jfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="section:4;102:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:5;103:20">Terminology Rules</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:9;104:16">A DITA XML project may define (in various formats) allowed terms and certain synonyms
+                that are not recommended to be used instead of the allowed terminology.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:10;106:16">The <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:7;108:52"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:26;108:55">Context</b></xref> field in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:27;108:90">AI Positron
+                    Assistant</b> preferences page can also contain rules for the most important
+                terms and disallowed synonyms. </p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:11;111:16">Example of context that establishes some of the most important
+                terms:<codeblock id="codeblock_spl_xtn_jfc" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="codeblock:2;112:61"># Terminology
+
+Specific terms in the DITA XML content must be wrapped in the &lt;term&gt; element. Preserve all such terms and do not attempt to replace them with possible synonyms.
+
+Always prefer to use the terms below instead of possible synonyms:
+```
+Sharkfin Rover (instead of 'Sharkfin Buggy')
+vehicle (instead of 'car')
+lorry (instead of 'truck')
+rear position lamp (instead of 'tailgate')
+powertrain (instead of 'drivetrain')
+petrol engine (instead of 'Otto engine')
+motorcycle (instead of 'motor-bike')
+engine (instead of 'motor')
+electronic stability control (instead of 'ESP')
+motor vehicle chassis (instead of 'vehicle frame')
+```</codeblock></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:12;129:16">Once the AI model receives the imposed terminology rules as part of the prompt
+                context, it will take them into account for all interactions (e.g. for creating
+                documentation drafts from content that was written without taking the terminology
+                into account).</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:13;133:16">The Oxygen <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:8;135:52"><?ditaot usertext?>Terminology Checker add-on</xref> can be
+                configured with a terminology rules file that allows it to highlight terminology
+                problems in real time and propose replacement for them. You can find a sample
+                terminology rules file <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/oxygen-term-checker/terms.xml" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:9;140:52"><?ditaot usertext?>here</xref>. There is also a <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/create-term-checker-rules.json" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:10;142:52"><?ditaot usertext?>sample AI action</xref> that can generate an XML
+                rules file from the add-on based on a style guide.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:14;144:16">Once the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:28;144:28">Terminology Checker</b> add-on is installed and flags the terminology
+                problems in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="uicontrol:1;145:44">Author</uicontrol> visual editor mode, you can use the
+                    <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="uicontrol:2;146:32">Fix Terminology Problems</uicontrol> AI action to fix terminology
+                problems in the currently opened topic's contents.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:15;148:16">As a conclusion, you can add your most important terminology rules in the
+                    <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="uicontrol:3;149:32">Context</uicontrol> setting to create and process DITA XML content
+                while directly obeying the rules. However, installing the terminology checker add-on
+                allows you to see terminology problems highlighted in the visual editor and to fix
+                them using the AI engine with the bundled <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="uicontrol:4;152:70">Fix Terminology
+                    Problems</uicontrol> AI action.</p>
+        </section>
+        <section id="section_fg1_g14_jfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="section:5;155:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:6;156:20">Style Guide</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:16;157:16">A style guide is a set of project-specific standards and guidelines used to ensure
+                consistency and clarity in technical documentation. A company's style guide may come
+                in various formats (DITA XML, Markdown, Word, etc.) but some of the most important
+                rules in the style guide can be distilled and set in the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:11;162:52"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:29;162:55">Context</b></xref> field within the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:30;162:94">AI
+                    Positron Assistant</b> preferences page.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:17;164:16">Example of context that establishes some of the most important style guide
+                rules:<codeblock id="codeblock_y3q_m14_jfc" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="codeblock:3;165:61"># Style guide
+
+There is a set of company specific Style Guide rules which are important to follow when rewriting or creating new content, the most important rules are mentioned below:
+
+- Never use a metaphor, simile, or other figure of speech.
+- Never use a long word where a short one will do.
+- Keep sentences short. If it is possible to cut a word out, always cut it out.
+- Never use the passive where you can use the active.
+- Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.
+- Don’t use text that points to other topics such as "In the document below" or "in the following section."
+- Some words or phrases are disallowed to be used. Mapping of disallowed phrases to their valid equivalent constructs:
+```
+as well as, in addition to =&gt; and
+at this time, at this/that point in time =&gt; currently, now/then
+advance planning =&gt; planning
+by means of =&gt; by
+by reason of =&gt; because of
+due to the fact =&gt; because
+during the course of =&gt; during
+end result =&gt; result
+```</codeblock></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:18;186:16">The Oxygen <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:12;188:52"><?ditaot usertext?>Terminology Checker add-on</xref> can also match
+                disallowed words and phrases in the terminology rules file, allowing you to see in
+                the visual editor the style guide problems and to correct them using the bundled
+                    <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="uicontrol:5;191:32">Fix Terminology Problems</uicontrol> AI action. </p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:19;192:16"><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:31;192:19">Style Guide</b> rules may also impose structural aspects for the DITA XML content
+                and such rules can be automated by converting them to <xref href="SchematronBCs.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:13;194:47" type="topic"><?ditaot usertext?>Schematron rules</xref>. Once such Schematron rules
+                are added to the DITA XML project and start showing errors in the edited content,
+                the bundled <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:32;196:32">Fix Validation Problems</b> AI action can be used to ask the AI to
+                fix the reported problems in the current document. If the AI engine attempts to save
+                content to a topic and the saved content has validation problems, the AI receives
+                the validation problems and attempts to auto fix the problems until the topic
+                becomes valid.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:20;201:16">An alternative to defining a style guide in the AI context prompt or to impose them
+                after the content is generated would be to create a fine-tuned AI model trained with
+                small examples based on the internal style guide and created also using an AI
+                model.</p>
+        </section>
+        <section id="section_lyz_ph4_jfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="section:6;206:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:7;207:20">DITA XML DTD/Schemas Specialization</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:21;208:16">Quite often, a company that uses the DITA XML standard may decide to create a DTD or
+                RelaxNG based specialization that defines new XML elements that are not known by the
+                AI engine.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:22;211:16">Most bundled AI actions attempt to preserve the existing XML structure, as much as
+                possible. AI actions like <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="uicontrol:6;212:54">Expand Draft</uicontrol> start from a newly
+                created DITA XML topic and thus preserves the existing DTD/schema reference and XML
+                elements. </p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:23;215:16">Actions like <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="uicontrol:7;215:40">Generate Documentation Draft</uicontrol> can specify (in
+                their definition) that a certain XML structure must be generated. An example, for
+                this can be found <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Documentation%20Draft/Formant%20and%20Indent%20Sample/doc-draft-model-specialization.xml" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:14;219:52"><?ditaot usertext?>here</xref>.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:24;220:16">The most important XML vocabulary changes (DTD/schema references, newly added XML
+                elements) can be distilled and set in the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:15;223:52"><?ditaot usertext?><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:33;223:55">Context</b></xref> field within the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="b:34;223:94">AI
+                    Positron Assistant</b> preferences page.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:25;225:16">Example of vocabulary changes described in the prompt context:</p>
+            <codeblock id="codeblock_xrj_jq4_jfc" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="codeblock:4;226:51"># Vocabulary Changes
+
+DITA XML topics generated for our project's user's manual have the following structure and DOCTYPE declaration:
+
+```
+&lt;!DOCTYPE oxyTopic PUBLIC "OXY-PUB-TOPIC" "oxy-system"&gt;
+&lt;oxyTopic&gt;
+    &lt;title&gt;&amp;lt;/title&gt;
+    &lt;body&gt;
+           
+    &lt;/body&gt;
+&lt;/oxyTopic&gt;
+```
+
+DITA XML concepts generated for our project's user's manual have the following structure and DOCTYPE declaration:
+
+```
+&lt;!DOCTYPE oxyConcept PUBLIC "OXY-PUB-CONCEPT" "oxy-system"&gt;
+&lt;oxyConcept&gt;
+    &lt;title&gt;&amp;lt;/title&gt;
+    &lt;body&gt;
+           
+    &lt;/body&gt;
+&lt;/oxyConcept&gt;
+```
+
+New DITA XML elements are defined in our specific DITA XML vocabulary as follows:
+
+There is a new &lt;part-term&gt; XML element which must be used to tag various car parts.
+There is a new &lt;product&gt; XML element which must be used to tag product names.
+
+Example:
+
+The &lt;product&gt;Hisense&lt;/product&gt; &lt;part-term&gt;engine&lt;/part-term&gt; is more efficient. </codeblock>
+        </section>
+        <section id="section_t3d_hr4_jfc" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="section:7;261:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="title:8;262:20">Conclusion</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:26;263:16">You need to invest time to adapt the AI Positron add-on to generate better content
+                for your particular project and organization particularities.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:27;265:16">By specifying your specific project particularities in a context prompt, content
+                created and re-written by an AI engine can become much more precise and fit better
+                with your existing ways of working. Some of your project's rules can be automated
+                allowing you to also detect and fix such problems after the content is generated
+                using the AI engine.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="p:28;270:16">An example of a detailed context prompt that contains an overview of the project and
+                audience, terminology, style rules, described vocabulary changes can be found <xref href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/customizing_ai_positron_for_your_dita_xml_project.dita" xtrc="xref:16;273:52"><?ditaot usertext?>here</xref>.</p>
+        </section>
+    </body>
+</topic>

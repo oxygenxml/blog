@@ -3,7 +3,7 @@
         <div class="footer-container container mx-auto">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-3 mb-3 mb-md-0" id="quick_links">
-                    <a href="https://www.facebook.com/syncrosoftsrl" class="lk-facebook me-2" title="Facebook" target="_blank" >
+                    <a href="https://www.facebook.com/oxygenxml/" class="lk-facebook me-2" title="Facebook" target="_blank" >
                         <img src="/oxygen-webhelp/template/resources/images/facebook.png" alt="Facebook" />
                     </a>
                     <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube me-2" title="Youtube Channel" target="_blank" >

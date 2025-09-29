@@ -66,6 +66,7 @@
         <span class="glyphicon glyphicon-search icn_qSearch" id="icn_qSearch"></span>
         <span class="glyphicon glyphicon-remove icn_qSearch_remove" id="icn_qSearch_remove"></span>
         
+        
     </xsl:template>
     
     <xsl:template match="*[contains(@class, 'wh_welcome')]" mode="copy_template">

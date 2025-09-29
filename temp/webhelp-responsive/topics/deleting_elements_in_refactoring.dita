@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="deleting_elements_in_a_refactoring_operation" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="topic:1;3:58" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="title:1;4:12">Deleting Elements in a Refactoring Operation</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="author:1;6:17">Chris Papademetrious</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="critdates:1;7:20">
+            <created date="2021-12-07" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:1;12:12">Recently, a writer wanted to remove the index from their DITA book. This required the
+            following:</p>
+        <ul id="ul_ws4_x2m_vrb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="ul:1;14:33">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:1;15:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:2;16:20">Removing the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:1;16:41">&lt;indexlists&gt;</codeph> element from the map:</p>
+                <codeblock id="pre_try_ffm_vrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:1;17:76">&lt;backmatter&gt;
+  &lt;booklists&gt;
+    <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="b:1;19:8">&lt;indexlist/&gt;</b>
+  &lt;/booklists&gt;
+&lt;/backmatter&gt;</codeblock>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:2;23:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:3;24:20">Removing topic-level <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:2;24:49">&lt;indexterm&gt;</codeph> elements from topic
+                    prologs:</p>
+                <codeblock id="pre_x1d_gfm_vrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:2;26:76">&lt;topic id="feature_A"&gt;
+  &lt;title&gt;About Feature A&lt;/title&gt;
+  &lt;prolog&gt;
+    &lt;metadata&gt;
+      &lt;keywords&gt;
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="b:2;31:12">&lt;indexterm&gt;feature A&lt;/indexterm&gt;</b>
+      &lt;/keywords&gt;
+    &lt;/metadata&gt;
+  &lt;/prolog&gt;</codeblock>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:3;36:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:4;37:20">Removing inline <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:3;37:44">&lt;indexterm&gt;</codeph> elements from topic content:</p>
+                <codeblock id="pre_wsf_gfm_vrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:3;38:76">&lt;p&gt;This is about <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="b:3;38:99">&lt;indexterm&gt;feature B&lt;/indexterm&gt;</b>feature B.&lt;/p&gt;</codeblock>
+            </li>
+        </ul>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:5;41:12">Oxygen provides a "Delete element" refactoring operation. However, it does precisely what
+            it says—deletes the specified elements, leaving everything else in place:</p>
+        <codeblock id="pre_gdf_lgm_vrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:4;43:68">&lt;topic id="feature_A"&gt;
+  &lt;title&gt;About Feature A&lt;/title&gt;
+  &lt;prolog&gt;
+    &lt;metadata&gt;
+      &lt;keywords&gt;
+
+      &lt;/keywords&gt;
+    &lt;/metadata&gt;
+  &lt;/prolog&gt;</codeblock>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:6;52:12">I decided to create an XSLT refactoring operation that does the following:</p>
+        <ul id="ul_xzc_yhm_vrb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="ul:2;53:33">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:4;54:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:7;55:20">Deletes the specified elements</p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:5;57:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:8;58:20">Deletes any containing (ancestor) elements that became empty as a result</p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:6;60:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:9;61:20">Updates whitespace/newline formatting around deleted elements as needed</p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:7;63:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:10;64:20">Serves as an easily customizable template for other element deletion uses</p>
+            </li>
+        </ul>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:11;67:12">Fortunately, as described in <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/custom-refactoring-operations.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="xref:1;69:48"><?ditaot usertext?>Custom Refactoring Operations</xref>, Oxygen allows
+            us to package up customized XSLT refactoring operations in an easy-to-use way. For the
+            XML descriptor file, put this content into a <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="filepath:1;71:68">remove-index.xml</filepath>
+            file:</p>
+        <codeblock id="codeblock_izj_ljm_vrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:5;73:74">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;refactoringOperationDescriptor
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.oxygenxml.com/ns/xmlRefactoring" id="remove-index"
+    name="Remove index from a DITA book"&gt;
+    &lt;description&gt;Remove index terms and backmatter index from a DITA book.&lt;/description&gt;
+    &lt;script type="XSLT" href="remove-index.xsl"/&gt;
+    &lt;category&gt;DITA&lt;/category&gt;
+&lt;/refactoringOperationDescriptor&gt;</codeblock>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:12;82:12">For the XSLT file itself, put this content into a <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="filepath:2;82:72">remove-index.xsl</filepath>
+            file:</p>
+        <codeblock id="codeblock_jht_4jm_vrb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:6;84:74">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  exclude-result-prefixes="xs"
+  version="2.0"&gt;
+
+  &lt;!-- elements to delete --&gt;
+  &lt;xsl:variable name="elements-to-delete" select="('indexterm', 'indexlist')"/&gt;
+
+  &lt;!-- delete up to (and including) these elements, if they become empty --&gt;
+  &lt;xsl:variable name="delete-up-to" select="('prolog', 'backmatter')"/&gt;
+
+
+  &lt;!-- baseline identity transform --&gt;
+  &lt;xsl:template match="@*|node()"&gt;
+    &lt;xsl:copy&gt;
+      &lt;xsl:apply-templates select="@*|node()"/&gt;
+    &lt;/xsl:copy&gt;
+  &lt;/xsl:template&gt;
+
+
+  &lt;!-- remove elements-to-delete --&gt;
+  &lt;xsl:template match="*[name() = $elements-to-delete]"/&gt;
+
+  &lt;!-- remove whitespace/newlines before elements-to-delete --&gt;
+  &lt;xsl:template match="text()
+                       [following-sibling::*[1]
+                         [name() = $elements-to-delete]]
+                       [matches(., '^\s*\n\s*$')]"/&gt;
+
+
+  &lt;!-- remove elements that contain our to-be-deleted elements,
+       but only if they become empty --&gt;
+  &lt;xsl:template match="*[ancestor-or-self::*[name() = $delete-up-to]]
+                        [descendant::*[name() = $elements-to-delete]]"&gt;
+
+    &lt;!-- apply templates to this element's contents and see what we get --&gt;
+    &lt;xsl:variable name="contents" as="node()*"&gt;
+      &lt;xsl:apply-templates select="node()"/&gt;
+    &lt;/xsl:variable&gt;
+
+    &lt;!-- if children elements remain, copy this element (and its preceding whitespace/newlines)
+         and put its contents inside --&gt;
+    &lt;xsl:if test="$contents[self::*]"&gt;
+      &lt;xsl:copy select="preceding-sibling::node()[1][self::text()][matches(., '^\s*\n\s*$')]"/&gt;
+      &lt;xsl:copy select="."&gt;
+        &lt;xsl:sequence select="$contents"/&gt;
+      &lt;/xsl:copy&gt;
+    &lt;/xsl:if&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;!-- remove whitespace/newlines before elements-to-delete
+       (we re-add whitespace/newlines above, if needed --&gt;
+  &lt;xsl:template match="text()
+                       [following-sibling::*[1]
+                         [ancestor-or-self::*[name() = $delete-up-to]]
+                         [descendant::*[name() = $elements-to-delete]]]
+                       [matches(., '^\s*\n\s*$')]"/&gt;
+
+&lt;/xsl:stylesheet&gt;</codeblock>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:13;143:12">At the beginning of the refactoring operation, two XSLT variables are defined:</p>
+        <ul id="ul_qqw_ckm_vrb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="ul:3;144:33">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:8;145:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:14;146:20"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:4;146:28">elements-to-delete</codeph> - the element names to delete, regardless of
+                    their contents</p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:9;149:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:15;150:20"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:5;150:28">delete-up-to</codeph> - the highest-level containing element names to
+                    delete, if they become empty</p>
+            </li>
+        </ul>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:16;154:12">The refactoring operation works as follows:</p>
+        <ul id="ul_j54_4km_vrb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="ul:4;155:33">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:10;156:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:17;157:20">The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:6;157:32">elements-to-delete</codeph> elements are always deleted.</p>
+                <ul id="ul_k42_qkm_vrb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="ul:5;158:41">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:11;159:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:18;160:28">Any whitespace/newline <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:7;160:59">text()</codeph> nodes directly preceding
+                            them are also deleted.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:12;165:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:19;166:20">Any elements that (1) contain an <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:8;166:61">elements-to-delete</codeph> element as a
+                    descendant, (2) are contained by or are themselves a
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:9;168:33">delete-up-to</codeph> element, and (3) become empty due to the
+                    element deletion, are deleted.</p>
+                <ul id="ul_ufn_5km_vrb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="ul:6;170:41">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:13;171:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:20;172:28">To determine if a "containing" element becomes empty due to the deletion,
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:10;173:41">&lt;xsl:apply-templates&gt;</codeph> is called, then the
+                            results are checked to see if any elements remain. This is what allows
+                            the deletion to continue dynamically up through the containing
+                            elements.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:14;180:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:21;181:20">To conditionally keep the whitespace/newline <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:11;181:73">text()</codeph> node
+                    directly preceding a "containing" element,</p>
+                <ul id="ul_twz_vlm_vrb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="ul:7;183:41">
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:15;184:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:22;185:28">A standalone unconditional template always deletes the whitespace/newline
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:12;186:41">text()</codeph> node preceding a containing element, whether
+                            it will be kept or not.</p>
+                    </li>
+                    <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="li:16;189:25">
+                        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:23;190:28">Inside the template that conditionally keeps containing elements, that
+                            same preceding <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:13;191:52">text()</codeph> node is re-included if the
+                            containing element is kept.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:24;197:12">The following example shows a <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:14;197:50">&lt;prolog&gt;</codeph> element that disappears
+            completely because it does not contain anything other than an
+                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:15;199:25">&lt;indexterm&gt;</codeph> element:</p>
+        <table id="table_ky5_21n_vrb" class="- topic/table " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="table:1;200:39">
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="tgroup:1;201:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="colspec:1;202:65"/>
+                <colspec colname="col2" colnum="2" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="colspec:2;203:65"/>
+                <thead class="- topic/thead " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="thead:1;204:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="row:1;205:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:1;206:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Before refactoring</entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:2;207:32" colname="col2" dita-ot:x="2" dita-ot:y="1">After refactoring</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="tbody:1;210:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="row:2;211:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:3;212:32" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                            <codeblock outputclass="language-xml" id="codeblock_syx_h1n_vrb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:7;213:94">&lt;topic id="feature_A"&gt;
+  &lt;title&gt;About Feature A&lt;/title&gt;
+  &lt;prolog&gt;
+    &lt;metadata&gt;
+      &lt;keywords&gt;
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="b:4;218:12">&lt;indexterm&gt;feature A&lt;/indexterm&gt;</b>
+      &lt;/keywords&gt;
+    &lt;/metadata&gt;
+  &lt;/prolog&gt;</codeblock>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:4;223:32" colname="col2" dita-ot:x="2" dita-ot:y="2">
+                            <codeblock outputclass="language-xml" id="codeblock_utz_h1n_vrb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:8;224:94">&lt;topic id="feature_A"&gt;
+  &lt;title&gt;About Feature A&lt;/title&gt;</codeblock>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:25;231:12">The following example shows a <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:16;231:50">&lt;prolog&gt;</codeph> element that is partially kept
+            because it also contains a <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:17;232:48">&lt;resourceid&gt;</codeph> element:</p>
+        <table id="table_ztx_31n_vrb" class="- topic/table " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="table:2;233:39">
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="tgroup:2;234:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="colspec:3;235:65"/>
+                <colspec colname="col2" colnum="2" colwidth="1*" class="- topic/colspec " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="colspec:4;236:65"/>
+                <thead class="- topic/thead " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="thead:2;237:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="row:3;238:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:5;239:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Before refactoring</entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:6;240:32" colname="col2" dita-ot:x="2" dita-ot:y="1">After refactoring</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="tbody:2;243:24">
+                    <row class="- topic/row " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="row:4;244:26">
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:7;245:32" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                            <codeblock outputclass="language-xml" id="codeblock_a5x_31n_vrb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:9;246:94">&lt;topic id="feature_A"&gt;
+  &lt;title&gt;About Feature A&lt;/title&gt;
+  &lt;prolog&gt;
+    &lt;metadata&gt;
+      &lt;keywords&gt;
+        <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="b:5;251:12">&lt;indexterm&gt;feature A&lt;/indexterm&gt;</b>
+      &lt;/keywords&gt;
+    &lt;/metadata&gt;
+    <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="b:6;254:8">&lt;resourceid id="feature_A"/&gt;</b>
+  &lt;/prolog&gt;</codeblock>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="entry:8;257:32" colname="col2" dita-ot:x="2" dita-ot:y="2">
+                            <codeblock outputclass="language-xml" id="codeblock_b5x_31n_vrb" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeblock:10;258:94">&lt;topic id="feature_A"&gt;
+  &lt;title&gt;About Feature A&lt;/title&gt;
+  &lt;prolog&gt;
+    &lt;resourceid id="feature_A"/&gt;
+  &lt;/prolog&gt;</codeblock>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="p:26;268:12">This same refactoring code can be adapted to other use cases by editing the
+                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:18;269:25">elements-to-delete</codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/deleting_elements_in_refactoring.dita" xtrc="codeph:19;269:65">delete-up-to</codeph> variables as
+            needed.</p>
+    </body>
+</topic>

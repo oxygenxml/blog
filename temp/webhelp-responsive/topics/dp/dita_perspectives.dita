@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2rootmap-uri ./?><?path2project ../../?><?path2project-uri ../../?><dita xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.3"><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="topic_l1z_5kh_kvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="topic:1;3:31" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="title:1;4:12">DITA Perspectives</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="author:1;6:17">George Bina</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="critdates:1;7:20">
+            <created date="2022-11-25" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="p:1;12:12">DITA is not defined as a flat list of elements, but each element is either a base element
+            or it derives as a specialized version of another element. This hierarchy should
+            actually decrease the cognitive complexity of a vocabulary because it allows you to find
+            an element faster than working with a flat list. </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="p:2;16:12">In this article, I want to show the hierarchy of elements in DITA and then explore how
+            you can take advantage of this in understanding the DITA architecture, learning DITA,
+            document authoring, etc.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="p:3;19:12">All the scripts I used to generate these diagrams can be found in the <xref href="https://github.com/oxygenxml/DITAPerspectives" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/dp/dita_perspectives.dita" xtrc="xref:1;20:97"><?ditaot usertext?>DITA
+            Perspectives Github Project</xref>.</p>
+    </body>
+<?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:7;14:89" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><link class="- topic/link " format="dita" href="../../topics/learnDita.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:3;8:55" xtrf="file:/D:/syncprojects/blog/maps/dita-articles.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Resources for learning DITA with Oxygen</linktext></link></linkpool></related-links><topic id="topic_brt_yz5_fvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview.dita" xtrc="topic:1;3:31" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview.dita" xtrc="title:1;4:9">Overview of DITA</title>
+	<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview.dita" xtrc="body:1;5:8">
+		
+		
+		
+		
+		
+	</body>
+<?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="section_nxt_xry_jvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_shells.dita" xtrc="topic:1;4:33" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_shells.dita" xtrc="title:1;5:9">DITA Shells</title>
+	<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_shells.dita" xtrc="body:1;6:8">
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_shells.dita" xtrc="p:1;7:6">DITA 1.3 defines multiple types of documents. Along with the generic topic and map, there are
+			also many specialized topics types and maps types. Each type of document is defined by a
+			schema that is marked as a <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_shells.dita" xtrc="codeph:1;9:39">shell</codeph> schema, a schema that should be an
+			entry point, the one that should be referred from an XML document. All the defined
+			shells are presented in the following diagram, grouped by the folder they are defined
+			in:</p>
+		<image href="diagrams/ShellModulesByGroup.svg" id="image_ghz_5dz_jvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_shells.dita" xtrc="image:1;13:74" dita-ot:image-width="1222pt" dita-ot:image-height="978pt"/>
+	</body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="section_cjg_gqz_jvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="topic:1;4:33" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="title:1;5:9">DITA Modules</title>
+	<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="body:1;6:8">
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="p:1;7:6">The DITA specification mentions that each element has a <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeph:1;7:70">class</codeph> attribute
+			that encodes information about the type of that element, for
+			example:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeblock:1;9:50">&lt;step class="- topic/li task/step"&gt;</codeblock>
+			and this information includes:<lq class="- topic/lq " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="lq:1;10:38">A sequence of one or more tokens of the form
+			<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeph:2;11:12">"modulename/typename"</codeph>, with each token separated by one or more spaces,
+			where <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeph:3;12:18">modulename</codeph> is the short name of the vocabulary module and
+			<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeph:4;13:12">typename</codeph> is the element type name. Tokens are ordered left to right
+			from most general to most specialized.</lq></p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="p:2;15:6">By analyzing all the class values from all the elements defined in the schemas, I can identify
+			the base modules (top level ones). In this case, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeph:5;16:61">topic</codeph> and a hierarchy
+			implied by how the elements are defined by this relation from more general to more
+			specialized modules, thus identifying how modules are specialized from others (in this
+			example, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeph:6;19:21">task</codeph> is specialized from <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="codeph:7;19:63">topic</codeph>).</p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="p:3;20:6">The base DITA modules:</p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="p:4;21:6"><image href="diagrams/BaseModules.svg" id="image_edg_b2h_kvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="image:1;21:69" dita-ot:image-width="129pt" dita-ot:image-height="133pt"/></p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="p:5;22:6">The modules specialization hierarchy:</p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="p:6;23:6"><image href="diagrams/ModulesHierarchy.svg" id="image_ccw_p3h_kvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_1.3_modules.dita" xtrc="image:2;23:74" dita-ot:image-width="1446pt" dita-ot:image-height="1178pt"/></p>
+	</body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="section_tqk_tjh_kvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="topic:1;4:33" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="title:1;5:9">DITA Elements</title>
+	<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="body:1;6:8">
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="p:1;7:6">The total number of DITA elements defined in the schemas and how they are split into base
+			elements, specialized element, and a highlight of the duplicate elements, while having
+			the same name but being defined on a different module can be observed here:</p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="p:2;10:6"><image href="diagrams/BaseDITAElements.svg" id="image_smm_ws3_kvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="image:1;10:75" dita-ot:image-width="1209pt" dita-ot:image-height="1099pt"/></p>
+		<section id="section_h4y_p1j_kvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="section:1;11:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="title:2;12:11">Elements Split by Map and Topic Base</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="p:3;13:7"><image href="diagrams/BaseDITATopicAndMapElements.svg" id="image_its_r1j_kvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="image:2;14:7" dita-ot:image-width="1775pt" dita-ot:image-height="1057pt"/></p>
+		</section>
+		<section id="section_r52_lz3_kvb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="section:2;16:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="title:3;17:11">Topic Elements</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="p:4;18:7">The element information is projected on the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="codeph:1;18:59">topic</codeph> base module:</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="p:5;19:7"><image href="diagrams/BaseDITATopicElements.svg" id="image_tn3_qz3_kvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="image:3;20:7" dita-ot:image-width="1397pt" dita-ot:image-height="769pt"/></p>
+		</section>
+		<section id="section_r52_lz3_ksd" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="section:3;22:37">
+			<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="title:4;23:11">Map Elements</title>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="p:6;24:7">The element information is projected on the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="codeph:2;24:59">map</codeph> base module:</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="p:7;25:7"><image href="diagrams/BaseDITAMapElements.svg" id="image_tn3_qz3_kdb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements.dita" xtrc="image:4;26:7" dita-ot:image-width="494pt" dita-ot:image-height="441pt"/></p>
+		</section>
+	</body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="topic_d2" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/bookmap.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/bookmap.dita" xtrc="title:1;5:11">bookmap</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/bookmap.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/bookmap.dita" xtrc="p:1;7:10">Defined in ../data/rng/bookmap/rng/bookmapMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/bookmap.dita" xtrc="p:2;8:10">
+         <image href="specializations/bookmap-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/bookmap.dita" xtrc="image:1;10:32" dita-ot:image-width="1265pt" dita-ot:image-height="1200pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1415260901" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningSummary.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningSummary.dita" xtrc="title:1;5:11">learningSummary</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningSummary.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningSummary.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningSummaryMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningSummary.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningSummary-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningSummary.dita" xtrc="image:1;10:32" dita-ot:image-width="344pt" dita-ot:image-height="257pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1996640366" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningPlan.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningPlan.dita" xtrc="title:1;5:11">learningPlan</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningPlan.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningPlan.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningPlanMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningPlan.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningPlan-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningPlan.dita" xtrc="image:1;10:32" dita-ot:image-width="1033pt" dita-ot:image-height="701pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_384175489" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningOverview.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningOverview.dita" xtrc="title:1;5:11">learningOverview</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningOverview.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningOverview.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningOverviewMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningOverview.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningOverview-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningOverview.dita" xtrc="image:1;10:32" dita-ot:image-width="341pt" dita-ot:image-height="257pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1931849874" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningContent.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningContent.dita" xtrc="title:1;5:11">learningContent</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningContent.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningContent.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningContentMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningContent.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningContent-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningContent.dita" xtrc="image:1;10:32" dita-ot:image-width="326pt" dita-ot:image-height="251pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_2120885268" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningObjectMap.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningObjectMap.dita" xtrc="title:1;5:11">learningObjectMap</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningObjectMap.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningObjectMap.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningObjectMapMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningObjectMap.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningObjectMap-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningObjectMap.dita" xtrc="image:1;10:32" dita-ot:image-width="221pt" dita-ot:image-height="136pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_660447220" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningBase.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningBase.dita" xtrc="title:1;5:11">learningBase</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningBase.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningBase.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningBaseMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningBase.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningBase-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningBase.dita" xtrc="image:1;10:32" dita-ot:image-width="941pt" dita-ot:image-height="734pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1868206744" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningGroupMap.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningGroupMap.dita" xtrc="title:1;5:11">learningGroupMap</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningGroupMap.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningGroupMap.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningGroupMapMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningGroupMap.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningGroupMap-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningGroupMap.dita" xtrc="image:1;10:32" dita-ot:image-width="220pt" dita-ot:image-height="136pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1639262519" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningAssessment.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningAssessment.dita" xtrc="title:1;5:11">learningAssessment</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningAssessment.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningAssessment.dita" xtrc="p:1;7:10">Defined in ../data/rng/learning/rng/learningAssessmentMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningAssessment.dita" xtrc="p:2;8:10">
+         <image href="specializations/learningAssessment-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningAssessment.dita" xtrc="image:1;10:32" dita-ot:image-width="364pt" dita-ot:image-height="266pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1457875557" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/troubleshooting.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/troubleshooting.dita" xtrc="title:1;5:11">troubleshooting</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/troubleshooting.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/troubleshooting.dita" xtrc="p:1;7:10">Defined in ../data/rng/technicalContent/rng/troubleshootingMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/troubleshooting.dita" xtrc="p:2;8:10">
+         <image href="specializations/troubleshooting-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/troubleshooting.dita" xtrc="image:1;10:32" dita-ot:image-width="617pt" dita-ot:image-height="349pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1904920650" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/reference.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/reference.dita" xtrc="title:1;5:11">reference</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/reference.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/reference.dita" xtrc="p:1;7:10">Defined in ../data/rng/technicalContent/rng/referenceMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/reference.dita" xtrc="p:2;8:10">
+         <image href="specializations/reference-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/reference.dita" xtrc="image:1;10:32" dita-ot:image-width="579pt" dita-ot:image-height="536pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1261936837" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/task.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/task.dita" xtrc="title:1;5:11">task</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/task.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/task.dita" xtrc="p:1;7:10">Defined in ../data/rng/technicalContent/rng/taskMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/task.dita" xtrc="p:2;8:10">
+         <image href="specializations/task-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/task.dita" xtrc="image:1;9:70" dita-ot:image-width="940pt" dita-ot:image-height="879pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_255729896" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/glossentry.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/glossentry.dita" xtrc="title:1;5:11">glossentry</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/glossentry.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/glossentry.dita" xtrc="p:1;7:10">Defined in ../data/rng/technicalContent/rng/glossentryMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/glossentry.dita" xtrc="p:2;8:10">
+         <image href="specializations/glossentry-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/glossentry.dita" xtrc="image:1;10:32" dita-ot:image-width="636pt" dita-ot:image-height="492pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1444203382" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/glossgroup.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/glossgroup.dita" xtrc="title:1;5:11">glossgroup</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/glossgroup.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/glossgroup.dita" xtrc="p:1;7:10">Defined in ../data/rng/technicalContent/rng/glossgroupMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/glossgroup.dita" xtrc="p:2;8:10">
+         <image href="specializations/glossgroup-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/glossgroup.dita" xtrc="image:1;10:32" dita-ot:image-width="177pt" dita-ot:image-height="137pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1408162904" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/concept.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/concept.dita" xtrc="title:1;5:11">concept</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/concept.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/concept.dita" xtrc="p:1;7:10">Defined in ../data/rng/technicalContent/rng/conceptMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/concept.dita" xtrc="p:2;8:10">
+         <image href="specializations/concept-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/concept.dita" xtrc="image:1;10:32" dita-ot:image-width="260pt" dita-ot:image-height="354pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_511084189" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/subjectScheme.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/subjectScheme.dita" xtrc="title:1;5:11">subjectScheme</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/subjectScheme.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/subjectScheme.dita" xtrc="p:1;7:10">Defined in ../data/rng/subjectScheme/rng/subjectSchemeMod.rng</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/subjectScheme.dita" xtrc="p:2;8:10">
+         <image href="specializations/subjectScheme-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/subjectScheme.dita" xtrc="image:1;10:32" dita-ot:image-width="770pt" dita-ot:image-height="582pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="jd1_dr1_lvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements_domains.dita" xtrc="topic:1;4:25" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements_domains.dita" xtrc="title:1;5:9">DITA Domains</title>
+	<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements_domains.dita" xtrc="body:1;6:8">
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_elements_domains.dita" xtrc="p:1;7:6">Some DITA elements are defined to be part of a domain that can be added on any DITA document
+			type as a pluggable component. A domain defines a number of semantic elements that are
+			derived from other elements, providing a specialization of the base elements but
+			reflecting the semantics of a domain, such as programming, software, etc.</p>
+	</body>
+<?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_100476323" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase2-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase2-d.dita" xtrc="title:1;5:11">DITA Learning Interaction Base 2 Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase2-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase2-d.dita" xtrc="p:1;7:10">
+         <image href="domains/learningInteractionBase2-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase2-d.dita" xtrc="image:1;9:32" dita-ot:image-width="415pt" dita-ot:image-height="158pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_928972128" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmap-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmap-d.dita" xtrc="title:1;5:11">DITA Learning Map Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmap-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmap-d.dita" xtrc="p:1;7:10">
+         <image href="domains/learningmap-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmap-d.dita" xtrc="image:1;8:71" dita-ot:image-width="571pt" dita-ot:image-height="371pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_248819856" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase-d.dita" xtrc="title:1;5:11">DITA Learning Interaction Base Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase-d.dita" xtrc="p:1;7:10">
+         <image href="domains/learningInteractionBase-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningInteractionBase-d.dita" xtrc="image:1;9:32" dita-ot:image-width="278pt" dita-ot:image-height="277pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1273933011" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmeta-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmeta-d.dita" xtrc="title:1;5:11">DITA Learning Metadata Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmeta-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmeta-d.dita" xtrc="p:1;7:10">
+         <image href="domains/learningmeta-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learningmeta-d.dita" xtrc="image:1;8:72" dita-ot:image-width="640pt" dita-ot:image-height="766pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1323729377" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learning-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learning-d.dita" xtrc="title:1;5:11">DITA Learning Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learning-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learning-d.dita" xtrc="p:1;7:10">
+         <image href="domains/learning-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learning-d.dita" xtrc="image:1;8:68" dita-ot:image-width="1044pt" dita-ot:image-height="1231pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_29673647" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/learning2-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/learning2-d.dita" xtrc="title:1;5:11">DITA Learning 2 Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/learning2-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/learning2-d.dita" xtrc="p:1;7:10">
+         <image href="domains/learning2-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/learning2-d.dita" xtrc="image:1;8:69" dita-ot:image-width="1094pt" dita-ot:image-height="1201pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1728861788" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/abbrev-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/abbrev-d.dita" xtrc="title:1;5:11">DITA Abbreviated Form Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/abbrev-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/abbrev-d.dita" xtrc="p:1;7:10">
+         <image href="domains/abbrev-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/abbrev-d.dita" xtrc="image:1;8:66" dita-ot:image-width="168pt" dita-ot:image-height="139pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1966969290" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/markup-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/markup-d.dita" xtrc="title:1;5:11">DITA Markup Name Mention
+      <?oxy_insert_start author="George Bina" timestamp="20221115T150255+0000"?>Next v
+      <?oxy_insert_end?>Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/markup-d.dita" xtrc="body:1;8:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/markup-d.dita" xtrc="p:1;9:10">
+         <image href="domains/markup-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/markup-d.dita" xtrc="image:1;10:66" dita-ot:image-width="160pt" dita-ot:image-height="139pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1923240540" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/mathml-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/mathml-d.dita" xtrc="title:1;5:11">DITA MathML Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/mathml-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/mathml-d.dita" xtrc="p:1;7:10"> <?oxy_delete author="George Bina" timestamp="20221115T150302+0000" content="&lt;image href=&quot;../domains/mathml-d-nodes.svg&quot; scale=&quot;40&quot; id=&quot;image_d2&quot;/&gt;"?> </p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/mathml-d.dita" xtrc="p:2;8:10">Added locally</p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_966432766" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/svg-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/svg-d.dita" xtrc="title:1;5:11">DITA SVG
+      <?oxy_delete author="George Bina" timestamp="20221115T150316+0000" content="Domain"?></title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/svg-d.dita" xtrc="body:1;7:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/svg-d.dita" xtrc="p:1;8:10">
+         <image href="domains/svg-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/svg-d.dita" xtrc="image:1;9:63" dita-ot:image-width="151pt" dita-ot:image-height="179pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1995021495" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/ui-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/ui-d.dita" xtrc="title:1;5:11">DITA User ADD Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/ui-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/ui-d.dita" xtrc="p:1;7:10">
+         <image href="domains/ui-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/ui-d.dita" xtrc="image:1;8:62" dita-ot:image-width="315pt" dita-ot:image-height="222pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1094628284" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/equation-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/equation-d.dita" xtrc="title:1;5:11">DITA Equation Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/equation-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/equation-d.dita" xtrc="p:1;7:10">
+         <image href="domains/equation-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/equation-d.dita" xtrc="image:1;8:68" dita-ot:image-width="316pt" dita-ot:image-height="221pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_28636658" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/taskreq-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/taskreq-d.dita" xtrc="title:1;5:11">DITA Task Requirements Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/taskreq-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/taskreq-d.dita" xtrc="p:1;7:10">
+         <image href="domains/taskreq-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/taskreq-d.dita" xtrc="image:1;8:67" dita-ot:image-width="920pt" dita-ot:image-height="806pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1318922031" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/pr-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/pr-d.dita" xtrc="title:1;5:11">DITA Programming Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/pr-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/pr-d.dita" xtrc="p:1;7:10">
+         <image href="domains/pr-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/pr-d.dita" xtrc="image:1;8:62" dita-ot:image-width="805pt" dita-ot:image-height="824pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_2012792792" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/xml-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/xml-d.dita" xtrc="title:1;5:11">DITA XML Construct Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/xml-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/xml-d.dita" xtrc="p:1;7:10">
+         <image href="domains/xml-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/xml-d.dita" xtrc="image:1;8:63" dita-ot:image-width="335pt" dita-ot:image-height="255pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1327477632" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/glossref-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/glossref-d.dita" xtrc="title:1;5:11">DITA Glossary Reference Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/glossref-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/glossref-d.dita" xtrc="p:1;7:10">
+         <image href="domains/glossref-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/glossref-d.dita" xtrc="image:1;8:68" dita-ot:image-width="144pt" dita-ot:image-height="154pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1770740130" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/sw-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/sw-d.dita" xtrc="title:1;5:11">DITA Software Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/sw-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/sw-d.dita" xtrc="p:1;7:10">
+         <image href="domains/sw-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/sw-d.dita" xtrc="image:1;8:62" dita-ot:image-width="272pt" dita-ot:image-height="296pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_743418949" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/relmgmt-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/relmgmt-d.dita" xtrc="title:1;5:11">DITA Release Management Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/relmgmt-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/relmgmt-d.dita" xtrc="p:1;7:10">
+         <image href="domains/relmgmt-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/relmgmt-d.dita" xtrc="image:1;8:67" dita-ot:image-width="452pt" dita-ot:image-height="517pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_146919944" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/xnal-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/xnal-d.dita" xtrc="title:1;5:11">DITA XNAL Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/xnal-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/xnal-d.dita" xtrc="p:1;7:10">
+         <image href="domains/xnal-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/xnal-d.dita" xtrc="image:1;8:64" dita-ot:image-width="1020pt" dita-ot:image-height="684pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_878156283" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/ditavalref-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/ditavalref-d.dita" xtrc="title:1;5:11">DITAVAL Reference Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/ditavalref-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/ditavalref-d.dita" xtrc="p:1;7:10">
+         <image href="domains/ditavalref-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/ditavalref-d.dita" xtrc="image:1;8:70" dita-ot:image-width="583pt" dita-ot:image-height="324pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_685294258" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/delay-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/delay-d.dita" xtrc="title:1;5:11">DITA Delay Resolution Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/delay-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/delay-d.dita" xtrc="p:1;7:10">
+         <image href="domains/delay-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/delay-d.dita" xtrc="image:1;8:65" dita-ot:image-width="197pt" dita-ot:image-height="212pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_484275166" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/indexing-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/indexing-d.dita" xtrc="title:1;5:11">DITA Indexing Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/indexing-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/indexing-d.dita" xtrc="p:1;7:10">
+         <image href="domains/indexing-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/indexing-d.dita" xtrc="image:1;8:68" dita-ot:image-width="222pt" dita-ot:image-height="150pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_98936725" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/hazard-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/hazard-d.dita" xtrc="title:1;5:11">DITA Hazard Statement Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/hazard-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/hazard-d.dita" xtrc="p:1;7:10">
+         <image href="domains/hazard-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/hazard-d.dita" xtrc="image:1;8:66" dita-ot:image-width="404pt" dita-ot:image-height="280pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_1359792677" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/hi-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/hi-d.dita" xtrc="title:1;5:11">DITA Highlight Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/hi-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/hi-d.dita" xtrc="p:1;7:10">
+         <image href="domains/hi-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/hi-d.dita" xtrc="image:1;8:62" dita-ot:image-width="267pt" dita-ot:image-height="222pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_598464755" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/mapgroup-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/mapgroup-d.dita" xtrc="title:1;5:11">DITA Map Group Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/mapgroup-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/mapgroup-d.dita" xtrc="p:1;7:10">
+         <image href="domains/mapgroup-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/mapgroup-d.dita" xtrc="image:1;8:68" dita-ot:image-width="264pt" dita-ot:image-height="218pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_773753679" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/ut-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/ut-d.dita" xtrc="title:1;5:11">DITA Utilities Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/ut-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/ut-d.dita" xtrc="p:1;7:10">
+         <image href="domains/ut-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/ut-d.dita" xtrc="image:1;8:62" dita-ot:image-width="328pt" dita-ot:image-height="292pt"/>
+      </p>
+   </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="unique_434499551" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/classify-d.dita" xtrc="topic:1;4:22" specializations="@props/deliveryTarget">
+   <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/classify-d.dita" xtrc="title:1;5:11">DITA Subject Classification Domain</title>
+   <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/classify-d.dita" xtrc="body:1;6:10">
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/classify-d.dita" xtrc="p:1;7:10">
+         <image href="domains/classify-d-nodes.svg" id="image_d2" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/classify-d.dita" xtrc="image:1;8:68" dita-ot:image-width="551pt" dita-ot:image-height="434pt"/>
+      </p>
+   </body>
+</topic></topic></topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="section_akj_ycv_fvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="topic:1;4:33" specializations="@props/deliveryTarget">
+	<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="title:1;5:9">Taking Advantage of DITA Element Hierarchy</title>
+	<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="body:1;6:8">
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="p:1;7:6">Elements in DITA are defined not as a flat list of elements, but instead as a hierarchy,
+			similar to a type hierarchy, and elements are either base elements or they are derived
+			from another element. If we look at the analogy with a type system, the base elements
+			are similar to the primitive types and the other elements are equivalent to derived
+			types.</p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="p:2;12:6">This is realized using values specified in the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="b:1;12:56">class</b> attribute. These values specify the
+			category and the name of the current element and (if we talk about a derived element)
+			also the name and category of its parent, as well as all the ancestors up to the base
+			element.</p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="p:3;16:6">For example, the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="xmlatt:1;16:31">class</xmlatt> value for the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="xmlelement:1;16:72">lcPlanTitle</xmlelement>
+			element
+			is:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="codeblock:1;18:45">class="- topic/fig learningBase/fig learningPlan/lcPlanTitle"</codeblock>This
+			means that the current element is <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="xmlelement:2;19:50">lcPlanTitle</xmlelement> from the
+				<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="codeph:1;20:13">learningPlan</codeph> category and this is derived from the
+				<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="xmlelement:3;21:17">fig</xmlelement> element from the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="codeph:2;21:59">learningBase</codeph>
+			category, which in turn is defined from the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="xmlelement:4;22:60">fig</xmlelement> element from
+			the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="codeph:3;23:16">topic</codeph> category.</p>
+		<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_dita_is_not_a_flat_list_of_elements.dita" xtrc="p:4;24:6">We can take this information into account in some situations.</p>
+	</body>
+<?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="topic_x3s_z4n_mvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="topic:1;3:31" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="title:1;4:12">Element Selection During Editing</title>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="body:1;5:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="p:1;6:12">To take advantage of the fact that elements in DITA form a hierarchy, one possibility is
+            to follow this hierarchy when we present the user with the choice of an element to
+            insert, so instead of presenting a flat list of choices, we can organize the elements
+            according to the hierarchy defined by the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="xmlatt:1;9:63">class</xmlatt> attribute values and
+            thus, if the user selects an unordered list (<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="xmlelement:1;10:70">ul</xmlelement> element) to
+            insert (for example), we can further present all the elements specialized from the
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="xmlelement:2;12:29">ul</xmlelement> element that are valid in that position in the document.
+            Of course, this makes sense if the user is browsing for an element to insert, and the
+            user already knows the element and types its name, then we can just filter that name and
+            eventually, if there are elements specializing the one identified by the entered string,
+            then we can show them further.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/element_selection_during_editing.dita" xtrc="p:2;17:12">Another possibility is to present a drop-down for an element that has specialized
+            elements, and those are valid at that location, and allow the user to move to a more
+            specialized element by selecting it from that drop-down.</p>
+    </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="topic_bls_z4n_mvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/automatic_markup_detection.dita" xtrc="topic:1;3:31" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/automatic_markup_detection.dita" xtrc="title:1;4:12">Automatic Markup Detection</title>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/automatic_markup_detection.dita" xtrc="body:1;5:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/automatic_markup_detection.dita" xtrc="p:1;6:12">If we first detect the base element and then determine if it is in fact a more
+            specialized one, it may help because it reduces the number of choices.</p>
+    </body>
+</topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="topic_ycy_cpn_mvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="topic:1;3:31" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="title:1;4:12">Soft Generalization</title>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="body:1;5:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="p:1;6:12">To visualize how a document will look like when it is generalized but without really
+            generalizing it (that is without replacing the elements with more general ones), we
+            implemented a CSS rendering to show the XML tags as if the document is generalized.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="p:2;9:12">For example, an element on which we make the tags visible using CSS static content placed
+            before and after the element looks like this: </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="p:3;11:12"><image href="images/softGeneralization1.png" id="image_uqz_fsn_mvb" scalefit="yes" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="image:1;12:15" dita-ot:image-width="1770" dita-ot:image-height="632" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="p:4;13:12">If we generalize on level, showing the first derived element type, then this sample
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="xmlelement:1;14:29">xmlelement</xmlelement> will turn into
+                <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="xmlelement:2;15:29">markupname</xmlelement>:</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="p:5;16:12"><image href="images/softGeneralization2.png" scalefit="yes" id="image_pcz_4sn_mvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="image:2;17:15" dita-ot:image-width="1768" dita-ot:image-height="628" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="p:6;18:12">If we generalize to show the base elements, then many of the tag names will change, as
+            highlighted in the following screen shot:</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="p:7;20:12"><image href="images/softGeneralization3.png" scalefit="yes" id="image_wmd_wsn_mvb" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/dp/soft_generalization.dita" xtrc="image:3;21:15" dita-ot:image-width="1766" dita-ot:image-height="628" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/></p>
+    </body>
+</topic></topic><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\dp\topics/dp?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/dp/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><topic id="section_kct_1dv_fvb" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="topic:1;4:33" specializations="@props/deliveryTarget">
+<title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="title:1;5:8">Exchanging DITA Documents</title>
+<body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="body:1;6:7">
+			
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="p:1;8:7">One advantage of using DITA is that we can tag at semantic level. For this to work, we need to
+			create a specialization that exactly reflects the concepts the users of that
+			specialization are familiar with. If one tries to layer its actual needs over an
+			existing specialization (or one of the standard schemas), these may not exactly match
+			the concepts of the audience and thus it will look like DITA is not the best fit.</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="p:2;13:7">However, the problem with a specialization is how do we exchange it with other parties? We
+			need to also provide them with our specialization, and if they do not have our
+			specialization, then what happens?</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="p:3;16:7">One approach is to export the DITA content as generalized content. Then import such a
+			generalized package into an existing DITA installation by specializing as much as
+			possible, taking into account what is available on the target DITA installation.</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="p:4;19:7">How can this be achieved?</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="p:5;20:7">From the class of the root element, we can identify the possible specialized root elements and
+			check if we have them defined in a schema in the target DITA installation. Once we
+			choose a root element, then we need to analyze the domain attributes of the root element
+			and see what domains are defined in the target topic type and then specialize elements
+			from those domains back. Otherwise, if a domain is not present in the target schema, we
+			need to leave the base element.</p>
+			<p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/dp/Overview_exchanging_dita_documents.dita" xtrc="p:6;26:7">We have support for generalization, which is relatively easy to implement, and we can probably
+			also obtain the export package in a generalized form. However, we are missing a tool to
+			take a generalized package, analyze a current DITA installation, and specialize
+			everything so that it matches what is available in that specific DITA installation.</p>
+		</body>
+</topic></topic></dita>

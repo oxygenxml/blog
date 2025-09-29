@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="oxygen_xml_ecosystem" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="topic:1;3:34" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="title:1;4:12">Oxygen XML Ecosystem</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="author:1;6:17">Radu Coravu</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="critdates:1;7:20">
+            <created date="2023-09-21" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="p:1;12:12">The set of Oxygen XML related products has expanded over the years. It is helpful to have
+            a general understanding of the functionality we offer and what each of these products
+            can do. I enjoyed the presentation by <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="b:1;14:54">George Bina</b> titled <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="b:2;14:80">Use-cases using the
+                Oxygen XML tools</b> at Convex Baltimore 2023. It provided an overview of all our
+            products. I am embedding it below for our clients and integrators to also have a general
+            understanding of our products' ecosystem.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="p:2;18:12"><foreign outputclass="html-embed" class="- topic/foreign " xtrf="file:/D:/syncprojects/blog/topics/oxygen_xml_ecosystem.dita" xtrc="foreign:1;18:46">&lt;iframe
+                src="../resources/OxygenXMLProducts-UseCases.pdf" height="600"
+                width="1000"/&gt;</foreign></p>
+    </body>
+</topic>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\presentation-reuse?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/presentation-reuse/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="reuse_other" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="topic:1;3:25" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="title:1;4:10">Reuse non-DITA resources</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="body:1;8:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="p:1;9:8">Besides DITA topics you can reuse other resources in your DITA project:<ul id="ul_xhl_nrm_d5" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="ul:1;9:102">
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="li:1;10:13">Reuse images either referenced directly or via a key reference. </li>
+        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="li:2;11:13">Reuse other linked resources (like videos, PDFs and so on).</li>
+      </ul></p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="p:2;13:8">As binary resources are not embedded in the DITA topics, they are naturally reused by being
+      kept in separate files and linked when necessary.</p>
+    <image href="images/image9.png" height="50" id="image_jzc_fnz_15" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="image:1;17:44" dita-ot:image-width="258" dita-ot:image-height="184" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="p:3;18:8">You can reuse images and link to other resources either via direct references or via indirect
+      key references. What to choose may depend on how many times you refer to a certain image or
+      binary resource. If you refer to it only once or twice you can use direct referencing.</p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="p:4;21:8">If you have problems getting images to appear the same size when published to PDF and
+      XHTML-based outputs you should make sure they do not have the dots-per-inch information saved
+      inside them: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/stretched-images-pdf-output.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/presentation-reuse/reuse_other.dita" xtrc="xref:1;25:41"/>.</p>
+  </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:17;23:38" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><link class="- topic/link " format="dita" href="../presentation-reuse/dita_reuse_strategies.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:1;5:46" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>DITA Reuse Strategies</linktext></link></linkpool></related-links></topic>

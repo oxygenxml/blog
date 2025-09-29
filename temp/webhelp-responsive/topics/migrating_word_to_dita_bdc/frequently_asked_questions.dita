@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics\migrating_word_to_dita_bdc?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/migrating_word_to_dita_bdc/?><?path2project ..\..\?><?path2project-uri ../../?><?path2rootmap-uri ../../?><qatopic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="word-to-dita-frequently-asked-questions" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) (topic qatopic) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d xml-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic svg-d) (topic sw-d) (topic ui-d) (topic ut-d) a(props deliveryTarget)" class="- topic/topic qatopic/qatopic " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="qatopic:1;3:55" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="title:1;4:10">Word to DITA Conversion FAQ</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="author:1;6:13">Cosmin Duna</author>
+    <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="critdates:1;7:16">
+      <created date="2022-11-29" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="created:1;8:35"/>
+    </critdates>
+  </prolog>
+  <qabody class="- topic/body  qatopic/qabody " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="qabody:1;11:11">
+    <qagroup id="how-to-fix-unknown-style-warnings" class="- topic/section qatopic/qagroup " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="qagroup:1;12:53">
+      <question class="- topic/title qatopic/question " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="question:1;13:17">How can I fix unrecognized style warnings?</question>
+      <answer class="- topic/div qatopic/answer " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="answer:1;14:15">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:1;15:12">When converting a Word document, the styles that don't have a mapping in the
+            <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:1;16:24">Word styles mapping</uicontrol> table from the preferences page are converted
+          to simple paragraph elements and a warning is reported for each of them in the
+            <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:2;18:24">Results</uicontrol> view.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:2;19:12">As an example, suppose I have converted the Word document and I see the following
+          warnings in the Results view: <image placement="break" href="images/unknownStyles.PNG" id="image_gqd_2kg_rvb" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="image:1;21:37" dita-ot:image-width="1339" dita-ot:image-height="129" dita-ot:horizontal-dpi="96" dita-ot:vertical-dpi="96"/></p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:3;22:12">Here are the steps that you should follow for this configuration:<ol id="ol_lzl_jkg_rvb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="ol:1;22:101">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:1;23:17">Open the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:3;23:37">Plugins / Batch Documents Converter</uicontrol> preferences page
+              in Oxygen.</li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:2;25:17">To fix the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="codeph:1;25:36">Unrecognized "Document Title" style for "p" Word element</codeph>
+              warning, add a new row in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:4;26:56">Word styles mapping</uicontrol> table with
+              the following cells:<ol id="ol_flf_nkg_rvb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="ol:2;27:59">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:3;28:21">Type "p" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:5;28:48">Word element</uicontrol> cell (because the
+                  unrecognized style was found on a Word paragraph).</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:4;30:21">Type "Document Title" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:6;30:61">Word style</uicontrol> cell.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:5;31:21">In the "HTML elements" cell, you need to add a corresponding HTML element. For
+                  this example, a corresponding element is "<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:1;32:73">h1</xmlelement>" for the
+                  default mapping of the "Title" style. So, type "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:1;33:70">h1:fresh</i>" into this cell.
+                  The ":fresh" suffix instructs the converter to create a new element every time it
+                  finds this kind of paragraph. When it's not set, the converter will try to reuse
+                  the elements and combine sequences of the same style of paragraphs into a single
+                  element.</li>
+              </ol></li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:6;39:17">To fix the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="codeph:2;39:36">Unrecognized "Keyboard Key" style for "r" Word element</codeph>
+              warning, add a new row in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:7;40:56">Word styles mapping</uicontrol> table with
+              the following cells:<ol id="ol_arm_3mg_rvb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="ol:3;41:59">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:7;42:21">Type "r" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:8;42:48">Word element</uicontrol> cell (because the
+                  unrecognized style was found on a Word character).</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:8;44:21">Type "Keyboard Key" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:9;44:59">Word style</uicontrol> cell.</li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:9;45:21">In the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:10;45:39">HTML elements</uicontrol> cell, you need to add a
+                  corresponding HTML element. For this example, a corresponding element is
+                    "<xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:2;47:34">kbd</xmlelement>" for the default mapping of the "HTML Keyboard"
+                  style. So, type "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:2;48:39">kbd</i>" in this cell. </li>
+              </ol></li>
+          </ol> After completing these steps, you should have these two rows in the configuration
+          table: <simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb2" class="- topic/simpletable " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="simpletable:1;51:96">
+            <strow class="- topic/strow " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="strow:1;52:20">
+              <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:1;53:24" dita-ot:x="1" dita-ot:y="1">p</stentry>
+              <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:2;54:24" dita-ot:x="2" dita-ot:y="1">Document Title</stentry>
+              <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:3;55:24" dita-ot:x="3" dita-ot:y="1">h1:fresh</stentry>
+            </strow>
+            <strow class="- topic/strow " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="strow:2;57:20">
+              <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:4;58:24" dita-ot:x="1" dita-ot:y="2">r</stentry>
+              <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:5;59:24" dita-ot:x="2" dita-ot:y="2">Keyboard Key</stentry>
+              <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:6;60:24" dita-ot:x="3" dita-ot:y="2">kbd</stentry>
+            </strow>
+          </simpletable>
+        </p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:4;64:12">For more information about the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:11;64:54">Word styles mapping</uicontrol> configuration,
+          see the following section from the documentation: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html#batch-converter-addon__wordStylesMapping" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xref:1;67:44"><?ditaot usertext?>Conversions from Word</xref>.</p>
+      </answer>
+    </qagroup>
+    <qagroup id="how-to-configure-mapping-when-wanted-element-doest-exist-in-html" class="- topic/section qatopic/qagroup " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="qagroup:2;70:84">
+      <question class="- topic/title qatopic/question " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="question:2;71:17">How can I configure the styles mapping when the wanted element doesn't exist
+        in HTML?</question>
+      <answer class="- topic/div qatopic/answer " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="answer:2;73:15">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:5;74:12">A frequent case when setting the mapping configuration for a custom style is to not find
+          a correspondent element in HTML, although one exists in DITA.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:6;76:12">As an example, suppose I have a Word document that contains a character custom style
+          named "filepath". We know that a correspondent element exists in DITA, but we cannot find
+          one in HTML.</p>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:7;79:12">These are the steps that can be applied to handle this case: </p>
+        <ol id="ol_cf3_hx1_rvb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="ol:4;80:33">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:10;81:15">Go to the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:12;81:36">Plugins / Batch Documents Converter</uicontrol> preferences page
+            and add the following mapping in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:13;82:61">Word styles mapping</uicontrol>
+              table:<simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_qcr_qtf_rvb" class="- topic/simpletable " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="simpletable:2;83:98">
+              <strow class="- topic/strow " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="strow:3;84:22">
+                <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:7;85:26" dita-ot:x="1" dita-ot:y="1">r</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:8;86:26" dita-ot:x="2" dita-ot:y="1">Filepath</stentry>
+                <stentry class="- topic/stentry " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="stentry:9;87:26" dita-ot:x="3" dita-ot:y="1">i.filepath</stentry>
+              </strow>
+            </simpletable></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:11;90:15">Convert the Word document to DITA. The characters styled with the <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:3;90:84">Filepath</i>
+            style in Word are converted to the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:3;91:60">i</xmlelement> element with the
+              "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:4;92:19">filepath</i>" <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlatt:1;92:41">outputclass</xmlatt> attribute.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:12;93:15">Move the output files to your project, select them, and apply the "<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="b:1;93:85">Rename
+              element</b>" refactoring operation using the "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:5;94:64">//i[@outputclass = 'filepath']</i>"
+            XPath for matching the target <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:4;95:55">i</xmlelement> element and changing them to
+            the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:5;96:29">filepath</xmlelement> DITA element.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:13;97:15">Apply the "Remove attribute" refactoring operation using the
+            "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:6;98:17">//filepath[@outputclass = 'filepath']</i>" XPath for matching the
+            target elements and deleting the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlatt:2;99:54">outputclass</xmlatt>
+            attributes.</li>
+        </ol>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:8;102:12">Instead of steps 3 and 4, you can also create a custom refactoring operation that makes
+          these two changes, like this: </p>
+        <ol id="custom_refactoring_example" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="ol:5;104:45">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:14;105:15">Create an XSLT file (for example, named
+              <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="filepath:1;106:25">batch-converter-post-processing.xsl</filepath>) that iterates over all
+            elements from the document, finds the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:6;107:63">i</xmlelement> elements with the
+            "filepath" <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlatt:3;108:32">outputclass</xmlatt> attribute, and replaces them with the
+              <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:7;109:27">filepath</xmlelement> elements without copying the
+              <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlatt:4;110:23">outputclass</xmlatt> attribute:
+            <codeblock id="codeblock_ct1_pzf_rvb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="codeblock:1;111:78">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"&gt;
+
+    &lt;xsl:template match="@* | node()"&gt;
+        &lt;xsl:copy&gt;
+            &lt;xsl:apply-templates select="@* | node()"/&gt;
+        &lt;/xsl:copy&gt;
+    &lt;/xsl:template&gt;
+
+    &lt;xsl:template match="i[@outputclass = 'filepath']"&gt;
+        &lt;xsl:element name="filepath"&gt;
+            &lt;xsl:apply-templates select="node()"/&gt;
+        &lt;/xsl:element&gt;
+    &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</codeblock></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:15;127:15">Create an XML Refactoring operation descriptor (for example, named
+              <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="filepath:2;128:25">batch-converter-post-processing.xml</filepath>) that references the
+            stylesheet and provides
+            descriptions:<codeblock id="codeblock_tfw_nbg_rvb" outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="codeblock:2;130:91">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;refactoringOperationDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.oxygenxml.com/ns/xmlRefactoring" id="op_qzq_y2x_nsb"
+    name="Post-processing Batch Documents Converter"&gt;
+    &lt;description&gt;Post-process the resulting DITA documents from the Word conversion using the Batch Documents Converter add-on.&lt;/description&gt;
+    &lt;script type="XSLT" href="batch-converter-post-processing.xsl"/&gt;
+&lt;/refactoringOperationDescriptor&gt;</codeblock></li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:16;137:15">Copy these two files to a folder <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/sharing-custom-refactoring-operations.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xref:2;139:46"><?ditaot usertext?>scanned by Oxygen XML Editor when it loads the custom
+              operation</xref>.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:17;141:15">Apply the new custom operation named "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:7;141:56">Post-processing Batch Documents
+            Converter</i>" that can now be found in the list of refactoring operations from the "XML
+            Refactoring" dialog box.</li>
+        </ol>
+      </answer>
+    </qagroup>
+    <qagroup id="how-to-configure-mapping-for-codeblocks" class="- topic/section qatopic/qagroup " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="qagroup:3;147:59">
+      <question class="- topic/title qatopic/question " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="question:3;148:17">How can I configure the styles mapping for paragraphs styled as code
+        blocks?</question>
+      <answer class="- topic/div qatopic/answer " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="answer:3;150:15">In Word, a code block is represented as a sequence of paragraphs styled with a custom
+        style that adds a custom font and border, like this: <image href="images/wordCodeblock.PNG" placement="break" id="image_tfs_3r5_fwb" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="image:2;152:53" dita-ot:image-width="778" dita-ot:image-height="326" dita-ot:horizontal-dpi="96" dita-ot:vertical-dpi="96"/> To add a mapping for this custom style, follow
+        these steps:<ol id="ol_sq5_hx5_fwb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="ol:6;153:45">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:18;154:15">Open the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:14;154:35">Options → Preferences → Plugins → Batch Documents
+              Converter</uicontrol> preferences page in Oxygen.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:19;156:15">Add a new row to the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:15;156:47">Word styles mapping</uicontrol> table.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:20;157:15">Enter "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:8;157:25">p</i>" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:16;157:50">Word element</uicontrol> cell, and enter "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:9;157:95">Code
+              Snippet</i>" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:17;158:46">Word style</uicontrol> cell to match the paragraphs
+            styled with "Code Snippet".</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:21;160:15">Enter "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:10;160:25">pre:separator('\n')</i>" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:18;160:68">HTML elements</uicontrol> cell.
+            The <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:8;161:29">pre</xmlelement> element is the corresponding HTML element for these
+            types of paragraphs. Since we want to merge these sequences of "Code Snippet" style
+            paragraphs, the ":fresh" marker was not used. The "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:11;163:67">:separator('')</i>" syntax
+            configures a separator when the same type of consecutive paragraphs are merged. If it
+            isn't specified, we would obtain a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:9;165:60">pre</xmlelement> element with a single
+            line of text.</li>
+        </ol><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:9;167:17">Using this configuration, a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:10;167:57">pre</xmlelement> element is the result in
+          the converted <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="b:2;168:28">DITA</b> output for every code block sequence. For obtaining
+            <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:11;169:25">codeblock</xmlelement> elements in DITA, see <xref href="frequently_asked_questions.dita#word-to-dita-frequently-asked-questions/how-to-configure-mapping-when-wanted-element-doest-exist-in-html" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xref:3;171:13" type="qagroup"><?ditaot gentext?>How can I configure the styles mapping when the wanted element doesn't exist in HTML?</xref> for setting a class attribute on the resulting <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="xmlelement:12;171:73">pre</xmlelement> HTML
+          element (by setting "<i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="i:12;172:35">pre.codeblock:separator('\n')</i>" in the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:19;172:88">HTML
+            elements</uicontrol> cell) and creating a custom refactoring operation.</p></answer>
+    </qagroup>
+    <qagroup id="how_to_preserve_shapes" class="- topic/section qatopic/qagroup " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="qagroup:4;175:42">
+      <question class="- topic/title qatopic/question " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="question:4;176:17">How can I preserve the Word shapes?</question>
+      <answer class="- topic/div qatopic/answer " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="answer:4;177:15">The converter doesn't support the Word shapes and these will be ignored when the
+        document is converted to HTML or DITA. A workaround is to save them manually as SVG images
+        in MS Word before the conversion. For this, you should follow these steps for every shape
+        inside the document:<ol id="ol_el1_tbt_lwb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="ol:7;180:53">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:22;181:15">Select the shape.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:23;182:15">Invoke the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:20;182:37">Cut</uicontrol> action from the contextual menu.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:24;183:15">Invoke the <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:21;183:37">Paste Special...</uicontrol> action from the <menucascade class="+ topic/ph ui-d/menucascade " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="menucascade:1;183:95">
+              <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:22;184:26">Home</uicontrol>
+              <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:23;185:26">Paste</uicontrol>
+            </menucascade> menu.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="li:25;187:15">In the resulting dialog box, select <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="uicontrol:24;187:62">Picture (SVG)</uicontrol> and
+            <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="b:3;188:16">OK</b>.</li>
+        </ol><p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita" xtrc="p:10;189:17">After completing these steps, the document will contain "SVG" images that will be
+          preserved in the HTML or DITA results.</p></answer>
+    </qagroup>
+  </qabody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:26;37:101" xtrf="file:/D:/syncprojects/blog/oxygen_xml_blog.ditamap"><link class="- topic/link " format="dita" href="../../topics/migrating_word_to_dita_bdc/migrating_word_to_dita_using_batch_documents_converter.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:22;31:118" xtrf="file:/D:/syncprojects/blog/oxygen_xml_blog.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Migrating MS Word to DITA using the Batch Documents Converter</linktext></link></linkpool></related-links></qatopic>

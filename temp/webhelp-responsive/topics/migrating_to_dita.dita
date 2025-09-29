@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="migrating_to_dita" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="topic:1;3:31" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:1;4:10">Migrating Various Document Formats to DITA</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="author:1;6:13">Radu Coravu</author>
+    <metadata class="- topic/metadata " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="metadata:1;7:15">
+      <keywords class="- topic/keywords " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="keywords:1;8:17">
+        <keyword outputclass="label" class="- topic/keyword " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="keyword:1;9:38">Migrate</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="body:1;13:9">
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:1;14:8">Most companies do not start new DITA-based projects from scratch. They already have content
+      written in various other formats and somehow they need that content converted to DITA. In this
+      blog post, I will offer some conversion advice depending on the format of your current
+      project.</p>
+    <section id="section_j23_k54_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:1;18:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:2;19:14">Migrating DocBook Content to DITA.</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:2;20:10">You can migrate one or multiple DocBook documents to DITA using the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:1;20:81">Oxygen Batch
+          Documents Converter</b> add-on: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:1;23:43"/>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:3;24:10">The <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:2;24:17">DocBook to DITA</b> conversion contains an option named <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:3;24:76">Create DITA maps from
+          DocBook documents containing multiple sections</b>. When this option is selected, all
+        sections from your DocBook document will be separated into individual DITA topics and
+        referenced in a DITA map.</p>
+    </section>
+    <section id="section_bfz_z54_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:2;29:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:3;30:14">Migrating Microsoft Word Content to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:4;31:10">The Oxygen XML User Manual has a detailed topic enumerating the possibilities to convert
+        Microsoft Word content to DITA: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/ooxml-to-dita.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:2;34:29"/>.</p>
+    </section>
+    <section id="section_yx1_hv4_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:3;36:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:4;37:14">Migrating Excel Content to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:5;38:10">You can use Oxygen's <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:3;40:42"><?ditaot usertext?><i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="i:1;40:45">Smart Paste</i></xref> functionality to copy content
+        from an Excel spreadsheet and paste it inside an opened DITA topic. Also, as an alternate
+        possibility, the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:4;42:29">Oxygen Batch Documents Converter</b> add-on was updated to be able to batch
+        convert Excel to DITA: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:4;44:43"/>.</p>
+    </section>
+    <section id="section_p4y_nv4_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:4;46:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:5;47:14">Migrating LibreOffice Content to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:6;48:10">LibreOffice documents can be saved in Word format, and once you do that, you can convert
+        the Word content to DITA as described above. Alternatively, you can save the LibreOffice
+        documents to DocBook and then apply the DocBook to DITA conversion technique described
+        above.</p>
+    </section>
+    <section id="section_cdq_wl2_5gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:5;53:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:6;54:14">Migrating Google Docs to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:7;55:10">You have three possibilities to convert Google Docs to DITA using Oxygen:<ul id="ul_e1s_yl2_5gb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="ul:1;56:31">
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="li:1;57:15">Copy/Pasting from Google Docs to a DITA Topic opened in Oxygen in the Author visual
+            editing mode should work and convert the pasted content to DITA.</li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="li:2;59:15">Save the Google document as OpenDocumentFormat (<b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:5;59:66">ODF</b>) then save the ODF document
+            as <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:6;60:19">DocBook</b> with <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:7;60:39">Libre Office</b>, then apply the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:8;60:75">DocBook to DITA</b>
+            transformation scenario shipped in Oxygen to convert DocBook to DITA. </li>
+          <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="li:3;62:15">Save the Google document as HTML then use the Oxygen batch converter add-on to convert
+            it to DITA: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:5;64:47"/>.</li>
+        </ul></p>
+    </section>
+    <section id="section_gdg_tv4_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:6;67:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:7;68:14">Migrating Markdown Content to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:8;69:10">The DITA Open Toolkit publishing engine bundled with Oxygen allows you to reference
+        Markdown files directly in a DITA map and either publish them directly or export the
+        Markdown files to DITA one by one: <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/markdown-dita-2.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:6;73:43"/>. If you want to convert multiple Markdown documents at
+        once, you can use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:9;74:34">Oxygen Batch Documents Converter</b> add-on: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:7;76:29"/>.</p>
+    </section>
+    <section id="section_ss1_gw4_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:7;78:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:8;79:14">Migrating HTML Content to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:9;80:10">Using Oxygen's <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/smart-paste-support.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:8;82:42"><?ditaot usertext?><i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="i:2;82:45">Smart Paste</i></xref> functionality, you can open the
+        HTML documents in a web browser, then copy the contents and paste it in a DITA topic opened
+        in Oxygen's <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:10;84:24">Author</b> visual editing mode. If you want to convert multiple HTML files,
+        you can use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:11;85:28">Oxygen Batch Documents Converter</b> add-on: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:9;87:29"/>.</p>
+    </section>
+    <section id="section_imj_py4_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:8;89:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:9;90:14">Migrating Unstructured FrameMaker to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:10;91:10">There is a detailed blog post enumerating the possibilities to convert Unstructured
+        FrameMaker content to DITA: <xref href="migratingFmToDita.dita" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:10;92:73" type="topic"><?ditaot gentext?>Migrating Unstructured Adobe FrameMaker Content to DITA</xref>.</p>
+    </section>
+    <section id="section_cry_wy4_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:9;94:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:10;95:14">Migrating MadCap Content to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:11;96:10">This <xref href="https://github.com/oxygenxml-incubator/FlareToDITA" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:11;97:28"><?ditaot usertext?>open source project</xref> contains such a stylesheet which attempts to
+        convert a Flare project to DITA XML and instructions about how to use it. As an alternative
+        some recent MadCap versions seem to have facilities to export content directly to DITA.</p>
+    </section>
+    <section id="section_hpn_vrm_lsb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:10;101:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:11;102:14">Migrating Confluence Content to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:12;103:10">To convert Confluence content to DITA, you can use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:12;103:68">Oxygen Batch Documents Converter</b>
+        add-on: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:12;105:29"/>.</p>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:13;106:10">You first need to export the content to HTML. For this, log in to your Confluence account
+        and navigate to the specific space that you want to export. Then go to <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:13;107:83">Space
+          Settings</b><b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:14;108:26">→Export space</b> and choose to export it as HTML. Then, back on
+          <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:15;109:14">Oxygen</b>, you can then use the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:16;109:50">Confluence to DITA</b> action (available once the
+        add-on is installed) to convert the exported <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="filepath:1;110:64">index.html</filepath> file into a
+        DITA map with topics.</p>
+    </section>
+    <section id="section_sgm_jvl_dtcx" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:11;113:40">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:12;114:14">Migrating AsciiDoc to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:14;115:10">The <xref href="https://asciidoctor.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:13;115:83"><?ditaot usertext?>Asciidoctor</xref>
+        third-party application can be used to convert AsciiDoc content to DocBook. Then, you can
+        convert the DocBook content to DITA using the method described <xref href="migrating_to_dita.dita#migrating_to_dita/section_j23_k54_4gb" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:14;118:57" type="section"><?ditaot usertext?>here</xref>.</p>
+    </section>
+    <section id="section_sgm_jvl_dtct" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:12;120:40">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:13;121:14">Migrating reStructuredText to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:15;122:10">The <xref href="https://pandoc.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:15;122:78"><?ditaot usertext?>Pandoc</xref>
+        third-party application can be used to convert reStructuredText content to DocBook or HTML.
+        Then, you can convert the DocBook or HTML content to DITA using the <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:16;126:42"><?ditaot usertext?>Oxygen Batch
+            Documents Converter</xref> add-on.</p>
+    </section>
+    <section id="section_sgm_jvl_dtb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:13;129:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:14;130:14">Migrating LaTex to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:16;131:10">You may use a third-party application (like <xref href="https://pandoc.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:17;132:28"><?ditaot usertext?>Pandoc</xref>) to convert LaTex content to Word or HTML. Afterwards use
+        the <b class="+ topic/ph hi-d/b " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="b:17;133:16">Oxygen Batch Documents Converter</b>: <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/batch-converter-addon.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:18;135:43"/></p>
+    </section>
+    <section id="section_zv4_hy4_4gb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="section:14;137:39">
+      <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="title:15;138:14">Migrating Other Formats to DITA</title>
+      <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="p:17;139:10">You may find third-party applications (like <xref href="https://pandoc.org/" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/migrating_to_dita.dita" xtrc="xref:19;140:28"><?ditaot usertext?>Pandoc</xref>) that can convert your content to HTML or to some kind of
+        XML format like DocBook. Once you have HTML or DocBook content, you can convert them to DITA
+        using the advice above.</p>
+    </section>
+  </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:20;28:57" xtrf="file:/D:/syncprojects/blog/oxygen_xml_blog.ditamap"><link class="- topic/link " format="dita" href="../topics/migration.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:18;26:59" xtrf="file:/D:/syncprojects/blog/oxygen_xml_blog.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Migrate</linktext></link></linkpool></related-links></topic>

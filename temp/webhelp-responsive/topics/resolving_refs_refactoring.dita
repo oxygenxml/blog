@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\topics?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/topics/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="resolving_refs_refactoring" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="topic:1;3:40" specializations="@props/deliveryTarget">
+    <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="title:1;4:12">Resolving DITA Cross-References in Refactoring Operations</title>
+    <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="prolog:1;5:13">
+        <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="author:1;6:17">Chris Papademetrious</author>
+        <critdates class="- topic/critdates " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="critdates:1;7:20">
+            <created date="2023-07-28" class="- topic/created " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="created:1;8:41"/>
+        </critdates>
+    </prolog>
+    <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="body:1;11:11">
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:1;12:12">We needed a way to resolve DITA <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:1;12:52">&lt;xref&gt;</codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:2;12:83">&lt;link&gt;</codeph>
+            elements to their target element in a refactoring operation. We also needed to determine
+            whether the link was a local or peer-map reference. Fortunately, Oxygen v25.1 provided
+            us with the solution!</p>
+        <section id="section_kmq_l2m_gyb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="section:1;16:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="title:2;17:20">The Missing Piece - Resolving a @keyref</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:2;18:16">For <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:3;18:28">&lt;xref&gt;</codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:4;18:59">&lt;link&gt;</codeph> elements, we use a mix
+                of <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:1;19:28">href</xmlatt> and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:2;19:54">keyref</xmlatt> references in our content. In
+                XSLT refactoring operations, we could resolve <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:3;20:71">href</xmlatt> references to
+                the target file (and optionally, an element in that file) by using the XPath
+                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:5;22:29">document()</codeph> function. However, we had no way of resolving
+                    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:4;23:29">keyref</xmlatt> references because a refactoring operation only
+                processes the current file (it doesn't consider Oxygen's map context or the keys
+                defined within it). In addition, writing such a resolver in XSLT that properly
+                considers keyscopes would be enormously difficult.</p>
+        </section>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:3;28:12">In the Oxygen v25.1 release, <xref href="https://www.oxygenxml.com/InstData/Editor/SDK/javadoc/ro/sync/ecss/dita/extensions/DITAXSLTExtensionFunctionUtil.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xref:1;30:48"><?ditaot usertext?>new API functions</xref> were introduced to provide
+            information about <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:5;31:39">keyref</xmlatt> references:</p>
+        <ul id="ul_k2r_ydm_gyb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="ul:1;32:33">
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:1;33:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:4;34:20">The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:6;34:32">getKeyRefInfo()</codeph> function returns information about a
+                    reference's type (local, peer, unresolved, and so on).</p>
+            </li>
+            <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:2;37:17">
+                <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:5;38:20">The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:7;38:32">getKeyRefAbsoluteReference()</codeph> function resolves a
+                        <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:6;39:33">keyref</xmlatt> to its equivalent <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:7;39:75">href</xmlatt> reference
+                    URL.</p>
+            </li>
+        </ul>
+        <note id="note_j2y_khm_gyb" class="- topic/note " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="note:1;43:37">
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:6;44:16">There were subsequent improvements to the API functions in Oxygen v25.1 build
+                2023070306, so you should use that release or later for best results.</p>
+        </note>
+        <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:7;47:12">Thanks to this new API, we could use a simple <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:8;47:66">href</xmlatt> resolver written in
+            XSLT for <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:9;48:30">keyref</xmlatt> references too!</p>
+        <section id="section_wkw_skm_gyb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="section:2;49:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="title:3;50:20">Resolving Cross-References in Refactoring Operations</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:8;51:16">The attached test case provides the following XSLT file that you can include in your
+                own refactoring operations:</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:9;53:16"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="filepath:1;53:26">frameworks/dita/refactoring/util-get-referenced-element.xsl</filepath></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:10;54:16">This file defines a <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:8;54:44">mode="get-referenced-element"</codeph> template that,
+                when applied to <i class="+ topic/ph hi-d/i " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="i:1;55:36">any</i> element with an <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:10;55:68">href</xmlatt> or
+                    <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:11;56:29">keyref</xmlatt> attribute, returns the referenced element. If the
+                reference cannot be resolved, the template returns an empty sequence.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:11;58:16">The template works as follows:</p>
+            <ol id="ul_m1k_2mm_gyb" class="- topic/ol " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="ol:1;59:37">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:3;60:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:12;61:24">References with <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:9;61:48"><xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:12;61:56">scope</xmlatt>="external"</codeph> always
+                        return an empty sequence.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:4;64:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:13;65:24">References with <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:13;65:48">format</xmlatt> set to a value other than
+                            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:10;66:37">"dita"</codeph> always return an empty sequence.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:5;68:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:14;69:24">If the reference has a <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:14;69:55">keyref</xmlatt>, it is converted to an
+                            <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:15;70:37">href</xmlatt> value using
+                            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:11;71:37">getKeyRefAbsoluteReference()</codeph>.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:6;73:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:15;74:24">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:16;74:36">href</xmlatt> value is parsed into its components as follows:</p>
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:16;75:24"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:12;75:32">[<varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:1;75:42">file</varname>]#<varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:2;75:67">topic_id</varname>[/<varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:3;75:96">element_id</varname>]</codeph></p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:7;77:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:17;78:24">The target document is obtained as follows:</p>
+                    <ul id="ul_msn_34m_gyb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="ul:2;79:45">
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:8;80:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:18;81:32">If no <varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:4;81:47">file</varname> is specified, the in-memory document
+                                that contains the cross-reference element is used.</p>
+                        </li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:9;84:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:19;85:32">If a <varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:5;85:46">file</varname> is specified and that file contains the
+                                cross-reference element, the in-memory document that contains the
+                                cross-reference element is used.</p>
+                        </li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:10;89:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:20;90:32">Otherwise, the specified file document is loaded from disk using the
+                                XPath <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:13;91:47">document()</codeph> function.</p>
+                        </li>
+                    </ul>
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:21;94:24">This heuristic approach ensures that in multiple-pass refactoring operations,
+                        the in-memory version of the content is preferred over the on-disk
+                        version.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:11;98:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:22;99:24">The topic that matches the <varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:6;99:60">topic_id</varname> value is obtained from
+                        the target document.</p>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:12;102:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:23;103:24">If an <varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:7;103:39">element_id</varname> is specified, the element in the topic
+                        that matches the <varname class="+ topic/keyword sw-d/varname " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="varname:8;104:51">element_id</varname> value is obtained.</p>
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:24;105:24">Because non-topic <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:17;105:50">id</xmlatt> values do not need to be unique, the
+                        code ensures that no subtopics within the matching topic are searched to
+                        avoid incorrect matches.</p>
+                </li>
+            </ol>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:25;110:16">To view the XSLT stylesheet without downloading the archive, click on the following
+                link:</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:26;112:16"><xref href="resolving_refs_refactoring/util-get-referenced-element.xsl" format="xsl" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xref:2;113:22"><?ditaot usertext?>util-get-referenced-element.xsl</xref></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:27;114:16">There are comments in the code to explain how it works.</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:28;115:16">The <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:18;115:28">keyref</xmlatt> API functions require that a map context be active in
+                Oxygen. If no context is available (for example, no map is open in the
+                    <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="uicontrol:1;117:32">DITA Maps Manager</uicontrol>), there will be no key information
+                available to resolve the reference.</p>
+        </section>
+        <section id="section_klm_crm_gyb" class="- topic/section " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="section:3;120:43">
+            <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="title:4;121:20">Example Test Case</title>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:29;122:16">The following Oxygen project provides examples of how cross-reference resolutions can
+                be used in refactoring operations and Schematron checks:</p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:30;124:16"><xref href="resolving_refs_refactoring/resolving_refs_refactoring.zip" format="zip" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xref:3;125:22"><?ditaot usertext?>resolving_refs_refactoring.zip</xref></p>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:31;126:16">Specifically, it provides the following:</p>
+            <ul id="ul_jym_grm_gyb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="ul:3;127:37">
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:13;128:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:32;129:24">An "Update Cross References" refactoring operation is provided that:</p>
+                    <ul id="ul_dgs_mrm_gyb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="ul:4;130:45">
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:14;131:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:33;132:32">Sets (or updates) the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:19;132:62">type</xmlatt> attribute for
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlelement:1;133:49">xref</xmlelement> and <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlelement:2;133:83">link</xmlelement>
+                                elements.</p>
+                            <image href="resolving_refs_refactoring/refactoring_setting_type_attributes.png" placement="break" id="image_kc3_nnn_gyb" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="image:1;136:57" dita-ot:image-width="980" dita-ot:image-height="338"/>
+                        </li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:15;138:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:34;139:32">Populates the target text for <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlelement:3;139:74">xref</xmlelement> and
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlelement:4;140:49">link</xmlelement> elements that reference topics in
+                                peer maps (i.e. cross-book links).</p>
+                            <image href="resolving_refs_refactoring/refactoring_target_text.png" placement="break" id="image_q3x_spn_gyb" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="image:2;143:57" dita-ot:image-width="1069" dita-ot:image-height="244"/>
+                        </li>
+                    </ul>
+                </li>
+                <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:16;147:21">
+                    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:35;148:24">Schematron checks are provided that:</p>
+                    <ul id="ul_x5h_bsm_gyb" class="- topic/ul " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="ul:5;149:45">
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:17;150:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:36;151:32">Warn about <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlelement:5;151:55">xref</xmlelement> and
+                                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlelement:6;152:49">link</xmlelement> elements that reference topics in
+                                peer maps (i.e. cross-book links) but do not contain any target
+                                text.</p>
+                            <image href="resolving_refs_refactoring/schematron_warn_missing_target_text.png" placement="break" id="image_yhp_nmn_gyb" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="image:3;156:57" dita-ot:image-width="914" dita-ot:image-height="168"/>
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:37;157:32">This check also offers a "quick fix" that populates the target text
+                                for you.</p>
+                        </li>
+                        <li class="- topic/li " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="li:18;160:29">
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:38;161:32">Show the value of the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:14;161:62">getKeyRefInfo()</codeph> and
+                                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="codeph:15;162:45">getKeyRefAbsoluteReference()</codeph> API calls for any
+                                element with a <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlatt:20;163:56">keyref</xmlatt> attribute.</p>
+                            <image href="resolving_refs_refactoring/showing_API_values.png" placement="break" id="image_xrk_vln_gyb" class="- topic/image " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="image:4;165:57" dita-ot:image-width="925" dita-ot:image-height="133"/>
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:39;166:32">These informational checks are commented out by default. You can
+                                uncomment them in the following file:</p>
+                            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:40;168:32"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="filepath:2;168:42">frameworks/dita/sch/checks.sch</filepath></p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="p:41;173:16">When target text is added to a peer map (cross-book) reference, an
+                    <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/D:/syncprojects/blog/topics/resolving_refs_refactoring.dita" xtrc="xmlelement:7;174:33">?oxy-peertext?</xmlelement> processing instruction is added to
+                indicate that the text was updated automatically. If you remove this processing
+                instruction and customize the target text, your customized text will not be
+                disturbed by future automatic updates.</p>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /D:\syncprojects\blog\temp\webhelp-responsive\presentation-reuse?><?workdir-uri file:/D:/syncprojects/blog/temp/webhelp-responsive/presentation-reuse/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="creatingLargerPublications" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="topic:1;3:40" specializations="@props/deliveryTarget">
+  <title class="- topic/title " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="title:1;4:10">Create larger publications from existing ones</title>
+  <prolog class="- topic/prolog " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="prolog:1;5:11">
+    <author class="- topic/author " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="author:1;6:13">Radu Coravu</author>
+  </prolog>
+  <body class="- topic/body " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="body:1;8:9">
+    <image href="images/image12.png" height="80" id="image_ofq_rmb_b5" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="image:1;11:42" dita-ot:image-width="358" dita-ot:image-height="190" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="p:1;12:8">You can merge multiple existing DITA Maps in various new publications. </p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="p:2;13:8">The only existing danger for this would be if you define keys with the same name but
+      different values in both publications. Fortunately DITA 1.3 comes to the rescue with the new
+        <xref href="https://www.oxygenxml.com/dita/1.3/specs/index.html#archSpec/base/keyScopes.html" format="html" scope="external" class="- topic/xref " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="xref:1;17:40"><?ditaot usertext?>keyscopes support</xref> which allows keys with the same name
+      to be resolved to various values on each
+      scope:<codeblock outputclass="language-xml" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="codeblock:1;19:51">&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"&gt;
+&lt;map&gt;
+    &lt;title&gt;Vegetables Soup&lt;/title&gt;
+    &lt;topicref href="carrots/carrots.ditamap" format="ditamap" keyscope="ks1"/&gt;
+    &lt;topicref href="potatoes/potatoes.ditamap" format="ditamap" keyscope="ks2"/&gt;
+&lt;/map&gt;</codeblock></p>
+    <p class="- topic/p " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="p:3;25:8">
+      <image href="images/image13.png" height="50" id="image_oxc_jvw_15" placement="inline" class="- topic/image " xtrf="file:/D:/syncprojects/blog/presentation-reuse/creatingLargerPublications.dita" xtrc="image:2;28:44" dita-ot:image-width="258" dita-ot:image-height="184" dita-ot:horizontal-dpi="144" dita-ot:vertical-dpi="144"/> Even if you have a single root map you can keep related
+      sections or chapters in different DITA Maps. Besides adding more logical structure to your
+      content you never know when you'll reuse those sub-maps in different publications.</p>
+  </body>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:5;9:53" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><link class="- topic/link " format="dita" href="../presentation-reuse/dita_reuse_strategies.dita" mapclass="- map/topicref " role="parent" scope="local" type="topic" xtrc="topicref:1;5:46" xtrf="file:/D:/syncprojects/blog/presentation-reuse/presentation.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>DITA Reuse Strategies</linktext></link></linkpool></related-links></topic>
