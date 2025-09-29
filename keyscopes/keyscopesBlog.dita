@@ -66,8 +66,8 @@
     <p>As stated before, this kind of reuse was not possible using the standard DITA 1.2 standard
       constructs. As it turns out, with DITA 1.3 we can also implement this kind of reuse using
       branch filtering. The DITA samples for this post can be downloaded from <xref
-        href="https://www.oxygenxml.com/forum/files/keyscopesBlogSamples.zip" format="zip"
-        scope="external"/>.</p>
+        href="../resources/keyscopesBlogSamples.zip" format="zip"
+        />.</p>
     <p>As usual any feedback is welcomed.</p>
   </body>
 </topic>

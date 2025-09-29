@@ -77,8 +77,8 @@
         <filepath>peeling.dita</filepath> (in the HTML output folder), one for each filter
       context.</p>
     <p>The DITA samples for this post can be downloaded from <xref
-        href="https://www.oxygenxml.com/forum/files/branchFilteringBlogSamples.zip" format="zip"
-        scope="external"/>.</p>
+        href="../resources/branchFilteringBlogSamples.zip" format="zip"
+        />.</p>
     <p>As usual, any feedback is welcomed.</p>
   </body>
 </topic>
