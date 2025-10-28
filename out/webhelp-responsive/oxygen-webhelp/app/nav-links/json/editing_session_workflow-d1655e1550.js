@@ -1,1 +1,0 @@
-oxy_webhelp_navlinks = {"editing_session_workflow-d1655e1550":{"topics":[{"title":"Editing Session with Oxygen Content Fusion","href":"git-tech-writers\/cf_editing_session_workflow.html","attributes":{"data-id":"topic_vkq_4dv_v2c"},"menu":{"hasChildren":false},"tocID":"topic_vkq_4dv_v2c-d1655e1558","topics":[]}]}};
