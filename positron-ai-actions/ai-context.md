@@ -11,12 +11,18 @@ This is the **Oxygen XML Blog** - a technical blog about XML editing, DITA XML d
 ## Content Architecture
 
 ### Topic Organization
-- **Primary topics location**: `topics/` directory
+- **Primary topics location**: `topics/` directory (150+ DITA topics)
 - **Submaps**: Organized in `maps/` directory (e.g., `dita-articles.ditamap`, `sdk-development-plugins-frameworks-map.ditamap`)
+- **Specialized content**: 
+  - `git-tech-writers/` - Git workflow content with dedicated submap
+  - `george/` - Contributor-specific content
+  - `topics/migrating_word_to_dita_bdc/` - Multi-topic migration guide
+  - `topics/web_author/` - Web Author specific topics
 - **Reusable content**: `reuse/` directory
-- **Images**: `images/` directory
+- **Images**: `images/` directory with organized subdirectories
 - **Key definitions**: `maps/key_definitions.ditamap`
 - **Classification**: Subject scheme maps in `classification/` directory
+- **Build artifacts**: `out/`, `temp/`, `site/` directories (generated content)
 
 ### Topic Types
 Standard DITA topic types are used:
@@ -29,6 +35,10 @@ Standard DITA topic types are used:
 - **File names**: Use lowercase with underscores (e.g., `ai_positron.dita`, `customizing_ai_positron_for_your_dita_xml_project.dita`)
 - **Topic IDs**: Match the filename without extension (e.g., `id="ai_positron"`)
 - **Descriptive names**: File names should clearly indicate content (e.g., `migrating_word_to_dita_bdc/preparing_word_document_for_migration.dita`)
+- **Multi-word topics**: Use underscores to separate words, avoid hyphens in filenames
+- **Subdirectories**: Used for related topic groups (e.g., migration guides, contributor content)
+- **Version indicators**: Some topics include version numbers (e.g., `17.0CSS.dita`, `17.1DITA.dita`)
+- **Special characters**: Avoid spaces in filenames; one exception exists: `"opinions on Oxygen.dita"`
 
 ## Required Metadata Structure
 
@@ -95,6 +105,10 @@ Every new topic MUST include a `<prolog>` section with:
 - **UI Control** (`<uicontrol>`): Menu items, button names, dialog box names
 - **Cross-references** (`<xref>`): Links to other topics or external resources
 - **Key references** (`<ph keyref="oxygen">`): Use for "Oxygen XML Editor" (defined in `maps/key_definitions.ditamap`)
+- **Video embeds**: Use `<object>` with YouTube URLs and `outputclass="iframe"`
+- **Lists**: Extensive use of nested `<ul>` and `<ol>` for structured information
+- **Sections**: Use `<section>` elements with IDs for major topic divisions
+- **Parameters**: Use `<param>` elements within objects for video configuration
 
 ### Link Patterns
 External links to Oxygen documentation:
@@ -144,13 +158,29 @@ The project uses a custom DITA extension framework (`dita-blog.exf`) that includ
 - Custom CSS styling (`frameworks/dita-extension/css/custom.css`)
 - Custom Schematron validation rules (`frameworks/dita-extension/schematron/`)
 - Custom dictionaries for spell checking (`frameworks/dita-extension/dicts/`)
+- Additional frameworks directory: `${pd}/frameworks`
+- Spell check configuration:
+  - Automatic spell checking enabled for XML content types
+  - Ignores specific elements: `codeblock`, `codeph`, `filepath`, `screen`
+  - English language default with acronym and digit ignoring
+  - Custom dictionary loading from additional folder
 
 ## Publishing Configuration
 
 - **Output formats**: WebHelp Responsive (primary), PDF, EPUB
-- **Publishing template**: `publishing/webhelpBlogTemplate/`
-- **Build system**: DITA-OT with Gradle build script
+- **Publishing template**: `publishing/webhelpBlogTemplate/` with custom CSS and XSLT
+- **Build system**: DITA-OT with project file (`blog-project.xml`) and transformation scenarios
+- **WebHelp customizations**:
+  - Custom template: `Oxygen XML Blog WebHelp Template.opt`
+  - Custom CSS: `custom.css`, `oxygen.css`
+  - HTML fragments in `html-fragments/` directory
+  - XSLT customizations in `xslt/` directory
 - **Deployment**: GitHub Actions for validation, Netlify for hosting
+- **Build parameters**: 
+  - `force-unique="true"` for unique output filenames
+  - `clean.temp="no"` for debugging
+  - Custom figure/table link styles set to "TITLE"
+  - WebHelp sticky TOC disabled
 
 ## AI-Specific Considerations
 
@@ -178,11 +208,15 @@ The project uses a custom DITA extension framework (`dita-blog.exf`) that includ
 
 ### AI/Positron Topics
 Topics about AI features typically include:
-- Installation and licensing overview
-- Feature descriptions with examples
-- Links to official documentation
+- Installation and licensing overview (subscription vs enterprise models)
+- Feature descriptions with examples and video embeds
+- Links to official documentation and external resources
 - Practical use cases and workflows
-- Code samples showing XPath functions or custom actions
+- Code samples showing XPath functions (`ai:transform-content`, `ai:verify-content`) or custom actions
+- Integration with XML technologies (Schematron, XSLT)
+- Batch processing capabilities and refactoring actions
+- Visual image recognition features
+- Custom action development examples
 
 ### Migration Topics
 Migration articles typically include:
@@ -216,7 +250,35 @@ When referencing project files in content:
 - **Links**: Ensure all external links are valid and use HTTPS
 - **Consistency**: Follow established patterns from existing topics
 
+## Project-Specific Patterns
+
+### Relationship Tables
+The main map includes a `<reltable>` for establishing related links between topics:
+- Links related diagram topics (PlantUML, Mermaid, task diagrams)
+- Connects Google structured data topics (tasks and FAQ)
+- Creates cross-references without explicit linking in topics
+
+### Topic Hierarchies
+Content is organized in logical hierarchies:
+- **AI topics**: Grouped under "Artificial intelligence (AI)" topichead
+- **Migration topics**: Under dedicated migration section with key="migrate"
+- **Development topics**: Separate topichead for development content
+- **Miscellaneous**: Catch-all section for various topics
+
+### Map References
+Extensive use of `<mapref>` and `<topicref format="ditamap">` for modular organization:
+- Subject scheme maps for classification
+- Dedicated submaps for major topic areas
+- Processing role attributes for resource-only content
+
+### Metadata Patterns
+- WebHelp menu hiding: `<data name="wh-menu"><data name="hide" value="yes"/></data>`
+- Navigation titles: `<topicmeta><navtitle>` for custom navigation labels
+- Print exclusions: `print="no"` for web-only content
+- Scope and format attributes: Consistent use for external HTML references
+
 ---
 
-**Last Updated**: Generated for AI Positron Assistant configuration  
-**Project Repository**: https://github.com/oxygenxml/blog
+**Last Updated**: Enhanced with project structure analysis  
+**Project Repository**: https://github.com/oxygenxml/blog  
+**Generated**: For AI Positron Assistant configuration
