@@ -12,6 +12,7 @@
         </topicref>
         <topicref href="topics/customizing_ai_positron_for_your_dita_xml_project.dita"/>
         <topicref href="topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita"/>
+        <topicref href="topics/vibing_with_ai_positron.dita"/>
         <topicref href="topics/dita-ai-tools.dita"/>
         <topicref href="topics/ai-positron-code-development.dita"/>
         <topicref href="topics/ai_xpath_functions.dita"/>
