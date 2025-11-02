@@ -117,12 +117,24 @@
                         structure of the DITA Map opened in the <b>DITA Maps Manager</b> view,
                         resolve a content reference to the referenced content or to find key
                         definitions which match a specific product name. For example you can run
-                        prompts like this in the chat
-                        view:<codeblock id="codeblock_dnm_rmg_2hc">Replace in the current file all product names with 
+                        prompts like this in the chat view:<codeblock id="codeblock_dnm_rmg_2hc">Replace in the current file all product names with 
 defined key references</codeblock>or:<codeblock id="codeblock_wmz_smg_2hc">Use the attached documents to create a DITA XML topic, 
 add related links in the topic to similar ones, find 
-a good place and insert it in the DITA Map</codeblock>or:<codeblock id="codeblock_vjc_gng_2hc">Add related links in the current topic to similar topics 
-from the project</codeblock></li>
+a good place and insert it in the DITA Map</codeblock><p>
+                            <fig id="fig_ymn_ctg_2hc">
+                                <title>Example: Create a new DITA XML topic from a PDF
+                                    document</title>
+                                <image href="../images/ai/dita-agent-create-topic.gif"
+                                    id="image_tf4_ctg_2hc" scale="50"/>
+                            </fig>
+                        </p>or:<codeblock id="codeblock_vjc_gng_2hc">Add related links in the current topic to similar topics 
+from the project</codeblock><p>
+                            <fig id="fig_utq_gtg_2hc">
+                                <title>Example: Add related links to topic</title>
+                                <image href="../images/ai/compute-rellinks-ai.gif"
+                                    id="image_ex2_htg_2hc" scale="50"/>
+                            </fig>
+                        </p></li>
                     <li><b>Agent</b> - Generic agent useful for exploring and making changes to a
                         variety of projects.</li>
                     <li><uicontrol>Ask</uicontrol> - Read-only agent useful to explore, make plans
@@ -160,9 +172,14 @@ contents.</codeblock></li>
                     <li>Tools to make XML aware changes in documents:<ul id="ul_ept_r4g_2hc">
                             <li>Apply existing XML refactoring operations on documents.
                                 Example:<codeblock id="codeblock_nqd_t4g_2hc">Invoke XML refactor operation to add unique IDs on all pargraphs</codeblock></li>
-                            <li>Apply XML refactoring using XSLT scripts created by the AI.
-                                Example:<codeblock id="codeblock_rjq_dpg_2hc">Invoke XML refactor with custom XSLT to 
-replace all &lt;b> elements with &lt;uicontrol></codeblock></li>
+                            <li>Apply XML refactoring using XSLT scripts created by the AI. Example:<codeblock id="codeblock_rjq_dpg_2hc">Invoke XML refactor with custom XSLT to 
+replace all &lt;b> elements with &lt;uicontrol></codeblock><p>
+                                    <fig id="fig_bkf_rsg_2hc">
+                                        <title>Example: Use Custom XSLT to Refactor</title>
+                                        <image href="../images/ai/refactor-xml-with-custom-xsl.gif"
+                                            id="image_y3y_qsg_2hc" scale="50"/>
+                                    </fig>
+                                </p></li>
                         </ul></li>
                     <li>Tools to call existing AI actions on documents.
                         Example:<codeblock id="codeblock_mvv_3pg_2hc">Invoke the Proofread AI action on the current 
@@ -184,8 +201,14 @@ to the document</codeblock></li>
                 LLM close integrations with the issue tracking system or the version control system,
                 for example to allow the LLM to extract the summary and comments made on a GitHub
                 issue and create a draft documentation topic from it. Example prompt:
-                <codeblock id="codeblock_jfn_vqg_2hc">Obtain description and comments from the DITA OT GitHub issue number 2021 and create a draft documentation 
-topic using them</codeblock></p>
+                    <codeblock id="codeblock_jfn_vqg_2hc">Obtain description and comments from the DITA OT GitHub issue number 2021 and create a draft documentation 
+topic using them</codeblock><fig id="fig_pl4_xsg_2hc">
+                    <title>Example: Using MCP to access Atlassian JIRA</title>
+                    <p><b/><object data="../images/ai/DITA%20Agent.m4v" outputclass="video"/></p>
+                </fig><fig id="fig_yq3_nsg_2hc">
+                    <title>Example: Using MCP to access GitHub issues</title>
+                    <image href="../images/ai/mcp-github.gif" id="image_wpw_nsg_2hc" scale="50"/>
+                </fig></p>
         </section>
         <section id="section_omp_1rg_2hc">
             <title>Conclusion</title>
