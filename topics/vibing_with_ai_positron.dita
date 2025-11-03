@@ -217,6 +217,13 @@ topic using them</codeblock><fig id="fig_pl4_xsg_2hc">
                     <title>Example: Using MCP to access GitHub issues</title>
                     <image href="../images/ai/mcp-github.gif" id="image_wpw_nsg_2hc" scale="50"/>
                 </fig></p>
+            <p>The entire set of tools provided by <uicontrol>AI Positron</uicontrol> can also be
+                provided to external <b>AI Assistants</b> by starting the entire <ph keyref="oxygen"
+                /> application as a local MCP server.<fig id="fig_fsk_31m_2hc">
+                    <title><ph keyref="oxygen"/> as local MCP server</title>
+                    <object data="../images/ai/claude-code-change-id-oxygen-mcp-preview.mov"
+                        outputclass="video"/>
+                </fig></p>
         </section>
         <section id="section_omp_1rg_2hc">
             <title>Conclusion</title>
