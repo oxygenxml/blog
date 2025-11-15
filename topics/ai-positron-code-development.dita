@@ -275,7 +275,7 @@
                 generates the XSLT file and returns only the requested code. </p>
             <p>For a detailed walkthrough on creating and customizing AI actions in Oxygen, see the
                 official documentation: <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/creating_custom_ai_actions.html"
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html"
                     format="html" scope="external">Creating Custom AI Actions in Oxygen</xref>.</p>
             <p><b>Video Tutorial:</b>
                 <xref href="https://youtu.be/s7fppQS0w_c?si=DnFWym9JC08MbJ1g&amp;t=2001"

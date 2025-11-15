@@ -59,7 +59,7 @@
         <section id="section_scz_5ln_jfc">
             <title>Access Content From Your Project</title>
             <p>By default, when <b>researching</b> or <b>asking</b> the AI questions, <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__ai-p-rag"
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/tools_rag_preferences.html"
                     format="html" scope="external">Retrieval Augmented Generation (RAG)</xref> tools
                 give the AI access to <b>search for specific keywords</b> in your current DITA XML
                 documentation and thus provide the AI access to the content of topics which are
@@ -69,7 +69,7 @@
                 project to retrieve the topics with content similar to the new content that needs to
                 be created.</p>
             <p>You can create your own <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html"
                     format="html" scope="external">custom AI actions</xref> that allow RAG access to
                 the current project contents for the AI engine. An example can be found <xref
                     href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/add-related-links.json"
@@ -79,8 +79,8 @@
             <title>Overall Project Context and Audience</title>
             <p>In the Oxygen <b>Preferences</b>
                 <b>AI Positron Assistant</b> preferences page you can set in the <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
-                    format="html" scope="external"><b>Context</b></xref> text area general
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd"
+                    format="html" scope="external"><b>Context prompt</b></xref> text area general
                 information about the current project and the intended audience. This context
                 information will be used subsequently for all AI actions and chat sessions. </p>
             <p>Example of a context which establishes an overall project scope and
@@ -104,8 +104,8 @@ and their understanding of English may vary.</codeblock></p>
             <p>A DITA XML project may define (in various formats) allowed terms and certain synonyms
                 that are not recommended to be used instead of the allowed terminology.</p>
             <p>The <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
-                    format="html" scope="external"><b>Context</b></xref> field in the <b>AI Positron
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd"
+                    format="html" scope="external"><b>Context prompt</b></xref> text area in the <b>AI Positron
                     Assistant</b> preferences page can also contain rules for the most important
                 terms and disallowed synonyms. </p>
             <p>Example of context that establishes some of the most important
@@ -158,8 +158,8 @@ motor vehicle chassis (instead of 'vehicle frame')
                 consistency and clarity in technical documentation. A company's style guide may come
                 in various formats (DITA XML, Markdown, Word, etc.) but some of the most important
                 rules in the style guide can be distilled and set in the <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
-                    format="html" scope="external"><b>Context</b></xref> field within the <b>AI
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd"
+                    format="html" scope="external"><b>Context prompt</b></xref> text area within the <b>AI
                     Positron Assistant</b> preferences page.</p>
             <p>Example of context that establishes some of the most important style guide
                 rules:<codeblock id="codeblock_y3q_m14_jfc"># Style guide
@@ -219,8 +219,8 @@ end result => result
                     format="html" scope="external">here</xref>.</p>
             <p>The most important XML vocabulary changes (DTD/schema references, newly added XML
                 elements) can be distilled and set in the <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
-                    format="html" scope="external"><b>Context</b></xref> field within the <b>AI
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd"
+                    format="html" scope="external"><b>Context prompt</b></xref> text area within the <b>AI
                     Positron Assistant</b> preferences page.</p>
             <p>Example of vocabulary changes described in the prompt context:</p>
             <codeblock id="codeblock_xrj_jq4_jfc"># Vocabulary Changes

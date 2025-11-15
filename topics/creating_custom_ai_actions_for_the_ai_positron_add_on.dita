@@ -10,7 +10,7 @@
     </prolog>
     <body>
         <p>In the <xref
-                href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_b5p_y14_wxb"
+            href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/actions_preferences.html"
                 format="html" scope="external">AI Positron Assistant preferences page</xref>, you
             can define a reference to a folder that contains custom actions.</p>
         <p>Once the add-on is installed, the New Document wizard can be used to create either a new
