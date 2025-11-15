@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="vibing_with_ai_positron">
-    <title>Practical Steps for Vibe Writing with AI Positron</title>
+    <title>Practical Steps for Vibe Authoring with AI Positron</title>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
@@ -203,7 +203,7 @@ to the document</codeblock></li>
                     Positron</uicontrol> allows you to connect to various MCP servers and allow the
                 LLM to call tools implemented on remote or local servers.</p>
             <p>Sample configurations can be found in the <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/model-context-protocol.html"
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/model_context_protocol_preferences.html"
                     format="html" scope="external"><ph keyref="oxygen"/> user's manual</xref>.</p>
             <p><b>Model Context Protocol</b> gives <b>AI Positron</b> the ability to provide for the
                 LLM close integrations with the issue tracking system or the version control system,
