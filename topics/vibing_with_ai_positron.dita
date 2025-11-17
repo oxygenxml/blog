@@ -10,23 +10,39 @@
     </prolog>
     <body>
         <p>We initially started work on the <uicontrol>AI Positron</uicontrol> add-on for <ph
-                keyref="oxygen"/> more than 2 years ago by creating useful AI actions to improve
-            readability of content, correct grammar, translate, proofread and so on. Gradually we
-            realised that even when invoking our careful made prompts wrapped as such AI actions you
-            need flexibility to discuss with the AI further about results. So we added support to
-            create custom AI actions specific for your needs. Such AI actions based on prompts tuned
-            by our or your experts continue to be useful for fixed use cases and for people who are
-            just starting using AI tools.</p>
+                keyref="oxygen"/> more than 2 years ago by creating useful AI actions to <b>improve
+                readability</b> of content, <b>correct grammar</b>, <b>translate</b>,
+                <b>proofread</b> and so on. Gradually we realised that even when invoking our
+            careful made prompts wrapped as such AI actions you need flexibility to discuss with the
+            AI further about results. So we added support to create custom AI actions specific for
+            your needs. Such AI actions based on prompts tuned by our or your experts continue to be
+            useful for precise use cases and for people who are just starting using AI tools.</p>
         <p>In time we also started to explore and enlarge the capabilities of using chat to converse
             with the AI, attach all sorts of file types (<filepath>PDF</filepath>,
-                <filepath>Word</filepath>, <filepath>Markdown</filepath>, images) to create
-            documentation drafts, and make changes to project content.</p>
+                <filepath>Word</filepath>, <filepath>Markdown</filepath>, images) to <b>create
+                documentation drafts</b>, <b>explore</b> and <b>make changes</b> in the current
+            project.</p>
         <p>The chat view in any <b>AI Assistant</b> application like <uicontrol>AI
                 Positron</uicontrol> is the new <uicontrol>console</uicontrol>, you use it to
                 <b>direct</b> the AI, <b>affect changes</b>, <b>preview</b> them and refine until
-            you have a working draft. You remain in control of a <b>wonderfully imperfect</b> tool.
+            you have a working draft. You remain in control of a <b>powerful and imperfect</b> tool.
             As before in the past computers have moved writing and coding to a higher level of
             abstraction.</p>
+        <section>
+            <title>Vibe Authoring</title>
+            <p>I would define the <b>Vibe Authoring</b> support in <b>AI Positron</b> add-on as a
+                feature that allows you to:<ul id="ul_pjh_xvk_3hc">
+                    <li>Define a <b>project context prompt</b> which gives the AI models general
+                        information about your project, important style guide, terminology and
+                        structure rules.</li>
+                    <li><b>Chat</b> with the AI to <b>explore</b> the current project's contents or
+                        to <b>affect changes</b> in the project. All changes done by the AI can be
+                            <b>viewed</b> and <b>reverted</b> if necessary.</li>
+                    <li>Connect <b>Model Context Protocol</b> servers to provide tools that
+                        integrate <b>AI Positron</b> with other data sources in your company (for
+                        example ticketing system, issues list, etc).</li>
+                </ul></p>
+        </section>
         <section id="section_igw_5zy_dhc">
             <title>Novice to Expert</title>
             <p>If one would attempt to divide people in novices and experts, they would soon figure
@@ -41,12 +57,12 @@
             <p>This article is an attempt to give you a better understanding about how the <ph
                     keyref="oxygen"/>
                 <uicontrol>AI Positron</uicontrol> add-on works and how it can be customized to
-                maximize the quality of your interactions.</p>
-            <p>I am not of the opinion we must not consider using AI tools for all our daily
-                activities, our brains need the effort and work we put into <b>writing</b> in order
-                to better understand the task at hand. There are still lots of activities which can
-                be accomplished more quickly and with sufficient quality (generating drafts,
-                improving content quality) by using in a controller manner AI tools.</p>
+                maximize the quality of your vibe authoring interactions.</p>
+            <p>I am not of the opinion we must consider using AI tools for all our daily work, our
+                brains need the effort and work we put into <b>writing</b> in order to better
+                understand the task at hand. There are still lots of activities which can be
+                accomplished more quickly and with sufficient quality (generating drafts, improving
+                content quality) by using in a controller manner AI tools.</p>
         </section>
         <section id="section_ecx_l4y_dhc"><title>Use a Version Control System</title><p>You need to
                     <b>view</b> and <b>revert changes</b> made by the <b>AI</b>, to keep a
