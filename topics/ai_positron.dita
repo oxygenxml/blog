@@ -43,7 +43,7 @@
               access to the <b>OpenAI</b>, <b>Claude</b> or <b>Google Gemini</b> LLMs. <p>Users can
                 create new subscription accounts or authenticate using their existing <b>Google</b>
                 or <b>Github</b> accounts. The first subscription month is free and a <xref
-                  href="https://www.oxygenxml.com/ai_positron/buy.html#ai-positron-service"
+                  href="https://www.oxygenxml.com/ai_positron_service/buy.html"
                   format="html" scope="external">monthly subscription</xref> can be purchased to
                 receive a number of credits each month.</p><p>You can control which AI engine is
                 used by default for performing actions and for chatting. This can be done from the
@@ -60,7 +60,7 @@
               </ul><p>From the licensing point of view, the <b>AI Positron Enterprise</b> add-on
                 works free of charge with any Oxygen XML Editor installation using an
                   <b>Enterprise</b> license type for Oxygen XML Editor. For other cases, <xref
-                  href="https://www.oxygenxml.com/ai_positron/buy.html?licenseType=enterprise#ai-positron-enterprise"
+                    href="https://www.oxygenxml.com/ai_positron_desktop/buy.html"
                   format="html" scope="external">a special license key</xref> needs to be purchased
                 for the add-on to enable this direct access. You can use the Register button in the
                 AI Positron side view to configure the special license key.</p></li>
@@ -68,15 +68,7 @@
         <li><xref href="https://www.oxygenxml.com/doc/ug-webauthor/topics/wa-ai-positron.html"
             format="html" scope="external">Oxygen XML Web Author</xref> also allows installing an
             <b>AI Positron</b> plugin with similar functionality as the one in the Oxygen Desktop
-          application. Currently, the <xref
-            href="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html" format="html"
-            scope="external">WebAuthor</xref> and <xref href="https://fusion.oxygenxml.com/"
-            format="html" scope="external">Content Fusion</xref> online demo websites come with the
-          AI Positron add-on pre-installed. In the near future, an <xref
-            href="https://www.oxygenxml.com/ai_positron/installation.html#oxygen-ai-positron-assistant-enterprise-for-web-author"
-            format="html" scope="external"><b>AI Positron Enterprise</b></xref> plugin will allow
-          using either a license server or a special Web Author license component to configure a
-          custom AI engine. </li>
+          application.</li>
       </ul>
     </section>
     <section id="section_qwd_mbv_4bc">

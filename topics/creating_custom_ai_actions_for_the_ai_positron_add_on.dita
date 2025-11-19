@@ -151,7 +151,7 @@
                   value. The context prompt defined in the Oxygen AI Positron Preferences page is
                   used as a prefix for all AI action prompts.</p>
                 <p><xref
-                    href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/prompts/action_validate_and_fix.md"
+                    href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/prompts/convert-dita-type.md"
                     format="html" scope="external">Here is an example of a large prompt
                   file</xref>.</p>
                 <p>A custom AI action can expand the context prompt in a specific part of its prompt
@@ -198,7 +198,7 @@
                   value. The context prompt defined in the Oxygen AI Positron Preferences page is
                   used as a prefix for all AI action prompts.</p>
                 <p><xref
-                    href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/prompts/action_validate_and_fix.md"
+                    href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/prompts/convert-dita-type.md"
                     format="html" scope="external">Here is an example of a large prompt
                   file</xref>.</p>
                 <p>A custom AI action can expand the context prompt in a specific part of its prompt

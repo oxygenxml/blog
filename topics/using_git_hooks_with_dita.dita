@@ -24,8 +24,7 @@
                 <li>If you are running on Windows, you either need an Oxygen Git client version 2.0.0 or one newer than
           2.1.1 (at the time this post is written, 2.1.1 was the latest version, but a new one will
           soon be released). We are basically avoiding versions that come bundled with JGit 5.6.0,
-          which has this <xref href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=558577"
-            format="html" scope="external">known issue</xref>.<p>If you need to install version
+          which has a known issue.<p>If you need to install version
             2.0.0 of the plugin, since this version is no longer available in the add-on, you have
             to install it manually:<ol id="ul_kkb_1ct_nlb">
               <li>Uninstall the current Oxygen Git client version, if one is present.</li>

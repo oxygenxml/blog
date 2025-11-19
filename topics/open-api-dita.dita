@@ -21,9 +21,7 @@
             Converter add-on, and then publish to WebHelp Responsive output.</p>
         <ol id="ul_yjr_kyn_wsb">
             <li>Download the Yaml or JSON representation of an OpenAPI specification to the local
-                disk. For this example, I used the OpenAPI documentation from the Oxygen Content
-                Fusion server: <xref href="https://fusion.oxygenxml.com/api/swagger.json"
-                    format="json" scope="external"/>.</li>
+                disk.</li>
             <li>Download and install <xref href="https://github.com/Mermade/widdershins"
                     format="html" scope="external">widdershins</xref>.</li>
             <li>From a command prompt or terminal, produce a Markdown representation of the original

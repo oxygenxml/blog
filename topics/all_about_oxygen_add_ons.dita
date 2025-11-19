@@ -124,9 +124,6 @@
                             format="html" scope="external"/></li>
                 </ul></p>
             <p>Useful add-ons with public sources: <ul id="ul_ub2_ywg_lkb">
-                                        <li>Git support add-on: <xref
-                                                  href="https://github.com/oxygenxml/oxygen-git-plugin"
-                                                  format="html" scope="external"/></li>
                                         <li>Batch Resources Convertor add-on: <xref
                                                   href="https://github.com/oxygenxml/oxygen-resources-converter"
                                                   format="html" scope="external"/></li>
@@ -169,6 +166,9 @@
                                 </ul></p>
                         <p>Useful add-ons with private repositories (can be installed from
                                 application default add-on update site):<ul>
+                                        <li>Git support add-on: <xref
+                                                        href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                                                        format="html" scope="external"/></li>
                                         <li>Content Fusion Oxygen add-on - bundled with Oxygen.</li>
                                         <li>WebHelp Feedback Oxygen add-on.</li>
                                         <li>Emmet plugin for Oxygen.</li>
