@@ -13,11 +13,11 @@
                 keyref="oxygen"/> more than 2 years ago by creating useful AI actions to <b>improve
                 readability</b> of content, <b>correct grammar</b>, <b>translate</b>,
                 <b>proofread</b>, and so on. Gradually, we realized that even when invoking our
-            carefully made prompts wrapped as such AI actions, you need flexibility to discuss with
-            the AI further about results. So we added support to create custom AI actions specific
-            to your needs. Such AI actions, based on prompts tuned by our or your experts, continue
-            to be useful for precise use cases and for people who are just starting to use AI
-            tools.</p>
+            carefully made prompts wrapped as such AI actions, you need flexibility to further
+            discuss the results with the AI. So we added support to create custom AI actions
+            specific to your needs. Such AI actions, based on prompts tuned by your experts (or
+            ours), continue to be useful for precise use cases and for people who are just starting
+            to use AI tools.</p>
         <p>In time, we also started to explore and expand the capabilities of using chat to converse
             with the AI, attach all sorts of file types (<filepath>PDF</filepath>,
                 <filepath>Word</filepath>, <filepath>Markdown</filepath>, images) to <b>create
@@ -33,12 +33,12 @@
             <title>Vibe Authoring</title>
             <p>I would define the <b>Vibe Authoring</b> support in the <b>AI Positron</b> add-on as
                 a feature that allows you to:<ul id="ul_pjh_xvk_3hc">
-                    <li>Define a <b>project context prompt</b> which gives the AI models general
+                    <li>Define a <b>project context prompt</b> that gives the AI models general
                         information about your project, important style guide, terminology, and
                         structure rules.</li>
                     <li><b>Chat</b> with the AI to <b>explore</b> the current project's contents or
                         to <b>affect changes</b> in the project. All changes made by the AI can be
-                            <b>viewed</b> and <b>reverted</b> if necessary.</li>
+                            <b>viewed</b> and <b>reverted</b>, if necessary.</li>
                     <li>Connect <b>Model Context Protocol</b> servers to provide tools that
                         integrate <b>AI Positron</b> with other data sources in your company (for
                         example, ticketing system, issues list, etc.).</li>
@@ -60,24 +60,24 @@
                     keyref="oxygen"/>
                 <uicontrol>AI Positron</uicontrol> add-on works and how it can be customized to
                 maximize the quality of your vibe authoring interactions.</p>
-            <p>I am not of the opinion that we must consider using AI tools for all our daily work;
-                our brains need the effort and work we put into <b>writing</b> in order to better
+            <p>I am not of the opinion that we must consider using AI tools for all of our daily
+                work; our brains need the effort and work we put into <b>writing</b> to better
                 understand the task at hand. There are still many activities that can be
                 accomplished more quickly and with sufficient quality (generating drafts, improving
                 content quality) by using AI tools in a controlled manner.</p>
         </section>
-        <section id="section_ecx_l4y_dhc"><title>Use a Version Control System</title><p>You need to
-                    <b>view</b> and <b>revert changes</b> made by the <b>AI</b>, to keep a
+        <section id="section_ecx_l4y_dhc"><title>Use a Version Control System</title><p>Sometimes,
+                you need to <b>view</b> and <b>revert changes</b> made by the <b>AI</b>, to keep a
                     <b>history</b> of past changes in your project. You also need to
                     <b>collaboratively</b> work with other <b>people</b> or with AI <b>agents</b>,
                 create separate <b>branches</b> for working on features, keep your content
                     <b>secure</b>, and eventually <b>publish</b> it.</p><p>So a version control
                 system for your project, like <b>Git</b> or a commercial <b>CCMS</b>, is a
                     <b>must</b>.</p><p><ph keyref="oxygen"/>'s free <b>Git client add-on</b> is a
-                great tool which gives technical documentation writers just about every feature
+                great tool that gives technical documentation writers just about every feature
                 needed to work with Git projects: support to pull, make changes, preview them, push,
-                a useful <b>History</b> side view, switch branches, and stash changes.</p><p>
-                <image href="../images/git-add-on-oxygen.png" id="image_xsy_3ry_dhc" scale="40"
+                a useful <b>History</b> side view, switch branches, and stash changes.</p><p><image
+                    href="../images/git-add-on-oxygen.png" id="image_xsy_3ry_dhc" scale="40"
                 /></p><xref href="../git-tech-writers/using_git_for_technical_writing.dita">Using
                 Git For Technical Writing</xref></section>
         <section id="section_lcw_m4y_dhc">
@@ -85,18 +85,18 @@
             <p>LLM Models have a <b>limited context window</b> and start out not knowing anything
                 about the intricacies of your current documentation project. They can use tools to
                 explore your project's structure, but it's more efficient to create a <b>project
-                    context prompt</b> which becomes part of each invoked AI action and chat
+                    context prompt</b>, which becomes part of each invoked AI action and chat
                 conversation.</p>
             <p><xref href="customizing_ai_positron_for_your_dita_xml_project.dita"/>.</p>
             <p>The project context prompt contains an overview of your project's intention,
                 structure, rules, and style guide. It must be kept as short and informative as
-                possible. In the <uicontrol>AI Positron Preferences</uicontrol> page, one can
+                possible. In the <uicontrol>AI Positron Preferences</uicontrol> page, you can
                 specify the entire project context prompt either directly or referenced as a
-                separate file which may reside in your project.</p>
+                separate file that may reside in your project.</p>
             <p><image href="../images/project-context-prompt-prefs.png" id="image_zkk_fsy_dhc"
                     scale="40"/></p>
             <p>The most recent <uicontrol>AI Positron</uicontrol> release added a new AI action
-                named <uicontrol>Generate agent instructions</uicontrol> which can help you create
+                named <uicontrol>Generate agent instructions</uicontrol> that can help you create
                 the initial project context prompt content.</p>
             <p>Examples of project context prompt files for <b>AI Positron</b> in Markdown
                     format:<ul id="ul_y4l_msy_dhc">
@@ -112,9 +112,9 @@
         </section>
         <section id="section_ol4_n4y_dhc">
             <title>Choose your LLM Model</title>
-            <p>You need a quality LLM model to make quality changes. An LLM model which is both
-                efficient, cost-effective, and has a high context window. From our extensive testing
-                and experience, we generally recommend <b>OpenAI GPT 4.1</b>, <b>Claude Sonet 4</b>,
+            <p>You need a quality LLM model to make quality changes. An LLM model that is efficient,
+                cost-effective, and has a high context window. From our extensive testing and
+                experience, we generally recommend <b>OpenAI GPT 4.1</b>, <b>Claude Sonet 4</b>,
                     <b>Haiku 4.5</b>, or <b>Gemini 2.5 Flash</b>.</p>
             <p><b>Context</b> is the key here. The LLM receives a project context prompt, but it
                 also needs to explore the project, read content, and make changes. So your LLM
@@ -126,15 +126,15 @@
         </section>
         <section id="section_lh2_44y_dhc">
             <title>Choose the Chat Mode</title>
-            <p><b>AI Positron</b> comes with three chat modes predefined:<ul id="ul_qyd_bmg_2hc">
-                    <li><uicontrol>DITA Agent</uicontrol> - Agentic mode which makes changes in a
-                        DITA XML project, comes with a predefined system prompt which instructs the
+            <p><b>AI Positron</b> comes with three predefined chat modes:<ul id="ul_qyd_bmg_2hc">
+                    <li><uicontrol>DITA Agent</uicontrol> - Agentic mode that makes changes in a
+                        DITA XML project, comes with a predefined system prompt that instructs the
                         LLM about the base requirements of working in a DITA XML project and a
                         minimal style guide of rules. It has access to general tools to explore the
-                        project and make changes, but also to DITA XML specific tools to obtain the
-                        structure of the DITA Map opened in the <b>DITA Maps Manager</b> view,
+                        project and make changes, but also to DITA XML-specific tools to obtain the
+                        structure of the DITA map opened in the <b>DITA Maps Manager</b> view,
                         resolve a content reference to the referenced content, or to find key
-                        definitions which match a specific product name. For example, you can run
+                        definitions that match a specific product name. For example, you can run
                         prompts like this in the chat view:<codeblock id="codeblock_dnm_rmg_2hc">Replace in the current file all product names with 
 defined key references</codeblock>or:<codeblock id="codeblock_wmz_smg_2hc">Use the attached documents to create a DITA XML topic, 
 add related links in the topic to similar ones, find 
@@ -155,31 +155,31 @@ from the project</codeblock><p>
                         </p></li>
                     <li><b>Agent</b> - Generic agent useful for exploring and making changes to a
                         variety of projects.</li>
-                    <li><uicontrol>Ask</uicontrol> - Read-only agent useful to explore and make
-                        plans without making actual changes until you switch to one of the other
-                        agents. </li>
+                    <li><uicontrol>Ask</uicontrol> - Read-only agent useful for exploring and
+                        integrating plans without making actual changes until you switch to one of
+                        the other agents. </li>
                 </ul></p>
-            <p>Each defined agent has a system prompt and references a set of tools which can be
-                used by the LLM. You can define your own agents and have them appear in the
-                    <b>Chat</b> view. A general overview of the tools available to these agentic
-                chat modes is available below.</p>
+            <p>Each defined agent has a system prompt and references a set of tools that can be used
+                by the LLM. You can define your own agents and have them appear in the <b>Chat</b>
+                view. A general overview of the tools available to these agentic chat modes is
+                available below.</p>
         </section>
         <section id="section_jks_p4y_dhc">
             <title>General Overview of Available Tools</title>
-            <p><uicontrol>AI Positron</uicontrol> comes bundled with a variety of tools which are
-                offered to the LLM in order to explore and make changes to content. Here are some of
-                the categories of available tools along with prompts you can test for yourself in
-                the <uicontrol>AI Positron</uicontrol> chat view:<ul id="ul_o4h_kng_2hc">
+            <p><uicontrol>AI Positron</uicontrol> comes bundled with a variety of tools that are
+                offered to the LLM to explore and make changes to content. Here are some of the
+                categories of available tools along with prompts you can test for yourself in the
+                    <uicontrol>AI Positron</uicontrol> chat view:<ul id="ul_o4h_kng_2hc">
                     <li>Tools to explore the overall project. The chat modes have access to:<ul
                             id="ul_prx_mng_2hc">
-                            <li>Tool which can perform keyword search in the project. For example,
+                            <li>Tool that can perform keyword search in the project. For example,
                                 you can ask
                                     it:<codeblock id="codeblock_wv1_4ng_2hc">Find topics about Git Push in the project 
 and give me an overview of the most suitable ones.</codeblock><note
                                     id="note_djq_ddr_3hc">This tool relies on the indexing
                                     capabilities of <ph keyref="oxygen"/>. If you are working with
-                                    DITA Maps opened from remote storage systems like CMSs, in the
-                                        <uicontrol>Preferences->Open/Find Resource</uicontrol> page
+                                    DITA maps opened from remote storage systems like a CMS, in the
+                                        <uicontrol>Preferences->Open/Find Resource</uicontrol> page,
                                     you should check the <uicontrol>Enable indexing for remote
                                         resources</uicontrol> checkbox.</note></li>
                             <li>Grep and perform exact string matches in the project, even by
@@ -223,7 +223,7 @@ replace all &lt;b> elements with &lt;uicontrol></codeblock><p>
                                 </p></li>
                         </ul></li>
                     <li>Tools to call existing AI actions on documents.
-                        Example:<codeblock id="codeblock_mvv_3pg_2hc">Invoke the Proofread AI action on the current 
+                        Examples:<codeblock id="codeblock_mvv_3pg_2hc">Invoke the Proofread AI action on the current 
 document content, then save the proposed changes 
 to the document</codeblock>or:<codeblock id="codeblock_zml_cqg_2hc">Invoke the improve readability AI action on the current 
 document content, then save the proposed changes 
@@ -260,9 +260,9 @@ topic using them</codeblock><fig id="fig_pl4_xsg_2hc">
         </section>
         <section id="section_omp_1rg_2hc">
             <title>Conclusion</title>
-            <p>Obtaining quality output and advice from the LLM, making accurate changes using it,
-                is all about the application giving the LLM enough context and allowing it to find
-                extra context if the need arises.</p>
+            <p>Obtaining quality output and advice from the LLM, and making accurate changes using
+                it, is all about the application giving the LLM enough context and allowing it to
+                find extra context if the need arises.</p>
             <p>Starting with the use of quality LLMs, combined with a well-created and distilled
                 project context prompt, then continuing with tools that give the LLM access to
                 explore the project and make consistent changes, your short prompts and commands end
