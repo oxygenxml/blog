@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="dita_ai_tools">
+  <title>Depășirea provocărilor – Editarea conținutului DITA XML cu instrumente AI (Prezentare)</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2025-04-14"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Standardul DITA XML este recunoscut (pe bună dreptate) pentru capacitățile sale versatile de reutilizare, care permit crearea de conținut coerent și utilizabil pentru a acoperi toate nevoile de publicare ale unei companii dintr-o singură sursă.</p>
+    <p>Instrumentele de editare AI pot aduce numeroase beneficii suplimentare pentru redactorii de documentație tehnică, oferind capabilități de rescriere a conținutului pentru îmbunătățirea lizibilității, verificare gramaticală, generare de conținut, generare de rapoarte și multe altele.</p>
+    <p>Cum interacționează aceste beneficii cu funcționalitățile DITA XML (reutilizarea conținutului, specializare) și cum pot fi dezvoltate instrumentele AI pentru a lucra mai bine cu aceste caracteristici specifice DITA XML?</p>
+    <p>Prezentarea de mai jos enumeră diverse acțiuni utile legate de AI și verifică modul în care acestea interacționează cu conținutul DITA XML, în special cu funcționalități precum specializarea, reutilizarea conținutului sau filtrarea. Totul are în vedere modul în care acțiunile AI pot fi făcute mai conștiente de DITA XML pentru a fi mai bine integrate cu nevoile specifice ale unei organizații.</p>
+    <p>
+      <foreign outputclass="html-embed">&lt;iframe src="../resources/dita-ai-tools.pdf" height="600" width="100%"/&gt;</foreign>
+    </p>
+  </body>
+</topic>

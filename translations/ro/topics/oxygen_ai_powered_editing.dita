@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="oxygen-ai-powered-editing">
+  <title>Editare XML bazată pe AI (Prezentare)</title>
+  <prolog>
+    <author>George Bina</author>
+    <critdates>
+      <created date="2024-09-11"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Am dezvoltat instrumente bazate pe AI care, considerăm noi, vor aduce beneficii semnificative creatorilor de documentație tehnică. Aceste instrumente sunt concepute pentru a îmbunătăți experiența de editare și pentru a oferi asistență bazată pe AI pentru documentația publicată.</p>
+    <p><b>George Bina</b> a realizat o prezentare intitulată „<b>Editare XML bazată pe AI</b>”, care oferă o prezentare cuprinzătoare a principalelor funcționalități AI pe care le-am implementat în aplicația noastră în ultimii ani. Am inclus această prezentare mai jos pentru ca clienții și integratorii noștri să înțeleagă mai bine <b>instrumentele de editare XML bazate pe AI</b> pe care le oferim.</p>
+    <p>
+      <foreign outputclass="html-embed">&lt;iframe src="../resources/OxygenAI.pdf" height="600" width="100%"/&gt;</foreign>
+    </p>
+  </body>
+</topic>

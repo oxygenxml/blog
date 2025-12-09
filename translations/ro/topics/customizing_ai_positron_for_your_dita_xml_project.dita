@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="customizing_ai_tools_for_your_dita_xml_project_terminology_style_guide_and_specializations">
+  <title>Personalizarea AI Positron pentru proiectul dumneavoastră DITA XML</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2025-05-19"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p><xref href="ai_positron.dita"/> include o varietate de acțiuni AI utile concepute pentru a crește productivitatea. Totuși, proiectele <b>DITA XML</b> au cerințe specifice. Acestea necesită adesea <b>terminologie</b> particulară și respectarea <b>regulilor din ghidul de stil</b> sau pot depinde de <b>DITA</b> DTD-uri/scheme de specializare specifice companiei, care diferă de <b>DTD-urile DITA</b> standard pe care sunt antrenate modelele AI. Prin urmare, pentru a genera conținut de calitate folosind acțiunile AI, suplimentul trebuie configurat astfel încât să înțeleagă particularitățile proiectului <b>DITA XML</b> cu care va fi utilizat. </p>
+    <section id="section_kjj_sdn_jfc">
+      <title>Avantaje/Dezavantaje ale instrumentelor AI</title>
+    </section>
+    <p>Datorită capacității lor de a <b>rescrie</b>, de a <b>cerceta</b> și de a <b>genera schițe de documentație</b>, modelele AI pot fi utile în diverse situații, atâta timp cât pot fi controlate și impuse aspectele specifice proiectului DITA XML curent.</p>
+    <table rowsep="1" colsep="1" frame="all" id="table_cmr_5dn_jfc">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="c1" colwidth="1*"/>
+        <colspec colnum="2" colname="c2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Bine</entry>
+            <entry>Rău/Urat</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry><b>Rescrierea</b> conținutului (corectarea gramaticii, voce activă, îmbunătățirea stilului și a lizibilității).</entry>
+            <entry>Ghidul de stil specific companiei poate impune anumite reguli care, implicit, nu sunt luate în considerare de modelul AI.</entry>
+          </row>
+          <row>
+            <entry><b>Generarea de conținut de tip schiță</b> prin combinarea mai multor surse (inclusiv imagini, <b>PDF</b> atașat, documente <b>Word</b> sau <b>Markdown</b>).</entry>
+            <entry>Pot apărea „halucinații” la generarea conținutului dacă nu este furnizată suficientă informație contextuală de calitate. Terminologia generală sau ghidul de stil nu sunt luate în considerare. Specializările DITA XML nu sunt nici ele luate în considerare implicit.</entry>
+          </row>
+          <row>
+            <entry><b>Cercetare</b> / <b>Explicare</b> concepte (chat).</entry>
+            <entry>Implicit, un model AI răspunde la întrebări pe baza antrenamentului său și nu pe baza conținutului din manualul de utilizare curent.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_scz_5ln_jfc">
+      <title>Acces la conținutul din proiectul dumneavoastră</title>
+      <p>Implicit, când <b>cercetați</b> sau <b>adresați</b> întrebări AI-ului, instrumentele <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/tools_rag_preferences.html" scope="external" format="html">Retrieval Augmented Generation (RAG)</xref> oferă AI-ului acces la <b>căutarea unor cuvinte cheie specifice</b> în documentația DITA XML curentă și astfel permit AI-ului accesul la conținutul topicurilor relevante pentru discuția dumneavoastră.</p>
+      <p>Acțiunile AI incluse, precum <b>Generate Documentation Draft</b>, <b>Expand Draft</b>, <b>Create Topics</b>, oferă modelului AI acces la proiectul DITA XML indexat curent pentru a regăsi topicurile cu conținut similar cu cel nou ce trebuie creat.</p>
+      <p>Puteți crea propriile <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html" scope="external" format="html">acțiuni AI personalizate</xref> care permit motorului AI acces RAG la conținutul proiectului curent. Un exemplu poate fi găsit <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/add-related-links.json" scope="external" format="html">aici</xref>.</p>
+    </section>
+    <section id="section_zlt_mpn_jfc">
+      <title>Contextul general al proiectului și publicul țintă</title>
+      <p>În pagina de preferințe <b>Preferences</b> <b>AI Positron Assistant</b> din Oxygen, puteți seta în zona de text <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd" scope="external" format="html">
+          <b>Context prompt</b>
+        </xref> informații generale despre proiectul curent și publicul țintă. Aceste informații de context vor fi folosite ulterior pentru toate acțiunile AI și sesiunile de chat. </p>
+      <p>Exemplu de context care stabilește scopul general al proiectului și publicul țintă:<codeblock id="codeblock_vkr_btn_jfc" xml:space="preserve"># Contextul proiectului
+
+Proiectul curent conține documentație tehnică pentru un vehicul de tip dune buggy, distractiv și ușor de condus, numit Sharkfin Rover.
+
+# Public țintă
+
+Documentația tehnică trebuie să fie precisă și ușor de înțeles.
+Clienții noștri nu sunt tehnici, de obicei sunt începători în condus,
+iar nivelul lor de înțelegere a limbii engleze poate varia.</codeblock></p>
+      <p>Aceleași informații de context ar trebui extinse pentru a include terminologia și informațiile din ghidul de stil pentru proiectul curent. Un exemplu poate fi găsit <xref href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md" scope="external" format="html">aici </xref>.</p>
+    </section>
+    <section id="section_ugq_jpn_jfc">
+      <title>Reguli de terminologie</title>
+      <p>Un proiect DITA XML poate defini (în diverse formate) termeni acceptați și anumiți sinonimi care nu sunt recomandați a fi folosiți în locul terminologiei permise.</p>
+      <p>Zona de text <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd" scope="external" format="html">
+          <b>Context prompt</b>
+        </xref> din pagina de preferințe <b>AI Positron Assistant</b> poate conține și reguli pentru cei mai importanți termeni și sinonimele interzise. </p>
+      <p>Exemplu de context care stabilește unii dintre cei mai importanți termeni:<codeblock id="codeblock_spl_xtn_jfc" xml:space="preserve"># Terminologie
+
+Termenii specifici din conținutul DITA XML trebuie marcați cu elementul &lt;term&gt;. Păstrați toți acești termeni și nu încercați să îi înlocuiți cu posibili sinonimi.
+
+Se va prefera întotdeauna utilizarea termenilor de mai jos în locul posibilelor sinonime:
+```
+Sharkfin Rover (în loc de 'Sharkfin Buggy')
+vehicle (în loc de 'car')
+lorry (în loc de 'truck')
+rear position lamp (în loc de 'tailgate')
+powertrain (în loc de 'drivetrain')
+petrol engine (în loc de 'Otto engine')
+motorcycle (în loc de 'motor-bike')
+engine (în loc de 'motor')
+electronic stability control (în loc de 'ESP')
+motor vehicle chassis (în loc de 'vehicle frame')
+```</codeblock></p>
+      <p>Odată ce modelul AI primește regulile de terminologie impuse ca parte a contextului prompt, le va lua în considerare pentru toate interacțiunile (de exemplu, pentru crearea de schițe de documentație din conținut scris fără respectarea terminologiei).</p>
+      <p>Suplimentul <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html" scope="external" format="html">Terminology Checker</xref> din Oxygen poate fi configurat cu un fișier de reguli de terminologie care permite evidențierea în timp real a problemelor de terminologie și propunerea de înlocuiri pentru acestea. Un exemplu de fișier de reguli de terminologie poate fi găsit <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/oxygen-term-checker/terms.xml" scope="external" format="html">aici</xref>. Există și o <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/create-term-checker-rules.json" scope="external" format="html">acțiune AI exemplu</xref> care poate genera un fișier de reguli XML din supliment, pe baza unui ghid de stil.</p>
+      <p>Odată ce suplimentul <b>Terminology Checker</b> este instalat și semnalează problemele de terminologie în modul vizual <uicontrol>Author</uicontrol>, puteți folosi acțiunea AI <uicontrol>Fix Terminology Problems</uicontrol> pentru a corecta problemele de terminologie din conținutul topicului deschis.</p>
+      <p>În concluzie, puteți adăuga cele mai importante reguli de terminologie în setarea <uicontrol>Context</uicontrol> pentru a crea și procesa conținut DITA XML respectând direct regulile. Totuși, instalarea suplimentului terminology checker vă permite să vedeți problemele de terminologie evidențiate în editorul vizual și să le corectați folosind motorul AI cu acțiunea AI inclusă <uicontrol>Fix Terminology Problems</uicontrol>.</p>
+    </section>
+    <section id="section_fg1_g14_jfc">
+      <title>Ghid de stil</title>
+      <p>Un ghid de stil este un set de standarde și recomandări specifice proiectului, folosite pentru a asigura coerența și claritatea documentației tehnice. Ghidul de stil al unei companii poate fi în diverse formate (DITA XML, Markdown, Word etc.), dar unele dintre cele mai importante reguli pot fi sintetizate și setate în zona de text <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd" scope="external" format="html">
+          <b>Context prompt</b>
+        </xref> din pagina de preferințe <b>AI Positron Assistant</b>.</p>
+      <p>Exemplu de context care stabilește unele dintre cele mai importante reguli din ghidul de stil:<codeblock id="codeblock_y3q_m14_jfc" xml:space="preserve"># Ghid de stil
+
+Există un set de reguli din Ghidul de Stil al companiei care sunt importante de urmat la rescrierea sau crearea de conținut nou, cele mai importante reguli sunt menționate mai jos:
+
+- Nu folosiți niciodată metafore, comparații sau alte figuri de stil.
+- Nu folosiți niciodată un cuvânt lung acolo unde este suficient unul scurt.
+- Păstrați propozițiile scurte. Dacă este posibil să eliminați un cuvânt, eliminați-l întotdeauna.
+- Nu folosiți niciodată diateza pasivă acolo unde puteți folosi diateza activă.
+- Nu folosiți niciodată expresii străine, termeni științifici sau jargon dacă puteți găsi un echivalent uzual în limba engleză.
+- Nu folosiți texte care fac trimitere la alte topicuri, cum ar fi „În documentul de mai jos” sau „în secțiunea următoare”.
+- Unele cuvinte sau expresii sunt interzise. Maparea expresiilor interzise la variantele lor valide:
+```
+as well as, in addition to =&gt; and
+at this time, at this/that point in time =&gt; currently, now/then
+advance planning =&gt; planning
+by means of =&gt; by
+by reason of =&gt; because of
+due to the fact =&gt; because
+during the course of =&gt; during
+end result =&gt; result
+```</codeblock></p>
+      <p>Suplimentul <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html" scope="external" format="html">Terminology Checker</xref> din Oxygen poate identifica și cuvinte sau expresii interzise din fișierul de reguli de terminologie, permițându-vă să vedeți în editorul vizual problemele de stil și să le corectați folosind acțiunea AI inclusă <uicontrol>Fix Terminology Problems</uicontrol>. </p>
+      <p>Regulile din <b>Ghidul de stil</b> pot impune și aspecte structurale pentru conținutul DITA XML, iar astfel de reguli pot fi automatizate prin conversia lor în <xref href="SchematronBCs.dita">reguli Schematron</xref>. Odată ce aceste reguli Schematron sunt adăugate în proiectul DITA XML și încep să afișeze erori în conținutul editat, acțiunea AI inclusă <b>Fix Validation Problems</b> poate fi folosită pentru a solicita AI-ului să corecteze problemele raportate în documentul curent. Dacă motorul AI încearcă să salveze conținut într-un topic și conținutul salvat are probleme de validare, AI-ul primește problemele de validare și încearcă să le corecteze automat până când topicul devine valid.</p>
+      <p>O alternativă la definirea unui ghid de stil în contextul prompt AI sau la impunerea regulilor după generarea conținutului ar fi crearea unui model AI antrenat special, cu exemple mici bazate pe ghidul de stil intern și create tot cu ajutorul unui model AI.</p>
+    </section>
+    <section id="section_lyz_ph4_jfc">
+      <title>Specializarea DTD/Scheme DITA XML</title>
+      <p>Adesea, o companie care folosește standardul DITA XML poate decide să creeze o specializare bazată pe DTD sau RelaxNG care definește elemente XML noi, necunoscute motorului AI.</p>
+      <p>Majoritatea acțiunilor AI incluse încearcă să păstreze cât mai mult structura XML existentă. Acțiuni precum <uicontrol>Expand Draft</uicontrol> pornesc de la un topic DITA XML nou creat și astfel păstrează referința DTD/schema și elementele XML existente. </p>
+      <p>Acțiuni precum <uicontrol>Generate Documentation Draft</uicontrol> pot specifica (în definiția lor) că trebuie generată o anumită structură XML. Un exemplu pentru aceasta poate fi găsit <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Documentation%20Draft/Formant%20and%20Indent%20Sample/doc-draft-model-specialization.xml" scope="external" format="html">aici</xref>.</p>
+      <p>Cele mai importante modificări de vocabular XML (referințe DTD/schema, elemente XML nou adăugate) pot fi sintetizate și setate în zona de text <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/preferences.html#preferences__dlentry_afh_cck_sfd" scope="external" format="html">
+          <b>Context prompt</b>
+        </xref> din pagina de preferințe <b>AI Positron Assistant</b>.</p>
+      <p>Exemplu de modificări de vocabular descrise în contextul prompt:</p>
+      <codeblock id="codeblock_xrj_jq4_jfc" xml:space="preserve"># Modificări de vocabular
+
+Topicurile DITA XML generate pentru manualul de utilizare al proiectului nostru au următoarea structură și declarație DOCTYPE:
+
+```
+&lt;!DOCTYPE oxyTopic PUBLIC "OXY-PUB-TOPIC" "oxy-system"&gt;
+&lt;oxyTopic&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;body&gt;
+           
+    &lt;/body&gt;
+&lt;/oxyTopic&gt;
+```
+
+Conceptele DITA XML generate pentru manualul de utilizare al proiectului nostru au următoarea structură și declarație DOCTYPE:
+
+```
+&lt;!DOCTYPE oxyConcept PUBLIC "OXY-PUB-CONCEPT" "oxy-system"&gt;
+&lt;oxyConcept&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;body&gt;
+           
+    &lt;/body&gt;
+&lt;/oxyConcept&gt;
+```
+
+Elemente DITA XML noi sunt definite în vocabularul nostru DITA XML specific astfel:
+
+Există un nou element XML &lt;part-term&gt; care trebuie folosit pentru a marca diverse piese auto.
+Există un nou element XML &lt;product&gt; care trebuie folosit pentru a marca denumirile de produse.
+
+Exemplu:
+
+&lt;product&gt;Hisense&lt;/product&gt; &lt;part-term&gt;engine&lt;/part-term&gt; este mai eficient. </codeblock>
+    </section>
+    <section id="section_t3d_hr4_jfc">
+      <title>Concluzie</title>
+      <p>Este necesar să investiți timp pentru a adapta suplimentul AI Positron astfel încât să genereze conținut mai bun pentru particularitățile proiectului și organizației dumneavoastră.</p>
+      <p>Prin specificarea particularităților proiectului dumneavoastră într-un context prompt, conținutul creat și rescris de motorul AI poate deveni mult mai precis și mai bine adaptat modului dumneavoastră de lucru. Unele reguli ale proiectului pot fi automatizate, permițându-vă să detectați și să corectați astfel de probleme după generarea conținutului cu ajutorul AI.</p>
+      <p>Un exemplu de context prompt detaliat, care conține o prezentare generală a proiectului și a publicului țintă, terminologie, reguli de stil, modificări de vocabular descrise, poate fi găsit <xref href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md" scope="external" format="html">aici</xref>.</p>
+    </section>
+  </body>
+</topic>

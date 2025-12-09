@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="embedding_diagrams_in_dita_topics_using_mermaid">
+  <title>Înglobarea diagramelor în topicuri DITA folosind Mermaid</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-02-25"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword outputclass="label">Diagrame DITA</keyword>
+        <keyword outputclass="label">Personalizare publicare DITA</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p><xref href="https://mermaid-js.github.io/mermaid/#/" scope="external" format="html">Mermaid</xref> este o bibliotecă interesantă care preia descrieri textuale ale diagramelor și generează din acestea diagrame vizuale. </p>
+    <p>Presupuneți că aveți un topic DITA care înglobează o astfel de descriere textuală a unei diagrame: <xref href="https://github.com/oxygenxml/dita-ot-diagrams-plugin/blob/master/com.oxygenxml.diagrams.svg/samples/testMermaidDiagram.dita" scope="external" format="html"/>.</p>
+    <p>
+      <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_yz5_fdt_rsb">&lt;topic id="testMermaidDiagram"&gt;
+    &lt;title&gt;Test Mermaid diagram&lt;/title&gt;
+    &lt;body&gt;
+        &lt;p&gt;
+            &lt;foreign outputclass="embed-mermaid-diagram"&gt;graph TD;
+                A--&gt;B;
+                A--&gt;C;
+                B--&gt;D;
+                C--&gt;D;&lt;/foreign&gt;
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/topic&gt;</codeblock>
+    </p>
+    <image href="../images/mermaidDiagram.png" placement="inline" scale="50" id="image_lz2_y2t_rsb"/>
+    <p>Pentru a oferi suport în Oxygen pentru publicarea în HTML folosind astfel de diagrame în topicuri DITA, trebuie să instalați acest plugin gratuit de publicare care, odată instalat în DITA Open Toolkit, va converti descrierile textuale în diagrame SVG atât pentru output-urile HTML, cât și PDF: <xref href="https://github.com/oxygenxml/dita-ot-diagrams-plugin" scope="external" format="html"/>.</p>
+    <note type="tip" id="note_dgy_gft_rsb">Puteți previzualiza diagramele create folosind editorul live Mermaid: <xref href="https://mermaid.live/edit" scope="external" format="html"/>.</note>
+  </body>
+</topic>

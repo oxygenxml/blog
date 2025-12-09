@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="task-steps-diagram">
+  <title>Prezentarea pașilor unei sarcini DITA sub formă de diagrame</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-09-02"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword outputclass="label">Personalizare publicare DITA</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p>Folosind pluginul nostru gratuit pentru DITA Open Toolkit, puteți încorpora descrieri textuale de diagrame (fie în format <xref href="embedding_diagrams_in_dita_topics_using_plantuml.dita">PlantUML</xref> sau <xref href="embedding_diagrams_in_dita_topics_using_mermaid.dita">Mermaid</xref>) în topicuri DITA și le puteți reda ca imagini de diagramă în output-ul publicat.</p>
+    <p>Am experimentat construirea dinamică a diagramelor (folosind framework-ul <xref href="task-steps-diagram.dita">Mermaid</xref>) pentru sarcinile DITA la momentul publicării.</p>
+    <p>Presupuneți că aveți o sarcină DITA cu un set de pași.</p>
+    <p>
+      <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_yz5_fdt_rsb">&lt;steps&gt;
+  &lt;step&gt;
+    &lt;cmd&gt;Începeți prin a tăia toate ramurile uscate.&lt;/cmd&gt;
+    &lt;substeps&gt;
+      &lt;substep&gt;
+        &lt;cmd&gt;Găsiți foarfeca de tăiat&lt;/cmd&gt;
+      &lt;/substep&gt;
+      ....
+    &lt;/substeps&gt;
+  &lt;/step&gt;
+  &lt;step&gt;
+    &lt;cmd&gt;Îndepărtați toate ramurile încâlcite sau care se suprapun. Acest lucru permite circulația aerului și
+      reduce infestarea cu insecte și ciuperci. &lt;/cmd&gt;
+  &lt;/step&gt;
+  .......
+&lt;/steps&gt;</codeblock>
+    </p>
+    <p>Un plugin DITA Open Toolkit poate folosi o personalizare XSLT pentru a crea dinamic o reprezentare de diagramă text Mermaid din pașii sarcinii DITA: <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_rdx_fvq_s5b">  &lt;xsl:template match="steps[step]"&gt;
+    &lt;xsl:variable name="var"&gt;
+      &lt;foreign outputclass="embed-mermaid-diagram" class="- topic/foreign "&gt;
+stateDiagram-v2
+Title: &lt;xsl:value-of select="normalize-space(ancestor::task/title)"/&gt;
+Title --&gt; State1
+&lt;xsl:for-each select="step"&gt;
+&lt;xsl:variable name="statePos" select="position()"/&gt;
+  State&lt;xsl:value-of select="$statePos"/&gt;: &lt;xsl:value-of select="normalize-space(cmd)"/&gt;
+&lt;xsl:if test="position() &gt; 1"&gt;
+  State&lt;xsl:value-of select="$statePos - 1"/&gt; --&gt; State&lt;xsl:value-of select="$statePos"/&gt; 
+&lt;/xsl:if&gt;
+&lt;xsl:if test="substeps/substep"&gt;
+&lt;xsl:for-each select="substeps/substep"&gt;
+State&lt;xsl:value-of select="$statePos"/&gt;&lt;xsl:value-of select="position()"/&gt;: &lt;xsl:value-of select="normalize-space(cmd)"/&gt;   
+&lt;/xsl:for-each&gt;
+state State&lt;xsl:value-of select="$statePos"/&gt;{
+&lt;xsl:for-each select="substeps/substep"&gt;
+&lt;xsl:if test="position() &gt; 1"&gt;
+State&lt;xsl:value-of select="$statePos"/&gt;&lt;xsl:value-of select="position() - 1"/&gt; --&gt; State&lt;xsl:value-of select="$statePos"/&gt;&lt;xsl:value-of select="position()"/&gt; 
+&lt;/xsl:if&gt;
+&lt;/xsl:for-each&gt;
+}
+&lt;/xsl:if&gt;
+&lt;/xsl:for-each&gt;
+      &lt;/foreign&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:apply-templates select="$var"/&gt;
+    &lt;xsl:next-match/&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</codeblock></p>
+    <p>Un DITA Open Toolkit complet, care conține această personalizare, poate fi găsit aici: <xref href="../resources/com.oxygenxml.task.diagram.zip" format="zip"/>.</p>
+    <p>La momentul publicării, pagina HTML a sarcinii va conține această diagramă în interiorul ei:</p>
+    <p>
+      <image href="../images/task-diagram.png" placement="inline" scale="40" id="image_t2h_t5q_s5b"/>
+    </p>
+  </body>
+</topic>

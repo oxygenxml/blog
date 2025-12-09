@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="creating_graphs_from_dita_maps">
+  <title>Crearea grafurilor de legături din DITA Maps</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2021-09-02"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Poate fi uneori util, ca prezentare generală, să obțineți o vizualizare grafică a modului în care topicurile DITA se referă unele la altele. Biblioteca Javascript <xref href="https://visjs.github.io/vis-network/docs/network/index.html" scope="external" format="html">VisJS</xref> poate fi folosită pentru a construi diagrame de rețea de noduri. Iată cum o puteți utiliza pentru proiectul dumneavoastră DITA:<ol id="ol_slp_cym_5qb">
+        <li>Deschideți DITA Map-ul principal în <ph keyref="oxygen"/> în vizualizarea <uicontrol>DITA Maps Manager</uicontrol>, folosiți butonul <uicontrol>Configure Transformation Scenarios</uicontrol>, apoi creați un nou scenariu de transformare de tip <uicontrol>DITA OT Transformation</uicontrol> alegând tipul de transformare <uicontrol>Merge DITA Content to Single XML file</uicontrol>. Dacă nu folosiți <ph keyref="oxygen"/>, puteți descărca și instala separat pluginul <uicontrol>dita-merge</uicontrol> de pe <xref href="https://github.com/oxygenxml/dita-merged" scope="external" format="html">Github</xref>.</li>
+        <li>Aplicați noul scenariu de transformare pe DITA Map, iar după ce documentul XML fuzionat este generat, creați un alt scenariu de transformare de tip <uicontrol>XML transformation with XSLT</uicontrol> și transformați în HTML folosind foaia de stil XSLT: <xref href="https://github.com/oxygenxml/dita-merged/blob/master/possible-applications/createHTMLVisGraph.xsl" scope="external" format="xsl"/></li>
+        <li>Deschideți documentul HTML rezultat într-un browser web. În funcție de complexitatea proiectului DITA, poate dura ceva timp până când diagrama va fi afișată. De exemplu, secțiunea de linkuri conexe de mai jos conține o referință la o reprezentare diagramatică a Oxygen XML Blog. Dacă privim diagrama ca pe un cerc, la marginea exterioară a cercului se află topicuri cu puține legături de intrare și ieșire, iar în centru topicuri cu multe legături de intrare și ieșire. Legăturile din DITA Map către topicuri nu sunt luate în considerare. Puteți interacționa cu diagrama prin tragerea nodurilor și folosind rotița mouse-ului pentru a mări sau micșora.</li>
+      </ol></p>
+  </body>
+</topic>

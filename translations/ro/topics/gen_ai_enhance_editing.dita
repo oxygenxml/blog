@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="gen-ai-enhance-editing">
+  <title>Utilizarea GenAI pentru îmbunătățirea creării de conținut tehnic în faza incipientă (Prezentare)</title>
+  <prolog>
+    <author>Sorin Carbunaru</author>
+    <critdates>
+      <created date="2024-09-27"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Inteligența Artificială Generativă (GenAI) este o categorie de AI axată pe <b>crearea de conținut</b> (text, imagini, videoclipuri, muzică etc.), spre deosebire de AI-ul tradițional, care urmărește în principal înțelegerea sau clasificarea datelor. Iar în etapele incipiente ale redactării documentației tehnice, GenAI poate fi folosită cel puțin în două scopuri:</p>
+    <ol id="ol_icy_ydd_wcc">
+      <li>Generarea unei schițe de documentație de la zero.</li>
+      <li>Actualizarea conținutului text existent pe baza modificărilor recente ale unui produs.</li>
+    </ol>
+    <p>Am realizat o prezentare intitulată <b>Utilizarea GenAI pentru îmbunătățirea creării de conținut tehnic în faza incipientă</b> despre modul în care AI-ul generativ vă poate crește productivitatea în etapa inițială a creării de conținut tehnic și am inclus această prezentare mai jos pentru ca clienții și integratorii noștri să înțeleagă mai bine <b>instrumentele de editare XML bazate pe AI</b> pe care le oferim.</p>
+    <p>
+      <foreign outputclass="html-embed">&lt;iframe src="../resources/Sorin_Carbunaru_Utilizing_GenAI_With_Vision.pdf#zoom=50" height="600" width="100%"/&gt;</foreign>
+    </p>
+  </body>
+</topic>

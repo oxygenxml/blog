@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="oxygen_xml_ecosystem">
+  <title>Furnizarea de conținut către motoarele AI folosind pluginuri DITA OT</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2025-03-25"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>În cadrul conferinței <xref href="https://www.oxygenxml.com/events/2025/dita-ot_day.html" scope="external" format="html">DITA Open Toolkit Day 2025</xref> din Copenhaga, am prezentat câteva pluginuri DITA Open Toolkit pe care le-am dezvoltat și care pot folosi AI sau pot furniza conținut pentru a fi utilizat de AI:<ul id="ul_dyf_ls2_52c">
+        <li>Plugin DITA OT pentru preprocesare cu ajutorul AI, aplicând AI în etapa de pre-procesare DITA OT (de exemplu, pentru traducerea conținutului la momentul publicării).</li>
+        <li>Plugin DITA OT pentru aplicarea regulilor de validare AI pe conținutul pre-procesat (cu conrefs expandate) și generarea unui raport.</li>
+        <li>Plugin DITA OT pentru generarea de conținut cu ajutorul AI pornind de la un Style Guide, creând conținut JSONL pentru fine-tuning-ul AI-ului.</li>
+        <li>Plugin DITA OT pentru încărcarea conținutului Markdown într-un vector store al unui AI Assistant.</li>
+        <li>Pluginul DITA OT Summarize pentru a crea un rezumat al întregii hărți DITA în format markdown.</li>
+      </ul></p>
+    <p>Dacă găsiți oricare dintre aceste subiecte interesante, întregul set de slide-uri este atașat mai jos. De asemenea, puteți folosi formularul de feedback dacă doriți să purtați discuții despre oricare dintre aceste pluginuri.</p>
+    <p>
+      <foreign outputclass="html-embed">&lt;iframe src="../resources/dot-ai-plugins.pdf" height="600" width="1000"/&gt;</foreign>
+    </p>
+  </body>
+</topic>

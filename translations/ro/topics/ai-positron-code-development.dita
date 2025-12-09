@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="ai-positron-code-development">
+  <title>Dezvoltare XML accelerată cu acțiuni de cod bazate pe AI în Oxygen XML Editor</title>
+  <prolog>
+    <author>Octavian Nadolu</author>
+    <critdates>
+      <created date="2025-07-28"/>
+    </critdates>
+  </prolog>
+  <body>
+    <section id="section_rdh_j3f_bgc">
+      <title>Introducere</title>
+      <p>Descoperiți cum acțiunile alimentate de AI din Oxygen XML Editor revoluționează dezvoltarea de scheme XML și foi de stil XSLT. Cu acțiuni AI pentru a explica, adnota, genera sau documenta codul, pentru a discuta cu AI-ul despre anumite fragmente de cod și pentru a sugera refactorizări, aceste instrumente ajută dezvoltatorii să lucreze mai rapid și mai eficient. Pe măsură ce fluxurile de lucru XML devin mai complexe, instrumentele inteligente devin esențiale pentru editare, colaborare și refactorizare. AI Positron Assistant din Oxygen XML Editor oferă utilizatorilor o suită de acțiuni inteligente concepute pentru dezvoltarea modernă a codului. </p>
+      <p>În acest articol, vom explora principalele acțiuni AI care acționează asupra limbajelor de dezvoltare XML, precum XML Schema, XSLT și Schematron — <b>Explain Code</b>, <b>Chat About Code</b>, <b>Document Code</b>, <b>Annotate Code</b>, <b>Generate Code</b> și <b>Suggest Refactoring</b>, și vom prezenta exemple despre cum acestea cresc productivitatea la lucrul cu XSLT.</p>
+      <p>
+        <b>Urmăriți demonstrația video:</b>
+        <xref href="https://youtu.be/s7fppQS0w_c?si=EeNjOPutx04WmhzF&amp;t=377" scope="external" format="html"> Utilizarea AI pentru dezvoltare XML în Oxygen XML Editor </xref>
+      </p>
+    </section>
+    <section id="section_sdh_j3f_bgc">
+      <title>Prezentare generală a acțiunilor de cod bazate pe AI</title>
+      <p>AI Positron se integrează perfect cu Oxygen XML Editor/Developer pentru a îmbunătăți calitatea codului, a facilita înțelegerea și a automatiza sarcinile repetitive de dezvoltare. Iată o prezentare a principalelor capabilități și a beneficiilor practice pentru fiecare acțiune de dezvoltare asistată de AI:</p>
+      <dl id="dl_tdh_j3f_bgc">
+        <dlentry>
+          <dt>Explain Code</dt>
+          <dd>Selectați orice fragment de cod sau plasați cursorul într-un element, iar AI Positron va genera imediat o explicație. Acest lucru vă ajută să înțelegeți rapid șabloane XSLT vechi, reguli Schematron sau definiții complexe de schemă, reducând timpul petrecut pentru a descifra cod necunoscut.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Chat About Code</dt>
+          <dd>Porniți o conversație interactivă cu AI-ul despre codul selectat. Puneți întrebări precum „Care este scopul acestei constrângeri?” sau „Cum pot optimiza acest șablon?” pentru a genera idei de îmbunătățire, a rezolva probleme tehnice și a face modificări informate mai rapid.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Document Code</dt>
+          <dd>Cu o singură acțiune, generați comentarii XML clare și concise pentru codul XSLT, XML Schema sau Schematron selectat. Aceste rezumate, adăugate înaintea blocului de cod, facilitează onboarding-ul, reviziile de cod și mentenanța ulterioară.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Annotate Code</dt>
+          <dd>Adăugați automat comentarii la documente întregi sau la elemente specifice. Anotările generate clarifică intenția, constrângerile și relațiile, simplificând documentarea și partajarea cunoștințelor în echipă.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Generate Code</dt>
+          <dd>Descrieți codul sau transformarea de care aveți nevoie și lăsați AI Positron să creeze șabloane XSLT, aserțiuni Schematron, tipuri complexe XSD sau obiecte JSON Schema. AI-ul reutilizează componente existente acolo unde este posibil, respectând principiile DRY (don't repeat yourself) și accelerează procesul de dezvoltare.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Suggest Refactoring</dt>
+          <dd>Primiți sugestii pentru simplificarea codului și îmbunătățirea modularității. AI-ul poate actualiza versiunea XSLT, poate împărți șabloane mari, extrage cod reutilizabil sau adăuga comentarii explicative. Refactorizarea vă ajută să modernizați și să mențineți codul cu mai puțin efort.</dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section id="section_szt_hhf_bgc">
+      <title>Exemplu practic: accelerați dezvoltarea XSLT cu acțiuni AI</title>
+      <p>Ca dezvoltator XSLT, vă puteți accelera semnificativ fluxul de lucru și îmbunătăți calitatea codului folosind suplimentul AI Positron în Oxygen XML Editor. Iată un exemplu care arată cum să utilizați acțiunile AI cu cod XSLT real:</p>
+      <ol>
+        <li>
+          <p><b>Înțelegeți șabloanele existente cu <i>Explain Code</i></b> - Să presupunem că întâlniți următorul șablon: </p>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_tzt_hhf_bgc">&lt;xsl:template match="section"&gt;
+    &lt;div class="section"&gt;
+        &lt;h2&gt;&lt;xsl:value-of select="title"/&gt;&lt;/h2&gt;
+        &lt;xsl:apply-templates select="para"/&gt;
+    &lt;/div&gt;
+&lt;/xsl:template&gt;            </codeblock>
+          <p>Selectați acest cod și folosiți acțiunea <b>Explain Code</b>. AI-ul va genera următoarea explicație: <codeblock xml:space="preserve" id="codeblock_pqn_1ls_bgc">Acest șablon se potrivește elementelor <codeph>&lt;section&gt;</codeph>, creează un <codeph>&lt;div&gt;</codeph> cu clasa "section", afișează titlul secțiunii într-un <codeph>&lt;h2&gt;</codeph> și aplică șabloane tuturor copiilor <codeph>&lt;para&gt;</codeph>.</codeblock></p>
+        </li>
+        <li>
+          <p><b>Discuții și îmbunătățiri cu <i>Chat About Code</i></b> - Dacă doriți să optimizați sau să extindeți șablonul anterior, selectați-l și folosiți acțiunea <b>Chat About Code</b>. De exemplu, puteți întreba: </p>
+          <codeblock xml:space="preserve" id="codeblock_uzt_hhf_bgc">Cum pot adăuga o verificare pentru a afișa un avertisment dacă secțiunea nu are titlu?           </codeblock>
+          <p>AI-ul a sugerat:</p>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_vzt_hhf_bgc"> &lt;xsl:template match="section"&gt;
+    &lt;div class="section"&gt;
+        <u>&lt;xsl:choose&gt;</u>
+            <u>&lt;xsl:when test="title"&gt;</u>
+                &lt;h2&gt;&lt;xsl:value-of select="title"/&gt;&lt;/h2&gt;
+            <u>&lt;/xsl:when&gt;</u>
+            <u>&lt;xsl:otherwise&gt;</u>
+                <u>&lt;div class="warning"&gt;[WARNING: section has no title]&lt;/div&gt;</u>
+                <u>&lt;xsl:message terminate="no"&gt;</u>
+                    <u>WARNING: a &lt;section&gt; element has no &lt;title&gt;.</u>
+                <u>&lt;/xsl:message&gt;</u>
+            <u>&lt;/xsl:otherwise&gt;</u>
+        <u>&lt;/xsl:choose&gt;</u>
+        &lt;xsl:apply-templates select="para"/&gt;
+    &lt;/div&gt;
+&lt;/xsl:template&gt;</codeblock>
+        </li>
+        <li>
+          <p><b>Documentați șabloanele cu <i>Document Code</i></b> - Pentru a facilita mentenanța viitoare, selectați șablonul actualizat anterior și folosiți acțiunea <b>Document Code</b>. AI-ul va insera un comentariu înaintea șablonului: </p>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_wzt_hhf_bgc">&lt;!-- Afișează fiecare secțiune ca un div cu titlul în antetul h2. Inserează un placeholder de avertisment
+     când lipsește titlul și continuă procesarea paragrafelor. --&gt;
+&lt;xsl:template match="section"&gt;
+[...]
+&lt;/xsl:template&gt;</codeblock>
+        </li>
+        <li>
+          <p><b>Anotați logica complexă cu <i>Annotate Code</i></b> - Pentru șabloane complexe, folosiți acțiunea <b>Annotate Code</b> pentru a insera atât documentație pentru șablon, cât și comentarii inline; toate comentariile din acest exemplu au fost generate de AI: </p>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_b15_hhf_bgc"><u>&lt;!-- 
+  Șablon care se potrivește elementului "book" din XML-ul de intrare și îl transformă în HTML.
+  Structura include un &lt;div&gt; principal care conține titlul cărții și toate capitolele cu secțiunile lor.
+--&gt;</u>
+&lt;xsl:template match="book"&gt;
+    &lt;div&gt;
+        <u>&lt;!-- Afișează titlul cărții într-un tag &lt;h1&gt; --&gt;</u>
+        &lt;h1&gt;
+            &lt;xsl:value-of select="title"/&gt;
+        &lt;/h1&gt;
+        <u>&lt;!-- Iterează peste fiecare element "chapter" copil al "book" --&gt;</u>
+        &lt;xsl:for-each select="chapter"&gt;
+            <u>&lt;!-- Afișează titlul capitolului într-un tag &lt;h2&gt; --&gt;</u>
+            &lt;h2&gt;
+                &lt;xsl:value-of select="title"/&gt;
+            &lt;/h2&gt;
+            <u>&lt;!-- Aplică șabloane tuturor elementelor "section" din capitolul curent.
+                 Acest lucru permite procesarea suplimentară a secțiunilor de către alte șabloane. --&gt;</u>
+            &lt;xsl:apply-templates select="section"/&gt;
+        &lt;/xsl:for-each&gt;
+    &lt;/div&gt;
+&lt;/xsl:template&gt;
+            </codeblock>
+        </li>
+        <li>
+          <p><b>Generați șabloane noi cu <i>Generate Code</i></b> - Plasați cursorul după un comentariu care descrie funcționalitatea dorită și folosiți acțiunea <b>Generate Code</b>: </p>
+          <codeblock xml:space="preserve" id="codeblock_xzt_hhf_bgc">&lt;!-- Generați un șablon care afișează toate numele autorilor într-o listă separată prin virgulă --&gt;            </codeblock>
+          <p>AI-ul generează: </p>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_yzt_hhf_bgc">&lt;xsl:template match="authors"&gt;
+    &lt;p&gt;
+        &lt;xsl:for-each select="author"&gt;
+            &lt;xsl:value-of select="name"/&gt;
+            &lt;xsl:if test="position() != last()"&gt;, &lt;/xsl:if&gt;
+        &lt;/xsl:for-each&gt;
+    &lt;/p&gt;
+&lt;/xsl:template&gt;</codeblock>
+        </li>
+        <li>
+          <p><b>Refactorizați codul complex cu <i>Suggest Refactoring</i></b> - Dacă aveți un șablon monolitic precum: </p>
+          <codeblock xml:space="preserve" id="codeblock_zzt_hhf_bgc">&lt;xsl:template match="book"&gt;
+    &lt;div&gt;
+        &lt;h1&gt;
+            &lt;xsl:value-of select="title"/&gt;
+        &lt;/h1&gt;
+        &lt;xsl:for-each select="chapter"&gt;
+            &lt;h2&gt;
+                &lt;xsl:value-of select="title"/&gt;
+            &lt;/h2&gt;
+            &lt;xsl:apply-templates select="section"/&gt;
+        &lt;/xsl:for-each&gt;
+    &lt;/div&gt;
+&lt;/xsl:template&gt;           </codeblock>
+          <p>Acest șablon procesează întreaga structură a cărții într-un singur șablon imbricat, folosind &lt;xsl:for-each&gt; pentru capitole și &lt;xsl:apply-templates&gt; pentru secțiuni. Deși funcționează, poate deveni dificil de întreținut, extins sau depanat pe măsură ce structura XML devine mai complexă.</p>
+          <p>Rulați acțiunea <b>Suggest Refactoring</b>, iar AI-ul va sugera împărțirea în șabloane mai mici:</p>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_a15_hhf_bgc">&lt;xsl:template match="book"&gt;
+    &lt;div&gt;
+        &lt;h1&gt;
+            &lt;xsl:value-of select="title"/&gt;
+        &lt;/h1&gt;
+        &lt;xsl:apply-templates select="chapter"/&gt;
+    &lt;/div&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="chapter"&gt;
+    &lt;h2&gt;
+        &lt;xsl:value-of select="title"/&gt;
+    &lt;/h2&gt;
+    &lt;xsl:apply-templates select="section"/&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="section"&gt;
+    &lt;h3&gt;
+        &lt;xsl:value-of select="title"/&gt;
+    &lt;/h3&gt;
+    &lt;!-- Adăugați aici procesarea suplimentară pentru conținutul secțiunii, dacă este necesar --&gt;
+&lt;/xsl:template&gt;</codeblock>
+          <p>Prin împărțirea logicii în șabloane separate pentru &lt;book&gt;, &lt;chapter&gt; și &lt;section&gt;, fiecare șablon se concentrează pe o singură responsabilitate. Această abordare modulară face mai ușor de înțeles ce face fiecare parte a codului și de localizat sau actualizat logica specifică. </p>
+        </li>
+      </ol>
+      <p><b>Rezumat:</b> Cu aceste acțiuni bazate pe AI, puteți înțelege rapid, documenta, genera, refactoriza și anota codul XSLT, făcând procesul de dezvoltare XSLT mai rapid și foile de stil mai ușor de întreținut. Pentru mai multe exemple practice, consultați <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Code%20Development" scope="external" format="html">exemplele AI Positron Assistant pe GitHub</xref>. </p>
+    </section>
+    <section id="section_azl_4q1_cgc">
+      <title>Crearea unei acțiuni AI personalizate</title>
+      <p>Pentru automatizări avansate și fluxuri de lucru personalizate, <b>Oxygen</b> vă permite să construiți și să integrați acțiuni AI personalizate direct în spațiul dvs. de lucru. Aceste acțiuni extind instrumentele standard Oxygen și vă oferă flexibilitate și control sporit asupra sarcinilor bazate pe AI. </p>
+      <p>Folosiți expertul <b>New Document</b> pentru a crea un fișier <b>AI Positron Custom Action</b>. Acest fișier conține o definiție de acțiune în format JSON, unde puteți specifica scopul acțiunii, parametrii și logica AI. </p>
+      <p>Oxygen oferă <b>validare</b> automată și <b>completare de conținut</b> pentru aceste fișiere, astfel încât să le puteți edita și menține cu încredere. Lucrați în <b>mod text</b> pentru control exact sau comutați în <b>modul vizual Author</b> pentru o experiență ghidată și interactivă. </p>
+      <p>De exemplu, puteți crea o acțiune AI care generează un document XSLT nou dintr-un anumit conținut, printr-un flux de lucru ghidat. Definiți logica și fluxul acțiunii în JSON, iar AI-ul integrat produce o foaie de stil XSLT completă pe baza instrucțiunilor dvs. </p>
+      <p>Următorul JSON prezintă o acțiune AI personalizată care generează un document XSLT 3.0 pe baza conținutului furnizat: </p>
+      <codeblock outputclass="language-json" xml:space="preserve" id="pre_czl_4q1_cgc">{
+    "id": "create.new.xslt",
+    "title": "Create New XSLT",
+    "output-action": "create-new-document",
+    "context": "# CONTEXT #\nYou will act as a senior XSLT developer.\n\n # OBJECTIVE #\nYou are tasked with creating an XSLT starting from the provided text. Create an XSLT with version 3.0 \n\n# RESPONSE #\nRespond with just the XSLT file content, without any other explanations.",
+    "parameters": {
+        "function_refs": [
+            {"ref": "get_content_for_document_url"}
+        ]
+    }
+}</codeblock>
+      <p>În <b>modul Author</b>, această acțiune apare ca un formular structurat, permițând configurarea și revizuirea vizuală a acțiunii: </p>
+      <fig id="fig_hss_kr1_cgc">
+        <title>Acțiune AI personalizată în modul Author</title>
+        <image href="../images/customAIActionXSL.png" placement="inline" id="image_k22_4r1_cgc">
+          <alt>
+            <i>[ Acțiunea <b>Create New XSLT</b> afișată în modul Author, cu câmpuri editabile și parametri AI avansați. ]</i>
+          </alt>
+        </image>
+      </fig>
+      <p>În această configurație, furnizați context, obiective, acțiunea de ieșire dorită și orice funcții ajutătoare (cum ar fi extragerea conținutului dintr-un URL de document). AI-ul generează apoi fișierul XSLT și returnează doar codul solicitat. </p>
+      <p>Pentru un ghid detaliat despre crearea și personalizarea acțiunilor AI în Oxygen, consultați documentația oficială: <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html" scope="external" format="html">Creating Custom AI Actions in Oxygen</xref>.</p>
+      <p>
+        <b>Tutorial video:</b>
+        <xref href="https://youtu.be/s7fppQS0w_c?si=DnFWym9JC08MbJ1g&amp;t=2001" scope="external" format="html"> Cum să creați acțiuni AI personalizate în Oxygen </xref>
+      </p>
+    </section>
+    <section id="section_xdh_j3f_bgc">
+      <title>Sfaturi și bune practici</title>
+      <ul id="ul_ydh_j3f_bgc">
+        <li><b>Selecție focalizată:</b> Selectați blocuri mici de cod pentru explicații și documentare țintite. </li>
+        <li><b>Chat iterativ:</b> Folosiți acțiunea <i>Chat About Code</i> pentru îmbunătățiri continue, pentru a pune întrebări, a face modificări și a regenera fragmente de cod interactiv. </li>
+        <li><b>Refactorizați fișierele:</b> Rulați acțiunea <i>Suggest Refactoring</i> pe codul dvs. pentru a-l aduce la standarde moderne și pentru a crea module mai lizibile și reutilizabile.</li>
+        <li><b>Comentarii cuprinzătoare:</b> Anotați fișiere XSLT sau XSD mari, cu mai multe șabloane, pentru a îmbunătăți înțelegerea comună și a facilita onboarding-ul. </li>
+        <li><b>Explorați exemplele:</b> Examinați și adaptați <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Code%20Development" scope="external" format="html">exemplele furnizate</xref> pentru a ajuta echipa să înceapă rapid. </li>
+      </ul>
+    </section>
+    <section id="section_zdh_j3f_bgc">
+      <title>Concluzie</title>
+      <p>Acțiunile bazate pe AI din Oxygen XML Editor schimbă modul în care dezvoltatorii abordează înțelegerea, editarea și mentenanța codului. Fie că explicați o regulă Schematron, documentați o schemă, generați logică nouă de validare sau refactorizați pentru viitor, AI Positron oferă eficiență la fiecare pas. Profitați de aceste instrumente pentru a vă îmbunătăți fluxul de lucru în dezvoltarea XML.</p>
+      <p>Pentru a experimenta și a afla mai multe, consultați subfolderul <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Code%20Development" scope="external" format="html">Code Development</xref> din proiectul de exemple AI Positron.</p>
+    </section>
+  </body>
+</topic>

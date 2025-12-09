@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Classification Map//EN" "classifyMap.dtd">
+<map processing-role="resource-only" xml:lang="ro">
+  <title>Clasificarea blogului</title>
+  <topicref keyref="learning">
+    <topicsubject keyref="blog-dita" processing-role="resource-only" toc="no">
+      <subjectref keyref="blog-dita-learning" processing-role="resource-only" toc="no"/>
+    </topicsubject>
+  </topicref>
+  <topicref keyref="publishing">
+    <topicsubject keyref="blog-dita" processing-role="resource-only" toc="no">
+      <subjectref keyref="blog-dita-publishing" processing-role="resource-only" toc="no"/>
+    </topicsubject>
+  </topicref>
+  <topicref keyref="customizing">
+    <topicsubject keyref="blog-dita" processing-role="resource-only" toc="no">
+      <subjectref keyref="blog-dita-customizing" processing-role="resource-only" toc="no"/>
+    </topicsubject>
+  </topicref>
+  <topicref keyref="migrate">
+    <topicsubject keyref="blog" processing-role="resource-only" toc="no">
+      <subjectref keyref="blog-migrate" processing-role="resource-only" toc="no"/>
+    </topicsubject>
+  </topicref>
+  <topicref keyref="sdk">
+    <topicsubject keyref="blog" processing-role="resource-only" toc="no">
+      <subjectref keyref="blog-sdk" processing-role="resource-only" toc="no"/>
+    </topicsubject>
+  </topicref>
+</map>

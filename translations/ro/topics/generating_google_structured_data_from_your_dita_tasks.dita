@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="ro" id="generating_google_structured_data_from_your_dita_tasks">
+  <title>Generarea datelor structurate Google din task-urile DITA</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2022-05-17"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword outputclass="label">Date structurate Google</keyword>
+        <keyword outputclass="label">Personalizare publicare DITA</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>Paginile HTML publicate pe web pot conține metadate specificate folosind specificația <xref href="https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data#structured-data-format" scope="external" format="html">Google Structured Data</xref>. Odată ce astfel de metadate există într-o pagină HTML, motorul de căutare Google poate prezenta, de exemplu, pașii pentru a finaliza o anumită sarcină direct în pagina de rezultate a căutării, fără a fi nevoie să deschideți pagina HTML țintă. Mai jos este prezentat un set de pași pentru generarea automată a metadatelor <b>Google Structured Data</b> pentru task-urile DITA atunci când publicați conținut DITA în output Oxygen WebHelp Responsive, care poate fi personalizat folosind un <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/whr_publishing_template_contents.html" scope="external" format="html">mecanism de șablon de publicare</xref>.</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>În proiectul dumneavoastră DITA, creați un topic de tip task cu o valoare specifică a atributului <xmlatt>outputclass</xmlatt> pentru a semnala că doriți ca datele structurate Google să fie generate automat pentru acesta.</cmd>
+        <stepresult>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_vqt_p5l_4tb">&lt;task id="task_id" outputclass="google-structured-data-steps"&gt;
+  &lt;title&gt;My task&lt;/title&gt;
+&lt;/task&gt;
+&lt;steps&gt;
+      &lt;step&gt;
+        &lt;cmd&gt;Step 1 content.&lt;/cmd&gt;
+      &lt;/step&gt;
+      &lt;step&gt;
+        &lt;cmd&gt;Step 2 content.&lt;/cmd&gt;
+      &lt;/step&gt;
+&lt;/steps&gt;</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Într-un folder de șablon de publicare WebHelp există un fișier <filepath>opt</filepath> care poate conține legături către diverse foi de stil XSLT utile pentru personalizări. De exemplu, vom adăuga o legătură către o foaie de stil pentru procesarea acestor task-uri speciale și generarea unui script special care conține detalii pentru fiecare pas.</cmd>
+        <stepresult>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_cfr_ft1_xrb">&lt;publishing-template&gt;
+    &lt;name&gt;.....&lt;/name&gt;
+    ......
+        &lt;xslt&gt;
+            ....
+            &lt;extension file="xslt/addGoogleStructuredData.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/&gt;
+            .....
+        &lt;/xslt&gt;
+    &lt;/webhelp&gt;
+&lt;/publishing-template&gt;</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Creați foaia de stil XSLT <filepath>addGoogleStructuredData.xsl</filepath> care procesează conținutul task-ului și adaugă în head-ul HTML un script ce conține pașii în format Google Structured Data.</cmd>
+        <stepresult>
+          <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_bm1_dwl_4tb">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  exclude-result-prefixes="xs"
+  version="2.0"&gt;
+  &lt;xsl:template match="*[contains(@class, ' topic/prolog ')]"&gt;
+    &lt;xsl:if test="/*[@outputclass='google-structured-data-steps']"&gt;
+      &lt;xsl:apply-templates select="/*" mode="google-structured-data"/&gt;
+    &lt;/xsl:if&gt;
+    &lt;xsl:next-match/&gt;
+  &lt;/xsl:template&gt;
+  &lt;xsl:template match="*" mode="google-structured-data"&gt;
+    &lt;script type="application/ld+json"&gt;
+      {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "&lt;xsl:value-of select="title"/&gt;",
+      "step": [
+      &lt;xsl:for-each select="taskbody/steps/step"&gt;
+        {
+        "@type": "HowToSection",
+        "name": "Step",
+        "position": "&lt;xsl:value-of select="position()"/&gt;",
+        "itemListElement": [
+        {
+        "@type": "HowToStep",
+        "position": "1",
+        "itemListElement": [
+        {
+        "@type": "HowToDirection",
+        "position": "1",
+        "text": "&lt;xsl:value-of select="normalize-space(cmd)"/&gt;"
+        }]}]}
+        &lt;xsl:if test="position() &lt; last()"&gt;,&lt;/xsl:if&gt;
+      &lt;/xsl:for-each&gt;
+      ]}
+    &lt;/script&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Publicați conținutul DITA XML pe un site web.</cmd>
+      </step>
+      <step>
+        <cmd>Testați pagina HTML folosind Google Rich Results Tester: <xref href="https://search.google.com/test/rich-results" scope="external" format="html"/>.</cmd>
+      </step>
+      <step>
+        <cmd>După ce Google indexează pagina, căutați-o pe Google.</cmd>
+        <stepresult>
+          <image href="../images/googleAnswerSteps.png" placement="inline" scale="50" id="image_knq_x2m_4tb"/>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

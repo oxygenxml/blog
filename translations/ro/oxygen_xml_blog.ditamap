@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="ro">
+  <title>Blog</title>
+  <!--   <topicref href="topics/welcome.dita"/>
+    <topicref href="topics/what_s_new.html" format="html" navtitle="WHATS" print="no"
+        processing-role="resource-only" scope="peer"/>
+    <topicref href="topics/frequently_asked_questions.dita"/>   -->
+  <topichead navtitle="Inteligență artificială (AI)">
+    <topicref href="topics/ai_positron.dita">
+      <topicref href="topics/ai-positron-add-on-functionality-small-clips.dita"/>
+    </topicref>
+    <topicref href="topics/customizing_ai_positron_for_your_dita_xml_project.dita"/>
+    <topicref href="topics/creating_custom_ai_actions_for_the_ai_positron_add_on.dita"/>
+    <topicref href="topics/vibing_with_ai_positron.dita"/>
+    <topicref href="topics/dita-ai-tools.dita"/>
+    <topicref href="topics/ai-positron-code-development.dita"/>
+    <topicref href="topics/ai_xpath_functions.dita"/>
+    <topicref href="topics/oxygen_ai_powered_editing.dita"/>
+    <topicref href="topics/gen_ai_enhance_editing.dita"/>
+    <topicref href="topics/using_chatgpt_in_a_dita_xml_project.dita"/>
+    <topicref href="topics/ai-positron-assistant-retrospective-analysis.dita"/>
+    <topicref href="topics/dita-ot-ai-plugins.dita"/>
+    <topicref href="topics/wn_positron_5.dita"/>
+  </topichead>
+  <!--   <topicref href="maps/dita-articles.ditamap" format="ditamap"/>
+    <topicref keys="migrate" href="topics/migration.dita">
+        <topicref href="topics/migratingToDITA.dita"/>
+        <topicref href="topics/migrating_to_dita.dita"/>
+        <topicref href="topics/migrateWordToDita.dita">
+            <topicref
+                href="topics/migrating_word_to_dita_bdc/migrating_word_to_dita_using_batch_documents_converter.dita">
+                <topicref
+                    href="topics/migrating_word_to_dita_bdc/preparing_word_document_for_migration.dita"/>
+                <topicref href="topics/migrating_word_to_dita_bdc/converting_word_document.dita"/>
+                <topicref
+                    href="topics/migrating_word_to_dita_bdc/customizing_the_resulting_dita_content.dita"/>
+                <!-\-<topicref href="topics/migrating_word_to_dita_bdc/frequently_asked_questions.dita"/>-\->
+            </topicref>
+        </topicref>
+        <topicref href="topics/batch_converting_html_to_xhtml.dita"/>
+        <topicref href="topics/migratingFmToDita.dita"/>
+        <topicref href="topics/use-topic-titles-to-generate-file-names.dita"/>
+    </topicref>
+    <topicref href="git-tech-writers/using_git_for_technical_writing.ditamap" format="ditamap"/>
+    <topicref href="maps/sdk-development-plugins-frameworks-map.ditamap" format="ditamap"/>
+    <topichead navtitle="Development">
+        <topicref href="topics/transform_text_files.dita"/>
+        <topicref href="topics/editing_complex_xml_schemas.dita"/>
+    </topichead>
+    <topichead navtitle="Miscellaneous">
+        <topicref href="topics/ISO-27001-certification-announcement.dita"/>
+        <topicref href="topics/OxygenUsersMeetup.dita"/>
+        <topicref href="topics/Chinese_users_group.dita"/>
+        <topicref href="topics/oxygen_xml_ecosystem.dita"/>
+        <topicref href="topics/add_ons_for_technical_documentation.dita"/>
+        <topicref href="topics/general_tips_and_tricks.dita"/>
+        <topicref href="topics/checking_terminology_with_oxygen_xml_editor.dita"/>
+        <topicref href="topics/10_things_i_enjoy_about_the_new_oxygen_json_editor.dita"/>
+        <topicref href="topics/opinions%20on%20Oxygen.dita"/>
+        <topicref href="topics/greattechsupport.dita"/>
+        <topicref href="reuse/short_story_reuse.dita"/>
+        <topicref href="topics/sharingSettings.dita"/>
+        <topicref href="topics/collaboration-for-documenting-software.dita"/>
+        <topicref href="topics/collaboration-teams.dita"/>
+        <topicref href="george/enable-massive-contributions.dita"/>
+        <topicref href="topics/all_about_editor_variables.dita"/>
+        <topicref href="topics/xslt_training.dita"/>
+        <topicref href="resources/sampleGraphBlog.html" format="html">
+            <topicmeta>
+                <navtitle>Oxygen XML Blog as a Graph</navtitle>
+            </topicmeta>
+        </topicref>
+        <topicref href="topics/oxygen_xml_vulnerability_analysis_faq.dita"/>
+        <topicref href="topics/using_oxygen_xml_editor_in_a_browser.dita"/>
+		<topicref href="topics/blog_2022_retrospective.dita"/>
+    </topichead>   -->
+  <!--   <topicref href="topics/contributors.dita">
+        <topicmeta>
+            <data name="wh-menu">
+                <data name="hide" value="yes"/>        
+            </data>
+        </topicmeta>
+    </topicref>   -->
+  <topicref href="maps/key_definitions.ditamap" format="ditamap"/>
+  <mapref href="classification/blog-subject-scheme.ditamap" type="subjectScheme" format="ditamap"/>
+  <mapref href="classification/blog-classification.ditamap" processing-role="resource-only" format="ditamap"/>
+  <reltable title="Related Links" toc="no">
+    <relrow>
+      <relcell toc="no">
+        <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
+      </relcell>
+      <relcell toc="no">
+        <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell toc="no">
+        <topicref href="topics/task-steps-diagram.dita"/>
+      </relcell>
+      <relcell toc="no">
+        <topicref href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita"/>
+        <topicref href="topics/embedding_diagrams_in_dita_topics_using_mermaid.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell toc="no">
+        <topicref href="topics/creating_graphs_from_dita_maps.dita"/>
+      </relcell>
+      <relcell toc="no">
+        <topicref href="resources/sampleGraphBlog.html" format="html">
+          <topicmeta>
+            <navtitle>Vizualizare grafică a DITA Map-ului Oxygen XML Blog</navtitle>
+          </topicmeta>
+        </topicref>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell toc="no">
+        <topicref href="topics/generating_google_structured_data_from_your_dita_tasks.dita"/>
+      </relcell>
+      <relcell toc="no">
+        <topicref href="topics/generating_google_structured_data_from_your_dita_faq.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

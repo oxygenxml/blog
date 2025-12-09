@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="ai_xpath_functions">
+  <title>Funcții de extensie XPath AI în Oxygen XML Editor</title>
+  <prolog>
+    <author>Octavian Nadolu</author>
+    <critdates>
+      <created date="2025-06-30"/>
+    </critdates>
+  </prolog>
+  <body>
+    <bodydiv>
+      <section id="section_it4_qtj_rfc">
+        <title>Introducere</title>
+        <p>Integrarea <b>funcțiilor de extensie XPath bazate pe AI</b> în Oxygen XML Editor reprezintă un pas major înainte în ciclul de viață al conținutului XML, prin introducerea automatizării inteligente. Aceste funcționalități îmbunătățesc fluxurile de lucru Schematron, XSLT și XQuery, permițând reformularea, validarea și acțiunile personalizate alimentate de AI, direct în schemele și foile de stil ale dumneavoastră, folosind limbaj natural. Acest articol oferă o prezentare generală a funcțiilor cheie, exemple practice și opțiuni de configurare pentru a vă ajuta să utilizați aceste capabilități AI eficient, sigur și la scară largă.</p>
+      </section>
+      <section id="section_jt4_qtj_rfc">
+        <title>Faceți cunoștință cu funcțiile de extensie XPath AI</title>
+        <p>Suplimentul Oxygen AI Positron introduce trei funcții principale (namespace <codeph>http://www.oxygenxml.com/ai/function</codeph>) care pot fi utilizate direct în expresii Schematron, XSLT, XQuery, XProc și XPath:</p>
+      </section>
+      <section id="section_kt4_qtj_rfc">
+        <title>ai:transform-content(system, (user, assistant,)* user)</title>
+        <ul id="ul_lt4_qtj_rfc">
+          <li><b>Scop:</b> Transformă sau reformulează conținutul folosind AI, ghidat de un prompt de sistem și de inputul furnizat de utilizator.</li>
+          <li>
+            <b>Parametri:</b>
+            <ul id="ul_mt4_qtj_rfc">
+              <li><b>system:</b> Context sau regulă (ex.: „Respectă ghidul de stil al companiei”).</li>
+              <li><b>user:</b> Textul de intrare care trebuie transformat.</li>
+              <li><b>assistant:</b> (Opțional, repetabil) Răspunsuri AI anterioare pentru context în operațiuni multi-etapă.</li>
+            </ul>
+          </li>
+          <li><b>Returnează:</b> Șir generat de AI, transformat.</li>
+        </ul>
+        <p>
+          <b>Exemplu de utilizare în Schematron:</b>
+        </p>
+        <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_ot4_qtj_rfc">&lt;sqf:replace match="text()" select="ai:transform-content('Reformulează fraza să aibă mai puțin de 50 de cuvinte', .)"/&gt;
+                </codeblock>
+      </section>
+      <section id="section_pt4_qtj_rfc">
+        <title>ai:verify-content(system, (user, assistant,)* user)</title>
+        <ul id="ul_qt4_qtj_rfc">
+          <li><b>Scop:</b> Validează conținutul folosind prompturi în limbaj natural, returnând un rezultat Boolean.</li>
+          <li><b>Parametri:</b> La fel ca mai sus.</li>
+          <li><b>Returnează:</b> Boolean (adevărat/fals), ideal pentru a conduce aserțiuni Schematron.</li>
+        </ul>
+        <p>
+          <b>Exemplu de utilizare în Schematron:</b>
+        </p>
+        <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_st4_qtj_rfc">&lt;sch:report test="ai:verify-content('Conține următorul conținut diateza pasivă?', .)" sqf:fix="rephrase"&gt;
+    Fraza folosește diateza pasivă.
+&lt;/sch:report&gt;</codeblock>
+      </section>
+      <section id="section_ewf_z4l_sfc">
+        <title>ai:invoke-action(actionId, extraPrompt, content)</title>
+        <ul id="ul_tt4_qtj_rfc">
+          <li><b>Scop:</b> Execută o acțiune AI preconfigurată cu context suplimentar sau prompturi pe un bloc de conținut dat.</li>
+          <li>
+            <b>Parametri:</b>
+            <ul id="ul_ut4_qtj_rfc">
+              <li><b>actionId:</b> ID-ul acțiunii AI înregistrate.</li>
+              <li><b>extraPrompt:</b> Context suplimentar pentru acțiune.</li>
+              <li><b>content:</b> Nod XML sau șir de procesat.</li>
+            </ul>
+          </li>
+          <li><b>Returnează:</b> Șirul transformat (sau analizat).</li>
+        </ul>
+        <p>
+          <b>Exemplu de utilizare în Schematron:</b>
+        </p>
+        <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_vck_52m_sfc">&lt;sqf:replace match="text()" select="ai:invoke-action('Reformulează fraza să aibă mai puțin de 50 de cuvinte', .)"/&gt;</codeblock>
+      </section>
+      <section id="section_vt4_qtj_rfc">
+        <title>Exemplu din practică: Optimizarea descrierilor scurte</title>
+        <p>
+          <b>Validare și refactorizare într-un singur pas:</b>
+        </p>
+        <p>Acest exemplu demonstrează o regulă care validează dacă o descriere scurtă depășește 50 de cuvinte și oferă o corecție automată pentru a o reformula astfel încât să respecte limita de cuvinte. Regula folosește Schematron și Smart Fix (SQF) pentru a asigura descrieri scurte concise și eficiente.</p>
+        <?oxy_attributes outputclass="&lt;change type=&quot;inserted&quot; author=&quot;Octavian&quot; timestamp=&quot;20250620T130946+0000&quot; /&gt;"?>
+        <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_xt4_qtj_rfc">&lt;sch:rule context="shortdesc"&gt;
+    &lt;sch:report test="count(tokenize(.,'\s+')) &gt; 50" sqf:fix="rephrase"&gt;
+        Fraza trebuie să conțină mai puțin de 50 de cuvinte.
+    &lt;/sch:report&gt;
+    &lt;sqf:fix id="rephrase"&gt;
+        &lt;sqf:description&gt;
+            &lt;sqf:title&gt;Reformulează fraza să aibă mai puțin de 50 de cuvinte&lt;/sqf:title&gt;
+        &lt;/sqf:description&gt;
+        &lt;sqf:replace match="text()" select="ai:transform-content('Reformulează fraza să aibă mai puțin de 50 de cuvinte', .)"/&gt;
+    &lt;/sqf:fix&gt;
+&lt;/sch:rule&gt;</codeblock>
+        <p>
+          <b>Verificator de voce activă:</b>
+        </p>
+        <p>Acest exemplu ilustrează o regulă care verifică dacă o descriere scurtă conține diateza pasivă și oferă o corecție automată pentru a o reformula în diateza activă. Regula utilizează verificarea și transformarea conținutului bazate pe AI pentru a spori claritatea și impactul textului.</p>
+        <?oxy_attributes outputclass="&lt;change type=&quot;inserted&quot; author=&quot;Octavian&quot; timestamp=&quot;20250620T130954+0000&quot; /&gt;"?>
+        <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_zt4_qtj_rfc">&lt;sch:rule context="shortdesc"&gt;
+    &lt;sch:report test="ai:verify-content('Conține următorul conținut diateza pasivă?', .)"
+                sqf:fix="rephrase"&gt;Fraza folosește diateza pasivă.&lt;/sch:report&gt;
+    &lt;sqf:fix id="rephrase"&gt;
+        &lt;sqf:description&gt;
+            &lt;sqf:title&gt;Reformulează textul în diateza activă&lt;/sqf:title&gt;
+        &lt;/sqf:description&gt;
+        &lt;sqf:replace match="text()" select="ai:transform-content('Reformulează textul în diateza activă', .)"/&gt;
+    &lt;/sqf:fix&gt;
+&lt;/sch:rule&gt;</codeblock>
+      </section>
+      <section id="section_refactor_content_xsl_ai">
+        <title>Refactorizarea conținutului folosind XSL și AI</title>
+        <p>Combinarea AI cu XSLT permite transformarea dinamică și inteligentă a conținutului. Utilizând funcțiile de extensie XPath bazate pe AI, puteți automatiza sarcini precum generarea textului alternativ pentru imagini, asigurând accesibilitatea și conformitatea cu un efort manual minim.</p>
+        <p>
+          <b>Exemplu: Generarea textului alternativ pentru imagini</b>
+        </p>
+        <p>Următorul șablon XSLT generează text alternativ pentru imaginile care au atributul `keyref`, dar nu au atributul `alt`. Șablonul utilizează funcția `ai:transform-content` pentru a crea o descriere alternativă concisă pentru imagine. Textul alternativ generat este apoi adăugat în elementul `alt` din cadrul nodului imagine copiat. Această metodă asigură că toate imaginile fără text alternativ sunt completate cu descrieri relevante, îmbunătățind atât accesibilitatea, cât și utilizabilitatea.</p>
+        <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_refactor_xsl_ai">
+&lt;xsl:template match="image[@keyref][not(alt)]"&gt;
+    &lt;xsl:copy&gt;
+        &lt;xsl:apply-templates select="@*"/&gt;
+        &lt;alt&gt;
+            &lt;xsl:value-of select="
+                 ai:transform-content(
+                 'Creează o scurtă descriere alternativă pentru această imagine:',
+                 concat('{attach(', resolve-uri(@href, base-uri()), ')}'))"/&gt;
+        &lt;/alt&gt;
+        &lt;xsl:apply-templates select="node()"/&gt;
+    &lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;</codeblock>
+        <p>Acest exemplu demonstrează cum AI poate genera dinamic texte alternative relevante pentru imagini, asigurând că materialul dumneavoastră este accesibil și îmbogățit cu metadate.</p>
+        <p>
+          <b>Exemplu: Traducere și validare lingvistică</b>
+        </p>
+        <p>Următorul șablon XSLT arată cum funcțiile XPath bazate pe AI pot fi folosite pentru traducere și validare multilingvă. În acest exemplu, conținutul este tradus în franceză în trei variante, apoi tradus înapoi în engleză. Traducerile în engleză sunt comparate cu conținutul original pentru a determina cea mai precisă traducere în franceză:</p>
+        <codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_multilang_translation">
+    &lt;xsl:template match="text()"&gt;
+        &lt;xsl:variable name="agentFrench" select="ai:transform-content('Tradu în franceză în 3 variante ', .)"/&gt;
+        &lt;xsl:variable name="agentEnglish" select="ai:transform-content('Tradu conținutul din franceză în engleză ', $agentFrench)"/&gt;
+        &lt;xsl:value-of select="ai:transform-content(
+            'Compară traducerea în engleză cu conținutul original și folosește traducerea corectă în franceză. ',
+            'Tradu în franceză în 3 variante ', 
+            $agentFrench, 
+            'Tradu din franceză în engleză ', 
+            $agentEnglish,.)"/&gt;
+    &lt;/xsl:template&gt;
+</codeblock>
+        <p>Această metodă asigură că traducerea finală în franceză este atât precisă, cât și adecvată contextului, valorificând capabilitățile AI pentru a procesa și valida eficient conținut multilingv.</p>
+      </section>
+      <section id="section_a54_qtj_rfc">
+        <title>Opțiuni de configurare: echilibrarea puterii și performanței</title>
+        <p>Oxygen oferă mai multe opțiuni pentru a personaliza comportamentul funcțiilor AI în funcție de cerințele proiectului dumneavoastră:</p>
+      </section>
+      <b>Activează funcțiile XPath</b>
+      <ul id="ul_b54_qtj_rfc">
+        <li><b>Scop:</b> Activează funcțiile XPath bazate pe AI pentru validare și transformare Schematron/XSLT.</li>
+        <li><b>Implicit:</b> Activat.</li>
+      </ul>
+      <b>Cachează răspunsurile și reutilizează-le pentru prompturi identice</b>
+      <ul id="ul_c54_qtj_rfc">
+        <li><b>Scop:</b> Minimizează apelurile API redundante și accelerează validarea/transformarea prin cache-ul răspunsurilor AI pentru inputuri identice.</li>
+        <li><b>Implicit:</b> Activat.</li>
+        <li><b>Administrare:</b> Un buton „Șterge cache-ul” vă permite să ștergeți instantaneu toate răspunsurile stocate.</li>
+      </ul>
+      <b>Dimensiune cache</b>
+      <ul id="ul_d54_qtj_rfc">
+        <li><b>Scop:</b> Stabilește o limită superioară pentru numărul de răspunsuri care pot fi stocate în cache, prevenind utilizarea excesivă a memoriei/resurselor.</li>
+      </ul>
+      <b>Notifică-mă când numărul de cereri depășește…</b>
+      <ul id="ul_e54_qtj_rfc">
+        <li><b>Scop:</b> Oferă o măsură de siguranță pentru operațiuni la scară mare.</li>
+        <li><b>Comportament:</b> Dacă pragul specificat de cereri AI este depășit, Oxygen afișează o casetă de dialog de confirmare. Puteți alege să opriți utilizarea funcțiilor XPath AI dacă volumul vi se pare excesiv.</li>
+      </ul>
+      <section id="section_f54_qtj_rfc">
+        <title>Rezumat: De ce să folosiți funcțiile XPath AI în Oxygen?</title>
+        <ul id="ul_g54_qtj_rfc">
+          <li><b>Exprimați stilul, validarea și transformarea în limbaj natural</b>, eliminând nevoia pentru numeroase reguli rigide.</li>
+          <li><b>Automatizați sarcinile editoriale repetitive</b> (ex.: numărare cuvinte, voce, gramatică) și oferiți corecții AI direct în instrumentele de editare.</li>
+          <li><b>Controlați utilizarea resurselor, conformitatea și performanța</b> prin opțiuni detaliate de configurare.</li>
+        </ul>
+        <p>Aceste funcționalități revoluționează fluxul de conținut XML, permițând o editare și validare inteligentă, conformă cu standardele, într-un mod facil și sigur.</p>
+        <p>Sunteți gata să integrați AI în fluxul dumneavoastră XML? Activați aceste opțiuni în Oxygen XML Editor și începeți să vă faceți conținutul mai consecvent, conform și pregătit pentru viitor chiar de astăzi.</p>
+      </section>
+    </bodydiv>
+  </body>
+  <related-links>
+    <link href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_a3s_ngn_2ds" scope="external" format="html">
+      <linktext>Funcții de extensie XPath AI Positron</linktext>
+    </link>
+    <link href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_a3s_ngn_2ds" scope="external" format="html">
+      <linktext>Opțiuni pentru funcțiile de extensie XPath AI</linktext>
+    </link>
+    <link href="https://youtu.be/mv3BUN1rGDI?si=MsmLW9kZAuuSLzPh" scope="external" format="html">
+      <linktext>Explicații pentru funcțiile de extensie XPath AI</linktext>
+    </link>
+  </related-links>
+</topic>

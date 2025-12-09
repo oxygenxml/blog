@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="vibing_with_ai_positron">
+  <title>Pași practici pentru redactarea Vibe cu AI Positron</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2025-11-01"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Inițial, am început să lucrăm la suplimentul <uicontrol>AI Positron</uicontrol> pentru <ph keyref="oxygen"/> acum mai bine de 2 ani, creând acțiuni AI utile pentru a <b>îmbunătăți lizibilitatea</b> conținutului, a <b>corecta gramatica</b>, a <b>traduce</b>, a <b>corecta</b> și așa mai departe. Treptat, am realizat că, chiar și atunci când invoci prompturi atent create, ambalate ca astfel de acțiuni AI, ai nevoie de flexibilitate pentru a discuta în continuare rezultatele cu AI-ul. Astfel, am adăugat suport pentru crearea de acțiuni AI personalizate, specifice nevoilor tale. Aceste acțiuni AI, bazate pe prompturi ajustate de experții tăi (sau de ai noștri), continuă să fie utile pentru cazuri de utilizare precise și pentru persoanele care abia încep să folosească instrumente AI.</p>
+    <p>În timp, am început să explorăm și să extindem capabilitățile de a folosi chat-ul pentru a conversa cu AI-ul, de a atașa tot felul de tipuri de fișiere (<filepath>PDF</filepath>, <filepath>Word</filepath>, <filepath>Markdown</filepath>, imagini) pentru a <b>crea schițe de documentație</b>, a <b>explora</b> și a <b>efectua modificări</b> în proiectul curent.</p>
+    <p>Vizualizarea de chat din orice aplicație <b>AI Assistant</b>, precum <uicontrol>AI Positron</uicontrol>, este noua <uicontrol>consolă</uicontrol>; o folosești pentru a <b>dirija</b> AI-ul, a <b>produce modificări</b>, a le <b>previzualiza</b> și a rafina până obții o schiță funcțională. Rămâi în controlul unui instrument <b>puternic și imperfect</b>. Așa cum, în trecut, computerele au ridicat scrierea și programarea la un nivel superior de abstractizare.</p>
+    <section id="section_kqy_tnn_jhc">
+      <title>Vibe Authoring</title>
+      <p>Aș defini suportul <b>Vibe Authoring</b> din suplimentul <b>AI Positron</b> ca o funcționalitate care îți permite să:<ul id="ul_pjh_xvk_3hc">
+          <li>Definești un <b>prompt de context de proiect</b> care oferă modelelor AI informații generale despre proiectul tău, reguli importante de stil, terminologie și structură.</li>
+          <li><b>Conversezi</b> cu AI-ul pentru a <b>explora</b> conținutul proiectului curent sau pentru a <b>efectua modificări</b> în proiect. Toate modificările realizate de AI pot fi <b>vizualizate</b> și <b>revenite</b>, dacă este necesar.</li>
+          <li>Conectezi servere <b>Model Context Protocol</b> pentru a oferi instrumente care integrează <b>AI Positron</b> cu alte surse de date din compania ta (de exemplu, sistem de tichete, listă de probleme etc.).</li>
+        </ul></p>
+    </section>
+    <section id="section_igw_5zy_dhc">
+      <title>De la începător la expert</title>
+      <p>Dacă cineva ar încerca să împartă oamenii în începători și experți, ar descoperi rapid că fiecare dintre noi este <b>începător</b> în anumite domenii și <b>expert</b> în altele. </p>
+      <p>Ca începători, folosim instrumente și framework-uri standard, cu o personalizare minimă, pentru a obține rezultate slabe. Nu putem explica nici când instrumentul nu funcționează, nici când funcționează. Când nu obținem conținut de calitate ca începători, dăm vina pe instrumente.</p>
+      <p>În timp, prin <b>lectură</b>, <b>scriere</b> și <b>greșeli</b>, evoluăm pentru a înțelege instrumentele și framework-urile pe care le folosim. Acordând timp pentru a le înțelege și a le personaliza, obținem rezultate mai bune și mai consistente. </p>
+      <p>Acest articol este o încercare de a vă oferi o mai bună înțelegere a modului în care funcționează suplimentul <ph keyref="oxygen"/> <uicontrol>AI Positron</uicontrol> și cum poate fi personalizat pentru a maximiza calitatea interacțiunilor de tip vibe authoring.</p>
+      <p>Nu consider că trebuie să folosim instrumente AI pentru toate activitățile zilnice; creierul nostru are nevoie de efortul și munca pe care le depunem în <b>scriere</b> pentru a înțelege mai bine sarcina de rezolvat. Totuși, există multe activități care pot fi realizate mai rapid și cu o calitate suficientă (generarea de schițe, îmbunătățirea calității conținutului) folosind instrumente AI într-un mod controlat.</p>
+    </section>
+    <section id="section_ecx_l4y_dhc">
+      <title>Folosiți un sistem de control al versiunilor</title>
+      <p>Uneori, este nevoie să <b>vizualizați</b> și să <b>reveniți la modificările</b> realizate de <b>AI</b>, pentru a păstra un <b>istoric</b> al modificărilor anterioare din proiect. De asemenea, trebuie să <b>colaborați</b> cu alți <b>oameni</b> sau cu <b>agenți</b> AI, să creați <b>ramuri</b> separate pentru dezvoltarea de funcționalități, să vă păstrați conținutul <b>sigur</b> și, în final, să îl <b>publicați</b>.</p>
+      <p>Prin urmare, un sistem de control al versiunilor pentru proiectul dumneavoastră, precum <b>Git</b> sau un <b>CCMS</b> comercial, este <b>obligatoriu</b>.</p>
+      <p>Suplimentul gratuit <b>Git client add-on</b> din <ph keyref="oxygen"/> este un instrument excelent care oferă creatorilor de documentație tehnică aproape toate funcționalitățile necesare pentru a lucra cu proiecte Git: suport pentru pull, efectuarea de modificări, previzualizarea acestora, push, o vizualizare laterală utilă <b>History</b>, schimbarea ramurilor și stocarea temporară a modificărilor.</p>
+      <p>
+        <image href="../images/git-add-on-oxygen.png" placement="inline" scale="40" id="image_xsy_3ry_dhc"/>
+      </p>
+      <xref href="../git-tech-writers/using_git_for_technical_writing.dita">Utilizarea Git pentru redactare tehnică</xref>
+    </section>
+    <section id="section_lcw_m4y_dhc">
+      <title>Configurați promptul de context al proiectului</title>
+      <p>Modelele LLM au o <b>fereastră de context limitată</b> și, inițial, nu cunosc nimic despre particularitățile proiectului dumneavoastră de documentație. Ele pot folosi instrumente pentru a explora structura proiectului, dar este mai eficient să creați un <b>prompt de context de proiect</b>, care devine parte a fiecărei acțiuni AI invocate și a fiecărei conversații de chat.</p>
+      <p><xref href="customizing_ai_positron_for_your_dita_xml_project.dita"/>.</p>
+      <p>Promptul de context al proiectului conține o prezentare generală a intenției, structurii, regulilor și ghidului de stil al proiectului. Trebuie să fie cât mai scurt și informativ posibil. În pagina <uicontrol>AI Positron Preferences</uicontrol>, puteți specifica întregul prompt de context al proiectului fie direct, fie ca referință către un fișier separat care poate fi stocat în proiect.</p>
+      <p>
+        <image href="../images/project-context-prompt-prefs.png" placement="inline" scale="40" id="image_zkk_fsy_dhc"/>
+      </p>
+      <p>Cea mai recentă versiune <uicontrol>AI Positron</uicontrol> a adăugat o nouă acțiune AI numită <uicontrol>Generate agent instructions</uicontrol>, care vă poate ajuta să creați conținutul inițial al promptului de context de proiect.</p>
+      <p>Exemple de fișiere de prompt de context de proiect pentru <b>AI Positron</b> în format Markdown:<ul id="ul_y4l_msy_dhc">
+          <li>
+            <xref href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md" scope="external" format="html">Exemplu de prompt de context creat manual, care definește intenția proiectului, publicul țintă, cele mai importante reguli de terminologie, ghidul de stil și specializarea vocabularului DITA.</xref>
+          </li>
+          <li>
+            <xref href="../positron-ai-actions/ai-context.md" format="html">Promptul de context generat cu AI pentru Oxygen XML Blog.</xref>
+          </li>
+        </ul></p>
+    </section>
+    <section id="section_ol4_n4y_dhc">
+      <title>Alegeți modelul LLM</title>
+      <p>Aveți nevoie de un model LLM de calitate pentru a obține modificări de calitate. Un model LLM eficient, rentabil și cu o fereastră de context mare. Din testele și experiența noastră extinsă, recomandăm în general <b>OpenAI GPT 4.1</b>, <b>Claude Sonet 4</b>, <b>Haiku 4.5</b> sau <b>Gemini 2.5 Flash</b>.</p>
+      <p><b>Contextul</b> este cheia aici. LLM-ul primește un prompt de context de proiect, dar are nevoie și să exploreze proiectul, să citească conținut și să efectueze modificări. Astfel, implementarea LLM-ului și platforma prin care îl accesați trebuie să permită și <b>apelarea de instrumente</b>. Majoritatea modelelor LLM de calitate, precum cele menționate mai sus, au și suport <b>vision</b> pentru a citi imagini și a crea, de exemplu, schițe de documentație pe baza capturilor de ecran sau pentru a genera texte alternative pentru capturile de ecran din ghidul utilizatorului.</p>
+    </section>
+    <section id="section_lh2_44y_dhc">
+      <title>Alegeți modul de chat</title>
+      <p><b>AI Positron</b> vine cu trei moduri de chat predefinite:<ul id="ul_qyd_bmg_2hc">
+          <li><uicontrol>DITA Agent</uicontrol> – Mod agentic care efectuează modificări într-un proiect DITA XML, având un prompt de sistem predefinit care instruiește LLM-ul cu privire la cerințele de bază pentru lucrul într-un proiect DITA XML și un ghid de stil minimal. Are acces la instrumente generale pentru a explora proiectul și a efectua modificări, dar și la instrumente specifice DITA XML pentru a obține structura DITA map-ului deschis în vizualizarea <b>DITA Maps Manager</b>, a rezolva o referință de conținut către conținutul referit sau a găsi definiții de chei care corespund unui anumit nume de produs. De exemplu, puteți rula prompturi ca acesta în chat:<codeblock id="codeblock_dnm_rmg_2hc" xml:space="preserve">Înlocuiește în fișierul curent toate numele de produse cu
+referințele de chei definite</codeblock>sau:<codeblock id="codeblock_wmz_smg_2hc" xml:space="preserve">Folosește documentele atașate pentru a crea un topic DITA XML,
+adaugă legături conexe în topic către altele similare, găsește
+un loc potrivit și inserează-l în DITA Map</codeblock><p>
+              <fig id="fig_ymn_ctg_2hc">
+                <title>Exemplu: Creează un topic DITA XML nou dintr-un document PDF</title>
+                <image href="../images/ai/dita-agent-create-topic.gif" placement="inline" scale="50" id="image_tf4_ctg_2hc"/>
+              </fig>
+            </p>sau:<codeblock id="codeblock_vjc_gng_2hc" xml:space="preserve">Adaugă legături conexe în topicul curent către topicuri similare
+din proiect</codeblock><p>
+              <fig id="fig_utq_gtg_2hc">
+                <title>Exemplu: Adaugă legături conexe la topic</title>
+                <image href="../images/ai/compute-rellinks-ai.gif" placement="inline" scale="50" id="image_ex2_htg_2hc"/>
+              </fig>
+            </p></li>
+          <li><b>Agent</b> – Agent generic util pentru explorarea și modificarea diverselor tipuri de proiecte.</li>
+          <li><uicontrol>Ask</uicontrol> – Agent doar pentru citire, util pentru explorare și integrarea planurilor fără a face modificări reale până când treceți la unul dintre ceilalți agenți. </li>
+        </ul></p>
+      <p>Fiecare agent definit are un prompt de sistem și face referire la un set de instrumente care pot fi folosite de LLM. Puteți defini propriii agenți și îi puteți face să apară în vizualizarea de <b>Chat</b>. O prezentare generală a instrumentelor disponibile pentru aceste moduri de chat agentic este disponibilă mai jos.</p>
+    </section>
+    <section id="section_jks_p4y_dhc">
+      <title>Prezentare generală a instrumentelor disponibile</title>
+      <p><uicontrol>AI Positron</uicontrol> vine la pachet cu o varietate de instrumente puse la dispoziția LLM-ului pentru a explora și modifica conținutul. Iată câteva dintre categoriile de instrumente disponibile, împreună cu prompturi pe care le puteți testa în vizualizarea de chat <uicontrol>AI Positron</uicontrol>:<ul id="ul_o4h_kng_2hc">
+          <li>Instrumente pentru explorarea proiectului în ansamblu. Modurile de chat au acces la:<ul id="ul_prx_mng_2hc">
+              <li>Instrument care poate efectua căutări după cuvinte cheie în proiect. De exemplu, îi puteți cere:<codeblock id="codeblock_wv1_4ng_2hc" xml:space="preserve">Găsește topicuri despre Git Push în proiect
+și oferă-mi o prezentare generală a celor mai potrivite.</codeblock><note id="note_djq_ddr_3hc">Acest instrument se bazează pe capabilitățile de indexare ale <ph keyref="oxygen"/>. Dacă lucrați cu DITA map-uri deschise din sisteme de stocare la distanță, precum un CMS, în pagina <uicontrol>Preferences-&gt;Open/Find Resource</uicontrol> ar trebui să bifați opțiunea <uicontrol>Enable indexing for remote resources</uicontrol>.</note></li>
+              <li>Grep și potrivire exactă de șiruri în proiect, inclusiv în interiorul unor elemente XML specifice. De exemplu:<codeblock id="codeblock_o14_5ng_2hc" xml:space="preserve">Găsește locurile unde acțiunea Save este menționată
+în elemente DITA &lt;uicontrol&gt;.</codeblock><note id="note_gqw_5dr_3hc">Acest instrument este disponibil doar când lucrați cu resurse de pe discul local. În acest caz, ar trebui să creați un proiect în vizualizarea <ph keyref="oxygen"/> <uicontrol>Project</uicontrol> pentru folderele proiectului dumneavoastră.</note></li>
+              <li>Explorați structura folderelor proiectului. De exemplu:<codeblock id="codeblock_mpd_zng_2hc" xml:space="preserve">Unde ar trebui să salvez DITA map-urile în acest proiect?</codeblock><note id="note_vcd_d2r_3hc">Acest instrument este disponibil doar când lucrați cu resurse de pe discul local.</note></li>
+            </ul></li>
+          <li>Instrumente pentru a citi conținut din fișierul curent sau dintr-un alt fișier. Exemplu:<codeblock id="codeblock_n5r_f4g_2hc" xml:space="preserve">Oferă-mi sugestii despre cum pot scurta conținutul documentului curent.</codeblock></li>
+          <li>Instrumente pentru a efectua modificări mari sau mici în documentul curent sau în alte documente. Exemple:<codeblock id="codeblock_bcf_m4g_2hc" xml:space="preserve">Scurtează titlul documentului curent</codeblock>sau:<codeblock id="codeblock_ofl_p4g_2hc" xml:space="preserve">Găsește și corectează inconsecvențele logice din documentul curent</codeblock></li>
+          <li>Instrumente pentru a furniza probleme de validare și terminologie raportate pentru anumite documente. Dacă aveți multe reguli de ghid de stil, este recomandat să le implementați ca <xref href="SchematronBCs.dita">reguli Schematron</xref> sau reguli pentru suplimentul <ph keyref="oxygen"/> <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html" scope="external" format="html">Terminology Checker</xref>. Odată ce ați implementat verificările, puteți pur și simplu să cereți AI-ului:<codeblock id="codeblock_d55_b1m_2hc" xml:space="preserve">Corectează problemele de validare și terminologie din conținutul generat înainte de a-l salva pe disc.</codeblock></li>
+          <li>Instrumente pentru a efectua modificări XML-aware în documente:<ul id="ul_ept_r4g_2hc">
+              <li>Aplică operațiuni existente de refactorizare XML pe documente. Exemplu:<codeblock id="codeblock_nqd_t4g_2hc" xml:space="preserve">Invocă operațiunea de refactorizare XML pentru a adăuga ID-uri unice la toate paragrafele</codeblock></li>
+              <li>Aplică refactorizare XML folosind scripturi XSLT create de AI. Exemplu:<codeblock id="codeblock_rjq_dpg_2hc" xml:space="preserve">Invocă refactorizarea XML cu XSLT personalizat pentru a
+înlocui toate elementele &lt;b&gt; cu &lt;uicontrol&gt;</codeblock><p>
+                  <fig id="fig_bkf_rsg_2hc">
+                    <title>Exemplu: Folosește XSLT personalizat pentru refactorizare</title>
+                    <image href="../images/ai/refactor-xml-with-custom-xsl.gif" placement="inline" scale="50" id="image_y3y_qsg_2hc"/>
+                  </fig>
+                </p></li>
+            </ul></li>
+          <li>Instrumente pentru a apela acțiuni AI existente pe documente. Exemple:<codeblock id="codeblock_mvv_3pg_2hc" xml:space="preserve">Invocă acțiunea AI Proofread pe conținutul
+documentului curent, apoi salvează modificările propuse
+în document</codeblock>sau:<codeblock id="codeblock_zml_cqg_2hc" xml:space="preserve">Invocă acțiunea AI improve readability pe conținutul
+documentului curent, apoi salvează modificările propuse
+în document</codeblock></li>
+        </ul></p>
+    </section>
+    <section id="section_l4l_w4y_dhc">
+      <title>Adăugați instrumente suplimentare cu Model Context Protocol</title>
+      <p>Pagina de preferințe <b>Model Context Protocol</b> din <uicontrol>AI Positron</uicontrol> vă permite să vă conectați la diverse servere MCP și să permiteți LLM-ului să apeleze instrumente implementate pe servere locale sau la distanță.</p>
+      <p>Configurații de exemplu pot fi găsite în <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/model_context_protocol_preferences.html" scope="external" format="html">
+          <ph keyref="oxygen"/>
+        </xref>.</p>
+      <p><b>Model Context Protocol</b> oferă suplimentului <b>AI Positron</b> posibilitatea de a furniza LLM-ului integrări strânse cu sistemul de urmărire a problemelor sau cu sistemul de control al versiunilor, de exemplu, pentru a permite LLM-ului să extragă sumarul și comentariile de pe un issue GitHub și să creeze un topic de documentație draft pe baza acestora. Exemplu de prompt: <codeblock id="codeblock_jfn_vqg_2hc" xml:space="preserve">Obține descrierea și comentariile de la issue-ul DITA OT GitHub cu numărul 2021 și creează un topic de documentație draft folosindu-le</codeblock><fig id="fig_pl4_xsg_2hc">
+          <title>Exemplu: Utilizarea MCP pentru accesarea Atlassian JIRA</title>
+          <p>
+            <b/>
+            <object outputclass="video" data="../images/ai/DITA%20Agent.m4v"/>
+          </p>
+        </fig><fig id="fig_yq3_nsg_2hc">
+          <title>Exemplu: Utilizarea MCP pentru accesarea problemelor GitHub</title>
+          <image href="../images/ai/mcp-github.gif" placement="inline" scale="50" id="image_wpw_nsg_2hc"/>
+        </fig></p>
+      <p>Întregul set de instrumente oferit de <uicontrol>AI Positron</uicontrol> poate fi pus la dispoziție și pentru <b>AI Assistants</b> externi, pornind întreaga aplicație <ph keyref="oxygen"/> ca server MCP local.<fig id="fig_fsk_31m_2hc">
+          <title><ph keyref="oxygen"/> ca server MCP local</title>
+          <object outputclass="video" data="../images/ai/claude-code-change-id-oxygen-mcp-preview.mov"/>
+        </fig></p>
+    </section>
+    <section id="section_omp_1rg_2hc">
+      <title>Concluzie</title>
+      <p>Obținerea de rezultate de calitate și sfaturi utile de la LLM, precum și realizarea de modificări precise cu ajutorul acestuia, depind de cât de mult context îi oferă aplicația și de posibilitatea de a găsi context suplimentar atunci când este nevoie.</p>
+      <p>Începând cu utilizarea unor LLM-uri de calitate, combinate cu un prompt de context de proiect bine creat și distilat, continuând cu instrumente care oferă LLM-ului acces la explorarea proiectului și realizarea de modificări consistente, ajungeți ca prompturile și comenzile scurte să fie interpretate și executate corect.</p>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="topic_wn_positron_5">
+  <title>
+    <b>Ce este nou în Oxygen AI Positron Assistant 5.0</b>
+  </title>
+  <prolog>
+    <author>Alin Belu</author>
+    <critdates>
+      <created date="2025-05-30"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Noul <b>Oxygen AI Positron Assistant 5.0</b> aduce îmbunătățiri semnificative pentru a ajuta creatorii de conținut să utilizeze AI mai eficient în authoring structurat.</p>
+    <p>Una dintre cele mai utile actualizări este posibilitatea de a <b>genera sau actualiza fișiere</b> precum <b>XSLT</b>, <b>XSD</b>, <b>Schematron</b>, <b>JSON Schema</b> și <b>DTD</b> doar oferind o scurtă descriere. Ulterior, puteți revizui modificările folosind instrumentul integrat de <b>comparare vizuală a fișierelor</b>.</p>
+    <p>Pentru <b>utilizatorii DITA</b>, asistentul oferă acum funcții avansate de <b>transformare a conținutului</b>, facilitând conversia între tipuri de documente sau restructurarea topicurilor folosind sugestii AI.</p>
+    <p>Alte actualizări importante includ:</p>
+    <ul id="ul_i11_wlq_mfc">
+      <li>
+        <p>
+          <b>Suport pentru plugin Eclipse</b>
+        </p>
+      </li>
+      <li>
+        <p>Opțiunea de a <b>exclude anumite fișiere</b> din procesarea AI</p>
+      </li>
+      <li>
+        <p><b>Funcții callback</b> pentru validare sau integrare cu alte instrumente</p>
+      </li>
+      <li>
+        <p>Suport pentru atașarea fișierelor <b>Word, PowerPoint și PDF</b> ca input</p>
+      </li>
+      <li>
+        <p>Acces la noi modele de reasoning precum <b>o3</b>, <b>o1</b>, <b>o4-mini</b> și altele</p>
+      </li>
+      <li>
+        <p>Integrare cu <b>xAI Grok</b> și alte servicii AI personalizate prin conectori specializați</p>
+      </li>
+    </ul>
+    <p>Alte îmbunătățiri vizează rezolvarea comentariilor, corectarea validărilor și permit referințe către resurse sau prompturi externe.</p>
+    <p>Puteți vedea noile funcționalități în acțiune în acest videoclip de prezentare:</p>
+    <p>
+      <object height="480" width="853" outputclass="iframe" data="https://www.youtube.com/embed/DXYYYvCtjfI">
+        <param name="allowfullscreen"/>
+      </object>
+    </p>
+  </body>
+</topic>

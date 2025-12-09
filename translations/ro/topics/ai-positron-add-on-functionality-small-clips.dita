@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="ai-positron-add-on-functionality-small-clips">
+  <title>Funcționalități ale suplimentului AI Positron - Clipuri scurte</title>
+  <prolog>
+    <author>Radu Coravu</author>
+  </prolog>
+  <body>
+    <p>O listă de clipuri animate scurte care prezintă câteva aspecte interesante ale funcționalității.<dl id="dl_mgw_tbl_sbc">
+        <dlentry>
+          <dt>Generează un topic DITA XML de tip draft pornind de la o imagine</dt>
+          <dd>
+            <image href="../images/ai/draft-topic-image.gif" placement="inline" scale="70" id="image_tqn_vbl_sbc"/>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Generare în lot a textului alternativ pentru imaginile DITA XML</dt>
+          <dd>
+            <image href="../images/ai/batch-image-alt-text.gif" placement="inline" scale="70" id="image_hn1_xbl_sbc"/>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Generează o diagramă Mermaid dintr-o sarcină</dt>
+          <dd>
+            <image href="../images/ai/mermaid.gif" placement="inline" scale="70" id="image_mr5_ybl_sbc"/>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Adaugă comentarii despre probleme gramaticale și apoi rezolvă-le</dt>
+          <dd>
+            <image href="../images/ai/add-resolve-comments.gif" placement="inline" scale="70" id="image_ikq_1cl_sbc"/>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Corectare și rezolvare comentarii</dt>
+          <dd>
+            <image href="../images/proof-read.gif" placement="inline" scale="70" id="image_rdt_s13_ybc"/>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Adaugă conținut structurat - Recuperare augmentată pe bază de proiect (RAG)</dt>
+          <dd>
+            <image href="../images/rag-add-structure.gif" placement="inline" scale="70" id="image_wxq_xjy_zbc"/>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Îmbunătățește structura</dt>
+          <dd>
+            <image href="../images/ai/improve-structure.gif" placement="inline" scale="70" id="image_p5r_3zv_rcc"/>
+          </dd>
+        </dlentry>
+      </dl></p>
+  </body>
+</topic>

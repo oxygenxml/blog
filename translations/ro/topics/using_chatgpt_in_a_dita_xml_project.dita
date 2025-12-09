@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="using_chatgpt_in_a_dita_xml_project">
+  <title>Utilizarea ChatGPT într-un proiect DITA XML</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2023-03-09"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Botul <xref href="https://chat.openai.com/chat" scope="external" format="html">ChatGPT OpenAI</xref> are potențialul de a ajuta la diverse sarcini de documentație tehnică (sfaturi despre standard, conversii simple, generare de conținut, stil de redactare și analiză a lizibilității).</p>
+    <p>Mai jos puteți vedea o listă de prompturi pe care le-am dat botului, împreună cu răspunsurile. Prompturile către chatbot sunt prezentate ca blocuri de cod.</p>
+    <section id="section_s3j_3zf_twb">
+      <title>Sfaturi despre utilizarea standardului DITA XML</title>
+      <p>
+        <ol>
+          <li>
+            <p>Întrebați despre tipul de legături DITA care trebuie folosite într-un topic.<codeblock xml:space="preserve" id="codeblock_ql2_gyf_twb">Ar trebui să folosesc referințe încrucișate sau legături conexe în topicul meu DITA XML?</codeblock></p>
+            <p>
+              <image href="../images/chatgpt-xrefs-links.png" placement="inline" scale="50" id="image_i2k_kyf_twb"/>
+            </p>
+          </li>
+          <li>
+            <p>Cereți informații despre un anumit element DITA XML.</p>
+            <p>
+              <codeblock xml:space="preserve" id="codeblock_l3m_pyf_twb">Pot folosi elementul DITA XML uicontrol pentru denumiri de companii?</codeblock>
+            </p>
+            <p>
+              <image href="../images/chatgpt-uicontrol.png" placement="inline" scale="50" id="image_mwr_ryf_twb"/>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </section>
+    <section id="section_fzr_lzf_twb">
+      <title>Generare de conținut nou</title>
+      <p>
+        <ol>
+          <li>
+            <p>Instruiți ChatGPT să genereze conținut DITA despre o sarcină foarte comună.</p>
+            <p>
+              <codeblock xml:space="preserve" id="codeblock_fgv_vrf_twb">Scrieți o sarcină DITA XML scurtă despre instalarea unei aplicații software pe Windows.</codeblock>
+            </p>
+            <p>
+              <image href="../images/chatgpt-install.png" placement="inline" scale="30" id="image_rvq_trf_twb"/>
+            </p>
+          </li>
+          <li>
+            <p>Generați o listă de termeni de index din conținutul DITA XML existent.</p>
+            <p>
+              <codeblock xml:space="preserve" id="codeblock_mst_gsf_twb">Creați un element prolog DITA XML care să conțină 5-6 elemente de termeni de index relevante pentru topicul DITA XML de mai jos:
+....</codeblock>
+            </p>
+            <p>
+              <image href="../images/chatgpt-indexterms.png" placement="inline" scale="40" id="image_qfq_ksf_twb"/>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </section>
+    <section id="section_m4p_mzf_twb">
+      <title>Conversii simple</title>
+      <p>
+        <ol>
+          <li>
+            <p>Convertiți conținut Markdown într-un topic DITA XML.<codeblock xml:space="preserve" id="codeblock_cnj_jvf_twb">Convertiți acest conținut Markdown într-un topic DITA XML:
+
+# Getting Started
+
+Listă de pași:
+
+- Instalați aplicația
+- Autentificați-vă
+- Efectuați sarcina</codeblock></p>
+            <p>
+              <image href="../images/chatgpt-convert-md.png" placement="inline" scale="40" id="image_wjj_svf_twb"/>
+            </p>
+          </li>
+          <li>
+            <p>Convertiți conținutul CSV într-un tabel DITA XML.</p>
+            <p>
+              <codeblock xml:space="preserve" id="codeblock_i1m_hwf_twb">Convertiți acest conținut CSV care conține anteturi într-un element tabel DITA XML:
+
+Common name,Scientific name,Location,Temperament,Diet,Water,Size,Region of the Aquarium,Breeding
+Compressiceps,Haplochromis compressiceps,Lake Tanganyika,Territorial,Omnivore,"PH 7.0 - 8.0, Temp. 73 - 77 F",5 inches,Bottom,Hard
+Frontosa,Cyphotilapia frontosus,Lake Tanganyika,Very peaceful,Omnivore,"PH 7.8 - 8.5, Temp 75F - 82F",14 inches,Middle-Bottom,Medium</codeblock>
+            </p>
+            <p>
+              <image href="../images/chatgpt-convert-csv.png" placement="inline" scale="40" id="image_ggl_mwf_twb"/>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </section>
+    <section id="section_ycr_nzf_twb">
+      <title>Stil de redactare</title>
+      <ol id="ol_o5r_prf_twb">
+        <li>
+          <p>Întrebați ce terminologie să folosiți în anumite cazuri.</p>
+          <p>
+            <codeblock xml:space="preserve" id="codeblock_v1m_wxf_twb">Ar trebui să folosesc pentru documentație tehnică expresia „click a button” sau „press a button”?</codeblock>
+          </p>
+          <p>
+            <image href="../images/chatgpt-terminology.png" placement="inline" scale="40" id="image_urm_yxf_twb"/>
+          </p>
+        </li>
+        <li>
+          <p>Reformulați documentația furnizată de ingineri folosind stilul Microsoft Style Guide și schimbați și persoana din întâi în a treia.<codeblock xml:space="preserve" id="codeblock_gft_b1g_twb">Reformulați următorul conținut pentru a respecta Microsoft Style Guide, persoana a treia:
+
+The action Show only keys with closest relative key scope from DITA Reusable Components / Keys tab was also added to Media tab Settings drop down menu
+The states of the two actions are synchronized. If you check it in Keys tab will automatically get checked in Media tab</codeblock></p>
+          <p>
+            <image href="../images/chatgpt-rephrase-ms-styleguide.png" placement="inline" scale="40" id="image_xjc_z1g_twb"/>
+          </p>
+        </li>
+        <li>
+          <p>Traduceți câteva note din limba maternă a inginerului (în acest caz, română cu un amestec de cuvinte în engleză) în engleză, reformulați folosind stilul Microsoft Style Guide și schimbați și persoana din întâi în a treia.<codeblock xml:space="preserve" id="codeblock_fnd_3bg_twb">Traduceți în engleză, reformulați pentru a respecta Microsoft Style Guide, persoana a treia:
+
+In tabul Media, in meniul Settings a aparut actiunea Show only keys with closest relative key scope
+Cand o bifam trebuie sa ramana in view doar cheile relative (cheile cu forma cea mai scurta).</codeblock></p>
+          <p>
+            <image href="../images/chatgpt-translate-rephrase.png" placement="inline" scale="50" id="image_e3r_mbg_twb"/>
+          </p>
+        </li>
+        <li>Rescrieți un întreg topic DITA XML pentru a-i crește lizibilitatea.<codeblock xml:space="preserve" id="codeblock_xpf_rjj_5wb">Rescrieți următorul topic DITA XML păstrând toate elementele XML originale pentru a-i crește lizibilitatea:
+&lt;topic id="dita_oriented_tips_and_tricks"&gt;
+	&lt;title&gt;DITA Oriented Tips And Tricks&lt;/title&gt;
+	&lt;prolog&gt;
+		&lt;author&gt;Radu Coravu&lt;/author&gt;
+	&lt;/prolog&gt;
+	&lt;body&gt;
+		&lt;p&gt;&lt;ph keyref="oxygen"/&gt; has about 18 years of development under its wings. During these
+			years, we added lots of functionality and many of our users usually do not know more than 20-30%
+			of Oxygen's features. So this presentation is intended for technical writers using Oxygen to
+			write DITA content and who may want to find out more about their tool.&lt;/p&gt;
+		&lt;section id="section_gld_tbs_gfb"&gt;
+			&lt;title&gt;Add-ons&lt;/title&gt;
+			&lt;p&gt;There are lots of free add-ons provided by the Oxygen team that can be installed in an
+				&lt;xref
+					href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;amp;type=Repositories"
+					format="html" scope="external"&gt;Oxygen standalone version&lt;/xref&gt;. I will enumerate some of
+				the most interesting one:&lt;/p&gt;
+			&lt;ul id="ul_xbw_ccs_gfb"&gt;
+				&lt;li&gt;&lt;xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
+					scope="external"&gt;Git add-on&lt;/xref&gt;. This plugin adds a side view allowing you to do some
+					common Git operations like pull, commit, push (mostly 90% of what a regular Git user would
+					do).&lt;/li&gt;
+				&lt;li&gt;&lt;xref href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+					format="html" scope="external"&gt;Content Fusion Connector add-on&lt;/xref&gt;. Collaborate with
+					your peers by sending them links that allow them to give you feedback on your work using a
+					web browser without the need to pre-install anything on their side. &lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/section&gt;
+	&lt;/body&gt;
+&lt;/topic&gt;</codeblock><p>Rezultat:<codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_q3q_tjj_5wb">&lt;topic id="dita_oriented_tips_and_tricks"&gt;
+	&lt;title&gt;DITA Oriented Tips And Tricks&lt;/title&gt;
+	&lt;prolog&gt;
+		&lt;author&gt;Radu Coravu&lt;/author&gt;
+	&lt;/prolog&gt;
+	&lt;body&gt;
+		&lt;p&gt;&lt;ph keyref="oxygen"/&gt; has been under development for about 18 years. During this time, we
+			have added a lot of functionality, but many of our users are not aware of more than
+			20-30% of Oxygen's features. This presentation is intended for technical writers who use
+			Oxygen to write DITA content and want to learn more about the tool.&lt;/p&gt;
+		&lt;section id="section_gld_tbs_gfb"&gt;
+			&lt;title&gt;Add-ons&lt;/title&gt;
+			&lt;p&gt;Oxygen provides a range of free add-ons that can be installed in the &lt;xref
+					href="https://github.com/search?q=topic%3Aadd-on+org%3Aoxygenxml&amp;amp;type=Repositories"
+					format="html" scope="external"&gt;Oxygen standalone version&lt;/xref&gt;. Here are some
+				of the most interesting ones:&lt;/p&gt;
+
+			&lt;ul id="ul_xbw_ccs_gfb"&gt;
+				&lt;li&gt;&lt;xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html"
+						scope="external"&gt;Git add-on&lt;/xref&gt;: This plugin adds a side view that allows
+					you to perform common Git operations like pull, commit, and push (similar to
+					what a regular Git user would do).&lt;/li&gt;
+				&lt;li&gt;&lt;xref
+						href="https://www.oxygenxml.com/doc/ug-editor/topics/content-fusion-addon.html"
+						format="html" scope="external"&gt;Content Fusion Connector add-on&lt;/xref&gt;:
+					Collaborate with your peers by sending them links that allow them to give you
+					feedback on your work using a web browser, without the need for them to
+					pre-install anything on their side.&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/section&gt;
+	&lt;/body&gt;
+&lt;/topic&gt;</codeblock></p><p>Observații: Dacă promptul insistă ca toate elementele XML să fie păstrate, rescrierea face puține modificări, dar dacă promptul nu insistă asupra păstrării tuturor elementelor XML, elementele inline și legăturile sunt eliminate.</p></li>
+      </ol>
+    </section>
+    <section id="section_yhr_2cg_twb"><title>Statistici</title>Creați o analiză a lizibilității pentru un topic DITA XML.<p>
+        <codeblock xml:space="preserve" id="codeblock_cnl_gcg_twb">Creați o analiză a lizibilității pentru următorul topic DITA XML:
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd"&gt;
+&lt;topic id="topic_whr_nly_c5"&gt;
+  &lt;title&gt;Sharing Application Settings&lt;/title&gt;&lt;prolog&gt;&lt;author&gt;Radu Coravu&lt;/author&gt;&lt;/prolog&gt;
+  &lt;body&gt;
+    &lt;p&gt;There are various ways in the &lt;b&gt;Oxygen&lt;/b&gt; standalone version through which a team of writers
+.........</codeblock>
+      </p><p>
+        <image href="../images/chatgpt-readability-analysis.png" placement="inline" scale="50" id="image_tgz_kcg_twb"/>
+      </p></section>
+    <section id="section_ctp_vch_twb">
+      <title>Validare personalizată (bazată pe Schematron)</title>
+      <ol id="ol_qfn_wch_twb">
+        <li>
+          <p>Creați o verificare de validare ISO Schematron care să numere cuvintele.<codeblock xml:space="preserve" id="codeblock_igv_h2h_twb">Creați o schemă ISO Schematron care raportează dacă un element de descriere scurtă DITA are mai mult de 20 de cuvinte.</codeblock></p>
+          <p>
+            <image href="../images/chatgpt-sch-count-words.png" placement="inline" scale="40" id="image_wnt_y2h_twb"/>
+          </p>
+          <p>Observație: Declarația și utilizarea namespace-ului sunt greșite (elementele DITA nu sunt într-un namespace). Testul assert este corect.</p>
+        </li>
+        <li>
+          <p>Creați o verificare de validare ISO Schematron pornind de la o descriere.<codeblock xml:space="preserve" id="codeblock_pll_xch_twb">Creați o regulă de validare ISO Schematron care raportează o eroare dacă un element imagine DITA XML nu conține atributul scale</codeblock></p>
+          <p>
+            <image href="../images/chatgpt-sch-image-scale.png" placement="inline" scale="40" id="image_evh_qfh_twb"/>
+          </p>
+          <p>Observație: Declarația și utilizarea namespace-ului sunt greșite (elementele DITA nu sunt într-un namespace). Testul assert este corect.</p>
+        </li>
+      </ol>
+    </section>
+  </body>
+</topic>

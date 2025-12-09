@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="ai_positron">
+  <title>Oxygen AI Positron Add-on</title>
+  <shortdesc>Suplimentul <b>Oxygen AI Positron</b> oferă suport pentru a ajuta creatorii de documentație tehnică să <b>genereze</b>, să <b>rescrie</b> conținut, să realizeze <b>prezentări generale</b> și <b>cercetare</b>. De asemenea, permite efectuarea de verificări AI și modificări bazate pe AI asupra <b>mai multor fișiere</b> prin integrarea extensiilor AI cu tehnologii XML precum <b>Schematron</b> sau <b>XSLT</b>.</shortdesc>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2024-05-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Add-ons<indexterm>inteligență artificială</indexterm></indexterm>
+        <indexterm>AI Positron Assistant</indexterm>
+        <keyword>ChatGPT</keyword>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p>Acest articol își propune să ofere o prezentare generală a instalării, licențierii și funcționalității suplimentului <b>Oxygen AI Positron</b>.</p>
+    <p>Am conceput acest supliment ca pe o modalitate de a vă oferi un asistent personal care conține acțiuni utile pentru verificarea conținutului (lizibilitate, gramatică), traducere, explicare și crearea de prezentări generale.</p>
+    <object height="315" width="560" outputclass="iframe" data="https://www.youtube.com/embed/-qJZaD_aDMU">
+      <param name="allowfullscreen"/>
+    </object>
+    <section id="overview">
+      <title>Prezentare generală a instalării și licențierii</title>
+      <ul id="ul_sdg_1x5_4bc">
+        <li>Oxygen desktop permite instalarea suplimentului comercial <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron-installation.html" scope="external" format="html">AI Positron</xref>. Există două modalități principale de a vă conecta și de a lucra cu modele LLM:<ul id="ul_rqp_cx5_4bc">
+            <li>Un model bazat pe abonament, folosind platforma <xref href="https://www.oxygenxml.com/aipositron/user_terms.html" scope="external" format="html">Oxygen Positron Service</xref>, care vă permite accesul la LLM-urile <b>OpenAI</b>, <b>Claude</b> sau <b>Google Gemini</b>.<p>Utilizatorii pot crea conturi noi de abonament sau se pot autentifica folosind conturile existente <b>Google</b> sau <b>Github</b>. Prima lună de abonament este gratuită, iar un <xref href="https://www.oxygenxml.com/ai_positron_service/buy.html" scope="external" format="html">abonament lunar</xref> poate fi achiziționat pentru a primi un anumit număr de credite în fiecare lună.</p><p>Puteți controla ce motor AI este folosit implicit pentru acțiuni și pentru chat. Acest lucru se poate face din pagina de Preferințe sau din vizualizarea de chat.</p></li>
+            <li>Conectați-vă la propriul server AI. Sunt acceptate următoarele tipuri de conexiuni:<ul id="ul_twp_5z5_4bc">
+                <li><b>OpenAI</b> - Conectați-vă la propriul server OpenAI folosind cheia proprie. Sau conectați-vă la servere compatibile OpenAI precum <b>Ollama</b>.</li>
+                <li><b>Microsoft Azure Open AI</b> - Conectați-vă la o instanță Open AI găzduită ca mașină virtuală pe Microsoft Azure.</li>
+                <li><b>Anthropic Claude</b> - Conectați-vă la Anthropic Claude folosind cheia proprie.</li>
+                <li>
+                  <b>Google Gemini</b>
+                </li>
+                <li>
+                  <b>Amazon Bedrock</b>
+                </li>
+              </ul><p>Din punct de vedere al licențierii, suplimentul <b>AI Positron Enterprise</b> funcționează gratuit cu orice instalare Oxygen XML Editor care utilizează un tip de licență <b>Enterprise</b> pentru Oxygen XML Editor. În celelalte cazuri, <xref href="https://www.oxygenxml.com/ai_positron_desktop/buy.html" scope="external" format="html">trebuie achiziționată o cheie de licență specială</xref> pentru ca suplimentul să permită acest acces direct. Puteți folosi butonul Register din panoul lateral AI Positron pentru a configura cheia de licență specială.</p></li>
+          </ul></li>
+        <li><xref href="https://www.oxygenxml.com/doc/ug-webauthor/topics/wa-ai-positron.html" scope="external" format="html">Oxygen XML Web Author</xref> permite, de asemenea, instalarea unui plugin <b>AI Positron</b> cu funcționalitate similară cu cea din aplicația Oxygen Desktop.</li>
+      </ul>
+    </section>
+    <section id="section_qwd_mbv_4bc">
+      <title>Prezentare generală a integrării și funcționalităților</title>
+      <p>După instalarea suplimentului, următoarele funcționalități sunt disponibile în Oxygen desktop:<ul id="ul_b43_ldv_4bc">
+          <li>Panoul lateral <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_a3d_sgl_4xb" scope="external" format="html">AI Positron</xref>. Acest panou conține următoarele funcționalități:<ul id="ul_np4_ndv_4bc">
+              <li>Apelați diverse acțiuni pentru a genera și rescrie conținut folosind AI.</li>
+              <li><b>Chat</b> cu AI-ul.</li>
+              <li>O listă <b>History</b> cu interacțiunile anterioare.</li>
+              <li>O listă derulantă <b>Favorites</b> și o modalitate de a marca intrările ca favorite.</li>
+              <li>Lista derulantă <b>Insert Editor Variables</b> permite inserarea diferitelor variabile de editor care sunt expandate când mesajul de chat este trimis către motorul AI.</li>
+              <li>Un buton <b>Attach</b> pentru a atașa imagini sau resurse text XML la mesajul de chat.</li>
+            </ul></li>
+          <li>Intrare principală de meniu <b>AI</b> cu suport pentru a apela acțiuni sau pentru a accesa pagina de preferințe a suplimentului.</li>
+          <li>Meniu contextual <b>AI Positron</b> pentru toate documentele XML deschise în <b>modul vizual Author</b>.</li>
+          <li>Acțiuni rapide <b>AI Positron</b> disponibile pe bara verticală din stânga pentru toate documentele XML deschise în <b>modul vizual Author</b>.</li>
+          <li>Acțiuni <b>AI Positron Refactoring</b> adăugate în vizualizările <b>Project</b> și <b>DITA Maps Manager</b> ca modalitate de a rula acțiuni pe mai multe fișiere.</li>
+          <li>Când problemele de validare sunt afișate în panoul <uicontrol>Results</uicontrol>, puteți face clic dreapta pe o problemă și folosi acțiunea <uicontrol>AI Positron Fix</uicontrol> pentru a solicita platformei <b>AI Positron</b> ajutor la remedierea problemei. Aceasta va propune conținut în panoul de chat (din vizualizarea <uicontrol>AI Positron</uicontrol>) care poate fi folosit pentru a rezolva problema.</li>
+          <li>Suplimentul adaugă două <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_a3s_ngn_2ds" scope="external" format="html">funcții de extensie XPath</xref> (<codeph>ai:transform-content</codeph> și <codeph>ai:verify-content</codeph>) care pot fi folosite pentru a reformula conținutul sau pentru a efectua verificări de validare pe conținutul existent.</li>
+        </ul></p>
+    </section>
+    <section id="section_hph_m3v_4bc">
+      <title>Acțiuni predefinite și personalizate</title>
+      <p>Odată ce v-ați autentificat pe server, este disponibil un <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_z5l_qbx_jbc" scope="external" format="html">set de acțiuni predefinite</xref>, grupate pe categorii: <b>Accessibility</b>, <b>Content Generation</b>, <b>Development</b>, <b>Rewrite</b>, <b>Overview</b>, <b>Marketing</b> și <b>Translation</b>. Proiectul de exemple <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/README.md" scope="external" format="html">AI Positron Samples Playground</xref> conține exemple utile pentru a testa funcționalitatea acestor acțiuni.</p>
+      <p><xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html" scope="external" format="html">Acțiuni personalizate</xref> pot fi de asemenea create și utilizate. Același <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Custom%20Actions" scope="external" format="html">AI Positron Samples Playground</xref> conține câteva exemple de acțiuni personalizate. Câteva exemple de utilizare pot fi găsite în <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Schematron%20and%20Quick%20Fixes" scope="external" format="html">samples playground</xref>.</p>
+    </section>
+    <section id="section_ngk_klp_pbc">
+      <title>Recunoaștere vizuală a imaginilor (Vision)</title>
+      <p>Acțiunile predefinite <b>Generate Documentation Draft</b> și <b>Update Content Based on Images</b> permit utilizarea AI pentru a crea sau actualiza conținut în funcție de imaginile existente din manualul utilizatorului. De asemenea, puteți atașa imagini în panoul <b>Chat</b>.</p>
+    </section>
+    <section id="section_bws_2lv_4bc">
+      <title>Procesare în lot</title>
+      <p>Acțiunile <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__ai_refactoring" scope="external" format="html">
+          <b>AI Positron Refactoring</b>
+        </xref> adăugate în vizualizările <b>Project</b> și <b>DITA Maps Manager</b> reprezintă o modalitate de a rula acțiuni pe mai multe fișiere. De exemplu, puteți folosi acțiunea predefinită <uicontrol>Translate to</uicontrol> pentru a traduce mai multe topicuri DITA într-o anumită limbă sau puteți aplica acțiunile <uicontrol>Correct Grammar</uicontrol> sau <uicontrol>Improve Readability</uicontrol> pe mai multe resurse.</p>
+      <p>În plus, acțiunile <b>XML Refactoring</b> bazate pe XSLT sau XQuery pot folosi funcțiile de extensie XPath adăugate de supliment pentru a efectua modificări în lot în documentele XML. Câteva exemple pot fi găsite în <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/XML%20Refactoring" scope="external" format="html">samples playground</xref>.</p>
+    </section>
+    <section id="section_tzn_jw5_4bc">
+      <title>Linkuri utile</title>
+      <ul id="ul_f5n_kw5_4bc">
+        <li>
+          <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/README.md" scope="external" format="html">AI Positron Samples Playground.</xref>
+        </li>
+        <li>
+          <xref href="https://idratherbewriting.com/learnapidoc/docapis_oxygenxml_positron_assistant.html" scope="external" format="html">Articol pe blog despre AI Positron Add-on de Tom Johnson</xref>
+        </li>
+        <li>
+          <xref href="https://www.oxygenxml.com/events/2023/webinar_ai_as_a_tool_for_technical_content_creation.html" scope="external" format="html">Webinar: AI ca instrument pentru crearea de conținut tehnic</xref>
+        </li>
+        <li>
+          <xref href="https://www.oxygenxml.com/events/2023/webinar_leveraging_the_power_of_ai_and_schematron_for_content_verification_and_correction.html" scope="external" format="html">Webinar: Valorificarea puterii AI și Schematron pentru verificarea și corectarea conținutului</xref>
+        </li>
+        <li>
+          <xref href="https://www.oxygenxml.com/events/2024/oxygen_user_meetup_Prague.html#video_2" scope="external" format="html">Înregistrare meetup: Oxygen AI Positron Assistant - Integrarea AI în toate instrumentele Oxygen</xref>
+        </li>
+      </ul>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="ro" id="creating_custom_ai_actions_for_the_ai_positron_add_on">
+  <title>Crearea acțiunilor AI personalizate pentru suplimentul AI Positron</title>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2025-05-21"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>În pagina de preferințe <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/actions_preferences.html" scope="external" format="html">AI Positron Assistant</xref>, puteți defini o referință către un folder care conține acțiuni personalizate.</p>
+    <p>După instalarea suplimentului, expertul New Document poate fi folosit pentru a crea fie un fișier <b>AI Positron Custom Action</b> nou, care conține o definiție de acțiune personalizată în format JSON, fie o <b>AI Positron Custom Actions List</b> care conține un array JSON cu mai multe acțiuni definite. Pentru astfel de fișiere de acțiuni personalizate, validarea și completarea de conținut sunt oferite automat. Pentru a edita valori de parametri pe mai multe linii, puteți comuta fișierul JSON de definiție a acțiunii editate în modul vizual <b>Author</b>.</p>
+    <p>Dacă fișierele de definiție a acțiunilor sunt salvate în folderul de acțiuni personalizate definit în pagina de preferințe AI Positron Assistant, vizualizarea AI Positron Assistant ar trebui să reîncarce automat lista de acțiuni pentru a le include.</p>
+    <p>Diverse exemple de acțiuni AI personalizate pot fi găsite <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Custom%20Actions" scope="external" format="html">aici</xref> și pot fi folosite ca puncte de pornire pentru propriile acțiuni AI similare.</p>
+    <p>O definiție de acțiune AI poate conține următoarele proprietăți:</p>
+    <p>
+      <dl id="dl_vcf_mq1_kfc">
+        <dlentry>
+          <dt>id</dt>
+          <dd>
+            <p>Un ID unic pentru acțiune. Dacă ID-ul acțiunii începe cu <codeph>agent.hidden.action.</codeph>, atunci acțiunea nu este vizibilă pentru a fi invocată direct, dar poate fi apelată folosind funcția <codeph>invoke_ai_action(actionID,
+                content)</codeph>.</p>
+            <p>Exemplu:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_ghl_4q1_kfc">{
+        "id": "improve.grammar.custom.styles",
+        "title": "...",
+        ...
+}</codeblock><note id="note_q12_br1_kfc">Un plugin desktop Oxygen poate contribui cu un fișier suplimentar <xref href="https://www.oxygenxml.com/doc/ug-editor/dev_guide/contributing_translations_for_new_labels_and_ui_text.html" scope="external" format="html">
+                  <filepath>translation.xml</filepath>
+                </xref> care conține traduceri. Un astfel de plugin poate traduce titluri și descrieri pentru acțiuni AI folosind ID-ul acțiunii ca parte a cheii.<p id="p_odz_rgq_nfc">Exemplu:</p><codeblock outputclass="language-xml" xml:space="preserve" id="codeblock_lfl_rr1_kfc">	&lt;key value="improve.grammar.custom.styles.title"&gt; 
+		&lt;val lang="en_US"&gt;Improve Styles&lt;/val&gt; 
+		&lt;val lang="de_DE"&gt;...&lt;/val&gt; 
+		... 
+	&lt;/key&gt;
+	&lt;key value="improve.grammar.custom.styles.description"&gt;
+		&lt;val lang="en_US"&gt;Analyze and improve styles.&lt;/val&gt;
+		&lt;val lang="de_DE"&gt;...&lt;/val&gt;
+		...
+	&lt;/key&gt;</codeblock></note></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>title</dt>
+          <dd>
+            <p id="p_lrg_33q_nfc">Numele/titlul acțiunii care este afișat în interfața utilizatorului.</p>
+            <p id="p_mlj_tgq_nfc">Exemplu:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_kps_bs1_kfc">{
+        "id": "improve.grammar.custom.styles",
+        "title": "Improve Grammar and Styles",
+        ...
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>description</dt>
+          <dd>
+            <p id="p_bgy_h3q_nfc">O descriere mai lungă a ceea ce face acțiunea AI, folosită de obicei ca tooltip.</p>
+            <p id="p_gy1_vgq_nfc">Exemplu:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_il2_ns1_kfc">{
+        "id": "...",
+        "title": "Improve Grammar and Styles",
+        "description": "Improve the grammar and styles based on the company's style guide."
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>short-description</dt>
+          <dd>
+            <p id="p_l3n_h3q_nfc">O descriere mai scurtă pentru acțiunea AI, care apare de obicei sub titlul acțiunii în vizualizarea de chat. Dacă nu este specificată, se folosește valoarea din description.</p>
+            <p id="p_tss_xgq_nfc">Exemplu:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_h25_ts1_kfc">{
+    "id": "action.translate.to.english",
+    "title": "English",
+    "short-description": "Translate to English",
+    "description": "Translate the selected content to English while preserving its 
+    original DITA XML markup.",
+    ....
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>categoryId</dt>
+          <dd>
+            <p id="p_ojj_g3q_nfc">Categoria opțională în care acțiunea AI este grupată vizual; dacă nu este specificată, valoarea implicită este <codeph>Other</codeph>.</p>
+            <p id="p_ow1_g3q_nfc">Exemplu:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_r3y_hs1_kfc">{
+        "id": "improve.grammar.custom.styles",
+        "title": "Improve Grammar and Styles",
+        "categoryId": "Rewrite"
+}</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>framework</dt>
+          <dd>
+            <p id="p_rlc_f3q_nfc">Un pattern de framework (precum '<codeph>DITA*</codeph>') sau un nume de tip de conținut (precum '<codeph>text/css</codeph>') care, atunci când se potrivește, afișează acțiunea când documentul aparținând framework-ului este deschis.</p>
+            <p id="p_slc_f3q_nfc">Exemplu: <codeblock outputclass="language-json" xml:space="preserve" id="codeblock_jjg_py1_kfc">{
+    "id": "generate.img.alternate.text",
+    "title": "Generate Image Alternate Text",
+    "framework": "*DITA*",
+    ...
+}</codeblock></p>
+            <p id="p_qsd_k3q_nfc">Un exemplu de acțiune AI care afișează acest lucru pentru orice document XML editat (deoarece se potrivește cu tipul de conținut <codeph>text/xml</codeph>) poate fi găsit <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/formula-equation.json" scope="external" format="html">aici</xref>.</p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>prompt_ref</dt>
+          <dd>
+            <p id="p_f4r_f3q_nfc">O referință către un fișier separat (de obicei codificat în Markdown) care definește întregul prompt al acțiunii.</p>
+            <p id="p_hds_c3q_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_ukv_jcb_kfc">{
+    "id": "action.update.title.based.on.content",
+    ....
+    "prompt_ref": "prompts/action_update_title.md"
+  }</codeblock><note type="important" id="note_i3p_mcb_kfc">
+                <p>Promptul este cea mai importantă parte a acțiunii AI. Un prompt trebuie să fie cât mai precis și detaliat posibil, incluzând exemple. Unele companii pot adopta metodologii de prompt precum <uicontrol>COSTAR</uicontrol> pentru a specifica valoarea promptului. Promptul de context definit în pagina de preferințe Oxygen AI Positron este folosit ca prefix pentru toate prompturile acțiunilor AI.</p>
+                <p><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/prompts/convert-dita-type.md" scope="external" format="html">Aici este un exemplu de fișier prompt mare</xref>.</p>
+                <p>O acțiune AI personalizată poate extinde promptul de context într-o anumită parte a promptului său folosind variabila <codeph>${contextPrompt}</codeph> în propriul prompt.</p>
+                <p>Pentru a defini o acțiune AI personalizată care nu folosește deloc promptul de context, în fișierul de configurare JSON al acțiunii AI, puteți extinde promptul de context la o valoare goală astfel:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_qzn_f4f_qfc">{
+    "id": "improve.grammar.custom",
+    "title": "..",
+     ....
+    "expand-params": [
+        {
+         "name": "contextPrompt",
+         "value": ""
+        }
+    ]
+}
+</codeblock></p>
+              </note></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>prompt</dt>
+          <dd>
+            <p id="p_l5q_l3q_nfc">Valoare de parametru pe mai multe linii care definește inline promptul trimis către AI împreună cu conținutul ce trebuie procesat.</p>
+            <p id="p_eyz_whq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_lp4_3bb_kfc">{
+    "id": "action.review.logical.mistakes",
+    "title": "Logical Inconsistencies",
+    "output-action": "none",
+    "prompt": "# CONTEXT #\n\nYou will act as a reviewer interested in finding inconsistency 
+    and logical mistakes.\n\n# OBJECTIVE #\n\nYou are tasked with reviewing the given content.
+    \nFind logical and inconsistency mistakes in the content and return a report."
+}</codeblock></p>
+            <p>
+              <note type="important" id="note_ijc_j4f_qfc">
+                <p>Promptul este cea mai importantă parte a acțiunii AI. Un prompt trebuie să fie cât mai precis și detaliat posibil, incluzând exemple. Unele companii pot adopta metodologii de prompt precum <uicontrol>COSTAR</uicontrol> pentru a specifica valoarea promptului. Promptul de context definit în pagina de preferințe Oxygen AI Positron este folosit ca prefix pentru toate prompturile acțiunilor AI.</p>
+                <p><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/prompts/convert-dita-type.md" scope="external" format="html">Aici este un exemplu de fișier prompt mare</xref>.</p>
+                <p>O acțiune AI personalizată poate extinde promptul de context într-o anumită parte a promptului său folosind variabila <codeph>${contextPrompt}</codeph> în propriul prompt.</p>
+                <p>Pentru a defini o acțiune AI personalizată care nu folosește deloc promptul de context, în fișierul de configurare JSON al acțiunii AI, puteți extinde promptul de context la o valoare goală astfel:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_qzn_f4f_qfc2">{
+    "id": "improve.grammar.custom",
+    "title": "..",
+     ....
+    "expand-params": [
+        {
+         "name": "contextPrompt",
+         "value": ""
+        }
+    ]
+}
+</codeblock></p>
+              </note>
+            </p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>expand-params</dt>
+          <dd>Un array JSON care poate defini valori pentru parametri ce trebuie extinși în conținutul de context. </dd>
+          <dd>Puteți defini parametri care pot fi configurați de utilizatorul final atunci când trece cu mouse-ul peste acțiunea AI în interfață.</dd>
+          <dd>
+            <p id="p_zzp_vhq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Thesaurus.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_o5w_pz1_kfc">{
+  "id": "thesaurus",
+  "title": "Thesaurus/Synonyms",
+  "output-action": "replace",
+  "prompt": "Provide a max of ${number} synonyms for:",
+  "expand-params": [
+    ...
+    {
+      "name": "number",
+      "label": "Number of synonyms",
+      "value": "10",
+      "choice-type": "single-choice",
+      "alternate-values": [
+        "10",
+        "20",
+        "30"
+      ]
+    }
+  ]
+}</codeblock></p>
+            <p id="p_bll_n3q_nfc">Următoarele proprietăți sunt disponibile pentru un parametru definit:<dl id="dl_utl_yz1_kfc">
+                <dlentry id="dlentry_cll_n3q_nfc">
+                  <dt>name</dt>
+                  <dd>Numele parametrului. Poate fi referențiat de mai multe ori cu sintaxa <codeph>${param_name}</codeph> în parametrul <codeph>context</codeph> sau în fișierul prompt extern referențiat prin <codeph>prompt_ref</codeph>.</dd>
+                </dlentry>
+                <dlentry id="dlentry_dll_n3q_nfc">
+                  <dt>label</dt>
+                  <dd>Eticheta care apare în interfață atunci când valoarea parametrului este configurată de utilizatorul final.</dd>
+                </dlentry>
+                <dlentry id="dlentry_ell_n3q_nfc">
+                  <dt>value</dt>
+                  <dd>
+                    <p id="p_zgm_p3q_nfc">Valoarea parametrului. Poate conține diverse <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editor-variables.html" scope="external" format="html">variabile de editor</xref> care sunt expandate automat.</p>
+                    <p id="p_vvk_5hq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-prolog.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_drx_31b_kfc">{
+        "id": "action.update.prolog",
+        ...
+        "prompt": "Update the DITA XML topic prolog with the current date ${currentDate}...",
+        "expand-params": [
+            {
+                "name": "currentDate",
+                "value": "${date(yyyy-MM-dd)}"
+            }
+        ]
+    }</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_fll_n3q_nfc">
+                  <dt>alternate-values</dt>
+                  <dd>Un array opțional de valori alternative care pot fi configurate de utilizatorul final atunci când trece cu mouse-ul peste acțiunea AI.</dd>
+                </dlentry>
+                <dlentry id="dlentry_gll_n3q_nfc">
+                  <dt>choice-type</dt>
+                  <dd>Un tip de alegere opțional care definește modul în care utilizatorul final poate configura valorile alternative (combo box, check box-uri, butoane radio).</dd>
+                </dlentry>
+                <dlentry id="dlentry_hll_n3q_nfc">
+                  <dt>prefix</dt>
+                  <dd>Valoarea opțională de prefix care va fi folosită la fiecare extindere a valorii parametrului.</dd>
+                </dlentry>
+              </dl></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>parameters</dt>
+          <dd>Un array de parametri care pot fi folosiți pentru a specifica un nume de motor, temperatura sau definițiile funcțiilor disponibile. Câțiva dintre cei mai des folosiți parametri:<p id="p_emg_thq_nfc">
+              <dl id="dl_t55_fdb_kfc">
+                <dlentry id="dlentry_jng_thq_nfc">
+                  <dt>engine</dt>
+                  <dd>
+                    <p id="p_kng_thq_nfc">Numele opțional al motorului care va fi folosit cu acțiunea AI, indiferent de modelul AI implicit configurat.</p>
+                    <p id="p_lng_thq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_egs_kdb_kfc">{
+    "id": "action.review.logical.mistakes",
+    ....,
+    "parameters": {
+        "engine": {"name": "o1"}
+    }
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_mng_thq_nfc">
+                  <dt>temperature</dt>
+                  <dd>Temperatura este un parametru opțional care guvernează gradul de aleatoriu și, implicit, creativitatea răspunsurilor. Este întotdeauna un număr între 0 (mai determinist) și 1 (mai aleatoriu). Valoarea implicită este 0 și, în general, ar trebui să rămână nespecificată atunci când acțiunile AI sunt destinate documentației tehnice de natură precisă.</dd>
+                </dlentry>
+                <dlentry id="dlentry_nng_thq_nfc">
+                  <dt>function_refs</dt>
+                  <dd>
+                    <p id="p_h5k_q3q_nfc">Un array JSON opțional care descrie ce funcții pot fi folosite la executarea acestei acțiuni.</p>
+                  </dd>
+                  <dd>
+                    <p id="p_wsv_q3q_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/add-related-links.json" scope="external" format="html">Exemplu</xref> de acțiune AI care folosește funcții <uicontrol>Retrieval Augmented Generation (RAG)</uicontrol> pentru a găsi conținut relevant în proiect:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_s5d_n2b_kfc">{
+    "id": "find.add.related.links",
+    ...
+    "parameters": {
+    "function_refs": [
+        {"ref": "get_related_resources_overview_from_project"},
+        {"ref": "get_content_for_document_url"}
+    ]
+}
+}</codeblock></p>
+                    <p id="p_ong_thq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/get-content-from-website.json" scope="external" format="html">Exemplu</xref> de acțiune AI care folosește funcția <codeph>get_content_for_document_url</codeph> pentru a prelua conținut de pe un site web:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_thd_gml_lfc">{
+    "id": "action.get.oxygen.version.web.site",
+    "output-action": "insert",
+    "title": "Insert Latest Oxygen Version",
+    "prompt": "Obtain the latest version of Oxygen from the 
+    'https://www.oxygenxml.com/xml_editor/whats_new.html' web site by calling the function 
+    'get_content_for_document_url' and return it.",
+    "parameters": {
+        "function_refs": [
+            {"ref": "get_content_for_document_url"}
+        ]
+    }
+  }</codeblock><note type="important" id="note_hlw_x2b_kfc">Există acțiuni specifice care pot fi apelate pentru a invoca alte acțiuni AI dintr-o acțiune AI, creând astfel un mecanism de agentizare unde diverse părți ale lucrului sunt realizate de diverse acțiuni. Un exemplu poate fi găsit <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/ai-actions-composed.json" scope="external" format="html">aici</xref>.</note></p>
+                  </dd>
+                </dlentry>
+              </dl>
+            </p></dd>
+        </dlentry>
+        <dlentry>
+          <dt>input</dt>
+          <dd>Definește ce parte din documentul curent trebuie trimisă pentru a fi procesată de motorul AI.<p id="p_sfg_hgv_nfc">
+              <dl id="dl_kgg_hgv_nfc">
+                <dlentry id="dlentry_lgg_hgv_nfc">
+                  <dt>selection, document [implicit]</dt>
+                  <dd>Preferă trimiterea conținutului selectat. Dacă nu există selecție, selectează și trimite întregul document.</dd>
+                </dlentry>
+                <dlentry id="dlentry_mgg_hgv_nfc">
+                  <dt>selection</dt>
+                  <dd>Preferă trimiterea conținutului selectat. Dacă nu este selectat niciun conținut, fie nu se trimite nimic, fie se primește un mesaj de eroare (în funcție de <codeph>output-action</codeph> al acțiunii).</dd>
+                </dlentry>
+                <dlentry id="dlentry_ngg_hgv_nfc">
+                  <dt>document</dt>
+                  <dd>Trimite întotdeauna întregul document pentru procesare, indiferent dacă există conținut selectat în interiorul acestuia.</dd>
+                </dlentry>
+                <dlentry id="dlentry_ogg_hgv_nfc">
+                  <dt>none</dt>
+                  <dd>Nu trimite niciun conținut din documentul curent. Vezi acest <xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/revised-action-format-properties/Custom%20Actions/formula-equation.json" scope="external" format="html">exemplu</xref>.</dd>
+                </dlentry>
+              </dl>
+            </p></dd>
+        </dlentry>
+        <dlentry>
+          <dt>input-type</dt>
+          <dd>
+            <p id="p_lfx_r3q_nfc">Descrie modul în care conținutul XML din documentul trimis către platformă trebuie procesat: ca XML obișnuit, incluzând tag-urile de markup, sau ca text simplu, fără tag-uri și cu toate conref-urile și keyref-urile DITA XML expandate. Implicit, valoarea este <codeph>markup</codeph>, ceea ce înseamnă că se trimite conținutul exact așa cum este.</p>
+            <p id="p_ytn_lhq_nfc">Exemplu de acțiune AI care necesită ca inputul să fie trimis fără niciun tag de markup și cu conref-urile și keyref-urile DITA XML expandate:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_qkc_lgb_kfc">{
+    "id": "action.answer.questions",
+    "output-action": "none",
+    "description": "Generate answers to questions you ask based on the selected text or on the 
+    entire document content.",
+    "input-type": "markup",
+    ....
+  }</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>output-action</dt>
+          <dd>Definește tipul de modificare pe care acțiunea AI o efectuează asupra documentului deschis. Câteva dintre cele mai folosite valori de tip sunt enumerate mai jos:<p id="p_pmc_khq_nfc">
+              <dl id="dl_rjl_ngb_kfc">
+                <dlentry id="dlentry_jnc_khq_nfc">
+                  <dt>replace</dt>
+                  <dd>
+                    <p id="p_apq_s3q_nfc">Cel mai comun tip de acțiune. Trimite conținutul selectat către platforma AI și propune înlocuirea selecției cu răspunsul primit. Dacă nu există conținut selectat, automat este selectat întregul document când acțiunea este invocată.</p>
+                    <p id="p_knc_khq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/Replace_bold_with_uicontrol.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_tfr_ygb_kfc">{
+  "id" : "replace.bold.with.uicontrol",
+  "title" : "Replace bold with uicontrol",
+  "output-action" : "replace",
+  "prompt" : "Replace the bold element with the uicontrol element (&lt;uicontrol&gt;)....",
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_lnc_khq_nfc">
+                  <dt>insert</dt>
+                  <dd>
+                    <p id="p_wzb_t3q_nfc">Inserează conținutul primit de la motorul AI în documentul curent la poziția cursorului sau la un offset specificat de <codeph>insert-modes</codeph>. Dacă conținutul inserat este invalid la offsetul propus, aplicația încearcă să găsească o locație potrivită pentru acesta.</p>
+                    <p id="p_gwc_hhq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_ecl_fhb_kfc">{
+    "id": "action.update.title.based.on.content",
+    "title": "Update Title",
+    "output-action": "insert",
+    "prompt": "You are tasked with creating a title for the given text, summarizing it and 
+    focusing on its main points:"
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_mnc_khq_nfc">
+                  <dt>none</dt>
+                  <dd>
+                    <p id="p_vgl_t3q_nfc">Trimite conținutul selectat sau întregul document către platforma AI și afișează răspunsul utilizatorului final.</p>
+                    <p id="p_nnc_khq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/review-logical-mistakes.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_v4c_b3b_kfc">{
+    "id": "action.review.logical.mistakes",
+    "title": "Logical Inconsistencies",
+    "output-action": "none",
+    "prompt": "Find logical and inconsistency mistakes in the content and return a report.",
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+                <dlentry id="dlentry_onc_khq_nfc">
+                  <dt>create-new-document</dt>
+                  <dd>
+                    <p id="p_hvy_t3q_nfc">Afișează o casetă de dialog care solicită un context și apoi creează un document nou pe baza răspunsului primit de la server. Proprietatea <codeph>"additional_info"/"properties"/"file_extension"</codeph> poate fi setată pentru a impune o extensie pentru documentul nou creat.</p>
+                    <p id="p_srx_dhq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/create-schematron-rules.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_v55_j3b_kfc">{
+    "id": "action.create.schematron.rules",
+    "title": "Schematron Rules from Style Guide",
+    "output-action": "create-new-document",
+    "additional_info": {
+        "properties": {"file_extension": "sch"}
+    },
+    "prompt_ref": "prompts/create-schematron-rules.md"
+}</codeblock></p>
+                  </dd>
+                </dlentry>
+              </dl>
+            </p></dd>
+        </dlentry>
+        <dlentry>
+          <dt>insert-modes</dt>
+          <dd>
+            <p id="p_kvf_v3q_nfc">Un array JSON care definește locuri pentru inserarea conținutului într-un document XML. Primul mod pentru care condiția XPath devine adevărată este <i>run</i>. Astfel de moduri sunt folosite când <codeph>output-action</codeph> al acțiunii AI este <codeph>insert</codeph>.</p>
+            <p id="p_ekp_bhq_nfc"><xref href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/update-title.json" scope="external" format="html">Exemplu</xref>:<codeblock outputclass="language-json" xml:space="preserve" id="codeblock_nsq_pfb_kfc">{
+    "id": "action.update.title.based.on.content",
+    ...
+    "output-action": "insert",
+    ...
+    "insert-modes": [
+      {
+        "xpath-condition": "(//title)[1]",
+        "target-location": "(//title)[1]",
+        "action": "replace"
+      },
+      {
+        "target-location": "(//shortdesc)[1]",
+        "action": "insert-before"
+      }
+    ]...
+  }</codeblock></p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>embed-assist</dt>
+          <dd>Setați acest parametru boolean opțional la <codeph>true</codeph> pentru a adăuga acțiunea AI în meniul drop-down din colțul dreapta sus <uicontrol>AI Positron Assistant</uicontrol> care apare la editarea conținutului în modul vizual <uicontrol>Author</uicontrol>.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>quick-assist</dt>
+          <dd>Setați acest parametru boolean opțional la <codeph>true</codeph> pentru a adăuga acțiunea AI în meniul drop-down de tip bec de asistență rapidă care apare pe bara verticală din stânga.</dd>
+        </dlentry>
+      </dl>
+    </p>
+    <p>Sper că aceste informații v-au fost de ajutor. Ca de obicei, puteți folosi formularul de feedback de mai jos dacă doriți să întrebați mai multe detalii despre posibilitățile acțiunilor AI sau dacă vreți să vă lăudați cu acțiunile AI personalizate pe care le-ați creat.</p>
+  </body>
+</topic>
