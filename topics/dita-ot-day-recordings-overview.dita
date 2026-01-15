@@ -30,9 +30,108 @@
                     </thead>
                     <tbody>
                         <!-- 2018 DITA-OT Day Presentations (moved to top) -->
+                        <!-- 2019 DITA-OT Day Presentations (added) -->
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=HRZJ2AyvmVU"
+                                    format="html" scope="external">Trim your toolkit with this one
+                                    weird trick!</xref></entry>
+                            <entry>Robert Anderson</entry>
+                            <entry>104</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=5DD7pshOYMQ"
+                                    format="html" scope="external">Running on someone else’s
+                                    computer</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                            <entry>133</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=hUXUwLo4tjc"
+                                    format="html" scope="external">Various useful Open source
+                                    plugins to enhance DITA publishing</xref></entry>
+                            <entry>Radu Coravu</entry>
+                            <entry>199</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=rH8hjkBeOAI"
+                                    format="html" scope="external">AH-WML DITA-to-Word
+                                    Plug-in</xref></entry>
+                            <entry>Tony Graham</entry>
+                            <entry>272</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=7VKZKTrS51A"
+                                    format="html" scope="external">One file to rule them all (DITA
+                                    Project)</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                            <entry>274</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=PZGhvhstOBU"
+                                    format="html" scope="external">Editing DITA Open Toolkit Project
+                                    files</xref></entry>
+                            <entry>George Bina</entry>
+                            <entry>360</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=vobY_ha5nd0"
+                                    format="html" scope="external">All the cool kids are using
+                                    JavaScript</xref></entry>
+                            <entry>Jason Fox</entry>
+                            <entry>154</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=icbLaNGdV8c"
+                                    format="html" scope="external">All the cool kids are using the
+                                    Cloud</xref></entry>
+                            <entry>Jason Fox</entry>
+                            <entry>132</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=cd7XThpkivw"
+                                    format="html" scope="external">The Art of doing
+                                nothing</xref></entry>
+                            <entry>Jason Fox</entry>
+                            <entry>248</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=EFmQgUOUMCQ"
+                                    format="html" scope="external">Case Study of Taxonomy and Search
+                                    for DITA-OT</xref></entry>
+                            <entry>Lief Erickson</entry>
+                            <entry>115</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=HA8_An6AjPQ"
+                                    format="html" scope="external">Generating metrics from your DITA
+                                    project</xref></entry>
+                            <entry>Radu Coravu</entry>
+                            <entry>103</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=S8P6Ylmp-UI"
+                                    format="html" scope="external">Easy as pie PDF customizations
+                                    using CSS</xref></entry>
+                            <entry>Radu Coravu</entry>
+                            <entry>123</entry>
+                        </row>
                         <row>
                             <entry>2018</entry>
-                            <entry><xref href="https://www.youtube.com/watch?v=23aIkqJG_yE" format="html" scope="external">DITA-OT Website Survey Results</xref></entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=23aIkqJG_yE"
+                                    format="html" scope="external">DITA-OT Website Survey
+                                    Results</xref></entry>
                             <entry>Lief Erickson</entry>
                             <entry>50</entry>
                         </row>
@@ -42,6 +141,7 @@
                             <entry>Lionel Moizeau</entry>
                             <entry>721</entry>
                         </row>
+                        <!-- 2018 DITA-OT Day Presentations (moved to top) -->
                         <row>
                             <entry>2018</entry>
                             <entry><xref href="https://www.youtube.com/watch?v=_bUsrS5wG7Y" format="html" scope="external">Comparison between the DocBook and DITA publishing systems</xref></entry>
@@ -154,14 +254,6 @@
                                     scale build environment with 50+ custom plugins</xref></entry>
                             <entry>Robert Anderson</entry>
                             <entry>57</entry>
-                        </row>
-                        <row>
-                            <entry>2017</entry>
-                            <entry><xref href="https://www.youtube.com/watch?v=z6f9jPpvybU"
-                                    format="html" scope="external">Lightning talk: DITA-OT Docs
-                                    Development(s)</xref></entry>
-                            <entry>Roger Sheen</entry>
-                            <entry>80</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
