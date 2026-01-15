@@ -2,6 +2,12 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_ms3_2by_yhc">
     <title>DITA OT Day Recordings Overview</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2026-01-15"/>
+        </critdates>
+    </prolog>
     <body>
         <p>More than 10 years ago we started sponsoring the <b>DITA OT Day</b> events, events
             dedicated to the <xref href="https://www.dita-ot.org/" format="html" scope="external"
