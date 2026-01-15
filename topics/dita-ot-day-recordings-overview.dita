@@ -18,8 +18,8 @@
                 href="https://www.oxygenxml.com/events/2026/dita-ot_day.html" format="html"
                 scope="external">1'st of February</xref>. On each event we recorded lots of sessions
             and then made them available online.</p>
-        <p>I will try to list below links to all presentations made in all the DITA OT Day events so
-                far:<table frame="all" rowsep="1" colsep="1" id="table_lct_gcy_yhc">
+        <p>A list with all presentations made in all the DITA OT Day events so far is available
+                below:<table frame="all" rowsep="1" colsep="1" id="table_lct_gcy_yhc">
                 <title>DITA OT Day Presentation Recordings</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="c1" colwidth="0.46*"/>
@@ -31,70 +31,91 @@
                             <entry>Year</entry>
                             <entry>Presentation</entry>
                             <entry>Presenter</entry>
-                            <entry>Views</entry>
+                            <entry>YouTube Views</entry>
                         </row>
                     </thead>
                     <tbody>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=tEEChWnh-Bw" format="html" scope="external">DITA-OT New Features and Enhancements</xref></entry>
-    <entry>Jarno Elovirta</entry>
-    <entry>123</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=CErroCL4I24" format="html" scope="external">DITA-OT and DITA 2.0: who’s done what now?</xref></entry>
-    <entry>Robert Anderson</entry>
-    <entry>67</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=zKSpl665IHk" format="html" scope="external">Welcome to DITA-OT Community: Where Code meets Passion</xref></entry>
-    <entry>Justyna Hietala</entry>
-    <entry>52</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=c1Shob-P5S8" format="html" scope="external">Replacement keyspace constructor for Open Toolkit</xref></entry>
-    <entry>Eliot Kimber</entry>
-    <entry>33</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=zfhZCT_uzCg" format="html" scope="external">Learning Assessment QTI Output</xref></entry>
-    <entry>Brianna Stevens-Russell</entry>
-    <entry>79</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=FgCBS7S7MwQ" format="html" scope="external">Building an Ant based environment around the DITA OT</xref></entry>
-    <entry>Eric Sirois</entry>
-    <entry>46</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=Eip_E2s-K8I" format="html" scope="external">DITA-OT in the Age of AI: Bridging Technical Writing and Artificial Intelligence</xref></entry>
-    <entry>Amit Siddhartha</entry>
-    <entry>207</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=RTj0fIoioEI" format="html" scope="external">Providing content to AI engines using DITA OT plugins</xref></entry>
-    <entry>Radu Coravu</entry>
-    <entry>201</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=3rKgIF80TPU" format="html" scope="external">Automating Compliance Verification for Documentation Standards Using AI</xref></entry>
-    <entry>Alex Jitianu</entry>
-    <entry>187</entry>
-</row>
-<row>
-    <entry>2025</entry>
-    <entry><xref href="https://www.youtube.com/watch?v=p7qwoP1FFbQ" format="html" scope="external">Single Source Publishing? Bury the Hatchet with DITA-OT</xref></entry>
-    <entry>Snehal Borole, Ritu Saxena</entry>
-    <entry>70</entry>
-</row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=tEEChWnh-Bw"
+                                    format="html" scope="external">DITA-OT New Features and
+                                    Enhancements</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                            <entry>123</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=CErroCL4I24"
+                                    format="html" scope="external">DITA-OT and DITA 2.0: who’s done
+                                    what now?</xref></entry>
+                            <entry>Robert Anderson</entry>
+                            <entry>67</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=zKSpl665IHk"
+                                    format="html" scope="external">Welcome to DITA-OT Community:
+                                    Where Code meets Passion</xref></entry>
+                            <entry>Justyna Hietala</entry>
+                            <entry>52</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=c1Shob-P5S8"
+                                    format="html" scope="external">Replacement keyspace constructor
+                                    for Open Toolkit</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                            <entry>33</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=zfhZCT_uzCg"
+                                    format="html" scope="external">Learning Assessment QTI
+                                    Output</xref></entry>
+                            <entry>Brianna Stevens-Russell</entry>
+                            <entry>79</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=FgCBS7S7MwQ"
+                                    format="html" scope="external">Building an Ant based environment
+                                    around the DITA OT</xref></entry>
+                            <entry>Eric Sirois</entry>
+                            <entry>46</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Eip_E2s-K8I"
+                                    format="html" scope="external">DITA-OT in the Age of AI:
+                                    Bridging Technical Writing and Artificial
+                                Intelligence</xref></entry>
+                            <entry>Amit Siddhartha</entry>
+                            <entry>207</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=RTj0fIoioEI"
+                                    format="html" scope="external">Providing content to AI engines
+                                    using DITA OT plugins</xref></entry>
+                            <entry>Radu Coravu</entry>
+                            <entry>201</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=3rKgIF80TPU"
+                                    format="html" scope="external">Automating Compliance
+                                    Verification for Documentation Standards Using AI</xref></entry>
+                            <entry>Alex Jitianu</entry>
+                            <entry>187</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=p7qwoP1FFbQ"
+                                    format="html" scope="external">Single Source Publishing? Bury
+                                    the Hatchet with DITA-OT</xref></entry>
+                            <entry>Snehal Borole, Ritu Saxena</entry>
+                            <entry>70</entry>
+                        </row>
                         <row>
                             <entry>2024</entry>
                             <entry><xref href="https://www.youtube.com/watch?v=XRgeg6HGvCE"
