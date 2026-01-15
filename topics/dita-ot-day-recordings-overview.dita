@@ -29,8 +29,101 @@
                         </row>
                     </thead>
                     <tbody>
-                        <!-- 2018 DITA-OT Day Presentations (moved to top) -->
-                        <!-- 2019 DITA-OT Day Presentations (added) -->
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=ZMYryCJCrlg" format="html" scope="external"
+                                    >Making the migration leap: jumping across versions to the
+                                    latest DITA-OT</xref></entry>
+  <entry>Robert D. Anderson</entry>
+  <entry>164</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=tx9Ei5-Yl1w" format="html" scope="external"
+                                    >Technical values</xref></entry>
+  <entry>Stefan Jung</entry>
+  <entry>171</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=otD26JUexbY" format="html" scope="external"
+                                    >Avoiding duplicate effort with
+                                post-preprocessing</xref></entry>
+  <entry>Tim Grantham</entry>
+  <entry>141</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=wpKNF3KEe6M" format="html" scope="external"
+                                    >DITA and Markdown and Docker, oh my…</xref></entry>
+  <entry>John Kirkilis</entry>
+  <entry>461</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=gEbigUC3LDE" format="html" scope="external"
+                                    >Scaling the DITA Open Toolkit for Enterprise Use</xref></entry>
+  <entry>Robert Anderson and John Kirkilis</entry>
+  <entry>197</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=iQHhp9vZCow" format="html" scope="external"
+                                    >Simpler custom PDFs - The user perspective</xref></entry>
+  <entry>Roger Sheen</entry>
+  <entry>281</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=N602wR7qoNE" format="html" scope="external"
+                                    >Simpler custom PDFs - The technical details</xref></entry>
+  <entry>Jarno Elovirta</entry>
+  <entry>336</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=ovAkCoxxBYI" format="html" scope="external"
+                                    >Various DITA publishing ideas experimented on the Oxygen XML
+                                    Blog</xref></entry>
+  <entry>Radu Coravu</entry>
+  <entry>225</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=S7wgTKbdQzI" format="html" scope="external"
+                                    >Pushing square pegs into round holes</xref></entry>
+  <entry>Jarno Elovirta</entry>
+  <entry>75</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=yXF89Oxxb8I" format="html" scope="external"
+                                    >Extending Doctales reveal.js with CSS Grid</xref></entry>
+  <entry>Lief Erickson</entry>
+  <entry>184</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=EP4X1CVNc7w" format="html" scope="external"
+                                    >Supercharging DITA-OT Webhelp creation</xref></entry>
+  <entry>Jang Graat</entry>
+  <entry>148</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=KOkxPHiBUzU" format="html" scope="external">Our
+                                    experience helping the DITA-OT project as a commercial
+                                    company</xref></entry>
+  <entry>Radu Coravu</entry>
+  <entry>55</entry>
+</row>
+<row>
+  <entry>2022</entry>
+  <entry><xref href="https://www.youtube.com/watch?v=AaXj_Nw0wQ8" format="html" scope="external"
+                                    >DITA HTML Styling via Bootstrap 5</xref></entry>
+  <entry>Jason Fox</entry>
+  <entry>236</entry>
+</row>
                         <row>
                             <entry>2019</entry>
                             <entry><xref href="https://www.youtube.com/watch?v=HRZJ2AyvmVU"
