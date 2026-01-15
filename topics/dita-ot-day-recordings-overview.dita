@@ -9,17 +9,17 @@
         </critdates>
     </prolog>
     <body>
-        <p>More than 10 years ago we started sponsoring the <b>DITA OT Day</b> events, events
-            dedicated to the <xref href="https://www.dita-ot.org/" format="html" scope="external"
-                >DITA Open Toolkit project</xref>, it's <xref
+        <p>More than 10 years ago, we started sponsoring the <b>DITA OT Day</b> events. These events
+            are dedicated to the <xref href="https://www.dita-ot.org/" format="html"
+                scope="external">DITA Open Toolkit project</xref>, its <xref
                 href="https://www.dita-ot.org/who_we_are" format="html" scope="external">main
-                developers</xref> and the community. During this decade we hosted 9 DITA OT Day
-            events, with the 10'th one coming soon on the <xref
+                developers</xref>, and the community. During the past decade, we hosted 9 DITA OT
+            Day events, with the 10th one coming soon on the <xref
                 href="https://www.oxygenxml.com/events/2026/dita-ot_day.html" format="html"
-                scope="external">1'st of February</xref>. On each event we recorded lots of sessions
-            and then made them available online.</p>
-        <p>A list with all presentations made in all the DITA OT Day events so far is available
-                below:<table frame="all" rowsep="1" colsep="1" id="table_lct_gcy_yhc">
+                scope="external">1st of February</xref>. For each event, we recorded lots of
+            sessions and then made them available online.</p>
+        <p>Here is a list of all presentations made in all the DITA OT Day events so far:<table
+                frame="all" rowsep="1" colsep="1" id="table_lct_gcy_yhc">
                 <title>DITA OT Day Presentation Recordings</title>
                 <tgroup cols="4">
                     <colspec colnum="1" colname="c1" colwidth="0.46*"/>
