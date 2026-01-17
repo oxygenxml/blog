@@ -24,6 +24,12 @@
         <topicref href="topics/wn_positron_5.dita"/>
     </topichead>
     <topicref href="maps/dita-articles.ditamap" format="ditamap"/>
+    <topichead>
+        <topicmeta>
+            <navtitle>CMS</navtitle>
+        </topicmeta>
+        <topicref href="topics/content-fusion-cloud-overview.dita"/>
+    </topichead>
     <topicref keys="migrate" href="topics/migration.dita">
         <topicref href="topics/migratingToDITA.dita"/>
         <topicref href="topics/migrating_to_dita.dita"/>

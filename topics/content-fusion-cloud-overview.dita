@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_nnt_5zn_zhc">
+    <title>Content Fusion Cloud CMS Overview</title>
+    <body>
+        <p>We recently made available our <b>Content Fusion</b> content management server as a <xref
+                href="https://fusion.oxygenxml.com/" format="html" scope="external">cloud
+                solution</xref>, aimed at companies or individuals who want to securely
+                <b>manage</b>, <b>create</b>, <b>edit</b>, <b>review</b> and <b>publish</b>
+            technical documentation projects without the need to install server side components on
+            their own servers. I will list below some of its main characteristics and then I will
+            try to expand on each of them.</p>
+        <p>
+            <ul id="ul_zsw_s14_zhc">
+                <li><b>Create an organization</b>. Your organization will let you invite and manage
+                    members, control the subscription, authentication and security details.</li>
+                <li><b>Assign roles</b> in the organization. There are now two types of roles:
+                    writers and subject scheme members.</li>
+                <li><b>Create projects</b> in your organization. Your projects can be either local
+                    to the server or synchronized in real time with a private or public project on
+                    an existing public Git server like GitHub or GitLab.</li>
+                <li>Work on projects with full support for editing the publication table of
+                    contents, project wide search and validation. For <b>DITA XML</b> files you will
+                    benefit from the rich possibilities offered for content reuse, filtering and
+                    customization offered by the standard. Full <b>history</b> support and
+                    mechanisms to <b>merge changes and manage potential conflicts</b> are
+                    included.</li>
+                <li>Create, manage and integrate <b>feature, release or review branches</b>.</li>
+                <li>Create <b>review tasks</b> and assign them to Subject Matter Experts. Review
+                    tasks can be <b>edited</b>
+                    <b>sequentially</b> or <b>simultaneously</b> by multiple SMEs.</li>
+                <li>Use the <b>AI Positron</b> side view (with a separate subscription model) to
+                    make changes in your project, review content using the numerous included AI
+                    actions or vibe write.</li>
+                <li>Define your deliverables and <b>publish</b> them to <b>WebHelp</b> or <b>PDF</b>
+                    formats.</li>
+                <li><b>Integration</b> with the <b>Oxygen XML</b> desktop applications via the
+                        <b>Content Fusion</b> add-on allowing Oxygen XML desktop users to edit or
+                    create review tasks in the <b>Content Fusion</b> platform.</li>
+                <li>For <b>Content Fusion</b> projects which are synchronized with an external
+                        <b>Git</b> project you can access the project content using any type of Git
+                    tools.</li>
+            </ul>
+        </p>
+    </body>
+</topic>
