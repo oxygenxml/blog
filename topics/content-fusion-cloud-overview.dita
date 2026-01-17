@@ -8,8 +8,18 @@
                 solution</xref>, aimed at companies or individuals who want to securely
                 <b>manage</b>, <b>create</b>, <b>edit</b>, <b>review</b> and <b>publish</b>
             technical documentation projects without the need to install server side components on
-            their own servers. I will list below some of its main characteristics and then I will
-            try to expand on each of them.</p>
+            their own servers. </p>
+        <p>As a <xref href="https://github.com/raducoravu" format="html" scope="external">software
+                engineer</xref> whose development has been mostly focused on the <b>Oxygen XML</b>
+            desktop products, I've been skeptical in general of using web editing tools. But now, as
+            I'm sipping my hot chocolate and using <b><xref href="https://fusion.oxygenxml.com/"
+                    format="html" scope="external">Content Fusion Cloud</xref></b> connected to the
+                <xref href="https://github.com/oxygenxml/blog" format="html" scope="external">Oxygen
+                XML Blog</xref> Git repository to write this blog post, I see that things are
+            running smooth indeed.</p>
+        <p>I will list below some of the <b>Content Fusion Cloud</b> main characteristics and then I
+            will try to expand on each of them. My last section in this article will be about what's
+            missing and how it can be compensated.</p>
         <p>
             <ul id="ul_zsw_s14_zhc">
                 <li><b>Create an organization</b>. Your organization will let you invite and manage
@@ -32,14 +42,18 @@
                 <li>Use the <b>AI Positron</b> side view (with a separate subscription model) to
                     make changes in your project, review content using the numerous included AI
                     actions or vibe write.</li>
-                <li>Define your deliverables and <b>publish</b> them to <b>WebHelp</b> or <b>PDF</b>
-                    formats.</li>
+                <li><b>Define deliverables</b>, <b>create publishing templates</b> and
+                        <b>publish</b> them to <b>WebHelp</b> or <b>PDF</b> formats. Limited output
+                    hosting is also included to test and see how your deliverables look like on the
+                    web.</li>
                 <li><b>Integration</b> with the <b>Oxygen XML</b> desktop applications via the
                         <b>Content Fusion</b> add-on allowing Oxygen XML desktop users to edit or
                     create review tasks in the <b>Content Fusion</b> platform.</li>
                 <li>For <b>Content Fusion</b> projects which are synchronized with an external
-                        <b>Git</b> project you can access the project content using any type of Git
-                    tools.</li>
+                        <b>Git</b> repository you can access the project content using any type of
+                    Git tools.</li>
+                <li>A <b>30 day trial</b> to freely use the <b>CMS</b> and see if it is fit for your
+                    use and organization.</li>
             </ul>
         </p>
     </body>
