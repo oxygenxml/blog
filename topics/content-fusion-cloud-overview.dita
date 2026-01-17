@@ -15,8 +15,12 @@
             I'm sipping my hot chocolate and using <b><xref href="https://fusion.oxygenxml.com/"
                     format="html" scope="external">Content Fusion Cloud</xref></b> connected to the
                 <xref href="https://github.com/oxygenxml/blog" format="html" scope="external">Oxygen
-                XML Blog</xref> Git repository to write this blog post, I see that things are
+                XML Blog</xref> Git repository to write this very blog post, I see that things are
             running smooth indeed.</p>
+        <p>There is also a past <xref
+                href="https://www.oxygenxml.com/events/2025/webinar_introducing_oxygen_content_fusion_cloud.html"
+                format="html" scope="external">webinar recording</xref> by <b>Cristian Talau</b> the
+                <b>Content Fusion</b> project manager with an overview of the entire system.</p>
         <p>I will list below some of the <b>Content Fusion Cloud</b> main characteristics and then I
             will try to expand on each of them. My last section in this article will be about
                 <b>what's missing</b> and how it can be compensated.</p>
@@ -62,7 +66,9 @@
             <title>Create and Manage Organizations</title>
             <p>Your first contact with the <xref href="https://fusion.oxygenxml.com" format="html"
                     scope="external">Content Fusion Cloud</xref> web site will probably be to create
-                your own organization.</p>
+                your own organization. You have a 30 day trial so if you've been curious about
+                working with <b>DITA XML</b> content or with a <b>DITA XML CMS</b> you can jump
+                right in, create an organization, create a project and give it a try.</p>
             <p><image href="../images/cf-first-contact.png" id="image_x3z_mf4_zhc" scale="50"/></p>
             <p>Depending on your <b>Subscription</b> model you will get a maximum number of authors
                 and subject matter experts that you can invite to join you in working on the
