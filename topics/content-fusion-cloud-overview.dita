@@ -7,8 +7,8 @@
                 href="https://fusion.oxygenxml.com/" format="html" scope="external">cloud
                 solution</xref>, aimed at companies or individuals who want to securely
                 <b>manage</b>, <b>create</b>, <b>edit</b>, <b>review</b> and <b>publish</b>
-            technical documentation projects without the need to install server side components on
-            their own servers. </p>
+            technical documentation projects using the <b>DITA XML</b> standard without the need to
+            install server side components on their own servers. </p>
         <p>As a <xref href="https://github.com/raducoravu" format="html" scope="external">software
                 engineer</xref> whose development has been mostly focused on the <b>Oxygen XML</b>
             desktop products, I've been skeptical in general of using web editing tools. But now, as
@@ -18,12 +18,13 @@
                 XML Blog</xref> Git repository to write this blog post, I see that things are
             running smooth indeed.</p>
         <p>I will list below some of the <b>Content Fusion Cloud</b> main characteristics and then I
-            will try to expand on each of them. My last section in this article will be about what's
-            missing and how it can be compensated.</p>
+            will try to expand on each of them. My last section in this article will be about
+                <b>what's missing</b> and how it can be compensated.</p>
         <p>
             <ul id="ul_zsw_s14_zhc">
-                <li><b>Create an organization</b>. Your organization will let you invite and manage
-                    members, control the subscription, authentication and security details.</li>
+                <li><b>Create and manage an organization</b>. Your organization will let you invite
+                    and manage members, control the subscription, authentication and security
+                    details.</li>
                 <li><b>Assign roles</b> in the organization. There are now two types of roles:
                     writers and subject scheme members.</li>
                 <li><b>Create projects</b> in your organization. Your projects can be either local
@@ -56,5 +57,30 @@
                     use and organization.</li>
             </ul>
         </p>
+        <p>And now let's expand on these features that <b>Content Fusion Cloud</b> offers.</p>
+        <section id="section_vkq_hf4_zhc">
+            <title>Create and Manage Organizations</title>
+            <p>Your first contact with the <xref href="https://fusion.oxygenxml.com" format="html"
+                    scope="external">Content Fusion Cloud</xref> web site will probably be to create
+                your own organization.</p>
+            <p><image href="../images/cf-first-contact.png" id="image_x3z_mf4_zhc" scale="50"/></p>
+            <p>Depending on your <b>Subscription</b> model you will get a maximum number of authors
+                and subject matter experts that you can invite to join you in working on the
+                projects. You will also get a maximum storage capacity.</p>
+            <p>For example for the trial I can invite 5 writers and 25 SMEs to join my organization
+                and I have a maximum of 5GBs of storage space to squander.</p>
+            <p>
+                <image href="../images/cf-subscription-trial.png" id="image_ln2_kg4_zhc" scale="50"
+                /></p>
+            <p>I use my <b>GitHub</b> account to login to <b>Content Fusion Cloud</b>, you can also
+                use your <b>Google</b> or <b>Single Sign On</b>. The <b>Authentication</b> tab
+                allows the organization admin to control various authentication related
+                settings.</p>
+            <p><image href="../images/cf-auth.png" id="image_nrw_5g4_zhc" scale="50"/>
+            </p>
+            <p>In general I found my organization's administration pages quite easy to figure out, I
+                can <b>invite members</b>, <b>assign roles</b>, <b>change various settings</b>, the
+                UI is well thought and intuitive.</p>
+        </section>
     </body>
 </topic>
