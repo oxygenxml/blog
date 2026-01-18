@@ -43,8 +43,9 @@
                     contents, project wide search and validation. For <b>DITA XML</b> files you will
                     benefit from the rich possibilities offered for content reuse, filtering and
                     customization offered by the standard. Full <b>history</b> support and
-                    mechanisms to <b>merge changes and manage potential conflicts</b> are
-                    included.</li>
+                    mechanisms to <b>merge changes and manage potential conflicts</b> are included.
+                        <xref href="#topic_nnt_5zn_zhc/section_owb_z5t_zhc">More
+                    details...</xref></li>
                 <li>Create, manage and integrate <b>feature, release or review branches</b>.</li>
                 <li>Create <b>review tasks</b> and assign them to Subject Matter Experts. Review
                     tasks can be <b>edited</b>
@@ -62,10 +63,10 @@
                 <li>For <b>Content Fusion</b> projects which are synchronized with an external
                         <b>Git</b> repository you can access the project content using any type of
                     Git tools.</li>
-                <li>A <b>30 day trial</b> to freely use the <b>CMS</b> and see if it is fit for your
-                    use and organization.</li>
             </ul>
         </p>
+        <p>A <b>30 day trial</b> is offered to freely use the <b>CMS</b> and see if it is fit for
+            your use and organization.</p>
         <p>And now let's expand on these features that <b>Content Fusion Cloud</b> offers.</p>
         <section id="section_vkq_hf4_zhc">
             <title>Create and Manage Organizations</title>
@@ -104,6 +105,37 @@
                 including editing tools and publishing servers which have Git support.</p>
             <p><image href="../images/cf-new--project-git.png" id="image_vy3_j5t_zhc" scale="50"
                 /></p>
+        </section>
+        <section id="section_owb_z5t_zhc">
+            <title>Editing Workflow</title>
+            <p>Retrieve incoming changes from the repository, create new files or modify existing
+                content, then commit.</p>
+            <p><image href="../images/cf-editing-workflow.png" id="image_f2q_jvt_zhc" scale="50"
+                /></p>
+            <p>You can use the <b>Publications</b> view to create or edit the main DITA map (or
+                maps) for your project. Referenced sub-maps are also present and editable in the
+                context of the main DITA map. The contextual menu allows you to make changes to the
+                DITA map or to create and add new DITA topics in various places.</p>
+            <p><image href="../images/cf-edit-publication.png" id="image_zg2_3xt_zhc" scale="50"
+                /></p>
+            <p>You can use the <b>Files</b> and <b>Search</b> views to locate the topics you want to
+                edit either by file name or by keywords. </p>
+            <p>The main editor area gives you full DITA XML editing support, support to insert new
+                paragraphs and DITA structure elements, find/replace, edit content, change
+                attributes, insert images, tables, list items, links and much more. You can even
+                enable change tracking and add color highlights. It's intuitive and easy to use.</p>
+            <p><image href="../images/cf-main-edit-area.png" id="image_wxt_5xt_zhc" scale="50"/></p>
+            <p>Resources are not locked by any particular writer which leads us to two
+                    situations:<ul id="ul_xq1_4vt_zhc">
+                    <li>People can actually make changes in parallel to the same resource, which is
+                        very useful when these resources are for example the DITA Maps which define
+                        the table of contents of the publications.</li>
+                    <li>Merge conflicts may occur when attempting to commit or to pull changes from
+                        the remote repository.</li>
+                </ul></p>
+            <p>You can set a commit message when you commit content and all changes made to the
+                project appear in the <b>History</b> view.</p>
+            <p><image href="../images/cf-history-view.png" id="image_tmc_jwt_zhc" scale="50"/></p>
         </section>
     </body>
 </topic>
