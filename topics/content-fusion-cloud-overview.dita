@@ -49,7 +49,8 @@
                 <li>Create, manage and integrate <b>feature, release or review branches</b>.</li>
                 <li>Create <b>review tasks</b> and assign them to Subject Matter Experts. Review
                     tasks can be <b>edited</b>
-                    <b>sequentially</b> or <b>simultaneously</b> by multiple SMEs.</li>
+                    <b>sequentially</b> or <b>simultaneously</b> by multiple SMEs. <xref
+                        href="#topic_nnt_5zn_zhc/section_jpg_d15_zhc">Details...</xref></li>
                 <li>Use the <b>AI Positron</b> side view (with a separate subscription model) to
                     make changes in your project, review content using the numerous included AI
                     actions or vibe write.</li>
@@ -162,6 +163,9 @@
                     Cloud</b> platform with a simpler UI to propose changes (either by modifying or
                 adding comments) to the resources which are to be reviewed.</p>
             <p><image href="../images/cf-review-edit.png" id="image_c13_hb5_zhc" scale="50"/></p>
+            <p>Once the subject matter expert closes the review process, the writer has specific
+                tools to review and accept the proposals.</p>
+            <p><image href="../images/cf-review-accept.png" id="image_nkr_4b5_zhc" scale="50"/></p>
         </section>
     </body>
 </topic>
