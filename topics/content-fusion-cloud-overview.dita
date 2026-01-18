@@ -130,8 +130,17 @@
                     <li>People can actually make changes in parallel to the same resource, which is
                         very useful when these resources are for example the DITA Maps which define
                         the publication table of contents.</li>
-                    <li>Merge conflicts may occur when attempting to commit or to pull changes from
-                        the remote repository.</li>
+                    <li>
+                        <p>Merge conflicts may occur when attempting to commit or to pull changes
+                            from the remote repository. Conflicts are in general resolved
+                            automatically using the powerful available tools or you can decide to
+                            take control over the merging process. This is a CMS which embraces the
+                            possibility multiple people may have interest in making changes to the
+                            same resources and provides the powerful tools to resolve such
+                            cases.</p>
+                        <p><image href="../images/cf-merge-conflicts-resolution.png"
+                                id="image_a4z_jzt_zhc" scale="50"/></p>
+                    </li>
                 </ul></p>
             <p>You can set a commit message when you commit content and all changes made to the
                 project appear in the <b>History</b> view.</p>
