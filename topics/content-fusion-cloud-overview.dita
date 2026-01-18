@@ -112,18 +112,19 @@
                 content, then commit.</p>
             <p><image href="../images/cf-editing-workflow.png" id="image_f2q_jvt_zhc" scale="50"
                 /></p>
-            <p>You can use the <b>Publications</b> view to create or edit the main DITA map (or
-                maps) for your project. Referenced sub-maps are also present and editable in the
-                context of the main DITA map. The contextual menu allows you to make changes to the
-                DITA map or to create and add new DITA topics in various places.</p>
+            <p>Use the <b>Publications</b> view to create or edit the main DITA map (or maps) for
+                your project. Referenced sub-maps are also present and editable in the context of
+                the main DITA map. The contextual menu allows you to make changes to the DITA map or
+                to create and add new DITA topics in various places.</p>
             <p><image href="../images/cf-edit-publication.png" id="image_zg2_3xt_zhc" scale="50"
                 /></p>
-            <p>You can use the <b>Files</b> and <b>Search</b> views to locate the topics you want to
+            <p>The <b>Files</b> and <b>Search</b> views allow you to locate the topics you want to
                 edit either by file name or by keywords. </p>
-            <p>The main editor area gives you full DITA XML editing support, support to insert new
-                paragraphs and DITA structure elements, find/replace, edit content, change
-                attributes, insert images, tables, list items, links and much more. You can even
-                enable change tracking and add color highlights. It's intuitive and easy to use.</p>
+            <p>In the main editor area you have full <b>DITA XML</b> editing support, support to
+                insert new paragraphs and DITA structure elements, find/replace, edit content,
+                change attributes, insert images, tables, list items, links and much more. You can
+                even enable change tracking and add color highlights. It's intuitive and easy to
+                use.</p>
             <p><image href="../images/cf-main-edit-area.png" id="image_wxt_5xt_zhc" scale="50"/></p>
             <p>Resources are not locked by any particular writer which leads us to two
                     situations:<ul id="ul_xq1_4vt_zhc">
@@ -131,13 +132,13 @@
                         very useful when these resources are for example the DITA Maps which define
                         the publication table of contents.</li>
                     <li>
-                        <p>Merge conflicts may occur when attempting to commit or to pull changes
-                            from the remote repository. Conflicts are in general resolved
-                            automatically using the powerful available tools or you can decide to
-                            take control over the merging process. This is a CMS which embraces the
-                            possibility multiple people may have interest in making changes to the
-                            same resources and provides the powerful tools to resolve such
-                            cases.</p>
+                        <p><b>Merge conflicts</b> may occur when attempting to commit or to pull
+                            changes from the remote repository. Conflicts are in general resolved
+                            automatically using the <b>powerful available tools</b> or you can
+                            decide to take control over the merging process. This is a CMS which
+                            embraces the possibility multiple people may have interest in making
+                            changes to the same resources and provides the powerful tools to
+                                <b>resolve</b> such cases.</p>
                         <p><image href="../images/cf-merge-conflicts-resolution.png"
                                 id="image_a4z_jzt_zhc" scale="50"/></p>
                     </li>
