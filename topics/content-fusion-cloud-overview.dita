@@ -53,7 +53,8 @@
                         href="#topic_nnt_5zn_zhc/section_jpg_d15_zhc">Details...</xref></li>
                 <li>Use the <b>AI Positron</b> side view (with a separate subscription model) to
                     make changes in your project, review content using the numerous included AI
-                    actions or vibe write.</li>
+                    actions or vibe write. <xref href="#topic_nnt_5zn_zhc/section_rvg_wb5_zhc"
+                        >Details...</xref></li>
                 <li><b>Define deliverables</b>, <b>create publishing templates</b> and
                         <b>publish</b> them to <b>WebHelp</b> or <b>PDF</b> formats. Limited output
                     hosting is also included to test and see how your deliverables look like on the
@@ -123,9 +124,9 @@
                 edit either by file name or by keywords. </p>
             <p>In the main editor area you have full <b>DITA XML</b> editing support, support to
                 insert new paragraphs and DITA structure elements, find/replace, edit content,
-                change attributes, insert images, tables, list items, links and much more. You can
-                even enable change tracking and add color highlights. It's intuitive and easy to
-                use.</p>
+                change attributes, apply profiling conditions, insert images, tables, list items,
+                links and much more. You can even enable change tracking and add color highlights.
+                It's intuitive and easy to use.</p>
             <p><image href="../images/cf-main-edit-area.png" id="image_wxt_5xt_zhc" scale="50"/></p>
             <p>Resources are not locked by any particular writer which leads us to two
                     situations:<ul id="ul_xq1_4vt_zhc">
@@ -166,6 +167,22 @@
             <p>Once the subject matter expert closes the review process, the writer has specific
                 tools to review and accept the proposals.</p>
             <p><image href="../images/cf-review-accept.png" id="image_nkr_4b5_zhc" scale="50"/></p>
+        </section>
+        <section id="section_rvg_wb5_zhc">
+            <title>AI Assistant</title>
+            <p>The <b>AI Positron</b> view is included by default in any organization. People can
+                create separate subscriptions to the <b>AI Positron</b> service and then use the AI
+                assistant to make changes to the project. You can choose one of the <xref
+                    href="https://www.oxygenxml.com/doc/ug-positron-cf/ai/cf-ai-positron.html"
+                    format="html" scope="external">predefined AI actions or create your own AI
+                    actions and provide a project context prompt</xref> to <b>AI Positron</b>.</p>
+            <p><image href="../images/cf-ai-positron.png" id="image_j4g_2c5_zhc" scale="50"/></p>
+            <p><b>AI Positron</b> has access to powerful tools allowing it to search, read and edit
+                content directly from your project's workspace. More details about vibe writing with
+                AI Positron: <xref
+                    href="https://blog.oxygenxml.com/topics/vibing_with_ai_positron.html"
+                    format="html" scope="external"
+                    >https://blog.oxygenxml.com/topics/vibing_with_ai_positron.html</xref>.</p>
         </section>
     </body>
 </topic>
