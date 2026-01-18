@@ -44,9 +44,9 @@
                     benefit from the rich possibilities offered for content reuse, filtering and
                     customization offered by the standard. Full <b>history</b> support and
                     mechanisms to <b>merge changes and manage potential conflicts</b> are included.
-                        <xref href="#topic_nnt_5zn_zhc/section_owb_z5t_zhc">More
-                    details...</xref></li>
-                <li>Create, manage and integrate <b>feature, release or review branches</b>.</li>
+                        <xref href="#topic_nnt_5zn_zhc/section_owb_z5t_zhc">Details...</xref></li>
+                <li>Create, manage and integrate <b>feature, release or review branches</b>. <xref
+                        href="#topic_nnt_5zn_zhc/section_q3s_sg5_zhc">Details...</xref></li>
                 <li>Create <b>review tasks</b> and assign them to Subject Matter Experts. Review
                     tasks can be <b>edited</b>
                     <b>sequentially</b> or <b>simultaneously</b> by multiple SMEs. <xref
@@ -151,6 +151,15 @@
                 project appear in the <b>History</b> view.</p>
             <p><image href="../images/cf-history-view.png" id="image_tmc_jwt_zhc" scale="50"/></p>
         </section>
+        <section id="section_q3s_sg5_zhc">
+            <title>Branches</title>
+            <p>Create feature, or hotfix branches. Work on them on your own or with other
+                colleagues. Merge feature or hotfix branches in the current project branch.</p>
+            <p>Create release branches on which for each project version release you can make
+                additional small fixes and re-publish the documentation for a specific product
+                version.</p>
+            <p><image href="../images/cf-branches.png" id="image_lgt_yg5_zhc" scale="50"/></p>
+        </section>
     <section id="section_jpg_d15_zhc">
             <title>Review Tasks</title>
             <p>Before you <b>commit changes</b> to one or multiple topics you can <b>create review
@@ -237,6 +246,13 @@
                         translation workflows outside of the <b>Content Fusion Cloud</b>
                         platform.</li>
                 </ul></p>
+        </section>
+        <section id="section_ld5_fh5_zhc">
+            <title>Conclusion</title>
+            <p>I hope my article gave you a realistic overview of what the <b>Content Fusion
+                    Cloud</b> platform has to offer. You can take advantage of the 30-day trial to
+                use it for yourselves either with a demo project or by connecting it to your own
+                    <b>Git</b> repository and work on your content.</p>
         </section>
     </body>
 </topic>
