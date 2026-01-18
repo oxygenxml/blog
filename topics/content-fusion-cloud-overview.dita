@@ -28,12 +28,17 @@
             <ul id="ul_zsw_s14_zhc">
                 <li><b>Create and manage an organization</b>. Your organization will let you invite
                     and manage members, control the subscription, authentication and security
-                    details.</li>
+                        details.<xref href="#topic_nnt_5zn_zhc/section_vkq_hf4_zhc">More
+                        details...</xref></li>
                 <li><b>Assign roles</b> in the organization. There are now two types of roles:
                     writers and subject scheme members.</li>
                 <li><b>Create projects</b> in your organization. Your projects can be either local
                     to the server or synchronized in real time with a private or public project on
-                    an existing public Git server like GitHub or GitLab.</li>
+                    an existing public <b>Git</b> server like <b>GitHub</b> or <b>GitLab</b>. In the
+                    latter case <b>Content Fusion</b> will synchronize your content in real time
+                    with the <b>Git</b> repository, allowing you to use any Git compatible tool to
+                    view and make extra changes to the project. <xref
+                        href="#topic_nnt_5zn_zhc/section_lfl_ttt_zhc">More details....</xref></li>
                 <li>Work on projects with full support for editing the publication table of
                     contents, project wide search and validation. For <b>DITA XML</b> files you will
                     benefit from the rich possibilities offered for content reuse, filtering and
@@ -87,6 +92,18 @@
             <p>In general I found my organization's administration pages quite easy to figure out, I
                 can <b>invite members</b>, <b>assign roles</b>, <b>change various settings</b>, the
                 UI is well thought and intuitive.</p>
+        </section>
+        <section id="section_lfl_ttt_zhc">
+            <title>Create Projects</title>
+            <p>You can create a new project starting from a new sample project template:</p>
+            <p><image href="../images/cf-create-project.png" id="image_srz_ztt_zhc" scale="50"/></p>
+            <p>But in my opinion the best feature is the ability to create a project based on an
+                existing private or public Git project. This will synchronize in real time the
+                changes made in <b>Content Fusion Cloud</b> (including creating branches) with your
+                Git project, allowing you to use your content from any other third party tools
+                including editing tools and publishing servers which have Git support.</p>
+            <p><image href="../images/cf-new--project-git.png" id="image_vy3_j5t_zhc" scale="50"
+                /></p>
         </section>
     </body>
 </topic>
