@@ -58,7 +58,7 @@
                 <li><b>Define deliverables</b>, <b>create publishing templates</b> and
                         <b>publish</b> them to <b>WebHelp</b> or <b>PDF</b> formats. Limited output
                     hosting is also included to test and see how your deliverables look like on the
-                    web.</li>
+                    web. <xref href="#topic_nnt_5zn_zhc/section_sbr_zc5_zhc">Details....</xref></li>
                 <li><b>Integration</b> with the <b>Oxygen XML</b> desktop applications via the
                         <b>Content Fusion</b> add-on allowing Oxygen XML desktop users to edit or
                     create review tasks in the <b>Content Fusion</b> platform.</li>
@@ -183,6 +183,29 @@
                     href="https://blog.oxygenxml.com/topics/vibing_with_ai_positron.html"
                     format="html" scope="external"
                     >https://blog.oxygenxml.com/topics/vibing_with_ai_positron.html</xref>.</p>
+        </section>
+        <section id="section_sbr_zc5_zhc">
+            <title>Publish</title>
+            <p>The <b>Publications</b> view allows you to define one or more top level DITA Maps,
+                each with its own optional filter.</p>
+            <p>For example for the <b>Oxygen User's Manual</b> project we have lots of top level
+                publications based on the top level DITA Map combined with a filter specific for the
+                publication output.</p>
+            <p><image href="../images/cf-publications.png" id="image_tc1_md5_zhc"/></p>
+            <p>Once I define my publications I can use them both for editing the DITA maps or for
+                defining publication deliverables.</p>
+            <p>The <b>Deliverables</b> view allows me to create a <b>WebHelp</b> or <b>PDF</b>
+                deliverable for any of my publications.</p>
+            <p>I can add the possibility for others to review the user's guide directly from the web
+                page, automatically build the deliverable when changes are made to the repository or
+                schedule builds at specific intervals.</p>
+            <p>You can use predefined publishing templates or you can edit them and control the
+                overall publication style.</p>
+            <p><image href="../images/cf-create-deliverable.png" id="image_ew4_125_zhc" scale="50"
+                /></p>
+            <p>One can choose to also deploy the publication to the <b>Content Fusion Cloud</b> test
+                server so that you can preview your changes before porting them to the company web
+                server.</p>
         </section>
     </body>
 </topic>
