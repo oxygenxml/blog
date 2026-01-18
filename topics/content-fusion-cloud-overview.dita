@@ -129,7 +129,7 @@
                     situations:<ul id="ul_xq1_4vt_zhc">
                     <li>People can actually make changes in parallel to the same resource, which is
                         very useful when these resources are for example the DITA Maps which define
-                        the table of contents of the publications.</li>
+                        the publication table of contents.</li>
                     <li>Merge conflicts may occur when attempting to commit or to pull changes from
                         the remote repository.</li>
                 </ul></p>
