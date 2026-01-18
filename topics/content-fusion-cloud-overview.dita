@@ -30,8 +30,8 @@
                     and manage members, control the subscription, authentication and security
                         details.<xref href="#topic_nnt_5zn_zhc/section_vkq_hf4_zhc">More
                         details...</xref></li>
-                <li><b>Assign roles</b> in the organization. There are now two types of roles:
-                    writers and subject scheme members.</li>
+                <li><b>Assign roles</b> in the organization. There are two types of roles:
+                        <b>writers</b> and <b>subject matter experts</b>.</li>
                 <li><b>Create projects</b> in your organization. Your projects can be either local
                     to the server or synchronized in real time with a private or public project on
                     an existing public <b>Git</b> server like <b>GitHub</b> or <b>GitLab</b>. In the
@@ -226,16 +226,31 @@
                 installed in any of the <b>Oxygen XML</b> desktop applications. It allows a writer
                 to create review tasks and to write on their project and commit content using the
                 Oxygen XML application.</p>
+            <p>Or if your Content Fusion project is coupled with a <b>Git</b> repository you can use
+                directly the <xref
+                    href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                    format="html" scope="external">Git client add-on</xref> bundled with Oxygen
+                desktop to work in the project.</p>
         </section>
         <section id="section_jd2_jf5_zhc">
             <title>Flexibility and Limitations</title>
+            <p>The most important flexibility of <b>Content Fusion</b> is that it synchronizes in
+                real time with a <b>Git</b> repository that you have set up separately. This gives
+                you full control over the project's content, allows you to create external flows for
+                translation and publishing or to have writers use plain Git tools like the Oxygen
+                XML Git Client add-on to collaborate on the content.</p>
             <p>The <b>Content Fusion Cloud</b> has at present a series of limitations which I will
                 list below along with advice about how to overcome them:<ul id="ul_c5j_mf5_zhc">
-                    <li>No possibility to publish using your own publishing engine. You can publish
-                        right now only to <b>WebHelp</b> and <b>PDF</b> using the bundled publishing
-                        platform. As  Content Fusion synchronizes in real time with a <b>Git</b>
-                        repository, you can develop publishing pipelines outside of the <b>Content
-                            Fusion Cloud</b> platform.</li>
+                    <li>No possibility in the platform to publish using your own publishing engine
+                        or a custom publishing format. You can publish right now only to
+                            <b>WebHelp</b> and <b>PDF</b> using the bundled publishing platform. As
+                        Content Fusion synchronizes in real time with a <b>Git</b> repository, you
+                        can develop publishing pipelines outside of the <b>Content Fusion Cloud</b>
+                        platform. Some examples of what can be accomplished using the Oxygen
+                        Publishing Engine: <xref
+                            href="https://blog.oxygenxml.com/topics/server_side_building_and_publishing.html"
+                            format="html" scope="external"
+                            >https://blog.oxygenxml.com/topics/server_side_building_and_publishing.html</xref>.</li>
                     <li>No possibility to install your own <b>DITA XML</b> specialization or to
                         customize the framework for editing DITA XML content. In such cases instead
                         of <b>Content Fusion Cloud</b> you may choose to install and use a
@@ -243,8 +258,20 @@
                         infrastructure and install extra frameworks in it.</li>
                     <li>No implicit support for translation workflows. Again, you can use the real
                         time synchronization with a <b>Git</b> repository in order to create custom
-                        translation workflows outside of the <b>Content Fusion Cloud</b>
-                        platform.</li>
+                        translation workflows outside of the <b>Content Fusion Cloud</b> platform.
+                        For example you may use an Oxygen XML desktop with the <xref
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
+                            format="html" scope="external">Fluenta add-on</xref> and <xref
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                            format="html" scope="external">Git Client add-on</xref> installed to
+                        implement the translation workflow. Couple that with the Oxygen desktop
+                            <xref
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/ai-addons.html"
+                            format="html" scope="external">AI Positron Assistant</xref> and the
+                            <xref
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/ai-translator-add-on.html"
+                            format="html" scope="external">AI Translator add-on</xref> and you can
+                        also set up project translation using LLMs.</li>
                 </ul></p>
         </section>
         <section id="section_ld5_fh5_zhc">
