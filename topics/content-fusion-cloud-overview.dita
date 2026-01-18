@@ -147,5 +147,21 @@
                 project appear in the <b>History</b> view.</p>
             <p><image href="../images/cf-history-view.png" id="image_tmc_jwt_zhc" scale="50"/></p>
         </section>
+    <section id="section_jpg_d15_zhc">
+            <title>Review Tasks</title>
+            <p>Before you <b>commit changes</b> to one or multiple topics you can <b>create review
+                    tasks</b> and ask subject matter experts or other writers to review your
+                work.</p>
+            <p>The <b>Review Tasks</b> view also allows you to select various resources from your
+                project and send review tasks to others.</p>
+            <p>You can set a title for your review task and a due date which is very useful to send
+                automatic notifications to people who neglect your call for help. </p>
+            <p><image href="../images/cf-review-task-new.png" id="image_h5t_s15_zhc" scale="50"
+                /></p>
+            <p>Reviewers are provided with a review link and use the same <b>Content Fusion
+                    Cloud</b> platform with a simpler UI to propose changes (either by modifying or
+                adding comments) to the resources which are to be reviewed.</p>
+            <p><image href="../images/cf-review-edit.png" id="image_c13_hb5_zhc" scale="50"/></p>
+        </section>
     </body>
 </topic>
