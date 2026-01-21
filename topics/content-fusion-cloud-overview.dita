@@ -32,12 +32,12 @@
                         details...</xref></li>
                 <li><b>Assign roles</b> in the organization. There are two types of roles:
                         <b>writers</b> and <b>subject matter experts</b>.</li>
-                <li><b>Create projects</b> in your organization. Your projects can be either local
-                    to the server or synchronized in real time with a private or public project on
-                    an existing public <b>Git</b> server like <b>GitHub</b> or <b>GitLab</b>. In the
-                    latter case <b>Content Fusion</b> will synchronize your content in real time
-                    with the <b>Git</b> repository, allowing you to use any Git compatible tool to
-                    view and make extra changes to the project. <xref
+                <li><b>Create projects</b> in your organization. Your projects can be either
+                    internal to Content Fusion or synchronized in real time with a private or public
+                    project on an existing public <b>Git</b> server like <b>GitHub</b> or
+                        <b>GitLab</b>. In the latter case <b>Content Fusion</b> acts as a regular
+                        <b>Git</b> client, keeping the source of truth in your <b>Git</b> repository
+                    and accessible to any tool or workflow you currently use. <xref
                         href="#topic_nnt_5zn_zhc/section_lfl_ttt_zhc">More details....</xref></li>
                 <li>Work on projects with full support for editing the publication table of
                     contents, project wide search and validation. For <b>DITA XML</b> files you will
@@ -51,10 +51,11 @@
                     tasks can be <b>edited</b>
                     <b>sequentially</b> or <b>simultaneously</b> by multiple SMEs. <xref
                         href="#topic_nnt_5zn_zhc/section_jpg_d15_zhc">Details...</xref></li>
-                <li>Use the <b>AI Positron</b> side view (with a separate subscription model) to
-                    make changes in your project, review content using the numerous included AI
-                    actions or vibe write. <xref href="#topic_nnt_5zn_zhc/section_rvg_wb5_zhc"
-                        >Details...</xref></li>
+                <li>Use the <b>AI Positron</b> side view (available as a separate service called
+                        <b>Oxygen AI Positron</b> at <xref href="https://aipositron.oxygenxml.com/"
+                        format="html" scope="external"/>) to make changes in your project, review
+                    content using the numerous included AI actions or vibe write. <xref
+                        href="#topic_nnt_5zn_zhc/section_rvg_wb5_zhc">Details...</xref></li>
                 <li><b>Define deliverables</b>, <b>create publishing templates</b> and
                         <b>publish</b> them to <b>WebHelp</b> or <b>PDF</b> formats. Limited output
                     hosting is also included to test and see how your deliverables look like on the
@@ -197,8 +198,8 @@
         </section>
         <section id="section_sbr_zc5_zhc">
             <title>Publish</title>
-            <p>The <b>Publications</b> view allows you to define one or more top level DITA Maps,
-                each with its own optional filter.</p>
+            <p>The <b>Publications</b> view allows you to define publications with are pairs of a
+                DITA Map and an optional filter.</p>
             <p>For example for the <b>Oxygen User's Manual</b> project we have lots of top level
                 publications based on the top level DITA Map combined with a filter specific for the
                 publication output.</p>
@@ -208,15 +209,15 @@
             <p>The <b>Deliverables</b> view allows me to create a <b>WebHelp</b> or <b>PDF</b>
                 deliverable for any of my publications.</p>
             <p>I can add the possibility for others to review the user's guide directly from the web
-                page, automatically build the deliverable when changes are made to the repository or
-                schedule builds at specific intervals.</p>
+                page using <b>Edit online</b> links, automatically build the deliverable when
+                changes are made to the repository or schedule builds at specific intervals.</p>
             <p>You can use predefined publishing templates or you can edit them and control the
                 overall publication style.</p>
             <p><image href="../images/cf-create-deliverable.png" id="image_ew4_125_zhc" scale="50"
                 /></p>
-            <p>One can choose to also deploy the publication to the <b>Content Fusion Cloud</b> test
-                server so that you can preview your changes before porting them to the company web
-                server.</p>
+            <p>One can choose to also deploy the publication to the <b>Content Fusion Docs
+                    Server</b> so that you can preview your changes before porting them to the
+                company web server.</p>
         </section>
         <section id="section_kkz_t25_zhc">
             <title>Integration with Oxygen XML Desktop</title>
@@ -224,8 +225,8 @@
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/content-fusion-addon.html"
                     format="html" scope="external"><b>Content Fusion</b></xref> add-on can be
                 installed in any of the <b>Oxygen XML</b> desktop applications. It allows a writer
-                to create review tasks and to write on their project and commit content using the
-                Oxygen XML application.</p>
+                to create review tasks and to work inside their cloud workspace using the Oxygen XML
+                application.</p>
             <p>Or if your Content Fusion project is coupled with a <b>Git</b> repository you can use
                 directly the <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
