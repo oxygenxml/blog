@@ -8,26 +8,26 @@
                 solution</xref>, aimed at companies or individuals who want to securely
                 <b>manage</b>, <b>create</b>, <b>edit</b>, <b>review</b> and <b>publish</b>
             technical documentation projects using the <b>DITA XML</b> standard without the need to
-            install server side components on their own servers. </p>
+            install server-side components on their own servers. </p>
         <p>As a <xref href="https://github.com/raducoravu" format="html" scope="external">software
                 engineer</xref> whose development has been mostly focused on the <b>Oxygen XML</b>
-            desktop products, I've been skeptical in general of using web editing tools. But now, as
-            I'm sipping my hot chocolate and using <b><xref href="https://fusion.oxygenxml.com/"
+            desktop products, I've been skeptical, in general, of using web editing tools. But now,
+            as I'm sipping my hot chocolate and using <b><xref href="https://fusion.oxygenxml.com/"
                     format="html" scope="external">Content Fusion Cloud</xref></b> connected to the
                 <xref href="https://github.com/oxygenxml/blog" format="html" scope="external">Oxygen
                 XML Blog</xref> Git repository to write this very blog post, I see that things are
             running smooth indeed.</p>
         <p>There is also a past <xref
                 href="https://www.oxygenxml.com/events/2025/webinar_introducing_oxygen_content_fusion_cloud.html"
-                format="html" scope="external">webinar recording</xref> by <b>Cristian Talau</b> the
-                <b>Content Fusion</b> project manager with an overview of the entire system.</p>
-        <p>I will list below some of the <b>Content Fusion Cloud</b> main characteristics and then I
-            will try to expand on each of them. My last section in this article will be about
+                format="html" scope="external">webinar recording</xref> by <b>Cristian Talau</b>,
+            the <b>Content Fusion</b> project manager, with an overview of the entire system.</p>
+        <p>Below, I will list some of the <b>Content Fusion Cloud</b> main characteristics and then
+            I will try to expand on each of them. My last section in this article will be about
                 <b>what's missing</b> and how it can be compensated.</p>
         <p>
             <ul id="ul_zsw_s14_zhc">
                 <li><b>Create and manage an organization</b>. Your organization will let you invite
-                    and manage members, control the subscription, authentication and security
+                    and manage members, control the subscription, authentication, and security
                         details.<xref href="#topic_nnt_5zn_zhc/section_vkq_hf4_zhc">More
                         details...</xref></li>
                 <li><b>Assign roles</b> in the organization. There are two types of roles:
@@ -35,17 +35,17 @@
                 <li><b>Create projects</b> in your organization. Your projects can be either
                     internal to Content Fusion or synchronized in real time with a private or public
                     project on an existing public <b>Git</b> server like <b>GitHub</b> or
-                        <b>GitLab</b>. In the latter case <b>Content Fusion</b> acts as a regular
+                        <b>GitLab</b>. In the latter case, <b>Content Fusion</b> acts as a regular
                         <b>Git</b> client, keeping the source of truth in your <b>Git</b> repository
                     and accessible to any tool or workflow you currently use. <xref
                         href="#topic_nnt_5zn_zhc/section_lfl_ttt_zhc">More details....</xref></li>
                 <li>Work on projects with full support for editing the publication table of
-                    contents, project wide search and validation. For <b>DITA XML</b> files you will
-                    benefit from the rich possibilities offered for content reuse, filtering and
-                    customization offered by the standard. Full <b>history</b> support and
+                    contents, project-wide search, and validation. For <b>DITA XML</b> files, you
+                    will benefit from the rich possibilities offered for content reuse, filtering,
+                    and customization offered by the standard. Full <b>history</b> support and
                     mechanisms to <b>merge changes and manage potential conflicts</b> are included.
                         <xref href="#topic_nnt_5zn_zhc/section_owb_z5t_zhc">Details...</xref></li>
-                <li>Create, manage and integrate <b>feature, release or review branches</b>. <xref
+                <li>Create, manage and integrate <b>feature, release, or review branches</b>. <xref
                         href="#topic_nnt_5zn_zhc/section_q3s_sg5_zhc">Details...</xref></li>
                 <li>Create <b>review tasks</b> and assign them to Subject Matter Experts. Review
                     tasks can be <b>edited</b>
@@ -54,18 +54,18 @@
                 <li>Use the <b>AI Positron</b> side view (available as a separate service called
                         <b>Oxygen AI Positron</b> at <xref href="https://aipositron.oxygenxml.com/"
                         format="html" scope="external"/>) to make changes in your project, review
-                    content using the numerous included AI actions or vibe write. <xref
+                    content using the numerous included AI actions, or vibe write. <xref
                         href="#topic_nnt_5zn_zhc/section_rvg_wb5_zhc">Details...</xref></li>
-                <li><b>Define deliverables</b>, <b>create publishing templates</b> and
+                <li><b>Define deliverables</b>, <b>create publishing templates</b>, and
                         <b>publish</b> them to <b>WebHelp</b> or <b>PDF</b> formats. Limited output
                     hosting is also included to test and see how your deliverables look like on the
                     web. <xref href="#topic_nnt_5zn_zhc/section_sbr_zc5_zhc">Details....</xref></li>
-                <li><b>Integration</b> with the <b>Oxygen XML</b> desktop applications via the
-                        <b>Content Fusion</b> add-on allowing Oxygen XML desktop users to edit or
+                <li><b>Integrate</b> with the <b>Oxygen XML</b> desktop applications via the
+                        <b>Content Fusion</b> add-on, allowing Oxygen XML desktop users to edit or
                     create review tasks in the <b>Content Fusion</b> platform. <xref
                         href="#topic_nnt_5zn_zhc/section_kkz_t25_zhc">Details...</xref></li>
-                <li>For <b>Content Fusion</b> projects which are synchronized with an external
-                        <b>Git</b> repository you can access the project content using any type of
+                <li>For <b>Content Fusion</b> projects that are synchronized with an external
+                        <b>Git</b> repository, you can access the project content using any type of
                     Git tools. <xref href="#topic_nnt_5zn_zhc/section_jd2_jf5_zhc"
                         >Details....</xref></li>
             </ul>
@@ -78,42 +78,42 @@
             <p>Your first contact with the <xref href="https://fusion.oxygenxml.com" format="html"
                     scope="external">Content Fusion Cloud</xref> web site will probably be to create
                 your own organization. You have a 30 day trial so if you've been curious about
-                working with <b>DITA XML</b> content or with a <b>DITA XML CMS</b> you can jump
-                right in, create an organization, create a project and give it a try.</p>
+                working with <b>DITA XML</b> content or with a <b>DITA XML CMS</b>, you can jump
+                right in, create an organization, create a project, and give it a try.</p>
             <p><image href="../images/cf-first-contact.png" id="image_x3z_mf4_zhc" scale="50"/></p>
-            <p>Depending on your <b>Subscription</b> model you will get a maximum number of authors
+            <p>Depending on your <b>Subscription</b> model, you will get a maximum number of authors
                 and subject matter experts that you can invite to join you in working on the
                 projects. You will also get a maximum storage capacity.</p>
-            <p>For example for the trial I can invite 5 writers and 25 SMEs to join my organization
-                and I have a maximum of 5GBs of storage space to squander.</p>
+            <p>For example, for the trial subscription, I can invite 5 writers and 25 SMEs to join
+                my organization and I have a maximum of 5 GB of storage space to squander.</p>
             <p>
                 <image href="../images/cf-subscription-trial.png" id="image_ln2_kg4_zhc" scale="50"
                 /></p>
-            <p>I use my <b>GitHub</b> account to login to <b>Content Fusion Cloud</b>, you can also
-                use your <b>Google</b> or <b>Single Sign On</b>. The <b>Authentication</b> tab
-                allows the organization admin to control various authentication related
+            <p>I use my <b>GitHub</b> account to login to <b>Content Fusion Cloud</b>, but you can
+                also use your <b>Google</b> or <b>Single Sign On</b>. The <b>Authentication</b> tab
+                allows the organization admin to control various authentication-related
                 settings.</p>
             <p><image href="../images/cf-auth.png" id="image_nrw_5g4_zhc" scale="50"/>
             </p>
-            <p>In general I found my organization's administration pages quite easy to figure out, I
-                can <b>invite members</b>, <b>assign roles</b>, <b>change various settings</b>, the
-                UI is well thought and intuitive.</p>
+            <p>In general, I found my organization's administration pages quite easy to figure out,
+                I can <b>invite members</b>, <b>assign roles</b>, <b>change various settings</b>,
+                and the UI is well designed and intuitive.</p>
         </section>
         <section id="section_lfl_ttt_zhc">
             <title>Create Projects</title>
             <p>You can create a new project starting from a new sample project template:</p>
             <p><image href="../images/cf-create-project.png" id="image_srz_ztt_zhc" scale="50"/></p>
-            <p>But in my opinion the best feature is the ability to create a project based on an
-                existing private or public Git project. This will synchronize in real time the
+            <p>But in my opinion, the best feature is the ability to create a project based on an
+                existing private or public Git project. This will synchronize (in real time) the
                 changes made in <b>Content Fusion Cloud</b> (including creating branches) with your
-                Git project, allowing you to use your content from any other third party tools
-                including editing tools and publishing servers which have Git support.</p>
+                Git project, allowing you to use your content from any other third-party tools,
+                including editing tools and publishing servers that have Git support.</p>
             <p><image href="../images/cf-new--project-git.png" id="image_vy3_j5t_zhc" scale="50"
                 /></p>
         </section>
         <section id="section_owb_z5t_zhc">
             <title>Editing Workflow</title>
-            <p>Retrieve incoming changes from the repository, create new files or modify existing
+            <p>Retrieve incoming changes from the repository, create new files, or modify existing
                 content, then commit.</p>
             <p><image href="../images/cf-editing-workflow.png" id="image_f2q_jvt_zhc" scale="50"
                 /></p>
@@ -125,22 +125,22 @@
                 /></p>
             <p>The <b>Files</b> and <b>Search</b> views allow you to locate the topics you want to
                 edit either by file name or by keywords. </p>
-            <p>In the main editor area you have full <b>DITA XML</b> editing support, support to
+            <p>In the main editor area, you have full <b>DITA XML</b> editing support, support to
                 insert new paragraphs and DITA structure elements, find/replace, edit content,
                 change attributes, apply profiling conditions, insert images, tables, list items,
-                links and much more. You can even enable change tracking and add color highlights.
+                links, and much more. You can even enable change tracking and add color highlights.
                 It's intuitive and easy to use.</p>
             <p><image href="../images/cf-main-edit-area.png" id="image_wxt_5xt_zhc" scale="50"/></p>
-            <p>Resources are not locked by any particular writer which leads us to two
-                    situations:<ul id="ul_xq1_4vt_zhc">
+            <p>Resources are not locked by any particular writer that leads us to two situations:<ul
+                    id="ul_xq1_4vt_zhc">
                     <li>People can actually make changes in parallel to the same resource, which is
-                        very useful when these resources are for example the DITA Maps which define
-                        the publication table of contents.</li>
+                        very useful when these resources are, for example, the DITA maps that define
+                        the publication's table of contents.</li>
                     <li>
                         <p><b>Merge conflicts</b> may occur when attempting to commit or to pull
                             changes from the remote repository. Conflicts are in general resolved
                             automatically using the <b>powerful available tools</b> or you can
-                            decide to take control over the merging process. This is a CMS which
+                            decide to take control over the merging process. This is a CMS that
                             embraces the possibility multiple people may have interest in making
                             changes to the same resources and provides the powerful tools to
                                 <b>resolve</b> such cases.</p>
@@ -154,11 +154,10 @@
         </section>
         <section id="section_q3s_sg5_zhc">
             <title>Branches</title>
-            <p>Create feature, or hotfix branches. Work on them on your own or with other
-                colleagues. Merge feature or hotfix branches in the current project branch.</p>
-            <p>Create release branches on which for each project version release you can make
-                additional small fixes and re-publish the documentation for a specific product
-                version.</p>
+            <p>Create feature or hotfix branches. Work on them on your own or with other colleagues.
+                Merge feature or hotfix branches in the current project branch.</p>
+            <p>Create release branches and for each project version release, you can make additional
+                small fixes and re-publish the documentation for a specific product version.</p>
             <p><image href="../images/cf-branches.png" id="image_lgt_yg5_zhc" scale="50"/></p>
         </section>
     <section id="section_jpg_d15_zhc">
@@ -168,13 +167,13 @@
                 work.</p>
             <p>The <b>Review Tasks</b> view also allows you to select various resources from your
                 project and send review tasks to others.</p>
-            <p>You can set a title for your review task and a due date which is very useful to send
+            <p>You can set a title for your review task and a due date, which is very useful to send
                 automatic notifications to people who neglect your call for help. </p>
             <p><image href="../images/cf-review-task-new.png" id="image_h5t_s15_zhc" scale="50"
                 /></p>
             <p>Reviewers are provided with a review link and use the same <b>Content Fusion
                     Cloud</b> platform with a simpler UI to propose changes (either by modifying or
-                adding comments) to the resources which are to be reviewed.</p>
+                adding comments) to the resources that are to be reviewed.</p>
             <p><image href="../images/cf-review-edit.png" id="image_c13_hb5_zhc" scale="50"/></p>
             <p>Once the subject matter expert closes the review process, the writer has specific
                 tools to review and accept the proposals.</p>
@@ -182,14 +181,14 @@
         </section>
         <section id="section_rvg_wb5_zhc">
             <title>AI Assistant</title>
-            <p>The <b>AI Positron</b> view is included by default in any organization. People can
+            <p>The <b>AI Positron</b> view is included, by default, in any organization. People can
                 create separate subscriptions to the <b>AI Positron</b> service and then use the AI
                 assistant to make changes to the project. You can choose one of the <xref
                     href="https://www.oxygenxml.com/doc/ug-positron-cf/ai/cf-ai-positron.html"
                     format="html" scope="external">predefined AI actions or create your own AI
                     actions and provide a project context prompt</xref> to <b>AI Positron</b>.</p>
             <p><image href="../images/cf-ai-positron.png" id="image_j4g_2c5_zhc" scale="50"/></p>
-            <p><b>AI Positron</b> has access to powerful tools allowing it to search, read and edit
+            <p><b>AI Positron</b> has access to powerful tools allowing it to search, read, and edit
                 content directly from your project's workspace. More details about vibe writing with
                 AI Positron: <xref
                     href="https://blog.oxygenxml.com/topics/vibing_with_ai_positron.html"
@@ -198,24 +197,24 @@
         </section>
         <section id="section_sbr_zc5_zhc">
             <title>Publish</title>
-            <p>The <b>Publications</b> view allows you to define publications with are pairs of a
-                DITA Map and an optional filter.</p>
-            <p>For example for the <b>Oxygen User's Manual</b> project we have lots of top level
-                publications based on the top level DITA Map combined with a filter specific for the
+            <p>The <b>Publications</b> view allows you to define publications with pairs of a DITA
+                map and an optional filter.</p>
+            <p>For example, for the <b>Oxygen User's Manual</b> project, we have lots of top-level
+                publications based on the top-level DITA map combined with a filter specific for the
                 publication output.</p>
             <p><image href="../images/cf-publications.png" id="image_tc1_md5_zhc"/></p>
-            <p>Once I define my publications I can use them both for editing the DITA maps or for
+            <p>Once I define my publications, I can use them both for editing the DITA maps or for
                 defining publication deliverables.</p>
             <p>The <b>Deliverables</b> view allows me to create a <b>WebHelp</b> or <b>PDF</b>
                 deliverable for any of my publications.</p>
             <p>I can add the possibility for others to review the user's guide directly from the web
                 page using <b>Edit online</b> links, automatically build the deliverable when
-                changes are made to the repository or schedule builds at specific intervals.</p>
+                changes are made to the repository, or schedule builds at specific intervals.</p>
             <p>You can use predefined publishing templates or you can edit them and control the
                 overall publication style.</p>
             <p><image href="../images/cf-create-deliverable.png" id="image_ew4_125_zhc" scale="50"
                 /></p>
-            <p>One can choose to also deploy the publication to the <b>Content Fusion Docs
+            <p>You can choose to also deploy the publication to the <b>Content Fusion Docs
                     Server</b> so that you can preview your changes before porting them to the
                 company web server.</p>
         </section>
@@ -227,23 +226,23 @@
                 installed in any of the <b>Oxygen XML</b> desktop applications. It allows a writer
                 to create review tasks and to work inside their cloud workspace using the Oxygen XML
                 application.</p>
-            <p>Or if your Content Fusion project is coupled with a <b>Git</b> repository you can use
-                directly the <xref
+            <p>Or if your Content Fusion project is coupled with a <b>Git</b> repository, you can
+                directly use the <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
-                    format="html" scope="external">Git client add-on</xref> bundled with Oxygen
+                    format="html" scope="external">Git client add-on</xref> bundled with the Oxygen
                 desktop to work in the project.</p>
         </section>
         <section id="section_jd2_jf5_zhc">
             <title>Flexibility and Limitations</title>
-            <p>The most important flexibility of <b>Content Fusion</b> is that it synchronizes in
-                real time with a <b>Git</b> repository that you have set up separately. This gives
+            <p>The most important flexibility of <b>Content Fusion</b> is that it synchronizes (in
+                real time) with a <b>Git</b> repository that you have set up separately. This gives
                 you full control over the project's content, allows you to create external flows for
                 translation and publishing or to have writers use plain Git tools like the Oxygen
                 XML Git Client add-on to collaborate on the content.</p>
-            <p>The <b>Content Fusion Cloud</b> has at present a series of limitations which I will
+            <p>The <b>Content Fusion Cloud</b> has at present a series of limitations that I will
                 list below along with advice about how to overcome them:<ul id="ul_c5j_mf5_zhc">
                     <li>No possibility in the platform to publish using your own publishing engine
-                        or a custom publishing format. You can publish right now only to
+                        or a custom publishing format. Currently, you can publish only to
                             <b>WebHelp</b> and <b>PDF</b> using the bundled publishing platform. As
                         Content Fusion synchronizes in real time with a <b>Git</b> repository, you
                         can develop publishing pipelines outside of the <b>Content Fusion Cloud</b>
@@ -253,14 +252,14 @@
                             format="html" scope="external"
                             >https://blog.oxygenxml.com/topics/server_side_building_and_publishing.html</xref>.</li>
                     <li>No possibility to install your own <b>DITA XML</b> specialization or to
-                        customize the framework for editing DITA XML content. In such cases instead
-                        of <b>Content Fusion Cloud</b> you may choose to install and use a
+                        customize the framework for editing DITA XML content. In such cases, instead
+                        of <b>Content Fusion Cloud</b>, you may choose to install and use a
                             <b>Content Fusion Enterprise</b> server on your own company's
                         infrastructure and install extra frameworks in it.</li>
-                    <li>No implicit support for translation workflows. Again, you can use the real
-                        time synchronization with a <b>Git</b> repository in order to create custom
+                    <li>No implicit support for translation workflows. Again, you can use the
+                        real-time synchronization with a <b>Git</b> repository to create custom
                         translation workflows outside of the <b>Content Fusion Cloud</b> platform.
-                        For example you may use an Oxygen XML desktop with the <xref
+                        For example, you may use an Oxygen XML desktop with the <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
                             format="html" scope="external">Fluenta add-on</xref> and <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
