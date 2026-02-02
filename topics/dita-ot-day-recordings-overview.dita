@@ -21,17 +21,15 @@
         <p>Here is a list of all presentations made in all the DITA OT Day events so far:<table
                 frame="all" rowsep="1" colsep="1" id="table_lct_gcy_yhc">
                 <title>DITA OT Day Presentation Recordings</title>
-                <tgroup cols="4">
+                <tgroup cols="3">
                     <colspec colnum="1" colname="c1" colwidth="0.46*"/>
                     <colspec colnum="2" colname="c2" colwidth="2.17*"/>
                     <colspec colnum="3" colname="newCol4" colwidth="0.96*"/>
-                    <colspec colnum="4" colname="newCol3" colwidth="0.41*"/>
                     <thead>
                         <row>
                             <entry>Year</entry>
                             <entry>Presentation</entry>
                             <entry>Presenter</entry>
-                            <entry>YouTube Views</entry>
                         </row>
                     </thead>
                     <tbody>
@@ -41,7 +39,6 @@
                                     format="html" scope="external">DITA-OT New Features and
                                     Enhancements</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>123</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -49,7 +46,6 @@
                                     format="html" scope="external">DITA-OT and DITA 2.0: who’s done
                                     what now?</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>67</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -57,7 +53,6 @@
                                     format="html" scope="external">Welcome to DITA-OT Community:
                                     Where Code meets Passion</xref></entry>
                             <entry>Justyna Hietala</entry>
-                            <entry>52</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -65,7 +60,6 @@
                                     format="html" scope="external">Replacement keyspace constructor
                                     for Open Toolkit</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>33</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -73,7 +67,6 @@
                                     format="html" scope="external">Learning Assessment QTI
                                     Output</xref></entry>
                             <entry>Brianna Stevens-Russell</entry>
-                            <entry>79</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -81,7 +74,6 @@
                                     format="html" scope="external">Building an Ant based environment
                                     around the DITA OT</xref></entry>
                             <entry>Eric Sirois</entry>
-                            <entry>46</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -90,7 +82,6 @@
                                     Bridging Technical Writing and Artificial
                                 Intelligence</xref></entry>
                             <entry>Amit Siddhartha</entry>
-                            <entry>207</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -98,7 +89,6 @@
                                     format="html" scope="external">Providing content to AI engines
                                     using DITA OT plugins</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>201</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -106,7 +96,6 @@
                                     format="html" scope="external">Automating Compliance
                                     Verification for Documentation Standards Using AI</xref></entry>
                             <entry>Alex Jitianu</entry>
-                            <entry>187</entry>
                         </row>
                         <row>
                             <entry>2025</entry>
@@ -114,7 +103,6 @@
                                     format="html" scope="external">Single Source Publishing? Bury
                                     the Hatchet with DITA-OT</xref></entry>
                             <entry>Snehal Borole, Ritu Saxena</entry>
-                            <entry>70</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -122,7 +110,6 @@
                                     format="html" scope="external">Retrospective - DITA-OT
                                     improvements between 3.7 and 4.1</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>128</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -130,7 +117,6 @@
                                     format="html" scope="external">Moving an HTML plugin to
                                     preprocess2: how scared should you be?</xref></entry>
                             <entry>Robert D. Anderson</entry>
-                            <entry>91</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -138,7 +124,6 @@
                                     format="html" scope="external">IBM Workflow Manager: an
                                     automated build environment</xref></entry>
                             <entry>Guillaume Delory</entry>
-                            <entry>122</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -147,7 +132,6 @@
                                     story of a DITA-OT implementation in a small documentation
                                     team</xref></entry>
                             <entry>Justyna Hietala</entry>
-                            <entry>470</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -155,7 +139,6 @@
                                     format="html" scope="external">Cheap and Easy Cross-Deliverable
                                     Link Implementation</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>84</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -163,7 +146,6 @@
                                     format="html" scope="external">Deploying and Maintaining DITA
                                     OTs in an Enterprise environment</xref></entry>
                             <entry>Eric Sirois</entry>
-                            <entry>74</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -172,7 +154,6 @@
                                     instructions: Say goodbye to manual summaries and hello to
                                     accuracy and efficiency!</xref></entry>
                             <entry>Pieterjan Vandenweghe</entry>
-                            <entry>120</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -180,7 +161,6 @@
                                     format="html" scope="external">Publishing with iiRDS from
                                     DITA</xref></entry>
                             <entry>Marion Knebel</entry>
-                            <entry>105</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -189,7 +169,6 @@
                                     Interoperability using new schema-provider extension
                                     mechanism</xref></entry>
                             <entry>John Kirkilis</entry>
-                            <entry>126</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -197,7 +176,6 @@
                                     format="html" scope="external">DITA-OT and ensuring DITA Map
                                     conversion</xref></entry>
                             <entry>Tejas Pradip Barhate</entry>
-                            <entry>64</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -205,7 +183,6 @@
                                     format="html" scope="external">PDF5-ML Plugin
                                 Update</xref></entry>
                             <entry>Tony Graham</entry>
-                            <entry>63</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -213,7 +190,6 @@
                                     format="html" scope="external">DITA-OT "How far can you
                                     go"</xref></entry>
                             <entry>Helmut Scherzer</entry>
-                            <entry>75</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -222,7 +198,6 @@
                                     to Implement a Publishing Service in a Commercial
                                     Application</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>313</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -230,7 +205,6 @@
                                     format="html" scope="external">Syntax Diagrams: If you can't
                                     avoid them...</xref></entry>
                             <entry>Frank Wegmann</entry>
-                            <entry>77</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -238,7 +212,6 @@
                                     format="html" scope="external">Lessons Learned: Migrating
                                     DITA-OT For an IT Hardware Product Documentation</xref></entry>
                             <entry>Amit Siddhartha</entry>
-                            <entry>55</entry>
                         </row>
                         <row>
                             <entry>2024</entry>
@@ -246,7 +219,6 @@
                                     format="html" scope="external">Search, Style and More -
                                     Extending DITA Bootstrap</xref></entry>
                             <entry>Jason Fox</entry>
-                            <entry>106</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -254,14 +226,12 @@
                                     format="html" scope="external">Making the migration leap:
                                     jumping across versions to the latest DITA-OT</xref></entry>
                             <entry>Robert D. Anderson</entry>
-                            <entry>164</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
                             <entry><xref href="https://www.youtube.com/watch?v=tx9Ei5-Yl1w"
                                     format="html" scope="external">Technical values</xref></entry>
                             <entry>Stefan Jung</entry>
-                            <entry>171</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -269,7 +239,6 @@
                                     format="html" scope="external">Avoiding duplicate effort with
                                     post-preprocessing</xref></entry>
                             <entry>Tim Grantham</entry>
-                            <entry>141</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -277,7 +246,6 @@
                                     format="html" scope="external">DITA and Markdown and Docker, oh
                                     my…</xref></entry>
                             <entry>John Kirkilis</entry>
-                            <entry>461</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -285,7 +253,6 @@
                                     format="html" scope="external">Scaling the DITA Open Toolkit for
                                     Enterprise Use</xref></entry>
                             <entry>Robert Anderson and John Kirkilis</entry>
-                            <entry>197</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -293,7 +260,6 @@
                                     format="html" scope="external">Simpler custom PDFs - The user
                                     perspective</xref></entry>
                             <entry>Roger Sheen</entry>
-                            <entry>281</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -301,7 +267,6 @@
                                     format="html" scope="external">Simpler custom PDFs - The
                                     technical details</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>336</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -309,7 +274,6 @@
                                     format="html" scope="external">Various DITA publishing ideas
                                     experimented on the Oxygen XML Blog</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>225</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -317,7 +281,6 @@
                                     format="html" scope="external">Pushing square pegs into round
                                     holes</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>75</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -325,7 +288,6 @@
                                     format="html" scope="external">Extending Doctales reveal.js with
                                     CSS Grid</xref></entry>
                             <entry>Lief Erickson</entry>
-                            <entry>184</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -333,7 +295,6 @@
                                     format="html" scope="external">Supercharging DITA-OT Webhelp
                                     creation</xref></entry>
                             <entry>Jang Graat</entry>
-                            <entry>148</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -341,7 +302,6 @@
                                     format="html" scope="external">Our experience helping the
                                     DITA-OT project as a commercial company</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>55</entry>
                         </row>
                         <row>
                             <entry>2022</entry>
@@ -349,7 +309,6 @@
                                     format="html" scope="external">DITA HTML Styling via Bootstrap
                                     5</xref></entry>
                             <entry>Jason Fox</entry>
-                            <entry>236</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -357,7 +316,6 @@
                                     format="html" scope="external">Trim your toolkit with this one
                                     weird trick!</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>104</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -365,7 +323,6 @@
                                     format="html" scope="external">Running on someone else’s
                                     computer</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>133</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -373,7 +330,6 @@
                                     format="html" scope="external">Various useful Open source
                                     plugins to enhance DITA publishing</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>199</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -381,7 +337,6 @@
                                     format="html" scope="external">AH-WML DITA-to-Word
                                     Plug-in</xref></entry>
                             <entry>Tony Graham</entry>
-                            <entry>272</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -389,7 +344,6 @@
                                     format="html" scope="external">One file to rule them all (DITA
                                     Project)</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>274</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -397,7 +351,6 @@
                                     format="html" scope="external">Editing DITA Open Toolkit Project
                                     files</xref></entry>
                             <entry>George Bina</entry>
-                            <entry>360</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -405,7 +358,6 @@
                                     format="html" scope="external">All the cool kids are using
                                     JavaScript</xref></entry>
                             <entry>Jason Fox</entry>
-                            <entry>154</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -413,7 +365,6 @@
                                     format="html" scope="external">All the cool kids are using the
                                     Cloud</xref></entry>
                             <entry>Jason Fox</entry>
-                            <entry>132</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -421,7 +372,6 @@
                                     format="html" scope="external">The Art of doing
                                 nothing</xref></entry>
                             <entry>Jason Fox</entry>
-                            <entry>248</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -429,7 +379,6 @@
                                     format="html" scope="external">Case Study of Taxonomy and Search
                                     for DITA-OT</xref></entry>
                             <entry>Lief Erickson</entry>
-                            <entry>115</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -437,7 +386,6 @@
                                     format="html" scope="external">Generating metrics from your DITA
                                     project</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>103</entry>
                         </row>
                         <row>
                             <entry>2019</entry>
@@ -445,7 +393,6 @@
                                     format="html" scope="external">Easy as pie PDF customizations
                                     using CSS</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>123</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -453,7 +400,6 @@
                                     format="html" scope="external">DITA-OT Website Survey
                                     Results</xref></entry>
                             <entry>Lief Erickson</entry>
-                            <entry>50</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -461,7 +407,6 @@
                                     format="html" scope="external">DITA, Gradle and Git: a small
                                     team approach to publishing</xref></entry>
                             <entry>Lionel Moizeau</entry>
-                            <entry>721</entry>
                         </row>
                         <!-- 2018 DITA-OT Day Presentations (moved to top) -->
                         <row>
@@ -470,7 +415,6 @@
                                     format="html" scope="external">Comparison between the DocBook
                                     and DITA publishing systems</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>1000</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -478,7 +422,6 @@
                                     format="html" scope="external">Installing DITA-OT on macOS via
                                     Homebrew</xref></entry>
                             <entry>Roger Sheen</entry>
-                            <entry>322</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -486,7 +429,6 @@
                                     format="html" scope="external">Plug-in installation made
                                     easier</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>416</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -494,7 +436,6 @@
                                     format="html" scope="external">Meta DITA samples: testing around
                                     the edge cases</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>97</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -502,7 +443,6 @@
                                     format="html" scope="external">Step by step implementation of a
                                     DITA Open Toolkit plugin</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>2800</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -510,7 +450,6 @@
                                     format="html" scope="external">Unit Testing DITA-OT Plugin
                                     Extensions</xref></entry>
                             <entry>Jason Fox</entry>
-                            <entry>243</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -518,7 +457,6 @@
                                     format="html" scope="external">Overview of dita-semia
                                     open-source plugins for DITA-OT</xref></entry>
                             <entry>Patrik Stellmann</entry>
-                            <entry>112</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -526,7 +464,6 @@
                                     format="html" scope="external">A fast path for building data
                                     assets from DITA</xref></entry>
                             <entry>Francois Violette</entry>
-                            <entry>64</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -534,14 +471,12 @@
                                     format="html" scope="external">Apply your style guide rules
                                     during the publication</xref></entry>
                             <entry>Stefan Eike</entry>
-                            <entry>137</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
                             <entry><xref href="https://www.youtube.com/watch?v=rSGDFYf-Pj4"
                                     format="html" scope="external">DITA-OT and DocOps</xref></entry>
                             <entry>Quick van Rijt</entry>
-                            <entry>127</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -549,7 +484,6 @@
                                     format="html" scope="external">Twisted XSLT Tricks: Making
                                     Column Switching Work for FOP</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>413</entry>
                         </row>
                         <row>
                             <entry>2018</entry>
@@ -557,7 +491,6 @@
                                     format="html" scope="external">Who are you calling “stale”
                                     ‽</xref></entry>
                             <entry>Robert Anderson, Roger Sheen, Jarno Elovirta</entry>
-                            <entry>49</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -565,7 +498,6 @@
                                     format="html" scope="external">We shall call it...
                                     preprocess...2!</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>226</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -573,7 +505,6 @@
                                     format="html" scope="external">Accessibility in
                                 DITA-OT</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>355</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -581,7 +512,6 @@
                                     format="html" scope="external">DITA Validation and
                                     spell-checking</xref></entry>
                             <entry>Jason Fox</entry>
-                            <entry>279</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -590,7 +520,6 @@
                                     syntax diagrams with plugins for all output
                                 formats</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>269</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -598,7 +527,6 @@
                                     format="html" scope="external">Lightning Talk: Managing a large
                                     scale build environment with 50+ custom plugins</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>57</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -606,7 +534,6 @@
                                     format="html" scope="external">Markdown support
                                     inside-out</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>302</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -614,7 +541,6 @@
                                     format="html" scope="external">Using CSS to style the PDF
                                     output</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>5000</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -622,7 +548,6 @@
                                     format="html" scope="external">Bootstrapping DITA - Customizing
                                     HTML output for modern web frameworks</xref></entry>
                             <entry>Roger Sheen</entry>
-                            <entry>886</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -630,7 +555,6 @@
                                     format="html" scope="external">Lightning Talk: Automatically
                                     Create Targeted Review Docs for your SMEs</xref></entry>
                             <entry>Leigh White</entry>
-                            <entry>115</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -638,7 +562,6 @@
                                     format="html" scope="external">Lightning Talk: Locale-Aware
                                     Sorting and Text Handling in the Open Toolkit</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>85</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -646,7 +569,6 @@
                                     format="html" scope="external">Lightning Talk: DCQL - the Dita
                                     Cascading Query Language</xref></entry>
                             <entry>Jang Graat</entry>
-                            <entry>204</entry>
                         </row>
                         <row>
                             <entry>2017</entry>
@@ -654,7 +576,6 @@
                                     format="html" scope="external">What are we missing? Where would
                                     you like to see us go?</xref></entry>
                             <entry>DITA OT Team</entry>
-                            <entry>78</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -662,7 +583,6 @@
                                     format="html" scope="external">Internationalization and the
                                     DITA-OT: Who does what?</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>135</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -670,7 +590,6 @@
                                     format="html" scope="external">Seven Open-Source DITA OT plugins
                                     developed by Oxygen</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>491</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -678,7 +597,6 @@
                                     format="html" scope="external">DITA-OT internals and future
                                     development plans</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>130</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -687,7 +605,6 @@
                                     contribution process for the DITA-OT
                                 documentation</xref></entry>
                             <entry>George Bina</entry>
-                            <entry>144</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -695,7 +612,6 @@
                                     format="html" scope="external">Lightning Talk: Documentation
                                     Development(s)</xref></entry>
                             <entry>Roger Sheen</entry>
-                            <entry>82</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -703,7 +619,6 @@
                                     format="html" scope="external">Lightning talk: Gotcha! Upgrading
                                     PDF plugins to DITA OT 2.x</xref></entry>
                             <entry>Leigh White</entry>
-                            <entry>155</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -711,7 +626,6 @@
                                     format="html" scope="external">Using the Open Toolkit Through
                                     Docker Containers</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>481</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -719,14 +633,12 @@
                                     format="html" scope="external">Large Scale Production Using
                                     Project Maps</xref></entry>
                             <entry>Youssef BENNANI</entry>
-                            <entry>276</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
                             <entry><xref href="https://www.youtube.com/watch?v=cJJtbaf-8hM"
                                     format="html" scope="external">Testing in DITA-OT</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>54</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -734,7 +646,6 @@
                                     format="html" scope="external">Codeblock Quality Assurance
                                     instead of Errata</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>61</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -742,7 +653,6 @@
                                     format="html" scope="external">DITA terminology management and
                                     checking</xref></entry>
                             <entry>Stefan Jung</entry>
-                            <entry>411</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -750,7 +660,6 @@
                                     format="html" scope="external">The use-cases for a "DITA to
                                     resolved DITA" transformation</xref></entry>
                             <entry>George Bina</entry>
-                            <entry>222</entry>
                         </row>
                         <row>
                             <entry>2016</entry>
@@ -758,7 +667,6 @@
                                     format="html" scope="external">Long term DITA-OT
                                 planning</xref></entry>
                             <entry>Kris Eberlein</entry>
-                            <entry>133</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -766,7 +674,6 @@
                                     format="html" scope="external">What's new in
                                 DITA-OT</xref></entry>
                             <entry>Kris Eberlein</entry>
-                            <entry>161</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -774,7 +681,6 @@
                                     format="html" scope="external">DITA-OT Patterns and
                                     Anti-patterns</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>125</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -782,7 +688,6 @@
                                     format="html" scope="external">Lightning talk: Why "startcmd" is
                                     not your friend</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>113</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -790,7 +695,6 @@
                                     format="html" scope="external">Lightning talk: Markdown
                                     plugin</xref></entry>
                             <entry>Roger Sheen</entry>
-                            <entry>467</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -798,7 +702,6 @@
                                     format="html" scope="external">PDF generation with
                                 CSS</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>594</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -806,7 +709,6 @@
                                     format="html" scope="external">DITA-OT: Inside the black
                                     box</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>147</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -814,7 +716,6 @@
                                     format="html" scope="external">Lightning talk: DITA-OT ...
                                     reloaded!</xref></entry>
                             <entry>Helmut Scherzer</entry>
-                            <entry>89</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -822,7 +723,6 @@
                                     format="html" scope="external">Lightning talk: PDF5-ML Plug-in -
                                     features for practical use</xref></entry>
                             <entry>Toshihiko Makita</entry>
-                            <entry>135</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -830,7 +730,6 @@
                                     format="html" scope="external">Lightning talk: DITA
                                     Community</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>69</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -838,14 +737,12 @@
                                     format="html" scope="external">Creating DITA-OT
                                     constraint/specialisation plugins</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>694</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
                             <entry><xref href="https://www.youtube.com/watch?v=F8R53PtTnfo"
                                     format="html" scope="external">How to run DITA-OT</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>556</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -853,7 +750,6 @@
                                     format="html" scope="external">Lightning talk: Parameters
                                     annotations for DITA-OT plugins</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>257</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -861,7 +757,6 @@
                                     format="html" scope="external">Lightning talk: Publishing with
                                     DITA-OT - the CMS perspective</xref></entry>
                             <entry>Jean-François Ameye</entry>
-                            <entry>237</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -869,7 +764,6 @@
                                     format="html" scope="external">Lightning talk: Selling DITA with
                                     demo data</xref></entry>
                             <entry>Joe Golner</entry>
-                            <entry>100</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -877,7 +771,6 @@
                                     format="html" scope="external">Lightning talk: Multiple OT with
                                     Git</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>112</entry>
                         </row>
                         <row>
                             <entry>2015</entry>
@@ -885,7 +778,6 @@
                                     format="html" scope="external">Lightning talk: DITA-OT
                                     documentation update</xref></entry>
                             <entry>Roger Sheen</entry>
-                            <entry>69</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -893,7 +785,6 @@
                                     format="html" scope="external">Overview of the DITA Open
                                     Toolkit</xref></entry>
                             <entry>Kris Eberlein</entry>
-                            <entry>987</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -901,7 +792,6 @@
                                     format="html" scope="external">Looking under the hood of the
                                     DITA Open Toolkit</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>811</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -909,7 +799,6 @@
                                     format="html" scope="external">Lightning talk - Contributing to
                                     the Toolkit via GitHub</xref></entry>
                             <entry>Roger Sheen</entry>
-                            <entry>244</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -917,7 +806,6 @@
                                     format="html" scope="external">RNG to DTD and XSD using the DITA
                                     Open Toolkit</xref></entry>
                             <entry>Eliot Kimber</entry>
-                            <entry>644</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -925,7 +813,6 @@
                                     format="html" scope="external">Extending the DITA Open Toolkit:
                                     How crazy can you get?</xref></entry>
                             <entry>Robert Anderson</entry>
-                            <entry>531</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -933,7 +820,6 @@
                                     format="html" scope="external">Lightning talk - dita2rdf: from
                                     trees to triples</xref></entry>
                             <entry>Colin Maudry</entry>
-                            <entry>389</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -941,7 +827,6 @@
                                     format="html" scope="external">PDFs from the DITA Open Toolkit:
                                     The Easy and the Not So Easy</xref></entry>
                             <entry>Leigh White</entry>
-                            <entry>1500</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -949,7 +834,6 @@
                                     format="html" scope="external">DITA Open Toolkit PDF plugins
                                     without fuss, muss, or writing XSL-FO</xref></entry>
                             <entry>Jarno Elovirta</entry>
-                            <entry>1200</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -957,7 +841,6 @@
                                     format="html" scope="external">DITA Open Toolkit PDF generation
                                     with CSS</xref></entry>
                             <entry>Radu Coravu</entry>
-                            <entry>1300</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -965,7 +848,6 @@
                                     format="html" scope="external">Lightning talk - SCORM wrapper
                                     for DITA to SCORM</xref></entry>
                             <entry>Hal Trent</entry>
-                            <entry>1000</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -974,7 +856,6 @@
                                     content re-used in different context in EPUB and Eclipse
                                     Infocenter by using DITA OT</xref></entry>
                             <entry>Gunthilde Sohn</entry>
-                            <entry>358</entry>
                         </row>
                         <row>
                             <entry>2014</entry>
@@ -983,7 +864,6 @@
                                     designers a flexible way to publish DITA content into Adobe
                                     InDesign</xref></entry>
                             <entry>Mark Poston</entry>
-                            <entry>1400</entry>
                         </row>
                         <!-- End 2018 DITA-OT Day Presentations -->
                     </tbody>
