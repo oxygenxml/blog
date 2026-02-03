@@ -4,7 +4,6 @@
     <title>Test topic 2</title>
     <shortdesc></shortdesc>
     <conbody>
-        <p>make<?oxy_comment_start author="Radu Coravu" timestamp="20260203T095800+0000" comment="please make change here"?>
-            changes <?oxy_comment_end?></p>
+        <p>make changes </p>
     </conbody>
 </concept>
