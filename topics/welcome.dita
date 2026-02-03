@@ -15,7 +15,7 @@
     <body>
         <p>Our blog contains various useful articles and tutorials covering various aspects of
             editing, developing, and publishing using <ph keyref="oxygen"/> with various XML
-            technologies. </p>
+            technologies.  Small change</p>
         <p>Sometimes (quite often actually) articles originally written for the blog are curated by
             our technical writers and end up being part of our official documentation: <xref
                 href="https://www.oxygenxml.com/doc/ug-editor/" format="html" scope="external"/>.

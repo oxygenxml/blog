@@ -5,6 +5,7 @@
     <topicref href="topics/welcome.dita"/>
     <topicref href="topics/what_s_new.html" format="html" navtitle="WHATS" print="no"
         processing-role="resource-only" scope="peer"/>
+    <topicref href="topics/new-topic.dita"/>
     <topicref href="topics/frequently_asked_questions.dita"/>
     <topichead navtitle="Artificial intelligence (AI)">
         <topicref href="topics/ai_positron.dita">
