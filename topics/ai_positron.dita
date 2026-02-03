@@ -6,7 +6,7 @@
     documentation writers <b>generate</b>, <b>re-write</b> content, <b>overview</b> and
       <b>research</b>. It also supports performing AI checks and AI-based modifications on
       <b>multiple files</b> by integrating AI extensions with XML technologies like
-      <b>Schematron</b> or <b>XSLT</b>.</shortdesc>
+      <b>Schematron</b> or  <b>XSLT</b>.</shortdesc>
   <prolog>
     <author>Radu Coravu</author>
     <critdates>
@@ -36,18 +36,18 @@
         <li>Oxygen desktop allows installing the commercial <xref
             href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron-installation.html"
             format="html" scope="external">AI Positron add-on</xref>. There are two main ways to
-          connect and work with LLM models:<ul id="ul_rqp_cx5_4bc">
+          connect and  work with LLM models:<ul id="ul_rqp_cx5_4bc">
             <li>A subscription-based model using the <xref
                 href="https://www.oxygenxml.com/aipositron/user_terms.html" format="html"
                 scope="external">Oxygen Positron Service</xref> platform, which in turn allows you
               access to the <b>OpenAI</b>, <b>Claude</b> or <b>Google Gemini</b> LLMs. <p>Users can
                 create new subscription accounts or authenticate using their existing <b>Google</b>
                 or <b>Github</b> accounts. The first subscription month is free and a <xref
-                  href="https://www.oxygenxml.com/ai_positron_service/buy.html"
-                  format="html" scope="external">monthly subscription</xref> can be purchased to
-                receive a number of credits each month.</p><p>You can control which AI engine is
-                used by default for performing actions and for chatting. This can be done from the
-                Preferences page or from the chat view.</p></li>
+                  href="https://www.oxygenxml.com/ai_positron_service/buy.html" format="html"
+                  scope="external">monthly subscription</xref> can be purchased to receive a number
+                of credits each month.</p><p>You can control which AI engine is used by default for
+                performing actions and for chatting. This can be done from the Preferences page or
+                from the chat view.</p></li>
             <li>Connect to your own own AI engine server. The following connection types are
                 supported:<ul id="ul_twp_5z5_4bc">
                 <li><b>OpenAI</b> - Connect to your own OpenAI server using your own key. Or connect
@@ -60,10 +60,10 @@
               </ul><p>From the licensing point of view, the <b>AI Positron Enterprise</b> add-on
                 works free of charge with any Oxygen XML Editor installation using an
                   <b>Enterprise</b> license type for Oxygen XML Editor. For other cases, <xref
-                    href="https://www.oxygenxml.com/ai_positron_desktop/buy.html"
-                  format="html" scope="external">a special license key</xref> needs to be purchased
-                for the add-on to enable this direct access. You can use the Register button in the
-                AI Positron side view to configure the special license key.</p></li>
+                  href="https://www.oxygenxml.com/ai_positron_desktop/buy.html" format="html"
+                  scope="external">a special license key</xref> needs to be purchased for the add-on
+                to enable this direct access. You can use the Register button in the AI Positron
+                side view to configure the special license key.</p></li>
           </ul></li>
         <li><xref href="https://www.oxygenxml.com/doc/ug-webauthor/topics/wa-ai-positron.html"
             format="html" scope="external">Oxygen XML Web Author</xref> also allows installing an
