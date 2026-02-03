@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_osd_z3g_23c">
+    <title>Test topic 2</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>make<?oxy_comment_start author="Radu Coravu" timestamp="20260203T095800+0000" comment="please make change here"?>
+            changes <?oxy_comment_end?></p>
+    </conbody>
+</concept>

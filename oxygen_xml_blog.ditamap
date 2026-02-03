@@ -2,6 +2,8 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Blog</title>
+    <topicref href="topics/test-topic-2.dita"/>
+    <topicref href="topics/test-topic1.dita"/>
     <topicref href="topics/welcome.dita"/>
     <topicref href="topics/what_s_new.html" format="html" navtitle="WHATS" print="no"
         processing-role="resource-only" scope="peer"/>
