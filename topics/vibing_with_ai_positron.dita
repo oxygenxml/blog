@@ -114,8 +114,8 @@
             <title>Choose your LLM Model</title>
             <p>You need a quality LLM model to make quality changes. An LLM model that is efficient,
                 cost-effective, and has a high context window. From our extensive testing and
-                experience, we generally recommend <b>OpenAI GPT 4.1</b>, <b>Claude Sonet 4</b>,
-                    <b>Haiku 4.5</b>, or <b>Gemini 2.5 Flash</b>.</p>
+                experience, we generally recommend <b>Claude Sonet 4</b>, <b>Haiku 4.5</b>,
+                    <b>OpenAI GPT 4.1</b> or <b>Gemini 2.5 Flash</b>.</p>
             <p><b>Context</b> is the key here. The LLM receives a project context prompt, but it
                 also needs to explore the project, read content, and make changes. So your LLM
                 implementation and the platform through which you access it also need to allow
@@ -155,6 +155,13 @@ from the project</codeblock><p>
                         </p></li>
                     <li><b>Agent</b> - Generic agent useful for exploring and making changes to a
                         variety of projects.</li>
+                    <li><b>Planner</b> - An AI agent which takes a complex task, divides it in
+                        smaller tasks and calls sub-agents to sequentially finish each sub-task.
+                        Example of prompt ideas for using the
+                        <b>Planner</b>:<codeblock>Find all places in the project where there are DITA content 
+references and replace them with content key references.</codeblock></li>
+                    <li>or:<codeblock>Create a DITA XML Map and Topics from the attached 
+PDF or Word document containing the documentation for a project/feature.</codeblock></li>
                     <li><uicontrol>Ask</uicontrol> - Read-only agent useful for exploring and
                         integrating plans without making actual changes until you switch to one of
                         the other agents. </li>
@@ -228,6 +235,13 @@ document content, then save the proposed changes
 to the document</codeblock>or:<codeblock id="codeblock_zml_cqg_2hc">Invoke the improve readability AI action on the current 
 document content, then save the proposed changes 
 to the document</codeblock></li>
+                    <li>Tool to run a command line. Examples:
+                        <codeblock>Find the last 10 Git commits on the current opened topic 
+and create a summary for me about what's been changed and by who</codeblock></li>
+                </ul><ul>
+                    <li>Tool to copy/move/rename files.
+                        Examples:<codeblock>Improve the title of the current opened topic and then
+modify the file name to match the new title.</codeblock></li>
                 </ul></p>
         </section>
         <section id="section_l4l_w4y_dhc">
@@ -269,4 +283,11 @@ topic using them</codeblock><fig id="fig_pl4_xsg_2hc">
                 up being properly interpreted and acted upon.</p>
         </section>
     </body>
+    <related-links>
+        <link
+            href="https://www.oxygenxml.com/events/2026/webinar_vibe_authoring_with_oxygen_ai_positron_8.html"
+            format="html" scope="external">
+            <linktext>Webinar: Vibe Authoring with Oxygen AI Positron 8.0</linktext>
+        </link>
+    </related-links>
 </topic>
