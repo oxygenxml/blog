@@ -3,6 +3,12 @@
 <topic id="ai_positron_faq">
   <title>AI Positron Troubleshooting and FAQ</title>
   <shortdesc>Common questions and troubleshooting guidance for AI Positron users, covering LLM selection, configuration, error messages, and best practices.</shortdesc>
+  <prolog>
+    <author>Radu Coravu</author>
+    <critdates>
+      <created date="2026-02-18"/>
+    </critdates>
+  </prolog>
   <body>
     <section id="overview">
       <title>Overview</title>
