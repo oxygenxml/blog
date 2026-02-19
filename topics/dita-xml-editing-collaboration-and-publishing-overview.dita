@@ -320,7 +320,7 @@
                 following article: <xref href="translating_your_dita_project.dita"/></p>
         </section>
         <section id="section_dkz_bvg_4bc">
-            <title>Publishing</title>
+            <title>Publish</title>
             <p>Oxygen comes with a built-in <b>Oxygen Publishing Engine</b> that is based on the
                     <b>DITA Open Toolkit</b> open-source project. This engine allows you to publish
                 DITA XML content to <xref
