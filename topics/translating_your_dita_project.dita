@@ -70,20 +70,25 @@
       <title>Translation Workflow when the Translation agency accepts XLIFF files</title>
       <p><term>XLIFF</term> (<b>XML Localization Interchange File Format</b>) is an XML-based format
         created to standardize the way data are passed between and among tools during a localization
-        process. If your translation agency accepts this format, the translation workflow usually
-        has these steps:<ol>
+        process. </p>
+      <p>The <xref
+          href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
+          format="html" scope="external">Fluenta DITA Translation</xref> add-on can help you
+        generate XLiff files from DITA XML content.</p>
+      <p>If you combine it with the <xref
+          href="https://www.oxygenxml.com/doc/ug-positron-desktop/index.html" format="html"
+          scope="external">AI Positron</xref> add-on and the <xref
+          href="https://www.oxygenxml.com/doc/ug-addons/topics/ai-translator-add-on.html"
+          format="html" scope="external">AI Translator</xref> add-on you can create an automatic
+        translation workflow.</p>
+      <p>When using a translation agency which requires the XLiff format, the translation workflow
+        usually has these steps:<ol id="ol_shg_mks_33c">
           <li>At various milestones (for example, when a new version is released), you generate
             XLIFF files for each language you translate to.</li>
           <li>You send the XLIFF file to the translation service provider.</li>
           <li>Once the XLIFF returns from translation, you generate a translated version of your map
             and topics from the XLIFF file.</li>
         </ol></p>
-      <p>
-        <note id="note_uym_cws_cwb" type="important">The <xref
-            href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
-            format="html" scope="external">Fluenta DITA Translation</xref> add-on can help with all
-          of these steps.</note>
-      </p>
     </section>
     <section id="section_anj_qyz_sdb">
       <title>Publishing your Translated Content</title>
