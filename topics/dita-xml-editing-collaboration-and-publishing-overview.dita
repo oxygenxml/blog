@@ -21,7 +21,11 @@
             <p>Here are some of the key features:</p>
             <p>
                 <ul id="ul_obb_yyg_4bc">
-                    <li>Permanent user-based licensing.</li>
+                    <li>Flexible licensing:<ul id="ul_icm_jjt_33c">
+                            <li>Permanent user-based.</li>
+                            <li>Floating.</li>
+                            <li>Subscription.</li>
+                        </ul></li>
                     <li>Available on multiple platforms.</li>
                     <li>Comprehensive support for editing, reviewing, and publishing DITA XML
                         content.</li>
@@ -292,7 +296,7 @@
                 </ul></p>
         </section>
         <section id="section_enq_dj4_1cc">
-            <title>Content Fusion Collaboration Platform (Web Browser)</title>
+            <title>Content Fusion Collaboration Platform</title>
             <ul id="ul_abg_2j4_1cc">
                 <li>Installation as a server component in the client's own network.</li>
                 <li>Live demo web site to test and explore: <xref
