@@ -29,7 +29,7 @@
                         </row>
                         <row>
                             <entry>Git integration (checkout, pull, commit, push, branching, history
-                                view)</entry>
+                                view, visual comparison)</entry>
                             <entry>Yes</entry>
                             <entry>Yes</entry>
                             <entry>Yes (by installing the optional Git client add-on)</entry>
