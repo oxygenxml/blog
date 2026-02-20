@@ -30,6 +30,8 @@
             <navtitle>CMS</navtitle>
         </topicmeta>
         <topicref href="topics/content-fusion-cloud-overview.dita"/>
+        <topicref
+            href="topics/content-fusion-cms-enterprisecloud-vs-xml-author-desktop-distilled-feature-matrix.dita"/>
     </topichead>
     <topicref keys="migrate" href="topics/migration.dita">
         <topicref href="topics/migratingToDITA.dita"/>
