@@ -236,6 +236,12 @@
                             <entry>Yes</entry>
                         </row>
                         <row>
+                            <entry>Incremental publishing</entry>
+                            <entry>No</entry>
+                            <entry>No</entry>
+                            <entry>No</entry>
+                        </row>
+                        <row>
                             <entry>Translation support</entry>
                             <entry>No (WIP)</entry>
                             <entry>No (WIP)</entry>
