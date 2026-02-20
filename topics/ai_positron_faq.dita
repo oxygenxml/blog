@@ -13,7 +13,7 @@
     <section id="overview">
       <title>Overview</title>
       <p>This FAQ addresses common issues and questions encountered when using AI Positron with
-        Oxygen desktop, Oxygen Content Fusion CMS or integrated in the WebAuthor with a third party
+        Oxygen desktop, Oxygen Content Fusion CMS, or integrated in Web Author with a third-party
         CMS. The guidance provided is based on real-world user experiences and technical support
         interactions.</p>
     </section>
@@ -32,7 +32,9 @@
       <p>If you use a less capable LLM, AI Positron may not produce optimal results. The quality of responses is directly dependent on the LLM's capabilities.</p>
 
       <p><b>Q: Why is my LLM choice important?</b></p>
-      <p>A: The LLM model is the most critical factor in AI Positron's performance. Many issues reported (poor response quality, hallucinations, slow performance) are related to LLM limitations rather than AI Positron itself. Ensure you're using a capable model.</p>
+      <p>A: The LLM model is the most critical factor in AI Positron's performance. Many issues
+        reported (poor response quality, hallucinations, slow performance) are related to LLM
+        limitations rather than AI Positron itself. Ensure that you're using a capable model.</p>
 
       <p><b>Q: What is a project context prompt and why do I need one?</b></p>
       <p>A: A project context prompt is a set of instructions that describes your project's characteristics, terminology, style guidelines, and specific requirements. It helps the LLM generate more accurate and relevant responses tailored to your documentation standards. For detailed guidance, see <xref href="customizing_ai_positron_for_your_dita_xml_project.dita"/>.</p>
@@ -44,9 +46,9 @@
       <p><b>Q: What does "Exceeded … allowed tokens …" error mean?</b></p>
       <p>A: This error indicates that the LLM's context window is not large enough to process your file. Modern LLMs typically have about 200k tokens of context window and can process files up to approximately 40 kilobytes without issues. If you encounter this error:</p>
       <ul>
-        <li>Break your content into smaller files</li>
-        <li>Use an LLM with a larger context window</li>
-        <li>Reduce the amount of content sent to the LLM in a single request</li>
+        <li>Break your content into smaller files.</li>
+        <li>Use an LLM with a larger context window.</li>
+        <li>Reduce the amount of content sent to the LLM in a single request.</li>
       </ul>
       <p>This is a limitation of the LLM itself, not something AI Positron can fix.</p>
 
@@ -59,8 +61,8 @@
 
       <p><b>Q: What should I do when I want to report a problem based on an interaction in the Chat
           view?</b></p>
-      <p>A: Export your chat conversation (for AI Positron Desktop use the export action in the
-        "Actions" drop down menu, for AI Positron WebAuthor press "/" in the chat input and select
+      <p>A: Export your chat conversation (for AI Positron Desktop, use the export action in the
+        "Actions" drop-down menu; for AI Positron Web Author, type "/" in the chat input and select
         "Export chat") and contact support with the exported JSON file.</p>
     </section>
 
@@ -75,15 +77,15 @@
       <title>Topic Checkout and Editing Issues</title>
 
       <p><b>Q: Why do I get errors when using AI Positron without checking out the topic?</b></p>
-      <p>A: When Positron is used in a CMS integration and a topic is not checked out the add-on
+      <p>A: When Positron is used in a CMS integration and a topic is not checked out, the add-on
         cannot make changes to the opened document. Always check out your topic before using AI
         Positron features.</p>
 
       <p><b>Q: Why don't my changes appear until I refresh the browser?</b></p>
-      <p>A: In some scenarios of third party CMS integrations, Positron edits the topic source but
-        changes remain hidden until you refresh the browser. This is an integration issue between
-        the CMS and AI Positron. Open an issue with the CMS requesting better integration with AI
-        Positron.</p>
+      <p>A: In some scenarios of third-party CMS integrations, AI Positron edits the topic source
+        but changes remain hidden until you refresh the browser. This is an integration issue
+        between the CMS and AI Positron. Open an issue with the CMS requesting better integration
+        with AI Positron.</p>
     </section>
 
     <section id="preview_compare">
@@ -143,11 +145,11 @@
       <title>UI and Usability Issues</title>
 
       <p><b>Q: Why don't my Favorites persist across sessions?</b></p>
-      <p>A: In certain CMS AI Positron WebAuthor integrations favorites only persist within the
+      <p>A: In certain CMS AI Positron Web Author integrations, favorites only persist within the
         current topic's session. To persist them across sessions, the CMS needs to implement APIs on
         their side. Open an issue with the CMS requesting this feature.</p>
 
-      <p><b>Q: Why doesn't the History dropdown persist?</b></p>
+      <p><b>Q: Why doesn't the History drop-down persist?</b></p>
       <p>A: Similar to Favorites, the History dropdown requires CMS-side APIs to persist data.</p>
 
       <p><b>Q: Why can't I upload files of type X?</b></p>
@@ -172,9 +174,9 @@
       <p><b>Q: Why does AI Positron generate content that violates my DTD?</b></p>
       <p>A: This depends on the LLM model quality. To improve results:</p>
       <ul>
-        <li>Provide examples of correct structures in your project context prompt</li>
-        <li>Instruct the LLM to avoid specific mistakes it frequently makes</li>
-        <li>Create custom AI actions with more specific prompts</li>
+        <li>Provide examples of correct structures in your project context prompt.</li>
+        <li>Instruct the LLM to avoid specific mistakes it frequently makes.</li>
+        <li>Create custom AI actions with more specific prompts.</li>
       </ul>
     </section>
 
@@ -184,10 +186,11 @@
       <p><b>Q: Can AI Positron retrieve information from outside my network?</b></p>
       <p>A: No. AI Positron does not have tools to retrieve content from outside your network. If responses reference external sources or competitor information, these are LLM hallucinations. To mitigate this:</p>
       <ul>
-        <li>Instruct the LLM in your project context prompt to avoid certain types of responses</li>
-        <li>When using AI Positron WebAuthor with a third party CMS ask the CMS to implement tools
+        <li>Instruct the LLM to avoid certain types of responses in your project context
+          prompt.</li>
+        <li>When using AI Positron Web Author with a third-party CMS, ask the CMS to implement tools
           that give the LLM access to keyword search your project, enabling Retrieval Augmented
-          Generation (RAG)</li>
+          Generation (RAG).</li>
         <li>Consider implementing an LLM server proxy with RAG capabilities.</li>
       </ul>
 
@@ -206,12 +209,12 @@
       <p><b>Create a comprehensive project context prompt</b></p>
       <p>This is the second most important factor after LLM selection. Your project context prompt should include:</p>
       <ul>
-        <li>Project characteristics and goals</li>
-        <li>Terminology and style guidelines</li>
-        <li>Examples of correct structures and formats</li>
-        <li>Instructions to avoid common mistakes</li>
-        <li>Guidance on wrapping modified content in Markdown codeblocks</li>
-        <li>Instructions to avoid discussing external sources or competitors</li>
+        <li>Project characteristics and goals.</li>
+        <li>Terminology and style guidelines.</li>
+        <li>Examples of correct structures and formats.</li>
+        <li>Instructions to avoid common mistakes.</li>
+        <li>Guidance on wrapping modified content in Markdown codeblocks.</li>
+        <li>Instructions to avoid discussing external sources or competitors.</li>
       </ul>
       <p>See <xref href="customizing_ai_positron_for_your_dita_xml_project.dita"/> for detailed guidance.</p>
 
@@ -226,15 +229,15 @@
       <p><b>Provide detailed reproduction steps</b></p>
       <p>When reporting issues, include:</p>
       <ul>
-        <li>A sample topic that reproduces the problem</li>
-        <li>Step-by-step instructions to reproduce the issue</li>
-        <li>Screenshots if applicable</li>
-        <li>Your LLM model and version information</li>
+        <li>A sample topic that reproduces the problem.</li>
+        <li>Step-by-step instructions to reproduce the issue.</li>
+        <li>Screenshots if applicable.</li>
+        <li>Your LLM model and version information.</li>
       </ul>
 
       <p><b>Consider alternative platforms for better Chat support</b></p>
       <p>If you need robust Chat functionality with RAG support, consider using Oxygen desktop or
-        Oxygen Content Fusion CMS instead of integrations with a third party CMS. See <xref
+        Oxygen Content Fusion CMS instead of integrations with a third-party CMS. See <xref
           href="vibing_with_ai_positron.dita"/> for more information.</p>
     </section>
 
@@ -243,10 +246,14 @@
 
       <p>If you encounter issues not covered in this FAQ:</p>
       <ul>
-        <li>Check the <xref href="customizing_ai_positron_for_your_dita_xml_project.dita"/> article for configuration guidance</li>
-        <li>Review <xref href="vibing_with_ai_positron.dita"/> for best practices on using AI Positron effectively</li>
-        <li>Export your chat conversation and submit it via the <xref href="https://www.oxygenxml.com/techSupport.html" format="html" scope="external">tech support form</xref></li>
-        <li>For issues which need to be implemented by a better CMS integration with AI Positron,
+        <li>Check the <xref href="customizing_ai_positron_for_your_dita_xml_project.dita"/> article
+          for configuration guidance.</li>
+        <li>Review <xref href="vibing_with_ai_positron.dita"/> for best practices on using AI
+          Positron effectively.</li>
+        <li>Export your chat conversation and submit it via the <xref
+            href="https://www.oxygenxml.com/techSupport.html" format="html" scope="external">tech
+            support form</xref>.</li>
+        <li>For issues that need to be implemented by a better CMS integration with AI Positron,
           please report them to the CMS owners.</li>
       </ul>
     </section>
