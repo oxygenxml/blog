@@ -4,9 +4,9 @@
     <title>Content Fusion CMS Enterprise/Cloud vs XML Author Desktop - Distilled Feature
         Matrix</title>
     <body>
-        <p>In the following table I will try to create a feature matrix comparing the Content Fusion
-            CMS Enterprise, Cloud editions with Oxygen XML Author Desktop.<table frame="all"
-                rowsep="1" colsep="1" id="table_idj_11z_33c">
+        <p>In the following table, I will try to create a feature matrix that compares the Content
+            Fusion CMS Enterprise, Cloud editions, and the Oxygen XML Author Desktop.<table
+                frame="all" rowsep="1" colsep="1" id="table_idj_11z_33c">
                 <tgroup cols="4">
                     <colspec colnum="1" colname="c1" colwidth="1.08*"/>
                     <colspec colnum="2" colname="c2" colwidth="0.92*"/>
@@ -24,8 +24,8 @@
                         <row>
                             <entry>License</entry>
                             <entry>Subscription user-based for writers, floating for SMEs</entry>
-                            <entry>Subscription user based license for writers and SMEs</entry>
-                            <entry>User based, Subscription or Floating</entry>
+                            <entry>Subscription user-based license for writers and SMEs</entry>
+                            <entry>User-based, Subscription or Floating</entry>
                         </row>
                         <row>
                             <entry>Git integration (checkout, pull, commit, push, branching, history
@@ -50,7 +50,7 @@
                         <row>
                             <entry>Control edited profiling attribute values in DITA Map</entry>
                             <entry>✅ </entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -64,8 +64,8 @@
                         <row>
                             <entry>Batch actions in opened DITA Map (find/replace in files, spell
                                 check in files, XML refactoring)</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -98,18 +98,18 @@
                         </row>
                         <row>
                             <entry>DITA XML content reuse capabilities (insert content references,
-                                key references, show content references expanded as readonly content
-                                in place)</entry>
+                                key references, show content references expanded as read-only
+                                content in place)</entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
-                            <entry>DITA Reusable Components list (side view showing and allowing you
-                                to insert all available reusable components, keys and
+                            <entry>DITA Reusable Components list (side view that shows and allows
+                                you to insert all available reusable components, keys and
                                 images)</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -120,15 +120,15 @@
                         </row>
                         <row>
                             <entry>Terminology check current file</entry>
-                            <entry>Commercial third party plugins.</entry>
-                            <entry>Commercial third party plugins.</entry>
+                            <entry>Commercial third-party plugins</entry>
+                            <entry>Commercial third-party plugins</entry>
                             <entry>Yes, using the Terminology Checker add-on</entry>
                         </row>
                         <row>
                             <entry>Conversions between topic types (topic->concept, task->concept,
-                                etc)</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                                etc.)</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -139,28 +139,28 @@
                         </row>
                         <row>
                             <entry>Find/Replace in Files (batch)</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Check spelling in Files (batch)</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Check terminology in Files (batch)</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>Yes, using the Terminology Checker add-on</entry>
                         </row>
                         <row>
                             <entry>Batch Documents converter (convert multiple Markdown, DocBook,
-                                Word, HTML documents to DITA XML).</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
-                            <entry>Yes, using the Batch Documents Converter add-on.</entry>
+                                Word, HTML documents to DITA XML)</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
+                            <entry>Yes, using the Batch Documents Converter add-on</entry>
                         </row>
                         <row>
                             <entry>Auto update references to moved/renamed topics</entry>
@@ -169,29 +169,29 @@
                             <entry>✅ </entry>
                         </row>
                         <row>
-                            <entry>Search for references  (conrefs, links) to topics or reusable
+                            <entry>Search for references (conrefs, links) to topics or reusable
                                 elements</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Customize the DITA XML editing (new file templates, modify
-                                toolbars, custom editing actions, etc)</entry>
+                                toolbars, custom editing actions, etc.)</entry>
                             <entry>✅ </entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Custom Schematron validation rules</entry>
                             <entry>✅ </entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Add DITA specialization plugin with schemas/DTDs</entry>
                             <entry>✅ </entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -199,15 +199,15 @@
                             <entry>Yes, optional installation of AI Positron Enterprise (configured
                                 to use each company's LLM connection)</entry>
                             <entry>Yes, optional enablement of AI Positron Subscription-based
-                                assistant which uses the Oxygen Positron Service platform.</entry>
-                            <entry>Yes, by installing the AI Positron add-on which can use either
-                                custom connections to a LLM or the Oxygen Positron Service
-                                platform.</entry>
+                                assistant that uses the Oxygen AI Positron Service platform</entry>
+                            <entry>Yes, by installing the AI Positron add-on that can use either
+                                custom connections to a LLM or the Oxygen AI Positron Service
+                                platform</entry>
                         </row>
                         <row>
                             <entry>Dark theme</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -220,33 +220,33 @@
                             <entry>Host/Upload published outputs to servers like Amazon S3</entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
                         </row>
                         <row>
                             <entry>Publish and customize other output formats (Windows Help, Word,
-                                EPUB, etc)</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                                EPUB, etc.)</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Add DITA-OT publishing plugins</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Incremental publishing</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
+                            <entry>❌</entry>
                         </row>
                         <row>
                             <entry>Translation support</entry>
-                            <entry> ❌(WIP)</entry>
-                            <entry> ❌(WIP)</entry>
-                            <entry>Yes, using the optional Fluenta add-on to create xliff files, the
-                                AI Translator to automatically translate them.</entry>
+                            <entry>❌(WIP)</entry>
+                            <entry>❌(WIP)</entry>
+                            <entry>Yes, using the optional Fluenta add-on to create xliff files, and
+                                the AI Translator to automatically translate them</entry>
                         </row>
                         <row>
                             <entry>Create review tasks</entry>
@@ -260,7 +260,7 @@
                                 editing or by using change tracking)</entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
-                            <entry> ❌</entry>
+                            <entry>❌</entry>
                         </row>
                     </tbody>
                 </tgroup>
