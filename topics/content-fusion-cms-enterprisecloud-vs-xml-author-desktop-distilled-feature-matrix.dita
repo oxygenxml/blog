@@ -5,8 +5,14 @@
         Matrix</title>
     <body>
         <p>In the following table, I will try to create a feature matrix that compares the Content
-            Fusion CMS Enterprise, Cloud editions, and the Oxygen XML Author Desktop.<table
-                frame="all" rowsep="1" colsep="1" id="table_idj_11z_33c">
+            Fusion CMS (Enterprise and Cloud editions), and the Oxygen XML Author Desktop.</p>
+        <p>The <b>Content Fusion Enterprise CMS</b> (installed on the client's premise) and
+                <b>Oxygen XML Author Desktop</b> are available for purchase.</p>
+        <p>The <b>Content Fusion Cloud CMS</b> (installed and hosted by Oxygen) is expected to be
+            released in about 2 months time and is available for testing (email
+                <b>support@oxygenxml.com</b>).</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_idj_11z_33c">
                 <tgroup cols="4">
                     <colspec colnum="1" colname="c1" colwidth="1.08*"/>
                     <colspec colnum="2" colname="c2" colwidth="0.92*"/>
@@ -264,6 +270,7 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </table></p>
+            </table>
+        </p>
     </body>
 </topic>
