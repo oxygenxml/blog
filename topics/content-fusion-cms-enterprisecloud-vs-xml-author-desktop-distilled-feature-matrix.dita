@@ -68,13 +68,6 @@
                             <entry>✅ </entry>
                         </row>
                         <row>
-                            <entry>Batch actions in opened DITA Map (find/replace in files, spell
-                                check in files, XML refactoring)</entry>
-                            <entry>❌</entry>
-                            <entry>❌</entry>
-                            <entry>✅ </entry>
-                        </row>
-                        <row>
                             <entry>Define and apply profiling condition sets in opened DITA
                                 Map</entry>
                             <entry>✅ </entry>
@@ -129,13 +122,6 @@
                             <entry>Commercial third-party plugins</entry>
                             <entry>❌</entry>
                             <entry>Yes, using the Terminology Checker add-on</entry>
-                        </row>
-                        <row>
-                            <entry>Conversions between topic types (topic->concept, task->concept,
-                                etc.)</entry>
-                            <entry>❌</entry>
-                            <entry>❌</entry>
-                            <entry>✅ </entry>
                         </row>
                         <row>
                             <entry>Keyword search to locate files</entry>
@@ -211,19 +197,20 @@
                                 platform</entry>
                         </row>
                         <row>
-                            <entry>Dark theme</entry>
-                            <entry>❌</entry>
-                            <entry>❌</entry>
-                            <entry>✅ </entry>
-                        </row>
-                        <row>
                             <entry>Publish and customize WebHelp, PDF outputs</entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
-                            <entry>Host/Upload published outputs to servers like Amazon S3</entry>
+                            <entry>Upload published outputs to servers like Amazon S3, Netlify or
+                                SFTP</entry>
+                            <entry>✅ </entry>
+                            <entry>✅ </entry>
+                            <entry>❌</entry>
+                        </row>
+                        <row>
+                            <entry>Host published outputs on CMS for publishing preview</entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
                             <entry>❌</entry>
