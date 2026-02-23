@@ -216,6 +216,12 @@
                             <entry>❌</entry>
                         </row>
                         <row>
+                            <entry>Trigger publishing based on modification or schedule build. </entry>
+                            <entry>✅ </entry>
+                            <entry>✅ </entry>
+                            <entry>❌</entry>
+                        </row>
+                        <row>
                             <entry>Publish and customize other output formats (Windows Help, Word,
                                 EPUB, etc.)</entry>
                             <entry>❌</entry>
