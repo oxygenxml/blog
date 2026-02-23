@@ -127,7 +127,7 @@
                         <row>
                             <entry>Terminology check current file</entry>
                             <entry>Commercial third-party plugins</entry>
-                            <entry>Commercial third-party plugins</entry>
+                            <entry>❌</entry>
                             <entry>Yes, using the Terminology Checker add-on</entry>
                         </row>
                         <row>
@@ -258,7 +258,9 @@
                             <entry>Create review tasks</entry>
                             <entry>✅ </entry>
                             <entry>✅ </entry>
-                            <entry>Yes, using the Content Fusion Connector add-on</entry>
+                            <entry>Yes, using the Content Fusion Connector add-on if the writer
+                                using Oxygen desktop also has an account as a writer on the Content
+                                Fusion platform.</entry>
                         </row>
                         <row>
                             <entry>Allow SMEs to edit review tasks (concurrent editing, finalize
