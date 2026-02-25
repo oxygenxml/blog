@@ -18,6 +18,7 @@
             <parameter name="editlink.remote.ditamap.url" value="gitgh://https%3A%2F%2Fgithub.com%2Foxygenxml%2Fblog/master/oxygen_xml_blog.ditamap"/>
             <parameter name="editlink.web.author.url" value="https://www.oxygenxml.com/oxygen-xml-web-author/"/>
             <parameter name="webhelp.logo.image" value="oxygen-webhelp/template/resources/images/oxygen_logo.png"/>
+            <parameter name="webhelp.enable.sticky.table.headers" value="true"/>
         </parameters>
         <resources>
             <css file="oxygen.css"/>
