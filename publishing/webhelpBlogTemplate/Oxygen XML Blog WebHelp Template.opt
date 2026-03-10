@@ -5,7 +5,7 @@
     <webhelp>
         <preview-image file="oxygen-tree.png"/>
         <parameters>
-          <parameter name="google.structured.data" value="yes"/>
+            <parameter name="google.structured.data" value="yes"/>
             <parameter name="webhelp.show.main.page.tiles" value="no"/>
             <parameter name="webhelp.show.main.page.toc" value="no"/>
             <parameter name="webhelp.top.menu.depth" value="3"/>
@@ -44,8 +44,6 @@
             <fragment file="html-fragments/scripts.html" placeholder="webhelp.fragment.after.body.topic.page"/>
             <fragment file="html-fragments/read-progress.html" placeholder="webhelp.fragment.before.body.topic.page"/>
         </html-fragments>
-        
-     
         <xslt>
             <extension file="xslt/custom.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
             <extension file="xslt/createRSS.xsl" id="com.oxygenxml.webhelp.xsl.createNavLinks"/>
