@@ -19,7 +19,8 @@
             <parameter name="editlink.web.author.url" value="https://www.oxygenxml.com/oxygen-xml-web-author/"/>
             <parameter name="webhelp.logo.image" value="oxygen-webhelp/template/resources/images/oxygen_logo.png"/>
             <parameter name="webhelp.enable.sticky.table.headers" value="true"/>
-            <parameter name="webhelp.enable.dark.mode" value="yes"/>
+            <parameter name="webhelp.enable.ai.friendly" value="yes"/>
+            <parameter name="webhelp.enable.dark.mode" value="no"/>
         </parameters>
         <resources>
             <css file="oxygen-theme.css"/>
