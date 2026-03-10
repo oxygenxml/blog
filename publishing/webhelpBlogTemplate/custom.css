@@ -268,17 +268,10 @@ h3.followit{
 }
 
 .label.inPage {
-  border: 1px solid var(--wh-label-color, #666);
-  padding: 0.2em;
-  margin: 0.1em;
-  border-radius: 7px;
-  text-transform: uppercase;
   font-size: .8em;
+  color: var(--wh-strong-color, #888);
 }
 
-.label.inPage a {
-  color: var(--wh-label-color, #666);
-}
 .entry .date {
   color: var(--wh-entry-date-color, #818181);
   font-size: .875em;
