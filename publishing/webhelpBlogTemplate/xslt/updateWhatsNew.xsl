@@ -101,7 +101,7 @@
                                 <img src="./oxygen-webhelp/template/resources/images/facebook.png"/>
                             </a>
                             <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube" title="Youtube Channel" target="_blank">  
-                                <img src="./oxygen-webhelp/template/resources/images/you-tube.png"/>
+                                <img src="./oxygen-webhelp/template/resources/images/youtube.png"/>
                             </a>
                             <a href="http://twitter.com/oxygenxml" class="lk-blog" title="Twitter" target="_blank">  
                                 <img src="./oxygen-webhelp/template/resources/images/twitter.png"/>
