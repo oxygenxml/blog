@@ -103,10 +103,10 @@
                             <a href="https://www.youtube.com/user/oxygenxml" class="lk-youtube" title="Youtube Channel" target="_blank">  
                                 <img src="./oxygen-webhelp/template/resources/images/youtube.png"/>
                             </a>
-                            <a href="http://twitter.com/oxygenxml" class="lk-blog" title="Twitter" target="_blank">  
+                            <a href="http://twitter.com/oxygenxml" class="lk-twitter" title="Twitter" target="_blank">  
                                 <img src="./oxygen-webhelp/template/resources/images/twitter.png"/>
                             </a>
-                            <a href="https://www.linkedin.com/company/syncro-soft" class="lk-blog" title="Linkedin" target="_blank">  
+                            <a href="https://www.linkedin.com/company/syncro-soft" class="lk-linkedin" title="Linkedin" target="_blank">  
                                 <img src="./oxygen-webhelp/template/resources/images/linkedin.png"/>
                             </a>
                         </div>

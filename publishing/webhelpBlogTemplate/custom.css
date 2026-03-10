@@ -9,6 +9,11 @@
   --wh-entry-date-color: #818181;
   --wh-entry-label-color: #546e7a;
   --wh-followit-color: #231f20;
+
+  --wh-facebook-image: url("resources/images/facebook.png");
+  --wh-linkedin-image: url("resources/images/linkedin.png");
+  --wh-twitter-image: url("resources/images/twitter.png");
+  --wh-youtube-image: url("resources/images/youtube.png");
 }
 
 @media screen {
@@ -22,6 +27,11 @@
     --wh-entry-date-color: #b3b3b3;
     --wh-entry-label-color: #9fb3bd;
     --wh-followit-color: #d6d2d3;
+
+    --wh-facebook-image: url("resources/images/facebook_dark.png");
+    --wh-linkedin-image: url("resources/images/linkedin_dark.png");
+    --wh-twitter-image: url("resources/images/twitter_dark.png");
+    --wh-youtube-image: url("resources/images/youtube_dark.png");
   }
 }
 
@@ -608,3 +618,15 @@ ul#ui-id-1.ui-autocomplete {
   height: 1.13em !important;
   max-height: 1.13em !important;
 }
+
+.lk-facebook > img {
+  content: var(--wh-facebook-image);
+}
+.lk-linkedin > img {
+  content: var(--wh-linkedin-image);
+}
+.lk-twitter > img {
+  content: var(--wh-twitter-image);
+}
+.lk-youtube > img {
+  content: var(--wh-youtube-image);
