@@ -10,6 +10,7 @@
   --wh-entry-label-color: #546e7a;
   --wh-followit-color: #231f20;
 
+  --wh-followit-image: url("resources/images/followit.svg");
   --wh-facebook-image: url("resources/images/facebook.png");
   --wh-linkedin-image: url("resources/images/linkedin.png");
   --wh-twitter-image: url("resources/images/twitter.png");
@@ -28,6 +29,7 @@
     --wh-entry-label-color: #9fb3bd;
     --wh-followit-color: #d6d2d3;
 
+    --wh-followit-image: url("resources/images/followit_dark.svg");
     --wh-facebook-image: url("resources/images/facebook_dark.png");
     --wh-linkedin-image: url("resources/images/linkedin_dark.png");
     --wh-twitter-image: url("resources/images/twitter_dark.png");
@@ -615,8 +617,7 @@ ul#ui-id-1.ui-autocomplete {
 }
 .followit-\-follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
   margin-left: 10px !important;
-  height: 1.13em !important;
-  max-height: 1.13em !important;
+  content: var(--wh-followit-image);
 }
 
 .lk-facebook > img {
