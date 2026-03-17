@@ -10,6 +10,7 @@
   --wh-entry-label-color: #546e7a;
   --wh-followit-color: #231f20;
 
+  --wh-blog-hero-image: url("resources/images/blog_hero.png");
   --wh-followit-image: url("resources/images/followit.svg");
   --wh-facebook-image: url("resources/images/facebook.png");
   --wh-linkedin-image: url("resources/images/linkedin.png");
@@ -29,6 +30,7 @@
     --wh-entry-label-color: #9fb3bd;
     --wh-followit-color: #d6d2d3;
 
+    --wh-blog-hero-image: url("resources/images/blog_hero_dark.png");
     --wh-followit-image: url("resources/images/followit_dark.svg");
     --wh-facebook-image: url("resources/images/facebook_dark.png");
     --wh-linkedin-image: url("resources/images/linkedin_dark.png");
@@ -121,7 +123,7 @@ h3.followit{
 .mb_index_bg {
   background-image: none;
   /* height:500px;*/
-  background-image: url("resources/images/blog_hero.png");
+  background-image: var(--wh-blog-hero-image);
   /*width: 100%;*/
   height: 350px;
   background-size: contain;
@@ -374,9 +376,11 @@ h3.followit{
   padding: 0.5em;
   font-size: 1.2em;
   text-transform: uppercase;
-  border: 1px solid var(--wh-strong-color, #888);
   border-radius: 8px;
   margin-top: 3em;
+}
+.get-started:hover {
+  border: 1px solid var(--wh-strong-color, #888);
 }
 
 .footer .get-started {
