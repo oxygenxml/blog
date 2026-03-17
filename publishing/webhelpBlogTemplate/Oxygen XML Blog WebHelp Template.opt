@@ -20,7 +20,7 @@
             <parameter name="webhelp.logo.image" value="oxygen-webhelp/template/resources/images/oxygen_logo.png"/>
             <parameter name="webhelp.enable.sticky.table.headers" value="true"/>
             <parameter name="webhelp.enable.ai.friendly" value="yes"/>
-            <parameter name="webhelp.enable.dark.mode" value="no"/>
+            <parameter name="webhelp.enable.dark.mode" value="yes"/>
         </parameters>
         <resources>
             <css file="oxygen-theme.css"/>
