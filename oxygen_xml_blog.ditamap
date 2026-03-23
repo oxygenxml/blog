@@ -23,6 +23,7 @@
         <topicref href="topics/dita-ot-ai-plugins.dita"/>
         <topicref href="topics/wn_positron_5.dita"/>
         <topicref href="topics/ai_positron_faq.dita"/>
+        <topicref href="topics/ai_autocompletion.dita"/>
     </topichead>
     <topicref href="maps/dita-articles.ditamap" format="ditamap"/>
     <topichead>
