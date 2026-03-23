@@ -54,7 +54,7 @@
         <section id="how-it-works">
             <title>How it works</title>
             <p>AI Autocompletion operates in <b>Text</b> editing mode and reacts to what you type.
-                When <ph keyref="oxygen"/> detects that you entered a new line, it requests a
+                When <ph keyref="oxygen"/> detects that you have entered a new line, it requests a
                 suggestion from the configured AI model and displays it inline at the cursor
                 position.</p>
             <p>You can use it in two ways:</p>
@@ -62,13 +62,18 @@
                 <li><p><b>Real-time inline suggestions</b> – The feature proactively proposes
                         completions while you type. When a suggestion appears, you can either accept
                         it or keep typing to ignore it.</p><image
-                        href="../images/ai_autocompletion_xsl2.png" id="image_lwz_sgb_q3c"/></li>
+                        href="../images/ai_autocompletion_xsl2.png" id="image_lwz_sgb_q3c">
+                        <alt>Inline AI suggestion completing an XSLT template in Text mode.</alt>
+                    </image></li>
                 <li>
                     <p><b>On-demand via the Autocomplete action</b> – You can explicitly trigger
                         autocompletion using the <uicontrol>Autocomplete</uicontrol> action. In this
                         case, the generated result is also shown in the AI chat view, where you can
                         inspect the action and refine the output further if needed.<image
-                            href="../images/ai_autocompletion_xsl.png" id="image_cnd_phh_q3c"/></p>
+                            href="../images/ai_autocompletion_xsl.png" id="image_cnd_phh_q3c">
+                            <alt>AI Positron panel and editor showing Autocomplete-generated XSLT
+                                code.</alt>
+                        </image></p>
                 </li>
             </ol>
             <p>This dual model supports both lightweight inline completion and more deliberate
@@ -76,8 +81,8 @@
         </section>
         <section id="section_q2x_p2h_q3c">
             <title>Example workflow in XSLT</title>
-            <p>Consider an XSLT stylesheet where you already defined several templates that match
-                elements in a book structure. When you start writing a new template for
+            <p>Consider an XSLT stylesheet where you have already defined several templates that
+                match elements in a book structure. When you start writing a new template for
                 chapter/section in <b>Text</b> mode, AI Autocompletion can:</p>
             <ul id="ul_s2x_p2h_q3c">
                 <li>Propose a new xsl:template skeleton that mirrors the patterns of your existing
@@ -151,11 +156,14 @@
         <section id="preferences">
             <title>Preferences that give you control</title>
             <p><ph keyref="oxygen"/> exposes a dedicated set of preferences so that you can control
-        how AI Autocompletion behaves. For detailed configuration instructions, see the online
-        documentation: <xref
-          href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/autocompletion_preferences.html"
-          format="html" scope="external">AI Autocompletion Preferences</xref>.<image
-          href="../images/ai_autocompletion_preferences.png" id="image_vhy_lyp_q3c"/></p>
+                how AI Autocompletion behaves. For detailed configuration instructions, see the
+                online documentation: <xref
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/autocompletion_preferences.html"
+                    format="html" scope="external">AI Autocompletion Preferences</xref>.<image
+                    href="../images/ai_autocompletion_preferences.png" id="image_vhy_lyp_q3c">
+                    <alt>AI Autocompletion preferences dialog listing editor types and
+                        options.</alt>
+                </image></p>
             <sectiondiv id="preferences-enable">
                 <p><b>Enable AI Autocompletion in Text page</b></p>
                 <p>This option turns on context-aware suggestions in supported editors when you work
