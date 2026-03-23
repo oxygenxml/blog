@@ -26,10 +26,10 @@
     </prolog>
     <body>
         <p>Starting with <ph keyref="oxygen"/> 28.0, you can use <b>AI Autocompletion</b> together
-            with the <b>Oxygen AI Positron</b> add-on 7.0 or later to get real-time, context-aware
-            suggestions directly at the caret position in Text mode. The feature reduces repetitive
-            typing, speeds up authoring, and helps you keep structures consistent in technologies
-            such as <b>XSLT</b>, <b>XSD</b>, <b>JSON Schema</b>, <b>Schematron</b>, and others.</p>
+            with the <b>Oxygen AI Positron</b> add-on to get real-time, context-aware suggestions
+            directly at the caret position in Text mode. The feature reduces repetitive typing,
+            speeds up authoring, and helps you keep structures consistent in technologies such as
+                <b>XSLT</b>, <b>XSD</b>, <b>JSON Schema</b>, <b>Schematron</b>, and others.</p>
         <object data="https://www.youtube.com/embed/Por8d-MoNqQ?si=EIgaLs61apSWPtFZ" outputclass="iframe" width="560" height="315">
             <param name="allowfullscreen"/>
         </object>
