@@ -59,6 +59,7 @@
         <topicref href="topics/editing_complex_xml_schemas.dita"/>
     </topichead>
     <topichead navtitle="Miscellaneous">
+        <topicref href="topics/s1000d_4_x_built_in_support.dita"/>
         <topicref href="topics/ISO-27001-certification-announcement.dita"/>
         <topicref href="topics/OxygenUsersMeetup.dita"/>
         <topicref href="topics/Chinese_users_group.dita"/>
