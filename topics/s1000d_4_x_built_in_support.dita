@@ -202,7 +202,7 @@
                 <li>Test Smart Paste with sample legacy content to see how it accelerates
                     migration.</li>
                 <li>Install the CGM add-on if your publications include CGM illustrations.</li>
-            </ol><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/s1000d-support.html"
+            </ol><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/s1000d-doc-type.html"
                 format="html" scope="external">S1000D Support Documentation</xref>
             <p>With native S1000D 4.x support, <ph keyref="oxygen"/> removes much of the friction
                 from authoring technical publications in aerospace, defense, and other regulated
@@ -271,7 +271,7 @@
                 the difference native S1000D support makes.</p>
             <p>For more information:</p>
             <ul id="ul_t44_js1_q3c">
-                <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/s1000d-support.html"
+                <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/s1000d-doc-type.html"
                         format="html" scope="external"><ph keyref="oxygen"/> S1000D Support
                         Documentation</xref></li>
                 <li><xref href="https://s1000d.org/" format="html" scope="external">S1000D Official
