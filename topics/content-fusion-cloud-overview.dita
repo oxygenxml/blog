@@ -198,9 +198,7 @@
             <p><b>AI Positron</b> has access to powerful tools allowing it to search, read, and edit
                 content directly from your project's workspace. More details about vibe writing with
                 AI Positron: <xref
-                    href="https://blog.oxygenxml.com/topics/vibing_with_ai_positron.html"
-                    format="html" scope="external"
-                    >https://blog.oxygenxml.com/topics/vibing_with_ai_positron.html</xref>.</p>
+                    href="vibing_with_ai_positron.dita"/>.</p>
         </section>
         <section id="section_sbr_zc5_zhc">
             <title>Publish</title>
