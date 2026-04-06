@@ -2,20 +2,29 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_nnt_5zn_zhc">
     <title>Content Fusion Cloud CMS Overview</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2026-04-06"/>
+        </critdates>
+    </prolog>
     <body>
-        <p>We recently made available our <b>Content Fusion</b> content management server as a <xref
+        <p>Our <b>Content Fusion</b> content management server is now available a <xref
                 href="https://fusion.oxygenxml.com/" format="html" scope="external">cloud
                 solution</xref>, aimed at companies or individuals who want to securely
                 <b>manage</b>, <b>create</b>, <b>edit</b>, <b>review</b> and <b>publish</b>
             technical documentation projects using the <b>DITA XML</b> standard without the need to
             install server-side components on their own servers. </p>
+        <p>A <b>30 day trial</b> is offered to freely use the Cloud <b>CMS</b> and see if it is fit
+            for your use and organization. You can now sign up, create your organization and work
+            with sample or pilot projects to see how it can be used in your company.</p>
         <p>As a <xref href="https://github.com/raducoravu" format="html" scope="external">software
                 engineer</xref> whose development has been mostly focused on the <b>Oxygen XML</b>
             desktop products, I've been skeptical, in general, of using web editing tools. But now,
-            as I'm sipping my hot chocolate and using <b><xref href="https://fusion.oxygenxml.com/"
-                    format="html" scope="external">Content Fusion Cloud</xref></b> connected to the
-                <xref href="https://github.com/oxygenxml/blog" format="html" scope="external">Oxygen
-                XML Blog</xref> Git repository to write this very blog post, I see that things are
+            as I'm sipping my hot chocolate and using <xref href="https://fusion.oxygenxml.com/"
+                format="html" scope="external">Content Fusion Cloud</xref> connected to the <xref
+                href="https://github.com/oxygenxml/blog" format="html" scope="external">Oxygen XML
+                Blog</xref> Git repository to write this very blog post, I see that things are
             running smooth indeed.</p>
         <p>There is also a past <xref
                 href="https://www.oxygenxml.com/events/2025/webinar_introducing_oxygen_content_fusion_cloud.html"
@@ -28,7 +37,7 @@
             <ul id="ul_zsw_s14_zhc">
                 <li><b>Create and manage an organization</b>. Your organization will let you invite
                     and manage members, control the subscription, authentication, and security
-                        details.<xref href="#topic_nnt_5zn_zhc/section_vkq_hf4_zhc">More
+                    details. <xref href="#topic_nnt_5zn_zhc/section_vkq_hf4_zhc">More
                         details...</xref></li>
                 <li><b>Assign roles</b> in the organization. There are two types of roles:
                         <b>writers</b> and <b>subject matter experts</b>.</li>
@@ -70,8 +79,6 @@
                         >Details....</xref></li>
             </ul>
         </p>
-        <p>A <b>30 day trial</b> is offered to freely use the <b>CMS</b> and see if it is fit for
-            your use and organization.</p>
         <p>And now let's expand on these features that <b>Content Fusion Cloud</b> offers.</p>
         <section id="section_vkq_hf4_zhc">
             <title>Create and Manage Organizations</title>
@@ -104,9 +111,9 @@
             <p>You can create a new project starting from a new sample project template:</p>
             <p><image href="../images/cf-create-project.png" id="image_srz_ztt_zhc" scale="50"/></p>
             <p>But in my opinion, the best feature is the ability to create a project based on an
-                existing private or public Git project. This will synchronize (in real time) the
-                changes made in <b>Content Fusion Cloud</b> (including creating branches) with your
-                Git project, allowing you to use your content from any other third-party tools,
+                existing private or public <b>Git</b> project. This will synchronize (in real time)
+                the changes made in <b>Content Fusion Cloud</b> (including creating branches) with
+                your Git project, allowing you to use your content from any other third-party tools,
                 including editing tools and publishing servers that have Git support.</p>
             <p><image href="../images/cf-new--project-git.png" id="image_vy3_j5t_zhc" scale="50"
                 /></p>
@@ -255,14 +262,16 @@
                             href="server_side_building_and_publishing.dita"
                            ></xref>.</li>
                     <li>No possibility to install your own <b>DITA XML</b> specialization or to
-                        customize the framework for editing DITA XML content. In such cases, instead
-                        of <b>Content Fusion Cloud</b>, you may choose to install and use a
-                            <b>Content Fusion Enterprise</b> server on your own company's
-                        infrastructure and install extra frameworks in it.</li>
-                    <li>No implicit support for translation workflows. Again, you can use the
-                        real-time synchronization with a <b>Git</b> repository to create custom
-                        translation workflows outside of the <b>Content Fusion Cloud</b> platform.
-                        For example, you may use an Oxygen XML desktop with the <xref
+                        customize the framework for editing DITA XML content (but we are working on
+                        allowing an admin to upload limited framework customizations in the CF Cloud
+                        organization). In such cases, instead of <b>Content Fusion Cloud</b>, you
+                        may choose to install and use a <b>Content Fusion Enterprise</b> server on
+                        your own company's infrastructure and install extra frameworks in it.</li>
+                    <li>No implicit support for translation workflows (but this is definitely a
+                        future improvement direction). Again, you can use the real-time
+                        synchronization with a <b>Git</b> repository to create custom translation
+                        workflows outside of the <b>Content Fusion Cloud</b> platform. For example,
+                        you may use an Oxygen XML desktop with the <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
                             format="html" scope="external">Fluenta add-on</xref> and <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
