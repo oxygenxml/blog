@@ -210,6 +210,9 @@ in DITA &lt;uicontrol> elements.</codeblock><note
 contents.</codeblock></li>
                     <li>Tools to make large or small changes to the current or to other documents.
                         Examples:<codeblock id="codeblock_bcf_m4g_2hc">Shorten the title of the current document</codeblock>or:<codeblock id="codeblock_ofl_p4g_2hc">Find and fix logical inconsistencies in the current document</codeblock></li>
+                    <li>Tool to obtain a description for an image, Word or PDF document. Example
+                        prompt:<codeblock>The current file references a couple of images, check if the referenced images
+make sense to be used in the current file's context.</codeblock></li>
                     <li>Tools to provide validation and terminology problems reported for certain
                         documents. If you have many style guide rules, it is advisable to implement
                         them as <xref href="SchematronBCs.dita">Schematron rules</xref> or rules for
@@ -237,9 +240,12 @@ document content, then save the proposed changes
 to the document</codeblock>or:<codeblock id="codeblock_zml_cqg_2hc">Invoke the improve readability AI action on the current 
 document content, then save the proposed changes 
 to the document</codeblock></li>
-                    <li>Tool to run a command line. Examples:
-                        <codeblock>Find the last 10 Git commits on the current opened topic 
-and create a summary for me about what's been changed and by who</codeblock></li>
+                    <li>Tool to run a command line. The most flexible tool which can provide the
+                        entire operating system's power of searching, making changes, running
+                        applications. Each request by the LLM to run a command line needs to be
+                        approved by you.<p>Examples:
+                            <codeblock>Find the last 10 Git commits on the current opened topic 
+and create a summary for me about what's been changed and by who</codeblock></p></li>
                 </ul><ul>
                     <li>Tool to copy/move/rename files.
                         Examples:<codeblock>Improve the title of the current opened topic and then
