@@ -258,6 +258,20 @@ Example:
 
 The &lt;product>Hisense&lt;/product> &lt;part-term>engine&lt;/part-term> is more efficient. </codeblock>
         </section>
+        <section>
+            <title>Skills</title>
+            <p>Skills are reusable, filesystem-based resources that provide the LLM with
+                domain-specific expertise (workflows, context, and best practices that transform
+                general-purpose agents into specialists). Unlike prompts (conversation-level
+                instructions for one-off tasks), Skills load on-demand and eliminate the need to
+                repeatedly provide the same guidance across multiple conversations. You can <xref
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_skills_creation.html"
+                    format="html" scope="external">create your own skills and use them with AI
+                    Positron</xref>. For example you can have a skill with rules about how content
+                can be reviewed. Sample skills are available here: <xref
+                    href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Custom%20Actions/sample-skills"
+                    format="html" scope="external"/>.</p>
+        </section>
         <section id="section_t3d_hr4_jfc">
             <title>Conclusion</title>
             <p>You need to invest time to adapt the AI Positron add-on to generate better content
