@@ -110,7 +110,7 @@
         </ul></p>
     </section>
     <section id="section_hph_m3v_4bc">
-      <title>Predefined and Custom Actions</title>
+      <title>Predefined and Custom Actions, Agents and Skills</title>
       <p>Once you log in to the server, a <xref
           href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_z5l_qbx_jbc"
           format="html" scope="external">set of predefined actions</xref> are available, grouped in
@@ -128,6 +128,14 @@
         custom actions. Some usage examples can be found in the <xref
           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Schematron%20and%20Quick%20Fixes"
           format="html" scope="external">samples playground</xref>.</p>
+      <p>Predefined agents/chat modes <uicontrol>Agent/DITA Agent/Ask/Planner/Personas</uicontrol>
+        are available in the <uicontrol>Chat modes</uicontrol> drop down. And you can create your
+        own AI agents.</p>
+      <p>Predefined skills allow you to easily translate, review and use the AI Positron
+        documentation. And you can create your own skills for AI Positron using the <b>Anthropic</b>
+        skills specification to extend the assistant with <xref
+          href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_skills_creation.html"
+          format="html" scope="external">custom tools and capabilities</xref>.</p>
     </section>
     <section id="section_ngk_klp_pbc">
       <title>Visual Image Recognition (Vision)</title>
