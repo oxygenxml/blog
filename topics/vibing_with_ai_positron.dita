@@ -162,6 +162,8 @@ from the project</codeblock><p>
 references and replace them with content key references.</codeblock></li>
                     <li>or:<codeblock>Create a DITA XML Map and Topics from the attached 
 PDF or Word document containing the documentation for a project/feature.</codeblock></li>
+                    <li><uicontrol>Personas</uicontrol> - Evaluates a task through multiple audience
+                        personas before creating a final plan to implement.</li>
                     <li><uicontrol>Ask</uicontrol> - Read-only agent useful for exploring and
                         integrating plans without making actual changes until you switch to one of
                         the other agents. </li>
