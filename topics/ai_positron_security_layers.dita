@@ -53,8 +53,9 @@
                             This can include email addresses, phone numbers, IDs, and API keys. You
                             can also define custom masking patterns for organization-specific
                             secrets.</p>
-                        <p>Even better, the masked information is automatically restored in the AI response, so users still see the correct content while the external AI service receives a safer version of the request.</p>
-                        <p>If you want to verify how this works before enabling it broadly, the same preferences page includes a <uicontrol>Test masking</uicontrol> dialog.</p>
+                        <p>The masked information is automatically restored in the AI response, so
+                            users still see the correct content while the external AI service
+                            receives a safer version of the request.</p>
                     </dd>
                 </dlentry>
                 <dlentry>
@@ -92,12 +93,12 @@
                     </dd>
                 </dlentry>
                 <dlentry>
-                    <dt>8. Fine-grained approval for unsafe operations</dt>
+                    <dt>8. Fine-grained approval for other unsafe tools</dt>
                     <dd>
-                        <p>Not all AI actions are equal. Some operations can be previewed or undone,
-                            while others cannot. AI Positron treats tools that cannot be undone or
-                            previewed as <b>unsafe</b>. This includes all MCP tools and tools used
-                            to run command lines.</p>
+                        <p>Some tool calls can be previewed or undone, while others cannot. AI
+                            Positron treats tools that cannot be undone or previewed as
+                                <b>unsafe</b>. This includes all MCP tools and tools used to run
+                            command lines.</p>
                         <p>That means the assistant does not simply decide on its own to execute potentially risky operations. Instead, the user stays in the loop and can approve a single tool call, always allow a specific tool prefix, or keep requiring confirmation.</p>
                     </dd>
                 </dlentry>
@@ -132,8 +133,8 @@
                             and <xref
                                 href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_skills_creation.html"
                                 format="html" scope="external">creating custom AI skills</xref>.</p>
-                        <p>At any moment in time AI Positron puts you, the actual intelligence, in
-                            charge of accepting changes, reviewing and incorporating changes.</p>
+                        <p>At any moment in time AI Positron puts you in charge of accepting
+                            changes, reviewing and incorporating changes.</p>
                     </dd>
                 </dlentry>
             </dl>
@@ -144,7 +145,7 @@
             <p>AI Positron addresses this by combining <b>provider control</b>, <b>data protection</b>, <b>scope limitation</b>, and <b>human approval</b>. This layered design makes it easier to introduce AI gradually: start with a vetted connector, enable masking, restrict project access, and only then expand into RAG or MCP integrations where appropriate.</p>
         </section>
         <section id="practical_adoption_advice">
-            <title>Practical advice for teams adopting AI Positron</title>
+            <title>Practical security advice for teams adopting AI Positron</title>
             <ul>
                 <li>Start with a company approved connector configured in the <xref
                         href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html"
