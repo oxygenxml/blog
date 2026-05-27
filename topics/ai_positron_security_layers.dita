@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="ai_positron_security_layers">
-    <title>AI Positron Assistant - Security Layers</title>
+    <title>AI Positron Assistant Enterprise Security Layers</title>
     <shortdesc><ph keyref="oxygen"/> AI Positron was designed with multiple security layers that help teams adopt AI in a controlled, enterprise-friendly way, from approved model connections and encrypted local data to masked sensitive content, restricted retrieval, and explicit tool approvals.</shortdesc>
     <prolog>
         <author>Radu Coravu</author>
