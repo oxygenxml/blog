@@ -140,7 +140,7 @@
                             generic prompting: they can use precise prompts, target only the current
                             selection or the entire document, choose specific models, invoke tools,
                             validate results, and even insert or replace content in controlled ways.
-                            AI Positron offers validation in accordance  Iwith the custom validation
+                            AI Positron offers validation in accordance with the custom validation
                             rules imposed by the company and terminology checking with the Oxygen
                                 <xref
                                 href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
