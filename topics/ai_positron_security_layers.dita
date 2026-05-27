@@ -23,6 +23,10 @@
         </metadata>
     </prolog>
     <body>
+        <p>This article focuses specifically on AI Positron used with <b>custom connections</b>
+            configured in the <xref
+                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html"
+                format="html" scope="external">AI Service Configuration Preferences</xref>. </p>
         <p>One of the biggest questions organizations ask before adopting AI is simple: <q>How do we keep control?</q> With <ph keyref="oxygen"/> AI Positron, security is not treated as an afterthought. The assistant was designed from the start for enterprise scenarios where large language models need to work together with company-specific policies, privacy requirements, and operational safeguards.</p>
         <p>A useful way to think about AI Positron is as a set of <b>enclosing security layers</b>. Each layer reduces risk in a different way: controlling which model is used, limiting what content can be accessed, masking sensitive information before it leaves your machine, and requiring explicit approval before potentially unsafe tools are executed.</p>
         <p>The result is an AI assistant that can be productive without becoming uncontrolled. Instead of sending everything everywhere, AI Positron gives you multiple checkpoints where administrators and end users can decide what is allowed.</p>
@@ -32,7 +36,16 @@
                 <dlentry>
                     <dt>1. Approved LLM connection</dt>
                     <dd>
-                        <p>With AI Positron Enterprise licensing, you can connect the assistant to an approved and vetted LLM provider of your choice. The <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html" format="html" scope="external">AI Service Configuration Preferences</xref> allow you to define connections to providers such as <b>OpenAI</b>, <b>MS Azure AI</b>, <b>Claude</b>, <b>AWS Bedrock</b>, <b>Google Gemini</b>, and <b>xAI Grok</b>. Additional add-ons are also available for <b>Vertex AI</b> or for a custom AI service connector.</p>
+                        <p>With AI Positron Enterprise licensing, you can connect the assistant to
+                            an approved and vetted LLM provider of your choice by configuring a
+                            custom connection in the <b>Connections</b> section of the <xref
+                                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html"
+                                format="html" scope="external">AI Service Configuration
+                                Preferences</xref>. The custom connection approach allows you to
+                            define connections to providers such as <b>OpenAI</b>, <b>MS Azure
+                                AI</b>, <b>Claude</b>, <b>AWS Bedrock</b>, <b>Google Gemini</b>, and
+                                <b>xAI Grok</b>. Additional add-ons are also available for <b>Vertex
+                                AI</b> or for a custom AI service connector.</p>
                         <p>This matters because many organizations do not want users connecting to arbitrary public AI services. AI Positron lets teams standardize on approved providers and centrally define how those connections are configured.</p>
                     </dd>
                 </dlentry>
@@ -103,7 +116,8 @@
                     </dd>
                 </dlentry>
                 <dlentry>
-                    <dt>9. Control Content Created by the LLM</dt><dd>
+                    <dt>9. Control Content Created by the LLM</dt>
+                    <dd>
                         <p>Security is not only about protecting data. It is also about controlling
                             what the LLM produces. With AI Positron, you can define a <b>project
                                 context prompt</b> and attach <b>additional context files</b> so
