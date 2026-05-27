@@ -2,7 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="ai_positron_security_layers">
     <title>AI Positron Assistant Enterprise Security Layers</title>
-    <shortdesc><ph keyref="oxygen"/> AI Positron was designed with multiple security layers that help teams adopt AI in a controlled, enterprise-friendly way, from approved model connections and encrypted local data to masked sensitive content, restricted retrieval, and explicit tool approvals.</shortdesc>
+    <shortdesc>The <ph keyref="oxygen"/> AI Positron add-on was designed with multiple security
+        layers that help teams adopt AI in a controlled, enterprise-friendly way, from approved
+        model connections and encrypted local data to masked sensitive content, restricted
+        retrieval, and explicit tool approvals.</shortdesc>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
@@ -47,6 +50,9 @@
                                 <b>xAI Grok</b>. Additional add-ons are also available for <b>Vertex
                                 AI</b> or for a custom AI service connector.</p>
                         <p>This matters because many organizations do not want users connecting to arbitrary public AI services. AI Positron lets teams standardize on approved providers and centrally define how those connections are configured.</p>
+                        <p>The <b>connection</b> between the AI Positron Assistant and your
+                            configured LLM connector is <b>direct</b>, <b>no</b> data is passed
+                            through any proxy service or used by our organization in any way.</p>
                     </dd>
                 </dlentry>
                 <dlentry>
@@ -66,15 +72,22 @@
                             This can include email addresses, phone numbers, IDs, and API keys. You
                             can also define custom masking patterns for organization-specific
                             secrets.</p>
-                        <p>The masked information is automatically restored in the AI response, so
-                            users still see the correct content while the external AI service
-                            receives a safer version of the request.</p>
+                        <p>The masked information is automatically restored by the AI Assistant in
+                            the AI response, so users still see the correct content while the
+                            external AI service receives a safer version of the request.</p>
                     </dd>
                 </dlentry>
                 <dlentry>
                     <dt>4. Ignore selected project resources from AI processing</dt>
                     <dd>
-                        <p>If certain folders or files should never be considered by the assistant, you can place an <filepath>.aiignore</filepath> file in project folders to exclude resources from AI processing. This is especially useful for confidential drafts, legal material, generated output, or internal-only assets that should remain outside the assistant's working context.</p>
+                        <p>If certain folders or files should never be considered by the assistant,
+                            you can place an <xref
+                                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_ukv_f5h_1fc"
+                                format="html" scope="external"
+                                ><filepath>.ai-ignore</filepath></xref> file in project folders to
+                            exclude resources from AI processing. This is especially useful for
+                            confidential drafts, legal material, generated output, or internal-only
+                            assets that should remain outside the assistant's working context.</p>
                         <p>This layer is simple but powerful: not every file in a repository should be visible to AI, and exclusion rules help enforce that boundary.</p>
                     </dd>
                 </dlentry>
@@ -127,7 +140,7 @@
                             generic prompting: they can use precise prompts, target only the current
                             selection or the entire document, choose specific models, invoke tools,
                             validate results, and even insert or replace content in controlled ways.
-                            AI Positron offers validation in accordance to the custom validation
+                            AI Positron offers validation in accordance  Iwith the custom validation
                             rules imposed by the company and terminology checking with the Oxygen
                                 <xref
                                 href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
