@@ -68,7 +68,11 @@
                         <entry><xref href="https://github.com/raducoravu" format="html"
                                 scope="external">Radu Coravu</xref></entry>
                         <entry>Helping people with XML-related technologies since the start of this
-                            century. <ph keyref="oxygen"/></entry>
+                            century. <ph keyref="oxygen"/>. <xref
+                                href="https://www.youtube.com/@structured-tech-docs" format="html"
+                                scope="external">YouTube Channel</xref>. <xref
+                                href="https://www.linkedin.com/in/radu-coravu-ba9b7bb/"
+                                format="html" scope="external">Linked In.</xref></entry>
                     </row>
                     <row>
                         <entry>Steven Higgs</entry>
