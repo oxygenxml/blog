@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="ai_positron_security_layers">
-    <title>AI Positron Assistant Enterprise Security Layers</title>
+    <title>AI Positron Enterprise Security Layers</title>
     <shortdesc>The <ph keyref="oxygen"/> AI Positron add-on was designed with multiple security
         layers that help teams adopt AI in a controlled, enterprise-friendly way, from approved
         model connections and encrypted local data to masked sensitive content, restricted
@@ -30,7 +30,11 @@
             configured in the <xref
                 href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html"
                 format="html" scope="external">AI Service Configuration Preferences</xref>. </p>
-        <p>One of the biggest questions organizations ask before adopting AI is simple: <q>How do we keep control?</q> With <ph keyref="oxygen"/> AI Positron, security is not treated as an afterthought. The assistant was designed from the start for enterprise scenarios where large language models need to work together with company-specific policies, privacy requirements, and operational safeguards.</p>
+        <p>One of the biggest questions organizations ask before adopting AI is simple: <q>How do we
+                keep control?</q> With Oxygen AI Positron, security is not treated as an
+            afterthought. The assistant was designed from the start for enterprise scenarios where
+            large language models need to work together with company-specific policies, privacy
+            requirements, and operational safeguards.</p>
         <p>A useful way to think about AI Positron is as a set of <b>enclosing security layers</b>. Each layer reduces risk in a different way: controlling which model is used, limiting what content can be accessed, masking sensitive information before it leaves your machine, and requiring explicit approval before potentially unsafe tools are executed.</p>
         <p>The result is an AI assistant that can be productive without becoming uncontrolled. Instead of sending everything everywhere, AI Positron gives you multiple checkpoints where administrators and end users can decide what is allowed.</p>
         <section id="security_layers_overview">
@@ -94,22 +98,38 @@
                 <dlentry>
                     <dt>5. Retrieval-Augmented Generation with explicit scope limits</dt>
                     <dd>
-                        <p>AI Positron can use Retrieval-Augmented Generation (RAG) to search the current project for relevant content, but this behavior is configurable. In the <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/tools_rag_preferences.html" format="html" scope="external">Tools and RAG Preferences</xref>, you can enable project-based RAG, ask for confirmation before each project-based retrieval, and set a <b>content retrieval token limit</b> to cap how much project content may be sent to the AI engine.</p>
+                        <p>AI Positron can use Retrieval-Augmented Generation (RAG) to search the
+                            current project for relevant content, but this behavior is configurable.
+                            In the <xref
+                                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/tools_rag_preferences.html"
+                                format="html" scope="external">Tools and RAG Preferences</xref>
+                            page, you can enable project-based RAG, ask for confirmation before each
+                            project-based retrieval, and set a <b>content retrieval token limit</b>
+                            to cap how much project content may be sent to the AI engine.</p>
                         <p>You can also restrict where tools are allowed to read and write by using the <uicontrol>Limit read/write access to</uicontrol> setting. By default, access is restricted to the project directory and the directory of the current root map.</p>
                         <p>In other words, AI Positron does not have to search your entire machine. You can narrow its working area to the places that make sense for the current documentation project.</p>
                     </dd>
                 </dlentry>
                 <dlentry>
-                    <dt>6. Controlled access to external web sites</dt>
+                    <dt>6. Controlled access to external websites</dt>
                     <dd>
-                        <p>When the assistant attempts to retrieve content from a web site, AI Positron can ask for explicit user confirmation first. The <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/tools_rag_preferences.html" format="html" scope="external">Tools and RAG Preferences</xref> include an option to <uicontrol>Ask for confirmation before retrieving content from web sites</uicontrol>, enabled by default.</p>
+                        <p>When the assistant attempts to retrieve content from a website, AI
+                            Positron can ask for explicit user confirmation first. The <xref
+                                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/tools_rag_preferences.html"
+                                format="html" scope="external">Tools and RAG Preferences</xref> page
+                            includes an option to <uicontrol>Ask for confirmation before retrieving
+                                content from websites</uicontrol> (enabled by default).</p>
                         <p>This is an important safeguard against silent browsing. Users remain aware when external content is about to be pulled into the AI context, and they can decide whether a particular host should be trusted.</p>
                     </dd>
                 </dlentry>
                 <dlentry>
                     <dt>7. Controlled Model Context Protocol (MCP) tool access</dt>
                     <dd>
-                        <p>AI Positron can be extended with tools provided through the <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/model_context_protocol_preferences.html" format="html" scope="external">Model Context Protocol Preferences</xref>. This is powerful, but it is also where strong controls matter most.</p>
+                        <p>AI Positron can be extended with tools provided through the <xref
+                                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/model_context_protocol_preferences.html"
+                                format="html" scope="external">Model Context Protocol
+                                Preferences</xref> page. This is powerful, but it is also where
+                            strong controls matter most.</p>
                         <p>By default, tool calls obtained from MCP servers require user approval.
                             The <xref
                                 href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/unsafe_tool_approval_preferences.html"
@@ -160,7 +180,7 @@
                             and <xref
                                 href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_skills_creation.html"
                                 format="html" scope="external">creating custom AI skills</xref>.</p>
-                        <p>At any moment in time AI Positron puts you in charge of accepting
+                        <p>At any moment in time, AI Positron puts you in charge of accepting
                             changes, reviewing and incorporating changes.</p>
                     </dd>
                 </dlentry>
@@ -176,9 +196,12 @@
             <ul>
                 <li>Start with a company approved connector configured in the <xref
                         href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html"
-                        format="html" scope="external">AI Service Configuration
-                    Preferences</xref>.</li>
-                <li>Enable built-in masking and add custom patterns for organization-specific secrets in the <xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/privacy_preferences.html" format="html" scope="external">Privacy Preferences</xref>.</li>
+                        format="html" scope="external">AI Service Configuration Preferences</xref>
+                    page.</li>
+                <li>Enable built-in masking and add custom patterns for organization-specific
+                    secrets in the <xref
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/privacy_preferences.html"
+                        format="html" scope="external">Privacy Preferences</xref> page.</li>
                 <li>Use <filepath>.aiignore</filepath> files to exclude confidential folders from AI processing.</li>
                 <li>Keep project-based RAG enabled only for the folders that should actually contribute context, and use confirmation prompts when needed.</li>
                 <li>Be conservative with MCP integrations. Prefer read-only or narrowly scoped servers where possible, and review unsafe tool approvals regularly.</li>
@@ -187,7 +210,7 @@
         </section>
         <section id="learn_more">
             <title>Learn more</title>
-            <p>A recording in which I show in Oxygen all these security aspects is available on my
+            <p>A recording where I show all these security aspects in Oxygen is available on my
                 YouTube Channel: <object data="https://www.youtube.com/embed/kkrdry1m0F0&amp;t=91s"
                     outputclass="iframe">
                     <param name="allowfullscreen"/>
