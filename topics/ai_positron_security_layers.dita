@@ -187,6 +187,11 @@
         </section>
         <section id="learn_more">
             <title>Learn more</title>
+            <p>A recording in which I show in Oxygen all these security aspects is available on my
+                YouTube Channel: <object data="https://www.youtube.com/embed/kkrdry1m0F0&amp;t=91s"
+                    outputclass="iframe">
+                    <param name="allowfullscreen"/>
+                </object></p>
             <p>If you want to explore the official documentation behind these controls, start with these pages:</p>
             <ul>
                 <li><xref href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html" format="html" scope="external">AI Service Configuration Preferences</xref></li>
