@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ms3_2by_yhc">
+    <title>DITA OT Day Recordings Overview</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2026-01-15"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>More than 10 years ago, we started sponsoring the <b>DITA OT Day</b> events. These events
+            are dedicated to the <xref href="https://www.dita-ot.org/" format="html"
+                scope="external">DITA Open Toolkit project</xref>, its <xref
+                href="https://www.dita-ot.org/who_we_are" format="html" scope="external">main
+                developers</xref>, and the community. During the past decade, we hosted 9 DITA OT
+            Day events, with the 10th one coming soon on the <xref
+                href="https://www.oxygenxml.com/events/2026/dita-ot_day.html" format="html"
+                scope="external">1st of February</xref>. For each event, we recorded lots of
+            sessions and then made them available online.</p>
+        <p>Here is a list of all presentations made in all the DITA OT Day events so far:<table
+                frame="all" rowsep="1" colsep="1" id="table_lct_gcy_yhc">
+                <title>DITA OT Day Presentation Recordings</title>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="c1" colwidth="0.46*"/>
+                    <colspec colnum="2" colname="c2" colwidth="2.17*"/>
+                    <colspec colnum="3" colname="newCol4" colwidth="0.96*"/>
+                    <thead>
+                        <row>
+                            <entry>Year</entry>
+                            <entry>Presentation</entry>
+                            <entry>Presenter</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=tEEChWnh-Bw"
+                                    format="html" scope="external">DITA-OT New Features and
+                                    Enhancements</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=CErroCL4I24"
+                                    format="html" scope="external">DITA-OT and DITA 2.0: who’s done
+                                    what now?</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=zKSpl665IHk"
+                                    format="html" scope="external">Welcome to DITA-OT Community:
+                                    Where Code meets Passion</xref></entry>
+                            <entry>Justyna Hietala</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=c1Shob-P5S8"
+                                    format="html" scope="external">Replacement keyspace constructor
+                                    for Open Toolkit</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=zfhZCT_uzCg"
+                                    format="html" scope="external">Learning Assessment QTI
+                                    Output</xref></entry>
+                            <entry>Brianna Stevens-Russell</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=FgCBS7S7MwQ"
+                                    format="html" scope="external">Building an Ant based environment
+                                    around the DITA OT</xref></entry>
+                            <entry>Eric Sirois</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Eip_E2s-K8I"
+                                    format="html" scope="external">DITA-OT in the Age of AI:
+                                    Bridging Technical Writing and Artificial
+                                Intelligence</xref></entry>
+                            <entry>Amit Siddhartha</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=RTj0fIoioEI"
+                                    format="html" scope="external">Providing content to AI engines
+                                    using DITA OT plugins</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=3rKgIF80TPU"
+                                    format="html" scope="external">Automating Compliance
+                                    Verification for Documentation Standards Using AI</xref></entry>
+                            <entry>Alex Jitianu</entry>
+                        </row>
+                        <row>
+                            <entry>2025</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=p7qwoP1FFbQ"
+                                    format="html" scope="external">Single Source Publishing? Bury
+                                    the Hatchet with DITA-OT</xref></entry>
+                            <entry>Snehal Borole, Ritu Saxena</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=XRgeg6HGvCE"
+                                    format="html" scope="external">Retrospective - DITA-OT
+                                    improvements between 3.7 and 4.1</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=bR5Nkc_On-Y"
+                                    format="html" scope="external">Moving an HTML plugin to
+                                    preprocess2: how scared should you be?</xref></entry>
+                            <entry>Robert D. Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=gr9wCgzBQzs"
+                                    format="html" scope="external">IBM Workflow Manager: an
+                                    automated build environment</xref></entry>
+                            <entry>Guillaume Delory</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=vTOPFvX_7z8"
+                                    format="html" scope="external">From zero to DITA-OT hero – a
+                                    story of a DITA-OT implementation in a small documentation
+                                    team</xref></entry>
+                            <entry>Justyna Hietala</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=OyIx6HhEcYI"
+                                    format="html" scope="external">Cheap and Easy Cross-Deliverable
+                                    Link Implementation</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=TZPkZufK9aA"
+                                    format="html" scope="external">Deploying and Maintaining DITA
+                                    OTs in an Enterprise environment</xref></entry>
+                            <entry>Eric Sirois</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Gcy7qDXIOpg"
+                                    format="html" scope="external">DITA-OT plug-in for work
+                                    instructions: Say goodbye to manual summaries and hello to
+                                    accuracy and efficiency!</xref></entry>
+                            <entry>Pieterjan Vandenweghe</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Tf_DhREpDfk"
+                                    format="html" scope="external">Publishing with iiRDS from
+                                    DITA</xref></entry>
+                            <entry>Marion Knebel</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=uAH6RqUj0r0"
+                                    format="html" scope="external">DITA and Markdown
+                                    Interoperability using new schema-provider extension
+                                    mechanism</xref></entry>
+                            <entry>John Kirkilis</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=pnixiGAhuyM"
+                                    format="html" scope="external">DITA-OT and ensuring DITA Map
+                                    conversion</xref></entry>
+                            <entry>Tejas Pradip Barhate</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=OQ5MouoOc9Y"
+                                    format="html" scope="external">PDF5-ML Plugin
+                                Update</xref></entry>
+                            <entry>Tony Graham</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=UJlXzmKLX88"
+                                    format="html" scope="external">DITA-OT "How far can you
+                                    go"</xref></entry>
+                            <entry>Helmut Scherzer</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Yxg7vkjVt7s"
+                                    format="html" scope="external">Using DITA Open Toolkit Project
+                                    to Implement a Publishing Service in a Commercial
+                                    Application</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=2G5dga-EyXE"
+                                    format="html" scope="external">Syntax Diagrams: If you can't
+                                    avoid them...</xref></entry>
+                            <entry>Frank Wegmann</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=4hOTxBjxMug"
+                                    format="html" scope="external">Lessons Learned: Migrating
+                                    DITA-OT For an IT Hardware Product Documentation</xref></entry>
+                            <entry>Amit Siddhartha</entry>
+                        </row>
+                        <row>
+                            <entry>2024</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Mg3Qwy4645Q"
+                                    format="html" scope="external">Search, Style and More -
+                                    Extending DITA Bootstrap</xref></entry>
+                            <entry>Jason Fox</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=ZMYryCJCrlg"
+                                    format="html" scope="external">Making the migration leap:
+                                    jumping across versions to the latest DITA-OT</xref></entry>
+                            <entry>Robert D. Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=tx9Ei5-Yl1w"
+                                    format="html" scope="external">Technical values</xref></entry>
+                            <entry>Stefan Jung</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=otD26JUexbY"
+                                    format="html" scope="external">Avoiding duplicate effort with
+                                    post-preprocessing</xref></entry>
+                            <entry>Tim Grantham</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=wpKNF3KEe6M"
+                                    format="html" scope="external">DITA and Markdown and Docker, oh
+                                    my…</xref></entry>
+                            <entry>John Kirkilis</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=gEbigUC3LDE"
+                                    format="html" scope="external">Scaling the DITA Open Toolkit for
+                                    Enterprise Use</xref></entry>
+                            <entry>Robert Anderson and John Kirkilis</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=iQHhp9vZCow"
+                                    format="html" scope="external">Simpler custom PDFs - The user
+                                    perspective</xref></entry>
+                            <entry>Roger Sheen</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=N602wR7qoNE"
+                                    format="html" scope="external">Simpler custom PDFs - The
+                                    technical details</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=ovAkCoxxBYI"
+                                    format="html" scope="external">Various DITA publishing ideas
+                                    experimented on the Oxygen XML Blog</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=S7wgTKbdQzI"
+                                    format="html" scope="external">Pushing square pegs into round
+                                    holes</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=yXF89Oxxb8I"
+                                    format="html" scope="external">Extending Doctales reveal.js with
+                                    CSS Grid</xref></entry>
+                            <entry>Lief Erickson</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=EP4X1CVNc7w"
+                                    format="html" scope="external">Supercharging DITA-OT Webhelp
+                                    creation</xref></entry>
+                            <entry>Jang Graat</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=KOkxPHiBUzU"
+                                    format="html" scope="external">Our experience helping the
+                                    DITA-OT project as a commercial company</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2022</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=AaXj_Nw0wQ8"
+                                    format="html" scope="external">DITA HTML Styling via Bootstrap
+                                    5</xref></entry>
+                            <entry>Jason Fox</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=HRZJ2AyvmVU"
+                                    format="html" scope="external">Trim your toolkit with this one
+                                    weird trick!</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=5DD7pshOYMQ"
+                                    format="html" scope="external">Running on someone else’s
+                                    computer</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=hUXUwLo4tjc"
+                                    format="html" scope="external">Various useful Open source
+                                    plugins to enhance DITA publishing</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=rH8hjkBeOAI"
+                                    format="html" scope="external">AH-WML DITA-to-Word
+                                    Plug-in</xref></entry>
+                            <entry>Tony Graham</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=7VKZKTrS51A"
+                                    format="html" scope="external">One file to rule them all (DITA
+                                    Project)</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=PZGhvhstOBU"
+                                    format="html" scope="external">Editing DITA Open Toolkit Project
+                                    files</xref></entry>
+                            <entry>George Bina</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=vobY_ha5nd0"
+                                    format="html" scope="external">All the cool kids are using
+                                    JavaScript</xref></entry>
+                            <entry>Jason Fox</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=icbLaNGdV8c"
+                                    format="html" scope="external">All the cool kids are using the
+                                    Cloud</xref></entry>
+                            <entry>Jason Fox</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=cd7XThpkivw"
+                                    format="html" scope="external">The Art of doing
+                                nothing</xref></entry>
+                            <entry>Jason Fox</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=EFmQgUOUMCQ"
+                                    format="html" scope="external">Case Study of Taxonomy and Search
+                                    for DITA-OT</xref></entry>
+                            <entry>Lief Erickson</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=HA8_An6AjPQ"
+                                    format="html" scope="external">Generating metrics from your DITA
+                                    project</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2019</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=S8P6Ylmp-UI"
+                                    format="html" scope="external">Easy as pie PDF customizations
+                                    using CSS</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=23aIkqJG_yE"
+                                    format="html" scope="external">DITA-OT Website Survey
+                                    Results</xref></entry>
+                            <entry>Lief Erickson</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=4WuaT4PjV1w"
+                                    format="html" scope="external">DITA, Gradle and Git: a small
+                                    team approach to publishing</xref></entry>
+                            <entry>Lionel Moizeau</entry>
+                        </row>
+                        <!-- 2018 DITA-OT Day Presentations (moved to top) -->
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=_bUsrS5wG7Y"
+                                    format="html" scope="external">Comparison between the DocBook
+                                    and DITA publishing systems</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=gVbxiR0x4Hg"
+                                    format="html" scope="external">Installing DITA-OT on macOS via
+                                    Homebrew</xref></entry>
+                            <entry>Roger Sheen</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=qgRrz-3uLs4"
+                                    format="html" scope="external">Plug-in installation made
+                                    easier</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=PNIqLwwMwCs"
+                                    format="html" scope="external">Meta DITA samples: testing around
+                                    the edge cases</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=SK9_FiJiKQs"
+                                    format="html" scope="external">Step by step implementation of a
+                                    DITA Open Toolkit plugin</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=MQRli3XICUo"
+                                    format="html" scope="external">Unit Testing DITA-OT Plugin
+                                    Extensions</xref></entry>
+                            <entry>Jason Fox</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=BPv_vJfPrBc"
+                                    format="html" scope="external">Overview of dita-semia
+                                    open-source plugins for DITA-OT</xref></entry>
+                            <entry>Patrik Stellmann</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=riM9MGsaJu4"
+                                    format="html" scope="external">A fast path for building data
+                                    assets from DITA</xref></entry>
+                            <entry>Francois Violette</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=AO26SuibfaI"
+                                    format="html" scope="external">Apply your style guide rules
+                                    during the publication</xref></entry>
+                            <entry>Stefan Eike</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=rSGDFYf-Pj4"
+                                    format="html" scope="external">DITA-OT and DocOps</xref></entry>
+                            <entry>Quick van Rijt</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=x6pe7KXicpA"
+                                    format="html" scope="external">Twisted XSLT Tricks: Making
+                                    Column Switching Work for FOP</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2018</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=zaCfxYBw1m4"
+                                    format="html" scope="external">Who are you calling “stale”
+                                    ‽</xref></entry>
+                            <entry>Robert Anderson, Roger Sheen, Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=87U-NSRj2OY"
+                                    format="html" scope="external">We shall call it...
+                                    preprocess...2!</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=HoCJ7sAkE7Q"
+                                    format="html" scope="external">Accessibility in
+                                DITA-OT</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=GJXB5R9CZyI"
+                                    format="html" scope="external">DITA Validation and
+                                    spell-checking</xref></entry>
+                            <entry>Jason Fox</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Q-Bc2nu7mcM"
+                                    format="html" scope="external">Lightning Talk: Generating SVG
+                                    syntax diagrams with plugins for all output
+                                formats</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=CgLQLCRCsM8"
+                                    format="html" scope="external">Lightning Talk: Managing a large
+                                    scale build environment with 50+ custom plugins</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=whVeHKMvkSU"
+                                    format="html" scope="external">Markdown support
+                                    inside-out</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Ywi2XlBZnf0"
+                                    format="html" scope="external">Using CSS to style the PDF
+                                    output</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=zrTAhh-0ULw"
+                                    format="html" scope="external">Bootstrapping DITA - Customizing
+                                    HTML output for modern web frameworks</xref></entry>
+                            <entry>Roger Sheen</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=i864p8MwH_s"
+                                    format="html" scope="external">Lightning Talk: Automatically
+                                    Create Targeted Review Docs for your SMEs</xref></entry>
+                            <entry>Leigh White</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=puYcGaJYzfc"
+                                    format="html" scope="external">Lightning Talk: Locale-Aware
+                                    Sorting and Text Handling in the Open Toolkit</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=NMglQF2KJLU"
+                                    format="html" scope="external">Lightning Talk: DCQL - the Dita
+                                    Cascading Query Language</xref></entry>
+                            <entry>Jang Graat</entry>
+                        </row>
+                        <row>
+                            <entry>2017</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=vWKm0fNfw1A"
+                                    format="html" scope="external">What are we missing? Where would
+                                    you like to see us go?</xref></entry>
+                            <entry>DITA OT Team</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=jfgg8xJ7fI0"
+                                    format="html" scope="external">Internationalization and the
+                                    DITA-OT: Who does what?</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=9nL1OaLMZ2w"
+                                    format="html" scope="external">Seven Open-Source DITA OT plugins
+                                    developed by Oxygen</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=wBGU_fTpL9c"
+                                    format="html" scope="external">DITA-OT internals and future
+                                    development plans</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Hdb3ctTrwFc"
+                                    format="html" scope="external">Lightning Talk: Simplified
+                                    contribution process for the DITA-OT
+                                documentation</xref></entry>
+                            <entry>George Bina</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=biYF4pNPyPw"
+                                    format="html" scope="external">Lightning Talk: Documentation
+                                    Development(s)</xref></entry>
+                            <entry>Roger Sheen</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=AVAYrMydy88"
+                                    format="html" scope="external">Lightning talk: Gotcha! Upgrading
+                                    PDF plugins to DITA OT 2.x</xref></entry>
+                            <entry>Leigh White</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=QW9RE-eUhV0"
+                                    format="html" scope="external">Using the Open Toolkit Through
+                                    Docker Containers</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=rBPK93UdrwQ"
+                                    format="html" scope="external">Large Scale Production Using
+                                    Project Maps</xref></entry>
+                            <entry>Youssef BENNANI</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=cJJtbaf-8hM"
+                                    format="html" scope="external">Testing in DITA-OT</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=IQBRW35Vr-c"
+                                    format="html" scope="external">Codeblock Quality Assurance
+                                    instead of Errata</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=WpRsOONVzvE"
+                                    format="html" scope="external">DITA terminology management and
+                                    checking</xref></entry>
+                            <entry>Stefan Jung</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=CMZi4TuoEAs"
+                                    format="html" scope="external">The use-cases for a "DITA to
+                                    resolved DITA" transformation</xref></entry>
+                            <entry>George Bina</entry>
+                        </row>
+                        <row>
+                            <entry>2016</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=5KApcPDO_KU"
+                                    format="html" scope="external">Long term DITA-OT
+                                planning</xref></entry>
+                            <entry>Kris Eberlein</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=_Dv9VbKIhCA"
+                                    format="html" scope="external">What's new in
+                                DITA-OT</xref></entry>
+                            <entry>Kris Eberlein</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=GCD062QK1UM"
+                                    format="html" scope="external">DITA-OT Patterns and
+                                    Anti-patterns</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=NqRZdf7jaXQ"
+                                    format="html" scope="external">Lightning talk: Why "startcmd" is
+                                    not your friend</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=Xbfetsfl1Q8"
+                                    format="html" scope="external">Lightning talk: Markdown
+                                    plugin</xref></entry>
+                            <entry>Roger Sheen</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=gW-53nhOYws"
+                                    format="html" scope="external">PDF generation with
+                                CSS</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=GlFUApPTBFY"
+                                    format="html" scope="external">DITA-OT: Inside the black
+                                    box</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=ji7KjNlBQ7M"
+                                    format="html" scope="external">Lightning talk: DITA-OT ...
+                                    reloaded!</xref></entry>
+                            <entry>Helmut Scherzer</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=L_cUIx_OVxo"
+                                    format="html" scope="external">Lightning talk: PDF5-ML Plug-in -
+                                    features for practical use</xref></entry>
+                            <entry>Toshihiko Makita</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=4fexV5KcSPc"
+                                    format="html" scope="external">Lightning talk: DITA
+                                    Community</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=htkTCxbx9gg"
+                                    format="html" scope="external">Creating DITA-OT
+                                    constraint/specialisation plugins</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=F8R53PtTnfo"
+                                    format="html" scope="external">How to run DITA-OT</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=LcrR0YUFlQ4"
+                                    format="html" scope="external">Lightning talk: Parameters
+                                    annotations for DITA-OT plugins</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=OvC21wh8vTo"
+                                    format="html" scope="external">Lightning talk: Publishing with
+                                    DITA-OT - the CMS perspective</xref></entry>
+                            <entry>Jean-François Ameye</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=ppODH6uGMzU"
+                                    format="html" scope="external">Lightning talk: Selling DITA with
+                                    demo data</xref></entry>
+                            <entry>Joe Golner</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=9TfRvar6keA"
+                                    format="html" scope="external">Lightning talk: Multiple OT with
+                                    Git</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2015</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=2iiHnLaG9_I"
+                                    format="html" scope="external">Lightning talk: DITA-OT
+                                    documentation update</xref></entry>
+                            <entry>Roger Sheen</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=R8T5TQAAlRY"
+                                    format="html" scope="external">Overview of the DITA Open
+                                    Toolkit</xref></entry>
+                            <entry>Kris Eberlein</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=qvlGIdHqHWk"
+                                    format="html" scope="external">Looking under the hood of the
+                                    DITA Open Toolkit</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=8V9fSv1KG84"
+                                    format="html" scope="external">Lightning talk - Contributing to
+                                    the Toolkit via GitHub</xref></entry>
+                            <entry>Roger Sheen</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=eCqwjKCvX8Y"
+                                    format="html" scope="external">RNG to DTD and XSD using the DITA
+                                    Open Toolkit</xref></entry>
+                            <entry>Eliot Kimber</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=dHhWPnqbsho"
+                                    format="html" scope="external">Extending the DITA Open Toolkit:
+                                    How crazy can you get?</xref></entry>
+                            <entry>Robert Anderson</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=jyf_MdWu3JA"
+                                    format="html" scope="external">Lightning talk - dita2rdf: from
+                                    trees to triples</xref></entry>
+                            <entry>Colin Maudry</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=63GvGyqoYr8"
+                                    format="html" scope="external">PDFs from the DITA Open Toolkit:
+                                    The Easy and the Not So Easy</xref></entry>
+                            <entry>Leigh White</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=zeQOwuth3r8"
+                                    format="html" scope="external">DITA Open Toolkit PDF plugins
+                                    without fuss, muss, or writing XSL-FO</xref></entry>
+                            <entry>Jarno Elovirta</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=f8e3WFVbbeo"
+                                    format="html" scope="external">DITA Open Toolkit PDF generation
+                                    with CSS</xref></entry>
+                            <entry>Radu Coravu</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=3l7hpfSfnP4"
+                                    format="html" scope="external">Lightning talk - SCORM wrapper
+                                    for DITA to SCORM</xref></entry>
+                            <entry>Hal Trent</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=PHxwYhDh_iM"
+                                    format="html" scope="external">Lightning talk - Publishing DITA
+                                    content re-used in different context in EPUB and Eclipse
+                                    Infocenter by using DITA OT</xref></entry>
+                            <entry>Gunthilde Sohn</entry>
+                        </row>
+                        <row>
+                            <entry>2014</entry>
+                            <entry><xref href="https://www.youtube.com/watch?v=74ADownFi8M"
+                                    format="html" scope="external">Lightning talk - Providing
+                                    designers a flexible way to publish DITA content into Adobe
+                                    InDesign</xref></entry>
+                            <entry>Mark Poston</entry>
+                        </row>
+                        <!-- End 2018 DITA-OT Day Presentations -->
+                    </tbody>
+                </tgroup>
+            </table></p>
+    </body>
+</topic>

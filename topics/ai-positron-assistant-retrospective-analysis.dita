@@ -53,7 +53,7 @@
         </section>
         <section><title>Predefined actions</title>Over time, we improved how we write prompts for
             the many <xref
-                href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_z5l_qbx_jbc"
+                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__section_z5l_qbx_jbc"
                 format="html" scope="external">predefined actions</xref> that come with the add-on.
             For each action, we try to give a clear prompt with lots of details so the AI engine can
             produce the best results. We test our predefined actions using both manual and automatic
@@ -61,7 +61,7 @@
                 <b>Anthropic Claude</b>, like <b>Sonnet</b>.</section>
         <section><title>Custom actions</title>We wanted to give companies the flexibility to create
             their own <xref
-                href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__section_rly_wp4_wxb"
+                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html"
                 format="html" scope="external">custom actions</xref> using specific prompts to solve
             their unique problems. With the add-on, we provide a <b>JSON</b> schema that defines all
             aspects of implementing custom AI actions. The key to a successful action is to make it
@@ -77,7 +77,7 @@
                         Draft</uicontrol> use the AI engine to expand existing content and create
                     valid DITA XML content. Since AI engines can make mistakes if they don't have
                     enough details, we added support for <xref
-                        href="https://www.oxygenxml.com/doc/ug-addons/topics/ai_positron.html#ai_positron__ai-p-rag"
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/tools_rag_preferences.html"
                         format="html" scope="external"><b>RAG</b></xref> (retrieval augmented
                     generation) functions. These functions use the existing project content to give
                     the AI engine enough useful information to create new DITA XML content. A common

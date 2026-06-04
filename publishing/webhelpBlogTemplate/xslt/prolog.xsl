@@ -18,7 +18,7 @@
             </div>
         </xsl:if>
         <!-- Display the number of minutes it takes to read the article -->
-        <div style="color: gray;">
+        <div class="label inPage">
             <xsl:variable name="fileContent" select="/"/>
             <xsl:variable name="text" select="normalize-space($fileContent)"/> 
         	<xsl:variable name="textWithoutSpaces" select="translate($text, ' ', '')" /> 

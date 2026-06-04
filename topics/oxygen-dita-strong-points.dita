@@ -63,6 +63,10 @@
             <li>Support to send DITA content to reviewers using the <xref
                     href="https://www.oxygenxml.com/content_fusion.html" format="html"
                     scope="external">Content Fusion add-on</xref>.</li>
+            <li>Integration with the <xref href="ai_positron.dita"/> add-on to use a variety of
+                builtin AI powered actions, create your own custom AI actions or vibe author, use
+                the chat to generate documentation drafts or change the content in your
+                project.</li>
         </ul>
     </body>
 </topic>

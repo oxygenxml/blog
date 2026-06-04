@@ -25,7 +25,7 @@
           There is also a <xref href="https://github.com/AntennaHouse/ah-dita" format="html"
             scope="external">DITA specialization</xref> plugin which allows you to set specific
           formatting attributes directly to DITA elements.</li>
-        <li>The <xref href="https://contiem.com/software/publishing-software/topleaf/" format="html"
+        <li>The <xref href="https://contiem.com/software/topleaf-xml-publishing/" format="html"
             scope="external">TopLeaf</xref> XML Publisher commercial product allows you to produce
           various outputs like PDF and EPUB from XML content. The application also has a visual PDF
           layout formatter, it comes also with a DITA OT plugin and has installation instructions

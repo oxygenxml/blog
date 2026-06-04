@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="vibing_with_ai_positron">
+    <title>Practical Steps for Vibe Authoring with AI Positron</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2025-11-01"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>We initially started work on the <uicontrol>AI Positron</uicontrol> add-on for <ph
+                keyref="oxygen"/> more than 2 years ago by creating useful AI actions to <b>improve
+                readability</b> of content, <b>correct grammar</b>, <b>translate</b>,
+                <b>proofread</b>, and so on. Gradually, we realized that even when invoking our
+            carefully made prompts wrapped as such AI actions, you need flexibility to further
+            discuss the results with the AI. So we added support to create custom AI actions
+            specific to your needs. Such AI actions, based on prompts tuned by your experts (or
+            ours), continue to be useful for precise use cases and for people who are just starting
+            to use AI tools.</p>
+        <p>In time, we also started to explore and expand the capabilities of using chat to converse
+            with the AI, attach all sorts of file types (<filepath>PDF</filepath>,
+                <filepath>Word</filepath>, <filepath>Markdown</filepath>, images) to <b>create
+                documentation drafts</b>, <b>explore</b>, and <b>make changes</b> in the current
+            project.</p>
+        <p>The chat view in any <b>AI Assistant</b> application like <uicontrol>AI
+                Positron</uicontrol> is the new <uicontrol>console</uicontrol>; you use it to
+                <b>direct</b> the AI, <b>affect changes</b>, <b>preview</b> them, and refine until
+            you have a working draft. You remain in control of a <b>powerful and imperfect</b> tool.
+            As before, in the past, computers have moved writing and coding to a higher level of
+            abstraction.</p>
+        <section id="section_kqy_tnn_jhc">
+            <title>Vibe Authoring</title>
+            <p>I would define the <b>Vibe Authoring</b> support in the <b>AI Positron</b> add-on as
+                a feature that allows you to:<ul id="ul_pjh_xvk_3hc">
+                    <li>Define a <b>project context prompt</b> that gives the AI models general
+                        information about your project, important style guide, terminology, and
+                        structure rules.</li>
+                    <li><b>Chat</b> with the AI to <b>explore</b> the current project's contents or
+                        to <b>affect changes</b> in the project. All changes made by the AI can be
+                            <b>viewed</b> and <b>reverted</b>, if necessary.</li>
+                    <li>Connect <b>Model Context Protocol</b> servers to provide tools that
+                        integrate <b>AI Positron</b> with other data sources in your company (for
+                        example, ticketing system, issues list, etc.).</li>
+                </ul></p>
+        </section>
+        <section id="section_igw_5zy_dhc">
+            <title>Novice to Expert</title>
+            <p>If one were to attempt to divide people into novices and experts, they would soon
+                figure out that each of us is a <b>novice</b> in certain fields and an <b>expert</b>
+                in others. </p>
+            <p>As novices, we use out-of-the-box tools and frameworks with a minimum of
+                customization to obtain poor results. We cannot explain either when the tool does
+                not work or when it does. When we do not obtain quality content as novices, we blame
+                the tools.</p>
+            <p>In time, by <b>reading</b>, <b>writing</b>, and <b>making mistakes</b>, we evolve to
+                understand the tools and frameworks we use. Taking some time to understand these
+                tools and to customize them gives us better and more consistent results. </p>
+            <p>This article is an attempt to give you a better understanding of how the <ph
+                    keyref="oxygen"/>
+                <uicontrol>AI Positron</uicontrol> add-on works and how it can be customized to
+                maximize the quality of your vibe authoring interactions.</p>
+            <p>I am not of the opinion that we must consider using AI tools for all of our daily
+                work; our brains need the effort and work we put into <b>writing</b> to better
+                understand the task at hand. There are still many activities that can be
+                accomplished more quickly and with sufficient quality (generating drafts, improving
+                content quality) by using AI tools in a controlled manner.</p>
+        </section>
+        <section id="section_ecx_l4y_dhc"><title>Use a Version Control System</title><p>Sometimes,
+                you need to <b>view</b> and <b>revert changes</b> made by the <b>AI</b>, to keep a
+                    <b>history</b> of past changes in your project. You also need to
+                    <b>collaboratively</b> work with other <b>people</b> or with AI <b>agents</b>,
+                create separate <b>branches</b> for working on features, keep your content
+                    <b>secure</b>, and eventually <b>publish</b> it.</p><p>So a version control
+                system for your project, like <b>Git</b> or a commercial <b>CCMS</b>, is a
+                    <b>must</b>.</p><p><ph keyref="oxygen"/>'s free <b>Git client add-on</b> is a
+                great tool that gives technical documentation writers just about every feature
+                needed to work with Git projects: support to pull, make changes, preview them, push,
+                a useful <b>History</b> side view, switch branches, and stash changes.</p><p><image
+                    href="../images/git-add-on-oxygen.png" id="image_xsy_3ry_dhc" scale="40"
+                /></p><xref href="../git-tech-writers/using_git_for_technical_writing.dita">Using
+                Git For Technical Writing</xref></section>
+        <section id="section_lcw_m4y_dhc">
+            <title>Set up Your Project Context Prompt</title>
+            <p>LLM Models have a <b>limited context window</b> and start out not knowing anything
+                about the intricacies of your current documentation project. They can use tools to
+                explore your project's structure, but it's more efficient to create a <b>project
+                    context prompt</b>, which becomes part of each invoked AI action and chat
+                conversation.</p>
+            <p><xref href="customizing_ai_positron_for_your_dita_xml_project.dita"/>.</p>
+            <p>The project context prompt contains an overview of your project's intention,
+                structure, rules, and style guide. It must be kept as short and informative as
+                possible. In the <uicontrol>AI Positron Preferences</uicontrol> page, you can
+                specify the entire project context prompt either directly or referenced as a
+                separate file that may reside in your project.</p>
+            <p><image href="../images/project-context-prompt-prefs.png" id="image_zkk_fsy_dhc"
+                    scale="40"/></p>
+            <p>The most recent <uicontrol>AI Positron</uicontrol> release added a new AI action
+                named <uicontrol>Generate agent instructions</uicontrol> that can help you create
+                the initial project context prompt content.</p>
+            <p>Examples of project context prompt files for <b>AI Positron</b> in Markdown
+                    format:<ul id="ul_y4l_msy_dhc">
+                    <li><xref
+                            href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md"
+                            format="html" scope="external">Manually created sample context prompt
+                            which defines a project's intention, audience, most important
+                            terminology rules, style guide, and DITA vocabulary
+                            specialization.</xref></li>
+                    <li><xref href="../positron-ai-actions/ai-context.md" format="html">The Oxygen
+                            XML Blog's Context Prompt generated using AI.</xref></li>
+                </ul></p>
+        </section>
+        <section id="section_ol4_n4y_dhc">
+            <title>Choose your LLM Model</title>
+            <p>You need a quality LLM model to make quality changes. An LLM model that is efficient,
+                cost-effective, and has a high context window. From our extensive testing and
+                experience, we generally recommend <b>Claude Sonet 4</b>, <b>Haiku 4.5</b>,
+                    <b>OpenAI GPT 4.1</b> or <b>Gemini 2.5 Flash</b>.</p>
+            <p><b>Context</b> is the key here. The LLM receives a project context prompt, but it
+                also needs to explore the project, read content, and make changes. So your LLM
+                implementation and the platform through which you access it also need to allow
+                    <b>tool calling</b>. Most quality LLM models like the ones above also have
+                    <b>vision</b> support to read images and create, for example, documentation
+                drafts based on screenshots or to generate alternate text for screenshots in the
+                user's guide.</p>
+        </section>
+        <section id="section_lh2_44y_dhc">
+            <title>Choose the Chat Mode</title>
+            <p><b>AI Positron</b> comes with three predefined chat modes:<ul id="ul_qyd_bmg_2hc">
+                    <li><uicontrol>DITA Agent</uicontrol> - Agentic mode that makes changes in a
+                        DITA XML project, comes with a predefined system prompt that instructs the
+                        LLM about the base requirements of working in a DITA XML project and a
+                        minimal style guide of rules. It has access to general tools to explore the
+                        project and make changes, but also to DITA XML-specific tools to obtain the
+                        structure of the DITA map opened in the <b>DITA Maps Manager</b> view,
+                        resolve a content reference to the referenced content, or to find key
+                        definitions that match a specific product name. For example, you can run
+                        prompts like this in the chat view:<codeblock id="codeblock_dnm_rmg_2hc">Replace in the current file all product names with 
+defined key references</codeblock>or:<codeblock id="codeblock_wmz_smg_2hc">Use the attached documents to create a DITA XML topic, 
+add related links in the topic to similar ones, find 
+a good place and insert it in the DITA Map</codeblock><p>
+                            <fig id="fig_ymn_ctg_2hc">
+                                <title>Example: Create a new DITA XML topic from a PDF
+                                    document</title>
+                                <image href="../images/ai/dita-agent-create-topic.gif"
+                                    id="image_tf4_ctg_2hc" scale="50"/>
+                            </fig>
+                        </p>or:<codeblock id="codeblock_vjc_gng_2hc">Add related links in the current topic to similar topics 
+from the project</codeblock><p>
+                            <fig id="fig_utq_gtg_2hc">
+                                <title>Example: Add related links to topic</title>
+                                <image href="../images/ai/compute-rellinks-ai.gif"
+                                    id="image_ex2_htg_2hc" scale="50"/>
+                            </fig>
+                        </p></li>
+                    <li><b>Agent</b> - Generic agent useful for exploring and making changes to a
+                        variety of projects.</li>
+                    <li><b>Planner</b> - An AI agent which takes a complex task, divides it in
+                        smaller tasks and calls sub-agents to sequentially finish each sub-task.
+                        Example of prompt ideas for using the
+                        <b>Planner</b>:<codeblock>Find all places in the project where there are DITA content 
+references and replace them with content key references.</codeblock></li>
+                    <li>or:<codeblock>Create a DITA XML Map and Topics from the attached 
+PDF or Word document containing the documentation for a project/feature.</codeblock></li>
+                    <li><uicontrol>Personas</uicontrol> - Evaluates a task through multiple audience
+                        personas before creating a final plan to implement.</li>
+                    <li><uicontrol>Ask</uicontrol> - Read-only agent useful for exploring and
+                        integrating plans without making actual changes until you switch to one of
+                        the other agents. </li>
+                </ul></p>
+            <p>Each defined agent has a system prompt and references a set of tools that can be used
+                by the LLM. You can define your own agents and have them appear in the <b>Chat</b>
+                view. A general overview of the tools available to these agentic chat modes is
+                available below.</p>
+        </section>
+        <section id="section_jks_p4y_dhc">
+            <title>General Overview of Available Tools</title>
+            <p><uicontrol>AI Positron</uicontrol> comes bundled with a variety of tools that are
+                offered to the LLM to explore and make changes to content. Here are some of the
+                categories of available tools along with prompts you can test for yourself in the
+                    <uicontrol>AI Positron</uicontrol> chat view:<ul id="ul_o4h_kng_2hc">
+                    <li>Tools to explore the overall project. The chat modes have access to:<ul
+                            id="ul_prx_mng_2hc">
+                            <li>Tool that can perform keyword search in the project. For example,
+                                you can ask
+                                    it:<codeblock id="codeblock_wv1_4ng_2hc">Find topics about Git Push in the project 
+and give me an overview of the most suitable ones.</codeblock><note
+                                    id="note_djq_ddr_3hc">This tool relies on the indexing
+                                    capabilities of <ph keyref="oxygen"/>. If you are working with
+                                    DITA maps opened from remote storage systems like a CMS, in the
+                                        <uicontrol>Preferences->Open/Find Resource</uicontrol> page,
+                                    you should check the <uicontrol>Enable indexing for remote
+                                        resources</uicontrol> checkbox.</note></li>
+                            <li>Grep and perform exact string matches in the project, even by
+                                matching inside specific XML elements. For
+                                    example:<codeblock id="codeblock_o14_5ng_2hc">Find places where the Save action is mentioned 
+in DITA &lt;uicontrol> elements.</codeblock><note
+                                    id="note_gqw_5dr_3hc">This tool is available only when working
+                                    with local disk resources. In such a case, you should create a
+                                    project in the <ph keyref="oxygen"/>
+                                    <uicontrol>Project</uicontrol> view for your specific project
+                                    folders.</note></li>
+                            <li>Explore the project folder structure. For
+                                    example:<codeblock id="codeblock_mpd_zng_2hc">Where should I save DITA maps in this project?</codeblock><note
+                                    id="note_vcd_d2r_3hc">This tool is available only when working
+                                    with local disk resources.</note></li>
+                        </ul></li>
+                    <li>Tools to read content from the current or a different file.
+                        Example:<codeblock id="codeblock_n5r_f4g_2hc">Give me suggestions about how to shorten the current document
+contents.</codeblock>You can use this same tool to retrieve content from a
+                        web site, by using as an example such a
+                        prompt:<codeblock>Read through the list of available Oxygen XML addons and give me an overview
+about what I could install to fix my terminology problems: 
+https://www.oxygenxml.com/doc/ug-addons/llms.txt</codeblock></li>
+                    <li>Tools to make large or small changes to the current or to other documents.
+                        Examples:<codeblock id="codeblock_bcf_m4g_2hc">Shorten the title of the current document</codeblock>or:<codeblock id="codeblock_ofl_p4g_2hc">Find and fix logical inconsistencies in the current document</codeblock></li>
+                    <li>Tool to obtain a description for an image, Word or PDF document. Example
+                        prompt:<codeblock>The current file references a couple of images, check if the referenced images
+make sense to be used in the current file's context.</codeblock></li>
+                    <li>Tools to provide validation and terminology problems reported for certain
+                        documents. If you have many style guide rules, it is advisable to implement
+                        them as <xref href="SchematronBCs.dita">Schematron rules</xref> or rules for
+                        the <ph keyref="oxygen"/>
+                        <xref
+                            href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
+                            format="html" scope="external">Terminology Checker</xref> add-on. Once
+                        you implement the checks, you can simply ask the
+                        AI:<codeblock id="codeblock_d55_b1m_2hc">Fix validation and terminology problems in the generated content before saving it to disk.</codeblock></li>
+                    <li>Tools to make XML-aware changes in documents:<ul id="ul_ept_r4g_2hc">
+                            <li>Apply existing XML refactoring operations on documents.
+                                Example:<codeblock id="codeblock_nqd_t4g_2hc">Invoke XML refactor operation to add unique IDs on all pargraphs</codeblock></li>
+                            <li>Apply XML refactoring using XSLT scripts created by the AI. Example:<codeblock id="codeblock_rjq_dpg_2hc">Invoke XML refactor with custom XSLT to 
+replace all &lt;b> elements with &lt;uicontrol></codeblock><p>
+                                    <fig id="fig_bkf_rsg_2hc">
+                                        <title>Example: Use Custom XSLT to Refactor</title>
+                                        <image href="../images/ai/refactor-xml-with-custom-xsl.gif"
+                                            id="image_y3y_qsg_2hc" scale="50"/>
+                                    </fig>
+                                </p></li>
+                        </ul></li>
+                    <li>Tools to call existing AI actions on documents.
+                        Examples:<codeblock id="codeblock_mvv_3pg_2hc">Invoke the Proofread AI action on the current 
+document content, then save the proposed changes 
+to the document</codeblock>or:<codeblock id="codeblock_zml_cqg_2hc">Invoke the improve readability AI action on the current 
+document content, then save the proposed changes 
+to the document</codeblock></li>
+                    <li>Tool to run a command line. The most flexible tool which can provide the
+                        entire operating system's power of searching, making changes, running
+                        applications. Each request by the LLM to run a command line needs to be
+                        approved by you.<p>Examples:
+                            <codeblock>Find the last 10 Git commits on the current opened topic 
+and create a summary for me about what's been changed and by who</codeblock></p></li>
+                </ul><ul>
+                    <li>Tool to copy/move/rename files.
+                        Examples:<codeblock>Improve the title of the current opened topic and then
+modify the file name to match the new title.</codeblock></li>
+                </ul></p>
+        </section>
+        <section id="section_l4l_w4y_dhc">
+            <title>Add Extra Tools with Model Context Protocol</title>
+            <p>The <b>Model Context Protocol</b> Preferences page in <uicontrol>AI
+                    Positron</uicontrol> allows you to connect to various MCP servers and allow the
+                LLM to call tools implemented on remote or local servers.</p>
+            <p>Sample configurations can be found in the <xref
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/model_context_protocol_preferences.html"
+                    format="html" scope="external"><ph keyref="oxygen"/> user's manual</xref>.</p>
+            <p><b>Model Context Protocol</b> gives <b>AI Positron</b> the ability to provide for the
+                LLM close integrations with the issue tracking system or the version control system,
+                for example, to allow the LLM to extract the summary and comments made on a GitHub
+                issue and create a draft documentation topic from it. Example prompt:
+                    <codeblock id="codeblock_jfn_vqg_2hc">Obtain description and comments from the DITA OT GitHub issue number 2021 and create a draft documentation 
+topic using them</codeblock><fig id="fig_pl4_xsg_2hc">
+                    <title>Example: Using MCP to access Atlassian JIRA</title>
+                    <p><b/><object data="../images/ai/DITA%20Agent.m4v" outputclass="video"/></p>
+                </fig><fig id="fig_yq3_nsg_2hc">
+                    <title>Example: Using MCP to access GitHub issues</title>
+                    <image href="../images/ai/mcp-github.gif" id="image_wpw_nsg_2hc" scale="50"/>
+                </fig></p>
+            <p>The entire set of tools provided by <uicontrol>AI Positron</uicontrol> can also be
+                provided to external <b>AI Assistants</b> by starting the entire <ph keyref="oxygen"
+                /> application as a local MCP server.<fig id="fig_fsk_31m_2hc">
+                    <title><ph keyref="oxygen"/> as local MCP server</title>
+                    <object data="../images/ai/claude-code-change-id-oxygen-mcp-preview.mov"
+                        outputclass="video"/>
+                </fig></p>
+        </section>
+        <section id="section_omp_1rg_2hc">
+            <title>Conclusion</title>
+            <p>Obtaining quality output and advice from the LLM, and making accurate changes using
+                it, is all about the application giving the LLM enough context and allowing it to
+                find extra context if the need arises.</p>
+            <p>Starting with the use of quality LLMs, combined with a well-created and distilled
+                project context prompt, then continuing with tools that give the LLM access to
+                explore the project and make consistent changes, your short prompts and commands end
+                up being properly interpreted and acted upon.</p>
+        </section>
+    </body>
+    <related-links>
+        <link
+            href="https://www.oxygenxml.com/events/2026/webinar_vibe_authoring_with_oxygen_ai_positron_8.html"
+            format="html" scope="external">
+            <linktext>Webinar: Vibe Authoring with Oxygen AI Positron 8.0</linktext>
+        </link>
+    </related-links>
+</topic>

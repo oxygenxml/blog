@@ -94,6 +94,7 @@
             <topicref href="../topics/converting_xpr_profiling.dita"/>
         </topicref>
         <topichead navtitle="Other">
+            <topicref href="../topics/dita-ot-day-recordings-overview.dita"/>
             <topicref href="../topics/oxygen_xml_as_a_technical_documentation_solution_faq.dita"/>
             <topicref href="../topics/dita_for_small_teams.dita"/>
             <topicref

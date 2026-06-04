@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ai_autocompletion">
+    <title>AI Autocompletion</title>
+    <shortdesc>This article introduces AI Autocompletion in <ph keyref="oxygen"/> 28.0 and explains
+        how inline, context-aware suggestions help XML developers work faster with structured
+        technologies.</shortdesc>
+    <prolog>
+        <author>Octavian Nadolu</author>
+        <critdates>
+            <created date="2026-03-23"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>AI<indexterm>Autocompletion</indexterm></indexterm>
+                <indexterm>Positron<indexterm>AI Autocompletion</indexterm></indexterm>
+                <indexterm>XML development<indexterm>productivity</indexterm></indexterm>
+                <keyword>AI Autocompletion</keyword>
+                <keyword>Oxygen AI Positron</keyword>
+                <keyword>XSLT</keyword>
+                <keyword>XSD</keyword>
+                <keyword>JSON Schema</keyword>
+                <keyword>Schematron</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>Starting with <ph keyref="oxygen"/> 28.0, you can use <b>AI Autocompletion</b> together
+            with the <b>Oxygen AI Positron</b> add-on to get real-time, context-aware suggestions
+            directly at the caret position in Text mode. The feature reduces repetitive typing,
+            speeds up authoring, and helps you keep structures consistent in technologies such as
+                <b>XSLT</b>, <b>XSD</b>, <b>JSON Schema</b>, <b>Schematron</b>, and others.</p>
+        <object data="https://www.youtube.com/embed/Por8d-MoNqQ?si=EIgaLs61apSWPtFZ" outputclass="iframe" width="560" height="315">
+            <param name="allowfullscreen"/>
+        </object>
+        <section id="what-it-brings">
+            <title>What AI Autocompletion brings to the editor</title>
+            <p>AI Autocompletion is integrated into the existing editing experience. Suggestions
+                appear inline in the <b>Text</b> editing mode, so you do not need to switch to
+                another panel or dialog.</p>
+            <p>As you type, <b>Oxygen AI Positron</b> evaluates the local context and proposes
+                completions such as:</p>
+            <ul id="ul_mcg_hvy_p3c">
+                <li>Code fragments</li>
+                <li>Schema constructs</li>
+                <li>XPath expressions</li>
+                <li>Comments</li>
+                <li>Enhancements based on nearby content</li>
+            </ul>
+            <p>The suggestions are rendered with a subtle shaded gradient so that you can clearly
+                distinguish them from the text you have already entered, while keeping the
+                experience lightweight and non-intrusive.</p>
+        </section>
+        <section id="how-it-works">
+            <title>How it works</title>
+            <p>AI Autocompletion operates in <b>Text</b> editing mode and reacts to what you type.
+                When <ph keyref="oxygen"/> detects that you have entered a new line, it requests a
+                suggestion from the configured AI model and displays it inline at the cursor
+                position.</p>
+            <p>You can use it in two ways:</p>
+            <ol id="ol_ncg_hvy_p3c">
+                <li><p><b>Real-time inline suggestions</b> – The feature proactively proposes
+                        completions while you type. When a suggestion appears, you can either accept
+                        it or keep typing to ignore it.</p><image
+                        href="../images/ai_autocompletion_xsl2.png" id="image_lwz_sgb_q3c">
+                        <alt>Inline AI suggestion completing an XSLT template in Text mode.</alt>
+                    </image></li>
+                <li>
+                    <p><b>On-demand via the Autocomplete action</b> – You can explicitly trigger
+                        autocompletion using the <uicontrol>Autocomplete</uicontrol> action. In this
+                        case, the generated result is also shown in the AI chat view, where you can
+                        inspect the action and refine the output further if needed.<image
+                            href="../images/ai_autocompletion_xsl.png" id="image_cnd_phh_q3c">
+                            <alt>AI Positron panel and editor showing Autocomplete-generated XSLT
+                                code.</alt>
+                        </image></p>
+                </li>
+            </ol>
+            <p>This dual model supports both lightweight inline completion and more deliberate
+                AI-assisted editing workflows.</p>
+        </section>
+        <section id="section_q2x_p2h_q3c">
+            <title>Example workflow in XSLT</title>
+            <p>Consider an XSLT stylesheet where you have already defined several templates that
+                match elements in a book structure. When you start writing a new template for
+                chapter/section in <b>Text</b> mode, AI Autocompletion can:</p>
+            <ul id="ul_s2x_p2h_q3c">
+                <li>Propose a new xsl:template skeleton that mirrors the patterns of your existing
+                    templates.</li>
+                <li>Suggest common xsl:apply-templates or xsl:value-of instructions based on nearby
+                    code.</li>
+                <li>Fill in typical attribute values or XPath expressions that match the surrounding
+                    context.</li>
+            </ul>
+            <p>You remain in full control of the final code, but you spend less time typing
+                boilerplate and more time refining the transformation logic.</p>
+        </section>
+        <section id="accepting-suggestions">
+            <title>Accepting suggestions is effortless</title>
+            <p>The interaction model is simple and designed not to interrupt your editing flow:</p>
+            <ul id="ul_ocg_hvy_p3c">
+                <li>Press <uicontrol>Tab</uicontrol> to accept the current AI suggestion.</li>
+                <li>Press <uicontrol>Shift+Tab</uicontrol> to open the <uicontrol>AI Autocompletion
+                        Preferences</uicontrol> dialog.</li>
+                <li>If the suggestion is not useful, continue typing and the AI adapts. You do not
+                    need to explicitly dismiss the suggestion.</li>
+            </ul>
+            <p>AI Autocompletion is assistive, not disruptive. It offers completions when they are
+                helpful, but it never forces you to change your current workflow.</p>
+        </section>
+        <section id="context-awareness">
+            <title>Why context awareness matters</title>
+            <p>AI Autocompletion adapts to the current file content and structure. Suggestions are
+                generated from the live editing context, not from a static library of snippets.</p>
+            <p>The more context the model can see, the better the completions become. This is
+                especially useful when you work on projects where:</p>
+            <ul id="ul_pcg_hvy_p3c">
+                <li>XSLT templates evolve iteratively.</li>
+                <li>XML schemas are built and refined incrementally.</li>
+                <li>Schematron rules depend on the structure of the documents they validate.</li>
+                <li>JSON Schema definitions must remain internally consistent across multiple
+                    files.</li>
+            </ul>
+            <p>As the surrounding content grows, the AI can propose structural patterns and
+                refinements that better match your current intent.</p>
+        </section>
+        <section id="section_hvj_bfh_q3c">
+            <title>Limitations and best practices</title>
+            <p>AI Autocompletion is a productivity aid, not a replacement for your expertise. Keep
+                the following in mind:</p>
+            <ul id="ul_ivj_bfh_q3c">
+                <li>Always review suggestions for correctness, performance, and style before
+                    accepting them.</li>
+                <li>For very large files, suggestions may focus on the most relevant nearby context
+                    rather than the entire document.</li>
+                <li>If your project contains sensitive or confidential information, make sure your
+                    AI configuration complies with your organization's data handling policies.</li>
+            </ul>
+        </section>
+        <section id="supported-file-types">
+            <title>Supported file types</title>
+            <p>AI Autocompletion is optimized for several key editor types in <ph keyref="oxygen"
+                />:</p>
+            <ul id="ul_qcg_hvy_p3c">
+                <li><b>XSLT</b> – templates, functions, and XPath expressions.</li>
+                <li><b>XSD</b> – schema components, type definitions, and constraints.</li>
+                <li><b>JSON Schema</b> – object structures, keywords, and property patterns.</li>
+                <li><b>Schematron</b> – rules, assertions, and diagnostics.</li>
+                <li><b>Other</b> – available for other documents such as DTD, XQuery, XProc, HTML,
+                    CSS, and more.</li>
+            </ul>
+            <p>These technologies benefit strongly from assistance with repetitive syntax and
+                structural correctness, which makes them ideal candidates for AI-powered
+                completion.</p>
+        </section>
+        <section id="preferences">
+            <title>Preferences that give you control</title>
+            <p><ph keyref="oxygen"/> exposes a dedicated set of preferences so that you can control
+                how AI Autocompletion behaves. For detailed configuration instructions, see the
+                online documentation: <xref
+                    href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/autocompletion_preferences.html"
+                    format="html" scope="external">AI Autocompletion Preferences</xref>.<image
+                    href="../images/ai_autocompletion_preferences.png" id="image_vhy_lyp_q3c">
+                    <alt>AI Autocompletion preferences dialog listing editor types and
+                        options.</alt>
+                </image></p>
+            <sectiondiv id="preferences-enable">
+                <p><b>Enable AI Autocompletion in Text page</b></p>
+                <p>This option turns on context-aware suggestions in supported editors when you work
+                    in Text mode.</p>
+            </sectiondiv>
+            <sectiondiv id="preferences-model">
+                <p><b>Model</b></p>
+                <p>The <b>Model</b> setting lets you choose the AI model used for autocompletion.
+                    Different models consume different numbers of credits per token, so this choice
+                    helps you balance suggestion quality, speed, and usage cost.</p>
+            </sectiondiv>
+            <sectiondiv id="preferences-instance-structure">
+                <p><b>Include associated instance structure in prompt</b></p>
+                <p>This option controls whether <ph keyref="oxygen"/> includes instance structure
+                    when building the prompt for the AI model.</p>
+                <p>When enabled, the additional context is derived from existing scenarios:</p>
+                <ul id="ul_rcg_hvy_p3c">
+                    <li>For <b>XSLT</b> and <b>XQuery</b>, it uses the structure of the XML document
+                        associated in the transformation scenario.</li>
+                    <li>For schemas such as <b>XSD</b>, <b>Schematron</b>, <b>DTD</b>, and
+                            <b>RNG</b>, it uses the structure of the instance document associated in
+                        a validation scenario.</li>
+                </ul>
+                <p>If your transformation or validation setup already encodes useful document
+                    relationships, this option allows AI Autocompletion to use that information to
+                    produce more accurate and context-aware suggestions.</p>
+            </sectiondiv>
+            <sectiondiv id="preferences-editor-types">
+                <p><b>Editor types</b></p>
+                <p>A dedicated table lists the supported editor types and lets you choose exactly
+                    where AI Autocompletion should be active. This level of control is useful for
+                    teams who want AI assistance in some technologies but not in others.</p>
+            </sectiondiv>
+        </section>
+        <section id="practical-tip">
+            <title>Practical tip: use it for structure, not just syntax</title>
+            <p>AI Autocompletion is most effective when you use it to generate structural fragments
+                that match your current editing intent, not only to finish tags or keywords.</p>
+            <p>For example:</p>
+            <ul id="ul_scg_hvy_p3c">
+                <li>In <b>XSLT</b>, it can help create a template, complete a template body, or
+                    suggest relevant XPath-based constructs that align with nearby templates.</li>
+                <li>In <b>XSD</b>, it can accelerate common type and element definition patterns
+                    that match the surrounding schema design.</li>
+                <li>In <b>Schematron</b>, it can assist with assertions and quick fixes that follow
+                    the context of the current rule and the associated instance structure.</li>
+            </ul>
+            <p>This makes AI Autocompletion particularly effective for experienced users who know
+                what they want to build but want to spend less time typing.</p>
+        </section>
+        <section id="conclusion">
+            <title>Conclusion</title>
+            <p>AI Autocompletion in <ph keyref="oxygen"/> 28.0 brings inline, context-aware
+                suggestions directly to the caret position, integrates with on-demand Autocomplete
+                actions, and offers editor-specific configuration options. For users already relying
+                on <b>Oxygen AI Positron</b>, it is a natural extension that amplifies expertise and
+                improves productivity in real-world structured authoring and transformation
+                workflows.</p>
+        </section>
+    </body>
+    <related-links>
+        <link href="https://www.oxygenxml.com/doc/ug-positron/topics/ai_autocompletion.html"
+            format="html" scope="external">
+            <linktext>AI Autocompletion in the User Guide</linktext>
+        </link>
+        <link
+            href="https://www.oxygenxml.com/doc/ug-positron/topics/ai_autocompletion_preferences.html"
+            format="html" scope="external">
+            <linktext>AI Autocompletion Preferences</linktext>
+        </link>
+        <link href="ai-positron-code-development.dita"/>
+    </related-links>
+</topic>

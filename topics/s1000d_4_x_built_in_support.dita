@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="s1000d_4_x_built_in_support">
+    <title>S1000D 4.x Built-in Support</title>
+    <shortdesc><ph keyref="oxygen"/> version 28.1 provides built-in S1000D 4.x support, enabling
+        authors to create, validate, and visually edit S1000D content with BREX-to-Schematron
+        conversion and Smart Paste capabilities.</shortdesc>
+    <prolog>
+        <author>Octavian Nadolu</author>
+        <critdates>
+            <created date="2026-03-25"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>S1000D</indexterm>
+                <indexterm>S1000D<indexterm>4.x support</indexterm></indexterm>
+                <indexterm>S1000D<indexterm>BREX</indexterm></indexterm>
+                <indexterm>S1000D<indexterm>data modules</indexterm></indexterm>
+                <indexterm>S1000D<indexterm>publication modules</indexterm></indexterm>
+                <indexterm>technical publications</indexterm>
+                <indexterm>aerospace documentation</indexterm>
+                <indexterm>defense documentation</indexterm>
+                <keyword>S1000D</keyword>
+                <keyword>BREX</keyword>
+                <keyword>CSDB</keyword>
+                <keyword>data modules</keyword>
+                <keyword>Smart Paste</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>S1000D® is the international standard for technical publications in aerospace, defense,
+            and other asset-intensive industries.</p>
+        <p>Previously, setting up a robust S1000D editing environment in <ph keyref="oxygen"/> often
+            required custom frameworks, partner solutions, or extensive manual configuration.</p>
+        <p><ph keyref="oxygen"/> version 28.1 changes this with native S1000D 4.x support. You can
+            now author, validate, and visually edit S1000D content out of the box, including BREX
+            editing and conversion, plus migration-friendly Smart Paste.</p>
+        <fig id="fig_en4_js1_q3c">
+            <title>S1000D Editing in <ph keyref="oxygen"/> XML Editor</title>
+            <image href="../images/s1000d_4_x_built_in_support.jpg" id="image_s1j_2vs_p3c"
+                scale="50">
+                <alt>Screenshot showing S1000D data module editing in Oxygen's Author mode</alt>
+            </image>
+        </fig>
+        <p>This article explains the new features and why they matter for anyone who manages a CSDB
+            or writes data modules regularly.</p>
+        <section id="out_of_the_box_projects">
+            <title>Out-of-the-Box S1000D</title>
+            <p><ph keyref="oxygen"/> now includes a dedicated S1000D framework for issues
+                <b>4.0</b>, <b>4.1</b>, and <b>4.2</b> of the S1000D specification.</p>
+            <p><b>Ready-Made Document Templates</b></p>
+            <p>When you create a new document from templates, you will find S1000D-specific entries
+                for:</p>
+            <ul id="ul_in4_js1_q3c">
+                <li>Data Modules (DMs)</li>
+                <li>Publication Modules (PMs)</li>
+            </ul>
+            <p>Choosing a template provides a correctly structured skeleton document with the
+                appropriate issue-specific namespaces and required elements. This means:</p>
+            <ul id="ul_jn4_js1_q3c">
+                <li>No need to copy existing DMs just to get the boilerplate structure.</li>
+                <li>Consistent, valid starting points across your authoring team.</li>
+            </ul>
+        </section>
+        <section id="schema_guided_editing">
+            <title>Schema-Guided Editing and Validation</title>
+            <p>S1000D requires strict adherence to the schema. <ph keyref="oxygen"/> supports this
+                by providing:</p>
+            <ul id="ul_ln4_js1_q3c">
+                <li>Full schema-guided editing for DMs, PMs, and BREX modules</li>
+                <li>Real-time validation</li>
+                <li>Context-aware content completion</li>
+            </ul>
+            <p>As you type, <ph keyref="oxygen"/> offers only elements and attributes that are valid
+                at the current cursor position, based on the corresponding issue's XSD. This is
+                particularly helpful when working with:</p>
+            <ul id="ul_nn4_js1_q3c">
+                <li>The Identification and Status section of a data module</li>
+                <li>Complex structures in the content section, such as procedures, warnings, and
+                    figures</li>
+                <li>PM constructs that control inclusion and sequencing of DMs</li>
+            </ul>
+            <p><b>Built-in Documentation for Elements and Attributes</b></p>
+            <p>When you trigger content completion, <ph keyref="oxygen"/> displays inline
+                documentation for S1000D elements and attributes:</p>
+            <ul id="ul_pn4_js1_q3c">
+                <li>Tooltips in the Content Completion list</li>
+                <li>Detailed help in the Attributes view</li>
+            </ul>
+            <p>This provides a quick reference to the specification embedded in your editor—ideal
+                for authors who understand XML but are still learning S1000D semantics.</p>
+        </section>
+        <section id="visual_authoring">
+            <title>Visual Authoring Tailored to S1000D</title>
+            <p>You can edit S1000D documents in Author mode using layouts optimized for technical
+                publications:</p>
+            <ul id="ul_qn4_js1_q3c">
+                <li><b>Full-width</b>: Best for day-to-day authoring with maximum screen space.</li>
+                <li><b>Print preview</b>: Shows a pagination-oriented layout similar to a delivered
+                    publication.</li>
+                <li><b>Large-font</b>: Helpful during review sessions or on high-resolution
+                    displays.</li>
+            </ul>
+            <p><b>Rich-Text Actions Mapped to S1000D Markup</b></p>
+            <p>The Author toolbar provides S1000D-aware formatting controls. Instead of inserting
+                generic <codeph>&lt;emphasis&gt;</codeph> tags, <ph keyref="oxygen"/> inserts the
+                correct S1000D elements and attributes:</p>
+            <ul id="ul_sn4_js1_q3c">
+                <li>Bold → <codeph>&lt;emphasis emphasisType="em01"&gt;</codeph></li>
+                <li>Italic → <codeph>&lt;emphasis emphasisType="em02"&gt;</codeph></li>
+                <li>Underline → <codeph>&lt;emphasis emphasisType="em03"&gt;</codeph></li>
+                <li>Overline → <codeph>&lt;emphasis emphasisType="em04"&gt;</codeph></li>
+                <li>Strikethrough → <codeph>&lt;emphasis emphasisType="em05"&gt;</codeph></li>
+                <li>Subscript → <codeph>&lt;subscript&gt;</codeph></li>
+                <li>Superscript → <codeph>&lt;superscript&gt;</codeph></li>
+            </ul>
+            <p>Lists and tables are also created and managed using dedicated actions:</p>
+            <ul id="ul_yn4_js1_q3c">
+                <li>Insert sequential or random lists (simple or unordered).</li>
+                <li>Insert definition lists.</li>
+                <li>Insert and configure tables (header/footer, rows/columns, frame).</li>
+                <li>Add or delete rows and columns, and join or split cells.</li>
+            </ul>
+            <p>These actions generate schema-compliant S1000D structures, allowing authors and
+                subject matter experts to work visually without sacrificing validity.</p>
+            <note type="tip" id="note_b44_js1_q3c">Use the Outline view alongside Author mode. It
+                reveals the underlying XML structure (DM parts, procedures, figures, etc.), which is
+                invaluable when reconciling CSDB rules with what you see on screen.</note>
+        </section>
+        <section id="brex_aware_workflows">
+            <title>BREX-Aware Workflows</title>
+            <p>BREX (Business Rules Exchange) modules are the enforcement layer for your project's
+                specific S1000D implementation. <ph keyref="oxygen"/> now provides support to:</p>
+            <ul id="ul_d44_js1_q3c">
+                <li>Edit BREX in Text or Author mode with schema-guided completion and
+                    validation.</li>
+                <li>Use the same Author-mode conveniences while defining or updating business
+                    rules.</li>
+            </ul>
+            <p><b>From BREX to Schematron</b></p>
+            <p>You can convert BREX modules to Schematron using the "S1000D BREX to Schematron"
+                built-in transformation scenario. This enables several powerful workflows:</p>
+            <ul id="ul_e44_js1_q3c">
+                <li>Integrate BREX-derived rules into your continuous integration or build
+                    pipeline.</li>
+                <li>Run Schematron-based checks as part of <ph keyref="oxygen"/>'s validation phase,
+                    alongside XSD validation.</li>
+                <li>Maintain a single source of truth: edit business rules in BREX, then regenerate
+                    Schematron whenever rules change.</li>
+            </ul>
+            <note type="tip" id="note_i44_js1_q3c">Store the resulting Schematron in your project
+                and bind it to a custom validation scenario. You can then validate any DM or PM
+                against both the S1000D schemas and your project's BREX rules with a single
+                command.</note>
+        </section>
+        <section id="smart_paste">
+            <title>Smart Paste for S1000D Documents</title>
+            <p>Migrating legacy content (Word, HTML, older manuals) into S1000D is often
+                time-consuming. <ph keyref="oxygen"/>'s Smart Paste feature significantly reduces
+                that effort:</p>
+            <ol id="ol_j44_js1_q3c">
+                <li>Copy content from a web browser or Word document.</li>
+                <li>Paste it into an S1000D DM or PM in Author mode.</li>
+                <li><ph keyref="oxygen"/> attempts to preserve structure and formatting, mapping
+                    them into valid S1000D constructs (paragraphs, lists, inline emphasis,
+                    tables).</li>
+            </ol>
+            <p>While Smart Paste does not provide fully automated migration, it significantly
+                accelerates the process:</p>
+            <ul id="ul_l44_js1_q3c">
+                <li>Use Smart Paste to bring in the raw narrative and structure.</li>
+                <li>Then use the S1000D actions and validation to refine the content and enforce
+                    project-specific constraints.</li>
+            </ul>
+        </section>
+        <section id="cgm_illustrations">
+            <title>CGM Illustrations in Context</title>
+            <p><ph keyref="oxygen"/> offers an add-on that provides experimental support for CGM 1.0
+                images. To enable rendering of CGM images in Author mode, install the <ph
+                    keyref="oxygen"/> CGM support add-on. The add-on:</p>
+            <ul id="ul_m44_js1_q3c">
+                <li>Renders CGM images directly in Author mode, embedded in your S1000D
+                    content.</li>
+                <li>Has been updated to use the latest jcgm 2.0.5 library for improved compatibility
+                    and rendering quality.</li>
+            </ul>
+            <p>To see CGM images inline in your DMs, install the CGM add-on from the <ph
+                    keyref="oxygen"/>
+                <uicontrol>Help</uicontrol> &gt; <uicontrol>Install new add-ons</uicontrol>
+                menu.</p>
+        </section>
+        <section id="getting_started"><title>Getting Started</title><p>If you are new to S1000D in
+                    <ph keyref="oxygen"/> or are migrating from a custom setup:</p><ol
+                id="ol_o44_js1_q3c">
+                <li>Open <ph keyref="oxygen"/> and create a new S1000D document from the
+                    templates.</li>
+                <li>Explore the framework's schema-guided editing in both Text and Author
+                    modes.</li>
+                <li>If you have existing BREX modules, try the BREX-to-Schematron
+                    transformation.</li>
+                <li>Test Smart Paste with sample legacy content to see how it accelerates
+                    migration.</li>
+                <li>Install the CGM add-on if your publications include CGM illustrations.</li>
+            </ol><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/s1000d-doc-type.html"
+                format="html" scope="external">S1000D Support Documentation</xref>
+            <p>With native S1000D 4.x support, <ph keyref="oxygen"/> removes much of the friction
+                from authoring technical publications in aerospace, defense, and other regulated
+                industries. Whether you are creating new data modules or maintaining a large CSDB,
+                you now have a complete, standards-compliant editing environment ready to
+            use.</p></section>
+        <section id="s1000d_webauthor_support">
+            <title>S1000D Support in Web Author</title>
+            <p>You can also edit S1000D content directly in <ph keyref="webauthor"/>, using its
+                built-in support for visual authoring. This support is designed for S1000D issue 4.x
+                data modules and offers an editing environment consistent with the desktop <ph
+                    keyref="oxygen"/> experience.</p>
+            <fig id="fig_s1000d_webauthor">
+                <title>S1000D Editing in <ph keyref="webauthor"/></title>
+                <image href="../images/s1000d_4_x_built_in_support.png" id="image_vkv_4hs_r3c_small"
+                    scale="50">
+                    <alt>S1000D Data Module edited in Web Author with outline view and visual
+                        authoring layout</alt>
+                </image>
+            </fig>
+            <p>The built-in framework includes ready-to-use templates for common S1000D data module
+                types, so authors can start from valid structures instead of building them from
+                scratch. These templates help enforce the S1000D schema rules and reduce the risk of
+                structural errors during authoring.</p>
+            <p>Smart Paste is also available when editing S1000D content in <ph keyref="webauthor"
+                />. When you paste content from external sources (such as Word documents, web pages,
+                or plain text), Smart Paste attempts to convert the pasted content into valid S1000D
+                structures and elements, preserving as much semantic information as possible while
+                maintaining validity.</p>
+            <p>The visual authoring mode presents S1000D elements using a user-friendly layout and
+                labels, so authors can focus on the content instead of the underlying XML tags.
+                Contextual actions, content completion, and validation feedback are integrated into
+                the editing workflow to help ensure that data modules remain compliant with the
+                S1000D specification.</p>
+            <p>For more details about the S1000D-related improvements in <ph keyref="webauthor"/>,
+                see the <xref
+                    href="https://www.oxygenxml.com/xml_web_author/whats_new.html#2810S1000D"
+                    format="html" scope="external">What's New in Oxygen XML Web Author</xref>
+                page.</p>
+            <p>You can try the S1000D support directly in <ph keyref="webauthor"/> by opening the
+                online sample available <xref
+                    href="https://webauthor.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=samples%3A%2F%2Fsamples%2Fs1000d%2FDMC-BRAKE-AAA-DA1-00-00-00AA-041A-A_001-00_EN-US.XML&amp;highlightedActions=%5B%7B%22id%22%3A%22Author%2FShareSession%22%7D%5D"
+                    format="html" scope="external">here</xref>.</p>
+        </section>
+        <section id="conclusion">
+            <title>Conclusion</title>
+            <p><ph keyref="oxygen"/>'s built-in S1000D 4.x support, available both in the desktop
+                application and in <ph keyref="webauthor"/>, delivers a comprehensive,
+                production-ready authoring environment for aerospace and defense technical
+                publications. Key benefits include:</p>
+            <ul id="ul_r44_js1_q3c">
+                <li>Zero-configuration setup with ready-made templates and schemas</li>
+                <li>Schema-guided editing with inline documentation</li>
+                <li>Visual authoring with S1000D-aware formatting controls</li>
+                <li>BREX editing and Schematron conversion for business rule enforcement</li>
+                <li>Smart Paste for accelerated content migration</li>
+                <li>CGM illustration support for technical graphics</li>
+                <li>Consistent S1000D authoring experience across desktop and web</li>
+            </ul>
+            <p>Ready to streamline your S1000D authoring workflow? <xref
+                    href="https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html"
+                    format="html" scope="external">Download a free trial of Oxygen XML Editor</xref>
+                or <xref
+                    href="https://www.oxygenxml.com/xml_web_author/download_oxygenxml_web_author.html"
+                    format="html" scope="external">try Oxygen XML Web Author</xref> and experience
+                the difference native S1000D support makes.</p>
+            <p>If you want more advanced <b>S1000D</b> editing features, you can ask some of <xref
+                    href="https://www.oxygenxml.com/partners.html?technology=S1000D" format="html"
+                    scope="external">our partners</xref>.</p>
+            <p>For more information:</p>
+            <ul id="ul_t44_js1_q3c">
+                <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/s1000d-doc-type.html"
+                        format="html" scope="external"><ph keyref="oxygen"/> S1000D Support
+                        Documentation</xref></li>
+                <li><xref href="https://s1000d.org/" format="html" scope="external">S1000D Official
+                        Specification</xref></li>
+                <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/cgm-addon.html"
+                        format="html" scope="external">CGM Add-on Installation Guide</xref></li>
+            </ul>
+        </section>
+    </body>
+</topic>

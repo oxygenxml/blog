@@ -354,7 +354,7 @@
      href="https://www.oxygenxml.com/doc/ug-editor/topics/configure-exist.html" format="html"
      scope="external">Exist</xref> and various other databases.</p>
    <p>There are also a couple of add-ons which add extra connectivity: <ul id="ul_pbj_lh5_nkb">
-     <li><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external"
+       <li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html" scope="external"
        >Git add-on</xref> for Oxygen.</li>
      <li><xref href="https://github.com/oxygenxml/oxygen-cmis-plugin" format="html" scope="external"
        >CMIS add-on</xref> for Oxygen.</li>
@@ -371,7 +371,7 @@
      format="html" scope="external">Oxygen standalone version</xref>. </p>
    <p>I will enumerate some of the most popular interesting add-ons below:</p>
    <ul id="ul_xbw_ccs_gfb">
-    <li><xref href="https://github.com/oxygenxml/oxygen-git-plugin" format="html" scope="external"
+     <li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html" scope="external"
       >Git add-on</xref>. This plugin adds a side view allowing you to do some common Git operations
      like pull, commit, push (mostly 90% of what a regular Git user would do).</li>
      <li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/content-fusion-addon.html"
