@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="installing_an_ai_chatbot_for_dita_webhelp_using_oxygen_feedback_cloud">
+    <title>Installing an AI Chatbot for DITA WebHelp Using Oxygen Feedback Cloud</title>
+    <shortdesc>This article explains how to add an AI chatbot to a DITA-based WebHelp Responsive output by using <b>Oxygen Feedback Cloud</b> and its AI Assistant integration.</shortdesc>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2026-06-09"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>DITA<indexterm>AI chatbot</indexterm></indexterm>
+                <indexterm>Oxygen Feedback Cloud<indexterm>AI Assistant</indexterm></indexterm>
+                <indexterm>WebHelp Responsive<indexterm>integration</indexterm></indexterm>
+                <keyword>DITA XML</keyword>
+                <keyword>AI Assistant</keyword>
+                <keyword>WebHelp</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <p>If you publish documentation from <b>DITA XML</b> to <b>WebHelp Responsive</b>, you can enhance the user experience by embedding an AI chatbot directly in the output. With <b>Oxygen Feedback Cloud</b>, this chatbot is provided through the <uicontrol>AI Assistant</uicontrol> component, allowing readers to ask questions in natural language and receive contextual answers based on your published documentation.</p>
+        <p>This approach is useful when you want to make large DITA documentation sets easier to explore, especially for users who prefer conversational assistance instead of navigating the table of contents or manually refining search queries.</p>
+        <section id="what_it_provides">
+            <title>What the AI Assistant Provides</title>
+            <p>According to the <xref href="https://www.oxygenxml.com/doc/ug-feedback-cloud/topics/ofb-ai-features.html" format="html" scope="external">Oxygen Feedback Cloud AI Search Features documentation</xref>, the AI functionality available for WebHelp includes:</p>
+            <ul>
+                <li>An <uicontrol>AI Assistant</uicontrol> chatbot that can be integrated into your WebHelp output.</li>
+                <li>Real-time conversations that help users find more accurate answers and relevant information.</li>
+                <li>An <uicontrol>AI-enhanced Search Summary</uicontrol> component that can display AI-generated answers before the standard search results.</li>
+            </ul>
+            <p>In this article, the focus is on the chatbot integration scenario.</p>
+        </section>
+        <section id="architecture_overview">
+            <title>Architecture Overview</title>
+            <p>The integration combines three main parts:</p>
+            <ol>
+                <li>Your source content authored in <b>DITA XML</b>.</li>
+                <li>A <b>WebHelp Responsive</b> output generated from that DITA content.</li>
+                <li>An <b>Oxygen Feedback Cloud</b> deployment configured to provide the <uicontrol>AI Assistant</uicontrol> for the published output.</li>
+            </ol>
+            <p>At a high level, you publish your DITA map to WebHelp, configure search indexing and Feedback integration, then enable the AI Assistant in the Feedback administration interface so that the chatbot becomes available in the published site.</p>
+        </section>
+        <section id="prerequisites">
+            <title>Prerequisites</title>
+            <ul>
+                <li>A DITA project that publishes to <b>WebHelp Responsive</b>.</li>
+                <li>Access to an <b>Oxygen Feedback Cloud</b> instance.</li>
+                <li>A WebHelp output already integrated with Feedback.</li>
+                <li>Administrative rights to configure Feedback search and AI-related settings.</li>
+            </ul>
+            <p>If your output is not yet connected to Feedback, start with the general Feedback installation and integration steps from the <xref href="https://www.oxygenxml.com/doc/ug-feedback-cloud/index.html" format="html" scope="external">Oxygen Feedback Cloud User Guide</xref>.</p>
+        </section>
+        <section id="installation_steps">
+            <title>Installation Steps</title>
+            <ol>
+                <li>
+                    <p>Prepare and publish your <b>DITA XML</b> content to <b>WebHelp Responsive</b>.</p>
+                    <p>Make sure the published output is stable and that the topics you want the chatbot to answer from are included in the generated site.</p>
+                </li>
+                <li>
+                    <p>Integrate the WebHelp output with <b>Oxygen Feedback Cloud</b>.</p>
+                    <p>This usually means configuring the Feedback deployment token and embedding the Feedback initialization script in the generated output or publishing template.</p>
+                </li>
+                <li>
+                    <p>Enable search indexing for the published documentation.</p>
+                    <p>The AI Assistant relies on the indexed documentation content to provide contextual answers, so your WebHelp site needs to be properly indexed in Feedback.</p>
+                </li>
+                <li>
+                    <p>Open the Feedback administration interface and enable the <uicontrol>AI Assistant</uicontrol> feature for the site.</p>
+                    <p>The exact options may vary depending on your Feedback configuration, but the goal is to activate the chatbot component for the documentation deployment you want to enhance.</p>
+                </li>
+                <li>
+                    <p>Republish or refresh the WebHelp output if needed.</p>
+                    <p>After the configuration is complete, open the published site and verify that the chatbot is visible and can answer questions about your DITA content.</p>
+                </li>
+            </ol>
+        </section>
+        <section id="dita_specific_recommendations">
+            <title>DITA-Specific Recommendations</title>
+            <p>Because the chatbot answers questions based on your published content, the quality of your DITA topics matters. To improve the usefulness of the AI responses:</p>
+            <ul>
+                <li>Write clear topic titles and concise <codeph>&lt;shortdesc&gt;</codeph> elements.</li>
+                <li>Use semantic DITA structures such as <codeph>&lt;task&gt;</codeph>, <codeph>&lt;concept&gt;</codeph>, and <codeph>&lt;reference&gt;</codeph> appropriately.</li>
+                <li>Keep related information grouped in focused topics instead of very large, mixed-content pages.</li>
+                <li>Use meaningful keywords and index terms to improve discoverability.</li>
+                <li>Make sure your published output is complete and up to date before indexing it.</li>
+            </ul>
+            <p>Well-structured DITA content generally leads to better search quality and more relevant AI-generated answers.</p>
+        </section>
+        <section id="what_users_can_do">
+            <title>What Users Can Do with the Chatbot</title>
+            <p>Once installed, readers can use the chatbot to ask questions such as:</p>
+            <ul>
+                <li><q>How do I configure profiling in this documentation set?</q></li>
+                <li><q>Where can I find the steps for publishing to WebHelp?</q></li>
+                <li><q>What is the difference between a task and a concept topic?</q></li>
+            </ul>
+            <p>This can reduce the effort required to locate information in large documentation portals and can complement the standard search experience.</p>
+        </section>
+        <section id="limitations_and_planning">
+            <title>Limitations and Planning Considerations</title>
+            <p>Before enabling an AI chatbot in production, it is a good idea to evaluate:</p>
+            <ul>
+                <li>Whether all important content is indexed and publicly available to the assistant.</li>
+                <li>Whether your documentation contains sensitive information that should not be exposed through AI-assisted answers.</li>
+                <li>How often the documentation changes and how frequently the search index should be refreshed.</li>
+                <li>Whether you also want to enable the <uicontrol>AI-enhanced Search Summary</uicontrol> component alongside the chatbot.</li>
+            </ul>
+        </section>
+        <section id="useful_links">
+            <title>Useful Links</title>
+            <ul>
+                <li><xref href="https://www.oxygenxml.com/doc/ug-feedback-cloud/topics/ofb-ai-features.html" format="html" scope="external">AI Search Features</xref></li>
+                <li><xref href="https://www.oxygenxml.com/doc/ug-feedback-cloud/topics/ofb-ai-assistant.html" format="html" scope="external">AI Assistant Chatbot</xref></li>
+                <li><xref href="https://www.oxygenxml.com/doc/ug-feedback-cloud/topics/ofb-ai-search-summary.html" format="html" scope="external">AI-Enhanced Search Summary</xref></li>
+                <li><xref href="https://www.oxygenxml.com/doc/ug-feedback-cloud/index.html" format="html" scope="external">Oxygen Feedback Cloud User Guide</xref></li>
+            </ul>
+        </section>
+    </body>
+</topic>
