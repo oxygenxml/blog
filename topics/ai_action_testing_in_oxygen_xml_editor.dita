@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ai_action_testing_in_oxygen_xml_editor">
+  <title>Testing AI Positron Actions with XSpec in Oxygen XML Editor</title>
+  <shortdesc>Learn how to write and run XSpec tests for AI Positron actions in Oxygen XML Editor
+    using the <codeph>ai:invoke-action</codeph> and <codeph>ai:transform-content</codeph> XPath
+    functions, with practical examples covering short description generation, code generation,
+    refactoring suggestions, and code documentation.</shortdesc>
+  <prolog>
+    <author>Octavian Nadolu</author>
+    <critdates>
+      <created date="2025-01-01"/>
+    </critdates>
+  </prolog>
+  <body>
+    <section id="section_oct_jws_njc">
+      <title>Introduction</title>
+      <p>As AI-driven functionality becomes more common in DocBook, DITA, and custom XML workflows,
+        the need for reliable automated testing grows with it. Oxygen XML Editor addresses this by
+        adding XSpec-based AI action testing support. The New Document Wizard now includes an
+        <b>AI Action Test</b> template, designed to help developers write and validate AI-driven XML
+        modification, enrichment, and transformation workflows.</p>
+      <p>This post covers how to use the AI Action Test template, where to find sample XSpec tests,
+        and practical examples of AI actions you can test.</p>
+    </section>
+    <section id="section_pct_jws_njc">
+      <title>AI Action Test Template in Oxygen XML Editor</title>
+      <p>The New Document Wizard now includes a dedicated <b>AI Action Test</b> file template,
+        found under the <b>AI Positron Templates</b> folder. It provides a ready-made starting
+        point for writing XSpec tests specific to AI actions, combining standard XML testing
+        practices with the specifics of AI-driven processing.</p>
+    </section>
+    <section id="section_features_jws_njc">
+      <title>Key Features</title>
+      <ul id="ul_qct_jws_njc">
+        <li><b>Guided XSpec test creation:</b> The template includes scaffolding with comments and
+          structure, making it easier to get started for those new to XSpec or AI-specific
+          testing.</li>
+        <li><b>Rich document context:</b> When creating a new test, you can add a summary
+          describing your intention and attach reference files in multiple formats (text, XML,
+          Markdown, Word, PDF, images) using copy-paste or drag-and-drop.</li>
+        <li><b>Initial structure generation:</b> The AI component generates a skeleton for your
+          XSpec document, with steps and comments to guide the test-writing process.</li>
+        <li><b>Sample library:</b> The <xref
+            href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Action%20Testing"
+            format="html" scope="external">AI Positron Assistant sample repository</xref> contains
+          ready-to-adapt XSpec test scenarios covering a range of AI actions.</li>
+      </ul>
+    </section>
+    <section id="section_rct_jws_njc">
+      <title>XSpec and AI Actions</title>
+      <p>XSpec is a BDD-style testing framework for the XML world. It lets you declare expected
+        outcomes and verify that your XSLT, XQuery, or Schematron logic behaves as intended. As AI
+        actions begin transforming XML content, writing tests to confirm these automations produce
+        predictable results becomes essential.</p>
+      <p>The AI Action Test template integrates this testing approach directly into Oxygen,
+        covering both traditional XML processing and AI-powered transformations.</p>
+    </section>
+    <section id="section_sct_jws_njc">
+      <title>Real-World Examples</title>
+      <p>The following scenarios are based on examples from the <xref
+          href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Action%20Testing"
+          format="html" scope="external">sample AI action tests</xref> provided by the Oxygen
+        team.</p>
+    </section>
+    <section id="section_generate_shortdesc_njc">
+      <title>Generate Short Description</title>
+      <p><b>Action:</b> Generate a DITA <codeph>&lt;shortdesc&gt;</codeph> element for a topic
+        using an AI action.</p>
+      <p><b>Sample XSpec test:</b></p>
+      <codeblock outputclass="language-xml">&lt;x:description xmlns:x="http://www.jenitennison.com/xslt/xspec"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ai="http://www.oxygenxml.com/ai/function"
+    stylesheet="http://oxygenxml/empty.xsl"&gt;
+
+    &lt;x:scenario label="Test 'Generate short description'"&gt;
+        &lt;x:call function="ai:invoke-action"&gt;
+            &lt;x:param&gt;action.short.description&lt;/x:param&gt;
+            &lt;x:param select="''"/&gt;
+            &lt;x:param select="unparsed-text('resources/apples.dita', 'UTF-8')"/&gt;
+        &lt;/x:call&gt;
+
+        &lt;x:expect label="check XML" test="parse-xml($x:result)/*/name()" as="xs:string"&gt;shortdesc&lt;/x:expect&gt;
+
+        &lt;x:expect label="Generated 'shortdesc' checked using AI" test="ai:transform-content(
+            'Return `yes` if this: \n\n ' ||
+            $x:result ||
+            '\n\n is exactly the element with the name `shortdesc` containing a short description of \n\n' ||
+            unparsed-text('resources/apples.dita', 'UTF-8'),
+            '')" select="'yes'"/&gt;
+    &lt;/x:scenario&gt;
+&lt;/x:description&gt;</codeblock>
+      <p><b>Why it matters:</b> The test first checks that the returned XML element is indeed a
+          <codeph>shortdesc</codeph>, then uses <codeph>ai:transform-content</codeph> to
+        semantically verify the generated content is an accurate short description of the source
+        topic.</p>
+    </section>
+    <section id="section_code_generation_njc">
+      <title>Code Generation</title>
+      <p><b>Action:</b> Generate XSLT code from an XML fragment description.</p>
+      <p><b>Sample XSpec test:</b></p>
+      <codeblock outputclass="language-xml">&lt;x:scenario label="Test #1 'Code generation'"&gt;
+    &lt;x:call function="ai:invoke-action"&gt;
+        &lt;x:param&gt;action.generate.code.xslt&lt;/x:param&gt;
+        &lt;x:param select="''"/&gt;
+        &lt;x:param select="unparsed-text('resources/sample-xml-fragm.txt', 'UTF-8')"/&gt;
+    &lt;/x:call&gt;
+
+    &lt;x:expect label="Similarity between generated and expected code checked using AI" test="ai:transform-content(
+        'Return `yes` if this: \n\n ' ||
+        $x:result ||
+        '\n\n is similar to the following text \n\n' ||
+        unparsed-text('resources/expected-generated-code.txt', 'UTF-8'),
+        '')" select="'yes'"/&gt;
+&lt;/x:scenario&gt;</codeblock>
+      <p><b>Why it matters:</b> The AI-generated XSLT is compared against a reference output using
+          <codeph>ai:transform-content</codeph>, which provides semantic similarity checking rather
+        than strict text matching.</p>
+    </section>
+    <section id="section_refactoring_suggestions_njc">
+      <title>Refactoring Suggestions</title>
+      <p><b>Action:</b> Suggest refactoring improvements for an existing XSLT stylesheet.</p>
+      <p><b>Sample XSpec test:</b></p>
+      <codeblock outputclass="language-xml">&lt;x:scenario label="Test #2 'Refactoring suggestions'"&gt;
+    &lt;x:call function="ai:invoke-action"&gt;
+        &lt;x:param&gt;action.suggest.refactoring.xslt&lt;/x:param&gt;
+        &lt;x:param select="''"/&gt;
+        &lt;x:param select="unparsed-text('resources/invoice-receipt.xsl', 'UTF-8')"/&gt;
+    &lt;/x:call&gt;
+
+    &lt;x:expect label="Similarity between generated and expected refactoring suggestions checked using AI" test="ai:transform-content(
+        'Return `yes` if this: \n\n ' ||
+        $x:result ||
+        '\n\n is similar to the following text \n\n' ||
+        unparsed-text('resources/expected-refactor-suggestion.txt', 'UTF-8'),
+        '')" select="'yes'"/&gt;
+&lt;/x:scenario&gt;</codeblock>
+      <p><b>Why it matters:</b> Ensures that refactoring advice stays relevant and consistent as the
+        underlying AI model or action configuration evolves.</p>
+    </section>
+    <section id="section_explain_code_njc">
+      <title>Explain Code</title>
+      <p><b>Action:</b> Produce a human-readable explanation of an XSLT stylesheet, including a
+          <codeph>## Summary</codeph> section.</p>
+      <p><b>Sample XSpec test:</b></p>
+      <codeblock outputclass="language-xml">&lt;x:scenario label="Test #1 'Explain code' - checked on a fragment"&gt;
+    &lt;x:call function="ai:invoke-action"&gt;
+        &lt;x:param&gt;action.explain.code&lt;/x:param&gt;
+        &lt;x:param select="''"/&gt;
+        &lt;x:param select="unparsed-text('resources/product-requests.xsl', 'UTF-8')"/&gt;
+    &lt;/x:call&gt;
+
+    &lt;x:expect label="Similarity between generated and expected explanation checked using AI" test="ai:transform-content(
+        'Return `yes` if this: \n\n ' ||
+        $x:result ||
+        '\n\n contains a section called `## Summary` that contains a message that is similar to the following text \n\n' ||
+        '- You define a starting template.\n- You create a variable that holds a web request.\n- You pass that request to another template for further processing.',
+        '')" select="'yes'"/&gt;
+&lt;/x:scenario&gt;</codeblock>
+      <p><b>Why it matters:</b> Verifies that the explanation covers the key structural points of
+        the stylesheet and is organized with the expected <codeph>## Summary</codeph> section.</p>
+    </section>
+    <section id="section_document_code_njc">
+      <title>Document Code</title>
+      <p><b>Action:</b> Auto-generate documentation prose for an XSLT stylesheet.</p>
+      <p><b>Sample XSpec test:</b></p>
+      <codeblock outputclass="language-xml">&lt;x:scenario label="Test #2 'Document code'"&gt;
+    &lt;x:call function="ai:invoke-action"&gt;
+        &lt;x:param&gt;action.document.code&lt;/x:param&gt;
+        &lt;x:param select="''"/&gt;
+        &lt;x:param select="unparsed-text('resources/product-requests.xsl', 'UTF-8')"/&gt;
+    &lt;/x:call&gt;
+
+    &lt;x:expect label="Similarity between generated and expected documentation checked using AI" test="ai:transform-content(
+        'Return `yes` if this: \n\n ' ||
+        $x:result ||
+        '\n\n is similar to the following text \n\n' ||
+        'Defines an XSLT that sends an HTTP GET request to a specified URL. Then processes the request and outputs its content using templates.',
+        '')" select="'yes'"/&gt;
+&lt;/x:scenario&gt;</codeblock>
+      <p><b>Why it matters:</b> Confirms the generated documentation accurately summarizes the
+        purpose of the stylesheet.</p>
+    </section>
+    <section id="section_annotate_code_njc">
+      <title>Annotate Code</title>
+      <p><b>Action:</b> Insert inline XML comments into an XSLT stylesheet, annotating each
+        meaningful block.</p>
+      <p><b>Sample XSpec test:</b></p>
+      <codeblock outputclass="language-xml">&lt;x:scenario label="Test #3 'Annotate code'"&gt;
+    &lt;x:call function="ai:invoke-action"&gt;
+        &lt;x:param&gt;action.annotate.code&lt;/x:param&gt;
+        &lt;x:param select="''"/&gt;
+        &lt;x:param select="unparsed-text('resources/product-requests.xsl', 'UTF-8')"/&gt;
+    &lt;/x:call&gt;
+
+    &lt;x:expect label="The number of comments generated should be greater than 5 (i.e. 'all modules annotated')" test="count(tokenize($x:result, '&amp;lt;!--')[position() > 1]) ge 6"/&gt;
+&lt;/x:scenario&gt;</codeblock>
+      <p><b>Why it matters:</b> Instead of semantic similarity, this test uses a quantitative
+        assertion — at least 6 XML comments must be present — to confirm thorough annotation
+        coverage.</p>
+    </section>
+    <section id="section_running_tests_njc">
+      <title>Running the Tests</title>
+      <p>XSpec tests for AI actions use the <codeph>ai:transform-content()</codeph> XPath function
+        under the hood. This function sends the input content to the configured AI model and returns
+        the transformed result, which XSpec then compares against your expected output.</p>
+      <p>The <codeph>ai:invoke-action</codeph> function invokes a named AI Positron action by its
+        action ID. It accepts an optional context string as the second parameter and the main input
+        content as the third parameter, and returns the AI-generated result as a string.</p>
+      <p>The <codeph>ai:transform-content</codeph> function sends a prompt to the configured AI
+        model and returns the response as a string. In XSpec expectations, it is used to perform
+        semantic or similarity checks by asking the AI to return <codeph>yes</codeph> or
+          <codeph>no</codeph>. For more details, see the <xref href="ai_xpath_functions.dita">AI XPath Functions</xref> blog post and the <xref
+          href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/functionality_features.html#functionality_features__dlentry_lbv_nl3_qxb"
+          format="html" scope="external">AI Positron XPath functions documentation</xref>.</p>
+      <p>To run the tests directly in Oxygen:</p>
+      <ul>
+        <li>Open your XSpec file in Oxygen XML Editor.</li>
+        <li>Apply the built-in <b>XSpec Test Report</b> transformation scenario.</li>
+        <li>Results appear in the XSpec report view, showing which scenarios passed or failed along
+          with a diff for any mismatches.</li>
+      </ul>
+      <p>For a set of working examples to get started with, see the <xref
+          href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Action%20Testing"
+          format="html" scope="external">AI Positron Assistant sample repository</xref>.</p>
+    </section>
+    <section id="section_tips_jws_njc">
+      <title>Tips</title>
+      <ul id="ul_fdt_jws_njc">
+        <li><b>Use the summary and attachments:</b> Clearly describe your intention and attach
+          input/output examples to guide both the AI and future collaborators reviewing the
+          tests.</li>
+        <li><b>Follow the template comments:</b> The generated comments include hints for refining
+          your scenarios and expected outputs — read them before editing the scaffold.</li>
+        <li><b>Integrate with CI:</b> Add your XSpec tests to a CI pipeline so they run
+          automatically whenever AI action configurations or underlying models change.</li>
+      </ul>
+      <p>For step-by-step details, see the <xref
+          href="https://www.oxygenxml.com/doc/ug-editor/topics/xslt-unit-test-xspec.html"
+          format="html" scope="external">Oxygen XML Editor XSpec user guide</xref> and the <xref
+          href="https://github.com/xspec/xspec/wiki/Writing-Scenarios" format="html"
+          scope="external">XSpec wiki page on writing scenarios</xref>.</p>
+    </section>
+    <section id="section_gdt_jws_njc">
+      <title>Conclusion</title>
+      <p>The AI Action Test template in Oxygen XML Editor gives you a practical way to write and
+        run XSpec tests for AI-driven transformations. Whether you are enriching content, enforcing
+        terminology, or classifying elements, having a test suite in place means you can update
+        your AI actions with confidence.</p>
+      <p>To get started, open the New Document Wizard, select the <b>AI Action Test</b> template
+        from the <b>AI Positron Templates</b> folder, and refer to the <xref
+          href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Action%20Testing"
+          format="html" scope="external">sample repository</xref> for working examples.</p>
+    </section>
+  </body>
+</topic>
