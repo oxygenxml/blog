@@ -41,12 +41,28 @@
             <sch:report test="contains(@href, 'blog.oxygenxml.com')">
                 There should be no direct links to blog posts, link directly to DITA topics.
             </sch:report>
-            <sch:assert test="not(contains(@href, 'doc/versions/'))">
+            <sch:assert test="not(contains(@href, 'doc/versions/'))" sqf:fix="removeVersionsFromLink">
                 All links to the user's guide must be to the latest version, so the version number must not be included in the link.
             </sch:assert>
-            <sch:report test="contains(@href, 'www.oxygenxml.com') and not(contains(@href, 'https:'))">
+            <!--Remove the "versions/[version number]" from the link.-->
+            <sqf:fix id="removeVersionsFromLink">
+                <sqf:description>
+                    <sqf:title>Remove version number from link</sqf:title>
+                    <sqf:p>Removes the version-specific segment from the user's guide link.</sqf:p>
+                </sqf:description>
+                <sqf:replace match="@href" node-type="attribute" target="href" select="replace(., 'doc/versions/[^/]+/', 'doc/')"/>
+            </sqf:fix>
+                
+            <sch:report test="contains(@href, 'www.oxygenxml.com') and not(contains(@href, 'https:'))" sqf:fix="useHttpsForLink">
                 All links to the user's guide must be using the https protocol.
             </sch:report>
+            <sqf:fix id="useHttpsForLink">
+                <sqf:description>
+                    <sqf:title>Use HTTPS for link</sqf:title>
+                    <sqf:p>Changes the link to use the HTTPS protocol.</sqf:p>
+                </sqf:description>
+                <sqf:replace match="@href" node-type="attribute" target="href" select="replace(., '^http:', 'https:')"/>
+            </sqf:fix>
         </sch:rule>
         <sch:rule context="*[contains(@class, ' topic/image ')]">
             <sch:assert test="not(@scope = 'external')  and not(contains(@href, 'www.oxygenxml.com'))">
