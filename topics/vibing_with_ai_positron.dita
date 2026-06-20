@@ -212,6 +212,8 @@ contents.</codeblock>You can use this same tool to retrieve content from a
                         prompt:<codeblock>Read through the list of available Oxygen XML addons and give me an overview
 about what I could install to fix my terminology problems: 
 https://www.oxygenxml.com/doc/ug-addons/llms.txt</codeblock></li>
+                    <li>Tool to evaluate an XPath in a specific file.
+                        Example:<codeblock>list all titles in the current topic and give me an overview.</codeblock></li>
                     <li>Tools to make large or small changes to the current or to other documents.
                         Examples:<codeblock id="codeblock_bcf_m4g_2hc">Shorten the title of the current document</codeblock>or:<codeblock id="codeblock_ofl_p4g_2hc">Find and fix logical inconsistencies in the current document</codeblock></li>
                     <li>Tool to obtain a description for an image, Word or PDF document. Example
