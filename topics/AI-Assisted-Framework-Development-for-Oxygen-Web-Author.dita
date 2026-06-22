@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_tp5_225_pjc">
-    <title></title>
+  <topic id="ai-assisted-framework-development">
+    <title>AI-Assisted Framework Development for Oxygen Web Author</title>
+        <prolog>
+        <author>Mircea Bina</author>
+        <critdates>
+            <created date="2026-06-22"/>
+        </critdates>
+    </prolog>
     <body>
-        <p></p>
+      <p>Customizing Oxygen Web Author through a framework is powerful: you can <b>reshape the user
+                interface</b>, <b>define document templates</b>, <b>extend DITA</b>, or add entirely
+            new functionality. </p>
+      <p>We asked: <q>What if an AI assistant could understand the Web Author documentation,
+                generate framework customizations, and verify that they actually work?</q></p>
+      <p>To find out, we built a collection of <b>AI Skills</b> that combine the official
+            documentation, practical examples, and an automated development workflow. Given a
+            plain-language request such as <q>create a document template for this use case</q>,
+            <q>add a custom toolbar action</q>, <q>change the editor styling</q>, or <q>create a
+            DITA extension</q>, the assistant can:</p>
+      <ul>
+        <li>Answer questions using the official documentation.</li>
+        <li>Recommend the appropriate extension points for the customization.</li>
+        <li>Generate the framework code and configuration.</li>
+        <li>Launch Web Author in a real browser.</li>
+        <li>Test the customization visually using Chrome DevTools MCP.</li>
+        <li>Fix issues and iterate until the implementation works.</li>
+      </ul>
+      <p>What makes this possible is that the documentation was already prepared for AI integration.
+            Starting with Oxygen XML WebHelp 28, the same DITA source can be published in an
+            AI-friendly format: an <filepath>llms.txt</filepath> index alongside Markdown versions of
+            every topic. That single output serves human readers and AI assistants alike, so the
+            skills draw on the exact same documentation we ship to everyone else, with no separate
+            set to maintain.</p>
+        <note id="note_eg4_bf5_pjc" type="tip">For details on the AI-friendly format, see <xref
+                href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-ai-friendly-output.html"
+                format="html" scope="external">AI-friendly output</xref> in the Oxygen XML WebHelp
+            documentation.</note>
+      <p>In the rest of this article, we'll look at how these AI Skills are put together, then walk
+            through several framework customizations: a document template, a custom toolbar action,
+            an editor styling change, and a DITA extension (that were created entirely through
+            natural language prompts)</p>
+      <section>
+        <title>References</title>
+        <ul>
+          <li><xref
+                        href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-ai-friendly-output.html"
+                        format="html" scope="external">AI-friendly output (Oxygen
+                    WebHelp)</xref></li>
+        </ul>
+      </section>
     </body>
-</topic>
+  </topic>
