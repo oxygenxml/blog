@@ -38,9 +38,40 @@
                 format="html" scope="external">AI-friendly output</xref> in the Oxygen XML WebHelp
             documentation.</note>
       <p>In the rest of this article, we'll look at how these AI Skills are put together, then walk
-            through several framework customizations: a document template, a custom toolbar action,
-            an editor styling change, and a DITA extension (that were created entirely through
-            natural language prompts)</p>
+      through several framework customizations: a document template, a custom toolbar action, an
+      editor styling change, and a DITA extension (that were created entirely through natural
+      language prompts)</p>
+      <section id="example-faq-template">
+  <title>A reusable FAQ template</title>
+  <p>A framework can ship ready-made starting points for new documents. We wanted a template for FAQ
+        (Frequently Asked Questions) entries that the team could fill in.</p>
+      <p>The prompt: <q>Create a new-document template for an FAQ entry: a question, a one-line
+          answer, a details section, and numbered steps.</q></p>
+  <p>From there the assistant chose the DITA <i>task</i> topic as the base, since its built-in
+        structure already matches a how-to FAQ. It generated the template file and registered it so
+        it appears in Web Author's <uicontrol>New Document</uicontrol> dialog, wrote a matching CSS
+        style-sheet for the question-and-answer presentation, and saved a populated sample. It then
+        opened both in the browser to confirm the template starts clean and the sample renders as
+        intended.</p>
+  <fig>
+        <title>A sample FAQ document in Web Author</title>
+        <image href="../images/faq-template.png" id="image_kdy_vb2_rjc">
+          <alt>Web Author showing faq-sample.dita</alt>
+        </image>
+      </fig>
+  <p>The template gives an author a structure to complete rather than a blank page:</p>
+  <ul>
+    <li>The topic title carries a <codeph>Q:</codeph> prefix, so the question reads as a
+            question.</li>
+    <li>The short answer sits in an <codeph>A:</codeph> callout directly beneath the title.</li>
+    <li>A <b>Details</b> section holds the background and context for the answer.</li>
+  </ul>
+      <p>The first iteration had a problem with the positioning of the circle number for each step
+        but the assistant was able to take a screenshot, locate the problem and fix it:<image
+          href="../images/faq-template-before.png" id="image_s5w_zc2_rjc"/></p>
+      <p>Notice that each empty block has a placeholder that helps the writer fill in the content
+        and maintain the style.</p>
+</section>
       <section>
         <title>References</title>
         <ul>
