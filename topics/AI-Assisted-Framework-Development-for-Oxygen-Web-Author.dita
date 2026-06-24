@@ -13,7 +13,7 @@
                 interface</b>, <b>define document templates</b>, <b>extend DITA</b>, or add entirely
             new functionality. </p>
       <p>We asked: <q>What if an AI assistant could understand the Web Author documentation,
-                generate framework customizations, and verify that they actually work?</q></p>
+        generate framework customizations, and verify that they actually work?</q>.</p>
       <p>To find out, we built a collection of <b>AI Skills</b> that combine the official
             documentation, practical examples, and an automated development workflow. Given a
             plain-language request such as <q>create a document template for this use case</q>,
@@ -40,13 +40,38 @@
       <p>In the rest of this article, we'll look at how these AI Skills are put together, then walk
       through several framework customizations: a document template, a custom toolbar action, an
       editor styling change, and a DITA extension (that were created entirely through natural
-      language prompts)</p>
+      language prompts).</p>
+    <section id="section_osx_gpr_rjc">
+      <title>How to try out the skills?</title>
+      <p>The code is open-source and can be found here: <xref
+          href="https://github.com/oxygenxml-incubator/web-author-framework-dev-AI-skills"
+          format="html" scope="external"
+          >https://github.com/oxygenxml-incubator/web-author-framework-dev-AI-skills</xref></p>
+      <p>The installation is simple: </p>
+      <p>
+        <ol>
+          <li>Install Claude Code (see <xref href="https://code.claude.com/docs/en/overview"
+              format="html" scope="external">https://code.claude.com/docs/en/overview</xref>).</li>
+          <li>Download or duplicate a Web Author All Platforms kit (the one with
+              <codeph>start-oXygen-XML-Web-Author.sh</codeph> script at its root).</li>
+          <li>Open a terminal at the kit root.</li>
+          <li>Install the skills at the root of the kit using this command:
+            <codeblock id="codeblock_rqw_ktr_rjc" outputclass="language-bourne">npx skills add oxygenxml-incubator/web-author-framework-dev-AI-skills -a claude-code -y</codeblock></li>
+          <li>
+            <p>Type <codeph>claude</codeph> in the terminal and <codeph>/skills</codeph> in order to
+              verify the skills have loaded: <image href="../images/view-skills.png"
+                id="image_ut3_qks_rjc"/></p>
+          </li>
+        </ol>
+      </p>
+      <p>For the full instructions view the README file on GitHub.</p>
+    </section>
       <section id="example-faq-template">
   <title>A reusable FAQ template</title>
   <p>A framework can ship ready-made starting points for new documents. We wanted a template for FAQ
         (Frequently Asked Questions) entries that the team could fill in.</p>
-      <p>The prompt: <q>Create a new-document template for an FAQ entry: a question, a one-line
-          answer, a details section, and numbered steps.</q></p>
+      <p>Prompt: <q>Create a new-document template for an FAQ entry: a question, a one-line answer,
+          a details section, and numbered steps.</q></p>
   <p>From there the assistant chose the DITA <i>task</i> topic as the base, since its built-in
         structure already matches a how-to FAQ. It generated the template file and registered it so
         it appears in Web Author's <uicontrol>New Document</uicontrol> dialog, wrote a matching CSS
@@ -75,10 +100,14 @@
       <section>
         <title>References</title>
         <ul>
+        <li><xref href="https://github.com/oxygenxml-incubator/web-author-framework-dev-AI-skills"
+            format="html" scope="external"
+            >oxygenxml-incubator/web-author-framework-dev-AI-skills</xref></li>
           <li><xref
                         href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-ai-friendly-output.html"
                         format="html" scope="external">AI-friendly output (Oxygen
                     WebHelp)</xref></li>
+        <li/>
         </ul>
       </section>
     </body>
