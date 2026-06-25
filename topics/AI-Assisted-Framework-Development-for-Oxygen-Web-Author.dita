@@ -1,8 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_tp5_225_pjc">
-    <title></title>
+  <topic id="ai-assisted-framework-development">
+    <title>AI-Assisted Framework Development for Oxygen Web Author</title>
+        <prolog>
+        <author>Mircea Bina</author>
+        <critdates>
+            <created date="2026-06-25"/>
+        </critdates>
+    </prolog>
     <body>
-        <p></p>
+      <p>Customizing Oxygen XML Web Author through a framework is powerful: you can <b>reshape the
+        user interface</b>, <b>define document templates</b>, <b>extend DITA</b>, or add entirely
+      new functionality. </p>
+      <p>We asked: <q>What if an AI assistant could understand the <xref
+          href="https://www.oxygenxml.com/doc/ug-waCustom/" format="html" scope="external">Web
+          Author documentation</xref>, generate framework customizations, and verify that they
+        actually work?</q>.</p>
+      <p>To find out, we built a collection of <b>AI Skills</b> that combine the official
+            documentation, practical examples, and an automated development workflow. Given a
+            plain-language request such as <q>create a document template for this use case</q>,
+            <q>add a custom toolbar action</q>, <q>change the editor styling</q>, or <q>create a
+            DITA extension</q>, the assistant can:</p>
+      <ul>
+        <li>Answer questions using the official documentation.</li>
+        <li>Recommend the appropriate extension points for the customization.</li>
+        <li>Generate the framework code and configuration.</li>
+        <li>Launch Web Author in a browser and test the customization using Chrome (with no human
+        interaction).</li>
+        <li>Fix issues and iterate until the implementation works.</li>
+      </ul>
+      <p>What makes this possible is that the documentation was already prepared for AI integration.
+            Starting with Oxygen XML WebHelp 28, the same DITA source can be published in an
+            AI-friendly format: an <filepath>llms.txt</filepath> index alongside Markdown versions of
+            every topic. That single output serves human readers and AI assistants alike, so the
+            skills draw on the exact same documentation we ship to everyone else, with no separate
+            set to maintain.</p>
+        <note id="note_eg4_bf5_pjc" type="tip">For details on the AI-friendly format, see <xref
+                href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-ai-friendly-output.html"
+                format="html" scope="external">AI-friendly output</xref> in the Oxygen XML WebHelp
+            documentation.</note>
+      <p>In the rest of this article, we'll look at how these AI Skills are put together, then walk
+      through several framework customizations: a document template, a custom toolbar action, an
+      editor styling change, and a DITA extension (that were created entirely through natural
+      language prompts).</p>
+    <section id="section_osx_gpr_rjc">
+      <title>How to try out the skills?</title>
+      <p>The project is publicly available at <xref
+          href="https://github.com/oxygenxml-incubator/web-author-framework-dev-AI-skills"
+          format="html" scope="external"
+          >https://github.com/oxygenxml-incubator/web-author-framework-dev-AI-skills</xref>. All you
+        need to start is an unpacked Web Author kit, a valid license, and an administrator user;
+        from there you describe the change in plain English and the agent generates a declarative
+          <filepath>.exf</filepath> extension under <filepath>user-frameworks/</filepath>, restarts
+        Web Author, and confirms the change loaded.</p>
+      <p>The installation is simple: </p>
+      <p>
+        <ol>
+          <li>Install Claude Code (see <xref href="https://code.claude.com/docs/en/overview"
+              format="html" scope="external">https://code.claude.com/docs/en/overview</xref>).</li>
+          <li>Download or duplicate a Web Author All Platforms kit (the one with
+              <codeph>start-oXygen-XML-Web-Author.sh</codeph> script at its root).</li>
+          <li>Open a terminal at the kit root.</li>
+          <li>Install the skills at the root of the kit using this command:
+            <codeblock id="codeblock_rqw_ktr_rjc" outputclass="language-bourne">npx skills add oxygenxml-incubator/web-author-framework-dev-AI-skills -a claude-code -y</codeblock></li>
+          <li>
+            <p>Type <codeph>claude</codeph> in the terminal and press <codeph>enter</codeph>. Claude
+              will boot up with the newly added skills.</p>
+          </li>
+          <li>Type <codeph>/skills</codeph> in order to verify the skills have loaded: <image
+              href="../images/view-skills.png" id="image_ut3_qks_rjc"/></li>
+        </ol>
+      </p>
+      <p>For the full setup instructions view the README file on GitHub.</p>
+    </section>
+      <section id="example-faq-template">
+  <title>A simple example: FAQ template</title>
+  <p>A framework can ship ready-made starting points for new documents. We wanted a template for FAQ
+        (Frequently Asked Questions) entries that the team could fill in.</p>
+      <p>Prompt: <q>Create a new-document template for an FAQ entry: a question, a one-line answer,
+          a details section, and numbered steps.</q></p>
+  <p>From there the assistant chose the DITA <i>task</i> topic as the base, since its built-in
+        structure already matches a how-to FAQ. It generated the template file and registered it so
+        it appears in Web Author's <uicontrol>New Document</uicontrol> dialog, wrote a matching CSS
+        style-sheet for the question-and-answer presentation, and saved a populated sample. It then
+        opened both in the browser to confirm the template starts clean and the sample renders as
+        intended.</p>
+  <fig>
+        <title>A sample FAQ document in Web Author</title>
+        <image href="../images/faq-template.png" id="image_kdy_vb2_rjc">
+          <alt>Web Author showing faq-sample.dita</alt>
+        </image>
+      </fig>
+  <p>The template gives an author a structure to complete rather than a blank page:</p>
+  <ul>
+    <li>The topic title carries a <codeph>Q:</codeph> prefix, so the question reads as a
+            question.</li>
+    <li>The short answer sits in an <codeph>A:</codeph> callout directly beneath the title.</li>
+    <li>A <b>Details</b> section holds the background and context for the answer.</li>
+  </ul>
+      <p>The first iteration had a problem with the positioning of the circle number for each step
+        but the assistant was able to take a screenshot, locate the problem and fix it:<image
+          href="../images/faq-template-before.png" id="image_s5w_zc2_rjc"/></p>
+      <p>Notice that each empty block has a placeholder that helps the writer fill in the content
+        and maintain the style.</p>
+</section>
+    <section id="section_sop_overview">
+      <title>A complete example: A SOP framework</title>
+      <p>The FAQ template is a deliberately small example. To show what the skills can do end to
+        end, we asked for a full framework for internal <term>Standard Operating Procedures</term>
+        (SOPs) - one that touches every customization type from the introduction: a new-document
+        template, an editor styling change, custom form controls, a toolbar action, and a DITA
+        validation rule with a quick fix.</p>
+      <p>Everything below was produced from plain-language prompts and verified by the agent in a
+        live browser before it reported back. A full walkthrough is available in the accompanying
+          video:<xref href="VIDEO_URL_HERE" format="html" scope="external">Watch the SOP framework
+          presentation</xref>.</p>
+      <p>This is how a document using the framework looks like:<image href="../images/sop-final.png"
+          id="image_uns_wbt_rjc"/></p>
+    </section>
+
+<section id="section_sop_step1">
+  <title>Step 1: The "New SOP" template</title>
+  <p>Prompt: <q>Add a "New SOP" template. It should have a header table (Owner, Version, Effective
+          date, Approver), sections for Purpose / Scope / Responsibilities / Procedure, and one
+          step. Use an editor variable to autocomplete the date</q>.</p>
+      <p>The agent asked a few questions about the template (such as the document type to use):</p>
+      <p><image href="../images/sop-template-questions.png" id="image_a31_1dt_rjc"/></p>
+  <p>Than, the agent created an extension under <filepath>user-frameworks/sop-templates/</filepath>
+        with the header table, the four sections, one starter step, and <codeph>${date}</codeph>
+        seeded into the effective-date cell. After restarting the kit and checking
+          <filepath>oxygen.log</filepath>, it used Chrome to confirm <uicontrol>New SOP</uicontrol>
+        appeared in the wizard.</p>
+  <p>Result: <uicontrol>New File</uicontrol> > <uicontrol>SOP</uicontrol> > <uicontrol>New
+          SOP</uicontrol> produces a valid DITA topic with today's date already filled in.</p>
+  <fig>
+        <title>The "New SOP" entry in the New Document wizard</title>
+        <image href="../images/sop-template-iteration-1.png" id="image_sop_step1">
+          <alt>Web Author showing the New SOP template file</alt>
+        </image>
+      </fig>
+</section>
+
+<section id="section_sop_step2">
+  <title>Step 2: The CSS styling</title>
+      <p>Prompt: <q>Make that header table render as a nice banner instead of raw table markup. Also
+          style the sections as cards.</q></p>
+  <p>The agent routed to the <codeph>framework-style-changes</codeph> skill and added
+          <codeph>outputclass=&quot;sop&quot;</codeph> to the template's root topic so every rule
+        could be scoped to SOP documents and leave ordinary DITA topics untouched, then wrote
+          <filepath>css/sop.css</filepath> and wired it into the same <filepath>.exf</filepath>
+        file.</p>
+  <p>The first banner color came out too loud, so a follow-up prompt asked for a quieter tone and
+        the agent applied a muted steel-blue.</p>
+  <fig>
+        <title>SOP sections rendered as titled cards with a header banner</title>
+        <image href="../images/sop-template-iteration-2.png" id="image_sop_step2">
+          <alt>Styled SOP document in Web Author</alt>
+        </image>
+      </fig>
+</section>
+
+<section id="section_sop_step3">
+  <title>Step 3: Header with form controls</title>
+      <p>Prompt: <q>Make the header editable with form controls: status as a dropdown
+          (Draft/Approved/Retired), Owner and Approver as text fields.</q></p>
+  <p>The agent restructured the header from a simple table into a wrapper holding five fields.
+        Before writing any control syntax it looked up real uses of <codeph>oxy_combobox</codeph>
+        and <codeph>oxy_datePicker</codeph>, so the form controls were modelled on verified working
+        CSS. Each field renders with two pseudo-elements: a small uppercase label on top and a
+        control bound to <codeph>@value</codeph> underneath.</p>
+  <fig>
+        <title>The SOP header with interactive form controls</title>
+        <image href="../images/sop-template-iteration-3.png" id="image_sop_step3">
+          <alt>SOP header showing a status dropdown and a date picker</alt>
+        </image>
+      </fig>
+</section>
+
+<section id="section_sop_step4">
+  <title>Step 4: The "Insert Procedure Step" toolbar action</title>
+  <p>The agent loaded the content-completion actions reference, then read a bundled
+          <codeph>externalAuthorAction</codeph> file to copy the two-file pattern and the
+          <codeph>InsertFragmentOperation</codeph> syntax. It generated an action with two
+        operations - one for when the caret is already inside a list item and one for any other
+        location - and wired the button into the toolbar through the <filepath>.exf</filepath>.</p>
+  <p>The <codeph>${ask}</codeph> combo box offers four step types (Normal, Caution,
+    Verification, Optional). The selected key is written into
+    <codeph>outputclass</codeph> on the new list item, so the choice stays queryable and
+    stylable later.</p>
+  <fig>
+        <title>Inserting a procedure step from the toolbar</title>
+        <image href="../images/sop-template-iteration-4.png" id="image_sop_step4">
+          <alt>Toolbar action prompting for a procedure step type</alt>
+        </image>
+      </fig>
+</section>
+
+<section id="section_sop_step5">
+  <title>Step 5: Validation rule with a quick fix</title>
+      <p>Prompt: <q>Add a rule: if status is Approved but Owner or date is empty, show an error with
+          a one-click fix.</q></p>
+      <p>The agent responded:</p>
+      <p>
+        <codeblock id="codeblock_h5p_rft_rjc">This is a Schematron + Quick Fix task. Let me load that skill.
+• Skill(schematron-quick-fix)</codeblock>
+      </p>
+  <p>It loaded the <codeph>schematron-quick-fix</codeph> skill, then read the operations reference
+        and a bundled example before writing any <codeph>sqf:fix</codeph>. It produced a Schematron
+        rule with three alternative fixes:</p>
+      <p>
+        <ol id="ol_nrr_wft_rjc">
+          <li>Revert the status to <i>Draft.</i></li>
+          <li>Fill the date with today.</li>
+          <li>Prompt the author for the owner name.</li>
+        </ol>
+      </p>
+  <p>It then generated a <filepath>.scenarios</filepath> file that wires both the bundled DITA
+        validation engine and the new Schematron file into a single scenario, and added it to the
+          <filepath>.exf</filepath> as the default. </p>
+      <p>Finally it put the test document into an error state, restarted, and verified end to end:
+        the validation panel showed the dynamic error message and the right fix buttons. licking one
+        repaired the underlying XML so validation went green.</p>
+  <fig>
+        <title>A validation error with one-click quick fixes</title>
+        <image href="../images/sop-template-iteration-5.png" id="image_sop_step5">
+          <alt>Web Author validation panel showing a Schematron quick fix</alt>
+        </image>
+      </fig>
+</section>
+    <section id="section_kt4_wts_rjc">
+      <title>References</title>
+      <ul id="ul_lt4_wts_rjc">
+        <li><xref href="https://github.com/oxygenxml-incubator/web-author-framework-dev-AI-skills"
+            format="html" scope="external"
+            >oxygenxml-incubator/web-author-framework-dev-AI-skills</xref></li>
+        <li><xref
+            href="https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-ai-friendly-output.html"
+            format="html" scope="external">AI-friendly output (Oxygen WebHelp)</xref></li>
+      </ul>
+    </section>
+
     </body>
-</topic>
+  </topic>
