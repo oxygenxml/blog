@@ -82,6 +82,10 @@
                         <entry>Stefan Vasile</entry>
                         <entry>CEO. <ph keyref="oxygen"/></entry>
                     </row>
+                    <row>
+                        <entry>Mircea Bina</entry>
+                        <entry>Software Developer, Web Author team. <ph keyref="oxygen"/></entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>

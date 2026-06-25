@@ -354,6 +354,10 @@ h3.followit{
   background-image: url("resources/images/foto-mihaela_c.jpeg");
 }
 
+.author.Mircea_Bina {
+  background-image: url("https://avatars.githubusercontent.com/u/67867765");
+}
+
 .wh_logo + .wh_publication_title {
   margin-top: 0.3em;
 }
