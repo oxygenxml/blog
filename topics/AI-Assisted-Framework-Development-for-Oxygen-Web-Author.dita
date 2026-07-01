@@ -112,9 +112,7 @@
         template, an editor styling change, custom form controls, a toolbar action, and a DITA
         validation rule with a quick fix.</p>
       <p>Everything below was produced from plain-language prompts and verified by the agent in a
-        live browser before it reported back. A full walkthrough is available in the accompanying
-          video:<xref href="VIDEO_URL_HERE" format="html" scope="external">Watch the SOP framework
-          presentation</xref>.</p>
+        live browser before it reported back.</p>
       <p>This is how a document using the framework looks like:<image href="../images/sop-final.png"
           id="image_uns_wbt_rjc"/></p>
     </section>
@@ -219,7 +217,7 @@
         validation engine and the new Schematron file into a single scenario, and added it to the
           <filepath>.exf</filepath> as the default. </p>
       <p>Finally it put the test document into an error state, restarted, and verified end to end:
-        the validation panel showed the dynamic error message and the right fix buttons. licking one
+        the validation panel showed the dynamic error message and the right fix buttons. Linking one
         repaired the underlying XML so validation went green.</p>
   <fig>
         <title>A validation error with one-click quick fixes</title>
