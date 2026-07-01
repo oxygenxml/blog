@@ -184,6 +184,18 @@
                             changes, reviewing and incorporating changes.</p>
                     </dd>
                 </dlentry>
+                <dlentry>
+                    <dt>10. Intercept AI Events via Hooks</dt>
+                    <dd>
+                        <p>AI Positron includes a <xref
+                                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_enterprise-hooks.html"
+                                format="html" scope="external">hook system</xref> for intercepting
+                            AI events to help monitor, govern, and shape AI behavior, giving you
+                            greater visibility and control over AI-driven workflows. This lets you
+                            audit AI actions, enforce organizational policies, collect usage
+                            metrics, and block risky operations before they execute. </p>
+                    </dd>
+                </dlentry>
             </dl>
         </section>
         <section id="why_layers_matter">
