@@ -2,6 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="oxygen_desktop_security_data_integrity">
     <title>Oxygen XML Desktop - Security and Data Integrity</title>
+    <shortdesc>This article explains the main security and data integrity features in Oxygen XML Desktop applications and shows how to reduce risk when you work with content, add-ons, projects, and remote resources.</shortdesc>
     <prolog>
         <author>Radu Coravu</author>
         <critdates>
@@ -9,165 +10,67 @@
         </critdates>
     </prolog>
     <body>
-        <p>We receive sometimes questions about how secure the Oxygen XML Editor/Author/Developer
-            desktop applications are, and in this blog post I will try to discuss various security
-            and data integrity aspects. </p>
-        <p>With Oxygen's layers of security and your vigilance, you will have safe and productive
-            editing sessions with our tools. </p>
+        <p>Users sometimes ask how secure the Oxygen XML Editor, Author, and Developer desktop applications are. This article explains the main security and data integrity aspects and points out the settings and practices that help reduce risk.</p>
+        <p>Oxygen includes several layers of protection. Combined with careful user decisions, these protections help you keep editing sessions safe and productive.</p>
         <section id="section_lqh_rl1_vjc">
             <title>Certifications</title>
-            <p>Our company is <xref
-                    href="ISO-27001-certification-announcement.dita"><b>ISO 27001:2022</b> certified</xref>.</p>
-            <p>We do not do penetration tests of type SOC2 for Oxygen desktop as this kind of tests
-                are for server applications. Oxygen desktop is installed on each user's platform and
-                users have full control over the content they edit or outside resources accessible
-                to the application.</p>
+            <p>Our company is <xref href="ISO-27001-certification-announcement.dita"><b>ISO 27001:2022</b> certified</xref>.</p>
+            <p>We do not perform SOC 2-style penetration testing for Oxygen desktop applications because those assessments target hosted services. Oxygen desktop runs on each user's machine, and users control both the edited content and the external resources that the application can access.</p>
         </section>
         <section id="section_omv_js1_vjc">
             <title>Unsafe Libraries</title>
-            <p>Oxygen contains a variety of open source and commercial libraries. They are all
-                listed and endorsed in the main menu <menucascade>
-                    <uicontrol>Help</uicontrol>
-                    <uicontrol>About</uicontrol>
-                </menucascade> dialog. In time various <b>Common Vulnerabilities and Exposures
-                    (CVEs)</b> may be reported for certain libraries used by the application or by
-                plugins we built for it. We monitor such situations in real time and depending on
-                how the CVEs affect the application we may decide to:<ul id="ul_mhh_rs1_vjc">
-                    <li>Release as soon as possible new versions of the applications or plugins with
-                        the libraries updated. We only take this decision when the risks are
-                        severe.</li>
-                    <li>Consider the CVEs do not affect our application as it does not use the
-                        vulnerable parts of the libraries. In such case we issue <xref
-                            href="https://www.oxygenxml.com/security/advisories.html" format="html"
-                            scope="external">security advisories</xref> and possibly update the
-                        libraries in future releases.</li>
-                </ul></p>
+            <p>Oxygen includes a mix of open-source and commercial libraries. You can review them in the <menucascade><uicontrol>Help</uicontrol><uicontrol>About</uicontrol></menucascade> dialog. Over time, <b>Common Vulnerabilities and Exposures (CVEs)</b> may be reported for libraries used by the application or by plugins built for it. We monitor these reports and decide how to respond based on their impact on the product:</p>
+            <ul id="ul_mhh_rs1_vjc">
+                <li>We may release updated application or plugin versions as soon as possible when the risk is severe.</li>
+                <li>We may determine that a reported CVE does not affect Oxygen because the vulnerable library code is not used in the product. In that case, we publish <xref href="https://www.oxygenxml.com/security/advisories.html" format="html" scope="external">security advisories</xref> and may update the libraries in a later release.</li>
+            </ul>
         </section>
         <section id="section_vvb_vm1_vjc">
             <title>Privacy</title>
-            <p>By default Oxygen may connect to its web site to retrieve information about various
-                events (new releases, conferences, webinars). You can decide to <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/privacy_options.html"
-                    format="html" scope="external">disable</xref> these notification checks.</p>
-            <p>By default Oxygen also allows you to install add-ons from its default add-ons update
-                site and the privacy settings above can also control this setting.</p>
+            <p>By default, Oxygen may connect to the Oxygen website to retrieve information about events such as new releases, conferences, and webinars. You can <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/privacy_options.html" format="html" scope="external">disable</xref> these notification checks if needed.</p>
+            <p>By default, Oxygen also lets you install add-ons from the default update site. The same privacy settings can also control this behavior.</p>
         </section>
         <section id="section_dzz_jn1_vjc">
             <title>Add-ons - Plugins</title>
-            <p>You can install plugins in Oxygen via the add-ons installation support. You will
-                receive the EULA of the add-on and also information about if the add-on is signed or
-                not. Oxygen has a bunch of <xref href="https://www.oxygenxml.com/doc/ug-addons/"
-                    format="html" scope="external">useful official add-ons</xref> which can be
-                installed. Do not install third party add-on if they come from unverified or
-                untrusted sources. Oxygen plugins have access rights similar to Oxygen so they can
-                make modifications on your computer or even run other processes. </p>
-            <p>If an installed plugin makes Oxygen un-responsive in certain circumstances you can
-                un-install it from the Oxygen <menucascade>
-                    <uicontrol>Preferences</uicontrol>
-                    <uicontrol>Plugins</uicontrol>
-                </menucascade> page and contact its vendors.</p>
-            <p>Plugins may add side views in Oxygen allowing you to open and save documents from
-                external locations, do not use these capabilities if you do not trust the plugin or
-                the external storage system.</p>
+            <p>You can install plugins in Oxygen by using the add-on installation support. During installation, Oxygen shows the add-on EULA and whether the add-on is signed. Oxygen provides many <xref href="https://www.oxygenxml.com/doc/ug-addons/" format="html" scope="external">official add-ons</xref> that you can install. Do not install third-party add-ons from unverified or untrusted sources. Plugins have access rights similar to Oxygen itself, so they can modify files on your computer or run other processes.</p>
+            <p>If an installed plugin makes Oxygen unresponsive in some situations, uninstall it from the Oxygen <menucascade><uicontrol>Preferences</uicontrol><uicontrol>Plugins</uicontrol></menucascade> page and contact the plugin vendor.</p>
+            <p>Plugins may also add side views that let you open and save documents from external locations. Do not use these capabilities if you do not trust the plugin or the external storage system.</p>
         </section>
         <section id="section_k1y_xn1_vjc">
             <title>Add-ons - Frameworks</title>
-            <p>You can install frameworks in Oxygen via the add-ons installation support. Frameworks
-                allow you to add specific editing support for certain XML files. When you perform
-                the installation you receive the EULA of the add-on and also information about if
-                the add-on is signed or not. Do not install third party frameworks if they come from
-                unverified or untrusted sources. Java extensions in Oxygen frameworks have access
-                rights similar to Oxygen so they can make modifications on your computer or even run
-                other processes. </p>
-            <p>If an installed framework makes Oxygen un-responsive in certain circumstances you can
-                un-install it from the Oxygen <menucascade>
-                    <uicontrol>Preferences</uicontrol>
-                    <uicontrol>Document Type Association</uicontrol>
-                </menucascade> page and contact its vendors.</p>
+            <p>You can install frameworks in Oxygen by using the add-on installation support. Frameworks add editing support for specific XML vocabularies. During installation, Oxygen shows the add-on EULA and whether the add-on is signed. Do not install third-party frameworks from unverified or untrusted sources. Java extensions in frameworks have access rights similar to Oxygen itself, so they can modify files on your computer or run other processes.</p>
+            <p>If an installed framework makes Oxygen unresponsive in some situations, uninstall it from the Oxygen <menucascade><uicontrol>Preferences</uicontrol><uicontrol>Document Type Association</uicontrol></menucascade> page and contact the framework vendor.</p>
         </section>
         <section id="section_c5c_d41_vjc">
             <title>Connections to Remote Servers</title>
-            <p>Whenever Oxygen's functionality attempts to open an HTTP or HTTPS connection to a
-                remote server you will get a popup dialog asking you if the connection should be
-                allowed. You can configure your trusted hosts in the <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/trusted-hosts-settings.html"
-                    format="html" scope="external">Trusted Hosts Preferences page</xref>.
-                Connections to HTTP resources can either retrieve unapproved content or they can
-                send content to the remote server, so you must reject connections to web site that
-                you consider unsafe.</p>
+            <p>Whenever Oxygen tries to open an HTTP or HTTPS connection to a remote server, it shows a dialog that asks whether the connection should be allowed. You can manage trusted hosts in the <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/trusted-hosts-settings.html" format="html" scope="external">Trusted Hosts Preferences page</xref>. Connections to remote resources may retrieve unapproved content or send content to a server, so reject connections to sites that you do not trust.</p>
         </section>
         <section id="section_zxp_x41_vjc">
             <title>Project Level Settings</title>
-            <p>Most of Oxygen's Preferences pages can be saved at Project level and shared with your
-                team. When you receive an Oxygen project XPR file having custom settings and attempt
-                to open it in Oxygen, you will receive a notification the XPR has custom settings
-                inside. Do not approve loading of custom settings from an XPR received from an
-                untrusted source.</p>
+            <p>Most Oxygen preference pages can be saved at project level and shared with a team. When you open an Oxygen project XPR file that contains custom settings, Oxygen notifies you about them. Do not approve custom settings from an XPR file that comes from an untrusted source.</p>
         </section>
         <section id="section_tz1_dp1_vjc">
             <title>Unsafe Content</title>
-            <p>You may receive XML documents and other documents (for example XSLT stylesheets) from
-                other people. Do not open in general documents received from untrusted sources.
-                Oxygen implements ample mechanisms to avoid various public security vulnerabilities
-                related to XML processing. When processing or editing content received from
-                untrusted sources, if Oxygen shows a dialog asking you to connect to an external web
-                site, consider if the web site is trusted.</p>
+            <p>You may receive XML documents and related files, such as XSLT stylesheets, from other people. In general, do not open documents from untrusted sources. Oxygen includes protections against known XML processing vulnerabilities. If Oxygen asks for permission to connect to an external website while you process or edit untrusted content, allow the connection only if you trust the site.</p>
         </section>
         <section id="section_fv4_lq1_vjc">
             <title>Crashes - Data Integrity</title>
-            <p>Oxygen attempts to secure the content you are editing (and have not yet saved) in the
-                unlikely event of an <b>application crash</b>. In the Oxygen <menucascade>
-                    <uicontrol>Preferences</uicontrol>
-                    <uicontrol>Editor / Save</uicontrol>
-                </menucascade> page by default you have settings like <uicontrol>Save
-                    save</uicontrol> (which saves the entire content of a file instead of just
-                streaming the modifications) or <uicontrol>Save auto-recover information</uicontrol>
-                enabled. </p>
-            <p>If the application crashes while you are editing a document and then gets restarted
-                it should allow you to <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/auto-recover-feature.html"
-                    format="html" scope="external">recover the contents</xref> of the edited
-                document.</p>
+            <p>Oxygen tries to protect the content that you are editing, including unsaved changes, in the unlikely event of an <b>application crash</b>. In the Oxygen <menucascade><uicontrol>Preferences</uicontrol><uicontrol>Editor / Save</uicontrol></menucascade> page, settings such as <uicontrol>Safe save</uicontrol> and <uicontrol>Save auto-recover information</uicontrol> are enabled by default.</p>
+            <p>If the application crashes while you edit a document and then restarts, it should let you <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/auto-recover-feature.html" format="html" scope="external">recover the edited content</xref>.</p>
         </section>
         <section id="section_pvk_zq1_vjc">
             <title>Out of Memory</title>
-            <p>The entire Oxygen application is allocated a maximum amount of memory when started.
-                You can see the maximum amount of internal memory allocated to Oxygen in the main
-                menu <menucascade>
-                    <uicontrol>Help</uicontrol>
-                    <uicontrol>About</uicontrol>
-                </menucascade> dialog. You can also decide to <xref
-                    href="https://www.oxygenxml.com/doc/ug-editor/topics/increase-memory.html"
-                    format="html" scope="external">increase the maximum amount of memory allocated
-                    to Oxygen</xref>.</p>
-            <p>The application has a set of features which allow it to avoid out of memory
-                    situations:<ul id="ul_hsp_gr1_vjc">
-                    <li><xref
-                            href="https://www.oxygenxml.com/doc/ug-editor/topics/editing-large-documents.html"
-                            format="html" scope="external">Optimizations and restrictions</xref>
-                        when loading very large or huge files.</li>
-                    <li>Lazily loading the last opened files when a project is opened in the
-                            <uicontrol>Project</uicontrol> view. Only the tabs of the current
-                        selected files are loaded and all other files are loaded when pressing their
-                        corresponding tabs.</li>
-                    <li>Starting with Oxygen 29, when there is little memory available the
-                        application shows a warning and starts unloading opened documents, leaving
-                        only their tabs. The documents are loaded back when you press their
-                        corresponding tab.</li>
-                </ul></p>
+            <p>Oxygen is started with a maximum amount of memory allocated to the application. You can see the current maximum in the <menucascade><uicontrol>Help</uicontrol><uicontrol>About</uicontrol></menucascade> dialog. You can also <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/increase-memory.html" format="html" scope="external">increase the maximum amount of memory allocated to Oxygen</xref>.</p>
+            <p>The application includes several features that help avoid out-of-memory situations:</p>
+            <ul id="ul_hsp_gr1_vjc">
+                <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editing-large-documents.html" format="html" scope="external">Optimizations and restrictions</xref> when loading very large files.</li>
+                <li>Lazy loading of files reopened with a project in the <uicontrol>Project</uicontrol> view. Oxygen loads only the currently selected files first and loads other files when you select their tabs.</li>
+                <li>Starting with Oxygen 29, when available memory becomes low, the application shows a warning and unloads opened documents while keeping their tabs. The documents load again when you select their tabs.</li>
+            </ul>
         </section>
         <section id="section_usk_zr1_vjc">
             <title>Stay in Touch</title>
-            <p>Active licenses of Oxygen desktop (licenses which are not in our <xref
-                    href="https://www.oxygenxml.com/eol.html" format="html" scope="external">end of
-                    life</xref> stage) allow you to <xref
-                    href="https://www.oxygenxml.com/technical_support.html" format="html"
-                    scope="external">contact us via our many channels</xref> and ask for advice or
-                help related to various unstable or unsafe behaviors of the application. You can
-                also use the Oxygen main menu <menucascade>
-                    <uicontrol>Help</uicontrol>
-                    <uicontrol>Report problem</uicontrol>
-                </menucascade> dialog to report such problems to us.</p>
+            <p>If you use an active Oxygen desktop license that is not in the <xref href="https://www.oxygenxml.com/eol.html" format="html" scope="external">end-of-life</xref> stage, you can <xref href="https://www.oxygenxml.com/technical_support.html" format="html" scope="external">contact us through several support channels</xref> for advice or help related to unstable or unsafe application behavior. You can also use the Oxygen <menucascade><uicontrol>Help</uicontrol><uicontrol>Report problem</uicontrol></menucascade> dialog to report issues.</p>
         </section>
     </body>
 </topic>
