@@ -111,9 +111,12 @@
             <title>Untrusted Content</title>
             <p>You may receive XML documents and related files, such as XSLT stylesheets, from other
                 people. In general, do not open documents from untrusted sources. Oxygen includes
-                built-in protections against many well-known XML processing vulnerabilities. If
-                Oxygen asks for permission to connect to an external website while you process or
-                edit untrusted content, allow the connection only if you trust the site.</p>
+                built-in protections against many well-known XML processing vulnerabilities. Some of
+                these protections are available as settings in the <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-xml-parser.html"
+                    format="html" scope="external">XMLParser Preferences page</xref>. If Oxygen asks
+                for permission to connect to an external website while you process or edit untrusted
+                content, allow the connection only if you trust the site.</p>
         </section>
         <section id="section_fv4_lq1_vjc">
             <title>Crashes - Data Integrity</title>
