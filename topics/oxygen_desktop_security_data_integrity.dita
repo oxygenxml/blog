@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="oxygen_desktop_security_data_integrity">
-    <title>Oxygen XML Editor, Author and Developer Desktop - Security and Data Integrity</title>
+    <title>Oxygen XML Editor, Author, and Developer Desktop - Security and Data Integrity</title>
     <shortdesc>This article explains the main security and data integrity features in Oxygen XML
         Desktop applications and highlights the settings and best practices that reduce risk when
         you work with content, add-ons, projects, and remote resources.</shortdesc>
@@ -12,7 +12,9 @@
         </critdates>
     </prolog>
     <body>
-        <p>Users sometimes ask how secure the Oxygen XML Editor, Author, and Developer desktop applications are. This article explains the main security and data integrity aspects and points out the settings and practices that help reduce risk.</p>
+        <p>Users sometimes ask how secure the Oxygen XML Editor, Author, and Developer desktop
+            applications are. This article explains the main security and data integrity aspects and
+            describes the settings and practices that help reduce risk.</p>
         <p>Oxygen includes several layers of protection. Combined with careful user decisions, these protections help you keep editing sessions safe and productive.</p>
         <section id="section_lqh_rl1_vjc">
             <title>Certifications</title>
@@ -22,7 +24,7 @@
                 (ISMS), not the Oxygen desktop applications themselves.</p>
             <p>We do not perform SOC 2-style penetration testing for Oxygen desktop applications
                 because SOC 2 is designed for service organizations and hosted platforms, not for
-                locally installed desktop software . Oxygen desktop runs on each user's machine, and
+                locally installed desktop software. Oxygen desktop runs on each user's machine, and
                 users control both the edited content and the external resources that the
                 application can access.</p>
         </section>
@@ -32,10 +34,10 @@
                 libraries. You can review them in the <menucascade>
                     <uicontrol>Help</uicontrol>
                     <uicontrol>About</uicontrol>
-                </menucascade> dialog. Over time, <b>Common Vulnerabilities and Exposures (CVEs)</b>
-                may be reported for libraries used by the application or by plugins built for it. We
-                monitor these reports and decide how to respond based on their impact on the
-                product:</p>
+                </menucascade> dialog box. Over time, <b>Common Vulnerabilities and Exposures
+                    (CVEs)</b> may be reported for libraries used by the application or by plugins
+                built for it. We monitor these reports and decide how to respond based on their
+                impact on the product:</p>
             <ul id="ul_mhh_rs1_vjc">
                 <li>We may release updated application or plugin versions as soon as possible when
                     the risk is severe and exploitable.</li>
@@ -63,9 +65,13 @@
                 provides many <xref href="https://www.oxygenxml.com/doc/ug-addons/" format="html"
                     scope="external">official add-ons</xref> that you can install. Do not install
                 third-party add-ons from unverified or untrusted sources. Installed plugins run
-                inside Oxygen process and inherit its  access rights, so they can modify files on
+                inside the Oxygen process and inherit its access rights, so they can modify files on
                 your computer or run other processes.</p>
-            <p>If an installed plugin makes Oxygen unresponsive in some situations, uninstall it from the Oxygen <menucascade><uicontrol>Preferences</uicontrol><uicontrol>Plugins</uicontrol></menucascade> page and contact the plugin vendor.</p>
+            <p>If an installed plugin makes Oxygen unresponsive in certain situations, uninstall it
+                from the Oxygen <menucascade>
+                    <uicontrol>Preferences</uicontrol>
+                    <uicontrol>Plugins</uicontrol>
+                </menucascade> page and contact the plugin vendor.</p>
             <p>Plugins may also add side views that let you open and save documents from external locations. Do not use these capabilities if you do not trust the plugin or the external storage system.</p>
         </section>
         <section id="section_k1y_xn1_vjc">
@@ -76,7 +82,11 @@
                 third-party frameworks from unverified or untrusted sources. Java extensions
                 included in frameworks run with the same user permissions as Oxygen itself, so they
                 can modify files on your computer or run other processes.</p>
-            <p>If an installed framework makes Oxygen unresponsive in some situations, uninstall it from the Oxygen <menucascade><uicontrol>Preferences</uicontrol><uicontrol>Document Type Association</uicontrol></menucascade> page and contact the framework vendor.</p>
+            <p>If an installed framework makes Oxygen unresponsive in certain situations, uninstall
+                it from the Oxygen <menucascade>
+                    <uicontrol>Preferences</uicontrol>
+                    <uicontrol>Document Type Association</uicontrol>
+                </menucascade> page and contact the framework vendor.</p>
         </section>
         <section id="section_c5c_d41_vjc">
             <title>Connections to Remote Servers</title>
@@ -109,15 +119,22 @@
         </section>
         <section id="section_pvk_zq1_vjc">
             <title>Out of Memory</title>
-            <p>Oxygen is started with a maximum amount of memory allocated to the application. You can see the current maximum in the <menucascade><uicontrol>Help</uicontrol><uicontrol>About</uicontrol></menucascade> dialog. You can also <xref href="https://www.oxygenxml.com/doc/ug-editor/topics/increase-memory.html" format="html" scope="external">increase the maximum amount of memory allocated to Oxygen</xref>.</p>
+            <p>Oxygen is started with a maximum amount of memory allocated to the application. You
+                can see the current maximum in the <menucascade>
+                    <uicontrol>Help</uicontrol>
+                    <uicontrol>About</uicontrol>
+                </menucascade> dialog box. You can also <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/increase-memory.html"
+                    format="html" scope="external">increase the maximum amount of memory allocated
+                    to Oxygen</xref>.</p>
             <p>The application includes several features that help avoid out-of-memory situations:</p>
             <ul id="ul_hsp_gr1_vjc">
                 <li><xref href="https://www.oxygenxml.com/doc/ug-editor/topics/editing-large-documents.html" format="html" scope="external">Optimizations and restrictions</xref> when loading very large files.</li>
                 <li>Lazy loading of files reopened with a project in the <uicontrol>Project</uicontrol> view. Oxygen loads only the currently selected files first and loads other files when you select their tabs.</li>
                 <li>Starting with Oxygen 29, when available memory becomes critically low, the
-                    application shows a warning and unloads the content of  opened documents while
-                    keeping their tabs. The documents are automatically re-loaded again when you
-                    select their tabs.</li>
+                    application shows a warning and unloads the content of opened documents while
+                    keeping their tabs. The documents are automatically reloaded when you select
+                    their tabs.</li>
             </ul>
         </section>
         <section id="section_usk_zr1_vjc">
@@ -131,7 +148,8 @@
                 Oxygen <menucascade>
                     <uicontrol>Help</uicontrol>
                     <uicontrol>Report problem</uicontrol>
-                </menucascade> dialog to report problems, including potential security issues.</p>
+                </menucascade> dialog box to report problems, including potential security
+                issues.</p>
         </section>
     </body>
 </topic>
