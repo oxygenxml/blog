@@ -100,6 +100,13 @@
                 Connections to remote resources may retrieve unapproved content or send content to a
                 server, so reject connections to sites that you do not trust.</p>
         </section>
+        <section id="section_w1w_kvc_wjc">
+            <title>Passwords/Secrets</title>
+            <p>All passwords saved in the Oxygen preferences (for example passwords for HTTP WebDav
+                connections or for Oxygen 29 values defined in the <b>Secrets</b> preferences page)
+                are stored encrypted specifically for the current user and cannot be exported or
+                shared with others. </p>
+        </section>
         <section id="section_zxp_x41_vjc">
             <title>Project-Level Settings</title>
             <p>Most Oxygen preference pages can be saved at project level and shared with a team.
