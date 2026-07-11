@@ -23,11 +23,11 @@
                     href="ISO-27001-certification-announcement.dita"><b>ISO 27001:2022</b>
                     certified</xref>. This certification applies to our information security
                 management system (ISMS), not to the Oxygen desktop applications themselves.</p>
-            <p>We do not perform SOC 2-style penetration testing for Oxygen desktop applications
-                because SOC 2 is designed for service organizations and hosted platforms, not for
-                locally installed desktop software. Oxygen desktop applications run on each user's
-                machine, and users control both the edited content and the external resources that
-                the application can access.</p>
+            <p>We do not perform <b>SOC 2</b>-style penetration testing for Oxygen desktop
+                applications because <b>SOC 2</b> is designed for service organizations and hosted
+                platforms, not for locally installed desktop software. Oxygen desktop applications
+                run on each user's machine, and users control both the edited content and the
+                external resources that the application can access.</p>
         </section>
         <section id="section_omv_js1_vjc">
             <title>Third-Party Libraries</title>
@@ -126,17 +126,24 @@
                 content, allow the connection only if you trust the site.</p>
         </section>
         <section id="section_fv4_lq1_vjc">
-            <title>Crashes - Data Integrity</title>
+            <title>Data Integrity</title>
             <p>Oxygen tries to protect the content that you are editing, including unsaved changes,
-                in the event of an <b>application crash</b>. In the Oxygen <menucascade>
-                    <uicontrol>Preferences</uicontrol>
-                    <uicontrol>Editor / Save</uicontrol>
-                </menucascade> page, settings such as <uicontrol>Safe save</uicontrol> and
-                    <uicontrol>Save auto-recover information</uicontrol> are enabled by default.</p>
+                in the event of an <b>application crash</b>. In the Oxygen <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-editor-save.html"
+                    format="html" scope="external"><menucascade>
+                        <uicontrol>Preferences</uicontrol>
+                        <uicontrol>Editor / Save</uicontrol>
+                    </menucascade></xref> page, settings such as <uicontrol>Safe save</uicontrol>
+                and <uicontrol>Save auto-recover information</uicontrol> are enabled by default.</p>
             <p>If the application crashes while you are editing a document and then restarts, it
                 should allow you to <xref
                     href="https://www.oxygenxml.com/doc/ug-editor/topics/auto-recover-feature.html"
                     format="html" scope="external">recover the edited content</xref>.</p>
+            <p>If XML documents declare one XML encoding but encode certain characters differently
+                the application <xref
+                    href="https://www.oxygenxml.com/doc/ug-editor/topics/preferences-encoding.html"
+                    format="html" scope="external">reports an error</xref> and does not proceed to
+                load the document by default.</p>
         </section>
         <section id="section_pvk_zq1_vjc">
             <title>Out of Memory</title>
