@@ -7,6 +7,7 @@
             <navtitle>Git</navtitle>
         </topicmeta>
         <topicref href="using_git_for_technical_writing.dita">
+            <topicref href="../topics/wn_git_client_6.dita"/>
             <topicref href="advantages_of_using_git.dita"/>
             <topicref href="disadvantages_of_using_git.dita"/>
             <topicref href="resources_for_learning_git.dita"/>
