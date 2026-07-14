@@ -179,10 +179,9 @@ PDF or Word document containing the documentation for a project/feature.</codebl
                 offered to the LLM to explore and make changes to content. Here are some of the
                 categories of available tools along with prompts you can test for yourself in the
                     <uicontrol>AI Positron</uicontrol> chat view:<ul id="ul_o4h_kng_2hc">
-                    <li>Tools to explore the overall project. The chat modes have access to:<ul
+                    <li>Explore the overall project. The chat modes have access to:<ul
                             id="ul_prx_mng_2hc">
-                            <li>Tool that can perform keyword search in the project. For example,
-                                you can ask
+                            <li>Perform keyword search in the project. For example, you can ask
                                     it:<codeblock id="codeblock_wv1_4ng_2hc">Find topics about Git Push in the project 
 and give me an overview of the most suitable ones.</codeblock><note
                                     id="note_djq_ddr_3hc">This tool relies on the indexing
@@ -205,30 +204,35 @@ in DITA &lt;uicontrol> elements.</codeblock><note
                                     id="note_vcd_d2r_3hc">This tool is available only when working
                                     with local disk resources.</note></li>
                         </ul></li>
-                    <li>Tools to read content from the current or a different file.
+                    <li>Read content from the current or a different file.
                         Example:<codeblock id="codeblock_n5r_f4g_2hc">Give me suggestions about how to shorten the current document
 contents.</codeblock>You can use this same tool to retrieve content from a
                         web site, by using as an example such a
                         prompt:<codeblock>Read through the list of available Oxygen XML addons and give me an overview
 about what I could install to fix my terminology problems: 
 https://www.oxygenxml.com/doc/ug-addons/llms.txt</codeblock></li>
-                    <li>Tool to evaluate an XPath in a specific file.
+                    <li>Evaluate an XPath in a specific file.
                         Example:<codeblock>list all titles in the current topic and give me an overview.</codeblock></li>
-                    <li>Tools to make large or small changes to the current or to other documents.
+                    <li>Make large or small changes to the current or to other documents.
                         Examples:<codeblock id="codeblock_bcf_m4g_2hc">Shorten the title of the current document</codeblock>or:<codeblock id="codeblock_ofl_p4g_2hc">Find and fix logical inconsistencies in the current document</codeblock></li>
-                    <li>Tool to obtain a description for an image, Word or PDF document. Example
+                    <li>Obtain a description for an image, Word or PDF document. Example
                         prompt:<codeblock>The current file references a couple of images, check if the referenced images
 make sense to be used in the current file's context.</codeblock></li>
-                    <li>Tools to provide validation and terminology problems reported for certain
-                        documents. If you have many style guide rules, it is advisable to implement
-                        them as <xref href="SchematronBCs.dita">Schematron rules</xref> or rules for
-                        the <ph keyref="oxygen"/>
+                    <li>Validate and Check for Completeness a DITA Map or DITA OT Project file using
+                        the <b>DITA Agent</b> chat mode. Sample
+                        prompt:<codeblock id="codeblock_zqb_pyf_xjc">Validate and check for completeness the main DITA Map. 
+Apply also this custom Schematron schema...</codeblock></li>
+                    <li>Provide validation and terminology problems reported for certain documents.
+                        If you have many style guide rules, it is advisable to implement them as
+                            <xref href="SchematronBCs.dita">Schematron rules</xref> or rules for the
+                            <ph keyref="oxygen"/>
                         <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
                             format="html" scope="external">Terminology Checker</xref> add-on. Once
                         you implement the checks, you can simply ask the
-                        AI:<codeblock id="codeblock_d55_b1m_2hc">Fix validation and terminology problems in the generated content before saving it to disk.</codeblock></li>
-                    <li>Tools to make XML-aware changes in documents:<ul id="ul_ept_r4g_2hc">
+                        AI:<codeblock id="codeblock_d55_b1m_2hc">Fix validation and terminology problems in the generated content 
+before saving it to disk.</codeblock></li>
+                    <li>Make XML-aware changes in documents:<ul id="ul_ept_r4g_2hc">
                             <li>Apply existing XML refactoring operations on documents.
                                 Example:<codeblock id="codeblock_nqd_t4g_2hc">Invoke XML refactor operation to add unique IDs on all pargraphs</codeblock></li>
                             <li>Apply XML refactoring using XSLT scripts created by the AI. Example:<codeblock id="codeblock_rjq_dpg_2hc">Invoke XML refactor with custom XSLT to 
@@ -240,20 +244,20 @@ replace all &lt;b> elements with &lt;uicontrol></codeblock><p>
                                     </fig>
                                 </p></li>
                         </ul></li>
-                    <li>Tools to call existing AI actions on documents.
+                    <li>Call existing AI actions on documents.
                         Examples:<codeblock id="codeblock_mvv_3pg_2hc">Invoke the Proofread AI action on the current 
 document content, then save the proposed changes 
 to the document</codeblock>or:<codeblock id="codeblock_zml_cqg_2hc">Invoke the improve readability AI action on the current 
 document content, then save the proposed changes 
 to the document</codeblock></li>
-                    <li>Tool to run a command line. The most flexible tool which can provide the
-                        entire operating system's power of searching, making changes, running
-                        applications. Each request by the LLM to run a command line needs to be
-                        approved by you.<p>Examples:
+                    <li>Run a command line. The most flexible tool which can provide the entire
+                        operating system's power of searching, making changes, running applications.
+                        Each request by the LLM to run a command line needs to be approved by
+                            you.<p>Examples:
                             <codeblock>Find the last 10 Git commits on the current opened topic 
 and create a summary for me about what's been changed and by who</codeblock></p></li>
                 </ul><ul>
-                    <li>Tool to copy/move/rename files.
+                    <li>Copy/move/rename files.
                         Examples:<codeblock>Improve the title of the current opened topic and then
 modify the file name to match the new title.</codeblock></li>
                 </ul></p>
