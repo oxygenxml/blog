@@ -66,7 +66,7 @@
       Git Client can now hand a conflicting file to <b>AI Positron</b>, which analyzes your version,
       the incoming version, and their common ancestor, then proposes a resolution. You review the
       suggestion in a dedicated window — with an explanation and side-by-side diffs — and apply it
-      only when you're happy. When AI resolves the file, it's staged automatically.<fig>
+      only when you're happy. When you decide to use the resolved file, it's staged automatically.<fig>
         <title>Resolve conflicts assisted by AI</title>
         <image href="../images/git-client-6-ai-resolve-conflict.png" scale="50"/>
       </fig></p>
