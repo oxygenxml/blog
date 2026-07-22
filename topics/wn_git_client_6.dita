@@ -148,10 +148,6 @@
           branches appear on their own within seconds. The "outdated branches" check is now
           opt-out.</p>
       </li>
-      <li>
-        <p>Security and stability updates, including refreshed cryptography libraries and a patched
-          JGit.</p>
-      </li>
     </ul>
     
     <p>The Git Client add-on works with <b>Oxygen XML Editor</b>, <b>Author</b>, <b>Developer</b>,
