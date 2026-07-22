@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_wn_git_client_6">
+  <title><b>What is New in the Oxygen Git Client Add-on 6.0</b></title>
+  <prolog>
+    <author>George Bina</author>
+    <critdates>
+      <created date="2026-07-11"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Version <b>6.0</b> of the <b>Oxygen Git Client add-on</b> is our biggest update yet. The star
+      of this release is a much more powerful <b>Git History</b> view, but there's also AI-assisted
+      conflict resolution, better control over stored credentials, partial stashing, and a long list
+      of everyday improvements. Here are the highlights.</p>
+    
+    <p><b>The Git History view, reimagined.</b> The History view is where you make sense of what
+      happened in a repository, so we made it far more informative and interactive.</p>
+    <ul id="ul_history">
+      <li>
+        <p><b>The graph tells the whole story.</b> Your uncommitted changes appear right on the
+          graph as their own node, now joined by a dashed line to its parent commit — or to both
+          parents when a merge is under way. And while a merge, rebase, cherry-pick, or revert is in
+          progress, the commits involved are marked directly on the graph: your starting point as
+            <b>Start (Mine)</b> and the incoming side as <b>Incoming (Theirs)</b>, <b>HEAD</b>, the
+            <b>Cherry-picked (Theirs)</b> commit, or the <b>Reverted (Theirs)</b> commit. You can
+          always see exactly where you are.</p>
+        <fig>
+          <title>Uncommitted changes and conflict markers, shown right on the history graph</title>
+          <image placement="break" href="../images/git-client-6-merge-conflict-history.png"
+            scale="80"/>
+        </fig>
+      </li>
+      
+      <li>
+        <p><b>Compare any two points in history.</b> Select two commits to see the differences
+          between them — or select your uncommitted changes together with a revision to see exactly
+          what you've changed since then.</p>
+        <fig>
+          <title>See the changes between two revisions in the Git History view</title>
+          <image placement="break" href="../images/git-client-6-range-comparison.png" scale="80"/>
+        </fig>
+      </li>
+      
+      <li>
+        <p><b>Interactive branch labels.</b> Double-click a branch label to switch to that branch.
+          Hover it for tracking information use the contextual menu for actions such as <b>Go to
+            tracking branch</b>, <b>Delete</b> and <b>Show in Branch Manager</b>.  The current
+          branch is highlighted, allowing you to spot it at a glance.<fig id="fig_pyl_5kt_wjc">
+            <title>Highlighted current branch and branch label tooltip</title>
+            <image href="../images/git-client-6-ibranch-tooltip.png" id="image_oyq_wkt_wjc"/>
+          </fig></p>
+      </li>
+      <li>
+        <p><b>Interactive status labels.</b> The status bar shows the working copy, the branch, and
+          the file whose history you're viewing. Click the branch to jump to its entry in the graph,
+          or click the <b>X</b> next to the file to clear the filter and return to the full
+            history.<fig id="fig_cdv_dkt_wjc">
+            <title>Interactive status information in the History view toolbar</title>
+            <image href="../images/git-client-6-history-toolbar.png" id="image_cdb_dkt_wjc"/>
+          </fig></p>
+      </li>
+    </ul>
+    
+    <p><b>Resolve merge conflicts with AI.</b> Conflicts are the part of Git most people dread. The
+      Git Client can now hand a conflicting file to <b>AI Positron</b>, which analyzes your version,
+      the incoming version, and their common ancestor, then proposes a resolution. You review the
+      suggestion in a dedicated window — with an explanation and side-by-side diffs — and apply it
+      only when you're happy. When AI resolves the file, it's staged automatically.<fig>
+        <title>Resolve conflicts assisted by AI</title>
+        <image href="../images/git-client-6-ai-resolve-conflict.png" scale="50"/>
+      </fig></p>
+    
+    <p><b>Never stuck mid-operation.</b> When a merge, rebase, cherry-pick, or revert stops for
+      conflicts, a panel above the file list gives you exactly the right controls for the situation
+      — abort or restart a merge, abort or continue a rebase, and abort a cherry-pick or revert (the
+      last two had no button before). Paired with the graph markers, you can always see what's in
+      progress and finish or back out with confidence.<fig>
+        <title>Actions to control stopped operations</title>
+        <image href="../images/git-client-6-merge-conflict-actions.png" scale="80"/>
+        <image href="../images/git-client-6-rebase-conflict-actions.png" scale="80"/>
+        <image href="../images/git-client-6-cherry-pick-conflict-actions.png" scale="80"/>
+      </fig></p>
+    
+    <p><b>Take control of your credentials.</b> A new <b>Credentials</b> preferences page lists every
+      credential the Git Client has stored, with its host, type (personal access token or basic
+      authentication), and username. You can remove entries individually instead of wiping everything
+      at once, the login dialog now pre-fills the authentication type and username it already knows,
+      and you can clear a stored SSH passphrase on its own.</p>
+    <p>
+      <fig>
+        <title>The new Credentials preferences page</title>
+        <image placement="break" href="../images/git-client-6-credentials.png" scale="80"/>
+      </fig>
+    </p>
+    
+    <p><b>Stash only what you need.</b> With <b>partial stash</b>, you can shelve just the files you
+      select from the staging area — including or excluding untracked files — instead of stashing
+      the entire working copy.<fig>
+        <image href="../images/git-client-6-stash-selection.png"/>
+      </fig></p>
+    
+    <p><b>Rebase onto a revision.</b> You can now start a rebase from the <b>Git History</b> view by
+      picking the commit to rebase onto — something that wasn't possible from the UI before 6.0.<fig>
+        <title>Rebase main on colleague-edit branch</title>
+        <image href="../images/git-client-6-rebase.png" scale="80"/>
+      </fig></p>
+    
+    <p><b>Compare images visually.</b> When you compare image files, the Git Client now opens a true
+      side-by-side image comparison — newer version on the left, older on the right — instead of a
+      text diff.</p>
+    <p>
+      <fig>
+        <title>Comparing two versions of an image</title>
+        <image placement="break" href="../images/git-client-6-image-diff.png" scale="60"/>
+      </fig>
+    </p>
+    
+    <p><b>Ignore files without leaving the staging area.</b> Right-click an untracked file or folder
+      in the <b>Unstaged files</b> area to add it to <codeph>.gitignore</codeph> — a single file, a
+      whole extension, a folder, or its parent folder.<fig>
+        <title>Ignore actions</title>
+        <image href="../images/git-client-6-ignore.png"/>
+      </fig></p>
+    
+    <p><b>Smarter AI commit messages and explanations.</b> You can now tailor how AI generates
+      commit messages and explains commits with your own per-feature instructions, and control how
+      much context is sent — the number of recent commits and the character budget.<fig>
+        <title>Tune the commit message generation with AI instructions</title>
+        <image href="../images/git-client-6-ai-message-customization.png" scale="80"/>
+      </fig></p>
+    
+    <p>And a long list of everyday improvements:</p>
+    <ul id="ul_quick_hits">
+      <li>
+        <p><b>Push</b> and <b>Pull</b> on the current branch's context menu.</p>
+      </li>
+      <li>
+        <p>Checking out from history now pre-fills the new branch name and sets up remote
+          tracking.</p>
+      </li>
+      <li>
+        <p>Blame gets a <b>Hide Blame</b> action, and clicking a line selects its commit in the
+          History view.</p>
+      </li>
+      <li>
+        <p>The Branch Manager now fetches automatically when you open or refresh it, so new remote
+          branches appear on their own within seconds. The "outdated branches" check is now
+          opt-out.</p>
+      </li>
+      <li>
+        <p>Security and stability updates, including refreshed cryptography libraries and a patched
+          JGit.</p>
+      </li>
+    </ul>
+    
+    <p>The Git Client add-on works with <b>Oxygen XML Editor</b>, <b>Author</b>, <b>Developer</b>,
+      and <b>Oxygen JSON Editor</b>. To get 6.0, update the add-on from <b>Help &gt; Install new
+        add-ons</b>, or drag the <b>Install</b> button from the add-on page into the editor. Give it a
+      try and let us know what you think!</p>
+  </body>
+</topic>
