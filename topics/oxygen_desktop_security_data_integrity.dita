@@ -28,6 +28,12 @@
                 platforms, not for locally installed desktop software. Oxygen desktop applications
                 run on each user's machine, and users control both the edited content and the
                 external resources that the application can access.</p>
+            <p>As per our continued commitment to helping improve vulnerability management and
+                responsible disclosure across the software ecosystem, Syncro Soft is a CVE Numbering
+                Authority assigning CVE IDs for all Syncro Soft products, including Oxygen XML suite
+                of products: <xref
+                    href="https://www.cve.org/Media/News/item/news/2026/08/04/Syncro-Soft-Added-as-CNA"
+                    format="html" scope="external"/></p>
         </section>
         <section id="section_omv_js1_vjc">
             <title>Third-Party Libraries</title>
