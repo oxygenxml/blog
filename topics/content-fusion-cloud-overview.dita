@@ -195,7 +195,7 @@
                             <p>Define all folders where media resources (images, video, audio
                                 resources) are placed. Browse through them and insert image or media
                                 references in the opened topic.</p>
-                            <image href="../../Desktop/cf-cloud-media.png" placement="break"
+                            <image href="../images/cf-cloud-media.png" placement="break"
                                 id="image_rbv_llz_dkc" scale="40"/>
                         </dd>
                     </dlentry>
