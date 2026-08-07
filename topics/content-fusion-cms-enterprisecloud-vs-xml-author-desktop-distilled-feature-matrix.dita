@@ -3,6 +3,12 @@
 <topic id="topic_szh_xzy_33c">
     <title>Content Fusion CMS Enterprise/Cloud vs XML Author Desktop - Distilled Feature
         Matrix</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2026-08-07"/>
+        </critdates>
+    </prolog>
     <body>
         <p>In the following table, I will try to create a feature matrix that compares the Content
             Fusion CMS (Enterprise and Cloud editions), and the Oxygen XML Author Desktop.</p>
@@ -56,7 +62,7 @@
                         <row>
                             <entry>Control edited profiling attribute values in DITA Map</entry>
                             <entry>✅ </entry>
-                            <entry>❌</entry>
+                            <entry>Only using a Subject Scheme Map</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -108,7 +114,7 @@
                                 you to insert all available reusable components, keys and
                                 images)</entry>
                             <entry>❌</entry>
-                            <entry>❌</entry>
+                            <entry>✅(since 9.2)</entry>
                             <entry>✅ </entry>
                         </row>
                         <row>
@@ -243,7 +249,7 @@
                         <row>
                             <entry>Translation support</entry>
                             <entry>❌(WIP)</entry>
-                            <entry>❌(WIP)</entry>
+                            <entry>✅ (AI based translation since 9.2)</entry>
                             <entry>Yes, using the optional Fluenta add-on to create xliff files, and
                                 the AI Translator to automatically translate them</entry>
                         </row>
