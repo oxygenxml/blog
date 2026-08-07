@@ -159,6 +159,48 @@
                 project appear in the <b>History</b> view.</p>
             <p><image href="../images/cf-history-view.png" id="image_tmc_jwt_zhc" scale="50"/></p>
         </section>
+        <section id="section_gkx_zjz_dkc">
+            <title>Find and Insert References to Keys, Reusable Components and Media
+                Resources</title>
+            <p>The <b>Search</b> view has multiple tabs which allow you to search for resources,
+                components, keys and to insert references to it.<dl id="dl_awy_lkz_dkc">
+                    <dlentry>
+                        <dt>Content</dt>
+                        <dd>Find topics containing the search keywords. For each found match you can
+                            open the target topic or add links to it in the current document (either
+                            cross references or related links).</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Keys</dt>
+                        <dd>
+                            <p>Presents all keys gathered from the current selected publication. You
+                                can insert key references, image key references, links, references
+                                to media resources or open the places where the keys are
+                                    defined.<image href="../images/cf-cloud-keys.png"
+                                    placement="break" id="image_hhj_vkz_dkc" scale="40"/></p>
+                        </dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Components</dt>
+                        <dd>
+                            <p>Define all folders where you keep topics with reusable components,
+                                browse the components and insert content references to them in the
+                                current opened file.<image href="../images/cf-cloud-reuse.png"
+                                    placement="break" id="image_nwc_dlz_dkc" scale="40"/></p>
+                        </dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Media</dt>
+                        <dd>
+                            <p>Define all folders where media resources (images, video, audio
+                                resources) are placed. Browse through them and insert image or media
+                                references in the opened topic.</p>
+                            <image href="../../Desktop/cf-cloud-media.png" placement="break"
+                                id="image_rbv_llz_dkc" scale="40"/>
+                        </dd>
+                    </dlentry>
+                </dl></p>
+        </section>
         <section id="section_q3s_sg5_zhc">
             <title>Branches</title>
             <p>Create feature or hotfix branches. Work on them on your own or with other colleagues.
@@ -199,6 +241,15 @@
                 content directly from your project's workspace. More details about vibe writing with
                 AI Positron: <xref
                     href="vibing_with_ai_positron.dita"/>.</p>
+        </section>
+        <section id="section_ewk_4lz_dkc">
+            <title>Translate</title>
+            <p>In the <b>Translation</b> view you can define translation jobs and use the bundled AI
+                tools to perform the translation. Each job can translate one or more publications to
+                one or more languages. After the job is complete you can integrate the changes back
+                in your content.</p>
+            <image href="../images/cf-cloud-translate.png" placement="break" id="image_urz_5lz_dkc"
+                scale="40"/>
         </section>
         <section id="section_sbr_zc5_zhc">
             <title>Publish</title>
@@ -265,11 +316,11 @@
                         organization). In such cases, instead of <b>Content Fusion Cloud</b>, you
                         may choose to install and use a <b>Content Fusion Enterprise</b> server on
                         your own company's infrastructure and install extra frameworks in it.</li>
-                    <li>No implicit support for translation workflows (but this is definitely a
-                        future improvement direction). Again, you can use the real-time
-                        synchronization with a <b>Git</b> repository to create custom translation
-                        workflows outside of the <b>Content Fusion Cloud</b> platform. For example,
-                        you may use an Oxygen XML desktop with the <xref
+                    <li>Internal translation support is done using AI tools. If you want to
+                        translate the content separately, you can use the real-time synchronization
+                        with a <b>Git</b> repository to create custom translation workflows outside
+                        of the <b>Content Fusion Cloud</b> platform. For example, you may use an
+                        Oxygen XML desktop with the <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
                             format="html" scope="external">Fluenta add-on</xref> and <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
