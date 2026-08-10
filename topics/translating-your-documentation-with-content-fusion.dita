@@ -117,11 +117,10 @@
             <title>A glossary of the application's UI strings</title>
             <p>The terminology findings are not something to hope the model infers. The shipped UI
                 strings have to be handed to the agent as data, because the agent is sandboxed to
-                your DITA workspace and cannot reach into our application's repository. So we put a
+                our DITA workspace and cannot reach into our application's repository. So we put a
                     <filepath>ui-glossary-fr-FR.md</filepath> file in the
                     <filepath>.contentfusion/i18n/</filepath> directory, holding the shipped
                 English→French strings from our own application.</p>
-            <p>Building it is a one-pass job for any LLM: provide a glossary of the relevant interface terms in the target locale, and ask for <codeph>English -> target</codeph> pairs only. The glossary gives the translation agent useful product context without sending a large, multilingual source file and wasting tokens. <b>Check the count</b>, because a filter that can silently drop rows will drop the irregular ones, and the irregular ones are the interesting ones. The result is unremarkable to look at, which is the point:</p>
             <codeblock outputclass="language-markdown">## Not translated by the product — shown in English
 - `DITA Map`  (key `ditamap`)
 - `Org-level role`  (key `organization.role`)
@@ -137,10 +136,7 @@
             <p>Then point <filepath>agent-instructions.md</filepath> at it. Relative links are
                 resolved for you, so naming the file is enough:</p>
             <codeblock outputclass="language-markdown">### Terminology — the shipped UI is the authority
-.contentfusion/i18n/ui-glossary-fr-FR.md holds the product's shipped en→fr UI strings. Read it
-before translating. Any text inside `&lt;uicontrol>` or `&lt;menucascade>`, and every button, field,
-view, page, and role name, must reuse the shipped French string verbatim. Never invent a French
-label that contradicts a shipped one. If a label is absent from the glossary, translate it once
+.contentfusion/i18n/ui-glossary-fr-FR.md holds the product's shipped en→fr UI strings. Read it before translating. Any text inside `&lt;uicontrol>` or `&lt;menucascade>`, and every button, field, view, page, and role name, must reuse the shipped French string verbatim. Never invent a French label that contradicts a shipped one. If a label is absent from the glossary, translate it once
 and reuse that exact rendering everywhere.</codeblock>
             <p>For the terms the glossary cannot answer — the concepts your documentation presents
                 that have no UI label — decide the answer yourself instead of asking every worker to
@@ -180,9 +176,6 @@ project-instruction compliance gap.</codeblock>
                 cannot reliably emit the character you asked for. The instruction to write instead is
                 the XML character entity — <codeph>&amp;#xA0;</codeph> — which is plain ASCII and
                 survives the tool layer.</p>
-            <note>These findings come from four topics of one publication, in French and Romanian,
-                reviewed by AI and checked by hand. We have not yet measured an instructed run
-                against the uninstructed baseline.</note>
         </section>
         <section id="section_lessons">
             <title>What we learned</title>
@@ -197,9 +190,7 @@ project-instruction compliance gap.</codeblock>
                     terms yourself, and name the wrong rendering as well as the right one.</li>
                 <li><b>Look up each language separately.</b> Which labels your product translates,
                     which it leaves in English, and what the accepted rendering is for a technical
-                    term — none of that transfers from one locale to the next. Copy the
-                        <i>structure</i> of your instructions to the next language, not the
-                    text.</li>
+                    term — none of that transfers from one locale to the next.</li>
                 <li><b>An instruction can be understood and still not land.</b> The non-breaking
                     space was requested, attempted, reported as impossible, and silently normalized
                     away. Prefer instructions the tooling cannot corrupt — an ASCII character entity
