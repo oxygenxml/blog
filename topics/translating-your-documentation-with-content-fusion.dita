@@ -18,7 +18,7 @@
                 language folder per target. The job's <uicontrol>Bring into Workspace</uicontrol>
                 action brings those folders into your workspace, where they are ordinary files to
                 review and commit. A publication for the new language is added to
-                    <filepath>ditaProject.xml</filepath> for you, you can find it the translated
+                    <filepath>ditaProject.xml</filepath> for you, and you can find the translated
                 publication in the <uicontrol>Context publication</uicontrol> drop-down.</p>
             <p>The run also leaves a <filepath>translation-index.xml</filepath> file in the
                 workspace. It is part of the translation state, so commit it along with the
@@ -35,14 +35,14 @@
                 summary: <q>The French is fluent and grammatical. But it is not correctly
                     localized.</q></p>
             <ul>
-                <li><b>Terminology that contradicted our own product.</b> Content Fusion ships a
-                    French UI, in a resource bundle the translation agent never saw. So the guide
-                    told French users about <codeph>validations entrantes</codeph> where the product
-                    says <codeph>Commits entrants</codeph>, and called their role
-                        <codeph>Réviseur</codeph> where the product label is
-                        <codeph>Examinateur</codeph>:</li>
-            </ul>
-            <codeblock>  "Incoming commits" — the product says Commits entrants
+                <li>
+                    <p><b>Terminology that contradicted our own product.</b> Content Fusion ships a
+                        French UI, in a resource bundle the translation agent never saw. So the guide
+                        told French users about <codeph>validations entrantes</codeph> where the
+                        product says <codeph>Commits entrants</codeph>, and called their role
+                            <codeph>Réviseur</codeph> where the product label is
+                            <codeph>Examinateur</codeph>:</p>
+                    <codeblock>  "Incoming commits" — the product says Commits entrants
   fr-FR/DITA-cf/topics/cf-projects-workspace.dita:6,22,28
 
    EN  &lt;shortdesc>...review incoming commits, and commit your changes.&lt;/shortdesc>
@@ -55,7 +55,7 @@
    EN  &lt;li>&lt;b>Reviewer&lt;/b> - Reviews the content, adds comments...
   -FR  &lt;li>&lt;b>Réviseur&lt;/b> - Examine le contenu, ajoute des commentaires...
   +FR  &lt;li>&lt;b>Examinateur&lt;/b> - Examine le contenu, ajoute des commentaires...</codeblock>
-            <ul>
+                </li>
                 <li><b>One term, several renderings.</b> <codeph>dépôt</codeph> six times in
                         <filepath>cf-projects.dita</filepath>, <codeph>référentiel</codeph> twice in
                         <filepath>cf-projects-workspace.dita</filepath>, and never mixed inside a
@@ -83,10 +83,10 @@
                 <li><b>Non-native phrasing.</b> The prose was grammatically correct and still read
                     like a translation — literal where a native speaker would have reached for the
                     ordinary word. <codeph>bande</codeph> is a strip of material, while a strip in a
-                    UI is a <codeph>bandeau</codeph>; <codeph>certains membres
-                        sélectionnés</codeph> is a pleonasm; <codeph>prendre en charge</codeph> was
-                    used for an abstract subject, where a review task does not <q>handle</q> a
-                    workflow but is part of one.</li>
+                    UI is a <codeph>bandeau</codeph>; <codeph>certains membres sélectionnés</codeph>
+                    is a pleonasm; <codeph>prendre en charge</codeph> was used for an abstract
+                    subject, where a review task does not <q>handle</q> a workflow but is part of
+                    one.</li>
             </ul>
             <p>A human reviewer then went through the AI's list, and did not accept all of it — the
                 emphasis-drift findings in particular were judged not to matter much in the rendered
@@ -106,9 +106,71 @@
         <section id="section_fine_tuning">
             <title>Step 3: Fine-tuning</title>
             <p>Every pass re-translates every file and translation costs tokens, so we developed
-                against four topics rather than the real guide. The defects we were hunting are
-                systematic, so four topics expose them as readily as two hundred.</p>
-            <p>The first rule we added to <filepath>agent-instructions.md</filepath> was the
+                against four topics rather than the real guide. That small sample was enough to
+                reveal systematic defects without spending tokens on the full guide, but a larger
+                run could reveal additional issues and establish how widespread each problem is.</p>
+            <p>Two rules earned their place in <filepath>agent-instructions.md</filepath>. One
+                worked, and the one that did not turned out to be the more instructive of the
+                two.</p>
+        </section>
+        <section id="section_glossary">
+            <title>A glossary of the application's UI strings</title>
+            <p>The terminology findings are not something to hope the model infers. The shipped UI
+                strings have to be handed to the agent as data, because the agent is sandboxed to
+                your DITA workspace and cannot reach into your application's repository. So we put a
+                    <filepath>ui-glossary-fr-FR.md</filepath> file in the
+                    <filepath>.contentfusion/i18n/</filepath> directory, holding the shipped
+                English→French strings from our own application.</p>
+            <p>Building it is a one-pass job for any LLM: hand over your resource bundle and the
+                target locale, and ask for <codeph>English -> target</codeph> pairs, labels only. Two
+                things are worth getting right. <b>Filter rather than dumping the raw bundle</b> — a
+                full bundle is large enough that the read gets truncated, and the agent then carries
+                on believing it consulted the authority; filtered to buttons, fields, views, tabs,
+                dialogs, roles and product terms it is a fraction of the size. And <b>check the
+                    count</b>, because a filter that can silently drop rows will drop the irregular
+                ones, and the irregular ones are the interesting ones. The result is unremarkable to
+                look at, which is the point:</p>
+            <codeblock outputclass="language-markdown">## Not translated by the product — shown in English
+- `DITA Map`  (key `ditamap`)
+- `Org-level role`  (key `organization.role`)
+
+## Labels
+- `Add reviewer` -> `Ajouter un examinateur`
+- `Incoming commits` -> `Commits entrants`
+- `Repository` -> `Dépôt`
+- `Workspace` -> `Espace de travail`</codeblock>
+            <p>That first list earns its place as much as the pairs do. Where the running French UI
+                shows English for a label, the manual has to as well — and you only know which
+                labels those are by looking them up per language.</p>
+            <p>Then point <filepath>agent-instructions.md</filepath> at it. Relative links are
+                resolved for you, so naming the file is enough:</p>
+            <codeblock outputclass="language-markdown">### Terminology — the shipped UI is the authority
+.contentfusion/i18n/ui-glossary-fr-FR.md holds the product's shipped en→fr UI strings. Read it
+before translating. Any text inside `&lt;uicontrol>` or `&lt;menucascade>`, and every button, field,
+view, page, and role name, must reuse the shipped French string verbatim. Never invent a French
+label that contradicts a shipped one. If a label is absent from the glossary, translate it once
+and reuse that exact rendering everywhere.</codeblock>
+            <p>For the terms the glossary cannot answer — the concepts your documentation presents
+                that have no UI label — decide the answer yourself instead of asking every worker to
+                arrive at the same one, and <b>name the plausible-but-wrong rendering
+                    explicitly.</b> The negatives are what stop it, and every one of these is a
+                defect we actually saw:</p>
+            <codeblock outputclass="language-markdown">- repository → le dépôt — never référentiel
+- reviewer → l'examinateur — never réviseur
+- incoming commits → les commits entrants — never validations entrantes
+- DITA Map → DITA Map (the French UI leaves it in English)</codeblock>
+            <p>Extracting that list is itself a job you can delegate: ask an agent to walk the
+                content for the terms it uses, both the ones carrying DITA markup
+                    (<codeph>&lt;uicontrol></codeph>, <codeph>&lt;term></codeph>) and the unmarked
+                concepts the application presents, then filter by hand and fill in the approved
+                target-language rendering. Two side effects are worth having: a term the extraction
+                cannot place is usually a concept your documentation is missing, and an agent that
+                does not know the right rendering for a term should be told to say so rather than
+                invent one.</p>
+        </section>
+        <section id="section_typography">
+            <title>A rule that was understood and still did not land</title>
+            <p>The other rule we added to <filepath>agent-instructions.md</filepath> was the
                 typography one, because the baseline had none of it:</p>
             <codeblock outputclass="language-markdown">### French typography
 Use a non-breaking space (U+00A0) before `:` `;` `!` `?` and inside `« »`. Never a plain space.</codeblock>
@@ -123,22 +185,52 @@ files instead of the requested nbsp.
 reliably insert U+00A0 non-breaking spaces and fell back to regular spaces before colons — a
 project-instruction compliance gap.</codeblock>
             <p>So an instruction can be understood, attempted, and still not land, because the model
-                cannot reliably emit the character you asked for. The instruction to write instead
-                is the XML character entity — <codeph>&amp;#xA0;</codeph> — which is plain ASCII and
+                cannot reliably emit the character you asked for. The instruction to write instead is
+                the XML character entity — <codeph>&amp;#xA0;</codeph> — which is plain ASCII and
                 survives the tool layer.</p>
-            <p>The terminology findings point the same way: they are not something to hope the model
-                infers. The shipped UI strings have to be handed to the agent as data, since the
-                agent is sandboxed to your DITA workspace and cannot reach into your application's
-                repository. That is the next thing we are building — extract the terms the
-                documentation actually uses, including the ones marked up as
-                    <codeph>&lt;uicontrol></codeph> or <codeph>&lt;term></codeph> and the unmarked
-                concepts, get the approved target-language rendering for each, and put them in a
-                file the agent reads. Two side effects worth noting: a term the extraction cannot
-                find is usually a concept your documentation is missing, and an agent that does not
-                know a term should be told to say so rather than invent one.</p>
             <note>These findings come from four topics of one publication, in French and Romanian,
                 reviewed by AI and checked by hand. We have not yet measured an instructed run
                 against the uninstructed baseline.</note>
+        </section>
+        <section id="section_lessons">
+            <title>What we learned</title>
+            <ol>
+                <li><b>Terminology is data, not inference.</b> The AI can write fluent, grammatical
+                    prose in the target language and still contradict every button in your product.
+                    The shipped UI strings are the authority, and the agent cannot see them — you
+                    have to bring them into the workspace as a glossary.</li>
+                <li><b>Consistency across files does not come for free.</b> Each file was internally
+                    consistent and disagreed with its neighbour, which is what parallel per-file
+                    translation produces: every worker inventing its own private dialect. Freeze the
+                    terms yourself, and name the wrong rendering as well as the right one.</li>
+                <li><b>Look up each language separately.</b> Which labels your product translates,
+                    which it leaves in English, and what the accepted rendering is for a technical
+                    term — none of that transfers from one locale to the next. Copy the
+                        <i>structure</i> of your instructions to the next language, not the
+                    text.</li>
+                <li><b>An instruction can be understood and still not land.</b> The non-breaking
+                    space was requested, attempted, reported as impossible, and silently normalized
+                    away. Prefer instructions the tooling cannot corrupt — an ASCII character entity
+                    over an exotic codepoint — and verify the output rather than trusting that a rule
+                    was applied.</li>
+                <li><b>Grammatically correct is not localized.</b> The literal translations, carried
+                    English syntax and calques are what a reader notices first and what no grammar
+                    check flags. Asking for <q>natural French</q> sets the register but fixes no
+                    individual slip; a style-notes section that names the slips you have seen
+                        (<codeph>bande</codeph> is a strip of material, a UI strip is a
+                        <codeph>bandeau</codeph>) changes the output.</li>
+                <li><b>Review with AI first, then with a person.</b> The AI review found the
+                    terminology, typography and markup problems quickly, across the whole tree, with
+                    file and line references. The human pass is what decided which of them mattered —
+                    some findings were downgraded on the second look. Neither pass replaces the
+                    other, and a review step is worth building into the translation job itself.</li>
+                <li><b>Develop against a small sample.</b> Four topics were enough to expose defects
+                    that are systematic by nature, at a fraction of the token cost of the full guide.
+                    Only the scale of each problem needs the real publication.</li>
+                <li><b>Write down observed mistakes, not general advice.</b> Every line in our
+                    instructions file exists because a specific defect happened. Start the
+                    style-notes section empty and add to it after each run.</li>
+            </ol>
         </section>
     </body>
 </topic>
