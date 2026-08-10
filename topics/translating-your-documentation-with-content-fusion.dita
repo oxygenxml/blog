@@ -117,19 +117,11 @@
             <title>A glossary of the application's UI strings</title>
             <p>The terminology findings are not something to hope the model infers. The shipped UI
                 strings have to be handed to the agent as data, because the agent is sandboxed to
-                your DITA workspace and cannot reach into your application's repository. So we put a
+                your DITA workspace and cannot reach into our application's repository. So we put a
                     <filepath>ui-glossary-fr-FR.md</filepath> file in the
                     <filepath>.contentfusion/i18n/</filepath> directory, holding the shipped
                 English→French strings from our own application.</p>
-            <p>Building it is a one-pass job for any LLM: hand over your resource bundle and the
-                target locale, and ask for <codeph>English -> target</codeph> pairs, labels only. Two
-                things are worth getting right. <b>Filter rather than dumping the raw bundle</b> — a
-                full bundle is large enough that the read gets truncated, and the agent then carries
-                on believing it consulted the authority; filtered to buttons, fields, views, tabs,
-                dialogs, roles and product terms it is a fraction of the size. And <b>check the
-                    count</b>, because a filter that can silently drop rows will drop the irregular
-                ones, and the irregular ones are the interesting ones. The result is unremarkable to
-                look at, which is the point:</p>
+            <p>Building it is a one-pass job for any LLM: provide a glossary of the relevant interface terms in the target locale, and ask for <codeph>English -> target</codeph> pairs only. The glossary gives the translation agent useful product context without sending a large, multilingual source file and wasting tokens. <b>Check the count</b>, because a filter that can silently drop rows will drop the irregular ones, and the irregular ones are the interesting ones. The result is unremarkable to look at, which is the point:</p>
             <codeblock outputclass="language-markdown">## Not translated by the product — shown in English
 - `DITA Map`  (key `ditamap`)
 - `Org-level role`  (key `organization.role`)
