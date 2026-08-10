@@ -18,7 +18,8 @@
                 language folder per target. The job's <uicontrol>Bring into Workspace</uicontrol>
                 action brings those folders into your workspace, where they are ordinary files to
                 review and commit. A publication for the new language is added to
-                    <filepath>ditaProject.xml</filepath> for you, so there is no manual editing.</p>
+                    <filepath>ditaProject.xml</filepath> for you, you can find it the translated
+                publication in the <uicontrol>Context publication</uicontrol> drop-down.</p>
             <p>The run also leaves a <filepath>translation-index.xml</filepath> file in the
                 workspace. It is part of the translation state, so commit it along with the
                 translated files.</p>
