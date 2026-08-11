@@ -4,10 +4,9 @@
     <title>Translating your documentation with Content Fusion</title>
     <body>
         <p>Leveraging AI, Content Fusion can translate your documentation automatically. But even
-            with AI, no translation can be right without the context that surrounds it: the words
-            your product actually shows on screen, the terms your team has settled on, the
-            typographic conventions of the target language. What follows is a journal of translating
-            our own user guide, and what we found when we reviewed the result.</p>
+            with AI, no translation can be right without context: your product’s terminology and the
+            terms your team has settled on. What follows is a journal of translating our own user
+            guide, and what we found when we reviewed the result.</p>
         <section id="section_first_run">
             <title>Step 1: Running a translation</title>
             <p>In your project workspace, open <uicontrol>Translation Jobs</uicontrol>, choose
