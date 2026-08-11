@@ -9,22 +9,22 @@
             guide, and what we found when we reviewed the result.</p>
         <section id="section_first_run">
             <title>Step 1: Running a translation</title>
-            <p>In your project workspace, open <uicontrol>Translation Jobs</uicontrol>, choose
-                    <uicontrol>New translation</uicontrol>, pick your publications and your target
+            <p>In the project workspace, open <uicontrol>Translation Jobs</uicontrol>, choose
+                    <uicontrol>New translation</uicontrol>, pick the publications and the target
                 languages, and start the job. Both are multi-select, so one job can produce several
                 translations.</p>
             <p>An AI agent then walks the DITA map, translates the topics, and writes a parallel
                 language folder per target. The job's <uicontrol>Bring into Workspace</uicontrol>
-                action brings those folders into your workspace, where they are ordinary files to
-                review and commit. A publication for the new language is added to
-                    <filepath>ditaProject.xml</filepath> for you, and you can find the translated
-                publication in the <uicontrol>Context publication</uicontrol> drop-down.</p>
+                action brings the translations into the workspace, where they are ordinary files to
+                review and commit. A publication for the new language is added to ditaProject.xml
+                automatically, and the translated publication shows up in the <uicontrol>Context
+                    publication</uicontrol> drop-down.</p>
             <p>The run also leaves a <filepath>translation-index.xml</filepath> file in the
                 workspace. It is part of the translation state, so commit it along with the
                 translated files.</p>
-            <p>The <uicontrol>New translation</uicontrol> dialog points you at
-                    <filepath>agent-instructions.md</filepath>, a file in the workspace that the
-                agent reads before it starts, and creates it for you.</p>
+            <p>The <uicontrol>New translation</uicontrol> dialog points at a
+                    <filepath>.contentfusion/i18n/agent-instructions.md</filepath>, a file in the
+                workspace that the agent reads before it starts, and creates it automatically.</p>
         </section>
         <section id="section_review">
             <title>Step 2: Review — not quite right</title>
@@ -133,7 +133,7 @@
                 shows English for a label, the manual has to as well — and you only know which
                 labels those are by looking them up per language.</p>
             <p>Then point <filepath>agent-instructions.md</filepath> at it. Relative links are
-                resolved for you, so naming the file is enough:</p>
+                resolved automatically, so naming the file is enough:</p>
             <codeblock outputclass="language-markdown">### Terminology — the shipped UI is the authority
 .contentfusion/i18n/ui-glossary-fr-FR.md holds the product's shipped en→fr UI strings. Read it before translating. Any text inside `&lt;uicontrol>` or `&lt;menucascade>`, and every button, field, view, page, and role name, must reuse the shipped French string verbatim. Never invent a French label that contradicts a shipped one. If a label is absent from the glossary, translate it once
 and reuse that exact rendering everywhere.</codeblock>
