@@ -100,9 +100,8 @@ For terms, look them up in ./terms.tbx and reuse the canonical translation there
             <ul id="ul_wgz_sff_fkc">
                 <li><b>Import a project with existing translations</b>: The agent skips the
                     translation part and adds the files to the index.</li>
-                <li><?oxy_comment_start author="mihai_coanda" timestamp="20260812T144948+0000" comment="Parca as mentiona faptul ca suportam si flow-ul vechi de traduceri in partea de inceput cumva, mai evident.
-Acu se pierd in tot blog-ul."?><b>Rebuild a conventional workflow if you want
-                        one<?oxy_comment_end?></b>: You can ask the agent to put all the
+                <li><b>Rebuild a conventional workflow if you want
+                        one</b>: You can ask the agent to put all the
                     untranslated files in a folder such that you can download and send to a
                     translation agency. When you get the files back it can ingest them and update
                     the translation index.</li>
