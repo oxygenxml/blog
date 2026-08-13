@@ -2,6 +2,19 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_j5s_4ff_fkc">
     <title>The Translation Workflow for the AI Era</title>
+    <prolog>
+        <author>Cristian Talau</author>
+        <critdates>
+            <created date="2026-08-13"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <keyword>AI translation</keyword>
+                <keyword>Oxygen Content Fusion</keyword>
+                <keyword>DITA translation</keyword>
+            </keywords>
+        </metadata>
+    </prolog>
     <body>
         <p>We are building Content Fusion as a context layer where people and AI agents create
             together, organizations govern and approve content, and trusted knowledge becomes
