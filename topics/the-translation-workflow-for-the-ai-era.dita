@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_j5s_4ff_fkc">
+    <title>The Translation Workflow for the AI Era</title>
+    <body>
+        <p>We are building Content Fusion as a context layer where people and AI agents create
+            together, organizations govern and approve content, and trusted knowledge becomes
+            available for both humans and agents to consume and act on.</p>
+        <p>The translation support we added delivers on that vision as well as on other values
+            behind Oxygen Content Fusion, such as no lock-in and adaptability to your content.</p>
+        <p>When designing a translation workflow for AI Agents, there are two constraints from the
+            classic translation workflows that change: translation is <b>fast</b> (minutes or hours
+            rather than days or weeks) and <b>cheap</b> (around one dollar per topic).</p>
+        <p>So, starting from first principles, we created a workflow for <b>incremental
+                translation</b> that keeps that state inside the project as files with a documented
+            XML-based format. </p>
+        <p>This open-format state management lets you integrate your existing workflows while
+                <b>gradually adopting</b> the built-in AI Translator in specific scenarios, such as
+            last-minute changes before a release.</p>
+        <section id="section_pgz_sff_fkc"><title>How it works</title><p>In your project workspace,
+                open the <b>Translation Jobs</b> panel and choose <b>New translation</b>. Pick your
+                publications and your target languages — both are multi-select, so one job can
+                produce several translations. Add instructions for this particular job if you have
+                any, and start it.</p><p>The job appears in the list and you can watch the execution
+                log while it runs. When it finishes, <b>Bring into Workspace</b> puts the translated
+                files into your workspace as ordinary uncommitted changes. These include a parallel
+                folder for each language, the translated maps, the binaries referenced by the
+                publication, and the translation index. Then you have to review the translations and
+                commit.</p><p>The next translation job will use the translation index to translate
+                only what was changed.</p>
+            <object width="560" height="315" data="https://youtu.be/FaUHvbC6e2g"
+                outputclass="iframe">
+                <param name="allowfullscreen"/>
+            </object>
+        </section>
+        <section id="section_wsr_gfq_fkc">
+            <title>Gradual adoption</title>
+            <p>The workflow state is stored in a translation index file with a <xref
+                    href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-ai-translation-index.html"
+                    format="html" scope="external">documented format</xref>, and the agent knows how
+                to update it even if content is translated elsewhere, for example by a translation
+                agency. </p>
+            <p>Even if you do not use the built-in agent for the translation, you can ask it to
+                ingest the translated content so that it keeps track of what is already translated
+                and what needs to be reworked. This means you can continue to use the your language
+                service providers for most of the tasks while gradually adopting AI translation.</p>
+        </section>
+        <section id="section_qgz_sff_fkc">
+            <title>Quality comes from context</title>
+            <p>One common concern with AI translation is the quality of the output.</p>
+            <p>First of all, Content Fusion uses an AI Agent based on frontier LLMs which is a
+                radically different technology than legacy Machine Translation and its performance
+                continues to evolve at an unprecedented pace.</p>
+            <p>We also found that the quality can be brought to a good level by providing the right
+                context. There are several kinds, and they are worth separating.</p>
+            <ul id="ul_k11_3gf_fkc">
+                <li><b>The content itself.</b> The agent reads the whole topic before it writes
+                    anything along with any previous translation of that topic and related files in
+                    the project.</li>
+                <li><b>Your preferences.</b> Terminology, house style, do-not-translate lists, the
+                    register you address readers in. You commit these once in
+                        <codeph>.contentfusion/i18n/agent-instructions.md</codeph> and they apply to
+                    every
+                        job:<codeblock id="codeblock_tgz_sff_fkc">Use a formal register and address the reader with the formal second person.
+Never translate: Content Fusion, oXygen, WebHelp, DITA-OT.
+For terms, look them up in ./terms.tbx and reuse the canonical translation there.</codeblock><p>While
+                        it already knows the standard DITA semantics, you can configure how it
+                        translates your DITA specialization.</p></li>
+                <li><b>The domain.</b> Although small AI models provide good translation
+                    capabilities, we opted for a large model (currently Sonnet 5) because in its
+                    many weights it encodes vast knowledge even about niche domains. Of course, your
+                    content is innovative and cannot be in the model weights, but it can pick up any
+                    specifics from the same <codeph>agent-instructions.md</codeph> file.</li>
+            </ul>
+            <p>So, the quality of the translation can be improved by investing some effort to
+                configure the agent. For example, when we translated the Content Fusion Cloud user
+                manual, we noticed that the quality improved after we included the translated UI
+                strings in the agent instructions. We will publish a dedicated blog post about that
+                experiment.</p>
+        </section>
+        <section id="section_ugz_sff_fkc">
+            <title>Reviewing the translation</title>
+            <p>Since AI can make mistakes, you need to review the output before accepting it in your
+                project.</p>
+            <p>This may be challenging if you do not understand the target language. Even in this
+                case, you can mitigate the risk of conceptual errors or missing information in the
+                translation. Ask the agent to translate the content back into the source language
+                and compare it against the original. Or ask it to review the target-language files
+                and report the problems it finds without translating anything. Both are described in
+                    <xref
+                    href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-reviewing.html"
+                    format="html" scope="external">Reviewing Translations Before You
+                Commit</xref>.</p>
+        </section>
+        <section id="section_vgz_sff_fkc">
+            <title>The workflow is yours to steer</title>
+            <p>One advantage of having an intelligent agent handling the translation is that it can
+                adapt the workflow or do a whole bunch of related tasks. Here are some capabilities
+                that you can add via custom instructions:</p>
+            <ul id="ul_wgz_sff_fkc">
+                <li><b>Import a project with existing translations</b>: The agent skips the
+                    translation part and adds the files to the index.</li>
+                <li><?oxy_comment_start author="mihai_coanda" timestamp="20260812T144948+0000" comment="Parca as mentiona faptul ca suportam si flow-ul vechi de traduceri in partea de inceput cumva, mai evident.
+Acu se pierd in tot blog-ul."?><b>Rebuild a conventional workflow if you want
+                        one<?oxy_comment_end?></b>: You can ask the agent to put all the
+                    untranslated files in a folder such that you can download and send to a
+                    translation agency. When you get the files back it can ingest them and update
+                    the translation index.</li>
+                <li><b>Ask it questions instead of translations</b>: A job does not have to
+                    translate. It can report the translation status of each publication per
+                    language, audit terminology across the languages you already have, or build your
+                    glossary as it goes.</li>
+                <li><b>Discover terminology</b>: For a legacy project, discovering the terms is a
+                    chore. You can ask the agent to find them either by markup or by simply reading
+                    the content.</li>
+                <li><b>Implement introspection</b>: After translating a topic, have a subagent
+                    re-read the output against the source and report grammar or fluency problems,
+                    and another agent to fix the findings. You can even loop until everything is
+                    settled.</li>
+            </ul>
+            <p>Another benefit of this steerability is that, on a first run, the agent does more
+                that translate files, it sets up everything: it creates the target-language folders
+                and maps, copies the binaries, and mirrors the deliverables from the source language
+                and can create multilingual publications.</p>
+        </section>
+        <section id="section_ygz_sff_fkc">
+            <title>Try it in five minutes</title>
+            <p>Try this workflow for free in <xref href="https://fusion.oxygenxml.com" format="html"
+                    scope="external">Content Fusion Cloud</xref>. Create an organization and a
+                project from the <b>Hydraulic Gear Pump</b> sample. It arrives already set up with a
+                source folder, per-language folders, a translation index, and a multilingual PDF
+                deliverable. Edit an English topic and commit. Start a translation job for a couple
+                of languages. Watch the card, bring the result into your workspace, read the diff in
+                the Changes view, and build the multilingual PDF. The full walkthrough is in <xref
+                    href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-getting-started.html"
+                    format="html" scope="external">Getting Started with Translation</xref>.</p>
+        </section>
+    </body>
+</topic>

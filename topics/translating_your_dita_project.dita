@@ -6,27 +6,8 @@
     <author>Radu Coravu</author>
   </prolog>
   <body>
-    <p>Usually when working with a <b>DITA</b>-based project you can either store the project
-      contents using a <b>Content Management System (CMS)</b> or some open-source version control
-      system like <b>Git</b> or <b>SVN</b>. <b>CMSs</b> usually come with their own translation
-      support so this blog post is mostly for end users who use <b>Git</b> or <b>SVN</b> to store
-      and collaborate on their <b>DITA</b> project.</p>
-    <section id="section_olv_ynp_rdb"><title>Choosing a Translation Agency</title><p>Ideally your
-        translation agency should be able to handle <b>DITA</b> content directly, without you
-        needing to convert the <b>DITA</b> to some intermediary format. This means that you will
-        have the full benefit of <b>DITA</b> reuse features to minimize translation costs.</p><p>As
-        a very important rule, if you plan to translate your project you should get in touch with a
-          <b>DITA</b>-aware translation agency very early in your project's timeline. Reliable
-        translation agencies that translate <b>DITA</b> content directly (for example <xref
-          href="http://www.whp.net/en/dita-localization/" format="html" scope="external">WHP</xref>)
-        usually need to have a preliminary discussion with you about how the project is structured,
-        what terms need to be skipped when translating, how various measuring units are translated,
-        content reuse, taxonomy, and the handling of screenshots that appear in your <b>DITA</b>
-        content. So the way that you write your <b>DITA</b> content will be influenced by your
-        discussion with the translation agency.</p>If your translation agency does not directly
-      handle <b>DITA</b> content, there are commercial tools that can be used to convert <b>DITA</b>
-      to <b>XLIFF</b>: <xref href="https://www.maxprograms.com/products/fluenta.html" format="html"
-        scope="external"/>.</section>
+    <p>Many companies work with a <b>DITA</b>-based project stored in <b>Git</b>. This article
+      presents a several options for translating that content.</p>
     <section id="section_lwt_rkp_rdb">
       <title>Optimizing Content for Translation</title>
       <p>In general, there are three main principles to take into account when writing <b>DITA</b>
@@ -49,6 +30,34 @@
           href="https://www.maxprograms.com/articles/organize_files.html" format="html"
           scope="external"/>.</p>
     </section>
+    <section id="section_oz1_njf_fkc">
+      <title>Using the Content Fusion AI Translation workflow</title>
+      <p><xref href="https://oxygenxml.com/contentfusion" format="html" scope="external">Oxygen
+          Content Fusion</xref> is a DITA CMS that has first class Git support and provides a
+        translation workflow that uses a steerable AI agent and keeps a translation index in your
+        repository such that each translation job translates only changed topics.</p>
+      <p>You can read more about this workflow in the <xref
+          href="the-translation-workflow-for-the-ai-era.dita">dedicated article</xref> or in the
+          <xref
+          href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-ai-translation.html"
+          format="html" scope="external">user manual</xref>.</p>
+    </section>
+    <section id="section_olv_ynp_rdb"><title>Working with a Translation Agency</title><p>Ideally
+        your translation agency should be able to handle <b>DITA</b> content directly, without you
+        needing to convert the <b>DITA</b> to some intermediary format. This means that you will
+        have the full benefit of <b>DITA</b> reuse features to minimize translation costs.</p><p>As
+        a very important rule, if you plan to translate your project you should get in touch with a
+          <b>DITA</b>-aware translation agency very early in your project's timeline. Reliable
+        translation agencies that translate <b>DITA</b> content directly (for example <xref
+          href="http://www.whp.net/en/dita-localization/" format="html" scope="external">WHP</xref>)
+        usually need to have a preliminary discussion with you about how the project is structured,
+        what terms need to be skipped when translating, how various measuring units are translated,
+        content reuse, taxonomy, and the handling of screenshots that appear in your <b>DITA</b>
+        content. So the way that you write your <b>DITA</b> content will be influenced by your
+        discussion with the translation agency.</p>If your translation agency does not directly
+      handle <b>DITA</b> content, there are commercial tools that can be used to convert <b>DITA</b>
+      to <b>XLIFF</b>: <xref href="https://www.maxprograms.com/products/fluenta.html" format="html"
+        scope="external"/>.</section>
     <section id="section_pqy_rlp_rdb">
       <title>General Translation Workflow when the Translation agency accept DITA documents</title>
       <p>When translating <b>DITA</b> content, the most common process involves these steps:<ol
@@ -118,8 +127,5 @@
         headquarters would be responsible to review and accept the translated content as
         appropriate. </p>
     </section>
-    <p>This concludes my <b>DITA</b> translation overview. As we do not translate the Oxygen User's
-      Manual in various languages, our internal knowledge of translating <b>DITA</b> content is
-      quite limited so any feedback on this small article is welcomed.</p>
   </body>
 </topic>
