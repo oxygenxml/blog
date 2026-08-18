@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="why_should_i_choose_ai_positron_over_a_generic_ai_assistant_tool">
+    <title>Why should I choose AI Positron integrated in Oxygen XML desktop Author/Editor/Developer
+        over a generic capable AI Assistant tool?</title>
+    <prolog>
+        <author>Radu Coravu</author>
+        <critdates>
+            <created date="2026-08-18"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Let's assume your company has already provided you with access to other capable AI
+            Assistant tools like Claude Code or Copilor, and your question is <codeph>why should I
+                spend more to use the AI Positron Assistant</codeph>? In this article I will try to
+            answer this question.</p>
+        <dl id="dl_qn4_ndc_hkc">
+            <dlentry>
+                <dt>Does the AI Positron Assistant have similar highly capable features with other
+                    AI Assistants?</dt>
+                <dd>The AI Positron add-on has support to create <xref
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html"
+                        format="html" scope="external">custom AI actions</xref>, <xref
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_skills_creation.html"
+                        format="html" scope="external">skills</xref> and <xref
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_enterprise-extending.html#ai_positron_enterprise-extending__dlentry_dhn_lxf_tfc"
+                        format="html" scope="external">tools</xref>. It has support for <xref
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/ai_positron_enterprise-hooks.html"
+                        format="html" scope="external">hooks</xref>. It also comes with support for
+                    the <xref
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/model_context_protocol_preferences.html"
+                        format="html" scope="external">MCP (Model Context Protocol)</xref> standard
+                    and with <xref
+                        href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/service_configuration.html"
+                        format="html" scope="external">connectors</xref> for a wide variety of LLM
+                    platforms. We release new versions of AI Positron every 2-3 months and we are
+                    responsive to user suggestions.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>What can AI Positron do for a technical writer that other AI Assistant tools
+                    cannot realistically do?</dt>
+                <dd>AI Positron is perfectly integrated in Oxygen XML Editor as a side view. It can
+                    show the modifications in the visual comparison editor and allows you to accept,
+                    reject, or partially accept changes, it also has built-in tools to validate and
+                    perform XML specific checks on documents.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Which Positron capabilities are specifically enabled by its native integration
+                    with Oxygen XML Editor, XML, and DITA?</dt>
+                <dd>
+                    <ul id="ul_atv_p2c_hkc">
+                        <li>AI Positron comes bundled with a bunch of predefined AI actions (correct
+                            grammar, review, improve, readability, translate) which are fine tuned
+                            prompts to work very well on XML content. You can also add your own AI
+                            actions. AI Positron also comes with powerful tools for 
+                            <xref href="vibing_with_ai_positron.dita">vibe
+                                writing</xref>.</li>
+                        <li>The visual preview comparison tool allows you to review the changes made
+                            by the LLM.</li>
+                        <li>After AI Positron saves content to a document, the XML validation
+                            automatically runs and reports validation problems to the LLM which uses
+                            this feedback look to auto correct these problems. The validation is
+                            done with the associated validation scenario which may use both DTD
+                            validation, Schematron and specific validation rules based on the DITA
+                            standard.</li>
+                        <li>Support for AI Refactoring allows you to apply an AI action (for example
+                            Correct Grammar, Translate) on an entire folder of XML files.</li>
+                        <li>AI Positron comes with various <xref
+                                href="vibing_with_ai_positron.dita#vibing_with_ai_positron/section_lh2_44y_dhc"
+                                >Chat modes</xref>, one of them is a generic <b>Agent</b> but we
+                            also have a <b>DITA agent</b> specialized on DITA XML editing.</li>
+                        <li>You can attach various resources (XML, Markdown, PDF, Excel, Microsoft
+                            Word, images, CSV) resources directly in the chat view and ask the LLM
+                            to convert them to DITA XML or use them as data. The <b>Planner</b> chat
+                            mode can be used to split and convert to DITA XML large PDF or Word
+                            documents.</li>
+                        <li>There are <xref
+                                href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/custom_ai_action_tool_calls.html"
+                                format="html" scope="external">specific builtin tools</xref>
+                            available for vibe writing which can be used to validate XML content,
+                            check terminology, refactor XML content by applying XSLT stylesheets or
+                            make changes to an DITA Map opened in the DITA Maps Manager view. And
+                            more tools are coming up, including tools to perform a DITA Map validate
+                            and check for completeness.</li>
+                    </ul>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Are there tasks that Positron can perform directly on XML/DITA documents or
+                    projects that would not be possible, or would be significantly more difficult,
+                    to implement with a third party agent?</dt>
+                <dd>As AI Positron automatically sends the LLM feedback when it attempts to save
+                    invalid XML documents, the LLM can re-consider and improve its changes based on
+                    the validation scenarios you have defined in Oxygen.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>How does Positron's awareness of the XML/DITA structure, Oxygen validation,
+                    refactoring, and document model provide an advantage over using third party
+                    agents alongside Oxygen?</dt>
+                <dd>
+                    <p>Oxygen helps the LLM generate XML content which adheres to your terminology,
+                        style guide and validation rules.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Can Positron make structured changes to XML/DITA content while preserving
+                    document validity and allowing the writer to review the changes through Oxygen's
+                    XML-aware diff functionality?</dt>
+                <dd>Yes, these are one of our main advantages. AI Positron also integrates well with
+                    other Oxygen add-ons, for example with the Oxygen Terminology Checker addon
+                    which can be used to check terminology in the generated content and the Git
+                    client add-on which can use AI Positron to create commmit messages or to resolve
+                    conflicts.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>How does Positron compare with a custom third party agent specifically for tasks
+                    such as reviewing documentation against a style guide, restructuring DITA
+                    topics, generating new topics, checking consistency across a documentation
+                    project, and making project-wide changes?</dt>
+                <dd>AI Positron's tools allow the LLM to perform project wide changes, These tools
+                    also allow Oxygen to report validation problems to the LLM, included in the
+                    future for the DITA agent there will be a tool to also run validate and check
+                    for completeness on an entire DITA map. This feedback helps the LLM make correct
+                    changes from the start.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Are there any important Positron features that would still provide significant
+                    value if we already use a third party AI assistant?</dt>
+                <dd>
+                    <p>As an experimental feature, the AI Positron provided tools from Oxygen (for
+                        example tools to apply validation) can be used also by third party
+                        assistants by starting Oxygen an <xref
+                            href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/model_context_protocol_preferences.html#model_context_protocol_preferences__section_al3_wm4_chc"
+                            format="html" scope="external">MCP server</xref>. This would allow a
+                        third party AI assistant to call for example validation or terminology
+                        checking tools from the started Oxygen application. So AI Positron could be
+                        used both integrated inside Oxygen and as a provider of Oxygen specific
+                        tools to a third party AI Assistant.</p>
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Do you have a few concrete examples or workflows where you would recommend
+                    Positron over a custom third party agent for a technical-writing team using
+                    Oxygen XML Editor?</dt>
+                <dd>
+                    <ul>
+                        <li>I have a largish PDF document containing text, images that I want to
+                            convert to DITA XML. I switch to the AI Positron <b>Planner</b> chat
+                            mode, I attach the PDF and tell it to convert it to DITA XML (or a DITA
+                            Map with XML topics). The attachment is automatically shredded in
+                            smaller markdown files and all images extracted from it. Then the
+                                <b>Planner</b> launches <b>DITA agent</b> sub-agents for each small
+                            topic, copies the images referenced by it to the proper place and
+                            converts it to DITA XML. For each converted topic it applies validation
+                            and reports validation problems to the LLM.</li>
+                        <li>I have a DITA XML topic with image references, I ask in the chat view
+                                <codeph>tell me if the referenced images match the surrounding text,
+                                if not change the text</codeph>, AI Positron obtains descriptions
+                            for each referenced image and makes the relevant changes.</li>
+                        <li>I ask AI Positron to review my current opened topic, AI Positron inserts
+                            Oxygen review comments in the topic, comments which can be fixed either
+                            by a different colleague or by AI Positron if I tell it to fix the
+                            review comments.</li>
+                        <li>I ask AI Positron to replace all product names in the current topic with
+                            the corresponding defined keys.</li>
+                        <li>I ask AI Positron to find a similar paragraph to the current one and use
+                            a content reference instead of duplicating the content.</li>
+                    </ul>
+                </dd>
+            </dlentry>
+        </dl>
+        <p>I hope my small article helped, if you have any remarks or questions you can use the
+            comment box below.</p>
+    </body>
+</topic>

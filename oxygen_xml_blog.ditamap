@@ -15,6 +15,8 @@
         <topicref href="topics/ai_action_testing_in_oxygen_xml_editor.dita"/>
         <topicref href="topics/vibing_with_ai_positron.dita"/>
         <topicref href="topics/ai_positron_security_layers.dita"/>
+        <topicref
+            href="topics/why_should_i_choose_ai_positron_over_a_generic_ai_assistant_tool.dita"/>
         <topicref href="topics/dita-ai-tools.dita"/>
         <topicref href="topics/ai-positron-code-development.dita"/>
         <topicref href="topics/ai_xpath_functions.dita"/>
