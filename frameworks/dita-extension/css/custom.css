@@ -1,3 +1,24 @@
 .wh_top_menu{
     text-transform: none;
 }
+
+*[class~="topic/div"][outputclass~="stripe-product"] {
+  display: block;
+  margin: 1em 0;
+  padding: 1em 1.2em;
+  background-color: #eef6fc;
+  border: 1px solid #c5dcec;
+  border-left: 4px solid #39a3d9;
+  border-radius: 5px;
+}
+
+*[class~="topic/div"][outputclass~="stripe-product"]:before {
+  display: block;
+  content: "Related product";
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #546e7a;
+  margin-bottom: 0.5em;
+}

@@ -13,6 +13,7 @@
 		<contentCompletion>
 			<authorActions>
 				<addAction id="oxygenProduct" inCCWindow="true"/>
+				<addAction id="productStripe" inCCWindow="true"/>
 			</authorActions>
 		</contentCompletion>
 	</author>

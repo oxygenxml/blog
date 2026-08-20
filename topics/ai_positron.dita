@@ -159,6 +159,12 @@
           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/XML%20Refactoring"
           format="html" scope="external">samples playground</xref>.</p>
     </section>
+    <div outputclass="stripe-product">
+      <p><b>Oxygen AI Positron</b> helps technical writers generate, rewrite, and
+        review documentation with AI.</p>
+      <p><xref href="https://www.oxygenxml.com/ai_positron.html" format="html"
+          scope="external">Get started</xref></p>
+    </div>
     <section id="section_tzn_jw5_4bc">
       <title>Useful Links</title>
       <ul id="ul_f5n_kw5_4bc">
