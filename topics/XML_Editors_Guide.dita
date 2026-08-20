@@ -162,6 +162,12 @@
             authoring while combining XML editing with advanced publishing capabilities.</p>
         </li>
       </ul>
+      <div outputclass="stripe-product">
+        <p><b>Oxygen XML Editor</b> combines professional XML editing, authoring, and development
+          with optional AI-powered assistance, empowering everyone from beginners to experts. </p>
+        <p><xref href="https://www.oxygenxml.com/xml_editor.html" format="html"
+            scope="external">Discover More</xref></p>
+      </div>
       <p><b>Professional Online XML Editors</b></p>
       <p>These tools provide enterprise-grade XML editing in a web browser and are commonly used for
         structured authoring, technical documentation, publishing, and content management
@@ -190,6 +196,11 @@
       <p>Examples of professional online XML editors that are integrated into CMS platforms include
           <xref href="https://www.oxygenxml.com/xml_web_author.html" format="html" scope="external"
             ><i>Oxygen XML Web Author</i></xref>, <i>Fonto Editor</i>, <i>Xeditor</i>, etc.</p>
+      <div outputclass="stripe-product">
+        <p><b>Oxygen XML Web Author</b> takes advantage of the state-of-the-art Oxygen authoring technology to bring XML editing and reviewing to any modern web browser.</p>
+        <p><xref href="https://www.oxygenxml.com/xml_web_author.html" format="html"
+            scope="external">Discover More</xref></p>
+      </div>
     </section>
     <section id="section_cz1_5bj_mjc">
       <title>2. Free XML Editors</title>
