@@ -39,10 +39,11 @@
         </div>
         
         <script src="/oxygen-webhelp/template/resources/js/search-nav.js" defer></script>
+        <script src="/oxygen-webhelp/template/resources/js/posts-pagination.js" defer></script>
         
         <script>
             document.querySelector(".get-started")?.addEventListener("click", function () {
-            const el = document.querySelector(".stripe-latest-posts");
+            const el = document.querySelector("#browse-by-topics") || document.querySelector(".stripe-all-posts") || document.querySelector(".stripe-latest-posts");
             if (el) {
             window.scrollTo({
             top: el.offsetTop - 90,
