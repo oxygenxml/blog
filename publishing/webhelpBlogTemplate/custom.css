@@ -158,7 +158,8 @@ h3.followit{
   margin-bottom: 1em
 }
 
-.mb_index_bg .entry .btn {
+.mb_index_bg .entry .btn,
+.mb_index_bg .entry .btn:visited {
   color: var(--wh-primary-color, #000);
 }
 
@@ -233,6 +234,23 @@ h3.followit{
   margin: 1.5em 0 0.5em 1.5em;
 }
 
+.stripe-all-posts .all-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, max(280px, calc((100% - 3em) / 3))), 1fr));
+  gap: 1.5em;
+  margin: 1.5em;
+}
+
+.stripe-all-posts .all-posts-grid .entry {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  height: auto;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
 .topic-pills {
   display: flex;
   flex-wrap: wrap;
@@ -294,6 +312,15 @@ h3.followit{
   text-decoration: none;
 }
 
+.posts-pagination a:link,
+.posts-pagination a:visited,
+.posts-pagination a:hover,
+.posts-pagination a:focus,
+.posts-pagination a:active {
+  color: var(--wh-primary-color, #000);
+  text-decoration: none;
+}
+
 .posts-pagination-nav.is-disabled {
   opacity: 0.35;
   cursor: default;
@@ -319,6 +346,8 @@ h3.followit{
 }
 
 .posts-pagination-page.is-active,
+.posts-pagination-page.is-active:link,
+.posts-pagination-page.is-active:visited,
 .posts-pagination-page.is-active:hover,
 .posts-pagination-page.is-active:focus {
   background-color: var(--wh-primary-color, #000);
@@ -543,14 +572,18 @@ h3.followit{
   margin-left: 1em;
 }
 .get-started {
+  display: inline-block;
   padding: 0.5em;
   font-size: 1.2em;
   text-transform: uppercase;
   border-radius: 8px;
   margin-top: 3em;
+  text-decoration: none;
 }
-.get-started:hover {
+.get-started:hover,
+.get-started:focus {
   border: 1px solid var(--wh-strong-color, #888);
+  color: var(--wh-primary-color, #000) !important;
 }
 
 .footer .get-started {
@@ -714,7 +747,21 @@ ul#ui-id-1.ui-autocomplete {
 }
 
 #searchForm > div {
-  width: unset
+  position: relative;
+  width: unset;
+}
+
+.wh_search_input.showSearch .wh_search_textfield {
+  padding-right: 2.25em;
+}
+
+.wh_header .wh_advanced_search_tooltip {
+  right: 0.5em !important;
+}
+
+.icn_qSearch,
+.icn_qSearch_remove {
+  flex-shrink: 0;
 }
 
 .wh_top_menu_and_indexterms_link.navbar-collapse.hidden {
@@ -738,6 +785,9 @@ ul#ui-id-1.ui-autocomplete {
   .top-rated .entry,
   .welcome .entry {
     width: 93%;
+  }
+  .stripe-all-posts .all-posts-grid .entry {
+    width: auto;
   }
   .browse-by-topics h3,
   .stripe-all-posts .all-posts-heading {

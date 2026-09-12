@@ -42,14 +42,12 @@
         <script src="/oxygen-webhelp/template/resources/js/posts-pagination.js" defer></script>
         
         <script>
-            document.querySelector(".get-started")?.addEventListener("click", function () {
-            const el = document.querySelector("#browse-by-topics") || document.querySelector(".stripe-all-posts") || document.querySelector(".stripe-latest-posts");
-            if (el) {
-            window.scrollTo({
-            top: el.offsetTop - 90,
-            behavior: "smooth"
-            });
-            }
+            document.querySelector(".mb_index_bg .get-started")?.addEventListener("click", function (event) {
+                const el = document.querySelector("#browse-by-topics") || document.querySelector(".stripe-all-posts") || document.querySelector(".stripe-latest-posts");
+                if (el) {
+                    event.preventDefault();
+                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
             });
         </script>
         

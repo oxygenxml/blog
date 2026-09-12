@@ -21,9 +21,13 @@
   let currentTopic = "all";
   let currentPage = 1;
   let persistHash = false;
+  let skipScroll = true;
 
   function parseHash() {
     const hash = window.location.hash.replace(/^#/, "");
+    if (!hash || hash === "all-posts" || hash === "browse-by-topics") {
+      return { topic: "all", page: 1 };
+    }
     const params = new URLSearchParams(hash);
     const topic = params.get("topic") || "all";
     const page = parseInt(params.get("page") || "1", 10);
@@ -33,22 +37,35 @@
     };
   }
 
-  function writeHash(topic, page) {
+  function isPostsHash(hash) {
+    const value = (hash || "").replace(/^#/, "");
+    if (!value || value === "all-posts" || value === "browse-by-topics") {
+      return true;
+    }
+    const params = new URLSearchParams(value);
+    return params.has("page") || params.has("topic");
+  }
+
+  function hashFor(topic, page) {
     const params = new URLSearchParams();
     if (topic !== "all") {
       params.set("topic", topic);
     }
-    if (page > 1) {
-      params.set("page", String(page));
-    }
-    const next = params.toString();
-    const url = next
-      ? window.location.pathname + window.location.search + "#" + next
-      : window.location.pathname + window.location.search;
+    params.set("page", String(page));
+    return "#" + params.toString();
+  }
+
+  function writeHash(topic, page) {
+    const url = window.location.pathname + window.location.search + hashFor(topic, page);
     const current = window.location.pathname + window.location.search + window.location.hash;
     if (current !== url) {
       history.replaceState(null, "", url);
     }
+  }
+
+  function scrollToPosts() {
+    const target = document.getElementById("browse-by-topics") || section;
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function filteredEntries() {
@@ -85,11 +102,7 @@
       el.setAttribute("aria-disabled", "true");
       return el;
     }
-    el.href = "#all-posts";
-    el.addEventListener("click", function (event) {
-      event.preventDefault();
-      goToPage(page);
-    });
+    el.href = hashFor(currentTopic, page);
     if (opts.current) {
       el.setAttribute("aria-current", "page");
     }
@@ -172,30 +185,33 @@
     }
   }
 
-  function goToPage(page) {
+  function applyState(topic, page, scroll) {
+    currentTopic = topic || "all";
     currentPage = page;
     render();
-    const target = document.getElementById("browse-by-topics") || section;
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
-  function selectTopic(topic) {
-    currentTopic = topic || "all";
-    currentPage = 1;
-    render();
+    if (scroll) {
+      scrollToPosts();
+    }
   }
 
   pills.forEach(function (pill) {
     pill.addEventListener("click", function () {
-      selectTopic(pill.getAttribute("data-topic") || "all");
+      const topic = pill.getAttribute("data-topic") || "all";
+      const next = hashFor(topic, 1);
+      if (window.location.hash === next) {
+        applyState(topic, 1, true);
+        return;
+      }
+      window.location.hash = next;
     });
   });
 
   window.addEventListener("hashchange", function () {
+    if (!isPostsHash(window.location.hash)) {
+      return;
+    }
     const state = parseHash();
-    currentTopic = state.topic;
-    currentPage = state.page;
-    render();
+    applyState(state.topic, state.page, !skipScroll);
   });
 
   const initial = parseHash();
@@ -203,4 +219,5 @@
   currentPage = initial.page;
   render();
   persistHash = true;
+  skipScroll = false;
 })();

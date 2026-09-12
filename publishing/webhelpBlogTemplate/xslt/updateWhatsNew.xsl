@@ -68,7 +68,9 @@
                 <xsl:value-of select="($doc//title)[1]"/>
             </a>
             <div class="date">
-                <xsl:value-of select="format-date(xs:date($cd), '[D] [MNn,3-3] [Y0001]')"/>
+                <xsl:if test="$cd">
+                    <xsl:value-of select="format-date(xs:date($cd), '[D] [MNn,3-3] [Y0001]')"/>
+                </xsl:if>
             </div>
             <div class="label">
                 <xsl:if test="$label != ''">
@@ -92,7 +94,13 @@
                     [not(@format) or @format = 'dita']
                     [not(contains(@href, 'contributors.dita'))]
                     [doc-available(resolve-uri(@href, base-uri()))]
-                    [(document(resolve-uri(@href, base-uri()))//prolog)[1]/critdates/created/@date]"
+                    [
+                        (document(resolve-uri(@href, base-uri()))//prolog)[1]/critdates/created/@date
+                        or (
+                            not(@keys)
+                            and not(ancestor::topicref[@href][not(@keys)][not(@format = 'ditamap')])
+                        )
+                    ]"
                 group-by="@href">
                 <xsl:sequence select="."/>
             </xsl:for-each-group>
@@ -108,7 +116,7 @@
                                 If you have been searching for useful articles and tutorials covering the various aspects of editing, developing, and publishing using Oxygen XML Author or Editor with various XML technologies, you arrived at the right place!
                             </div>
                             <div class="col-md-4" id="quick_links">
-                                <button type="button" class="btn get-started">Get Started</button>
+                                <a class="btn get-started" href="#browse-by-topics">Get Started</a>
                             </div>
                         </div>
                     </div>

@@ -52,12 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Click în afara formularului închide căutarea
   document.addEventListener('click', function (e) {
     if (
+      searchForm &&
+      searchIcon &&
       !searchForm.contains(e.target) &&
       !searchIcon.contains(e.target) &&
-      (!closeSearchIcon || !closeSearchIcon.contains(e.target))
+      (!closeSearchIcon || !closeSearchIcon.contains(e.target)) &&
+      !e.target.closest('.ui-autocomplete')
     ) {
       hideSearch();
     }
