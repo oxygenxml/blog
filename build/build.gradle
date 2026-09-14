@@ -13,13 +13,38 @@ task initDOT {
   }
 }
 
-task runTransformation(type:Exec, dependsOn: [initDOT]) {
- workingDir "${projectDir}/dita-ot/oxygen-publishing-engine/bin"
- commandLine "sh", "${projectDir}/dita-ot/oxygen-publishing-engine/bin/dita", "--output=.", "--project", "${projectDir}/../blog-project.xml"
+def ditaHome = "${projectDir}/dita-ot/oxygen-publishing-engine"
+def ditaBin = "${ditaHome}/bin"
+def ditaCmd = "${ditaBin}/dita"
+def projectFile = "${projectDir}/../blog-project.xml"
+
+task runWebhelp(type:Exec, dependsOn: [initDOT]) {
+ workingDir ditaBin
+ environment "ANT_OPTS", "-Xmx4g"
+ commandLine "sh", ditaCmd, "--output=.", "--project", projectFile, "--deliverable=wh-responsive"
 }
 
-task copySite(type: Copy, dependsOn: [runTransformation]) {
-    from "${projectDir}/dita-ot/oxygen-publishing-engine/bin/site"
+task runEpub(type:Exec, dependsOn: [runWebhelp]) {
+ workingDir ditaBin
+ environment "ANT_OPTS", "-Xmx4g"
+ commandLine "sh", ditaCmd, "--output=.", "--project", projectFile, "--deliverable=epub"
+}
+
+task runPdf(type:Exec, dependsOn: [runEpub]) {
+ workingDir ditaBin
+ environment "ANT_OPTS", "-Xmx6g"
+ environment "JAVA_TOOL_OPTIONS", "-Xmx6g"
+ commandLine "sh", ditaCmd, "--output=.", "--project", projectFile, "--deliverable=pdf"
+}
+
+task copyPdf(type: Copy, dependsOn: [runPdf]) {
+    from "${ditaBin}/pdf-out"
+    include "*.pdf"
+    into "${ditaBin}/site"
+}
+
+task copySite(type: Copy, dependsOn: [copyPdf]) {
+    from "${ditaBin}/site"
     into "${projectDir}/../site"
 }
 
