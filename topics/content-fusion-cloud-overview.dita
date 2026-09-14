@@ -284,7 +284,7 @@
                 application.</p>
             <p>Or if your Content Fusion project is coupled with a <b>Git</b> repository, you can
                 directly use the <xref
-                    href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                    href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
                     format="html" scope="external">Git client add-on</xref> bundled with the Oxygen
                 desktop to work in the project.</p>
         </section>
@@ -323,7 +323,7 @@
                         Oxygen XML desktop with the <xref
                             href="https://www.oxygenxml.com/doc/ug-addons/topics/fluenta-dita-translation-add-on.html"
                             format="html" scope="external">Fluenta add-on</xref> and <xref
-                            href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                            href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
                             format="html" scope="external">Git Client add-on</xref> installed to
                         implement the translation workflow. Couple that with the Oxygen desktop
                             <xref

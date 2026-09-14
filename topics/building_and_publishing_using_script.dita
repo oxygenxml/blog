@@ -16,7 +16,7 @@
                 <li>Runs the publishing on the <xref
                         href="https://github.com/oxygenxml/blog/blob/master/blog-project.xml"
                         scope="external" format="html">DITA OT Project file</xref> bundled with the
-                    Blog project that defines all deliverables (WebHelp, EPUB).</li>
+                        Blog project that defines all deliverables (WebHelp, EPUB, PDF).</li>
                 <li>Produces all outputs in a <filepath>site</filepath> folder in the project's base
                     folder.</li>
             </ul></p>

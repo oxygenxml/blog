@@ -167,7 +167,7 @@
                         <p>Useful add-ons with private repositories (can be installed from
                                 application default add-on update site):<ul>
                                         <li>Git support add-on: <xref
-                                                        href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                                                        href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
                                                         format="html" scope="external"/></li>
                                         <li>Content Fusion Oxygen add-on - bundled with Oxygen.</li>
                                         <li>WebHelp Feedback Oxygen add-on.</li>

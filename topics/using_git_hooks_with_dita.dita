@@ -4,7 +4,7 @@
     <title>Using Git client-side hooks to run DITA publishing pipelines</title>
     <shortdesc>This topic describes how to use Git client-side hooks to execute DITA commands and
     publishing workflows, with an emphasis on using the <xref
-      href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html" format="html"
+      href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html" format="html"
       scope="external">Oxygen's Git Client</xref>.</shortdesc>
     <prolog>
         <author>Alex Jitianu</author>
@@ -51,7 +51,7 @@
             <title>Using a client side hook with a DITA project</title>
             <p>The main scenario we are focusing on in this topic is about using client-side hooks
         while working with DITA and storing it in a Git repository, and how to enable Oxygen’s
-        built-in <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+        built-in <xref href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
           format="html" scope="external">Git Client </xref> to execute these hooks.</p>
         </section>
         <section id="section_sjm_nj3_vkb">

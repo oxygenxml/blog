@@ -1,0 +1,6 @@
+/* Print styles for the Oxygen XML Blog PDF (Chemistry). Keep this separate from
+   the WebHelp CSS so screen layout rules do not break PDF pagination. */
+@page {
+    size: A4;
+    margin: 2cm;
+}

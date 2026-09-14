@@ -58,4 +58,9 @@
             <extension file="xslt/move-search-in-header.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
         </xslt>
     </webhelp>
+    <pdf>
+        <resources>
+            <css file="pdf.css"/>
+        </resources>
+    </pdf>
 </publishing-template>

@@ -42,7 +42,7 @@
                         Confluence into other formats like DITA XML.</dd>
                 </dlentry>
                 <dlentry>
-                    <dt><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                    <dt><xref href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
                             format="html" scope="external">Git Client add-on</xref></dt>
                     <dd>Collaborate with your colleagues on a Git project. Comes with support for: <ul>
                             <li>Git Staging<ul>

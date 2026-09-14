@@ -86,7 +86,7 @@
                 <li>Make changes to your forked project or to a branch from it. <ul
                         id="ul_gkd_4s3_jkb">
                         <li>If you have the <ph keyref="oxygen"/> application installed, you can
-                            download our <xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+                            download our <xref href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
                                 format="html" scope="external">Git add-on</xref> that should allow
                             you to clone the fork, make changes, and then commit and push them to
                             your repository.</li>

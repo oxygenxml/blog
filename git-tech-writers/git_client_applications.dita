@@ -15,7 +15,7 @@
 							Git-enabled DITA CMS</b>. It is designed to provide the missing pieces
 						that Git lacks when working with a DITA project, such as review workflows
 						and publishing.</li>
-					<li><xref href="https://www.oxygenxml.com/doc/ug-addons/topics/git-addon.html"
+					<li><xref href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html"
 							format="html" scope="external"><b>Git Client</b></xref> add-on in Oxygen
 						XML Editor allows you to use Git from the comfort of your authoring
 						tool.</li>
