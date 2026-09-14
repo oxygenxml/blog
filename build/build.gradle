@@ -17,6 +17,7 @@ def ditaHome = "${projectDir}/dita-ot/oxygen-publishing-engine"
 def ditaBin = "${ditaHome}/bin"
 def ditaCmd = "${ditaBin}/dita"
 def projectFile = "${projectDir}/../blog-project.xml"
+def pdfOutDir = file("${ditaBin}/pdf-out")
 
 task runWebhelp(type:Exec, dependsOn: [initDOT]) {
  workingDir ditaBin
@@ -33,13 +34,21 @@ task runEpub(type:Exec, dependsOn: [runWebhelp]) {
 task runPdf(type:Exec, dependsOn: [runEpub]) {
  workingDir ditaBin
  environment "ANT_OPTS", "-Xmx2g"
+ ignoreExitValue = true
  commandLine "sh", ditaCmd, "--output=.", "--project", projectFile, "--deliverable=pdf", "-DbaseJVMArgLine=-Xmx4g"
+ doLast {
+    def code = executionResult.get().exitValue
+    if (code != 0) {
+        logger.warn("PDF Chemistry failed with exit code ${code}. Publishing WebHelp and EPUB without oxygen_xml_blog.pdf.")
+    }
+ }
 }
 
 task copyPdf(type: Copy, dependsOn: [runPdf]) {
-    from "${ditaBin}/pdf-out"
+    from pdfOutDir
     include "*.pdf"
     into "${ditaBin}/site"
+    onlyIf { pdfOutDir.exists() && !fileTree(pdfOutDir).include("*.pdf").files.isEmpty() }
 }
 
 task copySite(type: Copy, dependsOn: [copyPdf]) {
