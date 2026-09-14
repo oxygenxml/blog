@@ -32,9 +32,8 @@ task runEpub(type:Exec, dependsOn: [runWebhelp]) {
 
 task runPdf(type:Exec, dependsOn: [runEpub]) {
  workingDir ditaBin
- environment "ANT_OPTS", "-Xmx6g"
- environment "JAVA_TOOL_OPTIONS", "-Xmx6g"
- commandLine "sh", ditaCmd, "--output=.", "--project", projectFile, "--deliverable=pdf"
+ environment "ANT_OPTS", "-Xmx2g"
+ commandLine "sh", ditaCmd, "--output=.", "--project", projectFile, "--deliverable=pdf", "-DbaseJVMArgLine=-Xmx4g"
 }
 
 task copyPdf(type: Copy, dependsOn: [runPdf]) {

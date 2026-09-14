@@ -18,6 +18,7 @@
     <publication transtype="pdf-css-html5">
       <param name="pdf.publishing.template" href="publishing/pdfBlogTemplate"/>
       <param name="args.keep.output.debug.files" value="no"/>
+      <param name="baseJVMArgLine" value="-Xmx4g"/>
     </publication>
   </deliverable>
   
