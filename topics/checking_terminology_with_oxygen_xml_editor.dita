@@ -55,6 +55,13 @@
     </section>
         <section id="section_ild_5rb_g1b">
             <title>Commercial alternatives</title>
+      <p>With the <b>Lexeri</b>
+        <xref
+          href="https://support.lexeri.com/hc/en-us/articles/39010446890013-Term-Checks-with-the-Oxygen-XML-Editor-Plug-in"
+          format="html" scope="external">plugin-in</xref> for Oxygen XML Editor, you can check your
+        documents for correct terminology right within the editor. You no longer need to export your
+        content or upload it to the Lexeri web app: the term check runs in a sidebar next to the
+        document you're currently editing.</p>
             <p><xref href="https://support.acrolinx.com/hc/en-us" format="html" scope="external"
           >Acrolinx</xref> is a very popular commercial tool for checking content for consistency
         and terminology. The plugins that Acrolinx developed for Oxygen standalone, Oxygen Eclipse
