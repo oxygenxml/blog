@@ -9,14 +9,14 @@
         <p>As an example of scripting the publishing on the server side, the <b id="b_tnd_f5m_vzb"
                 >Oxygen XML Blog</b> has a <xref href="../build/build.gradle" format="gradle">Gradle
                 build file</xref> that can be invoked to automatically build and publish WebHelp and
-            PDF outputs of the blog content. Features of the sample script:<ul id="ul_n51_j5m_vzb">
+            EPUB outputs of the blog content. Features of the sample script:<ul id="ul_n51_j5m_vzb">
                 <li>Downloads and unzips the Oxygen Publishing Engine.</li>
                 <li>Creates a license key in the publishing engine's folder based on an
                     environmental variable named <codeph>LICENSE_KEY</codeph>.</li>
                 <li>Runs the publishing on the <xref
                         href="https://github.com/oxygenxml/blog/blob/master/blog-project.xml"
                         scope="external" format="html">DITA OT Project file</xref> bundled with the
-                    Blog project that defines all deliverables (WebHelp, EPUB, PDF).</li>
+                    Blog project that defines all deliverables (WebHelp, EPUB).</li>
                 <li>Produces all outputs in a <filepath>site</filepath> folder in the project's base
                     folder.</li>
             </ul></p>

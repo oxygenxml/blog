@@ -12,14 +12,14 @@
     </publication>
   </deliverable>
   
-  <deliverable name="Oxygen XML Blog to PDF" id="pdf">
+  <!-- PDF disabled: Chemistry cannot generate the full-blog PDF on Jenkins (PDFX013F). -->
+  <!--<deliverable name="Oxygen XML Blog to PDF" id="pdf">
     <context idref="blog"/>
-    <output href="pdf-out"/>
+    <output href="site"/>
     <publication transtype="pdf-css-html5">
-      <param name="args.keep.output.debug.files" value="no"/>
-      <param name="baseJVMArgLine" value="-Xmx4g"/>
+      <param name="pdf.publishing.template" href="publishing/webhelpBlogTemplate"/>
     </publication>
-  </deliverable>
+  </deliverable>-->
   
   <deliverable name="Oxygen XML Blog to EPUB" id="epub">
     <context idref="blog"/>

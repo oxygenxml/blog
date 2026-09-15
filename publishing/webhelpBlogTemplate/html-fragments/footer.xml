@@ -32,7 +32,6 @@
                 
                 <div class="col-md-3 b-flavours">
                     <a type="application/rss+xml" class="me-2" href="/rss.xml">RSS</a>
-                    <a class="me-2" href="/oxygen_xml_blog.pdf">PDF</a>
                     <a href="/oxygen_xml_blog.epub">EPUB</a>
                 </div>
             </div>
