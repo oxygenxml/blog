@@ -9,7 +9,7 @@
       <a:arguments>
         <a:argument name="fragment"><div outputclass="stripe-product">
   <p><b>Product name</b> Short promotional text.${caret}</p>
-  <p><xref href="https://www.oxygenxml.com/" format="html" scope="external">Learn more</xref></p>
+  <p outputclass="stripe-product-action"><xref href="https://www.oxygenxml.com/" format="html" scope="external">Learn more</xref></p>
 </div></a:argument>
       </a:arguments>
     </a:operation>
