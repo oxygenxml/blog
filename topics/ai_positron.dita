@@ -162,7 +162,7 @@
     <div outputclass="stripe-product">
       <p><b>Oxygen AI Positron</b> helps technical writers generate, rewrite, and
         review documentation with AI.</p>
-      <p><xref href="https://www.oxygenxml.com/ai_positron.html" format="html"
+      <p outputclass="stripe-product-action"><xref href="https://www.oxygenxml.com/ai_positron.html" format="html"
           scope="external">Get started</xref></p>
     </div>
     <section id="section_tzn_jw5_4bc">

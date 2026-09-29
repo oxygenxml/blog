@@ -165,7 +165,7 @@
       <div outputclass="stripe-product">
         <p><b>Oxygen XML Editor</b> combines professional XML editing, authoring, and development
           with optional AI-powered assistance, empowering everyone from beginners to experts. </p>
-        <p><xref href="https://www.oxygenxml.com/xml_editor.html" format="html"
+        <p outputclass="stripe-product-action"><xref href="https://www.oxygenxml.com/xml_editor.html" format="html"
             scope="external">Discover More</xref></p>
       </div>
       <p><b>Professional Online XML Editors</b></p>
@@ -198,7 +198,7 @@
             ><i>Oxygen XML Web Author</i></xref>, <i>Fonto Editor</i>, <i>Xeditor</i>, etc.</p>
       <div outputclass="stripe-product">
         <p><b>Oxygen XML Web Author</b> takes advantage of the state-of-the-art Oxygen authoring technology to bring XML editing and reviewing to any modern web browser.</p>
-        <p><xref href="https://www.oxygenxml.com/xml_web_author.html" format="html"
+        <p outputclass="stripe-product-action"><xref href="https://www.oxygenxml.com/xml_web_author.html" format="html"
             scope="external">Discover More</xref></p>
       </div>
     </section>
