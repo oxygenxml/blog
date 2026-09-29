@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fallback publication metadata for legacy standalone posts without DITA critdates.
+     Dates use the original repository-add date, or the copyright year when older. -->
+<posts>
+  <post href="topics/learnDita.dita" date="2019-12-06"/>
+  <post href="topics/guidedAuthoring.dita" date="2019-12-06"/>
+  <post href="topics/maintain-healthy-dita-project.dita" date="2019-12-06"/>
+  <post href="topics/dita_linking_stretegies.dita" date="2019-12-06"/>
+  <post href="branchFilters/branchFilter.dita" date="2019-12-06"/>
+  <post href="keyscopes/keyscopesBlog.dita" date="2019-12-06"/>
+  <post href="presentation-reuse/dita_reuse_strategies.dita" date="2019-12-06"/>
+  <post href="topics/tableRowColors.dita" date="2019-12-06"/>
+  <post href="topics/ditaToPDF.dita" date="2019-12-06"/>
+  <post href="topics/pageBreakPlugin.dita" date="2019-12-06"/>
+  <post href="topics/embedding_diagrams_in_dita_topics_using_plantuml.dita" date="2019-12-19"/>
+  <post href="topics/dita_publishing_customization_overview.dita" date="2019-12-06"/>
+  <post href="topics/ditaOTFAQ.dita" date="2019-12-06"/>
+  <post href="topics/enhancing_dita_publishing_with_plugins.dita" date="2019-12-06"/>
+  <post href="topics/adding-latex-equation-support-dita.dita" date="2019-12-06"/>
+  <post href="topics/useful-dita-ot-plugins.dita" date="2019-12-06"/>
+  <post href="topics/customizeDITACSS.dita" date="2019-12-06"/>
+  <post href="topics/controlledAttributeValues.dita" date="2019-12-06"/>
+  <post href="topics/convertingSubjectSchemeMapToDITAVAL.dita" date="2019-12-06"/>
+  <post href="topics/oxygen-dita-strong-points.dita" date="2019-12-06"/>
+  <post href="topics/dita_oriented_tips_and_tricks.dita" date="2019-12-06"/>
+  <post href="topics/dita_project_enhancements.dita" date="2019-12-06"/>
+  <post href="topics/translating_your_dita_project.dita" date="2019-12-06"/>
+  <post href="topics/validateCheckForCompletness.dita" date="2019-12-06"/>
+  <post href="topics/SchematronBCs.dita" date="2019-12-06"/>
+  <post href="topics/styleguide.dita" date="2019-12-06"/>
+  <post href="topics/sort_glossentries.dita" date="2019-12-06"/>
+  <post href="topics/replace-image-href-keyref.dita" date="2019-12-06"/>
+  <post href="topics/migratingToDITA.dita" date="2019-12-06"/>
+  <post href="topics/migrating_to_dita.dita" date="2019-12-06"/>
+  <post href="topics/migrateWordToDita.dita" date="2019-12-06"/>
+  <post href="topics/batch_converting_html_to_xhtml.dita" date="2019-12-06"/>
+  <post href="topics/customizing_oxygen.dita" date="2019-12-06"/>
+  <post href="topics/author-document-type-extension-sharing.dita" date="2019-12-06"/>
+  <post href="topics/sharing_schematron_validation_rules.dita" date="2019-12-06"/>
+  <post href="topics/Oxygen%20plugins%20and%20frameworks.dita" date="2019-12-06"/>
+  <post href="topics/author-document-type-extension-sharing-custom-new-file-templates.dita" date="2019-12-06"/>
+  <post href="topics/composing-author-actions.dita" date="2019-12-06"/>
+  <post href="topics/custom-author-action-js-based.dita" date="2019-12-06"/>
+  <post href="topics/howSpecialPasteWorksInOxygen.dita" date="2019-12-06"/>
+  <post href="topics/the_oxygen_sdk_part_1_plugins.dita" date="2019-12-06"/>
+  <post href="topics/oxygenFrameworks.dita" date="2019-12-06"/>
+  <post href="topics/packing-add-ons.dita" date="2019-12-06"/>
+  <post href="topics/adding_cals_table_related_functionality_to_your_custom_oxygen_framework.dita" date="2020-04-28"/>
+  <post href="topics/checking_terminology_with_oxygen_xml_editor.dita" date="2019-12-06"/>
+  <post href="topics/opinions%20on%20Oxygen.dita" date="2019-12-06"/>
+  <post href="topics/greattechsupport.dita" date="2019-12-06"/>
+  <post href="reuse/short_story_reuse.dita" date="2019-12-06"/>
+  <post href="topics/sharingSettings.dita" date="2019-12-06"/>
+  <post href="topics/collaboration-for-documenting-software.dita" date="2019-12-06"/>
+  <post href="topics/collaboration-teams.dita" date="2019-12-06"/>
+  <post href="george/enable-massive-contributions.dita" date="2016-01-01" author="George Bina"/>
+</posts>

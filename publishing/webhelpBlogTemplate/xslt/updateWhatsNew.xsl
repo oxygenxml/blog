@@ -45,30 +45,59 @@
             select="lower-case(replace(replace(normalize-space($label), '[^A-Za-z0-9]+', '-'), '^-|-$', ''))"/>
     </xsl:function>
 
+    <!-- Dates for legacy posts that predate the current prolog conventions. -->
+    <xsl:variable name="legacyPostMetadata"
+        select="document('legacy-post-metadata.xml')/posts/post"/>
+
+    <xsl:function name="blog:post-date" as="xs:string?">
+        <xsl:param name="topicref" as="element()"/>
+        <xsl:param name="doc" as="document-node()"/>
+        <xsl:variable name="createdDate"
+            select="string((($doc//prolog)[1]/critdates/created/@date)[1])"/>
+        <xsl:variable name="revisedDate"
+            select="string((($doc//prolog)[1]/critdates/revised/@modified)[last()])"/>
+        <xsl:sequence
+            select="if ($createdDate != '') then $createdDate
+                    else if ($revisedDate != '') then $revisedDate
+                    else string(($legacyPostMetadata[@href = string($topicref/@href)]/@date)[1])"/>
+    </xsl:function>
+
+    <xsl:function name="blog:post-author" as="xs:string">
+        <xsl:param name="topicref" as="element()"/>
+        <xsl:param name="doc" as="document-node()"/>
+        <xsl:variable name="prologAuthor"
+            select="normalize-space(string((($doc//prolog)[1]/author)[1]))"/>
+        <xsl:variable name="legacyAuthor"
+            select="normalize-space(string(($legacyPostMetadata[@href = string($topicref/@href)]/@author)[1]))"/>
+        <xsl:sequence
+            select="if ($prologAuthor != '') then $prologAuthor
+                    else if ($legacyAuthor != '') then $legacyAuthor
+                    else 'Oxygen XML Blog Team'"/>
+    </xsl:function>
+
     <xsl:template name="render-post-entry">
         <xsl:variable name="doc" select="document(resolve-uri(@href, base-uri()))"/>
-        <xsl:variable name="cd" select="($doc//prolog)[1]/critdates/created/@date"/>
+        <xsl:variable name="cd" select="blog:post-date(., $doc)"/>
         <xsl:variable name="prolog" select="($doc//prolog)[1]"/>
-        <xsl:variable name="avatar-author" select="replace($prolog/author, ' ', '_')"/>
+        <xsl:variable name="author" select="blog:post-author(., $doc)"/>
+        <xsl:variable name="avatar-author" select="replace($author, ' ', '_')"/>
         <xsl:variable name="label" select="$prolog/metadata/keywords/keyword[@outputclass = 'label']"/>
         <xsl:variable name="fileUrl" select="replace(@href, '\.dita$', '.html')"/>
-        <xsl:variable name="fileContent" select="$doc/*"/>
-        <xsl:variable name="x" select="normalize-space($fileContent)"/>
-        <xsl:variable name="y" select="translate($x, ' ', '')"/>
-        <xsl:variable name="fileCountWords" select="string-length($x) - string-length($y) + 1"/>
-        <xsl:variable name="readMin" select="format-number($fileCountWords div 100, '0')"/>
+        <xsl:variable name="words"
+            select="tokenize(normalize-space(string-join($doc/*/body//text(), ' ')), '\s+')[. != '']"/>
+        <xsl:variable name="readMin" select="max((1, ceiling(count($words) div 100)))"/>
         <xsl:variable name="category" select="blog:category(.)"/>
         <div class="entry" data-topic="{blog:slug($category)}" data-topic-label="{$category}">
             <div class="author {$avatar-author}">
                 <a href="topics/contributors.html">
-                    <xsl:value-of select="$prolog/author"/>
+                    <xsl:value-of select="$author"/>
                 </a>
             </div>
             <a class="title" href="{$fileUrl}">
                 <xsl:value-of select="($doc//title)[1]"/>
             </a>
             <div class="date">
-                <xsl:if test="$cd">
+                <xsl:if test="$cd castable as xs:date">
                     <xsl:value-of select="format-date(xs:date($cd), '[D] [MNn,3-3] [Y0001]')"/>
                 </xsl:if>
             </div>
@@ -138,7 +167,7 @@
                         <div class="all-posts-grid">
                             <xsl:for-each select="$postRefs">
                                 <xsl:sort
-                                    select="(document(resolve-uri(@href, base-uri()))//prolog)[1]/critdates/created/@date"
+                                    select="blog:post-date(., document(resolve-uri(@href, base-uri())))"
                                     order="descending"/>
                                 <xsl:call-template name="render-post-entry"/>
                             </xsl:for-each>
