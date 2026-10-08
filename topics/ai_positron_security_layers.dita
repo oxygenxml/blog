@@ -223,7 +223,7 @@
         <section id="learn_more">
             <title>Learn more</title>
             <p>A recording where I show all these security aspects in Oxygen is available on my
-                YouTube Channel: <object data="https://www.youtube.com/embed/kkrdry1m0F0&amp;t=91s"
+                YouTube Channel: <object data="https://www.youtube.com/embed/kkrdry1m0F0?start=91s"
                     outputclass="iframe">
                     <param name="allowfullscreen"/>
                 </object></p>
