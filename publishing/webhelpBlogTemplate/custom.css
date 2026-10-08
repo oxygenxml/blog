@@ -224,6 +224,17 @@ h3.followit{
   filter: brightness(0.9);
 }
 
+/* Video objects publish as iframes with a fixed width attribute, inside a
+   .non-responsive wrapper, so they widen topic pages on small screens. */
+.wh_topic_content iframe {
+  max-width: 100%;
+}
+
+.wh_topic_content iframe.iframe {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 .browse-by-topics {
   margin: 0 0 1em 0;
   scroll-margin-top: 90px;
@@ -383,7 +394,18 @@ h3.followit{
   height: 347px;
 }
 
+/* The shared rule above pins every card to 348px. The sidebar column is 25%
+   of the page, so between the lg breakpoint and about 1410px that fixed width
+   spills out of the column and scrolls the page sideways. Fill the column,
+   and only keep 348px as a cap once the column is wider than that. */
+.top-rated {
+  min-width: 0;
+  container-type: inline-size;
+}
+
 .top-rated .entry {
+  width: 100%;
+  max-width: 348px;
   margin: 0 0 2.7em 0;
   height: 347px;
 }
@@ -599,11 +621,29 @@ h3.followit{
 }
 
 .top-rated #quick_links.entry {
-  height: 240px
+  height: auto;
+  min-height: 240px;
 }
 
-.top-rated #quick_links.entry img {
-  margin-top: 1em
+/* Four 40px icons plus their 1em side margins need a column wider than about
+   340px. Below that, keep them on one row instead of spilling out of the card.
+   The query sits on .top-rated because the card itself is an inline-table,
+   which does not establish a reliable container size. */
+@container (max-width: 340px) {
+  .top-rated #quick_links.entry > div:last-child {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  .top-rated #quick_links.entry img {
+    width: 40px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    flex: 0 1 40px;
+  }
 }
 #quick_links img {
   width: 40px;
@@ -791,6 +831,7 @@ ul#ui-id-1.ui-autocomplete {
   .top-rated .entry,
   .welcome .entry {
     width: 93%;
+    max-width: none;
   }
   .stripe-all-posts .all-posts-grid .entry {
     width: auto;
