@@ -814,6 +814,19 @@ ul#ui-id-1.ui-autocomplete {
   display: none !important;
 }
 
+/* Below the lg breakpoint the sidebar column is full width. Stack its cards
+   and align them with the page content instead of letting the 348px
+   inline-table cards wrap into a ragged grid. */
+@media (max-width: 991.98px) {
+  .top-rated .entry {
+    display: block;
+    width: auto;
+    max-width: none;
+    height: auto;
+    margin: 0 1.5em 2.7em 1.5em;
+  }
+}
+
 @media (max-width : 620px) {
   .mb_index_bg {
     height: auto
@@ -828,10 +841,8 @@ ul#ui-id-1.ui-autocomplete {
     margin-top: 1em
   }
   .stripe-latest-posts .entry,
-  .top-rated .entry,
   .welcome .entry {
     width: 93%;
-    max-width: none;
   }
   .stripe-all-posts .all-posts-grid .entry {
     width: auto;
