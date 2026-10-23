@@ -15,7 +15,7 @@
         <p>Here is how to publish DITA XML content to Powerpoint using Pandoc:<ol>
                 <li>Open your DITA map in the <ph keyref="oxygen"/>
                     <uicontrol>DITA Maps Manager</uicontrol> view. For my example, I will use the
-                        <filepath>OXYGEN_INSTALL_DIR/samples/flowers/flowers.ditamap</filepath>
+                        <filepath>OXYGEN_INSTALL_DIR/samples/dita/plant-catalog/flowers.ditamap</filepath>
                     sample.</li>
                 <li>Use the <uicontrol>Configure Transformation Scenarios</uicontrol> toolbar
                     button, create a new transformation scenario of the type <uicontrol>DITA-OT

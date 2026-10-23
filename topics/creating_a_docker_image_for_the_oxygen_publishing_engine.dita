@@ -42,7 +42,7 @@
                         already saved on the shared
                         volume.<codeblock id="codeblock_uqn_mnj_5zb">$: docker run -e LICENSE_KEY="$(&lt;licensekey.txt)" \
 --rm --name dita-ot-publish\
--v /Users/.../samples/dita/flowers:/src  \
+-v /Users/.../samples/dita/plant-catalog:/src  \
 oxygen-publishing-engine:1.0 \
 -i /src/flowers.ditamap \
 -o /src/out \

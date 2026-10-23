@@ -219,7 +219,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../eclipse-workspace/eXml/samples/dita/flowers/flowers.ditamap</String>
+                                    <String>../eclipse-workspace/eXml/samples/dita/plant-catalog/flowers.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
