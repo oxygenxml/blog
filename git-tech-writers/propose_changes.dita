@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="useful_features">
-	<title>Propose Changes</title>
+	<title>Propose Changes with Oxygen XML Web Author</title>
 	<prolog>
 		<author>Radu Coravu</author>
 	</prolog>
 	<body>
-		<p>Besides the team of technical writers who have full write access to the documentation
-			repositories, there may be other collaborators (e.g. subject matter experts) who have
-			read access to the repository and sometimes want to propose changes.</p>
 		<p>The workflow for proposing changes to a repository usually works like this:<ol
 				id="ol_jl2_k2w_v2c">
 				<li><b>Identify the Need for a Change</b><p>The SME (subject matter expert) starts

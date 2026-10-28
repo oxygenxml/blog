@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="propose_changes_overview">
+    <title>Propose Changes</title>
+    <body>
+        <p>Besides the team of technical writers who have full write access to the documentation
+            repositories, there may be other collaborators (e.g. subject matter experts) who have
+            read access to the repository and sometimes want to propose changes.</p>
+        <p>In both flows below, the expert starts from an <uicontrol>Edit Online</uicontrol> link
+            in the published output, and a technical writer reviews the change before it reaches
+            the documentation:</p>
+        <ul id="ul_propose_changes_flows">
+            <li><xref href="cf_propose_changes.dita"/>: the expert's change becomes a review task
+                in Content Fusion.</li>
+            <li><xref href="propose_changes.dita"/>: the expert's change becomes a pull request on
+                your Git host.</li>
+        </ul>
+    </body>
+</topic>

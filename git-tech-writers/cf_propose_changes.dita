@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="cf_propose_changes">
+    <title>Propose Changes with Oxygen Content Fusion</title>
+    <prolog>
+        <author>Cristian Talau</author>
+    </prolog>
+    <body>
+        <p>It starts with a small link in the corner of a published page:</p>
+        <p><image href="images/cf-contrib-edit-online-link.png" placement="break"
+                id="image_edit_online_link"/></p>
+        <p>Technical writers are not the only people who know the product. Field engineers see how
+            customers install it, support staff answer the same questions every week, and
+            developers know what changed in the last release. When they find a mistake in the docs,
+            they usually report it in a chat message or a ticket, and the fix waits until a writer
+            has time for it.</p>
+        <p>We wanted these experts to fix the docs themselves, without write access to the
+            content. So we added a new user role to <xref
+                href="https://www.oxygenxml.com/content_fusion.html" format="html"
+                scope="external">Oxygen Content Fusion</xref>: <b>Contributor</b>. A Contributor
+            can edit a project in a private workspace and send the changes to the writers for
+            review. Only a writer can put a change into the project.</p>
+        <note>The Contributor role is available in Content Fusion Cloud. It will come to Content
+            Fusion Enterprise in a future release.</note>
+        <section id="section_expert">
+            <title>How an expert proposes a change</title>
+            <p>Say Dana, a field engineer, reads the S100 user guide and sees that it gets the
+                charging time wrong. Dana clicks <uicontrol>Edit Online</uicontrol>, and the topic
+                opens in Dana's personal workspace in Content Fusion. The workspace is a private
+                copy of the project, so nobody else sees the edits yet.</p>
+            <p>Dana fixes the value. The badge on <uicontrol>Submit for Approval</uicontrol> counts
+                the changed files.</p>
+            <p><image href="images/cf-contrib-workspace-fix.png" placement="break"
+                    id="image_workspace_fix"/></p>
+            <p>An expert can also rewrite a section or add a new topic. When the change is ready,
+                Dana clicks <uicontrol>Submit for Approval</uicontrol>, gives the change a title,
+                and says why it is needed. That is all Dana has to do. Dana needs no Git account and never has to think about
+                branches or pull requests.</p>
+        </section>
+        <section id="section_writer">
+            <title>How a writer takes the change in</title>
+            <p>Content Fusion turns the change into a review task without an owner, and emails the
+                project maintainers:</p>
+            <p><image href="images/cf-contrib-needs-owner-email.png" placement="break"
+                    id="image_needs_owner_email"/></p>
+            <p>Alex, one of the writers, opens the task and clicks <uicontrol>Assign Me as
+                    Owner</uicontrol>. Content Fusion emails Dana to say that Alex took it. The
+                task is also where the two of them talk: they can discuss the change in comments,
+                and Dana can keep editing the files in the task until they agree.</p>
+            <p>When the change is ready, Alex brings it into Alex's own workspace with
+                    <uicontrol>Finish integration</uicontrol> &gt; <uicontrol>Integrate in
+                    workspace</uicontrol>.</p>
+            <p><image href="images/cf-contrib-integrate-in-workspace.png" placement="break"
+                    id="image_integrate_in_workspace"/></p>
+            <p>This step gives Alex a chance to check the change against the rest of the project.
+                A one-line fix in one topic can still break a link or a key reference in another,
+                so Alex validates the publication in the <uicontrol>Problems</uicontrol>
+                view.</p>
+            <p><image href="images/cf-contrib-writer-problems.png" placement="break"
+                    id="image_writer_problems"/></p>
+            <p>No problems, so Alex clicks <uicontrol>Commit changes</uicontrol>. The fix goes out
+                with the next build of the docs.</p>
+        </section>
+        <section id="section_setup">
+            <title>How to set it up</title>
+            <p>You need three changes before the first contributions arrive:</p>
+            <ol id="ol_setup">
+                <li>In your organization's member list, give the expert the
+                        <uicontrol>Contributor</uicontrol> user role. Contributors use their own
+                    license seats, next to the Author and SME seats.<p><image
+                            href="images/cf-contrib-organization-members.png" placement="break"
+                            id="image_organization_members"/></p></li>
+                <li>Add the expert to the project as a <uicontrol>Collaborator</uicontrol>, the
+                    only project role a Contributor can have. Contributors see only the projects you
+                    add them to, public projects included.</li>
+                <li>In the WebHelp deliverable, select <uicontrol>Add 'Edit Online'
+                        links</uicontrol> and publish it again. Every page of the output now has a
+                    link that opens it for editing.<p><image
+                            href="images/cf-contrib-edit-online-option.png" placement="break"
+                            id="image_edit_online_option"/></p></li>
+            </ol>
+        </section>
+        <section id="section_video">
+            <title>The two-minute version</title>
+            <p>We also made a short explainer about expert contributions:</p>
+            <p><object width="560" height="315" data="https://www.youtube.com/embed/dGBPTX1mRA0"
+                    outputclass="iframe">
+                    <param name="allowfullscreen"/>
+                </object></p>
+        </section>
+    </body>
+</topic>
