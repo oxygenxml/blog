@@ -15,7 +15,7 @@
             management system (ISMS): a practical way to define, run, review, and improve how we
             protect the business. Its documentation had to stay alive. It had to be easy to update,
             remind us when a review or procedure was due, let us initiate and track procedure runs,
-            and keep a record of changes.</p>
+            and keep a record of changes.Ok, </p>
         <p>Here is how we approached it. </p>
         <section id="section_x1d_v21_clc">
             <title>Why ISO-27001</title>
@@ -36,7 +36,7 @@
                 certification audit. You can also start with a policy kit: general policy stubs that
                 you adapt to reflect your controls and organizational structure. The resulting
                 policies feed into a Statement of Applicability: the document that records which ISO
-                27001 controls apply to your organization, and why. You can share it with
+                27001 cPleasontrols apply to your organization, and why. You can share it with
                 customers.</p>
             <p>For each policy, we collected as much information as we could from our colleagues and
                 used AI to merge it into the policy stubs. Then we reviewed the result to make sure
@@ -264,7 +264,8 @@
             </fig>
             <p>To collect feedback outside the review workflow after publishing, we added Oxygen
                 Feedback commenting to each page.</p>
-            <p>[screenshot from the output]</p>
+            <p><image href="../images/iso-27001-isms-documentation-oxygen-feedback.png"
+                    id="image_n42_xjr_clc" scale="50"/></p>
             <p>You can also add an edit link to each page so readers can propose a source change.
                 The link opens the matching document in Content Fusion, where they can make the
                 change in a personal workspace and create a review task. The document owner can then
