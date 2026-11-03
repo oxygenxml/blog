@@ -39,7 +39,7 @@
         <topicref
             href="topics/content-fusion-cms-enterprisecloud-vs-xml-author-desktop-distilled-feature-matrix.dita"/>
         <topicref href="topics/the-translation-workflow-for-the-ai-era.dita"/>
-        <topicref href="topics/iso-27001-isms-documentation-how-we-dit-it.dita"/>
+        <topicref href="topics/how-we-built-and-maintain-our-iso-27001-isms-documentation.dita"/>
     </topichead>
     <topicref keys="migrate" href="topics/migration.dita">
         <topicref href="topics/migratingToDITA.dita"/>

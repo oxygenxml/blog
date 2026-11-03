@@ -8,7 +8,7 @@ description: Use when a blog topic needs schematic figures (placeholders like "[
 The blog is published as **Oxygen WebHelp**, so Chrome is the reference renderer. Batik compatibility is not
 needed (Oxygen's Author mode may show some details differently; that's fine).
 
-The reference set is the ISO 27001 ISMS post (`topics/iso-27001-isms-documentation-how-we-dit-it.dita`,
+The reference set is the ISO 27001 ISMS post (`topics/how-we-built-and-maintain-our-iso-27001-isms-documentation.dita`,
 figures in `images/isms/`). Its generator, `images/isms/src/generate-figures.py`, holds every primitive
 below; copy it to `images/<post>/src/` and replace the `fig_*` functions instead of starting from scratch.
 
