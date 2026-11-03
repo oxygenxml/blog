@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="330" viewBox="0 0 800 330" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>SOPs pushed from the wiki repository to the ticketing system</title>
+<desc>SOPs are edited and reviewed in Content Fusion and stored in the Git wiki repository. The ISMS web app (Python) reads them and shows each person a catalog filtered by role; its Push button sends an SOP to the ticketing system as a work item that people carry out and close.</desc>
+<defs>
+<linearGradient id="isms-push-a-app" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e6573"/><stop offset="1" stop-color="#434850"/></linearGradient>
+<linearGradient id="isms-push-a-doc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e949e"/><stop offset="1" stop-color="#767c86"/></linearGradient>
+<linearGradient id="isms-push-a-git" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e6573"/><stop offset="1" stop-color="#434850"/></linearGradient>
+<linearGradient id="isms-push-a-ticket" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3a9b3"/><stop offset="1" stop-color="#868c96"/></linearGradient>
+</defs>
+<path d="M92 98V174A48 12 0 0 0 188 174V98Z" fill="url(#isms-push-a-git)"/>
+<ellipse cx="140" cy="98" rx="48" ry="12" fill="#8995ab"/>
+<path d="M92 128A48 12 0 0 0 188 128" fill="none" stroke="#8995ab" stroke-width="2"/>
+<path d="M92 156A48 12 0 0 0 188 156" fill="none" stroke="#8995ab" stroke-width="2"/>
+<path d="M134 135.8V152.2M146.8 139.5C146.8 147 134 144 134 150" fill="none" stroke="#ffffff" stroke-width="3.8" stroke-linecap="round"/>
+<circle cx="134" cy="133.5" r="3" fill="#ffffff"/>
+<circle cx="134" cy="154.5" r="3" fill="#ffffff"/>
+<circle cx="146.8" cy="137.2" r="3" fill="#ffffff"/>
+<text x="140" y="30" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Wiki repository</text>
+<text x="140" y="47" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">Git</text>
+<svg x="110" y="248" width="60" height="60" viewBox="0 0 50 50"><linearGradient id="isms-push-a-cf-Pillow_1_" gradientUnits="userSpaceOnUse" x1="25" y1="-755.5501" x2="25" y2="-707.4499" gradientTransform="matrix(1 0 0 -1 0 -706.5)"> <stop offset="0" stop-color="#BB2712"/> <stop offset="1" stop-color="#DE4F33"/> </linearGradient> <path id="isms-push-a-cf-Pillow" fill="url(#isms-push-a-cf-Pillow_1_)" stroke="#AF1A03" stroke-width="0.75" d="M10.8,1h28.4c5.4,0,9.8,4.4,9.8,9.8v28.4c0,5.4-4.4,9.8-9.8,9.8H10.8C5.4,49,1,44.6,1,39.2V10.8 C1,5.4,5.4,1,10.8,1z"/> <path id="isms-push-a-cf-Page_1_" opacity="0.45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-opacity="0" d="M7.1,10.2h25.3c1,0,3.4,2,3.4,5.6v21.9c0,4.3,1.9,5.1,1.9,5.1h-26c-0.6,0-1.9-0.9-1.9-5.3V15.8 C9.9,12.1,7.1,10.2,7.1,10.2z"/> <path id="isms-push-a-cf-Page" opacity="0.45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-opacity="0" d="M12.2,7.2h25.3c1.4,0,3.4,2,3.4,5.7v21.8c0,4.3,1.9,5.1,1.9,5.1H17.1c0,0-1.9-0.9-1.9-5.3V12.8 C15.1,9.1,12.2,7.2,12.2,7.2z"/> <polygon id="isms-push-a-cf-WhiteStroke" fill="#FFFFFF" points="16.8,37.7 16.8,12.3 34.1,12.3 34.1,18.1 23.2,18.1 23.2,22.3 32.2,22.3 32.2,28 23.2,28 23.2,37.7 "/> <polygon id="isms-push-a-cf-F" points="17.4,37.1 17.4,12.9 33.5,12.9 33.5,17.5 22.6,17.5 22.6,22.9 31.6,22.9 31.6,27.4 22.6,27.4 22.6,37.1 "/></svg>
+<polygon points="140,195 146,206 134,206" fill="#5e6573"/>
+<polyline points="140,242 140,206" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="184" y="274" font-size="14" font-weight="700" fill="#312e2f" text-anchor="start">Content Fusion</text>
+<text x="184" y="291" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">edit &amp; review</text>
+<rect x="290" y="72" width="200" height="136" rx="10" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5"/>
+<path d="M290 98V82Q290 72 300 72H480Q490 72 490 82V98Z" fill="url(#isms-push-a-app)"/>
+<circle cx="304" cy="85" r="3.5" fill="#ffffff" opacity="0.85"/>
+<circle cx="316" cy="85" r="3.5" fill="#ffffff" opacity="0.85"/>
+<circle cx="328" cy="85" r="3.5" fill="#ffffff" opacity="0.85"/>
+<rect x="304" y="114" width="34" height="18" rx="4" fill="url(#isms-push-a-doc)"/>
+<text x="321" y="127" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">SOP</text>
+<rect x="346" y="120" width="60" height="7" rx="3.5" fill="#dcdcdc"/>
+<rect x="426" y="112" width="50" height="22" rx="11" fill="url(#isms-push-a-app)"/>
+<text x="451" y="127" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Push</text>
+<rect x="304" y="146" width="34" height="18" rx="4" fill="url(#isms-push-a-doc)"/>
+<text x="321" y="159" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">SOP</text>
+<rect x="346" y="152" width="50" height="7" rx="3.5" fill="#dcdcdc"/>
+<rect x="426" y="144" width="50" height="22" rx="11" fill="url(#isms-push-a-app)"/>
+<text x="451" y="159" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Push</text>
+<rect x="304" y="178" width="34" height="18" rx="4" fill="url(#isms-push-a-doc)"/>
+<text x="321" y="191" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">SOP</text>
+<rect x="346" y="184" width="40" height="7" rx="3.5" fill="#dcdcdc"/>
+<rect x="426" y="176" width="50" height="22" rx="11" fill="url(#isms-push-a-app)"/>
+<text x="451" y="191" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Push</text>
+<rect x="640" y="72" width="128" height="136" rx="12" fill="url(#isms-push-a-ticket)"/>
+<rect x="652" y="88" width="104" height="28" rx="6" fill="#ffffff"/>
+<rect x="660" y="94" width="16" height="16" rx="4" fill="#868c96" stroke="#868c96" stroke-width="2"/>
+<polyline points="664.3,102.1 667.1,105 672.1,99.3" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="684" y="99" width="58" height="7" rx="3.5" fill="#dcdcdc"/>
+<rect x="652" y="126" width="104" height="28" rx="6" fill="#ffffff"/>
+<rect x="660" y="132" width="16" height="16" rx="4" fill="#868c96" stroke="#868c96" stroke-width="2"/>
+<polyline points="664.3,140.1 667.1,143 672.1,137.3" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="684" y="137" width="50" height="7" rx="3.5" fill="#dcdcdc"/>
+<rect x="652" y="164" width="104" height="28" rx="6" fill="#ffffff"/>
+<rect x="660" y="170" width="16" height="16" rx="4" fill="#ffffff" stroke="#868c96" stroke-width="2"/>
+<rect x="684" y="175" width="42" height="7" rx="3.5" fill="#dcdcdc"/>
+<polygon points="282,136 271,142 271,130" fill="#5e6573"/>
+<polyline points="196,136 271,136" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="632,136 621,142 621,130" fill="#434850"/>
+<polyline points="498,136 621,136" fill="none" stroke="#434850" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="565" y="124" font-size="12" font-weight="700" fill="#434850" text-anchor="middle">Push</text>
+<text x="390" y="30" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">ISMS web app (Python)</text>
+<text x="390" y="47" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">catalog by role</text>
+<text x="704" y="30" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Ticketing system</text>
+<text x="704" y="47" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">run, track, close</text>
+</svg>

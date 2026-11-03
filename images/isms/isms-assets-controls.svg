@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="300" viewBox="0 0 800 300" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Attacks stopped by a wall of security controls</title>
+<desc>Cyberattacks, AI-assisted attacks and supply-chain risk, drawn as one attack arrow, hit a wall of security controls that stands in front of the business assets: data, code, systems and people.</desc>
+<defs>
+<linearGradient id="isms-assets-a-ctl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa1ac"/><stop offset="1" stop-color="#7d848f"/></linearGradient>
+<linearGradient id="isms-assets-a-doc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e949e"/><stop offset="1" stop-color="#767c86"/></linearGradient>
+</defs>
+<polygon points="30,139 281,139 281,124 317,150 281,176 281,161 30,161" fill="#8c2f2a" stroke-linejoin="round"/>
+<text x="150" y="128" font-size="14" font-weight="700" fill="#8c2f2a" text-anchor="middle">Attacks</text>
+<text x="150" y="190" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">Cyberattacks, AI-assisted</text>
+<text x="150" y="206" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">attacks, supply-chain risk</text>
+<rect x="318" y="40" width="64" height="220" rx="4" fill="url(#isms-assets-a-ctl)"/>
+<line x1="318" y1="62" x2="382" y2="62" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="84" x2="382" y2="84" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="106" x2="382" y2="106" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="128" x2="382" y2="128" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="150" x2="382" y2="150" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="172" x2="382" y2="172" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="194" x2="382" y2="194" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="216" x2="382" y2="216" stroke="#ffffff" stroke-width="3"/>
+<line x1="318" y1="238" x2="382" y2="238" stroke="#ffffff" stroke-width="3"/>
+<line x1="350" y1="40" x2="350" y2="62" stroke="#ffffff" stroke-width="3"/>
+<line x1="334" y1="62" x2="334" y2="84" stroke="#ffffff" stroke-width="3"/>
+<line x1="366" y1="62" x2="366" y2="84" stroke="#ffffff" stroke-width="3"/>
+<line x1="350" y1="84" x2="350" y2="106" stroke="#ffffff" stroke-width="3"/>
+<line x1="334" y1="106" x2="334" y2="128" stroke="#ffffff" stroke-width="3"/>
+<line x1="366" y1="106" x2="366" y2="128" stroke="#ffffff" stroke-width="3"/>
+<line x1="350" y1="128" x2="350" y2="150" stroke="#ffffff" stroke-width="3"/>
+<line x1="334" y1="150" x2="334" y2="172" stroke="#ffffff" stroke-width="3"/>
+<line x1="366" y1="150" x2="366" y2="172" stroke="#ffffff" stroke-width="3"/>
+<line x1="350" y1="172" x2="350" y2="194" stroke="#ffffff" stroke-width="3"/>
+<line x1="334" y1="194" x2="334" y2="216" stroke="#ffffff" stroke-width="3"/>
+<line x1="366" y1="194" x2="366" y2="216" stroke="#ffffff" stroke-width="3"/>
+<line x1="350" y1="216" x2="350" y2="238" stroke="#ffffff" stroke-width="3"/>
+<line x1="334" y1="238" x2="334" y2="260" stroke="#ffffff" stroke-width="3"/>
+<line x1="366" y1="238" x2="366" y2="260" stroke="#ffffff" stroke-width="3"/>
+<text x="350" y="28" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Security controls</text>
+<rect x="440" y="72" width="296" height="156" rx="14" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5"/>
+<text x="588" y="102" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Business assets</text>
+<path d="M466.8 141.5V166.5A16.2 6.2 0 0 0 499.2 166.5V141.5Z" fill="url(#isms-assets-a-doc)"/><ellipse cx="483" cy="141.5" rx="16.2" ry="6.2" fill="#8e949e" stroke="#ffffff" stroke-width="1.5"/>
+<rect x="538" y="135.2" width="30" height="37.5" rx="3.8" fill="url(#isms-assets-a-doc)"/>
+<path d="M549.2 146.5L543 154L549.2 161.5M556.8 146.5L563 154L556.8 161.5" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="604.2" y="136.5" width="37.5" height="15" rx="3.8" fill="url(#isms-assets-a-doc)"/><circle cx="634.2" cy="144" r="2.5" fill="#ffffff"/>
+<rect x="604.2" y="155.2" width="37.5" height="15" rx="3.8" fill="url(#isms-assets-a-doc)"/><circle cx="634.2" cy="162.8" r="2.5" fill="#ffffff"/>
+<circle cx="693" cy="142.8" r="7" fill="#767c86"/>
+<path d="M679.8 169.1V161.3Q679.8 152 687.6 152H698.4Q706.2 152 706.2 161.3V169.1Z" fill="#767c86"/>
+<text x="483" y="191" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">Data</text>
+<text x="553" y="191" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">Code</text>
+<text x="623" y="191" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">Systems</text>
+<text x="693" y="191" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">People</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="330" viewBox="0 0 800 330" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Policies drafted with AI Positron and reviewed in a loop</title>
+<desc>Policy stubs and the current controls, collected from the CTO and the system administrators, go to AI Positron in Content Fusion, which drafts the policies. Drafts and reviews go round in a loop until the policies are approved; the resulting policy files are linked from the Statement of Applicability.</desc>
+<defs>
+<linearGradient id="isms-ai-b-doc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e949e"/><stop offset="1" stop-color="#767c86"/></linearGradient>
+<linearGradient id="isms-ai-b-ok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#149aa6"/><stop offset="1" stop-color="#01929e"/></linearGradient>
+</defs>
+<path d="M60 26H130L144 40V136H60Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M130 26V40H144" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M53 33H123L137 47V143H53Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M123 33V47H137" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M46 40H116L130 54V150H46Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M116 40V54H130" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="56" y="50" width="32.5" height="18" rx="4" fill="url(#isms-ai-b-doc)"/>
+<text x="72.2" y="63" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">POL</text>
+<line x1="56" y1="81" x2="120" y2="81" stroke="#c9c8c8" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+<line x1="56" y1="94" x2="107.2" y2="94" stroke="#c9c8c8" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+<line x1="56" y1="107" x2="116.8" y2="107" stroke="#c9c8c8" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+<line x1="56" y1="120" x2="94.4" y2="120" stroke="#c9c8c8" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+<text x="92" y="174" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Policy stubs</text>
+<circle cx="72" cy="234" r="7.6" fill="#6f7a93"/>
+<path d="M57.5 262.9V254.4Q57.5 244.2 66 244.2H78Q86.5 244.2 86.5 254.4V262.9Z" fill="#6f7a93"/>
+<circle cx="112" cy="234" r="7.6" fill="#6f7a93"/>
+<path d="M97.5 262.9V254.4Q97.5 244.2 106 244.2H118Q126.5 244.2 126.5 254.4V262.9Z" fill="#6f7a93"/>
+<text x="92" y="288" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Current controls</text>
+<text x="92" y="305" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">CTO, system admins</text>
+<rect x="212" y="34" width="290" height="236" rx="14" fill="none" stroke="#a7adb8" stroke-width="1.5" stroke-dasharray="6 5"/>
+<svg x="226" y="44" width="36" height="36" viewBox="0 0 50 50"><linearGradient id="isms-ai-b-cf-Pillow_1_" gradientUnits="userSpaceOnUse" x1="25" y1="-755.5501" x2="25" y2="-707.4499" gradientTransform="matrix(1 0 0 -1 0 -706.5)"> <stop offset="0" stop-color="#BB2712"/> <stop offset="1" stop-color="#DE4F33"/> </linearGradient> <path id="isms-ai-b-cf-Pillow" fill="url(#isms-ai-b-cf-Pillow_1_)" stroke="#AF1A03" stroke-width="0.75" d="M10.8,1h28.4c5.4,0,9.8,4.4,9.8,9.8v28.4c0,5.4-4.4,9.8-9.8,9.8H10.8C5.4,49,1,44.6,1,39.2V10.8 C1,5.4,5.4,1,10.8,1z"/> <path id="isms-ai-b-cf-Page_1_" opacity="0.45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-opacity="0" d="M7.1,10.2h25.3c1,0,3.4,2,3.4,5.6v21.9c0,4.3,1.9,5.1,1.9,5.1h-26c-0.6,0-1.9-0.9-1.9-5.3V15.8 C9.9,12.1,7.1,10.2,7.1,10.2z"/> <path id="isms-ai-b-cf-Page" opacity="0.45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-opacity="0" d="M12.2,7.2h25.3c1.4,0,3.4,2,3.4,5.7v21.8c0,4.3,1.9,5.1,1.9,5.1H17.1c0,0-1.9-0.9-1.9-5.3V12.8 C15.1,9.1,12.2,7.2,12.2,7.2z"/> <polygon id="isms-ai-b-cf-WhiteStroke" fill="#FFFFFF" points="16.8,37.7 16.8,12.3 34.1,12.3 34.1,18.1 23.2,18.1 23.2,22.3 32.2,22.3 32.2,28 23.2,28 23.2,37.7 "/> <polygon id="isms-ai-b-cf-F" points="17.4,37.1 17.4,12.9 33.5,12.9 33.5,17.5 22.6,17.5 22.6,22.9 31.6,22.9 31.6,27.4 22.6,27.4 22.6,37.1 "/></svg>
+<text x="270" y="68" font-size="15" font-weight="700" fill="#312e2f" text-anchor="start">Content Fusion</text>
+<image x="240" y="120" width="60" height="60" xlink:href="data:image/png;base64,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"/>
+<text x="270" y="106" font-size="13" font-weight="700" fill="#312e2f" text-anchor="middle">AI Positron</text>
+<path d="M148 96 C196 96 206 150 232 150" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="232,150 221,156 221,144" fill="#5e6573"/>
+<path d="M148 250 C196 250 206 150 232 150" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="348,150 337,156 337,144" fill="#5e6573"/>
+<polyline points="308,150 337,150" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M354 115H392L406 129V185H354Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M392 115V129H406" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="364" y="129" width="32" height="6" rx="3" fill="#a7adb8"/>
+<rect x="364" y="142" width="25.6" height="6" rx="3" fill="#a7adb8"/>
+<rect x="364" y="155" width="30.4" height="6" rx="3" fill="#a7adb8"/>
+<text x="380" y="102" font-size="13" font-weight="700" fill="#312e2f" text-anchor="middle">Draft</text>
+<polygon points="448,150 437,156 437,144" fill="#5e6573"/>
+<polyline points="412,150 437,150" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="472" cy="136" r="8.1" fill="#868c96"/>
+<path d="M456.7 166.6V157.6Q456.7 146.8 465.7 146.8H478.3Q487.3 146.8 487.3 157.6V166.6Z" fill="#868c96"/>
+<text x="472" y="106" font-size="13" font-weight="700" fill="#312e2f" text-anchor="middle">Review</text>
+<path d="M472 184V216Q472 232 456 232H286Q270 232 270 216V200" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="270,189 276,200 264,200" fill="#5e6573"/>
+<text x="371" y="251" font-size="12" font-weight="700" fill="#5e6573" text-anchor="middle">comments → next draft</text>
+<polygon points="562,150 551,156 551,144" fill="#01929e"/>
+<polyline points="508,150 551,150" fill="none" stroke="#01929e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="512" y="140" font-size="11" font-weight="700" fill="#017f8a" text-anchor="start">approved</text>
+<path d="M584 78H650L664 92V182H584Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M650 78V92H664" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M577 85H643L657 99V189H577Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M643 85V99H657" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M570 92H636L650 106V196H570Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M636 92V106H650" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="580" y="102" width="32.5" height="18" rx="4" fill="url(#isms-ai-b-doc)"/>
+<text x="596.2" y="115" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">POL</text>
+<rect x="580" y="130" width="60" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="580" y="143" width="48" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="580" y="156" width="57" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="580" y="169" width="36" height="6" rx="3" fill="#dcdcdc"/>
+<circle cx="644" cy="190" r="13" fill="url(#isms-ai-b-ok)" stroke="#ffffff" stroke-width="3"/>
+<polyline points="640,190.1 643,193.2 648.4,187.1" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="616" y="230" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Policies</text>
+<polygon points="694,146 683,152 683,140" fill="#5e6573"/>
+<polyline points="670,146 683,146" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M700 85H774L788 99V207H700Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M774 85V99H788" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="710" y="95" width="32.5" height="18" rx="4" fill="url(#isms-ai-b-ok)"/>
+<text x="726.2" y="108" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">SoA</text>
+<rect x="710" y="125" width="26" height="6" rx="3" fill="#a7adb8"/>
+<rect x="742" y="125" width="40" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="710" y="140" width="26" height="6" rx="3" fill="#a7adb8"/>
+<rect x="742" y="140" width="30" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="710" y="155" width="26" height="6" rx="3" fill="#a7adb8"/>
+<rect x="742" y="155" width="36" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="710" y="170" width="26" height="6" rx="3" fill="#a7adb8"/>
+<rect x="742" y="170" width="26" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="710" y="185" width="26" height="6" rx="3" fill="#a7adb8"/>
+<rect x="742" y="185" width="34" height="6" rx="3" fill="#dcdcdc"/>
+<text x="744" y="230" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Statement of</text>
+<text x="744" y="247" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Applicability</text>
+</svg>

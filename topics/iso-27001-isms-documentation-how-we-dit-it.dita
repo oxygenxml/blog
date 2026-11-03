@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 2.x Topic//EN" "topic.dtd">
+<topic id="topic_klq_321_clc">
+    <title>How We Built and Maintain Our ISO 27001 ISMS Documentation</title>
+    <shortdesc>We explain how we built and maintain our ISO 27001 ISMS documentation with DITA, Git,
+        Content Fusion, custom validation, and workflow automation.</shortdesc>
+    <prolog>
+        <author>Dan Caprioara</author>
+        <critdates>
+            <created date="2026-11-03"/>
+        </critdates>
+    </prolog>
+    <body>
+        <p>Alongside the security measures we put in place, we needed an information security
+            management system (ISMS): a practical way to define, run, review, and improve how we
+            protect the business. Its documentation had to stay alive. It had to be easy to update,
+            remind us when a review or procedure was due, let us initiate and track procedure runs,
+            and keep a record of changes.</p>
+        <p>Here is how we approached it. </p>
+        <section id="section_x1d_v21_clc">
+            <title>Why ISO-27001</title>
+            <p>Security protects the assets at the heart of a business. Cyberattacks are increasing,
+                including attacks assisted by AI. Companies are responding not only by protecting
+                their own systems, but also by checking that their providers are secure. This helps
+                reduce supply-chain risk.</p>
+            <fig id="fig_isms_assets_controls">
+                <title>Attacks stopped by a wall of security controls</title>
+                <image href="../images/isms/isms-assets-controls.svg" placement="break" id="image_isms_assets_controls">
+                    <alt>A single attack arrow, standing for cyberattacks, AI-assisted attacks and supply-chain risk, stopped by a wall of security controls in front of the business assets: data, code, systems and people.</alt>
+                </image>
+            </fig>
+            <p>Before we started certification, we already had many security controls in place. We
+                wanted a certified system that would keep us focused on security and on improving
+                those controls. That is why we chose ISO 27001.</p>
+            <p>We worked with a consultant to structure the policies before the official
+                certification audit. You can also start with a policy kit: general policy stubs that
+                you adapt to reflect your controls and organizational structure. The resulting
+                policies feed into a Statement of Applicability: the document that records which ISO
+                27001 controls apply to your organization, and why. You can share it with
+                customers.</p>
+            <p>For each policy, we collected as much information as we could from our colleagues and
+                used AI to merge it into the policy stubs. Then we reviewed the result to make sure
+                it was accurate and that nothing important had been lost.</p>
+        </section>
+        <section id="section_x45_lf1_clc">
+            <title>The internal basic wiki setup</title>
+            <p>Before certification, all our procedures already lived on our internal wiki. Because
+                we develop Oxygen XML Editor, we were already familiar with structured technical
+                documentation. We chose DITA, an XML-based standard that stores content as small,
+                reusable topics, because we already had the tools to publish it and run reviews.</p>
+            <p>Our existing DITA wiki was stored in a shared Git repository, which gave us access
+                control and a complete change history. We added a new ISMS chapter to its DITA
+                map—the table of contents that organizes the topics—and created a topic for each
+                piece of relevant information.</p>
+        </section>
+        <section id="section_ykf_1h1_clc">
+            <title>Certification needs</title>
+            <p>Maintaining ISMS documentation, or any other governance documentation, requires
+                another level of organization:<ol id="ol_gzm_yh1_clc">
+                    <li>change history</li>
+                    <li>a form of access control </li>
+                    <li>an accountable owner and clearly assigned responsibilities; for procedures,
+                        we used RACI sections (Responsible, Accountable, Consulted, and
+                        Informed)</li>
+                    <li>a way to start and track standard operating procedures (SOPs) in our
+                        internal issue tracker</li>
+                    <li>a review timeline: each document needs a review date and review period</li>
+                    <li>a way to collaborate on and review documents</li>
+                    <li>a form to mark the documents as approved</li>
+                </ol></p>
+            <p>The Git repository provided the change history and access control.</p>
+            <p>We also needed a way to define and validate the information that describes each
+                document, such as its owner, status, and review period. For editing, change
+                auditing, and collaborative review, we used Content Fusion. To run SOPs and send
+                event notifications, we built a custom application.</p>
+        </section>
+        <section id="section_mz3_5k1_clc">
+            <title>Defining and validating metadata</title>
+            <p>In DITA, this descriptive information is called metadata. DITA already provides
+                useful built-in metadata, such as the author, creation date, and modification date,
+                alongside the document text.</p>
+            <p>What helped us most was that we could extend this metadata. We added our own
+                name/value fields in the topic header—the structured information stored with each
+                document. The following are the fields we used, including the scheduling fields that
+                apply to SOPs:</p>
+            <simpletable id="table_ixv_zm1_clc" relcolwidth="1.0* 3.44*">
+                <strow>
+                    <stentry>Document ID</stentry>
+                    <stentry>POL</stentry>
+                </strow>
+                <strow>
+                    <stentry>Classified</stentry>
+                    <stentry>INTERNAL/PUBLIC</stentry>
+                </strow>
+                <strow>
+                    <stentry>Owner</stentry>
+                    <stentry>email address/role</stentry>
+                </strow>
+                <strow>
+                    <stentry>Created</stentry>
+                    <stentry>date</stentry>
+                </strow>
+                <strow>
+                    <stentry>Review period</stentry>
+                    <stentry>6 months/1 year/2 years</stentry>
+                </strow>
+                <strow>
+                    <stentry>Review status</stentry>
+                    <stentry>published/draft</stentry>
+                </strow>
+                <strow>
+                    <stentry>Approval date</stentry>
+                    <stentry>date; its presence indicates that the document is approved</stentry>
+                </strow>
+                <strow>
+                    <stentry>Revision</stentry>
+                    <stentry>number</stentry>
+                </strow>
+                <strow>
+                    <stentry>Start date</stentry>
+                    <stentry>2024-11-04</stentry>
+                </strow>
+                <strow>
+                    <stentry>Repeats</stentry>
+                    <stentry>6 months</stentry>
+                </strow>
+            </simpletable>
+            <p>Each procedure also has a RACI table. It makes clear who does the work, who is
+                accountable, who is consulted, and who must be informed:</p>
+            <simpletable id="table_nlw_2m1_clc" relcolwidth="1.0* 3.44*">
+                <strow>
+                    <stentry>Responsible</stentry>
+                    <stentry>The one that would do the work</stentry>
+                </strow>
+                <strow>
+                    <stentry>Accountable</stentry>
+                    <stentry>The one that is accountable for the work to be done properly</stentry>
+                </strow>
+                <strow>
+                    <stentry>Consulted</stentry>
+                    <stentry>People that can be consulted </stentry>
+                </strow>
+                <strow>
+                    <stentry>Informed</stentry>
+                    <stentry>People informed of the outcome</stentry>
+                </strow>
+            </simpletable>
+            <p>Each policy has a simpler, two-row responsibility table:</p>
+            <simpletable id="table_jk3_qm1_clc">
+                <strow>
+                    <stentry>Responsible/Champion</stentry>
+                    <stentry>The ones following the policy</stentry>
+                </strow>
+                <strow>
+                    <stentry>Authority</stentry>
+                    <stentry>Authority over the process</stentry>
+                </strow>
+            </simpletable>
+            <p>We then needed to keep this metadata reliable, so we added validation. We used
+                Schematron, a set of rules for checking XML content. It can check complex
+                relationships, including relationships across documents.</p>
+            <p>Our wiki already contained topics that defined the company structure in tables:<ul
+                    id="ul_lch_mk1_clc">
+                    <li>The table of roles, each with an abbreviation and a description</li>
+                    <li>The table of groups, also with an abbreviation and a description</li>
+                </ul>We used those lists in the Schematron rules to check that every name used in a
+                RACI section matched a defined role or group.</p>
+            <fig id="fig_isms_raci_validation">
+                <title>Schematron checks metadata and RACI names</title>
+                <image href="../images/isms/isms-raci-validation.svg" placement="break" id="image_isms_raci_validation">
+                    <alt>SOP and policy files, each with a metadata header and a RACI table, checked by Schematron for metadata integrity and for RACI names defined in the Roles and Groups tables.</alt>
+                </image>
+            </fig>
+        </section>
+        <section id="section_ghd_tt1_clc">
+            <title>Setting up policies and SOP templates</title>
+            <p>Based on this metadata, we created reusable SOP and policy templates. An SOP is a
+                standard operating procedure: a repeatable set of steps for carrying out a process.
+                Our SOPs are DITA task topics with a RACI table, prerequisites, steps, and a result.
+                The policies are standard DITA topics with a minimum structure: scope, rationale,
+                sections, and the simpler two-role responsibility table.</p>
+        </section>
+        <section id="section_ikr_ctj_clc">
+            <title>Writing the policies </title>
+            <p>Once the templates contained sample metadata, we used AI to help write the full set
+                of policies. The approach was simple: our CTO took each control already in place,
+                found the matching policy stub, and described the current implementation to AI
+                Positron. It produced a first policy draft that we could review.</p>
+            <p>For the stubs not covered by existing controls, we assessed the risks and introduced
+                new controls and policies.</p>
+            <fig id="fig_isms_ai_policy_drafting">
+                <title>Policies drafted with AI Positron and reviewed in a loop</title>
+                <image href="../images/isms/isms-ai-policy-drafting.svg" placement="break" id="image_isms_ai_policy_drafting">
+                    <alt>Policy stubs and the current controls collected from the CTO and system administrators go to AI Positron; drafts and reviews loop until approved; the policies are linked from the Statement of Applicability.</alt>
+                </image>
+            </fig>
+            <p>All controls were listed in the Statement of Applicability, with links to the
+                policies.</p>
+        </section>
+        <section id="section_zw5_5s1_clc">
+            <title>Collaborative review</title>
+            <p>Each document needs a review before approval. That is how we keep the information
+                accurate.</p>
+            <p>We run Content Fusion Enterprise Server locally, so we used it for this. Content
+                Fusion is a lightweight, Git-based DITA content management system (CMS). It made it
+                easy to connect our existing wiki repository to a project and share it with the
+                whole organization. Role-based access let us designate a few colleagues as authors,
+                able to edit and create review tasks, while others could collaborate only in review
+                tasks.</p>
+            <p>One useful Content Fusion feature is that several collaborators can work on the same
+                document at once. They can edit with change tracking and add comments concurrently.
+                Nobody has to wait for someone else to finish.</p>
+            <p><image href="../images/iso-27001-isms-documentation-content-fusion.png"
+                    id="image_vyx_zhr_clc" scale="50"/></p>
+            <p>When a review is complete, the author can incorporate the suggested changes and
+                create a new approved version. AI can also help smooth out the wording or bring
+                together information from the comments.</p>
+        </section>
+        <section id="section_c3w_tkq_clc">
+            <title>SOPs are living documents that trigger events</title>
+            <p>In our company, we use a ticketing system. We needed execution tracking and an audit
+                trail for the procedures that support our ISMS policies, so we used that system to
+                manage them. The SOPs are authored once in the Content Fusion wiki project, then
+                sent to the ticketing system as work items that people can carry out and close.</p>
+            <p>We built a Python web application that lets us push an SOP to the ticketing system.
+                It shows each person a catalog of procedures and policies that match their role,
+                with search and workflow-specific actions. For example, each SOP has a <ph
+                    outputclass="codeph">Push</ph> button. The application also has a calendar of
+                documents due for review and a history view, so we can compare versions of the same
+                document.</p>
+            <p>[screenshot from the dashboard]</p>
+            <fig id="fig_isms_sop_push_flow">
+                <title>From the wiki repository to the ticketing system</title>
+                <image href="../images/isms/isms-sop-push-flow.svg" placement="break" id="image_isms_sop_push_flow">
+                    <alt>SOPs edited in Content Fusion and stored in Git, listed by the ISMS web app and pushed to the ticketing system as work items.</alt>
+                </image>
+            </fig>
+            <p>Another challenge was staying consistent over time. For example, changing passwords
+                on some systems or replacing UPS batteries needs more than instructions. It also
+                needs a calendar event, or it is easy to forget. We decided it was simpler to keep
+                the calendar in the application. Everyone named in an SOP's RACI table receives an
+                email when it is time to run that SOP or review a document. We can now update the
+                metadata and let the system respond, without synchronizing separate calendars.</p>
+            <fig id="fig_isms_review_calendar">
+                <title>Scheduling driven by document metadata</title>
+                <image href="../images/isms/isms-review-calendar.svg" placement="break" id="image_isms_review_calendar">
+                    <alt>Scheduling metadata of SOPs and policies in Git feeding the calendar of the ISMS web app, which emails the people named in each RACI table.</alt>
+                </image>
+            </fig>
+        </section>
+        <section id="section_b1w_rv1_clc">
+            <title>Publishing</title>
+            <p>We use Oxygen Publishing Engine, a command-line tool running on our
+                continuous-integration server, to generate and republish the HTML documentation to
+                our internal portal whenever content changes. This publishing infrastructure is also
+                available in Content Fusion. You can also generate an <ph outputclass="codeph"
+                    >LLMS.txt</ph> file set: a structured set of instructions that an AI agent can
+                use as a reference when it carries out an action.</p>
+            <fig id="fig_isms_publishing">
+                <title>Publishing for people and for AI agents</title>
+                <image href="../images/isms/isms-publishing.svg" placement="break" id="image_isms_publishing">
+                    <alt>Content Fusion publishing a DITA project with Oxygen Publishing Engine to a content delivery server, as HTML for people and LLMS.txt for AI agents.</alt>
+                </image>
+            </fig>
+            <p>To collect feedback outside the review workflow after publishing, we added Oxygen
+                Feedback commenting to each page.</p>
+            <p>[screenshot from the output]</p>
+            <p>You can also add an edit link to each page so readers can propose a source change.
+                The link opens the matching document in Content Fusion, where they can make the
+                change in a personal workspace and create a review task. The document owner can then
+                review and merge it into the main branch.</p>
+        </section>
+        <section id="section_hdy_5v1_clc">
+            <title>Conclusion</title>
+            <p>This is how we built an in-house ISMS using technical documentation tools. It has
+                worked well for our ISO 27001 policies and for other company documents that benefit
+                from the same approach.</p>
+            <p>Starting from version 29 of Oxygen, there will be a new project template available so
+                you can use it to create new governance projects based on the ideas presented in
+                this blog post. </p>
+            <p>Thank you for reading, and happy documenting! Please comment below if you would like
+                more information.</p>
+        </section>
+    </body>
+</topic>

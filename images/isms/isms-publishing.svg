@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="340" viewBox="0 0 800 340" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Publishing for people and for AI agents</title>
+<desc>Content Fusion runs a publishing pipeline with Oxygen Publishing Engine. The results go to a content delivery server, both as HTML pages for people and as an LLMS.txt file set for AI agents.</desc>
+<defs>
+<linearGradient id="isms-publish-b-git" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e6573"/><stop offset="1" stop-color="#434850"/></linearGradient>
+</defs>
+<rect x="24" y="58" width="272" height="184" rx="14" fill="none" stroke="#a7adb8" stroke-width="1.5" stroke-dasharray="6 5"/>
+<svg x="38" y="68" width="36" height="36" viewBox="0 0 50 50"><linearGradient id="isms-publish-b-cf-Pillow_1_" gradientUnits="userSpaceOnUse" x1="25" y1="-755.5501" x2="25" y2="-707.4499" gradientTransform="matrix(1 0 0 -1 0 -706.5)"> <stop offset="0" stop-color="#BB2712"/> <stop offset="1" stop-color="#DE4F33"/> </linearGradient> <path id="isms-publish-b-cf-Pillow" fill="url(#isms-publish-b-cf-Pillow_1_)" stroke="#AF1A03" stroke-width="0.75" d="M10.8,1h28.4c5.4,0,9.8,4.4,9.8,9.8v28.4c0,5.4-4.4,9.8-9.8,9.8H10.8C5.4,49,1,44.6,1,39.2V10.8 C1,5.4,5.4,1,10.8,1z"/> <path id="isms-publish-b-cf-Page_1_" opacity="0.45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-opacity="0" d="M7.1,10.2h25.3c1,0,3.4,2,3.4,5.6v21.9c0,4.3,1.9,5.1,1.9,5.1h-26c-0.6,0-1.9-0.9-1.9-5.3V15.8 C9.9,12.1,7.1,10.2,7.1,10.2z"/> <path id="isms-publish-b-cf-Page" opacity="0.45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-opacity="0" d="M12.2,7.2h25.3c1.4,0,3.4,2,3.4,5.7v21.8c0,4.3,1.9,5.1,1.9,5.1H17.1c0,0-1.9-0.9-1.9-5.3V12.8 C15.1,9.1,12.2,7.2,12.2,7.2z"/> <polygon id="isms-publish-b-cf-WhiteStroke" fill="#FFFFFF" points="16.8,37.7 16.8,12.3 34.1,12.3 34.1,18.1 23.2,18.1 23.2,22.3 32.2,22.3 32.2,28 23.2,28 23.2,37.7 "/> <polygon id="isms-publish-b-cf-F" points="17.4,37.1 17.4,12.9 33.5,12.9 33.5,17.5 22.6,17.5 22.6,22.9 31.6,22.9 31.6,27.4 22.6,27.4 22.6,37.1 "/></svg>
+<text x="82" y="92" font-size="15" font-weight="700" fill="#312e2f" text-anchor="start">Content Fusion</text>
+<path d="M60 145V191A32 12 0 0 0 124 191V145Z" fill="url(#isms-publish-b-git)"/>
+<ellipse cx="92" cy="145" rx="32" ry="12" fill="#8995ab"/>
+<path d="M60 162.4A32 12 0 0 0 124 162.4" fill="none" stroke="#8995ab" stroke-width="2"/>
+<path d="M60 182A32 12 0 0 0 124 182" fill="none" stroke="#8995ab" stroke-width="2"/>
+<path d="M86 165.3V181.8M98.8 169.1C98.8 176.6 86 173.6 86 179.6" fill="none" stroke="#ffffff" stroke-width="3.8" stroke-linecap="round"/>
+<circle cx="86" cy="163.1" r="3" fill="#ffffff"/>
+<circle cx="86" cy="184.1" r="3" fill="#ffffff"/>
+<circle cx="98.8" cy="166.8" r="3" fill="#ffffff"/>
+<text x="92" y="224" font-size="12" font-weight="700" fill="#312e2f" text-anchor="middle">DITA project</text>
+<polygon points="180,168 169,174 169,162" fill="#5e6573"/>
+<polyline points="130,168 169,168" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg x="190" y="138" width="60" height="60" viewBox="0 0 50 50"><linearGradient id="isms-publish-b-ope-Pillow_1_" gradientUnits="userSpaceOnUse" x1="24.9987" y1="1655.6588" x2="24.9987" y2="1607.5586" gradientTransform="matrix(1 0 0 1 0 -1606.61)"> <stop offset="0" stop-color="#5B8617"/> <stop offset="1" stop-color="#79B123"/> </linearGradient> <path id="isms-publish-b-ope-Pillow" fill="url(#isms-publish-b-ope-Pillow_1_)" stroke="#537B15" stroke-width="0.75" d="M10.8,1h28.4c5.4,0,9.8,4.4,9.8,9.8v28.4c0,5.4-4.4,9.8-9.8,9.8H10.8C5.4,49,1,44.6,1,39.2V10.8 C1,5.4,5.4,1,10.8,1z"/> <path id="isms-publish-b-ope-Symbol" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M37.6,39.4v-28l6.2-2v31.6L37.6,39.4z M36,42.5c-4.1-0.5-10.9-5.7-10.9-5.7l0-23.2 c0,0,6.7-5.7,11-6.1C36,13.6,36,42.5,36,42.5z M6.1,9.5l17.3,4.1v23.4L6.1,41V9.5z M7.9,26.3c0,0.3,0.2,0.5,0.5,0.5c0,0,0.4,0,0.6,0 c0.2,0,1,0.3,1,0.3l0,0c0.1,0.6,0.4,1.2,0.7,1.7c0,0-0.2,0.7-0.5,1c-0.2,0.2-0.4,0.5-0.4,0.5c-0.2,0.2-0.2,0.5,0,0.7l1.2,1.2 c0.2,0.2,0.5,0.1,0.6-0.1c0,0,0.2-0.3,0.4-0.5c0.2-0.2,0.8-0.6,0.8-0.6l0,0c0.5,0.3,0.9,0.4,1.4,0.5c0,0,0.3,0.6,0.3,0.9 c0,0.2,0,0.6,0,0.6c0,0.3,0.2,0.4,0.4,0.4l1.4-0.2c0.2,0,0.4-0.3,0.4-0.5c0,0,0-0.3,0-0.6c0-0.2,0.3-0.9,0.3-0.9v0 c0.4-0.2,0.9-0.5,1.2-0.8l0,0c0,0,0.5,0.2,0.7,0.4c0.1,0.1,0.3,0.3,0.3,0.3c0.1,0.2,0.4,0.1,0.5-0.1l0.9-1.2c0.1-0.2,0.1-0.4,0-0.6 c0,0-0.2-0.2-0.3-0.3c-0.1-0.1-0.3-0.8-0.3-0.8s0.2-0.2,0.5-1.5l0,0c0,0,0.5-0.3,0.6-0.3c0.2,0,0.4,0,0.4,0c0.2,0,0.3-0.2,0.3-0.4 l0-1.5c0-0.2-0.1-0.4-0.3-0.4c0,0-0.2,0-0.4,0c-0.2,0-0.6-0.3-0.6-0.3s0-0.3-0.5-1.5l0,0c0,0,0.2-0.7,0.3-0.8 c0.1-0.1,0.3-0.3,0.3-0.3c0.1-0.2,0.1-0.5,0-0.7l-0.9-1.2c-0.1-0.2-0.4-0.2-0.5,0c0,0-0.2,0.2-0.3,0.3c-0.1,0.1-0.7,0.4-0.7,0.4 s-0.2-0.3-1.3-0.7v0c0,0-0.3-0.7-0.3-0.9c0-0.2,0-0.6,0-0.6c0-0.3-0.2-0.5-0.4-0.5L15,17.1c-0.2,0-0.4,0.2-0.4,0.4c0,0,0,0.3,0,0.6 c0,0.2-0.3,0.9-0.3,0.9l-1.4,0.6c0,0-0.7-0.3-0.8-0.5c-0.2-0.2-0.4-0.5-0.4-0.5c-0.2-0.2-0.5-0.2-0.6-0.1l-1.2,1.2 c-0.2,0.2-0.2,0.5,0,0.7c0,0,0.2,0.3,0.4,0.5c0.2,0.2,0.4,1,0.4,1l0,0c-0.3,0.5-0.5,1.1-0.7,1.7c0,0-0.6,0.4-1,0.4 c-0.2,0-0.6,0-0.6,0c-0.3,0-0.5,0.2-0.5,0.5L7.9,26.3z M17.3,23.4c0.8,1,0.8,2.7,0,3.7c-0.9,1.1-2.3,1.2-3.3,0.2c-1-1.1-1-2.9,0-4 C15,22.3,16.5,22.3,17.3,23.4z"/></svg>
+<text x="220" y="224" font-size="12" font-weight="700" fill="#312e2f" text-anchor="middle">OPE pipeline</text>
+<polygon points="360,168 349,174 349,162" fill="#5e6573"/>
+<polyline points="304,168 349,168" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="370" y="126" width="76" height="24" rx="5" fill="url(#isms-publish-b-git)"/>
+<circle cx="434" cy="138" r="3" fill="#9fe08a"/>
+<rect x="380" y="135" width="34.2" height="6" rx="3" fill="#8995ab"/>
+<rect x="370" y="156" width="76" height="24" rx="5" fill="url(#isms-publish-b-git)"/>
+<circle cx="434" cy="168" r="3" fill="#9fe08a"/>
+<rect x="380" y="165" width="34.2" height="6" rx="3" fill="#8995ab"/>
+<rect x="370" y="186" width="76" height="24" rx="5" fill="url(#isms-publish-b-git)"/>
+<circle cx="434" cy="198" r="3" fill="#9fe08a"/>
+<rect x="380" y="195" width="34.2" height="6" rx="3" fill="#8995ab"/>
+<text x="408" y="240" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Content delivery</text>
+<text x="408" y="257" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">server</text>
+<polygon points="528,78 517,84 517,72" fill="#5e6573"/>
+<polyline points="456,168 482,168 482,78 517,78" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="528,246 517,252 517,240" fill="#5e6573"/>
+<polyline points="482,168 482,246 517,246" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="536" y="36" width="120" height="84" rx="10" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5"/>
+<path d="M536 62V46Q536 36 546 36H646Q656 36 656 46V62Z" fill="url(#isms-publish-b-git)"/>
+<circle cx="550" cy="49" r="3.5" fill="#ffffff" opacity="0.85"/>
+<circle cx="562" cy="49" r="3.5" fill="#ffffff" opacity="0.85"/>
+<circle cx="574" cy="49" r="3.5" fill="#ffffff" opacity="0.85"/>
+<rect x="548" y="72" width="80" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="548" y="84" width="96" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="548" y="96" width="64" height="6" rx="3" fill="#dcdcdc"/>
+<circle cx="704" cy="64" r="9" fill="#6f7a93"/>
+<path d="M687 98V88Q687 76 697 76H711Q721 76 721 88V98Z" fill="#6f7a93"/>
+<text x="628" y="142" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">HTML for people</text>
+<path d="M564 202H616L630 216V290H564Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M616 202V216H630" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="574" y="212" width="32.5" height="18" rx="4" fill="url(#isms-publish-b-git)"/>
+<text x="590.2" y="225" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">TXT</text>
+<rect x="574" y="240" width="46" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="574" y="253" width="36.8" height="6" rx="3" fill="#dcdcdc"/>
+<line x1="704" y1="232" x2="704" y2="223" stroke="#434850" stroke-width="3" stroke-linecap="round"/>
+<circle cx="704" cy="221" r="4" fill="#434850"/>
+<rect x="679" y="242" width="50" height="12" rx="4" fill="#434850"/>
+<rect x="684" y="232" width="40" height="32" rx="9" fill="url(#isms-publish-b-git)"/>
+<circle cx="696" cy="246" r="4" fill="#ffffff"/>
+<circle cx="712" cy="246" r="4" fill="#ffffff"/>
+<rect x="697" y="255" width="14" height="3" rx="1.5" fill="#ffffff"/>
+<text x="628" y="312" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">LLMS.txt for agents</text>
+</svg>

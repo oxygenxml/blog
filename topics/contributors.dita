@@ -86,6 +86,10 @@
                         <entry>Mircea Bina</entry>
                         <entry>Software Developer, Web Author team. <ph keyref="oxygen"/></entry>
                     </row>
+                    <row>
+                        <entry>Dan Caprioara</entry>
+                        <entry>CTO. <ph keyref="oxygen"/></entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>

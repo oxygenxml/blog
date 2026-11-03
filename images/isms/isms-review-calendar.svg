@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="340" viewBox="0 0 800 340" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Scheduling driven by document metadata</title>
+<desc>SOPs and policies in the Git repository carry scheduling metadata: start date, repeat interval and review period. The ISMS web app turns it into a calendar of SOP runs and document reviews, and emails the people named in each RACI table when an SOP is due or a document needs review.</desc>
+<defs>
+<linearGradient id="isms-calendar-a-app" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e6573"/><stop offset="1" stop-color="#434850"/></linearGradient>
+<linearGradient id="isms-calendar-a-doc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e949e"/><stop offset="1" stop-color="#767c86"/></linearGradient>
+<linearGradient id="isms-calendar-a-mark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#149aa6"/><stop offset="1" stop-color="#01929e"/></linearGradient>
+</defs>
+<path d="M34.4 21.1V30.9M42 23.3C42 27.8 34.4 26 34.4 29.6" fill="none" stroke="#434850" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="34.4" cy="19.7" r="1.8" fill="#434850"/>
+<circle cx="34.4" cy="32.3" r="1.8" fill="#434850"/>
+<circle cx="42" cy="21.9" r="1.8" fill="#434850"/>
+<text x="54" y="31" font-size="14" font-weight="700" fill="#312e2f" text-anchor="start">Git repository</text>
+<path d="M30 48H272L286 62V128H30Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M272 48V62H286" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="42" y="60" width="32.5" height="18" rx="4" fill="url(#isms-calendar-a-doc)"/>
+<text x="58.2" y="73" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">SOP</text>
+<text x="82.5" y="74" font-size="13" font-weight="700" fill="#312e2f" text-anchor="start">Replace UPS batteries</text>
+<text x="44" y="100" font-size="11" font-weight="400" fill="#5e6573" text-anchor="start">Start</text>
+<text x="44" y="116" font-size="12" font-weight="700" fill="#312e2f" text-anchor="start">2024-11-04</text>
+<text x="156" y="100" font-size="11" font-weight="400" fill="#5e6573" text-anchor="start">Repeats</text>
+<text x="156" y="116" font-size="12" font-weight="700" fill="#312e2f" text-anchor="start">6 months</text>
+<path d="M30 140H272L286 154V220H30Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M272 140V154H286" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="42" y="152" width="32.5" height="18" rx="4" fill="url(#isms-calendar-a-doc)"/>
+<text x="58.2" y="165" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">SOP</text>
+<text x="82.5" y="166" font-size="13" font-weight="700" fill="#312e2f" text-anchor="start">Rotate passwords</text>
+<text x="44" y="192" font-size="11" font-weight="400" fill="#5e6573" text-anchor="start">Start</text>
+<text x="44" y="208" font-size="12" font-weight="700" fill="#312e2f" text-anchor="start">2025-01-15</text>
+<text x="156" y="192" font-size="11" font-weight="400" fill="#5e6573" text-anchor="start">Repeats</text>
+<text x="156" y="208" font-size="12" font-weight="700" fill="#312e2f" text-anchor="start">3 months</text>
+<path d="M30 232H272L286 246V312H30Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M272 232V246H286" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="42" y="244" width="32.5" height="18" rx="4" fill="url(#isms-calendar-a-doc)"/>
+<text x="58.2" y="257" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">POL</text>
+<text x="82.5" y="258" font-size="13" font-weight="700" fill="#312e2f" text-anchor="start">Access control</text>
+<text x="44" y="284" font-size="11" font-weight="400" fill="#5e6573" text-anchor="start">Review period</text>
+<text x="44" y="300" font-size="12" font-weight="700" fill="#312e2f" text-anchor="start">1 year</text>
+<polygon points="342,170 331,176 331,164" fill="#5e6573"/>
+<polyline points="294,170 331,170" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="318" y="158" font-size="11" font-weight="700" fill="#5e6573" text-anchor="middle">metadata</text>
+<rect x="350" y="48" width="214" height="244" rx="10" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5"/>
+<path d="M350 74V58Q350 48 360 48H554Q564 48 564 58V74Z" fill="url(#isms-calendar-a-app)"/>
+<circle cx="364" cy="61" r="3.5" fill="#ffffff" opacity="0.85"/>
+<circle cx="376" cy="61" r="3.5" fill="#ffffff" opacity="0.85"/>
+<circle cx="388" cy="61" r="3.5" fill="#ffffff" opacity="0.85"/>
+<text x="404" y="66" font-size="12" font-weight="700" fill="#ffffff" text-anchor="start">ISMS web app</text>
+<text x="366" y="98" font-size="13" font-weight="700" fill="#312e2f" text-anchor="start">Calendar</text>
+<rect x="366" y="112" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="392.4" y="112" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="418.8" y="112" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="445.2" y="112" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="471.6" y="112" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="498" y="112" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="524.4" y="112" width="21.4" height="23" rx="5" fill="url(#isms-calendar-a-mark)"/>
+<rect x="366" y="140" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="392.4" y="140" width="21.4" height="23" rx="5" fill="url(#isms-calendar-a-mark)"/>
+<rect x="418.8" y="140" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="445.2" y="140" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="471.6" y="140" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="498" y="140" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="524.4" y="140" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="366" y="168" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="392.4" y="168" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="418.8" y="168" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="445.2" y="168" width="21.4" height="23" rx="5" fill="url(#isms-calendar-a-doc)"/>
+<rect x="471.6" y="168" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="498" y="168" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="524.4" y="168" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="366" y="196" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="392.4" y="196" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="418.8" y="196" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="445.2" y="196" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="471.6" y="196" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="498" y="196" width="21.4" height="23" rx="5" fill="url(#isms-calendar-a-mark)"/>
+<rect x="524.4" y="196" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="366" y="224" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="392.4" y="224" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="418.8" y="224" width="21.4" height="23" rx="5" fill="url(#isms-calendar-a-doc)"/>
+<rect x="445.2" y="224" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="471.6" y="224" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="498" y="224" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="524.4" y="224" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="366" y="252" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="392.4" y="252" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="418.8" y="252" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="445.2" y="252" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="471.6" y="252" width="21.4" height="23" rx="5" fill="url(#isms-calendar-a-mark)"/>
+<rect x="498" y="252" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="524.4" y="252" width="21.4" height="23" rx="5" fill="#f1f2f4"/>
+<rect x="380" y="308" width="14" height="14" rx="3" fill="url(#isms-calendar-a-mark)"/>
+<text x="400" y="320" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">SOP run</text>
+<rect x="476" y="308" width="14" height="14" rx="3" fill="url(#isms-calendar-a-doc)"/>
+<text x="496" y="320" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">Review due</text>
+<polygon points="674,84 669.5,95.7 661.7,86.5" fill="#434850"/>
+<polyline points="572,170 665.6,91.1" fill="none" stroke="#434850" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="681.2" y="75" width="25.5" height="18" rx="2.2" fill="#ffffff" stroke="#434850" stroke-width="2.5"/>
+<polyline points="683.8,77.5 694,86.2 704.2,77.5" fill="none" stroke="#434850" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="750" cy="68" r="8.5" fill="#6f7a93"/>
+<path d="M733.9 100.3V90.8Q733.9 79.4 743.4 79.4H756.6Q766.1 79.4 766.1 90.8V100.3Z" fill="#6f7a93"/>
+<text x="750" y="130" font-size="12" font-weight="700" fill="#312e2f" text-anchor="middle">Responsible</text>
+<polygon points="674,174 662.8,179.6 663.2,167.6" fill="#434850"/>
+<polyline points="572,170 663,173.6" fill="none" stroke="#434850" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="681.2" y="165" width="25.5" height="18" rx="2.2" fill="#ffffff" stroke="#434850" stroke-width="2.5"/>
+<polyline points="683.8,167.5 694,176.2 704.2,167.5" fill="none" stroke="#434850" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="750" cy="158" r="8.5" fill="#6f7a93"/>
+<path d="M733.9 190.3V180.8Q733.9 169.4 743.4 169.4H756.6Q766.1 169.4 766.1 180.8V190.3Z" fill="#6f7a93"/>
+<text x="750" y="220" font-size="12" font-weight="700" fill="#312e2f" text-anchor="middle">Accountable</text>
+<polygon points="674,264 661.8,261 670,252.1" fill="#434850"/>
+<polyline points="572,170 665.9,256.5" fill="none" stroke="#434850" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="681.2" y="255" width="25.5" height="18" rx="2.2" fill="#ffffff" stroke="#434850" stroke-width="2.5"/>
+<polyline points="683.8,257.5 694,266.2 704.2,257.5" fill="none" stroke="#434850" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="750" cy="248" r="8.5" fill="#6f7a93"/>
+<path d="M733.9 280.3V270.8Q733.9 259.4 743.4 259.4H756.6Q766.1 259.4 766.1 270.8V280.3Z" fill="#6f7a93"/>
+<text x="750" y="310" font-size="12" font-weight="700" fill="#312e2f" text-anchor="middle">Informed</text>
+</svg>

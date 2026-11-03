@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="330" viewBox="0 0 800 330" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>Schematron checks metadata and RACI names</title>
+<desc>Each SOP and policy file has a metadata header and a small RACI table. Schematron rules check the integrity of the metadata and look up every RACI name in the Roles and Groups tables of the wiki.</desc>
+<defs>
+<linearGradient id="isms-raci-b-doc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e949e"/><stop offset="1" stop-color="#767c86"/></linearGradient>
+<linearGradient id="isms-raci-b-ok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#149aa6"/><stop offset="1" stop-color="#01929e"/></linearGradient>
+</defs>
+<path d="M26 20H182L196 34V256H26Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M182 20V34H196" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M38 30H194L208 44V266H38Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M194 30V44H208" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M50 40H206L220 54V276H50Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M206 40V54H220" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="62" y="52" width="32.5" height="18" rx="4" fill="url(#isms-raci-b-doc)"/>
+<text x="78.2" y="65" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">SOP</text>
+<rect x="60" y="80" width="150" height="46" rx="5" fill="#f2f3f5"/>
+<rect x="68" y="89" width="24" height="6" rx="3" fill="#a7adb8"/>
+<rect x="98" y="89" width="102" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="68" y="101" width="24" height="6" rx="3" fill="#a7adb8"/>
+<rect x="98" y="101" width="71.4" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="68" y="113" width="24" height="6" rx="3" fill="#a7adb8"/>
+<rect x="98" y="113" width="86.7" height="6" rx="3" fill="#dcdcdc"/>
+<text x="62" y="148" font-size="11" font-weight="700" fill="#312e2f" text-anchor="start">RACI</text>
+<rect x="62" y="154" width="146" height="60" rx="3" fill="#ffffff" stroke="#a7adb8" stroke-width="1.2"/>
+<line x1="62" y1="169" x2="208" y2="169" stroke="#a7adb8" stroke-width="1"/>
+<line x1="62" y1="184" x2="208" y2="184" stroke="#a7adb8" stroke-width="1"/>
+<line x1="62" y1="199" x2="208" y2="199" stroke="#a7adb8" stroke-width="1"/>
+<line x1="82" y1="154" x2="82" y2="214" stroke="#a7adb8" stroke-width="1"/>
+<text x="72" y="165" font-size="9" font-weight="700" fill="#5e6573" text-anchor="middle">R</text>
+<rect x="89" y="158.5" width="22" height="6" rx="3" fill="#a7adb8"/>
+<text x="72" y="180" font-size="9" font-weight="700" fill="#5e6573" text-anchor="middle">A</text>
+<rect x="89" y="173.5" width="30" height="6" rx="3" fill="#a7adb8"/>
+<text x="72" y="195" font-size="9" font-weight="700" fill="#5e6573" text-anchor="middle">C</text>
+<rect x="89" y="188.5" width="26" height="6" rx="3" fill="#a7adb8"/>
+<text x="72" y="210" font-size="9" font-weight="700" fill="#5e6573" text-anchor="middle">I</text>
+<rect x="89" y="203.5" width="18" height="6" rx="3" fill="#a7adb8"/>
+<text x="117" y="300" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">SOPs and policies</text>
+<path d="M228 80h7v46h-7" fill="none" stroke="#5e6573" stroke-width="2.8" stroke-linejoin="round"/>
+<path d="M240 103 C300 103 300 140 358 140" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="358,140 347,146 347,134" fill="#5e6573"/>
+<text x="282" y="95" font-size="11" font-weight="700" fill="#5e6573" text-anchor="middle">metadata</text>
+<path d="M228 138h7v76h-7" fill="none" stroke="#5e6573" stroke-width="2.8" stroke-linejoin="round"/>
+<path d="M240 176 C300 176 300 140 358 140" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round"/>
+<polygon points="358,140 347,146 347,134" fill="#5e6573"/>
+<text x="282" y="194" font-size="11" font-weight="700" fill="#5e6573" text-anchor="middle">RACI names</text>
+<circle cx="400" cy="140" r="34" fill="url(#isms-raci-b-ok)" stroke="#ffffff" stroke-width="4"/>
+<polyline points="389.5,140.3 397.4,148.5 411.6,132.3" fill="none" stroke="#ffffff" stroke-width="5.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="400" y="196" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Schematron</text>
+<polyline points="339.7,214.1 342.9,217.5 348.8,210.8" fill="none" stroke="#01929e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="356" y="218" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">metadata integrity</text>
+<polyline points="339.7,233.1 342.9,236.5 348.8,229.8" fill="none" stroke="#01929e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="356" y="237" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">RACI names exist</text>
+<path d="M600 26H746L760 40V126H600Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M746 26V40H760" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="612" y="50" font-size="13" font-weight="700" fill="#312e2f" text-anchor="start">Roles</text>
+<rect x="612" y="64" width="30" height="12" rx="6" fill="#e6e8ec" stroke="#a7adb8" stroke-width="1"/>
+<rect x="650" y="67" width="94" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="612" y="84" width="30" height="12" rx="6" fill="#e6e8ec" stroke="#a7adb8" stroke-width="1"/>
+<rect x="650" y="87" width="70.5" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="612" y="104" width="30" height="12" rx="6" fill="#e6e8ec" stroke="#a7adb8" stroke-width="1"/>
+<rect x="650" y="107" width="84.6" height="6" rx="3" fill="#dcdcdc"/>
+<path d="M600 150H746L760 164V270H600Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M746 150V164H760" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="612" y="174" font-size="13" font-weight="700" fill="#312e2f" text-anchor="start">Groups</text>
+<rect x="612" y="188" width="30" height="12" rx="6" fill="#e6e8ec" stroke="#a7adb8" stroke-width="1"/>
+<rect x="650" y="191" width="94" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="612" y="208" width="30" height="12" rx="6" fill="#e6e8ec" stroke="#a7adb8" stroke-width="1"/>
+<rect x="650" y="211" width="70.5" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="612" y="228" width="30" height="12" rx="6" fill="#e6e8ec" stroke="#a7adb8" stroke-width="1"/>
+<rect x="650" y="231" width="84.6" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="612" y="248" width="30" height="12" rx="6" fill="#e6e8ec" stroke="#a7adb8" stroke-width="1"/>
+<rect x="650" y="251" width="61.1" height="6" rx="3" fill="#dcdcdc"/>
+<polygon points="592,76 583.8,85.4 579.6,74.2" fill="#5e6573"/>
+<polyline points="440,132 581.7,79.8" fill="none" stroke="#5e6573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<polygon points="592,210 579.5,211.4 584.1,200.3" fill="#5e6573"/>
+<polyline points="440,148 581.8,205.8" fill="none" stroke="#5e6573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<text x="512" y="142" font-size="11" font-weight="700" fill="#5e6573" text-anchor="middle">look up</text>
+</svg>
