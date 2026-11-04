@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_wn_git_client_6_1">
+  <title><b>What is New in the Oxygen Git Client Add-on 6.1</b></title>
+  <prolog>
+    <author>Sorin Carbunaru</author>
+    <critdates>
+      <created date="2026-11-04"/>
+    </critdates>
+  </prolog>
+  <body>
+    <p>Version <b>6.1</b> of the <b>Oxygen Git Client add-on</b> focuses mainly on repositories that
+      use more than one remote server. Add to that multiple selection in the History view, a handful
+      of everyday improvements, and various bug fixes. Here are the highlights.</p>
+    <p><b>Working with multiple remotes.</b> This version makes working with multiple remotes
+      easier: pushes follow each branch's tracking configuration, the <b>Git Branch Manager</b> lets
+      you manage remotes, and each remote uses credentials for its own host.</p>
+    <ul id="ul_remotes">
+      <li>
+        <p><b>Push goes where the branch points.</b> Pushing a branch now follows its tracking
+          configuration instead of assuming <codeph>origin</codeph>. When you push a new branch that
+          has no upstream yet and the repository has several remotes, you choose the remote to push
+          to and decide whether it becomes the branch's upstream.</p>
+      </li>
+      <li>
+        <p><b>Manage remotes from the Git Branch Manager.</b> Right-click in the <b>Git Branch
+            Manager</b> to add a remote, edit one's name and URL, or delete one. Hover a remote to
+          see its URL. Every configured remote is listed, even if you have not fetched from it yet.
+          This is especially useful when you need to correct its URL.<fig id="fig_add_remote_git">
+            <title>Add a remote from the contextual menu of the Remote node</title>
+            <image href="../images/add_remote_git.png" id="image_zsy_xmw_clc"/>
+          </fig><fig id="fig_config_remotes">
+            <title>Edit or delete a remote from its contextual menu</title>
+            <image href="../images/config_remotes.png" id="image_ovb_gmw_clc"/>
+          </fig></p>
+      </li>
+      <li>
+        <p><b>The right credentials for the right server.</b> Each remote authenticates against its
+          own host, so a repository that uses multiple servers no longer sends one server's
+          credentials to another. An authentication error identifies the server that rejected the
+          credentials.</p>
+      </li>
+    </ul>
+    <p><b>Fetching only part of a repository.</b> Some remotes are configured to fetch only a few of
+      their branches, which keeps large repositories manageable but can be confusing when a branch
+      you expect simply is not there. The Git Client now makes this visible and lets you decide what
+      to do about it.</p>
+    <p>
+      <fig id="fig_partial_remote_not_fetched_branch">
+        <title>A partial remote and a local branch whose upstream is not fetched</title>
+        <image href="../images/partial_remote_not_fetched_branch.png" id="image_ol3_24w_clc"/>
+      </fig>
+    </p>
+    <ul id="ul_partial">
+      <li>
+        <p><b>Partial remotes are marked.</b> A remote that fetches only some of its branches is
+          marked <b>(partial)</b> in the Git Branch Manager, and its tooltip explains what is being
+          fetched. When you want everything, the new <b>Fetch all branches</b> action updates the
+          configuration to fetch all branches.</p>
+      </li>
+      <li>
+        <p><b>Missing ahead/behind counts are now explained.</b> A local branch whose upstream is
+          not covered by the fetch configuration can never report how far ahead or behind it is.
+          Such branches are now marked as well, and the <b>Fetch branches used locally</b> action
+          brings in just the upstream branches your local branches track, without fetching
+          everything else.</p>
+      </li>
+    </ul>
+    <p><b>A more productive Git History view.</b> Two additions make the files affected by a commit
+      easier to work with.</p>
+    <ul id="ul_history">
+      <li>
+        <p><b>Act on several files at once.</b> The affected-files tables now let you select
+          multiple files, so you can open, stage, unstage, discard, or copy their paths in one
+          action.</p>
+      </li>
+      <li>
+        <p><b>Copy a path the way Git sees it.</b> The new <b>Copy relative path</b> action copies a
+          file's path relative to the repository root, ready to paste into a
+            <codeph>.gitignore</codeph> file, a command line, or a review comment. For a renamed
+          file, <b>Copy previous path</b> gives you the name it had before the rename.</p>
+      </li>
+    </ul>
+    <p>And a list of everyday improvements:</p>
+    <ul id="ul_quick_hits">
+      <li>
+        <p>Every comparison in the Git client labels its two sides—<i>Mine</i> and <i>Theirs</i> in
+          a conflict, <i>Working copy</i> and <i>Staged</i> when reviewing changes, <i>Newer</i> and
+            <i>Older</i> in the History—and names the file in the window title.</p>
+      </li>
+      <li>The <b>Track remote branch</b> dialog box now lets you remove a branch's upstream. A
+        branch that tracks a remote branch deleted from the server is shown as <b>(not
+          available)</b> and kept, instead of looking as if the branch tracked nothing at all.</li>
+      <li>
+        <p>A fast-forward merge into a clean working copy no longer requires confirmation, and every
+          completed merge reports its result in the status bar.</p>
+      </li>
+      <li>
+        <p>The commit message proposed after you resolve merge conflicts is the one Git recorded
+          when the merge started, so it names the same branch, tag, or URL that <codeph>git
+            commit</codeph> would on the command line.</p>
+      </li>
+    </ul>
+    <p>The Git Client add-on works with <b>Oxygen XML Editor</b>, <b>Author</b>, <b>Developer</b>,
+      and <b>Oxygen JSON Editor</b>. To get 6.1, update the add-on from <b>Help &gt; Install new
+        add-ons</b>, or drag the <b>Install</b> button from the <xref
+        href="https://www.oxygenxml.com/doc/ug-addons/git-client/git-addon.html" format="html"
+        scope="external">add-on webpage</xref> into the editor. Give it a try and let us know what
+      you think!</p>
+  </body>
+</topic>
