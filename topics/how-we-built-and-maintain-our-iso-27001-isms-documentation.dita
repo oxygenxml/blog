@@ -15,13 +15,16 @@
     <body>
         <p>At Syncro Soft, the company behind the Oxygen XML products, we became <xref
                 href="ISO-27001-certification-announcement.dita">ISO 27001 certified</xref> in 2024.
-            Alongside the security measures we put in place, we needed an information security
-            management system (ISMS): a practical way to define, run, review, and improve how we
-            protect the business. Its documentation had to stay alive. It had to be easy to update,
-            remind us when a review or procedure was due, let us initiate and track procedure runs,
-            and keep a record of changes. Here is how we approached it.</p>
+            The certificate is the visible part. Behind it is an information security management
+            system (ISMS): a practical way to define, run, review, and improve how we protect the
+            business. An ISMS is only as good as its documentation, and policies that sit in a
+            folder until the next audit do not protect anything. It had to be easy to update, remind
+            us when a review or procedure was due, let us initiate and track procedure runs, and
+            keep a record of every change.</p>
+        <p>As a company that builds documentation tools, we did what came naturally: we treated
+            it as a documentation project. Here is how we approached it.</p>
         <section id="section_x1d_v21_clc">
-            <title>Why ISO-27001</title>
+            <title>Why ISO 27001</title>
             <p>Security protects the assets at the heart of a business. Cyberattacks are increasing,
                 including attacks assisted by AI. Companies are responding not only by protecting
                 their own systems, but also by checking that their providers are secure. This helps
@@ -45,7 +48,7 @@
                 it was accurate and that nothing important had been lost.</p>
         </section>
         <section id="section_x45_lf1_clc">
-            <title>The internal basic wiki setup</title>
+            <title>Starting from our internal wiki</title>
             <p>Before certification, all our procedures already lived on our internal wiki. Because
                 we develop Oxygen XML Editor, we were already familiar with structured technical
                 documentation. We chose DITA, an XML-based standard that stores content as small,
@@ -59,7 +62,7 @@
                 piece of relevant information.</p>
         </section>
         <section id="section_ykf_1h1_clc">
-            <title>Certification needs</title>
+            <title>What a good ISMS needs</title>
             <p>Maintaining information security management system (ISMS) documentation, or any
                 other governance documentation, requires another level of organization:<ol
                     id="ol_gzm_yh1_clc">
@@ -90,8 +93,8 @@
                 information metadata and stores it in the topic header, separate from the text that
                 readers see. DITA already provides useful built-in metadata, such as the author,
                 creation date, and modification date.</p>
-            <p>What helped us most was that we could extend this metadata. We added our own
-                name/value fields in the topic header. The following are the fields we used,
+            <p>This is where DITA really paid off: we could easily extend this metadata. We added
+                our own name/value fields in the topic header. The following are the fields we used,
                 including the scheduling fields that apply to SOPs:</p>
             <simpletable id="table_ixv_zm1_clc" relcolwidth="1.0* 3.44*">
                 <strow>
@@ -218,7 +221,7 @@
         &lt;stentry>CTO&lt;/stentry>
     &lt;/strow>
 &lt;/simpletable></codeblock>
-            <p>We then needed to keep this metadata reliable, so we added validation. We used
+            <p>Metadata is only useful if you can trust it, so we added validation. We used
                 Schematron, a rule language for checking XML content. It lets you create custom
                 validation rules for complex structures, including relationships across documents,
                 and control the messages that authors see when a rule fails. For more on what
@@ -229,7 +232,8 @@
                     <li>The table of roles, each with an abbreviation and a description</li>
                     <li>The table of groups, also with an abbreviation and a description</li>
                 </ul>We used those lists in the Schematron rules to check that every name used in a
-                RACI section matched a defined role or group.</p>
+                RACI section matched a defined role or group. A misspelled role name is caught when
+                the document is validated, long before an auditor sees it.</p>
             <fig id="fig_isms_raci_validation">
                 <title>Schematron checks metadata and RACI names</title>
                 <image href="../images/isms/isms-raci-validation.svg" placement="break" id="image_isms_raci_validation">
@@ -247,12 +251,13 @@
                 the simpler two-role responsibility table.</p>
         </section>
         <section id="section_ikr_ctj_clc">
-            <title>Writing the policies </title>
+            <title>Writing the policies with AI</title>
             <p>Once the templates contained sample metadata, we used AI to help write the full set
                 of policies. The approach was simple: our CTO took each control already in place,
                 found the matching policy stub, and described the current implementation in the
                     <xref href="ai_positron.dita">Oxygen AI Positron</xref> side view. It produced a
-                first policy draft that we could review.</p>
+                first policy draft that we could review. Writing a policy turned from a blank-page
+                exercise into reviewing a draft.</p>
             <p>For the stubs not covered by existing controls, we assessed the risks and introduced
                 new controls and policies.</p>
             <fig id="fig_isms_ai_policy_drafting">
@@ -266,7 +271,7 @@
         </section>
         <section id="section_zw5_5s1_clc">
             <title>Collaborative review</title>
-            <p>Each document needs a review before approval. That is how we keep the information
+            <p>No document is approved without a review. That is how we keep the information
                 accurate.</p>
             <p>We run the Content Fusion CMS Enterprise server locally, so we used it for this.
                     <xref href="content-fusion-cloud-overview.dita">Content Fusion</xref> is a
@@ -308,13 +313,14 @@
                     href="../images/how-we-built-and-maintain-our-iso-27001-isms-documentation-dashboard.png"
                     scale="50"/>
             </fig>
-            <p>Another challenge was staying consistent over time. Some procedures, such as changing
+            <p>The hardest part of an ISMS is not writing the procedures; it is remembering to run
+                them, year after year. Some procedures, such as changing
                 passwords on some systems or replacing UPS batteries, need more than instructions.
                 Such procedures also need a calendar event, or they are easy to forget. We decided
                 it was simpler to keep the calendar in the application. Everyone named in an SOP's
                 RACI table receives an email when it is time to run that SOP or review a document.
-                We can now update the metadata and let the system respond, without synchronizing
-                separate calendars.</p>
+                The documentation now drives the schedule: we update the metadata and the system
+                responds, without synchronizing separate calendars.</p>
             <fig id="fig_isms_review_calendar">
                 <title>Scheduling driven by document metadata</title>
                 <image href="../images/isms/isms-review-calendar.svg" placement="break"
@@ -354,12 +360,14 @@
         </section>
         <section id="section_hdy_5v1_clc">
             <title>Conclusion</title>
-            <p>This is how we built an in-house ISMS using technical documentation tools. It has
-                worked well for our ISO 27001 policies and for other company documents that benefit
-                from the same approach.</p>
-            <p>Starting from version 29 of Oxygen, there will be a new project template available so
-                you can use it to create new governance projects based on the ideas presented in
-                this blog post. </p>
+            <p>Treating our ISMS as a documentation project paid off. The tools we already used for
+                technical documentation (structured topics, Git, validation, collaborative review,
+                and automated publishing) now keep our ISO 27001 policies accurate, reviewed on
+                time, and ready for the next audit. We use the same approach for other company
+                documents that need an owner, regular reviews, and approval.</p>
+            <p>Want to try it yourself? Starting with version 29, Oxygen includes a new project
+                template for governance projects, based on the ideas presented in this blog
+                post.</p>
             <p>Thank you for reading, and happy documenting! Please comment below if you would like
                 more information.</p>
         </section>
