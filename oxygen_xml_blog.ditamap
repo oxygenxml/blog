@@ -39,7 +39,6 @@
         <topicref
             href="topics/content-fusion-cms-enterprisecloud-vs-xml-author-desktop-distilled-feature-matrix.dita"/>
         <topicref href="topics/the-translation-workflow-for-the-ai-era.dita"/>
-        <topicref href="topics/how-we-built-and-maintain-our-iso-27001-isms-documentation.dita"/>
     </topichead>
     <topicref keys="migrate" href="topics/migration.dita">
         <topicref href="topics/migratingToDITA.dita"/>
@@ -69,6 +68,7 @@
         <topicref href="topics/oxygen_desktop_security_data_integrity.dita"/>
         <topicref href="topics/s1000d_4_x_built_in_support.dita"/>
         <topicref href="topics/ISO-27001-certification-announcement.dita"/>
+        <topicref href="topics/how-we-built-and-maintain-our-iso-27001-isms-documentation.dita"/>
         <topicref href="topics/OxygenUsersMeetup.dita"/>
         <topicref href="topics/Chinese_users_group.dita"/>
         <topicref href="topics/oxygen_xml_ecosystem.dita"/>
