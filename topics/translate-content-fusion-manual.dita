@@ -73,8 +73,8 @@
         <li>Make sure you are in your personal workspace, not in a review task.</li>
         <li>In the top stripe, click the branch drop-down menu, then select <uicontrol>Create new
             branch...</uicontrol>.</li>
-        <li>Enter the name of the new branch. Use this pattern:
-              <codeph>translation/translate--&lt;product-name>--&lt;lang></codeph>
+        <li><p>Enter the name of the new branch. Use this pattern:
+              <codeph>translation/translate--&lt;product-name>--&lt;lang></codeph></p>
           <ul>
             <li><codeph>&lt;product-name></codeph>: the product name, with hyphens instead of
               spaces.</li>
@@ -87,7 +87,7 @@
       <note type="important">Before you continue, check that the top stripe shows the translation
         branch. Everything you do from now on is saved on this branch.</note>
       <p>For more about branches, see <xref format="html" scope="external"
-          href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-projects-workspace.html#cf-projects-workspace__section-br-mgmnt"
+          href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-projects-workspace.html#cf-projects-workspace__section-br-mgmnt"
           >Branch Management</xref> in the <cite>Oxygen Content Fusion User Guide</cite>.</p>
     </body>
   </topic>
@@ -422,7 +422,7 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
         <p>The first job for a language also creates the translation index entries, the translated
           maps, a copy of every image, and the deliverables for the new language. It copies the
           deliverables that already exist for English. See <xref format="html" scope="external"
-            href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-ai-translation-first-run.html"
+            href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-first-run.html"
             >The First Time You Translate a Project</xref> in the <cite>Oxygen Content Fusion User
             Guide</cite>.</p>
       </section>
@@ -439,7 +439,7 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
             workspace</uicontrol> to keep them. To run the same job again, select
             <uicontrol>Re-run</uicontrol> from the card's menu.</p>
         <p>For more, see <xref format="html" scope="external"
-            href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-ai-translation-jobs.html"
+            href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-jobs.html"
             >Managing a Translation Job</xref> in the <cite>Oxygen Content Fusion User
             Guide</cite>.</p>
       </section>
@@ -509,7 +509,7 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
             valid DITA and has no broken references.</li>
         </ul>
         <p>For details, see <xref format="html" scope="external"
-            href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-ai-translation-reviewing.html"
+            href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-reviewing.html"
             >Reviewing Translations Before You Commit</xref> in the <cite>Oxygen Content Fusion User
             Guide</cite>.</p>
       </section>
@@ -561,7 +561,7 @@ Follow the instructions in `translation/review-prompt.md`, with TARGET_LANG = fr
         </ol>
         <p id="p_frz_njx_1lc">You can ask the agent other questions in the same way. See <xref
             format="html" scope="external"
-            href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-ai-translation-asking.html"
+            href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-asking.html"
             >Asking the Agent a Question</xref> in the <cite>Oxygen Content Fusion User
           Guide</cite>.</p>
       </section>
@@ -576,7 +576,7 @@ Follow the instructions in `translation/review-prompt.md`, with TARGET_LANG = fr
             edits the topics or adds comments in the browser. When the review is done, you
             integrate the accepted changes into the translation branch. See <xref format="html"
               scope="external"
-              href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-projects-review-tasks.html#cf-projects-review-tasks__section_cn4_k3x_4jb"
+              href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-projects-review-tasks.html#cf-projects-review-tasks__section_cn4_k3x_4jb"
               >Creating a Project Review Task</xref>.</li>
           <li><b>Oxygen XML Editor</b>: the reviewer checks out the translation branch and reviews
             the files locally. This suits reviewers who prefer a desktop editor, or who want the
@@ -665,7 +665,7 @@ Follow the instructions in `translation/review-prompt.md`, with TARGET_LANG = fr
           deliverables for the new language.</li>
       </ol>
       <p>For details, see <xref format="html" scope="external"
-          href="https://www.oxygenxml.com/doc/versions/9.2/ug-content-fusion-cloud/topics/cf-projects-workspace.html#cf-projects-workspace__section-br-mgmnt"
+          href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-projects-workspace.html#cf-projects-workspace__section-br-mgmnt"
           >Branch Management</xref> in the <cite>Oxygen Content Fusion User Guide</cite>.</p>
       <note type="tip"><b>Mark the release with a Git tag.</b> A tag records the exact commit of
         each translation release, so you can later compare two releases, or rebuild the manual
