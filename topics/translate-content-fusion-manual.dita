@@ -47,18 +47,6 @@
           publish the translated manual.</li>
       </ol>
     </section>
-    <section id="before-you-begin">
-      <title>Before you begin</title>
-      <p>You need:</p>
-      <ul>
-        <li>Access to the <ph>User Guide</ph> project in <ph>Content Fusion</ph>, with permission to
-          create branches.</li>
-        <li>AI credits in your <ph>Content Fusion</ph> organization. A translation job stops when
-          the credits run out.</li>
-        <li>A local clone of the <ph>User Guide</ph> repository, to update the UI strings (see
-            <xref href="#get-ui-strings">Get the latest UI strings</xref>).</li>
-      </ul>
-    </section>
   </body>
 
   <topic id="create-branch">
