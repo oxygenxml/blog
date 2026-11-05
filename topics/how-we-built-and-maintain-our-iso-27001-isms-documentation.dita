@@ -3,9 +3,9 @@
 <topic id="topic_klq_321_clc">
     <title>How We Built and Maintain Our ISO 27001 ISMS Documentation</title>
     <shortdesc>Discover how we, the Oxygen XML team, built and streamlined our ISO 27001 ISMS
-        documentation using the power of DITA, Git, Content Fusion, custom validation, and workflow
-        automation, creating a more structured, consistent, and efficient approach to managing
-        information security documentation.</shortdesc>
+        documentation using DITA, Git, Content Fusion, custom validation, and workflow automation to
+        create a more structured, consistent, and efficient approach to managing information
+        security documentation.</shortdesc>
     <prolog>
         <author>Dan Caprioara</author>
         <critdates>
@@ -18,20 +18,22 @@
             The certificate is the visible part. Behind it is an information security management
             system (ISMS): a practical way to define, run, review, and improve how we protect the
             business. An ISMS is only as good as its documentation, and policies that sit in a
-            folder until the next audit do not protect anything. It had to be easy to update, remind
-            us when a review or procedure was due, let us initiate and track procedure runs, and
-            keep a record of every change.</p>
-        <p>As a company that builds documentation tools, we did what came naturally: we treated
-            it as a documentation project. Here is how we approached it.</p>
+            folder until the next audit do not protect anything. The documentation had to be easy to
+            update, remind us when a review or procedure was due, let us initiate and track
+            procedure runs, and keep a record of every change.</p>
+        <p>As a company that builds documentation tools, we did what came naturally: we treated the
+            ISMS as a documentation project. Here is how we approached it.</p>
         <section id="section_x1d_v21_clc">
             <title>Why ISO 27001</title>
             <p>Security protects the assets at the heart of a business. Cyberattacks are increasing,
                 including attacks assisted by AI. Companies are responding not only by protecting
-                their own systems, but also by checking that their providers are secure. This helps
+                their own systems but also by checking that their providers are secure. This helps
                 reduce supply-chain risk.</p>
             <fig id="fig_isms_assets_controls">
                 <image href="../images/isms/isms-assets-controls.svg" placement="break" id="image_isms_assets_controls">
-                    <alt>Attacks stopped by a wall of security controls: a single attack arrow, standing for cyberattacks, AI-assisted attacks and supply-chain risk, stopped by a wall of security controls in front of the business assets: data, code, systems and people.</alt>
+                    <alt>A single attack arrow, representing cyberattacks, AI-assisted attacks, and
+                        supply-chain risk, stopped by a wall of security controls protecting
+                        business assets: data, code, systems, and people.</alt>
                 </image>
             </fig>
             <p>Before we started certification, we already had many security controls in place. We
@@ -40,16 +42,16 @@
             <p>We worked with a consultant to structure the policies before the official
                 certification audit. You can also start with a policy kit: general policy stubs that
                 you adapt to reflect your controls and organizational structure. The resulting
-                policies feed into a Statement of Applicability: the document that records which ISO
-                27001 controls apply to your organization, and why. You can share it with
+                policies feed into a Statement of Applicability, a document that records which ISO
+                27001 controls apply to your organization and why. You can share it with
                 customers.</p>
             <p>For each policy, we collected as much information as we could from our colleagues and
-                used AI to merge it into the policy stubs. Then we reviewed the result to make sure
+                used AI to merge it into the policy stubs. We then reviewed the result to make sure
                 it was accurate and that nothing important had been lost.</p>
         </section>
         <section id="section_x45_lf1_clc">
             <title>Starting from our internal wiki</title>
-            <p>Before certification, all our procedures already lived on our internal wiki. Because
+            <p>Before certification, all our procedures were already on our internal wiki. Because
                 we develop Oxygen XML Editor, we were already familiar with structured technical
                 documentation. We chose DITA, an XML-based standard that stores content as small,
                 reusable topics. It supports custom metadata, content reuse, validation, and
@@ -63,8 +65,8 @@
         </section>
         <section id="section_ykf_1h1_clc">
             <title>What a good ISMS needs</title>
-            <p>Maintaining information security management system (ISMS) documentation, or any
-                other governance documentation, requires another level of organization:<ol
+            <p>Maintaining information security management system (ISMS) documentation, or any other
+                governance documentation, requires an additional level of organization:<ol
                     id="ol_gzm_yh1_clc">
                     <li>Change history</li>
                     <li>A form of access control</li>
@@ -75,7 +77,7 @@
                         internal issue tracker</li>
                     <li>A review timeline: each document needs a review date and review period</li>
                     <li>A way to collaborate on and review documents</li>
-                    <li>A form to mark the documents as approved</li>
+                    <li>A way to mark documents as approved</li>
                 </ol></p>
             <p>The Git repository provided the change history and access control.</p>
             <p>We also needed a way to define and validate the information that describes each
@@ -88,14 +90,14 @@
         </section>
         <section id="section_mz3_5k1_clc">
             <title>Defining and validating metadata</title>
-            <p>Besides its content, each document carries information about itself: who wrote it,
-                when it was created, who owns it, and when it is due for review. DITA calls this
+            <p>In addition to its content, each document carries information about itself: who wrote
+                it, when it was created, who owns it, and when it is due for review. DITA calls this
                 information metadata and stores it in the topic header, separate from the text that
                 readers see. DITA already provides useful built-in metadata, such as the author,
                 creation date, and modification date.</p>
-            <p>This is where DITA really paid off: we could easily extend this metadata. We added
-                our own name/value fields in the topic header. The following are the fields we used,
-                including the scheduling fields that apply to SOPs:</p>
+            <p>DITA made it easy to extend this metadata. We added our own name/value fields in the
+                topic header. The following are the fields we used, including the scheduling fields
+                that apply to SOPs:</p>
             <simpletable id="table_ixv_zm1_clc" relcolwidth="1.0* 3.44*">
                 <strow>
                     <stentry>Document ID</stentry>
@@ -160,15 +162,15 @@
             <simpletable id="table_nlw_2m1_clc" relcolwidth="1.0* 3.44*">
                 <strow>
                     <stentry>Responsible</stentry>
-                    <stentry>The one that would do the work</stentry>
+                    <stentry>The person who would do the work</stentry>
                 </strow>
                 <strow>
                     <stentry>Accountable</stentry>
-                    <stentry>The one that is accountable for the work to be done properly</stentry>
+                    <stentry>The person accountable for ensuring the work is done properly</stentry>
                 </strow>
                 <strow>
                     <stentry>Consulted</stentry>
-                    <stentry>People that can be consulted </stentry>
+                    <stentry>People who can be consulted</stentry>
                 </strow>
                 <strow>
                     <stentry>Informed</stentry>
@@ -203,7 +205,7 @@
             <simpletable id="table_jk3_qm1_clc">
                 <strow>
                     <stentry>Responsible/Champion</stentry>
-                    <stentry>The ones following the policy</stentry>
+                    <stentry>The people following the policy</stentry>
                 </strow>
                 <strow>
                     <stentry>Authority</stentry>
@@ -224,16 +226,15 @@
             <p>Metadata is only useful if you can trust it, so we added validation. We used
                 Schematron, a rule language for checking XML content. It lets you create custom
                 validation rules for complex structures, including relationships across documents,
-                and control the messages that authors see when a rule fails. For more on what
-                Schematron can do for technical writers, see <xref href="SchematronBCs.dita"
-                />.</p>
+                and to control the messages that authors see when a rule fails. For more on what
+                Schematron can do for technical writers, see <xref href="SchematronBCs.dita"/>.</p>
             <p>Our wiki already contained topics that defined the company structure in tables:<ul
                     id="ul_lch_mk1_clc">
                     <li>The table of roles, each with an abbreviation and a description</li>
                     <li>The table of groups, also with an abbreviation and a description</li>
                 </ul>We used those lists in the Schematron rules to check that every name used in a
-                RACI section matched a defined role or group. A misspelled role name is caught when
-                the document is validated, long before an auditor sees it.</p>
+                RACI section matched a defined role or group. Validation catches a misspelled role
+                name long before an auditor sees it.</p>
             <fig id="fig_isms_raci_validation">
                 <title>Schematron checks metadata and RACI names</title>
                 <image href="../images/isms/isms-raci-validation.svg" placement="break" id="image_isms_raci_validation">
@@ -256,8 +257,8 @@
                 of policies. The approach was simple: our CTO took each control already in place,
                 found the matching policy stub, and described the current implementation in the
                     <xref href="ai_positron.dita">Oxygen AI Positron</xref> side view. It produced a
-                first policy draft that we could review. Writing a policy turned from a blank-page
-                exercise into reviewing a draft.</p>
+                first policy draft that we could review. Instead of writing a policy from a blank
+                page, we could review a draft.</p>
             <p>For the stubs not covered by existing controls, we assessed the risks and introduced
                 new controls and policies.</p>
             <fig id="fig_isms_ai_policy_drafting">
@@ -273,12 +274,12 @@
             <title>Collaborative review</title>
             <p>No document is approved without a review. That is how we keep the information
                 accurate.</p>
-            <p>We run the Content Fusion CMS Enterprise server locally, so we used it for this.
-                    <xref href="content-fusion-cloud-overview.dita">Content Fusion</xref> is a
+            <p>We run the Content Fusion CMS Enterprise server locally, so we used it for this
+                review. <xref href="content-fusion-cloud-overview.dita">Content Fusion</xref> is a
                 lightweight, Git-based DITA content management system (CMS). It made it easy to
                 connect our existing wiki repository to a project and share it with the whole
-                organization. Role-based access let us designate a few colleagues as authors, able
-                to edit and create review tasks, while others could collaborate only in review
+                organization. Role-based access let us designate a few colleagues as authors who
+                could edit and create review tasks, while others could collaborate only in review
                 tasks.</p>
             <p>One useful Content Fusion feature is concurrent editing: several collaborators can
                 work on the same document at once. They can edit with change tracking and add
@@ -291,10 +292,11 @@
         </section>
         <section id="section_c3w_tkq_clc">
             <title>SOPs are living documents that trigger events</title>
-            <p>In our company, we use the Atlassian Jira ticketing system. We needed execution
-                tracking and an audit trail for the procedures that support our ISMS policies, so we
-                used Jira to manage them. The SOPs are authored once in the Content Fusion wiki
-                project, then sent to Jira as work items that people can carry out and close.</p>
+            <p>We use the Atlassian Jira ticketing system in our company. We needed to track
+                execution and maintain an audit trail for the procedures that support our ISMS
+                policies, so we used Jira to manage them. The SOPs are authored once in the Content
+                Fusion wiki project, then sent to Jira as work items that people can carry out and
+                close.</p>
             <p>We built a Python web application that lets us push an SOP to the ticketing system.
                 It shows each person a catalog of procedures and policies that match their role,
                 with search and workflow-specific actions. For example, each SOP has a <ph
@@ -314,13 +316,13 @@
                     scale="50"/>
             </fig>
             <p>The hardest part of an ISMS is not writing the procedures; it is remembering to run
-                them, year after year. Some procedures, such as changing
-                passwords on some systems or replacing UPS batteries, need more than instructions.
-                Such procedures also need a calendar event, or they are easy to forget. We decided
-                it was simpler to keep the calendar in the application. Everyone named in an SOP's
-                RACI table receives an email when it is time to run that SOP or review a document.
-                The documentation now drives the schedule: we update the metadata and the system
-                responds, without synchronizing separate calendars.</p>
+                them year after year. Some procedures, such as changing passwords on some systems or
+                replacing UPS batteries, need more than instructions. Such procedures also need a
+                calendar event, or they are easy to forget. We decided it was simpler to keep the
+                calendar in the application. Everyone named in an SOP's RACI table receives an email
+                when it is time to run that SOP or review a document. The documentation now drives
+                the schedule: we update the metadata and the system responds, without synchronizing
+                separate calendars.</p>
             <fig id="fig_isms_review_calendar">
                 <title>Scheduling driven by document metadata</title>
                 <image href="../images/isms/isms-review-calendar.svg" placement="break"
@@ -355,8 +357,9 @@
             <p>You can also add an edit link to each page so readers can propose a source change.
                 The link opens the matching document in Content Fusion, where they can make the
                 change in a personal workspace and create a review task. The document owner can then
-                review and merge it into the main branch. For how to set it up and what the workflow
-                looks like, see <xref href="../git-tech-writers/cf_propose_changes.dita"/>.</p>
+                review and merge it into the main branch. To learn how to set it up and what the
+                workflow looks like, see <xref href="../git-tech-writers/cf_propose_changes.dita"
+                />.</p>
         </section>
         <section id="section_hdy_5v1_clc">
             <title>Conclusion</title>
