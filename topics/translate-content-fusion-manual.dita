@@ -56,25 +56,11 @@
         files apart from the source content. This matters during the review: the reviewer compares
         each translated topic with its English source, and the source must not change while they
         do it. When the translation is approved, you merge the branch back.</p>
-      <ol>
-        <li>In <ph>Content Fusion</ph>, open the <ph>User Guide</ph> project.</li>
-        <li>Make sure you are in your personal workspace, not in a review task.</li>
-        <li>In the top stripe, click the branch drop-down menu, then select <uicontrol>Create new
-            branch...</uicontrol>.</li>
-        <li><p>Enter the name of the new branch. Use this pattern:
-              <codeph>translation/translate--&lt;product-name>--&lt;lang></codeph></p>
-          <ul>
-            <li><codeph>&lt;product-name></codeph>: the product name, with hyphens instead of
-              spaces.</li>
-            <li><codeph>&lt;lang></codeph>: the target language as a BCP 47 tag.</li>
-          </ul>
-          <p>Example: <codeph>translation/translate--Content-Fusion-Cloud--fr-FR</codeph></p></li>
-        <li>Select the branch to start from: the branch that holds the English content you want to
-          translate.</li>
-      </ol>
-      <note type="important">Before you continue, check that the top stripe shows the translation
-        branch. Everything you do from now on is saved on this branch.</note>
-      <p>For more about branches, see <xref format="html" scope="external"
+      <p>In <ph>Content Fusion</ph>, create the branch from the one that holds the English content,
+        and name it with a pattern such as
+          <codeph>translation/translate--&lt;product-name>--&lt;lang></codeph> (for example,
+          <codeph>translation/translate--Content-Fusion-Cloud--fr-FR</codeph>). See <xref
+          format="html" scope="external"
           href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-projects-workspace.html#cf-projects-workspace__section-br-mgmnt"
           >Branch Management</xref> in the <cite>Oxygen Content Fusion User Guide</cite>.</p>
     </body>
