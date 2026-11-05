@@ -24,16 +24,7 @@
         Translation Workflow for the AI Era</xref>, we introduced the AI translation workflow in
         <ph>Content Fusion</ph>.</p>
     <p>In this post, we share our experience with translating the <b>Content Fusion Cloud</b> user
-      manual into <b>French</b>. The main lesson: a good translation of a user manual needs more
-      than a good model. The reader follows the manual while looking at the product, so every menu
-      and button name must match the localized product. The quality improved most when we gave the
-      agent the product's translated UI strings and an approved terminology, and when we added an AI
-      review and an expert review to the process.</p>
-    <p>The rest of the post describes the workflow that we ended up with, step by step. To use it
-      for your own manual or language, replace the product name and the language tag. For other
-      ways to translate DITA content, such as working with a translation agency or with XLIFF
-      files, see <xref href="translating_your_dita_project.dita">Translating your DITA
-        Project</xref>.</p>
+      manual into <b>French</b>.</p>
     <section id="steps-at-a-glance">
       <title>The workflow at a glance</title>
       <fig id="fig_translation_workflow">
