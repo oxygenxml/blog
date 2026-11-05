@@ -95,9 +95,11 @@
                 separate file that may reside in your project.</p>
             <p><image href="../images/project-context-prompt-prefs.png" id="image_zkk_fsy_dhc"
                     scale="40"/></p>
-            <p>The most recent <uicontrol>AI Positron</uicontrol> release added a new AI action
-                named <uicontrol>Generate agent instructions</uicontrol> that can help you create
-                the initial project context prompt content.</p>
+            <p>The most recent <uicontrol>AI Positron</uicontrol> releases added a new AI action
+                named <uicontrol>Generate agent instructions</uicontrol> that can help you create the
+                initial project context prompt content. In newer versions, contradictory memory rules
+                are also updated more cleanly by using the <codeph>update_memory</codeph> tool, so
+                refining your instructions over time produces more consistent results.</p>
             <p>Examples of project context prompt files for <b>AI Positron</b> in Markdown
                     format:<ul id="ul_y4l_msy_dhc">
                     <li><xref
@@ -114,8 +116,8 @@
             <title>Choose your LLM Model</title>
             <p>You need a quality LLM model to make quality changes. An LLM model that is efficient,
                 cost-effective, and has a high context window. From our extensive testing and
-                experience, we generally recommend <b>Claude Sonet 4</b>, <b>Haiku 4.5</b>,
-                    <b>OpenAI GPT 4.1</b> or <b>Gemini 2.5 Flash</b>.</p>
+                <b>OpenAI GPT-6.1 Terra Thinking</b>, <b>Claude Sonnet 5.5</b>,
+                    <b>Claude Haiku 5.5</b>, <b>OpenAI GPT-6.1 Sol</b>, or <b>xAI Grok 4.7</b>.</p>
             <p><b>Context</b> is the key here. The LLM receives a project context prompt, but it
                 also needs to explore the project, read content, and make changes. So your LLM
                 implementation and the platform through which you access it also need to allow
@@ -134,7 +136,9 @@
                         project and make changes, but also to DITA XML-specific tools to obtain the
                         structure of the DITA map opened in the <b>DITA Maps Manager</b> view,
                         resolve a content reference to the referenced content, or to find key
-                        definitions that match a specific product name. For example, you can run
+                        definitions that match a specific product name. In newer versions, it can
+                        also delegate well-scoped investigations to sub-agents and you can follow
+                        them in live conversation tabs. For example, you can run
                         prompts like this in the chat view:<codeblock id="codeblock_dnm_rmg_2hc">Replace in the current file all product names with 
 defined key references</codeblock>or:<codeblock id="codeblock_wmz_smg_2hc">Use the attached documents to create a DITA XML topic, 
 add related links in the topic to similar ones, find 
@@ -203,14 +207,16 @@ in DITA &lt;uicontrol> elements.</codeblock><note
                                     example:<codeblock id="codeblock_mpd_zng_2hc">Where should I save DITA maps in this project?</codeblock><note
                                     id="note_vcd_d2r_3hc">This tool is available only when working
                                     with local disk resources.</note></li>
-                        </ul></li>
-                    <li>Read content from the current or a different file.
+                        </ul></li>                            <li>Read content from the current or a different file.
                         Example:<codeblock id="codeblock_n5r_f4g_2hc">Give me suggestions about how to shorten the current document
 contents.</codeblock>You can use this same tool to retrieve content from a
                         web site, by using as an example such a
                         prompt:<codeblock>Read through the list of available Oxygen XML addons and give me an overview
 about what I could install to fix my terminology problems: 
 https://www.oxygenxml.com/doc/ug-addons/llms.txt</codeblock></li>
+                    <li>Compare documents or answer questions about differences between two versions.
+                        Example:<codeblock>Compare the current topic with the version from the main branch
+and summarize what changed.</codeblock></li>
                     <li>Evaluate an XPath in a specific file.
                         Example:<codeblock>list all titles in the current topic and give me an overview.</codeblock></li>
                     <li>Make large or small changes to the current or to other documents.
@@ -232,6 +238,9 @@ Apply also this custom Schematron schema...</codeblock></li>
                         you implement the checks, you can simply ask the
                         AI:<codeblock id="codeblock_d55_b1m_2hc">Fix validation and terminology problems in the generated content 
 before saving it to disk.</codeblock></li>
+                    <li>Inspect profiling conditions and understand which profiling attributes,
+                        values, and condition sets are currently active.
+                        Example:<codeblock>Why is this profiled section excluded from the current output?</codeblock></li>
                     <li>Make XML-aware changes in documents:<ul id="ul_ept_r4g_2hc">
                             <li>Apply existing XML refactoring operations on documents.
                                 Example:<codeblock id="codeblock_nqd_t4g_2hc">Invoke XML refactor operation to add unique IDs on all pargraphs</codeblock></li>
@@ -273,22 +282,28 @@ modify the file name to match the new title.</codeblock></li>
             <p><b>Model Context Protocol</b> gives <b>AI Positron</b> the ability to provide for the
                 LLM close integrations with the issue tracking system or the version control system,
                 for example, to allow the LLM to extract the summary and comments made on a GitHub
-                issue and create a draft documentation topic from it. Example prompt:
-                    <codeblock id="codeblock_jfn_vqg_2hc">Obtain description and comments from the DITA OT GitHub issue number 2021 and create a draft documentation 
-topic using them</codeblock><fig id="fig_pl4_xsg_2hc">
-                    <title>Example: Using MCP to access Atlassian JIRA</title>
-                    <p><b/><object data="../images/ai/DITA%20Agent.m4v" outputclass="video"/></p>
-                </fig><fig id="fig_yq3_nsg_2hc">
-                    <title>Example: Using MCP to access GitHub issues</title>
-                    <image href="../images/ai/mcp-github.gif" id="image_wpw_nsg_2hc" scale="50"/>
-                </fig></p>
+                issue and create a draft documentation topic from it. Example prompt:</p>
+            <codeblock id="codeblock_jfn_vqg_2hc">Obtain description and comments from the DITA OT GitHub issue number 2021 and create a draft documentation 
+topic using them</codeblock>
+            <fig id="fig_pl4_xsg_2hc">
+                <title>Example: Using MCP to access Atlassian JIRA</title>
+                <p><b/><object data="../images/ai/DITA%20Agent.m4v" outputclass="video"/></p>
+            </fig>
+            <fig id="fig_yq3_nsg_2hc">
+                <title>Example: Using MCP to access GitHub issues</title>
+                <image href="../images/ai/mcp-github.gif" id="image_wpw_nsg_2hc" scale="50"/>
+            </fig>
             <p>The entire set of tools provided by <uicontrol>AI Positron</uicontrol> can also be
                 provided to external <b>AI Assistants</b> by starting the entire <ph keyref="oxygen"
-                /> application as a local MCP server.<fig id="fig_fsk_31m_2hc">
+                /> application as a local MCP server. In AI Positron 8.5, the MCP integration also
+                reports server status in the AI Positron view, can restore the previous server state
+                at application startup, and applies hook restrictions consistently even when tools
+                are invoked by external AI agents.</p>
+            <fig id="fig_fsk_31m_2hc">
                     <title><ph keyref="oxygen"/> as local MCP server</title>
                     <object data="../images/ai/claude-code-change-id-oxygen-mcp-preview.mov"
                         outputclass="video"/>
-                </fig></p>
+                </fig>
         </section>
         <section id="section_omp_1rg_2hc">
             <title>Conclusion</title>

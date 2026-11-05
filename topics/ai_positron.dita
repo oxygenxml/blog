@@ -40,14 +40,16 @@
             <li>A subscription-based model using the <xref
                 href="https://www.oxygenxml.com/aipositron/user_terms.html" format="html"
                 scope="external">Oxygen Positron Service</xref> platform, which in turn allows you
-              access to the <b>OpenAI</b>, <b>Claude</b> or <b>Google Gemini</b> LLMs. <p>Users can
-                create new subscription accounts or authenticate using their existing <b>Google</b>
-                or <b>Github</b> accounts. The first subscription month is free and a <xref
-                  href="https://www.oxygenxml.com/ai_positron_service/buy.html" format="html"
-                  scope="external">monthly subscription</xref> can be purchased to receive a number
-                of credits each month.</p><p>You can control which AI engine is used by default for
-                performing actions and for chatting. This can be done from the Preferences page or
-                from the chat view.</p></li>
+              access to the <b>OpenAI</b>, <b>Claude</b>, <b>Google Gemini</b>, or <b>xAI Grok</b>
+              LLMs. <p>Users can create new subscription accounts or authenticate using their
+                existing <b>Google</b> or <b>Github</b> accounts. The first subscription month is
+                free and a <xref href="https://www.oxygenxml.com/ai_positron_service/buy.html"
+                  format="html" scope="external">monthly subscription</xref> can be purchased to
+                receive a number of credits each month.</p><p>Team owners can also control which
+                providers and models are available to their teams and can choose a default model for
+                them.</p><p>You can control which AI engine is used by default for performing
+                actions and for chatting. This can be done from the Preferences page or from the
+                chat view.</p></li>
             <li>Connect to your own own AI engine server. The following connection types are
                 supported:<ul id="ul_twp_5z5_4bc">
                 <li><b>OpenAI</b> - Connect to your own OpenAI server using your own key. Or connect
@@ -81,12 +83,16 @@
             the following functionality:<ul id="ul_np4_ndv_4bc">
               <li>Invoke various actions to generate and re-write content using AI.</li>
               <li><b>Chat</b> with the AI.</li>
-              <li>A <b>History</b> list of previous interactions.</li>
+              <li>A <b>History</b> list of previous interactions and a <b>Chat History</b> dialog
+                box where you can search, pin, rename, export, and import project
+                conversations.</li>
               <li>A <b>Favorites</b> drop-down list and a way to mark inputs as favorites.</li>
               <li>The <b>Insert Editor Variables</b> drop-down list allows inserting various editor
                 variables which are expanded when the chat message is sent to the AI engine.</li>
               <li>An <b>Attach</b> button to attach images or XML text resources to the chat
                 message.</li>
+              <li>The assistant can also be opened in a separate window that shows the complete chat
+                history next to the current conversation.</li>
             </ul></li>
           <li><b>AI</b> main menu entry with support to invoke actions or to go to the add-on's
             preferences page.</li>
@@ -108,6 +114,10 @@
             can be used to rephrase content or to perform validation checks on existing
             content.</li>
         </ul></p>
+      <p>Version 8.5 also adds AI-generated titles and descriptions for saved conversations, project
+        chat history export and import, agent delegation to sub-agents with live conversation tabs,
+        the <codeph>compare_documents</codeph> and <codeph>get_profiling_conditions</codeph> tools,
+        AI replies to review comments, and improved Oxygen MCP server status reporting.</p>
     </section>
     <section id="section_hph_m3v_4bc">
       <title>Predefined and Custom Actions, Agents and Skills</title>
@@ -129,8 +139,11 @@
           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/tree/main/Schematron%20and%20Quick%20Fixes"
           format="html" scope="external">samples playground</xref>.</p>
       <p>Predefined agents/chat modes <uicontrol>Agent/DITA Agent/Ask/Planner/Personas</uicontrol>
-        are available in the <uicontrol>Chat modes</uicontrol> drop down. And you can create your
-        own AI agents.</p>
+        are available in the <uicontrol>Chat modes</uicontrol> drop down. The
+          <uicontrol>Agent</uicontrol>, <uicontrol>DITA Agent</uicontrol>, and <uicontrol>Dev
+          Agent</uicontrol> modes can delegate focused work to sub-agents, and their progress can be
+        followed in live conversation tabs. You can also create your own AI agents, and newer agent
+        definitions can be packaged in a single Markdown file with YAML front matter.</p>
       <p>Predefined skills allow you to easily translate, review and use the AI Positron
         documentation. And you can create your own skills for AI Positron using the <b>Anthropic</b>
         skills specification to extend the assistant with <xref
@@ -172,11 +185,9 @@
             href="https://www.oxygenxml.com/events/2026/webinar_vibe_authoring_with_oxygen_ai_positron_8.html"
             format="html" scope="external">Webinar: Vibe Authoring with Oxygen AI Positron
             8.0</xref></li>
+        <li><xref href="https://www.oxygenxml.com/ai_positron/whats_new.html" format="html"
+            scope="external">What is new in Oxygen AI Positron 8.5</xref></li>
         <li><xref
-            href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/README.md"
-            format="html" scope="external">AI Positron Samples Playground.</xref></li>
-        <li>
-          <xref
             href="https://www.oxygenxml.com/events/2023/webinar_ai_as_a_tool_for_technical_content_creation.html"
             format="html" scope="external">Webinar: AI as a Tool for Technical Content Creation
           </xref></li>

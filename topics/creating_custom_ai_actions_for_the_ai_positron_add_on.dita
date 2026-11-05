@@ -19,6 +19,10 @@
             multiple defined actions. Validation and content completion are automatically provided
             for such custom action files. To edit multi-line parameter values, you can switch the
             edited action JSON definition file to the <b>Author</b> visual editor mode.</p>
+    <p>If you need agentic behavior instead of a single custom action, newer AI Positron versions
+      also allow custom sub-agents to be defined in a single Markdown file with YAML front matter
+      and prompt instructions in the same resource. This is useful when a task needs tool usage,
+      delegation, and multi-step reasoning instead of a single prompt/response interaction.</p>
         <p>If the action definition files are saved in the custom actions folder defined in the AI
             Positron Assistant preferences page, the AI Positron Assistant view should automatically
             reload its Actions list to include them.</p>
@@ -359,6 +363,11 @@
     ]
 }
 }</codeblock></p>
+                    <p>In newer AI Positron versions, more specialized tools are also available for
+                      agentic work, such as comparing documents, inspecting profiling conditions,
+                      and interacting with chat history. When your use case becomes multi-step and
+                      tool heavy, it may be better modeled as a custom agent than as a single AI
+                      action.</p>
                     <p id="p_ong_thq_nfc"><xref
                         href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/get-content-from-website.json"
                         format="html" scope="external">Example</xref> of an AI action that uses the
@@ -382,6 +391,9 @@
                         is done by various actions. An example can be found <xref
                           href="https://github.com/oxygenxml-incubator/ai-positron-assistant-samples/blob/main/Custom%20Actions/ai-actions-composed.json"
                           format="html" scope="external">here</xref>.</note></p>
+                    <p>Newer agent workflows can also delegate focused work to sub-agents, and the
+                      progress of those sub-agents can be followed in dedicated live conversation
+                      tabs.</p>
                   </dd>
                 </dlentry>
               </dl>

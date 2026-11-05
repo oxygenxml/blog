@@ -24,10 +24,12 @@
       <p><b>Q: What LLM models are recommended for AI Positron?</b></p>
       <p>A: AI Positron works best with capable LLMs such as:</p>
       <ul>
-        <li>Claude Sonnet</li>
-        <li>Claude Haiku</li>
-        <li>OpenAI GPT 5.1</li>
-        <li>OpenAI GPT 4.1</li>
+        <li>Claude Sonnet 5.5</li>
+        <li>Claude Haiku 5.5</li>
+        <li>OpenAI GPT-6.1 Terra Thinking</li>
+        <li>OpenAI GPT-6.1 Terra</li>
+        <li>OpenAI GPT-6.1 Sol</li>
+        <li>xAI Grok 4.7</li>
       </ul>
       <p>If you use a less capable LLM, AI Positron may not produce optimal results. The quality of responses is directly dependent on the LLM's capabilities.</p>
 
@@ -54,6 +56,17 @@
 
       <p><b>Q: How can I avoid token limit errors?</b></p>
       <p>A: Keep individual topics reasonably sized (under 40KB). If you have very large topics, consider breaking them into smaller, more focused topics following DITA best practices.</p>
+      <p><b>Q: How can I share or back up conversations?</b></p>
+      <p>A: In AI Positron 8.5, you can export the full project chat history to a ZIP archive and
+        import it into another project or workstation. This is useful for support, backups, and team
+        handoffs.</p>
+      <p><b>Q: Can I search older conversations?</b></p>
+      <p>A: Yes. The new <uicontrol>Chat History</uicontrol> dialog box lets you search by title,
+        description, date, or message content. You can also pin important chats, rename them, and
+        configure or disable automatic retention cleanup.</p>
+      <p><b>Q: Can I open the AI chat in a larger window?</b></p>
+      <p>A: Yes. AI Positron 8.5 can open the assistant in a separate resizable window with the full
+        chat history visible next to the active conversation.</p>
     </section>
 
     <section id="image_errors">
@@ -100,6 +113,14 @@
       <p>A: Keyrefs and conkeyrefs are not being resolved in the preview. This is sometimes a CMS
         integration issue. Ask the CMS to contact the Oxygen team about improving this
         functionality.</p>
+      <p><b>Q: Can AI Positron compare two document versions for me?</b></p>
+      <p>A: Yes. In Oxygen XML 29 or newer, the <codeph>compare_documents</codeph> tool allows AI
+        Positron to summarize differences, explain specific changes, or answer questions about a
+        two-way or three-way comparison.</p>
+      <p><b>Q: Can AI Positron explain why profiled content is missing?</b></p>
+      <p>A: Yes. In Oxygen XML 29 or newer, the <codeph>get_profiling_conditions</codeph> tool lets
+        the AI inspect declared profiling attributes, allowed values, condition sets, and the
+        currently applied filtering configuration.</p>
     </section>
 
     <section id="response_insertion">
@@ -139,6 +160,10 @@
 
       <p><b>Q: Why does "Formula/Equation" button fail?</b></p>
       <p>A: This may depend on the LLM model quality. You can create your own custom AI action for formula generation. Contact support for the default action definition if you want to customize it.</p>
+      <p><b>Q: Can AI Positron reply to existing review comments?</b></p>
+      <p>A: Yes. Newer versions of the <codeph>review-comments</codeph> skill can read the full
+        discussion thread and add a reply without changing the commented content. Comments already
+        marked as done are ignored.</p>
     </section>
 
     <section id="ui_usability">
@@ -152,10 +177,13 @@
       <p><b>Q: Why doesn't the History drop-down persist?</b></p>
       <p>A: Similar to Favorites, the History dropdown requires CMS-side APIs to persist data.</p>
 
-      <p><b>Q: Why can't I upload files of type X?</b></p>
-      <p>A: File upload support is limited to a list of types mentioned in the documentation
-        (including XML, text, Markdown, Word). Provide details about the specific error message when
-        reporting this issue, and note whether the error occurs consistently or intermittently.</p>
+      <p><b>Q: Can the AI remember my preferences more accurately now?</b></p>
+      <p>A: Yes. Newer AI Positron versions use the <codeph>update_memory</codeph> tool to replace
+        or remove individual stored rules, instead of only clearing all memory. This keeps long-term
+        AI preferences more consistent.</p>
+      <p><b>Q: Why am I being asked to confirm some tools before they run?</b></p>
+      <p>A: AI Positron 8.5 now asks for confirmation before it runs plugin-contributed tools. This
+        improves control and transparency when third-party tools are invoked by the AI.</p>
     </section>
 
     <section id="performance">
@@ -239,6 +267,10 @@
       <p>If you need robust Chat functionality with RAG support, consider using Oxygen desktop or
         Oxygen Content Fusion CMS instead of integrations with a third-party CMS. See <xref
           href="vibing_with_ai_positron.dita"/> for more information.</p>
+      <p><b>Review the latest release notes for new capabilities</b></p>
+      <p>Features such as project chat history export/import, separate chat windows, sub-agent
+        delegation, document comparison, and profiling-condition awareness are introduced over time.
+        Review the current release notes before designing workflows or troubleshooting behavior.</p>
     </section>
 
     <section id="getting_help">

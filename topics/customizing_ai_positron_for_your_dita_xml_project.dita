@@ -68,6 +68,10 @@
                     <b>Create Topics</b> give the AI model access to the current indexed DITA XML
                 project to retrieve the topics with content similar to the new content that needs to
                 be created.</p>
+            <p>In newer releases, the chat can also search past project conversations, and exported
+                project chat histories can be shared with teammates. This means the broader project
+                context can be preserved not only in prompts but also in reusable conversation
+                history.</p>
             <p>You can create your own <xref
                     href="https://www.oxygenxml.com/doc/ug-positron-desktop/ai/creating_custom_ai_actions.html"
                     format="html" scope="external">custom AI actions</xref> that allow RAG access to
@@ -94,8 +98,11 @@ dune vehicle named the Sharkfin Rover.
 Technical documentation must be precise and easy to understand. 
 Our clients are not technical, they are usually beginners when it comes to driving 
 and their understanding of English may vary.</codeblock></p>
-            <p>The same context information should be expanded to include terminology and style
-                guide information for the current project. An example can be found <xref
+            <p>The same context information should be expanded to include terminology, style guide
+                information, expected output constraints, and response-formatting rules for the
+                current project. For example, many teams ask the AI to place any generated XML in
+                Markdown code blocks when explanations are also returned. An example can be found
+                    <xref
                     href="https://raw.githubusercontent.com/oxygenxml-incubator/ai-positron-assistant-samples/refs/heads/main/Custom%20Actions/ai-context-sample.md"
                     format="html" scope="external">here </xref>.</p>
         </section>
@@ -129,7 +136,8 @@ motor vehicle chassis (instead of 'vehicle frame')
             <p>Once the AI model receives the imposed terminology rules as part of the prompt
                 context, it will take them into account for all interactions (e.g. for creating
                 documentation drafts from content that was written without taking the terminology
-                into account).</p>
+                into account). This also improves the generated conversation titles and descriptions
+                that newer AI Positron versions create for chat history entries.</p>
             <p>The Oxygen <xref
                     href="https://www.oxygenxml.com/doc/ug-addons/topics/terminology-checker-addon.html"
                     format="html" scope="external">Terminology Checker add-on</xref> can be
@@ -198,6 +206,10 @@ end result => result
                 content to a topic and the saved content has validation problems, the AI receives
                 the validation problems and attempts to auto fix the problems until the topic
                 becomes valid.</p>
+            <p>When a project uses profiling attributes, it is also useful to describe the allowed
+                profiling values in the context prompt or subject scheme. Newer AI Positron versions
+                can inspect profiling conditions directly, which helps the AI avoid proposing
+                invalid audience, platform, or product values.</p>
             <p>An alternative to defining a style guide in the AI context prompt or to impose them
                 after the content is generated would be to create a fine-tuned AI model trained with
                 small examples based on the internal style guide and created also using an AI
