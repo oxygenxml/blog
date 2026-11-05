@@ -81,8 +81,8 @@
       <section id="where-rules-live">
         <title>Where the agent finds the project rules</title>
         <p id="p_bmr_wdq_1lc">The agent reads the project rules from
-            <filepath>.contentfusion/i18n/agent-instructions.md</filepath> and applies them to
-          every translation job, on top of its built-in rules. For one-time requests, use the
+            <filepath>.contentfusion/i18n/agent-instructions.md</filepath> and applies them to every
+          translation job, on top of its built-in rules. For one-time requests, use the
             <uicontrol>Translation Instructions</uicontrol> field of the job instead.</p>
         <p>For the Oxygen user manuals, the project rules are split across three files in
             <filepath>.contentfusion/i18n/</filepath>. <filepath>agent-instructions.md</filepath>
@@ -136,8 +136,8 @@
             never changes it. If the label does not fit the grammar of the sentence, the agent
             rewrites the sentence around the label.</li>
           <li><b>A term is adapted to the sentence.</b> It fixes which word to use for a concept,
-            but the word can change its form: singular or plural, with or without an article, and
-            so on.</li>
+            but the word can change its form: singular or plural, with or without an article, and so
+            on.</li>
         </ul>
       </section>
       <section id="ui-strings">
@@ -188,12 +188,12 @@
       </section>
       <section id="terminology">
         <title>Terminology</title>
-        <p id="p_pm4_zgq_1lc">The terminology file holds the concepts of the product and its
-          domain, such as <i>DITA map</i>, <i>transformation scenario</i>, or <i>Git
-            repository</i>. It has two tables.</p>
-        <p id="p_qm4_zgq_1lc">The <b>Terms</b> table gives the approved translation of each
-          concept. The <b>Details</b> column adds the grammar the agent needs (part of speech,
-          gender), the translations to avoid, and example sentences:</p>
+        <p id="p_pm4_zgq_1lc">The terminology file holds the concepts of the product and its domain,
+          such as <i>DITA map</i>, <i>transformation scenario</i>, or <i>Git repository</i>. It has
+          two tables.</p>
+        <p id="p_qm4_zgq_1lc">The <b>Terms</b> table gives the approved translation of each concept.
+          The <b>Details</b> column adds the grammar the agent needs (part of speech, gender), the
+          translations to avoid, and example sentences:</p>
         <codeblock outputclass="language-markdown">| Source | Target | Context | Details |
 |---|---|---|---|
 | workspace | espace de travail | user's working copy of a project | pos: noun; gender: m; ex: from a card in your workspace → depuis une fiche de votre espace de travail |
@@ -236,108 +236,7 @@
         <p id="p_um4_zgq_1lc">For example, <i>Open the DITA map.</i> becomes <i>Ouvrez la DITA
             map.</i>, not <i>Ouvrez la carte DITA.</i></p>
       </section>
-      <section id="check-resources">
-        <title>Check the resources before you translate</title>
-        <p id="p_h5x_zyr_1lc">The terminology file is maintained by hand. The UI strings file is
-          generated, and it gets out of date when the product changes. Before each translation:</p>
-        <ol>
-          <li><xref href="#get-ui-strings">Get the latest UI strings</xref> and <xref
-              href="#convert-ui-strings">convert them to Markdown</xref>.</li>
-          <li><xref href="#register-product">Register the product</xref>, if this is its first
-            translation.</li>
-        </ol>
-      </section>
     </body>
-    <topic id="get-ui-strings">
-      <title>Get the latest UI strings</title>
-      <body>
-        <ol>
-          <li>Get the latest XML UI strings for the product. Follow the instructions on the <xref
-              format="html" scope="external"
-              href="https://wiki.sync.ro/topics/sdlc/projects/exm/internationalizare_oxygen_oxygen_i18n.html"
-              >Oxygen i18n wiki page</xref>.</li>
-          <li>Save the XML files in <filepath>translation/xml-translation/&lt;product>/</filepath>.
-              <p>Example: <filepath>translation/xml-translation/fusion/</filepath></p></li>
-        </ol>
-      </body>
-    </topic>
-    <topic id="convert-ui-strings">
-      <title>Convert the UI strings to Markdown</title>
-      <body>
-        <p>The agent reads the UI strings as a Markdown table, not as XML. The
-            <filepath>translation/ui-strings-to-md.xsl</filepath> stylesheet converts them. It
-          writes one <filepath>ui-strings.&lt;lang>.md</filepath> file for each language in the XML
-          files.</p>
-        <p>Run it in one of two ways:</p>
-        <ul>
-          <li><xref href="#option-a-script">Option A: Run the script</xref>. Needs Java 11 or later
-            and Saxon-HE 12.</li>
-          <li><xref href="#option-b-oxygen">Option B: Run the stylesheet in Oxygen XML
-              Editor</xref>. Nothing to install: Oxygen XML Editor includes Saxon.</li>
-        </ul>
-      </body>
-      <topic id="option-a-script">
-        <title>Option A: Run the script</title>
-        <body>
-          <ol>
-            <li>Open the script in a text editor: <ul>
-                <li>Windows: <filepath>translation\ui-strings-to-md.bat</filepath></li>
-                <li>Linux, macOS, or Git Bash:
-                  <filepath>translation/ui-strings-to-md.sh</filepath></li>
-              </ul></li>
-            <li>In the <codeph>Settings</codeph> section at the top of the script, check these
-              variables. Relative paths start from the <filepath>translation</filepath> folder. <ul>
-                <li><b><codeph>IN_DIR</codeph></b>: the folder with the XML UI strings. <p>Example:
-                      <filepath>xml-translation/fusion</filepath></p></li>
-                <li><b><codeph>OUT_DIR</codeph></b>: the product's terminology folder. <p>Example:
-                      <filepath>../.contentfusion/i18n/fusion/terminology</filepath></p></li>
-                <li><b><codeph>SAXON_LIB</codeph></b>: leave it empty if Saxon-HE 12 is in your
-                  local Maven repository (<filepath>~/.m2/repository</filepath>). Otherwise, set it
-                  to the Saxon-HE 12 folder (the folder with the Saxon jar and its
-                    <filepath>lib/</filepath> subfolder).</li>
-              </ul></li>
-            <li>Run the
-                script.<p>Windows:</p><codeblock outputclass="language-bourne">translation\ui-strings-to-md.bat</codeblock><p>Linux,
-                macOS, or Git
-              Bash:</p><codeblock outputclass="language-bash">translation/ui-strings-to-md.sh</codeblock></li>
-            <li>If the script stops with an <codeph>ERROR:</codeph> line, fix the cause and run it
-              again. Usually, Java or Saxon is not found, or the input folder is wrong.</li>
-            <li>Check the diff of the Markdown files, then commit them.</li>
-          </ol>
-        </body>
-      </topic>
-      <topic id="option-b-oxygen">
-        <title>Option B: Run the stylesheet in Oxygen XML Editor</title>
-        <body>
-          <ol>
-            <li>In Oxygen XML Editor, open
-              <filepath>translation/ui-strings-to-md.xsl</filepath>.</li>
-            <li>Create a transformation scenario: <ol>
-                <li>Select <uicontrol>Configure Transformation Scenario(s)</uicontrol>, then <menucascade>
-                    <uicontrol>New</uicontrol>
-                    <uicontrol>XSLT transformation</uicontrol>
-                  </menucascade>.</li>
-                <li>Leave the <uicontrol>XML URL</uicontrol> field empty.</li>
-                <li>Set <uicontrol>Transformer</uicontrol> to Saxon-HE, PE, or EE, version 12 or
-                  later.</li>
-                <li>In the Saxon advanced options, set <uicontrol>Initial template</uicontrol> to
-                    <codeph>xsl:initial-template</codeph>.</li>
-              </ol></li>
-            <li>Click <uicontrol>Parameters</uicontrol> and set these parameters. Relative paths
-              start from the <filepath>translation</filepath> folder. <ul>
-                <li><b><codeph>in</codeph></b>: the folder with the XML UI strings. <p>Example:
-                      <filepath>xml-translation/fusion/</filepath></p></li>
-                <li><b><codeph>out</codeph></b>: the product's terminology folder. <p>Example:
-                      <filepath>../.contentfusion/i18n/fusion/terminology/</filepath></p></li>
-              </ul></li>
-            <li>Apply the scenario. <p>The Markdown files are written to the <codeph>out</codeph>
-                folder. Warnings about missing translations appear in the
-                  <uicontrol>Results</uicontrol> panel.</p></li>
-            <li>Check the diff of the Markdown files, then commit them.</li>
-          </ol>
-        </body>
-      </topic>
-    </topic>
     <topic id="register-product">
       <title>Register the product</title>
       <body>
