@@ -69,21 +69,18 @@
   <topic id="prepare-resources">
     <title>Step 2: Prepare the translation resources</title>
     <body>
-      <p id="p_chv_ydq_1lc">A general-purpose translation is rarely good enough for a user manual.
-        Two things make the difference:</p>
-      <ul>
-        <li>Every menu, button, and dialog name in the text matches what the reader sees on
-          screen.</li>
-        <li>Every product concept is translated the same way in every topic.</li>
-      </ul>
-      <p>The agent does not know these rules by itself. You give them to it in a few files, before
-        you translate.</p>
+      <p dir="ltr" id="p_chb_t5k_dlc">When you translate technical documentation for a software
+        product, two kinds of words need special care: terminology and UI strings. They look similar
+        at first glance, and they often overlap, but they follow different rules.</p>
+      <p id="p_yjh_bwk_dlc">Content Fusion does not have builtin support for these concepts, but it
+        has a powerfull mechanism for extensibily allowing users to specify additional prompts: per
+        job that you can specify when you create a translation job  or per project that applies to
+        any translation job. For our case we'll use per project mechanism.</p>
       <section id="where-rules-live">
         <title>Where the agent finds the project rules</title>
         <p id="p_bmr_wdq_1lc">The agent reads the project rules from
             <filepath>.contentfusion/i18n/agent-instructions.md</filepath> and applies them to every
-          translation job, on top of its built-in rules. For one-time requests, use the
-            <uicontrol>Translation Instructions</uicontrol> field of the job instead.</p>
+          translation job, on top of its built-in rules. </p>
         <p>For the Oxygen user manuals, the project rules are split across three files in
             <filepath>.contentfusion/i18n/</filepath>. <filepath>agent-instructions.md</filepath>
           holds the general rules. The two large lists, the UI strings and the terminology, have
@@ -139,9 +136,19 @@
             but the word can change its form: singular or plural, with or without an article, and so
             on.</li>
         </ul>
+        <p dir="ltr" id="p_fhb_t5k_dlc">In short, terminology is about saying the same thing the
+          same way, while UI strings are about saying exactly what’s on the screen. Getting both
+          right, and keeping them in sync with each other, is what makes a translated manual feel
+          trustworthy.</p>
       </section>
       <section id="ui-strings">
         <title>UI strings</title>
+        <p><b>UI strings</b> are the exact pieces of text that appear in the software’s interface,
+          such as button labels, menu items, dialog titles, and messages. When a manual says “Click
+            <b>Save As</b>,” the translated version must match the localized interface word for
+          word, or the user won’t find what they’re looking for on the screen. UI strings come from
+          the software’s own resource files, change with every release, and leave the translator no
+          room to rephrase.</p>
         <p id="p_pdk_52q_1lc">UI strings are the texts that the product displays: menus, options,
           buttons, view and dialog names, and messages. For example, the <uicontrol>New
             project</uicontrol> action or the <uicontrol>Task activity</uicontrol> section.</p>
@@ -186,21 +193,22 @@
         </table>
         <p>Each wrong translation reads well, but the reader cannot find the label on screen.</p>
       </section>
-      <section id="terminology">
-        <title>Terminology</title>
-        <p id="p_pm4_zgq_1lc">The terminology file holds the concepts of the product and its domain,
-          such as <i>DITA map</i>, <i>transformation scenario</i>, or <i>Git repository</i>. It has
-          two tables.</p>
-        <p id="p_qm4_zgq_1lc">The <b>Terms</b> table gives the approved translation of each concept.
-          The <b>Details</b> column adds the grammar the agent needs (part of speech, gender), the
-          translations to avoid, and example sentences:</p>
-        <codeblock outputclass="language-markdown">| Source | Target | Context | Details |
+      <section id="terminology"><title>Terminology</title><b>Terminology</b> is the vocabulary of
+        your domain and product: the concepts your users need to understand, like “translation
+        memory,” “workspace,” or “publishing profile.” The goal is consistency of meaning: the same
+        concept should always be expressed the same way, even though the translated term can still
+        adapt to the grammar of the sentence.<p id="p_pm4_zgq_1lc">The terminology file holds the
+          concepts of the product and its domain, such as <i>DITA map</i>, <i>transformation
+            scenario</i>, or <i>Git repository</i>. It has two tables.</p><p id="p_qm4_zgq_1lc">The
+            <b>Terms</b> table gives the approved translation of each concept. The <b>Details</b>
+          column adds the grammar the agent needs (part of speech, gender), the translations to
+          avoid, and example
+          sentences:</p><codeblock outputclass="language-markdown">| Source | Target | Context | Details |
 |---|---|---|---|
 | workspace | espace de travail | user's working copy of a project | pos: noun; gender: m; ex: from a card in your workspace → depuis une fiche de votre espace de travail |
-| review task | tâche de révision | unit of review work in Content Fusion | pos: noun; gender: f; deprecated: tâche d'examen; deprecated: tâche de revue |</codeblock>
-        <p id="p_rm4_zgq_1lc">The agent always uses the approved word, but adapts its form to the
-          sentence:</p>
-        <table frame="all" rowsep="1" colsep="1" id="table_sm4_zgq_1lc">
+| review task | tâche de révision | unit of review work in Content Fusion | pos: noun; gender: f; deprecated: tâche d'examen; deprecated: tâche de revue |</codeblock><p
+          id="p_rm4_zgq_1lc">The agent always uses the approved word, but adapts its form to the
+          sentence:</p><table frame="all" rowsep="1" colsep="1" id="table_sm4_zgq_1lc">
           <tgroup cols="2">
             <colspec colnum="1" colname="col1"/>
             <colspec colnum="2" colname="col2"/>
@@ -225,17 +233,15 @@
               </row>
             </tbody>
           </tgroup>
-        </table>
-        <p id="p_tm4_zgq_1lc">The <b>Do not translate</b> table lists the terms that stay in
+        </table><p id="p_tm4_zgq_1lc">The <b>Do not translate</b> table lists the terms that stay in
           English: product and brand names, acronyms, file names, and code. The <b>Note</b> column
-          tells the agent how the term behaves in the target language:</p>
-        <codeblock outputclass="language-markdown">| Term | Kind | Note |
+          tells the agent how the term behaves in the target
+          language:</p><codeblock outputclass="language-markdown">| Term | Kind | Note |
 |---|---|---|
 | Content Fusion | product | short product name |
-| DITA map | name | feminine in French (la DITA map), plural DITA maps; map alone → carte |</codeblock>
-        <p id="p_um4_zgq_1lc">For example, <i>Open the DITA map.</i> becomes <i>Ouvrez la DITA
-            map.</i>, not <i>Ouvrez la carte DITA.</i></p>
-      </section>
+| DITA map | name | feminine in French (la DITA map), plural DITA maps; map alone → carte |</codeblock><p
+          id="p_um4_zgq_1lc">For example, <i>Open the DITA map.</i> becomes <i>Ouvrez la DITA
+            map.</i>, not <i>Ouvrez la carte DITA.</i></p></section>
     </body>
     <topic id="register-product">
       <title>Register the product</title>
@@ -333,40 +339,17 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
   <topic id="review">
     <title>Step 4: Review the translation</title>
     <body>
+      <p id="p_ozj_s3l_dlc">After the translation is done is importat to review the translation </p>
       <p>Use any of these methods to review the translation. Each one finds different problems, so
         combine them when you can.</p>
-      <table frame="all" rowsep="1" colsep="1" id="table_review_types">
-        <tgroup cols="3">
-          <colspec colnum="1" colname="col1"/>
-          <colspec colnum="2" colname="col2"/>
-          <colspec colnum="3" colname="col3"/>
-          <thead>
-            <row>
-              <entry>Review</entry>
-              <entry>Who</entry>
-              <entry>Finds</entry>
-            </row>
-          </thead>
-          <tbody>
-            <row>
-              <entry><xref href="#review/check-changes">Check what the job changed</xref></entry>
-              <entry>You</entry>
-              <entry>Unexpected files, invalid DITA, broken references.</entry>
-            </row>
-            <row>
-              <entry><xref href="#review/ai-review">Review with an AI agent</xref></entry>
-              <entry>An AI agent</entry>
-              <entry>Wrong terms and UI labels, inconsistencies, missing text, in every
-                topic.</entry>
-            </row>
-            <row>
-              <entry><xref href="#review/expert-review">Ask a translation expert</xref></entry>
-              <entry>A bilingual reviewer</entry>
-              <entry>Wrong meaning, unnatural style.</entry>
-            </row>
-          </tbody>
-        </tgroup>
-      </table>
+      <ul id="table_review_types">
+        <li><xref href="#review/check-changes">Check what the job changed</xref>: you check for
+          unexpected files, invalid DITA, and broken references.</li>
+        <li><xref href="#review/ai-review">Review with an AI agent</xref>: an AI agent checks every
+          topic for wrong terms and UI labels, inconsistencies, and missing text.</li>
+        <li><xref href="#review/expert-review">Ask a translation expert</xref>: a bilingual reviewer
+          checks for wrong meaning and unnatural style.</li>
+      </ul>
       <p>When you find a problem, fix it at its cause. See <xref href="#review/fix-issues">Fix the
           issues</xref>.</p>
       <section id="check-changes">
@@ -389,9 +372,11 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
       <section id="ai-review">
         <title>Review with an AI agent</title>
         <p id="p_yqz_njx_1lc">A human reviewer rarely reads every topic of a large manual. An AI
-          agent can. The <filepath>translation/review-prompt.md</filepath> file is a review prompt
-          written for the Oxygen user manuals. It tells the agent to compare every translated topic
-          with its source and to look for these problems:</p>
+          agent can. You can review the translation with an AI agent and a custom prompt for
+          this.</p>
+        <p id="p_q5t_mfm_dlc">We use a <xref href="../resources/review-prompt.md" format="markdown"
+            >custom prompt.md</xref> to review the Oxygen user manuals. It tells the agent to
+          compare every translated topic with its source and to look for these problems:</p>
         <ul id="ul_zqz_njx_1lc">
           <li><b>Terminology</b>: a term that does not use its approved translation.</li>
           <li><b>UI terminology</b>: a menu, button, or dialog name that does not match the
