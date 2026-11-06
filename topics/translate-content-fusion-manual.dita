@@ -59,6 +59,14 @@
         files apart from the source content. This matters during the review: the reviewer compares
         each translated topic with its English source, and the source must not change while they
         do it. When the translation is approved, you merge the branch back.</p>
+      <fig id="fig_translation_branch">
+        <title>The translation branch</title>
+        <image href="../images/translation-branch.svg" placement="break" scalefit="yes">
+          <alt>A translation branch is created from the main branch, which holds the English
+            source. The translation, the review, and the fixes are committed on that branch, which is
+            then merged back into the main branch, tagged, and published.</alt>
+        </image>
+      </fig>
       <p>In <ph>Content Fusion</ph>, create the branch from the one that holds the English content,
         and name it with a pattern such as
           <codeph>translation/translate--&lt;product-name>--&lt;lang></codeph> (for example,

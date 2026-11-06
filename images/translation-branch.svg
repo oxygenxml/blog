@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 290" width="800" height="290" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>The translation branch</title>
+  <desc>A translation branch is created from the main branch, which holds the English source. The translation,
+    the review, and the fixes are committed on the translation branch. When the translation is approved, the
+    branch is merged back into the main branch, tagged, and published.</desc>
+  <defs>
+    <style>
+      .title { font-size: 14px; font-weight: 700; fill: #111827; }
+      .sub { font-size: 12px; fill: #4B5563; }
+      .code { font-size: 12px; fill: #2F6DB5; font-family: Consolas, Menlo, monospace; }
+      .main { fill: none; stroke: #6B7280; stroke-width: 5; stroke-linecap: round; }
+      .tr { fill: none; stroke: #2F6DB5; stroke-width: 5; stroke-linecap: round; }
+      .c-main { fill: #FFFFFF; stroke: #6B7280; stroke-width: 3; }
+      .c-tr { fill: #FFFFFF; stroke: #2F6DB5; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="800" height="290" fill="#FFFFFF"/>
+
+  <!-- Lane names -->
+  <text x="20" y="80" class="title">Main branch</text>
+  <text x="20" y="96" class="sub">English source</text>
+  <text x="20" y="190" class="title">Translation</text>
+  <text x="20" y="206" class="sub">branch</text>
+
+  <!-- Main branch, continues to the next release -->
+  <path d="M150,84 L760,84" class="main"/>
+  <path d="M760,74 L778,84 L760,94 z" fill="#6B7280"/>
+
+  <!-- Translation branch: created from main, merged back into main -->
+  <path d="M200,84 C200,160 230,194 270,194 L560,194 C600,194 650,160 650,84" class="tr"/>
+
+  <!-- Create the branch -->
+  <circle cx="200" cy="84" r="9" class="c-main"/>
+  <text x="200" y="44" text-anchor="middle" class="title">Create the branch</text>
+  <text x="200" y="62" text-anchor="middle" class="sub">from the English source</text>
+
+  <!-- Work on the translation branch -->
+  <circle cx="310" cy="194" r="9" class="c-tr"/>
+  <text x="310" y="228" text-anchor="middle" class="title">Translate</text>
+  <text x="310" y="244" text-anchor="middle" class="sub">commit the result</text>
+
+  <circle cx="415" cy="194" r="9" class="c-tr"/>
+  <text x="415" y="228" text-anchor="middle" class="title">Review</text>
+  <text x="415" y="244" text-anchor="middle" class="sub">AI and expert</text>
+
+  <circle cx="520" cy="194" r="9" class="c-tr"/>
+  <text x="520" y="228" text-anchor="middle" class="title">Fix</text>
+  <text x="520" y="244" text-anchor="middle" class="sub">and retranslate</text>
+
+  <text x="415" y="276" text-anchor="middle" class="code">translation/translate--Content-Fusion-Cloud--fr-FR</text>
+
+  <!-- Integrate -->
+  <circle cx="650" cy="84" r="9" class="c-main"/>
+  <text x="650" y="44" text-anchor="middle" class="title">Merge and publish</text>
+  <text x="650" y="62" text-anchor="middle" class="sub">tag the release</text>
+</svg>
