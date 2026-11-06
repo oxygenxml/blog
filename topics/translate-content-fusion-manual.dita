@@ -42,7 +42,7 @@
         <li><xref href="#translate">Translate</xref>: run a translation job and bring its results
           into your workspace.</li>
         <li><xref href="#review">Review the translation</xref>: check the result with a quick
-          check, a bilingual reviewer, and an AI review.</li>
+          check, an AI review, and a bilingual expert.</li>
         <li><xref href="#integrate">Integrate and publish</xref>: merge the translation branch and
           publish the translated manual.</li>
       </ol>
@@ -339,30 +339,33 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
   <topic id="review">
     <title>Step 4: Review the translation</title>
     <body>
-      <p id="p_ozj_s3l_dlc">After the translation is done is importat to review the translation </p>
-      <p>Use any of these methods to review the translation. Each one finds different problems, so
-        combine them when you can.</p>
+      <p>An AI translation reads fluently, and that is exactly what makes its mistakes easy to miss.
+        A sentence can sound perfect and still name a button that does not exist on screen,
+        translate the same concept in two different ways, or quietly drop a clause from the source.
+        To catch them, you can review the translation with one of these methods, or combine several
+        of them:</p>
       <ul id="table_review_types">
-        <li><xref href="#review/check-changes">Check what the job changed</xref>: you check for
-          unexpected files, invalid DITA, and broken references.</li>
-        <li><xref href="#review/ai-review">Review with an AI agent</xref>: an AI agent checks every
-          topic for wrong terms and UI labels, inconsistencies, and missing text.</li>
-        <li><xref href="#review/expert-review">Ask a translation expert</xref>: a bilingual reviewer
-          checks for wrong meaning and unnatural style.</li>
+        <li><xref href="#review/check-changes">A quick check</xref>: before you commit, you make
+          sure that the job changed the right files and left valid DITA with no broken links.</li>
+        <li><xref href="#review/ai-review">An AI review</xref>: an AI agent reads every translated
+          topic and flags wrong terms, UI labels that do not match the product, inconsistencies, and
+          missing text.</li>
+        <li><xref href="#review/expert-review">An expert review</xref>: a bilingual reviewer judges
+          what no rule can check: whether the translation means the same thing as the source, and
+          whether it sounds natural.</li>
       </ul>
-      <p>When you find a problem, fix it at its cause. See <xref href="#review/fix-issues">Fix the
-          issues</xref>.</p>
       <section id="check-changes">
-        <title>Check what the job changed</title>
-        <p>Do this check right after you bring the translation into your workspace, before you
-          commit it.</p>
+        <title>Start with a quick check</title>
+        <p>This check takes only a few minutes, and it is worth doing every time: right after you
+          bring the translation into your workspace, and before you commit it. Two views in
+            <ph>Content Fusion</ph> tell you most of what you need to know:</p>
         <ul>
-          <li><b>Changes view</b>: lists every file the job added or modified: the translated
-            topics, the translation index, and, for a new language, the deliverables. Make sure the
-            job changed only the files you expected. The English topics must not be in the
-            list.</li>
-          <li><b>Problems view</b>: shows validation errors. Make sure the translated publication is
-            valid DITA and has no broken references.</li>
+          <li><b>Changes view</b>: lists every file that the job added or modified. Expect the
+            translated topics, the translation index and, for a new language, the deliverables. If
+            an English topic shows up in the list, something went wrong.</li>
+          <li><b>Problems view</b>: shows the validation errors. The translated publication should
+            be valid DITA, and the <b>Problems view</b> helps you make sure that your project
+            stays valid when you commit your changes.</li>
         </ul>
         <p>For details, see <xref format="html" scope="external"
             href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-reviewing.html"
@@ -370,13 +373,14 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
             Guide</cite>.</p>
       </section>
       <section id="ai-review">
-        <title>Review with an AI agent</title>
-        <p id="p_yqz_njx_1lc">A human reviewer rarely reads every topic of a large manual. An AI
-          agent can. You can review the translation with an AI agent and a custom prompt for
-          this.</p>
-        <p id="p_q5t_mfm_dlc">We use a <xref href="../resources/review-prompt.md" format="markdown"
-            >custom prompt.md</xref> to review the Oxygen user manuals. It tells the agent to
-          compare every translated topic with its source and to look for these problems:</p>
+        <title>Let an AI agent review every topic</title>
+        <p>A human reviewer rarely has the time to read every topic of a large manual. An AI agent
+          does, and it never gets tired of comparing a translation with its source, sentence by
+          sentence.</p>
+        <p>To guide the agent, we wrote a <xref href="../resources/review-prompt.md"
+            format="markdown">review prompt</xref> that you can download and adapt to your own
+          manuals. It asks the agent to compare every translated topic with its English source and
+          to look for six kinds of problems:</p>
         <ul id="ul_zqz_njx_1lc">
           <li><b>Terminology</b>: a term that does not use its approved translation.</li>
           <li><b>UI terminology</b>: a menu, button, or dialog name that does not match the
@@ -390,62 +394,57 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
           <li><b>Style and naturalness</b>: text that reads like a translation, not like a manual
             written in the target language.</li>
         </ul>
-        <p id="p_arz_njx_1lc">You run the review as a translation job that does not translate
-          anything. The agent only reads the files and writes a report.</p>
-        <ol id="ol_brz_njx_1lc">
-          <li>In <ph>Content Fusion</ph>, open the <ph>User Guide</ph> project, and check that the
-            translation branch is selected in the top stripe.</li>
-          <li>Click <uicontrol>New translation</uicontrol>, and set these fields: <ul
-              id="ul_crz_njx_1lc">
-              <li><uicontrol>Publications</uicontrol>: the translated publication.</li>
-              <li><uicontrol>Target Languages</uicontrol>: the language to review.</li>
-              <li><uicontrol>Translation Instructions</uicontrol>: tell the agent not to translate,
-                to follow the review prompt, and which language to review. Write the language tag
-                exactly as it appears in the translation index. <p id="p_drz_njx_1lc"
-                >Example:</p><codeblock>Do not translate anything.
-Follow the instructions in `translation/review-prompt.md`, with TARGET_LANG = fr-FR.</codeblock></li>
-            </ul></li>
-          <li>Click <uicontrol>Start translation</uicontrol>. <p id="p_erz_njx_1lc">The agent finds
-              the translated topics in the translation index and uses the same project rules as the
-              translation agent. It writes the report to
-                <filepath>translation-review-&lt;lang>.md</filepath> at the root of the
-              repository.</p></li>
-          <li>When the job finishes, click <uicontrol>Bring into workspace</uicontrol> on the card,
-            then open the report.</li>
-          <li>Start with the <b>Root-cause rollup</b> table at the top of the report. A few root
-            causes usually explain most issues, and the table tells you where to fix each one. Then
-            read the issue records: each one shows the source text, the current translation, and a
-            recommended translation.</li>
-        </ol>
-        <p id="p_frz_njx_1lc">You can ask the agent other questions in the same way. See <xref
+        <p>You do not need a separate tool to run the review. Save the prompt in your repository (we
+          keep it in <filepath>translation/review-prompt.md</filepath>), then run the review as a
+          translation job that translates nothing. With the translation branch selected, start a new
+          translation job for the translated publication and the language to review, and use the
+            <uicontrol>Translation Instructions</uicontrol> field to point the agent to the prompt
+          instead:</p>
+        <codeblock>Do not translate anything.
+Follow the instructions in `translation/review-prompt.md`, with TARGET_LANG = fr-FR.</codeblock>
+        <p>Write the language tag exactly as it appears in the translation index. The agent finds the
+          translated topics in the index, applies the same project rules as the translation agent,
+          and writes its findings to <filepath>translation-review-&lt;lang>.md</filepath> at the
+          root of the repository. When the job finishes, bring it into your workspace and open the
+          report.</p>
+        <p>You do not have to read the report from top to bottom. Start with the <b>Root-cause
+            rollup</b> table at the top: a handful of root causes usually explain most of the
+          issues, and the table tells you where to fix each one. Then go through the issue records.
+          Each one shows the source text, the current translation, and a recommended
+          translation.</p>
+        <p>The same approach works for any other question you have about your translation. See <xref
             format="html" scope="external"
             href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-asking.html"
             >Asking the Agent a Question</xref> in the <cite>Oxygen Content Fusion User
           Guide</cite>.</p>
       </section>
       <section id="expert-review">
-        <title>Ask a translation expert</title>
-        <p>A reviewer who knows both languages is the best judge of meaning and style. The reviewer
-          reads each translated topic side by side with its English source, in one of these
-          tools:</p>
+        <title>Ask a bilingual expert</title>
+        <p>The AI review is good at checking rules: the approved term, the exact UI label, the French
+          typography. A reviewer who knows both languages judges what no rule covers: whether the
+          translation says the same thing as the source, and whether it reads like a manual that was
+          written in French. The reviewer reads each translated topic side by side with its English
+          source, in the tool that suits them best:</p>
         <ul>
-          <li><b><ph>Content Fusion</ph></b>: with the translation branch selected, create a project
-            review task that includes the translated topics, and invite the reviewer. The reviewer
-            edits the topics or adds comments in the browser. When the review is done, you
-            integrate the accepted changes into the translation branch. See <xref format="html"
-              scope="external"
+          <li><b><ph>Content Fusion</ph></b>: create a project review task on the translation
+            branch, include the translated topics, and invite the reviewer. The reviewer edits the
+            topics or adds comments in the browser, and you then integrate the accepted changes into
+            the translation branch. See <xref format="html" scope="external"
               href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-projects-review-tasks.html#cf-projects-review-tasks__section_cn4_k3x_4jb"
               >Creating a Project Review Task</xref>.</li>
-          <li><b>Oxygen XML Editor</b>: the reviewer checks out the translation branch and reviews
-            the files locally. This suits reviewers who prefer a desktop editor, or who want the
-            source and the translation open side by side.</li>
+          <li><b>Oxygen XML Editor</b>: the reviewer checks out the translation branch and works
+            locally, with the source and the translation open side by side. This suits reviewers
+            who prefer a desktop editor.</li>
         </ul>
-        <note type="tip">Attach the English PDF of the manual to the review task, so the reviewer
+        <note type="tip">Attach the PDF of the English manual to the review task, so the reviewer
           sees each topic in its context.</note>
       </section>
       <section id="fix-issues">
-        <title>Fix the issues</title>
-        <p>Where you fix an issue depends on its cause:</p>
+        <title>Fix each issue at its cause</title>
+        <p>It is tempting to correct every issue directly in the translated topic. This is the right
+          fix when the mistake appears only once. But if the agent made the mistake because of a missing term or an unclear
+          rule, it will make the same mistake again in the next release. So, before you fix an
+          issue, ask where it comes from:</p>
         <table frame="all" rowsep="1" colsep="1" id="table_fix_issues">
           <tgroup cols="3">
             <colspec colnum="1" colname="col1"/>
@@ -455,55 +454,55 @@ Follow the instructions in `translation/review-prompt.md`, with TARGET_LANG = fr
               <row>
                 <entry>Cause</entry>
                 <entry>Fix it in</entry>
-                <entry>Then</entry>
+                <entry>What happens next</entry>
               </row>
             </thead>
             <tbody>
               <row>
-                <entry>A one-time mistake in a single topic</entry>
-                <entry>The translated topic. Edit it directly.</entry>
-                <entry>Commit the change. Later translation jobs skip the topic and keep your
-                  correction, as long as its English source does not change.</entry>
+                <entry>A one-off mistake in a single topic</entry>
+                <entry>The translated topic</entry>
+                <entry>Commit the change. Later jobs keep your correction until the English source
+                  of the topic changes.</entry>
               </row>
               <row>
                 <entry>A wrong or missing term or UI string, or a rule that the agent did not
                   follow</entry>
                 <entry>The terminology file, the UI strings file, or
-                    <filepath>agent-instructions.md</filepath>.</entry>
+                    <filepath>agent-instructions.md</filepath></entry>
                 <entry><xref href="#review/retranslate">Retranslate the affected
                   topics</xref>.</entry>
               </row>
               <row>
                 <entry>An error or unclear text in the English source</entry>
-                <entry>The English topic, on the translation branch. The fix reaches the source
-                  branch when you integrate the translation branch.</entry>
-                <entry>The topic becomes <i>stale</i>, and the next job translates it again. Fix the
-                  source only after the review is complete, so the reviewers compare the
-                  translation with the source it was made from.</entry>
+                <entry>The English topic, on the translation branch</entry>
+                <entry>The topic becomes <i>stale</i>, so the next job translates it again. The fix
+                  reaches the source branch when you merge the translation branch.</entry>
               </row>
             </tbody>
           </tgroup>
         </table>
+        <note type="tip">Fix the English source only after the review is complete. This way, the
+          reviewers always compare the translation with the source it was made from.</note>
       </section>
       <section id="retranslate">
         <title>Retranslate after you change the rules</title>
-        <p>A change in the terminology, the UI strings, or <filepath>agent-instructions.md</filepath>
-          does not make a translation stale. The agent tracks only changes in the English source,
-          so the next job skips the topics that are already translated. To make the agent translate
-          them again, remove their entries from the translation index:</p>
+        <p>There is one catch. The agent decides what to translate by looking only at the English
+          source: if a topic has not changed since its last translation, the next job skips it. A
+          new term in the terminology file or a new rule in
+            <filepath>agent-instructions.md</filepath> does not change any source, so it does not
+          trigger a new translation by itself.</p>
+        <p>To force it, remove the topics from the translation index:</p>
         <ol>
-          <li>Open <filepath>.contentfusion/i18n/translation-index.xml</filepath>.</li>
-          <li>Delete the entries for the topics you want to retranslate. The topics become
-              <i>missing</i>, so the next job translates them again.</li>
-          <li>Commit your changes, then <xref href="#translate">run the translation
+          <li>In <filepath>.contentfusion/i18n/translation-index.xml</filepath>, delete the entries
+            of the topics you want to translate again. These topics become <i>missing</i>.</li>
+          <li>Commit the change, then <xref href="#translate">run the translation
             again</xref>.</li>
-          <li>Review the retranslated topics.</li>
+          <li>Review the new translation of these topics.</li>
         </ol>
-        <note type="caution">The next job overwrites the translated topics whose entries you
-          deleted. If you corrected some of them by hand, commit the corrections before you run the
-          job, so you can restore them.</note>
-        <p>When the review finds no more important issues, continue with <xref href="#integrate"
-            >Integrate and publish</xref>.</p>
+        <note type="caution">The next job overwrites these topics. If you corrected some of them by
+          hand, commit your corrections first, so you can restore them from the Git history.</note>
+        <p>Repeat this review and fix cycle until the review finds no more important issues, then
+          continue with <xref href="#integrate">Step 5: Integrate and publish</xref>.</p>
       </section>
     </body>
   </topic>
