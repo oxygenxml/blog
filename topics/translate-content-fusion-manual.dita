@@ -22,9 +22,12 @@
   <body>
     <p id="p_b4g_j5p_1lc">In <xref href="the-translation-workflow-for-the-ai-era.dita">The
         Translation Workflow for the AI Era</xref>, we introduced the AI translation workflow in
-        <ph>Content Fusion</ph>.</p>
-    <p>In this post, we share our experience with translating the <b>Content Fusion Cloud</b> user
-      manual into <b>French</b>.</p>
+        <ph>Content Fusion</ph>. In this post, we show how we used it to translate a real manual,
+      the <b>Content Fusion Cloud</b> user guide, into <b>French</b>.</p>
+    <p>The agent writes fluent French from the first run. Getting it to write the product's French
+      takes more work, and that work goes into two places: what you give the agent before it
+      translates (the product's UI strings and its approved terminology), and how you check what it
+      returns. The steps below show how we did both.</p>
     <section id="steps-at-a-glance">
       <title>The workflow at a glance</title>
       <fig id="fig_translation_workflow">
