@@ -127,15 +127,22 @@
                 <entry><filepath>&lt;product>/terminology/terminology.en-US-&lt;lang>.md</filepath></entry>
                 <entry>The approved translation of each product concept, and the terms that stay in
                   English.</entry>
-                <entry><filepath>fusion/terminology/terminology.en-US-fr_FR.md</filepath></entry>
+                <entry><filepath>fusion/terminology/terminology.en-US-fr-FR.md</filepath></entry>
               </row>
             </tbody>
           </tgroup>
         </table>
         <p id="p_xbq_rcq_1lc">In these paths, <codeph>&lt;product></codeph> is the product's
           resource folder (<codeph>fusion</codeph> for <ph>Content Fusion</ph>) and
-            <codeph>&lt;lang></codeph> is the BCP 47 tag with an underscore
-          (<codeph>fr_FR</codeph>).</p>
+            <codeph>&lt;lang></codeph> is the language tag. The UI strings file writes it with an
+          underscore (<codeph>fr_FR</codeph>), and the terminology file with a hyphen
+            (<codeph>fr-FR</codeph>).</p>
+        <p>All these files are public. You can find them in the <xref format="html"
+            scope="external" href="https://github.com/oxygenxml/userguide/tree/master/.contentfusion/i18n"
+            ><filepath>.contentfusion/i18n</filepath> folder</xref> of the <xref format="html"
+            scope="external" href="https://github.com/oxygenxml/userguide">Oxygen user guide
+            repository</xref> on GitHub, and use them as a starting point for your own
+          manuals.</p>
       </section>
       <section id="ui-strings-vs-terminology">
         <title>UI strings and terminology: what is the difference?</title>
