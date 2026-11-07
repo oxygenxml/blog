@@ -460,8 +460,9 @@ Follow the instructions in `translation/review-prompt.md`, with TARGET_LANG = fr
               <row>
                 <entry>A one-off mistake in a single topic</entry>
                 <entry>The translated topic</entry>
-                <entry>Commit the change. Later jobs keep your correction until the English source
-                  of the topic changes.</entry>
+                <entry>Commit the change. Later jobs skip the topic while its English source is
+                  unchanged. When the source changes, the agent uses your corrected translation as
+                  context, so your wording is kept where it still applies.</entry>
               </row>
               <row>
                 <entry>A wrong or missing term or UI string, or a rule that the agent did not
