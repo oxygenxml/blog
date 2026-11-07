@@ -212,7 +212,7 @@
       </section>
       <section id="terminology"><title>Terminology</title><p id="p_zb4_bsr_dlc"
           ><b>Terminology</b> is the vocabulary of your domain and product: the concepts your
-          users need to understand, like “review task,” “workspace,” or “task activity.” The goal
+          users need to understand, like “review task,” “workspace,” or “translation index.” The goal
           is consistency of meaning: the same concept should always be expressed the same way,
           even though the translated term can still adapt to the grammar of the sentence.</p><p id="p_pm4_zgq_1lc"
           >The terminology file holds the concepts of the product and its domain, such as <i>DITA
