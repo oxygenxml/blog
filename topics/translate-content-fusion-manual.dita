@@ -286,16 +286,14 @@
               <li><uicontrol>Publications</uicontrol>: the publication of the manual to
                 translate.</li>
               <li><uicontrol>Target Languages</uicontrol>: one or more target languages.</li>
-              <li><uicontrol>Translation Instructions</uicontrol>: the product name, exactly as it
-                appears in the <codeph>Products</codeph> table, and the folder for the translated
-                files. <p>Example:</p><codeblock>Translations are for product: `Content Fusion`.
+              <li><uicontrol>Translation Instructions</uicontrol>: extra instructions for this job,
+                in plain language. For example, tell the agent which product the manual describes
+                and where to save the translated files. <p>Example:</p><codeblock>Translations are for product: `Content Fusion`.
 
 Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source structure inside it.</codeblock></li>
             </ul></li>
           <li>Click <uicontrol>Start translation</uicontrol>.</li>
         </ol>
-        <note type="tip">To translate into several languages, select all of them in one job. The job
-          translates them one after another.</note>
       </section>
       <section id="first-translation">
         <title>The first translation into a language</title>
