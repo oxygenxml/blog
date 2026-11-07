@@ -32,19 +32,21 @@
       <fig id="fig_translation_workflow">
         <title>The translation workflow</title>
         <image href="../images/translation-workflow.svg" placement="break" scalefit="yes">
-          <alt>The translation resources guide every job. Each release goes through branch,
-            translate, check, AI review, expert review, and publish.</alt>
+          <alt>The translation resources, prepared once per product and language, guide every
+            job. Each release goes through branch, translate, review (a quick check, an AI review,
+            and an expert review), and integrate and publish. Issues found by the reviews are fixed
+            at their cause, and the affected topics are translated again.</alt>
         </image>
       </fig>
       <ol>
         <li><xref href="#create-branch">Create a translation branch</xref>: keep the translation
           work apart from the source content.</li>
         <li><xref href="#prepare-resources">Prepare the translation resources</xref>: give the
-          agent the product's UI strings and the approved terminology.</li>
+          agent the product's UI strings, the approved terminology, and the project rules.</li>
         <li><xref href="#translate">Translate</xref>: run a translation job and bring its results
           into your workspace.</li>
         <li><xref href="#review">Review the translation</xref>: check the result with a quick
-          check, an AI review, and a bilingual expert.</li>
+          check, an AI review, and a bilingual expert, then fix each issue at its cause.</li>
         <li><xref href="#integrate">Integrate and publish</xref>: merge the translation branch and
           publish the translated manual.</li>
       </ol>
