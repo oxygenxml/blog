@@ -81,13 +81,14 @@
   <topic id="prepare-resources">
     <title>Step 2: Prepare the translation resources</title>
     <body>
-      <p dir="ltr" id="p_chb_t5k_dlc">When you translate technical documentation for a software
-        product, two kinds of words need special care: terminology and UI strings. They look similar
-        at first glance, and they often overlap, but they follow different rules.</p>
-      <p id="p_yjh_bwk_dlc">Content Fusion does not have builtin support for these concepts, but it
-        has a powerfull mechanism for extensibily allowing users to specify additional prompts: per
-        job that you can specify when you create a translation job  or per project that applies to
-        any translation job. For our case we'll use per project mechanism.</p>
+      <p id="p_zjx_1qr_dlc">When you translate technical documentation for a software product, two
+        kinds of words need special care: terminology and UI strings. They look similar at first
+        glance, and they often overlap, but they follow different rules.</p>
+      <p id="p_akx_1qr_dlc">Content Fusion does not have built-in support for these concepts, but it
+        has a powerful mechanism that allows users to specify additional prompts at two levels: per
+        job, which you can configure when creating a translation job, or per project, which applies
+        to all translation jobs in that project. In our case, we'll use the per-project
+        mechanism.</p>
       <section id="where-rules-live">
         <title>Where the agent finds the project rules</title>
         <p id="p_bmr_wdq_1lc">The agent reads the project rules from
@@ -161,9 +162,6 @@
           word, or the user won’t find what they’re looking for on the screen. UI strings come from
           the software’s own resource files, change with every release, and leave the translator no
           room to rephrase.</p>
-        <p id="p_pdk_52q_1lc">UI strings are the texts that the product displays: menus, options,
-          buttons, view and dialog names, and messages. For example, the <uicontrol>New
-            project</uicontrol> action or the <uicontrol>Task activity</uicontrol> section.</p>
         <p>The UI strings file is a table generated from the product's own translation files. Each
           row gives a string's ID, its English text, its translation, and where it appears:</p>
         <codeblock outputclass="language-markdown">| ID | Source (en-US) | Target (fr_FR) | Context |
