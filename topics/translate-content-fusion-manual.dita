@@ -32,10 +32,10 @@
       <fig id="fig_translation_workflow">
         <title>The translation workflow</title>
         <image href="../images/translation-workflow.svg" placement="break" scalefit="yes">
-          <alt>The translation resources, prepared once per product and language, guide every
-            job. Each release goes through branch, translate, review (a quick check, an AI review,
-            and an expert review), and integrate and publish. Issues found by the reviews are fixed
-            at their cause, and the affected topics are translated again.</alt>
+          <alt>Each release goes through branch, prepare the translation resources (UI strings,
+            terminology, and project rules, which guide every job), translate, review (a quick
+            check, an AI review, and an expert review), and integrate and publish. Issues found by
+            the reviews are fixed at their cause, and the affected topics are translated again.</alt>
         </image>
       </fig>
       <ol>
@@ -81,6 +81,10 @@
   <topic id="prepare-resources">
     <title>Step 2: Prepare the translation resources</title>
     <body>
+      <p>Do this step for every release, on the translation branch. The first time, you create the
+        resource files. After that, you update them: update the UI strings file from the new build,
+        because labels change between releases, and add the terms of the new features to the
+        terminology file.</p>
       <p id="p_zjx_1qr_dlc">When you translate technical documentation for a software product, two
         kinds of words need special care: terminology and UI strings. They look similar at first
         glance, and they often overlap, but they follow different rules.</p>
