@@ -66,7 +66,7 @@ Work through these steps in order.
 
 <review_criteria>
 
-Evaluate every source and target pair against all seven criteria. An issue's `Category` is exactly the bolded token.
+Evaluate every source and target pair against all six criteria. An issue's `Category` is exactly the bolded token.
 
 <criterion>
 **Terminology**

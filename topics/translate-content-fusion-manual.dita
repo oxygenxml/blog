@@ -215,9 +215,9 @@
           users need to understand, like “review task,” “workspace,” or “translation index.” The goal
           is consistency of meaning: the same concept should always be expressed the same way,
           even though the translated term can still adapt to the grammar of the sentence.</p><p id="p_pm4_zgq_1lc"
-          >The terminology file holds the concepts of the product and its domain, such as <i>DITA
-            map</i>, <i>transformation scenario</i>, or <i>Git repository</i>. It has two
-          tables.</p><p id="p_qm4_zgq_1lc">The <b>Terms</b> table gives the approved translation of
+          >The terminology file holds the concepts of the product and its domain, such as
+            <i>repository</i>, <i>branch</i>, or <i>publication</i>, and the names that must stay
+          in English. It has two tables: <b>Terms</b> and <b>Do not translate</b>.</p><p id="p_qm4_zgq_1lc">The <b>Terms</b> table gives the approved translation of
           each concept. The <b>Details</b> column adds the grammar the agent needs (part of speech,
           gender), the translations to avoid, and example
           sentences:</p><codeblock outputclass="language-markdown">| Source | Target | Context | Details |
