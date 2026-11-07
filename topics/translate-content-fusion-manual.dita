@@ -33,8 +33,9 @@
         <title>The translation workflow</title>
         <image href="../images/translation-workflow.svg" placement="break" scalefit="yes">
           <alt>Each release goes through branch, prepare the translation resources (UI strings,
-            terminology, and project rules, which guide every job), translate, review (a quick
-            check, an AI review, and an expert review), and integrate and publish. Issues found by
+            terminology, and project rules, which guide every job), translate (an AI translation
+            job, then a quick check of what it changed before you commit), review (an AI review and
+            an expert review), and integrate and publish. Issues found by
             the reviews are fixed at their cause, and the affected topics are translated again.</alt>
         </image>
       </fig>
@@ -43,10 +44,10 @@
           work apart from the source content.</li>
         <li><xref href="#prepare-resources">Prepare the translation resources</xref>: give the
           agent the product's UI strings, the approved terminology, and the project rules.</li>
-        <li><xref href="#translate">Translate</xref>: run a translation job and bring its results
-          into your workspace.</li>
-        <li><xref href="#review">Review the translation</xref>: check the result with a quick
-          check, an AI review, and a bilingual expert, then fix each issue at its cause.</li>
+        <li><xref href="#translate">Translate</xref>: run a translation job, bring its results
+          into your workspace, check what it changed, and commit.</li>
+        <li><xref href="#review">Review the translation</xref>: check the result with an AI review
+          and a bilingual expert, then fix each issue at its cause.</li>
         <li><xref href="#integrate">Integrate and publish</xref>: merge the translation branch and
           publish the translated manual.</li>
       </ol>
@@ -327,40 +328,13 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
       </section>
       <section id="bring-translation">
         <title>Bring the translation into your workspace</title>
-        <ol>
-          <li>When the job finishes, click <uicontrol>Bring into workspace</uicontrol> on the card.
-            The translated files and the updated translation index are added to your workspace as
-            uncommitted changes.</li>
-          <li><xref href="#review/check-changes">Check what the job changed</xref>.</li>
-          <li>Commit the files to the translation branch. <p>A reviewer can open the translated
-              files only after you commit them.</p></li>
-        </ol>
+        <p>When the job finishes, click <uicontrol>Bring into workspace</uicontrol> on the card. The
+          translated files and the updated translation index are added to your workspace as
+          uncommitted changes.</p>
       </section>
-    </body>
-  </topic>
-
-  <topic id="review">
-    <title>Step 4: Review the translation</title>
-    <body>
-      <p>An AI translation reads fluently, and that is exactly what makes its mistakes easy to miss.
-        A sentence can sound perfect and still name a button that does not exist on screen,
-        translate the same concept in two different ways, or quietly drop a clause from the source.
-        To catch them, you can review the translation with one of these methods, or combine several
-        of them:</p>
-      <ul id="table_review_types">
-        <li><xref href="#review/check-changes">A quick check</xref>: before you commit, you make
-          sure that the job changed the right files and left valid DITA with no broken links.</li>
-        <li><xref href="#review/ai-review">An AI review</xref>: an AI agent reads every translated
-          topic and flags wrong terms, UI labels that do not match the product, inconsistencies, and
-          missing text.</li>
-        <li><xref href="#review/expert-review">An expert review</xref>: a bilingual reviewer judges
-          what no rule can check: whether the translation means the same thing as the source, and
-          whether it sounds natural.</li>
-      </ul>
       <section id="check-changes">
-        <title>Start with a quick check</title>
-        <p>This check takes only a few minutes, and it is worth doing every time: right after you
-          bring the translation into your workspace, and before you commit it. Two views in
+        <title>Check what the job changed, then commit</title>
+        <p>Before you commit, take a few minutes to check the result. Do it every time. Two views in
             <ph>Content Fusion</ph> tell you most of what you need to know:</p>
         <ul>
           <li><b>Changes view</b>: lists every file that the job added or modified. Expect the
@@ -374,7 +348,27 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
             href="https://www.oxygenxml.com/doc/ug-content-fusion-cloud/topics/cf-ai-translation-reviewing.html"
             >Reviewing Translations Before You Commit</xref> in the <cite>Oxygen Content Fusion User
             Guide</cite>.</p>
+        <p>When the changes look right, commit them to the translation branch. A reviewer can open
+          the translated files only after you commit them.</p>
       </section>
+    </body>
+  </topic>
+
+  <topic id="review">
+    <title>Step 4: Review the translation</title>
+    <body>
+      <p>An AI translation reads fluently, and that is exactly what makes its mistakes easy to miss.
+        A sentence can sound perfect and still name a button that does not exist on screen,
+        translate the same concept in two different ways, or quietly drop a clause from the source.
+        To catch them, review the translation with an AI agent, a bilingual expert, or both:</p>
+      <ul id="ul_review_types">
+        <li><xref href="#review/ai-review">An AI review</xref>: an AI agent reads every translated
+          topic and flags wrong terms, UI labels that do not match the product, inconsistencies, and
+          missing text.</li>
+        <li><xref href="#review/expert-review">An expert review</xref>: a bilingual reviewer judges
+          what no rule can check: whether the translation means the same thing as the source, and
+          whether it sounds natural.</li>
+      </ul>
       <section id="ai-review">
         <title>Let an AI agent review every topic</title>
         <p>A human reviewer rarely has the time to read every topic of a large manual. An AI agent

@@ -2,8 +2,8 @@
   <title>The translation workflow</title>
   <desc>Five steps, repeated for every release. Step 1, branch; step 2, update the translation resources for the
     release: the UI strings, the terminology, and the project rules, which guide every translation job; step 3,
-    translate; step 4, review, which is a quick check, an AI review, and an expert review; and step 5, integrate and
-    publish. Issues found by the reviews are fixed at their cause, and the affected topics are translated again.</desc>
+    translate, which is an AI translation job followed by a quick check of the changed files before the commit;
+    step 4, review, which is an AI review and an expert review; and step 5, integrate and publish. Issues found by the reviews are fixed at their cause, and the affected topics are translated again.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#4B5563"/>
@@ -61,8 +61,8 @@
 
   <path d="M85,258 L85,102 L158,102" class="line" marker-end="url(#arrow)"/>
 
-  <path d="M246,180 L246,258" class="line" marker-end="url(#arrow)"/>
-  <text x="236" y="224" text-anchor="end" class="note">guide every job</text>
+  <path d="M245,180 L245,212" class="line" marker-end="url(#arrow)"/>
+  <text x="255" y="201" class="note">guide every job</text>
 
   <!-- Step 1 -->
   <rect x="20" y="260" width="130" height="90" rx="8" class="human"/>
@@ -70,30 +70,33 @@
   <text x="85" y="312" text-anchor="middle" class="sub">isolate the</text>
   <text x="85" y="328" text-anchor="middle" class="sub">translation work</text>
 
-  <!-- Step 3 -->
-  <rect x="176" y="260" width="140" height="90" rx="8" class="ai"/>
-  <text x="246" y="292" text-anchor="middle" class="title">3. Translate</text>
-  <text x="246" y="312" text-anchor="middle" class="sub">only missing and</text>
-  <text x="246" y="328" text-anchor="middle" class="sub">changed topics</text>
+  <!-- Step 3: translate frame -->
+  <rect x="166" y="214" width="308" height="152" rx="10" fill="#F6F8FB" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="180" y="242" class="title">3. Translate</text>
+
+  <rect x="180" y="260" width="130" height="90" rx="8" class="ai"/>
+  <text x="245" y="292" text-anchor="middle" class="title">Translation job</text>
+  <text x="245" y="312" text-anchor="middle" class="sub">only missing and</text>
+  <text x="245" y="328" text-anchor="middle" class="sub">changed topics</text>
+
+  <rect x="330" y="260" width="130" height="90" rx="8" class="human"/>
+  <text x="395" y="292" text-anchor="middle" class="title">Quick check</text>
+  <text x="395" y="312" text-anchor="middle" class="sub">changed files,</text>
+  <text x="395" y="328" text-anchor="middle" class="sub">valid DITA, commit</text>
 
   <!-- Step 4: review frame -->
-  <rect x="342" y="214" width="458" height="152" rx="10" fill="#F6F8FB" stroke="#CBD5E1" stroke-width="1"/>
-  <text x="356" y="242" class="title">4. Review</text>
+  <rect x="490" y="214" width="308" height="152" rx="10" fill="#F6F8FB" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="504" y="242" class="title">4. Review</text>
 
-  <rect x="356" y="260" width="130" height="90" rx="8" class="human"/>
-  <text x="421" y="292" text-anchor="middle" class="title">Quick check</text>
-  <text x="421" y="312" text-anchor="middle" class="sub">changed files,</text>
-  <text x="421" y="328" text-anchor="middle" class="sub">valid DITA, commit</text>
+  <rect x="504" y="260" width="130" height="90" rx="8" class="ai"/>
+  <text x="569" y="292" text-anchor="middle" class="title">AI review</text>
+  <text x="569" y="312" text-anchor="middle" class="sub">every topic,</text>
+  <text x="569" y="328" text-anchor="middle" class="sub">root-cause report</text>
 
-  <rect x="506" y="260" width="130" height="90" rx="8" class="ai"/>
-  <text x="571" y="292" text-anchor="middle" class="title">AI review</text>
-  <text x="571" y="312" text-anchor="middle" class="sub">every topic,</text>
-  <text x="571" y="328" text-anchor="middle" class="sub">root-cause report</text>
-
-  <rect x="656" y="260" width="130" height="90" rx="8" class="human"/>
-  <text x="721" y="292" text-anchor="middle" class="title">Expert review</text>
-  <text x="721" y="312" text-anchor="middle" class="sub">meaning and style,</text>
-  <text x="721" y="328" text-anchor="middle" class="sub">bilingual reviewer</text>
+  <rect x="654" y="260" width="130" height="90" rx="8" class="human"/>
+  <text x="719" y="292" text-anchor="middle" class="title">Expert review</text>
+  <text x="719" y="312" text-anchor="middle" class="sub">meaning and style,</text>
+  <text x="719" y="328" text-anchor="middle" class="sub">bilingual reviewer</text>
 
   <!-- Step 5 -->
   <rect x="824" y="260" width="166" height="90" rx="8" class="human"/>
@@ -102,23 +105,23 @@
   <text x="907" y="322" text-anchor="middle" class="sub">merge, tag,</text>
   <text x="907" y="338" text-anchor="middle" class="sub">build deliverables</text>
 
-  <path d="M316,305 L354,305" class="line" marker-end="url(#arrow)"/>
-  <path d="M486,305 L504,305" class="line" marker-end="url(#arrow)"/>
-  <path d="M636,305 L654,305" class="line" marker-end="url(#arrow)"/>
-  <path d="M786,305 L822,305" class="line" marker-end="url(#arrow)"/>
+  <path d="M310,305 L328,305" class="line" marker-end="url(#arrow)"/>
+  <path d="M460,305 L502,305" class="line" marker-end="url(#arrow)"/>
+  <path d="M634,305 L652,305" class="line" marker-end="url(#arrow)"/>
+  <path d="M784,305 L822,305" class="line" marker-end="url(#arrow)"/>
 
   <!-- Quality loop -->
-  <rect x="506" y="430" width="130" height="90" rx="8" class="fix"/>
-  <text x="571" y="462" text-anchor="middle" class="title">Fix the cause</text>
-  <text x="571" y="482" text-anchor="middle" class="sub">terms, UI strings,</text>
-  <text x="571" y="498" text-anchor="middle" class="sub">rules, or the topic</text>
+  <rect x="504" y="430" width="130" height="90" rx="8" class="fix"/>
+  <text x="569" y="462" text-anchor="middle" class="title">Fix the cause</text>
+  <text x="569" y="482" text-anchor="middle" class="sub">terms, UI strings,</text>
+  <text x="569" y="498" text-anchor="middle" class="sub">rules, or the topic</text>
 
-  <path d="M571,350 L571,428" class="loop" marker-end="url(#arrow-orange)"/>
-  <path d="M721,350 L721,475 L638,475" class="loop" marker-end="url(#arrow-orange)"/>
-  <text x="646" y="404" text-anchor="middle" class="note" fill="#C2410C">issues found</text>
-  <path d="M506,475 L246,475 L246,352" class="loop" marker-end="url(#arrow-orange)"/>
-  <text x="256" y="420" class="note" fill="#C2410C">retranslate</text>
-  <text x="571" y="540" text-anchor="middle" class="label" fill="#C2410C">QUALITY LOOP</text>
+  <path d="M569,350 L569,428" class="loop" marker-end="url(#arrow-orange)"/>
+  <path d="M719,350 L719,475 L636,475" class="loop" marker-end="url(#arrow-orange)"/>
+  <text x="644" y="404" text-anchor="middle" class="note" fill="#C2410C">issues found</text>
+  <path d="M504,475 L245,475 L245,352" class="loop" marker-end="url(#arrow-orange)"/>
+  <text x="255" y="420" class="note" fill="#C2410C">retranslate</text>
+  <text x="569" y="540" text-anchor="middle" class="label" fill="#C2410C">QUALITY LOOP</text>
 
   <!-- Release loop -->
   <path d="M907,350 L907,570 L85,570 L85,352" class="release" marker-end="url(#arrow)"/>
