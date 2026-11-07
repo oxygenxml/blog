@@ -204,15 +204,15 @@
         <p>Each wrong translation reads well, but the reader cannot find the label on screen.</p>
       </section>
       <section id="terminology"><title>Terminology</title><b>Terminology</b> is the vocabulary of
-        your domain and product: the concepts your users need to understand, like “translation
-        memory,” “workspace,” or “publishing profile.” The goal is consistency of meaning: the same
-        concept should always be expressed the same way, even though the translated term can still
-        adapt to the grammar of the sentence.<p id="p_pm4_zgq_1lc">The terminology file holds the
-          concepts of the product and its domain, such as <i>DITA map</i>, <i>transformation
-            scenario</i>, or <i>Git repository</i>. It has two tables.</p><p id="p_qm4_zgq_1lc">The
-            <b>Terms</b> table gives the approved translation of each concept. The <b>Details</b>
-          column adds the grammar the agent needs (part of speech, gender), the translations to
-          avoid, and example
+        your domain and product: the concepts your users need to understand, like “<p
+          id="p_zb4_bsr_dlc">review task”, “workspace,” or “task activity”. The goal is consistency
+          of meaning: the same concept should always be expressed the same way, even though the
+          translated term can still adapt to the grammar of the sentence.</p><p id="p_pm4_zgq_1lc"
+          >The terminology file holds the concepts of the product and its domain, such as <i>DITA
+            map</i>, <i>transformation scenario</i>, or <i>Git repository</i>. It has two
+          tables.</p><p id="p_qm4_zgq_1lc">The <b>Terms</b> table gives the approved translation of
+          each concept. The <b>Details</b> column adds the grammar the agent needs (part of speech,
+          gender), the translations to avoid, and example
           sentences:</p><codeblock outputclass="language-markdown">| Source | Target | Context | Details |
 |---|---|---|---|
 | workspace | espace de travail | user's working copy of a project | pos: noun; gender: m; ex: from a card in your workspace → depuis une fiche de votre espace de travail |
@@ -253,22 +253,6 @@
           id="p_um4_zgq_1lc">For example, <i>Open the DITA map.</i> becomes <i>Ouvrez la DITA
             map.</i>, not <i>Ouvrez la carte DITA.</i></p></section>
     </body>
-    <topic id="register-product">
-      <title>Register the product</title>
-      <body>
-        <p>The agent finds the product's resource folder in the <codeph>Products</codeph> table of
-            <filepath>.contentfusion/i18n/agent-instructions.md</filepath>. If the product is
-          already in the table, skip this task.</p>
-        <p>Otherwise, add a row with the product name and its <codeph>&lt;product></codeph>
-          folder:</p>
-        <codeblock outputclass="language-markdown">| Product | `&lt;product>` | Language resources |
-|---|---|---|
-| Content Fusion | `fusion` | `.contentfusion/i18n/fusion/terminology/` |</codeblock>
-        <note type="important">When you start the translation job, name the product exactly as it
-          appears in this table. If the agent does not find the product in the table, it stops
-          before it translates anything.</note>
-      </body>
-    </topic>
   </topic>
 
   <topic id="translate">
