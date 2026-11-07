@@ -210,11 +210,11 @@
         </table>
         <p>Each wrong translation reads well, but the reader cannot find the label on screen.</p>
       </section>
-      <section id="terminology"><title>Terminology</title><b>Terminology</b> is the vocabulary of
-        your domain and product: the concepts your users need to understand, like “<p
-          id="p_zb4_bsr_dlc">review task”, “workspace,” or “task activity”. The goal is consistency
-          of meaning: the same concept should always be expressed the same way, even though the
-          translated term can still adapt to the grammar of the sentence.</p><p id="p_pm4_zgq_1lc"
+      <section id="terminology"><title>Terminology</title><p id="p_zb4_bsr_dlc"
+          ><b>Terminology</b> is the vocabulary of your domain and product: the concepts your
+          users need to understand, like “review task,” “workspace,” or “task activity.” The goal
+          is consistency of meaning: the same concept should always be expressed the same way,
+          even though the translated term can still adapt to the grammar of the sentence.</p><p id="p_pm4_zgq_1lc"
           >The terminology file holds the concepts of the product and its domain, such as <i>DITA
             map</i>, <i>transformation scenario</i>, or <i>Git repository</i>. It has two
           tables.</p><p id="p_qm4_zgq_1lc">The <b>Terms</b> table gives the approved translation of
