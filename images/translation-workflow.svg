@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="604" viewBox="0 0 800 604" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>The translation workflow</title>
+<desc>Five steps, repeated for every release. Step 1, branch; step 2, update the translation resources for the release: the UI strings, the terminology, and the project rules, which guide every translation job; step 3, translate, which is an AI translation job followed by a quick check of the changed files before the commit; step 4, review, which is an AI review and an expert review; and step 5, integrate and publish. Issues found by the reviews are fixed at their cause, and the affected topics are translated again.</desc>
+<defs>
+<linearGradient id="tr-workflow-git" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e6573"/><stop offset="1" stop-color="#434850"/></linearGradient>
+<linearGradient id="tr-workflow-ok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#149aa6"/><stop offset="1" stop-color="#01929e"/></linearGradient>
+</defs>
+<text x="12" y="30" font-size="11" font-weight="700" letter-spacing="1.2" fill="#5e6573" text-anchor="start">EVERY RELEASE</text>
+<line x1="574" y1="38.8" x2="574" y2="34.8" stroke="#434850" stroke-width="1.4" stroke-linecap="round"/>
+<circle cx="574" cy="33.8" r="1.8" fill="#434850"/>
+<rect x="562.8" y="43.3" width="22.5" height="5.4" rx="1.8" fill="#434850"/>
+<rect x="565" y="38.8" width="18" height="14.4" rx="4" fill="url(#tr-workflow-git)"/>
+<circle cx="570.4" cy="45.1" r="1.8" fill="#ffffff"/>
+<circle cx="577.6" cy="45.1" r="1.8" fill="#ffffff"/>
+<rect x="570.9" y="49.1" width="6.3" height="1.4" rx="0.7" fill="#ffffff"/>
+<text x="596" y="50" font-size="12" font-weight="400" fill="#312e2f" text-anchor="start">Done by the AI agent</text>
+<circle cx="574" cy="70" r="4.5" fill="#6f7a93"/>
+<path d="M565.5 87V82Q565.5 76 570.5 76H577.5Q582.5 76 582.5 82V87Z" fill="#6f7a93"/>
+<text x="596" y="82" font-size="12" font-weight="400" fill="#312e2f" text-anchor="start">Done by you or a reviewer</text>
+<path d="M565 99H569L583 113V121H565Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M569 99V113H583" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="596" y="114" font-size="12" font-weight="400" fill="#312e2f" text-anchor="start">Translation resources</text>
+<rect x="124" y="16" width="400" height="164" rx="12" fill="none" stroke="#a7adb8" stroke-width="1.5"/>
+<text x="138" y="42" font-size="14" font-weight="700" fill="#312e2f" text-anchor="start">2. Prepare resources</text>
+<text x="510" y="42" font-size="12" font-weight="400" fill="#5e6573" text-anchor="end">update them for this release</text>
+<path d="M172 58H202L216 72V114H172Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M202 58V72H216" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="182" y="72" width="24" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="182" y="85" width="19.2" height="6" rx="3" fill="#dcdcdc"/>
+<text x="194" y="136" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">UI strings</text>
+<text x="194" y="155" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">generated from the</text>
+<text x="194" y="171" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">localized product</text>
+<path d="M300 58H330L344 72V114H300Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M330 58V72H344" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="310" y="72" width="24" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="310" y="85" width="19.2" height="6" rx="3" fill="#dcdcdc"/>
+<text x="322" y="136" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Terminology</text>
+<text x="322" y="155" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">approved terms,</text>
+<text x="322" y="171" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">curated by hand</text>
+<path d="M428 58H458L472 72V114H428Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M458 58V72H472" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="438" y="72" width="24" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="438" y="85" width="19.2" height="6" rx="3" fill="#dcdcdc"/>
+<text x="450" y="136" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Project rules</text>
+<text x="450" y="155" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">style and typography</text>
+<text x="450" y="171" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">for every job</text>
+<polygon points="116,86 105,92 105,80" fill="#5e6573"/>
+<polyline points="60,253 60,86 105,86" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="192,212 186,201 198,201" fill="#5e6573"/>
+<polyline points="192,180 192,201" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="202" y="201" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">guide every job</text>
+<circle cx="60" cy="270" r="9" fill="#6f7a93"/>
+<path d="M43 304V294Q43 282 53 282H67Q77 282 77 294V304Z" fill="#6f7a93"/>
+<text x="60" y="328" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">1. Branch</text>
+<text x="60" y="347" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">isolate the</text>
+<text x="60" y="363" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">translation work</text>
+<rect x="124" y="214" width="256" height="158" rx="12" fill="none" stroke="#a7adb8" stroke-width="1.5"/>
+<text x="138" y="240" font-size="14" font-weight="700" fill="#312e2f" text-anchor="start">3. Translate</text>
+<line x1="192" y1="268" x2="192" y2="259" stroke="#434850" stroke-width="3" stroke-linecap="round"/>
+<circle cx="192" cy="257" r="4" fill="#434850"/>
+<rect x="167" y="278" width="50" height="12" rx="4" fill="#434850"/>
+<rect x="172" y="268" width="40" height="32" rx="9" fill="url(#tr-workflow-git)"/>
+<circle cx="184" cy="282" r="4" fill="#ffffff"/>
+<circle cx="200" cy="282" r="4" fill="#ffffff"/>
+<rect x="185" y="291" width="14" height="3" rx="1.5" fill="#ffffff"/>
+<text x="192" y="328" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Translation job</text>
+<text x="192" y="347" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">only missing and</text>
+<text x="192" y="363" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">changed topics</text>
+<circle cx="312" cy="270" r="9" fill="#6f7a93"/>
+<path d="M295 304V294Q295 282 305 282H319Q329 282 329 294V304Z" fill="#6f7a93"/>
+<text x="312" y="328" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Quick check</text>
+<text x="312" y="347" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">changed files,</text>
+<text x="312" y="363" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">valid DITA, commit</text>
+<rect x="398" y="214" width="256" height="158" rx="12" fill="none" stroke="#a7adb8" stroke-width="1.5"/>
+<text x="412" y="240" font-size="14" font-weight="700" fill="#312e2f" text-anchor="start">4. Review</text>
+<line x1="466" y1="268" x2="466" y2="259" stroke="#434850" stroke-width="3" stroke-linecap="round"/>
+<circle cx="466" cy="257" r="4" fill="#434850"/>
+<rect x="441" y="278" width="50" height="12" rx="4" fill="#434850"/>
+<rect x="446" y="268" width="40" height="32" rx="9" fill="url(#tr-workflow-git)"/>
+<circle cx="458" cy="282" r="4" fill="#ffffff"/>
+<circle cx="474" cy="282" r="4" fill="#ffffff"/>
+<rect x="459" y="291" width="14" height="3" rx="1.5" fill="#ffffff"/>
+<text x="466" y="328" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">AI review</text>
+<text x="466" y="347" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">every topic,</text>
+<text x="466" y="363" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">root-cause report</text>
+<circle cx="586" cy="270" r="9" fill="#6f7a93"/>
+<path d="M569 304V294Q569 282 579 282H593Q603 282 603 294V304Z" fill="#6f7a93"/>
+<text x="586" y="328" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Expert review</text>
+<text x="586" y="347" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">meaning and style,</text>
+<text x="586" y="363" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">bilingual reviewer</text>
+<circle cx="725" cy="270" r="9" fill="#6f7a93"/>
+<path d="M708 304V294Q708 282 718 282H732Q742 282 742 294V304Z" fill="#6f7a93"/>
+<text x="725" y="328" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">5. Integrate</text>
+<text x="725" y="347" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">and publish</text>
+<text x="725" y="366" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">merge, tag,</text>
+<text x="725" y="382" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">build deliverables</text>
+<polygon points="159,284 148,290 148,278" fill="#5e6573"/>
+<polyline points="85,284 148,284" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="287,284 276,290 276,278" fill="#5e6573"/>
+<polyline points="225,284 276,284" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="433,284 422,290 422,278" fill="#5e6573"/>
+<polyline points="337,284 422,284" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="561,284 550,290 550,278" fill="#5e6573"/>
+<polyline points="499,284 550,284" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="700,284 689,290 689,278" fill="#5e6573"/>
+<polyline points="611,284 689,284" fill="none" stroke="#5e6573" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M440 414H478L492 428V470H440Z" fill="#ffffff" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M478 414V428H492" fill="#eeeeee" stroke="#a7adb8" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="450" y="424" width="28" height="18" rx="4" fill="url(#tr-workflow-ok)"/>
+<text x="464" y="437" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">FIX</text>
+<rect x="450" y="450" width="32" height="6" rx="3" fill="#dcdcdc"/>
+<rect x="450" y="462" width="24" height="6" rx="3" fill="#dcdcdc"/>
+<text x="466" y="490" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Fix the cause</text>
+<text x="466" y="507" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">terms, UI strings,</text>
+<text x="466" y="523" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">rules, or the topic</text>
+<text x="466" y="548" font-size="11" font-weight="700" letter-spacing="1.2" fill="#017f8a" text-anchor="middle">QUALITY LOOP</text>
+<polygon points="466,408 460,397 472,397" fill="#01929e"/>
+<polyline points="466,370 466,397" fill="none" stroke="#01929e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="500,442 511,436 511,448" fill="#01929e"/>
+<polyline points="586,370 586,442 511,442" fill="none" stroke="#01929e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="576" y="400" font-size="12" font-weight="700" fill="#017f8a" text-anchor="end">issues found</text>
+<polygon points="192,370 198,381 186,381" fill="#01929e"/>
+<polyline points="432,442 192,442 192,381" fill="none" stroke="#01929e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="202" y="404" font-size="12" font-weight="700" fill="#017f8a" text-anchor="start">retranslate</text>
+<polygon points="60,370 66,381 54,381" fill="#5e6573"/>
+<polyline points="725,394 725,566 60,566 60,381" fill="none" stroke="#5e6573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<text x="392" y="588" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">next release: only the topics whose source changed are translated again</text>
+</svg>

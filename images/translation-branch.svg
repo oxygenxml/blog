@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="292" viewBox="0 0 800 292" role="img" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title>The translation branch</title>
+<desc>A translation branch is created from the main branch, which holds the English source. The translation, the review, and the fixes are committed on the translation branch. When the translation is approved, the branch is merged back into the main branch, tagged, and published.</desc>
+<defs>
+<linearGradient id="tr-branch-ok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#149aa6"/><stop offset="1" stop-color="#01929e"/></linearGradient>
+</defs>
+<text x="20" y="90" font-size="14" font-weight="700" fill="#312e2f" text-anchor="start">Main branch</text>
+<text x="20" y="107" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">English source</text>
+<text x="20" y="194" font-size="14" font-weight="700" fill="#312e2f" text-anchor="start">Translation</text>
+<text x="20" y="211" font-size="12" font-weight="400" fill="#5e6573" text-anchor="start">branch</text>
+<line x1="150" y1="92" x2="762" y2="92" stroke="#5e6573" stroke-width="4" stroke-linecap="round"/>
+<polygon points="780,92 762,102 762,82" fill="#5e6573"/>
+<path d="M205 92C205 166 235 196 275 196H570C610 196 640 166 640 92" fill="none" stroke="#01929e" stroke-width="4" stroke-linecap="round"/>
+<circle cx="205" cy="92" r="9" fill="#ffffff" stroke="#5e6573" stroke-width="3"/>
+<text x="205" y="50" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Create the branch</text>
+<text x="205" y="67" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">from the English source</text>
+<circle cx="320" cy="196" r="9" fill="#ffffff" stroke="#01929e" stroke-width="3"/>
+<text x="320" y="230" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Translate</text>
+<text x="320" y="247" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">commit the result</text>
+<circle cx="422" cy="196" r="9" fill="#ffffff" stroke="#01929e" stroke-width="3"/>
+<text x="422" y="230" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Review</text>
+<text x="422" y="247" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">AI and expert</text>
+<circle cx="524" cy="196" r="9" fill="#ffffff" stroke="#01929e" stroke-width="3"/>
+<text x="524" y="230" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Fix</text>
+<text x="524" y="247" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">translate again</text>
+<text x="422" y="278" font-size="12" font-weight="400" fill="#017f8a" text-anchor="middle" font-family="Consolas, Menlo, 'Courier New', monospace">translation/translate--Content-Fusion-Cloud--fr-FR</text>
+<circle cx="640" cy="92" r="15" fill="url(#tr-branch-ok)" stroke="#ffffff" stroke-width="3"/>
+<polyline points="635.4,92.2 638.9,95.8 645.1,88.6" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="640" y="50" font-size="14" font-weight="700" fill="#312e2f" text-anchor="middle">Merge and publish</text>
+<text x="640" y="67" font-size="12" font-weight="400" fill="#5e6573" text-anchor="middle">tag the release</text>
+</svg>
