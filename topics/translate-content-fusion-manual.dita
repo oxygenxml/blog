@@ -373,7 +373,7 @@ Save translations to `DITA-cf/i18n/fusion-cloud/fr-FR/`, mirroring the source st
           does, and it never gets tired of comparing a translation with its source, sentence by
           sentence.</p>
         <p>To guide the agent, we wrote a <xref href="../resources/review-prompt.md"
-            format="markdown">review prompt</xref> that you can download and adapt to your own
+            format="md" scope="local">review prompt</xref> that you can download and adapt to your own
           manuals. It asks the agent to compare every translated topic with its English source and
           to look for six kinds of problems:</p>
         <ul id="ul_zqz_njx_1lc">
