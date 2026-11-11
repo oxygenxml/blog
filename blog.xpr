@@ -619,7 +619,6 @@
                                         <ditaParameter>
                                             <field name="name">
                                                 <String>webhelp.show.publication.toc</String>
-                                                <String>webhelp.enable.sticky.topic.toc</String>
                                             </field>
                                             <field name="description">
                                                 <null/>
@@ -887,6 +886,8 @@
         <folder masterFiles="true" name="Main Files">
             <file name="blog-project.xml"/>
         </folder>
+        <folder path="../oxygen-wiki.git/"/>
         <folder path="."/>
+        <folder path="../userguide-private/"/>
     </projectTree>
 </project>
